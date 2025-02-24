@@ -4,9 +4,9 @@ description: Web サイトに自動で堅牢で安全な支払  [!DNL Payment Se
 role: User
 level: Intermediate
 feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 95d86654ad185b2c37a59777a29f6de1b0091ad7
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,6 @@ ht-degree: 0%
 * 管理者内での自己完結型
 
 ## 機能
-
->[!NOTE]
->
->ここで説明する機能の一部は、まだ GA （一般提供）リリースでは使用できない場合があります。
 
 [!DNL Payment Services] は、オンラインチェックアウト（決済と払い戻しから支払い済みまで）のためのワンストップショップです。 購入者にとって最適なエクスペリエンスを作成するために必要なインサイトと制御を提供する強力なツールを提供します。
 

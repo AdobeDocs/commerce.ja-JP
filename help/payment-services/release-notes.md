@@ -2,9 +2,9 @@
 title: '[!DNL Payment Services] リリースノート'
 description: すべてのリリースについて詳しくは、リリースノ  [!DNL Payment Services]  トを参照してください。
 feature: Payments, Release Notes
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 313d69a7f791153fd56a1492f9012776cea1f3df
 workflow-type: tm+mt
-source-wordcount: '3344'
+source-wordcount: '3392'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,24 @@ _2021 年 6 月 28 日_
 ![ 新規 ](../assets/new.svg)<!-- Issue PAY-2761 --> 列設定コントロールを使用して、[ 注文支払いステータスレポート ](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) および [ 支払いレポート ](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) に表示されるデータをカスタマイズできるようになりました。
 
 +++
+
+## v2.10.3
+
+_2025 年 2 月 24 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 修正された問題 ](../assets/fix.svg)<!-- PAY-xxxx --> 全体的な安定性とパフォーマンスが向上しました。
+
+![ 修正された問題 ](../assets/fix.svg)<!-- PAY-xxxx --> 全般的な改善と最適化。 v2.10.2 の重大なバグを修正しました。
+
+## v2.10.2
+
+_2025 年 2 月 21 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 既知の問題 ](../assets/bug.svg)<!-- PAY-xxxx --> 安定性とパフォーマンスに影響を与える可能性のある重大なバグが含まれています。 Adobeでは、このバージョン（v2.10.2）を使用する代わりに v2.10.3 にアップグレードすることをお勧めします。
 
 ## v2.10.1
 
