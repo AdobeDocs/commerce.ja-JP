@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] リリースノート'
 description: Adobe Commerceからのの最新  [!DNL Live Search]  リリース情報です。
 feature: Services, Search, Release Notes
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,10 @@ ht-degree: 0%
 ## ホステッド サービスの更新
 
 これらのメモでは、バージョン管理されたリリースの外部で公開された更新や、ホストされるサービスの改善について説明します。
+
+_2025 年 2 月 20 日_
+
+![ 新規 ](../assets/new.svg)Commerceでは、複数の単語の同義語をサポートしています。 [ 詳細情報 ](synonyms-type.md#multi-word-synonym-behavior)。 複数語のシノニムのサポートは、この 2 月 20 日のリリース日より後でのみ使用できます。 既存の複数ワードの同義語を使用する場合は、完全な再インデックスが必要になります。これは、[ サポートチケットを作成 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) してリクエストできます。
 
 _2025 年 1 月 31 日_
 

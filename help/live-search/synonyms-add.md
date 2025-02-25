@@ -1,7 +1,8 @@
 ---
 title: シノニムの追加
 description: 同義語  [!DNL Live Search]  追加して、検索リクエストに対する応答を改善します。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -30,7 +31,6 @@ ht-degree: 0%
 1. デフォルトの **双方向** オプションを受け入れます。
 
    ![ 双方向類義語の追加 ](assets/synonym-add-two-way.png)
-
 
 1. 照合する **キーワード** 用語または語句を入力します。
 1. キーワードの同義語として追加する **拡張** 用語を入力します。 複数の用語はコンマで区切ります。
