@@ -4,9 +4,10 @@ description: Web サイトに自動で堅牢で安全な支払  [!DNL Payment Se
 role: User
 level: Intermediate
 feature: Payments, Checkout
-source-git-commit: 95d86654ad185b2c37a59777a29f6de1b0091ad7
+exl-id: 1d41f86a-f874-48df-9173-9cf9f07e6d79
+source-git-commit: 62b708f79ac011ef33b37f67384df7c94571ced2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,6 +52,12 @@ ht-degree: 0%
 
 リリースおよびバージョン固有の情報について詳しくは、[ ライフサイクルポリシー ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) および [[!DNL Payment Services]  リリースノート ](release-notes.md) ページを参照してください。
 
+### どの [!DNL Payment Services] のオプションが適切ですか？
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
+
+[!DNL Payment Services] 拡張機能の設定について詳しくは、[ 接続 ](connect.md) を参照してください。
+
 ### 使用可能なクレジットカードおよび通貨
 
 [!DNL Payment Services] は、（利用可能な [ 国の通貨を受け入れ ](#availability) す。 詳しくは、[ 通貨の設定 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) を参照してください。
@@ -71,9 +78,3 @@ PayPal がサポートする支払い方法を確認するには、その [ 支�
 1. ライブ モードで [!DNL Payment Services] を有効化して、ライブ支払の処理を開始します。
 
 すべての手順を取得し、オンボーディングプロセスを開始するには、[ オンボード  [!DNL Payment Services]](onboard.md) を参照してください。
-
-## [!DNL Payment Services] デモ
-
-[!DNL Payment Services] について詳しくは、このビデオをご覧ください。
-
->[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)

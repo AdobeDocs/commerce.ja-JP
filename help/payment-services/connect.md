@@ -2,7 +2,8 @@
 title: インスタンスの接続
 description: API キーと秘密鍵を使用してCommerce インスタンスを接続し、設定内のデータスペースを指定します。
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f2b3be02-e9dd-4bca-b9e4-c80a56bf8691
+source-git-commit: 16bd0e7ed1e8982e1571e2593115824a2004b7dc
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -12,6 +13,8 @@ ht-degree: 0%
 # インスタンスの接続
 
 [!DNL Payment Services] はCommerce サービスを活用し、SaaS （software as a service）としてデプロイされます。 API キーと秘密鍵を使用してCommerce インスタンスを接続し、[Commerce サービスコネクタ ](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html) を使用して、設定のデータスペースを指定します。 **この接続は 1 回だけ設定します。**
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447835)
 
 >[!INFO]
 >
