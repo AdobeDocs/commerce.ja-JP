@@ -4,7 +4,7 @@ user-guide-description: このガイドでは、Adobe Commerceのを使用する
 breadcrumb-title: '[!DNL Product Recommendations] ガイド'
 role: Admin
 feature: Services, Recommendations
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 13%
