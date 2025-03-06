@@ -3,9 +3,10 @@ title: Commerce サービスコネクタ
 description: 実稼動およびサンドボックス API キーを使用して、Adobe CommerceまたはMagento Open Source インスタンスをサービスに統合する方法について説明します。
 feature: Services, Saas
 role: Admin, User
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
+source-git-commit: 5e2c32b66407585317e22649184337e2aace9bad
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -96,6 +97,8 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 - [ サポートリクエストを送信 ](https://experienceleague.adobe.com/home?support-tab=home#support) して追加のテストデータスペースをリクエストし、追加のデータスペースに対するビジネス上の正当性を示します。 このリクエストは承認される場合があります。
 
 Adobe支払いサービスを利用しているMagento Open Sourceのお客様は、追加のデータスペースをリクエストする場合もあります。 テストデータスペースをリクエストするには、[ サポートリクエスト ](https://experienceleague.adobe.com/home?support-tab=home#support) を送信する前に、支払いチームに追加のデータスペースに関する事前承認を問い合わせてください。
+
+複数のクラウドプロジェクトまたはオンプレミス（実稼働/実稼働）インストールを所有しているお客様は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/home?support-tab=home#support) することで、各プロジェクトまたはインスタンスに対して追加の実稼働およびテスト用データスペースをリクエストすることもできます。
 
 ### SaaS プロジェクトの選択または作成 {#createsaasenv}
 
