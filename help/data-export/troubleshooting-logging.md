@@ -2,9 +2,10 @@
 title: ログの確認とトラブルシューティング
 description: データの書き出しログと saas [!DNL data export]  書き出しログを使用してエラーのトラブルシューティングを行う方法を説明します。
 feature: Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d022756f-6e75-4c2a-9601-31958698dc43
+source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 | ログ名 | ファイル名 | 説明 |
 |-----------------| ----------| -------------|
-| SaaS データ エクスポート ログ | `commerce-data-export.log` | エンティティトリガーや完全な再同期イベントなど、データの書き出しアクティビティに関する情報を提供します。  各ログレコードは特定の構造を持ち、フィード、操作、ステータス、経過時間、プロセス ID、呼び出し元に関する情報を提供します。 |
+| SaaS データ エクスポート ログ | `commerce-data-export.log` | エンティティトリガーや完全な再同期イベントなど、データのエクスポート アクティビティに関する情報を提供します。  各ログレコードは特定の構造を持ち、フィード、操作、ステータス、経過時間、プロセス ID、呼び出し元に関する情報を提供します。 |
 | SaaS データ エクスポート エラーログ | `data-export-errors.log` | データ同期処理中に発生したエラーのエラーメッセージとスタックトレースを提供します。 |
 | SaaS エクスポート ログ | `saas-export.log` | Commerce SaaS サービスに送信されるデータに関する情報を提供します。 |
 | SaaS エクスポート エラーログ | `saas-export-errors.log` | Commerce SaaS サービスにデータを送信する際に発生するエラーについて説明します。 |
@@ -36,8 +37,8 @@ Adobe Commerce サービスで予期されたデータが表示されない場�
    "feed": "<feed name>",
    "operation": "<executed operation>",
    "status": "<status of operation>",
-   "elapsed": "<time elaspsed from script run>",
-   "pid": "<proccess id who executed `operation`>",
+   "elapsed": "<time elapsed from script run>",
+   "pid": "<process id that executed `operation`>",
    "caller": "<who called this `operation`>"
 } [] []
 ```
@@ -50,10 +51,10 @@ Adobe Commerce サービスで予期されたデータが表示されない場�
 
 | 操作 | 説明 | 呼び出し元の例 |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| 完全同期 | フル同期では、特定のフィードに対して、すべてのデータを収集し、SaaS に送信します。 | `bin/magento saas:resync --feed=products` |
-| 部分再インデックス | 部分同期では、特定のフィード内で更新されたエンティティについてのみ、データを収集して SaaS に送信します。 このログは、更新されたエンティティが存在する場合にのみ表示されます。 | `bin/magento cron:run --group=index` |
-| 失敗した項目を再試行 | Commerce アプリケーションまたはサーバーエラーが原因で前回の同期処理に失敗した場合に、SaaS への特定のフィードの項目を再送信します。 このログは、失敗した項目が存在する場合にのみ存在します。 | `bin/magento cron:run --group=saas_data_exporter` （「*_data_exporter」 cron グループのいずれか） |
-| 完全同期（レガシー） | レガシーエクスポートモードでの特定フィードの完全同期。 | `bin/magento saas:resync --feed=categories` |
+| 完全同期 | 特定のフィードのすべてのデータを収集し、SaaS に送信します。 | `bin/magento saas:resync --feed=products` |
+| 部分再インデックス | 特定のフィードで更新されたエンティティのみのデータを収集し、SaaS に送信します。 このログは、更新されたエンティティが存在する場合にのみ表示されます。 | `bin/magento cron:run --group=index` |
+| 失敗した項目を再試行 | Commerce アプリケーションまたはサーバーエラーが原因で前回の同期処理に失敗した場合は、特定のフィードの項目を SaaS に再送信します。 このログは、失敗した項目が存在する場合にのみ存在します。 | `bin/magento cron:run --group=saas_data_exporter` （「*_data_exporter」 cron グループのいずれか） |
+| 完全同期（レガシー） | レガシ エクスポート モードの特定のフィードに対して、すべてのデータを収集し、SaaS に送信します。 | `bin/magento saas:resync --feed=categories` |
 | 部分再インデックス（レガシー） | レガシー書き出しモードの特定のフィードに対して、更新されたエンティティを SaaS に送信します。 このログは、更新されたエンティティが存在する場合にのみ表示されます。 | `bin/magento cron:run --group=index` |
 | 部分同期（レガシー） | レガシー書き出しモードの特定のフィードに対して、更新されたエンティティを SaaS に送信します。 このログは、更新されたエンティティが存在する場合にのみ表示されます。 | `bin/magento cron:run --group=saas_data_exporter` （「*_data_exporter」 cron グループのいずれか） |
 
@@ -123,12 +124,12 @@ Adobe Commerce ログをNew Relicに保存する場合は、解析ルールを�
 
 ## トラブルシューティング
 
-Commerce Services でデータが見つからないか間違っている場合は、ログを調べて、Adobe Commerce インスタンスからCommerce Service Platform への同期中に問題が発生したかどうかを確認します。 必要に応じて、拡張ログを使用して、トラブルシューティング用の情報をログに追加します。
+Commerce Services のデータが見つからない場合や誤っている場合は、ログを調べて、CommerceからAdobe Commerce Services Platform への同期中に発生したエラーに関するメッセージを確認します。 必要に応じて、拡張ログを使用して、トラブルシューティング用の情報をログに追加します。
 
-- commerce-data-export-errors.log – 収集フェーズでエラーが発生した場合
-- saas-export-errors.log – 送信フェーズでエラーが発生したかどうか
+- データ書き出しエラーログ（`commerce-data-export-errors.log`）には、収集段階で発生したエラーが記録されます。
+- SaaS 書き出しエラーログ（`saas-export-errors.log`）は、送信段階で発生したエラーをキャプチャします。
 
-設定やサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を記載した [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) を送信します。
+設定やサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を記載した [ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) を送信します。
 
 ### カタログ同期の問題を解決 {#resolvesync}
 
@@ -143,26 +144,19 @@ Commerce Services でデータが見つからないか間違っている場合�
 
 #### 同期が実行されていません
 
-同期がスケジュールに従って実行されていない場合や、何も同期されていない場合は、この [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) の記事を参照してください。
+同期がスケジュールに従って実行されていない場合や、何も同期されていない場合は、この [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) の記事を参照してください。
 
 #### 同期できませんでした
 
-カタログ同期のステータスが **失敗** の場合は、[ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) を送信します。
+カタログ同期のステータスが **失敗** の場合は、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) を送信します。
 
 ## 拡張ログ
 
-その他のログ情報については、環境変数を使用して、トラッキングやトラブルシューティング用に追加のデータでログを拡張できます。
-
-`var/log/` ディレクトリには 2 つのログファイルがあります。
-
-- commerce-data-export-errors.log – 収集フェーズでエラーが発生した場合
-- saas-export-errors.log – 送信フェーズでエラーが発生したかどうか
-
-環境変数を使用して、トラッキングやトラブルシューティングのために追加データでログを拡張できます。
+環境変数を使用して、トラッキングやトラブルシューティング用の追加データでログを拡張します。 次の例に示すように、data export CLI コマンドを実行する際に、環境変数をコマンドラインに追加します。
 
 ### フィードペイロードを確認
 
-フィードを再同期する際に環境変数を追加して、フィード ペイロード `EXPORTER_EXTENDED_LOG=1`SaaS 書き出しログに含めます。
+フィードを再同期する際に `EXPORTER_EXTENDED_LOG=1` 環境変数を追加して、フィード ペイロードを SaaS 書き出しログに含めます。
 
 ```shell script
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
