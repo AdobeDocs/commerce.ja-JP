@@ -2,7 +2,8 @@
 title: データを収集
 description: イベントで  [!DNL Product Recommendations] のデータを収集する方法を説明します。
 feature: Services, Recommendations, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
+source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -118,14 +119,14 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 | レコメンデーションタイプ | イベント | ページ |
 | --- | --- | --- |
 | 最も頻繁に閲覧された | `page-view`<br>`product-view` | 製品詳細ページ |
-| 最も多く購入された | `page-view`<br>`complete-checkout` | 買い物かご/チェックアウト |
+| 最も多く購入された | `page-view`<br>`place-order` | 買い物かご/チェックアウト |
 | 買い物かごに追加済み | `page-view`<br>`add-to-cart` | 製品詳細ページ <br> 製品一覧ページ <br> 買い物かご <br> お気に入りリスト |
 | がこれを表示し、が表示されました | `page-view`<br>`product-view` | 製品詳細ページ |
 | これを閲覧し、次を購入 | 製品のレシピ | `page-view`<br>`product-view` | 製品詳細ページ <br> 買い物かご/チェックアウト |
 | これを購入し、それを購入しました | 製品のレシピ | `page-view`<br>`product-view` | 製品詳細ページ |
 | トレンド | `page-view`<br>`product-view` | 製品詳細ページ |
 | コンバージョン：表示から購入 | 製品のレシピ | `page-view`<br>`product-view` | 製品詳細ページ |
-| コンバージョン：表示から購入 | 製品のレシピ | `page-view`<br>`complete-checkout` | 買い物かご/チェックアウト |
+| コンバージョン：表示から購入 | 製品のレシピ | `page-view`<br>`place-order` | 買い物かご/チェックアウト |
 | コンバージョン：買い物かごに表示 | 製品のレシピ | `page-view`<br>`product-view` | 製品詳細ページ |
 | コンバージョン：買い物かごに表示 | 製品のレシピ | `page-view`<br>`add-to-cart` | 製品詳細ページ <br> 製品リストページ <br> 買い物かご <br> ウィッシュリスト |
 
