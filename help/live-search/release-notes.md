@@ -3,9 +3,9 @@ title: '[!DNL Live Search] リリースノート'
 description: Adobe Commerceからのの最新  [!DNL Live Search]  リリース情報です。
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: eb016fa8e53cfb9d035d73979495171feccb764f
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 _2025 年 2 月 20 日_
 
-![ 新規 ](../assets/new.svg)Commerceでは、複数の単語の同義語をサポートしています。 [ 詳細情報 ](synonyms-type.md#multi-word-synonym-behavior)。 複数語のシノニムのサポートは、この 2 月 20 日のリリース日より後でのみ使用できます。 既存の複数ワードの同義語を使用する場合は、完全な再インデックスが必要になります。これは、[ サポートチケットを作成 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) してリクエストできます。
+![ 新規 ](../assets/new.svg)Commerceでは、複数の単語の同義語をサポートしています。 [ 詳細情報 ](synonyms-type.md#multi-word-synonym-behavior)。 複数語の同義語のサポートは、この 2 月 20 日のリリース日以降にのみ使用できます。 既存の複数ワードの同義語を使用する場合は、完全な再インデックスが必要になります。これは、[ サポートチケットを作成 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) してリクエストできます。
 
 _2025 年 1 月 31 日_
 
@@ -73,6 +73,15 @@ _2024 年 5 月 31 日_
 _2023 年 10 月 27 日_
 
 ![ 新規 ](../assets/new.svg)[!DNL Live Search] PLP ウィジェットがカラースウォッチをサポートするようになりました。
+
+## [!DNL Live Search] 4.3.0
+
+_2025 年 3 月 11 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 修正 ](../assets/fix.svg) [!DNL Live Search] Adobe Commerce 2.4.8-beta2 を実行するインストールで、PHP 8.4 がサポートされるようになりました。
+![ 修正 ](../assets/fix.svg) 検索アダプターが `psr/http-message:2.0` と互換性がなかった問題を修正しました。
 
 ## [!DNL Live Search] 4.2.3
 
@@ -173,13 +182,11 @@ _2023 年 11 月 13 日_
 
 アップグレード後、変更を実稼動環境にプッシュする前に、QA またはステージング環境で、更新された設定をテストします。
 
-## 以前のバージョン
-
 +++3.1.1 以前
 
-## [!DNL Live Search] 3.1.1
+### [!DNL Live Search] 3.1.1
 
-_2023 年 9 月 15 日（PT）_
+_2023 年 9 月 15 日_
 
 [!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
 
@@ -194,7 +201,7 @@ _2023 年 9 月 15 日（PT）_
 ![ 新規 ](../assets/new.svg) カテゴリプレビューには、選択したカテゴリのみが表示されます。
 ![ 新規 ](../assets/new.svg)AEM CIF[ ポップオーバーウィジェット ](https://github.com/adobe/aem-cif-guides-venia/pull/319) および [PLP ウィジェット ](https://github.com/adobe/aem-cif-guides-venia/pull/320) コンポーネントを使用すると、AEM サイトで [!DNL Live Search] を活用できます。
 
-### 更新
+#### 更新
 
 ![ 修正 ](../assets/fix.svg) 製品および価格フィードのテーブルサイズが大幅に縮小されました。 テーブル `catalog_data_exporter_products` および `catalog_data_exporter_product_prices` では、大幅なサイズ削減が必要です。
 ![ 修正 ](../assets/fix.svg) 「ルール」タブの名前が「検索ルール」に変更されました
@@ -206,23 +213,23 @@ _2023 年 9 月 15 日（PT）_
 ![ 修正 ](../assets/fix.svg) 「ランキングタイプ」は「インテリジェントランキング」に名前が変更されました
 ![ 修正 ](../assets/fix.svg) 軽微なバグ修正
 
-## [!DNL Live Search] 3.1.0
+### [!DNL Live Search] 3.1.0
 
 _2023 年 9 月 1 日_
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
-### 更新
+#### 更新
 
-![ 修正 ](../assets/fix.svg) 製品一覧表示ウィジェットが更新され、[Catalog Service API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/) を使用するようになりました。
+![ 修正 ](../assets/fix.svg) 製品一覧表示ウィジェットが更新され、[Catalog Service API](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) を使用するようになりました。
 
-## [!DNL Live Search] 3.0.2
+### [!DNL Live Search] 3.0.2
 
 _2023 年 8 月 7 日_
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
-### 新機能
+#### 新機能
 
 ![ 新規 ](../assets/new.svg) 次の値が `storeDetails` オブジェクトに追加されました。
 
@@ -232,7 +239,7 @@ _2023 年 8 月 7 日_
 - 「グリッドのデフォルト値の 1 ページあたりの製品数」
 - ストアの言語
 
-### 更新
+#### 更新
 
 ![ 修正 ](../assets/fix.svg) 高度なデータ取得をサポートするために、カタログサービスモジュールがメタパッケージに追加されました。
 ![ 修正 ](../assets/fix.svg) 製品一覧表示ページウィジェットを使用したときに、「**マイアカウント**」ページナビゲーションが表示されなくなりました。
@@ -241,17 +248,17 @@ _2023 年 8 月 7 日_
 
 実稼動環境にプッシュする前に、アップグレードとテストを行うことをお勧めします。 テスト環境の結果を確認した後、ピーク外の時間に実稼動環境をアップグレードすることを検討します。
 
-### 制限事項
+#### 制限事項
 
 Live Search Product Listing Page Widget を使用すると、Google Tag Manager が失敗する。 Google Tag Manager が必要な場合は、デフォルトの検索アダプタを使用します。
 
-## [!DNL Live Search] 3.0.1
+### [!DNL Live Search] 3.0.1
 
 _2023 年 3 月 14 日_
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
-### 新機能
+#### 新機能
 
 ![ 新規 ](../assets/new.svg) ルールプレビューの製品項目カード
 ![ 新規 ](../assets/new.svg) 製品一覧ペ [ ジウィジェット ](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
@@ -265,7 +272,7 @@ _2023 年 3 月 14 日_
 ![ ルール ](../assets/new.svg) 新しい [ インテリジェントランキング ](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add)
 ![ 新規 ](../assets/new.svg) [!DNL Live Search] は、Commerce（旧称：マルチSourceインベントリ、MSI）で完全な [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) 機能をサポートするようになりました。 完全なサポートを有効にするには、依存関係モジュールをバージョン 102.2.0 以降に [ 更新 ](install.md#update) する必要 `commerce-data-export` あります。
 
-### 更新
+#### 更新
 
 ![ 修正 ](../assets/fix.svg) 「Configure Rules」で職階が自動的にソートされるようになりました。
 ![ 修正 ](../assets/fix.svg) 既存のイベントを削除すると、プレビューが更新されるようになりました
@@ -273,7 +280,7 @@ _2023 年 3 月 14 日_
 ![ 修正 ](../assets/fix.svg) ファセットを削除する「タイプを選択」セレクター
 ![ 修正 ](../assets/fix.svg) 未保存のルールに新しい「編集中」ステータスを追加しました
 
-### 修正点
+#### 修正点
 
 ![ 修正 ](../assets/fix.svg) 保存中に未完了のイベントがある場合のサーバーエラーを修正しました
 ![ 修正 ](../assets/fix.svg) 複数のイベントが存在する場合の、特定のイベントの正しい削除を修正しました
@@ -281,8 +288,6 @@ _2023 年 3 月 14 日_
 ![ 修正 ](../assets/fix.svg) 詳細からの 2 回目の「編集」クリックで修正されました。ページ [!DNL Live Search] リロードが必要です
 ![ 修正 ](../assets/fix.svg) 同義語：ユーザーが入力をクリックアウトしても、フォーカスをフィールドに戻すことができない問題を修正しました
 ![ 修正 ](../assets/fix.svg) その他のマイナーなバグ修正とパフォーマンスの更新
-
-
 ![ バグ ](../assets/bug.svg) – 「あなたにお勧め」によるランキングは、ライブ検索ウィジェット内でのみサポートされています。 デフォルトの Luma およびPWAの検索機能ではサポートされません。
 ![ バグ ](../assets/bug.svg) - カスタムの価格属性ファセットが Luma で正しくレンダリングされませんが、API が適切にフィルタリングします。
 
@@ -290,7 +295,7 @@ _2023 年 3 月 14 日_
 
 実稼動環境にプッシュする前に、アップグレードとテストを行うことをお勧めします。 テスト環境の結果を確認した後、ピーク外の時間に実稼動環境をアップグレードすることを検討します。
 
-## [!DNL Live Search] 2.0.5
+### [!DNL Live Search] 2.0.5
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
