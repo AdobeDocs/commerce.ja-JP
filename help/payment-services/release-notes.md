@@ -2,13 +2,13 @@
 title: '[!DNL Payment Services] リリースノート'
 description: すべてのリリースについて詳しくは、リリースノ  [!DNL Payment Services]  トを参照してください。
 feature: Payments, Release Notes
-source-git-commit: 313d69a7f791153fd56a1492f9012776cea1f3df
+exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
+source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
 workflow-type: tm+mt
-source-wordcount: '3392'
+source-wordcount: '3644'
 ht-degree: 0%
 
 ---
-
 
 # リリースノート
 
@@ -89,6 +89,33 @@ _2021 年 6 月 28 日_
 ![ 新規 ](../assets/new.svg)<!-- Issue PAY-2761 --> 列設定コントロールを使用して、[ 注文支払いステータスレポート ](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) および [ 支払いレポート ](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) に表示されるデータをカスタマイズできるようになりました。
 
 +++
+
+## v2.11.0
+
+_2025 年 3 月 13 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+
+![ 新機能 ](../assets/new.svg)<!-- PAY-5938 --> 現在は、マーチャント [!DNL Payment Services] 支払い設定を管理して、ビジネスの柔軟性を最大限に高めることができます。 このバージョンにより、マーチャントがサポートする地域とブランドに [ 複数の PayPal アカウント ](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts) を添付する機能が向上します。 アドビのセールスチームは、web サイトとストアの表示範囲を設定するためのオンボーディングリンクを提供できます。
+
+![ 新規 ](../assets/new.svg)<!-- PAY-5968 --> 現在は、[!DNL Payment Services] が **PayPal マーチャント ID** および **PayPal マーチャントステータス** 値で管理者設定を更新しています。 これらの値により、マーチャントは PayPal アカウントのステータスをより明確に把握できます。
+
+![ 修正された問題 ](../assets/fix.svg)<!-- PAY-5816 --> バージョン v2.9.0 のすべての注文配置でエラーが発生していた問題を解決することで、[!DNL Payment Services] の通常の注文機能が復元されました。
+
+![ 問題を修正 ](../assets/fix.svg)<!-- PAY-5825 -->Apple Pay ミニカートが、ログインしているお客様に対して誤った推定合計 URL を使用していた問題を修正しました。 現在は、正確 [!DNL Payment Services] 合計計算が保証されています。
+
+![ 修正された問題 ](../assets/fix.svg)<!-- PAY-5826 --> 見積もりステータスを `inactive` に変更する際に HTTP 500 エラーが発生していた問題を解決し、注文管理の信頼性を向上しました。
+
+![ 修正された問題 ](../assets/fix.svg)<!-- PAY-5849 --> 1 未満の 10 進数の数量に対して `LineItemProvider` が例外をスローした問題を修正しました。 現在、[!DNL Payment Services] は分数のサポートを強化しています。
+
+![ 問題を修正 ](../assets/fix.svg)<!-- PAY-5868 --> チェックアウト中のギフトカードの金額エラーを修正しました。 チェックアウトプロセス中に [!DNL Payment Services] が正確な値を保証するようになりました。
+
+![ 問題を修正 ](../assets/fix.svg)<!-- PAY-5911 --> 非 [!DNL Payment Services] ールのオンライン支払い方法を使用して注文を行った場合に、出荷作成時に発生するエラーを解決し、全体的な信頼性を向上しました。
+
+![ 修正された問題 ](../assets/fix.svg)<!-- PAY-5954 --> [!DNL Payment Services] では、ウォレットで別のクレジットカードが選択されている場合にApple Pay が注文に失敗する問題を解決することで、よりスムーズなチェックアウトエクスペリエンスを提供するようになりました。
+
+![ 修正された問題 ](../assets/fix.svg)<!-- PAY-5971 --> Apple Pay が失敗した場合に [!DNL Payment Services] が注文レビューページにリダイレクトされなくなり、不要なチェックアウトの中断を防ぎました。
 
 ## v2.10.3
 
