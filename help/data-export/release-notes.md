@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 7e19d42f4e064cfc4efd7c275546725795b60310
+source-git-commit: e30210e6aac469929e4767e3747bd819bc10b9f4
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '987'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ ht-degree: 0%
 >SaaS データ書き出し拡張機能は、Live Search、Product Recommendations、Catalog Service と共に自動的にインストールされるモジュールのコレクションです。 Composer を使用すると、システムにインストールされているバージョンを確認できます。 場合によっては、Commerce サービスのバージョンを更新せずに修正点または新機能を取得するように、システムのデータエクスポート拡張機能をアップグレードする必要があります。
 
 ## 現在のメジャーバージョン
+
+## 103.3.21 リリース
+
+![ 修正 ](../assets/new.svg) 指定された製品 SKU のリストに基づいて、`product`、`productOverrides`、`productAttributes` フィードを部分的に同期する機能が追加されました。 新しい機能を使用するには、`bin/magento saas:resync --feed=<FEED_NAME>` CLI コマンドに `--by-ids` オプションを追加します。 <!--MDEE-606-->
+![ 修正 ](../assets/fix.svg) 非推奨（廃止予定）の機能に対処することで、PHP 8.4 との互換性に関する潜在的な問題を軽減しました。<!--MDEE-1002-->
 
 ## 103.3.20 リリース
 
