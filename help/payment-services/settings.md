@@ -4,9 +4,10 @@ description: インストール後、ホームで  [!DNL Payment Services]  を�
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 793bc59d-1581-4c78-bafe-a43b9e5fb1bc
+source-git-commit: 00ba1ec70a3042780071003f5c0b8d1cc29c49ed
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2420'
 ht-degree: 0%
 
 ---
@@ -302,5 +303,7 @@ _設定_ で設定を変更した場合（例えば、Apple Pay、Venmo、また
 ま [!UICONTROL Payment Services]、web サイトレベルの **one** マーチャントアカウント内で複数の PayPal アカウントを使用できます。 例えば、複数の国（異なる [ 通貨 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency) を使用している）で店舗を運営している場合や、ビジネスの一部で _すべて_ ではなくAdobe Commerceを使用したい場合は、複数の PayPal アカウントを使用するようにマーチャントアカウントを設定できます。
 
 Web サイト、ストア、ストア表示の階層について詳しくは、[ サイト、ストア、表示範囲 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) を参照してください。
+
+CLI を使用した複数の PayPal アカウントのスコープの設定について詳しくは、[ コマンドライン設定 ](configure-cli.md#configure-scope-via-cli) を参照してください。
 
 営業担当は、マーチャントアカウントに新しい [ 範囲 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) を作成し、PayPal を使用して追加のサイトをオンボーディングできるので、表示するように設定した PayPal ボタンをサイトに表示できます。 Web サイトで複数の PayPal アカウントを使用する場合は、販売担当者にお問い合わせください。

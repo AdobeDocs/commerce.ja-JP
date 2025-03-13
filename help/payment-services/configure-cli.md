@@ -4,9 +4,10 @@ description: インストール後、コマンドラインインターフェイ�
 role: Admin, Developer
 level: Intermediate
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -88,6 +89,32 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 再インデックスとインデクサーについて詳しくは、開発者向けドキュメントの [ インデクサーの管理 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) に関するトピックを参照してください。
+
+## CLI を使用したスコープの設定
+
+[!DNL Payment Services] では、マーチャントは [ 複数の PayPal アカウント ](settings.md#use-multiple-paypal-accounts) を使用できます。 これで、CLI を使用してこれらのアカウントのスコープを変更できます。
+
+スコープを `website` レベルに設定するには、次を実行します。
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level website
+```
+
+スコープを `store` レベルに設定するには、次を使用します。
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level store
+```
+
+>[!TIP]
+>
+> 範囲を店舗レベルに変更する場合は、[!DNL Payment Services] の販売担当者にお問い合わせください。
+
+範囲を変更したら、キャッシュをフラッシュして変更を表示します。
+
+```bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
 
 ## L2/L3 処理の設定
 

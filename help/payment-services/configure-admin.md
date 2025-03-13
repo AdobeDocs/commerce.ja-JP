@@ -4,9 +4,10 @@ description: インストール後、ストア設定の管理  [!DNL Payment Ser
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: a4da36e2-4316-42d5-ae30-cf078f440444
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -34,6 +35,7 @@ ht-degree: 0%
    >
    > Commerce サービスコネクタでデータスペース ID を変更する必要がある場合は、[!DNL Payment Services] ID をリセットする必要があります。 「**支払いサービス ID をリセット**」をクリックして、サンドボックスまたは実稼動 ID をリセットします。 [!DNL Payment Services] ID をリセットした場合は、再度オンボーディングする必要があります。
 
+1. **[!UICONTROL PayPal Merchant ID]** と **[!UICONTROL PayPal Merchant Status]** の値は、[!DNL Payment Services] ダッシュボードに初めてアクセスすると、PayPal によって自動的に提供されます。
 1. **ソフト記述子** （顧客トランザクションの銀行取引明細書に表示されてストア/ブランド/カタログ間を区別するカスタム値）の場合は、カスタムテキスト（最大 22 文字）をテキストフィールドに追加して、`Soft descriptor` または既存の値に置き換えます。
 1. 「**[!UICONTROL Save Config]**」をクリックして変更を保存します。
 1. **[!UICONTROL System]** / **[!UICONTROL Cache Management]** に移動し、**[!UICONTROL Flush Cache]** をクリックして、無効なキャッシュをすべて更新します。
@@ -48,6 +50,8 @@ ht-degree: 0%
 | [!UICONTROL Method] | ストア表示 | ストアのメソッド（環境）を設定します。 オプション：[!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | ストア表示 | サンドボックスオンボーディング中に自動生成されるサンドボックスマーチャント ID。 |
 | [!UICONTROL Payment Services Production ID] | ストア表示 | 実稼動（ライブ）オンボーディング中に自動生成される実稼動マーチャント ID。 |
+| [!UICONTROL PayPal Merchant ID] | ストア表示 | PayPal アカウントの作成時に生成される、一意の PayPal マーチャントアカウント ID。 |
+| [!UICONTROL PayPal Merchant Status] | ストア表示 | PayPal マーチャント ID のステータス。 |
 | [!UICONTROL Soft Descriptor] | web サイトまたはストア表示 | Web サイトおよびストアビューにソフト記述子を追加して、ブランド、ストアまたは製品ラインを区別する顧客トランザクションに情報を追加します。 |
 
 ## [!UICONTROL Credit Card Fields]
