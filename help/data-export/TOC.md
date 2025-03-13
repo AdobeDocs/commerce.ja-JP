@@ -4,9 +4,9 @@ user-guide-description: 'このガイドでは、Adobe Commerce SaaS サービ�
 breadcrumb-title: SaaS サービスの [!DNL Data Export] ガイド
 role: Admin
 feature: Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 54474408897c2b8462a064400fa53a2e9040db47
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '78'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 - スケジュールとパフォーマンス {#performance} のエクスポート
    - [データ量と送信時間の推定](estimate-data-volume-sync-time.md)
    - [書き出しパフォーマンスの向上](customize-export-processing.md)
-- [CLI コマンド リファレンス](data-export-cli-commands.md)
+- [Commerce CLI を使用したフィードの同期](data-export-cli-commands.md)
 - [ログの確認とトラブルシューティング](troubleshooting-logging.md)
 - [SaaS データ書き出し拡張機能の管理](manage-extension.md)
 - 拡張 {#extensibility}

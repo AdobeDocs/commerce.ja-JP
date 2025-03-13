@@ -2,9 +2,10 @@
 title: データを SaaS データ書き出しと同期
 description: Adobe Commerce インスタンスと接続された SaaS サ  [!DNL SaaS Data Export]  ビスとの間でデータを収集および同期する方法について説明します。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
+source-git-commit: 55c433f36b122813e8fc9136a7efbb869246b7f5
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -79,7 +80,7 @@ Adobe Commerce インスタンスをCommerce サービスに接続した後、�
 
 - 管理者ユーザーは、同期の進行状況を表示および追跡し、データに関する情報を [ データ管理ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) から取得できます。
 
-- Commerce アプリケーションサーバーへのアクセス権を持つ開発者、システムインテグレーター、管理者は、Adobe Commerce コマンドラインツール（CLI）を使用して同期プロセスとデータフィードを管理できます。 [ データ書き出しコマンドリファレンス ](data-export-cli-commands.md) を参照してください。
+- Commerce アプリケーションサーバーへのアクセス権を持つ開発者、システムインテグレーター、管理者は、Adobe Commerce コマンドラインツール（CLI）を使用して同期プロセスとデータフィードを管理できます。 [Commerce CLI を使用した同期操作の管理 ](data-export-cli-commands.md) を参照してください。
 
 ### Commerce アプリケーション設定の確認
 

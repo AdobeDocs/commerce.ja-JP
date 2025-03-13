@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: e30210e6aac469929e4767e3747bd819bc10b9f4
+source-git-commit: 14231826dba842edb908005ea43b1893a324c68f
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,12 @@ ht-degree: 0%
 
 ## 103.3.21 リリース
 
-![ 修正 ](../assets/new.svg) 指定された製品 SKU のリストに基づいて、`product`、`productOverrides`、`productAttributes` フィードを部分的に同期する機能が追加されました。 新しい機能を使用するには、`bin/magento saas:resync --feed=<FEED_NAME>` CLI コマンドに `--by-ids` オプションを追加します。 <!--MDEE-606-->
+![ 修正 ](../assets/new.svg) 指定された製品 SKU のリストに基づいて、`products`、`productOverrides`、`productAttributes` フィードを部分的に同期する機能が追加されました。 新しい機能を使用するには、resync CLI コマンドに `--by-ids` オプションを追加します。<!--MDEE-606-->
+
+```shell
+bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
+```
+
 ![ 修正 ](../assets/fix.svg) 非推奨（廃止予定）の機能に対処することで、PHP 8.4 との互換性に関する潜在的な問題を軽減しました。<!--MDEE-1002-->
 
 ## 103.3.20 リリース
