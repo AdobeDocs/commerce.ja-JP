@@ -3,9 +3,9 @@ title: '[!DNL Payment Services] リリースノート'
 description: すべてのリリースについて詳しくは、リリースノ  [!DNL Payment Services]  トを参照してください。
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
+source-git-commit: 0098e5bab2ea72f9abd7c846d49d5ee4d523ad73
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3681'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,14 @@ _2021 年 6 月 28 日_
 ![ 新規 ](../assets/new.svg)<!-- Issue PAY-2761 --> 列設定コントロールを使用して、[ 注文支払いステータスレポート ](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) および [ 支払いレポート ](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) に表示されるデータをカスタマイズできるようになりました。
 
 +++
+
+## v2.11.1
+
+_2025 年 3 月 14 日_
+
+[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+
+![ 修正された問題 ](../assets/fix.svg)<!-- PAY-5849 --> チェックアウト中に [ 行項目 ](line-items.md) に影響を与えていた問題を修正しました。 [!DNL Payment Services] は、**行項目** のチェックアウトプロセスの信頼性を向上しました。 同様の問題が発生した場合は、[!DNL Payment Services] の販売担当者にお問い合わせください。
 
 ## v2.11.0
 
