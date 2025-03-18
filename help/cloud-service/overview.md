@@ -3,13 +3,13 @@ title: Adobe Commerce as a Cloud Serviceの概要
 description: Adobe Commerce as a Cloud Serviceの主な機能とメリットについて説明します。
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
-source-git-commit: 0a112b1dab0113eb910e2ecdcca21e7e2814e761
+exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
+source-git-commit: 27d08ed9c01923f2144b071ed7418a399b3126eb
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1593'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce as a Cloud Serviceの概要
 
@@ -83,10 +83,13 @@ Adobeには、統合とカスタマイズを構築するための次の開発ツ
 
 ## Commerce財団
 
-Commerce Foundation は、クラウドネイティブな環境でCommerce アプリケーションを管理するための安全な自動ホスティングプラットフォームおよびセルフサービス機能を提供します。 主な機能は次のとおりです。
+Commerce Foundation は、クラウドネイティブな環境でCommerce アプリケーションを管理するための安全な自動ホスティングプラットフォームおよびセルフサービス機能を提供します。
+
+主な機能は次のとおりです。
 
 - オンボーディングの簡素化
 - シームレスなアップグレード
+- サードパーティの統合
 
 ### オンボーディングの簡素化
 
@@ -103,6 +106,10 @@ Cloud 上のAdobe Commerceの一般的なアップグレードプロセスは、
 >[!NOTE]
 >
 >Adobeでは、すべての更新に対して後方互換性が保証されます。 つまり、更新が適用されても、[API ファースト拡張機能 ](https://developer.adobe.com/commerce/extensibility/) モデルに準拠する既存の機能やカスタマイズが損なわれることはありません。
+
+### サードパーティの統合
+
+開発者は、包括的な [GraphQLおよび REST API](https://developer.adobe.com/commerce/services/cloud/guides/) を使用して、Commerce Foundation をサードパーティシステムと統合し、Commerceの機能を拡張できます。
 
 ## Experience Cloudの統合
 
