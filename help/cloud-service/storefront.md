@@ -1,16 +1,18 @@
 ---
 title: ストアフロントの設定
-description: 基礎モードツールを実行して、Adobe Commerce as a Cloud Service ストアフロントを設定する方法を説明します。
+description: 基礎ツールを実行してストアフロントを設定する方法  [!DNL Adobe Commerce as a Cloud Service]  説明します。
 role: Developer
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-
 # ストアフロントの設定
+
+{{accs-early-access}}
 
 次の手順は、`aio commerce init` コマンドを使用してEdge Deliveryを搭載したAdobe Commerce Storefront をすばやく設定する方法を示しています。 このプロセスにより、次の設定が行われます。
 

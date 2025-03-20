@@ -1,18 +1,20 @@
 ---
 title: 共有された責任
-description: Adobe Commerce as a Cloud Service プロジェクトに関与する各パーティのセキュリティ責任について説明します。
+description: プロジェクトに関与する各パーティのセキュリティ責任について説明  [!DNL Adobe Commerce as a Cloud Service]  ます。
 role: Admin, Architect, Leader
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-
 # 共有責任セキュリティと運用モデル
 
-Adobe Commerce as a Cloud Serviceは、共通の責任セキュリティと運用モデルに基づくオンデマンドサービスです。 これらの責務は、Adobeとお客様の間で共有されます。 各パーティは、Adobe Commerce アプリケーションを保護および運用する明確な責任を負います。
+{{accs-early-access}}
+
+[!DNL Adobe Commerce as a Cloud Service] は、責任の共有セキュリティと運用モデルに依存するオンデマンドサービスです。 これらの責務は、Adobeとお客様の間で共有されます。 各パーティは、Adobe Commerce アプリケーションを保護および運用する明確な責任を負います。
 
 >[!BEGINSHADEBOX]
 
@@ -33,8 +35,8 @@ Adobe Commerce as a Cloud Serviceは、共通の責任セキュリティと運�
 | バックエンド CDN WAF ルールの定義 | RA | |
 | バックエンドプラットフォームのWAF ルールのデプロイ | RA | |
 | バックエンド CDN WAF ルールのデプロイ | RA | |
-| Adobe Commerce as a Cloud Serviceのコアバグの修正 | RA | I |
-| Adobe Commerce as a Cloud Service インフラストラクチャパッチのリリース | RA | |
+| [!DNL Adobe Commerce as a Cloud Service] のコアバグの修正 | RA | I |
+| インフラストラクチャ [!DNL Adobe Commerce as a Cloud Service] パッチのリリース | RA | |
 | スケーリング（インフラストラクチャ） | RA | |
 | スケーリング（コアアプリケーション） | RA | |
 | 外部アプリケーションの統合 | | RA |

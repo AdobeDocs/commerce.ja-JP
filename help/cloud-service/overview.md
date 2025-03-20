@@ -1,39 +1,41 @@
 ---
-title: Adobe Commerce as a Cloud Serviceの概要
-description: Adobe Commerce as a Cloud Serviceの主な機能とメリットについて説明します。
+title: '[!DNL Adobe Commerce as a Cloud Service] の概要'
+description: ' [!DNL Adobe Commerce as a Cloud Service] の主な機能とメリットについて説明します。'
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: 27d08ed9c01923f2144b071ed7418a399b3126eb
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce as a Cloud Serviceの概要
+# [!DNL Adobe Commerce as a Cloud Service] の概要
 
-Adobe Commerce as a Cloud Serviceは、企業がデジタルオペレーションを提供して迅速に拡大し、イノベーションを促進できるようにすることで、柔軟性、拡張性、効率性を提供します。 Adobeのクラウドネイティブインフラストラクチャは、トラフィック、注文、カタログ管理に対するピーク時の需要に合わせてリソースを自動的に調整します。
+{{accs-early-access}}
 
-次の図は、Adobe Commerce as a Cloud Serviceを構成する製品を示しています。
+[!DNL Adobe Commerce as a Cloud Service] は、企業がデジタルオペレーションを提供し、迅速に拡大し、イノベーションを促進できるようにすることで、柔軟性、拡張性、効率性を提供します。 Adobeのクラウドネイティブインフラストラクチャは、トラフィック、注文、カタログ管理に対するピーク時の需要に合わせてリソースを自動的に調整します。
 
-![Adobe Commerce as a Cloud Service製品スタック ](./assets/product-stack.svg){align="center" zoomable="yes"}
+次の図は、[!DNL Adobe Commerce as a Cloud Service] を強化する製品を示しています。
+
+![[!DNL Adobe Commerce as a Cloud Service] 製品スタック ](./assets/product-stack.svg){align="center" zoomable="yes"}
 
 >[!BEGINSHADEBOX]
 
-![ 情報 ](assets/Smock_InfoOutline_18_N.svg) Adobe Commerce as a Cloud Service早期アクセスプログラムに参加するには、[ このフォーム ](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5URFZXTE5TUk9PMUw0OFdOWTBNNlI3UTlNMS4u&amp;route=shorturl) に入力してください。
+![ 情報 ](assets/Smock_InfoOutline_18_N.svg) [!DNL Adobe Commerce as a Cloud Service] アーリーアクセス プログラムに参加するには、[ このフォーム ](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5URFZXTE5TUk9PMUw0OFdOWTBNNlI3UTlNMS4u&amp;route=shorturl) に入力してください。
 
 >[!ENDSHADEBOX]
 
 ## アーキテクチャ
 
-Adobe Commerce as a Cloud Serviceのアーキテクチャの概要については、次のビデオを参照してください。 アーキテクチャを示す図をビデオの下に示します。
+[!DNL Adobe Commerce as a Cloud Service] アーキテクチャの概要については、次のビデオを参照してください。 アーキテクチャを示す図をビデオの下に示します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
-次の図は、Adobe Commerce as a Cloud ServiceとすべてのAdobe Experience Cloud ソリューションの間のデータフローを示しています。
+次の図は、[!DNL Adobe Commerce as a Cloud Service] とすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
-![Adobe Commerce as a Cloud Serviceのアーキテクチャ図 ](./assets/data-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service] アーキテクチャ図 ](./assets/data-flow.svg){zoomable="yes"}
 
 ## Commerce ストアフロント
 
@@ -43,7 +45,7 @@ Commerce ストアフロントは、GraphQL API レイヤーを通じてすべ�
 
 >[!NOTE]
 >
->Adobe Commerce as a Cloud Serviceは、Luma ストアフロントをサポートしていません。 Adobe Commerce on Cloud またはオンプレミスから移行する場合は、[ 既存のストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) を参照して、移行のガイダンスを確認してください。
+>[!DNL Adobe Commerce as a Cloud Service] は、Luma ストアフロントをサポートしていません。 Adobe Commerce on Cloud またはオンプレミスから移行する場合は、[ 既存のストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) を参照して、移行のガイダンスを確認してください。
 
 ## マーチャンダイジングサービスと支払いサービス
 
@@ -101,7 +103,7 @@ Commerce インスタンスを作成および管理する方法については�
 
 手動のアップグレードを行わなくても、最新の機能や機能強化にアクセスできます。 新機能やアップデートが継続的に提供されるので、手動でのパッチ適用が不要になり、TCO （総所有コスト）を抑えながら最新の機能に常にアクセスできるようになります。
 
-Cloud 上のAdobe Commerceの一般的なアップグレードプロセスは、バックアップの作成、インスタンスのクローン作成、互換性ツールの実行、コードの競合の修正を含んでいました。 これは、Adobe Commerce as a Cloud Service では不要になりました。 新機能とセキュリティアップデートがリリースされると、Adobeからアプリ内通知が送信されます。 更新が実稼動環境に自動的に適用される前に、サンドボックスインスタンスで新しい機能を評価するための期間は 30 日間です。
+Cloud 上のAdobe Commerceの一般的なアップグレードプロセスは、バックアップの作成、インスタンスのクローン作成、互換性ツールの実行、コードの競合の修正を含んでいました。 それは [!DNL Adobe Commerce as a Cloud Service] にはもう必要ありません。 新機能とセキュリティアップデートがリリースされると、Adobeからアプリ内通知が送信されます。 更新が実稼動環境に自動的に適用される前に、サンドボックスインスタンスで新しい機能を評価するための期間は 30 日間です。
 
 >[!NOTE]
 >
@@ -113,13 +115,13 @@ Cloud 上のAdobe Commerceの一般的なアップグレードプロセスは、
 
 ## Experience Cloudの統合
 
-Adobe Commerce as a Cloud Serviceは、すべてのExperience Cloud ソリューションと統合して、[ パーソナライズされたコマースエクスペリエンスを大規模に ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu) 提供します。
+[!DNL Adobe Commerce as a Cloud Service] は、すべてのExperience Cloud ソリューションと統合して、[ パーソナライズされたコマースエクスペリエンスを大規模に ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu) 提供します。
 
 [Data Connection](../data-connection/overview.md) を使用すると、買い物客の購買行動に関するインサイトを解き放ち、他のAdobe Digital Experience 製品と共に、すべてのチャネルにわたってパーソナライズされたショッピングエクスペリエンスを作成できます。
 
 ## 利点
 
-次の節では、Adobe Commerce as a Cloud Serviceがビジネスリーダーや IT リーダーに提供するメリットについて説明します。
+以下のセクションでは、[!DNL Adobe Commerce as a Cloud Service] がビジネスおよび IT リーダーに提供するメリットについて説明します。
 
 ### ビジネスリーダー
 
@@ -137,7 +139,7 @@ Adobe Commerce as a Cloud Serviceは、すべてのExperience Cloud ソリュー
 
 ## 新機能ソリューション
 
-[ 管理 UI](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) は、バックエンドストアの運用、在庫、価格設定、プロモーション、顧客とのやり取りを管理する機能にアクセスするためのプライマリインターフェイスです。 ただし、Adobe Commerce as a Cloud Serviceは、Adobe Commerce on Cloud やオンプレミスプロジェクトで使用できる一般的な機能の一部に代わる独自のソリューションを提供します。 次の表に、Adobe Commerce as a Cloud Serviceで使用できる機能と置き換えるソリューションを示します。
+[ 管理 UI](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) は、バックエンドストアの運用、在庫、価格設定、プロモーション、顧客とのやり取りを管理する機能にアクセスするためのプライマリインターフェイスです。 ただし、[!DNL Adobe Commerce as a Cloud Service] では、Adobe Commerce on Cloud やオンプレミスプロジェクトで利用できる既知の機能の一部に代わる独自のソリューションを提供しています。 次の表に、[!DNL Adobe Commerce as a Cloud Service] で使用可能な機能と代替ソリューションを示します。
 
 | 機能 | 解決策 | 対象 | 詳細 |
 |---------|----------|--------------|--------|

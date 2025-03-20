@@ -1,18 +1,20 @@
 ---
 title: ユースケース
-description: Adobe Commerce as a Cloud Serviceを使用して実用的なユースケースとサポートされるビジネスシナリオを達成する方法を説明します。
+description: ' [!DNL Adobe Commerce as a Cloud Service] を使用して実用的なユースケースとサポートされるビジネスシナリオを達成する方法を説明します。'
 role: User, Leader
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
 
-
 # ユースケース
 
-次のユースケースは、Adobe Commerce as a Cloud Serviceがサポートするコア機能とビジネスシナリオを示しています。これにより、開発を加速し、効果の高いエクスペリエンスを立ち上げることができます。
+{{accs-early-access}}
+
+次のユースケースは、[!DNL Adobe Commerce as a Cloud Service] がサポートするコア機能とビジネスシナリオを示しています。これにより、開発を加速し、効果の高いエクスペリエンスを開始できます。
 
 問題が発生した場合は、[ トラブルシューティング ](#troubleshooting) の節でガイダンスを確認してください。
 

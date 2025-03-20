@@ -1,16 +1,18 @@
 ---
 title: Assets管理
-description: ここでは、Adobe Commerce as a Cloud Serviceでサポートされるアセット管理オプションの概要について説明します。
+description: このページでは、 [!DNL Adobe Commerce as a Cloud Service] でサポートされるアセット管理オプションの概要を説明します。
 hide: true
 hidefromtoc: true
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 4d76ff70-29de-4d6e-8ec2-43e9e76af3a0
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '23'
+source-wordcount: '17'
 ht-degree: 0%
 
 ---
 
-
 # Assets管理
+
+{{accs-early-access}}
 
 TODO プレースホルダー
