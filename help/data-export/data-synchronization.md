@@ -3,9 +3,9 @@ title: データを SaaS データ書き出しと同期
 description: Adobe Commerce インスタンスと接続された SaaS サ  [!DNL SaaS Data Export]  ビスとの間でデータを収集および同期する方法について説明します。
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
-source-git-commit: 55c433f36b122813e8fc9136a7efbb869246b7f5
+source-git-commit: 291babe5dbdabb7d626ae744335b94e44ba6a6f5
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ SaaS データ書き出しフローの主なコンポーネントは次のとお
 - Adobe Commerceからフィードのデータを収集し、フィード項目を組み立て、更新をリッスンし、フィードステータスを保持する SaaS データエクスポートモジュール。
 - SaaS は、データをエクスポートするモジュールをエクスポートし、ルーティングを設定して、接続されたサービスにフィードを公開します。
 - Adobe Commerce サービスは、データ取得プロセスを管理して、受信フィードを検証し、接続されたサービスの更新を保持します。
+
+>[ 注！]
+>
+>スケジュールをスムーズに設定し、サイト操作の中断を避けるために、Adobeでは、データフィードの同期を開始する前に、データの量と同期時間を予測することをお勧めします。 この見積もりは、初期同期や大規模なカタログ更新（一括価格変更など）を計画する際に重要です。 詳しくは、[ データ同期のデータ量と送信時間の予測 ](estimate-data-volume-sync-time.md) を参照してください。
 
 ## 同期モード
 
