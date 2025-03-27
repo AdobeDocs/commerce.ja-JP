@@ -1,9 +1,10 @@
 ---
 title: ファセット
 description: ファセット [!DNL Live Search]、複数のディメンションの属性値を検索条件として使用します。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -15,6 +16,8 @@ ht-degree: 0%
 [!DNL Live Search] は `productSearch` クエリを使用して、[!DNL Live Search] に固有のファセットやその他のデータを返します。 コード例については ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) 開発者向けドキュメントの [`productSearch` クエリを参照してください。
 
 ![ フィルタリングされた検索結果 ](assets/storefront-search-results-run.png)
+
+ファセット内で、買い物客は「スタイル」の「基本」や「スナッグ」など、複数のオプションを選択でき、検索結果はこれらのスタイルのみを表示するように更新されます。 同様に、買い物客がファセットをまたいだオプション（「スタイル」の「基本」や「気候」の「屋内」など）を選択すると、検索結果が更新され、選択したスタイルと選択した気候が表示されます。
 
 定義済みのファセットを URL パラメーターとして使用でき、結果はパラメーター値 `http://yourstore.com?brand=acme&color=red` に基づいてフィルターされます。
 

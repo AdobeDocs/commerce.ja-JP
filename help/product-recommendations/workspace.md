@@ -1,9 +1,10 @@
 ---
 title: '[!DNL Product Recommendations] Workspace'
 description: 製品レコメンデーションパフォーマンスを設定、管理、監視する方法について説明します。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -18,6 +19,19 @@ ht-degree: 0%
 
 ![Recommendations ワークスペース ](assets/workspace.png)
 _Recommendations Workspace_
+
+## データ収集
+
+ワークスペースの各機能領域に正しいデータが含まれるようにするには、選択したストアフロント実装に基づいてデータ収集を設定する必要があります。
+
+1. Luma - データ収集は標準で利用できます。
+1. ヘッドレス – ストアフロントの実装に応じて、データ収集を手動で設定する必要があります。
+
+ヘッドレスストアフロントを使用している場合、追加する必要のある必須イベントの詳細については、次のドキュメントを参照してください。
+
+- Product Recommendations ダッシュボードの [ 必須イベント ](events.md)。
+- 前提条件として追加する必要がある [ ストアフロントイベントコレクター ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
+- イベント構造 ](https://github.com/adobe/commerce-events/tree/main/examples) 例 [。
 
 ## 範囲を設定
 
