@@ -3,9 +3,9 @@ title: ストアフロントの設定
 description: 基礎ツールを実行してストアフロントを設定する方法  [!DNL Adobe Commerce as a Cloud Service]  説明します。
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 7f7a674b856090bd02752a9e2ad29475b2b56fcf
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -102,13 +102,11 @@ ht-degree: 0%
 
 1. 作成するリポジトリの名前を入力します。
 
-1. 使用するテンプレートを選択します（例：`adobe-commerce/adobe-demo-store`）。
-
 1. 次のいずれかのオプションを選択します。
 
-   * **Adobeのデモインスタンスを使用（デフォルトのエンドポイント）** - AdobeのCommerce インスタンスの例を使用します。
+   * **デモ Adobe Commerce テナントを使用** - デモテナントを使用します。
       * このオプションを選択すると、ブラウザーウィンドウにAEM Code Sync ボットをインストールするように求められます。 作成したリポジトリを指定し、ボットを認証する必要があります。 CLI に戻り、`y` と入力して、AEM Code Sync ボットのインストールを確認します。
-   * **使用可能な API を選択（メッシュ/SaaS）** – 選択した組織内の既存のCommerce インスタンスを選択します。
+   * **使用可能なAdobe Commerce テナントを選択** – 選択した組織内の既存のCommerce テナントを選択します。
       * このオプションを選択した場合、メッシュを作成するプロジェクトとワークスペースを選択する必要があります。
 
    >[!NOTE]
