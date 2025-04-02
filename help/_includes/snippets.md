@@ -1,7 +1,7 @@
 ---
-source-git-commit: 06193f394fd0feb06e74a1941cc6865216966b45
+source-git-commit: c9aae333fa9808f8f27f7a9db1a07e990bfb7912
 workflow-type: tm+mt
-source-wordcount: '20'
+source-wordcount: '23'
 ht-degree: 0%
 
 ---
@@ -11,4 +11,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このドキュメントは、現在プレリリース状態にあり、予告なく変更される場合があります。
+>このドキュメントでは、製品の早期アクセス開発について説明しており、一般提供を目的とした機能のすべてを反映しているわけではありません。
