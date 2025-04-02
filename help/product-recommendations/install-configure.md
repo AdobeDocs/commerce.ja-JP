@@ -2,7 +2,8 @@
 title: インストールと設定
 description: ' [!DNL Product Recommendations] をインストール、更新、アンインストールする方法を説明します。'
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
+source-git-commit: a3c20f64c9a18e97b6c0cbc36a246e5c30f67341
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 0%
@@ -76,22 +77,22 @@ Commerce Admin から、[Data Management Dashboard](https://experienceleague.ado
 composer update magento/product-recommendations --with-dependencies
 ```
 
-3.0 から 4.0 などのメジャーバージョンにアップデートするには、プロジェクトのルート `composer.json` ファイルを編集する必要があります。 （最新のバージョンについて詳しくは、[ リリースノート ](release-notes.md) を参照してください）。 例えば、メインの `composer.json` ファイルを開いて、`magento/product-recommendations` モジュールを検索します。
+5.0 から 6.0 などのメジャーバージョンにアップデートするには、プロジェクトのルート `composer.json` ファイルを編集する必要があります。 （最新のバージョンについて詳しくは、[ リリースノート ](release-notes.md) を参照してください）。 例えば、メインの `composer.json` ファイルを開いて、`magento/product-recommendations` モジュールを検索します。
 
 ```json
 "require": {
     ...
-    "magento/product-recommendations": "^3.0",
+    "magento/product-recommendations": "^5.0",
     ...
 }
 ```
 
-メジャーバージョンを `3.0` から `4.0` に変更しましょう。
+メジャーバージョンを `5.0` から `6.0` に変更しましょう。
 
 ```json
 "require": {
     ...
-    "magento/product-recommendations": "^4.0",
+    "magento/product-recommendations": "^6.0",
     ...
 }
 ```
