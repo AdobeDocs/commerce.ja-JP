@@ -3,9 +3,9 @@ title: 入門  [!DNL Adobe Commerce as a Cloud Service]
 description: ' [!DNL Adobe Commerce as a Cloud Service] の使用を開始する方法について説明します。'
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-source-git-commit: a1b825a819b25d9374eef169c633d54fb94ee26c
+source-git-commit: 9b90e6f79a394ec0941c9e48aee3859f0bcdedd5
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ ht-degree: 0%
 >[!ENDTABS]
 
 ## インスタンスの作成
+
+>[!NOTE]
+>
+>インスタンスを作成する前に、組織の製品管理者またはシステム管理者が、[!DNL Adobe Commerce as a Cloud Service] 製品のユーザーとしてユーザーを追加する必要があります。 詳しくは、[ ユーザーと管理者の追加 ](./user-management.md#add-users-and-admins) を参照してください。
 
 [!DNL Adobe Commerce as a Cloud Service] インスタンスでは、クレジットベースのシステムを使用します。 複数のインスタンスを作成できますが、各インスタンスには相対的なクレジット量が必要です。 最初に付与されるクレジットの量は、サブスクリプションによって異なります。
 
