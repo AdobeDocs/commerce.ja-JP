@@ -3,9 +3,9 @@ title: 境界と制限
 description: ビジネスのニーズを確実に満たすための  [!DNL Live Search]  の境界と制限について説明します。
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
+source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 - 製品は、デフォルトの共有カタログに追加されていない場合は表示されません。
 - [ カテゴリ権限 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions) を使用して顧客グループを制限するには：
-   - 製品はルートカテゴリに割り当てる必要があります。
+   - 製品はルートカテゴリに割り当てる必要があります。 （**注意：** この制限を解除するには、SaaS Data Export 拡張機能をバージョン 103.4.0 以降に更新します。 [ データ書き出し拡張機能の管理 ](../data-export/manage-extension.md) を参照してください。
    - 「ログインしていない」顧客グループには、「許可」閲覧権限を付与する必要があります。
    - 製品を「ログインしていない」顧客グループに制限するには、各カテゴリに移動して、各 [ 顧客グループ ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) に権限を設定します。
 - PWA Studioの PLP ウィジェットを使用した B2B の標準サポートは、現時点ではサポートされていません。 ただし、この機能を実装するには [API を使用 ](install.md#pwa-support) できます。

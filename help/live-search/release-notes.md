@@ -3,9 +3,9 @@ title: '[!DNL Live Search] リリースノート'
 description: Adobe Commerceからのの最新  [!DNL Live Search]  リリース情報です。
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: eb016fa8e53cfb9d035d73979495171feccb764f
+source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -24,17 +24,21 @@ ht-degree: 0%
 
 これらのメモでは、バージョン管理されたリリースの外部で公開された更新や、ホストされるサービスの改善について説明します。
 
+_2025 年 4 月 3 日_
+
+![ 修正 ](../assets/fix.svg)SaaS データ書き出し拡張機能を更新し、B2B マーチャントの「製品をルートカテゴリに割り当てる必要がある」 [ 制限 ](boundaries-limits.md#b2b-and-category-permissions) を削除しました。 SaaS データ書き出し拡張機能をバージョン 103.4.0 以降に更新する方法については、[ データ書き出し拡張機能の管理 ](../data-export/manage-extension.md) を参照してください。
+
 _2025 年 2 月 20 日_
 
 ![ 新規 ](../assets/new.svg)Commerceでは、複数の単語の同義語をサポートしています。 [ 詳細情報 ](synonyms-type.md#multi-word-synonym-behavior)。 複数語の同義語のサポートは、この 2 月 20 日のリリース日以降にのみ使用できます。 既存の複数ワードの同義語を使用する場合は、完全な再インデックスが必要になります。これは、[ サポートチケットを作成 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) してリクエストできます。
 
 _2025 年 1 月 31 日_
 
-![ 新規 ](../assets/new.svg) テスト環境には、クエリされていないカタログデータ用の新しいデータ保持ポリシーがあります。 [ 詳細情報 ](overview.md#catalog-data-retention-policy)。
+![ 新規 ](../assets/new.svg) テスト環境には、クエリされていないカタログデータ用の新しいデータ保持ポリシーがあります。 [詳細情報](overview.md#catalog-data-retention-policy)。
 
 _2024 年 9 月 19 日_
 
-![ 新規 ](../assets/new.svg) レイヤ検索、で始まる検索、含まれる検索の 3 つの新しい機能をサポートするベータ版がリリースされました。 [ 詳細情報 ](install.md#install-the-live-search-beta)。
+![ 新規 ](../assets/new.svg) レイヤ検索、で始まる検索、含まれる検索の 3 つの新しい機能をサポートするベータ版がリリースされました。 [詳細情報](install.md#install-the-live-search-beta)。
 
 _2024 年 9 月 4 日_
 
@@ -356,7 +360,7 @@ _2023 年 3 月 14 日_
 
 [!BADGE  サポート対象 ]{type="情報" tooltip="サポート"}
 
-![ 新規 ](../assets/new.svg)[ パフォーマンス ](performance.md) レポートダッシュボードは、買い物客が使用する検索用語に関するインサイトを提供します。
+![ 新規 ](../assets/new.svg) [ パフォーマンス ](performance.md) レポートダッシュボードは、買い物客が使用する検索用語にinsightを提供します。
 ![ 新規 ](../assets/new.svg) [!DNL Live Search] [ ストアフロントイベントSDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) を使用すると、イベントの公開サービス、サブスクリプションサービス、指標を含む共通のデータレイヤーにアクセスできます。
 ![ 修正 ](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) には、表示を制御する `.search-autocomplete` コンテナ用の新しい `active` クラスがあります。
 ![ 修正 ](../assets/fix.svg) ストアフロントで、[ 検索語句 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) フッターリンクが削除され、[!DNL Live Search] のインストールではキャッシュが無効になります。
