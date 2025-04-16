@@ -2,9 +2,9 @@
 title: Commerce CLI を使用したフィードの同期
 description: コマンドラインインターフェイスコマンドを使用して、Adobe Commerce向け SaaS サービスのフィードとプロセス  [!DNL data export extension]  管理する方法について説明します。
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 086a571b69e8ad76a912c339895409b0037642b9
+source-git-commit: 6f578dfaf3d3e77d7b541714de613025b8c789a4
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -66,30 +66,33 @@ bin/magento saas:resync --help
 
 ## `--by-ids`
 
-特定のエンティティを ID で部分的に再同期します。 `products`、`productAttributes` および `productOverrides` フィードをサポートします。
+特定のエンティティを ID で部分的に再同期します。 `products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants` および `categoryPermissions` フィードをサポートします。
 
-デフォルトでは、エンティティは製品 SKU で指定されます。 代わりに、`--id-type=ProductID` を使用して製品 ID を使用します。
+デフォルトでは、エンティティは製品 SKU でコンマ区切りのリストで指定されます。 代わりに製品 ID を使用するには、「`--id-type=ProductID`」オプションを追加します。
 
 **例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<SKU-1>,<SKU-2>,<SKU-3>'
+bin/magento saas:resync --feed products --by-ids='ADB102,ADB111,ADB112'
 
-bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<ID-1>,<ID-2>,<ID-3>' --id-type='productId'
+bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 ```
+
 
 ## `--cleanup-feed`
 
-インデックスを再作成して SaaS にデータを送信する前に、フィード インデクサーテーブルをクリーンアップします。 `products`、`productOverrides`、`prices` フィードでのみサポートされます。
+再インデックスを実行してデータを SaaS に送信する前に、フィードインデクサーテーブルのフィードテーブルをクリーンアップしてください。 `products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants` および `categoryPermissions` でのみサポートされます。
+
+`--dry-run` オプションと共に使用すると、操作はすべての項目に対してドライラン再同期操作を実行します。
 
 >[!IMPORTANT]
 >
->環境のクリーンアップ後にのみ使用します。 Commerce サービスでデータ同期の問題が発生する可能性があります。
+>環境のクリーンアップ後、または `--dry-run` オプションを使用した場合にのみ使用します。 それ以外の場合にクリーンアップを使用すると、データが失われたり、Adobe Commerceで削除する必要のある項目が SaaS データスペースから削除されないというデータ同期の問題が発生したりします。
 
 **例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --cleanup-feed
+bin/magento saas:resync --feed products --cleanup-feed
 ```
 
 ## `--continue-resync`
@@ -99,19 +102,39 @@ bin/magento saas:resync --feed='<FEED_NAME>' --cleanup-feed
 **例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --continue-resync
+bin/magento saas:resync --feed productAttributes --continue-resync
 ```
 
 ## `--dry-run`
 
-SaaS に送信したり、フィード テーブルに保存したりせずに、フィードの再インデックス プロセスを実行します。 を使用してデータを検証します。
+フィードを SaaS に送信せずに、またフィード テーブルに保存せずに、フィードの再インデックス プロセスを実行します。 このオプションは、データセットの問題を特定するのに役立ちます。
 
 `EXPORTER_EXTENDED_LOG=1` 環境変数を追加して、ペイロードを `var/log/saas-export.log` に保存します。
 
 **例：**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed='<FEED_NAME>' --dry-run
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run
+```
+
+### 特定のフィード項目のテスト
+
+`--by-ids` オプションと拡張ログコレクションを追加して特定のフィード項目をテストし、`var/log/saas-export.log` ファイルに生成されたペイロードを確認します。
+
+**例：**
+
+```shell
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='1,2,3'
+```
+
+### すべてのフィード項目のテスト
+
+デフォルトでは、`resync --dry-run` の操作中に送信されるフィードには、新しい項目、または以前に書き出しに失敗した項目のみが含まれます。 処理するフィード内のすべての項目を含めるには、`--cleanup-feed` オプションを使用します。
+
+**例**
+
+```shell
+bin/magento saas:resync --feed products --dry-run --cleanup-feed
 ```
 
 ## `--feed`
@@ -135,7 +158,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed='<FEED_NAME>' --dry-run
 **例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>'
+bin/magento saas:resync --feed products
 ```
 
 ## `--no-reindex`
@@ -150,8 +173,18 @@ bin/magento saas:resync --feed='<FEED_NAME>'
 **例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --no-reindex
+bin/magento saas:resync --feed productAttributes --no-reindex
 ```
+
+## `--id-type=ProductId`
+
+デフォルトでは、`saas:resync feed` コマンドを `--by-ids` オプションと共に使用した場合に指定されるエンティティは、製品 SKU によって指定されます。 `--id-type=ProductId` オプションを使用して、製品 ID でエンティティを指定します。
+
+```shell
+bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
+```
+
+**例：**
 
 ## トラブルシューティング
 
