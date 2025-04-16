@@ -3,9 +3,9 @@ title: ユースケース
 description: ' [!DNL Adobe Commerce as a Cloud Service] を使用して実用的なユースケースとサポートされるビジネスシナリオを達成する方法を説明します。'
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: d5935f4d080c3be1f51bf8916575a3b2f357ee22
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 1. 前提条件で作成した [ ストアフロント ](./storefront.md) を開きます。
 
-1. ドキュメントのオーサリングを開きます。 `https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md` に移動します。
+1. Storefront Builder を開きます。 `https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md` に移動します。
 
 1. [!UICONTROL **インデックス**] ページを開きます。
 
@@ -110,7 +110,7 @@ Adobe Commerceのコンテキスト実験機能を使用すると、ストアフ
 
 * [AEM Sidekick拡張機能のインストール ](https://www.aem.live/docs/sidekick)
 
-1. ストアフロントのドキュメントオーサリング表示で、インデックスページを選択し、「[!UICONTROL **コピー**]」をクリックします。
+1. Storefront Builder で、インデックスページを選択し、「[!UICONTROL **コピー**]」をクリックします。
 
 1. メインフォルダーの下に [!UICONTROL **実験**] フォルダーを作成します。作成するには、「[!UICONTROL **新規**] ボタンをクリックし、[!UICONTROL **フォルダー**] を選択します。
 
