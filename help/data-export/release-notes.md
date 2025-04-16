@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 0d69fce1d6c2fab80065870fe8cdbe73969351cb
+source-git-commit: bb9300c621ceac618c51e4dd787527ac1e960dd8
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 >SaaS データ書き出し拡張機能は、Live Search、Product Recommendations、Catalog Service と共に自動的にインストールされるモジュールのコレクションです。 Composer を使用すると、システムにインストールされているバージョンを確認できます。 場合によっては、Commerce サービスのバージョンを更新せずに修正点または新機能を取得するように、システムのデータエクスポート拡張機能をアップグレードする必要があります。
 
 ## 現在のメジャーバージョン
+
+## 103.4.2 リリース
+
+![ 修正 ](../assets/fix.svg) `EXPORTER_EXTENDED_LOG=1` 環境変数で `saas:resync --dry-run` コマンドを使用してテスト再同期を実行する際に、`saas-export.log` ークフローでエンティティペイロードを収集する機能を追加しました。<!--MDEE-1023-->
 
 ## 103.4.1 リリース
 
