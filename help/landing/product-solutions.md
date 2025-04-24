@@ -5,13 +5,13 @@ feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: true
 hidefromtoc: true
-source-git-commit: 1e73f4dd45114cfdcd2fef87ae0d9b2504214c6b
+exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
+source-git-commit: 79d1b862c5cc307daf93f93c03f1993dbd45aa09
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce製品ソリューション
 
@@ -39,13 +39,9 @@ Adobeでは、e コマースビジネスの要件を満たすソリューショ�
 
 このバッジは、[Adobe Commerce as a Cloud Service](../cloud-service/overview.md) および [Adobe Commerce Optimizer](../optimizer/overview.md) プロジェクト専用のドキュメントを特定します。 これらのプロジェクトは、完全に管理されたクラウドネイティブのサービスとしてのソフトウェア（SaaS）ソリューションでホストされ、Adobeが継続的な更新、セキュリティの監視、スケーラビリティなどのほとんどの運用側面を担当するので、お客様はインフラストラクチャではなくコマースに集中できます。
 
-#### [!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}
+#### [!BADGE PaaS のみ ]{type=Informative tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
-このバッジは、[Cloud 上のAdobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) プロジェクトに関連するドキュメントのみを特定します。 これらのプロジェクトは、クラウドネイティブで完全に管理されたサービスとしてのプラットフォーム（PaaS）ソリューションにホストされ、プロビジョニング済みの環境でAdobe Commerceのすべてのコア機能を備えています。
-
->[!NOTE]
->
->特に断りのない限り、これにはオンプレミスのプロジェクトも含まれます。
+このバッジは、[Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) およびオンプレミスプロジェクトに関連するドキュメントのみを特定します。 クラウドプロジェクト上のAdobe Commerceは、クラウドネイティブで完全に管理されたサービスとしてのプラットフォーム（PaaS）ソリューションにホストされ、Adobe Commerceのすべてのコア機能が事前にプロビジョニングされます。 オンプレミスのプロジェクトは、顧客が管理するインフラストラクチャでホストされます。
 
 ### ルール
 
