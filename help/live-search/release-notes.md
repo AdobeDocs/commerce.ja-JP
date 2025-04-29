@@ -3,9 +3,9 @@ title: '[!DNL Live Search] リリースノート'
 description: Adobe Commerceからのの最新  [!DNL Live Search]  リリース情報です。
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 5c34bf61ee441ef20a680a4f071308d17379f49d
+source-git-commit: bf36d522b45218a10bde7a383feca99bdba62aa6
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,12 @@ ht-degree: 0%
 ## ホステッド サービスの更新
 
 これらのメモでは、バージョン管理されたリリースの外部で公開された更新や、ホストされるサービスの改善について説明します。
+
+_2025 年 4 月 29 日_
+
+![ 修正 ](../assets/fix.svg) 「[**パフォーマンス**](./performance.md)」タブの **CSV に書き出し** レポートに、日付範囲で指定されたすべてのデータが含まれていない問題を修正しました。
+![ 修正 ](../assets/fix.svg) 検索クエリフィルターを使用した場合に、[ マーチャンダイジングルール ](./rules.md) を保存できなかった問題を修正しました。
+![ 修正 ](../assets/fix.svg) 結果ページの上部に [ ピン留めされた製品 ](./facets-manage.md#pinunpin-facet) が表示されない問題を修正しました。
 
 _2025 年 4 月 21 日_
 
