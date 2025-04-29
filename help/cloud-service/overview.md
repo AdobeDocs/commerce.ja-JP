@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Commerce as a Cloud Service] の主な機能とメリ
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
+source-git-commit: 4cd5847eee52ff43e2fae27080a5971ceb939875
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1475'
 ht-degree: 0%
 
 ---
@@ -148,6 +148,5 @@ Cloud 上のAdobe Commerceの一般的なアップグレードプロセスは、
 | [ コンテンツのステージング ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [ カタログサービス ](../catalog-service/overview.md) | ロードマップ | Adobe Experience Platformと連携し、大きなカタログを管理できるカタログ管理ツール。 |
 | [ ページビルダー ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce ストアフロント ](https://www.aem.live/) | 利用可能 | 基本のCMSにより、ドキュメントベースのオーサリングを使用して、ドキュメントと web サイトのコンテンツを簡単に作成および管理できます。 または、複数のプラットフォーム間でより高度なコンテンツ管理とカスタマイズを可能にするユニバーサルエディター。 |
 | [ 支給 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Adobe Commerce決済等代行業 ](../payment-services/overview.md) | 利用可能 | 安全かつ効率的な取引を容易にする統合決済サービス。 |
-| [ 共有カタログ ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) | [ 価格インデックスサービス ](../price-index/price-indexing.md) | ロードマップ | 価格データを分析し、様々な要因に基づいて製品の最適な価格戦略を提案します。 |
 | [URL の書き換え ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce ストアフロント ](https://www.aem.live/) | 利用可能 | 基本のCMSにより、ドキュメントベースのオーサリングを使用して、ドキュメントと web サイトのコンテンツを簡単に作成および管理できます。 または、複数のプラットフォーム間でより高度なコンテンツ管理とカスタマイズを可能にするユニバーサルエディター。 |
 | [ ビジュアルマーチャンダイザー ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [ カタログサービス ](../catalog-service/overview.md) | ロードマップ | Adobe Experience Platformと連携し、大きなカタログを管理できるカタログ管理ツール。 |
