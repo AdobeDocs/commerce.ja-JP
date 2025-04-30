@@ -3,9 +3,9 @@ title: '[!DNL Payment Services] リリースノート'
 description: すべてのリリースについて詳しくは、リリースノ  [!DNL Payment Services]  トを参照してください。
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 359143c4f48ff911d6dbe9105f364615525fab8c
+source-git-commit: eb2e99dc3a0dbe1e27524c554886a57a4c8a1c30
 workflow-type: tm+mt
-source-wordcount: '3971'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 これらのリリースノートでは、ホステッド サービスの通常の機能リリースの外部で発生した機能の変更と修正について説明します。
 
 +++ホステッド サービスの更新
+
+_2025 年 4 月 25 日_
+
+![ 新しい問題 ](../assets/new.svg)<!-- Issue PAY-6051 --> 現在の拡張機能のバージョン [!DNL Payment Services] ダッシュボードのバージョンの両方がダッシュボードに表示されるようになりました。
 
 _2024 年 8 月 30 日_
 
