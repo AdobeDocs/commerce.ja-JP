@@ -34,7 +34,7 @@ ht-degree: 0%
 * [**支払いオプション**](payments-options.md) – 支払いオプションを設定して、ストア（またはマルチストア）の顧客が使用できる方法をカスタマイズします。
 * **キャッシュ・フロー管理の財務レポート** - [ 支払いの詳細 ](order-payment-status.md) とオーダーを同期して、処理量、支払い残高、[ 支払い ](payouts.md)、詳細な [ トランザクション・レベルのレポート ](transactions.md) を完全に把握し、財務調整を行い、トランザクションの可視性を最大限に高めます。
 * **透明な価格設定**：価格は明確かつ事前に設定されており、表示される内容が実際の価格になります。
-* **効率的なチェックアウトエクスペリエンス** - [ カードヴォールティング ](vaulting.md) および [ 即時購入 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) （デフォルトでAdobe Commerceで有効）機能により、迅速でシンプルなチェックアウトの障壁を取り除き、常連客を作成します。
+* **効率的なチェックアウトエクスペリエンス** - [ カードヴォールティング ](vaulting.md) および [ 即時購入 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html?lang=ja) （デフォルトでAdobe Commerceで有効）機能により、迅速でシンプルなチェックアウトの障壁を取り除き、常連客を作成します。
 
 ## 対象
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 支払いサービスは、他の [ オンボーディング中に利用可能な国 ](../payment-services/payments-options.md) に [ エクスプレスチェックアウト機能 ](../payment-services/production.md#complete-merchant-onboarding) （支払いオプションのサブセット）を提供します。
 
-リリースおよびバージョン固有の情報について詳しくは、[ ライフサイクルポリシー ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) および [[!DNL Payment Services]  リリースノート ](release-notes.md) ページを参照してください。
+リリースおよびバージョン固有の情報について詳しくは、[ ライフサイクルポリシー ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=ja) および [[!DNL Payment Services]  リリースノート ](release-notes.md) ページを参照してください。
 
 ### どの [!DNL Payment Services] のオプションが適切ですか？
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 ### 使用可能なクレジットカードおよび通貨
 
-[!DNL Payment Services] は、（利用可能な [ 国の通貨を受け入れ ](#availability) す。 詳しくは、[ 通貨の設定 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) を参照してください。
+[!DNL Payment Services] は、（利用可能な [ 国の通貨を受け入れ ](#availability) す。 詳しくは、[ 通貨の設定 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=ja) を参照してください。
 
 PayPal がサポートする通貨を確認するには、[ サポートされる通貨に関するドキュメント ](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/) を参照してください。
 

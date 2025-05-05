@@ -14,9 +14,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> カタログ同期ダッシュボードが、データ管理ダッシュボードになりました。 この刷新されたダッシュボードは、[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0 以降、[[!DNL Live Search]](../live-search/overview.md) v4.1.0 以降および [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17 以降をサポートするようになりました。 お客様は、これらのサービスのいずれかの最新バージョンに更新することで、データ管理ダッシュボードを取得できます。 詳しくは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) ドキュメントを参照してください。 この現在のトピックは、まだアップグレードしておらず、カタログ同期ダッシュボードを使用しているユーザー向けです。
+> カタログ同期ダッシュボードが、データ管理ダッシュボードになりました。 この刷新されたダッシュボードは、[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0 以降、[[!DNL Live Search]](../live-search/overview.md) v4.1.0 以降および [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17 以降をサポートするようになりました。 お客様は、これらのサービスのいずれかの最新バージョンに更新することで、データ管理ダッシュボードを取得できます。 詳しくは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=ja) ドキュメントを参照してください。 この現在のトピックは、まだアップグレードしておらず、カタログ同期ダッシュボードを使用しているユーザー向けです。
 
-Adobe Commerceはインデクサーを使用して、カタログデータをテーブルにコンパイルします。 プロセスは、製品価格や在庫レベルの変更など [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) イベント  によって自動的にトリガーされます。
+Adobe Commerceはインデクサーを使用して、カタログデータをテーブルにコンパイルします。 プロセスは、製品価格や在庫レベルの変更など [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=ja#events-that-trigger-full-reindexing) イベント  によって自動的にトリガーされます。
 
 カタログ同期サービスは、製品データを [!DNL Adobe Commerce] インスタンスから [!DNL Commerce Services] プラットフォームに継続的に移動して、データを最新の状態に保ちます。 例えば、[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) では、現在のカタログ情報を使用して、正確な名前、価格、在庫状況のレコメンデーションを正確に返す必要があります。 _カタログ同期_ ダッシュボードを使用すると、同期プロセスまたはコマンドラインインターフェイスを監視および管理して、カタログ同期をトリガーし、[!DNL Commerce Services] で使用するために製品データを再インデックス化できます。 『 [SaaS データ書き出し ](../data-export/data-export-cli-commands.md) ガイド』の「_コマンド ライン インターフェイス リファレンス_」を参照してください。
 

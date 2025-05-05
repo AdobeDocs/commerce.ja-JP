@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ### B2B サポート {#b2bsupport}
 
-B2B ストアフロントには、多くの場合、買い物客または顧客グループごとに製品の可視性と価格を指示する複雑なロジックが必要です。 [ カテゴリ権限 ](release-notes.md)、[ 共有カタログ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)、および [ 顧客グループ固有の価格 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) を考慮して、この機能を [ サポート ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) するように設 [!DNL Product Recommendations] しました。 例えば、小売顧客セグメントから特定のカテゴリを非表示にした場合、そのセグメントの買い物客には、それらのカテゴリの製品のレコメンデーションは表示されません。 また、特定の顧客グループや会社用に共有カタログを定義すると、買い物客は、アクセスできる製品に関するレコメンデーションのみが表示されます。 すべての推奨製品は、各買い物客の顧客グループに基づいて、正しい顧客グループ固有の価格を反映しています。
+B2B ストアフロントには、多くの場合、買い物客または顧客グループごとに製品の可視性と価格を指示する複雑なロジックが必要です。 [ カテゴリ権限 ](release-notes.md)、[ 共有カタログ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=ja)、および [ 顧客グループ固有の価格 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja) を考慮して、この機能を [ サポート ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=ja) するように設 [!DNL Product Recommendations] しました。 例えば、小売顧客セグメントから特定のカテゴリを非表示にした場合、そのセグメントの買い物客には、それらのカテゴリの製品のレコメンデーションは表示されません。 また、特定の顧客グループや会社用に共有カタログを定義すると、買い物客は、アクセスできる製品に関するレコメンデーションのみが表示されます。 すべての推奨製品は、各買い物客の顧客グループに基づいて、正しい顧客グループ固有の価格を反映しています。
 
 >[!NOTE]
 >

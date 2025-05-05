@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # ストアの場所とマッピング設定
 
-[ 距離プロバイダー ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) を設定して小売店の場所を検索することで、店舗配送の場所とマッピング機能を有効にします。
+[ 距離プロバイダー ](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) を設定して小売店の場所を検索することで、店舗配送の場所とマッピング機能を有効にします。
 
 **要件**
 
-設定プロセス中に、Google マッププラットフォームのGoogle API キーを指定します。 まだ存在しない場合は、[Google Maps プラットフォームから 1 つ生成します ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps)。
+設定プロセス中に、Google マッププラットフォームのGoogle API キーを指定します。 まだ存在しない場合は、[Google Maps プラットフォームから 1 つ生成します ](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps)。
 
 距離プロバイダを設定するには：
 

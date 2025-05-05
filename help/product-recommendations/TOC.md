@@ -37,4 +37,4 @@ ht-degree: 13%
    - [検証](verify.md)
    - [Customize](customize.md)
    - [Cookie 制限の処理](setting-cookie.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)

@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ### ファセットラベル
 
-ストアフロント [!DNL Commerce] 場合、ファセットラベルは [*属性プロパティ*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) によって決まります。 複数のビューを持つストアの場合、追加のラベルは *ラベルを管理* で定義できます。 ヘッドレス実装の場合、ラベルは [ ファセットワークスペース ](faceting-workspace.md) から編集されます。
+ストアフロント [!DNL Commerce] 場合、ファセットラベルは [*属性プロパティ*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) によって決まります。 複数のビューを持つストアの場合、追加のラベルは *ラベルを管理* で定義できます。 ヘッドレス実装の場合、ラベルは [ ファセットワークスペース ](faceting-workspace.md) から編集されます。
 
 ### 並べ替えタイプ
 

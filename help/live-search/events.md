@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Live Search] イベント
 
-[!DNL Live Search] はイベントを使用して、「最も多く閲覧された」、「これを閲覧し、それを閲覧した」などの検索アルゴリズムを強化します。 [Commerceのサンプル Luma テーマ ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) が標準でイベントを取得する一方で、ヘッドレスやその他のカスタム実装では、独自のニーズに応じてイベントを実装する必要があります。
+[!DNL Live Search] はイベントを使用して、「最も多く閲覧された」、「これを閲覧し、それを閲覧した」などの検索アルゴリズムを強化します。 [Commerceのサンプル Luma テーマ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) が標準でイベントを取得する一方で、ヘッドレスやその他のカスタム実装では、独自のニーズに応じてイベントを実装する必要があります。
 
 次の表に、[!DNL Live Search] が使用するイベントについて説明します [ ランキング戦略 ](rules-add.md#intelligent-ranking)。
 
@@ -68,4 +68,4 @@ mse.publish.searchRequestSent("search-bar");
 
 >[!NOTE]
 >
->[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、買い物客が Cookie の使用を同意するまで、Adobe Commerceは行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja) が有効になっている場合、買い物客が Cookie の使用を同意するまで、Adobe Commerceは行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。

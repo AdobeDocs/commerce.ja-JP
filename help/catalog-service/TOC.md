@@ -25,5 +25,5 @@ ht-degree: 10%
    - [productSearch クエリ ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
    - [refineProduct クエリ ](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [リリースノート](release-notes.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
 

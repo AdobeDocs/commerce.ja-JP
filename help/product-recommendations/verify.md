@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # イベント収集の検証
 
-`magento/product-recommendations` モジュールを [ インストールおよび設定 ](install-configure.md) した後、行動データがAdobe Commerceに送信されていることを確認できます。 Chromeで利用可能な開発者ツールを使用するか、Snowplow Chrome拡張機能をインストールできます。 追加のヘルプが必要な場合は、サポートナレッジベースの [ トラブルシューティング  [!DNL Product Recommendations]  モジュール ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) を参照してください。
+`magento/product-recommendations` モジュールを [ インストールおよび設定 ](install-configure.md) した後、行動データがAdobe Commerceに送信されていることを確認できます。 Chromeで利用可能な開発者ツールを使用するか、Snowplow Chrome拡張機能をインストールできます。 追加のヘルプが必要な場合は、サポートナレッジベースの [ トラブルシューティング  [!DNL Product Recommendations]  モジュール ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html?lang=ja) を参照してください。
 
 ## Chromeのデベロッパーツールを使用した検証
 
@@ -50,7 +50,7 @@ _イベントが発生していることを確認_
 
 1. **コンテキストデータ _n_**&#x200B;が表示されるまで下にスクロールします。**スキーマ**&#x200B;でストアフロントインスタンスを探します。
 
-1. [SaaS Data Space ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) が正しく設定されていることを確認します。
+1. [SaaS Data Space ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html?lang=ja) が正しく設定されていることを確認します。
 
 ![ 除雪機フィルタ ](assets/snowplow-filter.png)
 _除雪機フィルタ_
@@ -61,8 +61,8 @@ _除雪機フィルタ_
 
 ## イベントが正しく実行されていることを確認
 
-指標に使用されるイベントが正しく実行されていることを確認するには、Snowplow Analytics デバッガーで `impression-render`、`view`、`rec-click` の各イベントを探します。 [ イベントの完全なリスト ](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html) を参照してください。
+指標に使用されるイベントが正しく実行されていることを確認するには、Snowplow Analytics デバッガーで `impression-render`、`view`、`rec-click` の各イベントを探します。 [ イベントの完全なリスト ](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >
-> [Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、Adobe Commerceは、買い物客が同意するまで行動データを収集しません。 Cookie 制限モードが無効になっている場合、行動データがデフォルトで収集されます。
+> [Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja) が有効になっている場合、Adobe Commerceは、買い物客が同意するまで行動データを収集しません。 Cookie 制限モードが無効になっている場合、行動データがデフォルトで収集されます。

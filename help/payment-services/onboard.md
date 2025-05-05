@@ -62,7 +62,7 @@ API キーを作成する方法や API キーにアクセスする方法につ�
 
 ## トラブルシューティング
 
-* [ トラブルシューティング  [!DNL Payment Services]  インストール ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
-* [PayPal サンドボックスアカウントが検証されていません ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
-* [ 遅延レポ  [!DNL Payment Services]  トデータ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
-* [ サンドボックス環境で支払いを処理する際に、PayPal でクレジットカードのテストが失敗する ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)
+* [ トラブルシューティング  [!DNL Payment Services]  インストール ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=ja)
+* [PayPal サンドボックスアカウントが検証されていません ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=ja)
+* [ 遅延レポ  [!DNL Payment Services]  トデータ ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=ja)
+* [ サンドボックス環境で支払いを処理する際に、PayPal でクレジットカードのテストが失敗する ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=ja)

@@ -68,7 +68,7 @@ ht-degree: 0%
 
    * [Adobe Commerce on Cloud Services のアーキテクチャ ](./overview.md) - プラットフォームのアーキテクチャと、現在のAdobe Commerce インスタンスとの違いを確認します。
    * [Adobe Commerce拡張フレームワーク ](https://developer.adobe.com/commerce/extensibility/) – 現在のカスタマイズの移行方法を特定します。
-   * [Edge DeliveryによるCommerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) – 推奨されるストアフロントソリューションを確認します。
+   * [Edge DeliveryによるCommerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) – 推奨されるストアフロントソリューションを確認します。
 
 1. カスタマイズの互換性を監査します。
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 1. 次のGraphQL ベースのストアフロントのいずれかを設定します。
 
-   * [Commerce ストアフロントの作成 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
+   * [Commerce ストアフロントの作成 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja)
    * [PWA Studioを使用して、GraphQLベースのカスタムのストアフロントを作成する ](https://developer.adobe.com/commerce/pwa-studio/)
 
 1. 以前のCommerce インスタンスから ACCS にデータを移行します。

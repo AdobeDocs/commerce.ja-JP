@@ -34,7 +34,7 @@ Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies は、お�
 
 * シンプル、構成可能、グループ化、バンドル、仮想など、ほとんどの製品タイプをサポート
 
-* [[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/sources-stocks) との統合
+* [[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/basics/sources-stocks) との統合
 
 * ERP、OMS、WMS などの POS （販売時点管理）システムと統合
 
@@ -76,6 +76,6 @@ iOSおよびAndroid デバイス用のストアアシストアプリは、[!DNL 
 
 >[!TIP]
 >
-> ストアフルフィルメントソリューションの簡単なデモについては、_Adobe Commerceのビデオとチュートリアル [&#128279;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) にある  ストアフルフィルメントの概要_ を参照してください。
+> ストアフルフィルメントソリューションの簡単なデモについては、_Adobe Commerceのビデオとチュートリアル [&#128279;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html?lang=ja) にある  ストアフルフィルメントの概要_ を参照してください。
 
 

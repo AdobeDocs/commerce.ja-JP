@@ -100,7 +100,7 @@ Live Search は、デフォルトでスペルミスを管理します。 同義�
 
 検索リダイレクトは常にテストして、正しく機能し、最も関連性の高いページに導かれていることを確認してください。 継続的にパフォーマンスを監視し、必要に応じて調整を行います。
 
-[ 検索リダイレクトの管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) 方法を説明します。
+[ 検索リダイレクトの管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-terms) 方法を説明します。
 
 ## 検索結果の関連性の向上
 
@@ -154,7 +154,7 @@ Live Search は、デフォルトでスペルミスを管理します。 同義�
 検索の製品属性の詳細を説明します。
 
 - [検索可能として属性を設定](workspace.md#set-attributes-as-searchable)
-- [ 属性へのウェイトの割り当て ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [ 属性へのウェイトの割り当て ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 検索結果の監視
 

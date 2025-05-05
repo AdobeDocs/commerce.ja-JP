@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 複数の Web サイトとスコープの設定
 
-複数の web サイト、ストア、ストアビューに対応するために、いくつかの要素に対して [ 範囲 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) を設定できます。
+複数の web サイト、ストア、ストアビューに対応するために、いくつかの要素に対して [ 範囲 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) を設定できます。
 
-- 範囲ごとの [ 在庫の管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
+- 範囲ごとの [ 在庫の管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/stocks/stocks-manage)
 
 - 範囲ごとに [!DNL Delivery Methods] を管理
 

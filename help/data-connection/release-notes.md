@@ -24,9 +24,9 @@ ht-degree: 1%
 
 [!DNL Data Connection] 拡張機能で使用される拡張機能に関連する機能の変更と修正については、**サポートされるサービス更新** を参照してください。
 
-リリーススケジュールとサポートについては、[ 今後のリリース ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) を参照してください。
+リリーススケジュールとサポートについては、[ 今後のリリース ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/schedule) を参照してください。
 
-開発者向けドキュメントの [ このモジュールをサポートするCommerceのバージョンについては ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) を参照してください。
+開発者向けドキュメントの [ このモジュールをサポートするCommerceのバージョンについては ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability) を参照してください。
 
 ## サポートされるサービスのアップデート
 

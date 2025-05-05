@@ -112,7 +112,7 @@ Product Recommendations モジュールをインストールすると、Adobe Co
 
 ![ バッジを追加 ](assets/unit-custom.png)
 
-ページでレコメンデーションユニットをレンダリングする際に、カスタムの製品属性が使用可能であることを確認するには、管理者の [ 製品属性 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) ページで `Used in Product Listing` プロパティを `Yes` に設定します。
+ページでレコメンデーションユニットをレンダリングする際に、カスタムの製品属性が使用可能であることを確認するには、管理者の [ 製品属性 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) ページで `Used in Product Listing` プロパティを `Yes` に設定します。
 
 このプロパティを設定すると、JSON ペイロードには、属性コードと値の配列を含む `attributes` オブジェクトが含まれます。 その後、これらの属性値に基づいて、カスタムストアフロントのスタイル設定を適用できます（前述のように特別なビジュアル処理やバッジの追加など）。
 

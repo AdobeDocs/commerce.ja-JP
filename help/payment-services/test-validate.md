@@ -18,7 +18,7 @@ ht-degree: 0%
 サンドボックス環境での [!DNL Payment Services] のテストは、実際の銀行やマーチャントではなく、PayPal サンドボックスにのみ接続されるシミュレート環境ですが、重要な検証ステップです。
 
 1. [ クレジットカードフィールド ](payments-options.md#credit-card-fields) または [PayPal 支払いボタン ](payments-options.md#paypal-smart-buttons) のいずれかを使用して、ストアからチェックアウトを成功させます。 テストのためのフェイククレジットカードの使用について詳しくは、[ 資格情報のテスト ](#testing-credentials) を参照してください。
-1. 完了したばかりの注文をキャプチャ [ 支払いアクションが `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method) に設定されている場合）、[ 払い戻し ](refunds.md)、または [ 無効 ](voids.md) します。 支払い処理が `Authorize and Capture` ではなく `Authorize` に設定されている場合は、注文の [ 請求書を作成 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} することもできます。
+1. 完了したばかりの注文をキャプチャ [ 支払いアクションが `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method) に設定されている場合）、[ 払い戻し ](refunds.md)、または [ 無効 ](voids.md) します。 支払い処理が `Authorize and Capture` ではなく `Authorize` に設定されている場合は、注文の [ 請求書を作成 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} することもできます。
 1. 24～48 時間以内に、トランザクションおよびその他の情報を [ 支払いレポート ](payouts.md) で確認します。
 1. 注文の詳細については、[ 注文支払いステータスレポート ](order-payment-status.md) を参照してください。
 

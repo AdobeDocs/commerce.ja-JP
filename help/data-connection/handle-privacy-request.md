@@ -16,21 +16,21 @@ Adobe Experience Platform Privacy Serviceは、カスタマーデータのリク
 
 Privacy Serviceと、プライバシーリクエストを作成および管理する方法について詳しくは、次のAdobe Experience Platform ドキュメントを参照してください。
 
-* [Privacy Serviceの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home)
-* [Privacy Service UI でのプライバシージョブの管理 ](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide)
+* [Privacy Serviceの概要 ](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/home)
+* [Privacy Service UI でのプライバシージョブの管理 ](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/ui/user-guide)
 
 ## 個々のデータプライバシーリクエストの管理
 
 個々のリクエストを送信して、[!DNL Commerce] から消費者データにアクセスしたり削除したりするには、次の 2 つの方法があります。
 
-* **Privacy Service UI** を使用する。 ドキュメント [ こちら ](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide#_blank) を参照してください。
+* **Privacy Service UI** を使用する。 ドキュメント [ こちら ](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/ui/user-guide#_blank) を参照してください。
 * **Privacy Service API** を使用する。 ドキュメント [ こちら ](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank) および API 情報 [ こちら ](https://developer.adobe.com/experience-platform-apis/#_blank) を参照してください。
 
 Privacy Serviceでは、**データアクセス** と **データ削除** の 2 種類のリクエストがサポートされています。
 
 >[!NOTE]
 >
->この記事では、[!DNL Commerce] に対するプライバシーリクエストの実行に焦点を当てます。 [Platform Data Lake](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy)、[ リアルタイム顧客プロファイル ](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) または [ID サービス ](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy) のプライバシーリクエストを行う予定がある場合は、それぞれのユーザーガイドを参照してください。 Commerceに対するプライバシーリクエストでは、これらのすべてのシステムからデータが削除されないので、削除リクエストとアクセスリクエストは、各システムに対して個別に行う必要があります。
+>この記事では、[!DNL Commerce] に対するプライバシーリクエストの実行に焦点を当てます。 [Platform Data Lake](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/privacy)、[ リアルタイム顧客プロファイル ](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/privacy) または [ID サービス ](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/privacy) のプライバシーリクエストを行う予定がある場合は、それぞれのユーザーガイドを参照してください。 Commerceに対するプライバシーリクエストでは、これらのすべてのシステムからデータが削除されないので、削除リクエストとアクセスリクエストは、各システムに対して個別に行う必要があります。
 
 ## データアクセス
 
@@ -38,7 +38,7 @@ Privacy Serviceでは、**データアクセス** と **データ削除** の 2 
 
 ## データ削除
 
-削除要求の場合、Privacy Serviceは、マーケティング目的 [!DNL Commerce]Commerce SaaS サービスに保存されているデータを削除します。つまり、データ主体のプロファイルと注文は、キャンペーンやカスタマージャーニーで使用するためにAdobe マーケティングアプリケーションに送信されなくなります。 ただし、マーチャントトランザクションのニーズに必要な可能性があるので、Privacy Serviceは [!DNL Commerce] アプリケーション内のデータを削除しません。 マーチャントは、[!DNL Commerce] アプリケーション内のすべてのデータ削除/アクセスリクエストに対して責任を負います。 詳しくは、[ 共有責任のセキュリティと運用モデル ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) を参照してください。
+削除要求の場合、Privacy Serviceは、マーケティング目的 [!DNL Commerce]Commerce SaaS サービスに保存されているデータを削除します。つまり、データ主体のプロファイルと注文は、キャンペーンやカスタマージャーニーで使用するためにAdobe マーケティングアプリケーションに送信されなくなります。 ただし、マーチャントトランザクションのニーズに必要な可能性があるので、Privacy Serviceは [!DNL Commerce] アプリケーション内のデータを削除しません。 マーチャントは、[!DNL Commerce] アプリケーション内のすべてのデータ削除/アクセスリクエストに対して責任を負います。 詳しくは、[ 共有責任のセキュリティと運用モデル ](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/shared-responsibility) を参照してください。
 
 [!DNL Commerce] は、特定のデータの削除をリクエストするデータ主体の情報を送信することで、削除要求についてマーチャントに通知します。
 
@@ -63,8 +63,8 @@ Adobe [!DNL Commerce] のデータへのアクセスおよび削除をリクエ�
 
 プライバシー API を使用してアクセスリクエストと削除リクエストを送信するには、Privacy Serviceに対する権限を認証および管理する必要があります。
 
-* [Privacy Service API の認証とアクセス ](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/getting-started)
-* [Privacy Serviceの権限の管理 ](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/permissions)
+* [Privacy Service API の認証とアクセス ](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/api/getting-started)
+* [Privacy Serviceの権限の管理 ](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/permissions)
 
 **必須ヘッダー**
 

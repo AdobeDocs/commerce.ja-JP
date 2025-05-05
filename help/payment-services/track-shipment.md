@@ -13,7 +13,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] を使用すると、マーチャントは PayPal マーチャントダッシュボードで出荷のトラッキング情報を確認できます。
 
-Adobe Commerceの出荷グリッドについて詳しくは、[ 出荷 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} に関するトピックを参照してください。
+Adobe Commerceの出荷グリッドについて詳しくは、[ 出荷 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} に関するトピックを参照してください。
 
 ## 出荷のトラッキングの仕組み
 

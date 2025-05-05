@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 製品の在庫管理
 
-マーチャントは、Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) の在庫およびソースオプションを使用できます。 また、ストアフルフィルメントソリューションを使用して、マーチャントストアの運営に関連するその他の在庫可用性オプションを制御することもできます。
+マーチャントは、Adobe Commerce [Inventory management](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/introduction) の在庫およびソースオプションを使用できます。 また、ストアフルフィルメントソリューションを使用して、マーチャントストアの運営に関連するその他の在庫可用性オプションを制御することもできます。
 
 - マーチャントストアからの宅配オプション
 

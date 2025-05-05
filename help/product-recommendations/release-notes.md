@@ -25,7 +25,7 @@ ht-degree: 0%
 ![ 修正 ](../assets/fix.svg) 修正点および改善点
 ![ バグ ](../assets/bug.svg) 既知の問題
 
-詳しくは、開発者向けドキュメントの [ 製品サポートについて ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) を参照してください。
+詳しくは、開発者向けドキュメントの [ 製品サポートについて ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability) を参照してください。
 
 ## ホステッド サービスの更新
 
@@ -100,7 +100,7 @@ _2024 年 2 月 22 日_
 
 [!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
-![ 新規 ](../assets/new.svg) [!DNL Catalog Sync Dashboard] が [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) になりました。 この刷新されたダッシュボードでは、[!DNL Product Recommendations]、[!DNL Live Search] および [!DNL Catalog Service] のデータストリームに関するインサイトが提供されます。
+![ 新規 ](../assets/new.svg) [!DNL Catalog Sync Dashboard] が [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-dashboard) になりました。 この刷新されたダッシュボードでは、[!DNL Product Recommendations]、[!DNL Live Search] および [!DNL Catalog Service] のデータストリームに関するインサイトが提供されます。
 ![ 修正 ](../assets/fix.svg) [!DNL Product Recommendations] のチェックアウトエラーが発生する問題を修正しました。
 
 +++5.0.0 以前
@@ -127,7 +127,7 @@ _2023 年 3 月 20 日_
 
 ![ 新規 ](../assets/new.svg)Adobe Commerce 2.4.6 をサポートするように [!DNL Product Recommendations] を更新しました。
 ![ 新規 ](../assets/new.svg) これはメジャーバージョンリリースです。 [ 編集 ](install-configure.md#update) プロジェクトのルート `composer.json` ファイル。
-![ 新機能 ](../assets/new.svg) [!DNL Product Recommendations]Commerceで完全な [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) 機能をサポートするようになりました（以前はマルチSourceインベントリ（MSI）と呼ばれていました）。 完全なサポートを有効にするには、依存関係モジュールをバージョン 102.2.0 以降に [ 更新 ](install-configure.md#update) する必要 `commerce-data-export` あります。
+![ 新機能 ](../assets/new.svg) [!DNL Product Recommendations]Commerceで完全な [Inventory management](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/introduction) 機能をサポートするようになりました（以前はマルチSourceインベントリ（MSI）と呼ばれていました）。 完全なサポートを有効にするには、依存関係モジュールをバージョン 102.2.0 以降に [ 更新 ](install-configure.md#update) する必要 `commerce-data-export` あります。
 
 ### magento/product-recommendations の 4.0.1
 
@@ -164,7 +164,7 @@ _2023 年 3 月 20 日_
 [!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 ![ 新規 ](../assets/new.svg) [B2B サポート ](onboarding.md#b2bsupport) を [!DNL Product Recommendations] に追加
-![ 新規 ](../assets/new.svg) コマンドラインを使用してCommerce サービスに [sync catalog data](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) 新しいフィードを追加しました
+![ 新規 ](../assets/new.svg) コマンドラインを使用してCommerce サービスに [sync catalog data](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/data-services/catalog-sync) 新しいフィードを追加しました
 
 ### magento/product-recommendations の 3.3.3
 
@@ -204,7 +204,7 @@ _2023 年 3 月 20 日_
 
 [!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
-![ 新規 ](../assets/new.svg)Magento サービスの名前を [Commerce サービスに変更し ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) 管理者の操作性が向上しました
+![ 新規 ](../assets/new.svg)Magento サービスの名前を [Commerce サービスに変更し ](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/integration-services/saas) 管理者の操作性が向上しました
 
 ### magento/product-recommendations の 3.2.4
 
@@ -225,7 +225,7 @@ _2023 年 3 月 20 日_
 [!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 ![ 新規 ](../assets/new.svg) 作成時に [ レコメンデーション結果をプレビュー ](create.md) する機能を追加しました。 モジュールを最新バージョンに更新する必要が生じる場合があります。
-![ 新規 ](../assets/new.svg) 管理者からカタログ同期プロセスを [ 監視および管理 ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) できる機能が追加されました。
+![ 新規 ](../assets/new.svg) 管理者からカタログ同期プロセスを [ 監視および管理 ](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/data-services/catalog-sync) できる機能が追加されました。
 ![ 新規 ](../assets/new.svg) レコメンデーションに表示する製品を制御する [ フィルター ](filters.md) を追加しました。
 ![ 新規 ](../assets/new.svg) [ 視覚的類似性 ](type.md#visualsim) レコメンデーションタイプを追加しました。
 
@@ -239,7 +239,7 @@ _2023 年 3 月 20 日_
 
 [!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
-![ 新規 ](../assets/new.svg) コマンドラインを使用してカタログを SaaS サービスに [ 再同期 ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) する機能が追加されました。
+![ 新規 ](../assets/new.svg) コマンドラインを使用してカタログを SaaS サービスに [ 再同期 ](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/data-services/catalog-sync) する機能が追加されました。
 ![ 新規 ](../assets/new.svg) データベーステーブル接頭辞のサポートが追加されました
 ![ 修正 ](../assets/fix.svg) PHP 7.1 のサポートを削除しました
 
@@ -308,7 +308,7 @@ _2023 年 3 月 20 日_
 
 [!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
-![ 新規 ](../assets/new.svg) ページビルダーのサポート。 ページビルダーの統合を使用すると、ページビルダーが作成したコンテンツの任意の場所にレコメンデーションユニットを正確かつ詳細に配置できます。 また、見出しとレコメンデーションユニット自体のスタイルを設定することもできます。 詳しくは [ ページビルダー ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) を参照してください。
+![ 新規 ](../assets/new.svg) ページビルダーのサポート。 ページビルダーの統合を使用すると、ページビルダーが作成したコンテンツの任意の場所にレコメンデーションユニットを正確かつ詳細に配置できます。 また、見出しとレコメンデーションユニット自体のスタイルを設定することもできます。 詳しくは [ ページビルダー ](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/add-content/recommendations) を参照してください。
 
 ### magento/product-recommendations の 2.0.0
 
@@ -323,4 +323,4 @@ _2023 年 3 月 20 日_
 [!DNL Product Recommendations] と [!DNL Product Recommendations] の開発について詳しくは、以下を参照してください。
 
 * [ユーザーガイド](overview.md)
-* [ 開発者向けドキュメント ](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/developer/development-overview)
+* [ 開発者向けドキュメント ](https://experienceleague.adobe.com/ja/docs/commerce/product-recommendations/developer/development-overview)

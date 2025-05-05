@@ -18,19 +18,19 @@ ht-degree: 0%
 ![ 修正された問題 ](../assets/fix.svg) 修正および改善
 ![ 既知の問題 ](../assets/bug.svg)
 
-リリーススケジュールとサポートについては、[ 今後のリリース ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) を参照してください。
+リリーススケジュールとサポートについては、[ 今後のリリース ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=ja) を参照してください。
 
-この拡張機能をサポートするAdobe Commerceのバージョンについては、[ 製品の可用性 ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) を参照してください。
+この拡張機能をサポートするAdobe Commerceのバージョンについては、[ 製品の可用性 ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=ja) を参照してください。
 
 ## v1.5.0
 
 *2023 年 8 月 3 日*
 
-[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}[Adobe Commerce 2.4.4 ～ 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) （2.4.6-p1、2.4.5-p3、および 2.4.4-p4 セキュリティパッチリリースを含む）
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}[Adobe Commerce 2.4.4 ～ 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=ja) （2.4.6-p1、2.4.5-p3、および 2.4.4-p4 セキュリティパッチリリースを含む）
 
 このリリースには、次のアップデートが含まれています。
 
-![ 新規 ](../assets/fix.svg) [Adobe Commerce セキュリティパッチリリース ](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html)2.4.6-p1、2.4.5-p3 および 2.4.4-p4 をサポートするように拡張機能を更新しました。
+![ 新規 ](../assets/fix.svg) [Adobe Commerce セキュリティパッチリリース ](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html?lang=ja)2.4.6-p1、2.4.5-p3 および 2.4.4-p4 をサポートするように拡張機能を更新しました。
 
 ![ 新規 ](../assets/new.svg)<!-- WMTP-918 --> 販売メール用の [ 非同期送信 ](sales-emails.md) 設定オプションのサポートを追加しました。 バージョン 1.5.0 にアップグレードしたマーチャントは、メールを直ちに送信（デフォルト）するか、非同期で送信するかを選択できます。
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 [!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
-![ 新規 ](../assets/fix.svg) [!DNL Store Fulfillment] は [2.4.4 ～ 2 [!DNL Adobe Commerce] 4.6 と互換性がある ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) ようになりました。
+![ 新規 ](../assets/fix.svg) [!DNL Store Fulfillment] は [2.4.4 ～ 2 [!DNL Adobe Commerce] 4.6 と互換性がある ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=ja) ようになりました。
 
 
 ## v1.3.0
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 このリリースには、次のアップデートが含まれています。
 
-![ 新規 ](../assets/fix.svg) [!DNL Store Fulfillment] は [2.4.4 ～ 2 [!DNL Adobe Commerce] 4.5 と互換性がある ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) ようになりました。
+![ 新規 ](../assets/fix.svg) [!DNL Store Fulfillment] は [2.4.4 ～ 2 [!DNL Adobe Commerce] 4.5 と互換性がある ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=ja) ようになりました。
 
 
 ## v1.1.0

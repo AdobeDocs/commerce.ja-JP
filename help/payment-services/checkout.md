@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ![ チェックアウト中のエラー ](assets/user-checkout-error.png " チェックアウト中のエラー "){width="600" zoomable="yes"}
 
-キャンセルされた注文に関するコメントも、特定の [ 注文 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en) の管理者に表示されます。
+キャンセルされた注文に関するコメントも、特定の [ 注文 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=ja) の管理者に表示されます。
 
 ![ 注文に対する管理者のキャンセルされた注文コメント ](assets/admin-checkout-error.png " 注文に対する管理者のキャンセルされた注文コメント "){width="600" zoomable="yes"}
 

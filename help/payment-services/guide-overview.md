@@ -37,7 +37,7 @@ ht-degree: 0%
 
 | ガイド | 説明 |
 |------ | ----------- |
-| [[!DNL Adobe Commerce] 2.4 ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | [!DNL Adobe Commerce] と [!DNL Magento Open Source] の両方に関するマーチャント向けドキュメント |
+| [[!DNL Adobe Commerce] 2.4 ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=ja) | [!DNL Adobe Commerce] と [!DNL Magento Open Source] の両方に関するマーチャント向けドキュメント |
 | [[!DNL Adobe Commerce] 2.4 開発者ガイド ](https://developer.adobe.com/commerce/docs) | [!DNL Adobe Commerce] または [!DNL Magento Open Source] の作成とカスタマイズに使用される、開発者向けドキュメント |
 
 ## サポート
@@ -48,5 +48,5 @@ ht-degree: 0%
 
 どの [!DNL Payment Services] オプションが適切かを確認するには、[ 可用性 ](overview.md#availability) を参照してください。
 
-* [ ヘルプセンター ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - ナレッジベースで、[!DNL Payment Services] 関連のトラブルシューティング記事を検索します。
-* [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Commerceのお客様はチケットを送信して、追加のヘルプを受けることができます。
+* [ ヘルプセンター ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=ja) - ナレッジベースで、[!DNL Payment Services] 関連のトラブルシューティング記事を検索します。
+* [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) - Commerceのお客様はチケットを送信して、追加のヘルプを受けることができます。

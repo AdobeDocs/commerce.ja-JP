@@ -20,7 +20,7 @@ ht-degree: 0%
 
 属性メタデータの範囲は `website/store/store view` です。
 
-[!DNL Live Search] API を使用すると、クライアントは、Adobe Commerce管理で [storefront プロパティ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) が `Yes` に設定されている任意の product 属性で並べ替え `Use in Search` ことができます。 有効にすると、属性に `Search Weight` を設定できます。
+[!DNL Live Search] API を使用すると、クライアントは、Adobe Commerce管理で [storefront プロパティ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes) が `Yes` に設定されている任意の product 属性で並べ替え `Use in Search` ことができます。 有効にすると、属性に `Search Weight` を設定できます。
 
 [!DNL Live Search] は、削除された製品または `Not Visible Individually` に設定された製品のインデックスを作成しません。
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 クライアントはストアフロントから検索サービスを呼び出して、（フィルタリング可能、並べ替え可能な）インデックスメタデータを取得します。 *レイヤーナビゲーションで使用* プロパティが `Filterable (with results)` に設定され、*製品リストで並べ替えに使用* が `Yes` に設定された検索可能な製品属性のみが、検索サービスによって呼び出すことができます。
 
-動的クエリを作成するには、検索サービスが検索可能な属性とその [ 重み付け ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) を把握している必要があります。 [!DNL Live Search] は、Adobe Commerce検索の重み付け（1 ～ 10、10 が最も優先度が高い）に従います。 カタログサービスで同期および共有されるデータのリストは、スキーマで見つけることができます。このスキーマは、次で定義されています。
+動的クエリを作成するには、検索サービスが検索可能な属性とその [ 重み付け ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results) を把握している必要があります。 [!DNL Live Search] は、Adobe Commerce検索の重み付け（1 ～ 10、10 が最も優先度が高い）に従います。 カタログサービスで同期および共有されるデータのリストは、スキーマで見つけることができます。このスキーマは、次で定義されています。
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ## クライアント検索
 
-[!DNL Live Search] API では、[storefront プロパティ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)、*製品リストでの並べ替えに使用* を `Yes` に設定することで、クライアントは並べ替え可能な製品属性で並べ替えることができます。 テーマによっては、この設定を使用すると、カタログページ上の [ 並べ替え基準 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation) ページネーションコントロールに属性がオプションとして含められます。 検索およびフィルタリング可能な [ ストアフロントプロパティ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) を使用して、[!DNL Live Search] でインデックスを作成できる製品属性は最大 200 個です。
+[!DNL Live Search] API では、[storefront プロパティ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes)、*製品リストでの並べ替えに使用* を `Yes` に設定することで、クライアントは並べ替え可能な製品属性で並べ替えることができます。 テーマによっては、この設定を使用すると、カタログページ上の [ 並べ替え基準 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/navigation/navigation) ページネーションコントロールに属性がオプションとして含められます。 検索およびフィルタリング可能な [ ストアフロントプロパティ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes) を使用して、[!DNL Live Search] でインデックスを作成できる製品属性は最大 200 個です。
 
 インデックスメタデータはインデックスパイプラインに保存され、検索サービスからアクセスできます。
 

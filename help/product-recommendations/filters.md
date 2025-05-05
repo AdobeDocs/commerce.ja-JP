@@ -47,7 +47,7 @@ Adobe Commerceは、設定不可のデフォルトフィルターをレコメン
 
 >[!NOTE]
 >
->B2B マーチャントの場合、カテゴリフィルターは、設定した [ 顧客固有の製品カテゴリ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) に従います。
+>B2B マーチャントの場合、カテゴリフィルターは、設定した [ 顧客固有の製品カテゴリ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=ja) に従います。
 
 Adobe Commerceでは、ページタイプにレコメンデーションをデプロイする際に、次のカテゴリフィルター設定を使用することをお勧めします。
 
@@ -77,11 +77,11 @@ Adobe Commerceでは、ページタイプにレコメンデーションをデプ
 
 ### 価格
 
-製品価格に基づくフィルターでは、最終価格を使用して比較を実行します。 最終価格には、匿名の買い物客が利用できる割引や特別価格が含まれます。 B2B マーチャントの場合、表示される価格は、設定した [ 顧客固有のグループ価格 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) を反映しています。
+製品価格に基づくフィルターでは、最終価格を使用して比較を実行します。 最終価格には、匿名の買い物客が利用できる割引や特別価格が含まれます。 B2B マーチャントの場合、表示される価格は、設定した [ 顧客固有のグループ価格 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja) を反映しています。
 
 ### 在庫ステータス
 
 在庫ステータスに基づいて製品を除外するには、次の除外フィルターを使用できます。
 
 - 在庫切れ – （除外のみ）在庫切れの製品を除外します。
-- 低在庫 – （除外のみ）在庫が少ない製品を除外します。 在庫が少ないステータスは、[ 在庫設定 ](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html) の _左側が X 個のみのしきい値_ の値に基づきます。
+- 低在庫 – （除外のみ）在庫が少ない製品を除外します。 在庫が少ないステータスは、[ 在庫設定 ](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=ja) の _左側が X 個のみのしきい値_ の値に基づきます。

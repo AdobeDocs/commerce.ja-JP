@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->[2&rbrace;Adobe Commerceアップグレードガイド &rbrace; の ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) アップグレード手順 _に従って、オンプレミスのAdobe Commerceのストアフルフィルメント拡張機能をアップグレードします。_&#x200B;クラウドインフラストラクチャー上のAdobe Commerceについては、&lbrace;2[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) クラウドインフラストラクチャー上のCommerce ガイドの  拡張機能のアップグレード *を参照してください。*
+>[2&rbrace;Adobe Commerceアップグレードガイド &rbrace; の ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html?lang=ja) アップグレード手順 _に従って、オンプレミスのAdobe Commerceのストアフルフィルメント拡張機能をアップグレードします。_&#x200B;クラウドインフラストラクチャー上のAdobe Commerceについては、&lbrace;2[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=ja#upgrade-an-extension) クラウドインフラストラクチャー上のCommerce ガイドの  拡張機能のアップグレード *を参照してください。*
 
 ## 前提条件
 
@@ -35,17 +35,17 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Walmart Commerce Technologies ソフトウェアアーカイブ（.zip ファイル）によるストアフルフィルメントへのアクセス** - オンボーディングおよび有効化プロセス中は、担当のアカウントマネージャーと協力して、ストアフルフィルメント拡張機能のインストールファイルにアクセスできます。
 
-- **Adobe Commerce アカウント情報** - [!DNL Store Fulfillment] ソリューションをインストールするには、[[!DNL Commerce]  アカウント ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"} が必要です。 [!DNL Adobe Commerce] プロジェクトへの所有者または管理者アクセス権を持つアカウント ID と資格情報が必要です。
+- **Adobe Commerce アカウント情報** - [!DNL Store Fulfillment] ソリューションをインストールするには、[[!DNL Commerce]  アカウント ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"} が必要です。 [!DNL Adobe Commerce] プロジェクトへの所有者または管理者アクセス権を持つアカウント ID と資格情報が必要です。
 
-- クラウドインフラストラクチャプロジェクトに [!DNL Adobe Commerce] いては、ソフトウェアインストーラーがクラウドプロジェクトへの管理者アクセス権を持っている必要があります。 [ ユーザーアクセスの管理 ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access) を参照してください。
+- クラウドインフラストラクチャプロジェクトに [!DNL Adobe Commerce] いては、ソフトウェアインストーラーがクラウドプロジェクトへの管理者アクセス権を持っている必要があります。 [ ユーザーアクセスの管理 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/project/user-access) を参照してください。
 
-- **Composer と[!DNL Commerce CLI]** の使用経験 – これらのツールを使用して [!DNL Adobe Commerce] プラットフォームで拡張機能をインストールおよび管理する方法については、[ 一般的な CLI のインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"} を参照してください。
+- **Composer と[!DNL Commerce CLI]** の使用経験 – これらのツールを使用して [!DNL Adobe Commerce] プラットフォームで拡張機能をインストールおよび管理する方法については、[ 一般的な CLI のインストール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"} を参照してください。
 
 - **Adobe Commerceにサードパーティの拡張機能をインストールした経験** – 詳しくは、Adobe Commerceのドキュメントを参照してください。
 
-   - [ クラウドインフラストラクチャインスタンス上のAdobe Commerceの拡張機能をインストール ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension)。
+   - [ クラウドインフラストラクチャインスタンス上のAdobe Commerceの拡張機能をインストール ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension)。
 
-   - [Adobe Commerce オンプレミスインスタンスの拡張機能をインストールします ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)。
+   - [Adobe Commerce オンプレミスインスタンスの拡張機能をインストールします ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/extensions)。
 
 ### 手順 1：拡張機能バンドルをダウンロードする
 
@@ -92,7 +92,7 @@ Composer を使用して、インストールのソース ディレクトリを�
 
 >[!NOTE]
 >
->Adobe Commerceのオンプレミスインスタンスのパフォーマンスを向上させるには、[ 自動ロード設定を更新する ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html#update-the-autoloader) ことができます。`composer dump-autoload --optimize`
+>Adobe Commerceのオンプレミスインスタンスのパフォーマンスを向上させるには、[ 自動ロード設定を更新する ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html?lang=ja#update-the-autoloader) ことができます。`composer dump-autoload --optimize`
 
 ### 手順 4：データベーススキーマとデータをアップグレードする
 
@@ -134,7 +134,7 @@ Adobe Commerce サーバーで、Store Fulfillment Services 拡張機能のモ�
 
 1. サーバーにログインします。
 
-   クラウドインフラストラクチャー上のAdobe Commerceにインストールするには、[SSH を使用してリモート環境にログイン ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) します。
+   クラウドインフラストラクチャー上のAdobe Commerceにインストールするには、[SSH を使用してリモート環境にログイン ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) します。
 
 1. Store Fulfillment Services モジュールが有効になっていることを確認します。
 
@@ -188,7 +188,7 @@ Adobe Commerce サーバーで、Store Fulfillment Services 拡張機能のモ�
 
 ### その他の手順
 
-必要に応じて、[setup:static-content:deploy](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises){target="_blank"} CLI コマンドを使用して、静的ビューファイルを実稼動環境にデプロイします。
+必要に応じて、[setup:static-content:deploy](https://experienceleague.adobe.com/ja/docs/commerce-operations/tools/cli-reference/commerce-on-premises){target="_blank"} CLI コマンドを使用して、静的ビューファイルを実稼動環境にデプロイします。
 
 ```bash
 php bin/magento setup:static-content:deploy -f
@@ -198,6 +198,6 @@ php bin/magento setup:static-content:deploy -f
 
 >[!NOTE]
 >
->詳しくは、Adobe Commerce ヘルプセンターの記事 [Adobe Commerceでの静的コンテンツのデプロイのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) を参照してください。
+>詳しくは、Adobe Commerce ヘルプセンターの記事 [Adobe Commerceでの静的コンテンツのデプロイのベストプラクティス ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html?lang=ja) を参照してください。
 
 

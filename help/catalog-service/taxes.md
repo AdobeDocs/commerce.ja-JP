@@ -20,8 +20,8 @@ ht-degree: 0%
 
 製品の詳細ページに表示するには、税金を設定する必要があります。
 
-1. [ 税率を設定します ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html)。
-1. 税金を [ カタログに表示 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) できるようにして、`Including and Excluding Tax` または `Including Tax` に設定します。
+1. [ 税率を設定します ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=ja)。
+1. 税金を [ カタログに表示 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=ja#step-1%3A-configure-catalog-prices-display-settings) できるようにして、`Including and Excluding Tax` または `Including Tax` に設定します。
 
 製品の詳細ページを確認して、カタログサービスが機能していることを確認します。
 

@@ -24,7 +24,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/namespaces) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `person` | 顧客に関する情報が含まれます。 |
@@ -59,6 +59,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->各プロファイルレコードには、[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) フィールドも含まれています。このフィールドには、プロファイルのプライマリ識別子としてシステム生成のCommerce顧客 ID と、セカンダリ識別子として使用されるメール ID が含まれます。
+>各プロファイルレコードには、[`identityMap`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/profile/identitymap) フィールドも含まれています。このフィールドには、プロファイルのプライマリ識別子としてシステム生成のCommerce顧客 ID と、セカンダリ識別子として使用されるメール ID が含まれます。
 
 プロファイルレコードからデータを取り込むことができる [ プロファイルレコード固有のスキーマを作成 ](profile-data.md) する方法を説明します。

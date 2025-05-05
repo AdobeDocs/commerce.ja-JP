@@ -31,12 +31,12 @@ ht-degree: 0%
 
 | ガイド | 説明 |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Adobe Commerce 2.4 ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Adobe Commerceに関するマーチャント向けドキュメント |
+| [Adobe Commerce 2.4 ユーザーガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home) | Adobe Commerceに関するマーチャント向けドキュメント |
 | [Adobe Commerce 2.4 開発者ガイド ](https://developer.adobe.com/commerce/docs/) | Adobe Commerceの構築とカスタマイズに使用する、開発者向けドキュメント |
 
 ## サポート
 
 情報が必要な場合や、このガイドで扱われていない質問がある場合は、次のリソースを使用してください。
 
-* [ ヘルプセンター ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} - [!DNL Store Fulfillment] に関連するトラブルシューティング記事を参照してください。
-* [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} - チケットを送信すると、追加のヘルプを受けることができます。
+* [ ヘルプセンター ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket){target="_blank"} - [!DNL Store Fulfillment] に関連するトラブルシューティング記事を参照してください。
+* [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket){target="_blank"} - チケットを送信すると、追加のヘルプを受けることができます。

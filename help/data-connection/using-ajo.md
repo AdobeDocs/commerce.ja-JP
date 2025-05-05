@@ -21,7 +21,7 @@ ht-degree: 0%
 | データタイプ | ストアフロントデータ（行動イベント） | バックオフィスデータ（サーバーサイドイベント） |
 |---|---|---|
 | **定義** | サイトに対する顧客のクリックまたはアクション。 | 各注文のライフサイクルと詳細（過去および現在）に関する情報。 |
-| **Adobe Commerceのイベント** | [pageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Order history](https://experienceleague.adobe.com/en/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
+| **Adobe Commerceのイベント** | [pageView](https://experienceleague.adobe.com/ja/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/ja/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/ja/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/ja/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/ja/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/ja/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/ja/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Order history](https://experienceleague.adobe.com/ja/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
 ### 他の顧客は何を達成しましたか？
 
@@ -47,7 +47,7 @@ Adobe [!DNL Commerce] のお客様は、Adobe [!DNL Commerce]、Adobe [!DNL Jour
 
 ### Adobe Journey Optimizerとは
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) は、買い物客向けにコマースエクスペリエンスをパーソナライズするのに役立ちます。 例えば、Journey Optimizerを使用して、小売店向けの週別プロモーションなどのスケジュールされたマーケティングキャンペーンを作成して配信したり、顧客が買い物かごに商品を追加したもののチェックアウトプロセスを完了しなかった場合に、放棄された買い物かごのメールを生成したりできます。
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=ja) は、買い物客向けにコマースエクスペリエンスをパーソナライズするのに役立ちます。 例えば、Journey Optimizerを使用して、小売店向けの週別プロモーションなどのスケジュールされたマーケティングキャンペーンを作成して配信したり、顧客が買い物かごに商品を追加したもののチェックアウトプロセスを完了しなかった場合に、放棄された買い物かごのメールを生成したりできます。
 
 このトピックでは、[!DNL Commerce] インスタンスから生成された `checkout` イベントをリッスンし、Journey Optimizerでそのイベントに応答することで、放棄された買い物かごメールを作成する方法を説明します。
 
@@ -83,7 +83,7 @@ Adobe [!DNL Commerce] のお客様は、Adobe [!DNL Commerce]、Adobe [!DNL Jour
 
 [!DNL Commerce] サンドボックス環境では、商品ページの表示、買い物かごへの商品の追加、買い物客が実行するその他の様々なアクティビティの完了などにより、ストアフロントでトリガーイベントが発生します。 次に、これらのイベントがJourney Optimizerに送信されていることを確認します。
 
-1. [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html) を起動します。
+1. [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=ja) を起動します。
 1. 「**[!UICONTROL Profiles]**」を選択します。
 1. **[!UICONTROL Identity namespace]** を `Email` に設定します。
 1. **[!UICONTROL Identity value]** をメールアドレスに設定します。
@@ -112,7 +112,7 @@ Journey Optimizerで 2 つのイベントを設定します。1 つはCommerce�
 
 ### リスナーイベントの作成
 
-1. [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html) を起動します。
+1. [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=ja) を起動します。
 
 1. 左側のペインの **[!UICONTROL Administration]** セクションの下にある「**[!UICONTROL Configurations]**」をクリックします。
 
@@ -185,7 +185,7 @@ Journey Optimizerで 2 つのイベントを設定します。1 つはCommerce�
 
 1. 上記で作成したジャーニーで、キャンバス上の **[!UICONTROL Email]** アイコンをダブルクリックします。
 
-1. Journey Optimizer ガイドの [ 手順 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) に従って、放棄された買い物かごのメールを作成します。
+1. Journey Optimizer ガイドの [ 手順 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html?lang=ja#configure-email) に従って、放棄された買い物かごのメールを作成します。
 
 これで、Journey Optimizerで [!DNL Commerce] ストアからの `commerce.checkouts` イベントをリッスンするジャーニーと、一定期間経過後に送信される放棄された買い物かごメールが作成されました。 次の節では、ジャーニーのテスト方法を説明します。
 

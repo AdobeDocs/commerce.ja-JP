@@ -15,14 +15,14 @@ ht-degree: 0%
 >
 >このドキュメントでは、製品の早期アクセス開発について説明しており、一般提供を目的とした機能のすべてを反映しているわけではありません。
 
-このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) [!DNL Adobe Commerce Optimizer] インスタンスのデータを利用して、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について説明します。
+このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja) [!DNL Adobe Commerce Optimizer] インスタンスのデータを利用して、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について説明します。
 
 
 ## 前提条件
 
 * リポジトリを作成できる GitHub アカウント（github.com）があり、ローカル開発用に設定されていることを確認します。
 
-* Adobe Commerce ストアフロントドキュメントの [ 概要 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) を確認して、Adobe Edge 配信サービスのストアフロントを作成するのに関連する基本的なワークフローと語彙について理解します。
+* Adobe Commerce ストアフロントドキュメントの [ 概要 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=ja) を確認して、Adobe Edge 配信サービスのストアフロントを作成するのに関連する基本的なワークフローと語彙について理解します。
 * 開発環境の設定
 
 
@@ -60,7 +60,7 @@ Edge Delivery Services プロジェクトで [!DNL Adobe Commerce Optimizer] ス
 
 >[!TIP]
 >
->この設定は、[!DNL Adobe Commerce Optimizer] およびAdobe Commerce Edge Delivery サービスのストアフロントを使用して開発するためのものです。 [!DNL Adobe Commerce Optimizer] ソリューションを拡張およびカスタマイズするためのその他のリソースは、[Adobe CommerceのApp Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) および [Adobe Developer App Builderの API メッシュ ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh) を通じて利用できます。 アクセスおよび使用方法について詳しくは、Adobe アカウント担当者にお問い合わせください。
+>この設定は、[!DNL Adobe Commerce Optimizer] およびAdobe Commerce Edge Delivery サービスのストアフロントを使用して開発するためのものです。 [!DNL Adobe Commerce Optimizer] ソリューションを拡張およびカスタマイズするためのその他のリソースは、[Adobe CommerceのApp Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) および [Adobe Developer App Builderの API メッシュ ](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh) を通じて利用できます。 アクセスおよび使用方法について詳しくは、Adobe アカウント担当者にお問い合わせください。
 
 #### Sidekickのインストール
 
@@ -71,7 +71,7 @@ Edge Delivery Services プロジェクトで [!DNL Adobe Commerce Optimizer] ス
 
 [!DNL Adobe Commerce Optimizer] プロジェクト用に作成するストアフロントは、カスタマイズされたバージョンのAdobe Commerce on Edge Delivery Services ストアフロントボイラープレートを使用して構築されます。 ボイラープレートは、ストアフロントを構築するための出発点となるファイルとフォルダーのセットです。
 
-このストアフロントのセットアッププロセスは、特に [!DNL Adobe Commerce Optimizer] のプロジェクト用にカスタマイズされています。 フローが、Edge Delivery Services ストアフロントの標準 [Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) 設定のフローと異なります。
+このストアフロントのセットアッププロセスは、特に [!DNL Adobe Commerce Optimizer] のプロジェクト用にカスタマイズされています。 フローが、Edge Delivery Services ストアフロントの標準 [Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja) 設定のフローと異なります。
 
 >[!NOTE]
 >
@@ -96,8 +96,8 @@ Adobe Commerce Optimizerで使用するストアフロントを設定するに�
 
 Adobe Commerce Storefront のドキュメントの手順に従って、Google Drive または SharePoint に共有コンテンツフォルダーを追加し、サンプルコンテンツを追加します。 サンプルコンテンツには、画像、テキスト、およびサイトを構成するその他のアセットが含まれます。
 
-* [Google ドライブまたは Sharepoint フォルダーの作成と共有 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#create-and-share-folder)
-* [ サンプルコンテンツを読み込む ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#add-sample-content) フォルダーに。
+* [Google ドライブまたは Sharepoint フォルダーの作成と共有 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja#create-and-share-folder)
+* [ サンプルコンテンツを読み込む ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja#add-sample-content) フォルダーに。
 
 ### 手順 2：コードリポジトリの作成
 
@@ -177,7 +177,7 @@ Edge Delivery ServicesとAdobe Commerceのボイラープレートテンプレ�
 
 1. ストアフロント設定ファイルを更新して、コンテンツの URL を指定します。
 
-   1. [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary) 設定ファイルを開きます。
+   1. [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja#vocabulary) 設定ファイルを開きます。
 
       ```json
       mountpoints:
@@ -487,6 +487,6 @@ https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql
 
 >[!MORELIKETHIS]
 >
->* サイトコンテンツの更新と、Adobe Commerceのフロントエンドコンポーネントやバックエンドデータとの統合について詳しくは、[Adobe Experience Manager Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/) を参照してください。[!DNL Adobe Commerce Optimizer]
+>* サイトコンテンツの更新と、Adobe Commerceのフロントエンドコンポーネントやバックエンドデータとの統合について詳しくは、[Adobe Experience Manager Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照してください。[!DNL Adobe Commerce Optimizer]
 ></br></br>
->* Adobe Commerce バックエンドで [!DNL Adobe Commerce Optimizer] を使用する予定がある場合は、[Adobe Commerce Storefront のドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/) を参照して、コンテンツを更新する方法、アカウント管理、チェックアウトなどの機能のためにストアフロントコンポーネントを設定する方法を確認してください。
+>* Adobe Commerce バックエンドで [!DNL Adobe Commerce Optimizer] を使用する予定がある場合は、[Adobe Commerce Storefront のドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照して、コンテンツを更新する方法、アカウント管理、チェックアウトなどの機能のためにストアフロントコンポーネントを設定する方法を確認してください。

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![ パフォーマンス ](assets/performance-unique-searches.png)
 
-また、データ同期について詳しくは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) を参照してください。
+また、データ同期について詳しくは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >

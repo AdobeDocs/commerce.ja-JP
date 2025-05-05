@@ -24,7 +24,7 @@ ht-degree: 0%
 - カタログシンジケーションのロックを解除し、製品、顧客、価格設定、流通などのビジネスを反映するように製品カタログを設計することで、適切な内容を提供します。
 - カタログデータをすばやく取り込んで更新し、プロモーションやキャンペーンニーズに合わせて更新をストアフロントに迅速に配信します。
 - シームレスな製品ブラウジングと推奨事項のためのEdge 配信サービスを搭載したすぐに使用できる超高速UIコンポーネントを使用して、完璧な灯台のスコアを達成します。
-- Adobe Systems の拡張アーキテクチャ ([アプリケーション Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)) を使用して最新のコンポーザブル アーキテクチャを採用し、Adobe Systems の [API メッシュ](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh)を使用して商品データをインポートし、ヘッドレス コマース ストアフロントを強化します。
+- Adobe Systems の拡張アーキテクチャ ([アプリケーション Builder](https://experienceleague.adobe.com/ja/playlists/commerce-get-started-app-builder-development)) を使用して最新のコンポーザブル アーキテクチャを採用し、Adobe Systems の [API メッシュ](https://experienceleague.adobe.com/ja/playlists/commerce-get-started-app-builder-and-api-mesh)を使用して商品データをインポートし、ヘッドレス コマース ストアフロントを強化します。
 
 >[!INFO]
 >

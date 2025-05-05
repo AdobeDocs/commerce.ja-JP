@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## インストール
 
-Adobe [!DNL Commerce] 用のヘルスケアアドオンを購入した場合は、[HIPAA 対応の拡張機能 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation) が既にインストールされている可能性があります。 [!DNL Commerce] バックオフィスイベントデータが HIPAA に対応していることを確認するには、追加の **データサービス HIPAA** 拡張機能を備えた [!DNL Data Connection] 拡張機能をインストールする必要もあります。 **データサービス HIPAA** 拡張機能により、Experience Platformに送信されるバックオフィスデータが HIPAA に対応できるようになります。 詳細情報 [ 拡張機能のインストール方法 ](install.md#install-the-data-services-hipaa-extension)。
+Adobe [!DNL Commerce] 用のヘルスケアアドオンを購入した場合は、[HIPAA 対応の拡張機能 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation) が既にインストールされている可能性があります。 [!DNL Commerce] バックオフィスイベントデータが HIPAA に対応していることを確認するには、追加の **データサービス HIPAA** 拡張機能を備えた [!DNL Data Connection] 拡張機能をインストールする必要もあります。 **データサービス HIPAA** 拡張機能により、Experience Platformに送信されるバックオフィスデータが HIPAA に対応できるようになります。 詳細情報 [ 拡張機能のインストール方法 ](install.md#install-the-data-services-hipaa-extension)。
 
 >[!IMPORTANT]
 >
@@ -36,15 +36,15 @@ Adobe [!DNL Commerce] 用のヘルスケアアドオンを購入した場合は�
 
 [!DNL Data Connection] 拡張機能からExperience Platformに送信されるすべてのバックオフィスイベントデータは、[!DNL Commerce] 内では機密と見なされます。 ただし、特定のデータを機密性が高いものとして明示的に識別するには、マーチャントの責任で、Experience Platformの [!DNL Commerce] スキーマにデータ使用ラベルを適用します。 データ使用ラベルをスキーマに直接適用すると、これらのラベルは、そのスキーマに基づくすべての既存のデータセットと今後のデータセットに伝播されます。
 
-データ使用ラベルとそのデータガバナンスフレームワーク内での役割の概要については、Experience Platform ドキュメントの [ データ使用ラベルの概要 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview) を参照してください。
+データ使用ラベルとそのデータガバナンスフレームワーク内での役割の概要については、Experience Platform ドキュメントの [ データ使用ラベルの概要 ](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview) を参照してください。
 
 ### [!DNL Commerce] のフィールドへのデータ使用ラベルの適用
 
-[!DNL Commerce] スキーマにラベルを適用する方法については、[ スキーマのデータ使用ラベルの管理 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels) チュートリアルの手順に従ってください。
+[!DNL Commerce] スキーマにラベルを適用する方法については、[ スキーマのデータ使用ラベルの管理 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/labels) チュートリアルの手順に従ってください。
 
-[!DNL Commerce] スキーマのフィールドに適用できる使用可能なラベルについて詳しくは、[ 機密ラベルの用語集 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference#sensitive) を参照してください。 例えば、保護対象保健情報（PHI）や、Adobe`RHD` 契約上アップロードを許可している患者に関する情報を識別するラベルです。
+[!DNL Commerce] スキーマのフィールドに適用できる使用可能なラベルについて詳しくは、[ 機密ラベルの用語集 ](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/reference#sensitive) を参照してください。 例えば、保護対象保健情報（PHI）や、Adobe`RHD` 契約上アップロードを許可している患者に関する情報を識別するラベルです。
 
-[!DNL Commerce] データに「機密」というラベルを付けると、ポリシーを適用して、ポリシー違反を構成するデータ操作を防ぐことができます。 詳しくは、Experience Platformの [ ポリシーの適用 ](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) を参照してください。
+[!DNL Commerce] データに「機密」というラベルを付けると、ポリシーを適用して、ポリシー違反を構成するデータ操作を防ぐことができます。 詳しくは、Experience Platformの [ ポリシーの適用 ](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/enforcement/overview) を参照してください。
 
 ## Commerceでのデータ暗号化
 
@@ -56,7 +56,7 @@ Adobe [!DNL Commerce] では、ブロックレベルの暗号化を使用しま�
 
 ### Experience Platformでのデータ暗号化
 
-マーチャントがデータをExperience Platformに送信すると、そのデータは HTTPS TLS v1.2 を使用して送信されます。[Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption) によるデータの暗号化方法の詳細を説明します。
+マーチャントがデータをExperience Platformに送信すると、そのデータは HTTPS TLS v1.2 を使用して送信されます。[Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/governance-privacy-security/encryption) によるデータの暗号化方法の詳細を説明します。
 
 ## [!DNL Commerce] によるプライバシーリクエストの処理方法
 

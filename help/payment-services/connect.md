@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!INFO]
 >
-> 詳しくは、[[!DNL Adobe Commerce]  サービスコネクタ ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en) ビデオを参照してください。
+> 詳しくは、[[!DNL Adobe Commerce]  サービスコネクタ ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=ja) ビデオを参照してください。
 
-* *既にインスタンスに接続している* 場合は、API 資格情報を取得して使用し、Commerce サービスを設定すると、[ テストサンドボックスの設定 ](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/sandbox.html) に進むことができます。
+* *既にインスタンスに接続している* 場合は、API 資格情報を取得して使用し、Commerce サービスを設定すると、[ テストサンドボックスの設定 ](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/sandbox.html?lang=ja) に進むことができます。
 * *インスタンスを接続する必要がある* 場合は、このトピックの [API 資格情報の取得 ](#obtain-api-credentials) および [Commerce サービスの設定 ](#configure-commerce-services) を参照してください。
 * *インスタンスが接続されているかどうかわからない* 場合は、**System** / サービス / **Commerce サービスコネクタ** に移動し、「[!UICONTROL Sandbox Keys]」セクションと「[!UICONTROL Production Keys]」セクションの公開鍵と秘密鍵の API キーの値を確認し、「[!UICONTROL SaaS Identifier]」セクションの「*プロジェクト*」フィールドと「*データスペース*」フィールドを確認します。 これらの値が存在する場合、インスタンスが接続されています。
 
@@ -30,19 +30,19 @@ ht-degree: 0%
 
 ## API 資格情報の取得
 
-Commerce SaaS サービスを使用するには、サンドボックスと実稼働環境の両方でインスタンスの API キー（Commerce公開 API キーと秘密キー）を使用する必要があります。このキーは、[ マイアカウントダッシュボード ](https://account.magento.com/customer/account/login) で作成および管理されます。 [ キーペア ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) はCommerce アカウント用に作成できます（サンドボックス用に 1 つ、実稼動用に 1 つ）。ただし、一度にアクティブに使用できるペアは 1 つだけです。
+Commerce SaaS サービスを使用するには、サンドボックスと実稼働環境の両方でインスタンスの API キー（Commerce公開 API キーと秘密キー）を使用する必要があります。このキーは、[ マイアカウントダッシュボード ](https://account.magento.com/customer/account/login) で作成および管理されます。 [ キーペア ](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/services/saas) はCommerce アカウント用に作成できます（サンドボックス用に 1 つ、実稼動用に 1 つ）。ただし、一度にアクティブに使用できるペアは 1 つだけです。
 
 >[!NOTE]
 >
->[!UICONTROL My Account] ダッシュボードへのアクセスに関するサポートが必要な場合は、 [Commerce アカウントの作成 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create) を参照してください。
+>[!UICONTROL My Account] ダッシュボードへのアクセスに関するサポートが必要な場合は、 [Commerce アカウントの作成 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-create) を参照してください。
 
 公開 API キーを作成すると、常にマイアカウントダッシュボードで使用できるようになります。 必要に応じて、コピーまたは削除できます。 秘密 API キーは、サンドボックスまたは実稼動用の公開 API キーを作成する際に表示されます。結果として表示されるダイアログボックスからのコピーまたは保存にのみ使用でき、後でアクセスすることはできません。
 
 指定された API キーペアは、環境内のすべてのCommerce Services で有効です。そのため、お使いのインスタンスに既にCommerce Services が設定されている場合、API キーペアは既にCommerce Services コネクタに存在します。
 
-API キーが失われた場合は、新しい API キーペアを [ 生成 ](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) および [ 適用 ](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html#configure-saas-project) して、管理者のCommerce サービスコネクタ設定に送信する必要があります。 間違ったキーが設定されている場合、または設定に何も存在しない場合、アカウントが検証されなかったことを通知するアカウント検証エラーダイアログが支払いサービスに表示されます。
+API キーが失われた場合は、新しい API キーペアを [ 生成 ](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html?lang=ja#generate-an-api-key-and-private-key) および [ 適用 ](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html?lang=ja#configure-saas-project) して、管理者のCommerce サービスコネクタ設定に送信する必要があります。 間違ったキーが設定されている場合、または設定に何も存在しない場合、アカウントが検証されなかったことを通知するアカウント検証エラーダイアログが支払いサービスに表示されます。
 
-[API を使用する使用可能なCommerce サービスのリスト ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices) を参照してください。
+[API を使用する使用可能なCommerce サービスのリスト ](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/integration-services/saas#availableservices) を参照してください。
 
 サンドボックス環境または実稼動環境用の API キーを生成する方法については、[ 資格情報 ](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html#apikey) を参照してください。
 
@@ -67,11 +67,11 @@ API キーが失われた場合は、新しい API キーペアを [ 生成 ](ht
 
    Commerce Services Connector を設定するには、管理者（**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**/**[!UICONTROL Commerce Services Connector]**）の設定領域に移動します。
 
-1. Commerce サービスを設定するには、[SaaS 設定 ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html#saasenv) に記載されている手順に従ってください。
+1. Commerce サービスを設定するには、[SaaS 設定 ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=ja#saasenv) に記載されている手順に従ってください。
 
    >[!INFO]
    >
-   > 詳しくは、[[!DNL Adobe Commerce]  サービスコネクタ ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) ビデオを参照してください。
+   > 詳しくは、[[!DNL Adobe Commerce]  サービスコネクタ ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=ja#configuration-faqs) ビデオを参照してください。
 
 ## エンドポイント
 

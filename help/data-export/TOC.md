@@ -25,4 +25,4 @@ ht-degree: 5%
    - [SaaS データ書き出しフィードの拡張とカスタマイズ](extensibility-and-customizations.md)
    - [製品属性の動的な追加](add-attribute-dynamically.md)
 - [リリースノート](release-notes.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)

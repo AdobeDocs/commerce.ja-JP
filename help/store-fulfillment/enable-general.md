@@ -150,7 +150,7 @@ API 関連の例外をファイアウォールまたはキャッシュから取�
 
 >[!TIP]
 >
->Adobe Commerceのオンプレミスインストールでは、サイズを最小限に抑えるために、`var/log/walmart-bopis.log` ファイルのログローテーションを設定するようにシステム管理者に依頼してください。 Adobe Commerceのオンプレミスインストールについては、_Adobe Commerce インストールガイド [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) の  ログローテーション_ を参照してください。 クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[ ログの表示と管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) を参照してください。
+>Adobe Commerceのオンプレミスインストールでは、サイズを最小限に抑えるために、`var/log/walmart-bopis.log` ファイルのログローテーションを設定するようにシステム管理者に依頼してください。 Adobe Commerceのオンプレミスインストールについては、_Adobe Commerce インストールガイド [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=ja#server-settings) の  ログローテーション_ を参照してください。 クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[ ログの表示と管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja) を参照してください。
 
 <table>
 <thead>
@@ -355,7 +355,7 @@ Store Fulfillment App のユーザーアカウントとパスワードのセキ�
 
 >[!NOTE]
 >
->ストア内配信オプションの設定について詳しくは、&lbrace;2[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) ストア内配信 _を参照してください。_
+>ストア内配信オプションの設定について詳しくは、&lbrace;2[Adobe Commerce ユーザーガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) ストア内配信 _を参照してください。_
 
 
 ### 配信方法の設定

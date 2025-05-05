@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Adobe Commerce製品ソリューション
 
-Adobeでは、e コマースビジネスの要件を満たすソリューションをいくつか提供しています。 [Experience League](https://experienceleague.adobe.com/en/docs/commerce) のAdobe Commerce ドキュメントと [Adobe Developer](https://developer.adobe.com/commerce/docs/) サイトには、すべてのソリューションをサポートするセルフサービスリソースが用意されています。 ただし、このような大量のコンテンツのナビゲーションは、ガイダンスがないと困難な場合があります。
+Adobeでは、e コマースビジネスの要件を満たすソリューションをいくつか提供しています。 [Experience League](https://experienceleague.adobe.com/ja/docs/commerce) のAdobe Commerce ドキュメントと [Adobe Developer](https://developer.adobe.com/commerce/docs/) サイトには、すべてのソリューションをサポートするセルフサービスリソースが用意されています。 ただし、このような大量のコンテンツのナビゲーションは、ガイダンスがないと困難な場合があります。
 
 ## バッジ
 
@@ -41,7 +41,7 @@ Adobeでは、e コマースビジネスの要件を満たすソリューショ�
 
 #### [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
-このバッジは、[Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) およびオンプレミスプロジェクトに関連するドキュメントのみを特定します。 クラウドプロジェクト上のAdobe Commerceは、クラウドネイティブで完全に管理されたサービスとしてのプラットフォーム（PaaS）ソリューションにホストされ、Adobe Commerceのすべてのコア機能が事前にプロビジョニングされます。 オンプレミスのプロジェクトは、顧客が管理するインフラストラクチャでホストされます。
+このバッジは、[Adobe Commerce on Cloud](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview) およびオンプレミスプロジェクトに関連するドキュメントのみを特定します。 クラウドプロジェクト上のAdobe Commerceは、クラウドネイティブで完全に管理されたサービスとしてのプラットフォーム（PaaS）ソリューションにホストされ、Adobe Commerceのすべてのコア機能が事前にプロビジョニングされます。 オンプレミスのプロジェクトは、顧客が管理するインフラストラクチャでホストされます。
 
 ### ルール
 

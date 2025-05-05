@@ -26,9 +26,9 @@ ht-degree: 0%
 
 - [Store Fulfillment リリースノート](release-notes.md)
 
-- [Adobe Commerceのリリースノート ](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) （*Adobe Commerce リリース情報*）。
+- [Adobe Commerceのリリースノート ](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html?lang=ja) （*Adobe Commerce リリース情報*）。
 
-- [Adobe Commerceの必要システム構成 ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) （*Adobe Commerce インストールガイド*）。
+- [Adobe Commerceの必要システム構成 ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=ja) （*Adobe Commerce インストールガイド*）。
 
 
 ## ストアアシストアプリの要件

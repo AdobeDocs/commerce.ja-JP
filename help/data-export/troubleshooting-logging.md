@@ -129,7 +129,7 @@ Commerce Services のデータが見つからない場合や誤っている場�
 - データ書き出しエラーログ（`commerce-data-export-errors.log`）には、収集段階で発生したエラーが記録されます。
 - SaaS 書き出しエラーログ（`saas-export-errors.log`）は、送信段階で発生したエラーをキャプチャします。
 
-設定やサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を記載した [ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) を送信します。
+設定やサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を記載した [ サポートチケット ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) を送信します。
 
 ### カタログ同期の問題を解決 {#resolvesync}
 
@@ -144,11 +144,11 @@ Commerce Services のデータが見つからない場合や誤っている場�
 
 #### 同期が実行されていません
 
-同期がスケジュールに従って実行されていない場合や、何も同期されていない場合は、この [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) の記事を参照してください。
+同期がスケジュールに従って実行されていない場合や、何も同期されていない場合は、この [KnowledgeBase](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) の記事を参照してください。
 
 #### 同期できませんでした
 
-カタログ同期のステータスが **失敗** の場合は、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) を送信します。
+カタログ同期のステータスが **失敗** の場合は、[ サポートチケット ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) を送信します。
 
 ## 拡張ログ
 

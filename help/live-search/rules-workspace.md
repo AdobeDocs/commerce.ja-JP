@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 範囲を設定
 
-Adobe Commerceのインストールに複数のストア表示が含まれる場合、**範囲** を [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) に設定します。ここでルールが適用されます。
+Adobe Commerceのインストールに複数のストア表示が含まれる場合、**範囲** を [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) に設定します。ここでルールが適用されます。
 
 ## 列の表示/非表示
 

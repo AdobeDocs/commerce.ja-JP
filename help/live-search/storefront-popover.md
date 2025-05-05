@@ -10,11 +10,11 @@ ht-degree: 0%
 
 # [!DNL Storefront Popover]
 
-[!DNL Live Search] が [ インストール済み ](install.md) になると、買い物客が [ 検索 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ボックスに入力したときに [!DNL popover] がストアフロントに表示されます。 各文字を入力すると、検索結果の候補となる製品やサムネール画像が [!DNL popover] に表示されます。
+[!DNL Live Search] が [ インストール済み ](install.md) になると、買い物客が [ 検索 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=ja#quick-search) ボックスに入力したときに [!DNL popover] がストアフロントに表示されます。 各文字を入力すると、検索結果の候補となる製品やサムネール画像が [!DNL popover] に表示されます。
 
 [!DNL Live Search] は、2 文字以上のクエリの結果を返します。 部分一致の場合、1 単語あたりの最大文字数は 20 文字です。 「入力中の検索」クエリの文字数は設定できません。
 
-デフォルトでは、[!DNL Live Search] は [ 検索語句のリダイレクト ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) をサポートしています。
+デフォルトでは、[!DNL Live Search] は [ 検索語句のリダイレクト ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=ja) をサポートしています。
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## [!DNL Popover] ページサイズ
 
-[!DNL popover] ージのページサイズによって、オートコンプリートされた商品を返せるライン数が決まります。 Live Search のインストール中、`page_size` の値は [ カタログ検索 ](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` 設定の現在の値に変更されます。
+[!DNL popover] ージのページサイズによって、オートコンプリートされた商品を返せるライン数が決まります。 Live Search のインストール中、`page_size` の値は [ カタログ検索 ](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html?lang=ja) - `Autocomplete Limit` 設定の現在の値に変更されます。
 
 デフォルトでは、「カタログ検索 – オートコンプリートの制限」の値は 8 行（1 行）に設定されています。 [!DNL popover] ージのページサイズを変更するには、次の手順を実行します。
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 ## [!DNL popover] の無効化
 
-[!DNL popover] を無効にして標準の [ クイック検索 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 機能を復元するには、次のコマンドを入力します。
+[!DNL popover] を無効にして標準の [ クイック検索 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=ja#quick-search) 機能を復元するには、次のコマンドを入力します。
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

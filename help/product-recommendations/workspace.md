@@ -35,7 +35,7 @@ _Recommendations Workspace_
 
 ## 範囲を設定
 
-最初は、すべてのレコメンデーション設定の [ 範囲 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) が `Default Store View` に設定されます。 Commerceのインストールに複数のストア表示が含まれる場合、お勧めが適用される **ストア表示** に [ 範囲 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) を設定します。
+最初は、すべてのレコメンデーション設定の [ 範囲 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja) が `Default Store View` に設定されます。 Commerceのインストールに複数のストア表示が含まれる場合、お勧めが適用される **ストア表示** に [ 範囲 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) を設定します。
 
 ## 指標の日付範囲を設定
 
