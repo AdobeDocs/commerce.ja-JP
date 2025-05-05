@@ -35,11 +35,11 @@ Adobeでは、e コマースビジネスの要件を満たすソリューショ�
 
 >[!ENDSHADEBOX]
 
-#### [!BADGE SaaS のみ ]{type=Positive tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}
+#### [!BADGE SaaS のみ &#x200B;]{type=Positive tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}
 
 このバッジは、[Adobe Commerce as a Cloud Service](../cloud-service/overview.md) および [Adobe Commerce Optimizer](../optimizer/overview.md) プロジェクト専用のドキュメントを特定します。 これらのプロジェクトは、完全に管理されたクラウドネイティブのサービスとしてのソフトウェア（SaaS）ソリューションでホストされ、Adobeが継続的な更新、セキュリティの監視、スケーラビリティなどのほとんどの運用側面を担当するので、お客様はインフラストラクチャではなくコマースに集中できます。
 
-#### [!BADGE PaaS のみ ]{type=Informative tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+#### [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
 このバッジは、[Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) およびオンプレミスプロジェクトに関連するドキュメントのみを特定します。 クラウドプロジェクト上のAdobe Commerceは、クラウドネイティブで完全に管理されたサービスとしてのプラットフォーム（PaaS）ソリューションにホストされ、Adobe Commerceのすべてのコア機能が事前にプロビジョニングされます。 オンプレミスのプロジェクトは、顧客が管理するインフラストラクチャでホストされます。
 
