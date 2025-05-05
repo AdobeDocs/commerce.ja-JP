@@ -16,7 +16,7 @@ ht-degree: 0%
 
 このビデオは、カテゴリマーチャンダイジングの概要です。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424617)
+>[!VIDEO](https://video.tv.adobe.com/v/3448852?captions=jpn)
 
 この機能には、管理者の **マーケティング**/SEO と検索/**[!DNL Live Search]**/**カテゴリマーチャンダイジング** でアクセスします。
 

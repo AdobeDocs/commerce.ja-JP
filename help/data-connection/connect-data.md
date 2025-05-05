@@ -202,7 +202,7 @@ Commerceでは既に注文の履歴データを収集していますが、それ
 
 注文履歴の詳細については、このビデオをご覧ください。次の手順を完了して、注文履歴の収集を実装します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
+>[!VIDEO](https://video.tv.adobe.com/v/3450228?captions=jpn)
 
 #### Order Sync サービスの設定
 
