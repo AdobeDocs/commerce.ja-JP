@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->支払いレポートには、キャプチャされた（支払いアクションが [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/production.html#set-payment-services-as-payment-method) に設定されている）、または `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) としてマークされている [ 注文のみが表示されます。
+>支払いレポートには、キャプチャされた（支払いアクションが [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/production.html#set-payment-services-as-payment-method) に設定されている）、または `Invoiced`[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) としてマークされている  注文のみが表示されます。
 
 ## 支払いデータビジュアライゼーションビュー
 
@@ -68,7 +68,7 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]** / **[!UICONTROL Payment 
 
 支払いレポート ビューは、支払いサービスの支払いビューで使用できます。 ストアの支払いに関する利用可能なすべての情報が含まれます。
 
-_管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Payouts]_/**[!UICONTROL View Report]**に移動して、詳細な表形式の支払いレポートビューを表示します。
+_管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Payouts]_/**[!UICONTROL View Report]**&#x200B;に移動して、詳細な表形式の支払いレポートビューを表示します。
 
 ![ 管理画面での支払トランザクション ](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -88,17 +88,17 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Se
 
 ![ データソースの選択 ](assets/datasource.png){width="300" zoomable="yes"}
 
-_[!UICONTROL Live]_のデータ ソースを選択した場合、本番モードでストアのレポート情報を表示できます。_[!UICONTROL Sandbox]_ が選択したデータソースの場合、サンドボックスモードでレポート情報ストアを表示できます。
+_[!UICONTROL Live]_&#x200B;のデータ ソースを選択した場合、本番モードでストアのレポート情報を表示できます。_[!UICONTROL Sandbox]_ が選択したデータソースの場合、サンドボックスモードでレポート情報ストアを表示できます。
 
 データソースを選択すると、次のように機能します。
 
-* ライブモードのストアがない場合は、データソースの選択はデフォルトで _[!UICONTROL Sandbox]_になります。
-* ライブモードで 1 つまたは複数のストアがある場合、データソースの選択はデフォルトで _[!UICONTROL Live]_になります。
+* ライブモードのストアがない場合は、データソースの選択はデフォルトで _[!UICONTROL Sandbox]_&#x200B;になります。
+* ライブモードで 1 つまたは複数のストアがある場合、データソースの選択はデフォルトで _[!UICONTROL Live]_&#x200B;になります。
 * レポートの書き出しでは、常にデータソースの選択に従います。
 
 受注支払ステータス・レポートのデータ・ソースを選択する手順は、次のとおりです。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Payouts]_/**[!UICONTROL View Report]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Payouts]_/**[!UICONTROL View Report]**&#x200B;に移動します。
 1. 「**[!UICONTROL Data source]**」をクリックし、「**[!UICONTROL Live]**」または「**[!UICONTROL Sandbox]**」を選択します。
 
    レポート結果は、選択したデータソースに基づいて再生成されます。
@@ -115,8 +115,8 @@ _[!UICONTROL Live]_のデータ ソースを選択した場合、本番モード
 
 支払レポート・ビューでは、特定の日付を入力するか、日付選択から日付範囲を選択して、表示する支払取引の期間をカスタマイズできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Payouts]_/**[!UICONTROL View Report]**に移動します。
-1. _[!UICONTROL Transaction dates]_カレンダーセレクターフィルターをクリックします。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Payouts]_/**[!UICONTROL View Report]**&#x200B;に移動します。
+1. _[!UICONTROL Transaction dates]_&#x200B;カレンダーセレクターフィルターをクリックします。
 1. 該当する日付範囲を選択します。
 1. 指定した日付の支払いステータスがグリッドに表示されます。
 
@@ -124,7 +124,7 @@ _[!UICONTROL Live]_のデータ ソースを選択した場合、本番モード
 
 デフォルトでは、支払いレポート・ビューには、利用可能な最も多くの情報列が表示されます。 ただし、レポートに表示する列をカスタマイズすることはできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Payouts]_/**[!UICONTROL View Report]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Payouts]_/**[!UICONTROL View Report]**&#x200B;に移動します。
 1. _列設定_ アイコン（![ 列設定アイコン ](assets/column-settings.png){width="20" zoomable="yes"}）をクリックします。
 1. レポートに表示される列をカスタマイズするには、リストの列をチェックまたはチェック解除します。
 
@@ -134,7 +134,7 @@ _[!UICONTROL Live]_のデータ ソースを選択した場合、本番モード
 
 支払いビューグリッドに表示されているすべてのトランザクションを含む.csv ファイルをダウンロードできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Payouts]_/**[!UICONTROL View Report]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Payouts]_/**[!UICONTROL View Report]**&#x200B;に移動します。
 1. [ トランザクションの日付範囲の期間をカスタマイズします ](#customize-transactions-timeframe)。
 1. _ダウンロード_ （![ ダウンロードアイコン ](assets/icon-download.png){width="20" zoomable="yes"}）アイコンをクリックします。
 

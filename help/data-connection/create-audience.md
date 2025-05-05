@@ -118,7 +118,7 @@ Adobe [!DNL Commerce] のお客様は、Real-Time CDPで作成されたオーデ
 
 ## 3. オーディエンスダッシュボードでオーディエンスを表示する
 
-[!DNL Commerce] では、{4[Real-Time CDP オーディエンス ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) ダッシュボードを使用して、[!DNL Commerce] インスタンス用にパーソナライズできるすべての **アクティブな）オーディエンスを表示できます。**
+[!DNL Commerce] では、&lbrace;4[Real-Time CDP オーディエンス ](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) ダッシュボードを使用して、[!DNL Commerce] インスタンス用にパーソナライズできるすべての **アクティブな）オーディエンスを表示できます。**
 
 **Real-Time CDP オーディエンス** ダッシュボードにアクセスするには、_管理者_ サイドバーで **[!UICONTROL Customers]**/**[!UICONTROL Real-time CDP Audience]** に移動します。
 

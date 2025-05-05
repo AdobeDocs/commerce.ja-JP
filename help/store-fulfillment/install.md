@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->[2}Adobe Commerceアップグレードガイド } の ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) アップグレード手順 _に従って、オンプレミスのAdobe Commerceのストアフルフィルメント拡張機能をアップグレードします。_&#x200B;クラウドインフラストラクチャー上のAdobe Commerceについては、{2](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) クラウドインフラストラクチャー上のCommerce ガイドの [ 拡張機能のアップグレード *を参照してください。*
+>[2&rbrace;Adobe Commerceアップグレードガイド &rbrace; の ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) アップグレード手順 _に従って、オンプレミスのAdobe Commerceのストアフルフィルメント拡張機能をアップグレードします。_&#x200B;クラウドインフラストラクチャー上のAdobe Commerceについては、&lbrace;2[&#128279;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) クラウドインフラストラクチャー上のCommerce ガイドの  拡張機能のアップグレード *を参照してください。*
 
 ## 前提条件
 

@@ -16,7 +16,7 @@ ht-degree: 13%
 - [ガイドの概要](guide-overview.md)
 - [概要  [!DNL Product Recommendations]](overview.md)
 - [リリースノート](release-notes.md)
-- {#getting-started} の基本を学ぶ
+- の基本を学ぶ{#getting-started}
    - [オンボーディング](onboarding.md)
    - [実装ワークフロー](implementation-workflow.md)
    - [ヘッドレス](headless.md)

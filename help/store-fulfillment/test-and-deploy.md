@@ -23,7 +23,7 @@ ht-degree: 0%
 
 - [サンドボックス環境と実稼動環境のアカウント資格情報と接続詳細を追加し、検証します。](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
 
-- ストアフルフィルメントソリューションの ](connect-set-up-service.md#configure-store-fulfillment-account-credentials)0}Adobe Commerce統合 } が使用可能で承認されていることを確認します。[
+- ストアフルフィルメントソリューションの [&#128279;](connect-set-up-service.md#configure-store-fulfillment-account-credentials)0&rbrace;Adobe Commerce統合 &rbrace; が使用可能で承認されていることを確認します。
 
 ## テストの準備
 

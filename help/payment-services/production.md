@@ -28,8 +28,8 @@ ht-degree: 0%
 
    関連するオプションが展開された状態で（**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Settings]_） ホームビューの設定エリアに移動します。ここで、[!DNL Payment Services] のオプションを [ 支払い方法 ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"} として有効にできます。
 
-1. _[!UICONTROL General Configuration]_で、**[!UICONTROL Enable]**を `Yes` に設定します。
-1. _[!UICONTROL Credit Card Fields]_と_[!UICONTROL PayPal payment buttons]_ の両方について、**[!UICONTROL Payment Action]** を次のいずれかに設定します。
+1. _[!UICONTROL General Configuration]_&#x200B;で、**[!UICONTROL Enable]**&#x200B;を `Yes` に設定します。
+1. _[!UICONTROL Credit Card Fields]_&#x200B;と_[!UICONTROL PayPal payment buttons]_ の両方について、**[!UICONTROL Payment Action]** を次のいずれかに設定します。
 
    | 設定 | 説明 |
    |---|---|
@@ -154,7 +154,7 @@ _実稼動マーチャント ID_ が自動生成され、[configuration](configu
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]** に移動します。
 1. 「ホーム」で、ページの右上にある「**[!UICONTROL Settings]**」をクリックします。 詳しくは、[ ホーム ](payments-home.md) を参照してください。
-1. _[!UICONTROL General Configuration]_のセクションで、**[!UICONTROL Payment mode]**を `Production` に設定します。
+1. _[!UICONTROL General Configuration]_&#x200B;のセクションで、**[!UICONTROL Payment mode]**&#x200B;を `Production` に設定します。
 1. 「**[!UICONTROL Save]**」をクリックします。
 1. [ キャッシュをクリアします ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
 

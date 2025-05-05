@@ -26,7 +26,7 @@ ht-degree: 0%
 
 - ライブ検索ダッシュボードの [ 必須イベント ](events.md)。
 - 前提条件として追加する必要がある [ ストアフロントイベントコレクター ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
-- イベント構造 ](https://github.com/adobe/commerce-events/tree/main/examples) 例 [。
+- イベント構造 [&#128279;](https://github.com/adobe/commerce-events/tree/main/examples) 例 。
 
 ### ヘルスケア関連のお客様
 

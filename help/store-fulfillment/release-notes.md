@@ -26,7 +26,7 @@ ht-degree: 0%
 
 *2023 年 8 月 3 日*
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}[Adobe Commerce 2.4.4 ～ 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) （2.4.6-p1、2.4.5-p3、および 2.4.4-p4 セキュリティパッチリリースを含む）
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}[Adobe Commerce 2.4.4 ～ 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) （2.4.6-p1、2.4.5-p3、および 2.4.4-p4 セキュリティパッチリリースを含む）
 
 このリリースには、次のアップデートが含まれています。
 
@@ -50,9 +50,9 @@ ht-degree: 0%
 
 ![ 修正された問題 ](../assets/fix.svg) インストールの更新：
 
-- <!-- WMTP-880--> [!DNL Store Fulfillment] 拡張機能のインストール時に誤った web サイトコードが返される問題を修正しました。
+- &#x200B;<!-- WMTP-880--> [!DNL Store Fulfillment] 拡張機能のインストール時に誤った web サイトコードが返される問題を修正しました。
 
-- <!-- WMTP-878--> SKU 整数で、インストール中にデータタイプを文字列タイプにキャストする必要がある問題を修正しました。
+- &#x200B;<!-- WMTP-878--> SKU 整数で、インストール中にデータタイプを文字列タイプにキャストする必要がある問題を修正しました。
 
 ![ 修正された問題 ](../assets/fix.svg)<!-- WMTP-915--> チェックインエラーコードが見つからないために発生したエラーを修正しました。
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 *2023 年 4 月 13 日*
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 ![ 新規 ](../assets/fix.svg) [!DNL Store Fulfillment] は [2.4.4 ～ 2 [!DNL Adobe Commerce] 4.6 と互換性がある ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) ようになりました。
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 *2023 年 2 月 27 日*
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 このリリースには、次のアップデートが含まれています。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 *2022 年 9 月 27 日*
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 このリリースには、次のアップデートが含まれています。
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 *2022 年 7 月 15 日*
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 安定性：一般提供（GA）
 
@@ -106,10 +106,10 @@ ht-degree: 0%
 
 *2022 年 3 月 4 日*
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 安定性：一般提供（GA）
 
 ## ストアシストアプリ
 
-ストアシストアプリの新しいリリースについて詳しくは、[Apple App Storeまたは ](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"}3}Google Play ストア ](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"} のアプリ情報を参照してください。[
+ストアシストアプリの新しいリリースについて詳しくは、[Apple App Storeまたは ](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"}3&rbrace;Google Play ストア [&#128279;](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"} のアプリ情報を参照してください。

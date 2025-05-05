@@ -23,11 +23,11 @@ ht-degree: 0%
    - 個人の連絡先の詳細
    - ユーザーアカウントの詳細
 
-1. プロファイルのスキーマ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) 有効 [。
+1. プロファイルのスキーマ [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) 有効 。
 
    スキーマがプロファイルで有効になっている場合、このスキーマから作成されたデータセットは、異なるソースのデータを結合して各顧客の全体像を構築するReal-Time CDPに関与します。
 
-1. 作成または更新したスキーマに基づいて ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform) データセットを作成 [ します。
+1. 作成または更新したスキーマに基づいて [&#128279;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform) データセットを作成  します。
 
    データセットは、データのコレクションのためのストレージおよび管理用の構成体で、通常は、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
 

@@ -27,7 +27,7 @@ Commerce イベントデータを収集するには：
 
   >[!NOTE]
   >
-  > 組織 ID **データストリーム ID**[ 設定 ](connect-data.md) はしないでください。
+  > 組織 ID **データストリーム ID**&#x200B;[ 設定 ](connect-data.md) はしないでください。
 
 ## Commerce ストアフロントデータのAdobe Experience Platformへのマッピング
 

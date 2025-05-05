@@ -22,5 +22,5 @@ ht-degree: 0%
 1. _管理者_ サイドバーで、「**[!UICONTROL Sales]**」を展開し、「**[!UICONTROL Orders]**」を選択します。
 1. 「**[!UICONTROL Create New Order]**」をクリックします。
 1. その注文に必要なセクションを完了します（詳しくは [ 注文の作成 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} を参照）。
-1. _[!UICONTROL Payment Method]_のセクションでは、[!DNL Payment Services] を支払い方法として使用できるはずです。
+1. _[!UICONTROL Payment Method]_&#x200B;のセクションでは、[!DNL Payment Services] を支払い方法として使用できるはずです。
 1. 「**[!UICONTROL Submit Order]**」をクリックします。

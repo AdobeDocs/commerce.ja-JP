@@ -76,6 +76,6 @@ iOSおよびAndroid デバイス用のストアアシストアプリは、[!DNL 
 
 >[!TIP]
 >
-> ストアフルフィルメントソリューションの簡単なデモについては、_Adobe Commerceのビデオとチュートリアル ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) にある [ ストアフルフィルメントの概要_ を参照してください。
+> ストアフルフィルメントソリューションの簡単なデモについては、_Adobe Commerceのビデオとチュートリアル [&#128279;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) にある  ストアフルフィルメントの概要_ を参照してください。
 
 

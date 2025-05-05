@@ -15,7 +15,7 @@ ht-degree: 5%
 
 - [ガイドの概要](overview.md)
 - [データ同期](data-synchronization.md)
-- スケジュールとパフォーマンス {#performance} のエクスポート
+- スケジュールとパフォーマンス のエクスポート {#performance}
    - [データ量と送信時間の推定](estimate-data-volume-sync-time.md)
    - [書き出しパフォーマンスの向上](customize-export-processing.md)
 - [Commerce CLI を使用したフィードの同期](data-export-cli-commands.md)

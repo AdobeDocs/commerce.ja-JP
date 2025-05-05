@@ -52,7 +52,7 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 
 ### データを手動で再インデックス化
 
-データが自動的に実行されるのを待たずに、手動でデータをインデックス再作成できます。 詳しくは、[ インデクサーの管理 [ の ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"} インデックス再作成 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} を参照してください。
+データが自動的に実行されるのを待たずに、手動でデータをインデックス再作成できます。 詳しくは、[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex) インデクサーの管理 [ の ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"} インデックス再作成 {target="_blank"} を参照してください。
 
 モード `BY SCHEDULE` 設定すると、システムは変更されたエンティティを追跡し、cron ジョブは設定されたスケジュールに基づいてエンティティのインデックスを更新します。 Cron ジョブを使用してインデックスを手動でトリガーする方法については、[Configure and run cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) の [ コマンドラインからの Run cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) を参照してください。
 

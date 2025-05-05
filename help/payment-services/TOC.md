@@ -25,7 +25,7 @@ ht-degree: 3%
    - [インスタンスに接続](connect.md)
    - [テストサンドボックスの設定](sandbox.md)
    - [実稼動で有効にする](production.md)
-- [!DNL Payment Services] {#configure} の設定
+- [!DNL Payment Services] の設定 {#configure}
    - [[!DNL Payment Services] ホーム](payments-home.md)
    - [[!DNL Payment Services] Settings](settings.md)
    - [コマンドライン設定](configure-cli.md)
@@ -35,7 +35,7 @@ ht-degree: 3%
    - [支払いオプション](payments-options.md)
    - [クレジットカードの保管](vaulting.md)
    - [チェックアウト イン  [!DNL Payment Services]](checkout.md)
-   - 支払い {#manage} ールの管理
+   - 支払い ールの管理 {#manage}
       - [行項目  [!DNL Payment Services]](line-items.md)
       - [払戻](refunds.md)
       - [ボイド](voids.md)

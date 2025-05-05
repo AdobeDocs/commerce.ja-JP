@@ -64,7 +64,7 @@ ht-degree: 0%
 
 - モバイルデバイスがストアフルフィルメントソリューションの [ ハードウェアおよびソフトウェアの要件 ](solution-requirements.md#store-assist-app-requirements) を満たしていることを確認します。
 
-- [Apple App Storeまたは [Google Play ストア ](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} からストアアシストアプリをダウンロ ](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"} ドします。
+- [&#128279;](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist)Apple App Storeまたは [Google Play ストア ](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} からストアアシストアプリをダウンロ {target="_blank"} ドします。
 
 - Store Associates がログインするには、以下の情報が必要です。
 

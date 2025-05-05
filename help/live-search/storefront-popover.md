@@ -59,7 +59,7 @@ ht-degree: 0%
 .search-autocomplete          /* not visible */
 ```
 
-ストアフロント要素のスタイル設定について詳しくは、『 [ フロントエンド開発者ガイド [ のカスケーディングスタイルシート（CSS） ](https://developer.adobe.com/commerce/frontend-core/guide/css/) を参照してください ](https://developer.adobe.com/commerce/frontend-core/guide/)。
+ストアフロント要素のスタイル設定について詳しくは、『 [&#128279;](https://developer.adobe.com/commerce/frontend-core/guide/) フロントエンド開発者ガイド [ のカスケーディングスタイルシート（CSS） ](https://developer.adobe.com/commerce/frontend-core/guide/css/) を参照してください 。
 
 ## クラスセレクター
 

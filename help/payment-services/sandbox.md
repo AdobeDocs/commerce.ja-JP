@@ -22,7 +22,7 @@ PayPal サンドボックスアカウントを使用すると、テストモー�
 1. [PayPal 開発者アカウントページ ](https://developer.paypal.com/developer/accounts/) に移動します。
 1. 「**[!UICONTROL Log in to Dashboard]**」をクリックして、PayPal 開発者ポータルで生成された既存のビジネスサンドボックステストアカウントでログインするか、「**新規登録**」をクリックしてアカウントを作成します。
 1. PayPal サンドボックスアカウントの作成：
-   1. _[!UICONTROL Testing Tools]_/**[!UICONTROL Sandbox Accounts]**に移動します。
+   1. _[!UICONTROL Testing Tools]_/**[!UICONTROL Sandbox Accounts]**&#x200B;に移動します。
    1. 「**[!UICONTROL Create account]**」をクリックします。
 
       サンドボックス PayPal のオンボーディングプロセス中に PayPal サンドボックスアカウントを作成した場合は、[ オンボーディングサンドボックスをリセット ](#reset-your-sandbox-account) する必要があります。そうしないと、メールを検証できません。

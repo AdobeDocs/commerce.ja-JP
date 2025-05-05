@@ -73,7 +73,7 @@ Commerceには、保存されたクレジットカード情報を取得して今
 ボールトに保管されたクレジット・カードを使用して顧客の受注を管理で作成する手順は、次のとおりです。
 
 1. [ 注文を作成して製品を追加する ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html)。
-1. _[!UICONTROL Payment & Shipping Information]_で、支払方法として&#x200B;**[!UICONTROL Stored Cards]**を選択します。
+1. _[!UICONTROL Payment & Shipping Information]_&#x200B;で、支払方法として&#x200B;**[!UICONTROL Stored Cards]**&#x200B;を選択します。
 1. 目的のボルト付きクレジットカードの支払方法を選択します。
 1. 注文に必要なその他の手順を完了したら、[ 送信 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order) します。
 

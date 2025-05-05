@@ -30,7 +30,7 @@ PayPal のクレジットカードジェネレーターを使用して、テス�
 
 サンドボックスモードでApple Pay をテストするには：
 
-* 偽のクレジットカードと請求情報を含む ](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)0}Apple サンドボックステスターアカウント } を作成します。[
+* 偽のクレジットカードと請求情報を含む [&#128279;](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)0&rbrace;Apple サンドボックステスターアカウント &rbrace; を作成します。
 * [ サンドボックスドメインを登録 ](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains)。
 
 >[!NOTE]

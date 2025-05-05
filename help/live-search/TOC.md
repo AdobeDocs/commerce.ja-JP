@@ -36,7 +36,7 @@ ht-degree: 11%
       - [シノニムのタイプ](synonyms-type.md)
       - [シノニムの追加](synonyms-add.md)
       - [シノニムの管理](synonyms-manage.md)
-   - マーチャンダイジング {#rules} の検索
+   - マーチャンダイジング の検索 {#rules}
       - [概要](rules.md)
       - [Workspace](rules-workspace.md)
       - [ルールの追加](rules-add.md)

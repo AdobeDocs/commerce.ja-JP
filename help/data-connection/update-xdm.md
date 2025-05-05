@@ -50,7 +50,7 @@ ht-degree: 0%
 
    Commerce[ 行動 ](events.md) および [ バックオフィス ](events-backoffice.md) イベントから収集された時系列データがスキーマに表されるように、スキーマにCommerce固有のフィールドグループが含まれるようになりました。
 
-1. プロファイルのスキーマ ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) 有効 [。
+1. プロファイルのスキーマ [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) 有効 。
 
    スキーマがプロファイルで有効になっている場合、このスキーマから作成されたデータセットは、異なるソースのデータを結合して各顧客の全体像を構築するReal-Time CDPに関与します。
 
@@ -105,7 +105,7 @@ ht-degree: 0%
    - チャネルの詳細
    - Commerceの詳細
 
-1. プロファイルのスキーマ ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) 有効 [。
+1. プロファイルのスキーマ [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) 有効 。
 
    スキーマがプロファイルで有効になっている場合、このスキーマから作成されたデータセットは、異なるソースのデータを結合して各顧客の全体像を構築するReal-Time CDPに関与します。
 

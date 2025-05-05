@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >このドキュメントでは、製品の早期アクセス開発について説明しており、一般提供を目的とした機能のすべてを反映しているわけではありません。
 
-このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)[!DNL Adobe Commerce Optimizer] インスタンスのデータを利用して、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について説明します。
+このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) [!DNL Adobe Commerce Optimizer] インスタンスのデータを利用して、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について説明します。
 
 
 ## 前提条件
@@ -296,7 +296,7 @@ Sidekick拡張機能のプロジェクト設定を追加します。 Sidekickを
 
    詳しくは、[Sidekick ライブラリのドキュメント ](https://www.aem.live/docs/sidekick-library) 参照してください。
 
-+++
+   +++
 
 1. `url` キーの値を GitHub リポジトリの値で更新します。
 
@@ -483,7 +483,7 @@ https://na1-sandbox.api.commerce.adobe.com/{tenantId}/graphql
 
 ### 次の手順
 
-[!DNL Adobe Commerce Optimizer] インスタンスの値を使用してストアフロント設定を更新してストアフロントにコンテンツを表示する方法については ](./use-case/admin-use-case.md) ストアフロントおよびカタログ管理者のエンドツーエンドのユースケース [ を参照してください。
+[!DNL Adobe Commerce Optimizer] インスタンスの値を使用してストアフロント設定を更新してストアフロントにコンテンツを表示する方法については [&#128279;](./use-case/admin-use-case.md) ストアフロントおよびカタログ管理者のエンドツーエンドのユースケース  を参照してください。
 
 >[!MORELIKETHIS]
 >

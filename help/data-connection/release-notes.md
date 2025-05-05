@@ -82,7 +82,7 @@ _2022 年 10 月 12 日_
 
 _2025 年 3 月 21 日_
 
-[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+[!BADGE &#x200B; 互換性 &#x200B;]{type=Informative tooltip="互換性"}
 
 ![ 新規 ](../assets/new.svg) PHP 8.4 のサポートを追加しました。
 
@@ -90,7 +90,7 @@ _2025 年 3 月 21 日_
 
 _2025 年 1 月 17 日_
 
-[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+[!BADGE &#x200B; 互換性 &#x200B;]{type=Informative tooltip="互換性"}
 
 ![ 新規 ](../assets/new.svg) - [HIPAA 対応の拡張機能 ](hipaa-readiness.md) を [!DNL Data Connection] に追加しました。これにより、マーチャントはバックオフィスイベントデータをExperience Platformと共有し、HIPAA への準拠 [!DNL Commerce] 維持できるようになりました。
 ![ 修正 ](../assets/fix.svg) - [!DNL Data Connection] 拡張機能がデータを上書きし、すべてのお客様 `eventForwarding` 対して `HIPAA` フラグを設定していた問題を修正しました。 現在は、拡張機能は HIPAA のお客様向けのフラグのみを設定します。
@@ -99,7 +99,7 @@ _2025 年 1 月 17 日_
 
 _2024 年 10 月 7 日_
 
-[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+[!BADGE &#x200B; 互換性 &#x200B;]{type=Informative tooltip="互換性"}
 
 ![ 新規 ](../assets/new.svg) - バックオフィスデータに [ カスタムオーダー属性 ](custom-attributes.md) を作成する機能を追加しました。
 ![ 新規 ](../assets/new.svg) – 新しい [ カスタム注文属性 ](connect-data.md#data-customization) テーブルが追加され、[!DNL Commerce] で設定され、Experience Platformに送信されたカスタム属性を確認できるようになりました。
@@ -109,7 +109,7 @@ _2024 年 10 月 7 日_
 
 _2024 年 8 月 27 日_
 
-[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+[!BADGE &#x200B; 互換性 &#x200B;]{type=Informative tooltip="互換性"}
 
 ![ 新規 ](../assets/new.svg) - ベータ版に参加している場合は、`composer.json` ファイルのルートレベルに次のものが含まれていることを確認してください：` "minimum-stability": "beta"`。 また、`composer require "magento/customers-connector: ^1.2.0"` を追加して、Commerce インスタンスから SaaS に顧客プロファイルを送信します。
 ![ 新規 ](../assets/new.svg) – このリリースには、3.1.1、3.1.2、3.1.3、および 3.1.4 でリリースされたパッチが含まれています。
@@ -118,7 +118,7 @@ _2024 年 8 月 27 日_
 
 _2024 年 8 月 9 日_
 
-[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+[!BADGE &#x200B; 互換性 &#x200B;]{type=Informative tooltip="互換性"}
 
 ![ 修正 ](../assets/fix.svg) – 未使用のデータエクスポーターとインデクサーを追加で削除する `experience-platform-connector` メタパッケージを更新しました。
 
@@ -126,7 +126,7 @@ _2024 年 8 月 9 日_
 
 _2024 年 7 月 22 日_
 
-[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+[!BADGE &#x200B; 互換性 &#x200B;]{type=Informative tooltip="互換性"}
 
 ![ 修正 ](../assets/fix.svg) – 未使用のデータエクスポーターとインデクサーを削除するように `experience-platform-connector` メタパッケージを更新しました。
 
@@ -134,7 +134,7 @@ _2024 年 7 月 22 日_
 
 _2024 年 6 月 5 日_
 
-[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+[!BADGE &#x200B; 互換性 &#x200B;]{type=Informative tooltip="互換性"}
 
 ![ 修正 ](../assets/fix.svg) - [ 履歴同期 ](connect-data.md#specify-order-history-date-range) を開始する際に、間違った日付形式が使用されていた問題を修正しました。
 ![ 修正 ](../assets/fix.svg) - [startCheckout](events.md#startcheckout) イベントがAdobe Commerce 2.4.7 で送信されない問題を修正しました。
@@ -143,7 +143,7 @@ _2024 年 6 月 5 日_
 
 _2024 年 4 月 4 日_
 
-[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+[!BADGE &#x200B; 互換性 &#x200B;]{type=Informative tooltip="互換性"}
 
 ![ 新規 ](../assets/new.svg) – すべての [!DNL Data Connection] 拡張機能で PHP 8.3 のサポートを追加しました。
 ![ 新規 ](../assets/new.svg) - Adobe Experience Platform Mobile SDKとCommerceを [ 統合 ](mobile-sdk-epc.md) する方法に関する記事を追加しました。
@@ -152,7 +152,7 @@ _2024 年 4 月 4 日_
 
 _2024 年 3 月 4 日_
 
-[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+[!BADGE &#x200B; 互換性 &#x200B;]{type=Informative tooltip="互換性"}
 
 ![ 新規 ](../assets/new.svg) - ベータ版に参加している場合は、`composer.json` ファイルのルートレベルに次のものが含まれていることを確認してください：` "minimum-stability": "beta"`。 また、`composer require "magento/customers-connector: ^1.2.0"` を追加して、Commerce インスタンスから SaaS に顧客プロファイルを送信します。
 ![ 新規 ](../assets/new.svg) - [ カスタム属性を追加 ](custom-attributes.md) 機能を追加しました。
@@ -162,7 +162,7 @@ _2024 年 3 月 4 日_
 
 _2023 年 11 月 16 日_
 
-[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+[!BADGE &#x200B; 互換性 &#x200B;]{type=Informative tooltip="互換性"}
 
 ![ 新規 ](../assets/new.svg) - Experience Platform コネクタの名前が [!DNL Data Connection] に変更されました。
 ![ 修正 ](../assets/fix.svg) - Adobe IMSがアクセストークンを生成できない場合にエラー応答をログに記録できるようになりました。
@@ -172,11 +172,11 @@ _2023 年 11 月 16 日_
 
 _2023 年 10 月 10 日_
 
-[!BADGE  互換性 ]{type=Informative tooltip="互換性"}
+[!BADGE &#x200B; 互換性 &#x200B;]{type=Informative tooltip="互換性"}
 
 これはメジャーバージョンリリースです。 [ 編集 ](install.md#update-the-data-connection) プロジェクトのルートの composer.json ファイル。
 
-![ 新規 ](../assets/new.svg) - Experience Platformに注文履歴 ](connect-data.md#send-historical-order-data) データおよびステータスを [ 送信する一般提供
+![ 新規 ](../assets/new.svg) - Experience Platformに注文履歴 [&#128279;](connect-data.md#send-historical-order-data) データおよびステータスを  送信する一般提供
 ![ 新規 ](../assets/new.svg) - [!DNL Data Connection] 拡張機能を [ 設定 ](connect-data.md#connect-commerce-data-to-adobe-experience-platform) する際に、OAuth 2.0 のサポートを追加しました。
 ![ 新規 ](../assets/new.svg) - Adobe Commerce 2.4.3 のサポートを終了しました。
 
@@ -184,7 +184,7 @@ _2023 年 10 月 10 日_
 
 _2023 年 6 月 27 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 ![ 新規 ](../assets/new.svg) - Experience Platformへの [ ストアフロントイベントの送信をオフにする ](connect-data.md#data-collection) 機能が追加されました。
 ![ 修正 ](../assets/fix.svg) - コンテンツセキュリティポリシー設定を更新しました。
@@ -195,7 +195,7 @@ _2023 年 6 月 27 日_
 
 _2023 年 6 月 13 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 ![ 新規 ](../assets/new.svg) - （Beta）Experience Platformに注文履歴 [ データおよびステータスを送信 ](connect-data.md#beta-send-historical-order-data) る機能が追加されました。
 
@@ -203,7 +203,7 @@ _2023 年 6 月 13 日_
 
 _2023 年 3 月 30 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 ![ 新規 ](../assets/new.svg) - `experience-platform-connector` 拡張機能に `commerce-data-export` および `saas-export` の依存関係がバンドルされました。 以前は、これらの依存関係を個別にインストールする必要がありました。 これらの依存関係とマーチャント設定により、[ バックオフィスイベント ](events-backoffice.md) のサーバーサイド処理が可能になります。
 ![ 新規 ](../assets/new.svg) - [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted) という新しいバックオフィスイベントを追加しました。
@@ -212,7 +212,7 @@ _2023 年 3 月 30 日_
 
 _2023 年 2 月 28 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 ![ 新規 ](../assets/new.svg) – すべての [!DNL Data Connection] 拡張機能で PHP 8.2 のサポートを追加しました。
 
@@ -220,7 +220,7 @@ _2023 年 2 月 28 日_
 
 _2023 年 1 月 17 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 ![ 新規 ](../assets/new.svg) - [[!DNL Data Connection] extension Admin](connect-data.md) を更新して、独自のAEP web SDK（alloy）を指定できるようになりました。
 ![ 修正 ](../assets/fix.svg) エッジにプッシュされたデータのプライマリ ID を設定する際に、`personID` の代わりに `identityMap` を使用するように変更しました。
@@ -229,7 +229,7 @@ _2023 年 1 月 17 日_
 
 _2022 年 11 月 10 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 ![ 修正 ](../assets/fix.svg) - Storefront イベントコレクターおよび Storefront イベントSDKが正常に読み込まれた後にのみ、Adobe Experience Platform コンテキストが設定されるようになりました。
 
@@ -237,7 +237,7 @@ _2022 年 11 月 10 日_
 
 _2022 年 10 月 12 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 ![ 新規 ](../assets/new.svg) - Adobe Commerce インスタンスをExperience Platformに [ 接続 ](connect-data.md) する際に、独自のAEP web SDKを指定する機能が追加されました。
 ![ 修正 ](../assets/fix.svg) - データストリーム ID を storereview ではなく web サイトにスコープする必要があるので、データストリーム範囲の要件を更新しました。
@@ -246,6 +246,6 @@ _2022 年 10 月 12 日_
 
 _2022 年 8 月 9 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"}
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"}
 
 ![ 新規 ](../assets/new.svg) – 一般提供リリース。

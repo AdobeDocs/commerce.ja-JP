@@ -135,14 +135,14 @@ Pay Later オファーについては、[PayPal の Pay Later オファードキ
 
 1. ストアが [ 実稼動モード ](settings.md#enable-payment-services) であることを確認します。
 1. [ 設定で目的の PayPal 支払いボタンを設定 ](settings.md#payment-buttons) します。
-1. _[!UICONTROL Payment buttons]_のセクションの&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**のオプションを_ オフ _します。
+1. _[!UICONTROL Payment buttons]_&#x200B;のセクションの&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;のオプションを_ オフ _します。
 
 **既存のクレジット・カード・プロバイダを使用して支払を取得する _および_PayPal 支払いボタン** 手順は、次のとおりです。
 
 1. ストアが [ 実稼動モード ](settings.md#enable-payment-services) であることを確認します。
 1. [ 目的の PayPal 支払いボタンを設定します ](settings.md#payment-buttons)。
-1. _[!UICONTROL Payment buttons]_のセクションの&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**のオプションを_ オフ _します。
-1. _[!UICONTROL Credit card fields]_のセクションの&#x200B;**[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**のオプションを_ オフ _にし、[ 既存のクレジットカードプロバイダーアカウント ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments) を使用します。
+1. _[!UICONTROL Payment buttons]_&#x200B;のセクションの&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;のオプションを_ オフ _します。
+1. _[!UICONTROL Credit card fields]_&#x200B;のセクションの&#x200B;**[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**&#x200B;のオプションを_ オフ _にし、[ 既存のクレジットカードプロバイダーアカウント ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments) を使用します。
 
 ## 注文の再計算
 

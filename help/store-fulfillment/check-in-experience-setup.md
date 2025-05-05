@@ -1,6 +1,6 @@
 ---
 title: チェックイン エクスペリエンスの設定
-description: カーメーカーとモデルを設定する ] ピックアップのお客様がピックアップ注文フォームを完了したときにカーサイドで選択できます。
+description: カーメーカーとモデルを設定する &rbrack; ピックアップのお客様がピックアップ注文フォームを完了したときにカーサイドで選択できます。
 role: Admin
 level: Intermediate
 source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
