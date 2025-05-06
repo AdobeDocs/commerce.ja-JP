@@ -146,7 +146,7 @@ Adobe Commerce バージョン 2.4.4 以降が稼働しているAdobe Commerce �
 
 [!DNL Catalog Service] をインストールしたら、次のタスクを実行してカタログサービスをAdobe Commerce インスタンスに統合します。 この統合により、Commerce インスタンス、カタログサービスおよびその他のサポートサービス間のデータ同期と通信が可能になります。 データ同期は、[SaaS データ書き出し拡張機能 ](../data-export/overview.md) で処理されます。
 
-1. API キーを指定し、SaaS データ空間を選択して ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)0}Commerce サービスコネクタ } を設定します。[
+1. API キーを指定し、SaaS データ空間を選択して [&#128279;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)0&rbrace;Commerce サービスコネクタ &rbrace; を設定します。
 
    Commerce Services Connector のセットアップは、カタログサービス、ライブ検索、商品レコメンデーションなどのAdobe Commerce サービスを使用するために必要な 1 回限りのプロセスです。 別のサービス用にコネクタを既に設定している場合は、この手順をスキップします。
 
