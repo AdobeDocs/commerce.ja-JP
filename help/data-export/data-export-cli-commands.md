@@ -2,9 +2,9 @@
 title: Commerce CLI を使用したフィードの同期
 description: コマンドラインインターフェイスコマンドを使用して、Adobe Commerce向け SaaS サービスのフィードとプロセス  [!DNL data export extension]  管理する方法について説明します。
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 6f578dfaf3d3e77d7b541714de613025b8c789a4
+source-git-commit: 8233b2e184c8af293ffc41cb22e085388cf18049
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Adobeでは、`saas:resync` コマンドを定期的に使用することはお勧めしません。 コマンドを使用する一般的なシナリオは次のとおりです。
 
 - 初期同期
-- [SaaS データ領域 ID](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/services/saas) の変更後、データを新しいデータ領域に同期する
+- [SaaS データ空間 ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) を変更した後、データを新しいデータ空間に同期する
 - トラブルシューティング
 
 `var/log/saas-export.log` ファイルの同期操作を監視します。
@@ -68,7 +68,7 @@ bin/magento saas:resync --help
 
 特定のエンティティを ID で部分的に再同期します。 `products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants` および `categoryPermissions` フィードをサポートします。
 
-デフォルトでは、エンティティは製品 SKU でコンマ区切りのリストで指定されます。 代わりに製品 ID を使用するには、「`--id-type=ProductID`」オプションを追加します。
+デフォルトでは、「`--by-ids`」オプションを使用する場合、製品 SKU 値を使用して値を指定します。 代わりに製品 ID を使用するには、「`--id-type=ProductID`」オプションを追加します。
 
 **例：**
 
@@ -81,13 +81,13 @@ bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-再インデックスを実行してデータを SaaS に送信する前に、フィードインデクサーテーブルのフィードテーブルをクリーンアップしてください。 `products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants` および `categoryPermissions` でのみサポートされます。
+インデックスを再作成してデータを SaaS に送信する前に、フィードインデクサーテーブルをクリーンアップします。 `products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants` および `categoryPermissions` でのみサポートされます。
 
 `--dry-run` オプションと共に使用すると、操作はすべての項目に対してドライラン再同期操作を実行します。
 
 >[!IMPORTANT]
 >
->環境のクリーンアップ後、または `--dry-run` オプションを使用した場合にのみ使用します。 それ以外の場合にクリーンアップを使用すると、データが失われたり、Adobe Commerceで削除する必要のある項目が SaaS データスペースから削除されないというデータ同期の問題が発生したりします。
+>環境のクリーンアップ後、または `--dry-run` オプションを使用した場合にのみ使用します。 それ以外の場合にクリーンアップ操作を使用すると、データの損失やデータ同期の問題が発生する可能性があります。
 
 **例：**
 
@@ -124,7 +124,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run
 **例：**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='1,2,3'
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='ADB102,ADB111,ADB112'
 ```
 
 ### すべてのフィード項目のテスト
