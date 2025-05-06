@@ -85,6 +85,6 @@ Adobe Commerceには 2 つのGraphQL システムがあります。 コア Graph
 
 ## 実装
 
-[!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+[!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
 インストールプロセスには、[Commerce サービスコネクタ ](../landing/saas.md) の設定が必要です。 これが完了したら、次の手順として、システムインテグレーターがストアフロントコードを更新して、[!DNL Catalog Service] のクエリを組み込みます。 すべての [!DNL Catalog Service] クエリは、GraphQL ゲートウェイにルーティングされます。 URL はオンボーディングプロセス中に提供されます。

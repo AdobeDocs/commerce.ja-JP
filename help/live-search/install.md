@@ -3,7 +3,7 @@ title: 入門 [!DNL Live Search]
 description: Adobe Commerceの必要システム構成とインストール手順  [!DNL Live Search]  説明します。
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
-badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
+badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
 source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
 workflow-type: tm+mt
 source-wordcount: '3139'
@@ -61,11 +61,11 @@ Adobe Commerce [!DNL Live Search] と [[!DNL Catalog Service]](../catalog-servic
 >
 >[!DNL Live Search] 4.0.0 以降、検索アダプタは非推奨になりました。 今後、検索アダプタは、セキュリティ上の問題に対処するためにのみ更新されます。
 
-1. [cron ジョブ ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) と [ インデクサー ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) が実行中であることを確認します。
+1. [cron ジョブ ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) と [ インデクサー ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management) が実行中であることを確認します。
 
    >[!IMPORTANT]
    >
-   >2023 年 8 月のElasticsearch 7 のサポート終了のお知らせに伴い、Adobe Commerceをご利用のすべてのお客様に OpenSearch 2.x 検索エンジンを利用することをお勧めします。 製品のアップグレード中に検索エンジンを移行する方法については、[ アップグレード ガイド ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) の _OpenSearch への移行_ を参照してください。
+   >2023 年 8 月のElasticsearch 7 のサポート終了のお知らせに伴い、Adobe Commerceをご利用のすべてのお客様に OpenSearch 2.x 検索エンジンを利用することをお勧めします。 製品のアップグレード中に検索エンジンを移行する方法については、[ アップグレード ガイド ](https://experienceleague.adobe.com/ja/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) の _OpenSearch への移行_ を参照してください。
 
 1. [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html) から `live-search` パッケージをダウンロードします。
 
@@ -95,7 +95,7 @@ Adobe Commerce [!DNL Live Search] と [[!DNL Catalog Service]](../catalog-servic
    bin/magento setup:upgrade
    ```
 
-1. 次の [インデクサー](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) が「Update by スケジュール」に設定されていることを確認します。
+1. 次の [インデクサー](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management) が「Update by スケジュール」に設定されていることを確認します。
 
    - 製品フィード
    - 製品バリアントフィード
@@ -151,7 +151,7 @@ Adobe Commerce [!DNL Live Search] と [[!DNL Catalog Service]](../catalog-servic
 
 これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メイン検索クエリーには影響しません。
 
-これらの新しい条件は、検索結果ページに実装できます。 例えば、ページに新しいセクションを追加して、買い物客が検索結果をさらに絞り込めるようにすることができます。 買い物客が「製造元」、「部品番号」、「説明」など、特定の製品属性を選択できるようにすることができます。 そこから、`contains` 条件または `startsWith` 条件を使用して、これらの属性内を検索します。 検索可能な [ 属性 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) のリストについては、管理ガイドを参照してください。
+これらの新しい条件は、検索結果ページに実装できます。 例えば、ページに新しいセクションを追加して、買い物客が検索結果をさらに絞り込めるようにすることができます。 買い物客が「製造元」、「部品番号」、「説明」など、特定の製品属性を選択できるようにすることができます。 そこから、`contains` 条件または `startsWith` 条件を使用して、これらの属性内を検索します。 検索可能な [ 属性 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/attributes-input-types) のリストについては、管理ガイドを参照してください。
 
 1. ベータ版をインストールするには、次の依存関係をプロジェクトに追加します。
 
@@ -159,11 +159,11 @@ Adobe Commerce [!DNL Live Search] と [[!DNL Catalog Service]](../catalog-servic
    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
    ```
 
-1. 変更をコミットして `composer.json` にプッシュし、ファイル `composer.lock` クラウドプロジェクトにプッシュします。 [詳細情報](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
+1. 変更をコミットして `composer.json` にプッシュし、ファイル `composer.lock` クラウドプロジェクトにプッシュします。 [詳細情報](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
 
    このベータ版では、管理者に **[!UICONTROL Autocomplete]**、**[!UICONTROL Contains]**、**[!UICONTROL Starts with]** の **[!UICONTROL Search types]** チェックボックスが追加されています。 また、[`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) GraphQL API を更新して、これらの新しい検索機能を組み込みます。
 
-1. 管理者で、検索可能にする [ 製品属性を設定する ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) と、その属性の検索機能を指定します。例えば、**次を含む** （デフォルト）や **次で始まる** などです。 **Contains** に対して有効にする属性を最大 6 つ指定し、**Starts with** に対して有効にする属性を最大 6 つ指定できます。 ベータ版の場合、管理者はこの制限を強制しませんが、API 検索では強制されます。
+1. 管理者で、検索可能にする [ 製品属性を設定する ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) と、その属性の検索機能を指定します。例えば、**次を含む** （デフォルト）や **次で始まる** などです。 **Contains** に対して有効にする属性を最大 6 つ指定し、**Starts with** に対して有効にする属性を最大 6 つ指定できます。 ベータ版の場合、管理者はこの制限を強制しませんが、API 検索では強制されます。
 
    ![ 検索機能の指定 ](./assets/search-filters-admin.png)
 
@@ -209,7 +209,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 同期進行状況の監視
 
-同期および共有されるデータは、 [データ 管理ダッシュボードを使用して表示できます](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)。 このダッシュボードは、ストアフロントの商品データの可用性に関する貴重な洞察を提供し、買い物客に迅速に表示できるようにします。
+同期および共有されるデータは、 [データ 管理ダッシュボードを使用して表示できます](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-dashboard)。 このダッシュボードは、ストアフロントの商品データの可用性に関する貴重な洞察を提供し、買い物客に迅速に表示できるようにします。
 
 ![ データ管理ダッシュボード ](assets/data-management-dashboard.png)
 
@@ -232,12 +232,12 @@ bin/magento saas:resync --feed categoryPermissions
   >
   >`table does not exist`エラーが発生した場合は、`catalog_data_exporter_products` および `catalog_data_exporter_product_attributes` テーブルでエントリを探します。これらのテーブル名は、4.2.1 より前の [!DNL Live Search] バージョンで使用されます。
 
-- デフォルトの クエリ で [GraphQL プレイグラウンド](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/graphql) を使用して (詳細については [GraphQL リファレンス](https://developer.adobe.com/commerce/services/graphql/live-search/) を参照)、以下を確認します。
+- デフォルトの クエリ で [GraphQL プレイグラウンド](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/graphql) を使用して (詳細については [GraphQL リファレンス](https://developer.adobe.com/commerce/services/graphql/live-search/) を参照)、以下を確認します。
 
    - 返される製品数は、ストア 表示で期待される数に近いものです。
    - ファセットが返されます。
 
-その他のヘルプについては、サポートナレッジベースの「 [[!DNL Live Search] カタログが同期されていません](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) を参照してください。
+その他のヘルプについては、サポートナレッジベースの「 [[!DNL Live Search] カタログが同期されていません](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) を参照してください。
 
 ## 5. データを構成する
 
@@ -257,7 +257,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 この設定を変更すると、 `Page cache is invalidated` メッセージが表示されます。 変更を保存するには、Magento キャッシュをフラッシュする必要があります。
 
-1. 次のいずれかの方法で [キャッシュ管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) ページにアクセスします。
+1. 次のいずれかの方法で [キャッシュ管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management) ページにアクセスします。
 
    - メッセージの上にあるワークスペースの **[!UICONTROL Cache Management]** リンクをクリックします。
    - _管理者_ サイドバーで、**[!UICONTROL System]**/_[!UICONTROL Tools]_/**[!UICONTROL Cache Management]**&#x200B;に移動します。
@@ -268,7 +268,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### カテゴリの割り当て
 
-[!DNL Live Search] で返された製品は、[ カテゴリ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories) に割り当てられている必要があります。 例えば Luma では、製品が「男性」、「女性」、「歯車」などのカテゴリに分類されます。 サブカテゴリも「トップス」、「ボトムス」、「ウォッチポイント」に設定されます。 これらのカテゴリの割り当てにより、フィルタリング時の精度が向上します。
+[!DNL Live Search] で返された製品は、[ カテゴリ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/categories) に割り当てられている必要があります。 例えば Luma では、製品が「男性」、「女性」、「歯車」などのカテゴリに分類されます。 サブカテゴリも「トップス」、「ボトムス」、「ウォッチポイント」に設定されます。 これらのカテゴリの割り当てにより、フィルタリング時の精度が向上します。
 
 ## 6.接続をテストする
 
@@ -351,7 +351,7 @@ composer update magento/live-search --with-dependencies
 
 ## アンインストール [!DNL Live Search]
 
-[!DNL Live Search]をアンインストールするには、[モジュールのアンインストール](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)を参照してください。
+[!DNL Live Search]をアンインストールするには、[モジュールのアンインストール](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)を参照してください。
 
 ## [!DNL Live Search] パッケージ
 
@@ -360,7 +360,7 @@ composer update magento/live-search --with-dependencies
 | パッケージ | 説明 |
 |--- |--- |
 | `module-live-search` | を使用すると、マーチャントは、ファセット、同義語、クエリルールなどの検索設定を指定したり、読み取り専用のGraphQL プレイグラウンドにアクセスして *Admin* からクエリをテストしたりできます。 |
-| `module-live-search-adapter` | リクエスト検索ストアフロントから [!DNL Live Search] サービスにルーティングし、結果をストアフロントにレンダリングします。 <br />- カテゴリー参照 - ストアフロント [最上位ナビゲーション](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) から検索サービスにリクエストをルーティングします。<br />- グローバル 検索 - ストアフロントの右上にある [クイック 検索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) ボックスから [!DNL Live Search] サービスに要求をルーティングします。 |
+| `module-live-search-adapter` | リクエスト検索ストアフロントから [!DNL Live Search] サービスにルーティングし、結果をストアフロントにレンダリングします。 <br />- カテゴリー参照 - ストアフロント [最上位ナビゲーション](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/navigation/navigation-top) から検索サービスにリクエストをルーティングします。<br />- グローバル 検索 - ストアフロントの右上にある [クイック 検索](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search) ボックスから [!DNL Live Search] サービスに要求をルーティングします。 |
 | `module-live-search-storefront-popover` | 「入力時に検索」ポップオーバーは、標準のクイック検索に取って代わり、上位検索結果のデータとサムネイルを返します。 |
 
 ## [!DNL Live Search] 依存関係
@@ -471,7 +471,7 @@ Live Search を有効にすると、データ書き出し拡張機能によっ�
 
 ### 在庫管理
 
-[!DNL Live Search] コマースの [在庫管理](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) 機能をサポートします (以前は複数出力元在庫、または MSI と呼ばれていました)。 フル サポートを有効にするには、依存関係モジュール`commerce-data-export`バージョン 102.2.0+ に[更新](install.md#updating-live-search)必要があります。
+[!DNL Live Search] コマースの [在庫管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/introduction) 機能をサポートします (以前は複数出力元在庫、または MSI と呼ばれていました)。 フル サポートを有効にするには、依存関係モジュール`commerce-data-export`バージョン 102.2.0+ に[更新](install.md#updating-live-search)必要があります。
 
 [!DNL Live Search] は、商品がInventory management内で使用可能かどうかを示すブール値を返しますが、どのソースが在庫を持っているかに関する情報は含まれません。
 
@@ -508,7 +508,7 @@ composer require magento/module-data-services-graphql
 
 ### B2B サポート
 
-[!DNL Live Search] では、追加の [ 制限事項 ](boundaries-limits.md#b2b-and-category-permissions) を追加して [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview)B2B 機能をサポートしています。
+[!DNL Live Search] では、追加の [ 制限事項 ](boundaries-limits.md#b2b-and-category-permissions) を追加して [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/guide-overview)B2B 機能をサポートしています。
 
 ### PWA サポート
 
@@ -540,4 +540,4 @@ PWA Studioで [!DNL Live Search] を使用する場合、インテグレータ�
 
 ### の Cookie
 
-[!DNL Live Search] は、基本機能の一部としてユーザーインタラクションデータを収集し、このデータを保存するために cookie が使用されます。 ユーザー情報を収集する場合、ユーザーは Cookie の保存に同意する必要があります。 [!DNL Live Search] と [!DNL Product Recommendations] はデータストリームを共有するので、同じ cookie メカニズムになります。 詳しくは、[Cookie 制限の処理 ](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/developer/setting-cookie) を参照してください。
+[!DNL Live Search] は、基本機能の一部としてユーザーインタラクションデータを収集し、このデータを保存するために cookie が使用されます。 ユーザー情報を収集する場合、ユーザーは Cookie の保存に同意する必要があります。 [!DNL Live Search] と [!DNL Product Recommendations] はデータストリームを共有するので、同じ cookie メカニズムになります。 詳しくは、[Cookie 制限の処理 ](https://experienceleague.adobe.com/ja/docs/commerce/product-recommendations/developer/setting-cookie) を参照してください。

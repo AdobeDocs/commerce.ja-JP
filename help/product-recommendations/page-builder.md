@@ -3,7 +3,7 @@ title: '[!DNL Page Builder] 統合'
 description: ページビルダーで単位 [!DNL Product Recommendations] を使用する方法を学びます。
 feature: Services, Recommendations, Page Builder
 exl-id: 001e8e1d-3590-4b44-b5f8-dd8b9b61f370
-badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="クラウド上の Adobe Systems Commerce プロジェクト (Adobe Systems マネージド PaaS インフラストラクチャ) とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="クラウド上の Adobe Systems Commerce プロジェクト (Adobe Systems マネージド PaaS インフラストラクチャ) とオンプレミス プロジェクトにのみ適用されます。"
 source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
 workflow-type: tm+mt
 source-wordcount: '272'
