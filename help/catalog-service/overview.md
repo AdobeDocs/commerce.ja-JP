@@ -3,13 +3,13 @@ title: '[!DNL Catalog Service]'
 description: Adobe Commerceの [!DNL Catalog Service] を使用すると、Adobe Commerce GraphQLのネイティブなクエリよりも迅速に商品表示ページと商品リストページのコンテンツを取得できます。
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
+source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerceの [!DNL Catalog Service]
 
@@ -84,5 +84,7 @@ Adobe Commerceには 2 つのGraphQL システムがあります。 コア Graph
 > [!DNL Catalog Service] を使用するCommerceのお客様は、[SaaS 価格インデクサー ](../price-index/price-indexing.md) を使用して、web サイトでの価格変更の更新と同期時間の高速化を活用できます。
 
 ## 実装
+
+[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
 インストールプロセスには、[Commerce サービスコネクタ ](../landing/saas.md) の設定が必要です。 これが完了したら、次の手順として、システムインテグレーターがストアフロントコードを更新して、[!DNL Catalog Service] のクエリを組み込みます。 すべての [!DNL Catalog Service] クエリは、GraphQL ゲートウェイにルーティングされます。 URL はオンボーディングプロセス中に提供されます。
