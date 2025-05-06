@@ -5,12 +5,14 @@ breadcrumb-title: Adobe Commerceの [!DNL Data Connection] 拡張機能
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
+source-git-commit: 98a7ea9ff7d741bd7333b44618e7287da9d66353
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 3%
+source-wordcount: '146'
+ht-degree: 2%
 
 ---
+
 
 # Adobe Commerceの [!DNL Data Connection] 拡張機能 {#data-connection}
 
@@ -25,14 +27,14 @@ ht-degree: 3%
    - [Commerce データ取り込み用のプロファイルレコードスキーマの更新](profile-data.md)
    - [Commerce Data のAdobe Experience Platformへの接続](connect-data.md)
    - [Adobe Experience Platform Mobile SDKとCommerceの統合](mobile-sdk-epc.md)
-- Capture Data {#event-forwarding}
+- データのキャプチャ {#event-forwarding}
    - [行動イベント](events.md)
    - [バックオフィスイベント](events-backoffice.md)
    - [プロファイルレコード](events-profilerecord.md)
    - [カスタム注文属性の追加](custom-attributes.md)
    - [カスタムイベント](custom-events.md)
    - [Adobe Experience Platform タグの使用](using-tags.md)
-- のユースケー {#use-cases}
+- ユースケース {#use-cases}
    - [Adobe Journey Optimizerを使用して、放棄された買い物かごにメールを送信](using-ajo.md)
    - [Commerce イベントデータを使用したReal-Time CDPでのオーディエンスの作成](create-audience.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
