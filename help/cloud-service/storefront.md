@@ -16,7 +16,7 @@ ht-degree: 0%
 
 次の手順は、`aio commerce init` コマンドを使用してEdge Deliveryを搭載したAdobe Commerce Storefront をすばやく設定する方法を示しています。 このプロセスにより、次の設定が行われます。
 
-* [Edge Delivery ServicesによるCommerce ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) - Adobe Edge Delivery Servicesを活用した、パフォーマンス、拡張性、安全性の高いストアフロントです。
+* [Edge Delivery ServicesによるCommerce ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja) - Adobe Edge Delivery Servicesを活用した、パフォーマンス、拡張性、安全性の高いストアフロントです。
 * [Adobe Developer App Builderの API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/mesh/) – 複数のデータソースを 1 つのGraphQL エンドポイントに組み合わせることができる API プラットフォーム。 API メッシュは、1 つのゲートウェイを介してサードパーティ API とAdobe API を統合します。 1 つのGraphQL エンドポイントに対する 1 つのクエリで、複数のソースから結果を返すことができます。
 * [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) - Adobe アプリケーション用のプロジェクトを構築するために使用できる、API、イベント、ランタイム関数、プラグインへのアクセスを備えたデベロッパーツールのコレクションです。
 * [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/) - クラウド内のイベントに応答し、関数を実行するカスタムコードをデプロイするためのサーバーレスエンジン。
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ## `aio commerce init` コマンドを実行します。
 
-次のコマンドを実行すると、Commerce ストアフロントの基礎モードが作成されます。 この基礎モードは、ストアフロントの構築と理解に最適な出発点となります。 ストアフロントの操作について詳しくは、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/) を参照してください。
+次のコマンドを実行すると、Commerce ストアフロントの基礎モードが作成されます。 この基礎モードは、ストアフロントの構築と理解に最適な出発点となります。 ストアフロントの操作について詳しくは、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照してください。
 
 
 1. `init` コマンドを実行します。
@@ -122,4 +122,4 @@ ht-degree: 0%
    * ストアフロントのプレビュー：`https://main--<repo name>--<username or org>.aem.page/`
    * ローカルで実行：`aio commerce:dev`
 
-ストアフロントをカスタマイズするには、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/) を参照してください。
+ストアフロントをカスタマイズするには、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照してください。
