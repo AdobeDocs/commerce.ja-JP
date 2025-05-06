@@ -2,9 +2,10 @@
 title: 境界と制限
 description: ビジネスのニーズを確実に満たすための  [!DNL Adobe Commerce Optimizer]  の境界と制限について説明します。
 role: Admin, Developer
-source-git-commit: 45a43fe2ada206515c512a04aa6e9072e08844cc
+exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -28,10 +29,7 @@ Adobe Commerce Optimizerの上限と上限を次に示します。
 
 ## 価格
 
-- 価格帳簿の最大数は 30,000 です。 価格帳簿の基本階層の数は 100 を超えることはできず、（価格帳簿の数） x （チャネルの数）は 100 以下にする必要があるルールに従う必要があります。
-- 保証価格フィードの取り込みレートは、1 分あたり 5,000 レコードです。
-- 1 つの価格レコードに 10 を超える割引を適用することはできません。
-- 1 日あたりの価格更新の基本数は 5,000,000 です。
+- 価格帳簿の最大数は 1,000 です。
 
 ## 検索とストアフロント
 
@@ -53,6 +51,6 @@ Adobe Commerce Optimizerの上限と上限を次に示します。
 - 製品の検出では、属性ベースのマーチャンダイジングと価格設定はサポートされていません。
 - お勧め：
 
-   - ACO は、EA 向けに _最近閲覧された項目_ レコメンデーションタイプをサポートしています
+   - [!DNL Adobe Commerce Optimizer] では、早期アクセスを目的として _最近表示された項目_ レコメンデーションタイプをサポートしています。
    - カテゴリや属性の包含や除外はサポートされていません。
    - [!DNL Adobe Commerce Optimizer] では、レコメンデーションをプレビューできません。

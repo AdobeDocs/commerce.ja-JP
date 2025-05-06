@@ -4,9 +4,10 @@ description: チャネル  [!DNL Adobe Commerce Optimizer]  ポリシーを使�
 hide: true
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1672'
 ht-degree: 0%
 
 ---
@@ -78,7 +79,7 @@ Carvelo は、3 つのブランド（Aurora、Bolt、Cruz）のパーツを、�
 最終的に、Carvelo には 2 つの大きな目標があります。
 
 1. 「グローバル」な web サイトを維持します。この web サイトには、3 つのブランドすべてのすべての SKU があります。
-1. 販売店が、販売店ごとに固有の SKU の可視性と各 SKU の価格に基づいて独自のストアフロントを設定するためのパスを提供します。
+1. 販売店が、販売店ごとに固有の SKU の可視性と各 SKU の価格に基づいて独自のストアフロントを設定するためのパスを提供します。 一方、単一の基本カタログを使用することで、カタログの重複を排除できます。
 
 >[!ENDSHADEBOX]
 
@@ -269,12 +270,14 @@ Celport チャネルと関連ポリシーを作成したら、次の手順は、
    - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`: `"west_coast_inc"`
 
-   +++
++++
 
 1. `ac-channel-id` の値を、以前にコピーした Celport チャネル ID に置き換えます。
-1. 必要に応じて、`ac-environment-id` の値を [!DNL Adobe Commerce Optimizer] インスタンスのテナント ID に置き換えます。 ID は、早期アクセスプログラムのオンボーディングメールで確認するか、Adobe アカウント担当者にお問い合わせください。
+1. `ac-environment-id` の値を [!DNL Adobe Commerce Optimizer] インスタンスのテナント ID に置き換えます。 ID は、早期アクセスプログラムのオンボーディングメールで確認するか、Adobe アカウント担当者にお問い合わせください。
 
-   `commerce-endpoint` の値が、[!DNL Adobe Commerce Optimizer] インスタンスのGraphQL エンドポイントと一致することを確認します。
+   >[!IMPORTANT]
+   >
+   >`commerce-endpoint` の値が、[!DNL Adobe Commerce Optimizer] インスタンスのGraphQL エンドポイントと一致することを確認します。 これは、「ようこそ」のメールに記載されています。
 
 1. `ac-price-book-id` の値を `"east_coast_inc"` に置き換えます。
 1. ファイルを保存します。
@@ -317,7 +320,7 @@ Celport チャネルと関連ポリシーを作成したら、次の手順は、
 
       ファイルを保存すると、ローカルストアフロントのプレビューが自動的に更新されます。
 
-   1. 検索機能を使用してタイヤ部品を検索することにより、ブラウザーで変更をプレビューします。
+   1. 検索機能を使用してタイヤ部品を検索することで、ブラウザで変更内容をプレビューします。
 
       使用可能なパーツ タイプが異なることに注目してください。また、Kingsbluff チャンネルに割り当てられている価格にも注目してください。
 

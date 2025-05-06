@@ -1,22 +1,23 @@
 ---
-title: 入門 [!DNL Adobe Commerce Optimizer]
-description: ' [!DNL Adobe Commerce Optimizer] の使用を開始する方法をご覧ください。'
+title: ' [!DNL Adobe Commerce Optimizer] の基本を学ぶ'
+description: ' [!DNL Adobe Commerce Optimizer] の使用を開始する方法について説明します。'
 hide: true
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
+source-git-commit: ac79c8aa43ced017743fbef1f181b4eaf8e0a754
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
-# 入門
+# はじめに
 
 >[!NOTE]
 >
->このドキュメントでは、早期アクセス開発中の製品について説明しており、一般提供を目的としたすべての機能を反映しているわけではありません。
+>このドキュメントでは、製品の早期アクセス開発について説明しており、一般提供を目的とした機能のすべてを反映しているわけではありません。
 
-このガイドでは、 [!DNL Adobe Commerce Optimizer] インスタンスの作成と操作の順を追って説明します。
+このガイドでは、[!DNL Adobe Commerce Optimizer] インスタンスの作成と操作について説明します。
 
 <!--Click the tabs below to see high-level workflow overviews for the following user types:
 
@@ -28,7 +29,7 @@ ht-degree: 0%
 
 >[!TAB Administrator and merchant workflow]
 
-This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/jp/enterprise/admin-guide.html) for more information about administrator workflows.
+This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
 
 NEED DIAGRAM
 
@@ -43,23 +44,27 @@ NEED DIAGRAM
 
 ## プロビジョニング
 
-[!DNL Adobe Commerce Optimizer]インスタンスの準備が整うと、[!DNL Adobe Commerce Optimizer] プロビジョニング チームによって次のエンドポイントが提供されます。
+[!DNL Adobe Commerce Optimizer] インスタンスの準備が整うと、[!DNL Adobe Commerce Optimizer] プロビジョニングチームは次のエンドポイントを提供します。
 
-| アイテム | サンプルURL | 目的 |
+| 項目 | サンプル URL | 目的 |
 |---|---|---|
-| [!DNL Adobe Commerce Optimizer] UI | `https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>` | Commerce Optimizer UIにアクセスしてカタログを管理する:<br>1. マーチャンダイジングルール(製品ディスカバリー、製品Recommendations)。<br>2. カタログ管理(チャンネルおよびポリシーの作成)。<br>3. データInsights(カタログデータの取得ステータス表示)。 |
-| ストアフロント API | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql` | Edge 配信 サービスを利用したコマースストアフロントの設定に必要な API にアクセスします。 |
-| カタログデータ取得 API | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>` | カタログ データの取り込みに必要な API にアクセスします。 |
+| [!DNL Adobe Commerce Optimizer] UI | `https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>` | Commerce Optimizer UI にアクセスして、<br>1 の間でカタログを管理します。 マーチャンダイジングルール （製品検出、製品レコメンデーション）。<br>2。 カタログ管理（チャネルとポリシーの作成）。<br>3。 データインサイト （カタログデータ取り込みステータスを表示）。 |
+| ストアフロント API | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql` | Edge Delivery Servicesを活用したCommerce ストアフロントの設定に必要な API にアクセスします。 |
+| カタログデータ取得 API | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>` | カタログデータの取り込みに必要な API にアクセスします。 |
 
-早期アクセスに参加すると、IMSトークンとともに、 [!DNL Adobe Commerce Optimizer] にログインしたりAPI呼び出しを実行したりできる安全なリンクが記載されたメールが届きます。
+>[!NOTE]
+>
+>ストアフロントの設定とカタログの取り込みに必要な API について詳しくは、[ 開発者向けドキュメント ](https://developer-stage.adobe.com/commerce/services/composable-catalog/) を参照してください。
 
-## ストアフロントの設定アップ
+早期アクセス参加者には、IMS トークンと共に、[!DNL Adobe Commerce Optimizer] にログインするか API 呼び出しを行うためのセキュアリンクが記載されたメールが届きます。
 
-[!DNL Adobe Commerce Optimizer]インスタンスができたので、Edge 配信 サービスを利用したコマースストアフロントの[設定](./storefront.md)に進む準備が整いました。
+## ストアフロントの設定
 
-## 早期アクセス参加者が利用できるカタログデータ
+これで [!DNL Adobe Commerce Optimizer] インスタンスが作成されたので、Edge Delivery Servicesを使用したCommerce Storefront の [ 設定 ](./storefront.md) を続行する準備が整いました。
 
-早期アクセス参加者として、 [!DNL Adobe Commerce Optimizer] インスタンスには [Carveloユースケース](./use-case/admin-use-case.md)に基づく模擬カタログデータが含まれています。 モックデータは、いくつかの事前構成されたチャネルとポリシーとともに、 [!DNL Adobe Commerce Optimizer] UIに慣れるのに役立ちます。
+## 早期アクセス参加者向けに利用可能なカタログデータ
+
+早期アクセス参加者の場合、[!DNL Adobe Commerce Optimizer] インスタンスには [Carvelo ユースケース ](./use-case/admin-use-case.md) に基づくモックカタログデータが含まれます。 モックデータは、事前設定済みのチャネルとポリシーと共に、[!DNL Adobe Commerce Optimizer] UI に慣れるのに役立ちます。
 
 <!--Ingest catalog data
 

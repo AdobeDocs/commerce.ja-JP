@@ -2,9 +2,10 @@
 title: 推奨事項
 description: Recommendations は、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる、強力なマーケティングツールです。
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: 04228203-37a3-4535-ad61-d5e586e57d63
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -31,3 +32,11 @@ Recommendations では、人工知能と機械学習アルゴリズムを使用�
 - 既存のレコメンデーションを [ 編集 ](../../product-recommendations/edit.md) します。
 
 レコメンデーションストアフロントコンポーネントを使用して、これらの製品レコメンデーションをストアフロントに表示します。
+
+## 制限事項
+
+早期アクセスの推奨事項に関する制限事項を次に示します。
+
+- [!DNL Adobe Commerce Optimizer] では、「最近表示された項目 _レコメンデーションタイプをサポ_ トしています。
+- カテゴリや属性の包含や除外はサポートされていません。
+- [!DNL Adobe Commerce Optimizer] では、レコメンデーションをプレビューできません。

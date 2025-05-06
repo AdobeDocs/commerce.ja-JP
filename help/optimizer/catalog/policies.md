@@ -3,9 +3,10 @@ title: ポリシー
 description: ポリシーを使用してチャネル内のデータをフィルタリングし、データを適切な宛先に確実に送信する方法を説明します。
 hide: true
 recommendations: noCatalog
-source-git-commit: 425c801a852de566120504563e256b0351df588e
+exl-id: 05bbad1a-d612-41a4-9575-543f507089c3
+source-git-commit: a731d978aa180633431b0dd9dde5439c286461a2
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -32,12 +33,12 @@ ht-degree: 0%
 |---|---|---|
 | **属性** | フィルタリングに使用する製品属性。 | `part_category` |
 | **演算子** | 属性に適用される条件。 | `IN`、`EQUALS`、`CONTAINS` |
-| **値のソース** | 値が `STATIC` か `TRIGGER` かを指定します。 | `STATIC` |
+| **値のソース** | 値が `STATIC` か `TRIGGER` かを指定します。 | `STATIC` [ 詳細情報 ](#value-source-types) |
 | **値** | 条件を満たす特定の値。 | `brakes, suspension` |
 
 ### 例
 
-属性 `part_category`、`IN` 演算子、値 `brakes, suspension` のフィルターにより、ブレーキとサスペンションに分類された製品のみがポリシーに含まれるようにします。
+属性 `part_category`、`IN` の演算子および値 `brakes, suspension` を持つフィルターにより、値が `brake` または `suspension` の属性 `part_category` を持つ製品のみがポリシーによってフィルタリングされ、表示されるようにします。
 
 ### 値のソースタイプ
 
