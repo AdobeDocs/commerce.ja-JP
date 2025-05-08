@@ -33,7 +33,7 @@ ht-degree: 0%
 
 取引レポート・ビューは、Payment Services の「取引」ビューで使用できます。 ストアのトランザクションに関して使用可能なすべての情報が含まれます。
 
-_管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**に移動して、詳細な表形式のトランザクションレポート表示を表示します。
+_管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**&#x200B;に移動して、詳細な表形式のトランザクションレポート表示を表示します。
 
 ![ トランザクションレポートの表示 ](assets/transactions-report-view.png){width="800" zoomable="yes"}
 
@@ -55,17 +55,17 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Se
 
 ![ データソースの選択 ](assets/datasource.png){width="300" zoomable="yes"}
 
-_[!UICONTROL Live]_が選択されているデータソースの場合、実稼動モードで [!DNL Payment Services] を使用しているストアのレポート情報を表示できます。_[!UICONTROL Sandbox]_ が選択したデータソースの場合、サンドボックスモードのレポート情報を表示できます。
+_[!UICONTROL Live]_&#x200B;が選択されているデータソースの場合、実稼動モードで [!DNL Payment Services] を使用しているストアのレポート情報を表示できます。_[!UICONTROL Sandbox]_ が選択したデータソースの場合、サンドボックスモードのレポート情報を表示できます。
 
 データソースを選択すると、次のように機能します。
 
-* 実稼働モードで [!DNL Payment Services] を使用するストアがない場合、データソースの選択はデフォルトで _[!UICONTROL Sandbox]_になります。
-* 実稼動モードで [!DNL Payment Services] を使用するストア（1 つまたは複数）がある場合、データソースの選択はデフォルトで _[!UICONTROL Live]_になります。
+* 実稼働モードで [!DNL Payment Services] を使用するストアがない場合、データソースの選択はデフォルトで _[!UICONTROL Sandbox]_&#x200B;になります。
+* 実稼動モードで [!DNL Payment Services] を使用するストア（1 つまたは複数）がある場合、データソースの選択はデフォルトで _[!UICONTROL Live]_&#x200B;になります。
 * レポートの書き出しでは、常にデータソースの選択に従います。
 
 [!UICONTROL Transactions] レポートのデータソースを選択するには：
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**&#x200B;に移動します。
 1. 「**[!UICONTROL Data source]**」をクリックし、「**[!UICONTROL Live]**」または「**[!UICONTROL Sandbox]**」を選択します。
 
    レポート結果は、選択したデータソースに基づいて再生成されます。
@@ -74,7 +74,7 @@ _[!UICONTROL Live]_が選択されているデータソースの場合、実稼�
 
 取引レポート表示から、特定の日付を選択して、表示する取引の期間をカスタマイズできます。 デフォルトでは、30 日間のトランザクションがグリッドに表示されます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**&#x200B;に移動します。
 1. **[!UICONTROL Transaction dates]** カレンダーセレクターフィルターをクリックします。
 1. 該当する日付範囲を選択します。
 1. 指定した日付のトランザクションをグリッドに表示します。
@@ -83,23 +83,23 @@ _[!UICONTROL Live]_が選択されているデータソースの場合、実稼�
 
 取引レポート・ビューで、フィルタ条件を選択して、表示するステータス結果をフィルタできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**&#x200B;に移動します。
 1. **[!UICONTROL Filter]** セレクターをクリックします。
-1. _[!UICONTROL Transaction Result]_のオプションを切り替えて、選択した注文トランザクションのみのレポート結果を表示します。
-1. _[!UICONTROL Payment Method]_のオプションを切り替えて、トランザクションに使用された支払いタイプのレポート結果を表示します。
-1. _[!UICONTROL Payment Detail]_のオプションを切り替えて、使用する支払いタイプの追加情報を表示します（使用可能な場合）。
+1. _[!UICONTROL Transaction Result]_&#x200B;のオプションを切り替えて、選択した注文トランザクションのみのレポート結果を表示します。
+1. _[!UICONTROL Payment Method]_&#x200B;のオプションを切り替えて、トランザクションに使用された支払いタイプのレポート結果を表示します。
+1. _[!UICONTROL Payment Detail]_&#x200B;のオプションを切り替えて、使用する支払いタイプの追加情報を表示します（使用可能な場合）。
 1. _最小オーダー金額_ または _最大オーダー金額_ を入力して、そのオーダー金額範囲内のレポート結果を表示します。
-1. 特定のトランザクションを検索する _[!UICONTROL Order ID]_を入力します。
-1. 特定のクレジット カードまたはデビット カードを検索する _[!UICONTROL Card Last Four]_を紹介します。
-1. 特定の顧客のすべてのトランザクションを表示する _[!UICONTROL Customer ID]_を入力します。
-1. その電子メールのトランザクションをフィルター処理する _[!UICONTROL Customer Email]_を入力します。
+1. 特定のトランザクションを検索する _[!UICONTROL Order ID]_&#x200B;を入力します。
+1. 特定のクレジット カードまたはデビット カードを検索する _[!UICONTROL Card Last Four]_&#x200B;を紹介します。
+1. 特定の顧客のすべてのトランザクションを表示する _[!UICONTROL Customer ID]_&#x200B;を入力します。
+1. その電子メールのトランザクションをフィルター処理する _[!UICONTROL Customer Email]_&#x200B;を入力します。
 1. 「**[!UICONTROL Hide filters]**」をクリックすると、フィルターが非表示になります。
 
 ### 列の表示/非表示
 
 取引レポートには、デフォルトで使用可能なすべての情報列が表示されます。 ただし、レポートに表示する列をカスタマイズすることはできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**&#x200B;に移動します。
 1. **[!UICONTROL Column settings]** アイコン ![ 列設定アイコン ](assets/column-settings.png){width="20" zoomable="yes"} をクリックします。
 1. レポートに表示される列をカスタマイズするには、リストの列をチェックまたはチェック解除します。
 
@@ -107,11 +107,11 @@ _[!UICONTROL Live]_が選択されているデータソースの場合、実稼�
 
 ### レポートデータを更新
 
-トランザクションレポート表示には、レポート情報が最後に更新された時刻を示す _[!UICONTROL Last updated]_タイムスタンプが表示されます。 デフォルトでは、トランザクションレポートデータは 3 時間ごとに自動更新されます。
+トランザクションレポート表示には、レポート情報が最後に更新された時刻を示す _[!UICONTROL Last updated]_&#x200B;タイムスタンプが表示されます。 デフォルトでは、トランザクションレポートデータは 3 時間ごとに自動更新されます。
 
 また、レポートデータを手動で強制的に更新して、最新のレポート情報を表示することもできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Transactions]_/**[!UICONTROL View Report]**&#x200B;に移動します。
 1. _更新_ アイコン（![ 更新アイコン ](assets/refresh-button-med.png){width="20" zoomable="yes"}）をクリックします。
 
    トランザクションレポートデータが更新され、*[!UICONTROL Update complete]* の確認が表示され、最新の情報がグリッドに表示されます。
@@ -140,7 +140,7 @@ _[!UICONTROL Live]_が選択されているデータソースの場合、実稼�
 | [!UICONTROL Payment Detail] | トランザクションに使用される支払いタイプに関する追加情報を提供します（利用可能な場合）。 |
 | [!UICONTROL Card Last Four] | 取引に使用するクレジット カードまたはデビット カードの最後の 4 桁 |
 | [!UICONTROL Result] | トランザクションの結果 – *[!UICONTROL OK]* （成功したトランザクション）、*[!UICONTROL Rejected by Payment Provider]* （PayPal によって却下）、*[!UICONTROL Rejected by Bank]* （カードを発行した銀行によって却下） |
-| [!UICONTROL Response Code] | 支払いプロバイダーまたは銀行から拒否の理由を提供するエラーコード。[`Rejected by Bank` の状態および [`Rejected by Payment Provider` の状態については ](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) 考えられる応答コードと説明の一覧を参照してください ](https://developer.paypal.com/api/rest/reference/orders/v2/errors/) |
+| [!UICONTROL Response Code] | 支払いプロバイダーまたは銀行から拒否の理由を提供するエラーコード。[&#128279;](https://developer.paypal.com/api/rest/reference/orders/v2/errors/)`Rejected by Bank` の状態および [`Rejected by Payment Provider` の状態については ](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) 考えられる応答コードと説明の一覧を参照してください  |
 | [!UICONTROL AVS Code] | 住所確認サービスコード。支払いリクエストに対するプロセッサー応答情報です。 詳しくは、[ 使用可能なコードと説明のリスト ](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) を参照してください。 |
 | [!UICONTROL CVV Code] | クレジットカードおよびデビットカードのカード検証値コード。詳しくは、[ 使用可能なコードと説明のリスト ](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) を参照してください。 |
 | [!UICONTROL Amount] | トランザクションの注文金額 |

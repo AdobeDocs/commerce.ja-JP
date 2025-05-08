@@ -71,7 +71,7 @@ _管理者_ サイドバーで、**営業**/**支払いサービス**/_注文_ �
 
 注文支払いステータスレポート ビューは、支払いサービスのホーム ビューで使用できます。 すべての取引に関する詳細なステータス（支払い、請求、発送済み、払い戻し、係争など）が含まれます。
 
-_管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動して、詳細な表形式の注文支払ステータスレポート表示を表示します。
+_管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動して、詳細な表形式の注文支払ステータスレポート表示を表示します。
 
 ![ 管理者での支払いステータストランザクションの注文 ](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -144,18 +144,18 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Se
 
 ![ データソースの選択 ](assets/datasource.png){width="300" zoomable="yes"}
 
-_[!UICONTROL Live]_が選択されているデータソースの場合、実稼動モードで [!DNL Payment Services] を使用しているストアのレポート情報を表示できます。_[!UICONTROL Sandbox]_ が選択されているデータソースの場合は、サンドボックスモードのレポート情報を表示できます。
+_[!UICONTROL Live]_&#x200B;が選択されているデータソースの場合、実稼動モードで [!DNL Payment Services] を使用しているストアのレポート情報を表示できます。_[!UICONTROL Sandbox]_ が選択されているデータソースの場合は、サンドボックスモードのレポート情報を表示できます。
 
 データソースを選択すると、次のように機能します。
 
-* ライブモードで [!DNL Payment Services] を使用するストアがない場合、データソースの選択はデフォルトで _[!UICONTROL Sandbox]_になります。
-* ライブモードで [!DNL Payment Services] を使用するストア（1 つまたは複数）がある場合、データソースの選択はデフォルトで _[!UICONTROL Live]_になります。
+* ライブモードで [!DNL Payment Services] を使用するストアがない場合、データソースの選択はデフォルトで _[!UICONTROL Sandbox]_&#x200B;になります。
+* ライブモードで [!DNL Payment Services] を使用するストア（1 つまたは複数）がある場合、データソースの選択はデフォルトで _[!UICONTROL Live]_&#x200B;になります。
 * レポートの書き出しでは、常にデータソースの選択に従います。
 
 [!UICONTROL Order Payment Status] レポートのデータソースを選択するには：
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/**[!UICONTROL Orders]**/**[!UICONTROL View Report]** に移動します。
-1. _[!UICONTROL Data source]_セレクターフィルターをクリックし、「**[!UICONTROL Live]**」または「**[!UICONTROL Sandbox]**」を選択します。
+1. _[!UICONTROL Data source]_&#x200B;セレクターフィルターをクリックし、「**[!UICONTROL Live]**」または「**[!UICONTROL Sandbox]**」を選択します。
 
    レポート結果は、選択したデータソースに基づいて再生成されます。
 
@@ -163,8 +163,8 @@ _[!UICONTROL Live]_が選択されているデータソースの場合、実稼�
 
 注文支払いステータスレポート表示では、特定の日付を選択して、表示するステータス結果の期間をカスタマイズできます。 デフォルトでは、30 日間の注文の支払いステータスがグリッドに表示されます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動します。
-1. _[!UICONTROL Order dates]_カレンダーセレクターフィルターをクリックします。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動します。
+1. _[!UICONTROL Order dates]_&#x200B;カレンダーセレクターフィルターをクリックします。
 1. 該当する日付範囲を選択します。
 1. グリッドで、指定した日付の注文の支払いステータスを表示します。
 
@@ -172,17 +172,17 @@ _[!UICONTROL Live]_が選択されているデータソースの場合、実稼�
 
 注文支払ステータスレポート表示では、フィルター条件を選択して、表示するステータス結果をフィルターできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動します。
 1. **[!UICONTROL Filter]** セレクターをクリックします。
 1. _支払ステータス_ オプションを切り替えて、選択した注文の支払いステータスのみのレポート結果を表示します。
-1. _[!UICONTROL Min Order Amount]_または_[!UICONTROL Max Order Amount_] を入力して、受注金額範囲内のレポート結果を表示します。
+1. _[!UICONTROL Min Order Amount]_&#x200B;または_[!UICONTROL Max Order Amount_] を入力して、受注金額範囲内のレポート結果を表示します。
 1. 「**[!UICONTROL Hide filters]**」をクリックすると、フィルターが非表示になります。
 
 ### 列の表示/非表示
 
 Order Payment Status レポートには、デフォルトで使用可能なすべての情報列が表示されます。 ただし、レポートに表示する列をカスタマイズすることはできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動します。
 1. _列設定_ アイコン（![ 列設定アイコン ](assets/column-settings.png){width="20" zoomable="yes"}）をクリックします。
 1. レポートに表示される列をカスタマイズするには、リストの列をチェックまたはチェック解除します。
 
@@ -208,11 +208,11 @@ Order Payment Status レポートには、デフォルトで使用可能なす�
 
 ### レポートデータを更新
 
-注文支払ステータスレポート表示には、レポート情報が最後に更新された時刻を示す _[!UICONTROL Last updated]_タイムスタンプが表示されます。 デフォルトでは、注文支払いステータスレポートデータは 3 時間ごとに自動更新されます。
+注文支払ステータスレポート表示には、レポート情報が最後に更新された時刻を示す _[!UICONTROL Last updated]_&#x200B;タイムスタンプが表示されます。 デフォルトでは、注文支払いステータスレポートデータは 3 時間ごとに自動更新されます。
 
 また、注文の支払いステータスレポートデータを手動で更新して、最新のレポート情報を表示することもできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動します。
 1. _更新_ アイコン（![ 更新アイコン ](assets/refresh-button-med.png){width="20" zoomable="yes"}）をクリックします。
 
    注文の支払いステータスレポートデータが更新され、確認 *[!UICONTROL Update complete]* が表示され、最新の情報がグリッドに表示されます。
@@ -221,7 +221,7 @@ Order Payment Status レポートには、デフォルトで使用可能なす�
 
 ストアの注文に関する紛争を確認し、PayPal 解決センターに移動して、注文の支払い状況レポート内から処理を実行できます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動します。
 1. **[!UICONTROL Disputes column]** に移動します。
 1. 特定の注文に関する争議を表示し、[ 争議ステータス ](#order-payment-status-information) を確認します。
 1. _PP-D-_ で始まる紛争 ID リンクをクリックして、[PayPal 解決センター ](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) から紛争詳細を確認します。
@@ -233,7 +233,7 @@ Order Payment Status レポートには、デフォルトで使用可能なす�
 
 デフォルトの 30 日間のステータスまたはカスタマイズされた期間のどちらを表示している場合でも、注文支払いステータス表示グリッドに表示されるすべてのステータスを含む.csv ファイルをダウンロードできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動します。
 1. 過去 30 日以外の期間のステータスを表示したい場合は、[ ステータスの日付範囲の期間をカスタマイズ ](#customize-dates-timeframe) します。
 1. _ダウンロード_ （![ ダウンロードアイコン ](assets/icon-download.png){width="20" zoomable="yes"}）アイコンをクリックします。
 

@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **バージョン v2.4.7 以降のオンボーディング手順（パート 1）：サンドボックス**
 
-1. Commerce サービスに [ インスタンスを接続 ](connect.md#configure-commerce-services) します。 この接続は、Commerce インスタンスごとに 1 回だけ完了する必要があります。 [!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}
+1. Commerce サービスに [ インスタンスを接続 ](connect.md#configure-commerce-services) します。 この接続は、Commerce インスタンスごとに 1 回だけ完了する必要があります。 [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}
 1. [ テスト用の PayPal 支払い処理アカウントを使用して ](sandbox.md#enable-sandbox-testing) サンドボックスサービスを設定します [ または、別の環境で機能をテストした場合は ](sandbox.md#enable-live-payments) ライブ支払いの有効化）に進みます。
 1. [ サンドボックス ](sandbox.md#test-in-sandbox-environment) 環境で支払いをテストします。
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 >[!ENDTABS]
 
-### Adobe CommerceまたはMagento Open Source | v2.4.0～2.4.6[!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}
+### Adobe CommerceまたはMagento Open Source | v2.4.0～2.4.6[!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}
 
 次のフロー図は、Adobe CommerceまたはMagento Open Source バージョン 2.4.0 ～ 2.4.6 で [!DNL Payment Services] をオンボーディングする一般的なプロセスを示しています。オンボーディングを開始するには、[!DNL Payment Services] をダウンロードしてインストールする必要があります。
 

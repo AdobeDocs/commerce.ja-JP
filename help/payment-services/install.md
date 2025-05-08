@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 拡張機能のダウンロード
 
-インストールする前に、まず ](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html)0}Commerce Marketplace} から拡張機能をダウンロードする必要があります。[
+インストールする前に、まず [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html)0&rbrace;Commerce Marketplace&rbrace; から拡張機能をダウンロードする必要があります。
 
 1. [Commerce Marketplaceの支払いサービス拡張機能 ](https://commercemarketplace.adobe.com/magento-payment-services.html) に移動します。
 1. エディションとバージョンを選択するには、**[!UICONTROL Edition]** と **[!UICONTROL Your store version]** を希望の選択項目に切り替えます。

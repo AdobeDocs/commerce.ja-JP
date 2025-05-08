@@ -16,15 +16,15 @@ ht-degree: 0%
 
 管理者の役に立つ設定オプションを使用して、ニーズに合わせて [!DNL Payment Services] をカスタマイズできます。
 
-管理者で [!DNL Adobe Commerce] と [!DNL Magento Open Source] に対して [!DNL Payment Services] を設定する場合、これらの設定は、_[!UICONTROL General Configuration]_の_[!UICONTROL Method]_ フィールドに設定された環境にのみ適用されます。 設定フィールドで行う変更は、_[!UICONTROL Method]_の選択の切り替えとは無関係です。メソッドを切り替えても、選択はリセットされません。
+管理者で [!DNL Adobe Commerce] と [!DNL Magento Open Source] に対して [!DNL Payment Services] を設定する場合、これらの設定は、_[!UICONTROL General Configuration]_&#x200B;の_[!UICONTROL Method]_ フィールドに設定された環境にのみ適用されます。 設定フィールドで行う変更は、_[!UICONTROL Method]_&#x200B;の選択の切り替えとは無関係です。メソッドを切り替えても、選択はリセットされません。
 
 ## 一般設定
 
-ストアと _[!UICONTROL Merchant Location]_ージに対して [!DNL Payment Services] を有効にし、「_[!UICONTROL General Configuration]_」セクションでサンドボックステストまたはライブ支払いを有効にできます。
+ストアと _[!UICONTROL Merchant Location]_&#x200B;ージに対して [!DNL Payment Services] を有効にし、「_[!UICONTROL General Configuration]_」セクションでサンドボックステストまたはライブ支払いを有効にできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで「**[!UICONTROL Sales]**」を展開し、「**[!UICONTROL Payment Methods]**」を選択します。
-1. _[!UICONTROL Merchant Location]_で「_[!UICONTROL Merchant Country]_」フィールドを設定します。 _[!UICONTROL Merchant Country]_を指定しない場合は、一般設定の_[!UICONTROL Default Country]_ が使用されます。
+1. _[!UICONTROL Merchant Location]_&#x200B;で「_[!UICONTROL Merchant Country]_」フィールドを設定します。 _[!UICONTROL Merchant Country]_&#x200B;を指定しない場合は、一般設定の&#x200B;_[!UICONTROL Default Country]_ が使用されます。
 1. 「_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_」セクションを展開して、「_[!UICONTROL [!DNL Payment Services]]_」セクションにアクセスします。
 1. 「_[!UICONTROL [!DNL Payment Services]]_」セクションで、「_[!UICONTROL General Configuration]_」セクションを展開します。
 1. **有効** の場合は、`Yes` に設定して、ストアに対して [!DNL Payment Services] を有効にします。
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 詳しくは、[ 支払いオプション ](payments-options.md#paypal-smart-buttons) を参照してください。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで「**[!UICONTROL Sales]**」を展開し、「**[!UICONTROL Payment Methods]**」を選択します。
 1. 「_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_」セクションを展開します。
 1. 「_[!UICONTROL Payment Services]_」セクションで、「_[!UICONTROL Credit Card Fields]_」セクションを展開します。
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 詳しくは、[ 支払いオプション ](payments-options.md#apple-pay-button) を参照してください。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで「**[!UICONTROL Sales]**」を展開し、「**[!UICONTROL Payment Methods]**」を選択します。
 1. 「_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_」セクションを展開します。
 1. 「_[!UICONTROL Payment Services]_」セクションで、「_[!UICONTROL Apple Pay]_」セクションを展開します。
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 詳しくは、[ 支払いオプション ](payments-options.md#google-pay-button) を参照してください。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで「**[!UICONTROL Sales]**」を展開し、「**[!UICONTROL Payment Methods]**」を選択します。
 1. 「_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_」セクションを展開します。
 1. 「_[!UICONTROL Payment Services]_」セクションで、「_[!UICONTROL Google Pay]_」セクションを展開します。
@@ -174,7 +174,7 @@ ht-degree: 0%
 
 PayPal 支払いボタンの支払いオプションを管理内で有効にして設定できます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで「**[!UICONTROL Sales]**」を展開し、「**[!UICONTROL Payment Methods]**」を選択します。
 1. 「_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_」セクションを展開します。
 1. 「_[!UICONTROL Payment Services]_」セクションで、「_[!UICONTROL PayPal payment buttons]_」セクションを展開します。
@@ -212,9 +212,9 @@ PayPal 支払いボタンの支払いオプションを管理内で有効にし�
 
 ## ボタンのスタイル
 
-また、支払いボタンの _[!UICONTROL Button style]_のオプションを設定することもできます。
+また、支払いボタンの _[!UICONTROL Button style]_&#x200B;のオプションを設定することもできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで「**[!UICONTROL Sales]**」を展開し、「**[!UICONTROL Payment Methods]**」を選択します。
 1. 「_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_」セクションを展開します。
 1. 「_[!UICONTROL [!DNL Payment Services]]_」セクションで、「_[!UICONTROL PayPal Smart Button Styling]_」セクションを展開します。
