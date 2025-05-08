@@ -1,8 +1,9 @@
 ---
 title: 配送状況の追跡  [!DNL Payment Services]
 description: Paypal [!DNL Payment Services]  マーチャントダッシュボードに表示される出荷およびトラッキング情報をカスタマイズします。
-feature: Payments
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Paas, Saas
+exl-id: 17aede1f-56ae-441a-b723-3193e865e469
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] を使用すると、マーチャントは PayPal マーチャントダッシュボードで出荷のトラッキング情報を確認できます。
 
-Adobe Commerceの出荷グリッドについて詳しくは、[ 出荷 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} に関するトピックを参照してください。
+Adobe Commerceの出荷グリッドについて詳しくは、[ 出荷 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} に関するトピックを参照してください。
 
 ## 出荷のトラッキングの仕組み
 

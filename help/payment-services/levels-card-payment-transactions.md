@@ -2,41 +2,44 @@
 title: レベル 2 およびレベル 3 の処理
 description: トランザクション内のカード支払  [!DNL Payment Services]  処理レベル。
 role: Admin
-feature: Payments
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Paas, Saas
+exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
 # レベル 2 およびレベル 3 の処理
 
-[!DNL Payment Services] では、次の 3 つのレベルのカード処理を使用できます。
+[!DNL Payment Services] は、マーチャントが支払いトランザクションを最適化し、交換手数料を削減するのに役立つ高度なカード処理機能を提供します。 カード処理には 3 つのレベルがあり、それぞれトランザクションデータの要件が異なります。
 
-* レベル 1 は最も一般的であり、必要な情報は少ないため、一般に、レベル 2 またはレベル 3 のデータで処理される取引（通常は企業のクレジットカードやクレジットカードの購入に関連する取引）と比べて、高い交換手数料が発生します。
+## 処理レベルごとのデータ要件
 
-* レベル 2 およびレベル 3 の場合、インターチェンジ プラス プラス （IC++）価格を使用して多くの購入カードまたは企業カードの取引を受け入れる [!DNL Payment Services] のお客様は、取引に関する詳細情報を送信できるようにすることで、処理レートを下げる可能性が [!DNL Payment Services] ります。 トランザクションが適切であれば、カードのネットワーク要件に従って、マーチャントは特定のトランザクションに対してより低い処理レートを受け取る場合があります。
-
->[!NOTE]
->
->レベル 2 およびレベル 3 の価格設定は、Visa および MasterCard 取引にのみ適用されます。 American Express はレベル 2 の価格のみを提供しています。 Discover ではレベル 2 もレベル 3 の価格は提供されていません。 詳しくは、PayPal Developer ドキュメントの [ 支払い処理 ](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} を参照してください。
-
-[IC とは++？を参照詳しくは、PayPal 開発者向けドキュメントを ](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} 照してください。
-
-レベル 2 およびレベル 3 の処理データを使用すると、マーチャントは、購入に関する追加の詳細情報を提供することで、IC++の価格を引き下げることができます。これにより、プロセッサーのリスクが軽減され、有益な側面が得られます。
-
-* 大規模な顧客は、この処理データを提供することで支払いが少なくなります。
-
-* 注文に関する情報が多いため、顧客が詐欺的な状況に遭遇する可能性は低くなります。
-
-ただし、Visa や Mastercard などのカードネットワークでは、最終的にトランザクションがレベル 2 またはレベル 3 の処理に該当するかどうかが判断されます。
-
-* レベル 2 のデータには、注文の税額、顧客コードまたは発注番号などの追加情報が含まれます。
-
-* レベル 3 のデータは、販売に関するより詳細な情報であり、レベル 2 と比較してさらに低い交換料金に適合するのに役立ちます。 レベル 3 のデータには、購入した品目の説明、購入した数量、注文した品目の単位、その他の特定の詳細などの情報が含まれます。
+![ 取引報告書 ](assets/level-processing-details.png){width="500" zoomable="yes"}
 
 [!DNL Payment Services] はこのデータを収集し、支払いトランザクションの詳細なレポートを提供します。
+
+## カードネットワーク別の利用可能な処理レベル
+
+![ カードの詳細 ](assets/cards-details-level-processing.png){width="500" zoomable="yes"}
+
+詳しくは、PayPal Developer ドキュメントの [ 支払い処理 ](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} を参照してください。
+
+### 第一級
+
+レベル 1 は最も一般的であり、必要な情報は少ないため、一般に、レベル 2 またはレベル 3 のデータで処理される取引（通常は企業のクレジットカードやクレジットカードの購入に関連する取引）と比べて、高い交換手数料が発生します。
+
+### レベル 2 およびレベル 3
+
+Interchange Plus （IC++）の [!DNL Payment Services] マーチャントは、カード ネットワークに追加のトランザクションの詳細を提供し、特定の認定基準を満たす場合、レベル 2/レベル 3 の処理の対象となる可能性があります。 これらのレベルは、大幅なコスト削減につながる可能性があるため、大量の購入や名刺を扱うマーチャントにとって特に有益です。 詳細なレベル 2 またはレベル 3 のデータを提供すると、次のことが可能です。
+
+* 処理手数料の削減と全体的なコストの最適化
+* 不正の防止、プロセッサ・リスクの軽減
+* トランザクションセキュリティの強化
+
+[IC とは++？を参照詳しくは、PayPal 開発者向けドキュメントを ](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} 照してください。
 
 ## [!DNL Payment Services] におけるレベル 2 およびレベル 3 のカード支払トランザクション
 

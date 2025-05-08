@@ -1,8 +1,9 @@
 ---
 title: テストと検証
 description: テストと検証は、 [!DNL Payment Services]  機能が期待どおりに動作し、顧客に最適な支払いオプションを提供するのに役立ちます
-feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
+feature: Payments, Checkout, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 サンドボックス環境での [!DNL Payment Services] のテストは、実際の銀行やマーチャントではなく、PayPal サンドボックスにのみ接続されるシミュレート環境ですが、重要な検証ステップです。
 
 1. [ クレジットカードフィールド ](payments-options.md#credit-card-fields) または [PayPal 支払いボタン ](payments-options.md#paypal-smart-buttons) のいずれかを使用して、ストアからチェックアウトを成功させます。 テストのためのフェイククレジットカードの使用について詳しくは、[ 資格情報のテスト ](#testing-credentials) を参照してください。
-1. 完了したばかりの注文をキャプチャ [ 支払いアクションが `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method) に設定されている場合）、[ 払い戻し ](refunds.md)、または [ 無効 ](voids.md) します。 支払い処理が `Authorize and Capture` ではなく `Authorize` に設定されている場合は、注文の [ 請求書を作成 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} することもできます。
+1. 完了したばかりの注文をキャプチャ [ 支払いアクションが `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method) に設定されている場合）、[ 払い戻し ](refunds.md)、または [ 無効 ](voids.md) します。 支払い処理が `Authorize and Capture` ではなく `Authorize` に設定されている場合は、注文の [ 請求書を作成 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} することもできます。
 1. 24～48 時間以内に、トランザクションおよびその他の情報を [ 支払いレポート ](payouts.md) で確認します。
 1. 注文の詳細については、[ 注文支払いステータスレポート ](order-payment-status.md) を参照してください。
 
@@ -30,7 +31,7 @@ PayPal のクレジットカードジェネレーターを使用して、テス�
 
 サンドボックスモードでApple Pay をテストするには：
 
-* 偽のクレジットカードと請求情報を含む [&#128279;](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)0&rbrace;Apple サンドボックステスターアカウント &rbrace; を作成します。
+* 偽のクレジットカードと請求情報を含む ](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)0}Apple サンドボックステスターアカウント } を作成します。[
 * [ サンドボックスドメインを登録 ](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains)。
 
 >[!NOTE]

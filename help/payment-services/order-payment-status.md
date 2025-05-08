@@ -3,8 +3,9 @@ title: 注文支払いステータスレポート
 description: 注文の支払いステータスを可視化し、潜在的な問題を特定するには、注文の支払いステータス レポートを使用します。
 role: User
 level: Intermediate
-feature: Payments, Checkout, Orders
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
+feature: Payments, Checkout, Orders, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # 注文支払いステータスレポート
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] は、ストアの [ トランザクション ](transactions.md)、注文、支払いを明確に把握できる包括的なレポートを提供します。
+[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] は、ストアの [ トランザクション ](reporting.md)、注文、支払いを明確に把握できる包括的なレポートを提供します。
 
 注文の支払いステータスをすばやく確認できる、2 つの利用可能な注文の支払いステータスレポートビューがあります。
 
@@ -70,7 +71,7 @@ _管理者_ サイドバーで、**営業**/**支払いサービス**/_注文_ �
 
 注文支払いステータスレポート ビューは、支払いサービスのホーム ビューで使用できます。 すべての取引に関する詳細なステータス（支払い、請求、発送済み、払い戻し、係争など）が含まれます。
 
-_管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動して、詳細な表形式の注文支払ステータスレポート表示を表示します。
+_管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動して、詳細な表形式の注文支払ステータスレポート表示を表示します。
 
 ![ 管理者での支払いステータストランザクションの注文 ](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -105,7 +106,7 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Se
 
 このプロセスが期待どおりに動作することを確認するために、マーチャントは新しい cron ジョブを設定する必要があります。 ジョブが自動的に実行されるように設定された後は、マーチャントからの他の介入は期待されません。
 
-[cron ジョブの設定 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=ja) を参照してください。 設定が完了すると、新しいジョブが 30 分ごとに実行され、ステータスが `Payment Review` の注文の更新を取得します。
+[cron ジョブの設定 ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) を参照してください。 設定が完了すると、新しいジョブが 30 分ごとに実行され、ステータスが `Payment Review` の注文の更新を取得します。
 
 マーチャントは、注文の支払いステータスレポート表示から、更新された支払いステータスを確認できます。
 
@@ -113,11 +114,11 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Se
 
 [!DNL Payment Services] は、注文データを使用し、他のソース（PayPal など）からの集計支払いデータと組み合わせて、意味のある非常に役に立つレポートを提供します。
 
-注文データが書き出され、支払いサービスに保持されます。 [ 注文ステータスの変更または追加 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) または [ ストア表示の編集 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view)、[ ストア ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/store-details#store-information)、web サイト名を行うと、そのデータは支払いデータと組み合わされ、組み合わされた情報が注文支払いステータスレポートに入力されます。
+注文データが書き出され、支払いサービスに保持されます。 [ 注文ステータスの変更または追加 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) または [ ストア表示の編集 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view)、[ ストア ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information)、web サイト名を行うと、そのデータは支払いデータと組み合わされ、組み合わされた情報が注文支払いステータスレポートに入力されます。
 
 このプロセスには次の 2 つのステップがあります。
 
-1. インデックスは、管理者の [ インデックス管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management) での設定に応じて、`ON SAVE` （注文情報またはストア情報が変更されるたびに）または `BY SCHEDULE` （事前設定された cron スケジュールに基づいて）のデータで変更されます。
+1. インデックスは、管理者の [ インデックス管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) での設定に応じて、`ON SAVE` （注文情報またはストア情報が変更されるたびに）または `BY SCHEDULE` （事前設定された cron スケジュールに基づいて）のデータで変更されます。
 
    デフォルトでは、データのインデックス作成は `ON SAVE` で行われます。つまり、注文、注文のステータス、ストア表示、ストア、web サイトで何らかの変更が行われると、インデックス再作成プロセスが直ちに実行されます。
 
@@ -133,7 +134,7 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Se
 
 デフォルトではインデックス再作成は `ON SAVE` モードで行われますが、`BY SCHEDULE` モードでインデックスを作成することをお勧めします。 `BY SCHEDULE` インデックスは 1 分の cron スケジュールで実行され、変更されたデータは、データの変更から 2 分以内に注文ステータスレポートに表示されます。 このスケジュールされたインデックス再作成は、（各注文が行われるときではなく）スケジュールに従って行われるため、特に大量の注文を受信する場合に、ストアの負担を軽減するのに役立ちます。
 
-インデックスモード（`ON SAVE` または `BY SCHEDULE`）は [ 管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management#change-the-index-mode) で変更できます。
+インデックスモード（`ON SAVE` または `BY SCHEDULE`）は [ 管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode) で変更できます。
 
 データの書き出しを設定する方法については、[ コマンドライン設定 ](configure-cli.md#configure-data-export) を参照してください。
 
@@ -143,18 +144,18 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Se
 
 ![ データソースの選択 ](assets/datasource.png){width="300" zoomable="yes"}
 
-_[!UICONTROL Live]_&#x200B;が選択されているデータソースの場合、実稼動モードで [!DNL Payment Services] を使用しているストアのレポート情報を表示できます。_[!UICONTROL Sandbox]_ が選択されているデータソースの場合は、サンドボックスモードのレポート情報を表示できます。
+_[!UICONTROL Live]_が選択されているデータソースの場合、実稼動モードで [!DNL Payment Services] を使用しているストアのレポート情報を表示できます。_[!UICONTROL Sandbox]_ が選択されているデータソースの場合は、サンドボックスモードのレポート情報を表示できます。
 
 データソースを選択すると、次のように機能します。
 
-* ライブモードで [!DNL Payment Services] を使用するストアがない場合、データソースの選択はデフォルトで _[!UICONTROL Sandbox]_&#x200B;になります。
-* ライブモードで [!DNL Payment Services] を使用するストア（1 つまたは複数）がある場合、データソースの選択はデフォルトで _[!UICONTROL Live]_&#x200B;になります。
+* ライブモードで [!DNL Payment Services] を使用するストアがない場合、データソースの選択はデフォルトで _[!UICONTROL Sandbox]_になります。
+* ライブモードで [!DNL Payment Services] を使用するストア（1 つまたは複数）がある場合、データソースの選択はデフォルトで _[!UICONTROL Live]_になります。
 * レポートの書き出しでは、常にデータソースの選択に従います。
 
 [!UICONTROL Order Payment Status] レポートのデータソースを選択するには：
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/**[!UICONTROL Orders]**/**[!UICONTROL View Report]** に移動します。
-1. _[!UICONTROL Data source]_&#x200B;セレクターフィルターをクリックし、「**[!UICONTROL Live]**」または「**[!UICONTROL Sandbox]**」を選択します。
+1. _[!UICONTROL Data source]_セレクターフィルターをクリックし、「**[!UICONTROL Live]**」または「**[!UICONTROL Sandbox]**」を選択します。
 
    レポート結果は、選択したデータソースに基づいて再生成されます。
 
@@ -162,8 +163,8 @@ _[!UICONTROL Live]_&#x200B;が選択されているデータソースの場合�
 
 注文支払いステータスレポート表示では、特定の日付を選択して、表示するステータス結果の期間をカスタマイズできます。 デフォルトでは、30 日間の注文の支払いステータスがグリッドに表示されます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動します。
-1. _[!UICONTROL Order dates]_&#x200B;カレンダーセレクターフィルターをクリックします。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動します。
+1. _[!UICONTROL Order dates]_カレンダーセレクターフィルターをクリックします。
 1. 該当する日付範囲を選択します。
 1. グリッドで、指定した日付の注文の支払いステータスを表示します。
 
@@ -171,17 +172,17 @@ _[!UICONTROL Live]_&#x200B;が選択されているデータソースの場合�
 
 注文支払ステータスレポート表示では、フィルター条件を選択して、表示するステータス結果をフィルターできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動します。
 1. **[!UICONTROL Filter]** セレクターをクリックします。
 1. _支払ステータス_ オプションを切り替えて、選択した注文の支払いステータスのみのレポート結果を表示します。
-1. _[!UICONTROL Min Order Amount]_&#x200B;または_[!UICONTROL Max Order Amount_] を入力して、受注金額範囲内のレポート結果を表示します。
+1. _[!UICONTROL Min Order Amount]_または_[!UICONTROL Max Order Amount_] を入力して、受注金額範囲内のレポート結果を表示します。
 1. 「**[!UICONTROL Hide filters]**」をクリックすると、フィルターが非表示になります。
 
 ### 列の表示/非表示
 
 Order Payment Status レポートには、デフォルトで使用可能なすべての情報列が表示されます。 ただし、レポートに表示する列をカスタマイズすることはできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動します。
 1. _列設定_ アイコン（![ 列設定アイコン ](assets/column-settings.png){width="20" zoomable="yes"}）をクリックします。
 1. レポートに表示される列をカスタマイズするには、リストの列をチェックまたはチェック解除します。
 
@@ -207,11 +208,11 @@ Order Payment Status レポートには、デフォルトで使用可能なす�
 
 ### レポートデータを更新
 
-注文支払ステータスレポート表示には、レポート情報が最後に更新された時刻を示す _[!UICONTROL Last updated]_&#x200B;タイムスタンプが表示されます。 デフォルトでは、注文支払いステータスレポートデータは 3 時間ごとに自動更新されます。
+注文支払ステータスレポート表示には、レポート情報が最後に更新された時刻を示す _[!UICONTROL Last updated]_タイムスタンプが表示されます。 デフォルトでは、注文支払いステータスレポートデータは 3 時間ごとに自動更新されます。
 
 また、注文の支払いステータスレポートデータを手動で更新して、最新のレポート情報を表示することもできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動します。
 1. _更新_ アイコン（![ 更新アイコン ](assets/refresh-button-med.png){width="20" zoomable="yes"}）をクリックします。
 
    注文の支払いステータスレポートデータが更新され、確認 *[!UICONTROL Update complete]* が表示され、最新の情報がグリッドに表示されます。
@@ -220,7 +221,7 @@ Order Payment Status レポートには、デフォルトで使用可能なす�
 
 ストアの注文に関する紛争を確認し、PayPal 解決センターに移動して、注文の支払い状況レポート内から処理を実行できます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動します。
 1. **[!UICONTROL Disputes column]** に移動します。
 1. 特定の注文に関する争議を表示し、[ 争議ステータス ](#order-payment-status-information) を確認します。
 1. _PP-D-_ で始まる紛争 ID リンクをクリックして、[PayPal 解決センター ](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) から紛争詳細を確認します。
@@ -232,7 +233,7 @@ Order Payment Status レポートには、デフォルトで使用可能なす�
 
 デフォルトの 30 日間のステータスまたはカスタマイズされた期間のどちらを表示している場合でも、注文支払いステータス表示グリッドに表示されるすべてのステータスを含む.csv ファイルをダウンロードできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**&#x200B;に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL [!DNL Payment Services]]**/_[!UICONTROL Orders]_/**[!UICONTROL View Report]**に移動します。
 1. 過去 30 日以外の期間のステータスを表示したい場合は、[ ステータスの日付範囲の期間をカスタマイズ ](#customize-dates-timeframe) します。
 1. _ダウンロード_ （![ ダウンロードアイコン ](assets/icon-download.png){width="20" zoomable="yes"}）アイコンをクリックします。
 
@@ -244,10 +245,10 @@ Order Payment Status レポートには、デフォルトで使用可能なす�
 
 | 列 | 説明 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce注文 ID<br> <br> 関連する [ 注文情報 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} を表示するには、ID をクリックします。 |
+| [!UICONTROL Order ID] | Commerce注文 ID<br> <br> 関連する [ 注文情報 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} を表示するには、ID をクリックします。 |
 | [!UICONTROL Order Date] | 注文日タイムスタンプ |
 | [!UICONTROL Authorized Date] | 支払認証の日付タイムスタンプ |
-| [!UICONTROL Order Status] | 現在のCommerce[ 注文ステータス ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | 現在のCommerce[ 注文ステータス ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | 注文の請求書ステータス - *[!UICONTROL No]*、*[!UICONTROL Partial]* または *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | 注文の配送ステータス（*[!UICONTROL No]*、*[!UICONTROL Partial]*、*[!UICONTROL Yes]*） |
 | [!UICONTROL Order Amt] | 注文の合計金額 |

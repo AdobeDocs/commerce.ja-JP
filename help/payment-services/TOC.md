@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: eba63e5a0086689ae254545c1ad9a1430fc8a524
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '109'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,8 @@ ht-degree: 3%
 # Commerceの [!DNL Payment Services] {#payment-services}
 
 - [ガイドの概要](guide-overview.md)
-- [概要  [!DNL Payment Services]](overview.md)
+- [概要  [!DNL Payment Services]](introduction.md)
+- [互換性  [!DNL Payment Services]](compatibility.md)
 - [リリースノート](release-notes.md)
 - Onboard [!DNL Payment Services] {#get-started}
    - [オンボーディングの概要](onboard.md)
@@ -35,14 +36,14 @@ ht-degree: 3%
    - [支払いオプション](payments-options.md)
    - [クレジットカードの保管](vaulting.md)
    - [チェックアウト イン  [!DNL Payment Services]](checkout.md)
-   - 支払い ールの管理 {#manage}
+   - 支払いの管理 {#manage}
       - [行項目  [!DNL Payment Services]](line-items.md)
       - [払戻](refunds.md)
       - [ボイド](voids.md)
    - [管理者でのオーダーの作成](create-order.md)
    - [配送状況の追跡  [!DNL Payment Services]](track-shipment.md)
-- Financial reporting {#reporting}
-   - [トランザクションレポート](transactions.md)
+- 財務報告 {#financial-reports}
+   - [報告書](reporting.md)
    - [注文支払いステータスレポート](order-payment-status.md)
    - [支払いレポート](payouts.md)
    - [使用可能なデータ](data.md)
@@ -50,4 +51,4 @@ ht-degree: 3%
 - セキュリティとコンプライアンス {#security-compliance}
    - [セキュリティ](security.md)
    - [重大な不正保護](fraud-protection.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

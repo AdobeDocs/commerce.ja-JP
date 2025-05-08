@@ -1,10 +1,11 @@
 ---
 title: 実稼動  [!DNL Payment Services]  有効にする
 description: 実稼動に対して  [!DNL Payment Services]  を有効にして、オンボーディングプロセスを完了します。
-feature: Payments, Checkout, Configuration, Install
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
+feature: Payments, Checkout, Configuration, Install, Paas, Saas
+source-git-commit: 0f2e9c3a7d990a46bafc5f3b8a083436d42643b5
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -13,8 +14,8 @@ ht-degree: 0%
 
 このトピックの手順に従って、サービスを実稼動環境に移行し [ オンボーディングプロセス ](onboard.md) を完了するには、次の操作を行います。
 
-* Payment Services 拡張機能の [ インストール ](install.md)
-* インスタンスの [ 設定と接続 ](connect.md)
+* [!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}[ インストール ](install.md) 支払いサービス拡張機能
+* [!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"} インスタンスの [ 設定と接続 ](connect.md)
 * サンドボックスの [ 設定 ](sandbox.md) および [ テスト ](test-validate.md)
 
 ## 支払方法として [!DNL Payment Services] を設定
@@ -26,10 +27,10 @@ ht-degree: 0%
 
    このオプションは、1 つ以上の web サイトの支払い方法として [!DNL Payment Services] を設定していない場合に表示されます。
 
-   関連するオプションが展開された状態で（**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Settings]_） ホームビューの設定エリアに移動します。ここで、[!DNL Payment Services] のオプションを [ 支払い方法 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"} として有効にできます。
+   関連するオプションが展開された状態で（**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]**/_[!UICONTROL Settings]_） ホームビューの設定エリアに移動します。ここで、[!DNL Payment Services] のオプションを [ 支払い方法 ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"} として有効にできます。
 
-1. _[!UICONTROL General Configuration]_&#x200B;で、**[!UICONTROL Enable]**&#x200B;を `Yes` に設定します。
-1. _[!UICONTROL Credit Card Fields]_&#x200B;と_[!UICONTROL PayPal payment buttons]_ の両方について、**[!UICONTROL Payment Action]** を次のいずれかに設定します。
+1. _[!UICONTROL General Configuration]_で、**[!UICONTROL Enable]**を `Yes` に設定します。
+1. _[!UICONTROL Credit Card Fields]_と_[!UICONTROL PayPal payment buttons]_ の両方について、**[!UICONTROL Payment Action]** を次のいずれかに設定します。
 
    | 設定 | 説明 |
    |---|---|
@@ -42,7 +43,7 @@ ht-degree: 0%
 
 1. 「**[!UICONTROL Save]**」をクリックします。
 1. 「**[!UICONTROL Go to Payment Services]**」をクリックすると、[!DNL Payment Services] ホームに戻ります。
-1. [ キャッシュをクリアします ](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=ja)。
+1. [ キャッシュをクリアします ](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html)。
 
    設定を変更するたびにクリアを行う必要があります。
 
@@ -61,7 +62,7 @@ ht-degree: 0%
 
 1. _国を選択_ モーダルで、操作する国を選択します。
 
-   Payment Services は、現在 [5 か国 ](../payment-services/overview.md#availability) のすべての支払いオプションを完全にサポートしています。 支払いサービスは、国リストに表示されるその他すべての国に対して、高速チェックアウト機能（支払いオプションのサブセット）を提供します。
+   Payment Services は、現在 [5 か国 ](../payment-services/introduction.md#availability) のすべての支払いオプションを完全にサポートしています。 支払いサービスは、国リストに表示されるその他すべての国に対して、高速チェックアウト機能（支払いオプションのサブセット）を提供します。
 
    リストから選択した国によって、支払いオプションとオンボーディングフロー（[ 詳細 ](#advanced-onboarding) （完全にサポート）または [ 標準 ](#standard-onboarding) （エクスプレスチェックアウト））が決まります。
 
@@ -71,7 +72,7 @@ ht-degree: 0%
 
 ### 詳細オンボーディング
 
-このオンボーディングフローは、[ 完全にサポートされている国 ](../payment-services/overview.md#availability) のマーチャントが使用できます。
+このオンボーディングフローは、[ 完全にサポートされている国 ](../payment-services/introduction.md#availability) のマーチャントが使用できます。
 
 国を選択すると、次のようになります。
 
@@ -88,7 +89,7 @@ ht-degree: 0%
 
 ### 標準オンボーディング
 
-この標準のオンボーディングフローは、[ 高速チェックアウトのサポートのみ ](../payment-services/overview.md#availability) が提供されている、利用可能な国のマーチャントで利用できます。
+この標準のオンボーディングフローは、[ 高速チェックアウトのサポートのみ ](../payment-services/introduction.md#availability) が提供されている、利用可能な国のマーチャントで利用できます。
 
 国を選択すると、次のようになります。
 
@@ -154,9 +155,9 @@ _実稼動マーチャント ID_ が自動生成され、[configuration](configu
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]** に移動します。
 1. 「ホーム」で、ページの右上にある「**[!UICONTROL Settings]**」をクリックします。 詳しくは、[ ホーム ](payments-home.md) を参照してください。
-1. _[!UICONTROL General Configuration]_&#x200B;のセクションで、**[!UICONTROL Payment mode]**&#x200B;を `Production` に設定します。
+1. _[!UICONTROL General Configuration]_のセクションで、**[!UICONTROL Payment mode]**を `Production` に設定します。
 1. 「**[!UICONTROL Save]**」をクリックします。
-1. [ キャッシュをクリアします ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
+1. [ キャッシュをクリアします ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
 
    >[!IMPORTANT]
    >

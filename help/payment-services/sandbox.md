@@ -1,8 +1,9 @@
 ---
 title: テストサンドボックスの設定
 description: テストモードで使用するには、PayPal サンドボック  [!DNL Payment Services]  アカウントを使用します。
-feature: Payments, Checkout, Configuration, Install
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
+feature: Payments, Checkout, Configuration, Install, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -22,7 +23,7 @@ PayPal サンドボックスアカウントを使用すると、テストモー�
 1. [PayPal 開発者アカウントページ ](https://developer.paypal.com/developer/accounts/) に移動します。
 1. 「**[!UICONTROL Log in to Dashboard]**」をクリックして、PayPal 開発者ポータルで生成された既存のビジネスサンドボックステストアカウントでログインするか、「**新規登録**」をクリックしてアカウントを作成します。
 1. PayPal サンドボックスアカウントの作成：
-   1. _[!UICONTROL Testing Tools]_/**[!UICONTROL Sandbox Accounts]**&#x200B;に移動します。
+   1. _[!UICONTROL Testing Tools]_/**[!UICONTROL Sandbox Accounts]**に移動します。
    1. 「**[!UICONTROL Create account]**」をクリックします。
 
       サンドボックス PayPal のオンボーディングプロセス中に PayPal サンドボックスアカウントを作成した場合は、[ オンボーディングサンドボックスをリセット ](#reset-your-sandbox-account) する必要があります。そうしないと、メールを検証できません。

@@ -3,11 +3,12 @@ title: コマンドライン設定
 description: インストール後、コマンドラインインターフェイス（CLI）を使用して設定  [!DNL Payment Services]  使用できます。
 role: Admin, Developer
 level: Intermediate
-feature: Payments, Checkout, Configuration, Integration
-exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
-source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
+exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
+feature: Payments, Checkout, Configuration, Integration, Paas
+badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 ### [!DNL Magento Open Source] での cron の設定
 
-[!DNL Magento Open Source] で `BY SCHEDULE` インデックスモードを使用する場合は、cron を設定する必要があります。 [cron の設定と実行 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) を参照してください。
+[!DNL Magento Open Source] で `BY SCHEDULE` インデックスモードを使用する場合は、cron を設定する必要があります。 [cron の設定と実行 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) を参照してください。
 
 ### インデクサーの設定
 
@@ -48,13 +49,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >コマンドでインデクサーを指定しない場合、すべてのインデクサーが同じ値に更新されます。 特定のインデクサーを変更する場合は、コマンドでそのインデクサーをリストする必要があります。
 
-インデクサーのモードを手動で変更する方法については、開発者向けドキュメントの [ インデクサーの設定 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} を参照してください。 管理者で変更する方法については、『コアユーザーガイド』の [ インデックス管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} を参照してください。
+インデクサーのモードを手動で変更する方法については、開発者向けドキュメントの [ インデクサーの設定 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} を参照してください。 管理者で変更する方法については、『コアユーザーガイド』の [ インデックス管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} を参照してください。
 
 ### データを手動で再インデックス化
 
-データが自動的に実行されるのを待たずに、手動でデータをインデックス再作成できます。 詳しくは、[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex) インデクサーの管理 [ の ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"} インデックス再作成 {target="_blank"} を参照してください。
+データが自動的に実行されるのを待たずに、手動でデータをインデックス再作成できます。 詳しくは、[ インデクサーの管理 [ の ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"} インデックス再作成 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} を参照してください。
 
-モード `BY SCHEDULE` 設定すると、システムは変更されたエンティティを追跡し、cron ジョブは設定されたスケジュールに基づいてエンティティのインデックスを更新します。 Cron ジョブを使用してインデックスを手動でトリガーする方法については、[Configure and run cron](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) の [ コマンドラインからの Run cron](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) を参照してください。
+モード `BY SCHEDULE` 設定すると、システムは変更されたエンティティを追跡し、cron ジョブは設定されたスケジュールに基づいてエンティティのインデックスを更新します。 Cron ジョブを使用してインデックスを手動でトリガーする方法については、[Configure and run cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) の [ コマンドラインからの Run cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) を参照してください。
 
 ### インデックス再作成されたデータを支払サービスに送信
 
@@ -88,7 +89,7 @@ cron が設定およびインストールされている場合、レポートに
 bin/magento cron:run --group payment_services_data_export
 ```
 
-再インデックスとインデクサーについて詳しくは、開発者向けドキュメントの [ インデクサーの管理 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers) に関するトピックを参照してください。
+再インデックスとインデクサーについて詳しくは、開発者向けドキュメントの [ インデクサーの管理 ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) に関するトピックを参照してください。
 
 ## CLI を使用したスコープの設定
 

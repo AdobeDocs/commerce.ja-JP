@@ -1,9 +1,10 @@
 ---
 title: セキュリティとコンプライアンス
 description: サイトのセキュリティおよびコンプライアンス要件を確認します。
+exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-redirect_from: https://experienceleague.adobe.com/docs/commerce/payment-services/security.html
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: 9f7690ae325853b9b4a590b3d1cd538909a26462
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
@@ -18,13 +19,13 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce] と [!DNL Magento Open Source] には、複数のセキュリティ機能がサポートされています。
 
-セキュリティのベストプラクティスを確認し、管理セッションと資格情報の管理、CAPTCHA の実装、web サイト制限の管理方法については、コアユーザーガイドの [ セキュリティ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security){target="_blank"} を参照してください。
+セキュリティのベストプラクティスを確認し、管理セッションと資格情報の管理、CAPTCHA の実装、web サイト制限の管理方法については、コアユーザーガイドの [ セキュリティ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"} を参照してください。
 
 ## PCI コンプライアンス
 
 Payment Card Industry （PCI）は、インターネット上でクレジットカードによる支払いを受け入れる企業に対して一連の要件を確立しました。 顧客のクレジットカード情報を扱うマーチャントは、安全な環境を維持するだけでなく、いくつかの標準的なガイドラインを満たす責任があります。
 
-詳しくは、[PCI コンプライアンスガイドライン ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} を参照してください。
+詳しくは、[PCI コンプライアンスガイドライン ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} を参照してください。
 
 マーチャントは、カード所有者データのセキュリティを評価するための自己検証ツールである [ 自己評価アンケート （SAQ） ](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"} を完了できます。
 
