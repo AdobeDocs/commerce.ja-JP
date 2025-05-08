@@ -16,7 +16,7 @@ ht-degree: 0%
 
 API キーと秘密鍵を使用してCommerce インスタンスを接続し、[Commerce サービスコネクタ ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html?lang=ja) を使用して、設定のデータスペースを指定します。 **この接続は 1 回だけ設定します。**
 
->[!VIDEO](https://video.tv.adobe.com/v/3447835)
+>[!VIDEO](https://video.tv.adobe.com/v/3448018?captions=jpn)
 
 >[!INFO]
 >
