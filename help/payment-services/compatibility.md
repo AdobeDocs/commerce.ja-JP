@@ -26,7 +26,7 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   > 詳しくは、[Adobe Commerce サービスコネクタ ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) チュートリアルビデオを参照してください。
+   > 詳しくは、[Adobe Commerce サービスコネクタ ](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) チュートリアルビデオを参照してください。
 
 1. 既にインスタンスに接続している場合は、[ オンボーディング ](onboard.md) ページに移動して次の手順を実行します。
 
@@ -96,13 +96,13 @@ ht-degree: 0%
 
 >[!ENDTABS]
 
-リリースおよびバージョン固有の情報について詳しくは、[ ライフサイクルポリシー ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) および [[!DNL Payment Services]  リリースノート ](release-notes.md) ページを参照してください。
+リリースおよびバージョン固有の情報について詳しくは、[ ライフサイクルポリシー ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=ja) および [[!DNL Payment Services]  リリースノート ](release-notes.md) ページを参照してください。
 
 すべての手順を取得し、オンボーディングプロセスを開始するには、[ の基本を学ぶ  [!DNL Payment Services]](onboard.md) を参照してください。
 
 ### 使用可能なクレジットカードおよび通貨
 
-[!DNL Payment Services] は、（利用可能な [ 国の通貨を受け入れ ](#availability) す。 通貨レートの設定について詳しくは、[ 通貨設定 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) を参照してください。
+[!DNL Payment Services] は、（利用可能な [ 国の通貨を受け入れ ](#availability) す。 通貨レートの設定について詳しくは、[ 通貨設定 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=ja) を参照してください。
 
 PayPal 製品およびサービスで利用可能な通貨および支払い方法の詳細については、以下のページを参照してください。
 

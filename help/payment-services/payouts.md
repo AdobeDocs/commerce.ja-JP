@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->支払いレポートには、キャプチャされた（支払いアクションが [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method) に設定されている）、または `Invoiced`[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) としてマークされている  注文のみが表示されます。
+>支払いレポートには、キャプチャされた（支払いアクションが [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=ja#set-payment-services-as-payment-method) に設定されている）、または `Invoiced`[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) としてマークされている  注文のみが表示されます。
 
 ## 支払いデータビジュアライゼーションビュー
 
@@ -155,7 +155,7 @@ _[!UICONTROL Live]_&#x200B;のデータ ソースを選択した場合、本番�
 | [!UICONTROL Code] | 貸方（*CR*）または借方（*DR*）を示す取引コード |
 | [!UICONTROL Reference ID] | このイベントが関連付けられている元のトランザクション ID |
 | [!UICONTROL Invoice] | トランザクションの請求書 ID （注文ごとに 1 つ） |
-| [!UICONTROL Commerce order] | Commerce注文 ID <br> <br> 関連する [ 注文情報 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) を表示するには、ID をクリックします。 |
+| [!UICONTROL Commerce order] | Commerce注文 ID <br> <br> 関連する [ 注文情報 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/orders) を表示するには、ID をクリックします。 |
 | [!UICONTROL Commerce trans] | Commerce トランザクション ID |
 | [!UICONTROL Pay method] | クレジットカードの種類（*[!UICONTROL BANK]*、*[!UICONTROL PAYPAL]*、*[!UICONTROL CREDIT_CARD]*）および関連するカードプロバイダー（*Visa* や *MasterCard* など） |
 | [!UICONTROL TRANS AMT] | トランザクションの金額 |

@@ -132,9 +132,9 @@ _[!UICONTROL Live]_&#x200B;が選択されているデータソースの場合�
 
 | 列 | 説明 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce注文 ID （成功した取引の値のみを含み、却下された取引の値は空） <br> <br> 関連する [ 注文情報 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} を表示するには、ID をクリックします。 |
+| [!UICONTROL Order ID] | Commerce注文 ID （成功した取引の値のみを含み、却下された取引の値は空） <br> <br> 関連する [ 注文情報 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} を表示するには、ID をクリックします。 |
 | [!UICONTROL PayPal Transaction ID] | 支払いプロバイダーから提供されたトランザクション ID。成功したトランザクションの値のみを含み、却下されたトランザクションのダッシュを含みます。 この ID をクリックすると、PayPal の取引詳細ページにアクセスできます。 |
-| [!UICONTROL Customer ID] | 注文のCommerce顧客 ID<br> <br> 詳しくは、[customer info](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} を参照してください。 |
+| [!UICONTROL Customer ID] | 注文のCommerce顧客 ID<br> <br> 詳しくは、[customer info](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} を参照してください。 |
 | [!UICONTROL Transaction Date] | トランザクション日タイムスタンプ |
 | [!UICONTROL Payment Method] | ブランドおよびカードのタイプに関する情報を使用して、トランザクションに使用する支払のタイプ。 詳しくは、[ カードタイプ ](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) を参照してください。支払いサービス バージョン 1.6.0 以降で使用できます。 |
 | [!UICONTROL Payment Detail] | トランザクションに使用される支払いタイプに関する追加情報を提供します（利用可能な場合）。 |

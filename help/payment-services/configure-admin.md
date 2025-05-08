@@ -29,7 +29,7 @@ ht-degree: 0%
 1. 「_[!UICONTROL [!DNL Payment Services]]_」セクションで、「_[!UICONTROL General Configuration]_」セクションを展開します。
 1. **有効** の場合は、`Yes` に設定して、ストアに対して [!DNL Payment Services] を有効にします。
 1. **メソッド** については、ストアで [!DNL Payment Services] をテストしている場合は `Sandbox` に、ライブ支払いを有効にする準備ができている場合は `Production` に設定します。
-1. **[!UICONTROL Payment Services Sandbox ID]** と **[!UICONTROL Payment Services Production ID]** の値は、[Commerce サービスコネクタを設定し ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} 初めて [!DNL Payment Services] ダッシュボードにアクセスすると自動入力されます。 サンドボックス環境や実稼動環境のオンボーディングを完了するには、これを行います。 これらの値は、SaaS ID を [!DNL Payment Services] に関連付けます。
+1. **[!UICONTROL Payment Services Sandbox ID]** と **[!UICONTROL Payment Services Production ID]** の値は、[Commerce サービスコネクタを設定し ](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} 初めて [!DNL Payment Services] ダッシュボードにアクセスすると自動入力されます。 サンドボックス環境や実稼動環境のオンボーディングを完了するには、これを行います。 これらの値は、SaaS ID を [!DNL Payment Services] に関連付けます。
 
    >[!WARNING]
    >
@@ -80,7 +80,7 @@ ht-degree: 0%
 | フィールド | 対象範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：[!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=ja)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | ストア表示 | チェックアウトページでの指定した支払い方法の並べ替え順。 `Numeric Only` 値 |
 | [!UICONTROL Show on checkout page] | web サイト | チェックアウトページのクレジットカードフィールドを有効または無効にします。 オプション：[!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | ストア表示 | [ クレジット カードの保管 ](vaulting.md) を有効または無効にします。 オプション：[!UICONTROL Yes] / [!UICONTROL No] |
@@ -114,7 +114,7 @@ ht-degree: 0%
 | フィールド | 対象範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：[!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=ja)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | web サイト | チェックアウトページで [!DNL Apple Pay] を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | ストア表示 | チェックアウトページでの指定した支払い方法の並べ替え順。 `Numeric Only` 値 |
 | [!UICONTROL Show buttons on product detail page] | ストア表示 | 製品の詳細ページで [!DNL Apple Pay] を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -151,7 +151,7 @@ ht-degree: 0%
 | フィールド | 対象範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に支払い方法ビューでこの支払いオプションに表示されるテキスト ラベルを指定します。 オプション：`[!UICONTROL text field]` |
-| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：`[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
+| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=ja)。 オプション：`[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
 | [!UICONTROL Show on checkout page] | web サイト | チェックアウトページで [!DNL Google Pay] を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | ストア表示 | チェックアウトページでの指定した支払い方法の並べ替え順。 `Numeric Only` 値 |
 | [!UICONTROL Show buttons on product detail page] | ストア表示 | 製品の詳細ページで [!DNL Google Pay] を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -199,7 +199,7 @@ PayPal 支払いボタンの支払いオプションを管理内で有効にし�
 | フィールド | 対象範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：テキストフィールド |
-| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | web サイト | 買い物かご、製品ページ、ミニカート、およびチェックアウトフロー中の「後で支払う」メッセージを有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on checkout page] | ストア表示 | チェックアウトページで [!DNL PayPal payment buttons] を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on product detail page] | ストア表示 | 製品の詳細ページで [!DNL PayPal payment buttons] を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
