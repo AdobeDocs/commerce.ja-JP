@@ -3,9 +3,9 @@ title: ユースケース
 description: ' [!DNL Adobe Commerce as a Cloud Service] を使用して実用的なユースケースとサポートされるビジネスシナリオを達成する方法を説明します。'
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-source-git-commit: d5935f4d080c3be1f51bf8916575a3b2f357ee22
+source-git-commit: f01e9ae84830ab265c8b6557ec81e5594179fb10
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1306'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ### 支払いサービスを有効にする
 
-1. Commerce管理者で、[!UICONTROL **設定**]/[!UICONTROL **支払い方法**] に移動します。
+1. Commerce管理者で、[!UICONTROL **Stores**]/[!UICONTROL Settings]/[!UICONTROL **Configuration**]/[!UICONTROL **Payment Methods**] に移動します。
 
 1. 「[!UICONTROL **一般設定**]」セクションで、`Payment Services Sandbox ID` と `Payment Services Sandbox Key` を入力します。 これらの ID は、[ サンドボックスのオンボーディング ](../payment-services/sandbox.md#sandbox-onboarding) に説明されている手順に従って取得できます
 
@@ -199,7 +199,7 @@ AEM Assets、Adobe Express、Fireflyを使用すると、シンプルな自己�
 
 #### Commerce AEM Assetsへの画像の追加
 
-1. AEM as a Cloud Serviceの [ ナビゲーションパネル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) から、**Assets** / **ファイル** / **Commerce** を選択し、前の節で作成したアセットをクリックします。
+1. AEM as a Cloud Serviceの [ ナビゲーションパネル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) から、**Assets** / **ファイル** / **Commerce** を選択し、前の節で作成したアセットをクリックします。
 
    ![commerce フォルダー ](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -249,7 +249,7 @@ Adobe Commerceのバリエーションを生成では、ジェネレーティブ
 
 ### テキストを生成
 
-1. [ ユニバーサルエディター ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) を使用してストアフロントサイトを開きます。
+1. [ ユニバーサルエディター ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) を使用してストアフロントサイトを開きます。
 
 1. 編集するテキストのブロックを選択します。
 
@@ -263,7 +263,7 @@ Adobe Commerceのバリエーションを生成では、ジェネレーティブ
 
 ### コンテンツと画像の生成
 
-1. [ バリエーションを生成 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) を開きます。
+1. [ バリエーションを生成 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) を開きます。
 
 1. [!UICONTROL **ヒーローバナー**] テンプレートを選択します。
 
