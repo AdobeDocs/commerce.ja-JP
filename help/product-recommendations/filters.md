@@ -42,7 +42,7 @@ Adobe Commerceは、設定不可のデフォルトフィルターをレコメン
 
 ### カテゴリ
 
-[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+[!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
 カテゴリに基づいて製品をフィルターします。 カテゴリフィルターでは、直接のカテゴリ割り当てとそのサブカテゴリを使用します。 例えば、カテゴリ `Gear` の除外条件を有効にすると、`Gear` に割り当てられた製品とそのすべてのサブカテゴリ（`Gear/Bags`、`Gear/Fitness Equipment` など）が除外されます。 同じことがカテゴリのインクルージョンフィルターにも当てはまります。 例えば、カテゴリ `Gear` のインクルージョン条件を有効にすると、`Gear` に割り当てられた製品とそのすべてのサブカテゴリ（`Gear/Bags`、`Gear/Fitness Equipment` など）が含まれます。
 
@@ -72,13 +72,13 @@ Adobe Commerceでは、ページタイプにレコメンデーションをデプ
 
 ### タイプ
 
-[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+[!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
 製品タイプに基づくフィルターは、特定のタイプのすべての製品を含めるか除外します。 サポートされるタイプには、_simple_、_configurable_、_virtual_、_downloadable_、または _gift card_ があります。 _バンドル_、_グループ化_、カスタム製品タイプはサポートされていません。
 
 ### 可視性
 
-[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+[!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
 表示に基づいて製品をフィルターします（例：_カタログ_、_検索_、またはその両方）。
 
