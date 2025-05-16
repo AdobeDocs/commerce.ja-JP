@@ -2,9 +2,10 @@
 title: 移行先  [!DNL Adobe Commerce as a Cloud Service]
 description: ' [!DNL Adobe Commerce as a Cloud Service] への移行方法を説明します。'
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -68,7 +69,7 @@ ht-degree: 0%
 
    * [Adobe Commerce on Cloud Services のアーキテクチャ ](./overview.md) - プラットフォームのアーキテクチャと、現在のAdobe Commerce インスタンスとの違いを確認します。
    * [Adobe Commerce拡張フレームワーク ](https://developer.adobe.com/commerce/extensibility/) – 現在のカスタマイズの移行方法を特定します。
-   * [Edge DeliveryによるCommerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) – 推奨されるストアフロントソリューションを確認します。
+   * [Edge DeliveryによるCommerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) – 推奨されるストアフロントソリューションを確認します。
 
 1. カスタマイズの互換性を監査します。
 
@@ -90,7 +91,7 @@ ht-degree: 0%
 
 1. 次のGraphQL ベースのストアフロントのいずれかを設定します。
 
-   * [Commerce ストアフロントの作成 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja)
+   * [Commerce ストアフロントの作成 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
    * [PWA Studioを使用して、GraphQLベースのカスタムのストアフロントを作成する ](https://developer.adobe.com/commerce/pwa-studio/)
 
 1. 以前のCommerce インスタンスから ACCS にデータを移行します。

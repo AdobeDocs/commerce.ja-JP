@@ -1,9 +1,11 @@
 ---
 title: ユーザー管理
 description: ' [!DNL Adobe Commerce as a Cloud Service] でユーザーを管理する方法を説明します。'
-source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
+exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -18,9 +20,9 @@ ht-degree: 0%
 
 >[!TIP]
 >
->複数のユーザーを同時に追加するには、[CSV の一括アップロード ](https://helpx.adobe.com/jp/enterprise/using/bulk-upload-users.html){target="_blank"} を実行します。
+>複数のユーザーを同時に追加するには、[CSV の一括アップロード ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"} を実行します。
 > 
-> [ ユーザーグループ ](https://helpx.adobe.com/jp/enterprise/using/user-groups.html){target="_blank"} を作成して、1 つの役割に複数のユーザーを追加することもできます。 次に、[!UICONTROL **Adobe Commerce as a Cloud Service - バックエンド**] 製品をユーザーグループに追加できます。
+> [ ユーザーグループ ](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"} を作成して、1 つの役割に複数のユーザーを追加することもできます。 次に、[!UICONTROL **Adobe Commerce as a Cloud Service - バックエンド**] 製品をユーザーグループに追加できます。
 
 ## 役割について
 
@@ -28,11 +30,11 @@ ht-degree: 0%
 
 * **ユーザー** - ユーザーは、Commerce管理者に管理者アクセス権を持っていますが、Admin Consoleで製品レベルのアクセス権を管理することはできません。 ユーザーは、クレジットを使用して [!DNL Commerce Cloud Manager] で [ インスタンスを作成 ](./getting-started.md#create-an-instance) することもできます。
 
-* [**開発者**](https://helpx.adobe.com/jp/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} 開発者はユーザー権限を持ち、開発者ユーザーとしてCommerce インスタンスに追加されます。 つまり、[ 管理 UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[ イベントの設定 ](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}、[Webhook の作成 ](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"} を使用できます。
+* [**開発者**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} 開発者はユーザー権限を持ち、開発者ユーザーとしてCommerce インスタンスに追加されます。 つまり、[ 管理 UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[ イベントの設定 ](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}、[Webhook の作成 ](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"} を使用できます。
 
 * 管理者 – 管理者には次の 3 つのタイプがあります。
-   * [ システム管理者 ](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Admin Consoleを通じて組織内のすべての製品と製品プロファイルにアクセスできます。
-   * [ 製品管理者 ](#add-a-product-admin) – 製品管理者は [ 製品のユーザー、役割、権限を管理 ](#add-users-and-admins) [!DNL Adobe Admin Console] で、[Commerce管理者でユーザーを管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"} できます。
+   * [ システム管理者 ](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Admin Consoleを通じて組織内のすべての製品と製品プロファイルにアクセスできます。
+   * [ 製品管理者 ](#add-a-product-admin) – 製品管理者は [ 製品のユーザー、役割、権限を管理 ](#add-users-and-admins)[!DNL Adobe Admin Console] で、[Commerce管理者でユーザーを管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"} できます。
    * [ 製品プロファイル管理者 ](#add-users-developers-and-product-profile-admins) – 製品プロファイル管理者は、Adobe Commerce管理者へのアクセス権を持っていませんが、[!DNL Adobe Admin Console] 内の製品のユーザーを管理できます。
 
 Adobe Commerce内の各ロールに付与される権限について詳しくは、[ ユーザー権限 ](#user-permissions) を参照してください。
@@ -77,7 +79,7 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
    >
    >この画面から追加された管理者は [ 製品プロファイル管理者 ](#understanding-roles) であり、Commerce管理者へのアクセス権がありません。
 
-   ![tab select](./assets/tab-select.png){width=600 zoomable=&quot;yes&quot;}
+   ![ タブ選択 ](./assets/tab-select.png){width=600 zoomable="yes"}
 
 1. 管理者として追加するユーザーのユーザー名またはメールアドレスを入力し、「[!UICONTROL **保存**]」をクリックします。
 

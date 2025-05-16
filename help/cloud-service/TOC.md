@@ -5,11 +5,10 @@ breadcrumb-title: Cloud Service ガイド
 hide: true
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 140bf38ffc42289772c8347db591edfbd6504ea7
+source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 9%
+source-wordcount: '26'
+ht-degree: 23%
 
 ---
 
@@ -17,6 +16,7 @@ ht-degree: 9%
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [概要](overview.md)
+- [機能の比較](feature-comparison.md)
 - [はじめに](getting-started.md)
 - [ユーザー管理](user-management.md)
 - [ストアフロント](storefront.md)

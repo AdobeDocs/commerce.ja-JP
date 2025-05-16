@@ -3,9 +3,10 @@ title: 共有された責任
 description: プロジェクトに関与する各パーティのセキュリティ責任について説明  [!DNL Adobe Commerce as a Cloud Service]  ます。
 role: Admin, Architect, Leader
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
