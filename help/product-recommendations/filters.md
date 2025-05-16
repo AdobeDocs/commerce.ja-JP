@@ -1,9 +1,10 @@
 ---
 title: 製品のフィルタリング
 description: レコメンデーションとして使用される製品を含める、または除外する条件を定義します。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
+source-git-commit: 59aa4ae67a1a8a853b72d78cd65a6cc44a6bc662
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -41,13 +42,15 @@ Adobe Commerceは、設定不可のデフォルトフィルターをレコメン
 
 ### カテゴリ
 
+[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+
 カテゴリに基づいて製品をフィルターします。 カテゴリフィルターでは、直接のカテゴリ割り当てとそのサブカテゴリを使用します。 例えば、カテゴリ `Gear` の除外条件を有効にすると、`Gear` に割り当てられた製品とそのすべてのサブカテゴリ（`Gear/Bags`、`Gear/Fitness Equipment` など）が除外されます。 同じことがカテゴリのインクルージョンフィルターにも当てはまります。 例えば、カテゴリ `Gear` のインクルージョン条件を有効にすると、`Gear` に割り当てられた製品とそのすべてのサブカテゴリ（`Gear/Bags`、`Gear/Fitness Equipment` など）が含まれます。
 
 [ カテゴリ ] フィールドには、現在のストア レビューに属するカテゴリが表示されます。
 
 >[!NOTE]
 >
->B2B マーチャントの場合、カテゴリフィルターは、設定した [ 顧客固有の製品カテゴリ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=ja) に従います。
+>B2B マーチャントの場合、カテゴリフィルターは、設定した [ 顧客固有の製品カテゴリ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) に従います。
 
 Adobe Commerceでは、ページタイプにレコメンデーションをデプロイする際に、次のカテゴリフィルター設定を使用することをお勧めします。
 
@@ -69,19 +72,23 @@ Adobe Commerceでは、ページタイプにレコメンデーションをデプ
 
 ### タイプ
 
+[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+
 製品タイプに基づくフィルターは、特定のタイプのすべての製品を含めるか除外します。 サポートされるタイプには、_simple_、_configurable_、_virtual_、_downloadable_、または _gift card_ があります。 _バンドル_、_グループ化_、カスタム製品タイプはサポートされていません。
 
 ### 可視性
+
+[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
 表示に基づいて製品をフィルターします（例：_カタログ_、_検索_、またはその両方）。
 
 ### 価格
 
-製品価格に基づくフィルターでは、最終価格を使用して比較を実行します。 最終価格には、匿名の買い物客が利用できる割引や特別価格が含まれます。 B2B マーチャントの場合、表示される価格は、設定した [ 顧客固有のグループ価格 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja) を反映しています。
+製品価格に基づくフィルターでは、最終価格を使用して比較を実行します。 最終価格には、匿名の買い物客が利用できる割引や特別価格が含まれます。 B2B マーチャントの場合、表示される価格は、設定した [ 顧客固有のグループ価格 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) を反映しています。
 
 ### 在庫ステータス
 
 在庫ステータスに基づいて製品を除外するには、次の除外フィルターを使用できます。
 
 - 在庫切れ – （除外のみ）在庫切れの製品を除外します。
-- 低在庫 – （除外のみ）在庫が少ない製品を除外します。 在庫が少ないステータスは、[ 在庫設定 ](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=ja) の _左側が X 個のみのしきい値_ の値に基づきます。
+- 低在庫 – （除外のみ）在庫が少ない製品を除外します。 在庫が少ないステータスは、[ 在庫設定 ](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html) の _左側が X 個のみのしきい値_ の値に基づきます。
