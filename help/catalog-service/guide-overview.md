@@ -2,7 +2,8 @@
 title: '[!DNL Catalog Service] ガイドの概要'
 description: '[!DNL Catalog Service for Adobe Commerce] を使用すると、Adobe Commerce GraphQLのネイティブのクエリよりも迅速に商品表示ページおよび商品リストページのコンテンツを取得できます。'
 recommendations: noCatalog
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1a83bbc5-8901-49c0-8d8f-daec415edf70
+source-git-commit: 8e3e71c7de56b367a73ab048fa13ba2cdeb55f41
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -22,15 +23,15 @@ ht-degree: 0%
 
 | ガイド | 説明 |
 |------ | ----------- |
-| [Adobe Commerce 2.4 ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce.html?lang=ja) | Adobe CommerceとMagento Open Sourceの両方に関するマーチャントフォーカスのドキュメント |
+| [Adobe Commerce 2.4 ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce.html) | Adobe CommerceとMagento Open Sourceの両方に関するマーチャントフォーカスのドキュメント |
 | [Adobe Commerce 2.4 開発者ガイド ](https://developer.adobe.com/commerce/docs) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用される、開発者向けドキュメント |
 
 ## サポート
 
-[ オンボーディングプロセス ](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html?lang=ja) は、[!DNL Catalog Service] 機能の設定と有効化に必要な手順を示すように設計されています。
+[ オンボーディングプロセス ](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html) は、[!DNL Catalog Service] 機能の設定と有効化に必要な手順を示すように設計されています。
 
 情報が必要な場合や、このガイドで扱われていない質問がある場合は、次のリソースを使用してください。
 
-* トラブルシューティング記事の [ ヘルプセンター ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=ja)。
-* [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) – 追加のヘルプを受けるには、チケットを送信します。
+* トラブルシューティング記事の [ ヘルプセンター ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)。
+* [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) – 追加のヘルプを受けるには、チケットを送信します。
 * Adobe Commerce エンジニアリングチームに加わり、[#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) のパブリック Slack チャネルの SaaS ストアフロントサービスユーザーに最新の状態を提供してください。
