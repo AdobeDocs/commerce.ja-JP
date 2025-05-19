@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 5e5b3340f45b5db7a6a01ed1b89c42f6399f66b9
+source-git-commit: 1b3af0084d622d544cad5f144d3cd7bd8191814c
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,14 @@ ht-degree: 0%
 >SaaS データ書き出し拡張機能は、Live Search、Product Recommendations、Catalog Service と共に自動的にインストールされるモジュールのコレクションです。 Composer を使用すると、システムにインストールされているバージョンを確認できます。 場合によっては、Commerce サービスのバージョンを更新せずに修正点または新機能を取得するように、システムのデータエクスポート拡張機能をアップグレードする必要があります。
 
 ## 現在のメジャーバージョン
+
+## 103.4.4 リリース
+
+![ 新規 ](../assets/new.svg) `cleanup-feed` 引数が `saas:resync` CLI コマンドに追加されたときに表示される警告メッセージを追加しました。 `--cleanup-feed` オプションは、環境クリーンアップ後や `--dry-run` オプションと共に使用する場合など、特定のシナリオでのみ慎重に使用してください。 他の場合に使用すると、データの損失や同期の問題が発生する可能性があります。 <!--MDEE-1047-->
+![ 修正 ](../assets/fix.svg) トレーサビリティを向上させるために、サーバー応答から `x-request-id` を追加しました。 <!--MDEE-1041-->
+![ 修正 ](../assets/fix.svg) フィードバッチ全体で同期ステータスが保存されず、不要な再同期が発生する問題を修正しました。 <!--MDEE-1049-->
+![ 修正 ](../assets/fix.svg)1 つのフィードにエラーが含まれている場合、同期中にフィードバッチ内のすべてのフィードがスキップされる問題を修正しました。 <!--MDEE-976-->
+![ 修正 ](../assets/fix.svg) カテゴリ権限インデクサーでディメンションがサポートされるようになりました。<!--MDEE-654-->
 
 ## 103.4.3 リリース
 
