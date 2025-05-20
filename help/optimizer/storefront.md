@@ -3,9 +3,9 @@ title: ストアフロントの設定
 description: ストアフロントの設定方法  [!DNL Adobe Commerce Optimizer]  説明します。
 role: Developer
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 645e2636182f5c9a3b198161d62d5cf2bf7123b4
+source-git-commit: c7e469dd29465b7b405dc8884790eb6aee5e81ca
 workflow-type: tm+mt
-source-wordcount: '2137'
+source-wordcount: '1839'
 ht-degree: 0%
 
 ---
@@ -16,14 +16,14 @@ ht-degree: 0%
 >
 >このドキュメントでは、製品の早期アクセス開発について説明しており、一般提供を目的とした機能のすべてを反映しているわけではありません。
 
-このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja) [!DNL Adobe Commerce Optimizer] インスタンスのデータを利用して、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について説明します。
+このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)[!DNL Adobe Commerce Optimizer] インスタンスのデータを利用して、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について説明します。
 
 
 ## 前提条件
 
 * リポジトリを作成できる GitHub アカウント（github.com）があり、ローカル開発用に設定されていることを確認します。
 
-* Adobe Commerce ストアフロントのドキュメントの [ 概要 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=ja) を確認して、Adobe Edge 配信サービスでCommerce ストアフロントを開発するための概念とワークフローについて説明します。
+* Adobe Commerce ストアフロントのドキュメントの [ 概要 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) を確認して、Adobe Edge 配信サービスでCommerce ストアフロントを開発するための概念とワークフローについて説明します。
 * 開発環境の設定
 
 
@@ -59,16 +59,15 @@ Node Version Manager （NVM）と必要な Node.js バージョン（22.13.1 LTS
 
 >[!TIP]
 >
->このストアフロントの設定プロセスは、[!DNL Adobe Commerce Optimizer] をAdobe Commerce Edge Delivery Service ストアフロントと共に使用するためのものです。 [!DNL Adobe Commerce Optimizer] ソリューションを拡張およびカスタマイズするためのその他のリソースは、[Adobe CommerceのApp Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) および [Adobe Developer App Builderの API メッシュ ](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh) を通じて利用できます。 アクセスおよび使用方法について詳しくは、Adobe アカウント担当者にお問い合わせください。
+>[!DNL Adobe Commerce Optimizer] ソリューションを拡張およびカスタマイズするためのその他のリソースは、[Adobe CommerceのApp Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) および [Adobe Developer App Builderの API メッシュ ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh) を通じて利用できます。 アクセスおよび使用方法について詳しくは、Adobe アカウント担当者にお問い合わせください。
 
 #### Sidekickのインストール
 
 Sidekick ブラウザー拡張機能をインストールして、コンテンツを編集、プレビューおよびストアフロントに公開します。 [Sidekickのインストール手順 ](https://www.aem.live/docs/sidekick#installation) を参照してください。
 
-
 ## ストアフロントの作成
 
-[!DNL Adobe Commerce Optimizer] プロジェクト用に作成するストアフロントでは、Edge Delivery Services ストアフロントボイラープレート上のAdobe Commerceのカスタマイズバージョンを使用します。 ボイラープレートは、ストアフロント開発の出発点となるファイルとフォルダーのセットです。 この設定プロセスは、Edge Delivery Services ストアフロント上の [Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja) の標準の設定プロセスとは異なります。
+[!DNL Adobe Commerce Optimizer] プロジェクト用に作成するストアフロントでは、Edge Delivery Services ストアフロントボイラープレート上のAdobe Commerceのカスタマイズバージョンを使用します。 ボイラープレートは、ストアフロント開発の出発点となるファイルとフォルダーのセットです。 この設定プロセスは、Edge Delivery Services ストアフロント上の [Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) の標準の設定プロセスとは異なります。
 
 >[!NOTE]
 >
@@ -78,13 +77,13 @@ Sidekick ブラウザー拡張機能をインストールして、コンテン�
 
 [!DNL Adobe Commerce Optimizer] で使用するストアフロントを設定するには、次の手順に従います。
 
-1. **[コードリポジトリを作成](#step-1%3A-create-site-code-repository)** - Adobe Commerce + Edge Delivery Services ボイラープレートテンプレートから GitHub リポジトリーを作成します。 ソースリポジトリからすべてのブランチを含めます。
-1. **[ストアフロントボイラープレートを更新](#step-2%3A-update-the-storefront-boilerplate)** - `aco` ブランチのカスタムボイラープレートテンプレートを更新して、コンテンツフォルダーをストアフロントに接続します。
-1. **[更新したストアフロントのボイラープレートコードをアップロードします](#step-3%3A-upload-the-updated-boilerplate-code)**-`main` 分岐のコードを、`aco` 分岐の更新したコードで上書きします。
-1. **[CodeSync アプリを追加](#step-5%3A-add-the-aem-code-sync-app)** します。リポジトリをEdge Delivery サービスに接続します。 ソースコードのカスタマイズが完了し、コードを `main` ブランチにプッシュするまで、コード同期アプリを接続しないでください。
-1. **[ストアフロントにコンテンツドキュメントを追加](#step-6%3A-add-content-documents-for-your-storefront)** - デモコンテンツのクローンツールを使用して、`https://da.live` でホストされているドキュメント作成者環境でストアフロントコンテンツを作成および初期化します。
-1. **[サイトのプレビューとサンプルデータの表示](#step-7%3A-preview-your-site)** ストアフロントサイトに接続して、[!DNL Adobe Commerce Optimizer] デモインスタンスのサンプルコンテンツとサンプルデータを表示します。
-1. **[ローカル環境でストアフロントを開発します](#step-8%3A-develop-the-storefront-in-your-local-environment)** – 必要な依存関係をインストールします。 ローカル開発サーバーを起動し、Adobeでプロビジョニングされた [!DNL Adobe Commerce Optimizer] インスタンスに接続するようにストアフロント設定を更新します。
+1. **[コードリポジトリを作成](#step-1-create-site-code-repository)** - Adobe Commerce + Edge Delivery Services ボイラープレートテンプレートから GitHub リポジトリーを作成します。 ソースリポジトリからすべてのブランチを含めます。
+1. **[ストアフロントボイラープレートを更新](#step-2-update-the-storefront-boilerplate)** - `aco` ブランチのカスタムボイラープレートテンプレートを更新して、コンテンツフォルダーをストアフロントに接続します。
+1. **[更新したストアフロントのボイラープレートコードをアップロードします](#step-3-upload-the-updated-boilerplate-code)**-`main` 分岐のコードを、`aco` 分岐の更新したコードで上書きします。
+1. **[CodeSync アプリを追加](#step-5-add-the-aem-code-sync-app)** します。リポジトリをEdge Delivery サービスに接続します。 ソースコードのカスタマイズが完了し、コードを `main` ブランチにプッシュするまで、コード同期アプリを接続しないでください。
+1. **[ストアフロントにコンテンツドキュメントを追加](#step-6-add-content-documents-for-your-storefront)** - デモコンテンツのクローンツールを使用して、`https://da.live` でホストされているドキュメント作成者環境でストアフロントコンテンツを作成および初期化します。
+1. **[サイトのプレビューとサンプルデータの表示](#step-7-preview-your-site)** ストアフロントサイトに接続して、[!DNL Adobe Commerce Optimizer] デモインスタンスのサンプルコンテンツとサンプルデータを表示します。
+1. **[ローカル環境でストアフロントを開発します](#step-8-develop-the-storefront-in-your-local-environment)** – 必要な依存関係をインストールします。 ローカル開発サーバーを起動し、Adobeでプロビジョニングされた [!DNL Adobe Commerce Optimizer] インスタンスに接続するようにストアフロント設定を更新します。
 1. **[次の手順](#next-steps)** - ストアフロントでのコンテンツとデータの管理および表示に関する詳細情報。
 
 
@@ -159,7 +158,7 @@ Edge Delivery Services + Adobe Commerce Boilerplate テンプレートを使用�
 
 1. ストアフロント設定ファイルのマウントポイントを更新して、コンテンツの URL を指定します。
 
-   1. [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja#vocabulary) 設定ファイルを開きます。
+   1. [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary) 設定ファイルを開きます。
 
       ```yaml
       mountpoints:
@@ -183,54 +182,6 @@ Edge Delivery Services + Adobe Commerce Boilerplate テンプレートを使用�
       ```
 
    1. ファイルを保存します。
-
-#### デフォルトのデータ接続設定の確認
-
-ストアフロントのボイラープレートコードのルートディレクトリにあるデフォルトの設定ファイル（`config.json`）により、ストアフロントと指定された [!DNL Adobe Commerce Optimizer] インスタンスとの通信が確立されます。 この接続により、カタログデータがストアフロントに送られ、検索コンポーネント、製品リスト、製品詳細ページなど、様々なストアフロントインターフェイスに入力されます。
-
-ストアフロントの初期設定では、サンプルデータを使用してデフォルトの [!DNL Adobe Commerce Optimizer] インスタンスに接続します。
-
-```json
-{
-  "public": {
-    "default": {
-      "commerce-core-endpoint": "https://www.aemshop.net/graphql",
-      "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
-      "headers": {
-        "cs": {
-          "ac-channel-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
-          "ac-environment-id": "Fwus6kdpvYCmeEdcCX7PZg",
-          "ac-price-book-id": "west_coast_inc",
-          "ac-scope-locale": "en-US"
-        }
-      },
-      "analytics": {
-        "base-currency-code": "USD",
-        "environment": "Production",
-        "store-id": 1,
-        "store-name": "ACO Demo",
-        "store-url": "https://www.aemshop.net",
-        "store-view-id": 1,
-        "store-view-name": "Default Store View",
-        "website-id": 1,
-        "website-name": "Main Website"
-      }
-    }
-  }
-}
-```
-
-`config.json` ファイルでは、次のキー値は接続先の [!DNL Adobe Commerce Optimizer] インスタンスを指定し、ストアフロントに送られるデータを決定します。
-
-* `commerce-endpoint` 接続先のインスタンスを指定します。 デフォルトの [!DNL Adobe Commerce Optimizer] インスタンスを使用するように設定されています。 このエンドポイントは、カタログデータを取得するために使用されます。
-* `ac-environment-id` は、[!DNL Adobe Commerce Optimizer] インスタンスのテナント ID です。
-* インスタンスからストアフロントに流れるデータを決定で `headers` ません。
-   * `ac-channel-id` は `west_coast_inc` に設定されています
-   * `ac-price-book-id` は `west_coast_inc` に設定されています
-   * `ac-scope-locale` は `en-US` に設定されています
-   * `ac-price-book-id` は `west_coast_inc` に設定されています
-
-これらの値は、チャネル ID、ロケール、価格台帳 ID を設定して、カタログデータを特定の販売チャネルに送信し、指定されたロケールと価格台帳の値に基づいてそのデータをフィルタリングします。 その後、エンドポイントを更新して、Adobeによってプロビジョニングされた [!DNL Adobe Commerce Optimizer] インスタンスに接続し、ヘッダー値を置き換えて、そのインスタンスからデータを取得します。
 
 #### Sidekick拡張機能の設定
 
@@ -274,7 +225,7 @@ Edge Delivery Services + Adobe Commerce Boilerplate テンプレートを使用�
 
    詳しくは、[Sidekick ライブラリのドキュメント ](https://www.aem.live/docs/sidekick-library) 参照してください。
 
-   +++
++++
 
 1. `url` キーの値を GitHub リポジトリの値で更新します。
 
@@ -314,7 +265,7 @@ Edge Delivery Services + Adobe Commerce Boilerplate テンプレートを使用�
    }
    ```
 
-   +++
++++
 
 1. ファイルを保存します。
 
@@ -382,11 +333,11 @@ AEM コード同期 GitHub アプリをリポジトリに追加して、リポ�
 1. ストアフロントボイラープレートプロジェクトの GitHub URL を「[!UICONTROL **プロジェクト GitHub URL**]」フィールドに貼り付けます。
 
 
-1. コンテンツを読み込み、プレビューし、ドキュメントオーサー環境に公開して、「**サイトを作成**」を選択します。
+1. 「**サイトを作成**」を選択して、コンテンツを読み込み、プレビューし、ドキュメントオーサー環境に公開します。
 
-   サイトを作成したら、「[!UICONTROL Edit content]」セクションのリンクを使用してドキュメントオーサー環境を開き、コンテンツとサイトを参照できます。
+   ![[!DNL AEM demo content clone tool]](./assets/storefront-edit-initial-content.png){width="700" zoomable="yes"}
 
-   ![[!DNL AEM demo content clone tool]](./assets/storefront-document-author-environment.png){width="700" zoomable="yes"}
+   サイトを作成したら、「[!UICONTROL Edit content]」セクションと「[!UICONTROL View Site]」セクションのリンクを使用して、デモストアフロントを参照できます。
 
    コンテンツとサイトへの主なリンクは、次の形式に従っています。
 
@@ -406,9 +357,8 @@ AEM コード同期 GitHub アプリをリポジトリに追加して、リポ�
 
 サンプルコンテンツとAdobe Commerce Optimizer デモインスタンスのデータの両方が正しく表示されていることを確認します。
 
-* **サンプルコンテンツ** は、共有コンテンツフォルダーから提供されます。 サイトのページレイアウト、バナー、ラベルが含まれます。
+* **サンプルコンテンツ** は、ドキュメントオーサー環境のコンテンツフォルダーから提供されます。 サイトのページレイアウト、バナー、ラベルが含まれます。
 * **サンプルデータ** は、[!DNL Adobe Commerce Optimizer] デモインスタンスから提供されます。 データには、ストアフロント設定ファイルな `config.json` で指定されたヘッダー値に基づいて入力された製品属性、画像、製品の説明および価格を含む製品データが含まれています。
-
 
 #### サイトに接続して、サンプルコンテンツとサンプルデータを表示する
 
@@ -427,22 +377,21 @@ AEM コード同期 GitHub アプリをリポジトリに追加して、リポ�
 
 1. Commerce Optimizerのデフォルトインスタンスから取得したサンプルカタログデータを表示します。
 
-   1. `tires` を検索して、使用可能なタイヤ製品のドロップダウンリストを表示します。
+   1. ストアフロントのヘッダーで、虫眼鏡をクリックして `tires` を検索します。
 
-   ![[!DNL Discover Adobe Commerce Optimizer products]](./assets/storefront-site-with-aco-data.png){width="700" zoomable="yes"}
+      ![[!DNL View product list page]](./assets/storefront-site-with-aco-data.png){width="675" zoomable="yes"}
 
-   検索コンポーネントは、ストアフロントボイラープレートコードの一部です。 検索結果データは、`config.json` のストアフロント設定に基づいて入力されます。
+   1. **Enter** キーを押して、検索結果ページを表示します。
 
-   1. **Enter** キーを押して、製品リストページを表示します。
+      ![[!DNL View search results page]](./assets/storefront-with-aco-search-results-page.png){width="675" zoomable="yes"}
 
-      ![[!DNL View product details page]](./assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
+      検索結果ページのコンポーネントは、`search` コンテンツドキュメントで定義されます。 検索結果データは、`config.json` のストアフロント設定に基づいて入力されます。
 
    1. ページでタイヤ製品を選択して、製品の詳細ページを表示します。
 
-      ストアフロントを探索する場合は、一部のコンポーネントが機能しないことに注意してください。 例えば、買い物かごに製品を追加するとエラーが返され、アカウント管理コンポーネントが機能しません。 これらの問題は、これらのコンポーネントがCommerce バックエンドからデータを受け取るように設定されていないために発生します。 [!DNL Adobe Commerce Optimizer] インスタンスからのデータは、検索結果ページと製品の詳細ページにのみ入力されます。
+      ![[!DNL View product details page]](./assets/storefront-with-aco-pdp-page.png){width="675" zoomable="yes"}
 
-   1. ストアフロントを探索した後、チュートリアルを続行します。
-
+      製品詳細ページのコンポーネントは、`product` フォルダー内の `default` コンテンツドキュメントで定義されています。
 
 ### 手順 8：ローカル環境でのストアフロントの開発
 
@@ -453,10 +402,11 @@ AEM コード同期 GitHub アプリをリポジトリに追加して、リポ�
 
 #### ローカル開発を開始
 
-1. IDE で GitHub コードリポジトリの main ブランチをチェックアウトします。
+1. IDE でメインブランチをチェックアウトし、リモートブランチの最後のコミットにリセットします。
 
    ```bash
    git checkout main
+   git reset --hard origin/main
    ```
 
 1. 必要な依存関係をインストールします。
@@ -473,7 +423,7 @@ AEM コード同期 GitHub アプリをリポジトリに追加して、リポ�
 
    ボイラープレートのストアフロントの最初のページが、ブラウザーの `http://localhost:3000` に表示されるはずです。
 
-![[!DNL Configure github repo to pull all branches from boilerplate repo]](./assets/aco-storefront-local-dev-env.png){width="700" zoomable="yes"}
+   ![[!DNL Configure github repo to pull all branches from boilerplate repo]](./assets/aco-storefront-local-dev-env.png){width="700" zoomable="yes"}
 
 
 #### ストアフロント設定の更新
@@ -510,9 +460,7 @@ AEM コード同期 GitHub アプリをリポジトリに追加して、リポ�
 
       ![ タイヤの検索 ](./assets/storefront-header-empty-search-list.png){width="675" zoomable="yes"}
 
-      ドロップダウンリストには値が入力されません。
-
-   1. **Enter** キーを押して、製品リストページを表示します。
+   1. **Enter** キーを押して、検索結果ページを表示します。
 
       ![ 無効なヘッダー値を含む空の検索結果 ](./assets/storefront-configuration-with-incorrect-headers.png){width="675" zoomable="yes"}
 
@@ -520,10 +468,8 @@ AEM コード同期 GitHub アプリをリポジトリに追加して、リポ�
 
 ### 次の手順
 
-ストアフロントでのコンテンツとデータの管理と表示について詳しくは [&#128279;](./use-case/admin-use-case.md) ストアフロントとカタログ管理者のエンドツーエンドのユースケース  を参照してください。
+ストアフロントでのコンテンツとデータの管理と表示について詳しくは ](./use-case/admin-use-case.md) ストアフロントとカタログ管理者のエンドツーエンドのユースケース [ を参照してください。
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照して、サイトコンテンツの更新と、Commerceのフロントエンドコンポーネントおよびバックエンドデータとの統合に関する詳細情報を確認してください。
-></br></br>
->* [Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照して、サイトコンテンツの更新と、Adobe Commerceのフロントエンドコンポーネントおよびバックエンドデータとの統合に関する詳細情報を確認してください。
+> サイトコンテンツの更新と ](https://experienceleague.adobe.com/developer/commerce/storefront/)Adobe Commerceのフロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、[Commerce ストアフロントのドキュメントを参照してください。
