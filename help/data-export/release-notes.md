@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 1b3af0084d622d544cad5f144d3cd7bd8191814c
+source-git-commit: c9a87df4aa64081b51fd52d84d97fe3949045e31
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ ht-degree: 0%
 >SaaS データ書き出し拡張機能は、Live Search、Product Recommendations、Catalog Service と共に自動的にインストールされるモジュールのコレクションです。 Composer を使用すると、システムにインストールされているバージョンを確認できます。 場合によっては、Commerce サービスのバージョンを更新せずに修正点または新機能を取得するように、システムのデータエクスポート拡張機能をアップグレードする必要があります。
 
 ## 現在のメジャーバージョン
+
+## 103.4.5 リリース
+
+![ 新規 ](../assets/new.svg)SaaS データの書き出しで、Adobe Commerce `giftcard` 製品タイプがサポートされるようになりました。 データフィードでは、ギフトカード製品は、製品属性タイプが `ac_giftcard` のシンプルな製品として書き出されます。 <!--MDEE-1042-->
+![ 修正 ](../assets/fix.svg) データ書き出しエラーレポートの改善。 ログに、エラーのデバッグとトレースを容易にする元の技術的な詳細など、より詳細なエラーメッセージが含まれるようになりました。<!--MDEE-1064-->
 
 ## 103.4.4 リリース
 
