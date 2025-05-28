@@ -84,7 +84,7 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 >[!WARNING]
 >
 > **実稼動 SaaS データ領域** は、データの競合を避けるために、実稼動 [!DNL Commerce] インストールでのみ使用します。 そうしないと、テストデータで実稼動サイトデータが汚染され、デプロイメントの遅延が発生するリスクがあります。 例えば、実稼動製品のデータが、ステージング URL などのステージングデータと誤って上書きされる可能性があります。
-> > これが発生した場合は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) して、データのクリーンアップをリクエストします。
+> &#x200B;> これが発生した場合は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) して、データのクリーンアップをリクエストします。
 
 ### SaaS データ領域のプロビジョニング
 
@@ -114,7 +114,7 @@ SaaS プロジェクトを選択または作成するには、ストアの [!DNL
 
    [!DNL Commerce] の設定に **[!UICONTROL Commerce Services Connector]** のセクションが表示されない場合は、目的の [[!DNL Commerce]  サービス ](#availableservices) に [!DNL Commerce] モジュールをインストールします。 また、`magento/module-services-id` パッケージがインストールされていることを確認します。
 
-1. _[!UICONTROL Sandbox API Keys]_セクションと_[!UICONTROL Production API Keys]_ セクションに、キー値を貼り付けます。
+1. _[!UICONTROL Sandbox API Keys]_&#x200B;セクションと&#x200B;_[!UICONTROL Production API Keys]_ セクションに、キー値を貼り付けます。
 
    - 秘密鍵は、鍵の先頭に `----BEGIN PRIVATE KEY---`、鍵の末尾に `----END PRIVATE KEY----` を含める必要があります。
    - 実際のキーのコピーがない場合は、アカウント所有者に問い合わせて、値を設定に接続します。
