@@ -2,23 +2,23 @@
 title: シノニムの追加
 description: 同義語  [!DNL Live Search]  追加して、検索リクエストに対する応答を改善します。
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: 6dcfd0a54e6a6814b7f5708e0c221452b8af4537
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # シノニムの追加
 
-独自にキュレートされた [!DNL Live Search] 同義語のリストを追加して、顧客エンゲージメントを向上させます。 1`Data Space ID` あたり最大 200 個の同義語を管理で [!DNL Live Search] ます。
+独自にキュレートされた [!DNL Live Search] 同義語のリストを追加して、顧客エンゲージメントを向上させます。 1 つ [!DNL Live Search] ストア表示で最大 200 個の同義語を管理できます。
 
 ![[!DNL Live Search] 同義語 ](assets/synonym-workspace.png)
 
 ## 手順 1：シノニムの追加
 
 1. 管理者で、**マーケティング**/SEO と検索/**[!DNL Live Search]** に移動します。
-1. 複数のストアの場合、**範囲** を [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) に設定します。ここで、シノニム設定が適用されます。
+1. 複数のストアの場合、**範囲** を [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) に設定します。ここで、シノニム設定が適用されます。
 1. 「**シノニム**」タブをクリックします。
 1. 「**シノニムを追加** ボタンをクリックします。
 
