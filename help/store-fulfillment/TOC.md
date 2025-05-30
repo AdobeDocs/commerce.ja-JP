@@ -1,15 +1,14 @@
 ---
 user-guide-title: '[!DNL Store FulFillment Guide]'
 user-guide-description: Adobe Commerce ストアのストアフルフィルメントのインストール、設定および使用に関する詳細情報。
-breadcrumb-title: Adobe Commerce のストアフルフィルメント
 index: true
 feature: Shipping/Delivery
 role: Admin, User
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 8%
+source-wordcount: '79'
+ht-degree: 2%
 
 ---
 
@@ -21,13 +20,13 @@ ht-degree: 8%
 - [ストアアシストワークフロー](store-assist-modules.md)
 - [要件](solution-requirements.md)
 - [リリースノート](release-notes.md)
-- Onboard Store Fulfillment {#onboarding}
+- オンボードストアフルフィルメント {#onboarding}
    - [オンボーディングの概要](onboard.md)
    - [拡張機能のインストール](install.md)
    - [Connect Store Fulfillment](connect-set-up-service.md)
    - [テストとデプロイ](test-and-deploy.md)
 - [設定の概要](service-config-settings-overview.md)
-- ストアの構成 {#store-configuration}
+- ストアの設定 {#store-configuration}
    - [一般設定](enable-general.md)
    - [販売 E メール テンプレート](sales-emails.md)
    - [商店（ソース）](merchant-store-configuration.md)

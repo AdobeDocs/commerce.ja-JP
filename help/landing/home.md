@@ -1,12 +1,11 @@
 ---
-title: サービスドキュメント
+title: サービスガイドのホーム
 description: Commerce SaaS サービスのAdobe Commerce製品ドキュメントを参照してください。
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
-breadcrumb-title: マニュアル
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
+source-git-commit: 2b948cd07020b1f53616fe201dcc5781ca2f9bcc
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -103,7 +102,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce サービスコネクタ </strong> [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="クラウドプロジェクトのAdobe Commerce（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスのプロジェクトにのみ適用されます。"}
+         <strong>Commerce サービスコネクタ </strong> [!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="クラウドプロジェクトのAdobe Commerce（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスのプロジェクトにのみ適用されます。"}
          </a>
       </div>
       <p>
@@ -144,11 +143,11 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="データ同期の監視" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong> データ管理ダッシュボード </strong>
          </a>
       </div>

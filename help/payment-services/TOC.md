@@ -1,15 +1,14 @@
 ---
 user-guide-title: '[!DNL Payment Services] ガイド'
 user-guide-description: このガイドでは、のインストールとストアへの  [!DNL Payment Services]  の設定に関する詳細  [!DNL Adobe Commerce]  説  [!DNL Magento Open Source]  します。
-breadcrumb-title: '[!DNL Payment Services] ガイド'
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: eba63e5a0086689ae254545c1ad9a1430fc8a524
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 3%
+source-wordcount: '108'
+ht-degree: 2%
 
 ---
 
@@ -51,4 +50,4 @@ ht-degree: 3%
 - セキュリティとコンプライアンス {#security-compliance}
    - [セキュリティ](security.md)
    - [重大な不正保護](fraud-protection.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=ja)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

@@ -1,14 +1,13 @@
 ---
 user-guide-title: Adobe Commerceの [!DNL Data Connection] 拡張機能
 user-guide-description: このガイドでは、Adobe Commerce用の拡張機能を使用する際の詳細な手順  [!DNL Data Connection]  説明します。
-breadcrumb-title: Adobe Commerceの [!DNL Data Connection] 拡張機能
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
-source-git-commit: 98a7ea9ff7d741bd7333b44618e7287da9d66353
+badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '142'
 ht-degree: 2%
 
 ---
@@ -37,4 +36,4 @@ ht-degree: 2%
 - ユースケース {#use-cases}
    - [Adobe Journey Optimizerを使用して、放棄された買い物かごにメールを送信](using-ajo.md)
    - [Commerce イベントデータを使用したReal-Time CDPでのオーディエンスの作成](create-audience.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
