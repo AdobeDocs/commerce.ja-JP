@@ -59,7 +59,7 @@ product 属性は、Commerce管理者から、またはカスタム PHP モジ�
 
 1. 必要に応じて、属性を属性セットに追加します。
 
-[2}Adobe Commerce管理ガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) 製品属性の作成 *を参照してください。*
+[2&rbrace;Adobe Commerce管理ガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) 製品属性の作成 *を参照してください。*
 
 #### プログラムによる製品属性の作成
 
