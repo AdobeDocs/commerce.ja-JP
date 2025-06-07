@@ -3,9 +3,10 @@ title: '[!DNL Catalog Service and API Mesh]'
 description: '[!DNL API Mesh] for Adobe Commerceを使用すると、共通のGraphQL エンドポイントを介して複数のデータソースを統合できます。'
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
+source-git-commit: ca0b2b2a158b9a376724b30c80a6bf9a60e3d1ba
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -16,26 +17,31 @@ Adobe Developer App Builderの [API メッシュ ](https://developer.adobe.com/g
 
 ![ カタログのアーキテクチャ図 ](assets/catalog-service-architecture-mesh.png)
 
-API メッシュとカタログサービスを使用するための最初の手順は、API メッシュをインスタンスに接続することです。 [ メッシュの作成 ](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) の詳細な手順を参照してください。
+カタログサービスで API メッシュを使用するには、API メッシュをインスタンスに接続し、カタログサービスに接続するための設定を提供する API メッシュソース [CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/) を追加する必要があります。
 
-設定を完了するには、[Adobe Developer CLI パッケージ ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) をインストールします。
+## API メッシュを接続して設定します。
 
-Adobe I/O Runtimeでメッシュを設定したら、次のコマンドを実行してメッシュに `CommerceCatalogServiceGraph` ソースを追加します。
+1. _API メッシュ開発者ガイド_ の [ メッシュを作成する ](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) 手順に従って、Adobe Commerce インスタンスに API メッシュを接続します。
 
-```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
-```
+   API メッシュを初めて使用する場合は、メッシュを作成する前に [ はじめに ](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) プロセスを完了してください。
 
-`variables.json` は、Adobe I/O Runtimeで一般的に使用される値を格納する個別のファイルです。
-例えば、API キーはファイル内に保存できます。
+1. 次の形式を使用して、プロジェクトの Catalog Service API キーを含む `variables.json` などの JSON ファイルを作成します。
 
-```json
-{
-    "CATALOG_SERVICE_API_KEY":"your_api_key"
-}
-```
+   ```json
+   {
+       "CATALOG_SERVICE_API_KEY":"your_api_key"
+   }
+   ```
 
-このコマンドを実行すると、API メッシュを介してカタログサービスが実行されます。 `aio api-mesh:get` コマンドを実行すると、更新されたメッシュの設定を表示できます。
+1. [Adobe I/O拡張可能 CLI](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli) を使用して、`CommerceCatalogServiceGraph` ソースをメッシュに追加します。
+
+   ```bash
+   aio api-mesh source install "CommerceCatalogServiceGraph" -f variables.json
+   ```
+
+   `-f variables.json` オプションは、設定の更新に必要な Catalog Service API キー値を提供します。
+
+このコマンドを実行すると、API メッシュを介してカタログサービスが実行されます。 `aio api-mesh get` コマンドを使用して、更新されたメッシュの設定を表示します。
 
 ## API メッシュの例
 
