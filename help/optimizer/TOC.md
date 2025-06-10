@@ -5,10 +5,10 @@ hide: true
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: 06fc665062703422a3f9afde03cb7ffcc873ef4a
 workflow-type: tm+mt
-source-wordcount: '38'
-ht-degree: 18%
+source-wordcount: '40'
+ht-degree: 20%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 18%
 
 - [概要](overview.md)
 - [はじめに](get-started.md)
+- [ユーザー管理](user-management.md)
 - [境界と制限](boundaries-limits.md)
 - マーチャンダイジング {#merchandising}
    - [概要](./merchandising/overview.md)
