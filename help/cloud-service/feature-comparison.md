@@ -55,7 +55,7 @@ Adobe Commerceには、次の 3 つのデプロイメントモデルがありま
             <td><a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/guide-overview">ページビルダー</a></td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL の書き換え</a></td>
+            <td><a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL の書き換え</a></td>
         </tr>
         <tr>
             <td><a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/staging/content-staging">コンテンツのステージング</a></td>
