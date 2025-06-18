@@ -146,7 +146,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce サービスコネクタ </strong> [!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="クラウドプロジェクトのAdobe Commerce（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスのプロジェクトにのみ適用されます。"}
+         <strong>Commerce サービスコネクタ </strong> [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="クラウドプロジェクトのAdobe Commerce（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスのプロジェクトにのみ適用されます。"}
          </a>
       </div>
       <p>
