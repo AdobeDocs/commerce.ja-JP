@@ -23,4 +23,4 @@ ht-degree: 12%
 - [ユースケース](use-cases.md)
 - [共有された責任](shared-responsibility.md)
 - [移行](migration.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
