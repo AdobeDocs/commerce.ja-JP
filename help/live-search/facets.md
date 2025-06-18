@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ファセットは、複数のディメンションの属性値を検索条件として使用する、高パフォーマンスのフィルタリング方法です。 ファセット検索も似ていますが、標準の [ レイヤー化されたナビゲーション ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html) よりも大幅に「スマート」です。 使用可能なフィルターのリストは、検索結果で返される製品の [ フィルタリング可能な属性 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) によって決まります。
 
-[!DNL Live Search] は `productSearch` クエリを使用して、[!DNL Live Search] に固有のファセットやその他のデータを返します。 コード例については ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 開発者向けドキュメントの [`productSearch` クエリを参照してください。
+[!DNL Live Search] は `productSearch` クエリを使用して、[!DNL Live Search] に固有のファセットやその他のデータを返します。 コード例については [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 開発者向けドキュメントの `productSearch` クエリを参照してください。
 
 ![ フィルタリングされた検索結果 ](assets/storefront-search-results-run.png)
 
