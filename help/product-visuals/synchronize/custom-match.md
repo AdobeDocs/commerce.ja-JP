@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # カスタムの自動照合
 
-デフォルトの自動一致戦略（**OOTB 自動一致**）が特定のビジネス要件に合っていない場合は、「カスタム一致」オプションを選択します。 このオプションでは、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションの開発 ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)0}Adobe Developer App Builder} の使用、または製品ビジュアルのメタデータをAEM Assetsに入力できないサードパーティシステムからのアセットの開発がサポートされます。[
+デフォルトの自動一致戦略（**OOTB 自動一致**）が特定のビジネス要件に合っていない場合は、「カスタム一致」オプションを選択します。 このオプションでは、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションの開発 [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)0&rbrace;Adobe Developer App Builder&rbrace; の使用、または製品ビジュアルのメタデータをAEM Assetsに入力できないサードパーティシステムからのアセットの開発がサポートされます。
 
 ## カスタムの自動照合を設定
 
@@ -144,4 +144,4 @@ GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to
 
 >[!TIP]
 >
-> `asset_roles` キーでは、`thumbnail`、`image`、`small_image`、`swatch_image` など ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) サポートされる [Commerce アセットの役割を使用します。
+> `asset_roles` キーでは、`thumbnail`、`image`、`small_image`、`swatch_image` など [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) サポートされる Commerce アセットの役割を使用します。

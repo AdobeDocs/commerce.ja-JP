@@ -16,7 +16,7 @@ CommerceをAEM Assets インスタンスに接続し、アセット同期の一�
 
 AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの間でアセットを同期するための一致ルールを選択します。
 
-* **[!UICONTROL Match by product SKU]** - アセットが正しい商品に関連付けられるようにするために、アセットメタデータの SKU を ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku)1}Commerce商品 SKU} と一致させるデフォルトのルール。[
+* **[!UICONTROL Match by product SKU]** - アセットが正しい商品に関連付けられるようにするために、アセットメタデータの SKU を [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku)1&rbrace;Commerce商品 SKU&rbrace; と一致させるデフォルトのルール。
 
 * **[!UICONTROL Custom match]** - カスタム・マッチング・ロジックを必要とするより複雑なシナリオや特定のビジネス要件の照合ルール。 カスタムマッチングを実装するには、アセットと商品のマッチング方法を定義するカスタムコードをAdobe Developer App Builderで開発する必要があります。 詳細は近日公開予定です…
 
@@ -26,7 +26,7 @@ AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの
 
 * [AEM Assets パッケージのインストール](configure-aem.md)
 
-* [!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}[Adobe Commerce パッケージをインストール ](configure-commerce.md) して、拡張機能を追加し、その拡張機能を使用するために必要な資格情報と接続を生成します。
+* [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}[Adobe Commerce パッケージをインストール ](configure-commerce.md) して、拡張機能を追加し、その拡張機能を使用するために必要な資格情報と接続を生成します。
 
 * [Dynamic Media Open API を有効にする ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) トピックに記載されている手順に従います。 サポートチームには、次の情報を含めます。
 
@@ -57,7 +57,7 @@ AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの
 
    アセットセレクターについて詳しくは、「[ 手動によるアセットの選択 ](../synchronize/asset-selector-integration.md)」を参照してください。
 
-1. [!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"} Commerceとアセット照合サービスの間でリクエストを認証する [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) を選択します。
+1. [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"} Commerceとアセット照合サービスの間でリクエストを認証する [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) を選択します。
 
 1. **[!UICONTROL Integration enabled]** を `Yes` に設定して、CommerceがAEM Assetsからの受信アップデートを受け入れるようにします。
 
@@ -68,7 +68,7 @@ AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの
    * [ デフォルトの自動照合 ](../synchronize/default-match.md) の **[!UICONTROL Match by SKU]** を選択します。
    * [ カスタム自動照合 ](../synchronize/custom-match.md) の **[!UICONTROL Custom match]** を選択します（[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) が必要です）。
 
-1. Commerce製品 SKU に対して定義された ](configure-aem.md#configure-metadata)0}AEM Assets メタデータフィールド名を「**[!UICONTROL Match by product SKU attribute name]**」フィールドに追加します（デフォルトでは `commerce:skus`）。[
+1. Commerce製品 SKU に対して定義された [&#128279;](configure-aem.md#configure-metadata)0&rbrace;AEM Assets メタデータフィールド名を「**[!UICONTROL Match by product SKU attribute name]**」フィールドに追加します（デフォルトでは `commerce:skus`）。
 
 1. 「**[!UICONTROL Save Config]**」を選択すると、更新を適用し、アセットの同期を開始します。
 

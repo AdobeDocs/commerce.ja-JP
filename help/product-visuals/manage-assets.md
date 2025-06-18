@@ -43,7 +43,7 @@ AEM Assetsを活用した製品ビジュアルを使用して、次のメディ�
 
 ### AEM Assetsでの商品画像の管理
 
-商品関連の画像を管理するには、すべての変更を **0}AEM Assets} で直接行う必要があります。**&#x200B;このプロセスは完全に自動化されており、手動の操作を必要とせずに、変更内容がAdobe Commerceに確実に同期されます。
+商品関連の画像を管理するには、すべての変更を **0&rbrace;AEM Assets&rbrace; で直接行う必要があります。**&#x200B;このプロセスは完全に自動化されており、手動の操作を必要とせずに、変更内容がAdobe Commerceに確実に同期されます。
 
 ### 同期 SLA
 
@@ -57,7 +57,7 @@ Adobe Commerceは、Adobe Experience Manager（CMS）ツールセットを使用
 
 画像の埋め込みに **AEM アセットセレクター** を使用するには：
 
-1. **ページビルダー** を使用して、`content enrichment` をサポートする **0}Adobe Commerce管理者 } の任意のセクションに移動します。**
+1. **ページビルダー** を使用して、`content enrichment` をサポートする **0&rbrace;Adobe Commerce管理者 &rbrace; の任意のセクションに移動します。**
 
 1. [ ページビルダー ](https://developer.adobe.com/commerce/frontend-core/page-builder/){target=_blank} を開きます。
 
@@ -145,7 +145,7 @@ Adobe Commerceを使用すると、マーチャントは画像を商品カテゴ
 
 1. 「**[!UICONTROL Save]**」をクリックして続行します。
 
-   カテゴリの作成について詳しくは、{2[Commerce Catalog Management Guide の ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) カテゴリのコンテンツの入力 **を参照してください。**
+   カテゴリの作成について詳しくは、&lbrace;2[Commerce Catalog Management Guide の ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) カテゴリのコンテンツの入力 **を参照してください。**
 
 ## アセットの更新
 

@@ -64,7 +64,7 @@ CommerceとExperience Manager Assetsの統合を有効にするには、次の 3
 
 1. [Commerce メタデータをサポートするようにAEM Assets プロジェクトを設定します ](get-started/configure-aem.md)。
 
-1. [!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}Adobe Commerce パッケージ [ インストール ](get-started/configure-commerce.md)。
+1. [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}Adobe Commerce パッケージ [ インストール ](get-started/configure-commerce.md)。
 
 1. [ 統合を設定します ](get-started/setup-synchronization.md)。
 

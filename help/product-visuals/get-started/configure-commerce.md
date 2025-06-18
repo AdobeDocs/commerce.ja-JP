@@ -212,7 +212,7 @@ Commerce Admin からイベントフレームワークを有効にします。
 
 - `content`：実行する VCL コードのスニペット。クライアントの IP アドレスを確認します。 IP がEdgeの ACL に含まれている場合は、web サイト全体に対して `405 Not allowed` エラーが発生して IP のアクセスがブロックされます。 その他すべてのクライアント IP アドレスへのアクセスが許可されます。
 
-VCL スニペットを使用して受信リクエストをブロックする方法については、『クラウドインフラストラクチャー上の _Commerceガイド ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) の [Custom VCL for blocking requests_ を参照してください。
+VCL スニペットを使用して受信リクエストをブロックする方法については、『クラウドインフラストラクチャー上の _Commerceガイド [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) の Custom VCL for blocking requests_ を参照してください。
 
 >[!ENDSHADEBOX]
 
