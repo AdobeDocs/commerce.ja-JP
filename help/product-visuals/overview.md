@@ -30,7 +30,7 @@ Adobe Commerceと Product Visuals の統合は、アセット管理ワークフ�
 
 この統合を活用するには、企業が次の要件を満たす必要があります。
 
-* Adobe Commerce、Adobe Experience Manager Assets、[AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) のアクティブなライセンス。
+* Adobe Commerce、Adobe Experience Manager Assets、[AEM Dynamic Media](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) のアクティブなライセンス。
 
 * Adobe Commerce 2.4.5 以降
 
@@ -40,7 +40,7 @@ Adobe Commerceと Product Visuals の統合は、アセット管理ワークフ�
 
 * Adobe Experience Managerは [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/overview) でプロビジョニングされます
 
-* 統合を設定するAdobe Commerce ユーザーには、AEM Assets プロジェクトがプロビジョニングされている [IMS 組織 ](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) へのアクセス権が必要です。
+* 統合を設定するAdobe Commerce ユーザーには、AEM Assets プロジェクトがプロビジョニングされている [IMS 組織 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) へのアクセス権が必要です。
 
 >[!BEGINSHADEBOX]
 
@@ -70,4 +70,4 @@ CommerceとExperience Manager Assetsの統合を有効にするには、次の 3
 
 ## サポート
 
-情報が必要な場合や、このガイドで扱われていない質問がある場合は、AEM Assets Integration の営業担当または [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) を作成して、追加のヘルプを受けてください。
+情報が必要な場合や、このガイドで扱われていない質問がある場合は、AEM Assets Integration の営業担当または [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) を作成して、追加のヘルプを受けてください。

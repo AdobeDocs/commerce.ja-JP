@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> AEM アセットセレクターは、AEMをオーサリングアプリケーションと統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、&lbrace;2[AEM as a Cloud Service ユーザーガイド ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} マイクロフロントエンドアセットセレクター *を参照してください。*
+> AEM アセットセレクターは、AEMをオーサリングアプリケーションと統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、&lbrace;2[AEM as a Cloud Service ユーザーガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} マイクロフロントエンドアセットセレクター *を参照してください。*
 
 ## 主なメリット
 
