@@ -2,7 +2,8 @@
 title: '[!DNL Manage the Data Export extension]'
 description: 拡張機能をアップグレードする方法と  [!DNL Data Export]  不要なデータ書き出しサービスを削除または無効にする方法について説明します。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 94702995-d272-47b9-9560-198eee3250a6
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -20,7 +21,7 @@ Adobe Commerce サービス拡張機能のメタパッケージには、次の�
 
 インストールされているコマースデータ書き出しモジュールが必要ない場合は、`magento:module:disable` CLI コマンドを使用して無効にします。
 
-例えば、カテゴリ権限フィードデータを内部的に使用する [Categories API](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) があります。 この API を使用していない場合は、カテゴリ権限フィードのデータ書き出しを無効にできます。
+例えば、カテゴリ権限フィードデータを内部的に使用する [Categories API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) があります。 この API を使用していない場合は、カテゴリ権限フィードのデータ書き出しを無効にできます。
 
 ```shell script
 bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCategoryPermissions
@@ -38,4 +39,4 @@ bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCa
    composer require magento/module-saas-price:103.3.1 --with-all-dependencies
    ```
 
-Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 [2&rbrace;Cloud Infrastructure ガイドのAdobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) 拡張機能のアップグレード _を参照してください。_
+Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 [2}Cloud Infrastructure ガイドのAdobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) 拡張機能のアップグレード _を参照してください。_

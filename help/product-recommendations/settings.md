@@ -2,7 +2,7 @@
 title: 設定
 description: データのソースを変更する方法と  [!DNL Product Recommendations]  視覚的なレコメンデーションを有効にする方法を説明します。
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: c11e3fbc871600f413867e0c5c0b75ad705cf115
+source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Recommendations の [SaaS データ領域の設定 ](../landing/saas.md#saas-con
 
 >[!NOTE]
 >
->REST を通じて製品レコメンデーションを使用する場合、`alternateEnvironmentId` パラメーターを使用して他のデータセットを指定できます。 [GraphQL](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) 経由で製品レコメンデーションを使用する場合、このパラメーターは使用できません。
+>REST を通じて製品レコメンデーションを使用する場合、`alternateEnvironmentId` パラメーターを使用して他のデータセットを指定できます。 [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) 経由で製品レコメンデーションを使用する場合、このパラメーターは使用できません。
 
 ## Recommendations ソースを選択
 

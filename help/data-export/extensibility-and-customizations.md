@@ -3,7 +3,7 @@ title: SaaS データ書き出しフィードデータの拡張とカスタマ�
 description: フィードデータを拡張してカスタマイズする方法  [!DNL SaaS Data Export]  説明します。
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
-source-git-commit: ac6c690f87e3df2ac4997d80453028829be8e657
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Commerce Data Export] 拡張機能を使用すると、[!DNL Commerce] アプリケーションからCommerce サービス（Live Search、カタログサービス、Product Recommendations など）にデータを書き出すことができます。 必要に応じて、フィードデータを拡張およびカスタマイズして追加の属性データを含めたり、収集したデータを変更したりできます。
 
-属性データを追加した後、ストアフロントサービスのGraphQL スキーマの [ 属性 ](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type) フィールドからアクセスできます。
+属性データを追加した後、ストアフロントサービスのGraphQL スキーマの [ 属性 ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) フィールドからアクセスできます。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## Adobe Commerceへの製品属性の追加
 
-開発者は、次のいずれかの方法を使用して、[ 製品属性フィールド ](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#output-fields) からアクセスできる製品属性を追加できます。
+開発者は、次のいずれかの方法を使用して、[ 製品属性フィールド ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields) からアクセスできる製品属性を追加できます。
 
 - Adobe Commerce ストアフロントサービスに書き出した `products` フィードデータに含めるために、Commerceに属性を追加します。
 - プラグインを使用したフィード同期プロセス中に、属性を動的に追加します。
@@ -59,7 +59,7 @@ product 属性は、Commerce管理者から、またはカスタム PHP モジ�
 
 1. 必要に応じて、属性を属性セットに追加します。
 
-[2&rbrace;Adobe Commerce管理ガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) 製品属性の作成 *を参照してください。*
+[2}Adobe Commerce管理ガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) 製品属性の作成 *を参照してください。*
 
 #### プログラムによる製品属性の作成
 

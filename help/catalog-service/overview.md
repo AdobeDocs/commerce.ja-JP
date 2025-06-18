@@ -4,7 +4,7 @@ description: Adobe Commerceの [!DNL Catalog Service] を使用すると、Adobe
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Adobe Commerceには 2 つのGraphQL システムがあります。 コア Graph
 
 #### 製品ビュー属性
 
-シンプルな製品と複雑な製品にはどちらも、ストアフロントに表示できる顧客定義の属性があります。 これらの属性は [ProductViewAttributes](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type) として返されます。 Adobe Commerceでは、使用可能な属性は商品の作成時に定義されます。 属性は、Adobe Commerce バックエンドから、またはプログラムを使用して追加できます。 [SaaS データ書き出しフィードデータの拡張とカスタマイズ ](../data-export/extensibility-and-customizations.md) を参照してください。
+シンプルな製品と複雑な製品にはどちらも、ストアフロントに表示できる顧客定義の属性があります。 これらの属性は [ProductViewAttributes](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) として返されます。 Adobe Commerceでは、使用可能な属性は商品の作成時に定義されます。 属性は、Adobe Commerce バックエンドから、またはプログラムを使用して追加できます。 [SaaS データ書き出しフィードデータの拡張とカスタマイズ ](../data-export/extensibility-and-customizations.md) を参照してください。
 
 >[!TIP]
 >
@@ -85,6 +85,6 @@ Adobe Commerceには 2 つのGraphQL システムがあります。 コア Graph
 
 ## 実装
 
-[!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
 インストールプロセスには、[Commerce サービスコネクタ ](../landing/saas.md) の設定が必要です。 これが完了したら、次の手順として、システムインテグレーターがストアフロントコードを更新して、[!DNL Catalog Service] のクエリを組み込みます。 すべての [!DNL Catalog Service] クエリは、GraphQL ゲートウェイにルーティングされます。 URL はオンボーディングプロセス中に提供されます。
