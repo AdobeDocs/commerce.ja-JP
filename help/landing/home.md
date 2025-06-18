@@ -133,7 +133,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
          </a>
       </div>
       <p>
@@ -146,7 +146,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce サービスコネクタ </strong> [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="クラウドプロジェクトのAdobe Commerce（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスのプロジェクトにのみ適用されます。"}
+         <strong>Commerce サービスコネクタ </strong> [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="クラウドプロジェクトのAdobe Commerce（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスのプロジェクトにのみ適用されます。"}
          </a>
       </div>
       <p>
@@ -187,11 +187,11 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="データ同期の監視" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong> データ管理ダッシュボード </strong>
          </a>
       </div>
