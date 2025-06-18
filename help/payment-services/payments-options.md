@@ -3,9 +3,9 @@ title: 支払いオプション
 description: 支払いオプションを設定して、ストアの顧客が使用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 0d00ce6e5291b3753cb7e2ee9e8af262b2c8894f
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,10 @@ ht-degree: 0%
 ![ ミニ カートの [Apple支払い ] ボタン ](assets/applepay-button.png){width="500" zoomable="yes"}
 
 有効にすると、製品ページ、ミニカート、買い物かご、チェックアウトの各ビューに「[!DNL Apple Pay]」ボタンが表示されます。 [!DNL Apple Pay] は、ストア設定または拡張機能のホームで設定できます。
+
+>[!NOTE]
+>
+>  Apple Pay ドメイン認証証明書は、既に支払いサービスコードに含まれています。 パス `/.well-known/apple-developer-merchantid-domain-association` が 200 応答コードを返すことを確認します。 [2}Apple Pay Domain verification](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) 証明書について詳しくは、{PayPal 開発者向けのApple Pay との統合に関するドキュメント **を参照してください。**
 
 詳しくは、[ 設定 ](settings.md#apple-pay) を参照してください。
 
@@ -123,14 +127,14 @@ Pay Later オファーについては、[PayPal の Pay Later オファードキ
 
 1. ストアが [ 実稼動モード ](settings.md#enable-payment-services) であることを確認します。
 1. [ 設定で目的の PayPal 支払いボタンを設定 ](settings.md#payment-buttons) します。
-1. _[!UICONTROL Payment buttons]_&#x200B;のセクションの&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;のオプションを_ オフ _します。
+1. _[!UICONTROL Payment buttons]_のセクションの&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**のオプションを_ オフ _します。
 
 **既存のクレジット・カード・プロバイダを使用して支払を取得する _および_PayPal 支払いボタン** 手順は、次のとおりです。
 
 1. ストアが [ 実稼動モード ](settings.md#enable-payment-services) であることを確認します。
 1. [ 目的の PayPal 支払いボタンを設定します ](settings.md#payment-buttons)。
-1. _[!UICONTROL Payment buttons]_&#x200B;のセクションの&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;のオプションを_ オフ _します。
-1. _[!UICONTROL Credit card fields]_&#x200B;のセクションの&#x200B;**[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**&#x200B;のオプションを_ オフ _にし、[ 既存のクレジットカードプロバイダーアカウント ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=ja#payments) を使用します。
+1. _[!UICONTROL Payment buttons]_のセクションの&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**のオプションを_ オフ _します。
+1. _[!UICONTROL Credit card fields]_のセクションの&#x200B;**[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**のオプションを_ オフ _にし、[ 既存のクレジットカードプロバイダーアカウント ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments) を使用します。
 
 ## チェックアウトオプション
 
