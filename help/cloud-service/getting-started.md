@@ -3,8 +3,8 @@ title: 入門  [!DNL Adobe Commerce as a Cloud Service]
 description: ' [!DNL Adobe Commerce as a Cloud Service] の使用を開始する方法について説明します。'
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: 9c3f5d1d5e7fd57d2306502d654a854bc5c66c71
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -27,13 +27,13 @@ ht-degree: 0%
 
 >[!TAB  管理者とマーチャントワークフロー ]
 
-次の図は、管理者とマーチャントが [!DNL Adobe Commerce as a Cloud Service] インスタンスにアクセスして管理する方法の概要を示しています。 管理者ワークフローについて詳しくは、[Adobe Admin Console ガイド ](https://helpx.adobe.com/jp/enterprise/admin-guide.html) を参照してください。
+次の図は、管理者とマーチャントが [!DNL Adobe Commerce as a Cloud Service] インスタンスにアクセスして管理する方法の概要を示しています。 管理者ワークフローについて詳しくは、[Adobe Admin Console ガイド ](https://helpx.adobe.com/enterprise/admin-guide.html) を参照してください。
 
 商 ![[!DNL Adobe Commerce as a Cloud Service] フロー図 ](./assets/merchant-flow.svg){zoomable="yes"}
 
 >[!TAB  開発者ワークフロー ]
 
-次の図は、App Builderを使用して、開発者向けの統合を作成する方法の概要 [!DNL Adobe Commerce as a Cloud Service] 示しています。 詳しくは、[API ドキュメント ](https://developer.adobe.com/commerce/services/cloud/) を参照してください。
+次の図は、App Builderを使用して、開発者向けの統合を作成する方法の概要 [!DNL Adobe Commerce as a Cloud Service] 示しています。 詳しくは、[API ドキュメント ](https://developer.adobe.com/commerce/webapi/rest/) を参照してください。
 
 開発者 ![[!DNL Adobe Commerce as a Cloud Service] フロー図 ](./assets/developer-flow.svg){zoomable="yes"}
 
@@ -76,7 +76,7 @@ ht-degree: 0%
    >
    >サンドボックスインスタンスは、現在、北米リージョンに制限されています。
 
-1. _（オプション）_ テストや学習の目的でサンプルの商品データを含める場合は、{ テストデータ **ドロップダウンから[!UICONTROL **&#x200B; 2 &#x200B;**]Adobe ストア } を選択します。**
+1. _（オプション）_ テストや学習の目的でサンプルの商品データを含める場合は、{ テストデータ **]ドロップダウンから[!UICONTROL ** 2 **]Adobe ストア } を選択します。[!UICONTROL **
 
    このオプションはスキップできますが、その場合、ストアフロントに製品はありません。 ストアフロントの完全なエクスペリエンスを表示するには、[ カタログを読み込む ](#import-your-catalog) 必要があります。
 
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 カタログを [!DNL Adobe Commerce as a Cloud Service] に読み込む方法は 2 つあります。
 
-* [**Commerce管理者**](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/import/data-import) – 数回クリックするだけでカタログデータを読み込むことができる、使いやすいインターフェイスです。
+* [**Commerce管理者**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) – 数回クリックするだけでカタログデータを読み込むことができる、使いやすいインターフェイスです。
 * [**JSON API の読み込み**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - カタログデータをプログラムで読み込むことができる REST API。
 
 <!-- TODO
