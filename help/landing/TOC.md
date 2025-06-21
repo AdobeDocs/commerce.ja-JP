@@ -20,7 +20,7 @@ ht-degree: 35%
 - Commerce サービス {#commerce-services}
    - [[!DNL Commerce as a Cloud Service]](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview)
    - [[!DNL Commerce Optimizer]](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/overview)
-   - [[!DNL Product Visuals]](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/overview)
+   - [[!DNL Product Visuals]](https://experienceleague.adobe.com/ja/docs/commerce/product-visuals/overview)
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=ja)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html?lang=ja)
    - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html?lang=ja)
