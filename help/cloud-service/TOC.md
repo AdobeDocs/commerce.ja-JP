@@ -25,4 +25,4 @@ ht-degree: 13%
 - 移行 {#migration}
    - [概要](migration/overview.md)
    - [一括データ移行ツール](migration/bulk-data.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
