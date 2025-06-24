@@ -3,7 +3,7 @@ title: 基本を学ぶ
 description: ' [!DNL Adobe Commerce Optimizer] の使用を開始する方法について説明します。'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
 source-wordcount: '753'
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 管理者は、インスタンスの設定、ユーザー、グループおよび組織の使用権限の管理を担当します。
 
-- **[Adobe Admin Consoleへのアクセス ](https://helpx.adobe.com/enterprise/admin-guide.html)** - Adobeの使用権限を組織全体で管理します。 自分または組織の製品管理者またはシステム管理者が [!DNL Adobe Commerce Optimizer] 製品にユーザーを追加する方法については、[ ユーザー管理 ](./user-management.md) を参照してください。
+- **[Adobe Admin Consoleへのアクセス ](https://helpx.adobe.com/jp/enterprise/admin-guide.html)** - Adobeの使用権限を組織全体で管理します。 自分または組織の製品管理者またはシステム管理者が [!DNL Adobe Commerce Optimizer] 製品にユーザーを追加する方法については、[ ユーザー管理 ](./user-management.md) を参照してください。
 
 - **インスタンスを作成** - インスタンス [!DNL Adobe Commerce Optimizer]、クレジットベースのシステムを使用します。 複数のサンドボックスインスタンスと実稼動インスタンスを作成できます。各インスタンスには、対応する 1 つのクレジットが必要です。 最初に付与されるクレジットの量は、サブスクリプションによって異なります。 [学習を増やす](#create-an-instance)。
 

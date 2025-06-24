@@ -1,7 +1,7 @@
 ---
 title: シノニム・タイプ
 description: ' [!DNL Adobe Commerce Optimizer] の様々なタイプの同義語について説明します。'
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 source-git-commit: 3131cc27a25d1bf958071b973f1d4bf1a68be152
 workflow-type: tm+mt
 source-wordcount: '354'
@@ -35,4 +35,4 @@ ht-degree: 0%
 
 同義語を作成した後、検索動作が変わり、正確な語句 **キッチンテーブル** が検索されます。 これにより、完全に一致する語句を含んだ製品のみが表示されるので、結果の数が減少する可能性があります。
 
-以前と同様に用語を個別に検索する場合は、[ サポートチケットを作成 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) できます。 需要が十分な場合は、今後のリリース [!DNL Adobe Commerce Optimizer] この機能を製品に追加することを検討します。
+以前と同様に用語を個別に検索する場合は、[ サポートチケットを作成 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) できます。 需要が十分な場合は、今後のリリース [!DNL Adobe Commerce Optimizer] この機能を製品に追加することを検討します。

@@ -3,7 +3,7 @@ title: カタログビュー
 description: ' [!DNL Adobe Commerce Optimizer] でカタログビューを作成および管理する方法について説明します。'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 source-git-commit: 553490762ef10e43ccce1654acec59aeb83bb5f9
 workflow-type: tm+mt
 source-wordcount: '1896'
@@ -47,7 +47,7 @@ ht-degree: 0%
 - 製品、顧客、価格、配布など、ビジネスを反映した製品カタログを設計することで、カタログシンジケーションを活用して適切なコンテンツを配信します。
 - カタログデータをすばやく取り込んで更新し、プロモーションやキャンペーンのニーズに合わせて更新をストアフロントにすばやく配信します。
 - Edge Delivery Servicesを活用したすぐに使用できる超高速の UI コンポーネントで完璧な lighthouse スコアを達成し、シームレスな製品参照と推奨事項を実現します。
-- Adobeの拡張アーキテクチャ（[App Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)）を使用して最新の構成可能なアーキテクチャを採用し、Adobe [API メッシュ ](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh) を使用して製品データをインポートし、ヘッドレスなコマースストアフロントを強化します。
+- Adobeの拡張アーキテクチャ（[App Builder](https://experienceleague.adobe.com/ja/playlists/commerce-get-started-app-builder-development)）を使用して最新の構成可能なアーキテクチャを採用し、Adobe [API メッシュ ](https://experienceleague.adobe.com/ja/playlists/commerce-get-started-app-builder-and-api-mesh) を使用して製品データをインポートし、ヘッドレスなコマースストアフロントを強化します。
 
 >[!INFO]
 >
