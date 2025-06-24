@@ -3,8 +3,8 @@ title: ユースケース
 description: ' [!DNL Adobe Commerce as a Cloud Service] を使用して実用的なユースケースとサポートされるビジネスシナリオを達成する方法を説明します。'
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: b00d9aee734af22dfb8e31110c405239b7c04ee5
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: a06d64566fda76c0527aabfa9e8fdf27e7c149ca
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 0%
@@ -12,8 +12,6 @@ ht-degree: 0%
 ---
 
 # ユースケース
-
-{{accs-early-access}}
 
 次のユースケースは、[!DNL Adobe Commerce as a Cloud Service] がサポートするコア機能とビジネスシナリオを示しています。これにより、開発を加速し、効果の高いエクスペリエンスを開始できます。
 
@@ -200,7 +198,7 @@ AEM Assets、Adobe Express、Fireflyを使用すると、シンプルな自己�
 
 #### Commerce AEM Assetsへの画像の追加
 
-1. AEM as a Cloud Serviceの [ ナビゲーションパネル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) から、**Assets** / **ファイル** / **Commerce** を選択し、前の節で作成したアセットをクリックします。
+1. AEM as a Cloud Serviceの [ ナビゲーションパネル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) から、**Assets** / **ファイル** / **Commerce** を選択し、前の節で作成したアセットをクリックします。
 
    ![commerce フォルダー ](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -250,7 +248,7 @@ Adobe Commerceのバリエーションを生成では、ジェネレーティブ
 
 ### テキストを生成
 
-1. [ ユニバーサルエディター ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) を使用してストアフロントサイトを開きます。
+1. [ ユニバーサルエディター ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) を使用してストアフロントサイトを開きます。
 
 1. 編集するテキストのブロックを選択します。
 
@@ -264,7 +262,7 @@ Adobe Commerceのバリエーションを生成では、ジェネレーティブ
 
 ### コンテンツと画像の生成
 
-1. [ バリエーションを生成 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) を開きます。
+1. [ バリエーションを生成 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) を開きます。
 
 1. [!UICONTROL **ヒーローバナー**] テンプレートを選択します。
 
