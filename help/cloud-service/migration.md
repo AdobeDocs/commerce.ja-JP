@@ -21,8 +21,8 @@ ht-degree: 0%
 
 **主な違い**
 
-* [!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**PaaS （最新）**：マーチャントは、Adobeがホストする環境内でアプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。 サービス（MySQL、Elasticsearchなど）の [ 共有責任モデル ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)。
-* [!BADGE SaaS のみ ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}**SaaS （新規 – [!DNL Adobe Commerce as a Cloud Service]）**: Adobeは、コアアプリケーション、インフラストラクチャ、およびアップデートを完全に管理します。 マーチャントは、拡張ポイント（API、App Builder、UI SDK）を使用したカスタマイズに重点を置いています。 コアアプリケーションコードがロックされています。
+* [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**PaaS （最新）**：マーチャントは、Adobeがホストする環境内でアプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。 サービス（MySQL、Elasticsearchなど）の [ 共有責任モデル ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)。
+* [!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}**SaaS （新規 – [!DNL Adobe Commerce as a Cloud Service]）**: Adobeは、コアアプリケーション、インフラストラクチャ、およびアップデートを完全に管理します。 マーチャントは、拡張ポイント（API、App Builder、UI SDK）を使用したカスタマイズに重点を置いています。 コアアプリケーションコードがロックされています。
 
 **アーキテクチャの含意**
 
