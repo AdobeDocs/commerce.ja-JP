@@ -1,44 +1,68 @@
 ---
-title: Carvelo のユースケース
-description: チャネル  [!DNL Adobe Commerce Optimizer]  ポリシーを使用してカタログを管理する方法、およびカタログ設定に基づいてストアフロントを設定する方法について説明します。
-hide: true
+title: ストアフロントとカタログ管理者のエンドツーエンドの使用例
+description: カタログビュー  [!DNL Adobe Commerce Optimizer]  ポリシーを使用してカタログを管理する方法、およびカタログ設定に基づいてストアフロントを設定する方法について説明します。
 role: Admin, Developer
 feature: Personalization, Integration
-exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: 474426ef1f99eed8d2c1b5d736332aaa666872fa
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '2211'
 ht-degree: 0%
 
 ---
 
-# Carvelo のユースケース
+# ストアフロントとカタログ管理者のエンドツーエンドの使用例
 
->[!NOTE]
->
->このドキュメントでは、製品の早期アクセス開発について説明しており、一般提供を目的とした機能のすべてを反映しているわけではありません。
-
-次のユースケースは、[!DNL Adobe Commerce Optimizer] を使用して、単一の基本カタログを使用して小売操作に合わせてカタログを整理する方法を示しています。 また、Edge Delivery Servicesを使用したストアフロントの設定方法についても説明します。
+このユースケースは、複雑な運用設定を持つ Carvelo Automobile という架空の自動車コングロマリットに基づいています。 [!DNL Adobe Commerce Optimizer] を使用して、カスタマイズされたストアフロントのエクスペリエンスを提供しながら、複数のブランド、販売店、価格台帳をサポートするカタログを管理する方法を示します。
 
 ## 前提条件
 
-この使用例を実行する前に、[ ストアフロントの設定 ](../storefront.md) が完了していることを確認します。
+このユースケースは、ストアフロントを設定し、[!DNL Adobe Commerce Optimizer] を使用してカタログを管理する方法を学びたいと考える管理者および開発者を対象としています。 ここでは、[!DNL Adobe Commerce Optimizer] とその機能について基本的に理解していることを前提としています。
+
+**完了までの推定時間：** 45 ～ 60 分
+
+### 必要な設定
+
+このチュートリアルを開始する前に、次の前提条件を満たしていることを確認してください。
+
+- **Adobe Commerce Optimizer インスタンス**
+   - Cloud Managerのテストインスタンスへのアクセス
+   - 設定手順については、[ はじめに ](../get-started.md) を参照してください
+
+- **ユーザー権限**
+   - Adobe Admin Consoleへの管理者アクセス
+   - アカウント設定については、[User Management](../user-management.md) を参照してください
+   - アクセス権がない場合は、Adobe アカウント担当者に問い合わせるか、[ 早期アクセスプログラムフォーム ](https://experienceleague.adobe.com/go/aco-early-access-program) に記入してください
+
+- **サンプルデータ**
+   - インスタンスに読み込まれた Carvelo Automobile カタログデータ
+   - [ サンプルカタログデータ取得リポジトリ ](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) の手順に従います
+   - サンプルデータは、付属の `reset.js` スクリプトを使用して、完了後に削除できます
+
+- **ストアフロント環境**
+   - Node.js のローカル開発環境
+   - 複製および設定済みのストアフロントボイラープレートプロジェクト
+   - 手順について詳しくは、[ ストアフロントの設定 ](../storefront.md) を参照してください
 
 ## それでは、始めましょう
 
 このユースケースでは、以下を使用して作業を行います。
 
-1. [!DNL Adobe Commerce Optimizer] UI – 複雑なカタログ運用のセットアップを管理するために必要なチャネルとポリシーを設定します。
+1. [!DNL Adobe Commerce Optimizer] UI - カタログビューとポリシーを設定して、Carvelo ユースケースの複雑なカタログ運用設定を管理します。
 
-1. Commerce Storefront - UI 内に設定されたカタログデータとCommerce Storefront 設定ファイル（`fstab.yaml` および `config.json`） [!DNL Adobe Commerce Optimizer] 使用してストアフロントをレンダリングします。
+1. Commerce Storefront - [!DNL Adobe Commerce Optimizer] インスタンスに読み込まれたサンプルカタログデータと、Commerce Storefront 設定ファイル（`fstab.yaml`、`config.json`）を使用してストアフロントをレンダリングします。
+
+>[!NOTE]
+>
+> Adobe Commerce Storefront ドキュメントの [ ボイラープレートの探索 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) トピックを確認して、ストアフロントの設定ファイルについて学びます。
 
 ### ‌重要ポイント
 
 この記事を終了すると、次のことができるようになります。
 
-- 独自のパフォーマンスと拡張性の高いカタログデータモデルを使用した、[!DNL Adobe Commerce Optimizer] の基本を説明します。
-- カタログデータモデルが、Adobeで作成された、プラットフォームに依存しないストアフロントコンポーネントとシームレスに結び付く仕組みを説明します。
-- Adobe Commerce Optimizer チャネルとポリシーを使用して、カスタムカタログビューとデータアクセスフィルターを作成し、Edge Deliveryを活用したAdobe Commerce ストアフロントにデータを送信する方法について説明します。
+- パフォーマンスと拡張性に優れたカタログデータモデルを使用して、[!DNL Adobe Commerce Optimizer] の基本を説明します。
+- カタログデータモデルが、Adobeで作成された、プラットフォームに依存しないストアフロントコンポーネントと統合される仕組みについて説明します。
+- Adobe Commerce Optimizerのカタログビューとポリシーを使用して、カスタムのカタログビューとデータアクセスフィルターを作成し、Edge Deliveryを活用してAdobe Commerce ストアフロントにデータを送信する方法について説明します。
 
 ## ビジネスシナリオ - Carvelo Automobile
 
@@ -74,7 +98,7 @@ Carvelo Automobile は、複雑な運用セットアップを備えた架空の�
 
 >[!BEGINSHADEBOX]
 
-Carvelo は、3 つのブランド（Aurora、Bolt、Cruz）のパーツを、様々な販売代理店（Akbridge、Kingsbluff、Celport）を通じて販売したいと考えています。 カーベロは、販売代理店がそれぞれのライセンス契約に従って正しい部品と価格にのみアクセスできるようにしたいと考えています。
+Carvelo は、3 つのブランド（Aurora、Bolt、Cruz）のパーツを、異なる販売代理店（Arkbridge、Kingsbluff、Celport）を通じて販売したいと考えています。 カーベロは、販売代理店がそれぞれのライセンス契約に従って正しい部品と価格にのみアクセスできるようにしたいと考えています。
 
 最終的に、Carvelo には 2 つの大きな目標があります。
 
@@ -83,11 +107,9 @@ Carvelo は、3 つのブランド（Aurora、Bolt、Cruz）のパーツを、�
 
 >[!ENDSHADEBOX]
 
-次に、[!DNL Adobe Commerce Optimizer] インスタンスにアクセスします。
+## &#x200B;1. [!DNL Adobe Commerce Optimizer] インスタンスにアクセスする
 
-## 1. [!DNL Adobe Commerce Optimizer] インスタンスにアクセスする
-
-早期アクセスプログラムにオンボードすると、Adobeからメールが送信され、プロビジョニングされた l[!DNL Adobe Commerce Optimizer] インスタンスにアクセスするための URL が記載されます。 このインスタンスには、Carvelo Automobile のユースケースをサポートするカタログデータなど、このチュートリアルで概要を説明する手順を正常に完了するために必要なすべての情報が事前に設定されています。
+サンプルデータで事前設定されているCommerce Optimizer アプリケーションの URL に移動します。 Commerce Optimizer プロジェクトのインスタンスの詳細からCommerce Cloud Manager で URL を見つけることも、システム管理者から URL を取得することもできます。 （[ インスタンスへのアクセス ](../get-started.md#access-an-instance) を参照。）
 
 [!DNL Adobe Commerce Optimizer] を起動すると、次の情報が表示されます。
 
@@ -95,17 +117,17 @@ Carvelo は、3 つのブランド（Aurora、Bolt、Cruz）のパーツを、�
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Optimizer] UI を構成する様々なパーツの詳細については、[ 概要 ](../overview.md) の記事を参照してください。
+>UI の主要コンポーネントについて詳しくは、[ 概要 ](../overview.md) の記事を参照 [!DNL Adobe Commerce Optimizer] てください。
 
-左側のナビゲーションで、「**[!UICONTROL Catalog]**」セクションを展開し、「**[!UICONTROL Channels]**」をクリックします。 Arkbridge および Kingsbluff の販売代理店では、既に次のチャネルが作成されています。
+左側のナビゲーションで、「_ストアの設定_」セクションを展開し、「**[!UICONTROL Catalog views]**」をクリックします。 Arkbridge および Kingsbluff の販売代理店では、すでにカタログ・ビューが作成されていることに注意してください。
 
-![ 事前設定済みのチャネル ](../assets/existing-channels-list.png)
+![ サンプルデータ用に設定された既存のカタログビュー ](../assets/existing-channels-list.png)
 
 >[!NOTE]
 >
->現時点では、**グローバル** チャネルは無視できます。
+>現時点では、**グローバル** カタログビューは無視できます。
 
-情報アイコンをクリックして、チャネルの詳細を確認します。
+情報アイコンをクリックして、カタログ表示の詳細を確認します。
 
 Arkbridge には次のポリシーがあります。
 
@@ -121,9 +143,9 @@ Kingsbluff には次のポリシーがあります。
 - East Coast Inc のブランド
 - キングスブラフ パーツ カテゴリ
 
-次のセクションでは、Celport 販売店のチャネルとポリシーを作成します。
+次のセクションでは、Celport ディーラーのカタログ・ビューとポリシーを作成します。
 
-## 2. ポリシーとチャネルを作成する
+## &#x200B;2. ポリシーとカタログ表示の作成
 
 カーヴェロの商務部長は、*イースト・コースト社* の会社に属する *セルポート* と呼ばれるディーラーの新しい店舗フロントを設置する必要がある。 Celport は、Bolt および Cruz ブランドのブレーキとサスペンションを販売します。
 
@@ -132,10 +154,10 @@ Kingsbluff には次のポリシーがあります。
 [!DNL Adobe Commerce Optimizer] を使用すると、コマースマネージャーは次のようになります。
 
 1. Celport がブレーキパーツとサスペンションパーツのみを販売するために、*Celport パートカテゴリ* と呼ばれる新しいポリシーを作成します。
-1. Celport ストアフロントの新しいチャネルを作成します。
+1. Celport ストアフロントの新しいカタログビューを作成します。
 
-   このチャネルでは、新しく作成したポリシー *Celport part categories* と既存の *East Coast Inc Brands* を使用して、Celport が East Coast Inc.との契約の一環として Bolt と Cruz のブランドのみを販売できるようにします。Celport チャネルは、`east_coast_inc` 価格台帳を使用して、ブランドライセンス契約に沿った製品価格スケジュールをサポートします。
-1. 作成した Celport チャネルのデータを使用するようにコマースストアフロント設定を更新します。
+   このカタログビューでは、新しく作成したポリシー *Celport part categories* と既存の *East Coast Inc Brands* を使用して、Celport が East Coast Inc.との契約の一環として Bolt と Cruz のブランドのみを販売できるようにします。Celport カタログビューでは、`east_coast_inc` 価格台帳を使用して、ブランドライセンス契約に沿った製品価格スケジュールをサポートします。
+1. 作成した Celport カタログ表示のデータを使用するように、コマースストアフロント設定を更新します。
 
 このセクションの最後では、Celport が起動し、Carvelo の製品を販売する準備が整います。
 
@@ -143,9 +165,9 @@ Kingsbluff には次のポリシーがあります。
 
 *Celport 部品カテゴリ* と呼ばれる新しいポリシーを作成して、Celport ディーラーが販売する SKU （ブレーキ部品とサスペンション部品を含む）をフィルタリングします。
 
-1. 左側のナビゲーションで、「**[!UICONTROL Catalog]**」セクションを展開し、「**[!UICONTROL Policies]**」をクリックします。
+1. 左側のレールで、「_ストアの設定_ セクションを展開し、「**[!UICONTROL Policies]**」をクリックします。
 
-1. 「**[!UICONTROL Add Policy]**」をクリックします。
+1. 「**[!UICONTROL Create Policy]**」をクリックします。
 
    新しいページが表示され、ポリシーの詳細が追加されます。
 
@@ -168,7 +190,7 @@ Kingsbluff には次のポリシーがあります。
    >
    >指定する属性名が、カタログ内の SKU 属性名と完全に一致していることを確認します。
 
-   STATIC 値ソースとトリガー値ソースの違いについて詳しくは、[ 値ソースのタイプ ](../catalog/policies.md#value-source-types) を参照してください。
+   STATIC 値ソースとトリガー値ソースの違いについて詳しくは、[ 値ソースのタイプ ](../setup/policies.md#value-source-types) を参照してください。
 
 1. **[!UICONTROL Filter details]** ダイアログで、「**[!UICONTROL Save]**」をクリックします。
 
@@ -184,49 +206,59 @@ Kingsbluff には次のポリシーがあります。
 
    新しい *Celport パーツ カテゴリ* ポリシーがリストに表示されます。
 
-### チャネルの作成
+**この手順が正しく完了したことを確認するには：**
 
-*Celport* ディーラーの新しいチャネルを作成し、*East Coast Inc brands* と *Celport Part Categories* のポリシーをリンクします。
+- ポリシーリストにポリシーが表示されます
+- ポリシーのステータスが有効と表示されます（緑色のインジケーター）
+- フィルタの詳細に「part_category IN （ブレーキ、サスペンション）」と表示される
+- ポリシー名は「Celport Part Categories」
 
-1. 左側のナビゲーションで、「**[!UICONTROL Catalog]**」セクションを展開し、「**[!UICONTROL Channels]**」をクリックします。
+### カタログビューの作成
 
-   ![ チャネル ](../assets/channels.png)
+*Celport* ディーラーの新しいカタログビューを作成し、*East Coast Inc ブランド* と *Celport Part Categories* のポリシーをリンクします。
 
-   既存のチャネル（*Arkbridge*、*Kingsbluff* および *Global*）に注意してください。
+1. 左側のレールで、「_ストアの設定_ セクションを展開し、「**[!UICONTROL Catalog views]** 定」をクリックします。
 
-   ![ 既存のチャネルページ ](../assets/existing-channels-list.png)
+   既存のカタログビュー *Arkbridge*、*Kingsbluff* および *Global* に注目してください。
 
-1. 「**[!UICONTROL Add Channel]**」をクリックします。
+   ![ 既存のカタログビューページ ](../assets/existing-channels-list.png)
 
-1. チャネルの詳細を入力します。
+1. 「**[!UICONTROL Add catalog view]**」をクリックします。
+
+1. カタログ表示の詳細を入力します。
 
    - **名前** = *Celport*
-   - **Scopes** = *en-US* （enter キーを押す）
+   - **カタログソース** = *en-US* （Enter キーを押す）
    - **ポリシー** （ドロップダウンを使用） = *East Coast Inc Brands*; *Celport 部品カテゴリ*; *ブランド*; *モデル*                          
+1. 「**[!UICONTROL Add]**」をクリックして、カタログビューを作成します。
 
-1. 「**[!UICONTROL Add]**」をクリックして、チャネルを作成します。
+   「カタログビュー」ページが更新され、新しいカタログビューが表示されます。
 
-   チャネル ページが更新され、新しいチャネルが表示されます。
-
-   ![ 更新されたチャネルリスト ](../assets/updated-channels-list.png)
+   ![ 更新されたカタログビューリスト ](../assets/updated-catalog-view-list.png)
 
    >[!NOTE]
    >
-   >**[!UICONTROL Add]** ボタンが青でない場合は、カーソルを **[!UICONTROL Scopes]** のセクションに置いて **enter** キーを押して、スコープが選択されていることを確認します。
+   >**[!UICONTROL Add]** のボタンが青でない場合は、カーソルを **[!UICONTROL Catalog sources]** のセクションに置いて **enter** キーを押し、カタログ ソースが選択されていることを確認します。
 
-1. Celport チャネル ID を取得します。
+1. Celport カタログビュー ID を取得します。
 
-   **チャネル** ページの Celport チャネルの情報アイコンをクリックします。
+   **カタログビュー** ページで、Celport カタログビューの情報アイコンをクリックします。
 
-   ![Celport チャネル ID](../assets/celport-channel-id.png)
+   ![Celport カタログ ビュー ID](../assets/celport-channel-id.png)
 
-   チャネル ID をコピーして保存します。 この ID は、新しい Celport カタログにデータを配信するようにストアフロント設定を更新する際に必要になります。
+   カタログビュー ID をコピーして保存します。 この ID は、新しい Celport カタログにデータを配信するようにストアフロント設定を更新する際に必要になります。
 
-Celport チャネルと関連ポリシーを作成したら、次の手順は、新しい Celport カタログを作成するようにストアフロントを設定することです。
+   **この手順が正しく完了したことを確認するには：**
+   - カタログ ビュー名は&quot;Celport&quot;です
+   - カタログ表示には、4 つの関連ポリシーが表示されます
+   - カタログビュー ID が表示され、コピーできます
+   - カタログソースが「en-US」と表示される
 
-## 3. ストアフロントを更新する
+Celport カタログビューおよび関連するポリシーを作成したら、次の手順では、新しい Celport カタログを使用するようにストアフロントを設定します。
 
-このチュートリアルの最後の部分では、新しい Celport カタログにデータを配信するために [ 作成済み ](#prerequisite) ストアフロントを更新します。 この節では、ストアフロント設定ファイルのチャネル ID を Celport のチャネル ID に置き換えます。
+## &#x200B;3. ストアフロントを更新する
+
+このチュートリアルの最後の部分では、新しい Celport カタログにデータを配信するために [ 作成済み ](#prerequisite) ストアフロントを更新します。 このセクションでは、ストアフロント設定ファイルのカタログビュー ID を Celport のカタログビュー ID に置き換えます。
 
 1. ローカル開発環境で、ストアフロントボイラープレートの設定ファイルを使用して GitHub リポジトリのクローンを作成したフォルダーを開きます。
 
@@ -242,10 +274,9 @@ Celport チャネルと関連ポリシーを作成したら、次の手順は、
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
       "headers": {
          "cs": {
-            "ac-channel-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
-            "ac-environment-id": "Fwus6kdpvYCmeEdcCX7PZg",
+            "ac-catalog-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
             "ac-price-book-id": "west_coast_inc",
-            "ac-scope-locale": "en-US"
+            "ac-source-locale": "en-US"
            }
          },
          "analytics": {
@@ -264,25 +295,63 @@ Celport チャネルと関連ポリシーを作成したら、次の手順は、
    }
    ```
 
-   チャネルヘッダーには、次の行が含まれています。
+   カタログビューヘッダーには次の値が含まれています。
 
-   - `ac-channel-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
-   - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
+   - `commerce-endpoint`: `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
+   - `ac-catalog-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
    - `ac-price-book-id`: `"west_coast_inc"`
+   - `ac-source-locale`: `"en-US"`
 
-   +++
+1. `commerce-endpoint` の値で、URL のテナント ID を [!DNL Adobe Commerce Optimizer] インスタンスの URL に置き換えます。
 
-1. `ac-channel-id` の値を、以前にコピーした Celport チャネル ID に置き換えます。
-1. `ac-environment-id` の値を [!DNL Adobe Commerce Optimizer] インスタンスのテナント ID に置き換えます。 ID は、早期アクセスプログラムのオンボーディングメールで確認するか、Adobe アカウント担当者にお問い合わせください。
+   テナント ID は、Commerce Optimizer UI の URL 内にあります。 例えば、次の URL では、テナント ID は `XDevkG9W6UbwgQmPn995r3` です。
 
-   >[!IMPORTANT]
-   >
-   >`commerce-endpoint` の値が、[!DNL Adobe Commerce Optimizer] インスタンスのGraphQL エンドポイントと一致することを確認します。 これは、「ようこそ」のメールに記載されています。
+   ```text
+   https://experience.adobe.com/#/@commerceprojectbeacon/in:XDevkG9W6UbwgQmPn995r3/commerce-optimizer-studio/catalog
+   ```
+
+1. `ac-catalog-view-id` の値を、以前にコピーした Celport カタログビュー ID に置き換えます。
 
 1. `ac-price-book-id` の値を `"east_coast_inc"` に置き換えます。
+
+   これらの変更を行うと、`config.json` ファイルは次のようになり、`ACO-tenant-id` と `celport-catalog-view-id` のプレースホルダーが値に置き換えられます。
+
+   ```json
+   {
+     "public": {
+        "default": {
+        "commerce-core-endpoint": "https://www.aemshop.net/graphql",
+        "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{ACO-tenant-id}}/graphql",
+        "headers": {
+            "cs": {
+                "ac-catalog-view-id": "{{celport-catalog-view-id}}",
+                "ac-price-book-id": "east_coast_inc",
+                "ac-source-locale": "en-US"
+              }
+            },
+            "analytics": {
+                "base-currency-code": "USD",
+                "environment": "Production",
+                "store-id": 1,
+                "store-name": "ACO Demo",
+                "store-url": "https://www.aemshop.net",
+                "store-view-id": 1,
+                "store-view-name": "Default Store View",
+                "website-id": 1,
+                "website-name": "Main Website"
+             }
+         }
+     }
+   }
+   ```
+
 1. ファイルを保存します。
 
-変更を保存すると、ブレーキとサスペンション パーツのみを販売するように設定された Carvelo チャネルを使用するようにカタログ設定が更新されます。
+   変更を保存すると、ブレーキとサスペンション パーツのみを販売するように設定されている Carvelo カタログ ビューを使用するように、カタログ設定が更新されます。
+
+## &#x200B;4. ストアフロントのプレビュー
+
+Celport カタログ表示を使用するようにストアフロント設定を更新したので、ストアフロントをプレビューして、カタログデータのレンダリング方法を確認できます。
 
 1. ストアフロントを起動して、ストアフロントの設定で作成した Celport 固有のカタログエクスペリエンスを表示します。
 
@@ -292,29 +361,29 @@ Celport チャネルと関連ポリシーを作成したら、次の手順は、
       npm start
       ```
 
-   ブラウザーが開き、`http://localhost:3000` にローカル開発のプレビューが表示されます。
+      ブラウザーが開き、`http://localhost:3000` にローカル開発のプレビューが表示されます。
 
-   コマンドの実行に失敗した場合や、ブラウザが開かない場合は、「Storefront のセットアップ」の [ローカル開発手順 ](../storefront.md) を参照してください。
+      コマンドの実行に失敗した場合や、ブラウザが開かない場合は、「Storefront のセットアップ」の [ローカル開発手順 ](../storefront.md) を参照してください。
 
-   1. ブラウザーで `brakes` を検索し、**Enter** キーを押します。
+1. ブラウザーで `brakes` を検索し、**Enter** キーを押します。
 
-      ストアフロントが更新され、ブレーキパーツを示す製品リストページが表示されます。
+   ストアフロントが更新され、ブレーキパーツを示す製品リストページが表示されます。
 
    ![ ブレーキ製品一覧ページ ](../assets/brakes-listing-page.png)
 
    ブレーキ部品の画像をクリックすると、製品詳細と価格情報が表示され、製品価格情報がメモされます。
 
-1. 次に、`tires` を検索します。これは、[!DNL Adobe Commerce Optimizer] インスタンス上のユースケースデータで使用できるもう 1 つのパーツカテゴリです。
+1. `tires` を検索します。これは、[!DNL Adobe Commerce Optimizer] インスタンス上のユースケースデータで使用できるもう 1 つのパーツカテゴリです。
 
    ![ ストアフロント設定のヘッダーが正しくない ](../assets/storefront-configuration-with-incorrect-headers.png)
 
-   結果が返されないことに注意してください。 これは、Celport チャンネルがブレーキとサスペンションの部品のみを販売するように構成されているためです。
+   結果が返されないことに注意してください。 これは、Celport カタログ ビューが、ブレーキとサスペンションのパーツのみを販売するように設定されているためです。
 
 1. ストアフロント設定ファイル（`config.json`）を試して更新します。
 
-   1. `ac-channel-id` と `ac-price-book` の値を変更します。
+   1. `ac-catalog-view-id` と `ac-price-book` の値を変更します。
 
-      例えば、チャネル ID を Kingsbluff チャネルに、価格台帳 ID を `east_coast_inc` に変更できます。 「キングスブラフ」パーツ カテゴリのポリシーを確認すると、キングスブラフで使用できるパーツ カテゴリを確認 *きます*
+   例えば、カタログビュー ID を Kingsbluff カタログビューに変更し、価格台帳 ID を `east_coast_inc` に変更できます。 「キングスブラフ」パーツ カテゴリのポリシーを確認すると、キングスブラフで使用できるパーツ カテゴリを確認 *きます*
 
    1. ファイルを保存します。
 
@@ -322,14 +391,67 @@ Celport チャネルと関連ポリシーを作成したら、次の手順は、
 
    1. 検索機能を使用してタイヤ部品を検索することで、ブラウザで変更内容をプレビューします。
 
-      使用可能なパーツ タイプが異なることに注目してください。また、Kingsbluff チャンネルに割り当てられている価格にも注目してください。
+      使用可能なパーツ タイプが異なることに注目してください。また、Kingsbluff カタログ ビューに割り当てられている価格にも注目してください。
 
-      ストアフロント設定ファイルのヘッダー値を変更し、更新されたストアフロントを確認すると、カタログ表示とデータフィルターを更新してストアフロントのエクスペリエンスを簡単にカスタマイズできることが分かります。
+   これらの実験は、Adobe Commerce Optimizerの柔軟性を示しています。異なるカタログビューと価格台帳をすばやく切り替えて、カタログデータを複製することなく、異なるオーディエンス向けにカスタマイズされたショッピングエクスペリエンスを作成できます。
 
-## それだ！
+## トラブルシューティング
 
-このチュートリアルでは、単一の基本カタログを使用 [!DNL Adobe Commerce Optimizer] て、小売業務に合わせてカタログを整理する方法を学習しました。 また、Edge Delivery Servicesを活用してストアフロントを設定する方法についても説明しました。
+このチュートリアルで問題が発生した場合は、次の解決策を試してください。
 
-## 今後の展開
+### ポリシー作成の問題
 
-製品検出と Recommendations を使用して顧客向けにショッピングエクスペリエンスをパーソナライズする方法については、[ マーチャンダイジングの概要 ](../merchandising/overview.md) を参照してください。
+**問題：** 「保存」ボタンがアクティブにならない
+
+- **解決策：** ポリシー名が入力され、すべての必須フィールドに入力されていることを確認します
+
+**問題：** フィルターが期待どおりに動作しません
+
+- **解決策：** 属性名がカタログの SKU 属性と完全に一致することを確認します
+
+### カタログ表示の問題
+
+**問題：** カタログビューがリストに表示されない
+
+- **解決策：** 関連するすべてのポリシーが有効であり、適切に設定されていることを確認します
+
+**問題：** 「追加」ボタンが青くない
+
+- **解決策：** フィールドにカーソルを置いて Enter キーを押し、カタログソースが選択されていることを確認します
+
+### ストアフロントの設定の問題
+
+**問題：** ストアフロントが読み込まれない
+
+- **解決策：** テナント ID とカタログビュー ID が config.json ファイルに正しく入力されていることを確認します
+
+**問題：** 製品が表示されない
+
+- **解決策：** 価格台帳 ID がAdobe Commerce Optimizer インスタンスで使用可能な ID と一致していることを確認します
+
+**問題：** 検索で結果が返されない
+
+- **解決策：** カタログ表示ポリシーで、検索した製品カテゴリが許可されていることを確認します
+
+その他のヘルプについては、[Adobe Commerce Optimizer ドキュメントを参照するか ](../overview.md)Adobe サポートにお問い合わせください。
+
+## 概要
+
+このチュートリアルでは、次の操作を実行しました。
+
+- Celport 販売代理店向けに製品カテゴリをフィルタリングする新しいポリシーを作成しました
+- 製品の表示を制御する複数のポリシーを持つカタログビューの設定
+- 新しいカタログ表示を使用するようにストアフロントを設定しました
+- 製品の表示と価格をテストして構成を確認
+
+## 次の手順
+
+Adobe Commerce Optimizerについて引き続き学習するには：
+
+- [ マーチャンダイジング機能 ](../merchandising/overview.md) を探索して、ショッピングエクスペリエンスをパーソナライズします
+- [ 詳細なポリシー設定 ](../setup/policies.md) について
+- 他の販売特約店に対する [ 追加のカタログ表示 ](../setup/catalog-view.md) の設定
+- プログラムによるカタログ管理については、[API ドキュメント ](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) を参照してください
+- Edge Delivery Services ストアフロントのドロップインコンポーネントを設定して、製品検出、レコメンデーション、その他のストアフロント機能のためのカスタムストアフロントエクスペリエンスを作成する方法について説明します。 [ ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) を参照してください。
+
+

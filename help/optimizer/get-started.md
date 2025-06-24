@@ -1,75 +1,123 @@
 ---
-title: ' [!DNL Adobe Commerce Optimizer] の基本を学ぶ'
+title: 基本を学ぶ
 description: ' [!DNL Adobe Commerce Optimizer] の使用を開始する方法について説明します。'
-hide: true
+role: Admin, Developer
 recommendations: noCatalog
-exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 9c3f5d1d5e7fd57d2306502d654a854bc5c66c71
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
 
 # はじめに
 
->[!NOTE]
->
->このドキュメントでは、製品の早期アクセス開発について説明しており、一般提供を目的とした機能のすべてを反映しているわけではありません。
+この記事では、[!DNL Adobe Commerce Optimizer] の最新情報を取得する方法について説明します。 このガイドではマーチャンダイザーと管理者の役割に重点を置いていますが、開発者が実行する簡単な大まかなタスクも含まれています。 開発者固有のコンテンツについて詳しくは、[ 開発者ドキュメント ](https://developer-stage.adobe.com/commerce/services/composable-catalog/) を参照してください。
 
-このガイドでは、[!DNL Adobe Commerce Optimizer] インスタンスの作成と操作について説明します。
+## あなたの役割は何ですか。
 
-<!--Click the tabs below to see high-level workflow overviews for the following user types:
+[!DNL Adobe Commerce Optimizer] の正常な設定には、通常、次のチームメンバーが関与します。
 
-- Administrators
-- Merchants
-- Developers
+- 管理者
+- 開発者
+- マーチャンダイザー
 
->[!BEGINTABS]
+各チームメンバーには、次の表に示すように、独自の役割と責務があります。
 
->[!TAB Administrator and merchant workflow]
+| 役割 | タスク |
+|---|---|
+| 管理者 | Admin Consoleを使用して、管理者、ユーザーグループ、ユーザーおよび開発者を作成し&#x200B;ます。 |
+|  | Commerce Cloud Manager で新しい [!DNL Adobe Commerce Optimizer] インスタンスを作成し&#x200B;す。 |
+|  | ポリシーとカタログ表示を設定します。 |
+| 開発者 | Developer Consoleを使用してプロジェクトを作成し、デベロッパー API アクセスを許可し、必要なアプリケーションとカスタマイズをインストールします。 |
+|  | API Mesh とApp Builderを使用して、バックオフィスシステム（買い物かご、チェックアウト）に&#x200B;接続します。 |
+|  | マーチャンダイジングサービスデータ取り込み API を使用して、既存のコマースソリューションからカタログデータを取り込む&#x200B; |
+|  | ストアフロントの設定 |
+| マーチャンダイザー | 製品の検出を設定&#x200B;します。 |
+|  | 製品レコメンデーションを設定します。 |
 
-This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/jp/enterprise/admin-guide.html) for more information about administrator workflows.
+各役割は、[!DNL Adobe Commerce Optimizer] 環境のオンボーディングと立ち上げの成功に不可欠な役割を果たします。 次の図は、組織の各役割の開始から終了までの高レベルのワークフローを示しています。
 
-NEED DIAGRAM
+![ ワークフローの概要 ](./assets/high-level-workflow.png){zoomable="yes"}
 
->[!TAB Developer workflow]
+### 管理者
 
-This diagram provides a high-level overview of how developers create integrations for [!DNL Adobe Commerce Optimizer] using App Builder. See the [API documentation](https://developer.adobe.com/commerce/webapi/rest/) for more information.
+管理者は、インスタンスの設定、ユーザー、グループおよび組織の使用権限の管理を担当します。
 
-NEED DIAGRAM
+- **[Adobe Admin Consoleへのアクセス ](https://helpx.adobe.com/enterprise/admin-guide.html)** - Adobeの使用権限を組織全体で管理します。 自分または組織の製品管理者またはシステム管理者が [!DNL Adobe Commerce Optimizer] 製品にユーザーを追加する方法については、[ ユーザー管理 ](./user-management.md) を参照してください。
 
->[!ENDTABS]
--->
+- **インスタンスを作成** - インスタンス [!DNL Adobe Commerce Optimizer]、クレジットベースのシステムを使用します。 複数のサンドボックスインスタンスと実稼動インスタンスを作成できます。各インスタンスには、対応する 1 つのクレジットが必要です。 最初に付与されるクレジットの量は、サブスクリプションによって異なります。 [学習を増やす](#create-an-instance)。
 
-## プロビジョニング
+- **インスタンスへのアクセス** - インスタンスを作成したら、[!UICONTROL Commerce Cloud Manager] からアクセスできます。 [学習を増やす](#access-an-instance)。
 
-[!DNL Adobe Commerce Optimizer] インスタンスの準備が整うと、[!DNL Adobe Commerce Optimizer] プロビジョニングチームは次のエンドポイントを提供します。
+- **カタログビューとポリシーの設定** - [ カタログビューとポリシーを定義 ](./setup/catalog-view.md) する方法について説明します。 カタログには製品データが含まれているだけでなく、ビジネス構造を定義するのにも役立ちます。
 
-| 項目 | サンプル URL | 目的 |
-|---|---|---|
-| [!DNL Adobe Commerce Optimizer] UI | `https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>` | Commerce Optimizer UI にアクセスして、<br>1 の間でカタログを管理します。 マーチャンダイジングルール （製品検出、製品レコメンデーション）。<br>2。 カタログ管理（チャネルとポリシーの作成）。<br>3。 データインサイト （カタログデータ取り込みステータスを表示）。 |
-| ストアフロント API | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql` | Edge Delivery Servicesを活用したCommerce ストアフロントの設定に必要な API にアクセスします。 |
-| カタログデータ取得 API | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>` | カタログデータの取り込みに必要な API にアクセスします。 |
+### 開発者
 
->[!NOTE]
->
->ストアフロントの設定とカタログの取り込みに必要な API について詳しくは、[ 開発者向けドキュメント ](https://developer-stage.adobe.com/commerce/services/composable-catalog/) を参照してください。
+開発者は、プロジェクトと資格情報の作成、拡張機能のインストール、カタログデータの取り込み、一般的な Platform アーキテクチャタスクの実行を行います。 開発者固有のコンテンツについて詳しくは、[ 開発者ドキュメント ](https://developer-stage.adobe.com/commerce/services/composable-catalog/) を参照してください。
 
-早期アクセス参加者には、IMS トークンと共に、[!DNL Adobe Commerce Optimizer] にログインするか API 呼び出しを行うためのセキュアリンクが記載されたメールが届きます。
+- **Developer Consoleへのアクセス** - [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) にアクセスして [!DNL Adobe Commerce Optimizer] 用プロジェクトを作成し、アクセストークンを生成し、必要なアプリケーションとカスタマイズをインストールします。
 
-## ストアフロントの設定
+- **カタログデータの取り込み** - カタログデータを [!DNL Adobe Commerce Optimizer] に読み込む方法については、[Data ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) ドキュメントを参照してください。
 
-これで [!DNL Adobe Commerce Optimizer] インスタンスが作成されたので、Edge Delivery Servicesを使用したCommerce Storefront の [ 設定 ](./storefront.md) を続行する準備が整いました。
+  取り込まれたカタログデータが [ データ同期 ](./setup/data-sync.md) ページに表示されます。
 
-## 早期アクセス参加者向けに利用可能なカタログデータ
+- **ストアフロントの設定** - ストアフロントを設定する前に、まずインスタンスを作成する必要があります。これは、通常、組織の [ 管理者 ](#administrator) が実行するタスクです。 インスタンスを作成したら、Edge Delivery Servicesを使用したCommerce ストアフロントの [ 設定 ](./storefront.md) を続行する準備が整います。
 
-早期アクセス参加者の場合、[!DNL Adobe Commerce Optimizer] インスタンスには [Carvelo ユースケース ](./use-case/admin-use-case.md) に基づくモックカタログデータが含まれます。 モックデータは、事前設定済みのチャネルとポリシーと共に、[!DNL Adobe Commerce Optimizer] UI に慣れるのに役立ちます。
+### マーチャンダイザー
 
-<!--Ingest catalog data
+マーチャンダイザーは、買い物客データと分析を使用して、ストアフロントでの製品の配置、価格、プロモーションに関する戦略的な決定を行うと同時に、製品の検出とレコメンデーションを通じてショッピングエクスペリエンスを最適化します。
 
-By default, [!DNL Adobe Commerce Optimizer] instances do not include any product data.
+- **製品検出とレコメンデーションの設定** – 製品検出とレコメンデーションを通じて、買い物客に [ パーソナライズされたエクスペリエンスの作成 ](./merchandising/overview.md) を行う方法を説明します。
 
-See the [Ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) documentation to learn how you can import your catalog data into [!DNL Adobe Commerce Optimizer].
+## インスタンスの作成
 
-The catalog data that you ingest is visible in the [data insights](./insights-overview.md) page. Additionally, you can use the [Catalog](./catalog-overview.md) page to define the channels and policies.-->
+1. [Adobe Experience Cloud](https://experience.adobe.com/) アカウントにログインします。
+
+1. 「[!UICONTROL Quick access]」で「[!UICONTROL **Commerce**]」をクリックして [!UICONTROL Commerce Cloud Manager] を開きます。
+
+   [!UICONTROL Commerce Cloud Manager] には、Adobe IMS組織で使用可能な [!DNL Adobe Commerce] インスタンスのリストが表示されます。これには、[!DNL Adobe Commerce Optimizer] 用と [!DNL Adobe Commerce as a Cloud Service] 用にプロビジョニングされた両方のインスタンスが含まれます。
+
+1. 画面の右上隅にある「[!UICONTROL **インスタンスを追加**]」をクリックします。
+
+   ![ インスタンスを作成 ](./assets/create-aco-instance.png){width="100%" align="center" zoomable="yes"}
+
+1. 「[!UICONTROL **Commerce Optimizer**]」を選択します。
+
+1. インスタンスの **名前** と **説明** を入力します。
+
+1. インスタンスをホストする地域を選択します。
+
+   >[!NOTE]
+   >
+   >インスタンスを作成した後は、領域を変更できません。
+
+1. インスタンスに対して、次のいずれかの [!UICONTROL **環境タイプ**] を選択します。
+
+   - [!UICONTROL **サンドボックス**] - デザインおよびテスト目的に最適です。 サンドボックス環境を使用して、[!DNL Adobe Commerce Optimizer] ジャーニーを開始する必要があります。
+   - [!UICONTROL **実稼動**] - ライブストアおよびお客様向けのサイト用。
+
+   >[!NOTE]
+   >
+   >サンドボックスインスタンスは、現在、北米リージョンに制限されています。
+
+1. [!UICONTROL **インスタンスを追加**] をクリックします。
+
+   これで、Cloud Managerで新しいインスタンスを使用できるようになります。
+
+1. GraphQLおよびカタログサービスエンドポイント、Adobe Commerce Optimizer アプリケーションにアクセスするための URL、インスタンス ID （テナント ID）など、インスタンスの詳細を表示するには、インスタンス名の横にある「情報」アイコンをクリックします。
+
+   ![ インスタンスを作成 ](./assets/aco-instance-details.png){width="100%" align="center" zoomable="yes"}
+
+## インスタンスへのアクセス
+
+1. [Adobe Experience Cloud](https://experience.adobe.com/) アカウントにログインします。
+
+1. 「[!UICONTROL Quick access]」で「[!UICONTROL **Commerce**]」をクリックして [!UICONTROL Commerce Cloud Manager] を開きます。
+
+   [!UICONTROL Commerce Cloud Manager] に、Adobe IMS組織で使用可能なインスタンスのリストが表示されます。
+
+1. インスタンスに関連付けられている [!UICONTROL Commerce Optimizer] アプリケーションを開くには、インスタンス名をクリックします。
+
+

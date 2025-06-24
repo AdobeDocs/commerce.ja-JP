@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Commerce as a Cloud Service] の主な機能とメリ
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: da142209a5d0f565550ff6193ac029b0dded973f
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service] アーキテクチャの概要については、次のビデオを参照してください。 アーキテクチャを示す図をビデオの下に示します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443268?learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 次の図は、[!DNL Adobe Commerce as a Cloud Service] とすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
@@ -40,13 +40,13 @@ ht-degree: 0%
 
 ## Commerce ストアフロント
 
-Edge Delivery Servicesを活用したAdobeの [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=ja) を使用すると、シンプルなドキュメントベースのオーサリングや Storefront ビルダーを使用したビジュアル編集で、数分で豊富なエクスペリエンスを作成できます。
+Edge Delivery Servicesを活用したAdobeの [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) を使用すると、シンプルなドキュメントベースのオーサリングや Storefront ビルダーを使用したビジュアル編集で、数分で豊富なエクスペリエンスを作成できます。
 
 Commerce ストアフロントは、GraphQL API レイヤーを通じてすべてのマーチャンダイジングサービスとデータを提供する、切り離されたアーキテクチャを備えた、完全にヘッドレスです。 このアーキテクチャにより、チームはCommerce財団とは独立してフロントエンドを開発でき、新しいテクノロジーを使用して新しいタッチポイントを構築およびテストする俊敏性が提供されます。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] は、Luma ストアフロントをサポートしていません。 Adobe Commerce on Cloud またはオンプレミスから移行する場合は、[ 既存のストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=ja#existing-storefronts) を参照して、移行のガイダンスを確認してください。
+>[!DNL Adobe Commerce as a Cloud Service] は、Luma ストアフロントをサポートしていません。 Adobe Commerce on Cloud またはオンプレミスから移行する場合は、[ 既存のストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) を参照して、移行のガイダンスを確認してください。
 
 ## マーチャンダイジングサービスと支払いサービス
 
@@ -54,7 +54,7 @@ Adobeは、主要なビジネス目標をサポートするのに役立つ、イ
 
 - [ ライブ検索 ](../live-search/overview.md) – この AI を活用した検索ツールにより、買い物客によりスマートで迅速かつ適切な結果を提供します。
 - [ 製品レコメンデーション ](../product-recommendations/overview.md) – 買い物客の行動、人気のトレンド、製品の類似性などに基づいて、AI を活用したレコメンデーションを追加します。
-- [ チャネルとポリシーを活用したマーチャンダイジングサービス ](../optimizer/catalog/overview.md) – 柔軟なデータモデリングを使用して、大きくて複雑な製品カタログを管理し、ビジネス構造と市場戦略に沿った、高パフォーマンスで柔軟なコマースカタログを提供します。 [Commerce Optimizer](../optimizer/overview.md) との併用により、カタログのパフォーマンスを最適化し、コンバージョン率を向上させることができます。
+- [ カタログ表示とポリシーを活用したマーチャンダイジングサービス ](../optimizer/setup/catalog-view.md)：柔軟なデータモデリングにより、大規模で複雑な製品カタログを管理し、ビジネス構造と市場戦略に沿った、高パフォーマンスで柔軟なコマースカタログを提供します。 [Commerce Optimizer](../optimizer/overview.md) との併用により、カタログのパフォーマンスを最適化し、コンバージョン率を向上させることができます。
 - [ 支払いサービス ](../payment-services/guide-overview.md)：利息なしの分割払い、支払い処理、オーダー、請求書の単一ビューなど、さまざまな支払い方法を提供することにより、顧客満足度を向上させます。
 
 ## 製品ビジュアル
@@ -116,7 +116,7 @@ Cloud 上のAdobe Commerceの一般的なアップグレードプロセスは、
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 
