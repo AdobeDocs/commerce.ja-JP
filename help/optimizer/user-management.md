@@ -44,7 +44,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX  「前提条件」 ]
 >
-ユーザー管理には、次のプロビジョニングが必要です。
+>ユーザー管理には、次のプロビジョニングが必要です。
 
 - [!DNL Adobe Commerce Optimizer] 用にプロビジョニングされた IMS 組織
 - システムまたは製品管理者のロールを持つ、同じ IMS 組織のAdobe Experience Cloud アカウント

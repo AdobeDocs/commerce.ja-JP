@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # ストアフロントの設定
 
-このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)[!DNL Adobe Commerce Optimizer] インスタンスのデータを利用して、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について説明します。
+このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) [!DNL Adobe Commerce Optimizer] インスタンスのデータを利用して、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について説明します。
 
 
 ## 前提条件
@@ -217,7 +217,7 @@ Edge Delivery Services + Adobe Commerce Boilerplate テンプレートを使用�
 
    詳しくは、[Sidekick ライブラリのドキュメント ](https://www.aem.live/docs/sidekick-library) 参照してください。
 
-+++
+   +++
 
 1. `url` キーの値を GitHub リポジトリの値で更新します。
 
