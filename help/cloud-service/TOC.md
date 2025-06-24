@@ -4,10 +4,10 @@ user-guide-description: このガイドでは、 [!DNL Adobe Commerce as a Cloud
 hide: true
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: c820fa2995486027a1c048da21dc9db6f9cbb85c
+source-git-commit: 3f3d87585378d334d90c9dc1bdcb67a9cd00eff6
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 12%
+source-wordcount: '38'
+ht-degree: 13%
 
 ---
 
@@ -22,5 +22,7 @@ ht-degree: 12%
 - [アセット管理](assets-management.md)
 - [ユースケース](use-cases.md)
 - [共有された責任](shared-responsibility.md)
-- [移行](migration.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
+- 移行 {#migration}
+   - [概要](migration/overview.md)
+   - [一括データ移行ツール](migration/bulk-data.md)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
