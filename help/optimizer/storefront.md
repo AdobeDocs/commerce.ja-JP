@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >このドキュメントでは、製品の早期アクセス開発について説明しており、一般提供を目的とした機能のすべてを反映しているわけではありません。
 
-このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)[!DNL Adobe Commerce Optimizer] インスタンスのデータを利用して、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について説明します。
+このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) [!DNL Adobe Commerce Optimizer] インスタンスのデータを利用して、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について説明します。
 
 
 ## 前提条件
@@ -226,7 +226,7 @@ Edge Delivery Services + Adobe Commerce Boilerplate テンプレートを使用�
 
    詳しくは、[Sidekick ライブラリのドキュメント ](https://www.aem.live/docs/sidekick-library) 参照してください。
 
-+++
+   +++
 
 1. `url` キーの値を GitHub リポジトリの値で更新します。
 
@@ -266,7 +266,7 @@ Edge Delivery Services + Adobe Commerce Boilerplate テンプレートを使用�
    }
    ```
 
-+++
+   +++
 
 1. ファイルを保存します。
 
@@ -470,8 +470,8 @@ AEM コード同期 GitHub アプリをリポジトリに追加して、リポ�
 
 ### 次の手順
 
-ストアフロントでのコンテンツとデータの管理と表示について詳しくは ](./use-case/admin-use-case.md) ストアフロントとカタログ管理者のエンドツーエンドのユースケース [ を参照してください。
+ストアフロントでのコンテンツとデータの管理と表示について詳しくは [&#128279;](./use-case/admin-use-case.md) ストアフロントとカタログ管理者のエンドツーエンドのユースケース  を参照してください。
 
 >[!MORELIKETHIS]
 >
-> サイトコンテンツの更新と ](https://experienceleague.adobe.com/developer/commerce/storefront/)Adobe Commerceのフロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、[Commerce ストアフロントのドキュメントを参照してください。
+> サイトコンテンツの更新と [&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/)Adobe Commerceのフロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、Commerce ストアフロントのドキュメントを参照してください。
