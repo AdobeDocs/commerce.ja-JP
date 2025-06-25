@@ -3,7 +3,7 @@ title: カタログビュー
 description: カタログビューの概要と、ビジネス構造、ポリシー、価格で製品カタログを整理するためのビューの作成方法について説明します。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 source-git-commit: f67a5327b742338655b0f7ffa4076a174219f711
 workflow-type: tm+mt
