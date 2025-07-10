@@ -37,11 +37,11 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-Live Search の使用と設定に関する詳細なビデオについては、[ 完全なデモ  [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) のトピックを参照してください。
+Live Search の使用と設定に関する詳細なビデオについては、[ 完全なデモ  [!DNL Live Search]](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) のトピックを参照してください。
 
 ### 入力中に検索
 
-買 [!DNL Live Search] 物客が [ 検索 ](storefront-popover.md) ボックスにクエリを入力すると、検索結果の候補と、上位のサムネール画像が [ ポップオーバー ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) で応答されます。 [ 製品詳細 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) ページは、買い物客が推奨製品またはおすすめ製品をクリックすると表示されます。 ポップオーバーのフッターにある _すべて表示_ リンクには、検索結果のページが表示されます。
+買 [!DNL Live Search] 物客が [ 検索 ](storefront-popover.md) ボックスにクエリを入力すると、検索結果の候補と、上位のサムネール画像が [ ポップオーバー ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search) で応答されます。 [ 製品詳細 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/storefront/storefront) ページは、買い物客が推奨製品またはおすすめ製品をクリックすると表示されます。 ポップオーバーのフッターにある _すべて表示_ リンクには、検索結果のページが表示されます。
 
 [!DNL Live Search] は、2 文字以上のクエリに対して、「入力中に検索」を行った結果を返します。 部分一致の場合、1 単語あたりの最大文字数は 20 文字です。 クエリの文字数は変更できません。 ポップオーバーには、「`name`」、「`sku`」および「`category_ids`」フィールドが含まれます。
 
@@ -81,7 +81,7 @@ Live Search の使用と設定に関する詳細なビデオについては、[ 
 
 ### 検索用語のサポート
 
-[!DNL Live Search] は、Commerce[ 検索語句のリダイレクト ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) をサポートしています。 例えば、「配送料」などの語句を検索すると、配送料ページに直接移動できます。
+[!DNL Live Search] は、Commerce[ 検索語句のリダイレクト ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-terms) をサポートしています。 例えば、「配送料」などの語句を検索すると、配送料ページに直接移動できます。
 
 ## Live Search コンポーネント
 
@@ -101,4 +101,4 @@ Live Search の使用と設定に関する詳細なビデオについては、[ 
 
 テスト環境で、カタログデータの検索クエリを 90 日連続で送信しない場合、カタログデータは休止モードに設定され、検索クエリではデータが返されません。 実稼動環境のカタログデータは、このポリシーの影響を受けません。
 
-テスト環境でカタログデータを再アクティブ化するには、「[ を再アクティブ化 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) というタイトルで [!DNL Live Search] サポートリクエストを送信」し、環境 ID を含めます。 テスト環境のカタログデータは、数時間以内に復元する必要があります。
+テスト環境でカタログデータを再アクティブ化するには、「[ を再アクティブ化 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) というタイトルで [!DNL Live Search] サポートリクエストを送信」し、環境 ID を含めます。 テスト環境のカタログデータは、数時間以内に復元する必要があります。

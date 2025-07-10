@@ -125,7 +125,7 @@ Adobe Commerceには、異なる目的に使用する 2 つのGraphQL システ�
 
 実装プロセスには、以下が含まれます。
 
-1. [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**[カタログサービスをインストールして設定](installation.md)** – カタログサービス拡張機能をインストールして設定し、[!DNL Commerce Services Connector] を使用して SaaS 接続を設定します。
+1. [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**[カタログサービスをインストールして設定](installation.md)** – カタログサービス拡張機能をインストールして設定し、[!DNL Commerce Services Connector] を使用して SaaS 接続を設定します。
 2. **ストアフロントコードの更新**：カタログサービスのGraphQL クエリをフロントエンドに統合します。
 3. **ルートクエリ**：すべてのカタログサービスクエリはGraphQL ゲートウェイを経由します（オンボーディング時に提供される URL）
 4. **データ同期の監視とトラブルシューティング**：向上したパフォーマンスの確認と結果の監視
