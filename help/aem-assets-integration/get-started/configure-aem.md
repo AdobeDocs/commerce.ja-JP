@@ -41,7 +41,7 @@ Adobeは、AEM Commerce環境設定にCommerce名前空間およびメタデー�
 
 >[!NOTE]
 >
-> [2}AEM Commerce ボイラープレート ](https://github.com/ankumalh/assets-commerce) について詳しくは、**readme} を参照してください。**
+> [2&rbrace;AEM Commerce ボイラープレート ](https://github.com/ankumalh/assets-commerce) について詳しくは、**readme&rbrace; を参照してください。**
 
 ### 前提条件
 
@@ -128,7 +128,7 @@ AEM Assets オーサー環境で、メタデータプロファイルを作成し
 
 #### メタデータプロファイルのCommerce assets ソースフォルダーへの適用
 
-1. [!UICONTROL  Metadata Profiles] ページで、「Commerce統合」プロファイルを選択します。
+1. [!UICONTROL &#x200B; Metadata Profiles] ページで、「Commerce統合」プロファイルを選択します。
 
 1. アクションメニューから「**[!UICONTROL Apply Metadata Profiles to Folders]**」を選択します。
 
@@ -140,4 +140,4 @@ AEM Assets オーサー環境で、メタデータプロファイルを作成し
 
 ## 次の手順
 
-[!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}Adobe Commerce パッケ [ ジのインストール ](configure-commerce.md)
+[!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}Adobe Commerce パッケ [ ジのインストール ](configure-commerce.md)

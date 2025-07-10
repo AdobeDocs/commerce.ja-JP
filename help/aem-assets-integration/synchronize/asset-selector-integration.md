@@ -12,19 +12,19 @@ ht-degree: 0%
 
 # 手動でのアセット選択
 
-マーケターやマーチャンダイザーは **** AEM アセットセレクターを使用して、AEM AssetsからAdobe Commerceに画像を簡単に追加でき、アセット管理プロセスを合理化できます。 この方法では、アセットの選択を [!DNL DAM (Digital Asset Management system)] で確認および承認されたアセットに限定することで、ブランドの一貫性とコンプライアンスを確保します。
+マーケターやマーチャンダイザーは **&#x200B;**&#x200B;AEM アセットセレクターを使用して、AEM AssetsからAdobe Commerceに画像を簡単に追加でき、アセット管理プロセスを合理化できます。 この方法では、アセットの選択を [!DNL DAM (Digital Asset Management system)] で確認および承認されたアセットに限定することで、ブランドの一貫性とコンプライアンスを確保します。
 
 **AEM アセットセレクター** は、AEM Assets プロジェクトの IMS クライアント ID がCommerce管理者で設定されている場合に使用できます。 [AEM アセットセレクターの設定 ](#configure-the-aem-asset-selector-in-adobe-commerce) を参照してください。
 
 **AEM アセットセレクター** の統合が設定されると、マーケターとマーチャンダイザーは次のことができます。
 
 * カテゴリ画像を簡単に管理し、ブランドやキャンペーンのガイドラインに合わせることができます。
-* [!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"} 視覚的にリッチなコンテンツを表示するには、ページビルダーで直接アセットを割り当てます。
-* [!BADGE SaaS のみ ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Edge Delivery Servicesを活用したCommerce ストアフロントでAssetsを直接割り当てて、コンテンツを視覚的に充実させます。
+* [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"} 視覚的にリッチなコンテンツを表示するには、ページビルダーで直接アセットを割り当てます。
+* [!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Edge Delivery Servicesを活用したCommerce ストアフロントでAssetsを直接割り当てて、コンテンツを視覚的に充実させます。
 
 >[!NOTE]
 >
-> AEM アセットセレクターは、AEMをオーサリングアプリケーションと統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、{2[AEM as a Cloud Service ユーザーガイド ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} マイクロフロントエンドアセットセレクター *を参照してください。*
+> AEM アセットセレクターは、AEMをオーサリングアプリケーションと統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、&lbrace;2[AEM as a Cloud Service ユーザーガイド ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} マイクロフロントエンドアセットセレクター *を参照してください。*
 
 ## 主なメリット
 

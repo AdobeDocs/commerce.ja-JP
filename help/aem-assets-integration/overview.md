@@ -34,19 +34,19 @@ AEM Assetsの統合は、アセット管理ワークフローを自動化する�
 
 >[!TAB  製品ビジュアル ]
 
-[!BADGE SaaS のみ ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Adobe Commerce、Product Visuals powered by AEM Assets、および [AEM Dynamic Media のアクティブなライセンス ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) これらのライセンスは、[!DNL Adobe Commerce as a Cloud Service] と [!DNL Adobe Commerce Optimizer] が標準で提供されています）。
+[!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Adobe Commerce、Product Visuals powered by AEM Assets、および [AEM Dynamic Media のアクティブなライセンス ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) これらのライセンスは、[!DNL Adobe Commerce as a Cloud Service] と [!DNL Adobe Commerce Optimizer] が標準で提供されています）。
 
 >[!TAB AEM Assets]
 
-[!BADGE SaaS のみ ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Adobe Commerce、Adobe Experience Manager Assets、[AEM Dynamic Media のアクティブなライセンス ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)
+[!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Adobe Commerce、Adobe Experience Manager Assets、[AEM Dynamic Media のアクティブなライセンス ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)
 
-[!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}Adobe Commerce 2.4.5 以降
+[!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}Adobe Commerce 2.4.5 以降
 
 * PHP 8.1、8.2、8.3、および 8.4
 
 * Composer 2.x
 
-[!BADGE SaaS のみ ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Adobe Experience Managerは [Adobe Experience Manager Assets as a Cloud Serviceでプロビジョニングされます ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/overview)
+[!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Adobe Experience Managerは [Adobe Experience Manager Assets as a Cloud Serviceでプロビジョニングされます ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/overview)
 
 >[!ENDTABS]
 
@@ -76,7 +76,7 @@ CommerceとExperience Manager Assetsの統合を有効にするには、次の 3
 
 1. [Commerce メタデータをサポートするようにAEM Assets プロジェクトを設定します ](get-started/configure-aem.md)。
 
-1. [!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}Adobe Commerce パッケージ [ インストール ](get-started/configure-commerce.md)。
+1. [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}Adobe Commerce パッケージ [ インストール ](get-started/configure-commerce.md)。
 
 1. [ 統合を設定します ](get-started/setup-synchronization.md)。
 
