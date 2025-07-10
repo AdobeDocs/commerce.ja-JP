@@ -3,9 +3,10 @@ title: カタログ アダプタ拡張
 description: カタログアダプターを使用したCommerce Services からの価格のレンダリング
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: e42101fa-9c30-482c-a649-44dc35376abb
+source-git-commit: 74f6cb64724194651c4eeb538c0c69142b01ac5d
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ ht-degree: 0%
 ## 要件
 
 - Adobe Commerce 2.4.4 以降
-- 次のいずれかのCommerce サービスがインストールされていること。
+- Adobe Commerce環境で、次のCommerce サービスのいずれかが有効になり設定されている必要があります。
 
    - [Live Search](../live-search/install.md)
    - [製品レコメンデーション](../product-recommendations/install-configure.md)
@@ -55,7 +56,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Commerce Adobe Commerce プロジェクト環境のローカル管理について詳しくは、_クラウドインフラストラクチャユーザーガイドの [CLI を使用したブランチの管理 ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/cli-branches) を参照してください_。
+   >Commerce Adobe Commerce プロジェクト環境のローカル管理について詳しくは、[ クラウドインフラストラクチャユーザーガイドの ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches)CLI を使用したブランチの管理 _を参照してください_。
 
 1. Adobe Commerce Cloud CLI を使用して更新する環境ブランチを確認します。
 
@@ -85,7 +86,7 @@ ht-degree: 0%
    git push origin <branch-name>
    ```
 
-   アップデートをクラウド環境にプッシュすると、[Commerce クラウドデプロイメントプロセスが開始され ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/process) 変更が適用されます。 [ デプロイメントログ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) からデプロイメントステータスを確認します。
+   アップデートをクラウド環境にプッシュすると、[Commerce クラウドデプロイメントプロセスが開始され ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) 変更が適用されます。 [ デプロイメントログ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) からデプロイメントステータスを確認します。
 
 >[!TAB  オンプレミス ]
 
@@ -165,5 +166,4 @@ composer require magento/module-price-indexer-disabler
 - 必要なサービス（ライブ検索、商品レコメンデーション、カタログサービス）がインストールされたヘッドレス Commerce インスタンスを持つマーチャント
 - デフォルトのAdobe Commerce製品価格インデクサーに依存しない
 
-1. [!DNL Catalog Adapter] パッケージから `magento/module-price-indexer-disabler` モジュールをインストールします。
-
+1. `magento/module-price-indexer-disabler` パッケージから [!DNL Catalog Adapter] モジュールをインストールします。
