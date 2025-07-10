@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 526d15950fe77ac8c384d1fd670394695a824260
+source-git-commit: 525ad18961f46379360049b1bf49c18b208bf051
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -51,20 +51,17 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
       </p>
    </td>
    <td valign="top">
-      <a href="../product-visuals/overview.md">
-      <img alt="ビジュアル" src="../assets/icons/images.svg" width="40">
+      <a href="../catalog-service/overview.md">
+      <img alt="接続されたサービスのカタログデータ" src="../assets/icons/DataBook.svg" width="40">
       </a>
       <div>
-         <a href="../product-visuals/overview.md">
-         <strong> 製品ビジュアル </strong>
+         <a href="../catalog-service/overview.md">
+         <strong> カタログサービス </strong>
          </a>
       </div>
       <p>
-         <em>Adobe Experience Managerと統合してリッチメディアコンテンツを管理するシステムを使用し、デジタルアセット管理を簡素化します。</em>
+         <em> 顧客に最適化された製品体験を提供すると同時に、パフォーマンスを向上させ、スケーラビリティを向上させ、コンバージョンを増やします。</em>
       </p>
-   </td>
-   <td valign="top">
-      <!-- Empty cell to maintain table structure -->
    </td>
 </tr>
 <tr style="border: 0;">
@@ -95,19 +92,6 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
       </p>
    </td>
    <td valign="top">
-      <a href="../catalog-service/overview.md">
-      <img alt="接続されたサービスのカタログデータ" src="../assets/icons/DataBook.svg" width="40">
-      </a>
-      <div>
-         <a href="../catalog-service/overview.md">
-         <strong> カタログサービス </strong>
-         </a>
-      </div>
-      <p>
-         <em> 顧客に最適化された製品体験を提供すると同時に、パフォーマンスを向上させ、スケーラビリティを向上させ、コンバージョンを増やします。</em>
-      </p>
-   </td>
-   <td valign="top">
       <a href="../payment-services/guide-overview.md">
       <img alt="クレジットカードによる支払い" src="../assets/icons/CreditCard.svg" width="40">
       </a>
@@ -133,7 +117,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
          </a>
       </div>
       <p>
@@ -146,11 +130,24 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce サービスコネクタ </strong> [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="クラウドプロジェクトのAdobe Commerce（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスのプロジェクトにのみ適用されます。"}
+         <strong>Commerce サービスコネクタ </strong> [!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="クラウドプロジェクトのAdobe Commerce（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスのプロジェクトにのみ適用されます。"}
          </a>
       </div>
       <p>
          <em> 認証を設定して、Adobe Commerceと接続されたサービス間の安全な通信を有効にします。 環境ごとに、Commerce サービスのデータストレージのデータスペース ID を指定します。</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../aem-assets-integration/overview.md">
+      <img alt="ビジュアル" src="../assets/icons/images.svg" width="40">
+      </a>
+      <div>
+          <a href="../aem-assets-integration/overview.md">
+         <strong>AEM Assetsの統合 </strong>
+         </a>
+      </div>
+      <p>
+         <em>Adobe Experience Managerと統合してリッチメディアコンテンツを管理するシステムを使用し、デジタルアセット管理を簡素化します。</em>
       </p>
    </td>
 </tr>
@@ -187,11 +184,11 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="データ同期の監視" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong> データ管理ダッシュボード </strong>
          </a>
       </div>
