@@ -34,11 +34,11 @@ AEM Assetsの統合は、アセット管理ワークフローを自動化する�
 
 >[!TAB  製品ビジュアル ]
 
-[!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Adobe Commerce、Product Visuals powered by AEM Assets、および [AEM Dynamic Media のアクティブなライセンス ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) これらのライセンスは、[!DNL Adobe Commerce as a Cloud Service] と [!DNL Adobe Commerce Optimizer] が標準で提供されています）。
+[!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Adobe Commerce、Product Visuals powered by AEM Assets、および [AEM Dynamic Media のアクティブなライセンス ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) これらのライセンスは、[!DNL Adobe Commerce as a Cloud Service] と [!DNL Adobe Commerce Optimizer] が標準で提供されています）。
 
 >[!TAB AEM Assets]
 
-[!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Adobe Commerce、Adobe Experience Manager Assets、[AEM Dynamic Media のアクティブなライセンス ](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)
+[!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Adobe Commerce、Adobe Experience Manager Assets、[AEM Dynamic Media のアクティブなライセンス ](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)
 
 [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}Adobe Commerce 2.4.5 以降
 
@@ -46,11 +46,11 @@ AEM Assetsの統合は、アセット管理ワークフローを自動化する�
 
 * Composer 2.x
 
-[!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Adobe Experience Managerは [Adobe Experience Manager Assets as a Cloud Serviceでプロビジョニングされます ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/overview)
+[!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}Adobe Experience Managerは [Adobe Experience Manager Assets as a Cloud Serviceでプロビジョニングされます ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/overview)
 
 >[!ENDTABS]
 
-統合を設定するAdobe Commerce ユーザーには、AEM Assets プロジェクトがプロビジョニングされている [IMS 組織 ](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) へのアクセス権が必要です。
+統合を設定するAdobe Commerce ユーザーには、AEM Assets プロジェクトがプロビジョニングされている [IMS 組織 ](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) へのアクセス権が必要です。
 
 >[!BEGINSHADEBOX]
 
@@ -62,7 +62,7 @@ AEM Assetsの統合は、アセット管理ワークフローを自動化する�
 
 ![ チェック ](assets/icon-check.png) **Adobe マネージドサポートモデル** のサポートとトラブルシューティングはAdobeで直接行われるため、お客様の負担を軽減し、問題の解決を効率化できます。
 
-![ チェック ](assets/icon-check.png) **Adobe Storefront Builder の機能** - デジタルアセット管理（DAM）ソリューションを使用すると、[Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#userlabs-commerce-genai-product-visuals) で画像、ビデオ、その他のメディアなどのアセットを使用できます。
+![ チェック ](assets/icon-check.png) **Adobe Storefront Builder の機能** - デジタルアセット管理（DAM）ソリューションを使用すると、[Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=ja#userlabs-commerce-genai-product-visuals) で画像、ビデオ、その他のメディアなどのアセットを使用できます。
 
 >[!ENDSHADEBOX]
 
@@ -82,4 +82,4 @@ CommerceとExperience Manager Assetsの統合を有効にするには、次の 3
 
 ## サポート
 
-情報が必要な場合や、このガイドで扱われていない質問がある場合は、AEM Assets Integration の営業担当または [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) を作成して、追加のヘルプを受けてください。
+情報が必要な場合や、このガイドで扱われていない質問がある場合は、AEM Assets Integration の営業担当または [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) を作成して、追加のヘルプを受けてください。

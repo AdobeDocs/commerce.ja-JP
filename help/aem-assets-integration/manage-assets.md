@@ -79,7 +79,7 @@ Adobe Commerceは、Adobe Experience Manager（CMS）ツールセットを使用
 
 >[!TIP]
 >
-> [DA.live （ドキュメントオーサリング） ](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} では、データをエンリッチメントするためのアセットセレクターも提供しています。
+> [DA.live （ドキュメントオーサリング） ](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=ja#dalive-document-authoring){target=_blank} では、データをエンリッチメントするためのアセットセレクターも提供しています。
 
 ## 製品ビデオ
 
@@ -149,7 +149,7 @@ Adobe Commerceを使用すると、マーチャントは画像を商品カテゴ
 
 1. 「**[!UICONTROL Save]**」をクリックして続行します。
 
-   カテゴリの作成について詳しくは、&lbrace;2[Commerce Catalog Management Guide の ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) カテゴリのコンテンツの入力 **を参照してください。**
+   カテゴリの作成について詳しくは、&lbrace;2[Commerce Catalog Management Guide の ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) カテゴリのコンテンツの入力 **を参照してください。**
 
 ## アセットの更新
 
@@ -157,6 +157,6 @@ AEM Assets内のアセットを更新して承認すると、自動一致機能�
 
 詳しくは、次のAEM Assets ドキュメントを参照してください。
 
-* [ デジタルアセットの再処理 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [ デジタルアセットの再処理 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [ アセットの承認 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [ アセットの承認 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

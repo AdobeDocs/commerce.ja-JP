@@ -20,7 +20,7 @@ ht-degree: 0%
 
 通常の機能リリースバージョン以外でリリースされた機能の変更と修正については、_ホストサービスのアップデート_ の節を参照してください。
 
-今後のリリース、製品のサポート、AEM Assets Integration 拡張機能をサポートしているAdobe Commerce バージョンについて詳しくは、Adobe Commerce[ リリーススケジュール ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) および [ 製品の提供 ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) に関するトピックを参照してください。
+今後のリリース、製品のサポート、AEM Assets Integration 拡張機能をサポートしているAdobe Commerce バージョンについて詳しくは、Adobe Commerce[ リリーススケジュール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/planning/schedule) および [ 製品の提供 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability) に関するトピックを参照してください。
 
 ## ホステッド サービスの更新
 
