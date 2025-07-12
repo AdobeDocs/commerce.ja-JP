@@ -48,7 +48,7 @@ _2025 年 4 月 23 日_
 
 [!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
 
-![ 新しい問題 ](../assets/new.svg)<!-- Issue ACAP-955 -->AEMの配信 URL の代わりに [ カスタムドメイン URL](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) を使用できるようになりました。 マーチャントがAEM ダッシュボードに **カスタムドメイン名** を設定した場合は、Commerceにこの **カスタムドメイン URL** を追加する必要があります。
+![ 新しい問題 ](../assets/new.svg)<!-- Issue ACAP-955 -->AEMの配信 URL の代わりに [ カスタムドメイン URL](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) を使用できるようになりました。 マーチャントがAEM ダッシュボードに **カスタムドメイン名** を設定した場合は、Commerceにこの **カスタムドメイン URL** を追加する必要があります。
 
 ![ 問題を修正 ](../assets/fix.svg)<!-- Issue ACAP-987 -->AEM Assets同期プロセスの全体的なログを改善しました。
 
@@ -58,7 +58,7 @@ _2025 年 3 月 12 日_
 
 [!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
 
-![ 新しい問題 ](../assets/new.svg)<!-- Issue ACAP-xx -->AEM Assets セレクターで、[Assets セレクター IMS クライアント ID](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization) が必要になり、製品カテゴリおよびページビルダー生成コンテンツでAssets画像をマッピングできるようになりました。
+![ 新しい問題 ](../assets/new.svg)<!-- Issue ACAP-xx -->AEM Assets セレクターで、[Assets セレクター IMS クライアント ID](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/setup-synchronization) が必要になり、製品カテゴリおよびページビルダー生成コンテンツでAssets画像をマッピングできるようになりました。
 
 ## v1.0.20
 
