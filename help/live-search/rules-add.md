@@ -2,9 +2,9 @@
 title: ルールの追加
 description: 検索マーチャンダイジングルールを作成する方法について説明します。
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
+source-git-commit: 00c6d728b1bc425c873bdf46293085b8da242782
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 ## ルールを追加
 
 1. 管理者で、**マーケティング**/SEO と検索/**[!DNL Live Search]** に移動します。
-1. **範囲** を設定して、ルールが適用される [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) を識別します。
+1. **範囲** を設定して、ルールが適用される [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) を識別します。
 1. **マーチャンダイジングを検索** ワークスペースをクリックします。
 1. 「**ルールを追加**」をクリックして、ルールエディターを起動します。
 
@@ -101,6 +101,10 @@ ht-degree: 0%
    1. **属性情報**/**ストアフロントのプロパティ** ページで、検索の重み付けを `5` 以下に設定します。
 
       ![Product - Search Weight](assets/set-search-weight.png)
+
+>[!NOTE]
+>
+>ストアフロントの検索エクスペリエンスは、ファセット、同義語、検索/カテゴリマーチャンダイジングルールなど、連携する複数の設定の影響を受けます。これらのルールが、管理者で個々の設定をテストした場合とは異なる結果になる可能性があります。 管理者によるテストでは特定の設定領域が分離されますが、ストアフロントでは関連するすべての設定が一緒に適用されるので、より複雑で現実的な検索出力が得られます。
 
 ## 手動ランキング
 
