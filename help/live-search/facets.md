@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # ファセット
 
-ファセットは、複数のディメンションの属性値を検索条件として使用する、高パフォーマンスのフィルタリング方法です。 ファセット検索も似ていますが、標準の [ レイヤー化されたナビゲーション ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html) よりも大幅に「スマート」です。 使用可能なフィルターのリストは、検索結果で返される製品の [ フィルタリング可能な属性 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) によって決まります。
+ファセットは、複数のディメンションの属性値を検索条件として使用する、高パフォーマンスのフィルタリング方法です。 ファセット検索も似ていますが、標準の [ レイヤー化されたナビゲーション ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja) よりも大幅に「スマート」です。 使用可能なフィルターのリストは、検索結果で返される製品の [ フィルタリング可能な属性 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja#filterable-attributes) によって決まります。
 
 [!DNL Live Search] は `productSearch` クエリを使用して、[!DNL Live Search] に固有のファセットやその他のデータを返します。 コード例については [`productSearch` 開発者向けドキュメントの ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) クエリを参照してください。
 
@@ -37,8 +37,8 @@ ht-degree: 0%
 
 | 設定 | 説明 |
 |--- |--- |
-| [ カテゴリの表示設定 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | アンカー – `Yes` |
-| [ 属性プロパティ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [ カタログ入力タイプ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （ウィジェットのみ）、`Text swatch` （ウィジェットのみ） |
+| [ カテゴリの表示設定 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=ja) | アンカー – `Yes` |
+| [ 属性プロパティ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) | [ カタログ入力タイプ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=ja) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （ウィジェットのみ）、`Text swatch` （ウィジェットのみ） |
 | 属性ストアフロント プロパティ | 検索結果での使用階層ナビゲーション - `Yes` |
 
 ## ファセットの集約
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## デフォルトの属性値
 
-次の製品属性には [storefront プロパティ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) があり、[!DNL Live Search] で使用され、デフォルトで有効になっています。
+次の製品属性には [storefront プロパティ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=ja) があり、[!DNL Live Search] で使用され、デフォルトで有効になっています。
 
 | プロパティ | Storefront プロパティ | 属性 |
 |---|---|---|

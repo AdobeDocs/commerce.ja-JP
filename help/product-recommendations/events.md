@@ -90,7 +90,7 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 
 製品レコメンデーション指標は Luma ストアフロント用に最適化されていますが、他のストアフロント実装とも連携します。
 
-- [Edge Delivery ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [Edge Delivery ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=ja)
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
 - [カスタムフロント部（React、Vue JS）](headless.md)
 
@@ -140,4 +140,4 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 
 >[!NOTE]
 >
->[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、買い物客が Cookie の使用を同意するまで、Adobe Commerceは行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja) が有効になっている場合、買い物客が Cookie の使用を同意するまで、Adobe Commerceは行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
