@@ -3,9 +3,9 @@ title: データを収集
 description: イベントで  [!DNL Product Recommendations] のデータを収集する方法を説明します。
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
+source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 
 ライブサイトでデータが収集され、機械学習モデルがトレーニングされている間に、レコメンデーションを設定するために必要な他のテストおよび設定タスクを完了できます。 この作業が完了するまでに、モデルには便利なレコメンデーションを作成するのに十分なデータが含まれており、ストアフロントにモデルをデプロイできます。
 
-ほとんどの製品 SKU でサイトに十分なトラフィック（表示、購入、トレンド）が届かない場合は、学習プロセスを完了するのに十分なデータがない可能性があります。 これにより、管理者の準備インジケーターが動かなくなったように見える場合があります。 準備状況の指標は、店舗にとって優れたレコメンデーションタイプを選択する際に、マーチャントに別のデータポイントを提供することを目的としています。 数値は目安であり、100% に達することはありません。 準備状況インジケーターについて &rbrack;(create.md#readiness-indicators) 詳しくは、[ こちら ] を参照してください。
+ほとんどの製品 SKU でサイトに十分なトラフィック（表示、購入、トレンド）が届かない場合は、学習プロセスを完了するのに十分なデータがない可能性があります。 これにより、管理者の準備インジケーターが動かなくなったように見える場合があります。 準備状況の指標は、店舗にとって優れたレコメンデーションタイプを選択する際に、マーチャントに別のデータポイントを提供することを目的としています。 数値は目安であり、100% に達することはありません。 準備状況インジケーターについて [ 詳しくは、](create.md#readiness-indicators) こちら ] を参照してください。
 
 ### バックアップの推奨事項 {#backuprecs}
 
@@ -88,9 +88,11 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 | `rec-click` | 買い物客は、レコメンデーションユニット内の製品をクリックします。 |
 | `view` | ページを下にスクロールするなど、レコメンデーションユニットが 50% 以上の表示できるようになると送信されます。 例えば、レコメンデーションユニットに 2 行がある場合、1 行に 2 行目の 1 ピクセルを加えた `view` イプイベントが買い物客に表示されると送信されます。 買い物客がページを上下に複数回スクロールした場合、買い物客がレコメンデーションユニット全体をページ上で再度表示すると、`view` のイベントが何度も送信されます。 |
 
->[!NOTE]
->
->製品レコメンデーション指標は、Luma ストアフロント用に最適化されています。 ストアフロントがPWA Studioと共に実装されている場合は、[PWAのドキュメント ](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) を参照してください。 React や Vue JS などのカスタムフロントエンドテクノロジーを使用する場合は、[Product Recommendations をヘッドレス ](headless.md) 環境に統合する方法を参照してください。
+製品レコメンデーション指標は Luma ストアフロント用に最適化されていますが、他のストアフロント実装とも連携します。
+
+- [Edge Delivery ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
+- [カスタムフロント部（React、Vue JS）](headless.md)
 
 #### 必須のダッシュボードイベント
 
@@ -138,4 +140,4 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 
 >[!NOTE]
 >
->[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja) が有効になっている場合、買い物客が Cookie の使用を同意するまで、Adobe Commerceは行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、買い物客が Cookie の使用を同意するまで、Adobe Commerceは行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
