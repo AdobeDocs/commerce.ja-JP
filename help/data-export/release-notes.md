@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 597cdd929f7abed24a68f1347a214b46664b1c75
+source-git-commit: 6876a5fbde2b3292cd788a50d104083cf51109ed
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 >SaaS データ書き出し拡張機能は、Live Search、Product Recommendations、Catalog Service と共に自動的にインストールされるモジュールのコレクションです。 Composer を使用すると、システムにインストールされているバージョンを確認できます。 場合によっては、Commerce サービスのバージョンを更新せずに修正点または新機能を取得するように、システムのデータエクスポート拡張機能をアップグレードする必要があります。
 
 ## 現在のメジャーバージョン
+
+## 103.4.7 リリース
+
+![ 修正 ](../assets/fix.svg) 製品のカテゴリ権限を保存していた古いテーブルを削除しました。<!--MDEE-1065-->
 
 ## 103.4.6 リリース
 
@@ -52,7 +56,7 @@ ht-degree: 0%
 
 ## 103.4.2 リリース
 
-![ 修正 ](../assets/fix.svg) `EXPORTER_EXTENDED_LOG=1` 環境変数で `saas:resync --dry-run` コマンドを使用してテスト再同期を実行する際に、`saas-export.log` ークフローでエンティティペイロードを収集する機能を追加しました。<!--MDEE-1023-->
+![ 修正 ](../assets/fix.svg) `saas-export.log` 環境変数で `saas:resync --dry-run` コマンドを使用してテスト再同期を実行する際に、`EXPORTER_EXTENDED_LOG=1` ークフローでエンティティペイロードを収集する機能を追加しました。<!--MDEE-1023-->
 
 ## 103.4.1 リリース
 
@@ -74,7 +78,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## 103.3.20 リリース
 
-![ 修正 ](../assets/fix.svg) カタログデータの書き出し cron ジョブの失敗に関連するエラーのメッセージ `cron.log` ージを改善することで、トラッキングできない `BulkException` エラーが修正されました。<!--MDEE-966-->
+![ 修正 ](../assets/fix.svg) カタログデータの書き出し cron ジョブの失敗に関連するエラーのメッセージ `BulkException` ージを改善することで、トラッキングできない `cron.log` エラーが修正されました。<!--MDEE-966-->
 ![ 修正 ](../assets/fix.svg) ストアの表示数が多いインスタンスでの製品の再同期処理のパフォーマンスが向上しました。<!--MDEE-974-->
 
 ## 103.3.19 リリース
@@ -125,7 +129,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## 103.3.9 リリース
 
-![ 修正 ](../assets/fix.svg) エンティティを削除すると、web サイト（`scopesWebsite`）および顧客グループ（`scopesCustomerGroup`）のスコーピングサービスフィードに `deleted` フラグが生成されるようになりました。<!--MDEE-839-->
+![ 修正 ](../assets/fix.svg) エンティティを削除すると、web サイト（`deleted`）および顧客グループ（`scopesWebsite`）のスコーピングサービスフィードに `scopesCustomerGroup` フラグが生成されるようになりました。<!--MDEE-839-->
 
 ## 103.3.8 リリース
 
@@ -152,7 +156,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## 103.3.4 リリース
 
-![ 修正 ](../assets/fix.svg) Commerce インスタンスからCommerce サービス <!--MDEE-785--> ーバーにデータが送信されるたびに `data_sent_outside` イベントをディスパッチするメカニズムを追加することで、データ転送監査ログがサポートされるようになりました
+![ 修正 ](../assets/fix.svg) Commerce インスタンスからCommerce サービス `data_sent_outside` ーバーにデータが送信されるたびに <!--MDEE-785--> イベントをディスパッチするメカニズムを追加することで、データ転送監査ログがサポートされるようになりました
 
 ## 103.3.3 リリース
 
