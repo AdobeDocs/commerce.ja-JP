@@ -3,7 +3,7 @@ title: 基本を学ぶ
 description: ' [!DNL Adobe Commerce Optimizer] の使用を開始する方法について説明します。'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
 workflow-type: tm+mt
@@ -190,5 +190,5 @@ Adobeは、[!DNL Adobe Commerce Optimizer] の機能を学習およびテスト�
 ### ヘルプを表示
 
 - **開発者向けリソース**: [ 開発者向けドキュメント ](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **ストアフロントのリソース**:[Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/)
-- **サポート**: [Adobe Commerce サポートリソース ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+- **ストアフロントのリソース**:[Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
+- **サポート**: [Adobe Commerce サポートリソース ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview)

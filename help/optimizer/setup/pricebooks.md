@@ -3,7 +3,7 @@ title: 価格台帳
 description: ' [!DNL Adobe Commerce Optimizer] で価格台帳を管理する方法を説明します。'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
 source-git-commit: 513ed97442bfffe74d64f4eb0484cfa8f25b5ecc
 workflow-type: tm+mt
