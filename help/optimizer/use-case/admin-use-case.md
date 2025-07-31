@@ -3,10 +3,11 @@ title: ストアフロントとカタログ管理者のエンドツーエンド�
 description: カタログビュー  [!DNL Adobe Commerce Optimizer]  ポリシーを使用してカタログを管理する方法、およびカタログ設定に基づいてストアフロントを設定する方法について説明します。
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 474426ef1f99eed8d2c1b5d736332aaa666872fa
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2158'
 ht-degree: 0%
 
 ---
@@ -32,11 +33,11 @@ ht-degree: 0%
 - **ユーザー権限**
    - Adobe Admin Consoleへの管理者アクセス
    - アカウント設定については、[User Management](../user-management.md) を参照してください
-   - アクセス権がない場合は、Adobe アカウント担当者に問い合わせるか、[ 早期アクセスプログラムフォーム ](https://experienceleague.adobe.com/go/aco-early-access-program) に記入してください
+   - アクセス権がない場合は、Adobe アカウント担当者にお問い合わせください。
 
 - **サンプルデータ**
    - インスタンスに読み込まれた Carvelo Automobile カタログデータ
-   - [ サンプルカタログデータ取得リポジトリ ](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) の手順に従います
+   - [Sample catalog data ingestion](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) の手順に従います
    - サンプルデータは、付属の `reset.js` スクリプトを使用して、完了後に削除できます
 
 - **ストアフロント環境**
@@ -46,7 +47,7 @@ ht-degree: 0%
 
 ## それでは、始めましょう
 
-このユースケースでは、以下を使用して作業を行います。
+このユースケースでは、以下を使用しています。
 
 1. [!DNL Adobe Commerce Optimizer] UI - カタログビューとポリシーを設定して、Carvelo ユースケースの複雑なカタログ運用設定を管理します。
 
@@ -54,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe Commerce Storefront ドキュメントの [ ボイラープレートの探索 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=ja) トピックを確認して、ストアフロントの設定ファイルについて学びます。
+> Adobe Commerce Storefront ドキュメントの [ ボイラープレートの探索 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) トピックを確認して、ストアフロントの設定ファイルについて学びます。
 
 ### ‌重要ポイント
 
@@ -156,7 +157,7 @@ Kingsbluff には次のポリシーがあります。
 1. Celport がブレーキパーツとサスペンションパーツのみを販売するために、*Celport パートカテゴリ* と呼ばれる新しいポリシーを作成します。
 1. Celport ストアフロントの新しいカタログビューを作成します。
 
-   このカタログビューでは、新しく作成したポリシー *Celport part categories* と既存の *East Coast Inc Brands* を使用して、Celport が East Coast Inc.との契約の一環として Bolt と Cruz のブランドのみを販売できるようにします。Celport カタログビューでは、`east_coast_inc` 価格台帳を使用して、ブランドライセンス契約に沿った製品価格スケジュールをサポートします。
+   このカタログビューでは、新しく作成したポリシー *Celport part categories* と既存の *East Coast Inc Brands* を使用して、Celport が East Coast Inc.との契約の一環として Bolt と Cruz のブランドのみを販売できるようにします。Celport カタログビューでは、`east_coast_inc` 価格台帳を使用して、ブランドライセンス契約に沿った製品価格スケジュールをサポートしています。
 1. 作成した Celport カタログ表示のデータを使用するように、コマースストアフロント設定を更新します。
 
 このセクションの最後では、Celport が起動し、Carvelo の製品を販売する準備が整います。
@@ -228,17 +229,13 @@ Kingsbluff には次のポリシーがあります。
 1. カタログ表示の詳細を入力します。
 
    - **名前** = *Celport*
-   - **カタログソース** = *en-US* （Enter キーを押す）
+   - **カタログソース** = *en-US*
    - **ポリシー** （ドロップダウンを使用） = *East Coast Inc Brands*; *Celport 部品カテゴリ*; *ブランド*; *モデル*                          
 1. 「**[!UICONTROL Add]**」をクリックして、カタログビューを作成します。
 
    「カタログビュー」ページが更新され、新しいカタログビューが表示されます。
 
    ![ 更新されたカタログビューリスト ](../assets/updated-catalog-view-list.png)
-
-   >[!NOTE]
-   >
-   >**[!UICONTROL Add]** のボタンが青でない場合は、カーソルを **[!UICONTROL Catalog sources]** のセクションに置いて **enter** キーを押し、カタログ ソースが選択されていることを確認します。
 
 1. Celport カタログビュー ID を取得します。
 
@@ -371,7 +368,7 @@ Celport カタログ表示を使用するようにストアフロント設定を
 
    ![ ブレーキ製品一覧ページ ](../assets/brakes-listing-page.png)
 
-   ブレーキ部品の画像をクリックすると、製品詳細と価格情報が表示され、製品価格情報がメモされます。
+   ブレーキ部品の画像をクリックすると、製品情報と共に製品の詳細が表示され、製品価格情報がメモされます。
 
 1. `tires` を検索します。これは、[!DNL Adobe Commerce Optimizer] インスタンス上のユースケースデータで使用できるもう 1 つのパーツカテゴリです。
 
@@ -415,10 +412,6 @@ Celport カタログ表示を使用するようにストアフロント設定を
 
 - **解決策：** 関連するすべてのポリシーが有効であり、適切に設定されていることを確認します
 
-**問題：** 「追加」ボタンが青くない
-
-- **解決策：** フィールドにカーソルを置いて Enter キーを押し、カタログソースが選択されていることを確認します
-
 ### ストアフロントの設定の問題
 
 **問題：** ストアフロントが読み込まれない
@@ -451,7 +444,5 @@ Adobe Commerce Optimizerについて引き続き学習するには：
 - [ マーチャンダイジング機能 ](../merchandising/overview.md) を探索して、ショッピングエクスペリエンスをパーソナライズします
 - [ 詳細なポリシー設定 ](../setup/policies.md) について
 - 他の販売特約店に対する [ 追加のカタログ表示 ](../setup/catalog-view.md) の設定
-- プログラムによるカタログ管理については、[API ドキュメント ](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) を参照してください
-- Edge Delivery Services ストアフロントのドロップインコンポーネントを設定して、製品検出、レコメンデーション、その他のストアフロント機能のためのカスタムストアフロントエクスペリエンスを作成する方法について説明します。 [ ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=ja) を参照してください。
-
-
+- プログラムによるカタログ管理については、[API ドキュメント ](https://developer.adobe.com/commerce/services/optimizer/) を参照してください
+- Edge Delivery Services ストアフロントのドロップインコンポーネントを設定して、製品検出、レコメンデーション、その他のストアフロント機能のためのカスタムストアフロントエクスペリエンスを作成する方法について説明します。 [ ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) を参照してください。

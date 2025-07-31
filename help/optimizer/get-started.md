@@ -3,11 +3,11 @@ title: 基本を学ぶ
 description: ' [!DNL Adobe Commerce Optimizer] の使用を開始する方法について説明します。'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 036e04a02edadf4b8a48fc38e784d9dde734ba45
+source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,11 @@ ht-degree: 0%
 
 1. インスタンスにアクセス：
 
-   インスタンス名をクリックして、[!DNL Adobe Commerce Optimizer] アプリケーションを開きます。
+   インスタンス名をクリックして、[!DNL Adobe Commerce Optimizer] アプリケーションを開きます。 アプリケーション内で、ページ上部のドロップダウンを使用して、様々な [!DNL Adobe Commerce Optimizer] インスタンスを切り替えることができます。
+
+   ![ インスタンススイッチャー ](./assets/context-switcher.png){zoomable="yes"}
+
+   表示されるインスタンスはすべて同じ組織に属しています。 インスタンスを切り替えて、サンドボックス環境と実稼動環境など、それぞれに対応するデータと設定を表示できます。
 
 1. インスタンスの詳細を取得：
    - インスタンス名の横にある情報アイコンをクリックします。
@@ -186,5 +190,5 @@ Adobeは、[!DNL Adobe Commerce Optimizer] の機能を学習およびテスト�
 ### ヘルプを表示
 
 - **開発者向けリソース**: [ 開発者向けドキュメント ](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **ストアフロントのリソース**:[Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
-- **サポート**: [Adobe Commerce サポートリソース ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview)
+- **ストアフロントのリソース**:[Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **サポート**: [Adobe Commerce サポートリソース ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
