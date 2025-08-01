@@ -51,14 +51,14 @@ Adobe Commerce [!DNL Live Search] と [[!DNL Catalog Service]](../catalog-servic
 1. API キーの [ 設定 ](#2-configure-api-keys)
 1. カタログデータの [ 同期 ](#3-sync-your-catalog-data)
 1. カタログ データがエクスポートされたことを [ 確認 ](#4-verify-that-the-data-was-exported) します
-1. データ [](#5-configure-the-data) 設定）
+1. データ [&#128279;](#5-configure-the-data) 設定）
 1. [ テスト ](#6-test-the-connection) 接続
 1. イベントでデータがキャプチャされていることを [ 確認 ](#7-validate-events-are-capturing-data) します
 1. ストアフロントの [ カスタマイズ ](#8-customize-for-your-storefront)
 
 ## &#x200B;1. [!DNL Live Search] 拡張機能をインストールする
 
-[!DNL Live Search] は、[Adobe Marketplace} から {Composer](https://commercemarketplace.adobe.com/magento-live-search.html) を通じて拡張機能と [ てインストールさ ](https://getcomposer.org/) ます。 [!DNL Live Search] をインストールして設定すると、Adobe [!DNL Commerce] は検索とカタログデータの SaaS サービスとの共有を開始します。 この時点で、*管理者* ユーザーは、検索ファセット、同義語およびマーチャンダイジングルールの設定、カスタマイズおよび管理を行うことができます。
+[!DNL Live Search] は、[Adobe Marketplace&rbrace; から &lbrace;Composer](https://commercemarketplace.adobe.com/magento-live-search.html) を通じて拡張機能と [ てインストールさ ](https://getcomposer.org/) ます。 [!DNL Live Search] をインストールして設定すると、Adobe [!DNL Commerce] は検索とカタログデータの SaaS サービスとの共有を開始します。 この時点で、*管理者* ユーザーは、検索ファセット、同義語およびマーチャンダイジングルールの設定、カスタマイズおよび管理を行うことができます。
 
 >[!BEGINTABS]
 
@@ -302,7 +302,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 バージョン 4.0.0 以降の [!DNL Live Search] がある場合は、手動で製品一覧ウィジェットを有効にする必要があります。
 
-1. *管理者* から、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**に移動します。
+1. *管理者* から、**[!UICONTROL Stores]**/_[!UICONTROL Settings]_/**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 「**[!UICONTROL Live Search]**」で、「**[!UICONTROL Storefront Features]**」を選択します。
 1. **[!UICONTROL Enable Product Listing Widgets]** を `Yes` に設定します。
 
@@ -313,9 +313,9 @@ bin/magento saas:resync --feed categoryPermissions
 1. 次のいずれかの操作を行って、[ キャッシュ管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) ページにアクセスします。
 
    - ワークスペースの上にあるメッセージ内の「**[!UICONTROL Cache Management]**」リンクをクリックします。
-   - _管理者_ サイドバーで、**[!UICONTROL System]**/_[!UICONTROL Tools]_/**[!UICONTROL Cache Management]**に移動します。
+   - _管理者_ サイドバーで、**[!UICONTROL System]**/_[!UICONTROL Tools]_/**[!UICONTROL Cache Management]**&#x200B;に移動します。
 
-1. **Configuration**[!UICONTROL Cache Type] を選択し、「**[!UICONTROL Flush Magento Cache]**」をクリックします。
+1. **Configuration**&#x200B;[!UICONTROL Cache Type] を選択し、「**[!UICONTROL Flush Magento Cache]**」をクリックします。
 
    ストアフロントに対する変更は、キャッシュをフラッシュした直後に行われます。
 
@@ -562,7 +562,7 @@ composer require magento/module-data-services-graphql
 
 ### B2B サポート
 
-[!DNL Live Search] では、追加の [ 制限事項 ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) を追加して [](boundaries-limits.md#b2b-and-category-permissions)B2B 機能をサポートしています。
+[!DNL Live Search] では、追加の [ 制限事項 ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) を追加して [&#128279;](boundaries-limits.md#b2b-and-category-permissions)B2B 機能をサポートしています。
 
 ### PWA サポート
 
