@@ -1,10 +1,11 @@
 ---
 title: ルールの作成と管理
 description: マーチャンダイジングルールを作成および管理する方法について説明します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 746c016f149fb49b9c483968a8a5f40196b163ed
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -88,7 +89,9 @@ ht-degree: 0%
 #### 注意事項
 
 - クエリでのアポストロフィと引用符は、一部の言語で、ランキングと関連性に関するいくつかの小さな問題を引き起こす可能性があります。
-- インテリジェントランキングが正しく機能するように、検索またはフィルタリング **ファセット）に使用する [ 製品属性 ](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) の** 検索の重み付け）が `5` 以下であることを確認します。
+- インテリジェントランキングが正しく機能するように、検索またはフィルタリング **ファセット）に使用する属性の** 検索の重み付け）が `5` 以下であることを確認します。
+
+検索の重み付けの設定について詳しくは、[Metadata API](https://developer.adobe.com/commerce/services/reference/rest/) を参照してください。
 
 ### 手動ランキング
 

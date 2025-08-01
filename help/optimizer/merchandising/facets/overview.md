@@ -1,10 +1,11 @@
 ---
 title: ファセットの概要
 description: のファセットと、検索結果  [!DNL Adobe Commerce Optimizer]  改善方法について説明します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -29,12 +30,14 @@ ht-degree: 0%
 
 ## デフォルトの属性値
 
-次の [ 製品属性 ](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) は [!DNL Adobe Commerce Optimizer] で使用され、デフォルトで有効になっています。
+次の製品属性は [!DNL Adobe Commerce Optimizer] で使用され、デフォルトで有効になっています。
 
 | プロパティ | 説明 | 属性 |
 |---|---|---|
 | 並べ替え | 製品リストでの並べ替えに使用 | `price` |
 | 検索可能 | 検索で使用 | `price` <br />`sku`<br />`name` |
+
+製品属性とそのプロパティについて詳しくは、[ データ取得メタデータ API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) を参照してください。
 
 ## システム以外のデフォルトの属性プロパティ
 

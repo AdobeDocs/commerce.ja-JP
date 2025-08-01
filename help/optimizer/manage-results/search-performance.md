@@ -1,8 +1,9 @@
 ---
 title: パフォーマンスの検索
 description: 検索パフォーマンス ページでは、買い物客が使用する検索用語に関するinsightが提供されます。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 0%
@@ -51,7 +52,7 @@ ht-degree: 0%
 検索結果の関連性と有効性を決定する重要な要因はいくつかあります。
 
 - 適切に構造化された製品データにより、検索アルゴリズムで製品をクエリに効果的に一致させることができます。 製品データの品質が低いと、検索結果の関連性が低くなります。 マーチャンダイジング戦略の成功に直接影響を与える手順は次のとおりです。
-   - 適切な [ 検索可能な属性 ](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) を、対応する重み付きで設定します。
+   - 適切な [ 検索可能な属性 ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) を、対応する重み付きで設定します。
    - これらの属性内のデータが関連していることを確認します。
 - 適切に設計された検索エクスペリエンスは、顧客との信頼を構築し、顧客が必要なものを見つけることができるという自信を植え付けます。
 - 検索ルールは、人気度、新着、プロモーション条件、その他のマーチャンダイジング戦略に基づいて特定の製品の可視性を高め、ビジネス要件を満たすため、重要です。
@@ -97,7 +98,7 @@ ht-degree: 0%
 
 ## 検索結果の関連性の向上
 
-検索結果の関連性を向上させるには、有効な [ 検索ルール ](../merchandising/rules/overview.md) を実装し、製品メタデータを使用して正確で詳細な [ 属性が検索可能 ](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) になるようにします。
+検索結果の関連性を向上させるには、有効な [ 検索ルール ](../merchandising/rules/overview.md) を実装し、製品メタデータを使用して正確で詳細な [ 属性が検索可能 ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) になるようにします。
 
 ### 画像
 
@@ -109,7 +110,7 @@ ht-degree: 0%
 
 ### 製品メタデータの活用
 
-正確で詳細な製品 [ 属性が検索可能として設定されている ](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) ことを確認します。 SKU、名前、カテゴリの属性は、デフォルトで検索でき、検索から除外することはできません。 最適な結果を得るには、SKU にスペースを使用しないでください。
+正確で詳細な製品 [ 属性が検索可能として設定されている ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) ことを確認します。 SKU、名前、カテゴリの属性は、デフォルトで検索でき、検索から除外することはできません。 最適な結果を得るには、SKU にスペースを使用しないでください。
 
 検索関連性を高めるには、検索可能な各属性に重みを割り当てます。 重み付けが大きい属性は、検索結果内で高く表示されます。 関連度による並べ替えは、検索の重みなど、複数の条件の影響を受けます。 つまり、検索の重み付けが小さい属性は、検索の重み付けが大きい属性よりも関連性が高い場合があります。 その他の条件には、特定の属性の一致数、見つかった検索語句の位置、検索語句の前後の全体的なテキスト構造などがあります。
 
@@ -117,8 +118,8 @@ ht-degree: 0%
 
 検索の製品属性の詳細を説明します。
 
-- [ 検索可能として属性を設定 ](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata)
-- [ 属性へのウェイトの割り当て ](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata)
+- [ 検索可能として属性を設定 ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
+- [ 属性へのウェイトの割り当て ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
 
 ## フィールドの説明
 

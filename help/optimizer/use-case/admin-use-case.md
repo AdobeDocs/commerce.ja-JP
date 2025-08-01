@@ -3,9 +3,9 @@ title: ストアフロントとカタログ管理者のエンドツーエンド�
 description: カタログビュー  [!DNL Adobe Commerce Optimizer]  ポリシーを使用してカタログを管理する方法、およびカタログ設定に基づいてストアフロントを設定する方法について説明します。
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
+source-git-commit: 1ab7ee5673f261b43db25caf0ad340a0fd9e3341
 workflow-type: tm+mt
 source-wordcount: '2158'
 ht-degree: 0%
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe Commerce Storefront ドキュメントの [ ボイラープレートの探索 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=ja) トピックを確認して、ストアフロントの設定ファイルについて学びます。
+> Adobe Commerce Storefront ドキュメントの [ ボイラープレートの探索 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) トピックを確認して、ストアフロントの設定ファイルについて学びます。
 
 ### ‌重要ポイント
 
@@ -271,7 +271,7 @@ Celport カタログビューおよび関連するポリシーを作成したら
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
       "headers": {
          "cs": {
-            "ac-catalog-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
+            "ac-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
             "ac-price-book-id": "west_coast_inc",
             "ac-source-locale": "en-US"
            }
@@ -295,7 +295,7 @@ Celport カタログビューおよび関連するポリシーを作成したら
    カタログビューヘッダーには次の値が含まれています。
 
    - `commerce-endpoint`: `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
-   - `ac-catalog-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
+   - `ac-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
    - `ac-price-book-id`: `"west_coast_inc"`
    - `ac-source-locale`: `"en-US"`
 
@@ -307,7 +307,7 @@ Celport カタログビューおよび関連するポリシーを作成したら
    https://experience.adobe.com/#/@commerceprojectbeacon/in:XDevkG9W6UbwgQmPn995r3/commerce-optimizer-studio/catalog
    ```
 
-1. `ac-catalog-view-id` の値を、以前にコピーした Celport カタログビュー ID に置き換えます。
+1. `ac-view-id` の値を、以前にコピーした Celport カタログビュー ID に置き換えます。
 
 1. `ac-price-book-id` の値を `"east_coast_inc"` に置き換えます。
 
@@ -321,7 +321,7 @@ Celport カタログビューおよび関連するポリシーを作成したら
         "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{ACO-tenant-id}}/graphql",
         "headers": {
             "cs": {
-                "ac-catalog-view-id": "{{celport-catalog-view-id}}",
+                "ac-view-id": "{{celport-catalog-view-id}}",
                 "ac-price-book-id": "east_coast_inc",
                 "ac-source-locale": "en-US"
               }
@@ -378,7 +378,7 @@ Celport カタログ表示を使用するようにストアフロント設定を
 
 1. ストアフロント設定ファイル（`config.json`）を試して更新します。
 
-   1. `ac-catalog-view-id` と `ac-price-book` の値を変更します。
+   1. `ac-view-id` と `ac-price-book` の値を変更します。
 
    例えば、カタログビュー ID を Kingsbluff カタログビューに変更し、価格台帳 ID を `east_coast_inc` に変更できます。 「キングスブラフ」パーツ カテゴリのポリシーを確認すると、キングスブラフで使用できるパーツ カテゴリを確認 *きます*
 
@@ -445,4 +445,4 @@ Adobe Commerce Optimizerについて引き続き学習するには：
 - [ 詳細なポリシー設定 ](../setup/policies.md) について
 - 他の販売特約店に対する [ 追加のカタログ表示 ](../setup/catalog-view.md) の設定
 - プログラムによるカタログ管理については、[API ドキュメント ](https://developer.adobe.com/commerce/services/optimizer/) を参照してください
-- Edge Delivery Services ストアフロントのドロップインコンポーネントを設定して、製品検出、レコメンデーション、その他のストアフロント機能のためのカスタムストアフロントエクスペリエンスを作成する方法について説明します。 [ ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=ja) を参照してください。
+- Edge Delivery Services ストアフロントのドロップインコンポーネントを設定して、製品検出、レコメンデーション、その他のストアフロント機能のためのカスタムストアフロントエクスペリエンスを作成する方法について説明します。 [ ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) を参照してください。

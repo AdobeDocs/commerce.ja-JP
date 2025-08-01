@@ -3,11 +3,11 @@ title: 価格台帳
 description: ' [!DNL Adobe Commerce Optimizer] で価格台帳を管理する方法を説明します。'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: 513ed97442bfffe74d64f4eb0484cfa8f25b5ecc
+source-git-commit: 502d8d21ff052f4ecb212176459b38ce51f85dfc
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 基本価格台帳では、それ自体とすべての子価格台帳に対して通貨が定義されます。 子の価格帳簿はこの通貨を継承し、上書きすることはできません。
 
-Price Book API を使用して価格台帳を作成、更新、削除する方法については、[ 開発者向けドキュメント ](https://developer.adobe.com/commerce/services/reference/rest/) を参照し [!DNL Adobe Commerce Optimizer] ください。
+Price Book API を使用して [ の価格台帳を作成、更新、削除する方法については、](https://developer.adobe.com/commerce/services/reference/rest/) 開発者向けドキュメント [!DNL Adobe Commerce Optimizer] を参照してください。
 
 ## 主要な概念
 

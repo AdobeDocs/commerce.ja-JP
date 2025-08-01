@@ -1,10 +1,11 @@
 ---
 title: ファセットの作成と管理
 description: ' [!DNL Adobe Commerce Optimizer] でファセットを追加および管理する方法を説明します。'
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+exl-id: d6b7ff1f-a9b8-4fb8-8bd3-b3596695045c
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -25,9 +26,9 @@ ht-degree: 0%
 
    ファセットが *動的ファセット* リストの下部に追加され、「変更を公開 *ボタンが使用可能に* ります。
 
-1. 追加するファセットが見つからない場合は、[product 属性 ](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) に次のセットが含まれていることを確認します。
+1. 追加するファセットが見つからない場合は、[Metadata API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) を使用して `searchable` のパラメーターを設定します。
 
-   - `searchable` = `Yes`
+   `"searchable": true`
 
    ファセットは、次回カタログが [!DNL Adobe Commerce Optimizer] と同期されたときにストアフロントで使用できるようになります。 2 時間後にファセットが利用できない場合は、[ データ同期 ](../../setup/data-sync.md) を参照してください。
 

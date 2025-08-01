@@ -2,9 +2,10 @@
 title: SaaS データ書き出しパフォーマンスの向上
 description: マルチスレッドデータ書き出しモードを使用して、Commerce サービスの SaaS データ書き出しパフォーマンスを向上させる方法について説明します。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Adobeでは、データ取得にデフォルトの設定を使用することを
 
 >[!NOTE]
 >
->Adobeでは、マルチスレッド処理を使用する場合に注意が必要です。 この機能は、まだ改善中の早期アクセス機能です。 マルチスレッドを構成してパフォーマンスを向上させる場合は、含まれているAdobe Commerce サービスのガードレールをトリガーに設定して、データ取得中のシステムの誤用を防ぐことができます。 また、これらのガードレールは、システムに過度の負荷がかかる可能性のある同期変更のトリガーも制限します。 ガードレールがトリガーされると、リクエストはブロックされ、システムは 429 エラーを返します。 これらのエラーが発生した場合は、設定を調整し、サポートチケットを送信してサポートを受けてください。
+>Adobeでは、マルチスレッド処理を使用する場合に注意が必要です。 マルチスレッドを構成してパフォーマンスを向上させる場合は、含まれているAdobe Commerce サービスのガードレールをトリガーに設定して、データ取得中のシステムの誤用を防ぐことができます。 また、これらのガードレールは、システムに過度の負荷がかかる可能性のある同期変更のトリガーも制限します。 ガードレールがトリガーされると、リクエストはブロックされ、システムは 429 エラーを返します。 これらのエラーが発生した場合は、設定を調整し、サポートチケットを送信してサポートを受けてください。
 
 ## マルチスレッドの構成
 
@@ -63,7 +64,7 @@ bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 
 マルチスレッドを使用してすべてのデータ書き出し処理を行う場合、システムインテグレーターまたは開発者はCommerce アプリケーション設定で各フィードのスレッド数とバッチサイズを変更できます。
 
-これらの変更は、設定ファイルの [ システムセクション ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) にカスタム値を追加すること `app/etc/config.php` 適用できます。
+これらの変更は、設定ファイルの [ システムセクション ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) にカスタム値を追加すること `app/etc/config.php` 適用できます。
 
 **例：製品および価格のマルチスレッドの設定**
 
