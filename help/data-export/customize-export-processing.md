@@ -3,16 +3,16 @@ title: SaaS データ書き出しパフォーマンスの向上
 description: マルチスレッドデータ書き出しモードを使用して、Commerce サービスの SaaS データ書き出しパフォーマンスを向上させる方法について説明します。
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: 9b28da0bf861a266e9d679ba59470f46d9a89c1c
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
 # SaaS データ書き出しパフォーマンスの向上
 
-**マルチスレッドデータのエクスポートモード** は、フィードデータをバッチに分割して並行して処理することで、エクスポートプロセスを高速化します。
+**マルチスレッドデータエクスポートモード** は、フィードデータをバッチに分割して同時に処理することで、エクスポートプロセスを高速化します。
 
 開発者またはシステムインテグレーターは、デフォルトのシングルスレッドモードではなく、マルチスレッドデータ書き出しモードを使用することでパフォーマンスを向上させることができます。 シングルスレッドモードでは、フィード送信プロセスは並列化されません。 さらに、デフォルトの制限セットにより、すべてのクライアントは 1 つのスレッドのみを使用するように制限されています。 ほとんどの場合、設定のカスタマイズは必要ありません。
 
@@ -64,7 +64,7 @@ bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 
 マルチスレッドを使用してすべてのデータ書き出し処理を行う場合、システムインテグレーターまたは開発者はCommerce アプリケーション設定で各フィードのスレッド数とバッチサイズを変更できます。
 
-これらの変更は、設定ファイルの [ システムセクション ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) にカスタム値を追加すること `app/etc/config.php` 適用できます。
+これらの変更は、設定ファイルの [ システムセクション ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) にカスタム値を追加すること `app/etc/config.php` 適用できます。
 
 **例：製品および価格のマルチスレッドの設定**
 
