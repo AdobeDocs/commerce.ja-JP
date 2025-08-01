@@ -3,11 +3,11 @@ title: 基本を学ぶ
 description: ' [!DNL Adobe Commerce Optimizer] の使用を開始する方法について説明します。'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
+source-git-commit: f920cfe7cd433e85f343fefe1062a1972e5e5e5f
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,6 @@ ht-degree: 0%
 インスタンスの作成後：
 
 1. Commerce Cloud Manager で [ インスタンスを管理 ](#manage-an-instance) します。
-1. [ カタログ表示ガイド ](./setup/catalog-view.md) を使用して、カタログビューとポリシーを設定します。
 1. [User Management ガイド ](./user-management.md) を使用してユーザーアクセスを設定します。
 
 ### 手順 3. サンプルデータを追加（オプション）
@@ -146,15 +145,12 @@ Adobeは、[!DNL Adobe Commerce Optimizer] の機能を学習およびテスト�
 
 1. GitHub リポジトリにアクセスします。
    - [Sample Catalog Data Ingestion](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion) にアクセスします
-   - リポジトリの README ファイルの設定手順に従います。
 
-2. インジェストを実行します。
-   - 提供されたスクリプトを使用して、Adobe Commerce Optimizer ステージング環境にサンプルデータを読み込みます。
-   - [ データ同期 ](./setup/data-sync.md) ページにデータが表示されていることを確認します。
+1. リポジトリの README ファイルの設定手順に従います。
 
-3. クリーンアップ（オプション）:
-
-   サンプルデータローダーソースコードに含まれている `reset.js` スクリプトを使用して、サンプルデータを削除します。
+   - データ取り込みの設定と実行
+   - サンプルデータを使用したカタログポリシーとビューの設定
+   - サンプルデータのクリーンアップ（オプション）
 
 ## 次の手順
 
@@ -190,5 +186,5 @@ Adobeは、[!DNL Adobe Commerce Optimizer] の機能を学習およびテスト�
 ### ヘルプを表示
 
 - **開発者向けリソース**: [ 開発者向けドキュメント ](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **ストアフロントのリソース**:[Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
-- **サポート**: [Adobe Commerce サポートリソース ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview)
+- **ストアフロントのリソース**:[Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **サポート**: [Adobe Commerce サポートリソース ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
