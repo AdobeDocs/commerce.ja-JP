@@ -84,7 +84,7 @@ Adobe CommerceとMagento Open Sourceの一部の機能は [!DNL Commerce Service
 >[!WARNING]
 >
 > **実稼動 SaaS データ領域** は、データの競合を避けるために、実稼動 [!DNL Commerce] インストールでのみ使用します。 そうしないと、テストデータで実稼動サイトデータが汚染され、デプロイメントの遅延が発生するリスクがあります。 例えば、実稼動製品のデータが、ステージング URL などのステージングデータと誤って上書きされる可能性があります。
-> > これが発生した場合は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) して、データのクリーンアップをリクエストします。
+> &#x200B;> これが発生した場合は、[ サポートリクエストを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) して、データのクリーンアップをリクエストします。
 
 管理パネルに LiveSearch 設定フィールドが見つからない場合は、正しい SaaS API キーを入力したことを確認します。  実稼動データ領域を設定する際には実稼動 SaaS キーを追加し、ステージングデータ領域を設定する際にはステージングキーを追加していることを確認してください。 誤ったキーを設定すると、LiveSearch などの SaaS サービスはAdobe Commerce環境で使用できなくなります。
 
@@ -116,7 +116,7 @@ SaaS プロジェクトを選択または作成するには、ストアの [!DNL
 
    **[!UICONTROL Commerce Services Connector]** の設定に [!DNL Commerce] のセクションが表示されない場合は、目的の [!DNL Commerce] サービス [[!DNL Commerce]  に ](#availableservices) モジュールをインストールします。 また、`magento/module-services-id` パッケージがインストールされていることを確認します。
 
-1. _[!UICONTROL Sandbox API Keys]_セクションと_[!UICONTROL Production API Keys]_ セクションに、キー値を貼り付けます。
+1. _[!UICONTROL Sandbox API Keys]_&#x200B;セクションと&#x200B;_[!UICONTROL Production API Keys]_ セクションに、キー値を貼り付けます。
 
    - 秘密鍵は、鍵の先頭に `----BEGIN PRIVATE KEY---`、鍵の末尾に `----END PRIVATE KEY----` を含める必要があります。
    - 実際のキーのコピーがない場合は、アカウント所有者に問い合わせて、値を設定に接続します。
