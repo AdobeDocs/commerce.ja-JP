@@ -2,11 +2,11 @@
 title: 移行先  [!DNL Adobe Commerce as a Cloud Service]
 description: ' [!DNL Adobe Commerce as a Cloud Service] への移行方法を説明します。'
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 role: Architect
-source-git-commit: 506873780783e26841943a4b43dbc955c73f6f62
+source-git-commit: 2ecf5e0960b2e63cc95016e8ee5509b3c475de13
 workflow-type: tm+mt
-source-wordcount: '3030'
+source-wordcount: '3031'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 **主な違い**
 
-* [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**PaaS （最新）**：マーチャントは、Adobeがホストする環境内でアプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。 サービス（MySQL、Elasticsearchなど）の [ 共有責任モデル ](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/shared-responsibility)。
-* [!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}**SaaS （新規 – [!DNL Adobe Commerce as a Cloud Service]）**: Adobeは、コアアプリケーション、インフラストラクチャ、およびアップデートを完全に管理します。 マーチャントは、拡張ポイント（API、App Builder、UI SDK）を使用したカスタマイズに重点を置いています。 コアアプリケーションコードがロックされています。
+* [!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**PaaS （最新）**：マーチャントは、Adobeがホストする環境内でアプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。 サービス（MySQL、Elasticsearchなど）の [ 共有責任モデル ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)。
+* [!BADGE SaaS のみ ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}**SaaS （新規 – [!DNL Adobe Commerce as a Cloud Service]）**: Adobeは、コアアプリケーション、インフラストラクチャ、およびアップデートを完全に管理します。 マーチャントは、拡張ポイント（API、App Builder、UI SDK）を使用したカスタマイズに重点を置いています。 コアアプリケーションコードがロックされています。
 
 **アーキテクチャの含意**
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 **新しいツールと概念**
 * [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) と [Adobe Developer App Builderの API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway)
 * [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
+* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * [Commerce Cloud Manager](../getting-started.md#create-an-instance) を使用したセルフサービスプロビジョニング
 
 ## 移行パス
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ![ 増分移行 ](../assets/incremental.png){width="600" zoomable="yes"}
 
-* **Commerce Optimizer** – このアプローチを使用すると、Commerce Optimizerを移行段階として使用して、複雑なカスタマイズとデータを自分のペースで [!DNL Adobe Commerce as a Cloud Service] に移行することで、繰り返し移行できます。 Commerce Optimizerを使用すると、カタログチャネルとポリシーを活用したマーチャンダイジングサービス、Edge Deliveryを活用したCommerce Storefront、AEM Assetsを活用した製品ビジュアルにアクセスできます。
+* **Commerce Optimizer** – このアプローチを使用すると、Commerce Optimizerを移行段階として使用して、複雑なカスタマイズとデータを自分のペースで [!DNL Adobe Commerce as a Cloud Service] に移行することで、繰り返し移行できます。 Commerce Optimizerを使用すると、カタログビューとポリシーを活用したマーチャンダイジングサービス、Edge Deliveryを活用したCommerce Storefront、AEM Assetsを活用した製品ビジュアルにアクセスできます。
 
 ![ 反復移行 ](../assets/optimizer.png){width="600" zoomable="yes"}
 
@@ -166,7 +166,7 @@ ht-degree: 0%
 
 * **カタログデータの同期**:Adobe Commerce PaaS インスタンスが既存のAdobe Commerce カタログ SaaS サービスに商品とカタログデータを引き続き同期させるようにします。 これは、通常、PaaS インスタンス内で確立されたコネクタまたはモジュールに依存します。 カタログ SaaS サービスは、検索機能とマーチャンダイジング機能に対する権限のあるソースであり、PaaS バックエンドからデータを取得します。
 * **最適化のための API メッシュ**：ヘッドレスストアフロント（Edge Delivery Services上）やその他のサービスはカタログ SaaS サービスのデータを直接使用する可能性がありますが、Adobeでは（App Builder内で） API メッシュを使用することを強くお勧めします。 API メッシュは、Catalog SaaS サービスの API を、PaaS バックエンドのその他の必要な API （例えば、トランザクションデータベースからのリアルタイムの在庫確認や、Catalog SaaS サービスに完全にレプリケートされていないカスタム製品属性）と統合して、パフォーマンスの高い単一のGraphQL エンドポイントにすることができます。 これにより、キャッシュ、認証および応答の一元化も可能になります。
-* **Live Search と Product Recommendations の統合**: Live Search と Product Recommendations SaaS サービスを設定して [ カタログデータを取り込む ](https://experienceleague.adobe.com/ja/docs/commerce/live-search/install#configure-the-data) 既存のAdobe Commerce Catalog SaaS サービスから直接アクセスします。
+* **Live Search と Product Recommendations の統合**: Live Search と Product Recommendations SaaS サービスを設定して [ カタログデータを取り込む ](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) 既存のAdobe Commerce Catalog SaaS サービスから直接アクセスします。
 
 **メリット**：既存および運用中のカタログ SaaS サービスとその PaaS バックエンドとの統合パイプラインを活用することで、ヘッドレスストアフロントおよび高度な SaaS マーチャンダイジング機能への迅速な道筋を提供します。 ただし、プライマリカタログデータソースの PaaS バックエンドへの依存関係は維持され、新しいコンポーザブルカタログデータモデルに固有のマルチソース集計機能は提供されません。 このオプションは、より完全でコンポーザブルなアーキテクチャに向けた有効な足掛かりとなります。
 
@@ -183,7 +183,7 @@ ht-degree: 0%
       * **イベント駆動型** （App Builderを通じて）: PaaS インスタンスのAdobe I/O Eventsを、一般に公開されているアプリケーションまたはカスタムのAdobe App Builder アプリケーションにトリガーします。 これらのアプリケーションは、API を介してデータの変更（作成、更新、削除）を変換し、CCDM にプッシュします。
       * **バッチ取り込み**：大規模な初期読み込みまたは定期的な一括更新の場合は、ステージング領域への安全なファイル転送（CSV や JSON など）を使用し、Adobe Experience Platform（AEP）取り込みサービスによって CCDM に処理されます。
       * **API の直接統合** （App Builder オーケストレーションとの統合）：より複雑なシナリオでは、App Builderがオーケストレーションレイヤーとして機能し、PaaS バックエンドに対して直接 API 呼び出しを行い、データを変換して CCDM にプッシュできます。
-* **カタログ表示とポリシー定義**:CCDM 内のカタログビュー（店舗表示、地域、B2B/B2C セグメントなど、一意のカタログ表示の論理グループ）を設定し、ポリシー（製品表示、フィルタリングおよびマーチャンダイジングのルールセット）を定義します。 これにより、製品の品揃えとチャネルごとの表示ロジックを動的に制御できます。
+* **カタログ表示とポリシー定義**:CCDM 内のカタログビュー（店舗表示、地域、B2B/B2C セグメントなど、一意のカタログ表示の論理グループ）を設定し、ポリシー（製品表示、フィルタリングおよびマーチャンダイジングのルールセット）を定義します。 これにより、商品の品揃えを動的に制御し、カタログビューごとの表示ロジックを有効にできます。
 * **Live Search と Product Recommendations の統合**：カタログデータが CCDM に存在したら、Adobeの SaaS ベースの Live Search サービスと Product Recommendations サービスを統合します。 これらは、Adobe Sensei AI と機械学習モデルを活用して、優れた検索関連性とパーソナライズされたレコメンデーションを実現し、CCDM から直接データを使用します。
 
 **メリット**：カタログ管理と検出を CCDM と関連する SaaS サービスに抽象化することで、パフォーマンスの向上、AI 駆動型マーチャンダイジング機能の獲得、レガシーバックエンドからの読み取り操作の大幅なオフロード、ファネルエクスペリエンスの上位からの堅牢な「ピールオフ」が可能になります。
