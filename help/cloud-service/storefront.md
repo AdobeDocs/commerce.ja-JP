@@ -3,7 +3,7 @@ title: ストアフロントの設定
 description: 基礎ツールを実行してストアフロントを設定する方法  [!DNL Adobe Commerce as a Cloud Service]  説明します。
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 source-git-commit: 47eb8ee55bb093767f76aa23df8bb347ee280aae
 workflow-type: tm+mt
 source-wordcount: '737'
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 次の手順は、`aio commerce init` コマンドを使用してEdge Deliveryを搭載したAdobe Commerce Storefront をすばやく設定する方法を示しています。 このプロセスにより、次の設定が行われます。
 
-* [Edge Delivery ServicesによるCommerce ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) - Adobe Edge Delivery Servicesを活用した、パフォーマンス、拡張性、安全性の高いストアフロントです。
+* [Edge Delivery ServicesによるCommerce ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja) - Adobe Edge Delivery Servicesを活用した、パフォーマンス、拡張性、安全性の高いストアフロントです。
 * [Adobe Developer App Builderの API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/mesh/) – 複数のデータソースを 1 つのGraphQL エンドポイントに組み合わせることができる API プラットフォーム。 API メッシュは、1 つのゲートウェイを介してサードパーティ API とAdobe API を統合します。 1 つのGraphQL エンドポイントに対する 1 つのクエリで、複数のソースから結果を返すことができます。
 * [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) - Adobe アプリケーション用のプロジェクトを構築するために使用できる、API、イベント、ランタイム関数、プラグインへのアクセスを備えたデベロッパーツールのコレクションです。
 * [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/) - クラウド内のイベントに応答し、関数を実行するカスタムコードをデプロイするためのサーバーレスエンジン。
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 ## `aio commerce init` コマンドを実行します。
 
-次のコマンドを実行すると、Commerce ストアフロントの基礎モードが作成されます。 この基礎モードは、ストアフロントの構築と理解に最適な出発点となります。 ストアフロントの操作について詳しくは、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/) を参照してください。
+次のコマンドを実行すると、Commerce ストアフロントの基礎モードが作成されます。 この基礎モードは、ストアフロントの構築と理解に最適な出発点となります。 ストアフロントの操作について詳しくは、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照してください。
 
 
 1. `init` コマンドを実行します。
@@ -123,7 +123,7 @@ ht-degree: 0%
    * ストアフロントのプレビュー：`https://main--<repo name>--<username or org>.aem.page/`
    * ローカルで実行：`aio commerce:dev`
 
-ストアフロントをカスタマイズするには、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/) を参照してください。
+ストアフロントをカスタマイズするには、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照してください。
 
 ## トラブルシューティング
 
@@ -158,4 +158,4 @@ ht-degree: 0%
 * ストアフロントでのコンテンツとデータの管理と表示について詳しくは、[ ストアフロントコンテンツの更新 ](./use-cases.md#update-storefront-content) を参照してください。
 * コンテキスト実験機能について詳しくは、「[ コンテキスト実験 ](./use-cases.md#contextual-experimentation)」を参照してください。
 * ジェネレーティブ AI を使用して高品質のコンテンツ生成を自動化する方法について詳しくは、[ バリエーションの生成 ](./use-cases.md#generate-variations) を参照してください。
-* サイトコンテンツの更新、Commerce フロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/) を参照してください。
+* サイトコンテンツの更新、Commerce フロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照してください。
