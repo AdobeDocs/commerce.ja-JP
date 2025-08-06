@@ -3,10 +3,10 @@ title: ユースケース
 description: ' [!DNL Adobe Commerce as a Cloud Service] を使用して実用的なユースケースとサポートされるビジネスシナリオを達成する方法を説明します。'
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: a06d64566fda76c0527aabfa9e8fdf27e7c149ca
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: 47eb8ee55bb093767f76aa23df8bb347ee280aae
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1325'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 1. ストアフロントページを更新し、変更がライブになったことを確認します。
 
-## コンテキスト表現
+## コンテキスト実験
 
 Adobe Commerceのコンテキスト実験機能を使用すると、ストアフロントで実験を作成および管理して、様々なコンテンツや設定をテストできます。
 
@@ -113,7 +113,7 @@ Adobe Commerceのコンテキスト実験機能を使用すると、ストアフ
 
 1. メインフォルダーの下に [!UICONTROL **実験**] フォルダーを作成します。作成するには、「[!UICONTROL **新規**] ボタンをクリックし、[!UICONTROL **フォルダー**] を選択します。
 
-1. [!UICONTROL **experiments**] フォルダーに **1234** という名前のフォルダーを作成します。
+1. **experiments** フォルダーに [!UICONTROL **1234**] という名前のフォルダーを作成します。
 
 1. インデックスページの 2 つのコピーを **1234** フォルダーに貼り付けます。
 
@@ -156,7 +156,7 @@ AEM Assets、Adobe Express、Fireflyを使用すると、シンプルな自己�
 
 1. 前提条件で作成した [ ストアフロント ](./storefront.md) を開き、変更する項目に移動します。 品目の SKU または製品コードを書き留めます。
 
-1. [Adobe Experience Cloud](https://experience.adobe.com/#/home) で選択して、[!UICONTROL AEM Assets] を開きます。
+1. [!UICONTROL AEM Assets]Adobe Experience Cloud[ で選択して、](https://experience.adobe.com/#/home) を開きます。
 
    ![aem assets](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
@@ -198,7 +198,7 @@ AEM Assets、Adobe Express、Fireflyを使用すると、シンプルな自己�
 
 #### Commerce AEM Assetsへの画像の追加
 
-1. AEM as a Cloud Serviceの [ ナビゲーションパネル ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) から、**Assets** / **ファイル** / **Commerce** を選択し、前の節で作成したアセットをクリックします。
+1. AEM as a Cloud Serviceの [ ナビゲーションパネル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) から、**Assets** / **ファイル** / **Commerce** を選択し、前の節で作成したアセットをクリックします。
 
    ![commerce フォルダー ](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -248,7 +248,7 @@ Adobe Commerceのバリエーションを生成では、ジェネレーティブ
 
 ### テキストを生成
 
-1. [ ユニバーサルエディター ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) を使用してストアフロントサイトを開きます。
+1. [ ユニバーサルエディター ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) を使用してストアフロントサイトを開きます。
 
 1. 編集するテキストのブロックを選択します。
 
@@ -262,7 +262,7 @@ Adobe Commerceのバリエーションを生成では、ジェネレーティブ
 
 ### コンテンツと画像の生成
 
-1. [ バリエーションを生成 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) を開きます。
+1. [ バリエーションを生成 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) を開きます。
 
 1. [!UICONTROL **ヒーローバナー**] テンプレートを選択します。
 
