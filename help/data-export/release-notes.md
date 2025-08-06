@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 6876a5fbde2b3292cd788a50d104083cf51109ed
+source-git-commit: d859da62f54cf9a86a57d34d5f74aae972dc99be
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ ht-degree: 0%
 >SaaS データ書き出し拡張機能は、Live Search、Product Recommendations、Catalog Service と共に自動的にインストールされるモジュールのコレクションです。 Composer を使用すると、システムにインストールされているバージョンを確認できます。 場合によっては、Commerce サービスのバージョンを更新せずに修正点または新機能を取得するように、システムのデータエクスポート拡張機能をアップグレードする必要があります。
 
 ## 現在のメジャーバージョン
+
+## 103.4.8 リリース
+
+![ 新規 ](../assets/new.svg) 価格フィードに階層価格情報を追加しました。 <!--MDEE-1070-->
+![ 修正 ](../assets/fix.svg) データエクスポーター拡張機能で、web サイトスコープのバンドル選択価格を正しく書き出すようになりました。ストアフロントの価格に、「カタログ価格範囲」設定に基づいた正確な値が反映されるようになりました。<!--MDEE-1115-->
+![ 修正 ](../assets/fix.svg) 以前は、しきい値設定でInventory management（マルチソース Inventory management）を使用すると、製品が誤った `lowStock=true` ステータスで同期されていました。 この問題は、正確な低在庫レポートを確実におこなうために修正されました。<!--MDEE-1113-->
 
 ## 103.4.7 リリース
 
