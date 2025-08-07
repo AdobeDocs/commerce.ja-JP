@@ -37,7 +37,7 @@ ht-degree: 0%
 ## 手順 1:Experience Platform スキーマを設定する
 
 1. Adobe Experience Platformにログインし、Commerce スキーマを選択します。
-1. ルートレベルで [ カスタム ID フィールドを追加 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups) します。
+1. ルートレベルで [ カスタム ID フィールドを追加 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups) します。
    - `hashedPID` （String） - プライマリ ID ハッシュ
    - `hashedSID` （String） -セカンダリID ハッシュ
    - `primaryID` （String） -プライマリID フィールド名
