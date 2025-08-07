@@ -3,9 +3,10 @@ title: 行動イベント
 description: 各行動イベントがキャプチャするデータを説明します。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bcabccc9-8a2e-4045-9306-1d999bb75624
+source-git-commit: 1750aee715946d3a871e021cbbee687f54d1ff09
 workflow-type: tm+mt
-source-wordcount: '4516'
+source-wordcount: '4528'
 ht-degree: 0%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 0%
 
 以下に、[!DNL Data Connection] 拡張機能のインストール時に使用できるCommerceの行動イベントを示します。 これらのイベントで収集されたデータは、Adobe Experience Platformに送信されます。 また、[ カスタムイベント ](custom-events.md) を作成して、初期設定では提供されていない追加のデータを収集することもできます。
 
-次のイベントで収集されるデータに加えて、Adobe Experience Platform web SDKから提供される [ その他のデータ ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=ja) も取得します。
+次のイベントで収集されるデータに加えて、Adobe Experience Platform web SDKから提供される [ その他のデータ ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) も取得します。
 
 行動イベントは、サイトを閲覧する買い物客から匿名化された行動データを収集します。 これらのイベントで収集されたデータを使用して、特定の買い物客のセットをターゲットとしたプロモーションやキャンペーンを作成できます。
 
 >[!NOTE]
 >
->すべての行動イベントには、買い物客のメールアドレス（使用可能な場合）や ECID を含む「[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=ja)」フィールドが含まれます。
+>すべての行動イベントには、買い物客のメールアドレス（使用可能な場合）や ECID を含む「[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html)」フィールドが含まれます。
 
 ## ストアフロントイベント
 
@@ -38,7 +39,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `commerce.productListAdds` | 商品が買い物かごに追加されたかどうかを示します。 値 `1` は、製品が追加されたことを示します。 |
@@ -54,7 +55,7 @@ ht-degree: 0%
 | `productListItems.priceTotal` | 商品品目の合計価格。 |
 | `productListItems.quantity` | 買い物かごに入っている商品の単位数。 |
 | `productListItems.discountAmount` | 適用される割引額を示します。 |
-| `productListItems.currencyCode` | `USD` や `EUR` など、使用される [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 通貨コード。 |
+| `productListItems.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
 | `productListItems.selectedOptions` | 設定可能な製品に使用されるフィールド。 |
 | `productListItems.selectedOptions.attribute` | `size` や `color` など、設定可能な製品の属性を識別します。 |
@@ -72,7 +73,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `commerce.productListOpens` | 買い物かごが作成されたかどうかを示します。 値 `1` は、買い物かごが作成されたことを示します。 |
@@ -88,7 +89,7 @@ ht-degree: 0%
 | `productListItems.priceTotal` | 商品品目の合計価格。 |
 | `productListItems.quantity` | 買い物かごに入っている商品の単位数。 |
 | `productListItems.discountAmount` | 適用される割引額を示します。 |
-| `productListItems.currencyCode` | `USD` や `EUR` など、使用される [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 通貨コード。 |
+| `productListItems.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
 | `productListItems.selectedOptions` | 設定可能な製品に使用されるフィールド。 |
 | `productListItems.selectedOptions.attribute` | `size` や `color` など、設定可能な製品の属性を識別します。 |
@@ -106,7 +107,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `commerce.productListRemovals` | 商品が買い物かごから削除されたかどうかを示します。 値 `1` は、商品が買い物かごから削除されたことを示します。 |
@@ -122,7 +123,7 @@ ht-degree: 0%
 | `productListItems.priceTotal` | 商品品目の合計価格。 |
 | `productListItems.quantity` | 買い物かごに入っている商品の単位数。 |
 | `productListItems.discountAmount` | 適用される割引額を示します。 |
-| `productListItems.currencyCode` | `USD` や `EUR` など、使用される [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 通貨コード。 |
+| `productListItems.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
 | `productListItems.selectedOptions` | 設定可能な製品に使用されるフィールド。 |
 | `productListItems.selectedOptions.attribute` | `size` や `color` など、設定可能な製品の属性を識別します。 |
@@ -140,7 +141,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `commerce.productListViews` | 製品リストが表示されたかどうかを示します。 |
@@ -158,7 +159,7 @@ ht-degree: 0%
 | `productListItems.priceTotal` | 商品品目の合計価格。 |
 | `productListItems.quantity` | 買い物かごに入っている商品の単位数。 |
 | `productListItems.discountAmount` | 適用される割引額を示します。 |
-| `productListItems.currencyCode` | `USD` や `EUR` など、使用される [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 通貨コード。 |
+| `productListItems.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
 | `productListItems.selectedOptions` | 設定可能な製品に使用されるフィールド。 |
 | `productListItems.selectedOptions.attribute` | `size` や `color` など、設定可能な製品の属性を識別します。 |
@@ -176,10 +177,10 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
-| `web.webPageDetails.pageViews` | ページが読み込まれたかどうかを示します。 `1` の `value` は、ページが読み込まれたことを示します。 |
+| `web.webPageDetails.pageViews` | ページが読み込まれたかどうかを示します。 `value` の `1` は、ページが読み込まれたことを示します。 |
 | `web.webPageDetails.URL` | 基準となる、または通常の web ページの URL。 これは、ページに到達するために使用される実際の URL であり、`Web Link` を使用して記録されます。 |
 | `web.webPageDetails.name` | Web ページの基準となる名前。 この名前は、必ずしもページのタイトルやページコンテンツに直接関連付けられたものではなく、分類目的でサイトのページを整理するために使用されます。 |
 | `web.webReferrer.URL` | サイトへのリンクをクリックする前に買い物客が訪問した Web ページの URL。 |
@@ -201,7 +202,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `commerce.productViews` | 製品が表示されたかどうかを示します。 |
@@ -216,7 +217,7 @@ ht-degree: 0%
 | `productListItems.priceTotal` | 商品品目の合計価格。 |
 | `productListItems.quantity` | 買い物かごに入っている商品の単位数。 |
 | `productListItems.discountAmount` | 適用される割引額を示します。 |
-| `productListItems.currencyCode` | `USD` や `EUR` など、使用される [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 通貨コード。 |
+| `productListItems.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
 | `productListItems.selectedOptions` | 設定可能な製品に使用されるフィールド。 |
 | `productListItems.selectedOptions.attribute` | `size` や `color` など、設定可能な製品の属性を識別します。 |
@@ -234,7 +235,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `commerce.checkouts` | チェックアウトプロセス中にアクションが発生したかどうかを示します。 |
@@ -250,7 +251,7 @@ ht-degree: 0%
 | `productListItems.priceTotal` | 商品品目の合計価格。 |
 | `productListItems.quantity` | 買い物かごに入っている商品の単位数。 |
 | `productListItems.discountAmount` | 適用される割引額を示します。 |
-| `productListItems.currencyCode` | `USD` や `EUR` など、使用される [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 通貨コード。 |
+| `productListItems.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `productListItems.productImageUrl` | 商品のメイン画像 URL。 |
 | `productListItems.selectedOptions` | 設定可能な製品に使用されるフィールド。 |
 | `productListItems.selectedOptions.attribute` | `size` や `color` など、設定可能な製品の属性を識別します。 |
@@ -268,7 +269,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `commerce.purchases` | 注文が受理されたかどうかを示します。 |
@@ -278,14 +279,14 @@ ht-degree: 0%
 | `commerce.order.payments.paymentTransactionID` | この支払トランザクションの一意の ID。 |
 | `commerce.order.payments.paymentAmount` | 支払いの値。 |
 | `commerce.order.payments.paymentType` | この注文の支払い方法。 オプションは、`cash`、`credit_card`、`debit_card`、`gift_card`、`check`、`paypal`、`wire_transfer`、`credit_card_reference`、`other` です。 |
-| `commerce.order.payments.currencyCode` | `USD` や `EUR` など、使用される [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 通貨コード。 |
+| `commerce.order.payments.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `commerce.order.taxAmount` | 最終支払の一部として購入者が支払った税額。 |
 | `commerce.order.discountAmount` | 注文全体に適用される割引額を示します。 |
 | `commerce.order.createdDate` | コマースシステムで新しい注文が作成された日時。 例：`2022-10-15T20:20:39+00:00`。 |
 | `commerce.shipping` | 1 つ以上の商品に関する配送の詳細。 |
 | `commerce.shipping.shippingMethod` | お客様が選択した配送方法（通常配送、優先配送、店舗での受け取りなど）。 |
 | `commerce.shipping.shippingAmount` | お客様が配送用に支払う必要があった金額。 |  | `shipping` | 1 つ以上の商品に関する配送の詳細。 |
-| `commerce.shipping.currencyCode` | `USD` や `EUR` など、使用される [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 通貨コード。 |
+| `commerce.shipping.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `commerce.commerceScope` | イベントが発生した場所（ストア表示、ストア、web サイトなど）を示します。 |
 | `commerce.commerceScope.environmentID` | 環境 ID。 ハイフンで区切られた 32 桁の英数字 ID。 |
 | `commerce.commerceScope.storeCode` | 一意のストアコード。 Web サイトごとに多数のストアを持つことができます。 |
@@ -308,6 +309,10 @@ ht-degree: 0%
 
 ストアフロントから取得したプロファイルイベントには、`signIn`、`signOut`、`createAccount`、`editAccount` などのアカウント情報が含まれます。 このデータは、新規登録割引オファーの送信、アカウント変更の確認など、セグメントを適切に定義したり、マーケティングキャンペーンを実行したりするために必要な、主な顧客詳細の入力に使用されます。 [ サーバーサイド ](events-backoffice.md#customer-profile-events) から取り込まれた類似のプロファイルイベントがあります。
 
+>[!NOTE]
+>
+>[ 詳細情報 ](custom-identities.md) 顧客プロファイルの ID を強化するカスタム ID 属性の作成方法。
+
 ### ログイン
 
 | 説明 | XDM イベント名 |
@@ -324,7 +329,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `person` | 個別のアクター、担当者または所有者。 |
@@ -357,7 +362,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `userAccount` | ロイヤルティの詳細、環境設定、ログインプロセス、その他のアカウント環境設定を示します。 |
@@ -384,7 +389,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `person` | 個別のアクター、担当者または所有者。 |
@@ -417,7 +422,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `person` | 個別のアクター、担当者または所有者。 |
@@ -436,9 +441,9 @@ ht-degree: 0%
 
 ## イベントを検索
 
-検索イベントは、買い物客の意図に関連するデータを提供します。 買い物客の意図に関するインサイトは、買い物客が商品をどのように検索しているか、何をクリックしているか、最終的に購入または放棄するかをマーチャントが確認するのに役立ちます。 このデータの使用方法の例として、上位の製品を検索しても製品を購入しない既存の買い物客をターゲットにする場合があります。 これらのイベントにアクセスするには、[[!DNL Live Search]](../live-search/install.md) 拡張機能をインストールする必要があります。
+検索イベントは、買い物客の意図に関連するデータを提供します。 買い物客の意図へのInsightは、買い物客が商品をどのように検索しているか、何をクリックしているか、そして最終的に購入または放棄するかをマーチャントが確認するのに役立ちます。 このデータの使用方法の例として、上位の製品を検索しても製品を購入しない既存の買い物客をターゲットにする場合があります。 これらのイベントにアクセスするには、[[!DNL Live Search]](../live-search/install.md) 拡張機能をインストールする必要があります。
 
-`searchRequestSent` イベントと `searchResponseReceived` イベントの両方にある `searchRequest.id` フィールドと `searchResponse.id` フィールドを使用して、検索リクエストを対応する検索応答に相互参照します。
+`searchRequest.id` イベントと `searchResponse.id` イベントの両方にある `searchRequestSent` フィールドと `searchResponseReceived` フィールドを使用して、検索リクエストを対応する検索応答に相互参照します。
 
 ### searchRequestSent
 
@@ -456,7 +461,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `searchRequest` | 検索リクエストが送信されたかどうかを示します。 |
@@ -493,7 +498,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `searchResponse` | 検索応答が受信されたかどうかを示します。 |
@@ -513,9 +518,9 @@ ht-degree: 0%
 
 ## B2B イベント
 
-Adobe Commerceの ![B2B](../assets/b2b.svg) B2B マーチャントの場合、これらのイベントにアクセスするには、`experience-platform-connector-b2b` 拡張機能を [ インストール ](install.md#install-the-b2b-extension) する必要があります。
+Adobe Commerceの ![B2B](../assets/b2b.svg) B2B マーチャントの場合、これらのイベントにアクセスするには、[ 拡張機能を ](install.md#install-the-b2b-extension) インストール `experience-platform-connector-b2b` する必要があります。
 
-B2B イベントには、購買依頼リストが作成、追加または削除されたかどうかなど、[ 購買依頼リスト ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=ja) 情報が含まれます。 購買依頼リストに固有のイベントを追跡することで、顧客が頻繁に購入する製品を確認し、そのデータに基づいてキャンペーンを作成できます。
+B2B イベントには、購買依頼リストが作成、追加または削除されたかどうかなど、[ 購買依頼リスト ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) 情報が含まれます。 購買依頼リストに固有のイベントを追跡することで、顧客が頻繁に購入する製品を確認し、そのデータに基づいてキャンペーンを作成できます。
 
 ### createRequisitionList
 
@@ -529,7 +534,7 @@ B2B イベントには、購買依頼リストが作成、追加または削除�
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `commerce.requisitionListOpens` | 新規購買依頼リストの初期化を示します。 |
@@ -555,7 +560,7 @@ B2B イベントには、購買依頼リストが作成、追加または削除�
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `commerce.requisitionListAdds` | 1 つ以上の製品を購買依頼リストに追加することを示します。 |
@@ -574,7 +579,7 @@ B2B イベントには、購買依頼リストが作成、追加または削除�
 | `productListItems.priceTotal` | 商品品目の合計価格。 |
 | `productListItems.quantity` | 買い物かごに入っている商品の単位数。 |
 | `productListItems.discountAmount` | 適用される割引額を示します。 |
-| `productListItems.currencyCode` | `USD` や `EUR` など、使用される [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 通貨コード。 |
+| `productListItems.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `productListItems.selectedOptions` | 設定可能な製品に使用されるフィールド。 |
 | `productListItems.selectedOptions.attribute` | `size` や `color` など、設定可能な製品の属性を識別します。 |
 | `productListItems.selectedOptions.value` | `small` または `black` などの属性の値を識別します。 |
@@ -591,7 +596,7 @@ B2B イベントには、購買依頼リストが作成、追加または削除�
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `commerce.requsitionListRemovals` | 購買依頼リストから 1 つ以上の製品の削除を示します。 |
@@ -610,7 +615,7 @@ B2B イベントには、購買依頼リストが作成、追加または削除�
 | `productListItems.priceTotal` | 商品品目の合計価格。 |
 | `productListItems.quantity` | 買い物かごに入っている商品の単位数。 |
 | `productListItems.discountAmount` | 適用される割引額を示します。 |
-| `productListItems.currencyCode` | `USD` や `EUR` など、使用される [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 通貨コード。 |
+| `productListItems.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `productListItems.selectedOptions` | 設定可能な製品に使用されるフィールド。 |
 | `productListItems.selectedOptions.attribute` | `size` や `color` など、設定可能な製品の属性を識別します。 |
 | `productListItems.selectedOptions.value` | `small` または `black` などの属性の値を識別します。 |
@@ -627,7 +632,7 @@ B2B イベントには、購買依頼リストが作成、追加または削除�
 
 | フィールド | 説明 |
 |---|---|
-| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=ja) が含まれています。 |
+| `channel` | データのソースに関する情報が含まれます。 `_id` と `_type` の両方に [ 名前空間の値 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html) が含まれています。 |
 | `channel._id` | チャネルの一意の識別子（`"https://ns.adobe.com/xdm/channels/web"` など）。 |
 | `channel._type` | `"https://ns.adobe.com/xdm/channel-types/web"` などのチャネルデータのソースを識別します。 |
 | `commerce.requisitionListDeletes` | 購買依頼リストが削除されたことを示します。 |

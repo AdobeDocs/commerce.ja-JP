@@ -1,18 +1,23 @@
 ---
-title: カスタム注文属性の追加
+title: 注文へのカスタム属性の追加
 description: バックオフィスデータにカスタム注文属性を追加し、それらの属性をExperience Platformに送信する方法を説明します。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
+source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '602'
 ht-degree: 2%
 
 ---
 
-# カスタム注文属性の追加
+# 注文へのカスタム属性の追加
 
 この記事では、バックオフィスイベントにカスタム属性を追加する方法について説明します。 カスタム属性を使用すると、豊富なデータインサイトを取得して分析を強化し、買い物客向けにパーソナライズされたエクスペリエンスをさらに作成できます。
+
+>[!NOTE]
+>
+>プロファイルに [ カスタム ID を追加 ](custom-identities.md) する方法を説明します。
 
 カスタム属性は、次の 2 つのレベルでサポートされます。
 
@@ -35,7 +40,7 @@ ht-degree: 2%
 
 ## 手順 1：ディレクトリ構造の作成
 
-1. [!DNL Commerce] インストールの `app/code` ディレクトリに移動し、モジュールディレクトリを作成します。 例：`Magento/AepCustomAttributes`。 このディレクトリには、カスタム アトリビュートに必要なファイルが含まれています。
+1. `app/code` インストールの [!DNL Commerce] ディレクトリに移動し、モジュールディレクトリを作成します。 例：`Magento/AepCustomAttributes`。 このディレクトリには、カスタム アトリビュートに必要なファイルが含まれています。
 1. モジュールディレクトリに、`etc` というサブディレクトリを作成します。 `etc` ディレクトリには、`module.xml`、`query.xml`、`di.xml` および `et_schema.xml` ファイルが含まれます。
 
 ## 手順 2：依存関係とセットアップバージョンを定義する
@@ -296,7 +301,7 @@ class OrderItemCustomAttribute
 
 ## 手順 10:ProductContext クラスの定義
 
-`ProductContext` クラスを定義する `ProductContext.php` というファイルを作成します。 例：
+`ProductContext.php` クラスを定義する `ProductContext` というファイルを作成します。 例：
 
 ```php
 <?php>
@@ -344,7 +349,7 @@ ComponentRegistrar::register(
 
 新しいカスタム注文属性をExperience Platformの [!DNL Commerce] スキーマで確実に取り込めるようにするには、スキーマを拡張してこれらのカスタムフィールドを含める必要があります。
 
-既存の XDM スキーマを拡張してこれらのカスタムフィールドを含める方法については、Experience Platform ドキュメントの [UI でのスキーマの作成と編集 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) の記事を参照してください。 テナント ID フィールドは動的に生成されますが、フィールド構造はExperience Platformのドキュメントで提供されている例に類似している必要があります。
+既存の XDM スキーマを拡張してこれらのカスタムフィールドを含める方法については、Experience Platform ドキュメントの [UI でのスキーマの作成と編集 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) の記事を参照してください。 テナント ID フィールドは動的に生成されますが、フィールド構造はExperience Platformのドキュメントで提供されている例に類似している必要があります。
 
 >[!IMPORTANT]
 >
@@ -364,7 +369,7 @@ ComponentRegistrar::register(
 
 ### トラブルシューティング
 
-「**[!UICONTROL Data Customization]**」タブにメッセージ `No custom order attributes found.` が表示された場合は、次の確認を行ってください。
+「`No custom order attributes found.`」タブにメッセージ **[!UICONTROL Data Customization]** が表示された場合は、次の確認を行ってください。
 
 1. [ データコネクタ拡張機能 ](overview.md#prerequisites) を有効にするための前提条件は完了しています。
 1. [ カスタム注文属性 ](#add-custom-order-attributes) を設定しました。
