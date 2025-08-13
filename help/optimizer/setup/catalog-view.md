@@ -3,11 +3,11 @@ title: カタログビュー
 description: カタログビューの概要と、ビジネス構造、ポリシー、価格で製品カタログを整理するためのビューの作成方法について説明します。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
+source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,43 @@ ht-degree: 0%
 [ カタログ ビュー ] ページが更新され、新しいカタログ ビューが表示されます。&#x200B;
 
 これらの手順を完了すると、選択したソースとポリシーに基づいて製品と価格を表示するようにカタログ表示が設定されます。
+
+## カタログ表示の管理
+
+既存のカタログ ビューのプロパティを更新または表示するには、次の手順に従います。
+
+### カタログビューを編集
+
+1. *カタログビュー* ワークスペースで、編集するグリッド内のカタログビューを見つけ、「**...**」をクリックしてアクションメニューを開きます。
+1. **編集** をクリックして、カタログ ビューエディタにアクセスします。
+1. 必要に応じて、名前、カタログソース、ポリシーおよび価格台帳情報を更新します。
+1. 変更を保存します。
+
+### カタログビューを削除
+
+1. *カタログビュー* ワークスペースで、編集するグリッド内のカタログビューを見つけ、「**...**」をクリックしてアクションメニューを開きます。
+1. **削除** をクリックします。
+
+   確認ダイアログが表示されたら、「**[!UICONTROL Delete]**」をクリックします。
+
+### 詳細を表示
+
+このオプションを使用すると、*カタログビュー* テーブルを表示したまま、すべてのカタログビューパラメーターをすばやく確認できます。
+
+*カタログビュー* ワークスペースで、編集するグリッドでカタログビューを見つけ、![ 情報アイコン ](../assets/info-icon.png) をクリックします。
+
+![ カタログ ビューの詳細 ](../assets/catalog-view-details.png)
+
+ここから、次のようなカタログビューの設定の詳細を確認できます。
+
+- ビュー ID
+- 名前
+- カタログソース
+- ポリシー
+- 作成日
+- 変更されたデータ
+
+これらの設定の一部は、ストアフロントを設定する際や、データ取り込み API を使用する際に必要になります。
 
 ## アーキテクチャの概要
 
