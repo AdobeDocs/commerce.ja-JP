@@ -2,29 +2,30 @@
 title: ストアフロントの設定
 description: ストアフロントの設定方法  [!DNL Adobe Commerce Optimizer]  説明します。
 role: Developer
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 7ff78711972cbd73fc75f7523d8ac734081dbe10
+source-git-commit: 475706df971e75091ee72e89d64088fa56aec4dd
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 # ストアフロントの設定
 
->[!NOTE]
+このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)[!DNL Adobe Commerce Optimizer] インスタンスのデータを利用した、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について詳しく説明します。
+
+
+>[!TIP]
 >
->このドキュメントでは、製品の早期アクセス開発について説明しており、一般提供を目的とした機能のすべてを反映しているわけではありません。
-
-このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja) [!DNL Adobe Commerce Optimizer] インスタンスのデータを利用して、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について説明します。
-
+>サイトクリエーターツールを使用してストアフロントのコードリポジトリとドキュメント作成者環境を設定することで、ストアフロントの設定プロセスを迅速に追跡します
+>>自動。 その後、これらの手順を使用して、ストアフロントの作成方法や使用可能なコンポーネントの詳細を確認できます。
 
 ## 前提条件
 
 * リポジトリを作成できる GitHub アカウント（github.com）があり、ローカル開発用に設定されていることを確認します。
 
-* Adobe Commerce ストアフロントのドキュメントの [ 概要 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=ja) を確認して、Adobe Edge 配信サービスでCommerce ストアフロントを開発するための概念とワークフローについて説明します。
+* Adobe Commerce ストアフロントのドキュメントの [ 概要 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) を確認して、Adobe Edge 配信サービスでCommerce ストアフロントを開発するための概念とワークフローについて説明します。
 * 開発環境の設定
 
 
@@ -60,7 +61,7 @@ Node Version Manager （NVM）と必要な Node.js バージョン（22.13.1 LTS
 
 >[!TIP]
 >
->[!DNL Adobe Commerce Optimizer] ソリューションを拡張およびカスタマイズするためのその他のリソースは、[Adobe CommerceのApp Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) および [Adobe Developer App Builderの API メッシュ ](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh) を通じて利用できます。 アクセスおよび使用方法について詳しくは、Adobe アカウント担当者にお問い合わせください。
+>[!DNL Adobe Commerce Optimizer] ソリューションを拡張およびカスタマイズするためのその他のリソースは、[Adobe CommerceのApp Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) および [Adobe Developer App Builderの API メッシュ ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh) を通じて利用できます。 アクセスおよび使用方法について詳しくは、Adobe アカウント担当者にお問い合わせください。
 
 #### Sidekickのインストール
 
@@ -68,7 +69,7 @@ Sidekick ブラウザー拡張機能をインストールして、コンテン�
 
 ## ストアフロントの作成
 
-[!DNL Adobe Commerce Optimizer] プロジェクト用に作成するストアフロントでは、Edge Delivery Services ストアフロントボイラープレート上のAdobe Commerceのカスタマイズバージョンを使用します。 ボイラープレートは、ストアフロント開発の出発点となるファイルとフォルダーのセットです。 この設定プロセスは、Edge Delivery Services ストアフロント上の [Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja) の標準の設定プロセスとは異なります。
+[!DNL Adobe Commerce Optimizer] プロジェクト用に作成するストアフロントでは、Edge Delivery Services ストアフロントボイラープレート上のAdobe Commerceのカスタマイズバージョンを使用します。 ボイラープレートは、ストアフロント開発の出発点となるファイルとフォルダーのセットです。 この設定プロセスは、Edge Delivery Services ストアフロント上の [Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) の標準の設定プロセスとは異なります。
 
 >[!NOTE]
 >
@@ -107,7 +108,6 @@ Edge Delivery Services + Adobe Commerce Boilerplate テンプレートを使用�
 1. 設定フォームに次の詳細を入力します。
 
    * **リポジトリテンプレート** - `hlxsites/aem-boilerplate-commerce` （デフォルト）。
-   * **すべてのブランチを含める** – すべてのブランチを含める場合は、このオプションを選択します。
    * **所有者** – 組織またはアカウント（必須）。
    * **リポジトリ名** – 新しいリポジトリの一意の名前（必須）。
    * **説明** - リポジトリの簡単な説明（オプション）。
@@ -145,12 +145,6 @@ Edge Delivery Services + Adobe Commerce Boilerplate テンプレートを使用�
 
 1. ターミナルまたは IDE でリポジトリを開きます。
 
-1. `aco` ブランチを確認します。
-
-   ```bash
-   git checkout aco
-   ```
-
 1. `default-fstab.yaml` ファイルを `fstab.yaml` にコピーして、設定ファイルを作成します。
 
    ```bash
@@ -159,7 +153,7 @@ Edge Delivery Services + Adobe Commerce Boilerplate テンプレートを使用�
 
 1. ストアフロント設定ファイルのマウントポイントを更新して、コンテンツの URL を指定します。
 
-   1. [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja#vocabulary) 設定ファイルを開きます。
+   1. [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary) 設定ファイルを開きます。
 
       ```yaml
       mountpoints:
@@ -192,77 +186,49 @@ Edge Delivery Services + Adobe Commerce Boilerplate テンプレートを使用�
 >
 >ブラウザーに [Sidekick拡張機能 ](https://www.aem.live/docs/sidekick#installation) がインストールされていることを確認します。
 
-1. `tools/sidekick/config.json` ファイルを開きます。
+1. 新しいディレクトリ `tools/sidekick` を作成します。
+
+   ```shell
+   mkdir tools/sidekick
+   ```
+
+1. ルートディレクトリの `demo-sidekick.json` ファイルを `tools/sidekick` ディレクトリにコピーし、名前を `config.json` に変更します。
+
+   ```shell
+   cp demo-sidekick.json tools/sidekick/config.json
+   ```
+
+1. サイトに合わせてSidekick設定をカスタマイズします。
+
+   ディレク `tools/sidekick/` リから `config.json` ファイルを編集します。
 
    +++Sidekick設定ファイル
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/{{org}}/{{site}}{{pathname}}"
    }
    ```
 
-   詳しくは、[Sidekick ライブラリのドキュメント ](https://www.aem.live/docs/sidekick-library) 参照してください。
-
-   +++
-
 1. `url` キーの値を GitHub リポジトリの値で更新します。
 
-   * `{ORG}` の文字列を、リポジトリの組織またはユーザー名に置き換えます。
+   * `{{ORG}}` の文字列を、リポジトリの組織またはユーザー名に置き換えます。
 
-   * `{SITE}` の文字列をリポジトリ名に置き換えます
+   * `{{SITE}}` の文字列をリポジトリ名に置き換えます。
 
-   +++更新した設定ファイルの例
+   * `pathname` 変数は、システムによって入力されます。
+
+   +++更新された設定ファイルの例
 
    GitHub リポジトリの名前が `aco-storefront` で、組織の名前が `early-adopter` の場合、更新された URL は次のようになります。
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/aco-storefront/early-adopter{{pathname}}"
    }
    ```
 
@@ -284,8 +250,8 @@ Edge Delivery Services + Adobe Commerce Boilerplate テンプレートを使用�
 
    ```bash
    git status
-   On branch aco
-   Your branch is up to date with 'origin/aco'.
+   On branch main
+   Your branch is up to date with 'origin/main'.
    
    Changes to be committed:
     (use "git restore --staged <file>..." to unstage)
@@ -293,16 +259,16 @@ Edge Delivery Services + Adobe Commerce Boilerplate テンプレートを使用�
         modified:   tools/sidekick/config.json
    ```
 
-1. 変更内容を `aco` ブランチにコミットします。
+1. 変更をコミットします。
 
    ```bash
    git commit -m "Update storefront boilerplate for Adobe Commerce Optimizer"
    ```
 
-1. `main` 分岐のボイラープレートを `aco` 分岐の変更で上書きします。
+1. 変更を適用します。
 
    ```bash
-   git push origin aco:main -f
+   git push
    ```
 
 ### 手順 5:AEM コード同期アプリの追加
@@ -474,4 +440,4 @@ AEM コード同期 GitHub アプリをリポジトリに追加して、リポ�
 
 >[!MORELIKETHIS]
 >
-> サイトコンテンツの更新と [Adobe Commerceのフロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)Commerce ストアフロントのドキュメントを参照してください。
+> サイトコンテンツの更新と [Adobe Commerceのフロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、](https://experienceleague.adobe.com/developer/commerce/storefront/)Commerce ストアフロントのドキュメントを参照してください。

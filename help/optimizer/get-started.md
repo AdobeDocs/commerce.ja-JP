@@ -3,11 +3,11 @@ title: 基本を学ぶ
 description: ' [!DNL Adobe Commerce Optimizer] の使用を開始する方法について説明します。'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 87fbd979b0660af1bf3a8786eb1e1f5f79cea043
+source-git-commit: 5cb7dc4d2bd1b9bd43d4a858e4814ca803a49027
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -119,11 +119,13 @@ Commerce Cloud Manager からインスタンスを管理します。
 ログインすると、組織内で使用可能なすべてのCommerce製品インスタンスがダッシュボードに表示されます。
 「製品」列は、インスタンスがプロビジョニングされるCommerce アプリケーションを示します。
 
-「フィルター」オプションと「検索」オプションを使用して、特定のインスタンスをすばやく見つけます。 作成されたデータ、地域、作成者、製品タイプ、環境およびステータスで検索できます。
+![ インスタンスの検索とフィルター ](./assets/search-filter-instances.png){zoomable="yes"}
+
+フィルターツールと検索ツールを使用すると、作成日、地域、作成者、製品タイプ、環境、ステータス別に、特定のインスタンスをすばやく見つけることができます。
 
 ### [!DNL Adobe Commerce Optimizer] アプリケーションへのアクセス
 
-アプリが開いたら、Commerce Cloud Manager に戻ることなく、サンドボックスや実稼働などの環境を簡単に切り替えて、それぞれのデータや設定を表示することができます。
+アプリを開いたら、サンドボックスや実稼動環境などの環境を簡単に切り替えることで、Commerce Cloud Manager に戻ることなく、それぞれのデータや設定を表示できます。
 
 1. Commerce Cloud Manager で、インスタンス名をクリックして [!DNL Adobe Commerce Optimizer] アプリケーションを開きます。
 
@@ -146,8 +148,11 @@ Commerce Cloud Manager からインスタンスを管理します。
 - **アプリケーションにアクセスするための** Commerce Optimizer URL[!DNL Adobe Commerce Optimizer]
 - **インスタンス ID** インスタンスを識別する一意のテナント ID
 
-API アクセスを設定し、フロントエンドアプリケーションやバックエンドシステムと統合するには、エンドポイントとインスタンス ID の詳細が必要です。
-インスタンスの詳細へのアクセス権がない場合は、組織の管理者に連絡して値を取得してください。
+開発者の場合は、開発環境を設定して [!DNL Adobe Commerce Optimizer] API に接続するために、次の詳細が必要です。
+
+>[!NOTE]
+>
+>インスタンスの詳細にアクセスするには、Adobe IMS組織で必要な権限を持っている必要があります。 インスタンスの詳細が表示されない場合やアプリケーションにアクセスできない場合は、組織の管理者にお問い合わせください。
 
 ### インスタンス名と説明を編集
 
@@ -212,6 +217,6 @@ Adobeは、[!DNL Adobe Commerce Optimizer] の機能を学習およびテスト�
 ### ヘルプを表示
 
 - **開発者向けリソース**: [ 開発者向けドキュメント ](https://developer.adobe.com/commerce/services/optimizer/)
-- **ストアフロントのリソース**:[Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
-- **チュートリアル**: [Commerce Optimizer チュートリアル ](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **サポート**: [Adobe Commerce サポートリソース ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview)
+- **ストアフロントのリソース**:[Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **チュートリアル**: [Commerce Optimizer チュートリアル ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **サポート**: [Adobe Commerce サポートリソース ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
