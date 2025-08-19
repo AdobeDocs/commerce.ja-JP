@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] ホームの便利な設定を使用して、ニーズに合わせて [!DNL Payment Services] をカスタマイズできます。
 
-[!DNL Payment Services] に対して [!DNL Adobe Commerce] を設定するには、[!DNL Magento Open Source] をクリック **[!UICONTROL Settings]** ます。 これらの設定オプションは、_[!UICONTROL Payment mode]_一般[_ 設定オプション _の ](#configure-general-settings) フィールドで設定された環境にのみ適用されます。
+[!DNL Payment Services] に対して [!DNL Adobe Commerce] を設定するには、[!DNL Magento Open Source] をクリック **[!UICONTROL Settings]** ます。 これらの設定オプションは、_[!UICONTROL Payment mode]_&#x200B;一般[_ 設定オプション _の ](#configure-general-settings) フィールドで設定された環境にのみ適用されます。
 
 マルチストア設定またはレガシー設定については、[ 管理者のの設定 ](configure-admin.md) を参照してください。
 
@@ -34,9 +34,9 @@ Web サイトに対して [!DNL Payment Services] を有効にし、サンドボ
 
    ![React 設定ビュー ](assets/react-settings-view.png){width="500" zoomable="yes"}
 
-   _[!UICONTROL General]_のセクションには、支払い方法として [!DNL Payment Services] を有効にするために使用する設定が含まれています。
+   _[!UICONTROL General]_&#x200B;のセクションには、支払い方法として [!DNL Payment Services] を有効にするために使用する設定が含まれています。
 
-1. ストアの支払い方法として [!DNL Payment Services] を有効にするには、「_[!UICONTROL General]_」セクションで&#x200B;**[!UICONTROL Enable Payment Services as payment method]**を `Yes` に切り替えます。
+1. ストアの支払い方法として [!DNL Payment Services] を有効にするには、「_[!UICONTROL General]_」セクションで&#x200B;**[!UICONTROL Enable Payment Services as payment method]**&#x200B;を `Yes` に切り替えます。
 
 1. ストアで [!DNL Payment Services] をテストしている場合は、**支払いモード** を `Sandbox` に設定します。 ライブ支払いを有効にする準備が整ったら、`Production` に設定します。
 
@@ -65,12 +65,12 @@ Web サイトまたは個々のストア表示の設定に [!UICONTROL Soft Desc
 1. 「**[!UICONTROL Save]**」をクリックします。
 1. Web サイトまたはストアビュー用に設定されたデフォルト以外のソフト記述子を作成するには：
    1. ソフト記述子を作成する web サイト表示またはストア表示を **[!UICONTROL Scope]** ドロップダウンメニューで選択します。
-   1. _オフ_**[!UICONTROL Use website]** （選択した範囲に応じて **[!UICONTROL Use default]**）を切り替えます。
+   1. _オフ_&#x200B;**[!UICONTROL Use website]** （選択した範囲に応じて **[!UICONTROL Use default]**）を切り替えます。
    1. テキストフィールドにカスタムテキストを追加します。
    1. 「**[!UICONTROL Save]**」をクリックします。
 1. Web サイトまたはストアビューでを有効にするには、親 Web サイトに使用するデフォルトのソフト記述子 _または_ を表示します。
    1. 既存のソフト記述子を有効にする web サイト表示またはストア表示を **[!UICONTROL Scope]** ドロップダウンメニューで選択します。
-   1. _オン_**[!UICONTROL Use website]** （選択した範囲に応じて **[!UICONTROL Use default]**）を切り替えます。
+   1. _オン_&#x200B;**[!UICONTROL Use website]** （選択した範囲に応じて **[!UICONTROL Use default]**）を切り替えます。
    1. 「**[!UICONTROL Save]**」をクリックします。
 
    変更を保存せずにこのビューから移動しようとすると、変更の破棄、編集の継続、または変更の保存を求めるモーダルが表示されます。
@@ -95,7 +95,7 @@ Web サイトまたは個々のストア表示の設定に [!UICONTROL Soft Desc
 
 ### クレジットカードのフィールド
 
-_[!UICONTROL Credit Card Fields]_の設定は、クレジットカードまたはデビットカードの支払い方法に対してシンプルで安全なチェックアウトオプションを提供します。
+_[!UICONTROL Credit Card Fields]_&#x200B;の設定は、クレジットカードまたはデビットカードの支払い方法に対してシンプルで安全なチェックアウトオプションを提供します。
 
 詳しくは、[ 支払いオプション ](payments-options.md#credit-card-fields) を参照してください。
 
@@ -207,8 +207,8 @@ PayPal 支払いボタンの支払いオプションを有効にして設定で�
 | [!UICONTROL Title] | ストア表示 | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：テキストフィールド |
 | [!UICONTROL Payment Action] | web サイト | 指定した支払方法の [ 支払アクション ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | ストア表示 | チェックアウトページでの指定した支払い方法の並べ替え順。 `Numeric Only` 値 |
-| [!UICONTROL Show PayPal buttons on checkout page] | ストア表示 | チェックアウトページで [!DNL PayPal payment buttons] を有効または無効にします。 オプション：[!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on product detail page] | ストア表示 | 製品の詳細ページで [!DNL PayPal payment buttons] を有効または無効にします。 オプション：[!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on checkout page] | ストア表示 | チェックアウトページで [!DNL PayPal payment buttons] を有効または無効にします。 オプション：[!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on product detail page] | ストア表示 | 製品の詳細ページで [!DNL PayPal payment buttons] を有効または無効にします。 オプション：[!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | ストア表示 | ミニ買い物かごのプレビューで [!DNL PayPal payment buttons] を有効または無効にします。 オプション：[!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal buttons on cart page] | ストア表示 | 買い物かごページの [!DNL PayPal payment buttons] を有効または無効にします。 オプション：[!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal Pay Later button] | ストア表示 | 支払ボタンが表示される後で支払う支払いオプションの外観を有効または無効にします。 オプション：[!UICONTROL Off] / [!UICONTROL On] |
@@ -220,7 +220,7 @@ PayPal 支払いボタンの支払いオプションを有効にして設定で�
 
 ### ボタンのスタイル
 
-また、支払いボタンの _[!UICONTROL Button style]_のオプションを設定することもできます。
+また、支払いボタンの _[!UICONTROL Button style]_&#x200B;のオプションを設定することもできます。
 
 1. **[!UICONTROL Layout]** を変更するには、「`Vertical`」または「`Horizontal`」を選択します。
 

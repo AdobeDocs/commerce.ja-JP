@@ -45,12 +45,12 @@ Signifyd は注文に対して何らかのアクションを実行するので�
 
 以下の設定オプションは、支払いサービスおよび Signifyd の統合と互換性がありません。
 
-* [!DNL Payment Services] 支払アクション `Authorize` および _で_ が設定されている場合、Signifyd は `PostAuth` オプションが _[!UICONTROL Decline Guarantees]_クレジットメモを作成&#x200B;**に設定された**モードです。
+* [!DNL Payment Services] 支払アクション `Authorize` および _で_ が設定されている場合、Signifyd は `PostAuth` オプションが _[!UICONTROL Decline Guarantees]_&#x200B;クレジットメモを作成&#x200B;**に設定された**&#x200B;モードです。
 
   理由：[!DNL Payment Services] によって認証取引が作成され、Signify によって払戻が試行されます。
 
 
-* [!DNL Payment Services] は `Authorize and Capture` 支払いアクション _で構成され_ Signifyd は `PostAuth` オプションが _[!UICONTROL Decline Guarantees]_注文のキャンセル&#x200B;**に設定された**モードです。
+* [!DNL Payment Services] は `Authorize and Capture` 支払いアクション _で構成され_ Signifyd は `PostAuth` オプションが _[!UICONTROL Decline Guarantees]_&#x200B;注文のキャンセル&#x200B;**に設定された**&#x200B;モードです。
 
   理由：[!DNL Payment Services] は、Signifyd が無効化を試行する取得トランザクションを作成します。
 
