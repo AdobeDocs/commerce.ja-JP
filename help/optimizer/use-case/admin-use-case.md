@@ -3,11 +3,11 @@ title: ストアフロントとカタログ管理者のエンドツーエンド�
 description: カタログビュー  [!DNL Adobe Commerce Optimizer]  ポリシーを使用してカタログを管理する方法、およびカタログ設定に基づいてストアフロントを設定する方法について説明します。
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 1ab7ee5673f261b43db25caf0ad340a0fd9e3341
+source-git-commit: e5844cad1d666a81042db64e51e124e6444d19ac
 workflow-type: tm+mt
-source-wordcount: '2158'
+source-wordcount: '2179'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe Commerce Storefront ドキュメントの [ ボイラープレートの探索 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=ja) トピックを確認して、ストアフロントの設定ファイルについて学びます。
+> Adobe Commerce Storefront ドキュメントの [ ボイラープレートの探索 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) トピックを確認して、ストアフロントの設定ファイルについて学びます。
 
 ### ‌重要ポイント
 
@@ -185,11 +185,12 @@ Kingsbluff には次のポリシーがあります。
    - **属性** = *part_category*
    - **演算子** = **IN**
    - **値Source** = **STATIC**
-   - **値** = *brakes*, *suspension*
+   - **値** = *brakes*
+   - **Value** = *suspension*
 
    >[!IMPORTANT]
    >
-   >指定する属性名が、カタログ内の SKU 属性名と完全に一致していることを確認します。
+   >各属性値は個別に入力する必要があります。 値を入力したら、**Enter** キーを押して、その値をフィルター設定に追加します。 次に、次の値を入力します。 すべての値は、カタログの SKU 属性名と完全に一致する必要があります。
 
    STATIC 値ソースとトリガー値ソースの違いについて詳しくは、[ 値ソースのタイプ ](../setup/policies.md#value-source-types) を参照してください。
 
@@ -230,7 +231,8 @@ Kingsbluff には次のポリシーがあります。
 
    - **名前** = *Celport*
    - **カタログソース** = *en-US*
-   - **ポリシー** （ドロップダウンを使用） = *East Coast Inc Brands*; *Celport 部品カテゴリ*; *ブランド*; *モデル*                          
+   - **ポリシー** （ドロップダウンを使用） = *East Coast Inc Brands*; *Celport 部品カテゴリ*; *ブランド*; *モデル*
+                         
 1. 「**[!UICONTROL Add]**」をクリックして、カタログビューを作成します。
 
    「カタログビュー」ページが更新され、新しいカタログビューが表示されます。
@@ -445,4 +447,4 @@ Adobe Commerce Optimizerについて引き続き学習するには：
 - [ 詳細なポリシー設定 ](../setup/policies.md) について
 - 他の販売特約店に対する [ 追加のカタログ表示 ](../setup/catalog-view.md) の設定
 - プログラムによるカタログ管理については、[API ドキュメント ](https://developer.adobe.com/commerce/services/optimizer/) を参照してください
-- Edge Delivery Services ストアフロントのドロップインコンポーネントを設定して、製品検出、レコメンデーション、その他のストアフロント機能のためのカスタムストアフロントエクスペリエンスを作成する方法について説明します。 [ ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=ja) を参照してください。
+- Edge Delivery Services ストアフロントのドロップインコンポーネントを設定して、製品検出、レコメンデーション、その他のストアフロント機能のためのカスタムストアフロントエクスペリエンスを作成する方法について説明します。 [ ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/) を参照してください。
