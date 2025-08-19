@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 0722458a67a945b13d2cb27d8848d58d909aea35
+source-git-commit: fa3900de75ae36a3efccc7791b6345875b46148f
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1523'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,12 @@ ht-degree: 0%
 
 ## 現在のメジャーバージョン
 
-## 103.4.8 リリース
+## 103.4.10 リリース
+
+![ 修正 ](../assets/fix.svg) 動的に作成された一部の属性に対して（`text` ではなく `OBJECT`）間違ったタイプが返される問題を修正しました。 現在は、正しいタイプの情報が常に返されるようになり、手動での再同期や回避策が不要になっています。<!--MDEE-1131-->
+![ 修正 ](../assets/fix.svg)LowStock インベントリプロバイダーのエラーが原因で、部分同期中の製品データ収集が失敗する可能性がある問題を修正しました。 この修正により、製品データが確実に書き出され、LowStock 関連のエラーが原因で製品 ID がスキップされることはありません。<!--MDEE-1132-->
+
+## 103.4.9 リリース
 
 ![ 修正 ](../assets/fix.svg) 製品が削除されたり、製品 SKU が変更されたりしたときに、製品価格フィードが再生成されない問題を修正しました。<!--MDEE-1125-->
 ![ 修正 ](../assets/fix.svg) 以前に削除された製品と同じ SKU を持つ新しく作成された製品を更新する際に、変更が正確に反映されるように、製品の更新処理が改善されました。 製品の同期で更新された製品 ID が正しく使用されるようになり、正確で信頼性の高いデータ書き出しが可能になりました。<!--MDEE-1126-->
