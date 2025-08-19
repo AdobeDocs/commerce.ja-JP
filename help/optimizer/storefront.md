@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # ストアフロントの設定
 
-このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)[!DNL Adobe Commerce Optimizer] インスタンスのデータを利用した、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について詳しく説明します。
+このチュートリアルでは、[Edge Delivery Servicesを利用したAdobe Commerce Storefront を設定および使用して ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) [!DNL Adobe Commerce Optimizer] インスタンスのデータを利用した、パフォーマンス、拡張性、安全性の高いCommerce Storefront を作成する方法について詳しく説明します。
 
 
 >[!TIP]
 >
 >サイトクリエーターツールを使用してストアフロントのコードリポジトリとドキュメント作成者環境を設定することで、ストアフロントの設定プロセスを迅速に追跡します
->>自動。 その後、これらの手順を使用して、ストアフロントの作成方法や使用可能なコンポーネントの詳細を確認できます。
+>&#x200B;>自動。 その後、これらの手順を使用して、ストアフロントの作成方法や使用可能なコンポーネントの詳細を確認できます。
 
 ## 前提条件
 
