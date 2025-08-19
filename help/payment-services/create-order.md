@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Payment Services] での注文の作成
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] を使用すると、支援を必要とする顧客のマーチャントが管理者から直接注文を受けることができます。 **[!UICONTROL Create New Order]** フォームには、クレジットカード情報を含むホストされたフィールドなど、通常のチェックアウトプロセスを完了するために必要なすべての情報が含まれています。 必要な手順について詳しくは、[ 注文の作成 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} を参照してください。
+[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] を使用すると、支援を必要とする顧客のマーチャントが管理者から直接注文を受けることができます。 **[!UICONTROL Create New Order]** フォームには、クレジットカード情報を含むホストされたフィールドなど、通常のチェックアウトプロセスを完了するために必要なすべての情報が含まれています。 必要な手順について詳しくは、[ 注文の作成 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} を参照してください。
 
 ## ホストしているクレジットカードのフィールド
 
@@ -20,6 +20,6 @@ ht-degree: 0%
 
 1. _管理者_ サイドバーで、「**[!UICONTROL Sales]**」を展開し、「**[!UICONTROL Orders]**」を選択します。
 1. 「**[!UICONTROL Create New Order]**」をクリックします。
-1. その注文に必要なセクションを完了します（詳しくは [ 注文の作成 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} を参照）。
+1. その注文に必要なセクションを完了します（詳しくは [ 注文の作成 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} を参照）。
 1. _[!UICONTROL Payment Method]_&#x200B;のセクションでは、[!DNL Payment Services] を支払い方法として使用できるはずです。
 1. 「**[!UICONTROL Submit Order]**」をクリックします。

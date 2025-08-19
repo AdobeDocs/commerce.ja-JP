@@ -156,7 +156,7 @@ PayPal Developer ドキュメントの [Pay Later オファー ](https://develop
 1. ストアが [ 実稼動モード ](configure-admin.md#enable-payment-services) であることを確認します。
 1. [ 目的の PayPal 支払いボタンを設定します ](configure-admin.md#payment-buttons)。
 1. _のセクションの_ のオプションを **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** オフ _[!UICONTROL Payment buttons]_&#x200B;します。
-1. _のセクションの_ のオプションを **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** オフ _[!UICONTROL Credit card fields]_&#x200B;にし、[ 既存のクレジットカードプロバイダーアカウント ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments) を使用します。
+1. _のセクションの_ のオプションを **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** オフ _[!UICONTROL Credit card fields]_&#x200B;にし、[ 既存のクレジットカードプロバイダーアカウント ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=ja#payments) を使用します。
 
 ## チェックアウトオプション
 
