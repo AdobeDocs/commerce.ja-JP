@@ -4,9 +4,9 @@ description: トランザクション内のカード支払  [!DNL Payment Servic
 role: Admin
 feature: Payments, Paas, Saas
 exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # レベル 2 およびレベル 3 の処理
 
 [!DNL Payment Services] は、マーチャントが支払いトランザクションを最適化し、交換手数料を削減するのに役立つ高度なカード処理機能を提供します。 カード処理には 3 つのレベルがあり、それぞれトランザクションデータの要件が異なります。
+
+>[!CAUTION]
+>
+> [Fastlane](payments-options.md#fastlane-button) 注文には、レベル 2/レベル 3 のデータ、品目、金額の内訳は含まれません。
 
 ## 処理レベルごとのデータ要件
 

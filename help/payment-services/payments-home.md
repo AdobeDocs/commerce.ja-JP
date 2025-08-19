@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
    ![ ホームビュー ](assets/home-view.png){width="700" zoomable="yes"}
 
-1. このホームビューでは、_ホーム_ ビュー、[!DNL Payment Services] ールに関する _詳細情報_ 拡張機能の設定 _設定_、または _ヘルプ_ を取得できます。
+1. このホームビューでは、_ホーム_ ビュー、_ールに関する_ 詳細情報 [!DNL Payment Services] 拡張機能の設定 _設定_、または _ヘルプ_ を取得できます。
 
 ## ホーム
 
@@ -42,8 +42,8 @@ ht-degree: 2%
 | フィールド | 説明 |
 |---|---|
 | [!UICONTROL Visit help center] | [!DNL Adobe Commerce] ヘルプセンターには、[!DNL Payment Services] に関するナレッジベース記事があります。 |
-| [!UICONTROL Get support] | [!DNL Payment Services.] については、[!DNL Adobe Commerce] サポートポータルを参照してください |
+| [!UICONTROL Get support] | [!DNL Adobe Commerce] については、[!DNL Payment Services.] サポートポータルを参照してください |
 
 ## 設定
 
-ホームビューで、「**[!UICONTROL Settings]**」をクリックします。 詳しくは、[ 設定 ](settings.md) を参照してください。
+ホームビューで、「**[!UICONTROL Settings]**」をクリックします。 詳しくは、[[!DNL Payment Services]  設定 ](configure-admin.md) を参照してください。

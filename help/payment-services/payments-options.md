@@ -3,9 +3,9 @@ title: 支払いオプション
 description: 支払いオプションを設定して、ストアの顧客が使用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 0d00ce6e5291b3753cb7e2ee9e8af262b2c8894f
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,22 @@ ht-degree: 0%
 
 ## [!UICONTROL Digital Wallets]
 
+### [!DNL Fastlane] ボタン
+
+[!DNL Fastlane] は、すばやく、安全に、手間のかからないオンライン支払い方法を提供します。 **ゲストのチェックアウト** 中に、カードと配送の詳細を安全に保存して、今後はさらに迅速に購入できます。
+
+* **検証済み買い物客への即時アクセス**：何百万人もの再訪問者を認識し、数秒でシームレスな支払いを可能にします。
+* **収益の向上**：より多くの購入が完了し、コンバージョン率と承認率が向上します。
+* **チェックアウトの高速化**：安全なパスワードレスのログインエクスペリエンスで摩擦を軽減します。
+
+[!DNL Fastlane] が有効な場合、[!UICONTROL Credit Card Fields] オプションはデフォルトで無効になります。
+
+>[!NOTE]
+>
+> 現在、Fastlane は米国のマーチャントに対してのみサポートされているため、[!UICONTROL 3D Secure authentication] は現在サポートされていません。
+
+詳しくは、[Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank} を参照してください。
+
 ### [!DNL Apple Pay] ボタン
 
 [!DNL Apple Pay] を使用すると、マーチャントは、Safari （マーチャントアカウントあたり最大 99 のドメイン）で安全で合理化されたチェックアウトエクスペリエンスを提供し、コンバージョンを増やすことができます。 [!DNL Apple Pay] ボタンを使用すると、顧客のiOSまたはmacOS デバイスから保存された支払い、連絡先および配送に関する詳細を自動入力し、ワンタップのチェックアウトエクスペリエンスをすばやく実現できます。
@@ -55,9 +71,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->  Apple Pay ドメイン認証証明書は、既に支払いサービスコードに含まれています。 パス `/.well-known/apple-developer-merchantid-domain-association` が 200 応答コードを返すことを確認します。 [2&rbrace;Apple Pay Domain verification](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) 証明書について詳しくは、&lbrace;PayPal 開発者向けのApple Pay との統合に関するドキュメント **を参照してください。**
+>  Apple Pay ドメイン認証証明書は、既に支払いサービスコードに含まれています。 パス `/.well-known/apple-developer-merchantid-domain-association` が 200 応答コードを返すことを確認します。 [2}Apple Pay Domain verification](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) 証明書について詳しくは、{PayPal 開発者向けのApple Pay との統合に関するドキュメント **を参照してください。**
 
-詳しくは、[ 設定 ](settings.md#apple-pay) を参照してください。
+詳しくは、[ 設定 ](configure-admin.md#apple-pay) を参照してください。
 
 ### [!DNL Google Pay] ボタン
 
@@ -79,7 +95,7 @@ ht-degree: 0%
 
 ![PayPal ボタン ](assets/paypal-button.png){width="350" zoomable="yes"}
 
-[!UICONTROL PayPal payment buttons] は、ストア設定または [!DNL Payment Services] ホームで設定できます。 詳しくは、[ 設定 ](settings.md#payment-buttons) を参照してください。
+[!UICONTROL PayPal payment buttons] は、ストア設定または [!DNL Payment Services] ホームで設定できます。
 
 国ごとの支払い方法の利用可能性については、PayPal の [ 支払い方法ドキュメント ](https://developer.paypal.com/docs/checkout/payment-methods/) を参照してください。
 
@@ -109,9 +125,15 @@ PayPal の「デビット」または「クレジットカード」ボタンが�
 
 「[!DNL Pay Later]」ボタンは、製品ページ、ミニカート、買い物かご、チェックアウト表示に表示されます。
 
-Pay Later オファーについては、[PayPal の Pay Later オファードキュメント ](https://developer.paypal.com/docs/checkout/pay-later/us/) を参照してください。 **国または地域** ドロップダウンを使用して、関心のある地域を選択します。
+PayPal Developer ドキュメントの [Pay Later オファー ](https://developer.paypal.com/docs/checkout/pay-later/us/) に関する情報を参照してください。 **国または地域** ドロップダウンを使用して、関心のある地域を選択します。
 
-[ 設定 ](settings.md#payment-buttons) 設定を更新して、[!DNL Pay Later] メッセージを無効または有効にする方法を説明します。
+[!DNL Pay Later] 設定 [ 設定を更新して、](configure-admin.md#pay-later-button) メッセージを無効または有効にする方法を説明します。
+
+##### オプション。 後で支払うメッセージの設定
+
+**後で支払う** の [ メッセージングの設定 ](configure-admin.md#pay-later-button) を使用すると、マーチャントはこの支払いオプションのデフォルトスタイルを変更できます。 **[!UICONTROL Display Pay Later Message]** 設定 `Yes` 設定で [ を ](configure-admin.md#pay-later-button) に設定すると、**[!UICONTROL Configure Messaging]** モーダルボタンが表示され、**[!UICONTROL PayPal Pay Later messaging]** のスタイルを設定できます。
+
+![Pay Later Messaging](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
 ### PayPal 支払いボタンのみを使用
 
@@ -125,16 +147,16 @@ Pay Later オファーについては、[PayPal の Pay Later オファードキ
 
 **PayPal 支払いボタン _のみ_ を使用して支払いをキャプチャする（PayPal クレジットカード支払いオプションを使用しない __）**
 
-1. ストアが [ 実稼動モード ](settings.md#enable-payment-services) であることを確認します。
-1. [ 設定で目的の PayPal 支払いボタンを設定 ](settings.md#payment-buttons) します。
-1. _[!UICONTROL Payment buttons]_&#x200B;のセクションの&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;のオプションを_ オフ _します。
+1. ストアが [ 実稼動モード ](configure-admin.md#enable-payment-services) であることを確認します。
+1. [ 設定で目的の PayPal 支払いボタンを設定 ](configure-admin.md#payment-buttons) します。
+1. _のセクションの_ のオプションを **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)** オフ _[!UICONTROL Payment buttons]_します。
 
 **既存のクレジット・カード・プロバイダを使用して支払を取得する _および_PayPal 支払いボタン** 手順は、次のとおりです。
 
-1. ストアが [ 実稼動モード ](settings.md#enable-payment-services) であることを確認します。
-1. [ 目的の PayPal 支払いボタンを設定します ](settings.md#payment-buttons)。
-1. _[!UICONTROL Payment buttons]_&#x200B;のセクションの&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;のオプションを_ オフ _します。
-1. _[!UICONTROL Credit card fields]_&#x200B;のセクションの&#x200B;**[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**&#x200B;のオプションを_ オフ _にし、[ 既存のクレジットカードプロバイダーアカウント ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=ja#payments) を使用します。
+1. ストアが [ 実稼動モード ](configure-admin.md#enable-payment-services) であることを確認します。
+1. [ 目的の PayPal 支払いボタンを設定します ](configure-admin.md#payment-buttons)。
+1. _のセクションの_ のオプションを **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** オフ _[!UICONTROL Payment buttons]_します。
+1. _のセクションの_ のオプションを **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** オフ _[!UICONTROL Credit card fields]_にし、[ 既存のクレジットカードプロバイダーアカウント ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments) を使用します。
 
 ## チェックアウトオプション
 

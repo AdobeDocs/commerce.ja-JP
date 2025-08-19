@@ -5,9 +5,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '106'
 ht-degree: 2%
 
 ---
@@ -27,9 +27,8 @@ ht-degree: 2%
    - [実稼動で有効にする](production.md)
 - [!DNL Payment Services] の設定 {#configure}
    - [[!DNL Payment Services] ホーム](payments-home.md)
-   - [[!DNL Payment Services] Settings](settings.md)
+   - [[!DNL Payment Services] 設定](configure-admin.md)
    - [コマンドライン設定](configure-cli.md)
-   - [レガシー設定](configure-admin.md)
    - [テストと検証](test-validate.md)
 - 支払いとチェックアウト {#payments-checkout}
    - [支払いオプション](payments-options.md)
@@ -50,4 +49,4 @@ ht-degree: 2%
 - セキュリティとコンプライアンス {#security-compliance}
    - [セキュリティ](security.md)
    - [重大な不正保護](fraud-protection.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=ja)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

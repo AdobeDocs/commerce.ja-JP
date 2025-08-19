@@ -3,7 +3,7 @@ title: クレジットカードの保管
 description: 買い物客は、今後の購入のためにクレジットカードの詳細をヴォールティング（保存）できます。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ## ボルトを有効にする
 
-マーチャントは、[!DNL Payment Services] 設定 [ でストアのクレジットカードヴォールティングを有効にでき ](settings.md#card-vaulting) す。
+マーチャントは、[!DNL Payment Services] 設定 [ でストアのクレジットカードヴォールティングを有効にでき ](configure-admin.md#card-vaulting) す。
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]** に移動します。
 
 1. 「**[!UICONTROL Settings]**」をクリックします。
 
-1. **[!UICONTROL Vault enabled]** セレクターを切り替えます。 詳しくは、[ 有効にする  [!DNL Payment Services]](settings.md#enable-payment-services) を参照してください。
+1. **[!UICONTROL Vault enabled]** セレクターを切り替えます。 詳しくは、[ 有効にする  [!DNL Payment Services]](configure-admin.md#enable-payment-services) を参照してください。
 
 ## 購入なしのヴォールティング
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 1. 左側のナビゲーションの **[!UICONTROL Stored Payment Methods]** に移動すると、保存されているすべての支払い方法が表示されます。
 
-   詳しくは、[ 保管済支払方法 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/payments/stored-payment-methods) を参照してください。
+   詳しくは、[ 保管済支払方法 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) を参照してください。
 
 1. 顧客は、**[!UICONTROL Add New Card]** をクリックして新しいカードを保存します。
 
@@ -73,10 +73,10 @@ Commerceには、保存されたクレジットカード情報を取得して今
 
 ボールトに保管されたクレジット・カードを使用して顧客の受注を管理で作成する手順は、次のとおりです。
 
-1. [ 注文を作成して製品を追加する ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=ja)。
-1. _[!UICONTROL Payment & Shipping Information]_&#x200B;で、支払方法として&#x200B;**[!UICONTROL Stored Cards]**&#x200B;を選択します。
+1. [ 注文を作成して製品を追加する ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html)。
+1. _[!UICONTROL Payment & Shipping Information]_で、支払方法として&#x200B;**[!UICONTROL Stored Cards]**を選択します。
 1. 目的のボルト付きクレジットカードの支払方法を選択します。
-1. 注文に必要なその他の手順を完了したら、[ 送信 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=ja#step-3%3A-submit-the-order) します。
+1. 注文に必要なその他の手順を完了したら、[ 送信 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order) します。
 
    ![ 管理者がボルト化されたクレジットカードを顧客に使用 ](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
