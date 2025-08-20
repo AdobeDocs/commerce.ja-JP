@@ -1,10 +1,10 @@
 ---
 title: 一括データ移行ツール
 description: 一括データ移行ツールを使用して、クラウドインスタンス上の既存のAdobe Commerceから  [!DNL Adobe Commerce as a Cloud Service] にデータを移行する方法について説明します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 role: Architect
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 8bf8eb58aa9c1ae965f4bbf5a2987fb22f004769
+source-git-commit: 131d3bdb7e6ef2622236ddf08f306639396d6ffa
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 0%
@@ -39,8 +39,8 @@ ht-degree: 0%
 
 一括データ移行ツールは次のように使用できます。
 
-- **2025 年第 3 四半期** – 一括データ移行ツールにアクセスするには、サポートチケットを送信します。
-- **2025 年第 3 四半期** – 一括データ移行ツールが公開され、このページからアクセスできるようになります。
+- **2025 年第 4 四半期** – 一括データ移行ツールにアクセスするには、サポートチケットを送信します。
+- **2025 年第 4 四半期** – 一括データ移行ツールが公開され、このページからアクセスできるようになります。
 
 ## ターゲット環境の作成
 
