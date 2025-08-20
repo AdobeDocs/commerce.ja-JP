@@ -2,21 +2,21 @@
 title: Commerce CLI を使用したフィードの同期
 description: コマンドラインインターフェイスコマンドを使用して、Adobe Commerce向け SaaS サービスのフィードとプロセス  [!DNL data export extension]  管理する方法について説明します。
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 8233b2e184c8af293ffc41cb22e085388cf18049
+source-git-commit: 0f1d55f81cb030d218f0aa8dfa2af4dfd8f640c1
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
 # Commerce CLI を使用したフィードの同期
 
-`magento/saas-export` パッケージの `saas:resync` コマンドを使用すると、Adobe Commerce SaaS サービスのデータ同期を管理できます。
+`saas:resync` パッケージの `magento/saas-export` コマンドを使用すると、Adobe Commerce SaaS サービスのデータ同期を管理できます。
 
 Adobeでは、`saas:resync` コマンドを定期的に使用することはお勧めしません。 コマンドを使用する一般的なシナリオは次のとおりです。
 
 - 初期同期
-- [SaaS データ空間 ID](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/services/saas) を変更した後、データを新しいデータ空間に同期する
+- [SaaS データ空間 ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) を変更した後、データを新しいデータ空間に同期する
 - トラブルシューティング
 
 `var/log/saas-export.log` ファイルの同期操作を監視します。
@@ -145,7 +145,6 @@ bin/magento saas:resync --feed products --dry-run --cleanup-feed
 
 - `categories`
 - `categoryPermissions`
-- `inventoryStockStatus`
 - `orders`
 - `prices`
 - `products`
@@ -154,6 +153,10 @@ bin/magento saas:resync --feed products --dry-run --cleanup-feed
 - `scopesWebsite`
 - `scopesCustomerGroup`
 - `variants`
+
+>[!NOTE]
+>
+>お使いの環境で利用できるフィードは、Adobe Commerce環境にインストールされているモジュールによって異なる場合があります。
 
 **例：**
 
