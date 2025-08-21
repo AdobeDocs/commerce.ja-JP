@@ -2,9 +2,9 @@
 title: 設定
 description: データのソースを変更する方法と  [!DNL Product Recommendations]  視覚的なレコメンデーションを有効にする方法を説明します。
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
+source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Recommendations の [SaaS データ領域の設定 ](../landing/saas.md#saas-con
 
 商品レコメンデーションデータのソースを変更するには、使用する行動データを含む SaaS データスペースを選択します。 開始する前に、次のことを確認します。
 
-- ストアフロントのデータ収集は、実稼動環境に対して [ 設定および有効化 ](install-configure.md) され、行動データがAdobe Commerceに送信されていることを [ 検証 ](verify.md) する必要があります。
+- ストアフロントのデータ収集は、実稼動環境に対して [ 設定および有効化 ](install-configure.md) され、行動データがAdobe Commerceに送信されていることを [ 検証 ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) する必要があります。
 - 実稼動以外の環境カタログは、実稼動カタログと基本的に同じである必要があります。 同様のカタログを使用すると、返される製品レコメンデーションユニットが実稼動環境のレコメンデーションユニットに確実に類似します。
 
 1. 実稼動以外のAdobe Commerce環境の管理者にログインします。

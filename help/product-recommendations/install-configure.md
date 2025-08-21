@@ -3,17 +3,17 @@ title: インストールと設定
 description: ' [!DNL Product Recommendations] をインストール、更新、アンインストールする方法を説明します。'
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
-badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
-source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
+badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
+source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
 # インストールと設定
 
-[!DNL Product Recommendations] をストアフロントおよび管理者にデプロイするには、モジュールをインストールして [&#128279;](../landing/saas.md)1&rbrace;Commerce サービスコネクタ &rbrace; を設定する必要があります。 アップデートがリリースされると、インストールを最新バージョンに簡単にアップデートできます。
+[!DNL Product Recommendations] をストアフロントおよび管理者にデプロイするには、モジュールをインストールして [1}Commerce サービスコネクタ } を設定する必要があります。 ](../landing/saas.md)アップデートがリリースされると、インストールを最新バージョンに簡単にアップデートできます。
 
 - [インストール](#install)
 - [設定](#configure)
@@ -42,7 +42,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-ページビルダーで [!DNL Product Recommendations] を有効にすると、ページ、ブロック、動的ブロックなど、ページビルダーで作成した任意のコンテンツに既存のアクティブな [ レコメンデーションユニット ](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/add-content/recommendations) を追加できます。
+ページビルダーで [!DNL Product Recommendations] を有効にすると、ページ、ブロック、動的ブロックなど、ページビルダーで作成した任意のコンテンツに既存のアクティブな [ レコメンデーションユニット ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) を追加できます。
 
 詳しくは [ ページビルダーコンテンツの使用  [!DNL Product Recommendations]  を参照 ](page-builder.md) てください。
 
@@ -56,19 +56,19 @@ composer require magento/module-visual-product-recommendations
 
 ## [!DNL Product Recommendations] の設定 {#configure}
 
-1. `magento/product-recommendations` モジュールをインストールしたら、API キーを指定して SaaS Data Space を選択し [&#128279;](../landing/saas.md)Commerce サービスコネクタを設定します。
+1. `magento/product-recommendations` モジュールをインストールしたら、API キーを指定して SaaS Data Space を選択し [](../landing/saas.md)Commerce サービスコネクタを設定します。
 
    この接続を設定すると、Commerce インスタンス、カタログサービス、その他のサポートサービス間のデータ同期と通信が可能になります。 データ同期は、[SaaS データ書き出し拡張機能 ](../data-export/overview.md) で処理されます。
 
-1. カタログの書き出しを正しく実行できるようにするには、[cron](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) ジョブと [ インデクサー ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers) が実行中で、`Product Feed` インデクサーが `Update by Schedule` に設定されていることを確認します。
+1. カタログの書き出しを正しく実行できるようにするには、[cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) ジョブと [ インデクサー ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) が実行中で、`Product Feed` インデクサーが `Update by Schedule` に設定されていることを確認します。
 
-Commerce アプリケーションをCommerce サービスに正常にリンクし、[SaaS Data Space](../landing/saas.md#saas-configuration) を指定すると、カタログの同期が開始されます。 その後、行動データがストアフロントに送信されていることを [ 確認 ](verify.md) できます。
+Commerce アプリケーションをCommerce サービスに正常にリンクし、[SaaS Data Space](../landing/saas.md#saas-configuration) を指定すると、カタログの同期が開始されます。 その後、行動データがストアフロントに送信されていることを [ 確認 ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) できます。
 
 ## データ同期の監視とトラブルシューティング
 
-Commerce Admin から、[Data Management Dashboard](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-dashboard) を使用して同期プロセスを監視できます。 [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) とログを使用して、プロセスの管理とトラブルシューティングを行います。
+Commerce Admin から、[Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) を使用して同期プロセスを監視できます。 [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) とログを使用して、プロセスの管理とトラブルシューティングを行います。
 
-その後、行動データがストアフロントに送信されていることを [ 確認 ](verify.md) できます。
+その後、行動データがストアフロントに送信されていることを [ 確認 ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) できます。
 
 ## [!DNL Product Recommendations] インストールの更新 {#update}
 
@@ -120,4 +120,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## [!DNL Product Recommendations] のアンインストール {#uninstall}
 
-必要に応じて、製品レコメンデーションモジュールを [ アンインストール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) できます。
+必要に応じて、製品レコメンデーションモジュールを [ アンインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) できます。
