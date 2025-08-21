@@ -1,7 +1,8 @@
 ---
 title: 実装ワークフロー
 description: ストアフロントに正常に実装する手順  [!DNL Product Recommendations]  説明します。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 4a784d04-8be6-473f-afb3-264af06c850a
+source-git-commit: a3e19940e2a3d8a240bb17703cfdd9903df311aa
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -20,15 +21,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> ストアフロントがPWA Studioを使用して実装されている場合は、[PWA ドキュメント ](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) を参照してください。 React や Vue JS などのカスタムフロントエンドテクノロジーを使用している場合は、ヘッドレスストアフロントに [!DNL Product Recommendations] を [ 統合 ](headless.md) する方法を説明します。
+> ストアフロントがPWA Studioを使用して実装されている場合は、[PWA ドキュメント ](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) を参照してください。 React や Vue JS などのカスタムフロントエンドテクノロジーを使用している場合は、ヘッドレスストアフロントに [ を ](headless.md) 統合 [!DNL Product Recommendations] する方法を説明します。
 
 ## ワークフロー
 
 1. **データ収集の実稼動環境へのデプロイ**
 
-   [!DNL Product Recommendations] のデプロイには、カタログと行動という 2 つの主な [ データソース ](type.md) が必要です。 実稼動環境は買い物客のアクションを取得および分析する唯一の環境なので、できるだけ早く実稼動環境でデータ収集を開始します。 [ 詳細情報 ](events.md)Adobe Senseiが機械学習モデルをトレーニングして、より高品質のレコメンデーションを実現する方法を説明します。 さらに利点として、実稼動環境で行動データの収集を開始する際に、非実稼動環境で動作しながら、この実稼動データに基づいて [ レコメンデーションを取得 ](verify.md) できます。 その後、実稼動環境で収集された実際の買い物客データに基づいて計算された、様々なレコメンデーションを使用してテストおよび実験できます。
+   [!DNL Product Recommendations] のデプロイには、カタログと行動という 2 つの主な [ データソース ](type.md) が必要です。 実稼動環境は買い物客のアクションを取得および分析する唯一の環境なので、できるだけ早く実稼動環境でデータ収集を開始します。 [ 詳細情報 ](events.md)Adobe Senseiが機械学習モデルをトレーニングして、より高品質のレコメンデーションを実現する方法を説明します。 さらに利点として、実稼動環境で行動データの収集を開始する際に、非実稼動環境で動作しながら、この実稼動データに基づいて [ レコメンデーションを取得 ](staging-environment.md#fetch-recommendations-from-production-environment-recommended) できます。 その後、実稼動環境で収集された実際の買い物客データに基づいて計算された、様々なレコメンデーションを使用してテストおよび実験できます。
 
-   データ収集を実稼動環境にデプロイするには、[API キー ](install-configure.md) を指定して [!DNL Product Recommendations] モジュールを [ インストールおよび設定 ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=ja) する必要があります。
+   データ収集を実稼動環境にデプロイするには、[API キー ](install-configure.md) を指定して [!DNL Product Recommendations] モジュールを [ インストールおよび設定 ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) する必要があります。
 
    >[!TIP]
    >
@@ -42,7 +43,7 @@ ht-degree: 0%
    >
    > テンプレートをカスタマイズすると、スタイルシートを指定したり、ページ上のレコメンデーションユニットの表示場所を上書きしたりできます。
 
-   この手順を完了する方法については、開発者ドキュメントの [ カスタマイズ ](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html?lang=ja) を参照してください。
+   この手順を完了する方法については、開発者ドキュメントの [ カスタマイズ ](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html) を参照してください。
 
 1. **非実稼動環境でのレコメンデーションのテスト**
 

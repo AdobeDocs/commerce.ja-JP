@@ -2,9 +2,9 @@
 title: 新しいレコメンデーションを作成
 description: 製品レコメンデーションユニットの作成方法を説明します。
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ _推奨単位_
 
 1. _管理者_ サイドバーで、**マーケティング**/_プロモーション_/**製品レコメンデーション** に移動して、_製品レコメンデーション_ ワークスペースを表示します。
 
-1. レコメンデーションを表示する [ ストア表示 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views) を指定します。
+1. レコメンデーションを表示する [ ストア表示 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) を指定します。
 
    >[!NOTE]
    >
-   > ページビルダーのレコメンデーション単位は、デフォルトのストア表示で作成する必要がありますが、どこでも使用できます。 ページビルダーを使用した製品レコメンデーションの作成について詳しくは、[ コンテンツの追加 – 製品レコメンデーション ](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/add-content/recommendations) を参照してください。
+   > ページビルダーのレコメンデーション単位は、デフォルトのストア表示で作成する必要がありますが、どこでも使用できます。 ページビルダーを使用した製品レコメンデーションの作成について詳しくは、[ コンテンツの追加 – 製品レコメンデーション ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) を参照してください。
 
 1. **レコメンデーションを作成** をクリックします。
 
@@ -38,14 +38,14 @@ _推奨単位_
 
    >[!NOTE]
    >
-   > ストアが [ 買い物かごに商品を追加した直後に買い物かごページを表示 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration) するように設定されている場合、買い物かごページでの商品レコメンデーションはサポートされません。
+   > ストアが [ 買い物かごに商品を追加した直後に買い物かごページを表示 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration) するように設定されている場合、買い物かごページでの商品レコメンデーションはサポートされません。
 
    * ホームページ
    * カテゴリ
    * 製品詳細
    * カート
    * 確認
-   * [ ページビルダー ](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [ ページビルダー ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    各ページタイプに対して最大 5 つのアクティブなレコメンデーションユニットを作成でき、ページビルダーには最大 25 のアクティブなレコメンデーションユニットを作成できます。 制限に達すると、ページタイプがグレー表示されます。
 
@@ -54,7 +54,7 @@ _推奨単位_
 
 1. 「_レコメンデーションタイプを選択_」セクションで、選択したページに表示する [ レコメンデーションのタイプ ](type.md) を指定します。 一部のページでは、レコメンデーションの [ プレースメント ](placement.md) は、特定のタイプに制限されます。
 
-1. 「_ストアフロント表示ラベル_」セクションで、「トップセラー [&#128279;](placement.md#recommendation-labels) など、買い物客に表示される  ラベル」を入力します。
+1. 「_ストアフロント表示ラベル_」セクションで、「トップセラー [ など、買い物客に表示される ](placement.md#recommendation-labels) ラベル」を入力します。
 
 1. _製品数を選択_ セクションで、スライダーを使用して、レコメンデーションユニットに表示する製品の数を指定します。
 
@@ -172,7 +172,7 @@ _レコメンデーションタイプ_
 * **静的ベース** – これらの指標の割合が低い場合は、表示可能な製品のカタログデータがないことが原因である可能性があります。 値が予想よりも低い場合は、完全同期でこの問題を修正できます。
 * **動的ベース** – 動的ベースの指標の割合が低い場合は、次の原因が考えられます。
 
-   * それぞれのレコメンデーションタイプ [&#128279;](events.md)requestId、製品コンテキストなど）の必須  ストアフロントイベント）にフィールドが欠落している。
+   * それぞれのレコメンデーションタイプ [requestId、製品コンテキストなど）の必須 ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) ストアフロントイベント）にフィールドが欠落している。
    * ストアのトラフィックが少ないので、受信する行動イベントの量は少なくなります。
    * ストア内の様々な製品をまたいだストアフロントの行動イベントの多様性は低いです。 例えば、製品の 10% のみが常に表示または購入されている場合、それぞれの準備状況インジケーターは低くなります。
 

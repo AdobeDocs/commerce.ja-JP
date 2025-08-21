@@ -3,16 +3,18 @@ title: データを収集
 description: イベントで  [!DNL Product Recommendations] のデータを収集する方法を説明します。
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
 
 # データを収集
 
-[[!DNL Product Recommendations]](install-configure.md) や [[!DNL Live Search]](../live-search/install.md) などの SaaS ベースのAdobe Commerce機能をインストールして設定する場合、行動データ収集がストアフロントにデプロイされます。 このメカニズムは、匿名化された行動データを買い物客から収集し、[!DNL Product Recommendations] の権限を与えます。 例えば、`view` イベントは `Viewed this, viewed that` レコメンデーションタイプの計算に使用され、`place-order` イベントは `Bought this, bought that` レコメンデーションタイプの計算に使用されます。
+[[!DNL Product Recommendations]](install-configure.md) をインストールして設定すると、モジュールは行動データの収集をストアフロントにデプロイします。 このメカニズムは、匿名化された行動データを買い物客から収集し、[!DNL Product Recommendations] の権限を与えます。 例えば、`view` イベントは `Viewed this, viewed that` レコメンデーションタイプの計算に使用され、`place-order` イベントは `Bought this, bought that` レコメンデーションタイプの計算に使用されます。
+
+[ イベントが収集する行動データについて詳しくは、](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) 開発者ドキュメント [!DNL Product Recommendations] を参照してください。
 
 >[!NOTE]
 >
@@ -20,7 +22,7 @@ ht-degree: 0%
 
 ## ヘルスケア関連のお客様
 
-医療関係のお客様が [ データ接続 ](../data-connection/hipaa-readiness.md#installation) 拡張機能の一部である [ データサービス HIPAA 拡張機能 ](../data-connection/overview.md) をインストールした場合、[!DNL Product Recommendations] で使用されるストアフロントイベントデータは取得されなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるからです。 引き続きストアフロントのイベントデータのキャプチャと送信を行うには、[!DNL Product Recommendations] のイベント収集を再度有効にします。 詳しくは、[ 一般設定 ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) を参照してください。
+医療関係のお客様が [ データ接続 ](../data-connection/hipaa-readiness.md#installation) 拡張機能の一部である [ データサービス HIPAA 拡張機能 ](../data-connection/overview.md) をインストールした場合、[!DNL Product Recommendations] で使用されるストアフロントイベントデータは取得されなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるからです。 ストアフロントのイベントデータのキャプチャと送信を続行するには、[!DNL Product Recommendations] のイベント収集を再度有効にします。 詳しくは、[ 一般設定 ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) を参照してください。
 
 ## データタイプとイベント
 
@@ -61,7 +63,7 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 
 ライブサイトでデータが収集され、機械学習モデルがトレーニングされている間に、レコメンデーションを設定するために必要な他のテストおよび設定タスクを完了できます。 この作業が完了するまでに、モデルには便利なレコメンデーションを作成するのに十分なデータが含まれており、ストアフロントにモデルをデプロイできます。
 
-ほとんどの製品 SKU でサイトに十分なトラフィック（表示、購入、トレンド）が届かない場合は、学習プロセスを完了するのに十分なデータがない可能性があります。 これにより、管理者の準備インジケーターが動かなくなったように見える場合があります。 準備状況の指標は、店舗にとって優れたレコメンデーションタイプを選択する際に、マーチャントに別のデータポイントを提供することを目的としています。 数値は目安であり、100% に達することはありません。 準備状況インジケーターについて [ 詳しくは、](create.md#readiness-indicators) こちら &rbrack; を参照してください。
+ほとんどの製品 SKU でサイトに十分なトラフィック（表示、購入、トレンド）が届かない場合は、学習プロセスを完了するのに十分なデータがない可能性があります。 これにより、管理者の準備インジケーターが動かなくなったように見える場合があります。 準備状況の指標は、店舗にとって優れたレコメンデーションタイプを選択する際に、マーチャントに別のデータポイントを提供することを目的としています。 数値は目安であり、100% に達することはありません。 準備状況インジケーターについて [ 詳しくは、](create.md#readiness-indicators) こちら ] を参照してください。
 
 ### バックアップの推奨事項 {#backuprecs}
 
@@ -77,61 +79,6 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 - `Conversion (view to purchase)`
 - `Conversion (view to cart)`
 
-### イベント
-
-[Adobe Commerce ストアフロントイベントコレクター ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) には、ストアフロントにデプロイされたすべてのイベントが一覧表示されます。 このリストには、[!DNL Product Recommendations] に固有のイベントのサブセットがあります。 これらのイベントは、買い物客がストアフロントでレコメンデーションユニットとやり取りする際にデータを収集し、レコメンデーションのパフォーマンスを分析するために指標を強化します。
-
-| イベント | 説明 |
-| --- | --- |
-| `impression-render` | レコメンデーションユニットがページでレンダリングされる際に送信されます。 ページに 2 つのレコメンデーションユニット（購入済み、表示ビュー）がある場合、2 つの `impression-render` イベントが送信されます。 このイベントは、インプレッション数の指標を追跡するために使用されます。 |
-| `rec-add-to-cart-click` | 買い物客は、レコメンデーションユニット内の項目の **買い物かごに追加** ボタンをクリックします。 |
-| `rec-click` | 買い物客は、レコメンデーションユニット内の製品をクリックします。 |
-| `view` | ページを下にスクロールするなど、レコメンデーションユニットが 50% 以上の表示できるようになると送信されます。 例えば、レコメンデーションユニットに 2 行がある場合、1 行に 2 行目の 1 ピクセルを加えた `view` イプイベントが買い物客に表示されると送信されます。 買い物客がページを上下に複数回スクロールした場合、買い物客がレコメンデーションユニット全体をページ上で再度表示すると、`view` のイベントが何度も送信されます。 |
-
-製品レコメンデーション指標は Luma ストアフロント用に最適化されていますが、他のストアフロント実装とも連携します。
-
-- [Edge Delivery ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=ja)
-- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
-- [カスタムフロント部（React、Vue JS）](headless.md)
-
-#### 必須のダッシュボードイベント
-
-[[!DNL Product Recommendations] dashboard](workspace.md) に値を入力するには、次のイベントが必要です。
-
-| ダッシュボード列 | イベント | 結合フィールド |
-| ---------------- | --------- | ----------- |
-| インプレッション | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | `unitId` |
-| ビュー | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | `unitId` |
-| クリック数 | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click` | `unitId` |
-| 収益 | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`、`sku`、`parentSku` |
-| 長期収益 | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`、`sku`、`parentSku` |
-| CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`、`sku`、`parentSku` |
-| vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`、`sku`、`parentSku` |
-
-次のイベントは、Product Recommendations に固有ではありませんが、Adobe Senseiが買い物客データを正しく解釈するために必要です。
-
-- `view`
-- `add-to-cart`
-- `place-order`
-
-#### レコメンデーションタイプ
-
-次の表に、各レコメンデーションタイプで使用されるイベントを示します。
-
-| レコメンデーションタイプ | イベント | ページ |
-| --- | --- | --- |
-| 最も頻繁に閲覧された | `page-view`<br>`product-view` | 製品詳細ページ |
-| 最も多く購入された | `page-view`<br>`place-order` | 買い物かご/チェックアウト |
-| 買い物かごに追加済み | `page-view`<br>`add-to-cart` | 製品詳細ページ <br> 製品一覧ページ <br> 買い物かご <br> お気に入りリスト |
-| がこれを表示し、が表示されました | `page-view`<br>`product-view` | 製品詳細ページ |
-| これを閲覧し、次を購入 | 製品のレシピ | `page-view`<br>`product-view` | 製品詳細ページ <br> 買い物かご/チェックアウト |
-| これを購入し、それを購入しました | 製品のレシピ | `page-view`<br>`product-view` | 製品詳細ページ |
-| トレンド | `page-view`<br>`product-view` | 製品詳細ページ |
-| コンバージョン：表示から購入 | 製品のレシピ | `page-view`<br>`product-view` | 製品詳細ページ |
-| コンバージョン：表示から購入 | 製品のレシピ | `page-view`<br>`place-order` | 買い物かご/チェックアウト |
-| コンバージョン：買い物かごに表示 | 製品のレシピ | `page-view`<br>`product-view` | 製品詳細ページ |
-| コンバージョン：買い物かごに表示 | 製品のレシピ | `page-view`<br>`add-to-cart` | 製品詳細ページ <br> 製品リストページ <br> 買い物かご <br> ウィッシュリスト |
-
 #### 注意事項
 
 - 広告ブロッカーとプライバシー設定は、イベントがキャプチャされるのを防ぎ、エンゲージメントと売上高 [ 指標 ](workspace.md#column-descriptions) が過小報告される原因になる可能性があります。 さらに、買い物客のページからの離脱やネットワークの問題が原因で、一部のイベントが送信されない場合があります。
@@ -140,4 +87,4 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 
 >[!NOTE]
 >
->[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja) が有効になっている場合、買い物客が Cookie の使用を同意するまで、Adobe Commerceは行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、買い物客が Cookie の使用を同意するまで、Adobe Commerceは行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。

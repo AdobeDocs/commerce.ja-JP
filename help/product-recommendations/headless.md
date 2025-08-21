@@ -2,7 +2,7 @@
 title: ヘッドレス
 description: ヘッドレスストアフロント  [!DNL Product Recommendations]  統合する方法について説明します。
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
-source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # ヘッドレス
 
-[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) または React や Vue JS などのカスタムフロントエンドテクノロジーを使用して、[!DNL Product Recommendations] をヘッドレスストアフロントに統合できます。
+[!DNL Product Recommendations]PWA Studio[ または React や Vue JS などのカスタムフロントエンドテクノロジーを使用して、](https://developer.adobe.com/commerce/pwa-studio/) をヘッドレスストアフロントに統合できます。
 
 カスタムおよびヘッドレスインテグレーターは、これらの Luma とPWAの手順を実装の推奨事項として参照する必要があります。 ヘッドレスソリューションに Product Recommendations を実装する方法は多数ありますが、このドキュメントでは、すべてのシナリオについて説明しているわけではありません。 インテグレーターは、実装のイベント、設計、テストをカバーする必要があります。
 
-操作 [!DNL Product Recommendations] には [ 行動データとカタログデータ ](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=ja) が必要です。 カタログデータの同期プロセスはヘッドレス実装でも変更されませんが、行動データの収集には変更が必要です。
+操作 [!DNL Product Recommendations] には [ 行動データとカタログデータ ](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) が必要です。 カタログデータの同期プロセスはヘッドレス実装でも変更されませんが、行動データの収集には変更が必要です。
 
 >[!NOTE]
 >
@@ -29,9 +29,9 @@ ht-degree: 0%
 
 次のワークフローに説明するように、使用可能な SDK を使用して、これらのアクションの両方を実行できます。
 
-1. [!DNL Product Recommendations] モジュール [&#128279;](install-configure.md) インストールします。
+1. [ モジュール ](install-configure.md)[!DNL Product Recommendations] インストールします。
 
-1. [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) をインストールして使用し、[ 行動イベント ](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=ja) を発生させます。
+1. [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) をインストールして使用し、[ 行動イベント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) を発生させます。
 
    結果を返すために必要な最小イベント数 [!DNL Product Recommendations] 次のとおりです。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 1. イベントが発生したら、[Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) を使用してイベントを処理し、Adobe Senseiに送信します。
 
-1. 行動データが収集されたら、管理者で [ 作成 ](create.md) [!DNL Product Recommendations] できます。
+1. 行動データが収集されたら、管理者で [ 作成 ](create.md)[!DNL Product Recommendations] できます。
 
 1. [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) を使用して、ストアフロントのレコメンデーションユニットを取得します。 SDKは、レコメンデーションユニットをページにレンダリングするために必要な商品データを返します。
 

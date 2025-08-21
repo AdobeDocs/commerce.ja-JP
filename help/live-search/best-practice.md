@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] ベストプラクティス'
 description: ストアに実装する際のベストプラクティス  [!DNL Live Search]  説明します。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2429'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 - 検索ルールは、人気度、新着、プロモーション条件、その他のマーチャンダイジング戦略に基づいて特定の製品の可視性を高め、ビジネス要件を満たすため、重要です。
 - ファセットナビゲーションを使用すると、買い物客は検索を絞り込んで、関連性の高い結果をすばやく得ることができます。
 
-[!DNL Live Search] を管理するには、Adobe [!DNL Commerce] Admin で **マーケティング**/*SEO と検索*/**[!DNL Live Search]** に移動します。 
+[!DNL Live Search] を管理するには、Adobe **Admin で** マーケティング */* SEO と検索 **[!DNL Live Search]**/[!DNL Commerce] に移動します。 
 
 ## 検索機能の最適化
 
@@ -100,7 +101,7 @@ Live Search は、デフォルトでスペルミスを管理します。 同義�
 
 検索リダイレクトは常にテストして、正しく機能し、最も関連性の高いページに導かれていることを確認してください。 継続的にパフォーマンスを監視し、必要に応じて調整を行います。
 
-[ 検索リダイレクトの管理 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-terms) 方法を説明します。
+[ 検索リダイレクトの管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) 方法を説明します。
 
 ## 検索結果の関連性の向上
 
@@ -128,7 +129,7 @@ Live Search は、デフォルトでスペルミスを管理します。 同義�
 - 関連性を損なうことなく、利益率の高い製品を少し優先します。
 - 販売されている製品や特別なプロモーションの一部を強調します。
 - プロモーション期間中に日付範囲を使用して、プロモーション期間中または販売期間中に検索ルールを自動的に設定します。
-- 「あなたにお勧め」、「最も多く閲覧された [&#128279;](rules-add.md#intelligent-ranking) など、「インテリジェントランキング  を使用して、個々の買い物客の行動に基づいて検索結果をカスタマイズします。 買い物客の行動を調整するには、イベンティングが正しく実装されていることを確認する必要があります。 Luma マーチャントの場合、イベントは標準で利用できます。 ヘッドレス実装またはカスタム実装の場合は、特定のニーズに基づいて [ イベントを実装 ](events.md) する必要があります。
+- 「あなたにお勧め」、「最も多く閲覧された [ など、「インテリジェントランキング ](rules-add.md#intelligent-ranking) を使用して、個々の買い物客の行動に基づいて検索結果をカスタマイズします。 買い物客の行動を調整するには、イベンティングが正しく実装されていることを確認する必要があります。 Luma マーチャントの場合、イベントは標準で利用できます。 ヘッドレス実装またはカスタム実装の場合は、特定のニーズに基づいて [ イベントを実装 ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) する必要があります。
 
 検索ルールの詳細：
 
@@ -139,7 +140,7 @@ Live Search は、デフォルトでスペルミスを管理します。 同義�
    - [作成](rules-add.md)
    - [編集、表示、削除](rules-manage.md)
 - データ収集
-   - [[!DNL Live Search] イベント](events.md)
+   - [[!DNL Live Search]  イベント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
    - [Adobe Commerce イベント コレクター ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
    - [GitHub Commerce イベント ](https://github.com/adobe/commerce-events/tree/main/examples) 
 
@@ -154,7 +155,7 @@ Live Search は、デフォルトでスペルミスを管理します。 同義�
 検索の製品属性の詳細を説明します。
 
 - [検索可能として属性を設定](workspace.md#set-attributes-as-searchable)
-- [ 属性へのウェイトの割り当て ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [ 属性へのウェイトの割り当て ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 検索結果の監視
 
@@ -195,4 +196,4 @@ Live Search は、デフォルトでスペルミスを管理します。 同義�
 - 一般的な検索用語と製品データを分析して、重要なキーワードを特定します。 これらのキーワードを使用して製品の検索可能な属性を最適化し、検索関連性を向上させます。
 - 結果データを定期的に分析して、変化するトレンド、買い物客の好みや行動を把握し、上位の検索用語を特定して、問題を検出します。 このフィードバックループを使用して、検索ルールと製品オファーを継続的に調整および改善します
 
-[!DNL Live Search] レポート内の正しいデータを取得するには、イベンティングが正しく実装されていることを確認する必要があります。 Luma マーチャントの場合、イベントは標準で利用できます。 ヘッドレス実装またはカスタム実装の場合は、特定のニーズに基づいて [ イベントを実装 ](events.md) する必要があります。
+[!DNL Live Search] レポート内の正しいデータを取得するには、イベンティングが正しく実装されていることを確認する必要があります。 Luma マーチャントの場合、イベントは標準で利用できます。 ヘッドレス実装またはカスタム実装の場合は、特定のニーズに基づいて [ イベントを実装 ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) する必要があります。
