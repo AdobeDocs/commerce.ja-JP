@@ -3,153 +3,40 @@ title: ストアフロントの設定
 description: 基礎ツールを実行してストアフロントを設定する方法  [!DNL Adobe Commerce as a Cloud Service]  説明します。
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 47eb8ee55bb093767f76aa23df8bb347ee280aae
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: b0d492ffab2dcf5742772d02bed026e241ac43cd
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
 # ストアフロントの設定
 
-次の手順は、`aio commerce init` コマンドを使用してEdge Deliveryを搭載したAdobe Commerce Storefront をすばやく設定する方法を示しています。 このプロセスにより、次の設定が行われます。
+Edge Delivery Services for Adobe Commerce as a Cloud Service（SaaS）を利用したAdobe Commerce ストアフロントを設定するには、次の手順を使用します。
 
-* [Edge Delivery ServicesによるCommerce ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja) - Adobe Edge Delivery Servicesを活用した、パフォーマンス、拡張性、安全性の高いストアフロントです。
-* [Adobe Developer App Builderの API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/mesh/) – 複数のデータソースを 1 つのGraphQL エンドポイントに組み合わせることができる API プラットフォーム。 API メッシュは、1 つのゲートウェイを介してサードパーティ API とAdobe API を統合します。 1 つのGraphQL エンドポイントに対する 1 つのクエリで、複数のソースから結果を返すことができます。
-* [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) - Adobe アプリケーション用のプロジェクトを構築するために使用できる、API、イベント、ランタイム関数、プラグインへのアクセスを備えたデベロッパーツールのコレクションです。
-* [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/) - クラウド内のイベントに応答し、関数を実行するカスタムコードをデプロイするためのサーバーレスエンジン。
+よりカスタマイズ可能で詳細なチュートリアルについては、[ ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) を参照してください。
 
-## 前提条件
+1. [ サイト作成ツール ](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) を開きます。
 
-`aio commerce init` コマンドを実行する前に、次の前提条件を満たす必要があります。
+1. 「**新しいサイトを作成（コードとコンテンツ）**」を選択します。
 
-1. ノードバージョンマネージャー（NVM）をインストールします。
+1. ストアフロントコードリポジトリを作成する **Github 組織/ユーザー名** を入力します。
 
-   ```bash
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-   ```
+1. **サイト名** を入力します。
 
-1. Node.js と NPM をインストールします。 詳しくは、[Node.js](https://nodejs.org/en/) を参照してください。
+1. 「**Commerce GraphQL エンドポイント（オプション）**」フィールドに、Adobe Commerce as a Cloud Service（SaaS）GraphQL エンドポイントを入力します。このエンドポイントには、（インスタンスの作成 [ 後にCommerce Cloud Manager でアクセスでき ](./getting-started.md#create-an-instance) す。
 
-   ```bash
-   nvm install 22
-   ```
+   または、[API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic) を使用している場合は、API メッシュ GraphQL エンドポイントを **Commerce GraphQL エンドポイント（オプション）** フィールドに入力します。 詳細については、[ メッシュの作成 ](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) を参照してください。
 
-   ```bash
-   npm install -g npm
-   ```
+1. **サイトを作成** をクリックします。 画面の指示に従って、Github リポジトリへのアクセスを認証します。
 
-1. [Adobe I/O Runtime CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) をインストールします。
+プロセスが完了したら、次の方法でストアフロントをカスタマイズできます。
 
-   ```bash
-   npm install -g @adobe/aio-cli
-   ```
-
-1. Adobe I/O API メッシュ プラグインをインストールします。
-
-   ```bash
-   aio plugins:install @adobe/aio-cli-plugin-api-mesh
-   ```
-
-1. Adobe I/O Commerce プラグインをインストールします。
-
-   ```bash
-   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
-   ```
-
-1. 既存のプラグインを更新します。
-
-   ```bash
-   aio plugins:update
-   ```
-
-1. Adobe Experience Cloud アカウントにログインします。
-
-   ```bash
-   aio login
-   ```
-
-   `aio login` コマンドでブラウザーウィンドウが起動しない場合は、[ トラブルシューティング ](#troubleshooting) の節を参照してください。
-
-1. IMS 組織、プロジェクト、ワークスペースを選択します。 矢印キーを使用し、**Enter** キーを押して、選択を行います。 `aio` コマンドについて詳しくは、[Adobe I/O CLI ドキュメント ](https://github.com/adobe/aio-cli-plugin-console?tab=readme-ov-file#commands) を参照してください。
-
-   ```bash
-   aio console org select
-   ```
-
-   ```bash
-   aio console project select
-   ```
-
-   ```bash
-   aio console workspace select
-   ```
-
-1. まだ承認していない場合は、Adobe Developer コンソールでhttps://developer.adobe.com/console/homeに移動し、「同意して続行 **をクリックして、デベロッパー利用規約に同意してくだ** い。
-
-## `aio commerce init` コマンドを実行します。
-
-次のコマンドを実行すると、Commerce ストアフロントの基礎モードが作成されます。 この基礎モードは、ストアフロントの構築と理解に最適な出発点となります。 ストアフロントの操作について詳しくは、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照してください。
-
-
-1. `init` コマンドを実行します。
-
-   ```bash
-   aio commerce init
-   ```
-
-1. 既に GitHub にログインしている場合は、`Y` と入力して、ユーザー名の下にリポジトリを作成します。
-
-1. 作成するリポジトリの名前を入力します。
-
-1. 次のいずれかのオプションを選択します。
-
-   * **デモ Adobe Commerce テナントを使用** - デモテナントを使用します。
-      * このオプションを選択すると、ブラウザーウィンドウにAEM Code Sync ボットをインストールするように求められます。 作成したリポジトリを指定し、ボットを認証する必要があります。 CLI に戻り、`y` と入力して、AEM Code Sync ボットのインストールを確認します。
-   * **使用可能なAdobe Commerce テナントを選択** – 選択した組織内の既存のCommerce テナントを選択します。
-      * このオプションを選択した場合、メッシュを作成するプロジェクトとワークスペースを選択する必要があります。
-   * **独自のAdobe Commerce テナント API URL を指定** – 体験版アクセスプログラムの参加者の場合は、このオプションを選択します。 Adobeのオンボーディングメールで提供された API URL を入力します。
-
-   >[!NOTE]
-   >
-   >「`Pick an available API (Mesh -> SaaS)`」オプションを選択する場合は、Adobe Developer Consoleに既存のプロジェクトとWorkspaceが必要です。 [ テンプレート化されたプロジェクトを作成 ](https://developer.adobe.com/developer-console/docs/guides/projects/projects-template/) し、「App Builder」を選択すると、必要なワークスペースが自動的に作成されます。
-
-1. プロセスが完了したら、次の方法でストアフロントをカスタマイズできます。
-
-   * コードのカスタマイズ：`https://github.com/<username or org>/<repo name>`
-   * コンテンツを編集：`https://da.live/#/<username or org>/<repo name>`
-   * 設定を管理：`https://da.live/sheet#/<username or org>/<repo name>/configs-stage`
-   * ストアフロントのプレビュー：`https://main--<repo name>--<username or org>.aem.page/`
-   * ローカルで実行：`aio commerce:dev`
-
-ストアフロントをカスタマイズするには、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照してください。
-
-## トラブルシューティング
-
-`aio login` コマンドで問題が発生した場合、Adobeは CLI とブラウザーから完全にログアウトしてから、再度ログインすることをお勧めします。
-
-1. CLI からログアウトするには、次のコマンドを実行します。
-
-   ```bash
-   aio logout
-   ```
-
-1. ブラウザーで、[Adobe Developer Console](https://developer.adobe.com/console) に移動し、右上隅のプロファイルアイコンをクリックして、「**ログアウト**」を選択します。
-
-1. CLI に戻り、もう一度 `aio login` コマンドを実行します。このコマンドを実行すると、ブラウザ・ウィンドウが起動してログインします。 次に、組織、プロジェクト、ワークスペースの選択に進むことができます。
-
-   ```bash
-   aio console org select
-   ```
-
-   ```bash
-   aio console workspace select
-   ```
-
-   ```bash
-   aio console project select
-   ```
+* コードのカスタマイズ：`https://github.com/<username or org>/<repo name>`
+* コンテンツを編集：`https://da.live/#/<username or org>/<repo name>`
+* 設定を管理：`https://da.live/sheet#/<username or org>/<repo name>/configs-stage`
+* ストアフロントのプレビュー：`https://main--<repo name>--<username or org>.aem.page/`
 
 ## 次の手順
 
@@ -158,4 +45,4 @@ ht-degree: 0%
 * ストアフロントでのコンテンツとデータの管理と表示について詳しくは、[ ストアフロントコンテンツの更新 ](./use-cases.md#update-storefront-content) を参照してください。
 * コンテキスト実験機能について詳しくは、「[ コンテキスト実験 ](./use-cases.md#contextual-experimentation)」を参照してください。
 * ジェネレーティブ AI を使用して高品質のコンテンツ生成を自動化する方法について詳しくは、[ バリエーションの生成 ](./use-cases.md#generate-variations) を参照してください。
-* サイトコンテンツの更新、Commerce フロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照してください。
+* サイトコンテンツの更新、Commerce フロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/) を参照してください。
