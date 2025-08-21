@@ -24,11 +24,11 @@ _推奨単位_
 
 1. _管理者_ サイドバーで、**マーケティング**/_プロモーション_/**製品レコメンデーション** に移動して、_製品レコメンデーション_ ワークスペースを表示します。
 
-1. レコメンデーションを表示する [ ストア表示 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) を指定します。
+1. レコメンデーションを表示する [ ストア表示 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views) を指定します。
 
    >[!NOTE]
    >
-   > ページビルダーのレコメンデーション単位は、デフォルトのストア表示で作成する必要がありますが、どこでも使用できます。 ページビルダーを使用した製品レコメンデーションの作成について詳しくは、[ コンテンツの追加 – 製品レコメンデーション ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) を参照してください。
+   > ページビルダーのレコメンデーション単位は、デフォルトのストア表示で作成する必要がありますが、どこでも使用できます。 ページビルダーを使用した製品レコメンデーションの作成について詳しくは、[ コンテンツの追加 – 製品レコメンデーション ](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/add-content/recommendations) を参照してください。
 
 1. **レコメンデーションを作成** をクリックします。
 
@@ -38,14 +38,14 @@ _推奨単位_
 
    >[!NOTE]
    >
-   > ストアが [ 買い物かごに商品を追加した直後に買い物かごページを表示 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration) するように設定されている場合、買い物かごページでの商品レコメンデーションはサポートされません。
+   > ストアが [ 買い物かごに商品を追加した直後に買い物かごページを表示 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration) するように設定されている場合、買い物かごページでの商品レコメンデーションはサポートされません。
 
    * ホームページ
    * カテゴリ
    * 製品詳細
    * カート
    * 確認
-   * [ ページビルダー ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [ ページビルダー ](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/add-content/recommendations)
 
    各ページタイプに対して最大 5 つのアクティブなレコメンデーションユニットを作成でき、ページビルダーには最大 25 のアクティブなレコメンデーションユニットを作成できます。 制限に達すると、ページタイプがグレー表示されます。
 

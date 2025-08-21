@@ -30,11 +30,11 @@ ht-degree: 0%
 
 ### ヘルスケア関連のお客様
 
-医療関係のお客様が [ データ接続 ](../data-connection/hipaa-readiness.md#installation) 拡張機能の一部である [ データサービス HIPAA 拡張機能 ](../data-connection/overview.md) をインストールした場合、[!DNL Live Search] で使用されるストアフロントイベントデータは取得されなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるからです。 ストアフロントのイベントデータのキャプチャと送信を続行するには、[!DNL Live Search] のイベント収集を再度有効にします。 詳しくは、[ 一般設定 ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) を参照してください。
+医療関係のお客様が [ データ接続 ](../data-connection/hipaa-readiness.md#installation) 拡張機能の一部である [ データサービス HIPAA 拡張機能 ](../data-connection/overview.md) をインストールした場合、[!DNL Live Search] で使用されるストアフロントイベントデータは取得されなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるからです。 ストアフロントのイベントデータのキャプチャと送信を続行するには、[!DNL Live Search] のイベント収集を再度有効にします。 詳しくは、[ 一般設定 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/general/general#data-services) を参照してください。
 
 ## 範囲を設定
 
-最初は、すべての [ 設定の ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 範囲 [!DNL Live Search] が `Default Store View` に設定されます。 [!DNL Commerce] のインストールに複数のストア表示が含まれている場合は、**範囲** を [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) に設定します。この場合、ファセット設定が適用されます。
+最初は、すべての [ 設定の ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) 範囲 [!DNL Live Search] が `Default Store View` に設定されます。 [!DNL Commerce] のインストールに複数のストア表示が含まれている場合は、**範囲** を [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja) に設定します。この場合、ファセット設定が適用されます。
 
 ## メニューオプション
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## 検索可能として属性を設定
 
-ターゲットの絞られた結果を生成するには、[ 検索可能 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) （`searchable=true`）製品属性のセットを確認します。 関連性を確保するために、明確で簡潔な意味を持つコンテンツが属性に含まれている場合にのみ、属性を検索可能にします。 `description` など、精度が低く長いテキストを含む属性の使用は避けてください。これらの属性はデフォルトで検索が有効になっていますが、検索結果の精度を下げる可能性があります。 例えば、人が「ショートパンツ」を検索し、「ショートスリーブ」という用語を含む説明を持つシャツがある場合、シャツは検索結果に含まれます。
+ターゲットの絞られた結果を生成するには、[ 検索可能 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=ja) （`searchable=true`）製品属性のセットを確認します。 関連性を確保するために、明確で簡潔な意味を持つコンテンツが属性に含まれている場合にのみ、属性を検索可能にします。 `description` など、精度が低く長いテキストを含む属性の使用は避けてください。これらの属性はデフォルトで検索が有効になっていますが、検索結果の精度を下げる可能性があります。 例えば、人が「ショートパンツ」を検索し、「ショートスリーブ」という用語を含む説明を持つシャツがある場合、シャツは検索結果に含まれます。
 
 属性を検索可能にするには、次の手順を実行します。
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
    ![Workspace](assets/attribute-searchable.png)
 
-[!DNL Live Search] た、Adobe Commerceで設定されている product 属性の [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) も考慮されます。 重み付けが大きい属性は、検索結果内で高く表示されます。
+[!DNL Live Search] た、Adobe Commerceで設定されている product 属性の [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=ja#weighted-search) も考慮されます。 重み付けが大きい属性は、検索結果内で高く表示されます。
 
 次の属性は常に検索可能です。
 
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 検索語句
 
-[!DNL Live Search] では、Luma やその他の php ベースのテーマなど、Adobe Commerceがルーティングを処理する実装で [ 検索用語リダイレクト ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) をサポートしています。
+[!DNL Live Search] では、Luma やその他の php ベースのテーマなど、Adobe Commerceがルーティングを処理する実装で [ 検索用語リダイレクト ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=ja) をサポートしています。
