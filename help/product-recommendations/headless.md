@@ -29,7 +29,7 @@ ht-degree: 0%
 
 次のワークフローに説明するように、使用可能な SDK を使用して、これらのアクションの両方を実行できます。
 
-1. [ モジュール ](install-configure.md)[!DNL Product Recommendations] インストールします。
+1. [ モジュール ](install-configure.md) [!DNL Product Recommendations] インストールします。
 
 1. [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) をインストールして使用し、[ 行動イベント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) を発生させます。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 1. イベントが発生したら、[Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) を使用してイベントを処理し、Adobe Senseiに送信します。
 
-1. 行動データが収集されたら、管理者で [ 作成 ](create.md)[!DNL Product Recommendations] できます。
+1. 行動データが収集されたら、管理者で [ 作成 ](create.md) [!DNL Product Recommendations] できます。
 
 1. [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) を使用して、ストアフロントのレコメンデーションユニットを取得します。 SDKは、レコメンデーションユニットをページにレンダリングするために必要な商品データを返します。
 

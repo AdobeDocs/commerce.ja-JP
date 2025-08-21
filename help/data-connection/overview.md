@@ -84,7 +84,7 @@ CommerceとCommerceの間およびExperience PlatformとExperience Platformの�
 
 大まかに言えば、[!DNL Data Connection] 拡張機能を有効にするには、次の手順を実行します。
 
-1. [ 拡張機能 ](install.md)[!DNL Data Connection] インストールします。
+1. [ 拡張機能 ](install.md) [!DNL Data Connection] インストールします。
 1. Adobe アカウントに [ ログイン ](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) し、組織 ID を [ 確認するために表示 ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) します。 組織 ID は、プロビジョニングされているExperience Cloud会社に関連付けられた ID です。 この ID は 24 文字の英数字から成る文字列の後に `@AdobeOrg` （必須）を付けたものです。
 1. [Experience Platformのデータ収集に対する権限 ](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html) があることを確認します。
 1. 収集して送信できる [ データのタイプ ](data-ingestion.md) を確認します。

@@ -129,7 +129,7 @@ Adobe Commerce インスタンスがデータ収集を開始できるように�
 
 1. [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) ジョブに従ってスケジュールに基づいてバックオフィスイベントデータが確実に更新されるようにするには、`Sales Orders Feed` インデックスを `Update by Schedule` に変更する必要があります。
 
-   1. _管理者_ サイドバーで、**[!UICONTROL System]**/_[!UICONTROL Tools]_/**[!UICONTROL Index Management]**に移動します。
+   1. _管理者_ サイドバーで、**[!UICONTROL System]**/_[!UICONTROL Tools]_/**[!UICONTROL Index Management]**&#x200B;に移動します。
 
    1. `Sales Orders Feed` インデクサーのチェックボックスを選択します。
 
