@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # インストールと設定
 
-[!DNL Product Recommendations] をストアフロントおよび管理者にデプロイするには、モジュールをインストールして [1}Commerce サービスコネクタ } を設定する必要があります。 ](../landing/saas.md)アップデートがリリースされると、インストールを最新バージョンに簡単にアップデートできます。
+[!DNL Product Recommendations] をストアフロントおよび管理者にデプロイするには、モジュールをインストールして [1&rbrace;Commerce サービスコネクタ &rbrace; を設定する必要があります。 ](../landing/saas.md)アップデートがリリースされると、インストールを最新バージョンに簡単にアップデートできます。
 
 - [インストール](#install)
 - [設定](#configure)
@@ -56,7 +56,7 @@ composer require magento/module-visual-product-recommendations
 
 ## [!DNL Product Recommendations] の設定 {#configure}
 
-1. `magento/product-recommendations` モジュールをインストールしたら、API キーを指定して SaaS Data Space を選択し [](../landing/saas.md)Commerce サービスコネクタを設定します。
+1. `magento/product-recommendations` モジュールをインストールしたら、API キーを指定して SaaS Data Space を選択し [&#128279;](../landing/saas.md)Commerce サービスコネクタを設定します。
 
    この接続を設定すると、Commerce インスタンス、カタログサービス、その他のサポートサービス間のデータ同期と通信が可能になります。 データ同期は、[SaaS データ書き出し拡張機能 ](../data-export/overview.md) で処理されます。
 
