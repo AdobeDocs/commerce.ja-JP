@@ -2,10 +2,11 @@
 title: マーチャンダイジングの概要
 description: ' [!DNL Adobe Commerce Optimizer] のマーチャンダイジング機能について説明します。'
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
+source-git-commit: 17d1872321e664ca58a702b0948fd5e6d2f33202
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -16,13 +17,17 @@ ht-degree: 0%
 
 ## 製品の検出
 
-製品検出はサイト検索機能を強化し、コンバージョン率を最大化するシームレスで効率的な買い物客エクスペリエンスを保証します。 これにより、マーチャンダイザーは買い物客が適切な製品を適切なタイミングで手に入れることができます。
+製品検出は、マーチャンダイザーがショッピングエクスペリエンスをキュレーションおよび最適化するための強力なツールを備えており、顧客が適切な製品を適切なタイミングで迅速に見つけられるようにします。 検索動作を微調整すると、製品の可視性、関連度およびコンバージョンに直接影響を与えることができます。
 
-製品の検出では、ファセット、ルールおよび同義語を次のように設定します。
+製品の検出を使用すると、次のことができます。
 
-- 有意義な検索エクスペリエンスを作成すると、買い物客や買い物客ができるだけ少ない労力で欲しいものを見つけるのに役立ちます。
-- セッション内の買い物客の行動に応じて、AI を活用した動的なファセット化と検索結果の再ランキングを利用できます。
+* **[ ファセット ](./facets/overview.md)、[ マーチャンダイジングルール ](./rules/overview.md) および [ 同義語](./synonyms/overview.md)** を設定して、最小限の摩擦で最も関連性の高い製品に買い物客を導きます。
+* **マーチャンダイジング戦略と季節的な優先度を反映した、直感的で目標指向の検索エクスペリエンスを作成します**。
+* **AI 駆動の動的ファセットと結果の再ランキングを使用** して、買い物客の行動に基づいて検索結果をリアルタイムに適応させ、エンゲージメントと売上を向上させます。
+* **プロモーションや優先度の高い項目が効果的に表示されるように** して、検索結果をビジネス目標に合わせます。
 
 ## 推奨事項
 
-Recommendations では、人工知能と機械学習アルゴリズムを使用して、集計された訪問者データの深い分析を実行します。 このデータをカタログと組み合わせると、非常に魅力的で関連性が高く、パーソナライズされたエクスペリエンスが実現します。 レコメンデーションは、「この商品を閲覧した顧客も閲覧した」などのラベル付きユニットとしてストアフロントに表示されます。 レコメンデーションは、[!DNL Adobe Commerce Optimizer] から直接作成、管理およびデプロイできます。
+Recommendations では、人工知能と機械学習を使用して、ストアフロント全体での集計訪問者行動と製品インタラクションを分析します。 この行動データを製品カタログと組み合わせることで、[!DNL Adobe Commerce Optimizer] は高度にパーソナライズされた関連性の高い製品提案を提供し、買い物客のエンゲージメントを強化し、コンバージョンを高めます。
+
+レコメンデーションは、「この製品を閲覧した顧客も閲覧した」など、ラベル付きの単位でストアフロントに表示されます。 これらのユニットは、ショッピングジャーニー全体を通じて戦略的に配置できます。 マーチャンダイザーは、これらのレコメンデーションユニットを [!DNL Adobe Commerce Optimizer] 内で直接簡単に作成、管理、デプロイして、プロモーション目標、クロスセル戦略、パーソナライズされたエクスペリエンスをサポートできます。
