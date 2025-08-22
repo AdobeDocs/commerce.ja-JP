@@ -4,27 +4,73 @@ description: ' [!DNL Adobe Commerce as a Cloud Service] の主な機能とメリ
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: cd5244d67f67c6f1e8a10f09a39f33073fcea9af
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: 8fc46b0b93ac5102477f33bf2a8ae70a7acaf85d
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
+
 
 # [!DNL Adobe Commerce as a Cloud Service] の概要
 
 [!DNL Adobe Commerce as a Cloud Service] は、企業がデジタルオペレーションを提供し、迅速に拡大し、イノベーションを促進できるようにすることで、柔軟性、拡張性、効率性を提供します。 Adobeのクラウドネイティブインフラストラクチャは、トラフィック、注文、カタログ管理に対するピーク時の需要に合わせてリソースを自動的に調整します。
 
-次の図は、[!DNL Adobe Commerce as a Cloud Service] を強化する製品を示しています。
+次の表に、[!DNL Adobe Commerce as a Cloud Service] を強化する製品を示します。
 
-![[!DNL Adobe Commerce as a Cloud Service] 製品スタック ](./assets/product-stack.svg){align="center" zoomable="yes"}
+<table style="table-layout:auto">
+  <tr>
+    <td>
+      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
+        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
+      </span>
+      <strong>Commerce ストアフロント </strong>
+    </td>
+    <td>
+      買い物客が商品を参照および購入する顧客向けインターフェイス
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
+        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
+      </span>
+      <strong> マーチャンダイジングサービス </strong>
+    </td>
+    <td>
+      製品カタログ、価格設定、在庫を管理するバックエンド・サービス
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
+        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
+      </span>
+      <strong> 製品ビジュアル </strong>
+    </td>
+    <td>
+      製品画像およびメディアのデジタルアセット管理
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
+        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
+      </span>
+      <strong>Developer Platform</strong>
+    </td>
+    <td>
+      カスタム機能を構築するためのコア開発ツールと API
+    </td>
+  </tr>
+</table>
 
 ## アーキテクチャ
 
 [!DNL Adobe Commerce as a Cloud Service] アーキテクチャの概要については、次のビデオを参照してください。 アーキテクチャを示す図をビデオの下に示します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443268?learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 次の図は、[!DNL Adobe Commerce as a Cloud Service] とすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
@@ -32,13 +78,13 @@ ht-degree: 0%
 
 ## Commerce ストアフロント
 
-Edge Delivery Servicesを活用したAdobeの [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=ja) を使用すると、シンプルなドキュメントベースのオーサリングや Storefront ビルダーを使用したビジュアル編集で、数分で豊富なエクスペリエンスを作成できます。
+Edge Delivery Servicesを活用したAdobeの [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) を使用すると、シンプルなドキュメントベースのオーサリングや Storefront ビルダーを使用したビジュアル編集で、数分で豊富なエクスペリエンスを作成できます。
 
 Commerce ストアフロントは、GraphQL API レイヤーを通じてすべてのマーチャンダイジングサービスとデータを提供する、切り離されたアーキテクチャを備えた、完全にヘッドレスです。 このアーキテクチャにより、チームはCommerce財団とは独立してフロントエンドを開発でき、新しいテクノロジーを使用して新しいタッチポイントを構築およびテストする俊敏性が提供されます。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] は、Luma ストアフロントをサポートしていません。 Adobe Commerce on Cloud またはオンプレミスから移行する場合は、[ 既存のストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=ja#existing-storefronts) を参照して、移行のガイダンスを確認してください。
+>[!DNL Adobe Commerce as a Cloud Service] は、Luma ストアフロントをサポートしていません。 Adobe Commerce on Cloud またはオンプレミスから移行する場合は、[ 既存のストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) を参照して、移行のガイダンスを確認してください。
 
 ## マーチャンダイジングサービスと支払いサービス
 
@@ -61,10 +107,54 @@ Product Visuals は、Adobe Experience Managerと統合してリッチメディ�
 
 ### 製品ビジュアルまたはAEM Assets
 
-次の画像は、コンテンツサプライチェーンのニーズに応じて、両方のオファーを示しています。
+次の比較は、コンテンツサプライチェーンのニーズに最適なオプションを選択するのに役立ちます。
 
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+  <tr style="border: none;">
+    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
+      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">AEM Assetsを活用した製品ビジュアル</h3>
+      <ul style="margin: 0; padding-left: 20px;">
+        <li>製品の画像およびビデオを統合し、自動化された Digital Asset Manager （DAM）</li>
+        <li>画像のサイズ変更、切り抜き、変換</li>
+        <li>高速な画像/ビデオ配信</li>
+        <li>クライアントのブラウザー機能に基づいて画像形式、サイズ、画質を最適化します。</li>
+        <li>Adobe ExpressとAdobe Fireflyへのアクセス</li>
+        <li>画像/ビデオ配信処理能力およびユーザーアクセスの使用制限</li>
+        <li>統合アセットセレクター</li>
+      </ul>
+    </td>
+    <td style="width: 10%; text-align: center; vertical-align: middle; font-size: 98px; color: #d32f2f; font-weight: bold;">
+      ›
+    </td>
+    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
+      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">AEM Assets</h3>
+      <ul style="margin: 0; padding-left: 20px;">
+        <li>製品ビジュアルのすべての機能</li>
+        <li>フルマーケティングデジタルアセットマネージャー（DAM）</li>
+        <li>無制限ユーザー（ユーザーごとに支払い）</li>
+        <li>画像およびビデオ配信（無制限）</li>
+        <li>高度なアセット管理機能：</li>
+        <ul>
+          <li>360 度スピンセットとインタラクティブビューア</li>
+          <li>3D モデルのサポートと没入型コンテンツ</li>
+          <li>PDF サポート</li>
+          <li>AI を活用したスマート切り抜き</li>
+         <li>動的画像テンプレート</li>
+        <li>スマートタグ付け</li>
+        <li>アセットのパフォーマンスに関するトラッキングと分析</li>
+        </ul>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-![ チェック ](assets/compare-offerings.png){width="700" zoomable="yes"}
+<table style="width: 100%; margin: 20px 0;">
+  <tr>
+    <td style="background: #f5f5f5; padding: 15px; text-align: center; font-weight: bold;">
+      Adobeブランドの統合は、製品間の移行を容易にするために利用できます。
+    </td>
+  </tr>
+</table>
 
 AEM Assetsを利用した製品ビジュアルを [ と統合する方法について詳しくは、](../aem-assets-integration/overview.md)AEM Assets統合 [!DNL Adobe Commerce as a Cloud Service] ガイドを参照してください。
 
@@ -121,7 +211,7 @@ Cloud 上のAdobe Commerceの一般的なアップグレードプロセスは、
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 
