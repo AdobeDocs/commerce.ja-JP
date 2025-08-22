@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Commerce as a Cloud Service] の主な機能とメリ
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 8fc46b0b93ac5102477f33bf2a8ae70a7acaf85d
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: 31d1f1fe784247d6db8a26f8a9e6ae0291e416b5
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -21,46 +21,34 @@ ht-degree: 0%
 
 <table style="table-layout:auto">
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>Commerce ストアフロント </strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="チェックマーク" align="center"> <strong>Commerce ストアフロント </strong>
     </td>
-    <td>
+    <td align="left">
       買い物客が商品を参照および購入する顧客向けインターフェイス
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong> マーチャンダイジングサービス </strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="チェックマーク" align="center"> <strong> マーチャンダイジングサービス </strong>
     </td>
-    <td>
+    <td align="left">
       製品カタログ、価格設定、在庫を管理するバックエンド・サービス
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong> 製品ビジュアル </strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="チェックマーク" align="center"> <strong> 製品ビジュアル </strong>
     </td>
-    <td>
+    <td align="left">
       製品画像およびメディアのデジタルアセット管理
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>Developer Platform</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="チェックマーク" align="center"> <strong>Developer Platform</strong>
     </td>
-    <td>
+    <td align="left">
       カスタム機能を構築するためのコア開発ツールと API
     </td>
   </tr>
@@ -70,7 +58,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service] アーキテクチャの概要については、次のビデオを参照してください。 アーキテクチャを示す図をビデオの下に示します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443268?learn=on&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 次の図は、[!DNL Adobe Commerce as a Cloud Service] とすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
@@ -78,13 +66,13 @@ ht-degree: 0%
 
 ## Commerce ストアフロント
 
-Edge Delivery Servicesを活用したAdobeの [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=ja) を使用すると、シンプルなドキュメントベースのオーサリングや Storefront ビルダーを使用したビジュアル編集で、数分で豊富なエクスペリエンスを作成できます。
+Edge Delivery Servicesを活用したAdobeの [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) を使用すると、シンプルなドキュメントベースのオーサリングや Storefront ビルダーを使用したビジュアル編集で、数分で豊富なエクスペリエンスを作成できます。
 
 Commerce ストアフロントは、GraphQL API レイヤーを通じてすべてのマーチャンダイジングサービスとデータを提供する、切り離されたアーキテクチャを備えた、完全にヘッドレスです。 このアーキテクチャにより、チームはCommerce財団とは独立してフロントエンドを開発でき、新しいテクノロジーを使用して新しいタッチポイントを構築およびテストする俊敏性が提供されます。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] は、Luma ストアフロントをサポートしていません。 Adobe Commerce on Cloud またはオンプレミスから移行する場合は、[ 既存のストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=ja#existing-storefronts) を参照して、移行のガイダンスを確認してください。
+>[!DNL Adobe Commerce as a Cloud Service] は、Luma ストアフロントをサポートしていません。 Adobe Commerce on Cloud またはオンプレミスから移行する場合は、[ 既存のストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) を参照して、移行のガイダンスを確認してください。
 
 ## マーチャンダイジングサービスと支払いサービス
 
@@ -109,11 +97,11 @@ Product Visuals は、Adobe Experience Managerと統合してリッチメディ�
 
 次の比較は、コンテンツサプライチェーンのニーズに最適なオプションを選択するのに役立ちます。
 
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-  <tr style="border: none;">
-    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
-      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">AEM Assetsを活用した製品ビジュアル</h3>
-      <ul style="margin: 0; padding-left: 20px;">
+<table>
+  <tr>
+    <td align="left">
+      <strong>AEM Assetsを活用した製品のビジュアル </strong>
+      <ul>
         <li>製品の画像およびビデオを統合し、自動化された Digital Asset Manager （DAM）</li>
         <li>画像のサイズ変更、切り抜き、変換</li>
         <li>高速な画像/ビデオ配信</li>
@@ -123,12 +111,13 @@ Product Visuals は、Adobe Experience Managerと統合してリッチメディ�
         <li>統合アセットセレクター</li>
       </ul>
     </td>
-    <td style="width: 10%; text-align: center; vertical-align: middle; font-size: 98px; color: #d32f2f; font-weight: bold;">
-      ›
+    <td align="center">
+      <br><br><br><br><br><br><br><br><br><br><br>
+      <img src="../assets/icon-double-chevron-right.svg" alt="山形" width="100">
     </td>
-    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
-      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">AEM Assets</h3>
-      <ul style="margin: 0; padding-left: 20px;">
+    <td align="left">
+      <strong>AEM Assets</strong>
+      <ul>
         <li>製品ビジュアルのすべての機能</li>
         <li>フルマーケティングデジタルアセットマネージャー（DAM）</li>
         <li>無制限ユーザー（ユーザーごとに支払い）</li>
@@ -139,19 +128,16 @@ Product Visuals は、Adobe Experience Managerと統合してリッチメディ�
           <li>3D モデルのサポートと没入型コンテンツ</li>
           <li>PDF サポート</li>
           <li>AI を活用したスマート切り抜き</li>
-         <li>動的画像テンプレート</li>
-        <li>スマートタグ付け</li>
-        <li>アセットのパフォーマンスに関するトラッキングと分析</li>
+          <li>動的画像テンプレート</li>
+          <li>スマートタグ付け</li>
+          <li>アセットのパフォーマンスに関するトラッキングと分析</li>
         </ul>
       </ul>
     </td>
   </tr>
-</table>
-
-<table style="width: 100%; margin: 20px 0;">
-  <tr>
-    <td style="background: #f5f5f5; padding: 15px; text-align: center; font-weight: bold;">
-      Adobeブランドの統合は、製品間の移行を容易にするために利用できます。
+    <tr>
+    <td align="center" colspan="3">
+      <strong>Adobeブランドの統合は、製品間の移行を容易にするために利用できます。</strong>
     </td>
   </tr>
 </table>
@@ -211,7 +197,7 @@ Cloud 上のAdobe Commerceの一般的なアップグレードプロセスは、
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 
