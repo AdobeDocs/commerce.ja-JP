@@ -3,16 +3,16 @@ title: カスタムの自動照合
 description: カスタム自動照合が、複雑な照合ロジックを持つマーチャントや、メタデータをAEM Assetsに入力できないサードパーティシステムに依存するマーチャントにとって特に役立つ仕組みを説明します。
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: ff6affa5bcc4111e14054f3f6b3ce970619ca295
+source-git-commit: ee1dd902a883e5653a9fb8764fac708975c37091
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '323'
 ht-degree: 1%
 
 ---
 
 # カスタムの自動照合
 
-デフォルトの自動一致戦略（**OOTB 自動一致**）が特定のビジネス要件に合っていない場合は、「カスタム一致」オプションを選択します。 このオプションは、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAdobe Developer App Builderに入力できないサードパーティシステムからのアセットを開発する [0&rbrace;AEM Assets&rbrace; の使用をサポートします。](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)
+デフォルトの自動一致戦略（**OOTB 自動一致**）が特定のビジネス要件に合っていない場合は、「カスタム一致」オプションを選択します。 このオプションは、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAdobe Developer App Builderに入力できないサードパーティシステムからのアセットを開発する [0}AEM Assets} の使用をサポートします。](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)
 
 ## カスタムの自動照合を設定
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## カスタムマッチャー API エンドポイント
 
-[App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} を使用してカスタムマッチャーアプリケーションを作成する場合、アプリケーションは次のエンドポイントを公開する必要があります。
+[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} を使用してカスタムマッチャーアプリケーションを作成する場合、アプリケーションは次のエンドポイントを公開する必要があります。
 
 * **App Builder asset to product URL** endpoint
 * **App Builder製品からアセットの URL** エンドポイント
@@ -76,8 +76,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 | パラメーター | データタイプ | 説明 |
 | --- | --- | --- |
-| `assetId` | 文字列 | 更新されたアセット ID を表します |
-| `eventData` | 文字列 | `assetId` に関連付けられたデータペイロードを返します |
+| `assetId` | 文字列 | 更新されたアセット ID を表します。 |
+| `eventData` | 文字列 | アセット ID に関連付けられたデータペイロードを返します。 |
 
 **応答**
 
@@ -136,22 +136,13 @@ exports.main = main;
 **リクエスト**
 
 ```bash
-GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
+POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
 ```
 
 | パラメーター | データタイプ | 説明 |
 | --- | --- | --- |
 | `productSKU` | 文字列 | 更新された製品 SKU を表します。 |
-| `asset_matches` | 文字列 | 特定のア `productSku` ットに関連付けられているすべてのアセットを返します。 |
-
-`asset_matches` パラメーターには、次の属性が含まれます。
-
-| 属性 | データタイプ | 説明 |
-| --- | --- | --- |
-| `asset_id` | 文字列 | 更新されたアセット ID を表します。 |
-| `asset_roles` | 文字列 | 使用可能なすべてのアセットの役割を返します。 [、](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)、`thumbnail`、`image` など `small_image` サポートされる `swatch_image`Commerce アセットの役割を使用します。 |
-| `asset_format` | 文字列 | アセットで使用可能な形式を提供します。 使用可能な値は `image` および `video` です。 |
-| `asset_position` | 文字列 | アセットの位置を表示します。 |
+| `eventData` | 文字列 | 製品 SKU に関連付けられているデータペイロードを返します。 |
 
 **応答**
 
@@ -161,12 +152,30 @@ GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to
   "asset_matches": [
     {
       "asset_id": "{ASSET_ID_1}",
-      "asset_roles": ["thumbnail","image"]
+      "asset_roles": ["thumbnail","image"],
+      "asset_position": 1,
+      "asset_format": image
     },
     {
       "asset_id": "{ASSET_ID_2}",
       "asset_roles": ["thumbnail"]
+      "asset_position": 2,
+      "asset_format": image     
     }
   ]
 }
 ```
+
+| パラメーター | データタイプ | 説明 |
+| --- | --- | --- |
+| `productSKU` | 文字列 | 更新された製品 SKU を表します。 |
+| `asset_matches` | 文字列 | 特定の製品 SKU に関連付けられているすべてのアセットを返します。 |
+
+`asset_matches` パラメーターには、次の属性が含まれます。
+
+| 属性 | データタイプ | 説明 |
+| --- | --- | --- |
+| `asset_id` | 文字列 | 更新されたアセット ID を表します。 |
+| `asset_roles` | 文字列 | 使用可能なすべてのアセットの役割を返します。 [、](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)、`thumbnail`、`image` など `small_image` サポートされる `swatch_image`Commerce アセットの役割を使用します。 |
+| `asset_format` | 文字列 | アセットで使用可能な形式を提供します。 使用可能な値は `image` および `video` です。 |
+| `asset_position` | 文字列 | アセットの位置を表示します。 |
