@@ -2,11 +2,11 @@
 title: Adobe Commerce Optimizerとは
 description: ' [!DNL Adobe Commerce Optimizer]  とその主な機能について説明します。'
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 877f3c377715f204904eefe3b93d796084721aa7
+source-git-commit: 69c752322b01985a2eb55de69d4736d75f6bd60a
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '899'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer] の概要については、次のビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3450464?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## [!DNL Adobe Commerce Optimizer] から最も利益を得るのは誰ですか？
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 主な機能は次のとおりです。
 
-- **サードパーティカタログの取り込み** – 任意のサードパーティソース（既存のCommerce カタログ、PIM、ERP など）からカタログデータを取り込みます。 カタログデータは、マーチャンダイジングサービスレイヤーに直接取り込まれます。このレイヤーは、カタログ表示とポリシー（カタログビューとポリシー）を活用したマーチャンダイジングサービスと呼ばれる SaaS コンポーネントです。
+- **サードパーティカタログの取り込み** – 任意のサードパーティソース（既存のCommerce カタログ、PIM、ERP など）からカタログデータを取り込みます。 カタログデータは、マーチャンダイジングサービスレイヤーに直接取り込まれます。このレイヤーは、カタログビューとポリシーを活用したマーチャンダイジングサービスと呼ばれる SaaS コンポーネントです。
 - **カタログのビューとポリシーを活用したマーチャンダイジングサービス** – このソリューションは [!DNL Adobe Commerce Optimizer] の基礎的な要素です。 カタログビューとポリシーを活用したマーチャンダイジングサービスは、マルチブランド、マルチビジネスユニット、多言語のユースケースを解き放つ、拡張性と柔軟性の高いカタログデータモデルです。 これらのマーチャンダイジングサービスは、マーチャントがカタログを大規模に作成および管理するために使用できる構築ブロックを提供します。 [!DNL Adobe Commerce Optimizer] 内では、ビジネス目標を最適に定義するカタログビューとポリシーを作成して、カタログを管理できます。 さらに、マーチャンダイザーは、パーソナライズされたエクスペリエンスを提供し、製品検出、レコメンデーション、インテリジェント&#x200B;マーチャンダイジングを利用してトラフィックとエンゲージメントを促進できます。
 - **使用前と使用後の指標** - コマースイニシアチブのパフォーマンスに関するリアルタイムのインサイトを提供します。 特定の KPI の前後の結果を表示し、変更の影響を評価して、より良い結果が得られるように最適化できます。 結果をPDFに書き出すことができます。
 - **Edge DeliveryによるCommerce ストアフロント** - Edge配信を使用すると、商品リストページ、商品詳細ページ、買い物かご、チェックアウトなど、統合されたコマース機能を備えた事前に作成されたストアフロントコンポーネントを使用して、すばやくサイトを起動できます。
