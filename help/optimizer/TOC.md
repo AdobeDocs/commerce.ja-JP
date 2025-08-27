@@ -4,10 +4,10 @@ user-guide-description: ドキュメントとリソース  [!DNL Adobe Commerce 
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 10%
+source-wordcount: '92'
+ht-degree: 11%
 
 ---
 
@@ -16,8 +16,9 @@ ht-degree: 10%
 - [Adobe Commerce Optimizerとは](overview.md)
 - [はじめに](get-started.md)
 - [ユーザー管理](user-management.md)
-- [共有された責任](shared-responsibility.md)
+- [共有責任](shared-responsibility.md)
 - [境界と制限](boundaries-limits.md)
+- [リリースノート](release-notes.md)
 - 結果の管理 {#manage-results}
    - [成功指標レポート](./manage-results/success-metrics.md)
    - [パフォーマンスの検索](./manage-results/search-performance.md)
