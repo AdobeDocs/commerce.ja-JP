@@ -174,4 +174,4 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 
 ## サポート
 
-データの不一致に気付いた場合、またはレコメンデーションと検索結果が期待どおりに動作しない場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) してください。
+データの不一致に気付いた場合、またはレコメンデーションと検索結果が期待どおりに動作しない場合は、[ サポートチケットを送信 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) してください。

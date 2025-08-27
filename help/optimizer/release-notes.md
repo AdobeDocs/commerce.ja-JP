@@ -3,7 +3,7 @@ title: リリースノート
 description: ' [!DNL Adobe Commerce Optimizer] の最新のリリース情報。'
 role: Admin, Architect, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 source-git-commit: 0b27bd80b6471f83dddb1f2e4a3ece5ebd9d05a0
 workflow-type: tm+mt
 source-wordcount: '103'
