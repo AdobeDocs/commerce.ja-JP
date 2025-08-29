@@ -3,7 +3,7 @@ title: '[!DNL Adobe Commerce as a Cloud Service] リリースノート'
 description: ' [!DNL Adobe Commerce as a Cloud Service] の最新の機能と改善点について説明します。'
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User, Leader
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 source-git-commit: 776b2a2e2db649d126fdc67639c784ad3f1be576
 workflow-type: tm+mt
 source-wordcount: '126'
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # リリースノート
 
-以下のリリースノートには、[!DNL Adobe Commerce as a Cloud Service] の更新点が記載されています。 他の製品のリリース情報については、[Adobe Commerce Optimizer](../optimizer/release-notes.md) または [Adobe Commerce オンプレミスおよびAdobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照してください。
+以下のリリースノートには、[!DNL Adobe Commerce as a Cloud Service] の更新点が記載されています。 他の製品のリリース情報については、[Adobe Commerce Optimizer](../optimizer/release-notes.md) または [Adobe Commerce オンプレミスおよびAdobe Commerce on Cloud](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を参照してください。
 
 ## 2025 年 8 月
 
