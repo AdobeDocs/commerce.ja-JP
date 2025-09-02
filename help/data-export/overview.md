@@ -2,7 +2,8 @@
 title: '[!DNL SaaS Data Export Guide]'
 description: 'Adobe Commerceと接続されたCommerce サービスの間でデータを同期するAdobe Commerce SaaS サービス用の拡張機能の使用について説明します  [!DNL data export] '
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
+source-git-commit: 8e3e71c7de56b367a73ab048fa13ba2cdeb55f41
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -24,9 +25,9 @@ SaaS データのエクスポートは、PHP 拡張モジュールとして提�
 
 - **管理者またはコマンドラインからの手動同期**
 
-   - Commerce管理の [ データ管理ダッシュボード ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-dashboard) には、同期ステータスがグラフィカルに表示されます。 ダッシュボードを使用して、すべてのフィードの完全再同期（_完全同期_）を実行できます。 ただし、Adobeでは、Adobe CommerceをCommerce サービスに初めて接続する際にのみ、完全同期を実行することをお勧めします。 [ 同期処理 ](data-synchronization.md) を参照してください。
+   - Commerce管理の [ データ管理ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) には、同期ステータスがグラフィカルに表示されます。 ダッシュボードを使用して、すべてのフィードの完全再同期（_完全同期_）を実行できます。 ただし、Adobeでは、Adobe CommerceをCommerce サービスに初めて接続する際にのみ、完全同期を実行することをお勧めします。 [ 同期処理 ](data-synchronization.md) を参照してください。
 
-   - [Adobe Commerce コマンドラインツール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/config-cli) （CLI）には、特定のフィードを同期するコマンドが用意されており、フィード処理をカスタマイズするオプションが追加されています。
+   - [Adobe Commerce コマンドラインツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) （CLI）には、特定のフィードを同期するコマンドが用意されており、フィード処理をカスタマイズするオプションが追加されています。
 
 - **Cron ジョブとの自動同期**
 
