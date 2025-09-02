@@ -3,10 +3,11 @@ title: カスタムイベントの作成
 description: カスタムイベントを作成して、Adobe Commerce データを他のAdobe DX 製品に接続する方法を説明します。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
+source-git-commit: 81fbcde11da6f5d086c2b94daeffeec60a9fdbcc
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 0%
+source-wordcount: '271'
+ht-degree: 1%
 
 ---
 
@@ -20,8 +21,8 @@ ht-degree: 0%
 
 `custom` イベントの場合、コレクターは以下を行います。
 
-- `ECID` をプライマリ ID として `identityMap` を追加します
-- イベントで設定されているセカンダリ ID _if_`personalEmail.address` として `identityMap` に `email` を含めます
+- `identityMap` をプライマリ ID として `ECID` を追加します
+- イベントで設定されているセカンダリ ID`email`if`identityMap`_として_ に `personalEmail.address` を含めます
 - Edgeに転送する前に、`xdm` オブジェクト内でイベント全体をラップします
 
 例：
@@ -76,11 +77,7 @@ Experience Platform Edgeで：
 
 `customContext` を含むイベントの場合、コレクターは、関連するコンテキストで設定されたフィールドを `customContext` のフィールドでオーバーライドします。 オーバーライドのユースケースは、開発者が、既にサポートされているイベントでページの他の部分が設定したコンテキストを再利用および拡張する場合です。
 
->[!NOTE]
->
->カスタムイベントを上書きする場合は、重複カウントを避けるために、そのイベントタイプのExperience Platformへのイベント転送をオフにする必要があります。
-
-例：
+### 例
 
 Adobe Commerce Events SDKを通じて公開された、上書きを含む製品ビュー：
 
@@ -131,6 +128,30 @@ Experience Platform Edgeで：
   }
 }
 ```
+
+Luma ベースのストア：
+
+Luma ベースのストアでは、公開イベントがネイティブに実装されています。 したがって、`customContext` を拡張してカスタムデータを設定できます。
+
+例：
+
+```javascript
+mse.context.setCustom({
+  productListItems: [
+    {
+      productCategories: [
+        {
+          categoryID: "cat_15",
+          categoryName: "summer pants",
+          categoryPath: "pants/mens/summer",
+        },
+      ],
+    },
+  ],
+});
+```
+
+カスタムデータの処理について詳しくは、[ カスタムイベントの上書き ](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md) を参照してください。
 
 >[!NOTE]
 >
