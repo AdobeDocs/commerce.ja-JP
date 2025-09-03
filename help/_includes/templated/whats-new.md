@@ -23,7 +23,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront"> サイト作成ツール </a> を使用して、CLI を使用せずにストアフロントを設定できるようになりました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/storefront"> サイト作成ツール </a> を使用して、CLI を使用せずにストアフロントを設定できるようになりました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -45,7 +45,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities"> プロファイルにカスタム属性 </a> を追加する方法に関するトピックを追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/data-connection/customize-data/custom-identities"> プロファイルにカスタム属性 </a> を追加する方法に関するトピックを追加しました。</p>
 </td>
       <td>
         新しいトピック
