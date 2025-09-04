@@ -3,7 +3,7 @@ title: 製品属性の動的な追加
 description: データの同期処理中にカスタム製品属性をデータ書き出しフィードに動的に追加する方法を説明します。
 role: Admin, Developer
 exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
-source-git-commit: bf45670a0bc5fb02dd229a9e3d7af7f2676c5a1f
+source-git-commit: 37d5699315e34f1504602090fae5201ee51cf470
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 製品属性の追加
 
-`Magento\CatalogDataExporter\Model\Provider\Product\Attributes` クラスに `customer_attribute` を追加するプラグインを作成します。
+`customer_attribute` クラスに `Magento\CatalogDataExporter\Model\Provider\Product\Attributes` を追加するプラグインを作成します。
 
 1. [ 依存関係挿入設定ファイル ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）を更新して、プラグインを定義します。
 
@@ -176,3 +176,4 @@ ht-degree: 0%
    ```
    bin/magento saas:resync --feed=productattributes
    ```
+

@@ -3,7 +3,7 @@ title: '[!DNL Manage the Data Export extension]'
 description: 拡張機能をアップグレードする方法と  [!DNL Data Export]  不要なデータ書き出しサービスを削除または無効にする方法について説明します。
 role: Admin, Developer
 exl-id: 94702995-d272-47b9-9560-198eee3250a6
-source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
+source-git-commit: c7a08cabe07ec94e31e9f4c27448ee0862e62cf2
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -36,7 +36,7 @@ bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCa
 1. コマンドラインから、Composer を使用してモジュールを更新します。
 
    ```bash
-   composer require magento/module-saas-price:103.3.1 --with-all-dependencies
+   composer require magento/commerce-data-export:103.4.11 --with-all-dependencies
    ```
 
-Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 [2&rbrace;Cloud Infrastructure ガイドのAdobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) 拡張機能のアップグレード _を参照してください。_
+Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 [2}Cloud Infrastructure ガイドのAdobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) 拡張機能のアップグレード _を参照してください。_

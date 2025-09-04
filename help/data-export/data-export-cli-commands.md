@@ -2,7 +2,7 @@
 title: Commerce CLI を使用したフィードの同期
 description: コマンドラインインターフェイスコマンドを使用して、Adobe Commerce向け SaaS サービスのフィードとプロセス  [!DNL data export extension]  管理する方法について説明します。
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 0f1d55f81cb030d218f0aa8dfa2af4dfd8f640c1
+source-git-commit: 37d5699315e34f1504602090fae5201ee51cf470
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 Adobeでは、`saas:resync` コマンドを定期的に使用することはお勧めしません。 コマンドを使用する一般的なシナリオは次のとおりです。
 
 - 初期同期
-- [SaaS データ空間 ID](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/services/saas) を変更した後、データを新しいデータ空間に同期する
+- [SaaS データ空間 ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) を変更した後、データを新しいデータ空間に同期する
 - トラブルシューティング
 
 `var/log/saas-export.log` ファイルの同期操作を監視します。

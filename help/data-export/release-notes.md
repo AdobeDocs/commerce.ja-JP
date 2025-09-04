@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 728be19f73f19d9e229ae38fd5c171df74b963fb
+source-git-commit: 6abfeca68ab67fb11493f78440e09408479e1535
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1635'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ ht-degree: 0%
 >SaaS データ書き出し拡張機能は、Live Search、Product Recommendations、Catalog Service と共に自動的にインストールされるモジュールのコレクションです。 Composer を使用すると、システムにインストールされているバージョンを確認できます。 場合によっては、Commerce サービスのバージョンを更新せずに修正点または新機能を取得するように、システムのデータエクスポート拡張機能をアップグレードする必要があります。
 
 ## 現在のメジャーバージョン
+
+## 103.4.11 リリース
+
+![New](../assets/new.svg)[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+商品フィードにCommerce商品コンフィギュレーションの税区分、属性セット、在庫データを含めるために、追加の商品属性のサポートが追加されました。 これらの属性を商品の書き出しフィードに含める場合は、Adobe Commerce プロジェクトに「その他の商品属性」モジュールを追加する必要があります。 [ 税金区分、属性セットおよび在庫属性の追加 ](add-tax-attribute-set-inventory-attributes.md) を参照してください。<!--MDEE-1135-->
+![ 修正 ](../assets/fix.svg) 完全な製品インデックスの作成中にエラーが発生した場合に、削除された製品のアップデートの誤った同期が発生する問題を解決しました。 インデックス作成プロセス中にエラーが発生した場合でも、すべての製品の削除が正しく同期されるようになりました。<!--MDEE-1144-->
 
 ## 103.4.10 リリース
 
