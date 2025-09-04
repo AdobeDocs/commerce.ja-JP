@@ -16,7 +16,7 @@ ht-degree: 0%
 Adobeでは、`saas:resync` コマンドを定期的に使用することはお勧めしません。 コマンドを使用する一般的なシナリオは次のとおりです。
 
 - 初期同期
-- [SaaS データ空間 ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) を変更した後、データを新しいデータ空間に同期する
+- [SaaS データ空間 ID](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/services/saas) を変更した後、データを新しいデータ空間に同期する
 - トラブルシューティング
 
 `var/log/saas-export.log` ファイルの同期操作を監視します。
