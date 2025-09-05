@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Cookie 制限の処理
 
-データがブラウザーの Cookie に保存される前に、Adobe CommerceとMagento Open Sourceの両方が同意を求めます。 詳しくは、「[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)」を参照してください。
+データがブラウザーの Cookie に保存される前に、Adobe CommerceとMagento Open Sourceの両方が同意を求めます。 詳しくは、「[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja)」を参照してください。
 
 ## 製品レコメンデーションによる cookie 制限の処理方法
 
