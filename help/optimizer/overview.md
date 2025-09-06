@@ -25,7 +25,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer] の概要については、次のビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3450226)
+>[!VIDEO](https://video.tv.adobe.com/v/3450464?captions=jpn)
 
 ## [!DNL Adobe Commerce Optimizer] から最も利益を得るのは誰ですか？
 
