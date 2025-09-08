@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>オプションの <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes"> 追加製品属性モジュール </a> に関するドキュメントを追加しました。 このモジュールをAdobe Commerce環境にインストールすると、データ書き出しプロセスによって、税クラス、属性セット、在庫メタデータが、Commerce製品コンフィギュレーションから <code class="language-plaintext highlighter-rouge">products</code> および <code class="language-plaintext highlighter-rouge">product attributes</code> フィードに自動的に書き出されます。</p>
+      <td><p>オプションの <a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes"> 追加製品属性モジュール </a> に関するドキュメントを追加しました。 このモジュールをAdobe Commerce環境にインストールすると、データ書き出しプロセスによって、税クラス、属性セット、在庫メタデータが、Commerce製品コンフィギュレーションから <code class="language-plaintext highlighter-rouge">products</code> および <code class="language-plaintext highlighter-rouge">product attributes</code> フィードに自動的に書き出されます。</p>
 </td>
       <td>
         新しいトピック
@@ -45,7 +45,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront"> サイト作成ツール </a> を使用して、CLI を使用せずにストアフロントを設定できるようになりました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/storefront"> サイト作成ツール </a> を使用して、CLI を使用せずにストアフロントを設定できるようになりました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -67,7 +67,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities"> プロファイルにカスタム属性 </a> を追加する方法に関するトピックを追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/data-connection/customize-data/custom-identities"> プロファイルにカスタム属性 </a> を追加する方法に関するトピックを追加しました。</p>
 </td>
       <td>
         新しいトピック
