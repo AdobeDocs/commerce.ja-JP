@@ -3,8 +3,8 @@ title: ストアフロントの設定
 description: 基礎ツールを実行してストアフロントを設定する方法  [!DNL Adobe Commerce as a Cloud Service]  説明します。
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: b0d492ffab2dcf5742772d02bed026e241ac43cd
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: 408f28bdc20708022c8eca0fbfea4adb17014bf7
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Edge Delivery Services for Adobe Commerce as a Cloud Service（SaaS）を利用したAdobe Commerce ストアフロントを設定するには、次の手順を使用します。
 
-よりカスタマイズ可能で詳細なチュートリアルについては、[ ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja) を参照してください。
+よりカスタマイズ可能で詳細なチュートリアルについては、[ ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) を参照してください。
 
 1. [ サイト作成ツール ](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) を開きます。
 
@@ -45,4 +45,4 @@ Edge Delivery Services for Adobe Commerce as a Cloud Service（SaaS）を利用�
 * ストアフロントでのコンテンツとデータの管理と表示について詳しくは、[ ストアフロントコンテンツの更新 ](./use-cases.md#update-storefront-content) を参照してください。
 * コンテキスト実験機能について詳しくは、「[ コンテキスト実験 ](./use-cases.md#contextual-experimentation)」を参照してください。
 * ジェネレーティブ AI を使用して高品質のコンテンツ生成を自動化する方法について詳しくは、[ バリエーションの生成 ](./use-cases.md#generate-variations) を参照してください。
-* サイトコンテンツの更新、Commerce フロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照してください。
+* サイトコンテンツの更新、Commerce フロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、[Adobe Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/) を参照してください。
