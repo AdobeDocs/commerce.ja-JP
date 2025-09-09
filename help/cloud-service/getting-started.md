@@ -22,7 +22,7 @@ ht-degree: 0%
 [!DNL Adobe Commerce as a Cloud Service] は、次のコンポーネントで構成されます。
 
 * **[Adobe Experience Cloud](https://experience.adobe.com/)** - [!DNL Adobe Commerce]experience.adobe.com[ にあるすべての ](https://experience.adobe.com/) 製品への主要なエントリポイント
-   * [!UICONTROL **クイックアクセス**] の下の [!UICONTROL **0}Commerce} をクリックして、Commerce Cloud Manager を開きます**]
+   * [!UICONTROL **クイックアクセス**] の下の [!UICONTROL **0&rbrace;Commerce&rbrace; をクリックして、Commerce Cloud Manager を開きます**]
 * **[Commerce Cloud Manager](https://experience.adobe.com/#/commerce/cloud-service)** - インスタンスの作成と管理、API URL へのアクセスおよびCommerce管理者
 * **[Adobe Admin Console](https://adminconsole.adobe.com/)** - ユーザーとロールを管理します
 * **Commerce管理者** – 商品、注文、顧客およびストア設定を管理します

@@ -33,7 +33,7 @@ ht-degree: 0%
 
 * 管理者 – 管理者には次の 3 つのタイプがあります。
    * [ システム管理者 ](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Admin Consoleを通じて組織内のすべての製品と製品プロファイルにアクセスできます。
-   * [ 製品管理者 ](#add-a-product-admin) – 製品管理者は [ 製品のユーザー、役割、権限を管理 ](#add-users-and-admins)[!DNL Adobe Admin Console] で、[Commerce管理者でユーザーを管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"} できます。
+   * [ 製品管理者 ](#add-a-product-admin) – 製品管理者は [ 製品のユーザー、役割、権限を管理 ](#add-users-and-admins) [!DNL Adobe Admin Console] で、[Commerce管理者でユーザーを管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"} できます。
    * [ 製品プロファイル管理者 ](#add-users-developers-and-product-profile-admins) – 製品プロファイル管理者は、Adobe Commerce管理者へのアクセス権を持っていませんが、[!DNL Adobe Admin Console] 内の製品のユーザーを管理できます。
 
 Adobe Commerce内の各ロールに付与される権限について詳しくは、[ ユーザー権限 ](#user-permissions) を参照してください。
@@ -192,7 +192,7 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 
 AEM Assetsにユーザーを追加した後、[!DNL Experience Manager]https://experience.adobe.com/[ に移動すると、](https://experience.adobe.com/){target="_blank"} インターフェイスにアクセスできます。
 
-1. 「[!UICONTROL **クイックアクセス**]」セクションで、「[!UICONTROL **Experience Manager**]」をクリックします。[!UICONTROL **6}Experience Manager**] が表示されていない場合は、「[!UICONTROL **すべて表示」をクリックします。**]&#x200B;次に、[!UICONTROL **Cloud Manager**] をクリックするか、[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に直接移動します。
+1. 「[!UICONTROL **クイックアクセス**]」セクションで、「[!UICONTROL **Experience Manager**]」をクリックします。[!UICONTROL **6&rbrace;Experience Manager**] が表示されていない場合は、「[!UICONTROL **すべて表示」をクリックします。**]&#x200B;次に、[!UICONTROL **Cloud Manager**] をクリックするか、[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に直接移動します。
 
 1. [!UICONTROL **Cloud Manager**] ページで、「[!UICONTROL **プログラムを追加**]」をクリックして開始します。
 
