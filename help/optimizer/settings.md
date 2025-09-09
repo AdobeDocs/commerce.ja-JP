@@ -1,8 +1,9 @@
 ---
 title: 設定
 description: 設定の構成  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
+source-git-commit: 652681cc9aef416040ccd470d04bf2540fe97262
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -22,7 +23,7 @@ ht-degree: 0%
 価格範囲グループの数と、それらの間での価格値の配分方法を指定できます。 各価格範囲は、前のグループと 1 つ重なります。 例えば、間隔が 20 の 5 つのグループは、0～20、20～40、40～60、60～80、80 を超える価格範囲を作成します。 カタログに、定義されたすべての範囲を満たすだけの製品がない場合、使用可能なグループの表示はそれに応じて調整されます。 例：0-20、60-80、>80。
 
 1. **設定** ワークスペースで「**[!UICONTROL Search]**」を選択し、「**価格ファセット**」で次の操作を行います。
-   - 使用可能な **選択数** または価格グループを入力します。 最大 50 個の価格グループを定義できます。
+   - 使用可能な **選択数** または価格グループを入力します。 最大 100 個の価格グループを定義できます。
    - 各グループの **間隔値** または価格範囲を入力します。 最大値は 40,000,000 です。
 1. **保存** をクリックします。
 
@@ -32,7 +33,7 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |--- |--- |
-| 選択数 | ストアフロントで検索フィルターとして使用できる価格範囲グループ化の数を指定します。 デフォルト値：8、最大値：50 |
+| 選択数 | ストアフロントで検索フィルターとして使用できる価格範囲グループ化の数を指定します。 デフォルト値：8、最大値：100 |
 | 間隔値 | 各グループの価格範囲間隔を指定します。 例えば、間隔値が 20 の 5 つの選択では、0～20、20～40、40～60、60～80、80 を超える 5 つのグループが作成されます。 デフォルト値：5、最大値：40,000,000 |
 
 ## 言語
