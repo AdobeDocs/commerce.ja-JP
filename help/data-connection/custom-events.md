@@ -4,10 +4,10 @@ description: カスタムイベントを作成して、Adobe Commerce データ�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 81fbcde11da6f5d086c2b94daeffeec60a9fdbcc
+source-git-commit: 25d796da49406216f26d12e3b1be01902dfe9302
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 1%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
@@ -73,16 +73,26 @@ Experience Platform Edgeで：
 
 ## イベントの上書きの処理（カスタム属性）
 
-標準イベントの属性のオーバーライドは、Experience Platformでのみサポートされています。 カスタムデータは、Commerce ダッシュボードおよび指標トラッカーに転送されません。
+`customContext` を含むイベントセットの場合、コレクターが `custom context` のフィールドからイベントペイロードのフィールドを上書きまたは拡張します。 オーバーライドのユースケースは、開発者が、既にサポートされているイベントでページの他の部分が設定したコンテキストを再利用および拡張する場合です。
 
-`customContext` を含むイベントの場合、コレクターは、関連するコンテキストで設定されたフィールドを `customContext` のフィールドでオーバーライドします。 オーバーライドのユースケースは、開発者が、既にサポートされているイベントでページの他の部分が設定したコンテキストを再利用および拡張する場合です。
+イベントの上書きは、Experience Platformへの転送時にのみ適用されます。 これらは、Adobe CommerceおよびSensei analytics イベントには適用されません。 Adobe Commerce イベントコレクター [README](https://github.com/adobe/commerce-events/blob/e34bcfc0deca8d5ac1f9310fc1ee4c1becf4ffbb/packages/storefront-events-collector/README.md) には、追加情報が記載されています。
 
-### 例
+>[!NOTE]
+>
+>Experience Platform イベントペイロードでカスタム属性を使用して `productListItems` を拡張する場合は、SKU を使用して商品を照合します。 この要件は、`product-page-view` のイベントには適用されません。
 
-Adobe Commerce Events SDKを通じて公開された、上書きを含む製品ビュー：
+### 使用状況
 
 ```javascript
-mse.publish.productPageView({
+const mse = window.magentoStorefrontEvents;
+
+mse.publish.productPageView(customCtx);
+```
+
+### 例 1 - `productCategories` の追加
+
+```javascript
+magentoStorefrontEvents.publish.productPageView({
     productListItems: [
         {
             productCategories: [
@@ -97,45 +107,11 @@ mse.publish.productPageView({
 });
 ```
 
-Experience Platform Edgeで：
+### 例 2 - イベントを公開する前にカスタムコンテキストを追加
 
 ```javascript
-{
-  xdm: {
-    eventType: 'commerce.productViews',
-    identityMap: {
-      ECID: [
-        {
-          id: 'ecid1234',
-          primary: true,
-        }
-      ]
-    },
-    commerce: {
-      productViews: {
-        value : 1,
-      }
-    },
-    productListItems: [{
-        SKU: "1234",
-        name: "leora summer pants",
-        productCategories: [{
-            categoryID: "cat_15",
-            categoryName: "summer pants",
-            categoryPath: "pants/mens/summer",
-        }],
-    }],
-  }
-}
-```
+const mse = window.magentoStorefrontEvents;
 
-Luma ベースのストア：
-
-Luma ベースのストアでは、公開イベントがネイティブに実装されています。 したがって、`customContext` を拡張してカスタムデータを設定できます。
-
-例：
-
-```javascript
 mse.context.setCustom({
   productListItems: [
     {
@@ -149,9 +125,56 @@ mse.context.setCustom({
     },
   ],
 });
+
+mse.publish.productPageView();
 ```
 
-カスタムデータの処理について詳しくは、[ カスタムイベントの上書き ](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md) を参照してください。
+### 例 3 - パブリッシャーで設定されたカスタムコンテキストが、Adobe Client Data Layer で以前に設定されたカスタムコンテキストを上書きします
+
+この例では、`pageView` イベントの **フィールドに** カスタムページ名 2`web.webPageDetails.name` が表示されます。
+
+```javascript
+const mse = window.magentoStorefrontEvents;
+
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name 1'
+    },
+  },
+});
+
+mse.publish.pageView({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name 2'
+    },
+  },
+});
+```
+
+### 例 4 – 複数の製品を持つイベントの `productListItems` にカスタムコンテキストを追加
+
+```javascript
+const mse = window.magentoStorefrontEvents;
+
+mse.context.setCustom({
+  productListItems: [
+    {
+      SKU: "24-WB01", //Match SKU to override correct product in event payload
+      productCategory: "Hand Bag", //Custom attribute added to event payload
+      name: "Strive Handbag (CustomName)" //Override existing attribute with custom value in event payload
+    },
+    {
+      SKU: "24-MB04",
+      productCategory: "Backpack Bag",
+      name: "Strive Backpack (CustomName)"
+    },
+  ],
+});
+
+mse.publish.shoppingCartView();
+```
 
 >[!NOTE]
 >
