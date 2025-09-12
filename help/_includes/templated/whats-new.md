@@ -1,7 +1,7 @@
 ---
-source-git-commit: c2e506277ceba1e2ebb1abaa0f3bd3065a025e41
+source-git-commit: e7e0842b0bd793d03725cdffeecff42d6faf1b1c
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '198'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,36 @@ ht-degree: 2%
 ## 新機能
 
 このページには、過去 60 日間に加えられた変更が含まれています。 コピー編集などのマイナーアップデートはすべて、このリストから除外します。
+
+### 2025 年 9 月 9 日（Pt）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">user management</a> ページにAEM Assetsの設定情報を追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/acce1aad405e74b1171faddf7f0d6681bd0a048d">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/getting-started"> はじめに </a> ページに、役割ベースのタスクとワークフロー情報を追加しました</p>
+</td>
+      <td>
+        新しいトピック
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/f62434c55d21f65568af422bd278e6ed917b805b">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025 年 9 月 4 日（Pt）
 
@@ -23,7 +53,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>オプションの <a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes"> 追加製品属性モジュール </a> に関するドキュメントを追加しました。 このモジュールをAdobe Commerce環境にインストールすると、データ書き出しプロセスによって、税クラス、属性セット、在庫メタデータが、Commerce製品コンフィギュレーションから <code class="language-plaintext highlighter-rouge">products</code> および <code class="language-plaintext highlighter-rouge">product attributes</code> フィードに自動的に書き出されます。</p>
+      <td><p>オプションの <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes"> 追加製品属性モジュール </a> に関するドキュメントを追加しました。 このモジュールをAdobe Commerce環境にインストールすると、データ書き出しプロセスによって、税クラス、属性セット、在庫メタデータが、Commerce製品コンフィギュレーションから <code class="language-plaintext highlighter-rouge">products</code> および <code class="language-plaintext highlighter-rouge">product attributes</code> フィードに自動的に書き出されます。</p>
 </td>
       <td>
         新しいトピック
@@ -45,7 +75,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/storefront"> サイト作成ツール </a> を使用して、CLI を使用せずにストアフロントを設定できるようになりました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront"> サイト作成ツール </a> を使用して、CLI を使用せずにストアフロントを設定できるようになりました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -67,7 +97,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/data-connection/customize-data/custom-identities"> プロファイルにカスタム属性 </a> を追加する方法に関するトピックを追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities"> プロファイルにカスタム属性 </a> を追加する方法に関するトピックを追加しました。</p>
 </td>
       <td>
         新しいトピック
