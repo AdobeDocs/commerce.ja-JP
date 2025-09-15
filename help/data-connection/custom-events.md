@@ -4,9 +4,9 @@ description: カスタムイベントを作成して、Adobe Commerce データ�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 25d796da49406216f26d12e3b1be01902dfe9302
+source-git-commit: 4e8cf0ad3f8f94d4f59bc8d78a44f4b3e86cbc3e
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,9 @@ const mse = window.magentoStorefrontEvents;
 mse.publish.productPageView(customCtx);
 ```
 
-### 例 1 - `productCategories` の追加
+### 例 1
+
+次の例では、イベントを公開する際にカスタムコンテキストを追加します。
 
 ```javascript
 magentoStorefrontEvents.publish.productPageView({
@@ -107,7 +109,9 @@ magentoStorefrontEvents.publish.productPageView({
 });
 ```
 
-### 例 2 - イベントを公開する前にカスタムコンテキストを追加
+### 例 2
+
+次の使用例は、イベントを発行する前にカスタム コンテキストを追加します。
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -129,7 +133,9 @@ mse.context.setCustom({
 mse.publish.productPageView();
 ```
 
-### 例 3 - パブリッシャーで設定されたカスタムコンテキストが、Adobe Client Data Layer で以前に設定されたカスタムコンテキストを上書きします
+### 例 3
+
+次の使用例は、発行元のカスタム コンテキストを設定し、Adobe Client Data Layer で既に設定されているカスタム コンテキストを上書きします。
 
 この例では、`pageView` イベントの **フィールドに** カスタムページ名 2`web.webPageDetails.name` が表示されます。
 
@@ -153,7 +159,9 @@ mse.publish.pageView({
 });
 ```
 
-### 例 4 – 複数の製品を持つイベントの `productListItems` にカスタムコンテキストを追加
+### 例 4
+
+この例では、複数の製品を持つ `productListItems` イベントにカスタムコンテキストを追加します。
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -174,6 +182,22 @@ mse.context.setCustom({
 });
 
 mse.publish.shoppingCartView();
+```
+
+Luma ベースのストア：
+
+Luma ベースのストアは、公開イベントをネイティブに実装するので、`customContext` を拡張してカスタムデータを設定できます。
+
+例：
+
+```javascript
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name'
+    },
+  },
+});
 ```
 
 >[!NOTE]
