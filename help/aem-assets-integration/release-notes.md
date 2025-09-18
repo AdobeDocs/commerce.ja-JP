@@ -42,7 +42,7 @@ _2025 年 2 月 11 日_
 
 _2025 年 9 月 18 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
 
 ![ 問題を修正 ](../assets/fix.svg)<!-- Issue ACAP-1110 --> ミニ買い物かご、買い物かごおよびチェックアウトページでの全体的な画像の安定性が向上しました。 これらのページ上の画像が正しく読み込まれるようになりました。
 
@@ -50,7 +50,7 @@ _2025 年 9 月 18 日_
 
 _2025 年 8 月 7 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
 
 ![ 新しい問題 ](../assets/new.svg)<!-- Issue ACAP-1018 --> マーチャントは、管理者からAssets統合を設定する際に、[ ビジュアライゼーションの所有者 ](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank} を選択することで、画像アセットとメディアアセットのソースを選択できるようになりました。
 
@@ -60,7 +60,7 @@ _2025 年 8 月 7 日_
 
 _2025 年 6 月 11 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
 
 ![ 新規問題 ](../assets/new.svg)<!-- Issue ACAP-1041 --> Adobe Commerce 2.4.8 および PHP 8.4 がサポートされるようになりました。
 
@@ -68,7 +68,7 @@ _2025 年 6 月 11 日_
 
 _2025 年 4 月 23 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
 
 ![ 新しい問題 ](../assets/new.svg)<!-- Issue ACAP-955 -->AEMの配信 URL の代わりに [ カスタムドメイン URL](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) を使用できるようになりました。 マーチャントがAEM ダッシュボードに **カスタムドメイン名** を設定した場合は、Commerceにこの **カスタムドメイン URL** を追加する必要があります。
 
@@ -78,7 +78,7 @@ _2025 年 4 月 23 日_
 
 _2025 年 3 月 12 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
 
 ![ 新しい問題 ](../assets/new.svg)<!-- Issue ACAP-xx -->AEM Assets セレクターで、[Assets セレクター IMS クライアント ID](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization) が必要になり、製品カテゴリおよびページビルダー生成コンテンツでAssets画像をマッピングできるようになりました。
 
@@ -86,6 +86,6 @@ _2025 年 3 月 12 日_
 
 _2025 年 2 月 11 日_
 
-[!BADGE  サポート対象 ]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
+[!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.5 以降のリリース。
 
 ![ 新規 ](../assets/new.svg)<!-- Issue ACAP-xx --> 一般提供リリース。
