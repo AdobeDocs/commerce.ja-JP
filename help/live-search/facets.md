@@ -2,16 +2,16 @@
 title: ファセット
 description: ファセット [!DNL Live Search]、複数のディメンションの属性値を検索条件として使用します。
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
-source-git-commit: 58252ffc7417f30b835ec1baf21a709191afd033
+source-git-commit: 31223f4196187e4960c5bec0e90aa55cc4e0ac9a
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
 
 # ファセット
 
-ファセットは、複数のディメンションの属性値を検索条件として使用する、高パフォーマンスのフィルタリング方法です。 ファセット検索も似ていますが、標準の [ レイヤー化されたナビゲーション ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja) よりも大幅に「スマート」です。 使用可能なフィルターのリストは、検索結果で返される製品の [ フィルタリング可能な属性 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja#filterable-attributes) によって決まります。
+ファセットは、複数のディメンションの属性値を検索条件として使用する、高パフォーマンスのフィルタリング方法です。 ファセット検索も似ていますが、標準の [ レイヤー化されたナビゲーション ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html) よりも大幅に「スマート」です。 使用可能なフィルターのリストは、検索結果で返される製品の [ フィルタリング可能な属性 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) によって決まります。
 
 [!DNL Live Search] は `productSearch` クエリを使用して、[!DNL Live Search] に固有のファセットやその他のデータを返します。 コード例については [`productSearch` 開発者向けドキュメントの ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) クエリを参照してください。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## ファセットの要件
 
-ファセットのカテゴリと製品属性の要件は、レイヤーナビゲーションで使用するフィルタリング可能な属性に似ています。 属性の各ストアフロントのプロパティでは、「検索結果の階層型ナビゲーションで使用」の値を「はい」に設定する必要があります。
+ファセットのカテゴリと製品属性の要件は、レイヤーナビゲーションで使用するフィルタリング可能な属性に似ています。 属性の各ストアフロントのプロパティでは、「検索結果の階層型ナビゲーションで使用」の値を「はい」に設定する必要があります。 属性設定の確認と更新は、管理者の [!DNL Stores]/[!DNL Attribute] メニューから行えます。
 
 >[!NOTE]
 >
@@ -37,8 +37,8 @@ ht-degree: 0%
 
 | 設定 | 説明 |
 |--- |--- |
-| [ カテゴリの表示設定 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=ja) | アンカー – `Yes` |
-| [ 属性プロパティ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) | [ カタログ入力タイプ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=ja) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （ウィジェットのみ）、`Text swatch` （ウィジェットのみ） |
+| [ カテゴリの表示設定 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | アンカー – `Yes` |
+| [ 属性プロパティ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [ カタログ入力タイプ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （ウィジェットのみ）、`Text swatch` （ウィジェットのみ） |
 | 属性ストアフロント プロパティ | 検索結果での使用階層ナビゲーション - `Yes` |
 
 ## ファセットの集約
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## デフォルトの属性値
 
-次の製品属性には [storefront プロパティ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=ja) があり、[!DNL Live Search] で使用され、デフォルトで有効になっています。
+次の製品属性には [storefront プロパティ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) があり、[!DNL Live Search] で使用され、デフォルトで有効になっています。
 
 | プロパティ | Storefront プロパティ | 属性 |
 |---|---|---|

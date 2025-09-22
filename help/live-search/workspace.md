@@ -2,9 +2,9 @@
 title: Live Search のセットアップ
 description: ワークスペ  [!DNL Live Search]  スを使用して、検索パフォーマンスの設定、管理、監視を行います。
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: bb212bf88ba7bad3deb2d2d699124413f4dd76ff
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1068'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ ht-degree: 0%
 
 ### ヘルスケア関連のお客様
 
-医療関係のお客様が [ データ接続 ](../data-connection/hipaa-readiness.md#installation) 拡張機能の一部である [ データサービス HIPAA 拡張機能 ](../data-connection/overview.md) をインストールした場合、[!DNL Live Search] で使用されるストアフロントイベントデータは取得されなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるからです。 ストアフロントのイベントデータのキャプチャと送信を続行するには、[!DNL Live Search] のイベント収集を再度有効にします。 詳しくは、[ 一般設定 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/general/general#data-services) を参照してください。
+医療関係のお客様が [ データ接続 ](../data-connection/hipaa-readiness.md#installation) 拡張機能の一部である [ データサービス HIPAA 拡張機能 ](../data-connection/overview.md) をインストールした場合、[!DNL Live Search] で使用されるストアフロントイベントデータは取得されなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるからです。 ストアフロントのイベントデータのキャプチャと送信を続行するには、[!DNL Live Search] のイベント収集を再度有効にします。 詳しくは、[ 一般設定 ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) を参照してください。
 
 ## 範囲を設定
 
-最初は、すべての [ 設定の ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) 範囲 [!DNL Live Search] が `Default Store View` に設定されます。 [!DNL Commerce] のインストールに複数のストア表示が含まれている場合は、**範囲** を [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja) に設定します。この場合、ファセット設定が適用されます。
+最初は、すべての [ 設定の ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 範囲 [!DNL Live Search] が `Default Store View` に設定されます。 [!DNL Commerce] のインストールに複数のストア表示が含まれている場合は、**範囲** を [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) に設定します。この場合、ファセット設定が適用されます。
 
 ## メニューオプション
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## 検索可能として属性を設定
 
-ターゲットの絞られた結果を生成するには、[ 検索可能 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=ja) （`searchable=true`）製品属性のセットを確認します。 関連性を確保するために、明確で簡潔な意味を持つコンテンツが属性に含まれている場合にのみ、属性を検索可能にします。 `description` など、精度が低く長いテキストを含む属性の使用は避けてください。これらの属性はデフォルトで検索が有効になっていますが、検索結果の精度を下げる可能性があります。 例えば、人が「ショートパンツ」を検索し、「ショートスリーブ」という用語を含む説明を持つシャツがある場合、シャツは検索結果に含まれます。
+ターゲットの絞られた結果を生成するには、[ 検索可能 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) （`searchable=true`）製品属性のセットを確認します。 関連性を確保するために、明確で簡潔な意味を持つコンテンツが属性に含まれている場合にのみ、属性を検索可能にします。 `description` など、精度が低く長いテキストを含む属性の使用は避けてください。これらの属性はデフォルトで検索が有効になっていますが、検索結果の精度を下げる可能性があります。 例えば、人が「ショートパンツ」を検索し、「ショートスリーブ」という用語を含む説明を持つシャツがある場合、シャツは検索結果に含まれます。
 
 属性を検索可能にするには、次の手順を実行します。
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
    ![Workspace](assets/attribute-searchable.png)
 
-[!DNL Live Search] た、Adobe Commerceで設定されている product 属性の [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=ja#weighted-search) も考慮されます。 重み付けが大きい属性は、検索結果内で高く表示されます。
+[!DNL Live Search] た、Adobe Commerceで設定されている product 属性の [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) も考慮されます。 重み付けが大きい属性は、検索結果内で高く表示されます。
 
 次の属性は常に検索可能です。
 
@@ -69,6 +69,10 @@ ht-degree: 0%
 - `categories`
 
 [ ファセット ](facets.md) は、フィルタリング可能にするために [!DNL Live Search] で定義される製品属性です。 [!DNL Live Search] では、任意のフィルタリング可能な属性をファセットとして設定できますが、一度に検索できるファセットの数には [ 制限 ](boundaries-limits.md) があります。
+
+>[!NOTE]
+>
+>製品属性は、製品属性設定に必要なプロパティ *Use in Search = Yes*、*Use in Search Results Layered Navigation=yes*、および *Use in Layered Navigation=Filterable （with results）* がある場合にのみフィルタリングできます。 これらのプロパティが見つからない場合、ファセット設定に属性が表示されません。 設定手順については、[ ファセットの追加 ](facets-add.md#add-a-facet) を参照してください。
 
 [ シノニム ](synonyms.md) とは、ユーザーが正しい製品に導くために定義できる用語です。 ズボンを探しているユーザーは「ズボン」や「スラックス」と入力する場合があります。 これらの検索用語で「パンツ」の結果にユーザーがアクセスできるように、同義語を設定できます。
 
@@ -105,4 +109,4 @@ ht-degree: 0%
 
 ### 検索語句
 
-[!DNL Live Search] では、Luma やその他の php ベースのテーマなど、Adobe Commerceがルーティングを処理する実装で [ 検索用語リダイレクト ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=ja) をサポートしています。
+[!DNL Live Search] では、Luma やその他の php ベースのテーマなど、Adobe Commerceがルーティングを処理する実装で [ 検索用語リダイレクト ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) をサポートしています。
