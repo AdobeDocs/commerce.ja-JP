@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## 103.4.11 リリース
 
-![New](../assets/new.svg)[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+![New](../assets/new.svg) [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 商品フィードにCommerce商品コンフィギュレーションの税区分、属性セット、在庫データを含めるために、追加の商品属性のサポートが追加されました。 これらの属性を商品の書き出しフィードに含める場合は、Adobe Commerce プロジェクトに「その他の商品属性」モジュールを追加する必要があります。 [ 税金区分、属性セットおよび在庫属性の追加 ](add-tax-attribute-set-inventory-attributes.md) を参照してください。<!--MDEE-1135-->
 ![ 修正 ](../assets/fix.svg) 完全な製品インデックスの作成中にエラーが発生した場合に、削除された製品のアップデートの誤った同期が発生する問題を解決しました。 インデックス作成プロセス中にエラーが発生した場合でも、すべての製品の削除が正しく同期されるようになりました。<!--MDEE-1144-->
 
