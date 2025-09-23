@@ -4,10 +4,10 @@ user-guide-description: ドキュメントとリソース  [!DNL Adobe Commerce 
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
+source-git-commit: a1872e89625c0c2f78e25ebe9a91cc5bca1f44f6
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 11%
+source-wordcount: '91'
+ht-degree: 12%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 11%
 - [境界と制限](boundaries-limits.md)
 - [リリースノート](release-notes.md)
 - 結果の管理 {#manage-results}
-   - [成功指標レポート](./manage-results/success-metrics.md)
+   - [成功指標](./manage-results/success-metrics.md)
    - [パフォーマンスの検索](./manage-results/search-performance.md)
    - [Recommendations パフォーマンス](./manage-results/recommendation-performance.md)
 - マーチャンダイジング {#merchandising}
