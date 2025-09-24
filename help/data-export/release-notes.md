@@ -4,9 +4,9 @@ description: Adobe Commerceの最新  [!DNL Data Export Extension]  リリース
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 4a25bcb82f98eb44c83a186caa6e5d6d664851d4
+source-git-commit: e81eded54df197c92548aae4636da0e885406b60
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,18 @@ ht-degree: 0%
 
 ## 現在のメジャーバージョン
 
+## 103.4.13 リリース
+
+![ 修正 ](../assets/fix.svg) web 設定を編集すると、製品フィードインデックスがリセットされる問題を修正しました。 <!--MDEE-1154-->
+![ 修正 ](../assets/fix.svg) 特に複数のストアや web サイトに割り当てられた製品に対して、バンドルの製品オプションとバリアントがカタログサービスの応答に複数回表示される可能性がある問題を解決しました。 この修正により、各バンドルオプション/バリアントが製品ごとに 1 回だけ返されるようになりました。これにより、マーチャントと顧客の両方に対して正確で一貫性のあるストアフロントが表示されます。<!--MDEE-1167-->
+
 ## 103.4.12 リリース
 
 ![ 修正 ](../assets/fix.svg) 顧客グループ価格が存在する場合に、製品詳細ページ（PDP）にカタログ価格ルールの割引が表示されなかった問題を修正しました。 PDP が正しく最低価格を表示するようになりました。<!--MDEE-1158-->
 
 ## 103.4.11 リリース
 
-![New](../assets/new.svg) [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+![New](../assets/new.svg)[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 商品フィードにCommerce商品コンフィギュレーションの税区分、属性セット、在庫データを含めるために、追加の商品属性のサポートが追加されました。 これらの属性を商品の書き出しフィードに含める場合は、Adobe Commerce プロジェクトに「その他の商品属性」モジュールを追加する必要があります。 [ 税金区分、属性セットおよび在庫属性の追加 ](add-tax-attribute-set-inventory-attributes.md) を参照してください。<!--MDEE-1135-->
 ![ 修正 ](../assets/fix.svg) 完全な製品インデックスの作成中にエラーが発生した場合に、削除された製品のアップデートの誤った同期が発生する問題を解決しました。 インデックス作成プロセス中にエラーが発生した場合でも、すべての製品の削除が正しく同期されるようになりました。<!--MDEE-1144-->
 
