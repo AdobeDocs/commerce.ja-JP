@@ -1,7 +1,7 @@
 ---
 title: 一括データ移行ツール
 description: 一括データ移行ツールを使用して、クラウドインスタンス上の既存のAdobe Commerceから  [!DNL Adobe Commerce as a Cloud Service] にデータを移行する方法について説明します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 role: Architect
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
 source-git-commit: 6396bc5f4b265e2e13328ec1af3b72c0e8e15c9a
