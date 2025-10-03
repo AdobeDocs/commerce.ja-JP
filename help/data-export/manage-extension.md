@@ -12,10 +12,10 @@ ht-degree: 0%
 
 # SaaS データ書き出し拡張機能の管理
 
-SaaS サービスの [[!DNL data export]  拡張機能 ](https://github.com/magento/commerce-data-export) は、Adobe Commerceと接続されたCommerce サービス間でのデータ収集と同期を可能にするモジュールの集まりです。
+SaaS サービスの [[!DNL data export]  拡張機能 &#x200B;](https://github.com/magento/commerce-data-export) は、Adobe Commerceと接続されたCommerce サービス間でのデータ収集と同期を可能にするモジュールの集まりです。
 
 Adobe Commerce サービス拡張機能のメタパッケージには、次のような特定のモジュールが含まれています
-[Live Search](/help/live-search/overview.md)、[Product Recommendations](/help/product-recommendations/overview.md)、および [ カタログサービス ](/help/catalog-service/overview.md) として。 これらのサービスを使用している場合、データの書き出し拡張機能を有効にするために別のインストールは必要ありません。
+[Live Search](/help/live-search/overview.md)、[Product Recommendations](/help/product-recommendations/overview.md)、および [&#x200B; カタログサービス &#x200B;](/help/catalog-service/overview.md) として。 これらのサービスを使用している場合、データの書き出し拡張機能を有効にするために別のインストールは必要ありません。
 
 ## Commerceのデータ書き出し機能を削除または無効にする
 
@@ -39,4 +39,4 @@ bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCa
    composer require magento/module-data-exporter:103.0.4 --with-all-dependencies
    ```
 
-Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 [2}Cloud Infrastructure ガイドのAdobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) 拡張機能のアップグレード _を参照してください。_
+Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 [2&rbrace;Cloud Infrastructure ガイドのAdobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) 拡張機能のアップグレード _を参照してください。_
