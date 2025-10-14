@@ -2,10 +2,11 @@
 title: 境界と制限
 description: ' [!DNL Adobe Commerce Optimizer] の境界と制限について説明します。'
 role: Admin, Developer
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 553490762ef10e43ccce1654acec59aeb83bb5f9
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
+source-git-commit: 1eb95f26a196ad4e66cbc980c7f8a41cae950cb6
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ## カタログ
 
-- カタログの取り込み速度は、1 分あたり 1000 個、1 分あたり 5000 個の製品が保証されています。
+- カタログの取り込み速度は、1 分あたり 1,000 個の製品、1 分あたり 5,000 個の価格で保証されます。
 - 1 日あたりの製品アップデートの基本数は 1,000,000 です。
 - 1 つのインスタンスで許可される SKU の合計数は 250,000 です。 
 - カタログソースの最大数は 50 です。
@@ -34,11 +35,11 @@ ht-degree: 0%
 - 検索可能な属性の最大数は 200 です。
 - 並べ替え可能な属性の最大数は 50 です。
 - ファセットの最大数は 100 です。 すべてのファセットは、フィルタリング可能な属性である必要があります。
-- 単一のファセット cat が返すオプションの最大数は 100 です。これは、サポートリクエストごとに増やすことができます。
+- 単一のファセットが返すオプションの最大数は 100 です。これは、サポートリクエストごとに増やすことができます。
 
 ## カタログのビューとポリシー
 
-- テナントごとのカタログビューの最大数は 1000 です。
+- テナントあたりのカタログビューの最大数は 1,000 です。
 - 1 つのカタログビューに割り当てられるポリシーの最大数は 10 です。
 - 1 つのポリシーで使用できる属性値の最大数は 100 です。 
 

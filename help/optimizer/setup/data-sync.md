@@ -1,12 +1,13 @@
 ---
 title: データ同期
-description: ' [!DNL Adobe Commerce Optimizer] とカタログデータを同期する方法を説明します。'
+description: Commerce データソースから  [!DNL Adobe Commerce Optimizer] に同期されているカタログデータを確認します。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
+source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 **データ同期** ページは *設定*/**データ同期** にあります。
 
-![&#x200B; データ同期 &#x200B;](../assets/data-sync.png)
+![ データ同期 ](../assets/data-sync.png)
 
 **データ同期** ページには、次のフィールドが含まれています。
 
@@ -35,9 +36,9 @@ ht-degree: 0%
 
 ## 同期された製品のリスト
 
-同期された製品の詳細を JSON 形式で確認するには、同期された製品テーブルの製品の行にあるコードアイコン ![&#x200B; コードリンク &#x200B;](../assets/data-sync-details.png) をクリックします。
+同期された製品の詳細を JSON 形式で確認するには、同期された製品テーブルの製品の行にあるコードアイコン ![ コードリンク ](../assets/data-sync-details.png) をクリックします。
 
-![Syncd 製品詳細 &#x200B;](../assets/synced-products.png)
+![Syncd 製品詳細 ](../assets/synced-products.png)
 
 ## カタログデータを再同期
 
