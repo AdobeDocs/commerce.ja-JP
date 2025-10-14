@@ -2,9 +2,9 @@
 title: Live Search のセットアップ
 description: ワークスペ  [!DNL Live Search]  スを使用して、検索パフォーマンスの設定、管理、監視を行います。
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: bb212bf88ba7bad3deb2d2d699124413f4dd76ff
+source-git-commit: 2c44f408da051441df32d78d9a768e28cf708d49
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1793'
 ht-degree: 0%
 
 ---
@@ -24,33 +24,33 @@ ht-degree: 0%
 
 ヘッドレスストアフロントを使用している場合、追加する必要のある必須イベントの詳細については、次のドキュメントを参照してください。
 
-- ライブ検索ダッシュボードの [&#x200B; 必須イベント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)。
-- 前提条件として追加する必要がある [&#x200B; ストアフロントイベントコレクター &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
-- イベント構造 [&#x200B; 例 &#x200B;](https://github.com/adobe/commerce-events/tree/main/examples)。
+- ライブ検索ダッシュボードの [ 必須イベント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)。
+- 前提条件として追加する必要がある [ ストアフロントイベントコレクター ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
+- イベント構造 [ 例 ](https://github.com/adobe/commerce-events/tree/main/examples)。
 
 ### ヘルスケア関連のお客様
 
-医療関係のお客様が [&#x200B; データ接続 &#x200B;](../data-connection/hipaa-readiness.md#installation) 拡張機能の一部である [&#x200B; データサービス HIPAA 拡張機能 &#x200B;](../data-connection/overview.md) をインストールした場合、[!DNL Live Search] で使用されるストアフロントイベントデータは取得されなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるからです。 ストアフロントのイベントデータのキャプチャと送信を続行するには、[!DNL Live Search] のイベント収集を再度有効にします。 詳しくは、[&#x200B; 一般設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/general/general#data-services) を参照してください。
+医療関係のお客様が [ データ接続 ](../data-connection/hipaa-readiness.md#installation) 拡張機能の一部である [ データサービス HIPAA 拡張機能 ](../data-connection/overview.md) をインストールした場合、[!DNL Live Search] で使用されるストアフロントイベントデータは取得されなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるからです。 ストアフロントのイベントデータのキャプチャと送信を続行するには、[!DNL Live Search] のイベント収集を再度有効にします。 詳しくは、[ 一般設定 ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) を参照してください。
 
 ## 範囲を設定
 
-最初は、すべての [&#x200B; 設定の &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) 範囲 [!DNL Live Search] が `Default Store View` に設定されます。 [!DNL Commerce] のインストールに複数のストア表示が含まれている場合は、**範囲** を [&#x200B; ストア表示 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja) に設定します。この場合、ファセット設定が適用されます。
+最初は、すべての [ 設定の ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 範囲 [!DNL Live Search] が `Default Store View` に設定されます。 [!DNL Commerce] のインストールに複数のストア表示が含まれている場合は、**範囲** を [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) に設定します。この場合、ファセット設定が適用されます。
 
 ## メニューオプション
 
 | オプション | 説明 |
 |--- |--- |
-| [&#x200B; パフォーマンス &#x200B;](performance.md) | Dashboard は、製品検索パフォーマンスに対するinsightを提供します。 |
-| [&#x200B; 切り子面 &#x200B;](facets.md) | 複数のディメンションの属性値を使用して検索条件を絞り込む高性能フィルタリング。 |
-| [&#x200B; シノニム &#x200B;](synonyms.md) | 検索範囲を拡張し、買い物客がカタログと異なる製品を検索するために使用する可能性のある単語を含めます。 |
-| [&#x200B; マーチャンダイジングを検索 &#x200B;](rules.md) | スケジュールされたアクションをトリガーにする論理ルールを使用して、検索エクスペリエンスを形作ります。 製品をブースト、埋め込み、ピン留め、非表示にして、検索結果を調整してビジネス目標をサポートします。 |
-| [&#x200B; カテゴリマーチャンダイジング &#x200B;](category-merch.md) | カテゴリレベルでルールとインテリジェントマーチャンダイジングを適用します。 |
-| [GraphQL](graphql.md) | ストアの管理者にログインした開発者は、実際のカタログデータを使用してクエリを作成およびテストできます。 詳しくは、[&#x200B; 開発者向けドキュメントの &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)GraphQLの概要 [!DNL Live Search] を参照してください。 |
-| [&#x200B; 設定 &#x200B;](settings.md) | ストアフロントで価格ファセット値を価格範囲ごとにグループ化する方法を決定し、インデックス作成言語を設定します。 |
+| [ パフォーマンス ](performance.md) | Dashboard は、製品検索パフォーマンスに対するinsightを提供します。 |
+| [ 切り子面 ](facets.md) | 複数のディメンションの属性値を使用して検索条件を絞り込む高性能フィルタリング。 |
+| [ シノニム ](synonyms.md) | 検索範囲を拡張し、買い物客がカタログと異なる製品を検索するために使用する可能性のある単語を含めます。 |
+| [ マーチャンダイジングを検索 ](rules.md) | スケジュールされたアクションをトリガーにする論理ルールを使用して、検索エクスペリエンスを形作ります。 製品をブースト、埋め込み、ピン留め、非表示にして、検索結果を調整してビジネス目標をサポートします。 |
+| [ カテゴリマーチャンダイジング ](category-merch.md) | カテゴリレベルでルールとインテリジェントマーチャンダイジングを適用します。 |
+| [GraphQL](graphql.md) | ストアの管理者にログインした開発者は、実際のカタログデータを使用してクエリを作成およびテストできます。 詳しくは、[ 開発者向けドキュメントの ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)GraphQLの概要 [!DNL Live Search] を参照してください。 |
+| [ 設定 ](settings.md) | ストアフロントで価格ファセット値を価格範囲ごとにグループ化する方法を決定し、インデックス作成言語を設定します。 |
 
 ## 検索可能として属性を設定
 
-ターゲットの絞られた結果を生成するには、[&#x200B; 検索可能 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=ja) （`searchable=true`）製品属性のセットを確認します。 関連性を確保するために、明確で簡潔な意味を持つコンテンツが属性に含まれている場合にのみ、属性を検索可能にします。 `description` など、精度が低く長いテキストを含む属性の使用は避けてください。これらの属性はデフォルトで検索が有効になっていますが、検索結果の精度を下げる可能性があります。 例えば、人が「ショートパンツ」を検索し、「ショートスリーブ」という用語を含む説明を持つシャツがある場合、シャツは検索結果に含まれます。
+ターゲットの絞られた結果を生成するには、[ 検索可能 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) （`searchable=true`）製品属性のセットを確認します。 関連性を確保するために、明確で簡潔な意味を持つコンテンツが属性に含まれている場合にのみ、属性を検索可能にします。 `description` など、精度が低く長いテキストを含む属性の使用は避けてください。これらの属性はデフォルトで検索が有効になっていますが、検索結果の精度を下げる可能性があります。 例えば、人が「ショートパンツ」を検索し、「ショートスリーブ」という用語を含む説明を持つシャツがある場合、シャツは検索結果に含まれます。
 
 属性を検索可能にするには、次の手順を実行します。
 
@@ -58,9 +58,7 @@ ht-degree: 0%
 1. 検索可能にする属性（`color` など）を選択します。
 1. **ストアフロントのプロパティ** を選択し、**検索で使用** を `yes` に設定します。
 
-   ![Workspace](assets/attribute-searchable.png)
-
-[!DNL Live Search] た、Adobe Commerceで設定されている product 属性の [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=ja#weighted-search) も考慮されます。 重み付けが大きい属性は、検索結果内で高く表示されます。
+[!DNL Live Search] た、Adobe Commerceで設定されている product 属性の [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) も考慮されます。 重み付けが大きい属性は、検索結果内で高く表示されます。
 
 次の属性は常に検索可能です。
 
@@ -68,13 +66,88 @@ ht-degree: 0%
 - `name`
 - `categories`
 
-[&#x200B; ファセット &#x200B;](facets.md) は、フィルタリング可能にするために [!DNL Live Search] で定義される製品属性です。 [!DNL Live Search] では、任意のフィルタリング可能な属性をファセットとして設定できますが、一度に検索できるファセットの数には [&#x200B; 制限 &#x200B;](boundaries-limits.md) があります。
+### 検索タイプの階層化された検索と拡張
+
+レイヤー検索（検索内の検索）は、従来の検索機能を拡張して検索パラメーターを追加する、強力な属性ベースのフィルタリングシステムです。 これらの追加の検索パラメーターを使用すると、より正確で柔軟な製品検出が可能になります。
 
 >[!NOTE]
 >
->製品属性は、製品属性設定に必要なプロパティ *Use in Search = Yes*、*Use in Search Results Layered Navigation=yes*、および *Use in Layered Navigation=Filterable （with results）* がある場合にのみフィルタリングできます。 これらのプロパティが見つからない場合、ファセット設定に属性が表示されません。 設定手順については、[&#x200B; ファセットの追加 &#x200B;](facets-add.md#add-a-facet) を参照してください。
+>レイヤー検索は、Live Search 4.6.0 で使用できます。
 
-[&#x200B; シノニム &#x200B;](synonyms.md) とは、ユーザーが正しい製品に導くために定義できる用語です。 ズボンを探しているユーザーは「ズボン」や「スラックス」と入力する場合があります。 これらの検索用語で「パンツ」の結果にユーザーがアクセスできるように、同義語を設定できます。
+レイヤー検索を使用すると、次のことができます。
+
+- 買い物客が検索結果内で検索できるようにします。
+- レイヤー検索の 2 番目のレイヤーで `startsWith` と `contains` の検索インデックスを使用して、結果をさらに絞り込みます。
+
+高度な検索機能は、`filter` のクエリの [`productSearch` パラメーターを通じて ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 特定の演算子を使用して実装されます。
+
+- **レイヤー検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリを最大 2 つのレイヤーで検索できます。 例：
+
+   - **レイヤー 1 検索** - `product_attribute_1` で「モーター」を検索します。
+   - **レイヤー 2 検索** - `product_attribute_2` で「品番 123」を検索します。 この例では、「motor」の結果に含まれる「part number 123」を検索します。
+
+  レイヤー検索は、次に示すように、レイヤー検索の 2 番目のレイヤーの `startsWith` 検索インデックスと `contains` 検索インデックスの両方で使用できます。
+
+- **startsWith 検索インデックス付け** - `startsWith` インデックス付けを使用して検索します。 この新機能により、次のことが可能になります。
+
+   - 属性値が指定した文字列で始まる製品を検索します。
+   - 「次で終わる」検索の設定による、買い物客での属性値が特定の文字列で終わる製品の検索。 「次で終わる」検索を有効にするには、製品属性を逆に取り込む必要があり、API 呼び出しも逆の文字列にする必要があります。 例えば、「pants」で終わる製品名を検索する場合は、これを「stnap」として送信する必要があります。
+
+- **contains search indexation** - contains indexation を使用して属性を検索します。 この新機能により、次のことが可能になります。
+
+   - 大きい文字列内でのクエリの検索。 例えば、買い物客が「HAPE-123」という文字列で製品番号「PE-123」を検索するとします。
+
+      - 注意：この検索タイプは、オートコンプリート検索を実行する既存の [ フレーズ検索 ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase) とは異なります。 例えば、製品属性値が「outdoor pants」の場合、フレーズ検索は「out pan」に対する応答を返しますが、「or ants」に対する応答は返しません。 ただし、「を含む」検索では、「または ants」に対する応答が返されます。
+
+これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メインの検索クエリには影響しません。
+
+#### 実装
+
+1. 管理者で、検索可能にする [ 製品属性を設定 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) します。
+
+   検索可能な [ 属性 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) のリストを参照してください。
+
+1. その属性の検索機能を指定します。例えば、**次を含む** （デフォルト）や **次で始まる** などです。 **Contains** に対して有効にする属性を最大 6 つ指定し、**Starts with** に対して有効にする属性を最大 6 つ指定できます。 また、**Contains** インデックスの場合、文字列の長さは 50 文字以下に制限されます。
+
+   ![ 検索機能の指定 ](./assets/search-filters-admin.png)
+
+1. 新しい [ および ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) の検索機能を使用して [!DNL Live Search] API 呼び出しを更新する方法の例については、`contains` 開発者ドキュメント `startsWith` を参照してください。
+
+   これらの新しい条件は、検索結果ページに実装できます。 例えば、ページに新しいセクションを追加して、買い物客が検索結果をさらに絞り込めるようにすることができます。 買い物客が「製造元」、「部品番号」、「説明」など、特定の製品属性を選択できるようにすることができます。 そこから、`contains` 条件または `startsWith` 条件を使用して、これらの属性内を検索します。
+
+### ファセットではなくレイヤー検索を使用する場合
+
+レイヤー化された検索とファセットは、製品検出において異なる目的を果たし、それぞれを選択するのは、特定のユースケースによって異なります。
+
+**レイヤー検索を使用する場合：**
+
+- 複数の条件を使用して検索結果内を検索する必要があります。
+- ユーザーが部分的な情報を把握している部品番号、SKU または技術仕様の操作。
+- 買い物客は、ネストされた条件を使用して、結果を段階的に絞り込む必要があります。
+- 1 つのクエリで複数の検索条件を組み合わせることで、API 呼び出しの数を減らす必要がある。
+- 標準的なファセットナビゲーションを超えるビジネス固有の検索パターンを実装する必要があります。
+
+**次の場合にファセットを使用：**
+
+- 一般的なカテゴリ、価格、ブランド、属性のフィルタリングの提供
+- 直感的な操作で理解し、選択しやすいフィルターオプションを提供
+- 現在の検索結果に基づいて使用可能なオプションを表示しています
+- 使用可能なオプションを理解しやすくするためのフィルターの数と範囲の表示
+- 色、サイズ、材質などの一般的な製品特性を使用する。
+
+**ベストプラクティス：** ユーザーが特定の条件を持つ複雑な技術的検索にはレイヤー検索を使用し、ユーザーが視覚的にオプションを探索して絞り込みたい標準の e コマースフィルタリングにはファセットを使用します。
+
+## ファセットと同義語
+
+ファセットと同義語は、買い物客の検索エクスペリエンスを向上させる別の方法です。
+
+[ ファセット ](facets.md) は、フィルタリング可能にするために [!DNL Live Search] で定義される製品属性です。 [!DNL Live Search] では、任意のフィルタリング可能な属性をファセットとして設定できますが、一度に検索できるファセットの数には [ 制限 ](boundaries-limits.md) があります。
+
+>[!NOTE]
+>
+>製品属性は、製品属性設定に必要なプロパティ *Use in Search = Yes*、*Use in Search Results Layered Navigation=yes*、および *Use in Layered Navigation=Filterable （with results）* がある場合にのみフィルタリングできます。 これらのプロパティが見つからない場合、ファセット設定に属性が表示されません。 設定手順については、[ ファセットの追加 ](facets-add.md#add-a-facet) を参照してください。
+
+[ シノニム ](synonyms.md) とは、ユーザーが正しい製品に導くために定義できる用語です。 ズボンを探しているユーザーは「ズボン」や「スラックス」と入力する場合があります。 これらの検索用語で「パンツ」の結果にユーザーがアクセスできるように、同義語を設定できます。
 
 ## Commerceの設定
 
@@ -84,7 +157,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Live Search 4.0.0 でデフォルトで有効になっている製品リストウィジェットを使用することを強くお勧めします。このウィジェットは、今後のリリースでアダプタの実装を完全に置き換えることを目的としています。 詳しくは、[&#x200B; 製品リストウィジェットを有効にする &#x200B;](install.md#enable-product-listing-widgets) を参照してください。
+>Live Search 4.0.0 でデフォルトで有効になっている製品リストウィジェットを使用することを強くお勧めします。このウィジェットは、今後のリリースでアダプタの実装を完全に置き換えることを目的としています。 詳しくは、[ 製品リストウィジェットを有効にする ](install.md#enable-product-listing-widgets) を参照してください。
 
 | Commerceの設定 | 説明 | ポップオーバーでサポート | アダプタでサポート |
 |---|---|---|---|
@@ -105,8 +178,8 @@ ht-degree: 0%
 | ストア/設定/カタログ/ストアフロント/リストモード | 検索結果リストの形式を決定します。 | 正しくレンダリングされるが、一部のページインタラクションではイベントが送信されない |
 | ストア/設定/カタログ/カタログ/カタログ検索/クエリの最大長 | カタログ検索で許可される最大文字数。 | 実装されていません。検索サービスは最大 255 文字まで受け入れます |
 | 「構成」 > 「売上」 > 「税金」 > 「価格表示設定」 > 「カタログに製品価格を表示」 | カタログに公開された製品価格に税を含めるか除外するか、または価格の 2 つのバージョン（1 つは税あり、もう 1 つは税なし）を表示するかを決定します |  |
-| ストア/設定/カタログ/ストアフロント/製品リスト並べ替え基準 | 検索結果リストの並べ替え順を決定します。 | [!DNL Live Search] 製品一覧ページウィジェット [&#x200B; には適用されません &#x200B;](plp-styling.md) |
+| ストア/設定/カタログ/ストアフロント/製品リスト並べ替え基準 | 検索結果リストの並べ替え順を決定します。 | [!DNL Live Search] 製品一覧ページウィジェット [ には適用されません ](plp-styling.md) |
 
 ### 検索語句
 
-[!DNL Live Search] では、Luma やその他の php ベースのテーマなど、Adobe Commerceがルーティングを処理する実装で [&#x200B; 検索用語リダイレクト &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=ja) をサポートしています。
+[!DNL Live Search] では、Luma やその他の php ベースのテーマなど、Adobe Commerceがルーティングを処理する実装で [ 検索用語リダイレクト ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) をサポートしています。
