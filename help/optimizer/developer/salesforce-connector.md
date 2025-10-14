@@ -78,7 +78,7 @@ Salesforce Commerce B2C ローカライゼーション機能の活用：
 
 次の図は、統合の大まかなデータフローを示しています。
 
-![Salesforce Commerce Connector のアーキテクチャ ](../assets/sfcc_starter_kit.png){zoomable="yes"}
+![Salesforce Commerce Connector のアーキテクチャ &#x200B;](../assets/sfcc_starter_kit.png){zoomable="yes"}
 
 ### 主要コンポーネント
 
@@ -135,12 +135,12 @@ Salesforce Commerce B2C ローカライゼーション機能の活用：
 
 この [!DNL Commerce Optimizer SFCC Connector] はオープンソースで、カスタマイズできます。 主なリポジトリーには、次のものが含まれます。
 
-* **[ACO SFCC スターターキット ](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** - メインコネクタアプリケーションとドキュメント。
-* **[ACO SFCC カートリッジ ](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - API 統合に必要な SFCC カートリッジ。
+* **[ACO SFCC スターターキット &#x200B;](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** - メインコネクタアプリケーションとドキュメント。
+* **[ACO SFCC カートリッジ &#x200B;](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - API 統合に必要な SFCC カートリッジ。
 * **[ACO TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** - Adobe Commerce Optimizer統合のSDK。
 
 これらのリポジトリは、完全なソースコード、詳細なドキュメント、およびコネクタの実装とカスタマイズの例を提供します。
 
 ## 次の手順
 
-Salesforce Commerce Cloud データをAdobe Commerce Optimizerと統合する準備はできていますか？ まず、[ACO SFCC スターターキットリポジトリ ](https://github.com/adobe-commerce/aco-sfcc-starter-kit) の詳細な実装ガイドを確認し、必要な前提条件が整っていることを確認します。
+Salesforce Commerce Cloud データをAdobe Commerce Optimizerと統合する準備はできていますか？ まず、[ACO SFCC スターターキットリポジトリ &#x200B;](https://github.com/adobe-commerce/aco-sfcc-starter-kit) の詳細な実装ガイドを確認し、必要な前提条件が整っていることを確認します。

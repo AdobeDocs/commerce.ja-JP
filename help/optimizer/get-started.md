@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # はじめに
 
-このガイドでは、[!DNL Adobe Commerce Optimizer] の設定を最初から最後まで説明します。 このガイドではすべての役割をカバーしていますが、開発者固有のコンテンツについて詳しくは、[ 開発者ドキュメント ](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。
+このガイドでは、[!DNL Adobe Commerce Optimizer] の設定を最初から最後まで説明します。 このガイドではすべての役割をカバーしていますが、開発者固有のコンテンツについて詳しくは、[&#x200B; 開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。
 
 ## 前提条件
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 1. **Commerce** / **Commerce Cloud Manager** に移動します。
 1. **インスタンスを追加**/**Commerce Optimizer** をクリックします。
 
-   ![Commerce Optimizer環境を作成するための Adobe Commerce Cloud Manager のインスタンスを追加画面 ](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
+   ![Commerce Optimizer環境を作成するための Adobe Commerce Cloud Manager のインスタンスを追加画面 &#x200B;](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. インスタンス設定を指定：
    - **インスタンス名**：わかりやすい名前（「My Company Sandbox」など）
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. **インスタンスを追加** をクリックします。
 
-   Cloud Managerが更新され、新しいインスタンスが追加されます。 アクセスと管理について詳しくは、「[ インスタンスの管理 ](#manage-instances)」を参照してください。
+   Cloud Managerが更新され、新しいインスタンスが追加されます。 アクセスと管理について詳しくは、「[&#x200B; インスタンスの管理 &#x200B;](#manage-instances)」を参照してください。
 
 >[!NOTE]
 >
@@ -55,18 +55,18 @@ ht-degree: 0%
 
 インスタンスの作成後：
 
-1. Commerce Cloud Manager で [ インスタンスを管理 ](#manage-instances) します。
+1. Commerce Cloud Manager で [&#x200B; インスタンスを管理 &#x200B;](#manage-instances) します。
 1. [User Management Guide](./user-management.md) を使用してユーザーアクセスを設定します。
 
 ### 手順 3. サンプルデータを追加（オプション）
 
-テストと学習については、[ サンプルデータの読み込み ](#add-sample-data) の手順に従ってください。
+テストと学習については、[&#x200B; サンプルデータの読み込み &#x200B;](#add-sample-data) の手順に従ってください。
 
 ## 役割ベースのワークフロー
 
 設定と管理 [!DNL Adobe Commerce Optimizer]、次の 3 つの主要な役割に依存しています。 各役割には、次のような特定のタスクと責務があります。
 
-![ 管理者、開発者、ユーザーのタスクを示すAdobe Commerce Optimizer設定用のロールベースのワークフロー ](./assets/high-level-workflow.png){zoomable="yes"}
+![&#x200B; 管理者、開発者、ユーザーのタスクを示すAdobe Commerce Optimizer設定用のロールベースのワークフロー &#x200B;](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### 管理者のタスク
 
@@ -74,10 +74,10 @@ ht-degree: 0%
 
 | タスク | 説明 | リンク |
 |---|---|---|
-| **ユーザーの管理** | ユーザー、開発者、管理者を追加 | [ ユーザー管理 ](./user-management.md) |
-| **インスタンスの作成** | サンドボックス環境と実稼動環境のセットアップ | [ インスタンスを作成 ](#create-an-instance) |
-| **インスタンスの管理** | ステータスを確認し、インスタンス名と説明を更新し、アプリケーションおよび API アクセスのキー URL を取得します | [ インスタンスの管理 ](#manage-instances) |
-| **アクセスの設定** | カタログ表示とポリシーの設定 | [ カタログ ビュー ](./setup/catalog-view.md) |
+| **ユーザーの管理** | ユーザー、開発者、管理者を追加 | [&#x200B; ユーザー管理 &#x200B;](./user-management.md) |
+| **インスタンスの作成** | サンドボックス環境と実稼動環境のセットアップ | [&#x200B; インスタンスを作成 &#x200B;](#create-an-instance) |
+| **インスタンスの管理** | ステータスを確認し、インスタンス名と説明を更新し、アプリケーションおよび API アクセスのキー URL を取得します | [&#x200B; インスタンスの管理 &#x200B;](#manage-instances) |
+| **アクセスの設定** | カタログ表示とポリシーの設定 | [&#x200B; カタログ ビュー &#x200B;](./setup/catalog-view.md) |
 
 ### 開発者タスク
 
@@ -86,8 +86,8 @@ ht-degree: 0%
 | タスク | 説明 | リンク |
 |---|---|---|
 | **Developer Consoleへのアクセス** | プロジェクトの作成と資格情報の生成 | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **カタログデータの取り込み** | 既存システムからの製品データのインポート | [ データ取得 API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) |
-| **ストアフロントの設定** | Edge Delivery Services ストアフロントの設定 | [ ストアフロントの設定 ](./storefront.md) |
+| **カタログデータの取り込み** | 既存システムからの製品データのインポート | [&#x200B; データ取得 API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) |
+| **ストアフロントの設定** | Edge Delivery Services ストアフロントの設定 | [&#x200B; ストアフロントの設定 &#x200B;](./storefront.md) |
 
 ### マーチャンダイザータスク
 
@@ -95,9 +95,9 @@ ht-degree: 0%
 
 | タスク | 説明 | リンク |
 |---|---|---|
-| **製品の検出** | 検索とフィルタリングの設定 | [ マーチャンダイジングの概要 ](./merchandising/overview.md) |
-| **推奨事項** | AI を活用した製品レコメンデーションの設定 | [ 製品の推奨事項 ](./merchandising/recommendations/overview.md) |
-| **パフォーマンストラッキング** | 成功指標の監視 | [ 成功指標 ](./manage-results/success-metrics.md) |
+| **製品の検出** | 検索とフィルタリングの設定 | [&#x200B; マーチャンダイジングの概要 &#x200B;](./merchandising/overview.md) |
+| **推奨事項** | AI を活用した製品レコメンデーションの設定 | [&#x200B; 製品の推奨事項 &#x200B;](./merchandising/recommendations/overview.md) |
+| **パフォーマンストラッキング** | 成功指標の監視 | [&#x200B; 成功指標 &#x200B;](./manage-results/success-metrics.md) |
 
 ## インスタンスの管理
 
@@ -119,7 +119,7 @@ Commerce Cloud Manager からインスタンスを管理します。
 ログインすると、組織内で使用可能なすべてのCommerce製品インスタンスがダッシュボードに表示されます。
 「製品」列は、インスタンスがプロビジョニングされるCommerce アプリケーションを示します。
 
-![Adobe Commerce Cloud 製品インスタンスの検索およびフィルターオプションを表示するダッシュボード ](./assets/search-filter-instances.png){zoomable="yes"}
+![Adobe Commerce Cloud 製品インスタンスの検索およびフィルターオプションを表示するダッシュボード &#x200B;](./assets/search-filter-instances.png){zoomable="yes"}
 
 フィルターツールと検索ツールを使用すると、作成日、地域、作成者、製品タイプ、環境、ステータス別に、特定のインスタンスをすばやく見つけることができます。
 
@@ -133,13 +133,13 @@ Commerce Cloud Manager からインスタンスを管理します。
 
    「インスタンス」ドロップダウン・リストには、組織で使用可能なすべての Optimizer インスタンスが表示されます。 表示するインスタンスを選択します。
 
-   ![Adobe Commerce Optimizer環境を選択するためのインスタンススイッチャードロップダウン ](./assets/context-switcher.png){zoomable="yes"}
+   ![Adobe Commerce Optimizer環境を選択するためのインスタンススイッチャードロップダウン &#x200B;](./assets/context-switcher.png){zoomable="yes"}
 
 ### インスタンスの詳細を取得
 
 インスタンス名の横にある情報アイコンをクリックして、インスタンスの詳細を表示します。
 
-エンドポイントとインスタンス ID を示す ![Adobe Commerce Optimizer インスタンスの詳細パネル ](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+エンドポイントとインスタンス ID を示す ![Adobe Commerce Optimizer インスタンスの詳細パネル &#x200B;](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 次の主な情報に注意してください。
 
@@ -165,7 +165,7 @@ Commerce Cloud Manager からインスタンスを管理します。
 ## サンプルデータを追加
 
 Adobeは、[!DNL Adobe Commerce Optimizer] の機能を学習およびテストするのに役立つサンプルデータとツールを含む GitHub リポジトリを提供します。
-サンプルデータは、[Carvelo ビジネスシナリオ ](./use-case/admin-use-case.md) に基づいており、次のものが含まれます。
+サンプルデータは、[Carvelo ビジネスシナリオ &#x200B;](./use-case/admin-use-case.md) に基づいており、次のものが含まれます。
 
 - 自動車部品の製品カタログ
 - 複数の価格台帳と価格設定シナリオ
@@ -181,27 +181,27 @@ Adobeは、[!DNL Adobe Commerce Optimizer] の機能を学習およびテスト�
    - 環境の設定
    - データ取り込みプロセスの完了
    - サンプルデータを使用したカタログビューとポリシーの作成
-   - [ データ同期 ](./setup/data-sync.md) ページでカタログサービスデータを確認して、データ取り込みを検証します
+   - [&#x200B; データ同期 &#x200B;](./setup/data-sync.md) ページでカタログサービスデータを確認して、データ取り込みを検証します
 
 ## 次の手順
 
 設定が完了したら、次の手順を実行します。
 
 1. ストアフロントの設定：
-   - [Edge Delivery Services ストアフロント ](./storefront.md) を設定
+   - [Edge Delivery Services ストアフロント &#x200B;](./storefront.md) を設定
    - カタログデータへの接続
 
 1. Carvelo のユースケースを見る：
-   - [ エンドツーエンドのワークフロー ](./use-case/admin-use-case.md) に従う
+   - [&#x200B; エンドツーエンドのワークフロー &#x200B;](./use-case/admin-use-case.md) に従う
    - 実際のシナリオを使用して練習する
 
 1. マーチャンダイジングを設定：
-   - 設定 [ 製品検出 ](./merchandising/overview.md)
+   - 設定 [&#x200B; 製品検出 &#x200B;](./merchandising/overview.md)
    - 作成 [recommendations](./merchandising/recommendations/overview.md)
 
 1. 監視パフォーマンス：
-   - トラック [ 成功指標 ](./manage-results/success-metrics.md)
-   - 分析 [ パフォーマンスの検索 ](./manage-results/search-performance.md)
+   - トラック [&#x200B; 成功指標 &#x200B;](./manage-results/success-metrics.md)
+   - 分析 [&#x200B; パフォーマンスの検索 &#x200B;](./manage-results/search-performance.md)
 
 ## トラブルシューティング
 
@@ -216,7 +216,7 @@ Adobeは、[!DNL Adobe Commerce Optimizer] の機能を学習およびテスト�
 
 ### ヘルプを表示
 
-- **開発者向けリソース**: [ 開発者向けドキュメント ](https://developer.adobe.com/commerce/services/optimizer/)
-- **ストアフロントのリソース**:[Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/)
-- **チュートリアル**: [Commerce Optimizer チュートリアル ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **サポート**: [Adobe Commerce サポートリソース ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+- **開発者向けリソース**: [&#x200B; 開発者向けドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)
+- **ストアフロントのリソース**:[Commerce ストアフロントのドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **チュートリアル**: [Commerce Optimizer チュートリアル &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **サポート**: [Adobe Commerce サポートリソース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
