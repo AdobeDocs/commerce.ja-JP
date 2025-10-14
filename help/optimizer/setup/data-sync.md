@@ -19,7 +19,7 @@ ht-degree: 0%
 
 **データ同期** ページは *設定*/**データ同期** にあります。
 
-![ データ同期 ](../assets/data-sync.png)
+![&#x200B; データ同期 &#x200B;](../assets/data-sync.png)
 
 **データ同期** ページには、次のフィールドが含まれています。
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 ## 同期された製品のリスト
 
-同期された製品の詳細を JSON 形式で確認するには、同期された製品テーブルの製品の行にあるコードアイコン ![ コードリンク ](../assets/data-sync-details.png) をクリックします。
+同期された製品の詳細を JSON 形式で確認するには、同期された製品テーブルの製品の行にあるコードアイコン ![&#x200B; コードリンク &#x200B;](../assets/data-sync-details.png) をクリックします。
 
-![Syncd 製品詳細 ](../assets/synced-products.png)
+![Syncd 製品詳細 &#x200B;](../assets/synced-products.png)
 
 ## カタログデータを再同期
 

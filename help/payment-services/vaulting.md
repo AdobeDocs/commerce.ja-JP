@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ## ボルトを有効にする
 
-マーチャントは、[!DNL Payment Services] 設定 [ でストアのクレジットカードヴォールティングを有効にでき ](configure-admin.md#card-vaulting) す。
+マーチャントは、[!DNL Payment Services] 設定 [&#x200B; でストアのクレジットカードヴォールティングを有効にでき &#x200B;](configure-admin.md#card-vaulting) す。
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]** に移動します。
 
 1. 「**[!UICONTROL Settings]**」をクリックします。
 
-1. **[!UICONTROL Vault enabled]** セレクターを切り替えます。 詳しくは、[ 有効にする  [!DNL Payment Services]](configure-admin.md#enable-payment-services) を参照してください。
+1. **[!UICONTROL Vault enabled]** セレクターを切り替えます。 詳しくは、[&#x200B; 有効にする  [!DNL Payment Services]](configure-admin.md#enable-payment-services) を参照してください。
 
 ## 購入なしのヴォールティング
 
@@ -32,22 +32,22 @@ ht-degree: 0%
 
 1. 左側のナビゲーションの **[!UICONTROL Stored Payment Methods]** に移動すると、保存されているすべての支払い方法が表示されます。
 
-   詳しくは、[ 保管済支払方法 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/payments/stored-payment-methods) を参照してください。
+   詳しくは、[&#x200B; 保管済支払方法 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/payments/stored-payment-methods) を参照してください。
 
 1. 顧客は、**[!UICONTROL Add New Card]** をクリックして新しいカードを保存します。
 
-   ![ 新しいカードを追加 ](assets/add-new-card.png){width="400" zoomable="yes"}
+   ![&#x200B; 新しいカードを追加 &#x200B;](assets/add-new-card.png){width="400" zoomable="yes"}
 
    お客様は、支払い方法をヴォールティングするために、カードや請求情報など、必要なすべての詳細を提供する必要があります。
 ヴォールティングされたすべての支払い方法は、買い物客の PayPal アカウントでカードをヴォールティングする際に設定された請求先住所を使用します。 お客様には、Commerceに表示される請求先住所とは異なる請求先住所が表示される場合があります。
 
 1. **[!UICONTROL Save New Card]** をクリック
 
-   ![ マイアカウントに保存されているお支払い方法 ](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+   ![&#x200B; マイアカウントに保存されているお支払い方法 &#x200B;](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
 保存されたカードは、注文する際に使用できます。
 
-![ 今後の購入のために保存された資格情報を使用する ](assets/use-stored-card.png){width="400" zoomable="yes"}
+![&#x200B; 今後の購入のために保存された資格情報を使用する &#x200B;](assets/use-stored-card.png){width="400" zoomable="yes"}
 
 ### 保存されている支払方法の削除
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ログイン済みのお客様は、チェックアウト時にクレジットカードをヴォールティングし、現在の店舗または同じマーチャントアカウント内の他の店舗での後の購入に使用できます。
 
-![ 後で使用するためにクレジットカードをヴォールティングする ](assets/save-card-for-later.png){width="400" zoomable="yes"}
+![&#x200B; 後で使用するためにクレジットカードをヴォールティングする &#x200B;](assets/save-card-for-later.png){width="400" zoomable="yes"}
 
 Commerceには、保存されたクレジットカード情報を取得して今後のチェックアウトを完了するのに役立つトークンが格納されています。 顧客アカウントから、またはチェックアウト中にカードをヴォールティングすると、異なる支払いトークンが発生します。
 
@@ -73,12 +73,12 @@ Commerceには、保存されたクレジットカード情報を取得して今
 
 ボールトに保管されたクレジット・カードを使用して顧客の受注を管理で作成する手順は、次のとおりです。
 
-1. [ 注文を作成して製品を追加する ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=ja)。
+1. [&#x200B; 注文を作成して製品を追加する &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=ja)。
 1. _[!UICONTROL Payment & Shipping Information]_&#x200B;で、支払方法として&#x200B;**[!UICONTROL Stored Cards]**&#x200B;を選択します。
 1. 目的のボルト付きクレジットカードの支払方法を選択します。
-1. 注文に必要なその他の手順を完了したら、[ 送信 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=ja#step-3%3A-submit-the-order) します。
+1. 注文に必要なその他の手順を完了したら、[&#x200B; 送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=ja#step-3%3A-submit-the-order) します。
 
-   ![ 管理者がボルト化されたクレジットカードを顧客に使用 ](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
+   ![&#x200B; 管理者がボルト化されたクレジットカードを顧客に使用 &#x200B;](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## セキュリティ
 

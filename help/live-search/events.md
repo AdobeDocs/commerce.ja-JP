@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # [!DNL Live Search] イベント
 
-[ イベントが収集する行動データについて詳しくは、](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search) 開発者ドキュメント [!DNL Live Search] を参照してください。
+[&#x200B; イベントが収集する行動データについて詳しくは、](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search) 開発者ドキュメント [!DNL Live Search] を参照してください。

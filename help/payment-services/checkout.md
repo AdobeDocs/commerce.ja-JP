@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Payment Services] でのチェックアウト
 
-買い物客に最適なAdobe Commerce [!DNL Payment Services] のチェックアウトを設定できます。 [ 注文の自動無効化 ](#order-auto-voided-if-error) および [ クレジットカードの保管 ](#credit-card-vaulting) などの機能により、買い物客はスムーズにユーザーエクスペリエンスを得ることができます。
+買い物客に最適なAdobe Commerce [!DNL Payment Services] のチェックアウトを設定できます。 [&#x200B; 注文の自動無効化 &#x200B;](#order-auto-voided-if-error) および [&#x200B; クレジットカードの保管 &#x200B;](#credit-card-vaulting) などの機能により、買い物客はスムーズにユーザーエクスペリエンスを得ることができます。
 
 ## エラーの場合に注文を自動無効にする
 
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 買い物客のチェックアウトページにエラーメッセージが表示されます。 メッセージは異なる場合があります。
 
-![ チェックアウト中のエラー ](assets/user-checkout-error.png " チェックアウト中のエラー "){width="600" zoomable="yes"}
+![&#x200B; チェックアウト中のエラー &#x200B;](assets/user-checkout-error.png " チェックアウト中のエラー "){width="600" zoomable="yes"}
 
-キャンセルされた注文に関するコメントも、特定の [ 注文 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=ja) の管理者に表示されます。
+キャンセルされた注文に関するコメントも、特定の [&#x200B; 注文 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=ja) の管理者に表示されます。
 
-![ 注文に対する管理者のキャンセルされた注文コメント ](assets/admin-checkout-error.png " 注文に対する管理者のキャンセルされた注文コメント "){width="600" zoomable="yes"}
+![&#x200B; 注文に対する管理者のキャンセルされた注文コメント &#x200B;](assets/admin-checkout-error.png " 注文に対する管理者のキャンセルされた注文コメント "){width="600" zoomable="yes"}
 
 買い物客が注文の認証を取得しても、注文が作成されず、`Capture` に変換されなかった場合、注文は自動無効になります。 このプロセスにより、買い物客のクレジットカードに予約されるクレジットがなくなり、標準の 29 日間の期間の終了時に認証が無効になった場合に発生する支払いプロバイダーの手数料を回避できます。
 
@@ -46,4 +46,4 @@ ht-degree: 0%
 
 買い物客は、クレジットカード情報をヴォールティング（保存）して、Web サイト・レベル（同じマーチャントのアカウント内のあらゆる店舗）で今後の購入に利用できます。
 
-詳しくは、[ クレジットカードボルト ](vaulting.md) を参照してください
+詳しくは、[&#x200B; クレジットカードボルト &#x200B;](vaulting.md) を参照してください

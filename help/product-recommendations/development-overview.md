@@ -14,13 +14,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ストアフロントがPWA Studioを使用して実装されている場合は、[PWA ドキュメント ](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) を参照してください。 React や Vue JS などのカスタムフロントエンドテクノロジーを使用している場合は、ユーザーガイドを参照して、製品 Recommendations を [ ヘッドレス ](headless.md) 環境に統合する方法を確認してください。 ヘッドレスインスタンスでは、製品レコメンデーションワークスペースを強化するためにイベンティングを実装する必要があります。
+>ストアフロントがPWA Studioを使用して実装されている場合は、[PWA ドキュメント &#x200B;](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) を参照してください。 React や Vue JS などのカスタムフロントエンドテクノロジーを使用している場合は、ユーザーガイドを参照して、製品 Recommendations を [&#x200B; ヘッドレス &#x200B;](headless.md) 環境に統合する方法を確認してください。 ヘッドレスインスタンスでは、製品レコメンデーションワークスペースを強化するためにイベンティングを実装する必要があります。
 
 ## アーキテクチャの概要
 
 大まかに言えば、Commerce Product Recommendations は SaaS としてデプロイされます。 Commerce側には、イベントコレクターおよび Recommendations レイアウトテンプレートを含むストアフロント、およびデータサービス、SaaS エクスポートモジュール、管理 UI を含むバックエンドが含まれます。 Adobe Senseiのインテリジェンスサービスは、SaaS 側で利用されます。
 
-![Product Recommendations のアーキテクチャ図 ](assets/arch-diag-sensei.svg)
+![Product Recommendations のアーキテクチャ図 &#x200B;](assets/arch-diag-sensei.svg)
 
 レコメンデーションモジュールがインストールされて設定されると、ストアフロントで行動データの収集が開始されます。 Adobe Senseiは、カタログデータと共にこの行動データを処理し、recommendations サービスで活用される商品の関連付けを計算します。 この時点で、マーチャントは、管理 UI から直接製品レコメンデーションユニットを作成、管理およびストアフロントにデプロイできます。
 

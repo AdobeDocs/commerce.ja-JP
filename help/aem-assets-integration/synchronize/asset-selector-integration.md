@@ -14,7 +14,7 @@ ht-degree: 0%
 
 マーケターやマーチャンダイザーは **&#x200B;**&#x200B;AEM アセットセレクターを使用して、AEM AssetsからAdobe Commerceに画像を簡単に追加でき、アセット管理プロセスを合理化できます。 この方法では、アセットの選択を [!DNL DAM (Digital Asset Management system)] で確認および承認されたアセットに限定することで、ブランドの一貫性とコンプライアンスを確保します。
 
-**AEM アセットセレクター** は、AEM Assets プロジェクトの IMS クライアント ID がCommerce管理者で設定されている場合に使用できます。 [AEM アセットセレクターの設定 ](#configure-the-aem-asset-selector-in-adobe-commerce) を参照してください。
+**AEM アセットセレクター** は、AEM Assets プロジェクトの IMS クライアント ID がCommerce管理者で設定されている場合に使用できます。 [AEM アセットセレクターの設定 &#x200B;](#configure-the-aem-asset-selector-in-adobe-commerce) を参照してください。
 
 **AEM アセットセレクター** の統合が設定されると、マーケターとマーチャンダイザーは次のことができます。
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> AEM アセットセレクターは、AEMをオーサリングアプリケーションと統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、&lbrace;2[AEM as a Cloud Service ユーザーガイド ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} マイクロフロントエンドアセットセレクター *を参照してください。*
+> AEM アセットセレクターは、AEMをオーサリングアプリケーションと統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、&lbrace;2[AEM as a Cloud Service ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} マイクロフロントエンドアセットセレクター *を参照してください。*
 
 ## 主なメリット
 
@@ -38,7 +38,7 @@ Adobe Commerce管理パネル内にAEM アセットセレクターを埋め込�
 
 * **コンテンツ品質の向上** – 製品ページ、カテゴリおよびページビルダー全体で、最適化された高解像度の画像を確実に使用します。
 
-![ アセットセレクター ](../assets/asset-selector.png){width="600" zoomable="yes"}
+![&#x200B; アセットセレクター &#x200B;](../assets/asset-selector.png){width="600" zoomable="yes"}
 
 ## Adobe CommerceでのAEM アセットセレクターの設定
 

@@ -18,6 +18,6 @@ Recommendations は、コンバージョンを増やし、売上高を増やし�
 
 ## プライバシー
 
-Recommendations の目的でのデータ収集には、個人を特定できる情報（PII）は含まれません。 また、Cookie ID や IP アドレスなどのすべてのユーザー識別子は、厳密に匿名化されます。 詳しくは、[Adobeのプライバシーポリシー ](https://www.adobe.com/privacy/policy.html) を参照してください。
+Recommendations の目的でのデータ収集には、個人を特定できる情報（PII）は含まれません。 また、Cookie ID や IP アドレスなどのすべてのユーザー識別子は、厳密に匿名化されます。 詳しくは、[Adobeのプライバシーポリシー &#x200B;](https://www.adobe.com/privacy/policy.html) を参照してください。
 
-Recommendations のユーザーは、データ同期について詳しくは [ データ同期 ](../../setup/data-sync.md) ページを参照できます。
+Recommendations のユーザーは、データ同期について詳しくは [&#x200B; データ同期 &#x200B;](../../setup/data-sync.md) ページを参照できます。

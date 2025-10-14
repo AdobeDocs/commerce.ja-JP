@@ -23,7 +23,7 @@ ht-degree: 0%
 
 この機能は、[!DNL Payment Services] ではデフォルトで有効になっています。 明細品目を表示する手順は、次のとおりです。
 
-1. [PayPal マーチャントダッシュボード ](https://www.paypal.com/merchant/){target=_blank} に移動します。
+1. [PayPal マーチャントダッシュボード &#x200B;](https://www.paypal.com/merchant/){target=_blank} に移動します。
 
 1. **アクティビティ**/**すべてのトランザクション** をクリックします。
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
    > 買い物客ダッシュボードビューの行項目の例
 
-   ![ ライン項目ビュー ](assets/paypal-shopper-dashboard-line-items-view.png){width="500" zoomable="yes"}
+   ![&#x200B; ライン項目ビュー &#x200B;](assets/paypal-shopper-dashboard-line-items-view.png){width="500" zoomable="yes"}
 
 ## ライン項目属性
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 | 属性 | データタイプ | 説明 |
 | --- | --- | --- |
-| `currency_code` | ストリング！ | 通貨を識別する [3 文字の ISO-4217 通貨コード ](https://developer.paypal.com/api/rest/reference/currency-codes/)。 |
+| `currency_code` | ストリング！ | 通貨を識別する [3 文字の ISO-4217 通貨コード &#x200B;](https://developer.paypal.com/api/rest/reference/currency-codes/)。 |
 | `value` | ストリング！ | 項目の値を示します。 `currency_code` は、必要な小数点以下の桁数を決定します（存在する場合）。 |
 
 ### `tax` 属性
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 | 属性 | データタイプ | 説明 |
 | --- | --- | --- |
-| `currency_code` | ストリング！ | 通貨を識別する [3 文字の ISO-4217 通貨コード ](https://developer.paypal.com/api/rest/reference/currency-codes/)。 |
+| `currency_code` | ストリング！ | 通貨を識別する [3 文字の ISO-4217 通貨コード &#x200B;](https://developer.paypal.com/api/rest/reference/currency-codes/)。 |
 | `value` | ストリング！ | 項目の値を示します。 必要な小数点以下の桁数について各 `currency_code` に依存します。 |
 
 ### `upc` 属性
@@ -123,15 +123,15 @@ ht-degree: 0%
 
 +++
 
-これらのフィールドとその制限事項について詳しくは、[ 行項目に関する PayPal 開発者向けドキュメント ](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} を参照してください。
+これらのフィールドとその制限事項について詳しくは、[&#x200B; 行項目に関する PayPal 開発者向けドキュメント &#x200B;](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank} を参照してください。
 
 ## 行項目の管理
 
-Adobe Commerce[ 各行の合計金額に基づいて税金を計算します ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}。同じ品目の複数の数量が注文されている場合や、カタログに税込みの価格が表示されている場合は、丸めの問題が発生する可能性があります。 この場合、合計数量は 2 つの明細に分割できますが、数量は受注品目の合計と等しくなります。
+Adobe Commerce[&#x200B; 各行の合計金額に基づいて税金を計算します &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}。同じ品目の複数の数量が注文されている場合や、カタログに税込みの価格が表示されている場合は、丸めの問題が発生する可能性があります。 この場合、合計数量は 2 つの明細に分割できますが、数量は受注品目の合計と等しくなります。
 
 > 販売者ダッシュボード ビューでの丸め問題を含む品目の例
 
-![ ライン項目ビュー ](assets/line-items-example.png){width="600" zoomable="yes"}
+![&#x200B; ライン項目ビュー &#x200B;](assets/line-items-example.png){width="600" zoomable="yes"}
 
 +++Adobe Commerceによる行項目の丸め問題の計算方法
 

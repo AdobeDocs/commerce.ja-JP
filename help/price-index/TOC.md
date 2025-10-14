@@ -17,4 +17,4 @@ ht-degree: 9%
 - カタログアダプタ {#catalog-adapter}
    - [概要](catalog-adapter.md)
    - [リリースノート](release-notes.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
+- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)

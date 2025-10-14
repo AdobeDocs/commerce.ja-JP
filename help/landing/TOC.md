@@ -29,6 +29,6 @@ ht-degree: 35%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=ja)
    - [サービスコネクタ](/help/landing/saas.md)
 - データツール {#data-services}
-   - [SaaS データのエクスポート ](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=ja)
-   - [SaaS 価格インデックス作成 ](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=ja)
+   - [SaaS データのエクスポート &#x200B;](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=ja)
+   - [SaaS 価格インデックス作成 &#x200B;](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=ja)
    - [カタログ同期](/help/landing/catalog-sync.md)

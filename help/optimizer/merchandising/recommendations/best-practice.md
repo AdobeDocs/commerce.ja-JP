@@ -31,7 +31,7 @@ Adobeでは、レコメンデーションを使用する際に次のガイドラ
 | 製品ページ | `Viewed this, viewed that` |
 | カート | `Bought this, bought that` |
 
-[ 指標 ](../../manage-results/recommendation-performance.md) を追跡し、必要に応じて調整できます。 実験が重要であることを忘れないでください。
+[&#x200B; 指標 &#x200B;](../../manage-results/recommendation-performance.md) を追跡し、必要に応じて調整できます。 実験が重要であることを忘れないでください。
 
 ## 推奨ラベル
 

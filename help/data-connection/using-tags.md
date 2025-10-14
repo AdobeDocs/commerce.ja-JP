@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Adobe Experience Platform タグを使用したCommerce データの収集
 
-[!DNL Data Connection] 拡張機能を使用してストアフロントイベントを公開および購読できますが、[Adobe Experience Platform タグ ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=ja) などのデータ収集ソリューションを既に使用しているマーチャントも存在します。 これらのマーチャントについては、Adobe Commerceでは、Adobe Commerce イベント SDKを使用する [!DNL Data Connection] 拡張機能で公開専用のオプションを提供します。
+[!DNL Data Connection] 拡張機能を使用してストアフロントイベントを公開および購読できますが、[Adobe Experience Platform タグ &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=ja) などのデータ収集ソリューションを既に使用しているマーチャントも存在します。 これらのマーチャントについては、Adobe Commerceでは、Adobe Commerce イベント SDKを使用する [!DNL Data Connection] 拡張機能で公開専用のオプションを提供します。
 
-![[!DNL Data Connection] 拡張データフロー ](assets/tags-data-flow.png)
+![[!DNL Data Connection] 拡張データフロー &#x200B;](assets/tags-data-flow.png)
 タグを使用した _[!DNL Data Connection]拡張機能のデータフロー_
 
 このトピックでは、[!DNL Data Connection] 拡張機能で提供されるストアフロントイベント値を、既に使用しているAdobe Experience Platform タグソリューションにマッピングする方法について説明します。
@@ -23,17 +23,17 @@ ht-degree: 0%
 
 Commerce イベントデータを収集するには：
 
-- [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-sdk) をインストールします。 PHP ストアフロントについては、[install](install.md) のトピックを参照してください。 PWA Studio ストアフロントについては、[PWA Studio ガイド ](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) を参照してください。
+- [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-sdk) をインストールします。 PHP ストアフロントについては、[install](install.md) のトピックを参照してください。 PWA Studio ストアフロントについては、[PWA Studio ガイド &#x200B;](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) を参照してください。
 
   >[!NOTE]
   >
-  > 組織 ID **データストリーム ID**&#x200B;[ 設定 ](connect-data.md) はしないでください。
+  > 組織 ID **データストリーム ID**&#x200B;[&#x200B; 設定 &#x200B;](connect-data.md) はしないでください。
 
 ## Commerce ストアフロントデータのAdobe Experience Platformへのマッピング
 
 Commerce ストアフロントのデータをAdobe Experience Platformにマッピングするには、以下を設定し、Adobe Experience Platform タグ内からインストールします。
 
-1. Adobe Experience Platform Data Collection で [ タグプロパティを設定 ](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=ja) します。
+1. Adobe Experience Platform Data Collection で [&#x200B; タグプロパティを設定 &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=ja) します。
 
 1. **オーサリング** で **拡張機能** を選択し、次の拡張機能をインストールして設定します。
 
@@ -41,7 +41,7 @@ Commerce ストアフロントのデータをAdobe Experience Platformにマッ�
 
    - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=ja)
 
-1. 開発環境に [ タグを公開 ](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja) します。
+1. 開発環境に [&#x200B; タグを公開 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ja) します。
 
 1. 特定のイベントのデータ要素とルールを設定するには、以下の **イベントマッピング** 手順に従います。
 
@@ -61,7 +61,7 @@ Adobe Commerce固有のイベントデータを使用してAdobe Experience Plat
 
 1. データ要素を作成します。
 
-   ![ 新しいデータ要素の作成 ](assets/create-new-data-elements.png)
+   ![&#x200B; 新しいデータ要素の作成 &#x200B;](assets/create-new-data-elements.png)
    _新しいデータ要素の作成_
 
 1. **Name** を `sign out` に設定します。
@@ -74,14 +74,14 @@ Adobe Commerce固有のイベントデータを使用してAdobe Experience Plat
 
 1. **userAccount**/**ログアウト** で、**訪問者ログアウト** の **値** を `1` に設定します。
 
-   ![ ログアウト値の更新 ](assets/signout-value.png)
+   ![&#x200B; ログアウト値の更新 &#x200B;](assets/signout-value.png)
    _ログアウト値の更新_
 
 1. **保存** を選択します。
 
 1. ルールを作成します。
 
-   ![ 新しいルールの作成 ](assets/create-new-rule.png)
+   ![&#x200B; 新しいルールの作成 &#x200B;](assets/create-new-rule.png)
    _新しいルールの作成_
 
 1. **EVENTS** の下の **追加** を選択します。
@@ -1328,7 +1328,7 @@ Live Search が「入力中に検索」ポップオーバーまたは検索結�
 >
 >異なるフィールドに基づく以前の設定がある場合は、引き続きそれらを使用できます。
 
-- `personalEmail` - アカウントイベントにのみ適用されます。 上記の手順、ルール、アクションに従 [ ます ](#createaccount)
+- `personalEmail` - アカウントイベントにのみ適用されます。 上記の手順、ルール、アクションに従 [&#x200B; ます &#x200B;](#createaccount)
 - `identityMap` – その他すべてのストアフロントイベントに適用されます。 次の例を参照してください。
 
 ### 例
@@ -1337,7 +1337,7 @@ Live Search が「入力中に検索」ポップオーバーまたは検索結�
 
 1. ECID のカスタムコードを使用してデータ要素を設定します。
 
-   ![ カスタムコードを使用したデータ要素の設定 ](assets/set-custom-code-ecid.png)
+   ![&#x200B; カスタムコードを使用したデータ要素の設定 &#x200B;](assets/set-custom-code-ecid.png)
    _カスタムコードを使用したデータ要素の設定_
 
 1. [!UICONTROL Open Editor] を選択して、次のカスタムコードを追加します。
@@ -1364,12 +1364,12 @@ Live Search が「入力中に検索」ポップオーバーまたは検索結�
 
 1. `identityMap` を ECID として設定して XDM スキーマを更新します。
 
-   ![identityMap を ECID として設定 ](assets/identity-map-data-element.png)
+   ![identityMap を ECID として設定 &#x200B;](assets/identity-map-data-element.png)
    _identityMap を ECID として設定_
 
 1. ECID を取得するルールアクションを定義します。
 
-   ![ECID の取得 ](assets/rule-retrieve-ecid.png)
+   ![ECID の取得 &#x200B;](assets/rule-retrieve-ecid.png)
    _ECID の取得_
 
 ## バックオフィスイベントでの ID の設定
@@ -1378,7 +1378,7 @@ ECID を使用してプロファイル情報を識別およびリンクするス
 
 1. ID マップ要素を作成します。
 
-   ![ バックオフィスの ID マップ ](assets/custom-code-backoffice.png)
+   ![&#x200B; バックオフィスの ID マップ &#x200B;](assets/custom-code-backoffice.png)
    _バックオフィス ID マップの作成_
 
 1. [!UICONTROL Open Editor] を選択して、次のカスタムコードを追加します。
@@ -1406,26 +1406,26 @@ return IdentityMap;
 
 1. この新しい要素を各 `identityMap` フィールドに追加します。
 
-   ![ 各 identityMap の更新 ](assets/add-element-back-office.png)
+   ![&#x200B; 各 identityMap の更新 &#x200B;](assets/add-element-back-office.png)
    _各 identityMap の更新_
 
 ## 同意の設定
 
-Adobe Commerceに [!DNL Data Connection] 拡張機能をインストールすると、データ収集の同意がデフォルトで有効になります。 オプトアウトは、[`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja) を通じて管理されます。 `mg_dnt` を使用して同意を管理する場合は、ここで説明する手順に従ってください。 [Adobe Experience Platform Web SDKのドキュメント ](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=ja) には、同意を管理するためのいくつかの追加オプションがあります。
+Adobe Commerceに [!DNL Data Connection] 拡張機能をインストールすると、データ収集の同意がデフォルトで有効になります。 オプトアウトは、[`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja) を通じて管理されます。 `mg_dnt` を使用して同意を管理する場合は、ここで説明する手順に従ってください。 [Adobe Experience Platform Web SDKのドキュメント &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=ja) には、同意を管理するためのいくつかの追加オプションがあります。
 
 1. `mg_dnt` の cookie 用に **コアカスタムコード** データ要素（`%do not track cookie%`）を作成します。
 
-   ![ データ要素を追跡しない作成 ](assets/element-dnt-cookie.png)
+   ![&#x200B; データ要素を追跡しない作成 &#x200B;](assets/element-dnt-cookie.png)
    _データ要素を追跡しない作成_
 
 1. cookie が設定されている場合は `out` を返し、それ以外の場合は `in` を返す **コアカスタムコード** データ要素（`%consent%`）を作成します。
 
-   ![ 同意データ要素の作成 ](assets/element-consent-dnt-cookie.png)
+   ![&#x200B; 同意データ要素の作成 &#x200B;](assets/element-consent-dnt-cookie.png)
    _同意データ要素の作成_
 
 1. データ要素を使用してAdobe Experience Platform Web SDK拡張機能 `%consent%` 設定します。
 
-   ![ 同意を得てSDKを更新 ](assets/config-sdk-consent.png)
+   ![&#x200B; 同意を得てSDKを更新 &#x200B;](assets/config-sdk-consent.png)
    _同意を得てSDKを更新_
 
 ## 警告

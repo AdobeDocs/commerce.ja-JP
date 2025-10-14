@@ -50,7 +50,7 @@ Catalog Service GraphQL API の使用について詳しくは、[Adobe Commerce 
 
 ヘッドレスストアフロントと統合するには、ストアフロント設定を更新して、ストアフロントと [!DNL Catalog Service] 間の通信を有効にし、製品およびカテゴリデータを取得できるようにする必要があります。
 
-Edge Delivery ServicesでAdobe Commerce ストアフロントを使用している場合は、カタログサービスエンドポイントをストアフロント設定に追加します。 詳しくは、[Edge Delivery Services ドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=ja#storefront-configuration) を参照してください。
+Edge Delivery ServicesでAdobe Commerce ストアフロントを使用している場合は、カタログサービスエンドポイントをストアフロント設定に追加します。 詳しくは、[Edge Delivery Services ドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=ja#storefront-configuration) を参照してください。
 
 その他の統合については、プロジェクト設定のドキュメントで、サービスとバックエンドのデータソース間の統合を設定する方法の詳細を参照してください。
 
@@ -61,9 +61,9 @@ Edge Delivery ServicesでAdobe Commerce ストアフロントを使用してい�
 
 ## カタログサービスと API メッシュ
 
-Adobe Developer App Builderの [API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、デベロッパーはAdobe IO を使用して、プライベートまたはサードパーティの API およびその他のインターフェイスをAdobe製品と統合できます。
+Adobe Developer App Builderの [API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、デベロッパーはAdobe IO を使用して、プライベートまたはサードパーティの API およびその他のインターフェイスをAdobe製品と統合できます。
 
-インストールと設定について詳しくは、[[!DNL Catalog Service]  および API メッシュ ](mesh.md) に関するトピックを参照してください。
+インストールと設定について詳しくは、[[!DNL Catalog Service]  および API メッシュ &#x200B;](mesh.md) に関するトピックを参照してください。
 
 ## データ管理ダッシュボードの使用
 

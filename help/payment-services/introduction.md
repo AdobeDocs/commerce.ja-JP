@@ -22,15 +22,15 @@ Adobe CommerceとMagento Open Sourceの [!DNL Payment Services] は、Commerce w
 
 支払いサービスは次のとおりです。
 
-![ チェック ](assets/icon-check.png) 設定と保守が容易
+![&#x200B; チェック &#x200B;](assets/icon-check.png) 設定と保守が容易
 
-![ チェック ](assets/icon-check.png) 利益を最大化するように設計されています
+![&#x200B; チェック &#x200B;](assets/icon-check.png) 利益を最大化するように設計されています
 
-![ チェック ](assets/icon-check.png) 安全かつセキュア
+![&#x200B; チェック &#x200B;](assets/icon-check.png) 安全かつセキュア
 
-![ チェック ](assets/icon-check.png) お客様のすべての支払いニーズを満たすように設計
+![&#x200B; チェック &#x200B;](assets/icon-check.png) お客様のすべての支払いニーズを満たすように設計
 
-![ チェック ](assets/icon-check.png) 管理内で自己完結型
+![&#x200B; チェック &#x200B;](assets/icon-check.png) 管理内で自己完結型
 
 >[!ENDSHADEBOX]
 
@@ -42,14 +42,14 @@ Commerceの質の高いエクスペリエンスに対する需要は高く、統
 
 1. **[支払いオプション](payments-options.md)** - デビットカードやクレジットカードのフィールド、デジタルウォレット、PayPal の製品やサービスなど、ストア（またはマルチストア）の顧客が使用できる方法をカスタマイズするための複数の支払いオプション。
 
-1. **効率的なチェックアウト・エクスペリエンス**：迅速かつシンプルなチェックアウトに関する障壁を取り除き、[ カード・ヴォールティング ](vaulting.md) によって常連客を生み出します。
+1. **効率的なチェックアウト・エクスペリエンス**：迅速かつシンプルなチェックアウトに関する障壁を取り除き、[&#x200B; カード・ヴォールティング &#x200B;](vaulting.md) によって常連客を生み出します。
 
 1. **カスタマイズされたチェックアウトフロー** - コマースジャーニーの様々な段階でチェックアウトオプションを提供して、購入プロセス中の摩擦を減らし、コンバージョン率を高めます。
 
-1. **[GraphQLとのヘッドレス互換性 ](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)** - マーチャントは、フロントエンド開発のために REST およびSOAP web API の代替手段を使用できます。
+1. **[GraphQLとのヘッドレス互換性 &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)** - マーチャントは、フロントエンド開発のために REST およびSOAP web API の代替手段を使用できます。
 
-1. **財務報告** - [ 支払いの詳細 ](order-payment-status.md) と注文を同期して、処理済みのボリューム、支払い残高、[ 支払い ](payouts.md)、詳細な [ トランザクションレベルのレポート ](reporting.md) に対する完全な透明性を取得し、財務調整を行い、トランザクションの可視性を最大限に高めます。
+1. **財務報告** - [&#x200B; 支払いの詳細 &#x200B;](order-payment-status.md) と注文を同期して、処理済みのボリューム、支払い残高、[&#x200B; 支払い &#x200B;](payouts.md)、詳細な [&#x200B; トランザクションレベルのレポート &#x200B;](reporting.md) に対する完全な透明性を取得し、財務調整を行い、トランザクションの可視性を最大限に高めます。
 
 >[!NOTE]
 >
-> ここで説明する機能の一部は、まだ市場で利用できない場合があります。 詳しくは、[ 互換性 ](compatibility.md) を参照してください。
+> ここで説明する機能の一部は、まだ市場で利用できない場合があります。 詳しくは、[&#x200B; 互換性 &#x200B;](compatibility.md) を参照してください。

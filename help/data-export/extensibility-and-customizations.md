@@ -14,17 +14,17 @@ ht-degree: 0%
 
 [!DNL Commerce Data Export] 拡張機能を使用すると、[!DNL Commerce] アプリケーションからCommerce サービス（Live Search、カタログサービス、Product Recommendations など）にデータを書き出すことができます。 必要に応じて、フィードデータを拡張およびカスタマイズして追加の属性データを含めたり、収集したデータを変更したりできます。
 
-属性データを追加した後、ストアフロントサービスのGraphQL スキーマの [ 属性 ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) フィールドからアクセスできます。
+属性データを追加した後、ストアフロントサービスのGraphQL スキーマの [&#x200B; 属性 &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) フィールドからアクセスできます。
 
 >[!NOTE]
 >
->フィードデータを追加または変更すると、Commerce バックエンドのパフォーマンスと処理ロジックに影響を与える可能性があります。 実稼動環境に結合する前に、カスタマイズされたコードをテストします。 バックエンドにデータを追加する代わりに、API メッシュを使用してカタログサービスのGraphQL スキーマを拡張します。 設定について詳しくは、[ カタログサービスと API メッシュ ](../catalog-service/mesh.md) を参照してください。
+>フィードデータを追加または変更すると、Commerce バックエンドのパフォーマンスと処理ロジックに影響を与える可能性があります。 実稼動環境に結合する前に、カスタマイズされたコードをテストします。 バックエンドにデータを追加する代わりに、API メッシュを使用してカタログサービスのGraphQL スキーマを拡張します。 設定について詳しくは、[&#x200B; カタログサービスと API メッシュ &#x200B;](../catalog-service/mesh.md) を参照してください。
 
 ## 製品フィードでのシステム属性データの拡張
 
 製品フィードには、製品の処理に必要な、または消費者によって一般的に使用されるデフォルトのシステム属性が含まれています。 製品フィードに追加することで、製品フィードに追加のシステム属性を含めることができます。
 
-このタスクを完了するには、`magento/catalog-data-exporter` モジュールを更新して、追加のシステム属性を [ 依存関係インジェクション設定ファイル ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）に追加します。
+このタスクを完了するには、`magento/catalog-data-exporter` モジュールを更新して、追加のシステム属性を [&#x200B; 依存関係インジェクション設定ファイル &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）に追加します。
 
 製品属性クエリに属性 `Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery` 追加します。
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## Adobe Commerceへの製品属性の追加
 
-開発者は、次のいずれかの方法を使用して、[ 製品属性フィールド ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields) からアクセスできる製品属性を追加できます。
+開発者は、次のいずれかの方法を使用して、[&#x200B; 製品属性フィールド &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields) からアクセスできる製品属性を追加できます。
 
 - Adobe Commerce ストアフロントサービスに書き出した `products` フィードデータに含めるために、Commerceに属性を追加します。
 - プラグインを使用したフィード同期プロセス中に、属性を動的に追加します。
@@ -59,7 +59,7 @@ product 属性は、Commerce管理者から、またはカスタム PHP モジ�
 
 1. 必要に応じて、属性を属性セットに追加します。
 
-[2&rbrace;Adobe Commerce管理ガイド ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) 製品属性の作成 *を参照してください。*
+[2&rbrace;Adobe Commerce管理ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) 製品属性の作成 *を参照してください。*
 
 #### プログラムによる製品属性の作成
 
@@ -70,8 +70,8 @@ product 属性は、Commerce管理者から、またはカスタム PHP モジ�
 - **`user_defined`=`1`** - データ同期中にストアフロント・サービスに属性をエクスポートします
 - **`used_in_product_listing`=`1`** – 製品リスト・データベース・クエリー内で属性をアクセス可能にします。
 
-データパッチの作成については、『 *PHP 開発者ガイド* の [ データおよびスキーマパッチの開発 ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) を参照してください。
+データパッチの作成については、『 *PHP 開発者ガイド* の [&#x200B; データおよびスキーマパッチの開発 &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) を参照してください。
 
 ### 製品属性の動的な追加
 
-新しい EAV 属性を導入せずに製品属性を動的に作成する方法について詳しくは、[ 属性の動的な追加 ](add-attribute-dynamically.md) を参照してください。
+新しい EAV 属性を導入せずに製品属性を動的に作成する方法について詳しくは、[&#x200B; 属性の動的な追加 &#x200B;](add-attribute-dynamically.md) を参照してください。

@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # [!DNL Catalog Service and API Mesh]
 
-Adobe Developer App Builderの [API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、デベロッパーはAdobe I/O Runtimeを使用して、プライベートまたはサードパーティの API およびその他のインターフェイスをAdobe製品と統合できます。
+Adobe Developer App Builderの [API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、デベロッパーはAdobe I/O Runtimeを使用して、プライベートまたはサードパーティの API およびその他のインターフェイスをAdobe製品と統合できます。
 
-![ カタログのアーキテクチャ図 ](assets/catalog-service-architecture-mesh.png)
+![&#x200B; カタログのアーキテクチャ図 &#x200B;](assets/catalog-service-architecture-mesh.png)
 
 カタログサービスで API メッシュを使用するには、API メッシュをインスタンスに接続し、カタログサービスに接続するための設定を提供する API メッシュソース [CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/) を追加する必要があります。
 
 ## API メッシュを接続して設定します。
 
-1. _API メッシュ開発者ガイド_ の [ メッシュを作成する ](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) 手順に従って、Adobe Commerce インスタンスに API メッシュを接続します。
+1. _API メッシュ開発者ガイド_ の [&#x200B; メッシュを作成する &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) 手順に従って、Adobe Commerce インスタンスに API メッシュを接続します。
 
-   API メッシュを初めて使用する場合は、メッシュを作成する前に [ はじめに ](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) プロセスを完了してください。
+   API メッシュを初めて使用する場合は、メッシュを作成する前に [&#x200B; はじめに &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) プロセスを完了してください。
 
 1. 次の形式を使用して、プロジェクトの Catalog Service API キーを含む `variables.json` などの JSON ファイルを作成します。
 

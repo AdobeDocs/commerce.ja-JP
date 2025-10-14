@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # [!DNL Product Recommendations] の概要
 
-製品レコメンデーションは、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる強力なマーケティングツールです。 Adobe Commerceの製品レコメンデーションは、人工知能と機械学習アルゴリズムを使用して集計された訪問者データの詳細な分析を実行する [0&rbrace;Adobe Sensei&rbrace; を活用しています。 ](https://www.adobe.com/sensei.html)このデータをAdobe Commerce カタログと組み合わせると、非常に魅力的で関連性が高く、パーソナライズされたエクスペリエンスが実現します。
+製品レコメンデーションは、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる強力なマーケティングツールです。 Adobe Commerceの製品レコメンデーションは、人工知能と機械学習アルゴリズムを使用して集計された訪問者データの詳細な分析を実行する [0&rbrace;Adobe Sensei&rbrace; を活用しています。 &#x200B;](https://www.adobe.com/sensei.html)このデータをAdobe Commerce カタログと組み合わせると、非常に魅力的で関連性が高く、パーソナライズされたエクスペリエンスが実現します。
 
 レコメンデーション商品は、「この商品を閲覧したお客様も閲覧しました」などのラベル付きユニットとしてストアフロントに表示されます。 Adobe Commerce管理者から直接、ストアビュー全体でレコメンデーションを作成、管理およびデプロイできます。
 
-ストアフロントがPWA Studioを使用して実装されている場合は、[PWA ドキュメント ](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) を参照してください。 React や Vue JS などのカスタムフロントエンドテクノロジーを使用している場合は、ヘッドレスストアフロントに [ を ](headless.md) 統合 [!DNL Product Recommendations] する方法を説明します。
+ストアフロントがPWA Studioを使用して実装されている場合は、[PWA ドキュメント &#x200B;](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) を参照してください。 React や Vue JS などのカスタムフロントエンドテクノロジーを使用している場合は、ヘッドレスストアフロントに [&#x200B; を &#x200B;](headless.md) 統合 [!DNL Product Recommendations] する方法を説明します。
 
 >[!NOTE]
 >
@@ -25,13 +25,13 @@ ht-degree: 0%
 
 ## プライバシー
 
-[!DNL Product Recommendations] の目的でのデータ収集には、個人を特定できる情報（PII）は含まれません。 また、Cookie ID や IP アドレスなどのすべてのユーザー識別子は、厳密に匿名化されます。 詳しくは、[Adobeのプライバシーポリシー ](https://www.adobe.com/privacy/policy.html) を参照してください。
+[!DNL Product Recommendations] の目的でのデータ収集には、個人を特定できる情報（PII）は含まれません。 また、Cookie ID や IP アドレスなどのすべてのユーザー識別子は、厳密に匿名化されます。 詳しくは、[Adobeのプライバシーポリシー &#x200B;](https://www.adobe.com/privacy/policy.html) を参照してください。
 
-デ [!DNL Product Recommendations] タ同期について詳しくは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=ja) を参照してください。
+デ [!DNL Product Recommendations] タ同期について詳しくは、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=ja) を参照してください。
 
 ## 製品レコメンデーションと製品の関係
 
-オンラインショッピングの複雑さが絶えず変化していることを考えると、ストアフロントに最適なものは、多くの場合、複数の主要なテクノロジーの組み合わせです。 [!DNL Product Recommendations] と [ 製品の関係 ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html?lang=ja) の両方を使用すると、製品のプロモーションをより柔軟に行うことができます。 Adobe Senseiを活用した [!DNL Product Recommendations] を活用して、レコメンデーションを大規模にインテリジェントに自動化できます。 その後、手動で介入して、ターゲットの買い物客セグメントに対して特定のレコメンデーションが行われていることを確認する必要がある場合や、特定のビジネス目標を満たす必要がある場合は、[ 関連製品ルール ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html?lang=ja) を活用できます。
+オンラインショッピングの複雑さが絶えず変化していることを考えると、ストアフロントに最適なものは、多くの場合、複数の主要なテクノロジーの組み合わせです。 [!DNL Product Recommendations] と [&#x200B; 製品の関係 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html?lang=ja) の両方を使用すると、製品のプロモーションをより柔軟に行うことができます。 Adobe Senseiを活用した [!DNL Product Recommendations] を活用して、レコメンデーションを大規模にインテリジェントに自動化できます。 その後、手動で介入して、ターゲットの買い物客セグメントに対して特定のレコメンデーションが行われていることを確認する必要がある場合や、特定のビジネス目標を満たす必要がある場合は、[&#x200B; 関連製品ルール &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html?lang=ja) を活用できます。
 
 製品レコメンデーションを使用すると、次のことが可能です。
 
@@ -49,4 +49,4 @@ ht-degree: 0%
 
 テスト環境でカタログデータのクエリを 90 日間連続で送信しない場合、カタログデータは休止モードに設定され、クエリに対してデータが返されません。 実稼動環境のカタログデータは、このポリシーの影響を受けません。
 
-テスト環境でカタログデータを再アクティブ化するには、「[ を再アクティブ化 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) というタイトルで [!DNL Product Recommendations] サポートリクエストを送信」し、環境 ID を含めます。 テスト環境のカタログデータは、数時間以内に復元する必要があります。
+テスト環境でカタログデータを再アクティブ化するには、「[&#x200B; を再アクティブ化 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) というタイトルで [!DNL Product Recommendations] サポートリクエストを送信」し、環境 ID を含めます。 テスト環境のカタログデータは、数時間以内に復元する必要があります。

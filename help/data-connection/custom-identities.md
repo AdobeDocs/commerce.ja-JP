@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->注文に [ カスタム属性を追加 ](custom-attributes.md) する方法を説明します。
+>注文に [&#x200B; カスタム属性を追加 &#x200B;](custom-attributes.md) する方法を説明します。
 
 ## 利点
 
@@ -37,13 +37,13 @@ ht-degree: 0%
 ## 手順 1:Experience Platform スキーマを設定する
 
 1. Adobe Experience Platformにログインし、Commerce スキーマを選択します。
-1. ルートレベルで [ カスタム ID フィールドを追加 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups) します。
+1. ルートレベルで [&#x200B; カスタム ID フィールドを追加 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups) します。
    - `hashedPID` （String） - プライマリ ID ハッシュ
    - `hashedSID` （String） -セカンダリID ハッシュ
    - `primaryID` （String） -プライマリID フィールド名
    - `secondaryID` （String） -セカンダリID フィールド名
 
-![Experience Platform スキーマの設定 ](./assets/aep-schema-configuration.png)
+![Experience Platform スキーマの設定 &#x200B;](./assets/aep-schema-configuration.png)
 
 >[!NOTE]
 >

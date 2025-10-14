@@ -25,7 +25,7 @@ ht-degree: 0%
 | SaaS エクスポート ログ | `saas-export.log` | Commerce SaaS サービスに送信されるデータに関する情報を提供します。 |
 | SaaS エクスポート エラーログ | `saas-export-errors.log` | Commerce SaaS サービスにデータを送信する際に発生するエラーについて説明します。 |
 
-Adobe Commerce サービスで予期されたデータが表示されない場合は、データエクスポート拡張機能のエラーログを使用して問題の発生場所を特定してください。 また、トラッキングやトラブルシューティングのために、追加データを使用してログを拡張することもできます。 [ 拡張ログ ](#extended-logging) を参照してください。
+Adobe Commerce サービスで予期されたデータが表示されない場合は、データエクスポート拡張機能のエラーログを使用して問題の発生場所を特定してください。 また、トラッキングやトラブルシューティングのために、追加データを使用してログを拡張することもできます。 [&#x200B; 拡張ログ &#x200B;](#extended-logging) を参照してください。
 
 ### ログ形式
 
@@ -129,7 +129,7 @@ Commerce Services のデータが見つからない場合や誤っている場�
 - データ書き出しエラーログ（`commerce-data-export-errors.log`）には、収集段階で発生したエラーが記録されます。
 - SaaS 書き出しエラーログ（`saas-export-errors.log`）は、送信段階で発生したエラーをキャプチャします。
 
-設定やサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を記載した [ サポートチケット ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) を送信します。
+設定やサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を記載した [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) を送信します。
 
 ### カタログ同期の問題を解決 {#resolvesync}
 
@@ -140,7 +140,7 @@ Commerce Services のデータが見つからない場合や誤っている場�
 1. 検索結果に、該当する製品の詳細ビューを表示します。
 1. JSON 出力をコピーし、コンテンツが [!DNL Commerce] カタログの内容と一致することを確認します。
 1. コンテンツが一致しない場合は、スペースやピリオドの追加など、カタログの製品に小さな変更を加えます。
-1. 再同期を待つか、[ 手動の再同期をトリガーしてください ](#resync)。
+1. 再同期を待つか、[&#x200B; 手動の再同期をトリガーしてください &#x200B;](#resync)。
 
 #### 同期が実行されていません
 
@@ -148,7 +148,7 @@ Commerce Services のデータが見つからない場合や誤っている場�
 
 #### 同期できませんでした
 
-カタログ同期のステータスが **失敗** の場合は、[ サポートチケット ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) を送信します。
+カタログ同期のステータスが **失敗** の場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) を送信します。
 
 ## 拡張ログ
 

@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # ファセット
 
-ファセットは、複数のディメンションの属性値を検索条件として使用する、高パフォーマンスのフィルタリング方法です。 ファセット検索も似ていますが、標準の [ レイヤー化されたナビゲーション ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja) よりも大幅に「スマート」です。 使用可能なフィルターのリストは、検索結果で返される製品の [ フィルタリング可能な属性 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja#filterable-attributes) によって決まります。
+ファセットは、複数のディメンションの属性値を検索条件として使用する、高パフォーマンスのフィルタリング方法です。 ファセット検索も似ていますが、標準の [&#x200B; レイヤー化されたナビゲーション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja) よりも大幅に「スマート」です。 使用可能なフィルターのリストは、検索結果で返される製品の [&#x200B; フィルタリング可能な属性 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja#filterable-attributes) によって決まります。
 
-[!DNL Live Search] は `productSearch` クエリを使用して、[!DNL Live Search] に固有のファセットやその他のデータを返します。 コード例については [`productSearch` 開発者向けドキュメントの ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) クエリを参照してください。
+[!DNL Live Search] は `productSearch` クエリを使用して、[!DNL Live Search] に固有のファセットやその他のデータを返します。 コード例については [`productSearch` 開発者向けドキュメントの &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) クエリを参照してください。
 
-![ フィルタリングされた検索結果 ](assets/storefront-search-results-run.png)
+![&#x200B; フィルタリングされた検索結果 &#x200B;](assets/storefront-search-results-run.png)
 
 ファセット内で、買い物客は「スタイル」の「基本」や「スナッグ」など、複数のオプションを選択でき、検索結果はこれらのスタイルのみを表示するように更新されます。 同様に、買い物客がファセットをまたいだオプション（「スタイル」の「基本」や「気候」の「屋内」など）を選択すると、検索結果が更新され、選択したスタイルと選択した気候が表示されます。
 
@@ -29,16 +29,16 @@ ht-degree: 0%
 >
 >製品カテゴリをファセットとして定義した場合、ファセットにはカテゴリとサブカテゴリの `url_path` が表示されます。
 >
->![ カテゴリファセット ](assets/facet-category.png)
+>![&#x200B; カテゴリファセット &#x200B;](assets/facet-category.png)
 
-[ のファセット要件について詳しくは、](./boundaries-limits.md#facets) 境界と制限 [!DNL Live Search] を参照してください。
+[&#x200B; のファセット要件について詳しくは、](./boundaries-limits.md#facets) 境界と制限 [!DNL Live Search] を参照してください。
 
 競合する属性が多数ある場合は、属性を 1 つの「meta-attribute」に組み合わせることを検討してください。 例えば、靴は一般的に数値サイズ、シャツは一般的に「S/M/L/XL」サイズです。 これら 2 種類のサイズを 1 つの検索可能な属性に組み合わせることができます。
 
 | 設定 | 説明 |
 |--- |--- |
-| [ カテゴリの表示設定 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=ja) | アンカー – `Yes` |
-| [ 属性プロパティ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) | [ カタログ入力タイプ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=ja) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （ウィジェットのみ）、`Text swatch` （ウィジェットのみ） |
+| [&#x200B; カテゴリの表示設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=ja) | アンカー – `Yes` |
+| [&#x200B; 属性プロパティ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) | [&#x200B; カタログ入力タイプ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=ja) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （ウィジェットのみ）、`Text swatch` （ウィジェットのみ） |
 | 属性ストアフロント プロパティ | 検索結果での使用階層ナビゲーション - `Yes` |
 
 ## ファセットの集約
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## デフォルトの属性値
 
-次の製品属性には [storefront プロパティ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=ja) があり、[!DNL Live Search] で使用され、デフォルトで有効になっています。
+次の製品属性には [storefront プロパティ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=ja) があり、[!DNL Live Search] で使用され、デフォルトで有効になっています。
 
 | プロパティ | Storefront プロパティ | 属性 |
 |---|---|---|

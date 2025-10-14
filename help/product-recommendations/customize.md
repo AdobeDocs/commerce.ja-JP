@@ -14,7 +14,7 @@ Product Recommendations モジュールをインストールすると、Adobe Co
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-テンプレートファイルの変更について詳しくは、フロントエンド開発者ガイドの [ テンプレートのカスタマイズ ](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) を参照してください。
+テンプレートファイルの変更について詳しくは、フロントエンド開発者ガイドの [&#x200B; テンプレートのカスタマイズ &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) を参照してください。
 
 `recommendations.html` ファイルを変更する場合、Adobe Commerceがストアフロントからレコメンデーション指標を収集できるように、ファイルに次のタグを保持する必要があります。
 
@@ -34,7 +34,7 @@ Product Recommendations モジュールをインストールすると、Adobe Co
 
 ## レコメンデーションユニットの配置
 
-レコメンデーションを [ 作成 ](create.md) する際には、ページ上に表示される [ 場所 ](placement.md) を指定します。 レコメンデーションユニットは、メインコンテンツコンテナの上部または下部に配置できます。 ただし、このプレースメントをカスタマイズすることはできます。 ページビルダーのレコメンデーションコンテンツタイプを作成する場合は、ページビルダーツールを使用して、ページ上にレコメンデーション単位を配置します。 その他のすべてのページタイプについては、レコメンデーションの作成時に生成される `*.xml` ファイルを編集します。
+レコメンデーションを [&#x200B; 作成 &#x200B;](create.md) する際には、ページ上に表示される [&#x200B; 場所 &#x200B;](placement.md) を指定します。 レコメンデーションユニットは、メインコンテンツコンテナの上部または下部に配置できます。 ただし、このプレースメントをカスタマイズすることはできます。 ページビルダーのレコメンデーションコンテンツタイプを作成する場合は、ページビルダーツールを使用して、ページ上にレコメンデーション単位を配置します。 その他のすべてのページタイプについては、レコメンデーションの作成時に生成される `*.xml` ファイルを編集します。
 
 1. `layout` ディレクトリに移動します。
 
@@ -102,7 +102,7 @@ Product Recommendations モジュールをインストールすると、Adobe Co
 
    この変更により、レコメンデーションユニットが製品の詳細ページの製品画像の後に表示されます。 レコメンデーションユニットを `product.info.media` の前に表示する場合は、`after="-"` 属性を `before="-"` に変更します。 `pagePlacement` 引数は内部引数であり、変更しないでください。
 
-ページ上のブロックのタイプについて詳しくは、[ レイアウトの概要 ](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) を参照してください。
+ページ上のブロックのタイプについて詳しくは、[&#x200B; レイアウトの概要 &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) を参照してください。
 
 ## カスタム製品属性
 
@@ -110,9 +110,9 @@ Product Recommendations モジュールをインストールすると、Adobe Co
 
 例えば、店舗で一部のオーガニック製品を販売している場合、それらの製品を `Organic = Yes` として指定するカスタム属性がある可能性があります。 これらの製品が Recommendations に表示された際に特別な視覚的処理を提供できるように、ストアフロントでこの属性値にアクセスする必要がある場合があります。 同様に、これらのカスタム製品属性値にアクセスすると、製品のバッジを付けたり、サイトのプレゼンテーションレイヤーでカスタムロジックを推進したりできます。
 
-![ バッジを追加 ](assets/unit-custom.png)
+![&#x200B; バッジを追加 &#x200B;](assets/unit-custom.png)
 
-ページでレコメンデーションユニットをレンダリングする際に、カスタムの製品属性が使用可能であることを確認するには、管理者の [ 製品属性 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) ページで `Used in Product Listing` プロパティを `Yes` に設定します。
+ページでレコメンデーションユニットをレンダリングする際に、カスタムの製品属性が使用可能であることを確認するには、管理者の [&#x200B; 製品属性 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) ページで `Used in Product Listing` プロパティを `Yes` に設定します。
 
 このプロパティを設定すると、JSON ペイロードには、属性コードと値の配列を含む `attributes` オブジェクトが含まれます。 その後、これらの属性値に基づいて、カスタムストアフロントのスタイル設定を適用できます（前述のように特別なビジュアル処理やバッジの追加など）。
 

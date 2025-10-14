@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Adobe Commerceの追加製品属性モジュールは、製品データフィードを拡張します。 これには、Adobe Commerce製品コンフィギュレーションからの追加の製品属性が含まれます。
 
-* [ 税分 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
-* [ 属性セット ](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
-* [ 在庫 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
+* [&#x200B; 税分 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
+* [&#x200B; 属性セット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
+* [&#x200B; 在庫 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
 インストールが完了すると、モジュールは自動的に動作します。 製品の同期中に、追加の属性を取得して書き出します。 追加の設定は必要ありません。
 
@@ -158,7 +158,7 @@ Commerce カタログサービスに税クラスデータを書き出すと、�
 * [Adobe Commerce Data Export extension](manage-extension.md#update-a-module-to-a-specific-version)、バージョン 103.4.11 以降
 * [repo.magento.com](https://repo.magento.com) へのアクセス
 
-  キーを生成し必要な権限を取得するには、[ 認証キーの取得 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) を参照してください。 クラウドインストールについては、[Commerce on Cloud Infrastructure ガイド ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/authentication-keys) を参照してください。
+  キーを生成し必要な権限を取得するには、[&#x200B; 認証キーの取得 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) を参照してください。 クラウドインストールについては、[Commerce on Cloud Infrastructure ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/authentication-keys) を参照してください。
 * Adobe Commerce アプリケーションサーバーのコマンドラインにアクセスします。
 
 ### インストール手順
@@ -171,8 +171,8 @@ composer require adobe-commerce/module-extra-product-attributes
 
 インストール手順について詳しくは、次のガイドを参照してください。
 
-* [ クラウドインフラストラクチャー上のAdobe Commerceに拡張機能をインストール ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [ 拡張機能Adobe Commerceをオンプレミスでインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extension)
+* [&#x200B; クラウドインフラストラクチャー上のAdobe Commerceに拡張機能をインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [&#x200B; 拡張機能Adobe Commerceをオンプレミスでインストール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extension)
 
 ## 製品データの同期
 
@@ -200,9 +200,9 @@ bin/magento saas:resync --feed=productAttributes
 
 * 管理画面でインベントリ設定が正しく構成されていることを確認します
 * Web サイト固有のインベントリの上書きを確認する
-* [Inventory management モジュール ](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/guide-overview) が正しく動作していることを確認します
+* [Inventory management モジュール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/guide-overview) が正しく動作していることを確認します
 
-詳しくは、[Adobe Commerce マーチャントドキュメント ](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/guide-overview)*Inventory managementガイド* を参照してください。
+詳しくは、[Adobe Commerce マーチャントドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/guide-overview)*Inventory managementガイド* を参照してください。
 
 **パフォーマンス上の問題：**
 
@@ -213,5 +213,5 @@ bin/magento saas:resync --feed=productAttributes
 
 モジュールログでは、標準のCommerce ログシステムにエラーと警告が書き出されます。 製品の同期中に問題が発生した場合は、データの書き出しログを確認します。
 
-詳しくは、[ ログの確認とトラブルシューティング ](troubleshooting-logging.md) を参照してください。
+詳しくは、[&#x200B; ログの確認とトラブルシューティング &#x200B;](troubleshooting-logging.md) を参照してください。
 

@@ -19,15 +19,15 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce] と [!DNL Magento Open Source] には、複数のセキュリティ機能がサポートされています。
 
-セキュリティのベストプラクティスを確認し、管理セッションと資格情報の管理、CAPTCHA の実装、web サイト制限の管理方法については、コアユーザーガイドの [ セキュリティ ](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security){target="_blank"} を参照してください。
+セキュリティのベストプラクティスを確認し、管理セッションと資格情報の管理、CAPTCHA の実装、web サイト制限の管理方法については、コアユーザーガイドの [&#x200B; セキュリティ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/security){target="_blank"} を参照してください。
 
 ## PCI コンプライアンス
 
 Payment Card Industry （PCI）は、インターネット上でクレジットカードによる支払いを受け入れる企業に対して一連の要件を確立しました。 顧客のクレジットカード情報を扱うマーチャントは、安全な環境を維持するだけでなく、いくつかの標準的なガイドラインを満たす責任があります。
 
-詳しくは、[PCI コンプライアンスガイドライン ](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} を参照してください。
+詳しくは、[PCI コンプライアンスガイドライン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"} を参照してください。
 
-マーチャントは、カード所有者データのセキュリティを評価するための自己検証ツールである [ 自己評価アンケート （SAQ） ](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"} を完了できます。
+マーチャントは、カード所有者データのセキュリティを評価するための自己検証ツールである [&#x200B; 自己評価アンケート （SAQ） &#x200B;](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"} を完了できます。
 
 ### クレジットカードのフィールド
 
@@ -39,24 +39,24 @@ PCI 3-D Secure （3DS）は、オンラインでのクレジットカード購�
 
 [!UICONTROL Payment Services] は、マーチャントが EU 規制に準拠し、ストア内での不正行為から顧客やマーチャントを保護するための 3DS 機能を提供します。
 
-3DS コンプライアンスが必要な EU または英国のマーチャントの場合は、`Off`Configuration Admin[ で手動で 3DS をオンにする必要があります（デフォルトでは ](configure-admin.md#credit-card-fields) です）。
+3DS コンプライアンスが必要な EU または英国のマーチャントの場合は、`Off`Configuration Admin[&#x200B; で手動で 3DS をオンにする必要があります（デフォルトでは &#x200B;](configure-admin.md#credit-card-fields) です）。
 
 >[!IMPORTANT]
 >
->3DS 要件は、ビジネスとカード所有者の銀行が [ 欧州経済地域 ](https://www.efta.int/eea) （EEA）と英国に所在する取引に適用されます。 米国のマーチャントは 3DS を必要としませんが、必要に応じて取引で有効にすることができます。
+>3DS 要件は、ビジネスとカード所有者の銀行が [&#x200B; 欧州経済地域 &#x200B;](https://www.efta.int/eea) （EEA）と英国に所在する取引に適用されます。 米国のマーチャントは 3DS を必要としませんが、必要に応じて取引で有効にすることができます。
 
 商店の担当者が購入者に対して行った注文は、3DS コンプライアンス対策で構成されていません。
 
 >[!MORELIKETHIS]
 >
 > * 詳しくは、設定の [3DS](configure-admin.md#3ds) を参照してください。
-> * 3DS テスト用の特定のクレジットカードについて詳しくは、PayPal 開発者用ドキュメントの [ テストカード ](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/) を参照してください。
+> * 3DS テスト用の特定のクレジットカードについて詳しくは、PayPal 開発者用ドキュメントの [&#x200B; テストカード &#x200B;](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/) を参照してください。
 
 ### カードボルト
 
-買い物客 [Vault）（クレジットカード情報を「保存」する）と ](vaulting.md) 店舗での今後の購入で、最小限のクレジットカード情報が買い物客（最後の 4 桁、カードの有効期限、カードのブランド）と共有されます。 クレジットカード情報は、支払いプロバイダに保存されます。 カードの有効期限が切れたり、情報を保存する必要がなくなった場合は、そのトークンを削除して、支払いプロバイダーが情報を保存しないようにすることができます。
+買い物客 [Vault）（クレジットカード情報を「保存」する）と &#x200B;](vaulting.md) 店舗での今後の購入で、最小限のクレジットカード情報が買い物客（最後の 4 桁、カードの有効期限、カードのブランド）と共有されます。 クレジットカード情報は、支払いプロバイダに保存されます。 カードの有効期限が切れたり、情報を保存する必要がなくなった場合は、そのトークンを削除して、支払いプロバイダーが情報を保存しないようにすることができます。
 
-詳しくは、[ クレジットカードボルト ](vaulting.md) を参照してください。
+詳しくは、[&#x200B; クレジットカードボルト &#x200B;](vaulting.md) を参照してください。
 
 ### PayPal 支払いボタン
 
@@ -64,13 +64,13 @@ PayPal の支払いボタンを使用すると、PCI で規制されたデータ
 
 セキュリティ上の理由から、PayPal はチェックアウト時に請求先住所を渡しません。使用される請求情報は、国、メール、名前のみです。 オプションで、サイトの PayPal チェックアウトを有効にして、PayPal に連絡して検証プロセスを完了することにより、完全な請求先住所を返すことができます。
 
-また、PayPal は、機械学習を使用して不正との戦いを支援する統合不正対策も備えています。 詳しくは、PayPal の [ 販売者保護ドキュメント ](https://www.paypal.com/us/webapps/mpp/security/seller-protection) を参照してください。
+また、PayPal は、機械学習を使用して不正との戦いを支援する統合不正対策も備えています。 詳しくは、PayPal の [&#x200B; 販売者保護ドキュメント &#x200B;](https://www.paypal.com/us/webapps/mpp/security/seller-protection) を参照してください。
 
 ## 不正保護
 
-[Signifyd 拡張機能 ](https://commercemarketplace.adobe.com/signifyd-module-connect.html) を使用して、支払いサービスの自動不正保護を有効にできます。 詳しくは、[ 重大な不正防止 ](fraud-protection.md) を参照してください。
+[Signifyd 拡張機能 &#x200B;](https://commercemarketplace.adobe.com/signifyd-module-connect.html) を使用して、支払いサービスの自動不正保護を有効にできます。 詳しくは、[&#x200B; 重大な不正防止 &#x200B;](fraud-protection.md) を参照してください。
 
-PayPal は、開発者向けドキュメントに [ 不正保護 ](https://www.paypal.com/us/cshelp/article/what-is-fraud-protection-help1014){target=_blank} のその他のオプションを用意しています。
+PayPal は、開発者向けドキュメントに [&#x200B; 不正保護 &#x200B;](https://www.paypal.com/us/cshelp/article/what-is-fraud-protection-help1014){target=_blank} のその他のオプションを用意しています。
 
-* 詳しくは、[ 不正防止の詳細 ](https://www.paypal.com/us/enterprise/fraud-protection-advanced#fraud-protection-advanced){target=_blank} を参照してください。
-* 詳細は、「[ チャージバック保護 ](https://www.paypal.com/us/cshelp/article/what-is-chargeback-protection-help608){target=_blank}」を参照してください。
+* 詳しくは、[&#x200B; 不正防止の詳細 &#x200B;](https://www.paypal.com/us/enterprise/fraud-protection-advanced#fraud-protection-advanced){target=_blank} を参照してください。
+* 詳細は、「[&#x200B; チャージバック保護 &#x200B;](https://www.paypal.com/us/cshelp/article/what-is-chargeback-protection-help608){target=_blank}」を参照してください。

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 重大な不正保護
 
-[!DNL Payment Services]Signifyd 拡張機能 [ を使用して、](https://commercemarketplace.adobe.com/signifyd-module-connect.html) の自動不正保護を有効にできます。
+[!DNL Payment Services]Signifyd 拡張機能 [&#x200B; を使用して、](https://commercemarketplace.adobe.com/signifyd-module-connect.html) の自動不正保護を有効にできます。
 
 Adobe Commerceは、Signifyd バージョン 5.4.0 以降をサポートしています。 [!DNL Payment Services] では、認証前および認証後の Signifyd フローをサポートしています。
 
@@ -24,7 +24,7 @@ Signifyd と [!DNL Payment Services] の統合により、クレジットカー�
 >
 > [Fastlane](payments-options.md#fastlane-button) は Signifyd と互換性がありません。
 
-拡張機能のインストールと設定について詳しくは、[Signifyd のドキュメント ](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) を参照してください。
+拡張機能のインストールと設定について詳しくは、[Signifyd のドキュメント &#x200B;](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) を参照してください。
 
 ## オンボーディング
 
@@ -33,7 +33,7 @@ Signifyd と [!DNL Payment Services] の統合により、クレジットカー�
 Signifyd でオンボーディングする場合、次の操作が必要です。
 
 1. 新しいアカウントを設定する場合は、Signifyd にお問い合わせください。
-1. Signifyd は現在サポートしていない他のお支払い方法をトリガーしないように [ デフォルトで ](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md)許可リストに加えるされています。 特定の支払い方法を禁止する場合は、変更を加える必要があります。
+1. Signifyd は現在サポートしていない他のお支払い方法をトリガーしないように [&#x200B; デフォルトで &#x200B;](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md)許可リストに加えるされています。 特定の支払い方法を禁止する場合は、変更を加える必要があります。
 1. PayPal が承認できる Paypal のマーチャントの不正防止の設定を介して、PayPal が注文を拒否しないことを Signifyd に確認します。
 1. [!DNL Payment Services] と互換性を持たせるために Signifyd 拡張機能を有効にします。
    * [!DNL Payment Services] を _ライブ_ モードで使用する場合、Signifyd は実稼動モードになっている必要があります。
@@ -55,6 +55,6 @@ Signifyd は注文に対して何らかのアクションを実行するので�
   理由：[!DNL Payment Services] は、Signifyd が無効化を試行する取得トランザクションを作成します。
 
 
-[ 拡張機能の設定 ](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#configuringmagento2extension) については、Signifyd のドキュメントを参照してください。
+[&#x200B; 拡張機能の設定 &#x200B;](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#configuringmagento2extension) については、Signifyd のドキュメントを参照してください。
 
-詳しくは、Signifyd のドキュメント [ 注文ワークフローの詳細 ](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#howmagento2works) を参照してください。
+詳しくは、Signifyd のドキュメント [&#x200B; 注文ワークフローの詳細 &#x200B;](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#howmagento2works) を参照してください。

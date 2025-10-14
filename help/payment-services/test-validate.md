@@ -18,21 +18,21 @@ ht-degree: 0%
 
 サンドボックス環境での [!DNL Payment Services] のテストは、実際の銀行やマーチャントではなく、PayPal サンドボックスにのみ接続されるシミュレート環境ですが、重要な検証ステップです。
 
-1. [ クレジットカードフィールド ](payments-options.md#credit-card-fields) または [PayPal 支払いボタン ](payments-options.md#paypal-smart-buttons) のいずれかを使用して、ストアからチェックアウトを成功させます。 テストのためのフェイククレジットカードの使用について詳しくは、[ 資格情報のテスト ](#testing-credentials) を参照してください。
-1. 完了したばかりの注文をキャプチャ [ 支払いアクションが `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method) に設定されている場合）、[ 払い戻し ](refunds.md)、または [ 無効 ](voids.md) します。 支払い処理が `Authorize and Capture` ではなく `Authorize` に設定されている場合は、注文の [ 請求書を作成 ](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} することもできます。
-1. 24～48 時間以内に、トランザクションおよびその他の情報を [ 支払いレポート ](payouts.md) で確認します。
-1. 注文の詳細については、[ 注文支払いステータスレポート ](order-payment-status.md) を参照してください。
+1. [&#x200B; クレジットカードフィールド &#x200B;](payments-options.md#credit-card-fields) または [PayPal 支払いボタン &#x200B;](payments-options.md#paypal-smart-buttons) のいずれかを使用して、ストアからチェックアウトを成功させます。 テストのためのフェイククレジットカードの使用について詳しくは、[&#x200B; 資格情報のテスト &#x200B;](#testing-credentials) を参照してください。
+1. 完了したばかりの注文をキャプチャ [&#x200B; 支払いアクションが `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method) に設定されている場合）、[&#x200B; 払い戻し &#x200B;](refunds.md)、または [&#x200B; 無効 &#x200B;](voids.md) します。 支払い処理が `Authorize and Capture` ではなく `Authorize` に設定されている場合は、注文の [&#x200B; 請求書を作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} することもできます。
+1. 24～48 時間以内に、トランザクションおよびその他の情報を [&#x200B; 支払いレポート &#x200B;](payouts.md) で確認します。
+1. 注文の詳細については、[&#x200B; 注文支払いステータスレポート &#x200B;](order-payment-status.md) を参照してください。
 
 ### 資格情報のテスト
 
 サンドボックスをテストおよび検証する際は、既存のクレジットカードのアカウントに実際の料金を発生させないように、偽のクレジットカード番号を使用する必要があります。
 
-PayPal のクレジットカードジェネレーターを使用して、テスト用に [ ランダムなクレジットカード情報を生成 ](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) します。
+PayPal のクレジットカードジェネレーターを使用して、テスト用に [&#x200B; ランダムなクレジットカード情報を生成 &#x200B;](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) します。
 
 サンドボックスモードでApple Pay をテストするには：
 
 * 偽のクレジットカードと請求情報を含む [&#128279;](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)0&rbrace;Apple サンドボックステスターアカウント &rbrace; を作成します。
-* [ サンドボックスドメインを登録 ](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains)。
+* [&#x200B; サンドボックスドメインを登録 &#x200B;](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains)。
 
 >[!NOTE]
 >
@@ -51,4 +51,4 @@ PayPal のクレジットカードジェネレーターを使用して、テス�
 
 また、実稼動テストで使用する支払い方法の銀行取引明細書に表示される情報が正しく、期待どおりのものであること（ビジネスの説明を含む）も確認する必要があります。
 
-実稼動モードでApple Pay をテストするには、[ 実稼動ドメインを登録 ](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) する必要があります。
+実稼動モードでApple Pay をテストするには、[&#x200B; 実稼動ドメインを登録 &#x200B;](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) する必要があります。

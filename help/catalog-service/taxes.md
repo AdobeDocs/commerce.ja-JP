@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Developer App Builderの API メッシュで課税価格を表示
 
-[API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、デベロッパーはAdobe I/O Runtimeを使用して、プライベートまたはサードパーティの API およびその他のインターフェイスをAdobe製品と統合できます。
+[API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、デベロッパーはAdobe I/O Runtimeを使用して、プライベートまたはサードパーティの API およびその他のインターフェイスをAdobe製品と統合できます。
 
 このトピックでは、API メッシュを使用して、税金が設定された製品詳細ページに製品価格を表示します。
 
@@ -20,16 +20,16 @@ ht-degree: 0%
 
 製品の詳細ページに表示するには、税金を設定する必要があります。
 
-1. [ 税率を設定します ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=ja)。
-1. 税金を [ カタログに表示 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=ja#step-1%3A-configure-catalog-prices-display-settings) できるようにして、`Including and Excluding Tax` または `Including Tax` に設定します。
+1. [&#x200B; 税率を設定します &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=ja)。
+1. 税金を [&#x200B; カタログに表示 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=ja#step-1%3A-configure-catalog-prices-display-settings) できるようにして、`Including and Excluding Tax` または `Including Tax` に設定します。
 
 製品の詳細ページを確認して、カタログサービスが機能していることを確認します。
 
-![ 製品詳細ページに表示される税金 ](assets/display-tax.png)
+![&#x200B; 製品詳細ページに表示される税金 &#x200B;](assets/display-tax.png)
 
 ## API メッシュの設定
 
-まだ行っていない場合は、API メッシュとカタログサービスをインスタンスに接続します。 『 API メッシュ デベロッパーガイド』の [ はじめに ](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) のトピックの詳細な手順を参照してください。
+まだ行っていない場合は、API メッシュとカタログサービスをインスタンスに接続します。 『 API メッシュ デベロッパーガイド』の [&#x200B; はじめに &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) のトピックの詳細な手順を参照してください。
 
 `mesh.json` ファイルで、`name `、`endpoint`、`x-api-key` の値を
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 * `priceWithTaxes` という新しいフィールドを使用して、`ComplexProductView` 型および `SimpleProductView` 型を拡張します。
 * 新しいフィールドのカスタムリゾルバーを追加します。
 
-`mesh.json` ファイルで [create コマンド ](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) を使用してメッシュを作成します。
+`mesh.json` ファイルで [create コマンド &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) を使用してメッシュを作成します。
 
 ### GraphQL クエリ
 

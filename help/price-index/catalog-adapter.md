@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # カタログアダプタ
 
-`[!DNL Catalog Adapter]` 拡張機能は、Commerce アプリケーションに含まれているデフォルトの製品価格インデクサーを無効にし、代わりに [ カタログサービス ](../catalog-service/overview.md) から提供される価格を使用します。
+`[!DNL Catalog Adapter]` 拡張機能は、Commerce アプリケーションに含まれているデフォルトの製品価格インデクサーを無効にし、代わりに [&#x200B; カタログサービス &#x200B;](../catalog-service/overview.md) から提供される価格を使用します。
 
-このアダプタは、[SaaS データ書き出し ](../data-export/overview.md) およびAdobe Commerce サービスで動作するように設計されています。 SaaS データのエクスポートは価格の送信を担当し、[!DNL Catalog Adapter] はAdobe Commerceサービスからすべての価格を取得します。
+このアダプタは、[SaaS データ書き出し &#x200B;](../data-export/overview.md) およびAdobe Commerce サービスで動作するように設計されています。 SaaS データのエクスポートは価格の送信を担当し、[!DNL Catalog Adapter] はAdobe Commerceサービスからすべての価格を取得します。
 
 [!DNL Catalog Adapter] を有効にすると、価格のインデックス作成と操作が次のような影響を受けます。
 
 - Adobe Commerce アプリケーションに含まれる価格インデクサーが無効になっています。
-- 価格は、SaaS データのエクスポートと [SaaS 価格インデクサー ](price-indexing.md) を使用して管理されます。
+- 価格は、SaaS データのエクスポートと [SaaS 価格インデクサー &#x200B;](price-indexing.md) を使用して管理されます。
 - お客様が商品や商品の価格を表示するページを開くと、その価格はAdobe Commerce サービスから取得されます。
-- 価格は、[SaaS データ書き出し ](../data-export/overview.md) からのデータを同期してAdobe Commerce サービスに送信されます。
+- 価格は、[SaaS データ書き出し &#x200B;](../data-export/overview.md) からのデータを同期してAdobe Commerce サービスに送信されます。
 - チェックアウトでは価格が動的に再計算されます。
 
 カタログアダプタ拡張機能を削除または無効にすることで、Commerce アプリケーションで価格インデックスを再度有効にすることができます。
@@ -56,7 +56,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Commerce Adobe Commerce プロジェクト環境のローカル管理について詳しくは、[ クラウドインフラストラクチャユーザーガイドの ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/cli-branches)CLI を使用したブランチの管理 _を参照してください_。
+   >Commerce Adobe Commerce プロジェクト環境のローカル管理について詳しくは、[&#x200B; クラウドインフラストラクチャユーザーガイドの &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/cli-branches)CLI を使用したブランチの管理 _を参照してください_。
 
 1. Adobe Commerce Cloud CLI を使用して更新する環境ブランチを確認します。
 
@@ -86,7 +86,7 @@ ht-degree: 0%
    git push origin <branch-name>
    ```
 
-   アップデートをクラウド環境にプッシュすると、[Commerce クラウドデプロイメントプロセスが開始され ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/process) 変更が適用されます。 [ デプロイメントログ ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) からデプロイメントステータスを確認します。
+   アップデートをクラウド環境にプッシュすると、[Commerce クラウドデプロイメントプロセスが開始され &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/process) 変更が適用されます。 [&#x200B; デプロイメントログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) からデプロイメントステータスを確認します。
 
 >[!TAB  オンプレミス ]
 

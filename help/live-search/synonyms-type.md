@@ -17,15 +17,15 @@ ht-degree: 0%
 
 双方向同義語は同じ意味を持ち、同じ検索結果を返します。 次の例では、太字で示されている最初の単語はカタログで使用されるキーワードであり、その後に元のキーワードと同じ意味を持つ単語が続きます。 単純な双方向同義語のペアを作成することも、同じキーワードに対して複数の双方向同義語のチェーンを作成することもできます。
 
-**ジャケット**![ 双方向セレクター ](assets/btn-two-way.png) コート
-**パンツ**![ 双方向セレクター ](assets/btn-two-way.png) スラックス ![ 双方向セレクター ](assets/btn-two-way.png) ズボン
+**ジャケット**![&#x200B; 双方向セレクター &#x200B;](assets/btn-two-way.png) コート
+**パンツ**![&#x200B; 双方向セレクター &#x200B;](assets/btn-two-way.png) スラックス ![&#x200B; 双方向セレクター &#x200B;](assets/btn-two-way.png) ズボン
 
 ## 一方向
 
 一方向の同義語は、キーワードのサブセットですが、より具体的な意味を持ちます。 例えば、カプリスとショートパンツはパンツですが、すべてのパンツがカプリスやショートパンツというわけではありません。 パンツの検索には、カプリスとショートパンツが含まれています。 ただし、ショートパンツを検索してもカプリスは返されません。
 
-**sweatshirt**![ 一方向セレクター ](assets/btn-one-way.png) パーカー
-**パンツ**![ 一方向セレクター ](assets/btn-one-way.png) カプリス ![ 複数一方向セレクター ](assets/btn-multiple-one-way.png) ふくらはぎ長パンツ ![ 複数一方向セレクター ](assets/btn-multiple-one-way.png) ペドルプッシャー
+**sweatshirt**![&#x200B; 一方向セレクター &#x200B;](assets/btn-one-way.png) パーカー
+**パンツ**![&#x200B; 一方向セレクター &#x200B;](assets/btn-one-way.png) カプリス ![&#x200B; 複数一方向セレクター &#x200B;](assets/btn-multiple-one-way.png) ふくらはぎ長パンツ ![&#x200B; 複数一方向セレクター &#x200B;](assets/btn-multiple-one-way.png) ペドルプッシャー
 
 ## ベストプラクティス
 
@@ -49,10 +49,10 @@ a、an、and、are、as、at、be、but、by、for、if、in、into、is、it、
 
 ## 複数ワードの同義語の動作
 
-複数語の同義語の場合、Commerceは同義語をフレーズと見なします。 例えば、双方向同義語 **ダイニングルームテーブル**![ 双方向セレクター ](assets/btn-two-way.png)**キッチンテーブル**![ 双方向セレクター ](assets/btn-two-way.png)**ダイニングテーブル** を作成した場合、Commerceは検索可能に設定されたすべてのフィールドで **ダイニングルームテーブル**、**キッチンテーブル** または **ダイニングテーブル** を検索します。
+複数語の同義語の場合、Commerceは同義語をフレーズと見なします。 例えば、双方向同義語 **ダイニングルームテーブル**![&#x200B; 双方向セレクター &#x200B;](assets/btn-two-way.png)**キッチンテーブル**![&#x200B; 双方向セレクター &#x200B;](assets/btn-two-way.png)**ダイニングテーブル** を作成した場合、Commerceは検索可能に設定されたすべてのフィールドで **ダイニングルームテーブル**、**キッチンテーブル** または **ダイニングテーブル** を検索します。
 
 同義語が作成されず、買い物客が **kitchen table** を検索する場合、Commerceは、検索可能なフィールドの任意の場所で用語を検索します。例えば、name フィールドに **table**、meta キーワードに **kitchen** など、異なるフィールド間でも検索されます。
 
 同義語を作成した後、検索動作が変わり、正確な語句 **キッチンテーブル** が検索されます。 これにより、完全に一致する語句を含んだ製品のみが表示されるので、結果の数が減少する可能性があります。
 
-以前と同様に用語を個別に検索する場合は、[ サポートチケットを作成 ](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) できます。 十分な需要がある場合、Commerceは将来のリリースでこの機能を製品に追加することを検討します。
+以前と同様に用語を個別に検索する場合は、[&#x200B; サポートチケットを作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) できます。 十分な需要がある場合、Commerceは将来のリリースでこの機能を製品に追加することを検討します。

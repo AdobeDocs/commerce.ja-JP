@@ -20,5 +20,5 @@ AEM Assets統合は、Commerce インスタンスに次のログファイルを�
 
 これらのログが大きくなりすぎないようにするには、システム管理者にこれらのログのログファイル回転スケジュールを確認するように依頼してください。 ログが自動的にローテーションされる環境もあれば、手動でログローテーションを設定する必要がある環境もあります。  詳しくは、次のトピックを参照してください。
 
-- Adobe Commerceのオンプレミスインストールの場合は、システム管理者に依頼して [ ログローテーション ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=ja#server-settings) を設定します。
-- クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[ ログの表示と管理 ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja) を参照してください。
+- Adobe Commerceのオンプレミスインストールの場合は、システム管理者に依頼して [&#x200B; ログローテーション &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=ja#server-settings) を設定します。
+- クラウドインフラストラクチャプロジェクトのAdobe Commerceについては、[&#x200B; ログの表示と管理 &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja) を参照してください。

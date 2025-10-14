@@ -23,7 +23,7 @@ Adobeでは、e コマースビジネスの要件を満たすソリューショ�
 
 バッジが表示された場合は、コンテンツが指定したソリューションにのみ適用されることを意味します。 バッジが表示されない場合は、コンテンツがすべてのAdobe Commerce ソリューションに適用されます。
 
-例えば、Adobe Commerce as a Cloud Serviceを使用している場合、Product Recommendations 拡張機能の [ インストール ](../product-recommendations/install-configure.md#install-product-recommendations) およびCommerce サービスコネクターの [ 設定 ](../product-recommendations/install-configure.md#configure-product-recommendations) に関する内容は無視してください。 Adobeでは、インスタンスを作成すると、これらの手順が自動的に完了します。
+例えば、Adobe Commerce as a Cloud Serviceを使用している場合、Product Recommendations 拡張機能の [&#x200B; インストール &#x200B;](../product-recommendations/install-configure.md#install-product-recommendations) およびCommerce サービスコネクターの [&#x200B; 設定 &#x200B;](../product-recommendations/install-configure.md#configure-product-recommendations) に関する内容は無視してください。 Adobeでは、インスタンスを作成すると、これらの手順が自動的に完了します。
 
 ### 定義
 
@@ -31,7 +31,7 @@ Adobeでは、e コマースビジネスの要件を満たすソリューショ�
 
 >[!BEGINSHADEBOX]
 
-![ 情報 ](../cloud-service/assets/Smock_InfoOutline_18_N.svg) ここで説明するバッジは、特にAdobe Commerce ドキュメントに当てはまります。 他のAdobe Experience Cloud製品のドキュメントでのバッジの使用方法を表すものではありません。
+![&#x200B; 情報 &#x200B;](../cloud-service/assets/Smock_InfoOutline_18_N.svg) ここで説明するバッジは、特にAdobe Commerce ドキュメントに当てはまります。 他のAdobe Experience Cloud製品のドキュメントでのバッジの使用方法を表すものではありません。
 
 >[!ENDSHADEBOX]
 

@@ -26,7 +26,7 @@ ID には、支払いのマーチャントアクティビティの詳細と PayP
 
 `invoice_id` と `custom_id` は、支払いに関するマーチャントアクティビティの詳細の下部付近に表示されます。
 
-マーチャントアクティビティの詳細で ![`custom_id` 明する ](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
+マーチャントアクティビティの詳細で ![`custom_id` 明する &#x200B;](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
 PayPal の Webhook の詳細で `custom_id` と `invoice_id` を参照してください。
 
@@ -80,4 +80,4 @@ PayPal の Webhook の詳細で `custom_id` と `invoice_id` を参照してく�
 詳しくは、PayPal の REST API ドキュメントを参照してください。
 
 * `custom_id` と `invoice_id` が存在する [`purchase_unit`](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
-* [ 注文の詳細を表示 ](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
+* [&#x200B; 注文の詳細を表示 &#x200B;](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

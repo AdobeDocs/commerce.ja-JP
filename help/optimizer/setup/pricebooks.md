@@ -18,7 +18,7 @@ ht-degree: 0%
 
 基本価格台帳では、それ自体とすべての子価格台帳に対して通貨が定義されます。 子の価格帳簿はこの通貨を継承し、上書きすることはできません。
 
-Price Book API を使用して [ の価格台帳を作成、更新、削除する方法については、](https://developer.adobe.com/commerce/services/reference/rest/) 開発者向けドキュメント [!DNL Adobe Commerce Optimizer] を参照してください。
+Price Book API を使用して [&#x200B; の価格台帳を作成、更新、削除する方法については、](https://developer.adobe.com/commerce/services/reference/rest/) 開発者向けドキュメント [!DNL Adobe Commerce Optimizer] を参照してください。
 
 ## 主要な概念
 

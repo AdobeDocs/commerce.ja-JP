@@ -14,6 +14,6 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->[!DNL Live Search] がインストールされているAdobe Commerceのインストールでは、標準のAdobe Commerce[ シノニムを検索 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=ja#search-synonyms) 機能が [!DNL Live Search] シノニムに置き換わります。ただし、どちらもマーケティングメニューの「*SEO と検索*」セクションに表示されます。 [!DNL Live Search] を使用する場合は、この節の手順に従ってください。
+>[!DNL Live Search] がインストールされているAdobe Commerceのインストールでは、標準のAdobe Commerce[&#x200B; シノニムを検索 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=ja#search-synonyms) 機能が [!DNL Live Search] シノニムに置き換わります。ただし、どちらもマーケティングメニューの「*SEO と検索*」セクションに表示されます。 [!DNL Live Search] を使用する場合は、この節の手順に従ってください。
 
-[!DNL Live Search] では、[ 検索語句のリダイレクト ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=ja) もサポートしています。
+[!DNL Live Search] では、[&#x200B; 検索語句のリダイレクト &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=ja) もサポートしています。

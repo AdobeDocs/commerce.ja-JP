@@ -18,7 +18,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 
 >[!NOTE]
 >
->Adobeでは、すべてのCommerce サービスのサポートされている最新バージョンにアップグレードすることをお勧めします。 詳しくは、[ リリースノート ](release-notes-all.md) を参照してください。
+>Adobeでは、すべてのCommerce サービスのサポートされている最新バージョンにアップグレードすることをお勧めします。 詳しくは、[&#x200B; リリースノート &#x200B;](release-notes-all.md) を参照してください。
 
 ## Commerce サービス
 
@@ -200,7 +200,7 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 
 >[!NOTE]
 >
->Data Management Dashboard は、Product Recommendations v6.0.0、Live Search v4.1.0、またはアクティブなライセンスを持つカタログサービス v1.17 を使用しているCommerce マーチャントが追加費用なしで利用できます。 以前のサービスバージョンを使用しているマーチャントは、[ カタログ同期 ](../landing/catalog-sync.md) を使用してデータ同期を管理および追跡できます。
+>Data Management Dashboard は、Product Recommendations v6.0.0、Live Search v4.1.0、またはアクティブなライセンスを持つカタログサービス v1.17 を使用しているCommerce マーチャントが追加費用なしで利用できます。 以前のサービスバージョンを使用しているマーチャントは、[&#x200B; カタログ同期 &#x200B;](../landing/catalog-sync.md) を使用してデータ同期を管理および追跡できます。
 
 {{$include /help/_includes/templated/whats-new.md}}
 

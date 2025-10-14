@@ -17,7 +17,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->プロファイルに [ カスタム ID を追加 ](custom-identities.md) する方法を説明します。
+>プロファイルに [&#x200B; カスタム ID を追加 &#x200B;](custom-identities.md) する方法を説明します。
 
 カスタム属性は、次の 2 つのレベルでサポートされます。
 
@@ -349,7 +349,7 @@ ComponentRegistrar::register(
 
 新しいカスタム注文属性をExperience Platformの [!DNL Commerce] スキーマで確実に取り込めるようにするには、スキーマを拡張してこれらのカスタムフィールドを含める必要があります。
 
-既存の XDM スキーマを拡張してこれらのカスタムフィールドを含める方法については、Experience Platform ドキュメントの [UI でのスキーマの作成と編集 ](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) の記事を参照してください。 テナント ID フィールドは動的に生成されますが、フィールド構造はExperience Platformのドキュメントで提供されている例に類似している必要があります。
+既存の XDM スキーマを拡張してこれらのカスタムフィールドを含める方法については、Experience Platform ドキュメントの [UI でのスキーマの作成と編集 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) の記事を参照してください。 テナント ID フィールドは動的に生成されますが、フィールド構造はExperience Platformのドキュメントで提供されている例に類似している必要があります。
 
 >[!IMPORTANT]
 >
@@ -357,20 +357,20 @@ ComponentRegistrar::register(
 
 `commerce.order` に、注文レベルのフィールドを追加します。
 
-![ 注文レベル ](assets/order-level.png)
+![&#x200B; 注文レベル &#x200B;](assets/order-level.png)
 
 `productListItems` に、注文項目レベルのフィールドを追加します。
 
-![ 注文品目レベル ](assets/order-item-level.png)
+![&#x200B; 注文品目レベル &#x200B;](assets/order-item-level.png)
 
 ## 手順 12：データがキャプチャされていることを確認する
 
-管理者の「[ データのカスタマイズ ](connect-data.md#data-customization)」タブを表示し、カスタム属性データがキャプチャされてExperience Platformに送信されていることを確認します。
+管理者の「[&#x200B; データのカスタマイズ &#x200B;](connect-data.md#data-customization)」タブを表示し、カスタム属性データがキャプチャされてExperience Platformに送信されていることを確認します。
 
 ### トラブルシューティング
 
 「`No custom order attributes found.`」タブにメッセージ **[!UICONTROL Data Customization]** が表示された場合は、次の確認を行ってください。
 
-1. [ データコネクタ拡張機能 ](overview.md#prerequisites) を有効にするための前提条件は完了しています。
-1. [ カスタム注文属性 ](#add-custom-order-attributes) を設定しました。
+1. [&#x200B; データコネクタ拡張機能 &#x200B;](overview.md#prerequisites) を有効にするための前提条件は完了しています。
+1. [&#x200B; カスタム注文属性 &#x200B;](#add-custom-order-attributes) を設定しました。
 1. 1 つ以上の注文イベントが生成されています。

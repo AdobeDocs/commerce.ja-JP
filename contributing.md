@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 投稿者ガイドドキュメント
 
-詳しくは、[ 投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
+詳しくは、[&#x200B; 投稿者ガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
 
 ## 質問がある場合
 
@@ -30,14 +30,14 @@ ht-degree: 3%
 
 このプロジェクトへのサードパーティ投稿者には、署名済みの投稿者が関連付けられている必要があります
 使用許諾契約。 これにより、Adobeに投稿を再配布する権限が付与されます
-プロジェクトの一環として。 [ アドビの CLA に署名してください ](https://opensource.adobe.com/cla.html)。 あなた
+プロジェクトの一環として。 [&#x200B; アドビの CLA に署名してください &#x200B;](https://opensource.adobe.com/cla.html)。 あなた
 Adobe CLA の提出は 1 回だけでかまいません。 以前に送信した場合、
 行ってもよろしい。
 
 ## コードレビュー
 
 すべての送信は、プルリクエスト形式でおこなわれ、レビューする必要があります
-プロジェクト寄稿者別。 [GitHub のプルリクエストドキュメントをお読みください ](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+プロジェクト寄稿者別。 [GitHub のプルリクエストドキュメントをお読みください &#x200B;](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 プルリクエストの送信に関する詳細情報。
 
 <!--
@@ -56,4 +56,4 @@ submitting a pull request!
 
 ## セキュリティ上の問題
 
-セキュリティ上の問題を報告するには、[ セキュリティの専門家に問題を報告してください ](https://helpx.adobe.com/jp/security/alertus.html)。
+セキュリティ上の問題を報告するには、[&#x200B; セキュリティの専門家に問題を報告してください &#x200B;](https://helpx.adobe.com/jp/security/alertus.html)。

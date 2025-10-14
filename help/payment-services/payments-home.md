@@ -18,7 +18,7 @@ ht-degree: 2%
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]** に移動します。
 
-   ![ ホームビュー ](assets/home-view.png){width="700" zoomable="yes"}
+   ![&#x200B; ホームビュー &#x200B;](assets/home-view.png){width="700" zoomable="yes"}
 
 1. このホームビューでは、_ホーム_ ビュー、_ールに関する_ 詳細情報 [!DNL Payment Services] 拡張機能の設定 _設定_、または _ヘルプ_ を取得できます。
 
@@ -46,4 +46,4 @@ ht-degree: 2%
 
 ## 設定
 
-ホームビューで、「**[!UICONTROL Settings]**」をクリックします。 詳しくは、[[!DNL Payment Services]  設定 ](configure-admin.md) を参照してください。
+ホームビューで、「**[!UICONTROL Settings]**」をクリックします。 詳しくは、[[!DNL Payment Services]  設定 &#x200B;](configure-admin.md) を参照してください。

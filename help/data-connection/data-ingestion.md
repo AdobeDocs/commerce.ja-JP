@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [Data Connection extension](overview.md) は、Commerce データをExperience Platformに接続します。 Experience Platformで使用するデータは、**エクスペリエンスイベント** クラスに属する時系列データと、**個人プロファイル** クラスに属するレコードデータの 2 つの動作タイプに分類されます。
 
-Experience Platformの [ データ動作 ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja#data-behaviors) および [ クラス ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja#class) について詳しく説明します。
+Experience Platformの [&#x200B; データ動作 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja#data-behaviors) および [&#x200B; クラス &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja#class) について詳しく説明します。
 
 ## 時系列データ
 
@@ -22,11 +22,11 @@ Experience Platformの [ データ動作 ](https://experienceleague.adobe.com/do
 
 ### キャプチャされた時系列データ
 
-時系列イベントが生成されたときに取得されるデータについて詳しくは、[ 行動イベント ](events.md) および [ バックオフィスイベント ](events-backoffice.md) を参照してください。
+時系列イベントが生成されたときに取得されるデータについて詳しくは、[&#x200B; 行動イベント &#x200B;](events.md) および [&#x200B; バックオフィスイベント &#x200B;](events-backoffice.md) を参照してください。
 
 ### 時系列イベントデータの取り込みに必要なスキーマ
 
-行動およびバックオフィスの時系列イベントデータを取り込める [ スキーマを作成 ](update-xdm.md) 方法を説明します。
+行動およびバックオフィスの時系列イベントデータを取り込める [&#x200B; スキーマを作成 &#x200B;](update-xdm.md) 方法を説明します。
 
 ## レコードデータ
 
@@ -34,8 +34,8 @@ Experience Platformの [ データ動作 ](https://experienceleague.adobe.com/do
 
 ### キャプチャされたプロファイルレコードデータ
 
-プロファイルレコードの生成時に取得するデータについて詳しくは、[ 顧客プロファイルレコードデータ ](events-profilerecord.md) を参照してください。
+プロファイルレコードの生成時に取得するデータについて詳しくは、[&#x200B; 顧客プロファイルレコードデータ &#x200B;](events-profilerecord.md) を参照してください。
 
 ### プロファイルレコードデータを取り込むために必要なスキーマ
 
-プロファイルレコードデータを取り込むことができる [ スキーマを作成 ](profile-data.md) する方法を説明します。
+プロファイルレコードデータを取り込むことができる [&#x200B; スキーマを作成 &#x200B;](profile-data.md) する方法を説明します。

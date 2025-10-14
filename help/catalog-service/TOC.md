@@ -22,6 +22,6 @@ ht-degree: 10%
    - [カタログサービスと API メッシュ](mesh.md)
    - [ユースケース：課税価格の表示](taxes.md)
 - [リリースノート](release-notes.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
+- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
 
 

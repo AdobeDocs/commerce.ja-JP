@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # シノニムの管理
 
-既存の [!DNL Live Search] ード [ シノニム ](synonyms.md) を管理するには、次の手順に従います。
+既存の [!DNL Live Search] ード [&#x200B; シノニム &#x200B;](synonyms.md) を管理するには、次の手順に従います。
 
 ## シノニムの検索
 

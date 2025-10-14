@@ -38,4 +38,4 @@ ht-degree: 2%
 - ユースケース {#use-cases}
    - [Adobe Journey Optimizerを使用して、放棄された買い物かごにメールを送信](using-ajo.md)
    - [Commerce イベントデータを使用したReal-Time CDPでのオーディエンスの作成](create-audience.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
+- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)

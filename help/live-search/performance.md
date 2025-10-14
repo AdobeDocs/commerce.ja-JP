@@ -16,9 +16,9 @@ ht-degree: 0%
 * ゼロの結果
 * 一般的な結果
 
-![ パフォーマンス ](assets/performance-unique-searches.png)
+![&#x200B; パフォーマンス &#x200B;](assets/performance-unique-searches.png)
 
-また、データ同期について詳しくは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=ja) を参照してください。
+また、データ同期について詳しくは、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=ja) を参照してください。
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## レポートの表示
 
-1. **日付範囲** を入力するには、カレンダー（![ カレンダー ](assets/btn-calendar.png)）をクリックして、次のいずれかの操作を行います。
+1. **日付範囲** を入力するには、カレンダー（![&#x200B; カレンダー &#x200B;](assets/btn-calendar.png)）をクリックして、次のいずれかの操作を行います。
 
    * 1 つの日付を指定するには、カレンダー上の日付をダブルクリックします。
    * 日付の範囲を指定するには、カレンダーの最初の日付と最後の日付をクリックします。

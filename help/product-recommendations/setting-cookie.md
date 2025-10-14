@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Cookie 制限の処理
 
-データがブラウザーの Cookie に保存される前に、Adobe CommerceとMagento Open Sourceの両方が同意を求めます。 詳しくは、「[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja)」を参照してください。
+データがブラウザーの Cookie に保存される前に、Adobe CommerceとMagento Open Sourceの両方が同意を求めます。 詳しくは、「[Cookie 制限モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja)」を参照してください。
 
 ## 製品レコメンデーションによる cookie 制限の処理方法
 
@@ -84,8 +84,8 @@ Cookie 制限による製品レコメンデーションの動作をテストす�
 
 ## プライバシーコンプライアンス
 
-Product Recommendations のデータ収集には、個人を特定できる情報（PII）は含まれません。 Cookie ID や IP アドレスなどのすべてのユーザー識別子は匿名化されます。 詳しくは、[Adobe プライバシーポリシー ](https://www.adobe.com/privacy/policy.html) を参照してください。
+Product Recommendations のデータ収集には、個人を特定できる情報（PII）は含まれません。 Cookie ID や IP アドレスなどのすべてのユーザー識別子は匿名化されます。 詳しくは、[Adobe プライバシーポリシー &#x200B;](https://www.adobe.com/privacy/policy.html) を参照してください。
 
 >[!TIP]
 >
->データサービス HIPAA 拡張機能を使用している医療関係のお客様の場合は、追加の設定が必要になる場合があります。 詳しくは、[HIPAA 対応 ](../data-connection/hipaa-readiness.md) を参照してください。
+>データサービス HIPAA 拡張機能を使用している医療関係のお客様の場合は、追加の設定が必要になる場合があります。 詳しくは、[HIPAA 対応 &#x200B;](../data-connection/hipaa-readiness.md) を参照してください。

@@ -14,13 +14,13 @@ ht-degree: 0%
 
 SaaS の価格インデックス作成は、インデックス作成や価格計算などのリソースを大量に消費するタスクを、Commerce アプリケーションからAdobe Cloud Infrastructure にオフロードすることで、サイトのパフォーマンスを最適化します。 このアプローチにより、マーチャントはリソースを迅速に拡張して価格のインデックス化に要する時間を短縮し、ストアフロントおよび接続されたCommerce サービスに対して価格の更新をより迅速に提供できるようになります。
 
-次の図は、Commerce アプリケーションに含まれている [ 価格インデックス作成 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers) プロセスをCommerceが使用している場合の SaaS サービスへのインデックス作成データフローを示しています。
+次の図は、Commerce アプリケーションに含まれている [&#x200B; 価格インデックス作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers) プロセスをCommerceが使用している場合の SaaS サービスへのインデックス作成データフローを示しています。
 
-![ デフォルトのデータフロー ](assets/old_way.png)
+![&#x200B; デフォルトのデータフロー &#x200B;](assets/old_way.png)
 
-SaaS 価格インデックスを有効にすると、データフローが変更されます。 価格のインデックス作成は、[Commerce SaaS データのエクスポート ](../data-export/data-synchronization.md) を使用して実行されます。
+SaaS 価格インデックスを有効にすると、データフローが変更されます。 価格のインデックス作成は、[Commerce SaaS データのエクスポート &#x200B;](../data-export/data-synchronization.md) を使用して実行されます。
 
-![SaaS 価格インデックス作成のデータフロー ](assets/new_way.png)
+![SaaS 価格インデックス作成のデータフロー &#x200B;](assets/new_way.png)
 
 すべてのマーチャントは、SaaS 価格インデックスを使用することでメリットを得ることができますが、次のような特徴を持つプロジェクトを持つマーチャントは、最大のメリットを得ることができます。
 
@@ -47,7 +47,7 @@ SaaS 価格インデックス作成は、Adobe Commerce サービスのインス
 
 >[!NOTE]
 >
->必要に応じて、Commerce アプリケーションのデフォルトの価格インデクサーを [ カタログアダプター ](catalog-adapter.md) を使用して無効にできます。
+>必要に応じて、Commerce アプリケーションのデフォルトの価格インデクサーを [&#x200B; カタログアダプター &#x200B;](catalog-adapter.md) を使用して無効にできます。
 
 ## 価格と SaaS 価格インデックスの同期
 

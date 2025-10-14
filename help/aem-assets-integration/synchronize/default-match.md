@@ -20,7 +20,7 @@ CommerceのAEM Assets統合は、**[!UICONTROL Match by product SKU]** AEM Asset
 
 1. 一致するルールとして **[!UICONTROL Match by SKU]** を指定します。
 
-   ![ デフォルトの自動照合ルール ](../assets/ootb-matching-rule.png){width="600" zoomable="yes"}
+   ![&#x200B; デフォルトの自動照合ルール &#x200B;](../assets/ootb-matching-rule.png){width="600" zoomable="yes"}
 
 1. AEM Assetsでアセットの ID に使用するメタデータフィールド名を入力します。
 
@@ -32,7 +32,7 @@ CommerceのAEM Assets統合は、**[!UICONTROL Match by product SKU]** AEM Asset
 
 Commerce管理で **[!UICONTROL Match by product SKU]** 一致ルールが設定されている場合、Commerce アセットファイルは、各ファイルに設定されているアセットメタデータに基づいてAEM AssetsからCommerce プロジェクトに自動的に同期されます。 メタデータは、**AEM Assets オーサー** 環境の「AEM **Commerce**」タブから設定します。
 
-![ メタデータの例 ](../assets/example-metadata.png){width="600" zoomable="yes"}
+![&#x200B; メタデータの例 &#x200B;](../assets/example-metadata.png){width="600" zoomable="yes"}
 
 1. AEM Assetsで、画像メタデータを更新して、Adobe Commerceの関連付け `Commerce=yes` を追加します。
 

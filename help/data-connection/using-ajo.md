@@ -60,8 +60,8 @@ Adobe [!DNL Commerce] のお客様は、Adobe [!DNL Commerce]、Adobe [!DNL Jour
 これらの手順を開始する前に、以下を確認します。
 
 - Adobe [!DNL Journey Optimizer] を使用するようにプロビジョニングされています。 不明な場合は、システムインテグレーターまたはプロジェクトや環境を管理する開発チームにお問い合わせください。
-- [!DNL Commerce] で [!DNL Data Connection] 拡張機能を [ インストール ](install.md) および [ 設定 ](connect-data.md) しました。
-- [!DNL Commerce] イベントデータがExperience Platform Edge に届いていることを [ 確認 ](connect-data.md#confirm-that-event-data-is-collected) しました。
+- [!DNL Commerce] で [!DNL Data Connection] 拡張機能を [&#x200B; インストール &#x200B;](install.md) および [&#x200B; 設定 &#x200B;](connect-data.md) しました。
+- [!DNL Commerce] イベントデータがExperience Platform Edge に届いていることを [&#x200B; 確認 &#x200B;](connect-data.md#confirm-that-event-data-is-collected) しました。
 
 ## 手順 1:[!DNL Commerce] サンドボックス環境でのユーザーの作成
 
@@ -69,7 +69,7 @@ Adobe [!DNL Commerce] のお客様は、Adobe [!DNL Commerce]、Adobe [!DNL Jour
 
 1. [!DNL Commerce] サンドボックス環境でログインまたはアカウントを作成します。
 
-   ![ テストアカウントにログインする ](assets/sign-in-account.png){width="700" zoomable="yes"}
+   ![&#x200B; テストアカウントにログインする &#x200B;](assets/sign-in-account.png){width="700" zoomable="yes"}
 
    [!DNL Data Connection] 拡張機能がインストールおよび設定されると、このアカウント情報はプロファイルとしてExperience Platformに送信されます。
 
@@ -77,7 +77,7 @@ Adobe [!DNL Commerce] のお客様は、Adobe [!DNL Commerce]、Adobe [!DNL Jour
 
    Adobe Experience Platformで **[!UICONTROL Profiles]** に移動します。 プロファイルの **[!UICONTROL Detail]** をクリックして、作成したプロファイルを表示します。
 
-   ![ プロファイルを確認 ](assets/check-event-profile.png){width="700" zoomable="yes"}
+   ![&#x200B; プロファイルを確認 &#x200B;](assets/check-event-profile.png){width="700" zoomable="yes"}
 
 ## 手順 2:Journey Optimizerでイベントを表示する
 
@@ -89,7 +89,7 @@ Adobe [!DNL Commerce] のお客様は、Adobe [!DNL Commerce]、Adobe [!DNL Jour
 1. **[!UICONTROL Identity value]** をメールアドレスに設定します。
 1. プロファイルを選択し、「**[!UICONTROL Events]**」タブを選択します。
 
-   ![ イベントの詳細を確認 ](assets/check-event-details.png){width="700" zoomable="yes"}
+   ![&#x200B; イベントの詳細を確認 &#x200B;](assets/check-event-details.png){width="700" zoomable="yes"}
 
    `commerce.checkouts` イベントを探し、イベントペイロードを調べます。
 
@@ -118,7 +118,7 @@ Journey Optimizerで 2 つのイベントを設定します。1 つはCommerce�
 
 1. **[!UICONTROL Events]** タイルで、「**[!UICONTROL Manage]**」をクリックします。
 
-   ![Journey Optimizer イベントの構成 ](assets/ajo-config.png){width="700" zoomable="yes"}
+   ![Journey Optimizer イベントの構成 &#x200B;](assets/ajo-config.png){width="700" zoomable="yes"}
 
 1. **[!UICONTROL Events]** ページで「**[!UICONTROL Create Event]**」をクリックします。
 
@@ -127,12 +127,12 @@ Journey Optimizerで 2 つのイベントを設定します。1 つはCommerce�
    1. **[!UICONTROL Name]** を `firstname_lastname_checkout` に設定します。
    1. **[!UICONTROL Type]** を **[!UICONTROL Unitary]** に設定します。
    1. **[!UICONTROL Event id typ]e** を **[!UICONTROL Rule based]** に設定します。
-   1. **[!UICONTROL Schema]** を [!DNL Commerce] [ スキーマ ](update-xdm.md) に設定します。
+   1. **[!UICONTROL Schema]** を [!DNL Commerce] [&#x200B; スキーマ &#x200B;](update-xdm.md) に設定します。
    1. 「**[!UICONTROL Fields]**」を選択して、**[!UICONTROL Fields]** ページを開きます。 次に、このイベントで役立つフィールドを選択します。 例えば、**[!UICONTROL Product list items]**、**[!UICONTROL Commerce]**、**[!UICONTROL eventType]**、**[!UICONTROL Web]** の下のすべてのフィールドを選択します。
    1. 「**[!UICONTROL OK]**」をクリックして、選択したフィールドを保存します。
    1. 「**[!UICONTROL Event id condition]**」フィールド内をクリックします。 次に、条件を作成します。`eventType` は `commerce.checkouts` と等しく、`personalEmail.address` は前の節でプロファイルを作成した際に使用したメールアドレスと等しい。
 
-      ![Journey Optimizer セットの条件 ](assets/ajo-set-condition.png){width="700" zoomable="yes"}
+      ![Journey Optimizer セットの条件 &#x200B;](assets/ajo-set-condition.png){width="700" zoomable="yes"}
 
    1. 「**[!UICONTROL OK]**」をクリックします。
    1. 「**[!UICONTROL Save]**」をクリックしてイベントを保存します。
@@ -146,7 +146,7 @@ Journey Optimizerで 2 つのイベントを設定します。1 つはCommerce�
    1. **[!UICONTROL Name]** を `firstname_lastname_timeout` に設定します。
    1. **[!UICONTROL Type]** を **[!UICONTROL Unitary]** に設定します。
    1. **[!UICONTROL Event id type]** を **[!UICONTROL Rule based]** に設定します。
-   1. **[!UICONTROL Schema]** を [!DNL Commerce] [ スキーマ ](update-xdm.md) に設定します。
+   1. **[!UICONTROL Schema]** を [!DNL Commerce] [&#x200B; スキーマ &#x200B;](update-xdm.md) に設定します。
    1. **[!UICONTROL Schema]**、**[!UICONTROL Fields]**、**[!UICONTROL Event id condition]** を上記と同じに設定します。
    1. 「**[!UICONTROL Save]**」をクリックしてイベントを保存します。
 
@@ -177,7 +177,7 @@ Journey Optimizerで 2 つのイベントを設定します。1 つはCommerce�
 
 1. **[!UICONTROL ACTIONS]** の下の左側のナビゲーションで、タイムアウトブランチに **[!UICONTROL Email]** アクションを追加します。 ジャーニーは次のようになります。
 
-   ![Journey Optimizer キャンバス ](assets/ajo-canvas.png){width="700" zoomable="yes"}
+   ![Journey Optimizer キャンバス &#x200B;](assets/ajo-canvas.png){width="700" zoomable="yes"}
 
 ### 放棄された買い物かごのメールの作成
 
@@ -185,7 +185,7 @@ Journey Optimizerで 2 つのイベントを設定します。1 つはCommerce�
 
 1. 上記で作成したジャーニーで、キャンバス上の **[!UICONTROL Email]** アイコンをダブルクリックします。
 
-1. Journey Optimizer ガイドの [ 手順 ](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html?lang=ja#configure-email) に従って、放棄された買い物かごのメールを作成します。
+1. Journey Optimizer ガイドの [&#x200B; 手順 &#x200B;](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html?lang=ja#configure-email) に従って、放棄された買い物かごのメールを作成します。
 
 これで、Journey Optimizerで [!DNL Commerce] ストアからの `commerce.checkouts` イベントをリッスンするジャーニーと、一定期間経過後に送信される放棄された買い物かごメールが作成されました。 次の節では、ジャーニーのテスト方法を説明します。
 
@@ -195,7 +195,7 @@ Journey Optimizerで 2 つのイベントを設定します。1 つはCommerce�
 
 1. Journey Optimizerで、「テストモード」をオンにします。
 
-   ![ テストモードを有効にする ](assets/ajo-enable-test.png){width="700" zoomable="yes"}
+   ![&#x200B; テストモードを有効にする &#x200B;](assets/ajo-enable-test.png){width="700" zoomable="yes"}
 
 1. このジャーニーをリアルタイムでテストするには、別のブラウザータブを開き、サンドボックス環境の [!DNL Commerce] web サイトに移動します。
 

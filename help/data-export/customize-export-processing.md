@@ -23,7 +23,7 @@ Adobeでは、データ取得にデフォルトの設定を使用することを
 
 データの書き出し設定をカスタマイズするかどうかを決定する際には、次の主な要因を考慮します。
 
-- **初期同期** – 製品数を評価し、デフォルトの設定に基づいて [ データ量と送信時間を予測 ](estimate-data-volume-sync-time.md) します。 考えてみてください。Commerce サービスをオンボーディングした後で、この最初のデータ同期を待つことができますか？
+- **初期同期** – 製品数を評価し、デフォルトの設定に基づいて [&#x200B; データ量と送信時間を予測 &#x200B;](estimate-data-volume-sync-time.md) します。 考えてみてください。Commerce サービスをオンボーディングした後で、この最初のデータ同期を待つことができますか？
 
 - **新しいストアビューまたは web サイトの追加** – 実稼動後に同じ製品数のストアビューまたは web サイトを追加する予定がある場合は、データ量と送信時間を見積もります。 デフォルトの設定で同期時間を許容できるか、またはマルチスレッド処理が必要かどうかを決定します。
 
@@ -39,7 +39,7 @@ Adobeでは、データ取得にデフォルトの設定を使用することを
 
 ## マルチスレッドの構成
 
-マルチスレッドモードは、すべての [ 同期メソッド ](data-synchronization.md#synchronization-process) 完全同期、部分同期、失敗した項目の同期）でサポートされます。 マルチスレッドを構成するには、同期中に使用するスレッドの数とバッチサイズを指定します。
+マルチスレッドモードは、すべての [&#x200B; 同期メソッド &#x200B;](data-synchronization.md#synchronization-process) 完全同期、部分同期、失敗した項目の同期）でサポートされます。 マルチスレッドを構成するには、同期中に使用するスレッドの数とバッチサイズを指定します。
 
 - `thread-count` は、エンティティを処理するためにアクティブ化されるスレッドの数です。 デフォルト `thread-count` は `1` です。
 - `batch-size` は、1 回のイテレーションで処理されるエンティティの数です。 デフォルトの `batch-size` は、価格フィードを除くすべてのフィードの `100` レコードです。 価格フィードの場合、デフォルト値は `500` レコードです。
@@ -64,7 +64,7 @@ bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 
 マルチスレッドを使用してすべてのデータ書き出し処理を行う場合、システムインテグレーターまたは開発者はCommerce アプリケーション設定で各フィードのスレッド数とバッチサイズを変更できます。
 
-これらの変更は、設定ファイルの [ システムセクション ](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) にカスタム値を追加すること `app/etc/config.php` 適用できます。
+これらの変更は、設定ファイルの [&#x200B; システムセクション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) にカスタム値を追加すること `app/etc/config.php` 適用できます。
 
 **例：製品および価格のマルチスレッドの設定**
 

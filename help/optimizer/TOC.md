@@ -58,4 +58,4 @@ ht-degree: 12%
 - [設定](settings.md)
 - ユースケース {#use-case}
    - [ストアフロントとカタログ管理者のエンドツーエンドの使用例](./use-case/admin-use-case.md)
-- [ 開発者ガイド ](https://developer.adobe.com/commerce/services/optimizer/)
+- [&#x200B; 開発者ガイド &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)

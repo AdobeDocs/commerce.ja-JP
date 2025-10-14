@@ -17,7 +17,7 @@ ht-degree: 0%
 
 言語設定は、インデックスの書き込み時に想定される言語を [!DNL Live Search] サービスに伝えます。
 
-![ 設定 ](assets/settings.png)
+![&#x200B; 設定 &#x200B;](assets/settings.png)
 
 ## 価格ファセット
 

@@ -20,7 +20,7 @@ Adobe Commerce Optimizerには、サイトの様々なページにデプロイ�
 
 >[!NOTE]
 >
->この記事で説明されるイベントについて詳しくは、[ イベント ](../../setup/events/overview.md) を参照してください。
+>この記事で説明されるイベントについて詳しくは、[&#x200B; イベント &#x200B;](../../setup/events/overview.md) を参照してください。
 
 ## パーソナライズ {#personalized}
 

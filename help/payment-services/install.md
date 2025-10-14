@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
-> 詳しくは、[Adobe Commerce用の設定  [!DNL Payment Services]  ビデオ ](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) 参照してください。
+> 詳しくは、[Adobe Commerce用の設定  [!DNL Payment Services]  ビデオ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) 参照してください。
 
 [!DNL Adobe Commerce] および [!DNL Magento Open Source] 用の [!DNL Payment Services] 拡張機能をダウンロードしてインストールすることは、[!DNL Payment Services] を使用するための前提条件の手順です。
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 インストールする前に、まず [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html?lang=ja)0&rbrace;Commerce Marketplace&rbrace; から拡張機能をダウンロードする必要があります。
 
-1. [Commerce Marketplaceの支払いサービス拡張機能 ](https://commercemarketplace.adobe.com/magento-payment-services.html) に移動します。
+1. [Commerce Marketplaceの支払いサービス拡張機能 &#x200B;](https://commercemarketplace.adobe.com/magento-payment-services.html) に移動します。
 1. エディションとバージョンを選択するには、**[!UICONTROL Edition]** と **[!UICONTROL Your store version]** を希望の選択項目に切り替えます。
 1. 「**[!UICONTROL Add to Cart]**」をクリックします。
 1. チェックアウトを完了し、「**[!UICONTROL Place Order]**」をクリックします。
@@ -43,9 +43,9 @@ ht-degree: 0%
 
 Composer は、[!DNL Adobe Commerce] の初期インストール時、または Composer のキーが以前に `auth.json` ファイルに保存されていなかった場合に、これらのキーを使用します。
 
-Composer キーの取得の詳細については、[ 認証キーの取得 ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) を参照してください。
+Composer キーの取得の詳細については、[&#x200B; 認証キーの取得 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) を参照してください。
 
-拡張機能をダウンロードしてインストールする前に考慮すべき事項について詳しくは、[ 拡張機能のインストール ](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/extensions) を参照してください。
+拡張機能をダウンロードしてインストールする前に考慮すべき事項について詳しくは、[&#x200B; 拡張機能のインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/extensions) を参照してください。
 
 ### クラウドインフラストラクチャー上の [!DNL Adobe Commerce]
 
@@ -166,7 +166,7 @@ PHP 用のメモリが足りないことを示す次のエラーが表示され�
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[ メモリ制限を増やす ](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit) ご使用の環境の PHP の場合は、`php.ini` を使用します。
+[&#x200B; メモリ制限を増やす &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit) ご使用の環境の PHP の場合は、`php.ini` を使用します。
 
 または、次のコマンドを使用してメモリ制限を指定できます：`php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`。
 

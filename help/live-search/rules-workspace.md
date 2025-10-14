@@ -18,15 +18,15 @@ ht-degree: 1%
 * ルールの削除
 * ルールエディターへのアクセス
 
-![ マーチャンダイジング Workspaceの検索 ](assets/rules-workspace.png)
+![&#x200B; マーチャンダイジング Workspaceの検索 &#x200B;](assets/rules-workspace.png)
 
 ## 範囲を設定
 
-Adobe Commerceのインストールに複数のストア表示が含まれる場合、**範囲** を [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) に設定します。ここでルールが適用されます。
+Adobe Commerceのインストールに複数のストア表示が含まれる場合、**範囲** を [&#x200B; ストア表示 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) に設定します。ここでルールが適用されます。
 
 ## 列の表示/非表示
 
-1. 右上隅にある「**表示/非表示**![ 列セレクター ](assets/btn-show-hide-columns.png) 列をクリックします。
+1. 右上隅にある「**表示/非表示**![&#x200B; 列セレクター &#x200B;](assets/btn-show-hide-columns.png) 列をクリックします。
 オプションメニューには、表示されている列に青いチェックマークが付いています。 ルール名は、非表示にできない唯一の列です。
 
 1. メニューで、次のいずれかの操作を行います。
@@ -50,7 +50,7 @@ Adobe Commerceのインストールに複数のストア表示が含まれる場
 ルールの名前、またはルール名に含まれる任意の単語の入力を開始します。
 入力中に、一致するルールが検索されます。 見つかった各ルールの名前で、一致する文字の文字列がハイライト表示されます。
 
-![ ルール – 名前による検索 ](assets/rules-workspace-search-name.png)
+![&#x200B; ルール – 名前による検索 &#x200B;](assets/rules-workspace-search-name.png)
 
 ## 詳細を表示
 
@@ -66,7 +66,7 @@ Adobe Commerceのインストールに複数のストア表示が含まれる場
 
 1. *詳細を表示* パネルを閉じるには、右上隅の **閉じる** （X）をクリックします。
 
-   ![ ルール – 詳細 ](assets/rules-workspace-details.png)
+   ![&#x200B; ルール – 詳細 &#x200B;](assets/rules-workspace-details.png)
 
 ## 列の説明
 
@@ -82,11 +82,11 @@ Adobe Commerceのインストールに複数のストア表示が含まれる場
 
 | 制御 | 説明 |
 |--- |--- |
-| ルールを追加 | [ ルールエディター ](rules-add.md) を開きます。 |
+| ルールを追加 | [&#x200B; ルールエディター &#x200B;](rules-add.md) を開きます。 |
 | ステータス | ルールのリストをステータスでフィルタリングします。 オプション：すべて、アクティブ、非アクティブ、スケジュール済み |
-| ![ 列の選択 ](assets/btn-show-hide-columns.png) | グリッドに表示される列を指定します。 オプション：最終更新日、開始日、終了日、ステータス |
+| ![&#x200B; 列の選択 &#x200B;](assets/btn-show-hide-columns.png) | グリッドに表示される列を指定します。 オプション：最終更新日、開始日、終了日、ステータス |
 | 検索 | 完全名または部分一致でルールを検索します。 |
-| ![ 詳細セレクター ](assets/btn-more.png) | 選択したルールに適用できるその他のアクションのメニューを表示します。 オプション：編集、詳細を表示、削除 |
+| ![&#x200B; 詳細セレクター &#x200B;](assets/btn-more.png) | 選択したルールに適用できるその他のアクションのメニューを表示します。 オプション：編集、詳細を表示、削除 |
 
 ## ルールの詳細
 

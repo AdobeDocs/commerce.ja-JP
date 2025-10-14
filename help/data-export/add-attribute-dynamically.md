@@ -16,13 +16,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->製品属性を拡張する最適な方法は、[Adobe Commerceに追加 ](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) することです。この場合、Commerce管理者から設定および管理できます。 動的に追加するのは、Commerce ストアフロントサービス専用で必要であり、Adobe Commerceには登録しない場合のみです。 また、カタログサービスを使用した [API メッシュ ](../catalog-service/mesh.md) を使用してカスタム属性を管理し、カタログサービスのGraphQL スキーマを拡張するオプションもあります。
+>製品属性を拡張する最適な方法は、[Adobe Commerceに追加 &#x200B;](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) することです。この場合、Commerce管理者から設定および管理できます。 動的に追加するのは、Commerce ストアフロントサービス専用で必要であり、Adobe Commerceには登録しない場合のみです。 また、カタログサービスを使用した [API メッシュ &#x200B;](../catalog-service/mesh.md) を使用してカスタム属性を管理し、カタログサービスのGraphQL スキーマを拡張するオプションもあります。
 
 ## 製品属性の追加
 
 `customer_attribute` クラスに `Magento\CatalogDataExporter\Model\Provider\Product\Attributes` を追加するプラグインを作成します。
 
-1. [ 依存関係挿入設定ファイル ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）を更新して、プラグインを定義します。
+1. [&#x200B; 依存関係挿入設定ファイル &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）を更新して、プラグインを定義します。
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 カスタムの製品属性を動的に作成し、それをストアフロントサービスでの表示、検索またはフィルタリングに使用する場合は、製品属性メタデータを追加して、ストアフロントの動作を設定します。
 
-1. [ 依存関係挿入設定ファイル ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）を更新して、製品属性メタデータのプラグインを定義します。
+1. [&#x200B; 依存関係挿入設定ファイル &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）を更新して、製品属性メタデータのプラグインを定義します。
 
    ```xml
    <type name="\Magento\CatalogDataExporter\Model\Provider\ProductMetadata">
