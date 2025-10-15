@@ -23,7 +23,7 @@ Adobe Commerce [!DNL Live Search] と [[!DNL Catalog Service]](../catalog-servic
 
 ## 要件
 
-- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4 以降
+- [Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) 2.4.4 以降
 - PHP 8.1、8.2、または 8.3
 - [!DNL Composer]
 - Cron ジョブとインデクサーの実行

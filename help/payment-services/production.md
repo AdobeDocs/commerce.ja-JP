@@ -131,7 +131,7 @@ ht-degree: 0%
 1. フォームに入力します。
 1. 営業チームのメンバーから連絡があります。
 
-または、Adobeの [business.adobe.com](https://business.adobe.com/resources/payment-services.html) で支払い権限をリクエストすることもできます。
+または、Adobeの [business.adobe.com](https://business.adobe.com/jp/resources/payment-services.html) で支払い権限をリクエストすることもできます。
 
 >[!IMPORTANT]
 >
