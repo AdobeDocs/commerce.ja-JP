@@ -3,9 +3,9 @@ title: 支払いオプション
 description: 支払いオプションを設定して、ストアの顧客が使用できる方法をカスタマイズします。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce] と [!DNL Magento Open Source] [!DNL Payment Services] を使用すると、複数の支払いオプションを利用できます。
 
-これらの支払いオプションは、[&#x200B; ホーム設定 &#x200B;](payments-home.md) または [&#x200B; ストア設定 &#x200B;](configure-admin.md) で設定できます（従来の支払いオプションまたはマルチストア設定の場合に推奨）。
+これらの支払いオプションは、[ ホーム設定 ](payments-home.md) または [ ストア設定 ](configure-admin.md) で設定できます（従来の支払いオプションまたはマルチストア設定の場合に推奨）。
 
 チェックアウトプロセスの位置に応じて、支払い方法ごとに異なる動作があります。
 
@@ -31,17 +31,17 @@ ht-degree: 0%
 
 [!DNL Payment Services] では、事業を行う国に応じて、**詳細** （完全にサポートされている）および **標準** （エクスプレスチェックアウト）の支払いオプションとオンボーディングフローを提供します。
 
-* **詳細** – 利用可能なすべての [&#x200B; 支払いオプション &#x200B;](../payment-services/payments-options.md) は、現在の [&#x200B; 完全にサポートされている国 &#x200B;](../payment-services/introduction.md#availability) で利用できます。 ライブ支払いを有効にするオンボーディング中に、[&#x200B; 詳細なオンボーディングオプション &#x200B;](../payment-services/production.md#advanced-onboarding) を選択します。
+* **詳細** – 利用可能なすべての [ 支払いオプション ](../payment-services/payments-options.md) は、現在の [ 完全にサポートされている国 ](../payment-services/introduction.md#availability) で利用できます。 ライブ支払いを有効にするオンボーディング中に、[ 詳細なオンボーディングオプション ](../payment-services/production.md#advanced-onboarding) を選択します。
 
-* **Standard** – 他のサポート対象の国では、支払いオプション（エクスプレスチェックアウト）のサブセット（PayPal クレジットおよびデビットカード）を利用できます。 [&#x200B; クレジットカードのフィールド &#x200B;](#credit-card-fields) と [Apple Pay](#apple-pay-button) は、このオンボーディングオプションでは使用できません。 ライブ支払いを有効にするためのオンボーディング中に、[&#x200B; 標準オンボーディングオプション &#x200B;](../payment-services/production.md#standard-onboarding) を選択します。
+* **Standard** – 他のサポート対象の国では、支払いオプション（エクスプレスチェックアウト）のサブセット（PayPal クレジットおよびデビットカード）を利用できます。 [ クレジットカードのフィールド ](#credit-card-fields) と [Apple Pay](#apple-pay-button) は、このオンボーディングオプションでは使用できません。 ライブ支払いを有効にするためのオンボーディング中に、[ 標準オンボーディングオプション ](../payment-services/production.md#standard-onboarding) を選択します。
 
-高度なオンボーディングと標準オンボーディングの完了については、[&#x200B; 実稼動用に  [!DNL Payment Services]  有効にする &#x200B;](../payment-services/production.md#complete-merchant-onboarding) を参照してください。
+高度なオンボーディングと標準オンボーディングの完了については、[ 実稼動用に  [!DNL Payment Services]  有効にする ](../payment-services/production.md#complete-merchant-onboarding) を参照してください。
 
 ## [!UICONTROL Credit Card Fields]
 
 クレジットカードまたはデビットカードの支払い方法に対して、シンプルで安全なチェックアウトを提供で [!UICONTROL Credit Card Fields] ます。 買い物客がクレジットカードのフィールドを使用してチェックアウトする際は、名前、請求先住所、クレジットカードまたはデビットカードの情報を入力して注文を行います。 顧客の顧客情報は、購入セッション中に安全に使用され、チェックアウトフローをシームレスに導きます。
 
-![&#x200B; チェックアウト時のクレジットカードフィールド &#x200B;](assets/credit-card-fields.png){width="500" zoomable="yes"}
+![ チェックアウト時のクレジットカードフィールド ](assets/credit-card-fields.png){width="500" zoomable="yes"}
 
 ## [!UICONTROL Digital Wallets]
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 現在、Fastlane は米国のマーチャントに対してのみサポートされているため、[!UICONTROL 3D Secure authentication] は現在サポートされていません。
+> サンドボックスインスタンスでは、Fastlane トランザクションのトランザクションアクティビティ ビューに配送先住所が表示されません。
 
 詳しくは、[Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank} を参照してください。
 
@@ -65,39 +65,39 @@ ht-degree: 0%
 
 [!DNL Apple Pay] を使用すると、マーチャントは、Safari （マーチャントアカウントあたり最大 99 のドメイン）で安全で合理化されたチェックアウトエクスペリエンスを提供し、コンバージョンを増やすことができます。 [!DNL Apple Pay] ボタンを使用すると、顧客のiOSまたはmacOS デバイスから保存された支払い、連絡先および配送に関する詳細を自動入力し、ワンタップのチェックアウトエクスペリエンスをすばやく実現できます。
 
-![&#x200B; ミニ カートの [Apple支払い ] ボタン &#x200B;](assets/applepay-button.png){width="500" zoomable="yes"}
+![ ミニ カートの [Apple支払い ] ボタン ](assets/applepay-button.png){width="500" zoomable="yes"}
 
 有効にすると、製品ページ、ミニカート、買い物かご、チェックアウトの各ビューに「[!DNL Apple Pay]」ボタンが表示されます。 [!DNL Apple Pay] は、ストア設定または拡張機能のホームで設定できます。
 
 >[!NOTE]
 >
->  Apple Pay ドメイン認証証明書は、既に支払いサービスコードに含まれています。 パス `/.well-known/apple-developer-merchantid-domain-association` が 200 応答コードを返すことを確認します。 [2&rbrace;Apple Pay Domain verification](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) 証明書について詳しくは、&lbrace;PayPal 開発者向けのApple Pay との統合に関するドキュメント **を参照してください。**
+>  Apple Pay ドメイン認証証明書は、既に支払いサービスコードに含まれています。 パス `/.well-known/apple-developer-merchantid-domain-association` が 200 応答コードを返すことを確認します。 [2}Apple Pay Domain verification](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) 証明書について詳しくは、{PayPal 開発者向けのApple Pay との統合に関するドキュメント **を参照してください。**
 
-詳しくは、[&#x200B; 設定 &#x200B;](configure-admin.md#apple-pay) を参照してください。
+詳しくは、[ 設定 ](configure-admin.md#apple-pay) を参照してください。
 
 ### [!DNL Google Pay] ボタン
 
 [!DNL Google Pay] をチェックアウトエクスペリエンスに統合することで、マーチャントは、買い物客のGoogle アカウントから保存された支払い、連絡先、配送情報を収集し、サポートされているブラウザーやアプリ間で便利で効率的なチェックアウトを提供できます。
 
-[!DNL Google Pay] は、特定の国または地域および特定のデバイスでのみ利用できます。 詳しくは、[[!DNL Google Pay]  ドキュメント &#x200B;](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) を参照してください。
+[!DNL Google Pay] は、特定の国または地域および特定のデバイスでのみ利用できます。 詳しくは、[[!DNL Google Pay]  ドキュメント ](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) を参照してください。
 
-![&#x200B; チェックアウトの「Google支払い」ボタン &#x200B;](assets/google-pay-button.png){width="500" zoomable="yes"}
+![ チェックアウトの「Google支払い」ボタン ](assets/google-pay-button.png){width="500" zoomable="yes"}
 
-有効にすると、製品ページ、ミニカート、買い物かご、チェックアウトの各ビューに「[!DNL Google Pay]」ボタンが表示されます。 詳しくは、[&#x200B; 設定 &#x200B;](configure-admin.md) を参照してください。
+有効にすると、製品ページ、ミニカート、買い物かご、チェックアウトの各ビューに「[!DNL Google Pay]」ボタンが表示されます。 詳しくは、[ 設定 ](configure-admin.md) を参照してください。
 
 >[!NOTE]
 >
-> [!DNL Google Pay] API は、安全なコンテキストの web サイトでのみ使用できます。 詳しくは、[&#x200B; トラブルシューティング &#x200B;](https://developers.google.com/pay/api/web/support/troubleshooting) のドキュメントを参照してください。
+> [!DNL Google Pay] API は、安全なコンテキストの web サイトでのみ使用できます。 詳しくは、[ トラブルシューティング ](https://developers.google.com/pay/api/web/support/troubleshooting) のドキュメントを参照してください。
 
 ### [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons] は、PayPal を使用して購入を完了し、買い物客の配送先住所、請求先住所、支払い詳細を保存して後で使用します。 買い物客は、以前に保存または PayPal によって提供されたあらゆる支払い方法を使用できます。
 
-![PayPal ボタン &#x200B;](assets/paypal-button.png){width="350" zoomable="yes"}
+![PayPal ボタン ](assets/paypal-button.png){width="350" zoomable="yes"}
 
 [!UICONTROL PayPal payment buttons] は、ストア設定または [!DNL Payment Services] ホームで設定できます。
 
-国ごとの支払い方法の利用可能性については、PayPal の [&#x200B; 支払い方法ドキュメント &#x200B;](https://developer.paypal.com/docs/checkout/payment-methods/) を参照してください。
+国ごとの支払い方法の利用可能性については、PayPal の [ 支払い方法ドキュメント ](https://developer.paypal.com/docs/checkout/payment-methods/) を参照してください。
 
 #### [!DNL PayPal] ボタン
 
@@ -125,13 +125,13 @@ PayPal の「デビット」または「クレジットカード」ボタンが�
 
 「[!DNL Pay Later]」ボタンは、製品ページ、ミニカート、買い物かご、チェックアウト表示に表示されます。
 
-PayPal Developer ドキュメントの [Pay Later オファー &#x200B;](https://developer.paypal.com/docs/checkout/pay-later/us/) に関する情報を参照してください。 **国または地域** ドロップダウンを使用して、関心のある地域を選択します。
+PayPal Developer ドキュメントの [Pay Later オファー ](https://developer.paypal.com/docs/checkout/pay-later/us/) に関する情報を参照してください。 **国または地域** ドロップダウンを使用して、関心のある地域を選択します。
 
-[!DNL Pay Later] 設定 [&#x200B; 設定を更新して、](configure-admin.md#pay-later-button) メッセージを無効または有効にする方法を説明します。
+[!DNL Pay Later] 設定 [ 設定を更新して、](configure-admin.md#pay-later-button) メッセージを無効または有効にする方法を説明します。
 
 ##### オプション。 後で支払うメッセージの設定
 
-**後で支払う** の [&#x200B; メッセージングの設定 &#x200B;](configure-admin.md#pay-later-button) を使用すると、マーチャントはこの支払いオプションのデフォルトスタイルを変更できます。 **[!UICONTROL Display Pay Later Message]** 設定 `Yes` 設定で [&#x200B; を &#x200B;](configure-admin.md#pay-later-button) に設定すると、**[!UICONTROL Configure Messaging]** モーダルボタンが表示され、**[!UICONTROL PayPal Pay Later messaging]** のスタイルを設定できます。
+**後で支払う** の [ メッセージングの設定 ](configure-admin.md#pay-later-button) を使用すると、マーチャントはこの支払いオプションのデフォルトスタイルを変更できます。 **[!UICONTROL Display Pay Later Message]** 設定 `Yes` 設定で [ を ](configure-admin.md#pay-later-button) に設定すると、**[!UICONTROL Configure Messaging]** モーダルボタンが表示され、**[!UICONTROL PayPal Pay Later messaging]** のスタイルを設定できます。
 
 ![Pay Later Messaging](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
@@ -147,20 +147,20 @@ PayPal Developer ドキュメントの [Pay Later オファー &#x200B;](https:/
 
 **PayPal 支払いボタン _のみ_ を使用して支払いをキャプチャする（PayPal クレジットカード支払いオプションを使用しない __）**
 
-1. ストアが [&#x200B; 実稼動モード &#x200B;](configure-admin.md#enable-payment-services) であることを確認します。
-1. [&#x200B; 設定で目的の PayPal 支払いボタンを設定 &#x200B;](configure-admin.md#payment-buttons) します。
-1. _のセクションの_ のオプションを **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)** オフ _[!UICONTROL Payment buttons]_&#x200B;します。
+1. ストアが [ 実稼動モード ](configure-admin.md#enable-payment-services) であることを確認します。
+1. [ 設定で目的の PayPal 支払いボタンを設定 ](configure-admin.md#payment-buttons) します。
+1. _のセクションの_ のオプションを **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)** オフ _[!UICONTROL Payment buttons]_します。
 
 **既存のクレジット・カード・プロバイダを使用して支払を取得する _および_PayPal 支払いボタン** 手順は、次のとおりです。
 
-1. ストアが [&#x200B; 実稼動モード &#x200B;](configure-admin.md#enable-payment-services) であることを確認します。
-1. [&#x200B; 目的の PayPal 支払いボタンを設定します &#x200B;](configure-admin.md#payment-buttons)。
-1. _のセクションの_ のオプションを **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** オフ _[!UICONTROL Payment buttons]_&#x200B;します。
-1. _のセクションの_ のオプションを **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** オフ _[!UICONTROL Credit card fields]_&#x200B;にし、[&#x200B; 既存のクレジットカードプロバイダーアカウント &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=ja#payments) を使用します。
+1. ストアが [ 実稼動モード ](configure-admin.md#enable-payment-services) であることを確認します。
+1. [ 目的の PayPal 支払いボタンを設定します ](configure-admin.md#payment-buttons)。
+1. _のセクションの_ のオプションを **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** オフ _[!UICONTROL Payment buttons]_します。
+1. _のセクションの_ のオプションを **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** オフ _[!UICONTROL Credit card fields]_にし、[ 既存のクレジットカードプロバイダーアカウント ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments) を使用します。
 
 ## チェックアウトオプション
 
-[!DNL Payment Services] を使用すると、買い物客の好みや行動に最適なAdobe Commerceのチェックアウトエクスペリエンスを設定できます。 クレジットカード [&#x200B; ヴォールティング &#x200B;](vaulting.md) や注文の自動無効化などの機能により、顧客はシームレスで手間のかからないトランザクションを確実に行うことができます。
+[!DNL Payment Services] を使用すると、買い物客の好みや行動に最適なAdobe Commerceのチェックアウトエクスペリエンスを設定できます。 クレジットカード [ ヴォールティング ](vaulting.md) や注文の自動無効化などの機能により、顧客はシームレスで手間のかからないトランザクションを確実に行うことができます。
 
 Adobe CommerceとMagento Open Source [!DNL Payment Services] を使用すると、複数のチェックアウトエクスペリエンスを利用できます。 チェックアウトプロセスの位置に応じて、支払い方法ごとに異なる動作があります。
 
@@ -180,4 +180,4 @@ Adobe CommerceとMagento Open Source [!DNL Payment Services] を使用すると�
 
 祝日、送料、消費税は場所によって大きく異なる場合があります。 配送先住所 [!DNL Payment Services] 料金を受け取ると、適用可能なすべてのコストをすばやく再計算し、チェックアウトの最後の段階でそれらを適切に表示します。
 
-国別の支払い方法の可用性については、[PayPal の支払い方法 &#x200B;](https://developer.paypal.com/docs/checkout/payment-methods/){target=_blank} ドキュメントを参照してください。
+国別の支払い方法の可用性については、[PayPal の支払い方法 ](https://developer.paypal.com/docs/checkout/payment-methods/){target=_blank} ドキュメントを参照してください。
