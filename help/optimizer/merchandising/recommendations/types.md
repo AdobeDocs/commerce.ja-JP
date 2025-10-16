@@ -1,7 +1,7 @@
 ---
 title: レコメンデーションタイプ
 description: サイトの様々なページにデプロイできるレコメンデーションについて説明します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
 source-git-commit: 3fa6816c539494ce2cc67a9e3c601b8d3048f5d9
 workflow-type: tm+mt
