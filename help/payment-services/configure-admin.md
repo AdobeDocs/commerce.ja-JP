@@ -16,7 +16,7 @@ ht-degree: 0%
 
 管理者の役に立つ設定オプションを使用して、ニーズに合わせて [!DNL Payment Services] をカスタマイズできます。
 
-管理者で [!DNL Payment Services] と [!DNL Adobe Commerce] に対して [!DNL Magento Open Source] を設定する場合、これらの設定は、_[!UICONTROL Method]_&#x200B;の_[!UICONTROL General Configuration]_ フィールドに設定された環境にのみ適用されます。 設定フィールドで行う変更は、_[!UICONTROL Method]_&#x200B;の選択の切り替えとは無関係です。メソッドを切り替えても、選択はリセットされません。
+管理者で [!DNL Payment Services] と [!DNL Adobe Commerce] に対して [!DNL Magento Open Source] を設定する場合、これらの設定は、_[!UICONTROL Method]_&#x200B;の&#x200B;_[!UICONTROL General Configuration]_ フィールドに設定された環境にのみ適用されます。 設定フィールドで行う変更は、_[!UICONTROL Method]_&#x200B;の選択の切り替えとは無関係です。メソッドを切り替えても、選択はリセットされません。
 
 ## 一般設定
 
