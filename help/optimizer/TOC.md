@@ -4,9 +4,9 @@ user-guide-description: ドキュメントとリソース  [!DNL Adobe Commerce 
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b524c75b59984ddfa63ce133a917b9891dd6719f
+source-git-commit: d788c6419831814f2a81229c2354ffc41b637873
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '106'
 ht-degree: 10%
 
 ---
@@ -15,8 +15,8 @@ ht-degree: 10%
 
 - [Adobe Commerce Optimizerとは](overview.md)
 - [はじめに](get-started.md)
-- [ユーザー管理](user-management.md)
-- [共有責任](shared-responsibility.md)
+- [ユーザーおよび ID 管理](user-management.md)
+- [共有された責任](shared-responsibility.md)
 - [境界と制限](boundaries-limits.md)
 - [リリースノート](release-notes.md)
 - 結果の管理 {#manage-results}
@@ -27,24 +27,24 @@ ht-degree: 10%
    - [概要](./merchandising/overview.md)
    - 推奨事項 {#recommendations}
       - [概要](./merchandising/recommendations/overview.md)
-      - [作成と管理](./merchandising/recommendations/create.md)
+      - [の作成と管理](./merchandising/recommendations/create.md)
       - [フィルター](./merchandising/recommendations/filters.md)
       - [タイプ](./merchandising/recommendations/types.md)
       - [ベストプラクティス](./merchandising/recommendations/best-practice.md)
    - マーチャンダイジングルール {#rules}
       - [概要](./merchandising/rules/overview.md)
       - [Workspace](./merchandising/rules/workspace.md)
-      - [作成と管理](./merchandising/rules/add.md)
+      - [の作成と管理](./merchandising/rules/add.md)
       - [ベストプラクティス](./merchandising/rules/best-practice.md)
    - ファセット {#facets}
       - [概要](./merchandising/facets/overview.md)
       - [Workspace](./merchandising/facets/workspace.md)
-      - [作成と管理](./merchandising/facets/add.md)
+      - [の作成と管理](./merchandising/facets/add.md)
       - [タイプ](./merchandising/facets/type.md)
       - [ベストプラクティス](./merchandising/facets/best-practice.md)
    - 同義語 {#synonyms}
       - [概要](./merchandising/synonyms/overview.md)
-      - [作成と管理](./merchandising/synonyms/add.md)
+      - [の作成と管理](./merchandising/synonyms/add.md)
       - [タイプ](./merchandising/synonyms/type.md)
       - [ベストプラクティス](./merchandising/synonyms/best-practice.md)
 - ストアの設定 {#setup}
@@ -57,8 +57,8 @@ ht-degree: 10%
 - [ストアフロント](storefront.md)
 - [設定](settings.md)
 - ユースケース {#use-case}
-   - [ストアフロントとカタログ管理者のエンドツーエンドの使用例](./use-case/admin-use-case.md)
+   - [ストアフロントとカタログ管理のエンドツーエンドのユースケース](./use-case/admin-use-case.md)
 - 開発者向けリソース {#developer}
    - [Salesforce Commerce コネクタ](./developer/salesforce-connector.md)
-   - [&#x200B; データ取り込み REST API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/)
-   - [&#x200B; マーチャンダイジング GraphQL API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/reference/graphql/)
+   - [ データ取り込み REST API リファレンス ](https://developer.adobe.com/commerce/services/reference/rest/)
+   - [ マーチャンダイジング GraphQL API リファレンス ](https://developer.adobe.com/commerce/services/reference/graphql/)
