@@ -1,7 +1,7 @@
 ---
 title: ユーザーとIdentity Management
 description: ユーザーを作成および管理し、 [!DNL Adobe Commerce Optimizer] のユーザーの役割を割り当てる方法について説明します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
 source-git-commit: b88406169191cb9d4f0d2b5ef113703f5afcd589
 workflow-type: tm+mt
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 - **ユーザー** - ユーザーは [!DNL Adobe Commerce Optimizer] UI にアクセスして、カタログ表示とマーチャンダイジングルールを表示および管理し、パフォーマンス指標を追跡できます。
 
-- [**開発者**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} – 開発者は、ユーザー権限とAdobe Developer Consoleへのアクセス権を持っています。 つまり、[!DNL Adobe Commerce Optimizer] API や SDK などの開発ツールを、App Builderや API メッシュなどのAdobe拡張ツールと共に使用するために、プロジェクトを作成し、資格情報を設定できます。
+- [**開発者**](https://helpx.adobe.com/jp/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} – 開発者は、ユーザー権限とAdobe Developer Consoleへのアクセス権を持っています。 つまり、[!DNL Adobe Commerce Optimizer] API や SDK などの開発ツールを、App Builderや API メッシュなどのAdobe拡張ツールと共に使用するために、プロジェクトを作成し、資格情報を設定できます。
 
 - **管理者** – 管理者ロールには次の 3 つのタイプがあります。
-   - [&#x200B; システム管理者 &#x200B;](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Adobe Admin Consoleを通じて組織内のすべての製品と製品プロファイルにアクセスできます。
+   - [&#x200B; システム管理者 &#x200B;](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Adobe Admin Consoleを通じて組織内のすべての製品と製品プロファイルにアクセスできます。
    - [&#x200B; 製品管理者 &#x200B;](#add-a-product-admin) – 製品管理者は [&#x200B; 製品のユーザー、役割、権限を管理 &#x200B;](#add-users-and-admins) できます。[!DNL Adobe Admin Console]
    - [&#x200B; 製品プロファイル管理者 &#x200B;](#add-users-developers-and-product-profile-admins) – 製品プロファイル管理者は、[!DNL Adobe Admin Console] 内の製品のユーザーを管理できます。
 
@@ -143,8 +143,8 @@ ht-degree: 0%
 
 次のいずれかの方法を使用して、複数のユーザーをより効率的に追加できます。
 
-- Adobe Admin Consoleの **CSV によるユーザーの追加** 機能を使用して、[CSV の一括アップロード &#x200B;](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"} を実行します。
-- [&#x200B; ユーザーグループ &#x200B;](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"} を作成して、1 つの役割に複数のユーザーを追加します。 次に、[!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] をユーザーグループに追加します。
+- Adobe Admin Consoleの **CSV によるユーザーの追加** 機能を使用して、[CSV の一括アップロード &#x200B;](https://helpx.adobe.com/jp/enterprise/using/bulk-upload-users.html){target="_blank"} を実行します。
+- [&#x200B; ユーザーグループ &#x200B;](https://helpx.adobe.com/jp/enterprise/using/user-groups.html){target="_blank"} を作成して、1 つの役割に複数のユーザーを追加します。 次に、[!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] をユーザーグループに追加します。
 
 ## ID 管理とシングルサインオン設定
 
