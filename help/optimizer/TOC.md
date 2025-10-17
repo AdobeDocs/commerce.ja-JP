@@ -60,5 +60,5 @@ ht-degree: 10%
    - [ストアフロントとカタログ管理のエンドツーエンドのユースケース](./use-case/admin-use-case.md)
 - 開発者向けリソース {#developer}
    - [Salesforce Commerce コネクタ](./developer/salesforce-connector.md)
-   - [ データ取り込み REST API リファレンス ](https://developer.adobe.com/commerce/services/reference/rest/)
-   - [ マーチャンダイジング GraphQL API リファレンス ](https://developer.adobe.com/commerce/services/reference/graphql/)
+   - [&#x200B; データ取り込み REST API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/)
+   - [&#x200B; マーチャンダイジング GraphQL API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/reference/graphql/)
