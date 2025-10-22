@@ -3,7 +3,7 @@ title: ユースケース
 description: ' [!DNL Adobe Commerce as a Cloud Service] を使用して実用的なユースケースとサポートされるビジネスシナリオを達成する方法を説明します。'
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1325'
@@ -198,7 +198,7 @@ AEM Assets、Adobe Express、Fireflyを使用すると、シンプルな自己�
 
 #### Commerce AEM Assetsへの画像の追加
 
-1. AEM as a Cloud Serviceの [&#x200B; ナビゲーションパネル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) から、**Assets** / **ファイル** / **Commerce** を選択し、前の節で作成したアセットをクリックします。
+1. AEM as a Cloud Serviceの [&#x200B; ナビゲーションパネル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) から、**Assets** / **ファイル** / **Commerce** を選択し、前の節で作成したアセットをクリックします。
 
    ![commerce フォルダー &#x200B;](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -248,7 +248,7 @@ Adobe Commerceのバリエーションを生成では、ジェネレーティブ
 
 ### テキストを生成
 
-1. [&#x200B; ユニバーサルエディター &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) を使用してストアフロントサイトを開きます。
+1. [&#x200B; ユニバーサルエディター &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) を使用してストアフロントサイトを開きます。
 
 1. 編集するテキストのブロックを選択します。
 
@@ -262,7 +262,7 @@ Adobe Commerceのバリエーションを生成では、ジェネレーティブ
 
 ### コンテンツと画像の生成
 
-1. [&#x200B; バリエーションを生成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) を開きます。
+1. [&#x200B; バリエーションを生成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations) を開きます。
 
 1. [!UICONTROL **ヒーローバナー**] テンプレートを選択します。
 
