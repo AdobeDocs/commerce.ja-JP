@@ -3,7 +3,7 @@ title: アセットの管理
 description: CommerceのAEM Assets統合を使用すると、ストアフロントのメディアアセットを管理できます。
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: 394a958250fcc9b0d9f672c1daf46a6d7c16a71d
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 0%
@@ -35,7 +35,7 @@ CommerceのAEM Assets統合を有効にすると、次のメディアタイプ�
 
 1. 「**画像とビデオ** セクションを開きます。
 
-   ![&#x200B; 製品画像 &#x200B;](assets/product-image.png){width="600" zoomable="yes"}
+   ![ 製品画像 ](assets/product-image.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -43,23 +43,23 @@ CommerceのAEM Assets統合を有効にすると、次のメディアタイプ�
 
 ### AEM Assetsでの商品画像の管理
 
-商品関連の画像を管理するには、すべての変更を **0&rbrace;AEM Assets&rbrace; で直接行う必要があります。**&#x200B;このプロセスは完全に自動化されており、手動の操作を必要とせずに、変更内容がAdobe Commerceに確実に同期されます。
+商品関連の画像を管理するには、すべての変更を **0}AEM Assets} で直接行う必要があります。**&#x200B;このプロセスは完全に自動化されており、手動の操作を必要とせずに、変更内容がAdobe Commerceに確実に同期されます。
 
 ### 同期 SLA
 
-このトピックについて詳しくは、[&#x200B; 同期SLA](get-started/setup-synchronization.md#synchronization-sla) を参照してください。
+このトピックについて詳しくは、[ 同期SLA](get-started/setup-synchronization.md#synchronization-sla) を参照してください。
 
 ## コンテンツ画像
 
-Adobe Commerceは、Adobe Experience Manager（CMS）ツールセットを使用していないマーチャント向けに **ページビルダーを** コンテンツ管理システム（AEM）として提供します。 コンテンツの作成を強化するために、[AEM アセットセレクター &#x200B;](synchronize/asset-selector-integration.md) を活用し、マーケターが **DAM** から直接、画像にシームレスにアクセスして埋め込めるようにします。 これにより、承認された高品質の画像のみがコンテンツの作成に使用されるので、Adobe Commerceに冗長なストレージを保存する必要がなくなります。
+Adobe Commerceは、Adobe Experience Manager（CMS）ツールセットを使用していないマーチャント向けに **ページビルダーを** コンテンツ管理システム（AEM）として提供します。 コンテンツの作成を強化するために、[AEM アセットセレクター ](synchronize/asset-selector-integration.md) を活用し、マーケターが **DAM** から直接、画像にシームレスにアクセスして埋め込めるようにします。 これにより、承認された高品質の画像のみがコンテンツの作成に使用されるので、Adobe Commerceに冗長なストレージを保存する必要がなくなります。
 
 ### ページビルダーでのAEM アセットセレクターの使用
 
-[!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}**AEM アセットセレクター** を使用して画像を埋め込むには：
+[!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}**AEM アセットセレクター** を使用して画像を埋め込むには：
 
-1. **ページビルダー** を使用して、`content enrichment` をサポートする **0&rbrace;Adobe Commerce管理者 &rbrace; の任意のセクションに移動します。**
+1. **ページビルダー** を使用して、`content enrichment` をサポートする **0}Adobe Commerce管理者 } の任意のセクションに移動します。**
 
-1. [&#x200B; ページビルダー &#x200B;](https://developer.adobe.com/commerce/frontend-core/page-builder/){target=_blank} を開きます。
+1. [ ページビルダー ](https://developer.adobe.com/commerce/frontend-core/page-builder/){target=_blank} を開きます。
 
    **AEM Asset** という新しいメディアタイプが使用できるようになります。
 
@@ -79,7 +79,7 @@ Adobe Commerceは、Adobe Experience Manager（CMS）ツールセットを使用
 
 >[!TIP]
 >
-> [DA.live （ドキュメントオーサリング） &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=ja#dalive-document-authoring){target=_blank} では、データをエンリッチメントするためのアセットセレクターも提供しています。
+> [DA.live （ドキュメントオーサリング） ](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} では、データをエンリッチメントするためのアセットセレクターも提供しています。
 
 ## 製品ビデオ
 
@@ -93,7 +93,7 @@ Adobe Commerceは、デジタルアセットの主要なエンゲージメント
 
 1. 「**画像とビデオ** セクションを開きます。
 
-   ![&#x200B; 製品画像 &#x200B;](assets/product-image.png){width="600" zoomable="yes"}
+   ![ 製品画像 ](assets/product-image.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -119,7 +119,7 @@ Adobe Commerceは、デジタルアセットの主要なエンゲージメント
 
 ### 同期 SLA
 
-このトピックについて詳しくは、[&#x200B; 同期SLA](get-started/setup-synchronization.md#synchronization-sla) を参照してください。
+このトピックについて詳しくは、[ 同期SLA](get-started/setup-synchronization.md#synchronization-sla) を参照してください。
 
 ## カテゴリ画像
 
@@ -127,29 +127,29 @@ Adobe Commerceを使用すると、マーチャントは画像を商品カテゴ
 
 ### カテゴリ画像に対するAEM アセットセレクターの使用
 
-[AEM アセットセレクター &#x200B;](synchronize/asset-selector-integration.md) を設定した後、それを使用してカタログカテゴリコンテンツにアセットを追加できます。
+[AEM アセットセレクター ](synchronize/asset-selector-integration.md) を設定した後、それを使用してカタログカテゴリコンテンツにアセットを追加できます。
 
 1. _管理者_ サイドバーで、**[!UICONTROL Catalog]**/**[!UICONTROL Categories]** に移動します。
 
 1. 更新するカテゴリを選択します。
 
-1. 「![」セクションの &#x200B;](../assets/icon-display-expand.png) 展開セレクター **[!UICONTROL Content]** を展開します。
+1. 「![」セクションの ](../assets/icon-display-expand.png) 展開セレクター **[!UICONTROL Content]** を展開します。
 
 1. 「**[!UICONTROL Content]**」セクションで、カテゴリに関連付けられている *画像フィールド* を見つけます。
 
-   ![&#x200B; カテゴリコンテンツ &#x200B;](assets/category-asset.png){width="600" zoomable="yes"}
+   ![ カテゴリコンテンツ ](assets/category-asset.png){width="600" zoomable="yes"}
 
 1. 「**[!UICONTROL Select from Assets]**」をクリックして、カテゴリ画像を変更します。
 
-   ![&#x200B; カテゴリコンテンツ &#x200B;](assets/asset-view.png){width="600" zoomable="yes"}
+   ![ カテゴリコンテンツ ](assets/asset-view.png){width="600" zoomable="yes"}
 
 1. AEM アセットセレクターから画像を選択します。
 
-   ![&#x200B; カテゴリコンテンツ &#x200B;](assets/select-image.png){width="600" zoomable="yes"}
+   ![ カテゴリコンテンツ ](assets/select-image.png){width="600" zoomable="yes"}
 
 1. 「**[!UICONTROL Save]**」をクリックして続行します。
 
-   カテゴリの作成について詳しくは、&lbrace;2[Commerce Catalog Management Guide の &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) カテゴリのコンテンツの入力 **を参照してください。**
+   カテゴリの作成について詳しくは、{2[Commerce Catalog Management Guide の ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) カテゴリのコンテンツの入力 **を参照してください。**
 
 ## アセットの更新
 
@@ -157,6 +157,6 @@ AEM Assets内のアセットを更新して承認すると、自動一致機能�
 
 詳しくは、次のAEM Assets ドキュメントを参照してください。
 
-* [&#x200B; デジタルアセットの再処理 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [ デジタルアセットの再処理 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [&#x200B; アセットの承認 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [ アセットの承認 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

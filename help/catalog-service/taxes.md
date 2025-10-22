@@ -3,7 +3,8 @@ title: API メッシュを使用した課税価格の表示
 description: Adobe Commerceおよびカタログサービスに  [!DNL API Mesh]  を使用して、税を含む価格を表示します。
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: ca62c653-29b9-45cf-b2d4-8cb693b08aac
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Developer App Builderの API メッシュで課税価格を表示
 
-[API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、デベロッパーはAdobe I/O Runtimeを使用して、プライベートまたはサードパーティの API およびその他のインターフェイスをAdobe製品と統合できます。
+[API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、デベロッパーはAdobe I/O Runtimeを使用して、プライベートまたはサードパーティの API およびその他のインターフェイスをAdobe製品と統合できます。
 
 このトピックでは、API メッシュを使用して、税金が設定された製品詳細ページに製品価格を表示します。
 
@@ -20,18 +21,18 @@ ht-degree: 0%
 
 製品の詳細ページに表示するには、税金を設定する必要があります。
 
-1. [&#x200B; 税率を設定します &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=ja)。
-1. 税金を [&#x200B; カタログに表示 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=ja#step-1%3A-configure-catalog-prices-display-settings) できるようにして、`Including and Excluding Tax` または `Including Tax` に設定します。
+1. [ 税率を設定します ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html)。
+1. 税金を [ カタログに表示 ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) できるようにして、`Including and Excluding Tax` または `Including Tax` に設定します。
 
 製品の詳細ページを確認して、カタログサービスが機能していることを確認します。
 
-![&#x200B; 製品詳細ページに表示される税金 &#x200B;](assets/display-tax.png)
+![ 製品詳細ページに表示される税金 ](assets/display-tax.png)
 
 ## API メッシュの設定
 
-まだ行っていない場合は、API メッシュとカタログサービスをインスタンスに接続します。 『 API メッシュ デベロッパーガイド』の [&#x200B; はじめに &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) のトピックの詳細な手順を参照してください。
+まだ行っていない場合は、API メッシュとカタログサービスをインスタンスに接続します。 『 API メッシュ デベロッパーガイド』の [ はじめに ](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) のトピックの詳細な手順を参照してください。
 
-`mesh.json` ファイルで、`name `、`endpoint`、`x-api-key` の値を
+`mesh.json` ファイルで、`name`、`endpoint`、`x-api-key` の値を
 
 ```json
 {
@@ -107,10 +108,10 @@ ht-degree: 0%
 この `mesh.json` 設定ファイルは次のとおりです。
 
 * Commerce コアアプリケーションを、そのクエリまたはタイプの先頭に「Core_」を付加するように変換します。 これにより、カタログサービスとの名前の競合の可能性を防ぐことができます。
-* `priceWithTaxes` という新しいフィールドを使用して、`ComplexProductView` 型および `SimpleProductView` 型を拡張します。
+* `ComplexProductView` という新しいフィールドを使用して、`SimpleProductView` 型および `priceWithTaxes` 型を拡張します。
 * 新しいフィールドのカスタムリゾルバーを追加します。
 
-`mesh.json` ファイルで [create コマンド &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) を使用してメッシュを作成します。
+[ ファイルで ](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1)create コマンド `mesh.json` を使用してメッシュを作成します。
 
 ### GraphQL クエリ
 
