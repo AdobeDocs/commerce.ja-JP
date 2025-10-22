@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ファセットは、複数のディメンションの属性値を検索条件として使用する、パフォーマンスの高いフィルタリング方法です。
 
-![ フィルタリングされた検索結果 ](../../assets/storefront-search-results-run.png)
+![&#x200B; フィルタリングされた検索結果 &#x200B;](../../assets/storefront-search-results-run.png)
 
 ファセット内で、買い物客は「スタイル」の「基本」や「スナッグ」など、複数のオプションを選択でき、検索結果はこれらのスタイルのみを表示するように更新されます。 同様に、買い物客がファセットをまたいだオプション（「スタイル」の「基本」や「気候」の「屋内」など）を選択すると、検索結果が更新され、選択したスタイルと選択した気候が表示されます。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 | 並べ替え | 製品リストでの並べ替えに使用 | `price` |
 | 検索可能 | 検索で使用 | `price` <br />`sku`<br />`name` |
 
-製品属性とそのプロパティについて詳しくは、[ データ取得メタデータ API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) を参照してください。
+製品属性とそのプロパティについて詳しくは、[&#x200B; データ取得メタデータ API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) を参照してください。
 
 ## システム以外のデフォルトの属性プロパティ
 

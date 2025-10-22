@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 一括データ移行ツール
 
-一括データ移行ツールは、PaaS 環境から SaaS 環境への安全で効率的なデータ移行を可能にする分散アーキテクチャに従います。 このツールは、ソリューション実装者がクラウドインスタンス（PaaS）上の既存のAdobe Commerceから [!DNL Adobe Commerce as a Cloud Service] （SaaS）にデータを移行するように設計されています。 移行プロセスについて詳しくは、[ 移行の概要 ](./overview.md) を参照してください。
+一括データ移行ツールは、PaaS 環境から SaaS 環境への安全で効率的なデータ移行を可能にする分散アーキテクチャに従います。 このツールは、ソリューション実装者がクラウドインスタンス（PaaS）上の既存のAdobe Commerceから [!DNL Adobe Commerce as a Cloud Service] （SaaS）にデータを移行するように設計されています。 移行プロセスについて詳しくは、[&#x200B; 移行の概要 &#x200B;](./overview.md) を参照してください。
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 次の画像は、一括データ移行ツールを使用する際のアーキテクチャと主要なコンポーネントの詳細を示しています。
 
-![ 一括データ移行ツールのアーキテクチャ ](../assets/bulk-data-diagram.png)
+![&#x200B; 一括データ移行ツールのアーキテクチャ &#x200B;](../assets/bulk-data-diagram.png)
 
 ## 移行ワークフロー
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ソリューション実装担当者（SI）が、移行用のターゲット環境を作成します。 この環境は、ソースインスタンスから移行されたデータを保存するために使用されます。
 
-まず、[ 新しい  [!DNL Adobe Commerce as a Cloud Service]  （SaaS）インスタンスを作成 ](../getting-started.md#create-an-instance) します。
+まず、[&#x200B; 新しい  [!DNL Adobe Commerce as a Cloud Service]  （SaaS）インスタンスを作成 &#x200B;](../getting-started.md#create-an-instance) します。
 
 ### 抽出ツールの設定
 
@@ -63,7 +63,7 @@ ht-degree: 0%
       - IMS URL - ベース URL。 例：`https://ims-na1.adobelogin.com/`。
       - IMS 組織 ID
 
-   IMS 範囲およびその他の値については、**Adobe Developer Console** のプロジェクト内の [ 資格情報 ](https://developer.adobe.com/console/) セクションで OAuth タイプを選択します。 詳しくは、抽出ツールに付属している `.example.env` ファイルを参照してください。
+   IMS 範囲およびその他の値については、**Adobe Developer Console** のプロジェクト内の [&#x200B; 資格情報 &#x200B;](https://developer.adobe.com/console/) セクションで OAuth タイプを選択します。 詳しくは、抽出ツールに付属している `.example.env` ファイルを参照してください。
 
 ### データを抽出
 
