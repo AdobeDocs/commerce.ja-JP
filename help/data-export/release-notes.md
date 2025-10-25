@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 103.4.15 リリース
 
-![&#x200B; 新規 &#x200B;](../assets/new.svg) Adobe Commerceから接続されたサービス（カタログサービス、ライブ検索、商品レコメンデーション）へのデータ転送をモニタリングおよびトラブルシューティングするためのデータフィード同期ステータス拡張機能のサポートが追加されました。 この拡張機能のインストールと使用について詳しくは、&lbrace;2[Commerce管理ガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) の「データフィード同期ステータスの監視 *を参照してください。*<!--MDEE-954-->
+![&#x200B; 新規 &#x200B;](../assets/new.svg) Adobe Commerceから接続されたサービス（カタログサービス、ライブ検索、商品レコメンデーション）へのデータ転送をモニタリングおよびトラブルシューティングするためのデータフィード同期ステータス拡張機能のサポートが追加されました。 この拡張機能のインストールと使用について詳しくは、&lbrace;2[Commerce管理ガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=ja) の「データフィード同期ステータスの監視 *を参照してください。*<!--MDEE-954-->
 
 ## 103.4.14 リリース
 
