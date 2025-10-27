@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Admin Consoleからの ID 管理とシングルサインオンの設定に関する情報を含むように、次のトピックを更新しました。<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service ユーザーとIdentity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer：ユーザーとIdentity Management</a></p>
+      <td><p>Adobe Admin Consoleからの ID 管理とシングルサインオンの設定に関する情報を含むように、次のトピックを更新しました。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service ユーザーとIdentity Management</a><br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer：ユーザーとIdentity Management</a></p>
 </td>
       <td>
         フィードバック、技術
@@ -45,7 +45,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>ユーザーを追加するための <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">User Management</a> 手順を更新しました。</p>
+      <td><p>ユーザーを追加するための <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management">User Management</a> 手順を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -67,7 +67,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce Optimizerの <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront"> ストアフロントの設定ガイド </a> を更新し、サイト作成者ツールを使用してストアフロントプロジェクトを作成する手順、ストアフロント設定をカスタマイズする手順、デフォルトの商品詳細ページと商品検索結果ページを確認してサイトとカタログデータを検証する手順を追加しました。</p>
+      <td><p>Adobe Commerce Optimizerの <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/storefront"> ストアフロントの設定ガイド </a> を更新し、サイト作成者ツールを使用してストアフロントプロジェクトを作成する手順、ストアフロント設定をカスタマイズする手順、デフォルトの商品詳細ページと商品検索結果ページを確認してサイトとカタログデータを検証する手順を追加しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -89,7 +89,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management"> ユーザー管理 </a> では、すべての開発者と製品管理者に、最初にユーザーの役割を追加する必要があるようになりました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management"> ユーザー管理 </a> では、すべての開発者と製品管理者に、最初にユーザーの役割を追加する必要があるようになりました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -111,7 +111,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Payment Services v2.12.2 に <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes"> リリースノート </a> を公開しました。</p>
+      <td><p>Payment Services v2.12.2 に <a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/release-notes"> リリースノート </a> を公開しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -133,7 +133,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">user management</a> ページにAEM Assetsの設定情報を追加しました。</p>
+      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management">user management</a> ページにAEM Assetsの設定情報を追加しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -141,7 +141,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/acce1aad405e74b1171faddf7f0d6681bd0a048d">コミット</a></td>
     </tr>
     <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/getting-started"> はじめに </a> ページに、役割ベースのタスクとワークフロー情報を追加しました</p>
+      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/getting-started"> はじめに </a> ページに、役割ベースのタスクとワークフロー情報を追加しました</p>
 </td>
       <td>
         新しいトピック
@@ -163,7 +163,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>オプションの <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes"> 追加製品属性モジュール </a> に関するドキュメントを追加しました。 このモジュールをAdobe Commerce環境にインストールすると、データ書き出しプロセスによって、税クラス、属性セット、在庫メタデータが、Commerce製品コンフィギュレーションから <code class="language-plaintext highlighter-rouge">products</code> および <code class="language-plaintext highlighter-rouge">product attributes</code> フィードに自動的に書き出されます。</p>
+      <td><p>オプションの <a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes"> 追加製品属性モジュール </a> に関するドキュメントを追加しました。 このモジュールをAdobe Commerce環境にインストールすると、データ書き出しプロセスによって、税クラス、属性セット、在庫メタデータが、Commerce製品コンフィギュレーションから <code class="language-plaintext highlighter-rouge">products</code> および <code class="language-plaintext highlighter-rouge">product attributes</code> フィードに自動的に書き出されます。</p>
 </td>
       <td>
         新しいトピック
