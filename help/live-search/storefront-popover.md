@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Storefront Popover]
 
-[!DNL Live Search] が [ インストール済み ](install.md) になると、買い物客が [!DNL popover] 検索 [ ボックスに入力したときに ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) がストアフロントに表示されます。 各文字を入力すると、検索結果の候補となる製品やサムネール画像が [!DNL popover] に表示されます。
+[!DNL Live Search] が [&#x200B; インストール済み &#x200B;](install.md) になると、買い物客が [!DNL popover] 検索 [&#x200B; ボックスに入力したときに &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) がストアフロントに表示されます。 各文字を入力すると、検索結果の候補となる製品やサムネール画像が [!DNL popover] に表示されます。
 
 [!DNL Live Search] は、2 文字以上のクエリの結果を返します。 部分一致の場合、1 単語あたりの最大文字数は 20 文字です。 「入力中の検索」クエリの文字数は設定できません。
 
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 >[!TIP]
 >
->製品属性を検索可能として設定する方法については、「[Live Search の設定 ](workspace.md) 記事を参照してください。
+>製品属性を検索可能として設定する方法については、「[Live Search の設定 &#x200B;](workspace.md) 記事を参照してください。
 
 ## [!DNL Popover] ページサイズ
 
-[!DNL popover] ージのページサイズによって、オートコンプリートされた商品を返せるライン数が決まります。 Live Search のインストール中、`page_size` の値は [ カタログ検索 ](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` 設定の現在の値に変更されます。
+[!DNL popover] ージのページサイズによって、オートコンプリートされた商品を返せるライン数が決まります。 Live Search のインストール中、`page_size` の値は [&#x200B; カタログ検索 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` 設定の現在の値に変更されます。
 
 デフォルトでは、「カタログ検索 – オートコンプリートの制限」の値は 8 行（1 行）に設定されています。 [!DNL popover] ージのページサイズを変更するには、次の手順を実行します。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 .search-autocomplete          /* not visible */
 ```
 
-ストアフロント要素のスタイル設定について詳しくは、『 [ フロントエンド開発者ガイド ](https://developer.adobe.com/commerce/frontend-core/guide/css/) のカスケーディングスタイルシート（CSS） [ を参照してください ](https://developer.adobe.com/commerce/frontend-core/guide/)。
+ストアフロント要素のスタイル設定について詳しくは、『 [&#x200B; フロントエンド開発者ガイド &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/css/) のカスケーディングスタイルシート（CSS） [&#x200B; を参照してください &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/)。
 
 ## クラスセレクター
 
@@ -75,37 +75,37 @@ ht-degree: 0%
 
 #### .livesearch.popover-container
 
-![[!DNL Popover] コンテナ ](assets/livesearch-popover-container.png)
+![[!DNL Popover] コンテナ &#x200B;](assets/livesearch-popover-container.png)
 
 #### .livesearch.view-all-footer
 
-![ すべてのフッターを表示 ](assets/livesearch-view-all-footer.png)
+![&#x200B; すべてのフッターを表示 &#x200B;](assets/livesearch-view-all-footer.png)
 
 ### 製品クラスセレクター
 
 #### .livesearch.products-container
 
-![ 製品コンテナ ](assets/livesearch-product-container.png)
+![&#x200B; 製品コンテナ &#x200B;](assets/livesearch-product-container.png)
 
 #### .livesearch.product-result
 
-![ 製品結果 ](assets/livesearch-product-result.png)
+![&#x200B; 製品結果 &#x200B;](assets/livesearch-product-result.png)
 
 #### .livesearch.product-name
 
-![ 製品名 ](assets/livesearch-product-name.png)
+![&#x200B; 製品名 &#x200B;](assets/livesearch-product-name.png)
 
 #### .livesearch.product-price
 
-![ 製品価格 ](assets/livesearch-product-price.png)
+![&#x200B; 製品価格 &#x200B;](assets/livesearch-product-price.png)
 
 #### .livesearch product-link
 
-![ 製品結果 ](assets/livesearch-product-link.png)
+![&#x200B; 製品結果 &#x200B;](assets/livesearch-product-link.png)
 
 ## 変更したテーマの操作 {#working-with-modified-theme}
 
-カスタマイズした [!DNL storefront popover] テーマ [ で ](https://developer.adobe.com/commerce/frontend-core/guide/themes/) を使用し、必要なファイルを *Luma* から継承することができます。 `top.search` モジュールの `header-wrapper` の `Magento_Search` ブロックは変更できません。
+カスタマイズした [!DNL storefront popover] テーマ [&#x200B; で &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/themes/) を使用し、必要なファイルを *Luma* から継承することができます。 `top.search` モジュールの `header-wrapper` の `Magento_Search` ブロックは変更できません。
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 ## [!DNL popover] の無効化
 
-[!DNL popover] を無効にして標準の [ クイック検索 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 機能を復元するには、次のコマンドを入力します。
+[!DNL popover] を無効にして標準の [&#x200B; クイック検索 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 機能を復元するには、次のコマンドを入力します。
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover
@@ -127,4 +127,4 @@ bin/magento module:disable Magento_LiveSearchStorefrontPopover
 
 ## ヘッドレス実装
 
-ヘッドレス実装を使用するユーザーの場合は、[!DNL Live Search popover]npm パッケージ [ を使用して ](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils) をインストールできます。
+ヘッドレス実装を使用するユーザーの場合は、[!DNL Live Search popover]npm パッケージ [&#x200B; を使用して &#x200B;](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils) をインストールできます。

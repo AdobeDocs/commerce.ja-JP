@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ファセットは、複数のディメンションの属性値を検索条件として使用する、パフォーマンスの高いフィルタリング方法です。
 
-![ フィルタリングされた検索結果 ](../../assets/storefront-search-results-run.png)
+![&#x200B; フィルタリングされた検索結果 &#x200B;](../../assets/storefront-search-results-run.png)
 
 ファセット内で、買い物客は「スタイル」の「基本」や「スナッグ」など、複数のオプションを選択でき、検索結果はこれらのスタイルのみを表示するように更新されます。 同様に、買い物客がファセットをまたいだオプション（「スタイル」の「基本」や「気候」の「屋内」など）を選択すると、検索結果が更新され、選択したスタイルと選択した気候が表示されます。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 | 並べ替え | 製品リストでの並べ替えに使用 | `price` |
 | 検索可能 | 検索で使用 | `price` <br />`sku`<br />`name` |
 
-製品属性とそのプロパティについて詳しくは、[ データ取得メタデータ API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) を参照してください。
+製品属性とそのプロパティについて詳しくは、[&#x200B; データ取得メタデータ API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) を参照してください。
 
 ## 検索タイプの階層化された検索と拡張
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 - 買い物客が検索結果内で検索できるようにします。
 - レイヤー検索の 2 番目のレイヤーで `startsWith` と `contains` の検索インデックスを使用して、結果をさらに絞り込みます。
 
-高度な検索機能は、`filter` のクエリの [`productSearch` パラメーターを通じて ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 特定の演算子を使用して実装されます。
+高度な検索機能は、`filter` のクエリの [`productSearch` パラメーターを通じて &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 特定の演算子を使用して実装されます。
 
 - **レイヤー検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリを最大 2 つのレイヤーで検索できます。 例：
 
@@ -67,17 +67,17 @@ ht-degree: 0%
 
    - 大きい文字列内でのクエリの検索。 例えば、買い物客が「HAPE-123」という文字列で製品番号「PE-123」を検索するとします。
 
-      - 注意：この検索タイプは、オートコンプリート検索を実行する既存の [ フレーズ検索 ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase) とは異なります。 例えば、製品属性値が「outdoor pants」の場合、フレーズ検索は「out pan」に対する応答を返しますが、「or ants」に対する応答は返しません。 ただし、「を含む」検索では、「または ants」に対する応答が返されます。
+      - 注意：この検索タイプは、オートコンプリート検索を実行する既存の [&#x200B; フレーズ検索 &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase) とは異なります。 例えば、製品属性値が「outdoor pants」の場合、フレーズ検索は「out pan」に対する応答を返しますが、「or ants」に対する応答は返しません。 ただし、「を含む」検索では、「または ants」に対する応答が返されます。
 
 これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メインの検索クエリには影響しません。
 
 ### 実装
 
-1. [ 検索可能として属性を設定 ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata).
+1. [&#x200B; 検索可能として属性を設定 &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata).
 
 1. その属性の検索機能を指定します。例えば、**次を含む** （デフォルト）や **次で始まる** などです。 **Contains** に対して有効にする属性を最大 6 つ指定し、**Starts with** に対して有効にする属性を最大 6 つ指定できます。 また、**Contains** インデックスの場合、文字列の長さは 50 文字以下に制限されます。
 
-1. 新しい [ および ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) の検索機能を使用して [!DNL Commerce Optimizer] API 呼び出しを更新する方法の例については、`contains` 開発者ドキュメント `startsWith` を参照してください。
+1. 新しい [&#x200B; および &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) の検索機能を使用して [!DNL Commerce Optimizer] API 呼び出しを更新する方法の例については、`contains` 開発者ドキュメント `startsWith` を参照してください。
 
    これらの新しい条件は、検索結果ページに実装できます。 例えば、ページに新しいセクションを追加して、買い物客が検索結果をさらに絞り込めるようにすることができます。 買い物客が「製造元」、「部品番号」、「説明」など、特定の製品属性を選択できるようにすることができます。 そこから、`contains` 条件または `startsWith` 条件を使用して、これらの属性内を検索します。
 
