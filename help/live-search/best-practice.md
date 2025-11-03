@@ -137,7 +137,7 @@ Live Search は、デフォルトでスペルミスを管理します。 同義�
 検索の製品属性の詳細を説明します。
 
 - [検索可能として属性を設定](workspace.md#set-attributes-as-searchable)
-- [&#x200B; 属性へのウェイトの割り当て &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [&#x200B; 属性へのウェイトの割り当て &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 検索結果の監視
 

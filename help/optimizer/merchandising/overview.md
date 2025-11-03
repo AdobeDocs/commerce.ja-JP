@@ -2,7 +2,7 @@
 title: マーチャンダイジングの概要
 description: ' [!DNL Adobe Commerce Optimizer] のマーチャンダイジング機能について説明します。'
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
 source-git-commit: 5f6c7e68d330a063fbdb2fce1aeb86a08cf25a80
 workflow-type: tm+mt
