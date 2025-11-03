@@ -1,11 +1,11 @@
 ---
 title: ファセットの概要
 description: のファセットと、検索結果  [!DNL Adobe Commerce Optimizer]  改善方法について説明します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: b786a8675625dc969b9542b4b4f716de5342c1af
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ファセットは、複数のディメンションの属性値を検索条件として使用する、パフォーマンスの高いフィルタリング方法です。
 
-![&#x200B; フィルタリングされた検索結果 &#x200B;](../../assets/storefront-search-results-run.png)
+![ フィルタリングされた検索結果 ](../../assets/storefront-search-results-run.png)
 
 ファセット内で、買い物客は「スタイル」の「基本」や「スナッグ」など、複数のオプションを選択でき、検索結果はこれらのスタイルのみを表示するように更新されます。 同様に、買い物客がファセットをまたいだオプション（「スタイル」の「基本」や「気候」の「屋内」など）を選択すると、検索結果が更新され、選択したスタイルと選択した気候が表示されます。
 
@@ -37,42 +37,68 @@ ht-degree: 0%
 | 並べ替え | 製品リストでの並べ替えに使用 | `price` |
 | 検索可能 | 検索で使用 | `price` <br />`sku`<br />`name` |
 
-製品属性とそのプロパティについて詳しくは、[&#x200B; データ取得メタデータ API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) を参照してください。
+製品属性とそのプロパティについて詳しくは、[ データ取得メタデータ API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) を参照してください。
 
-## システム以外のデフォルトの属性プロパティ
+## 検索タイプの階層化された検索と拡張
 
-次の表に、システム以外の属性のデフォルトの検索プロパティとフィルタリング可能プロパティを示します。 *検索時に使用* 属性プロパティを `Yes` に設定すると、[!DNL Adobe Commerce Optimizer] で属性を検索できるようになります。
+レイヤー検索（検索内の検索）は、従来の検索機能を拡張して検索パラメーターを追加する、属性ベースのフィルタリングシステムです。 これらの追加の検索パラメーターを使用すると、より正確で柔軟な製品検出が可能になります。
 
-| 属性コード | 検索可能 |
-|--- |--- |
-| activity | はい |
-| attributes_brand | はい |
-| ブランド | はい |
-| 気候 | はい |
-| カラー | はい |
-| 色 | はい |
-| 費用 | はい |
-| eco_collection |  |
-| 性別 | はい |
-| 製造元 | はい |
-| 素材 | はい |
-| 目的 | はい |
-| strap_bags | はい |
-| style_general | はい |
+レイヤー検索を使用すると、次のことができます。
 
-## デフォルトのシステム属性プロパティ
+- 買い物客が検索結果内で検索できるようにします。
+- レイヤー検索の 2 番目のレイヤーで `startsWith` と `contains` の検索インデックスを使用して、結果をさらに絞り込みます。
 
-次の表に、システム属性のデフォルトの検索およびフィルタリング可能プロパティを示します。
+高度な検索機能は、`filter` のクエリの [`productSearch` パラメーターを通じて ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 特定の演算子を使用して実装されます。
 
-| 属性コード | 検索可能 |
-|--- |--- |
-| allow_open_amount | はい |
-| 説明 | はい |
-| name | はい |
-| 価格 | はい |
-| short_description | はい |
-| sku | はい |
-| ステータス | はい |
-| tax_class_id | はい |
-| url_key | はい |
-| 重み | はい |
+- **レイヤー検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリを最大 2 つのレイヤーで検索できます。 例：
+
+   - **レイヤー 1 検索** - `product_attribute_1` で「モーター」を検索します。
+   - **レイヤー 2 検索** - `product_attribute_2` で「品番 123」を検索します。 この例では、「motor」の結果に含まれる「part number 123」を検索します。
+
+  レイヤー検索は、次に示すように、レイヤー検索の 2 番目のレイヤーの `startsWith` 検索インデックスと `contains` 検索インデックスの両方で使用できます。
+
+- **startsWith 検索インデックス付け** - `startsWith` インデックス付けを使用して検索します。 この機能では、次のことが可能です。
+
+   - 属性値が指定した文字列で始まる製品を検索します。
+   - 「次で終わる」検索の設定による、買い物客での属性値が特定の文字列で終わる製品の検索。
+      - 「次で終わる」検索を有効にするには、製品属性を逆に取り込む必要があり、API 呼び出しも逆の文字列にする必要があります。 例えば、「pants」で終わる製品名を検索する場合は、これを「stnap」として送信する必要があります。
+
+- **contains search indexation** - contains indexation を使用して属性を検索します。 この新機能により、次のことが可能になります。
+
+   - 大きい文字列内でのクエリの検索。 例えば、買い物客が「HAPE-123」という文字列で製品番号「PE-123」を検索するとします。
+
+      - 注意：この検索タイプは、オートコンプリート検索を実行する既存の [ フレーズ検索 ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase) とは異なります。 例えば、製品属性値が「outdoor pants」の場合、フレーズ検索は「out pan」に対する応答を返しますが、「or ants」に対する応答は返しません。 ただし、「を含む」検索では、「または ants」に対する応答が返されます。
+
+これらの新しい条件により、検索クエリのフィルタリングメカニズムが強化され、検索結果を絞り込むことができます。 これらの新しい条件は、メインの検索クエリには影響しません。
+
+### 実装
+
+1. [ 検索可能として属性を設定 ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata).
+
+1. その属性の検索機能を指定します。例えば、**次を含む** （デフォルト）や **次で始まる** などです。 **Contains** に対して有効にする属性を最大 6 つ指定し、**Starts with** に対して有効にする属性を最大 6 つ指定できます。 また、**Contains** インデックスの場合、文字列の長さは 50 文字以下に制限されます。
+
+1. 新しい [ および ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) の検索機能を使用して [!DNL Commerce Optimizer] API 呼び出しを更新する方法の例については、`contains` 開発者ドキュメント `startsWith` を参照してください。
+
+   これらの新しい条件は、検索結果ページに実装できます。 例えば、ページに新しいセクションを追加して、買い物客が検索結果をさらに絞り込めるようにすることができます。 買い物客が「製造元」、「部品番号」、「説明」など、特定の製品属性を選択できるようにすることができます。 そこから、`contains` 条件または `startsWith` 条件を使用して、これらの属性内を検索します。
+
+### ファセットではなくレイヤー検索を使用する場合
+
+レイヤー化された検索とファセットは、製品検出において異なる目的を果たし、それぞれを選択するのは、特定のユースケースによって異なります。
+
+**レイヤー検索を使用すると、次のことができます。**
+
+- 複数の条件を使用した検索結果内の検索
+- ユーザーが部分的な情報を把握している部品番号、SKU または技術仕様を扱う
+- 買い物客がネストされた条件で結果を段階的に絞り込めるようにする
+- 複数の検索条件を 1 つのクエリに組み合わせることで、API 呼び出しの数を減らします
+- 標準的なファセットナビゲーションを超えるビジネス固有の検索パターンを実装する
+
+**ファセットを使用：**
+
+- 一般的なカテゴリ、価格、ブランド、属性のフィルタリングの提供
+- ユーザーが理解して選択しやすい直感的なフィルターオプションを提供
+- 現在の検索結果に基づいて使用可能なオプションを表示します
+- 使用可能なオプションをユーザーが理解しやすいように、フィルターの数と範囲を表示します
+- 色、サイズ、材質など、一般的な製品特性を使用する
+
+**ベストプラクティス：** ユーザーが特定の条件を持つ複雑な技術的検索にはレイヤー検索を使用し、ユーザーがオプションを視覚的に探索して調整したい標準の e コマースフィルタリングにはファセットを使用します。

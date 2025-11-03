@@ -1,9 +1,10 @@
 ---
 title: 同義語
 description: 同義語 [!DNL Live Search]、カタログ内の単語とは異なる単語でクエリを展開します。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 4aa731b0-b922-476b-a311-5c400f31f749
+source-git-commit: f96e7d8d2a31d5e0f49bd3ac2da320313908a868
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
@@ -14,6 +15,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->[!DNL Live Search] がインストールされているAdobe Commerceのインストールでは、標準のAdobe Commerce[&#x200B; シノニムを検索 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=ja#search-synonyms) 機能が [!DNL Live Search] シノニムに置き換わります。ただし、どちらもマーケティングメニューの「*SEO と検索*」セクションに表示されます。 [!DNL Live Search] を使用する場合は、この節の手順に従ってください。
-
-[!DNL Live Search] では、[&#x200B; 検索語句のリダイレクト &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=ja) もサポートしています。
+>[!DNL Live Search] がインストールされているAdobe Commerceのインストールでは、標準のAdobe Commerce[!DNL Live Search] シノニムを検索 [ 機能が ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms) シノニムに置き換わります。ただし、どちらもマーケティングメニューの「*SEO と検索*」セクションに表示されます。 [!DNL Live Search] を使用する場合は、この節の手順に従ってください。
