@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## ヘルスケア関連のお客様
 
-医療関係のお客様が [&#x200B; データ接続 &#x200B;](../data-connection/hipaa-readiness.md#installation) 拡張機能の一部である [&#x200B; データサービス HIPAA 拡張機能 &#x200B;](../data-connection/overview.md) をインストールした場合、[!DNL Product Recommendations] で使用されるストアフロントイベントデータは取得されなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるからです。 ストアフロントのイベントデータのキャプチャと送信を続行するには、[!DNL Product Recommendations] のイベント収集を再度有効にします。 詳しくは、[&#x200B; 一般設定 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) を参照してください。
+医療関係のお客様が [&#x200B; データ接続 &#x200B;](../data-connection/hipaa-readiness.md#installation) 拡張機能の一部である [&#x200B; データサービス HIPAA 拡張機能 &#x200B;](../data-connection/overview.md) をインストールした場合、[!DNL Product Recommendations] で使用されるストアフロントイベントデータは取得されなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるからです。 ストアフロントのイベントデータのキャプチャと送信を続行するには、[!DNL Product Recommendations] のイベント収集を再度有効にします。 詳しくは、[&#x200B; 一般設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/general/general#data-services) を参照してください。
 
 ## データタイプとイベント
 
@@ -87,4 +87,4 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 
 >[!NOTE]
 >
->[Cookie 制限モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、買い物客が Cookie の使用を同意するまで、Adobe Commerceは行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[Cookie 制限モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja) が有効になっている場合、買い物客が Cookie の使用を同意するまで、Adobe Commerceは行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
