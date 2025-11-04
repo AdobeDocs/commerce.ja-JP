@@ -3,7 +3,7 @@ title: データを収集
 description: イベントで  [!DNL Product Recommendations] のデータを収集する方法を説明します。
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: d770d4d99802f7ecf6e395518dfc9aeaac9aa130
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 0%
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 [[!DNL Product Recommendations]](install-configure.md) をインストールして設定すると、モジュールは行動データの収集をストアフロントにデプロイします。 このメカニズムは、匿名化された行動データを買い物客から収集し、[!DNL Product Recommendations] の権限を与えます。 例えば、`view` イベントは `Viewed this, viewed that` レコメンデーションタイプの計算に使用され、`place-order` イベントは `Bought this, bought that` レコメンデーションタイプの計算に使用されます。
 
-[&#x200B; イベントが収集する行動データについて詳しくは、](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) 開発者ドキュメント [!DNL Product Recommendations] を参照してください。
+[ イベントが収集する行動データについて詳しくは、](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) 開発者ドキュメント [!DNL Product Recommendations] を参照してください。
 
 >[!NOTE]
 >
->[!DNL Product Recommendations] 用のためのデータ収集には、個人を特定できる情報（PII）は含まれません。 Cookie ID や IP アドレスなどのすべてのユーザー識別子は、厳密に匿名化されます。 詳細情報 [&#x200B; 詳細情報 &#x200B;](https://www.adobe.com/privacy/experience-cloud.html)。
+>[!DNL Product Recommendations] 用のためのデータ収集には、個人を特定できる情報（PII）は含まれません。 Cookie ID や IP アドレスなどのすべてのユーザー識別子は、厳密に匿名化されます。 詳細情報 [ 詳細情報 ](https://www.adobe.com/privacy/experience-cloud.html)。
 
 ## ヘルスケア関連のお客様
 
-医療関係のお客様が [&#x200B; データ接続 &#x200B;](../data-connection/hipaa-readiness.md#installation) 拡張機能の一部である [&#x200B; データサービス HIPAA 拡張機能 &#x200B;](../data-connection/overview.md) をインストールした場合、[!DNL Product Recommendations] で使用されるストアフロントイベントデータは取得されなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるからです。 ストアフロントのイベントデータのキャプチャと送信を続行するには、[!DNL Product Recommendations] のイベント収集を再度有効にします。 詳しくは、[&#x200B; 一般設定 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) を参照してください。
+医療関係のお客様が [ データ接続 ](../data-connection/hipaa-readiness.md#installation) 拡張機能の一部である [ データサービス HIPAA 拡張機能 ](../data-connection/overview.md) をインストールした場合、[!DNL Product Recommendations] で使用されるストアフロントイベントデータは取得されなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるからです。 ストアフロントのイベントデータのキャプチャと送信を続行するには、[!DNL Product Recommendations] のイベント収集を再度有効にします。 詳しくは、[ 一般設定 ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) を参照してください。
 
 ## データタイプとイベント
 
@@ -59,11 +59,11 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 - 一部のレコメンデーションタイプは、他のタイプよりも高速にトレーニングされます
 - Adobe Commerceは 4 時間ごとに行動データを再計算します。 レコメンデーションは、サイトで使用されるほど正確になります。
 
-各推奨タイプのトレーニングの進行状況を視覚化できるように、「[&#x200B; 推奨を作成 &#x200B;](create.md#readiness-indicators)」ページに準備状況インジケーターが表示されます。
+各推奨タイプのトレーニングの進行状況を視覚化できるように、「[ 推奨を作成 ](create.md#readiness-indicators)」ページに準備状況インジケーターが表示されます。
 
 ライブサイトでデータが収集され、機械学習モデルがトレーニングされている間に、レコメンデーションを設定するために必要な他のテストおよび設定タスクを完了できます。 この作業が完了するまでに、モデルには便利なレコメンデーションを作成するのに十分なデータが含まれており、ストアフロントにモデルをデプロイできます。
 
-ほとんどの製品 SKU でサイトに十分なトラフィック（表示、購入、トレンド）が届かない場合は、学習プロセスを完了するのに十分なデータがない可能性があります。 これにより、管理者の準備インジケーターが動かなくなったように見える場合があります。 準備状況の指標は、店舗にとって優れたレコメンデーションタイプを選択する際に、マーチャントに別のデータポイントを提供することを目的としています。 数値は目安であり、100% に達することはありません。 準備状況インジケーターについて [&#x200B; 詳しくは、](create.md#readiness-indicators) こちら &rbrack; を参照してください。
+ほとんどの製品 SKU でサイトに十分なトラフィック（表示、購入、トレンド）が届かない場合は、学習プロセスを完了するのに十分なデータがない可能性があります。 これにより、管理者の準備インジケーターが動かなくなったように見える場合があります。 準備状況の指標は、店舗にとって優れたレコメンデーションタイプを選択する際に、マーチャントに別のデータポイントを提供することを目的としています。 数値は目安であり、100% に達することはありません。 準備状況インジケーターについて [ 詳しくは、](create.md#readiness-indicators) こちら ] を参照してください。
 
 ### バックアップの推奨事項 {#backuprecs}
 
@@ -81,10 +81,10 @@ _コールドスタート_ の問題は、モデルがトレーニングを受�
 
 #### 注意事項
 
-- 広告ブロッカーとプライバシー設定は、イベントがキャプチャされるのを防ぎ、エンゲージメントと売上高 [&#x200B; 指標 &#x200B;](workspace.md#column-descriptions) が過小報告される原因になる可能性があります。 さらに、買い物客のページからの離脱やネットワークの問題が原因で、一部のイベントが送信されない場合があります。
-- [&#x200B; ヘッドレス実装 &#x200B;](headless.md) 製品レコメンデーションダッシュボードを強化するには、イベンティングを実装する必要があります。
+- 広告ブロッカーとプライバシー設定は、イベントがキャプチャされるのを防ぎ、エンゲージメントと売上高 [ 指標 ](workspace.md#column-descriptions) が過小報告される原因になる可能性があります。 さらに、買い物客のページからの離脱やネットワークの問題が原因で、一部のイベントが送信されない場合があります。
+- [ ヘッドレス実装 ](headless.md) 製品レコメンデーションダッシュボードを強化するには、イベンティングを実装する必要があります。
 - 設定可能な製品の場合、Product Recommendations では、レコメンデーションユニット内の親製品の画像を使用します。 設定可能な製品に画像が指定されていない場合、その特定の製品のレコメンデーションユニットは空になります。
 
 >[!NOTE]
 >
->[Cookie 制限モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja) が有効になっている場合、買い物客が Cookie の使用を同意するまで、Adobe Commerceは行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[Cookie 制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) が有効になっている場合、買い物客が Cookie の使用を同意するまで、Adobe Commerceは行動データを収集しません。 Cookie 制限モードが無効になっている場合、Adobe Commerceはデフォルトで行動データを収集します。
