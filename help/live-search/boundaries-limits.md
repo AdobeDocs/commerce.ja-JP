@@ -16,8 +16,8 @@ ht-degree: 0%
 
 ## 一般
 
-- [&#x200B; がインストールされている場合は &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 詳細検索 [!DNL Live Search] モジュールが無効になり、ストアフロントフッターの詳細検索リンクが削除されます。
-- [&#x200B; 階層の価格 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) は、[!DNL Live Search] フィールドおよび製品一覧ページウィジェットではサポートされていません。
+- [&#x200B; がインストールされている場合は &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search) 詳細検索 [!DNL Live Search] モジュールが無効になり、ストアフロントフッターの詳細検索リンクが削除されます。
+- [&#x200B; 階層の価格 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/pricing/product-price-tier) は、[!DNL Live Search] フィールドおよび製品一覧ページウィジェットではサポートされていません。
 - 製品価格には付加価値税（VAT）が含まれていま [!DNL Live Search] が、VAT を別の値として表示することはできません。
 - コンテンツ検索（CMSのページとブロック）はサポートされていません。
 - ページ分割できる結果の最大数は 10,000 個です。 カテゴリや検索結果に多数の製品が含まれる場合に、買い物客がディープページネーションを使用する必要がないようにするには、製品をフィルタリングする意味のある方法を提供します。
@@ -29,7 +29,7 @@ ht-degree: 0%
 - [&#x200B; 開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations) に記載されているように、「次で始まる」または「次を含む」条件を使用し、いくつかの制限を設けることで、結果をフィルタリングできます。
 - 昨年内のパフォーマンス指標のみを追跡できます。
 - 検索クエリに複数の単語が含まれている場合、単語間の空白は別の検索用語として扱われます。 複数語の検索クエリを考慮する場合は、[synonyms](./synonyms.md) を使用します。
-- [!DNL Live Search] は、[&#x200B; 検索語句のリダイレクト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) をネイティブにサポートしていません。 Fastly またはその他のカスタム設定を使用して、リダイレクトを実装します。
+- [!DNL Live Search] は、[&#x200B; 検索語句のリダイレクト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-terms) をネイティブにサポートしていません。 Fastly またはその他のカスタム設定を使用して、リダイレクトを実装します。
 
 ## インデックス作成
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 ## ファセット
 
 - 定義済みのフィルター可能な属性のセットから、最大 100 個の属性をファセットとして設定できます。
-- ファセット内では、最大 100 個のバケットを返すことができます。 100 個を超えるバケットを返す必要がある場合は、[&#x200B; サポートチケットを作成 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) します。これにより、Adobeでパフォーマンスへの影響を分析し、お使いの環境でこの制限を増やすことが可能かどうかを判断できます。
+- ファセット内では、最大 100 個のバケットを返すことができます。 100 個を超えるバケットを返す必要がある場合は、[&#x200B; サポートチケットを作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) します。これにより、Adobeでパフォーマンスへの影響を分析し、お使いの環境でこの制限を増やすことが可能かどうかを判断できます。
 - 動的ファセットは、大きなインデックスや通常のインデックスのパフォーマンスで問題を引き起こす可能性があります。 動的ファセットを作成し、パフォーマンスの低下や、タイムアウトエラーを伴うページの読み込みがない場合は、ファセットをピン留めに変更して、パフォーマンスの問題が解決するかどうかを判断してください。
 - 在庫状態（`quantity_and_stock_status`）はファセットとしてサポートされていません。 `inStock: 'true'` を使用して、在庫製品を除外できます。 `LiveSearchAdapter` 管理者で「在庫切れの製品を表示」が「True」に設定されている場合、これは [!DNL Commerce] モジュールの初期設定でサポートされています。
 - 日付タイプ属性はファセットとしてサポートされていません。
@@ -80,12 +80,12 @@ ht-degree: 0%
 ## B2B およびカテゴリの権限
 
 - 製品は、デフォルトの共有カタログに追加されていない場合は表示されません。
-- [&#x200B; カテゴリ権限 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions) を使用して顧客グループを制限するには：
+- [&#x200B; カテゴリ権限 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/category-permissions) を使用して顧客グループを制限するには：
    - 製品はルートカテゴリに割り当てる必要があります。 （**注意：** この制限を解除するには、SaaS Data Export 拡張機能をバージョン 103.4.0 以降に更新します。 [&#x200B; データ書き出し拡張機能の管理 &#x200B;](../data-export/manage-extension.md) を参照してください。
    - 「ログインしていない」顧客グループには、「許可」閲覧権限を付与する必要があります。
-   - 製品を「ログインしていない」顧客グループに制限するには、各カテゴリに移動して、各 [&#x200B; 顧客グループ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) に権限を設定します。
+   - 製品を「ログインしていない」顧客グループに制限するには、各カテゴリに移動して、各 [&#x200B; 顧客グループ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) に権限を設定します。
 - PWA Studioの PLP ウィジェットを使用した B2B の標準サポートは、現時点ではサポートされていません。 ただし、この機能を実装するには [API を使用 &#x200B;](install.md#pwa-support) できます。
-- [!DNL Live Search] のカテゴリファセットには、特定の [&#x200B; 顧客グループ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) に表示できないカテゴリが表示される場合があります。
+- [!DNL Live Search] のカテゴリファセットには、特定の [&#x200B; 顧客グループ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) に表示できないカテゴリが表示される場合があります。
 - 最大 1,000 の顧客グループをサポートで [!DNL Live Search] ます。
 
 ## [!DNL Storefront popover]
@@ -100,8 +100,8 @@ ht-degree: 0%
 
 [!DNL Live Search] の一般的な問題のトラブルシューティングについて詳しくは、次のナレッジベース記事を参照してください。
 
-- [[!DNL Live Search]  カタログが同期されていません &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) – 商品カタログデータがAdobe Commerce ストアと Live Search サービスの間で正しく同期されていない場合にソリューションを提供します。 この記事では、同期ステータスの確認、同期エラーの特定、データ同期の問題の解決の方法について説明します。
-- [[!DNL Live Search]  ダッシュボードと検索結果のランキングが正しくありません &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) - ライブ検索ダッシュボードに表示される検索結果やパフォーマンス指標が期待どおりに表示されない問題に対処します。 この記事では、ランキングの不一致とダッシュボードデータの不一致のトラブルシューティング方法について説明します。
-- [[!DNL Live Search]  ファセットがアルファベット順に並べ替えられていません &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) - ファセット値がアルファベット順ではなく予期しない順序で表示される問題を解決します。 この記事では、ストアフロントでのファセットの並べ替え動作を設定および修正する手順を説明します。
+- [[!DNL Live Search]  カタログが同期されていません &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) – 商品カタログデータがAdobe Commerce ストアと Live Search サービスの間で正しく同期されていない場合にソリューションを提供します。 この記事では、同期ステータスの確認、同期エラーの特定、データ同期の問題の解決の方法について説明します。
+- [[!DNL Live Search]  ダッシュボードと検索結果のランキングが正しくありません &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) - ライブ検索ダッシュボードに表示される検索結果やパフォーマンス指標が期待どおりに表示されない問題に対処します。 この記事では、ランキングの不一致とダッシュボードデータの不一致のトラブルシューティング方法について説明します。
+- [[!DNL Live Search]  ファセットがアルファベット順に並べ替えられていません &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) - ファセット値がアルファベット順ではなく予期しない順序で表示される問題を解決します。 この記事では、ストアフロントでのファセットの並べ替え動作を設定および修正する手順を説明します。
 
-追加のサポートが必要な場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) にお問い合わせください。
+追加のサポートが必要な場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) にお問い合わせください。
