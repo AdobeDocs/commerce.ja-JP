@@ -45,11 +45,11 @@ bash --version
 
 1. 利用条件に同意するメッセージが表示されたら、リンクをクリックして利用条件を読み、「**同意して続行**」をクリックします。
 
-   ![ 同意する条件 ](./assets/accept-terms.png){width="600" zoomable="yes"}
+   ![&#x200B; 同意する条件 &#x200B;](./assets/accept-terms.png){width="600" zoomable="yes"}
 
 ## セットアップスクリプトを実行します
 
-[ 前提条件 ](#verify-prerequisites) がインストールされ、Adobe Developer Consoleにログインしている場合は、setup スクリプトをダウンロードして実行します。 または、[ ラボの前提条件 ](workbook-prerequisites.md) の手順に従って、スクリプトを手動で設定することもできます。
+[&#x200B; 前提条件 &#x200B;](#verify-prerequisites) がインストールされ、Adobe Developer Consoleにログインしている場合は、setup スクリプトをダウンロードして実行します。 または、[&#x200B; ラボの前提条件 &#x200B;](workbook-prerequisites.md) の手順に従って、スクリプトを手動で設定することもできます。
 
 1. 設定スクリプトを含むリポジトリのクローンを作成します。
 
@@ -59,7 +59,7 @@ bash --version
 
    >[!NOTE]
    >
-   >スクリプトが失敗した場合は、[ 前提条件 ](workbook-prerequisites.md) を参照し、スクリプトでエラーが発生した場所で続行します。
+   >スクリプトが失敗した場合は、[&#x200B; 前提条件 &#x200B;](workbook-prerequisites.md) を参照し、スクリプトでエラーが発生した場所で続行します。
 
 1. リポジトリに移動します。
 
@@ -93,7 +93,7 @@ cd extension
 aio commerce extensibility tools-setup
 ```
 
-![AI ツールのインストール ](./assets/install-ai-tools.png){width="600" zoomable="yes"}
+![AI ツールのインストール &#x200B;](./assets/install-ai-tools.png){width="600" zoomable="yes"}
 
 ### カーソルを開く
 
@@ -108,15 +108,15 @@ aio commerce extensibility tools-setup
 cursor .
 ```
 
-![ カーソルを開く ](./assets/open-cursor.png){width="600" zoomable="yes"}
+![&#x200B; カーソルを開く &#x200B;](./assets/open-cursor.png){width="600" zoomable="yes"}
 
 この時点で、すべてのルール [!DNL Cursor]`.cursor/rules` フォルダーにインストールされます。 MCP ツールは、**の** MCP 設定 [!DNL Cursor] にあります。 `commerce-extensibility` ツールセットがエラーなく有効になっていることを確認します。 エラーが表示された場合は、ツールセットのオン/オフを切り替えます。
 
-![ カーソル設定 ](./assets/cursor-settings.png){width="600" zoomable="yes"}
+![&#x200B; カーソル設定 &#x200B;](./assets/cursor-settings.png){width="600" zoomable="yes"}
 
 カーソルのコンテキストにドキュメントを追加した場合は、無効にする必要があります。 [!UICONTROL **カーソル**]/[!UICONTROL **設定**]/[!UICONTROL **カーソル設定**]/[!UICONTROL **インデックスとドキュメント**] に移動し、一覧表示されているドキュメントを削除します。
 
-![ ドキュメントを無効にする ](./assets/disable-documentation.png){width="600" zoomable="yes"}
+![&#x200B; ドキュメントを無効にする &#x200B;](./assets/disable-documentation.png){width="600" zoomable="yes"}
 
 ### コードの生成
 
@@ -144,11 +144,11 @@ cursor .
 
 1. エージェントがドキュメントの検索を要求した場合は、許可します。
 
-![ カーソルにプロンプトを入力 ](./assets/enter-prompt.png){width="600" zoomable="yes"}
+![&#x200B; カーソルにプロンプトを入力 &#x200B;](./assets/enter-prompt.png){width="600" zoomable="yes"}
 
 エージェントは要件を調査し、明確な質問をします。 エージェントが最適なコードを生成できるように、エージェントの質問に正確に答えます。
 
-![ 代理人からの質問 ](./assets/agent-questions.png){width="600" zoomable="yes"}
+![&#x200B; 代理人からの質問 &#x200B;](./assets/agent-questions.png){width="600" zoomable="yes"}
 
 **応答プロンプト：**
 
@@ -169,7 +169,7 @@ We do not need to add tests right now.
 
 エージェントは、実装の信頼できるソースとして機能する `requirements.md` ファイルを作成します。
 
-![ 要件ファイルが作成されました ](./assets/requirements-file.png){width="600" zoomable="yes"}
+![&#x200B; 要件ファイルが作成されました &#x200B;](./assets/requirements-file.png){width="600" zoomable="yes"}
 
 #### 要件の検証とプランアーキテクチャ
 
@@ -178,15 +178,15 @@ We do not need to add tests right now.
 1. アーキテクチャ計画を確認します。
 1. コードの生成を続行するようにエージェントに指示します。
 
-![ アーキテクチャの計画 ](./assets/architecture-planning.png){width="600" zoomable="yes"}
+![&#x200B; アーキテクチャの計画 &#x200B;](./assets/architecture-planning.png){width="600" zoomable="yes"}
 
 #### コードを生成
 
 エージェントは、必要なコードを生成し、次の手順で詳細な概要を提供します。
 
-![ コード生成の概要 ](./assets/code-generation-summary.png){width="600" zoomable="yes"}
+![&#x200B; コード生成の概要 &#x200B;](./assets/code-generation-summary.png){width="600" zoomable="yes"}
 
-![ 次の手順 ](./assets/next-steps.png){width="600" zoomable="yes"}
+![&#x200B; 次の手順 &#x200B;](./assets/next-steps.png){width="600" zoomable="yes"}
 
 ### ローカルテスト
 
@@ -198,9 +198,9 @@ Test the ratings API locally on a dev server using cURL.
 
 エージェントの指示に従い、API がローカルで動作していることを確認します。
 
-![ ローカルテスト ](./assets/local-testing.png){width="600" zoomable="yes"}
+![&#x200B; ローカルテスト &#x200B;](./assets/local-testing.png){width="600" zoomable="yes"}
 
-![ ローカルテストの結果 ](./assets/local-testing-1.png){width="600" zoomable="yes"}
+![&#x200B; ローカルテストの結果 &#x200B;](./assets/local-testing-1.png){width="600" zoomable="yes"}
 
 ### 拡張機能のデプロイ
 
@@ -214,13 +214,13 @@ Deploy the ratings API.
 
 エージェントは、デプロイ前に、デプロイメント前の準備状況の評価を実行します。
 
-![ 導入前評価 ](./assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+![&#x200B; 導入前評価 &#x200B;](./assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 #### デプロイ
 
 評価結果に自信がある場合は、エージェントにデプロイメントを続行するように指示します。 エージェントは、MCP ツールキットを使用して、検証、ビルド、およびデプロイを自動的に行います。
 
-![ デプロイメント ](./assets/deployment-process.png){width="600" zoomable="yes"}
+![&#x200B; デプロイメント &#x200B;](./assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### API のテスト
 
@@ -228,7 +228,7 @@ API は、ストアフロントに統合する前にテストできます。
 
 エージェントは、新しいアクションの場所とテスト戦略を提供します。
 
-![ テスト方法 ](./assets/testing-strategy.png){width="600" zoomable="yes"}
+![&#x200B; テスト方法 &#x200B;](./assets/testing-strategy.png){width="600" zoomable="yes"}
 
 #### cURL を使用した手動のテスト
 
@@ -238,7 +238,7 @@ API は、ストアフロントに統合する前にテストできます。
 curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123"
 ```
 
-![cURL テスト ](./assets/curl-test.png){width="600" zoomable="yes"}
+![cURL テスト &#x200B;](./assets/curl-test.png){width="600" zoomable="yes"}
 
 ### Edge Delivery Servicesとの統合
 
@@ -248,9 +248,9 @@ Ratings API を [!DNL Adobe Commerce] を利用した [!DNL Edge Delivery Servic
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![ サービス契約 ](./assets/create-contract.png){width="600" zoomable="yes"}
+![&#x200B; サービス契約 &#x200B;](./assets/create-contract.png){width="600" zoomable="yes"}
 
-![ サービス契約の詳細 ](./assets/contract.png){width="600" zoomable="yes"}
+![&#x200B; サービス契約の詳細 &#x200B;](./assets/contract.png){width="600" zoomable="yes"}
 
 ターミナルに戻り、`extension` フォルダーで次のコマンドを実行してファイルを `storefront` フォルダーにコピーします。
 
@@ -318,7 +318,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
 * コンポーネントは、スロットを使用して product-details、product-list-page および product-recommendations ブロックに統合されます。
 * 星は、モック評価値に基づいた適切な塗りの比率で表示されます。
 
-![ 製品レーティングの実装 ](./assets/product-ratings-implementation.png){width="600" zoomable="yes"}
+![&#x200B; 製品レーティングの実装 &#x200B;](./assets/product-ratings-implementation.png){width="600" zoomable="yes"}
 
 ### 星の色を変更する
 
@@ -332,7 +332,7 @@ Change the star fill color to red.
 
 星が赤に変わる。
 
-![ 赤い星の色 ](./assets/red-star-colors.png){width="600" zoomable="yes"}
+![&#x200B; 赤い星の色 &#x200B;](./assets/red-star-colors.png){width="600" zoomable="yes"}
 
 ## ストアフロントのまとめ
 
@@ -354,7 +354,7 @@ Change the star fill color to red.
 
 1. **開始する前に：** 次のモック画像を保存し、ストアフロントエージェントとのチャットに貼り付けます。
 
-   ![ 格付分布モックアップ ](./assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
+   ![&#x200B; 格付分布モックアップ &#x200B;](./assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
 
 1. 次の手順に従って、参照画像に基づいて定格分布モーダルを作成します。
 
@@ -378,4 +378,4 @@ Change the star fill color to red.
   adjust the modal position to be...
   ```
 
-![ 格付けモーダル ](./assets/rating-distribution-modal.png){width="600" zoomable="yes"}
+![&#x200B; 格付けモーダル &#x200B;](./assets/rating-distribution-modal.png){width="600" zoomable="yes"}

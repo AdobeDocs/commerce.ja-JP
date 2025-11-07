@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Developers Live - Adobe Commerce ラボの前提条件
 
-このページでは、[ 評価拡張機能のラボ ](./workbook.md) の前提条件と、その他の手動による設定手順を示します。 このラボには、これらの手順のほとんどを自動化するスクリプトも含まれています。
+このページでは、[&#x200B; 評価拡張機能のラボ &#x200B;](./workbook.md) の前提条件と、その他の手動による設定手順を示します。 このラボには、これらの手順のほとんどを自動化するスクリプトも含まれています。
 
 ## 拡張機能の前提条件
 
@@ -98,7 +98,7 @@ ht-degree: 0%
    aio console workspace select
    ```
 
-   ![CLI 設定 ](./assets/cli-configuration.png){width="600" zoomable="yes"}
+   ![CLI 設定 &#x200B;](./assets/cli-configuration.png){width="600" zoomable="yes"}
 
 ### クローン統合スターターキット
 
@@ -109,7 +109,7 @@ git clone --branch adl https://github.com/adobe/commerce-integration-starter-kit
 cd extension
 ```
 
-![ スターターキットの複製 ](./assets/clone-starter-kit.png){width="600" zoomable="yes"}
+![&#x200B; スターターキットの複製 &#x200B;](./assets/clone-starter-kit.png){width="600" zoomable="yes"}
 
 ### .env ファイルを作成します
 
@@ -174,11 +174,11 @@ aio console workspace download workspace.json
 aio app use workspace.json -m
 ```
 
-![ ワークスペースに接続 ](./assets/connect-workspace.png){width="600" zoomable="yes"}
+![&#x200B; ワークスペースに接続 &#x200B;](./assets/connect-workspace.png){width="600" zoomable="yes"}
 
 ## ストアフロントの前提条件
 
-このチュートリアルの [ ストアフロント ](#connect-to-the-storefront) セクションを完了し、ストアの製品の評価を確認するには、次の項目が必要です。
+このチュートリアルの [&#x200B; ストアフロント &#x200B;](#connect-to-the-storefront) セクションを完了し、ストアの製品の評価を確認するには、次の項目が必要です。
 <!-- 
 * Install [!DNL Node.js] (version `22.x.x`) and npm (`9.0.0` or higher). Verify your installation:
 
@@ -288,7 +288,7 @@ MCP の設定を確認します。
 
 設定は次のようになります。
 
-![MCP 設定 ](./assets/mcp-configuration.png){width="600" zoomable="yes"}
+![MCP 設定 &#x200B;](./assets/mcp-configuration.png){width="600" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -311,7 +311,7 @@ MCP サーバが正常に動作していることを確認します。
 
 MCP サーバが動作している場合は、関連するドキュメントの結果が表示されます。
 
-![MCP 接続が確認されました ](./assets/mcp-connection-verified.png){width="600" zoomable="yes"}
+![MCP 接続が確認されました &#x200B;](./assets/mcp-connection-verified.png){width="600" zoomable="yes"}
 
 ### 開発サーバーの起動
 
@@ -325,4 +325,4 @@ npm run start
 
 アパレルページ（`http://localhost:3000/apparel`）に移動します。
 
-![ 開発サーバーを実行中 ](./assets/development-server-running.png){width="600" zoomable="yes"}
+![&#x200B; 開発サーバーを実行中 &#x200B;](./assets/development-server-running.png){width="600" zoomable="yes"}
