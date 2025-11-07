@@ -28,4 +28,4 @@ ht-degree: 10%
    - [一括データ移行ツール](migration/bulk-data.md)
    - [コーディングツール](migration/coding-tools.md)
 - [リリースノート](release-notes.md)
-- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
