@@ -5,51 +5,46 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 8a80f803607e15163d3f75d93727a304917ef4d6
+source-git-commit: fd3857e93dbaaf7ffce97715b77ee63e8460af16
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce サービスガイド
 
-Adobeは、マーチャントがビジネスの主要なコンポーネントをサポートするのに役立つ、Commerce サービス、統合サービスおよびデータツールのコレクションを提供します。
+Adobe Commerce サービスは、ストアフロントの拡張、統合の効率化、データ管理の最適化を実現する強力な機能を提供します。
+
+## Commerceはどのようにサービスに接続しますか？
+
+すべてのCommerce サービスは、[Commerce サービスコネクタ ](saas.md) を介してCommerce インスタンスに接続します。
+
+Commerce サービスコネクタが設定されると、次の機能にアクセスできます。
+
+- [ ストアフロントサービス ](#storefront-services) – 製品の検出、レコメンデーション、支払いに関する AI を活用した機能
+- [Integration Services](#integration-services) - Adobe Experience Platform、AEM Assets、その他のAdobe ソリューションへの接続
+
+これらのサービスは、コンバージョンを増加させ、パーソナライズされたエクスペリエンスを提供し、Adobe エコシステム全体でコマースデータをより活用するのに役立ちます。
+
+![ サービスレイヤー ](./assets/services-layer.png)
 
 >[!NOTE]
 >
->Adobeでは、すべてのCommerce サービスのサポートされている最新バージョンにアップグレードすることをお勧めします。 詳しくは、[&#x200B; リリースノート &#x200B;](release-notes-all.md) を参照してください。
+>Adobeでは、すべてのCommerce サービスのサポートされている最新バージョンにアップグレードすることをお勧めします。 詳しくは、[ リリースノート ](release-notes-all.md) を参照してください。
 
-## Commerce サービス
+これらの機能に加えて、Commerce インスタンスから SaaS プラットフォームへのデータの流れをモニタリングできるツールもあります。 これらのツールは、データを自動的に同期し、パフォーマンスの最適化に役立ちます。 使用可能な [ データツール ](#data-tools) について詳しくは、こちらを参照してください。
+
+## 利用可能なサービス
+
+>[!BEGINTABS]
+
+>[!TAB  ストアフロントサービス ]
+
+ストアフロントサービスは、製品検出を最適化し、顧客インタラクションをパーソナライズし、支払い処理を合理化してエンゲージメントとコンバージョンを向上させる AI を活用した機能のグループです。 ストアフロントサービスを使用すると、ショッピング体験を強化し、ビジネスの成長を推進できます。
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
-   <td valign="top">
-      <a href="../cloud-service/overview.md">
-      <img alt="Cloud" src="../assets/icons/shopping-cart.svg" width="40">
-      </a>
-      <div>
-         <a href="../cloud-service/overview.md">
-         <strong>Commerceas a Cloud Service</strong>
-         </a>
-      </div>
-      <p>
-         <em> トラフィックおよび注文の要求に自動的に適応するクラウドインフラストラクチャにより、運用を拡大し、より迅速に革新します。</em>
-      </p>
-   </td>
-   <td valign="top">
-      <a href="../optimizer/overview.md">
-      <img alt="最適化" src="../assets/icons/gauge4.svg" width="40">
-      </a>
-      <div>
-         <a href="../optimizer/overview.md">
-         <strong>Commerce Optimizer</strong>
-         </a>
-      </div>
-      <p>
-         <em> 既存のコマースプラットフォームを使用しながら、超高速のストアフロントを提供し、コンバージョンを促進します。</em>
-      </p>
-   </td>
    <td valign="top">
       <a href="../catalog-service/overview.md">
       <img alt="接続されたサービスのカタログデータ" src="../assets/icons/DataBook.svg" width="40">
@@ -63,8 +58,6 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
          <em> 顧客に最適化された製品体験を提供すると同時に、パフォーマンスを向上させ、スケーラビリティを向上させ、コンバージョンを増やします。</em>
       </p>
    </td>
-</tr>
-<tr style="border: 0;">
    <td valign="top">
       <a href="../live-search/overview.md">
       <img alt="検索" src="../assets/icons/Magnify.svg" width="40">
@@ -107,7 +100,9 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 </tr>
 </table>
 
-## 統合サービス
+>[!TAB  統合サービス ]
+
+Integration Services とは、Commerce インスタンスをAdobe内の他の製品やサービスに接続する機能を指します。
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -117,24 +112,11 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+         <strong>[!DNL Data Connection]</strong>
          </a>
       </div>
       <p>
          <em>Adobe CommerceとAdobe Experience Platform Edge 間の接続を活用して、Commerce データをAdobe AnalyticsやAdobe Targetなどの他のAdobe Experience Cloud製品に使用します </em>。
-      </p>
-   </td>
-   <td valign="top">
-      <a href="../landing/saas.md">
-      <img alt="ThumbsUp" src="../assets/icons/DataSetting.svg" width="40">
-      </a>
-      <div>
-          <a href="../landing/saas.md">
-         <strong>Commerce サービスコネクタ </strong> [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="クラウドプロジェクトのAdobe Commerce（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスのプロジェクトにのみ適用されます。"}
-         </a>
-      </div>
-      <p>
-         <em> 認証を設定して、Adobe Commerceと接続されたサービス間の安全な通信を有効にします。 環境ごとに、Commerce サービスのデータストレージのデータスペース ID を指定します。</em>
       </p>
    </td>
    <td valign="top">
@@ -153,7 +135,9 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 </tr>
 </table>
 
-## データツール
+>[!TAB  データツール ]
+
+データツールを使用すると、Commerce インスタンスと接続されたサービスの間の情報フローを管理および最適化できます。 これらのツールは、リソースを集中的に消費するプロセスをオフロードすることで、効率的なデータ同期、同期処理の監視、パフォーマンスの向上を実現します。
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -184,11 +168,11 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="データ同期の監視" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong> データ管理ダッシュボード </strong>
          </a>
       </div>
@@ -200,7 +184,24 @@ Adobeは、マーチャントがビジネスの主要なコンポーネントを
 
 >[!NOTE]
 >
->Data Management Dashboard は、Product Recommendations v6.0.0、Live Search v4.1.0、またはアクティブなライセンスを持つカタログサービス v1.17 を使用しているCommerce マーチャントが追加費用なしで利用できます。 以前のサービスバージョンを使用しているマーチャントは、[&#x200B; カタログ同期 &#x200B;](../landing/catalog-sync.md) を使用してデータ同期を管理および追跡できます。
+>Data Management Dashboard は、Product Recommendations v6.0.0、Live Search v4.1.0、またはアクティブなライセンスを持つカタログサービス v1.17 を使用しているCommerce マーチャントが追加費用なしで利用できます。 以前のサービスバージョンを使用しているマーチャントは、[ カタログ同期 ](../landing/catalog-sync.md) を使用してデータ同期を管理および追跡できます。
+
+>[!ENDTABS]
+
+## Commerce サービスで解決できる問題
+
+Adobe Commerce サービスは、ビジネスの拡大、カスタマーエクスペリエンスの向上、データに基づく意思決定のいずれを目的とする場合でも、Commerceの一般的な課題に対するソリューションを提供します。
+
+| 問題 | 課題 | 解決策 |
+|---------|-----------|----------|
+| 製品の検出とコンバージョンの向上 | 買い物客が探しているものが見つからず、バウンス率が高くなり、売上が減少します。 | [Live Search](../live-search/overview.md) および [Product Recommendations](../product-recommendations/overview.md) を使用すると、誤字許容値、即時の「入力時の検索」結果、動的なファセット、リアルタイムの買い物客の行動に基づいてパーソナライズされた製品レコメンデーションを備えた AI 搭載の検索を提供できます。 |
+| オムニチャネルパーソナライズされたエクスペリエンスの作成 | コマースデータはサイロ化され、様々なチャネルにわたってパーソナライズされたエクスペリエンスを提供することができません。 | [ データ接続 ](../data-connection/overview.md) を使用すると、行動データ、トランザクションデータ、プロファイルデータをAdobe Experience Platformに送信できます。 高度な顧客セグメントを作成し、放棄された買い物かごキャンペーンを作成し、類似オーディエンスをターゲットに設定して、カスタマージャーニー全体にわたる季節的なトレンドを分析します。 |
+| デジタルアセット管理の合理化 | 複数のシステムにわたる製品画像とリッチメディアの管理は、時間がかかり、エラーが発生しやすくなります。 | [AEM Assets統合 ](../aem-assets-integration/overview.md) は、Adobe CommerceをAdobe Experience Manager Assets プロジェクトに接続し、ワークフローを簡素化し、すべてのタッチポイントで一貫したブランドエクスペリエンスを確保することで、アセット管理を一元化します。 |
+| 支払い処理の最適化 | 限られた支払いオプションと不十分な支払い体験は、顧客満足度とコンバージョンを傷つけています。 | [ 支払いサービス ](../payment-services/guide-overview.md) では、支払い、注文、請求書を管理するための統一されたダッシュボードを使用して、利息なしの分割払いなど、複数の支払い方法を提供しています。 |
+| 大規模なデータ同期の管理 | リソースを大量に消費するインデックス作成により、サイトの速度が低下し、データ同期の問題を簡単に追跡できません。 | [SaaS Data Export](../data-export/overview.md)、[SaaS Price Indexer](../price-index/price-indexing.md)、および [Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) は、カタログ、注文、在庫データを自動的に同期し、価格計算をAdobeのクラウドインフラストラクチャにオフロードし、同期ステータスをリアルタイムに可視化します。 |
+| 失われた顧客を取り戻し、収益を削減 | 高い顧客チャーンと製品の返品率は、収益性に影響を与えています。 | [ データ接続 ](../data-connection/overview.md) をAdobe Journey OptimizerおよびReal-Time CDPと組み合わせて、収益パターンを特定し、勝者キャンペーンを作成し、行動別に顧客をセグメント化し、パーソナライズされたリエンゲージメントキャンペーンをメールおよび SMS で送信します。 |
+| データに基づくマーチャンダイジング決定を行う | プロモーションする製品やプロモーションを実行するタイミングが不明です。 | [ ライブ検索 ](../live-search/overview.md) では、検索パフォーマンスのインサイトとマーチャンダイジングツールを提供します。これらのツールで、主要指標にアクセスしたり、検索語句を分析したり、インテリジェントマーチャンダイジングルールを使用したりして、実際の顧客行動とビジネス目標に基づいて製品の価値を高めたり埋め込んだりできます。 |
+| 機密データへのコンプライアンスを維持 | HIPAA コンプライアンスを維持しながら、機密性の高い顧客データを処理する必要があります。 | [ データ接続 ](../data-connection/overview.md) は HIPAA に対応しており、コンプライアンスを維持し、プライバシーリクエストを体系的に処理しながら、バックオフィスデータをExperience Platformと共有できます。 |
 
 {{$include /help/_includes/templated/whats-new.md}}
 

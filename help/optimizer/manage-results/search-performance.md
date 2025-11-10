@@ -1,11 +1,11 @@
 ---
 title: パフォーマンスの検索
 description: 検索パフォーマンス ページでは、買い物客が使用する検索用語に関するinsightが提供されます。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: c9fc68fb54f66b6d471295c6d68f09404a7ac17a
+source-git-commit: c408f3de4e3b980545a655e2f6040187f00bc571
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -20,17 +20,17 @@ ht-degree: 0%
 - コンバージョン率
 - ゼロ結果率
 
-![&#x200B; 検索パフォーマンス &#x200B;](../assets/search-performance.png){zoomable="yes"}
+![ 検索パフォーマンス ](../assets/search-performance.png){zoomable="yes"}
 
 >[!IMPORTANT]
 >
->検索パフォーマンス指標が表示されない場合は、検索イベントデータが [&#x200B; 収集 &#x200B;](../setup/events/overview.md) されていることを確認します。
+>検索パフォーマンス指標が表示されない場合は、検索イベントデータが [ 収集 ](../setup/events/overview.md) されていることを確認します。
 
 ## **カタログビュー** を選択します
 
-[&#x200B; カタログ表示 &#x200B;](../setup/catalog-view.md) を選択して、特定の検索パフォーマンス結果を表示します。
+[ カタログ表示 ](../setup/catalog-view.md) を選択して、特定の検索パフォーマンス結果を表示します。
 
-![&#x200B; カタログ ビュー &#x200B;](../assets/catalog-view.png)
+![ カタログ ビュー ](../assets/catalog-view.png)
 
 ## レポートの表示
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 検索結果の関連性と有効性を決定する重要な要因はいくつかあります。
 
 - 適切に構造化された製品データにより、検索アルゴリズムで製品をクエリに効果的に一致させることができます。 製品データの品質が低いと、検索結果の関連性が低くなります。 マーチャンダイジング戦略の成功に直接影響を与える手順は次のとおりです。
-   - 適切な [&#x200B; 検索可能な属性 &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) を、対応する重み付きで設定します。
+   - 適切な [ 検索可能な属性 ](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) を、対応する重み付きで設定します。
    - これらの属性内のデータが関連していることを確認します。
 - 適切に設計された検索エクスペリエンスは、顧客との信頼を構築し、顧客が必要なものを見つけることができるという自信を植え付けます。
 - 検索ルールは、人気度、新着、プロモーション条件、その他のマーチャンダイジング戦略に基づいて特定の製品の可視性を高め、ビジネス要件を満たすため、重要です。
@@ -66,7 +66,7 @@ ht-degree: 0%
 
    - 一般的な検索トレンドと、頻繁に検索する項目を特定します。
    - 製品カタログまたはコンテンツの潜在的なギャップを検出します。
-   - [&#x200B; シノニム &#x200B;](../merchandising/synonyms/overview.md) を追加し、[&#x200B; 検索ルール &#x200B;](../merchandising/rules/overview.md) を作成または更新することで、検索機能を最適化します。
+   - [ シノニム ](../merchandising/synonyms/overview.md) を追加し、[ 検索ルール ](../merchandising/rules/overview.md) を作成または更新することで、検索機能を最適化します。
 
 - **平均クリック位置** - サイトで検索クエリを実行した後に、買い物客がクリックした検索結果の平均位置を示します。 この指標は、検索結果の関連性と有効性に関するインサイトを提供します。
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
   結果がゼロになる割合を減らすには、次の操作を行います。
 
-   - 完全に一致する語句が見つからない場合は、代替の検索語句や関連する検索語句（[&#x200B; シノニム &#x200B;](../merchandising/synonyms/overview.md) など）を提供します。
+   - 完全に一致する語句が見つからない場合は、代替の検索語句や関連する検索語句（[ シノニム ](../merchandising/synonyms/overview.md) など）を提供します。
    - 結果がゼロのクエリを定期的に確認してパターンを特定し、製品カタログと検索設定に対して必要な調整を行います。
 
 この指標データを使用して、次の方法で検索機能を最適化できます。
@@ -94,11 +94,11 @@ ht-degree: 0%
 
 ## 検索機能の最適化
 
-検索機能を最適化するには、[&#x200B; 同義語とスペル &#x200B;](../merchandising/synonyms/overview.md) を使用して、買い物客が異なる単語や [&#x200B; ファセット &#x200B;](../merchandising/facets/overview.md) を使用した場合でも商品を見つけられるようにし、検索結果を絞り込めるようにします。
+検索機能を最適化するには、[ 同義語とスペル ](../merchandising/synonyms/overview.md) を使用して、買い物客が異なる単語や [ ファセット ](../merchandising/facets/overview.md) を使用した場合でも商品を見つけられるようにし、検索結果を絞り込めるようにします。
 
 ## 検索結果の関連性の向上
 
-検索結果の関連性を向上させるには、有効な [&#x200B; 検索ルール &#x200B;](../merchandising/rules/overview.md) を実装し、製品メタデータを使用して正確で詳細な [&#x200B; 属性が検索可能 &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) になるようにします。
+検索結果の関連性を向上させるには、有効な [ 検索ルール ](../merchandising/rules/overview.md) を実装し、製品メタデータを使用して正確で詳細な [ 属性が検索可能 ](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) になるようにします。
 
 ### 画像
 
@@ -110,16 +110,11 @@ ht-degree: 0%
 
 ### 製品メタデータの活用
 
-正確で詳細な製品 [&#x200B; 属性が検索可能として設定されている &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) ことを確認します。 SKU、名前、カテゴリの属性は、デフォルトで検索でき、検索から除外することはできません。 最適な結果を得るには、SKU にスペースを使用しないでください。
+正確で詳細な製品 [ 属性が検索可能として設定され、重み付けが割り当てられていることを確認します ](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)。 SKU、名前、カテゴリの属性は、デフォルトで検索でき、検索から除外することはできません。 最適な結果を得るには、SKU にスペースを使用しないでください。
 
 検索関連性を高めるには、検索可能な各属性に重みを割り当てます。 重み付けが大きい属性は、検索結果内で高く表示されます。 関連度による並べ替えは、検索の重みなど、複数の条件の影響を受けます。 つまり、検索の重み付けが小さい属性は、検索の重み付けが大きい属性よりも関連性が高い場合があります。 その他の条件には、特定の属性の一致数、見つかった検索語句の位置、検索語句の前後の全体的なテキスト構造などがあります。
 
 各製品の検索可能な各属性内に関連するコンテンツが含まれていることを確認します。 大量のコンテンツがある属性は、検索結果の関連性を低下させる可能性があるので、検索可能として設定しないことをお勧めします。
-
-検索の製品属性の詳細を説明します。
-
-- [&#x200B; 検索可能として属性を設定 &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
-- [&#x200B; 属性へのウェイトの割り当て &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
 
 ## フィールドの説明
 
