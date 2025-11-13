@@ -16,13 +16,13 @@ ht-degree: 0%
 
 価格台帳を使用すると、様々な顧客層や市場をまたいでカタログソースの製品価格を定義できます。 価格台帳は階層モデルをサポートしており、各ベース価格台帳の下にネストされた子価格台帳を最大 3 レベルまで作成できます。 各価格台帳は、親価格台帳を参照し、価格設定カタログ・ソースのツリー構造を形成できます。
 
-![ 価格台帳階層 ](../assets/price-book-hier.png)
+![&#x200B; 価格台帳階層 &#x200B;](../assets/price-book-hier.png)
 
 基本価格台帳では、それ自体とすべての子価格台帳に対して通貨が定義されます。 子の価格帳簿はこの通貨を継承し、上書きすることはできません。
 
 ## Commerce Optimizerへの価格台帳の追加
 
-価格台帳は、価格台帳 API を使用してCommerce Optimizerに追加します。 [ の価格帳簿を作成、更新、削除する方法については、](https://developer.adobe.com/commerce/services/reference/rest/) 開発者向けドキュメント [!DNL Adobe Commerce Optimizer] を参照してください。
+価格台帳は、価格台帳 API を使用してCommerce Optimizerに追加します。 [&#x200B; の価格帳簿を作成、更新、削除する方法については、](https://developer.adobe.com/commerce/services/reference/rest/) 開発者向けドキュメント [!DNL Adobe Commerce Optimizer] を参照してください。
 
 ## Commerce Optimizerで価格台帳を表示します。
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
    カタログ表示の詳細を設定で、使用可能な価格台帳の 1 つを選択します。
 
-   ![ 価格簿名及び ID](../assets/price-book-name-ids.png)
+   ![&#x200B; 価格簿名及び ID](../assets/price-book-name-ids.png)
 
 ## 主要な概念
 
