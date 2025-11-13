@@ -2,11 +2,11 @@
 title: ストアフロントの設定
 description: ストアフロントの設定方法  [!DNL Adobe Commerce Optimizer]  説明します。
 role: Developer
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: c00cb55bd7b61d6506ee8b9b81d28118c1adde00
+source-git-commit: d6d559728361f4421829f34818aa368eac407225
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -21,19 +21,19 @@ ht-degree: 0%
 
 * リポジトリを作成でき、ローカル開発用に設定されている **GitHub アカウント** （github.com）
 * サンプルデータ **[!DNL Adobe Commerce Optimizer]設定済みのカタログビューとポリシーを備えた** インスタンス
-   * 設定手順については、[&#x200B; サンプルデータの追加 &#x200B;](get-started.md#add-sample-data) を参照してください。
+   * 設定手順については、[ サンプルデータの追加 ](get-started.md#add-sample-data) を参照してください。
 
 ### 必要なインスタンスデータ
 
 開始する前に、[!DNL Adobe Commerce Optimizer] インスタンスから次の情報を収集します。
 
 * **テナント ID** （インスタンス ID とも呼ばれます）
-   * [&#x200B; インスタンスの詳細ページ &#x200B;](get-started.md#manage-instances) から使用できます。
+   * [ インスタンスの詳細ページ ](get-started.md#manage-instances) から使用できます。
 * お使いのインスタンスの **GraphQL エンドポイント**
-   * [&#x200B; インスタンスの詳細ページ &#x200B;](get-started.md#manage-instances) から使用できます。
+   * [ インスタンスの詳細ページ ](get-started.md#manage-instances) から使用できます。
 * グローバル カタログ ビューの **カタログ ビュー ID**
-   * [&#x200B; カタログの詳細ページ &#x200B;](./setup/catalog-view.md#manage-catalog-view) から使用できます
-* カタログビューの **0&rbrace;Source ロケール &rbrace;**
+   * [ カタログの詳細ページ ](./setup/catalog-view.md#manage-catalog-view) から使用できます
+* カタログビューの **0}Source ロケール }**
    * サンプルデータのデフォルトは `en_US` です
 
 >[!NOTE]
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## ステップの設定
 
-1. **[ストアフロントプロジェクトを作成](#create-your-storefront-project)** - [&#x200B; サイト作成ツール &#x200B;](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) を使用して、ボイラープレートコード、サンプルコンテンツ、設定ファイルを含む新しいストアフロントプロジェクトを作成します。
+1. **[ストアフロントプロジェクトを作成](#create-your-storefront-project)** - [ サイト作成ツール ](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) を使用して、ボイラープレートコード、サンプルコンテンツ、設定ファイルを含む新しいストアフロントプロジェクトを作成します。
 
 1. **[ストアフロント設定のカスタマイズ](#customize-the-storefront-configuration)** - リポジトリの `config.json` ファイルを更新して、[!DNL Adobe Commerce Optimizer] インスタンスに接続します。
 
@@ -61,7 +61,7 @@ Site Creator ツールは、次のコンポーネントを含む完全なスト�
 
 ### 手順 1：プロジェクトの生成
 
-1. [&#x200B; サイト作成ツール &#x200B;](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) を開きます。
+1. [ サイト作成ツール ](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) を開きます。
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
@@ -105,27 +105,29 @@ Site Creator ツールは、次のコンポーネントを含む完全なスト�
 
 ストアフロント設定を更新して、[!DNL Adobe Commerce Optimizer] インスタンスに接続します。
 
-1. 先ほど保存したリンクを使用して Configuration Manager を開きます。
+1. ボイラープレートコードリポジトリ内の `config.json` ファイルを開きます。
 
-   `https://da.live/sheet#/<username or org>/<repo name>/config.json`
+   `https://github.com/<username or org>/<repo name>/config.json`
 
 1. 設定で `cs` （カタログサービス）」セクションを見つけます。
 
-1. プレースホルダーの値をインスタンスの値に置き換えます。 [&#x200B; 前提条件 &#x200B;](#prerequisites) を参照してください。
+1. プレースホルダーの値をインスタンスの値に置き換えます。 [ 前提条件 ](#prerequisites) を参照してください。
 
    ```json
    "cs": {
       "AC-View-ID": "{catalogViewId}",
-      "AC-Environment-ID": "{tenantId}",
-      "AC-Source-Locale": "en_US"
+      "AC-Source-Locale": "en_US",
+      "AC-Price-Book-ID": "{priceBookId}"
    }
    ```
 
+   >[!NOTE]
+   >
+   >価格台帳 ID を検索するには、Adobe Commerce Optimizerで [ カタログ表示構成詳細 ](./setup/catalog-view.md) をチェックして、割り当てられた価格台帳を確認します。 価格台帳が割り当てられていない場合は、構成ファイルからこのヘッダーを削除できます。 価格台帳がカタログ ビューに割り当てられたら、再度追加します。
+
 1. 設定ファイルを保存します。
 
->[!NOTE]
->
->設定変更が反映されるまで数分かかる場合があります。 データがすぐに表示されない場合は、2～3 分待ってからトラブルシューティングを行ってください。
+   設定変更が反映されるまで数分かかる場合があります。 データがすぐに表示されない場合は、2～3 分待ってからトラブルシューティングを行ってください。
 
 ## 設定を確認
 
@@ -157,7 +159,7 @@ Site Creator ツールは、次のコンポーネントを含む完全なスト�
 
    >[!TIP]
    >
-   >[&#x200B; インスタンスの &#x200B;](./setup/data-sync.md) データ同期 [!DNL Adobe Commerce Optimizer] ページで使用可能な SKU を表示します。
+   >[ インスタンスの ](./setup/data-sync.md) データ同期 [!DNL Adobe Commerce Optimizer] ページで使用可能な SKU を表示します。
 
 1. **成功基準**：ページには、次が表示されます。
    * 商品名、説明、価格
@@ -198,44 +200,44 @@ Site Creator ツールは、次のコンポーネントを含む完全なスト�
 |-------|----------|----------|
 | **コード同期のインストールに失敗** | コード同期セットアップを完了できません | <ul><li>GitHub 組織に管理者アクセス権があることを確認します。</li><li>組織ではなく個人用リポジトリを使用してみてください。</li><li>GitHub の権限を確認して、もう一度試してください。</li></ul> |
 | **サイトが読み込まれない** | 404 または接続エラー | <ul><li>サイトの URL 形式を確認してください：`https://main--{SITE}--{ORG}.aem.live`</li><li>コード同期アプリが正しくインストールされていることを確認します。</li><li>リポジトリが公開されているか、適切に設定されていることを確認します。</li></ul> |
-| **製品データが表示されません** | 製品ページにプレースホルダーまたはエラーが表示される | <ul><li>`config.json` で設定値を確認します。</li><li>[!DNL Adobe Commerce Optimizer] インスタンスで、データ同期ページをチェックして、サンプル製品が読み込まれていることを確認します。 使用できる製品がない場合は、サンプルデータを再読み込みするか、[Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request) を使用して製品を追加します。 設定変更が反映されるまで数分待ちます。</li><li>[&#x200B; ファイルで設定されているのと同じヘッダーを使用して、マーチャンダイジングサービス &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) 製品クエリ `config.json` を使用して製品の詳細を取得してみてください。 データを取得できる場合は、カタログ表示の設定またはインデックスエラーの問題がある可能性があります。</li></ul> |
-| **検索で結果が返されない** | 空の検索結果ページ | <ul><li>[&#x200B; ファイルで設定されているのと同じヘッダーを使用して、マーチャンダイジングサービス &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search)productSearch クエリ `config.json` を使用して製品の検索結果を取得できることを確認します。 データを取得できる場合は、カタログ表示の設定またはインデックスエラーの問題がある可能性があります。</li><li>`config.json` ファイルのカタログ ビュー ID が [!DNL Adobe Commerce Optimizer] のカタログ ビュー ID と一致することを確認します。</li><li>Adobe Commerce Optimizerで、ストアフロントのヘッダー設定で使用したポリシー、ロケール、価格台帳の設定を確認します。</li><li>[&#x200B; 属性メタデータ設定 &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) が検索に対して正しく設定されていることを確認します。</li></ul> |
+| **製品データが表示されません** | 製品ページにプレースホルダーまたはエラーが表示される | <ul><li>`config.json` で設定値を確認します。</li><li>[!DNL Adobe Commerce Optimizer] インスタンスで、データ同期ページをチェックして、サンプル製品が読み込まれていることを確認します。 使用できる製品がない場合は、サンプルデータを再読み込みするか、[Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request) を使用して製品を追加します。 設定変更が反映されるまで数分待ちます。</li><li>[ ファイルで設定されているのと同じヘッダーを使用して、マーチャンダイジングサービス ](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) 製品クエリ `config.json` を使用して製品の詳細を取得してみてください。 データを取得できる場合は、カタログ表示の設定またはインデックスエラーの問題がある可能性があります。</li></ul> |
+| **検索で結果が返されない** | 空の検索結果ページ | <ul><li>[ ファイルで設定されているのと同じヘッダーを使用して、マーチャンダイジングサービス ](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search)productSearch クエリ `config.json` を使用して製品の検索結果を取得できることを確認します。 データを取得できる場合は、カタログ表示の設定またはインデックスエラーの問題がある可能性があります。</li><li>`config.json` ファイルのカタログ ビュー ID が [!DNL Adobe Commerce Optimizer] のカタログ ビュー ID と一致することを確認します。</li><li>Adobe Commerce Optimizerで、ストアフロントのヘッダー設定で使用したポリシー、ロケール、価格台帳の設定を確認します。</li><li>[ 属性メタデータ設定 ](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) が検索に対して正しく設定されていることを確認します。</li></ul> |
 
 ### 検証チェックリスト
 
 次の手順に進む前に、次の点を確認して、ストアフロントが正常に機能していることを確認します。
 
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) 設定値がインスタンス設定と一致する <br>
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) ストアフロントのホームページがエラーなしで読み込まれる <br>
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)1 つ以上の製品の詳細ページに完全な情報が表示される <br>
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) 検索機能で関連する結果が返される <br>
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) 製品画像が正しく読み込まれている <br>
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) 設定値がインスタンス設定と一致する <br>
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) 設定値がインスタンス設定と一致する <br>
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) ストアフロントのホームページがエラーなしで読み込まれる <br>
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)1 つ以上の製品の詳細ページに完全な情報が表示される <br>
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) 検索機能で関連する結果が返される <br>
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) 製品画像が正しく読み込まれている <br>
+![ チェックリスト ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) 設定値がインスタンス設定と一致する <br>
 
 ### ヘルプを表示
 
 問題が解決しない場合：
 
-* [Adobe Commerce ストアフロントのドキュメントを確認してください &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
-* [Adobe Commerce Optimizer開発者ガイドを確認してください &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)
-* [Adobe Commerce サポートリソース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview) にアクセスします
+* [Adobe Commerce ストアフロントのドキュメントを確認してください ](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* [Adobe Commerce Optimizer開発者ガイドを確認してください ](https://developer.adobe.com/commerce/services/optimizer/)
+* [Adobe Commerce サポートリソース ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) にアクセスします
 
 ## 次の手順
 
 ストアフロントを設定して検証すると、次の操作を実行できます。
 
-1. **[Sidekickのインストール &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=ja#install-and-configure-sidekick)** - Web サイトから直接コンテンツを編集、プレビュー、公開するためのブラウザー拡張機能
+1. **[Sidekickのインストール ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** - Web サイトから直接コンテンツを編集、プレビュー、公開するためのブラウザー拡張機能
 
-2. **[ローカル開発環境の設定 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=ja#set-up-local-environment)** - ストアフロントコードとコンテンツをカスタマイズするローカル環境を作成します
+2. **[ローカル開発環境の設定 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** - ストアフロントコードとコンテンツをカスタマイズするローカル環境を作成します
 
 ### の学習と探索
 
 * **[エンドツーエンドの使用例を完了](./use-case/admin-use-case.md)** - [!DNL Adobe Commerce Optimizer] を使用したストアフロントのセットアップとカタログ管理の詳細
 
-* **[ストアフロントのカスタマイズの詳細 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=ja)** – 高度なセットアップと設定オプションについて説明します
+* **[ストアフロントのカスタマイズの詳細 ](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)** – 高度なセットアップと設定オプションについて説明します
 
-* **[Commerce ドロップダウンを使用してストアフロントのエクスペリエンスをカスタマイズ &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=ja)** 事前定義済みコンポーネントを追加して、ストアフロントのエクスペリエンスを強化
+* **[Commerce ドロップダウンを使用してストアフロントのエクスペリエンスをカスタマイズ ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)** 事前定義済みコンポーネントを追加して、ストアフロントのエクスペリエンスを強化
 
 >[!MORELIKETHIS]
 >
-> サイトコンテンツの更新と [Adobe Commerceのフロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)Commerce ストアフロントのドキュメントを参照してください。
+> サイトコンテンツの更新と [Adobe Commerceのフロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、](https://experienceleague.adobe.com/developer/commerce/storefront/)Commerce ストアフロントのドキュメントを参照してください。
