@@ -1,9 +1,10 @@
 ---
 title: 製品一覧ページウィジェット
 description: ' [!DNL Live Search Product Listing Page Widget] のコンポーネントの有効化とスタイル設定'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
+source-git-commit: 7684d5cded63f2b0805ee307dff77932607c47eb
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,15 @@ ht-degree: 0%
 
 [!DNL Live Search] サービスがインストールされると、デフォルトの検索機能は自動的に [!DNL Live Search] に変換されます。
 
-新規インストールの場合、[!DNL Live Search] PLP ウィジェットはデフォルトで有効になっています。 [!DNL Live Search] をアップグレードしていて、PLP ウィジェットが既にオフになっている場合は、そのままになります。
+新規インストールの場合、[!DNL Live Search] PLP ウィジェットはデフォルトで有効になっています。
+
+[!DNL Live Search] をアップグレードしていて、PLP ウィジェットが既にオフになっている場合は、そのままになります。 有効にするには：
+1. Adobe Commerce管理者で、Stores → Settings → Configuration に移動します。
+1. 左側のナビゲーションで、**[!UICONTROL Live Search]**/**[!UICONTROL Storefront Features]** をクリックします。
+1. 「[!UICONTROL Storefront Features]」セクションをクリックします。
+1. Set [!UICONTROL Enable Product Listing Widget] = Yes
+1. 設定を保存
+1. プロンプトが表示されたら、キャッシュをフラッシュします（システム / ツール / キャッシュ管理/ [!UICONTROL Flush Magento Cache] に移動）。
 
 >[!IMPORTANT]
 >
@@ -38,7 +47,7 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 - 複数言語のサポート
 - 価格スライダー
 
-上記の機能を処理するための PLP ウィジェットのカスタマイズ方法については、次の [&#x200B; リポジトリ &#x200B;](https://github.com/adobe/storefront-product-listing-page/) の `storefront-product-listing-page` Readme を参照してください。 このリポジトリの Readme には、PLP ウィジェットをカスタマイズし、そのカスタマイズをサイトにデプロイする方法の例が記載されています。
+上記の機能を処理するための PLP ウィジェットのカスタマイズ方法については、次の `storefront-product-listing-page` リポジトリ [ の ](https://github.com/adobe/storefront-product-listing-page/) Readme を参照してください。 このリポジトリの Readme には、PLP ウィジェットをカスタマイズし、そのカスタマイズをサイトにデプロイする方法の例が記載されています。
 
 >[!WARNING]
 >
@@ -54,7 +63,7 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 
 ハイライト表示された div には、ターゲットクラスの `ds-sdk-product-item__product-name` が含まれています。
 
-![&#x200B; ページネーション &#x200B;](assets/plp-css-example.png)
+![ ページネーション ](assets/plp-css-example.png)
 
 製品名を大文字にするルールを追加して、製品名をカスタマイズします。
 
@@ -64,7 +73,7 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 }
 ```
 
-![&#x200B; ページネーション &#x200B;](assets/plp-css-example-after.png)
+![ ページネーション ](assets/plp-css-example-after.png)
 
 ## CSS クラス
 
@@ -73,21 +82,21 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 - `.ds-sdk-product-list`：外側の div
 - `.ds-sdk-product-list__grid`：内部 div
 
-![&#x200B; ページネーション &#x200B;](assets/plp-css-product-list.png)
+![ ページネーション ](assets/plp-css-product-list.png)
 
 #### 製品リストのページネーション
 
 - `.ds-plp-pagination`
 
-![&#x200B; ページネーション &#x200B;](assets/plp-css-pagination.png)
+![ ページネーション ](assets/plp-css-pagination.png)
 
 - `.ds-plp-pagination_item`
 
-![&#x200B; ページネーション項目 &#x200B;](assets/plp-css-pagination-item.png)
+![ ページネーション項目 ](assets/plp-css-pagination-item.png)
 
 - `.ds-plp-pagination_item--current`
 
-![&#x200B; ページネーションの現在の項目 &#x200B;](assets/plp-css-pagination-item-current.png)
+![ ページネーションの現在の項目 ](assets/plp-css-pagination-item-current.png)
 
 ### ウィジェット
 
@@ -95,33 +104,33 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 - `.ds-widgets__actions`：左側内側 div
 - `.ds-widgets__results`：右側内側 div
 
-![&#x200B; ウィジェットの結果 &#x200B;](assets/plp-css-widgets.png)
+![ ウィジェットの結果 ](assets/plp-css-widgets.png)
 
 ### 並べ替えドロップダウン
 
 - `.ds-sdk-sort-dropdown`
 
-![&#x200B; 並べ替えドロップダウン &#x200B;](assets/plp-css-dropdown.png)
+![ 並べ替えドロップダウン ](assets/plp-css-dropdown.png)
 
 - `.ds-sdk-sort-dropdown__button`
 
-![&#x200B; ドロップダウンボタン &#x200B;](assets/plp-css-dropdown-button.png)
+![ ドロップダウンボタン ](assets/plp-css-dropdown-button.png)
 
 - `.ds-sdk-sort-dropdown__items`
 
-![&#x200B; ドロップダウン項目 &#x200B;](assets/plp-css-dropdown-items.png)
+![ ドロップダウン項目 ](assets/plp-css-dropdown-items.png)
 
 - `.ds-sdk-sort-dropdown__items--item`
 
-![&#x200B; ドロップダウン項目 &#x200B;](assets/plp-css-dropdown-item.png)
+![ ドロップダウン項目 ](assets/plp-css-dropdown-item.png)
 
 - `.ds-sdk-sort-dropdown__items--item-selected`
 
-![&#x200B; 選択した項目をドロップダウン &#x200B;](assets/plp-css-dropdown-selected.png)
+![ 選択した項目をドロップダウン ](assets/plp-css-dropdown-selected.png)
 
 - `.ds-sdk-sort-dropdown__items--item-active`
 
-![&#x200B; アクティブな選択項目をドロップダウン &#x200B;](assets/plp-css-dropdown-active.png)
+![ アクティブな選択項目をドロップダウン ](assets/plp-css-dropdown-active.png)
 
 ### ファセット
 
@@ -130,21 +139,21 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 - `.ds-plp-facets__header_title`
 - `.ds-plp-facets__header__clear-all`
 
-![&#x200B; ファセットヘッダータイトル &#x200B;](assets/plp-css-facets-title-clear.png){width="350"}
+![ ファセットヘッダータイトル ](assets/plp-css-facets-title-clear.png){width="350"}
 
 - `.ds-plp-facets__pills`
 - `.ds-sdk-pill`
 
-![&#x200B; ファセット剤 &#x200B;](assets/plp-css-facets-pill.png){width="350"}
+![ ファセット剤 ](assets/plp-css-facets-pill.png){width="350"}
 
 - `.ds-sdk-pill__label`
 - `.ds-sdk-pill__cta`
 
-![&#x200B; ファセットラベル &#x200B;](assets/plp-css-pill-label-cta.png){width="350"}
+![ ファセットラベル ](assets/plp-css-pill-label-cta.png){width="350"}
 
 - `.ds-plp-facets__list`
 
-![&#x200B; ファセットリスト &#x200B;](assets/plp-css-facets-list.png){width="350"}
+![ ファセットリスト ](assets/plp-css-facets-list.png){width="350"}
 
 - `.ds-sdk-input`
 - `.ds-sdk-input__label`
@@ -152,16 +161,16 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 - `ds-sdk-product-item__product-swatch-item`
 - `.ds-sdk-input_fieldset_show-more`
 
-![&#x200B; 入力 &#x200B;](assets/plp-css-sdk-input.png)
+![ 入力 ](assets/plp-css-sdk-input.png)
 
 - `.ds-sdk-labelled-input`
 
-![&#x200B; ラベル付き入力 &#x200B;](assets/plp-css-labelled-input.png)
+![ ラベル付き入力 ](assets/plp-css-labelled-input.png)
 
 - `.ds-sdk-labelled-input__input`
 - `.ds-sdk-labelled-input__label`
 
-![&#x200B; 入力ラベル &#x200B;](assets/plp-css-labelled-input-label.png)
+![ 入力ラベル ](assets/plp-css-labelled-input-label.png)
 
 ### 商品品目
 
@@ -175,7 +184,7 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
    - `.ds-sdk-product-price--bundle`
    - `.ds-sdk-product-price--discount`
 
-![&#x200B; 製品 &#x200B;](assets/plp-css-product.png)
+![ 製品 ](assets/plp-css-product.png)
 
 ### 読み込み
 
@@ -183,7 +192,7 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 - `.ds-sdk-loading__spinner`
 - `.ds-sdk-loading__spinner-label`
 
-![&#x200B; 読み込みインジケーター &#x200B;](assets/plp-css-loading.png)
+![ 読み込みインジケーター ](assets/plp-css-loading.png)
 
 ## PLP ウィジェットの無効化
 
