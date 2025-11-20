@@ -68,7 +68,7 @@ _2024 年 5 月 23 日_
 
 ![&#x200B; 修正 &#x200B;](../assets/fix.svg)<!--DATA-5033--> オプション値の `InStock` フラグで、製品バリアントのスコーピングされた `enabled` ステータスが考慮されるようになりました。
 
-![&#x200B; 修正 &#x200B;](../assets/fix.svg)<!--DATA-5888--> 大きな数値（最大 16 桁）とより大きな小数点精度（最大 4 桁）を必要とする製品価格のサポートを追加しました。 既存のカタログに価格構成の更新を適用するには、[Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) から、または [Adobe Commerce コマンドラインインターフェイス &#x200B;](../landing/catalog-sync.md#command-line-interface) を使用して、カタログデータを再同期します。
+![&#x200B; 修正 &#x200B;](../assets/fix.svg)<!--DATA-5888--> 大きな数値（最大 16 桁）とより大きな小数点精度（最大 4 桁）を必要とする製品価格のサポートを追加しました。 既存のカタログに価格構成の更新を適用するには、[Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) から、または [Adobe Commerce コマンドラインインターフェイス &#x200B;](../landing/catalog-sync.md#command-line-interface) を使用して、カタログデータを再同期します。
 
 #### 既知の制限事項
 
@@ -102,7 +102,7 @@ _2024 年 2 月 22 日_
 
 [!BADGE &#x200B; サポート対象 &#x200B;]{type=Informative tooltip="サポート"} Adobe Commerce バージョン 2.4.4 以降
 
-![&#x200B; 新規 &#x200B;](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) が利用可能になりました。 この刷新されたダッシュボードでは、[!DNL Product Recommendations]、[!DNL Live Search] および [!DNL Catalog Service] のデータストリームに関するインサイトが提供されます。 この機能のサポートは、`catalog-service` メタパッケージの v3.1.0 で導入されました。
+![&#x200B; 新規 &#x200B;](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=ja) が利用可能になりました。 この刷新されたダッシュボードでは、[!DNL Product Recommendations]、[!DNL Live Search] および [!DNL Catalog Service] のデータストリームに関するインサイトが提供されます。 この機能のサポートは、`catalog-service` メタパッケージの v3.1.0 で導入されました。
 
 ### V1.16 リリース
 
