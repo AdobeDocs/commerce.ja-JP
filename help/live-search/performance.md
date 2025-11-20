@@ -1,7 +1,8 @@
 ---
 title: パフォーマンス
-description: ' [!DNL Live Search]  パフォーマンスワークスペースでは、買い物客が使用する検索用語に関するインサイトを提供します。'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+description: ' [!DNL Live Search] Performance ワークスペースは、買い物客が使用する検索用語にinsightを提供します。'
+exl-id: 07a63df8-b981-4913-841a-7e81ec634281
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -10,15 +11,15 @@ ht-degree: 0%
 
 # パフォーマンス
 
-*パフォーマンス* ワークスペースは、買い物客が使用する検索用語に関するインサイトを提供します。 この情報を使用すると、トレンドを特定し、クリックスルーを増やし、コンバージョン率を向上させることができます。 パフォーマンスワークスペースには、特定の日付範囲の検索指標のスナップショットが表示され、次のレポートが含まれています。
+*パフォーマンス* ワークスペースは、買い物客が使用する検索用語にinsightを提供します。 この情報を使用すると、トレンドを特定し、クリックスルーを増やし、コンバージョン率を向上させることができます。 パフォーマンスワークスペースには、特定の日付範囲の検索指標のスナップショットが表示され、次のレポートが含まれています。
 
 * ユニーク検索
 * ゼロの結果
 * 一般的な結果
 
-![&#x200B; パフォーマンス &#x200B;](assets/performance-unique-searches.png)
+![ パフォーマンス ](assets/performance-unique-searches.png)
 
-また、データ同期について詳しくは、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=ja) を参照してください。
+また、データ同期について詳しくは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) を参照してください。
 
 >[!NOTE]
 >
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 ## レポートの表示
 
-1. **日付範囲** を入力するには、カレンダー（![&#x200B; カレンダー &#x200B;](assets/btn-calendar.png)）をクリックして、次のいずれかの操作を行います。
+1. **日付範囲** を入力するには、カレンダー（![ カレンダー ](assets/btn-calendar.png)）をクリックして、次のいずれかの操作を行います。
 
    * 1 つの日付を指定するには、カレンダー上の日付をダブルクリックします。
    * 日付の範囲を指定するには、カレンダーの最初の日付と最後の日付をクリックします。

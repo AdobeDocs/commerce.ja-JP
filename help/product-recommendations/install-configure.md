@@ -3,7 +3,7 @@ title: インストールと設定
 description: ' [!DNL Product Recommendations] をインストール、更新、アンインストールする方法を説明します。'
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
-source-git-commit: 3821893c3df01e2e36ab0142616e52c1c92b4d51
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # インストールと設定
 
-[!DNL Product Recommendations] をストアフロントおよび管理者にデプロイするには、モジュールをインストールして [1&rbrace;Commerce サービスコネクタ &rbrace; を設定する必要があります。 &#x200B;](../landing/saas.md)アップデートがリリースされると、インストールを最新バージョンに簡単にアップデートできます。
+[!DNL Product Recommendations] をストアフロントおよび管理者にデプロイするには、モジュールをインストールして [1}Commerce サービスコネクタ } を設定する必要があります。 ](../landing/saas.md)アップデートがリリースされると、インストールを最新バージョンに簡単にアップデートできます。
 
 - [インストール](#install)
 - [設定](#configure)
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 ## [!DNL Product Recommendations] のインストール {#install}
 
-[!DNL Product Recommendations] モジュールはスタンドアロンメタパッケージなので、アップデートはAdobe Commerceよりも頻繁にリリースされます。 最新のバグ修正と機能を確認するには、[&#x200B; リリースノート &#x200B;](release-notes.md) を参照してください。
+[!DNL Product Recommendations] モジュールはスタンドアロンメタパッケージなので、アップデートはAdobe Commerceよりも頻繁にリリースされます。 最新のバグ修正と機能を確認するには、[ リリースノート ](release-notes.md) を参照してください。
 
 >[!IMPORTANT]
 >
->Product Recommendations を使用するための正しい [&#x200B; 使用権限 &#x200B;](../landing/saas.md#credentials) があることを確認します。
+>Product Recommendations を使用するための正しい [ 使用権限 ](../landing/saas.md#credentials) があることを確認します。
 
 Composer を使用して `magento/product-recommendations` モジュールをインストールします。
 
@@ -41,13 +41,13 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-ページビルダーで [!DNL Product Recommendations] を有効にすると、ページ、ブロック、動的ブロックなど、ページビルダーで作成した任意のコンテンツに既存のアクティブな [&#x200B; レコメンデーションユニット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/add-content/recommendations) を追加できます。
+ページビルダーで [!DNL Product Recommendations] を有効にすると、ページ、ブロック、動的ブロックなど、ページビルダーで作成した任意のコンテンツに既存のアクティブな [ レコメンデーションユニット ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) を追加できます。
 
-詳しくは [&#x200B; ページビルダーコンテンツの使用  [!DNL Product Recommendations]  を参照 &#x200B;](page-builder.md) てください。
+詳しくは [ ページビルダーコンテンツの使用  [!DNL Product Recommendations]  を参照 ](page-builder.md) てください。
 
 ### 視覚的類似性レコメンデーションタイプを追加 {#vissimsupport}
 
-_視覚的類似性_ レコメンデーションタイプを使用すると、表示している製品に [&#x200B; 視覚的に類似 &#x200B;](type.md#visualsim) している製品を表示するレコメンデーションユニットを製品の詳細ページにデプロイできます。 このレコメンデーションタイプは、商品の画像や視覚的側面がショッピング体験の重要な部分である場合に最も役立ちます。 次のコマンドを実行して、「_ビジュアルな類似性_」レコメンデーションタイプをインストールします。
+_視覚的類似性_ レコメンデーションタイプを使用すると、表示している製品に [ 視覚的に類似 ](type.md#visualsim) している製品を表示するレコメンデーションユニットを製品の詳細ページにデプロイできます。 このレコメンデーションタイプは、商品の画像や視覚的側面がショッピング体験の重要な部分である場合に最も役立ちます。 次のコマンドを実行して、「_ビジュアルな類似性_」レコメンデーションタイプをインストールします。
 
 ```bash
 composer require magento/module-visual-product-recommendations
@@ -55,19 +55,19 @@ composer require magento/module-visual-product-recommendations
 
 ## [!DNL Product Recommendations] の設定 {#configure}
 
-1. `magento/product-recommendations` モジュールをインストールしたら、API キーを指定して SaaS Data Space を選択し [&#128279;](../landing/saas.md)Commerce サービスコネクタを設定します。
+1. `magento/product-recommendations` モジュールをインストールしたら、API キーを指定して SaaS Data Space を選択し [](../landing/saas.md)Commerce サービスコネクタを設定します。
 
-   この接続を設定すると、Commerce インスタンス、カタログサービス、その他のサポートサービス間のデータ同期と通信が可能になります。 データ同期は、[SaaS データ書き出し拡張機能 &#x200B;](../data-export/overview.md) で処理されます。
+   この接続を設定すると、Commerce インスタンス、カタログサービス、その他のサポートサービス間のデータ同期と通信が可能になります。 データ同期は、[SaaS データ書き出し拡張機能 ](../data-export/overview.md) で処理されます。
 
-1. カタログの書き出しを正しく実行できるようにするには、[cron](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) ジョブと [&#x200B; インデクサー &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers) が実行中で、`Product Feed` インデクサーが `Update by Schedule` に設定されていることを確認します。
+1. カタログの書き出しを正しく実行できるようにするには、[cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) ジョブと [ インデクサー ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) が実行中で、`Product Feed` インデクサーが `Update by Schedule` に設定されていることを確認します。
 
-Commerce アプリケーションをCommerce サービスに正常にリンクし、[SaaS Data Space](../landing/saas.md#saas-configuration) を指定すると、カタログの同期が開始されます。 その後、行動データがストアフロントに送信されていることを [&#x200B; 確認 &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) できます。
+Commerce アプリケーションをCommerce サービスに正常にリンクし、[SaaS Data Space](../landing/saas.md#saas-configuration) を指定すると、カタログの同期が開始されます。 その後、行動データがストアフロントに送信されていることを [ 確認 ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) できます。
 
 ## データ同期の監視とトラブルシューティング
 
-Commerce Admin から、[Data Management Dashboard](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-dashboard) を使用して同期プロセスを監視できます。 [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) とログを使用して、プロセスの管理とトラブルシューティングを行います。
+Commerce Admin から、[Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) を使用して同期プロセスを監視できます。 [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) とログを使用して、プロセスの管理とトラブルシューティングを行います。
 
-その後、行動データがストアフロントに送信されていることを [&#x200B; 確認 &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) できます。
+その後、行動データがストアフロントに送信されていることを [ 確認 ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) できます。
 
 ## [!DNL Product Recommendations] インストールの更新 {#update}
 
@@ -77,7 +77,7 @@ Commerce Admin から、[Data Management Dashboard](https://experienceleague.ado
 composer update magento/product-recommendations --with-dependencies
 ```
 
-5.0 から 6.0 などのメジャーバージョンにアップデートするには、プロジェクトのルート `composer.json` ファイルを編集する必要があります。 （最新のバージョンについて詳しくは、[&#x200B; リリースノート &#x200B;](release-notes.md) を参照してください）。 例えば、メインの `composer.json` ファイルを開いて、`magento/product-recommendations` モジュールを検索します。
+5.0 から 6.0 などのメジャーバージョンにアップデートするには、プロジェクトのルート `composer.json` ファイルを編集する必要があります。 （最新のバージョンについて詳しくは、[ リリースノート ](release-notes.md) を参照してください）。 例えば、メインの `composer.json` ファイルを開いて、`magento/product-recommendations` モジュールを検索します。
 
 ```json
 "require": {
@@ -119,4 +119,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## [!DNL Product Recommendations] のアンインストール {#uninstall}
 
-必要に応じて、製品レコメンデーションモジュールを [&#x200B; アンインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) できます。
+必要に応じて、製品レコメンデーションモジュールを [ アンインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) できます。
