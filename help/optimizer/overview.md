@@ -89,4 +89,4 @@ ht-degree: 0%
 
 次の図は、カタログデータの取り込みから、マーチャンダイジングサービス、ストアフロント、サードパーティの買い物かごとの統合とチェックアウトプロセスとの関係に至るまで、[!DNL Adobe Commerce Optimizer] の基本的なアーキテクチャを示しています。
 
-![[!DNL Adobe Commerce Optimizer] アーキテクチャ ](./assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer] アーキテクチャ &#x200B;](./assets/architecture.png)
