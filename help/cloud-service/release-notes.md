@@ -3,34 +3,51 @@ title: '[!DNL Adobe Commerce as a Cloud Service] リリースノート'
 description: ' [!DNL Adobe Commerce as a Cloud Service] の最新の機能と改善点について説明します。'
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 925df19c2827f474efe85708ea49974b285df29e
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 1%
+source-wordcount: '310'
+ht-degree: 0%
 
 ---
 
 # リリースノート
 
-以下のリリースノートには、[!DNL Adobe Commerce as a Cloud Service] の更新点が記載されています。 他の製品のリリース情報については、[Adobe Commerce Optimizer](../optimizer/release-notes.md) または [Adobe Commerce オンプレミスおよびAdobe Commerce on Cloud](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を参照してください。
+以下のリリースノートには、[!DNL Adobe Commerce as a Cloud Service] の更新点が記載されています。 他の製品のリリース情報については、[Adobe Commerce Optimizer](../optimizer/release-notes.md) または [Adobe Commerce オンプレミスおよびAdobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照してください。
 
-## 2025 年 8 月
+[!DNL Adobe Commerce as a Cloud Service] には、最新バージョンのマーチャンダイジングサービス、支払いサービスおよび拡張リリースが含まれています。 次のリンクを使用して、それぞれのリリースノートを表示します。
 
-**リリース日**:2025 年 8 月 28 日（PT）
+* サービス
+   * [カタログサービス](../catalog-service/release-notes.md)
+   * [Live Search](../live-search/release-notes.md)
+   * [支払いサービス](../payment-services/release-notes.md)
+   * [製品レコメンデーション](../product-recommendations/release-notes.md)
+   * [SaaS データ エクスポート](../data-export/release-notes.md)
+* 拡張性
+   * [ 管理 UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)
+   * [API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)
+   * [ イベント ](https://developer.adobe.com/commerce/extensibility/events/release-notes/)
+   * [Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)
+
+## 2025 年 11 月
 
 >[!BEGINSHADEBOX]
 
-### EU 地域が利用可能になりました
+### 機能強化
 
-顧客 IMS 組織に対する欧州連合地域（eu1）のサポートが利用できるようになりました。 Cloud Managerで **Commerce SaaS インスタンスを追加** する際に、**欧州連合** を [&#x200B; 地域 &#x200B;](./getting-started.md#create-an-instance) として選択できるようになりました。 欧州連合（EU）地域は、実稼動環境でのみ使用できます。
+* [User Management](./user-management.md) - Admin Consoleの **Product Admin** の役割を変更して、Commerce管理者へのユーザーアクセスを自動的に更新しました。<!-- CCSAAS-3012 -->
 
-EU 地域のベースの実稼動 URL は次のとおりです。
+* [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads) および [REST](https://developer.adobe.com/commerce/webapi/rest/modules/s3-uploads) の事前署名済み URL を使用して、Amazon S3 に、交渉可能な見積書の添付ファイルや、顧客および顧客アドレスに関連付けられたファイルと画像をアップロードおよび取得する機能が追加されました。 REST では、カテゴリ画像をアップロードすることもできます。<!-- CCSAAS-3250 -->
 
-* 管理者：`https://eu1.admin.commerce.adobe.com`
-* REST とGraphQL:`https://eu1.api.commerce.adobe.com`
+* 顧客を作成および更新するために、`POST /V1/customers` エンドポイントと `PUT /V1/customers/{customerId}` エンドポイントを [REST API](https://developer.adobe.com/commerce/webapi/rest/reference/) に追加しました。 これらのエンドポイントには管理者認証が必要です。<!-- CCSAAS-3112 -->
 
-![&#x200B; インスタンスを作成 &#x200B;](./assets/create-instance-eu.png){width="600" align="center" zoomable="yes"}
+* 買い物客のメールアドレスと 1 回限りのパスワード（OTP）を必要とし [`exchangeOtpForCustomerToken` 引き換えに顧客トークンを受け取る、](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) ミューテーションを追加しました。 このミューテーションは、通常、顧客がメールまたは電話に送信された OTP を使用して認証する必要があるシナリオで使用されます。
+
+* 管理者の [!UICONTROL **メールアドレスを保存**] 設定画面で定義されたアドレスに、`example.com` で終わる値が含まれている場合、Commerceはこのアドレスにメールを送信しません。 代わりに、システムはメールが送信されなかったことをログに記録します。 <!-- CCSAAS-3533 -->
+
+#### カスタム注文属性
+
+* 管理者ユーザーは、管理パネルの注文ビュー、編集、作成画面から直接 [ カスタム注文属性 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) を表示および編集できるようになりました。 この機能強化により、GraphQLを介して作成されたカスタム注文データの管理が向上します。<!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]

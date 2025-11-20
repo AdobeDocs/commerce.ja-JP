@@ -3,10 +3,10 @@ title: 入門  [!DNL Adobe Commerce as a Cloud Service]
 description: ' [!DNL Adobe Commerce as a Cloud Service] の使用を開始する方法について説明します。'
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 911d984efa9587c0154db3ab97f6136bf6c34166
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: 69870bc7037bdad5a8d5fa769a06c07f8cd920aa
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service] は、次のコンポーネントで構成されます。
 
-* **[Adobe Experience Cloud](https://experience.adobe.com/)** - [!DNL Adobe Commerce]experience.adobe.com[&#x200B; にあるすべての &#x200B;](https://experience.adobe.com/) 製品への主要なエントリポイント
-   * [!UICONTROL **クイックアクセス**] の下の [!UICONTROL **0&rbrace;Commerce&rbrace; をクリックして、Commerce Cloud Manager を開きます**]
+* **[Adobe Experience Cloud](https://experience.adobe.com/)** - [!DNL Adobe Commerce]experience.adobe.com[ にあるすべての ](https://experience.adobe.com/) 製品への主要なエントリポイント
+   * [!UICONTROL **クイックアクセス**] の下の [!UICONTROL **0}Commerce} をクリックして、Commerce Cloud Manager を開きます**]
 * **[Commerce Cloud Manager](https://experience.adobe.com/#/commerce/cloud-service)** - インスタンスの作成と管理、API URL へのアクセスおよびCommerce管理者
 * **[Adobe Admin Console](https://adminconsole.adobe.com/)** - ユーザーとロールを管理します
 * **Commerce管理者** – 商品、注文、顧客およびストア設定を管理します
 * **[Edge Delivery Servicesを活用したストアフロント](./storefront.md)** - コンポーザブルで高性能なシステムを使用して、マーチャントやデベロッパー向けに優れたスピード、SEO、ユーザーエクスペリエンスを提供する、顧客向けのストアフロントを作成およびカスタマイズします
-* **[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)** - [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) や [API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/) などの拡張ツールと共に、App Builderを使用してカスタム統合を構築します
+* **[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)** - [integration starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) や [API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/) などの拡張ツールと共に、App Builderを使用してカスタム統合を構築します
 
 ## 設定と管理
 
@@ -37,18 +37,18 @@ ht-degree: 0%
 
 組み合わせたグループとして、システム管理者、マーチャントおよび開発者は、Commerce インスタンスを起動して実行するために次の基本的な手順に従う必要があります。
 
-1. **すべてのユーザー**: [&#x200B; インスタンスを作成 &#x200B;](#create-an-instance)
-1. **システム管理者**:[&#x200B; ユーザーの追加と役割の割り当て &#x200B;](user-management.md#add-users-and-admins)
-1. **マーチャント**:[Commerce管理にアクセス &#x200B;](#access-an-instance) て [&#x200B; カタログを読み込みます &#x200B;](#import-your-catalog)
-1. **開発者**:[&#x200B; ストアフロントを設定 &#x200B;](storefront.md) し、[&#x200B; 開発者プラットフォーム &#x200B;](overview.md#developer-platform) を参照してください
+1. **すべてのユーザー**: [ インスタンスを作成 ](#create-an-instance)
+1. **システム管理者**:[ ユーザーの追加と役割の割り当て ](user-management.md#add-users-and-admins)
+1. **マーチャント**:[Commerce管理にアクセス ](#access-an-instance) て [ カタログを読み込みます ](#import-your-catalog)
+1. **開発者**:[ ストアフロントを設定 ](storefront.md) し、[ 開発者プラットフォーム ](overview.md#developer-platform) を参照してください
 
 #### AEM Assetsと製品ビジュアルのワークフロー
 
 [!DNL Adobe Experience Manager Assets] または [!DNL Product Visuals powered by AEM Assets] を [!DNL Adobe Commerce as a Cloud Service] と統合するには、次の手順が必要です。
 
-1. **システム管理者**:[&#x200B; 「AEM Assetsと Product Visuals」製品プロファイルにユーザーを追加 &#x200B;](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
-1. **開発者**:[AEM Assetsと製品ビジュアルの統合 &#x200B;](../aem-assets-integration/overview.md)
-1. **マーチャント**:[AEM Assetsと製品のビジュアルにアクセス &#x200B;](./user-management.md#access-the-experience-manager-interface)
+1. **システム管理者**:[ 「AEM Assetsと Product Visuals」製品プロファイルにユーザーを追加 ](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
+1. **開発者**:[AEM Assetsと製品ビジュアルの統合 ](../aem-assets-integration/overview.md)
+1. **マーチャント**:[AEM Assetsと製品のビジュアルにアクセス ](./user-management.md#access-the-experience-manager-interface)
 
 ### 役割ベースの設定と管理タスク
 
@@ -58,15 +58,15 @@ ht-degree: 0%
 
 >[!TAB  システム管理者とマーチャントワークフロー ]
 
-次の図は、システム管理者とマーチャントが [!DNL Adobe Commerce as a Cloud Service] インスタンスにアクセスして管理する方法の概要を示しています。 管理者ワークフローについて詳しくは、[Adobe Admin Console ガイド &#x200B;](https://helpx.adobe.com/jp/enterprise/admin-guide.html) を参照してください。
+次の図は、システム管理者とマーチャントが [!DNL Adobe Commerce as a Cloud Service] インスタンスにアクセスして管理する方法の概要を示しています。 管理者ワークフローについて詳しくは、[Adobe Admin Console ガイド ](https://helpx.adobe.com/enterprise/admin-guide.html) を参照してください。
 
-商 ![[!DNL Adobe Commerce as a Cloud Service] フロー図 &#x200B;](./assets/merchant-flow.svg){zoomable="yes"}
+商 ![[!DNL Adobe Commerce as a Cloud Service] フロー図 ](./assets/merchant-flow.svg){zoomable="yes"}
 
 >[!TAB  開発者ワークフロー ]
 
-次の図は、App Builderを使用して、開発者向けの統合を作成する方法の概要 [!DNL Adobe Commerce as a Cloud Service] 示しています。 詳しくは、[API ドキュメント &#x200B;](https://developer.adobe.com/commerce/webapi/rest/) を参照してください。
+次の図は、App Builderを使用して、開発者向けの統合を作成する方法の概要 [!DNL Adobe Commerce as a Cloud Service] 示しています。 詳しくは、[API ドキュメント ](https://developer.adobe.com/commerce/webapi/rest/) を参照してください。
 
-開発者 ![[!DNL Adobe Commerce as a Cloud Service] フロー図 &#x200B;](./assets/developer-flow.svg){zoomable="yes"}
+開発者 ![[!DNL Adobe Commerce as a Cloud Service] フロー図 ](./assets/developer-flow.svg){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -80,11 +80,11 @@ ht-degree: 0%
 
 | タスク | 説明 | Resource |
 |------|-------------|----------|
-| プラットフォームについて | Adobe Commerce as a Cloud Serviceのアーキテクチャとメリットについて説明します | [&#x200B; 概要 &#x200B;](overview.md) |
-| 機能の比較 | Cloud Serviceと他のAdobe Commerce製品の違いを理解する | [&#x200B; 機能の比較 &#x200B;](feature-comparison.md) |
-| インスタンスの作成 | サンドボックスと実稼動環境のプロビジョニング | [&#x200B; インスタンスの作成 &#x200B;](#create-an-instance) |
-| User Management の設定 | ユーザーの追加、役割の割り当ておよび権限の管理 | [&#x200B; ユーザー管理 &#x200B;](user-management.md) |
-| AEM Assetsと製品ビジュアルの設定（オプション） | ユーザーの追加、役割の割り当ておよび権限の管理 | [&#x200B; ユーザー管理 &#x200B;](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
+| プラットフォームについて | Adobe Commerce as a Cloud Serviceのアーキテクチャとメリットについて説明します | [ 概要 ](overview.md) |
+| 機能の比較 | Cloud Serviceと他のAdobe Commerce製品の違いを理解する | [ 機能の比較 ](feature-comparison.md) |
+| インスタンスの作成 | サンドボックスと実稼動環境のプロビジョニング | [ インスタンスの作成 ](#create-an-instance) |
+| User Management の設定 | ユーザーの追加、役割の割り当ておよび権限の管理 | [ ユーザー管理 ](user-management.md) |
+| AEM Assetsと製品ビジュアルの設定（オプション） | ユーザーの追加、役割の割り当ておよび権限の管理 | [ ユーザー管理 ](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB  商人 ]
 
@@ -92,10 +92,10 @@ ht-degree: 0%
 
 | タスク | 説明 | Resource |
 |------|-------------|----------|
-| インスタンスへのアクセス | Commerce管理者にログインしてストアを管理する | [&#x200B; インスタンスへのアクセス &#x200B;](#access-an-instance) |
-| ユースケースの調査 | 実用的なビジネスシナリオとワークフローについて学ぶ | [&#x200B; ユースケース &#x200B;](./use-cases.md) |
-| Import catalog | 製品データをプラットフォームに読み込む方法を説明します | [&#x200B; カタログを読み込む &#x200B;](#import-your-catalog) |
-| AEM Assetsと製品ビジュアルへのアクセス（オプション） | Experience Manager にアクセスして、AEM Assetsと製品ビジュアルの使用を開始する | [Experience Manger インターフェイスへのアクセス &#x200B;](./user-management.md#access-the-experience-manager-interface) |
+| インスタンスへのアクセス | Commerce管理者にログインしてストアを管理する | [ インスタンスへのアクセス ](#access-an-instance) |
+| ユースケースの調査 | 実用的なビジネスシナリオとワークフローについて学ぶ | [ ユースケース ](./use-cases.md) |
+| Import catalog | 製品データをプラットフォームに読み込む方法を説明します | [ カタログを読み込む ](#import-your-catalog) |
+| AEM Assetsと製品ビジュアルへのアクセス（オプション） | Experience Manager にアクセスして、AEM Assetsと製品ビジュアルの使用を開始する | [Experience Manger インターフェイスへのアクセス ](./user-management.md#access-the-experience-manager-interface) |
 
 >[!TAB  開発者 ]
 
@@ -103,12 +103,12 @@ ht-degree: 0%
 
 | タスク | 説明 | Resource |
 |------|-------------|----------|
-| アーキテクチャについて | プラットフォームの拡張性と API について説明します | [&#x200B; 概要 – 開発者プラットフォーム &#x200B;](overview.md#developer-platform) |
-| 開発環境の設定 | 開発およびテスト用のサンドボックスインスタンスを作成 | [&#x200B; インスタンスの作成 &#x200B;](#create-an-instance) |
-| ストアフロントを構築 | Commerce ストアフロントのセットアップおよびカスタマイズ方法について説明します | [&#x200B; ストアフロントの設定 &#x200B;](./storefront.md) |
-| ストアフロントの設定 | ストアフロントの設定方法について学ぶ | [&#x200B; ストアフロントの設定 &#x200B;](./storefront.md) |
-| 統合オプションの調査 | App Builder、API メッシュ、およびアクセス権のあるその他の拡張ツールについて説明します | [&#x200B; 概要 – 開発者プラットフォーム &#x200B;](overview.md#developer-platform) |
-| AEM Assetsと製品ビジュアルの統合（オプション） | AEM Assetsと製品ビジュアルをAdobe Commerceと統合する方法を学ぶ | [AEM Assetsの統合 &#x200B;](../aem-assets-integration/overview.md) |
+| アーキテクチャについて | プラットフォームの拡張性と API について説明します | [ 概要 – 開発者プラットフォーム ](overview.md#developer-platform) |
+| 開発環境の設定 | 開発およびテスト用のサンドボックスインスタンスを作成 | [ インスタンスの作成 ](#create-an-instance) |
+| ストアフロントを構築 | Commerce ストアフロントのセットアップおよびカスタマイズ方法について説明します | [ ストアフロントの設定 ](./storefront.md) |
+| ストアフロントの設定 | ストアフロントの設定方法について学ぶ | [ ストアフロントの設定 ](./storefront.md) |
+| 統合オプションの調査 | App Builder、API メッシュ、およびアクセス権のあるその他の拡張ツールについて説明します | [ 概要 – 開発者プラットフォーム ](overview.md#developer-platform) |
+| AEM Assetsと製品ビジュアルの統合（オプション） | AEM Assetsと製品ビジュアルをAdobe Commerceと統合する方法を学ぶ | [AEM Assetsの統合 ](../aem-assets-integration/overview.md) |
 
 >[!ENDTABS]
 
@@ -116,9 +116,9 @@ ht-degree: 0%
 
 役割固有の設定タスクを完了した後：
 
-* **システム管理者**: [&#x200B; 共有責任 &#x200B;](shared-responsibility.md) ガイドラインの確認
-* **マーチャント**：一般的なビジネスシナリオについて [&#x200B; ユースケース &#x200B;](use-cases.md) を調べます
-* **Developers**: [Adobe Commerce開発者向けドキュメントをご覧ください &#x200B;](https://developer.adobe.com/commerce/docs)
+* **システム管理者**: [ 共有責任 ](shared-responsibility.md) ガイドラインの確認
+* **マーチャント**：一般的なビジネスシナリオについて [ ユースケース ](use-cases.md) を調べます
+* **Developers**: [Adobe Commerce開発者向けドキュメントをご覧ください ](https://developer.adobe.com/commerce/docs)
 
 ## Adobe Commerce as a Cloud Serviceの基本
 
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->インスタンスを作成する前に、組織の製品管理者またはシステム管理者が、[!DNL Adobe Commerce as a Cloud Service] 製品のユーザーとしてユーザーを追加する必要があります。 詳しくは、[&#x200B; ユーザーと管理者の追加 &#x200B;](./user-management.md#add-users-and-admins) を参照してください。
+>インスタンスを作成する前に、組織の製品管理者またはシステム管理者が、[!DNL Adobe Commerce as a Cloud Service] 製品のユーザーとしてユーザーを追加する必要があります。 詳しくは、[ ユーザーと管理者の追加 ](./user-management.md#add-users-and-admins) を参照してください。
 
 [!DNL Adobe Commerce as a Cloud Service] インスタンスでは、クレジットベースのシステムを使用します。 複数のインスタンスを作成できますが、各インスタンスには使用可能なクレジットが必要です。 最初に付与されるクレジットの数は、サブスクリプションによって異なります。
 
@@ -140,7 +140,7 @@ ht-degree: 0%
 
 1. 画面の右上隅にある「[!UICONTROL **インスタンスを追加**]」をクリックします。
 
-   ![&#x200B; インスタンスを作成 &#x200B;](./assets/create-instance.png){width="50%" align="center" zoomable="yes"}
+   ![ インスタンスを作成 ](./assets/create-instance.png){width="50%" align="center" zoomable="yes"}
 
 1. 「[!UICONTROL **Commerceas a Cloud Service**]」を選択します。
 
@@ -148,13 +148,19 @@ ht-degree: 0%
 
 1. インスタンスの [!UICONTROL **環境タイプ**] を選択します。 次のいずれかのオプションを選択できます。
 
-   * [!UICONTROL **サンドボックス**] - デザインおよびテスト目的に最適です。 サンドボックス環境を使用して、[!DNL Adobe Commerce as a Cloud Service] ジャーニーを開始する必要があります。
+   * [!UICONTROL **サンドボックス**] - デザインおよびテストのみを目的としています。 サンドボックス環境を使用して、[!DNL Adobe Commerce as a Cloud Service] ジャーニーを開始する必要があります。
+
+   >[!NOTE]
+   >
+   > サンドボックスインスタンスは、設計およびテストのみを目的としています。 サンドボックス環境では、実稼動データを使用しないでください。
+   >
+   >サンドボックスインスタンスは、北米リージョンに制限されています。
+
    * [!UICONTROL **実稼動**] - ライブストアおよびお客様向けのサイト用。
 
    >[!NOTE]
    >
-   >* サンドボックスインスタンスは、北米リージョンに制限されています。
-   >* サンプルデータをインストールするオプションは現在使用できません。
+   >Adobe Commerce as a Cloud Serviceのインフラストラクチャは世界中で利用できます。 お住まいの地域の実稼動環境について詳しくは、カスタマーサービス担当者にお問い合わせください。
 
 1. インスタンスをホストする地域を選択します。
 
@@ -197,15 +203,15 @@ ht-degree: 0%
 
 カタログを [!DNL Adobe Commerce as a Cloud Service] に読み込む方法は 2 つあります。
 
-* [**Commerce管理者**](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/import/data-import) – 数回クリックするだけでカタログデータを読み込むことができる、使いやすいインターフェイスです。
+* [**Commerce管理者**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) – 数回クリックするだけでカタログデータを読み込むことができる、使いやすいインターフェイスです。
 * [**JSON API の読み込み**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - カタログデータをプログラムで読み込むことができる REST API。
 
 ### ストアフロントの設定
 
-インスタンスを作成したので、Edge Delivery Servicesを使用して [&#x200B; ストアフロントを設定 &#x200B;](storefront.md) する準備が整いました。
+インスタンスを作成したので、Edge Delivery Servicesを使用して [ ストアフロントを設定 ](storefront.md) する準備が整いました。
 
 ## その他のリソース
 
 * [リリースノート](release-notes.md)
 * [移行ガイド](migration/overview.md)
-* [Commerce ストアフロントのドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
+* [Commerce ストアフロントのドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/)
