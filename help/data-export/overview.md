@@ -25,9 +25,9 @@ SaaS データのエクスポートは、PHP 拡張モジュールとして提�
 
 - **管理者またはコマンドラインからの手動同期**
 
-   - Commerce管理の [&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) には、同期ステータスがグラフィカルに表示されます。 ダッシュボードを使用して、すべてのフィードの完全再同期（_完全同期_）を実行できます。 ただし、Adobeでは、Adobe CommerceをCommerce サービスに初めて接続する際にのみ、完全同期を実行することをお勧めします。 [&#x200B; 同期処理 &#x200B;](data-synchronization.md) を参照してください。
+   - Commerce管理の [&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) には、同期ステータスがグラフィカルに表示されます。 ダッシュボードを使用して、すべてのフィードの完全再同期（_完全同期_）を実行できます。 ただし、Adobeでは、Adobe CommerceをCommerce サービスに初めて接続する際にのみ、完全同期を実行することをお勧めします。 [&#x200B; 同期処理 &#x200B;](data-synchronization.md) を参照してください。
 
-   - [Adobe Commerce コマンドラインツール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) （CLI）には、特定のフィードを同期するコマンドが用意されており、フィード処理をカスタマイズするオプションが追加されています。
+   - [Adobe Commerce コマンドラインツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/config-cli) （CLI）には、特定のフィードを同期するコマンドが用意されており、フィード処理をカスタマイズするオプションが追加されています。
 
 - **Cron ジョブとの自動同期**
 
