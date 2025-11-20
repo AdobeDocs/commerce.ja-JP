@@ -25,20 +25,20 @@ SaaS データのエクスポートは、PHP 拡張モジュールとして提�
 
 - **管理者またはコマンドラインからの手動同期**
 
-   - Commerce管理の [&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) には、同期ステータスがグラフィカルに表示されます。 ダッシュボードを使用して、すべてのフィードの完全再同期（_完全同期_）を実行できます。 ただし、Adobeでは、Adobe CommerceをCommerce サービスに初めて接続する際にのみ、完全同期を実行することをお勧めします。 [&#x200B; 同期処理 &#x200B;](data-synchronization.md) を参照してください。
+   - Commerce管理の [ データ管理ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) には、同期ステータスがグラフィカルに表示されます。 ダッシュボードを使用して、すべてのフィードの完全再同期（_完全同期_）を実行できます。 ただし、Adobeでは、Adobe CommerceをCommerce サービスに初めて接続する際にのみ、完全同期を実行することをお勧めします。 [ 同期処理 ](data-synchronization.md) を参照してください。
 
-   - [Adobe Commerce コマンドラインツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/config-cli) （CLI）には、特定のフィードを同期するコマンドが用意されており、フィード処理をカスタマイズするオプションが追加されています。
+   - [Adobe Commerce コマンドラインツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) （CLI）には、特定のフィードを同期するコマンドが用意されており、フィード処理をカスタマイズするオプションが追加されています。
 
 - **Cron ジョブとの自動同期**
 
-   - [&#x200B; 部分的なデータ同期 &#x200B;](data-synchronization.md#partial-synchronization-with-cron-jobs) - Commerce管理者ユーザーがエンティティを更新すると、Cron ジョブは部分的なデータ同期をトリガーにします。 データの書き出しプロセスでは、接続されたCommerce サービスに対してこれらの更新のみが送信されます。 部分同期プロセスはビューメカニズムに基づいており、管理者ユーザーまたはシステムインテグレーターの操作は必要ありません。
+   - [ 部分的なデータ同期 ](data-synchronization.md#partial-synchronization-with-cron-jobs) - Commerce管理者ユーザーがエンティティを更新すると、Cron ジョブは部分的なデータ同期をトリガーにします。 データの書き出しプロセスでは、接続されたCommerce サービスに対してこれらの更新のみが送信されます。 部分同期プロセスはビューメカニズムに基づいており、管理者ユーザーまたはシステムインテグレーターの操作は必要ありません。
 
    - [Automatic retry for synchronization errors](data-synchronization.md#failed-items-sync-for-error-recovery):Cron ジョブ・トリガーーデータ同期プロセス中にエラーが発生した場合の同期プロセスの自動再試行。
 
 - **輸出の予定及び実施**
 
-   - 開発者とシステムインテグレーターは、SaaS データの書き出しに要する時間を推定して、Adobe Commerceと接続されたサービスの間でデータを同期させることができます。 この概算は、サイトの中断を防ぐためにデータのエクスポート処理をスケジュールするのに役立ちます。 [&#x200B; データ量と送信時間の予測 &#x200B;](estimate-data-volume-sync-time.md) を参照してください。
+   - 開発者とシステムインテグレーターは、SaaS データの書き出しに要する時間を推定して、Adobe Commerceと接続されたサービスの間でデータを同期させることができます。 この概算は、サイトの中断を防ぐためにデータのエクスポート処理をスケジュールするのに役立ちます。 [ データ量と送信時間の予測 ](estimate-data-volume-sync-time.md) を参照してください。
 
-   - 同期をより迅速に行う必要がある場合は、SaaS データのエクスポートを使用すると、エクスポート処理のパフォーマンスを向上させるためのカスタマイズオプションを利用できます。 [&#x200B; データ書き出しのパフォーマンスの向上 &#x200B;](customize-export-processing.md) を参照してください。
+   - 同期をより迅速に行う必要がある場合は、SaaS データのエクスポートを使用すると、エクスポート処理のパフォーマンスを向上させるためのカスタマイズオプションを利用できます。 [ データ書き出しのパフォーマンスの向上 ](customize-export-processing.md) を参照してください。
 
-- **データの書き出しアクティビティの追跡とトラブルシューティング** - データの書き出しログと saas-export ログを使用して、同期とインデックス作成のプロセス中に同期ステータスを確認し、ペイロードをフィードします。 [&#x200B; ログとトラブルシューティング &#x200B;](troubleshooting-logging.md) を参照してください。
+- **データの書き出しアクティビティの追跡とトラブルシューティング** - データの書き出しログと saas-export ログを使用して、同期とインデックス作成のプロセス中に同期ステータスを確認し、ペイロードをフィードします。 [ ログとトラブルシューティング ](troubleshooting-logging.md) を参照してください。
