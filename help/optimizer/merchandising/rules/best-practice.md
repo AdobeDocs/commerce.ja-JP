@@ -2,19 +2,20 @@
 title: マーチャンダイジングルールのベストプラクティス
 description: ストアでマーチャンダイジングルールを実装するためのベストプラクティスについて説明します。
 role: Admin, Developer
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 09b6b1dea5916c5671c0eb58a551295b5be35fc0
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
+source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
 # マーチャンダイジングルールのベストプラクティス
 
-コンバージョン率と売上高を最適化するには、効果的な検索ルールを実装する必要があります。 [&#x200B; マーチャンダイジングルール &#x200B;](add.md#intelligent-ranking) を使用して、販売データ、在庫レベル、プロモーションに基づく製品ランキングを調整します。
+コンバージョン率と売上高を最適化するには、効果的な検索ルールを実装する必要があります。 [ マーチャンダイジングルール ](add.md#intelligent-ranking) を使用して、販売データ、在庫レベル、プロモーションに基づく製品ランキングを調整します。
 
-よく考えられたデフォルトの検索ルールを確立することが重要です。 [&#x200B; デフォルトルール &#x200B;](overview.md#default-rule) は、検索結果が最初にどのように並べ替えられ、買い物客にどのように表示されるかを決定し、全体的なエクスペリエンスを向上させ、購入の可能性を高めます。 このルールを定期的に監視および調整することで、買い物客のニーズとビジネス目標を引き続き効果的に満たすことができます。
+よく考えられたデフォルトの検索ルールを確立することが重要です。 [ デフォルトルール ](overview.md#default-rule) は、検索結果が最初にどのように並べ替えられ、買い物客にどのように表示されるかを決定し、全体的なエクスペリエンスを向上させ、購入の可能性を高めます。 このルールを定期的に監視および調整することで、買い物客のニーズとビジネス目標を引き続き効果的に満たすことができます。
 
 ## 検索ルールを最適化するためのヒント
 
@@ -24,4 +25,5 @@ ht-degree: 0%
 - 関連性を損なうことなく、利益率の高い製品を少し優先します。
 - 販売されている製品や特別なプロモーションの一部を強調します。
 - プロモーション期間中に日付範囲を使用して、プロモーション期間中または販売期間中に検索ルールを自動的に設定します。
-- 「あなたにお勧め」、「最も多く閲覧された [&#128279;](add.md#intelligent-ranking) など、「インテリジェントランキング  を使用して、個々の買い物客の行動に基づいて検索結果をカスタマイズします。
+- 「あなたにお勧め」、「最も多く閲覧された [ など、「インテリジェントランキング ](add.md#intelligent-ranking) を使用して、個々の買い物客の行動に基づいて検索結果をカスタマイズします。
+- 常に「ルールをテスト」パネルを使用して、インテリジェントランキング戦略が様々なクエリの実際の検索結果に与える影響をプレビューします。
