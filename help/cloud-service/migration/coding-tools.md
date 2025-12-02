@@ -27,9 +27,9 @@ AI コーディングツールを使用すると、次のような利点があ�
 
 * 次のいずれかのコーディングエージェント。
    * [Cursor](https://cursor.com/download) （推奨）
-   * [Github コパイロット ](https://github.com/features/copilot)
+   * [Github コパイロット &#x200B;](https://github.com/features/copilot)
    * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
-   * [ コードをクロード ](https://www.claude.com/product/claude-code)
+   * [&#x200B; コードをクロード &#x200B;](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download):LTS バージョン
 * パッケージマネージャー：[npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) または [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git)：リポジトリのクローン作成とバージョン管理の場合
@@ -42,13 +42,13 @@ AI コーディングツールを使用すると、次のような利点があ�
    npm install -g @adobe/aio-cli
    ```
 
-1. [Adobe I/O CLI Commerce プラグイン ](https://github.com/adobe-commerce/aio-cli-plugin-commerce) をインストールします。
+1. [Adobe I/O CLI Commerce プラグイン &#x200B;](https://github.com/adobe-commerce/aio-cli-plugin-commerce) をインストールします。
 
    ```bash
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
    ```
 
-1. Commerceのクローン [ 統合スターターキット ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
+1. Commerceのクローン [&#x200B; 統合スターターキット &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
 
    ```bash
    git clone git@github.com:adobe/commerce-integration-starter-kit.git
@@ -114,11 +114,11 @@ Adobeでは、パッケージマネージャーを選択する場合、一貫性
 >
 >プロジェクトをデプロイする前に、次の設定タスクを完了する必要があります。
 >
->* Adobe I/O CLI を使用して [0}Adobe Developer Console} にログインします。](https://developer.adobe.com/console)
->* App Builder プロジェクトを作成します（「[ プロジェクト設定 ](https://developer.adobe.com/commerce/extensibility/events/project-setup) を参照）。
+>* Adobe I/O CLI を使用して [0&rbrace;Adobe Developer Console&rbrace; にログインします。](https://developer.adobe.com/console)
+>* App Builder プロジェクトを作成します（「[&#x200B; プロジェクト設定 &#x200B;](https://developer.adobe.com/commerce/extensibility/events/project-setup) を参照）。
 >* `.env` ファイルで環境変数を設定します。
 >
->これらの設定手順を手動で完了することも、AI コーディングツールを利用してプロセスをガイドすることもできます。 設定手順について詳しくは、[ 統合の作成 ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) を参照してください。
+>これらの設定手順を手動で完了することも、AI コーディングツールを利用してプロセスをガイドすることもできます。 設定手順について詳しくは、[&#x200B; 統合の作成 &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) を参照してください。
 
 ## インストール後の設定
 
@@ -245,7 +245,7 @@ Adobeでは、AI コーディングツールを使用する際に、次のベス
 
 開発中：
 
-* 4 段階の [ プロトコル ](#protocol) を信頼する
+* 4 段階の [&#x200B; プロトコル &#x200B;](#protocol) を信頼する
 * 複雑な開発のための実装計画の要求
 * 利用可能な場合は MCP ツールを使用
 * 実装後の各機能のテスト
@@ -269,10 +269,10 @@ AI コーディングツールを使用して開発する場合は、まずサ�
 
 使用を開始するには、次のリソースを参照してください。
 
-* [ 統合スターターキット ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
-* [Adobe Commerce スターターキット テンプレート ](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events スターターテンプレート ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
-* [App Builder サンプルアプリケーション ](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
+* [&#x200B; 統合スターターキット &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
+* [Adobe Commerce スターターキット テンプレート &#x200B;](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
+* [Adobe I/O Events スターターテンプレート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [App Builder サンプルアプリケーション &#x200B;](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### これらのリソースを使用する理由
 
@@ -298,7 +298,7 @@ AI コーディングツールを使用して開発する場合は、まずサ�
 
 ### 複雑な開発のための実装計画の要求
 
-複数の実行時アクション、タッチポイントまたは統合が関与する複雑な開発の場合、AI ツールに詳細な実装計画の作成を明示的にリクエストします。 複数のコンポーネントを含む [ フェーズ 2](#protocol) の全体的な計画を確認したら、詳細な実装計画を求めて、管理可能なタスクに分類します。
+複数の実行時アクション、タッチポイントまたは統合が関与する複雑な開発の場合、AI ツールに詳細な実装計画の作成を明示的にリクエストします。 複数のコンポーネントを含む [&#x200B; フェーズ 2](#protocol) の全体的な計画を確認したら、詳細な実装計画を求めて、管理可能なタスクに分類します。
 
 ```terminal
 Create a detailed implementation plan for this complex development.
@@ -316,7 +316,7 @@ Create a detailed implementation plan for this complex development.
 
 >[!NOTE]
 >
->MCP ツールを使用する前に、[Adobe I/O CLI にログイン ](#log-in-to-the-adobe-io-cli) していることを確認します。
+>MCP ツールを使用する前に、[Adobe I/O CLI にログイン &#x200B;](#log-in-to-the-adobe-io-cli) していることを確認します。
 
 このツールはデフォルトで MCP ツールに設定されていますが、状況によっては CLI コマンドを使用することもできます。 MCP ツールを確実に使用するには、プロンプトで明示的にリクエストします。
 
