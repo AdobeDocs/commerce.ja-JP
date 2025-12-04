@@ -4,9 +4,9 @@ user-guide-description: ドキュメントとリソース  [!DNL Adobe Commerce 
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: d788c6419831814f2a81229c2354ffc41b637873
+source-git-commit: b3a3fcc34154cb231a4a656f0b9cafb9f4bef9bb
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '101'
 ht-degree: 10%
 
 ---
@@ -59,6 +59,6 @@ ht-degree: 10%
 - ユースケース {#use-case}
    - [ストアフロントとカタログ管理のエンドツーエンドのユースケース](./use-case/admin-use-case.md)
 - 開発者向けリソース {#developer}
+   - [ 開発者ガイドおよび API リファレンス ](https://developer.adobe.com/commerce/services/optimizer/)
    - [Salesforce Commerce コネクタ](./developer/salesforce-connector.md)
-   - [&#x200B; データ取り込み REST API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/)
-   - [&#x200B; マーチャンダイジング GraphQL API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/reference/graphql/)
+
