@@ -59,6 +59,6 @@ ht-degree: 10%
 - ユースケース {#use-case}
    - [ストアフロントとカタログ管理のエンドツーエンドのユースケース](./use-case/admin-use-case.md)
 - 開発者向けリソース {#developer}
-   - [ 開発者ガイドおよび API リファレンス ](https://developer.adobe.com/commerce/services/optimizer/)
+   - [&#x200B; 開発者ガイドおよび API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)
    - [Salesforce Commerce コネクタ](./developer/salesforce-connector.md)
 
