@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7e3a7794e417ecbc48cd4258b355dceeee138061
+source-git-commit: e7b8127f3d4f80366a072f3df7e2e216503c9e33
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '245'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>11 月のAdobe Commerce as a Cloud Service リリースの <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a> を更新しました。</p>
+      <td><p>11 月のAdobe Commerce as a Cloud Service リリースの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> リリースノート </a> を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -45,7 +45,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce バックエンドに接続するCommerce Optimizerのお客様が、フィード同期のステータスページからデータフィードの書き出しを監視し、トラブルシューティングする方法について説明しました。 詳しくは、Adobe Commerce Optimizer ガイドの <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/data-sync"> データ同期 </a> を参照してください。</p>
+      <td><p>Adobe Commerce バックエンドに接続するCommerce Optimizerのお客様が、フィード同期のステータスページからデータフィードの書き出しを監視し、トラブルシューティングする方法について説明しました。 詳しくは、Adobe Commerce Optimizer ガイドの <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync"> データ同期 </a> を参照してください。</p>
 </td>
       <td>
         技術
@@ -67,7 +67,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Payment Services v2.13.0 リリースの <a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/release-notes"> リリースノート </a> を更新しました。</p>
+      <td><p>Payment Services v2.13.0 リリースの <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes"> リリースノート </a> を更新しました。</p>
 </td>
       <td>
         技術
@@ -89,7 +89,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets統合 v1.2.7 リリースの <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/release-notes"> リリースノート </a> を更新しました。</p>
+      <td><p>AEM Assets統合 v1.2.7 リリースの <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes"> リリースノート </a> を更新しました。</p>
 </td>
       <td>
         技術
@@ -111,7 +111,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Admin Consoleからの ID 管理とシングルサインオンの設定に関する情報を含むように、次のトピックを更新しました。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service ユーザーとIdentity Management</a><br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer：ユーザーとIdentity Management</a></p>
+      <td><p>Adobe Admin Consoleからの ID 管理とシングルサインオンの設定に関する情報を含むように、次のトピックを更新しました。<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service ユーザーとIdentity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer：ユーザーとIdentity Management</a></p>
 </td>
       <td>
         フィードバック、技術
@@ -133,7 +133,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>ユーザーを追加するための <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management">User Management</a> 手順を更新しました。</p>
+      <td><p>ユーザーを追加するための <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">User Management</a> 手順を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -155,34 +155,12 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce Optimizerの <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/storefront"> ストアフロントの設定ガイド </a> を更新し、サイト作成者ツールを使用してストアフロントプロジェクトを作成する手順、ストアフロント設定をカスタマイズする手順、デフォルトの商品詳細ページと商品検索結果ページを確認してサイトとカタログデータを検証する手順を追加しました。</p>
+      <td><p>Adobe Commerce Optimizerの <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront"> ストアフロントの設定ガイド </a> を更新し、サイト作成者ツールを使用してストアフロントプロジェクトを作成する手順、ストアフロント設定をカスタマイズする手順、デフォルトの商品詳細ページと商品検索結果ページを確認してサイトとカタログデータを検証する手順を追加しました。</p>
 </td>
       <td>
         メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4c2d5fc7ad0febbeef2ff0b8ee3bdec5e9b5710c">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025 年 10 月 2 日（Pt）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management"> ユーザー管理 </a> では、すべての開発者と製品管理者に、最初にユーザーの役割を追加する必要があるようになりました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e12b4c18cacd43d73ced180a62d7162a745ced56">コミット</a></td>
     </tr>
   </tbody>
 </table>
