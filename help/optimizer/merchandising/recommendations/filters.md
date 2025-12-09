@@ -1,10 +1,11 @@
 ---
 title: レコメンデーションフィルター
 description: フィルターを使用して、 [!DNL Adobe Commerce Optimizer] recommendations に表示する製品を制御する方法を説明します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 746c016f149fb49b9c483968a8a5f40196b163ed
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+exl-id: f6100538-23c0-4e90-9834-a895d4707282
+source-git-commit: 032a19183b79cea1bfe27e8a4e20c60ba5ac6b8b
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer] は、設定可能でないデフォルトフィルターをレコメンデーションユニットに自動的に適用します。 1 つのページに複数のレコメンデーションユニットをデプロイする場合、[!DNL Adobe Commerce Optimizer] はユニットで繰り返される製品をフィルターで除外します。 他の製品を推奨する余地を残すために、繰り返し使用される製品への最初の参照のみが使用されます。 [!DNL Adobe Commerce Optimizer] た、以前に購入した製品と、買い物かごに入っている製品も除外します。
 
-レコメンデーションユニットを [&#x200B; 作成 &#x200B;](create.md) する場合、レコメンデーションに表示する製品を制御するフィルターを定義できます。 これらのフィルターは、定義した一連の包含または除外条件に基づいています。 すべてのインクルージョン条件に一致する製品のみがレコメンデーションに表示されます。 除外条件のいずれかに一致する製品は推奨されません。
+レコメンデーションユニットを [ 作成 ](create.md) する場合、レコメンデーションに表示する製品を制御するフィルターを定義できます。 これらのフィルターは、定義した一連の包含または除外条件に基づいています。 すべてのインクルージョン条件に一致する製品のみがレコメンデーションに表示されます。 除外条件のいずれかに一致する製品は推奨されません。
 
 複数のフィルターを設定し、各フィルターページの切り替えを選択して、必要なフィルターのみを有効にすることができます。 これにより、後で使用するためにフィルターのドラフトを作成できます。 有効なフィルターの数は、タブごとに表示されます。
 
@@ -34,7 +35,7 @@ ht-degree: 0%
 
 ## フィルターのタイプ
 
-![&#x200B; フィルター &#x200B;](../../assets/rec-conditions.png)
+![ フィルター ](../../assets/rec-conditions.png)
 
 ### 製品
 
@@ -44,10 +45,10 @@ ht-degree: 0%
 >
 >設定可能な製品の子製品は、_個別に表示されない_ という表示が設定されているため、レコメンデーションユニットに表示されません。
 
-### 価格
+<!--### Price
 
-製品価格に基づくフィルターでは、最終価格を使用して比較を実行します。 最終価格には、匿名の買い物客が利用できる割引や特別価格が含まれます。
+A filter based on the product price uses the final price to perform the comparison. The final price includes any discounts or special pricing available to anonymous shoppers.
 
-<!--### Attribute
+### Attribute
 
 You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.-->
