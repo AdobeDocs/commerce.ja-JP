@@ -18,7 +18,7 @@ ht-degree: 0%
 ## 手順 1：シノニムの追加
 
 1. 管理者で、**マーケティング**/SEO と検索/**[!DNL Live Search]** に移動します。
-1. 複数のストアの場合、**範囲** を [&#x200B; ストア表示 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) に設定します。ここで、シノニム設定が適用されます。
+1. 複数のストアの場合、**範囲** を [&#x200B; ストア表示 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) に設定します。ここで、シノニム設定が適用されます。
 1. 「**シノニム**」タブをクリックします。
 1. 「**シノニムを追加** ボタンをクリックします。
 
