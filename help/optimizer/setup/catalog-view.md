@@ -3,9 +3,9 @@ title: カタログビュー
 description: カタログビューの概要と、ビジネス構造、ポリシー、価格で製品カタログを整理するためのビューの作成方法について説明します。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 0%
@@ -32,15 +32,15 @@ ht-degree: 0%
 - 地域カタログ ビューには、地域に固有の製品と価格が表示される場合があります
 - ブランドカタログビューには、特定のブランドの製品のみが表示される場合があります
 
-## カタログ ビューを作成する
+## カタログビューの作成
 
-このセクションでは、カタログビューを作成し、[&#x200B; ポリシー &#x200B;](policies.md) と [&#x200B; 価格台帳 &#x200B;](pricebooks.md) を選択します。
+このセクションでは、カタログビューを作成し、[ ポリシー ](policies.md) と [ 価格台帳 ](pricebooks.md) を選択します。
 
 カタログビューを作成する前に、次のことを確認します。
 
-- 製品フィルターを定義する [&#x200B; 作成されたポリシー &#x200B;](policies.md)
+- 製品フィルターを定義する [ 作成されたポリシー ](policies.md)
 
-- [&#x200B; 取り込まれた価格台帳 &#x200B;](pricebooks.md) 価格設定
+- [ 取り込まれた価格台帳 ](pricebooks.md) 価格設定
 
 1. 左側のメニューから _ストア設定_ に移動し、「**[!UICONTROL Catalog views]**」をクリックします。
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
    - **名前** - カタログビューの名前（例：`Celport`）を入力します。&#x200B;
    - **カタログソース** - カタログソース（ロケール）を選択します（例：`en-US`）。
-   - **ポリシー** - ドロップダウンを使用して、関連するポリシーを選択します。 例えば、「ブランド」、「モデル」などです。&#x200B;既に [&#x200B; ポリシーを作成 &#x200B;](policies.md) していることを確認します。
+   - **ポリシー** - ドロップダウンを使用して、関連するポリシーを選択します。 例えば、「ブランド」、「モデル」などです。&#x200B;既に [ ポリシーを作成 ](policies.md) していることを確認します。
 
 1. カタログ表示にリンクする価格台帳を選択します。
 
@@ -86,9 +86,9 @@ ht-degree: 0%
 
 このオプションを使用すると、*カタログビュー* テーブルを表示したまま、すべてのカタログビューパラメーターをすばやく確認できます。
 
-*カタログビュー* ワークスペースで、編集するグリッドでカタログビューを見つけ、![&#x200B; 情報アイコン &#x200B;](../assets/info-icon.png) をクリックします。
+*カタログビュー* ワークスペースで、編集するグリッドでカタログビューを見つけ、![ 情報アイコン ](../assets/info-icon.png) をクリックします。
 
-![&#x200B; カタログ ビューの詳細 &#x200B;](../assets/catalog-view-details.png)
+![ カタログ ビューの詳細 ](../assets/catalog-view-details.png)
 
 ここから、次のようなカタログビューの設定の詳細を確認できます。
 
@@ -105,12 +105,12 @@ ht-degree: 0%
 
 カタログビューは、マーチャンダイジングサービスフレームワークの一部であり、Adobe Commerceの基盤で使用される web サイト、ストア、レビューのフレームワークをより柔軟なモデルに置き換えます。
 
-![[!DNL Merchandising Services] アーキテクチャ &#x200B;](../assets/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] アーキテクチャ ](../assets/merchandising-svcs-architecture.png)
 
 ### 仕組み
 
 **1.データ取得**
-PIM、ERP、その他のシステムからのカタログデータは、マーチャンダイジングサービスフレームワークに取り込まれます。 各 SKU には、カタログビュー、ポリシー、ロケールにマッピングされるロケール情報と製品属性が含まれます。 データ取り込みについて詳しくは、[&#x200B; 開発者向けドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。
+PIM、ERP、その他のシステムからのカタログデータは、マーチャンダイジングサービスフレームワークに取り込まれます。 各 SKU には、カタログビュー、ポリシー、ロケールにマッピングされるロケール情報と製品属性が含まれます。 データ取り込みについて詳しくは、[ 開発者向けドキュメント ](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。
 
 **2。 統合基本カタログ**
 取り込まれたデータにより、Catalog Service データパイプライン内に統合ベースカタログが作成されます。 この単一のソースにより、ビジネス・ユニット間でのデータ重複を排除できます。
@@ -119,7 +119,7 @@ PIM、ERP、その他のシステムからのカタログデータは、マー�
 複数のカタログビューは、異なるビジネスユニットを表します（例：「Texas Retail」、「Texas Retail Seasonary」）。 ロケール、ポリシー、価格台帳をカタログビュー間で共有して、柔軟性を確保できます。
 
 **4。 マルチチャネル配信**
-フィルタリングされたカタログデータは、Edge Delivery Services ストアフロント、マーケットプレイス、広告プラットフォーム、カスタムマイクロストアフロントなど、様々な宛先に配信されます。 カタログデータ配信について詳しくは、[&#x200B; 開発者向けドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。
+フィルタリングされたカタログデータは、Edge Delivery Services ストアフロント、マーケットプレイス、広告プラットフォーム、カスタムマイクロストアフロントなど、様々な宛先に配信されます。 カタログデータ配信について詳しくは、[ 開発者向けドキュメント ](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。
 
 ### 主要コンポーネント
 
@@ -158,11 +158,11 @@ PIM、ERP、その他のシステムからのカタログデータは、マー�
 **課題**：同じ製品でも価格が異なる 3,000 のディーラー <br>
 **解決策**：ディーラー固有のカタログビューと価格台帳を備えた 1 つのカタログ
 
-### マルチロケーションRetailer
+### マルチロケーションretailer
 
 **課題**：場所ごとに異なる価格と在庫 <br>
 **解決策**：地域固有のポリシーを使用した場所ベースのカタログビュー
 
 >[!INFO]
 >
->カタログデータの取り込みと配信について詳しくは、[&#x200B; 開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。
+>カタログデータの取り込みと配信について詳しくは、[ 開発者ドキュメント ](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。

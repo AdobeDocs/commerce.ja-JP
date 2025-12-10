@@ -2,7 +2,7 @@
 title: シノニムの追加
 description: 同義語  [!DNL Live Search]  追加して、検索リクエストに対する応答を改善します。
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
-source-git-commit: 6dcfd0a54e6a6814b7f5708e0c221452b8af4537
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -13,52 +13,52 @@ ht-degree: 0%
 
 独自にキュレートされた [!DNL Live Search] 同義語のリストを追加して、顧客エンゲージメントを向上させます。 1 つ [!DNL Live Search] ストア表示で最大 200 個の同義語を管理できます。
 
-![[!DNL Live Search] 同義語 &#x200B;](assets/synonym-workspace.png)
+![[!DNL Live Search] 同義語 ](assets/synonym-workspace.png)
 
 ## 手順 1：シノニムの追加
 
 1. 管理者で、**マーケティング**/SEO と検索/**[!DNL Live Search]** に移動します。
-1. 複数のストアの場合、**範囲** を [&#x200B; ストア表示 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) に設定します。ここで、シノニム設定が適用されます。
+1. 複数のストアの場合、**範囲** を [ ストア表示 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) に設定します。ここで、シノニム設定が適用されます。
 1. 「**シノニム**」タブをクリックします。
 1. 「**シノニムを追加** ボタンをクリックします。
 
 ## 手順 2：タイプによるシノニムの定義
 
-作成する [&#x200B; シノニムのタイプ &#x200B;](synonyms-type.md) の手順に従います。
+作成する [ シノニムのタイプ ](synonyms-type.md) の手順に従います。
 
 ### 双方向類義語
 
 1. デフォルトの **双方向** オプションを受け入れます。
 
-   ![&#x200B; 双方向類義語の追加 &#x200B;](assets/synonym-add-two-way.png)
+   ![ 双方向類義語の追加 ](assets/synonym-add-two-way.png)
 
 1. 照合する **キーワード** 用語または語句を入力します。
 1. キーワードの同義語として追加する **拡張** 用語を入力します。 複数の用語はコンマで区切ります。
 この例では、一致させるキーワードは「pants」で、展開用語のセットは「trousers, slacks」です。
 
-   ![&#x200B; 双方向類義語の例 &#x200B;](assets/synonym-add-two-way-example.png)
+   ![ 双方向類義語の例 ](assets/synonym-add-two-way-example.png)
 
 1. 完了したら、「**保存**」をクリックします。
 同義語のセットがリストに表示され、各用語の間に双方向矢印が表示されます。これは、用語が交換可能であることを意味します。
 
-   ![&#x200B; 双方向類義語 &#x200B;](assets/synonym-two-way.png)
+   ![ 双方向類義語 ](assets/synonym-two-way.png)
 
 ### 一方向のシノニム
 
 1. **一方向** シノニム タイプをクリックします。
 
-   ![&#x200B; 一方向シノニムの追加 &#x200B;](assets/synonym-add-one-way.png)
+   ![ 一方向シノニムの追加 ](assets/synonym-add-one-way.png)
 
 1. **キーワード** と **拡張** の用語を入力します。 複数の用語はコンマで区切ります。
 
-   ![&#x200B; 一方向シノニムの例 &#x200B;](assets/synonym-add-one-way-example.png)
+   ![ 一方向シノニムの例 ](assets/synonym-add-one-way-example.png)
 
    この例では、キーワードが「pants」で、一方向の拡張用語「capris, peddle-pushers」はそれぞれ「pants」のサブセットですが、特定の意味を持ちます。
 
 1. 完了したら、「**保存**」をクリックします。
 同義語のセットがリストに表示され、展開用語からキーワードを指す一方向矢印が表示されます。この矢印は、キーワードのサブセットであることを示します。 各拡張語句はプラス記号で区切られます。
 
-   ![&#x200B; 一方向のシノニム &#x200B;](assets/synonym-one-way.png)
+   ![ 一方向のシノニム ](assets/synonym-one-way.png)
 
 ## 手順 3：変更を公開する
 
@@ -69,6 +69,6 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |--- |--- |
-| [&#x200B; タイプ &#x200B;](synonyms.md) | シノニムがキーワードと同じ意味を持つか、キーワードのサブセットであるかを判断します。 オプション：<br /> 双方向（デフォルト） – キーワードと同じ意味を持ち、同じ検索結果を返す用語 <br /> 一方向 – キーワードのサブセットである用語。 一方向の同義語は、特定の製品のより狭いリストを返します。 |
+| [ タイプ ](synonyms.md) | シノニムがキーワードと同じ意味を持つか、キーワードのサブセットであるかを判断します。 オプション：<br /> 双方向（デフォルト） – キーワードと同じ意味を持ち、同じ検索結果を返す用語 <br /> 一方向 – キーワードのサブセットである用語。 一方向の同義語は、特定の製品のより狭いリストを返します。 |
 | キーワード | カタログ内の商品の選択に一般的に関連付けられている単語。 |
 | 展開 | キーワードと同じ、または類似の意味を持つ追加の用語。 |

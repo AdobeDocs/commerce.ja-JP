@@ -2,7 +2,7 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: 製品レコメンデーションパフォーマンスを設定、管理、監視する方法について説明します。
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
-source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >レコメンデーションユニットは、推奨される製品 _項目_ を含むウィジェットです。
 
-![Recommendations ワークスペース &#x200B;](assets/workspace.png)
+![Recommendations ワークスペース ](assets/workspace.png)
 _Recommendations Workspace_
 
 ## データ収集
@@ -29,17 +29,17 @@ _Recommendations Workspace_
 
 ヘッドレスストアフロントを使用している場合、追加する必要のある必須イベントの詳細については、次のドキュメントを参照してください。
 
-- Product Recommendations ダッシュボードの [&#x200B; 必須イベント &#x200B;](events.md)。
-- 前提条件として追加する必要がある [&#x200B; ストアフロントイベントコレクター &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
-- イベント構造 [&#128279;](https://github.com/adobe/commerce-events/tree/main/examples) 例 。
+- Product Recommendations ダッシュボードの [ 必須イベント ](events.md)。
+- 前提条件として追加する必要がある [ ストアフロントイベントコレクター ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
+- イベント構造 [ 例 ](https://github.com/adobe/commerce-events/tree/main/examples)。
 
 ## 範囲を設定
 
-最初は、すべてのレコメンデーション設定の [&#x200B; 範囲 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja) が `Default Store View` に設定されます。 Commerceのインストールに複数のストア表示が含まれる場合、お勧めが適用される **ストア表示** に [&#x200B; 範囲 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) を設定します。
+最初は、すべてのレコメンデーション設定の [ 範囲 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) が `Default Store View` に設定されます。 Commerceのインストールに複数のストア表示が含まれる場合、お勧めが適用される **ストア表示** に [ 範囲 ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) を設定します。
 
 ## 指標の日付範囲を設定
 
-1. **カレンダー**![&#x200B; カレンダーセレクター &#x200B;](assets/icon-calendar.png) コントロールをクリックします。
+1. **カレンダー**![ カレンダーセレクター ](assets/icon-calendar.png) コントロールをクリックします。
 
 1. 次のいずれかの操作を行います。
 
@@ -51,11 +51,11 @@ _Recommendations Workspace_
 
    >[!NOTE]
    >
-   >製品レコメンデーション指標は、Luma ストアフロント用に最適化されています。 ストアフロントが Luma ベース以外の場合、指標によるデータの追跡方法は、[&#x200B; イベント収集の実装 &#x200B;](events.md) 方法に依存します。
+   >製品レコメンデーション指標は、Luma ストアフロント用に最適化されています。 ストアフロントが Luma ベース以外の場合、指標によるデータの追跡方法は、[ イベント収集の実装 ](events.md) 方法に依存します。
 
 ## 列の表示/非表示
 
-1. 左上隅の **表示/非表示**![&#x200B; 列セレクター &#x200B;](assets/icon-show-hide-columns.png) 列をクリックします。
+1. 左上隅の **表示/非表示**![ 列セレクター ](assets/icon-show-hide-columns.png) 列をクリックします。
 
    表示されている列には、青いチェックマークが付いています。
 
@@ -66,7 +66,7 @@ _Recommendations Workspace_
 
    テーブルが更新され、選択した列のみが含まれます。
 
-   ![Recommendations ワークスペース &#x200B;](assets/workspace-select-columns.png)
+   ![Recommendations ワークスペース ](assets/workspace-select-columns.png)
    _列の表示/非表示_
 
 ## 設定
@@ -75,36 +75,36 @@ _Recommendations Workspace_
 
 - レコメンデーション行動データの作成元を変更するには、別の SaaS データ領域を選択します。
 
-- 新しい SaaS データ領域を構成するには、[**構成の編集**] をクリックします。 詳しくは、[&#x200B; 設定 &#x200B;](settings.md) を参照してください。
+- 新しい SaaS データ領域を構成するには、[**構成の編集**] をクリックします。 詳しくは、[ 設定 ](settings.md) を参照してください。
 
-![Recommendations 設定 &#x200B;](assets/settings.png)
+![Recommendations 設定 ](assets/settings.png)
 _推奨設定_
 
 ## 詳細を表示
 
 1. テーブルで、調査するレコメンデーションをクリックします。
 
-   ![Recommendations ワークスペース &#x200B;](assets/recommendation-detail.png)
+   ![Recommendations ワークスペース ](assets/recommendation-detail.png)
    _ホームページのコンバージョン率の詳細_
 
 1. レコメンデーションのステータスを変更するには、「**アクティブ化**」または **非アクティブ化** をクリックします。
 
 ## レコメンデーションを編集
 
-レコメンデーションの詳細ページで、「**編集**」をクリックします。 詳しくは、[&#x200B; お勧めを編集 &#x200B;](edit.md) を参照してください。
+レコメンデーションの詳細ページで、「**編集**」をクリックします。 詳しくは、[ お勧めを編集 ](edit.md) を参照してください。
 
 ## レコメンデーションの作成
 
-レコメンデーションの詳細ページで、「**作成**」をクリックします。 詳しくは、[&#x200B; お勧めを作成 &#x200B;](create.md) を参照してください。
+レコメンデーションの詳細ページで、「**作成**」をクリックします。 詳しくは、[ お勧めを作成 ](create.md) を参照してください。
 
 ## Workspaceの制御
 
 | 制御 | 説明 |
 |---|---|
-| ![&#x200B; カレンダーセレクター &#x200B;](assets/icon-calendar.png) | 指標の計算に使用される時間範囲を決定します。 オプション：24 時間/7 日/30 日 |
-| ![&#x200B; 列の選択 &#x200B;](assets/icon-show-hide-columns.png) | [!DNL Product Recommendations] テーブルに表示される列を決定します。 |
+| ![ カレンダーセレクター ](assets/icon-calendar.png) | 指標の計算に使用される時間範囲を決定します。 オプション：24 時間/7 日/30 日 |
+| ![ 列の選択 ](assets/icon-show-hide-columns.png) | [!DNL Product Recommendations] テーブルに表示される列を決定します。 |
 | 設定 | レコメンデーション行動データが取得される SaaS データ領域を決定し、視覚的な類似性レコメンデーションタイプも有効にします。 |
-| レコメンデーションの作成 | [&#x200B; 新しいレコメンデーションを作成 &#x200B;](create.md) ページを開きます。 |
+| レコメンデーションの作成 | [ 新しいレコメンデーションを作成 ](create.md) ページを開きます。 |
 
 ## 列の説明
 
