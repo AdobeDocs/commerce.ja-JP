@@ -35,7 +35,7 @@ ht-degree: 1%
 
 スピード、関連性、使いやすさを重視し、買い物客とマーチャントの両方に [!DNL Live Search] ってゲームの変化をもたらします。 次のビデオをご覧になり、ストアフロントから [!DNL Live Search] の簡単なツアーをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452570?captions=jpn&learn=on)
 
 Live Search の使用と設定に関する詳細なビデオについては、[&#x200B; 完全なデモ  [!DNL Live Search]](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) のトピックを参照してください。
 
