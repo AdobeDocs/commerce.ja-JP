@@ -18,7 +18,7 @@ Recommendations のパフォーマンス ページには、設定済みのレコ
 >
 >レコメンデーションユニットは、推奨される製品 _項目_ を含むウィジェットです。
 
-![ 推奨事項のパフォーマンス ](../assets/rec-performance.png){zoomable="yes"}
+![&#x200B; 推奨事項のパフォーマンス &#x200B;](../assets/rec-performance.png){zoomable="yes"}
 
 ## レポートの表示
 
@@ -26,13 +26,13 @@ Recommendations のパフォーマンス ページには、設定済みのレコ
 
 1. **[!UICONTROL Date Range]** をクリックして、次のいずれかの範囲を選択します。
 
-   ![ 推奨日付範囲 ](../assets/rec-perf-date-range.png)
+   ![&#x200B; 推奨日付範囲 &#x200B;](../assets/rec-perf-date-range.png)
 
    レコメンデーションテーブルが更新され、その日付範囲の指標が表示されます。
 
 ## テーブルをカスタマイズ
 
-1. 左上隅の ![ 列セレクター ](../assets/icon-show-hide-columns.png) アイコンをクリックして、テーブルをカスタマイズします。
+1. 左上隅の ![&#x200B; 列セレクター &#x200B;](../assets/icon-show-hide-columns.png) アイコンをクリックして、テーブルをカスタマイズします。
 
    表示されている列にはチェックマークが付いています。
 
@@ -45,21 +45,21 @@ Recommendations のパフォーマンス ページには、設定済みのレコ
 
 ## 詳細を表示
 
-1. テーブルで、調査するレコメンデーションの横にある（![ その他のセレクター ](../assets/btn-more.png)）アイコンをクリックします。
+1. テーブルで、調査するレコメンデーションの横にある（![&#x200B; その他のセレクター &#x200B;](../assets/btn-more.png)）アイコンをクリックします。
 
 1. レコメンデーションのステータスを変更するには、「**アクティブ化**」または **非アクティブ化** をクリックします。
 
 ## お勧めを作成または管理
 
-[ 新しいレコメンデーションの作成または既存のレコメンデーションの管理 ](../merchandising/recommendations/create.md) を行う方法について説明します。
+[&#x200B; 新しいレコメンデーションの作成または既存のレコメンデーションの管理 &#x200B;](../merchandising/recommendations/create.md) を行う方法について説明します。
 
 ## Workspaceの制御
 
 | 制御 | 説明 |
 |---|---|
-| ![ 日付範囲 ](../assets/rec-perf-date-range.png) | 指標の計算に使用される時間範囲を決定します。 |
-| ![ 列の選択 ](../assets/icon-show-hide-columns.png) | Recommendations テーブルに表示される列を決定します。 |
-| レコメンデーションの作成 | [ 新しいレコメンデーションを作成 ](../merchandising/recommendations/create.md) ページを開きます。 |
+| ![&#x200B; 日付範囲 &#x200B;](../assets/rec-perf-date-range.png) | 指標の計算に使用される時間範囲を決定します。 |
+| ![&#x200B; 列の選択 &#x200B;](../assets/icon-show-hide-columns.png) | Recommendations テーブルに表示される列を決定します。 |
+| レコメンデーションの作成 | [&#x200B; 新しいレコメンデーションを作成 &#x200B;](../merchandising/recommendations/create.md) ページを開きます。 |
 
 ## 列の説明
 
