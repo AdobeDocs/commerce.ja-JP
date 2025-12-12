@@ -1,11 +1,11 @@
 ---
 title: 拡張機能の AI コーディングツール
 description: AI ツールを使用してCommerce App Builder拡張機能を作成する方法を説明します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 8f7b5536388e8f4cb1e763b430bdca8644d1da5c
+source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 0%
@@ -26,10 +26,10 @@ AI コーディングツールを使用すると、次のような利点があ�
 ## 前提条件
 
 * 次のいずれかのコーディングエージェント。
-   * [&#x200B; カーソル &#x200B;](https://cursor.com/download) （推奨）
-   * [Github コパイロット &#x200B;](https://github.com/features/copilot)
+   * [ カーソル ](https://cursor.com/download) （推奨）
+   * [Github コパイロット ](https://github.com/features/copilot)
    * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
-   * [&#x200B; コードをクロード &#x200B;](https://www.claude.com/product/claude-code)
+   * [ コードをクロード ](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download):LTS バージョン
 * パッケージマネージャー：[npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) または [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git)：リポジトリのクローン作成とバージョン管理の場合
@@ -45,14 +45,14 @@ AI コーディングツールを使用すると、次のような利点があ�
 1. 次のプラグインをインストールします。
 
    * [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
-   * [Adobe I/O CLI ランタイム &#x200B;](https://github.com/adobe/aio-cli-plugin-runtime)
+   * [Adobe I/O CLI ランタイム ](https://github.com/adobe/aio-cli-plugin-runtime)
    * [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev)
 
    ```bash
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
-1. Commerceのクローン [&#x200B; 統合スターターキット &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
+1. Commerceのクローン [ 統合スターターキット ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
 
    ```bash
    git clone git@github.com:adobe/commerce-integration-starter-kit.git
@@ -72,7 +72,7 @@ AI コーディングツールを使用すると、次のような利点があ�
 
 セットアッププロセスにより、設定オプションが表示されます。 設定場所として「現在のディレクトリ」を選択し、現在のワークスペースにツールをインストールします。
 
-```terminal
+```plain
 ? Where would you like to setup the tools?
 ❯ Current directory
   New directory
@@ -80,7 +80,7 @@ AI コーディングツールを使用すると、次のような利点があ�
 
 Adobeでは、コーディングエージェントを選択する場合に最適な開発環境を実現するために、`Cursor` を選択することをお勧めします。
 
-```terminal
+```plain
 ? Which coding agent would you like to use?
 ❯ Cursor
   Copilot
@@ -90,7 +90,7 @@ Adobeでは、コーディングエージェントを選択する場合に最適
 
 Adobeでは、パッケージマネージャーを選択する場合、一貫性を確保するために `npm` を使用することをお勧めします。
 
-```terminal
+```plain
 ? Which package manager would you like to use?
 ❯ npm
   yarn
@@ -118,11 +118,11 @@ Adobeでは、パッケージマネージャーを選択する場合、一貫性
 >
 >プロジェクトをデプロイする前に、次の設定タスクを完了する必要があります。
 >
->* Adobe I/O CLI を使用して [0&rbrace;Adobe Developer Console&rbrace; にログインします。](https://developer.adobe.com/console)
->* App Builder プロジェクトを作成します（「[&#x200B; プロジェクト設定 &#x200B;](https://developer.adobe.com/commerce/extensibility/events/project-setup) を参照）。
+>* Adobe I/O CLI を使用して [0}Adobe Developer Console} にログインします。](https://developer.adobe.com/console)
+>* App Builder プロジェクトを作成します（「[ プロジェクト設定 ](https://developer.adobe.com/commerce/extensibility/events/project-setup) を参照）。
 >* `.env` ファイルで環境変数を設定します。
 >
->これらの設定手順を手動で完了することも、AI コーディングツールを利用してプロセスをガイドすることもできます。 設定手順について詳しくは、[&#x200B; 統合の作成 &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) を参照してください。
+>これらの設定手順を手動で完了することも、AI コーディングツールを利用してプロセスをガイドすることもできます。 設定手順について詳しくは、[ 統合の作成 ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) を参照してください。
 
 ## インストール後の設定
 
@@ -168,7 +168,7 @@ aio auth login
 
 1. サーバーステータスの確認 – Commerce拡張機能 MCP サーバーは次のように表示されます。
 
-   ```terminal
+   ```plain
    Status: Connected/Active
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
@@ -176,7 +176,7 @@ aio auth login
 
 1. 次のプロンプトを使用して、エージェントが MCP サーバを使用しているかどうかを確認します。 表示されない場合は、エージェントに対して、使用可能な MCP ツールを使用するように明示的に依頼します。
 
-```terminal
+```plain
 What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
 ```
 
@@ -195,7 +195,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. サーバーステータスを確認します。 `MCP:commerce-extensibility` の出力は、次のようになります。
 
-   ```terminal
+   ```plain
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
    2025-11-13 12:58:50.652 [info] Connection state: Starting
    2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
@@ -209,7 +209,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. 次のプロンプトを使用して、エージェントが MCP サーバを使用しているかどうかを確認します。 表示されない場合は、エージェントに対して、使用可能な MCP ツールを使用するように明示的に依頼します。
 
-   ```terminal
+   ```plain
    What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
    ```
 
@@ -217,7 +217,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 次のサンプルプロンプトでは、注文時に通知を送信する拡張機能を作成します。
 
-```terminal
+```plain
 Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
@@ -230,7 +230,7 @@ Payment Type -> pType
 
 プロンプトに加えて、`/search-commerce-docs` コマンドを使用して、エージェントとの会話でドキュメントを検索できます。 例：
 
-```text
+```plain
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
@@ -249,7 +249,7 @@ Adobeでは、AI コーディングツールを使用する際に、次のベス
 
 開発中：
 
-* 4 段階の [&#x200B; プロトコル &#x200B;](#protocol) を信頼する
+* 4 段階の [ プロトコル ](#protocol) を信頼する
 * 複雑な開発のための実装計画の要求
 * 利用可能な場合は MCP ツールを使用
 * 実装後の各機能のテスト
@@ -273,10 +273,10 @@ AI コーディングツールを使用して開発する場合は、まずサ�
 
 使用を開始するには、次のリソースを参照してください。
 
-* [&#x200B; 統合スターターキット &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
-* [Adobe Commerce スターターキット テンプレート &#x200B;](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events スターターテンプレート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
-* [App Builder サンプルアプリケーション &#x200B;](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
+* [ 統合スターターキット ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
+* [Adobe Commerce スターターキット テンプレート ](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
+* [Adobe I/O Events スターターテンプレート ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [App Builder サンプルアプリケーション ](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### これらのリソースを使用する理由
 
@@ -302,9 +302,9 @@ AI コーディングツールを使用して開発する場合は、まずサ�
 
 ### 複雑な開発のための実装計画の要求
 
-複数の実行時アクション、タッチポイントまたは統合が関与する複雑な開発の場合、AI ツールに詳細な実装計画の作成を明示的にリクエストします。 複数のコンポーネントを含む [&#x200B; フェーズ 2](#protocol) の全体的な計画を確認したら、詳細な実装計画を求めて、管理可能なタスクに分類します。
+複数の実行時アクション、タッチポイントまたは統合が関与する複雑な開発の場合、AI ツールに詳細な実装計画の作成を明示的にリクエストします。 複数のコンポーネントを含む [ フェーズ 2](#protocol) の全体的な計画を確認したら、詳細な実装計画を求めて、管理可能なタスクに分類します。
 
-```terminal
+```plain
 Create a detailed implementation plan for this complex development.
 ```
 
@@ -320,13 +320,13 @@ Create a detailed implementation plan for this complex development.
 
 >[!NOTE]
 >
->MCP ツールを使用する前に、[Adobe I/O CLI にログイン &#x200B;](#log-in-to-the-adobe-io-cli) していることを確認します。
+>MCP ツールを使用する前に、[Adobe I/O CLI にログイン ](#log-in-to-the-adobe-io-cli) していることを確認します。
 
 このツールはデフォルトで MCP ツールに設定されていますが、状況によっては CLI コマンドを使用することもできます。 MCP ツールを確実に使用するには、プロンプトで明示的にリクエストします。
 
 CLI コマンドが使用されていて、代わりに MCP ツールを使用する場合は、次のプロンプトを使用します。
 
-```terminal
+```plain
 Use only MCP tools and not CLI commands
 ```
 
@@ -346,7 +346,7 @@ AI ツールによって作成される不必要な複雑さに疑問を投げ�
 
 単純な読み取り専用エンドポイントに不要なファイル（`validator.js`、`transformer.js`、`sender.js`）を追加する場合は、次のプロンプトを使用します。
 
-```terminal
+```plain
 Why do we need these files for a simple read-only endpoint?
 Perform a root cause analysis before adding complexity
 Verify if simpler solutions exist
@@ -402,47 +402,47 @@ Verify if simpler solutions exist
 
 **実行時アクションをテスト**:
 
-```terminal
+```plain
 Help me test the customer-created runtime action running locally
 ```
 
 **デバッグの失敗**:
 
-```terminal
+```plain
 Why did the subscription-updated runtime action activation fail?
 ```
 
 **ログを確認**:
 
-```terminal
+```plain
 Help me check the logs for the last stock-monitoring runtime action invocation
 ```
 
 **テストペイロードの作成**:
 
-```terminal
+```plain
 Generate test data for this Commerce event
 ```
 
-```terminal
+```plain
 Create a test payload for the customer_save_after event
 ```
 
 **ランタイム エンドポイントの検索**:
 
-```terminal
+```plain
 What's the URL for this deployed action?
 ```
 
 **認証の処理**:
 
-```terminal
+```plain
 How do I authenticate with this external API?
 ```
 
 **トラブルシューティング**:
 
-```terminal
+```plain
 Help me debug why this action is returning 500 errors
 ```
 
@@ -477,19 +477,19 @@ Help me debug why this action is returning 500 errors
 
 大きな変更を加えた後、ツールを活用して、孤立したアクションをクリーンアップします。 AI ツールでクリーンアッププロセスを体系的に処理できるので、孤立したアクションを効率的に特定し、ステータスを確認し、手動の介入なしで安全に削除できます。
 
-```terminal
+```plain
 Help me identify and clean up orphaned runtime actions
 ```
 
 AI ツールをリクエストして、デプロイ済みのアクションをリストし、未使用のアクションを特定する
 
-```terminal
+```plain
 List all deployed actions and identify which ones are no longer needed
 ```
 
 適切なコマンドを使用して、AI ツールに孤立したアクションを削除させる
 
-```terminal
+```plain
 Remove the orphaned actions that are no longer part of the current implementation
 ```
 
