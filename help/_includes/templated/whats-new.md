@@ -23,7 +23,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations"> プレビューペイン </a> として、Commerce Optimizer ドキュメントの Recommendations 機能の更新がサポートされるようになりました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations"> プレビューペイン </a> として、Commerce Optimizer ドキュメントの Recommendations 機能の更新がサポートされるようになりました。</p>
 </td>
       <td>
         技術
@@ -45,7 +45,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>11 月のAdobe Commerce as a Cloud Service リリースの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> リリースノート </a> を更新しました。</p>
+      <td><p>11 月のAdobe Commerce as a Cloud Service リリースの <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a> を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -67,7 +67,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce バックエンドに接続するCommerce Optimizerのお客様が、フィード同期のステータスページからデータフィードの書き出しを監視し、トラブルシューティングする方法について説明しました。 詳しくは、Adobe Commerce Optimizer ガイドの <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync"> データ同期 </a> を参照してください。</p>
+      <td><p>Adobe Commerce バックエンドに接続するCommerce Optimizerのお客様が、フィード同期のステータスページからデータフィードの書き出しを監視し、トラブルシューティングする方法について説明しました。 詳しくは、Adobe Commerce Optimizer ガイドの <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/data-sync"> データ同期 </a> を参照してください。</p>
 </td>
       <td>
         技術
@@ -89,7 +89,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>Payment Services v2.13.0 リリースの <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes"> リリースノート </a> を更新しました。</p>
+      <td><p>Payment Services v2.13.0 リリースの <a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/release-notes"> リリースノート </a> を更新しました。</p>
 </td>
       <td>
         技術
@@ -111,7 +111,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets統合 v1.2.7 リリースの <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes"> リリースノート </a> を更新しました。</p>
+      <td><p>AEM Assets統合 v1.2.7 リリースの <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/release-notes"> リリースノート </a> を更新しました。</p>
 </td>
       <td>
         技術
@@ -133,7 +133,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Admin Consoleからの ID 管理とシングルサインオンの設定に関する情報を含むように、次のトピックを更新しました。<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service ユーザーとIdentity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer：ユーザーとIdentity Management</a></p>
+      <td><p>Adobe Admin Consoleからの ID 管理とシングルサインオンの設定に関する情報を含むように、次のトピックを更新しました。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service ユーザーとIdentity Management</a><br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer：ユーザーとIdentity Management</a></p>
 </td>
       <td>
         フィードバック、技術
@@ -155,7 +155,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>ユーザーを追加するための <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">User Management</a> 手順を更新しました。</p>
+      <td><p>ユーザーを追加するための <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management">User Management</a> 手順を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
