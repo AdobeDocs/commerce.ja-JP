@@ -4,9 +4,9 @@ user-guide-description: ドキュメントとリソース  [!DNL Adobe Commerce 
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b3a3fcc34154cb231a4a656f0b9cafb9f4bef9bb
+source-git-commit: 49c74bbdbf2c951c79a95d8bb9395228d5655fdf
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '104'
 ht-degree: 10%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 10%
 - [境界と制限](boundaries-limits.md)
 - [リリースノート](release-notes.md)
 - 結果の管理 {#manage-results}
+   - [商談](./manage-results/opportunities.md)
    - [成功指標](./manage-results/success-metrics.md)
    - [パフォーマンスの検索](./manage-results/search-performance.md)
    - [Recommendations パフォーマンス](./manage-results/recommendation-performance.md)
@@ -49,6 +50,7 @@ ht-degree: 10%
       - [ベストプラクティス](./merchandising/synonyms/best-practice.md)
 - ストアの設定 {#setup}
    - [カタログビュー](./setup/catalog-view.md)
+   - [カタログ画層](./setup/catalog-layer.md)
    - [ポリシー](./setup/policies.md)
    - [価格台帳](./setup/pricebooks.md)
    - [データ同期](./setup/data-sync.md)
@@ -59,6 +61,6 @@ ht-degree: 10%
 - ユースケース {#use-case}
    - [ストアフロントとカタログ管理のエンドツーエンドのユースケース](./use-case/admin-use-case.md)
 - 開発者向けリソース {#developer}
-   - [&#x200B; 開発者ガイドおよび API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)
+   - [ 開発者ガイドおよび API リファレンス ](https://developer.adobe.com/commerce/services/optimizer/)
    - [Salesforce Commerce コネクタ](./developer/salesforce-connector.md)
 

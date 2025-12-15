@@ -3,11 +3,11 @@ title: カタログビュー
 description: カタログビューの概要と、ビジネス構造、ポリシー、価格で製品カタログを整理するためのビューの作成方法について説明します。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 769aafeb261d978623e68c466888924c92632883
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,15 @@ ht-degree: 0%
 
 ## カタログビューの作成
 
-このセクションでは、カタログビューを作成し、[&#x200B; ポリシー &#x200B;](policies.md) と [&#x200B; 価格台帳 &#x200B;](pricebooks.md) を選択します。
+このセクションでは、カタログビューを作成し、[ ポリシー ](policies.md) と [ 価格台帳 ](pricebooks.md) を選択します。
 
 カタログビューを作成する前に、次のことを確認します。
 
-- 製品フィルターを定義する [&#x200B; 作成されたポリシー &#x200B;](policies.md)
+- [ 作成したポリシー ](policies.md) を使用して、製品フィルターを定義します。
 
-- [&#x200B; 取り込まれた価格台帳 &#x200B;](pricebooks.md) 価格設定
+- [ 定義済みのカタログレイヤー ](catalog-layer.md) 製品のバリアントを定義します。
+
+- 価格設定の [ 取り込まれた価格台帳 ](pricebooks.md)。
 
 1. 左側のメニューから _ストア設定_ に移動し、「**[!UICONTROL Catalog views]**」をクリックします。
 
@@ -50,7 +52,8 @@ ht-degree: 0%
 
    - **名前** - カタログビューの名前（例：`Celport`）を入力します。&#x200B;
    - **カタログソース** - カタログソース（ロケール）を選択します（例：`en-US`）。
-   - **ポリシー** - ドロップダウンを使用して、関連するポリシーを選択します。 例えば、「ブランド」、「モデル」などです。&#x200B;既に [&#x200B; ポリシーを作成 &#x200B;](policies.md) していることを確認します。
+   - **カタログレイヤー** – 取り込んだレイヤーと優先度をレビューします。
+   - **ポリシー** - ドロップダウンを使用して、関連するポリシーを選択します。 例えば、「ブランド」、「モデル」などです。&#x200B;既に [ ポリシーを作成 ](policies.md) していることを確認します。
 
 1. カタログ表示にリンクする価格台帳を選択します。
 
@@ -63,6 +66,20 @@ ht-degree: 0%
 [ カタログ ビュー ] ページが更新され、新しいカタログ ビューが表示されます。&#x200B;
 
 これらの手順を完了すると、選択したソースとポリシーに基づいて製品と価格を表示するようにカタログ表示が設定されます。
+
+## カタログレイヤー
+
+カタログレイヤーを使用すると、元のソースデータを変更せずに、カタログビュー内の製品データを変更できます。 レイヤーは、基本カタログの上にレイヤーを作成することで、名前、説明、画像、リンク、メタデータなどの特定の製品属性に変更を適用します。 元の製品データはそのままの状態で維持されるので、製品を安全にカスタマイズして、いつでも変更を元に戻すことができます。
+
+カタログ画層の一般的な使用例は次のとおりです。
+
+- **SEO の最適化** - [Sites Optimizerの AI レコメンデーションに基づいて、製品のメタタイトルと説明を上書きします ](../manage-results/opportunities.md)
+- **季節的なキャンペーン** - プロモーション用の製品名、説明または画像を一時的に更新します
+- **地域ごとのカスタマイズ** – 地理的な場所や言語に基づいて異なる製品情報を表示する
+- **A/B テスト** – さまざまな製品プレゼンテーションをテストして、コンバージョン率を最適化します。
+- **マルチブランド管理** – 様々なブランドカタログビュー用に製品属性をカスタマイズします。
+
+カタログレイヤーの作成、管理、優先順位付けについて詳しくは、[ カタログレイヤー ](catalog-layer.md) を参照してください。
 
 ## カタログ表示の管理
 
@@ -86,9 +103,9 @@ ht-degree: 0%
 
 このオプションを使用すると、*カタログビュー* テーブルを表示したまま、すべてのカタログビューパラメーターをすばやく確認できます。
 
-*カタログビュー* ワークスペースで、編集するグリッドでカタログビューを見つけ、![&#x200B; 情報アイコン &#x200B;](../assets/info-icon.png) をクリックします。
+*カタログビュー* ワークスペースで、編集するグリッドでカタログビューを見つけ、![ 情報アイコン ](../assets/info-icon.png) をクリックします。
 
-![&#x200B; カタログ ビューの詳細 &#x200B;](../assets/catalog-view-details.png)
+![ カタログ ビューの詳細 ](../assets/catalog-view-details.png)
 
 ここから、次のようなカタログビューの設定の詳細を確認できます。
 
@@ -105,12 +122,12 @@ ht-degree: 0%
 
 カタログビューは、マーチャンダイジングサービスフレームワークの一部であり、Adobe Commerceの基盤で使用される web サイト、ストア、レビューのフレームワークをより柔軟なモデルに置き換えます。
 
-![[!DNL Merchandising Services] アーキテクチャ &#x200B;](../assets/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] アーキテクチャ ](../assets/merchandising-svcs-architecture.png)
 
 ### 仕組み
 
 **1.データ取得**
-PIM、ERP、その他のシステムからのカタログデータは、マーチャンダイジングサービスフレームワークに取り込まれます。 各 SKU には、カタログビュー、ポリシー、ロケールにマッピングされるロケール情報と製品属性が含まれます。 データ取り込みについて詳しくは、[&#x200B; 開発者向けドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。
+PIM、ERP、その他のシステムからのカタログデータは、マーチャンダイジングサービスフレームワークに取り込まれます。 各 SKU には、カタログビュー、ポリシー、ロケールにマッピングされるロケール情報と製品属性が含まれます。 データ取り込みについて詳しくは、[ 開発者向けドキュメント ](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。
 
 **2。 統合基本カタログ**
 取り込まれたデータにより、Catalog Service データパイプライン内に統合ベースカタログが作成されます。 この単一のソースにより、ビジネス・ユニット間でのデータ重複を排除できます。
@@ -119,7 +136,7 @@ PIM、ERP、その他のシステムからのカタログデータは、マー�
 複数のカタログビューは、異なるビジネスユニットを表します（例：「Texas Retail」、「Texas Retail Seasonary」）。 ロケール、ポリシー、価格台帳をカタログビュー間で共有して、柔軟性を確保できます。
 
 **4。 マルチチャネル配信**
-フィルタリングされたカタログデータは、Edge Delivery Services ストアフロント、マーケットプレイス、広告プラットフォーム、カスタムマイクロストアフロントなど、様々な宛先に配信されます。 カタログデータ配信について詳しくは、[&#x200B; 開発者向けドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。
+フィルタリングされたカタログデータは、Edge Delivery Services ストアフロント、マーケットプレイス、広告プラットフォーム、カスタムマイクロストアフロントなど、様々な宛先に配信されます。 カタログデータ配信について詳しくは、[ 開発者向けドキュメント ](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。
 
 ### 主要コンポーネント
 
@@ -165,4 +182,10 @@ PIM、ERP、その他のシステムからのカタログデータは、マー�
 
 >[!INFO]
 >
->カタログデータの取り込みと配信について詳しくは、[&#x200B; 開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。
+>カタログデータの取り込みと配信について詳しくは、[ 開発者ドキュメント ](https://developer.adobe.com/commerce/services/optimizer/) を参照してください。
+
+## その他の関連リソース
+
+- [ カタログレイヤー ](catalog-layer.md) – 元のソースを変更せずに製品データを変更する方法を説明します
+- [ ポリシー ](policies.md) - カタログビューで製品をフィルタリングするためのポリシーを作成します
+- [ 価格台帳 ](pricebooks.md) – 様々な顧客セグメントの価格体系を管理します。
