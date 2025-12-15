@@ -1,7 +1,7 @@
 ---
 title: 成功指標
 description: 成功指標を使用すると、ストアの主要業績評価指標に対するinsight [!DNL Adobe Commerce Optimizer]  得ることができます。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
 source-git-commit: 4e85d70dc1b099a5b40a807a76ca589aa9a28f07
 workflow-type: tm+mt

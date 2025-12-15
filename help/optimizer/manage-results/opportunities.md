@@ -1,7 +1,7 @@
 ---
 title: 商談
 description: Adobe Sites Optimizerとの統合により、データに基づくスマートなサイト改善を実現し、トラフィック、エンゲージメント、コンバージョンを高める機会を特定します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 source-git-commit: 7f7b4a3c866c453d9722b708a0ed4e1b601c8e8e
 workflow-type: tm+mt
 source-wordcount: '1349'
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 商談とは？
 
-[&#x200B; オポチュニティ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) は、マーチャンダイザーがコマースサイトのパフォーマンスに影響を与える問題を特定し、対処するのに役立つ、AI を活用した推奨事項です。 これらのレコメンデーションは、web サイトのパフォーマンスを分析および向上させるクラウドベースのサービスである [0&rbrace;Adobe Experience Manager Sites Optimizer&rbrace; を利用しています。](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)
+[&#x200B; オポチュニティ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) は、マーチャンダイザーがコマースサイトのパフォーマンスに影響を与える問題を特定し、対処するのに役立つ、AI を活用した推奨事項です。 これらのレコメンデーションは、web サイトのパフォーマンスを分析および向上させるクラウドベースのサービスである [0&rbrace;Adobe Experience Manager Sites Optimizer&rbrace; を利用しています。](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/home)
 
 ## 主な機能
 
@@ -176,7 +176,7 @@ Adobe Sites Optimizerの画層がカタログ ビューに存在しない場合�
 
 ## Sites Optimizerの詳細情報
 
-Sites Optimizerの機能について詳しくは、[Adobe Experience Manager Sites Optimizer ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home) を参照してください。
+Sites Optimizerの機能について詳しくは、[Adobe Experience Manager Sites Optimizer ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/home) を参照してください。
 
 追加のリソース：
 
