@@ -15,7 +15,7 @@ ht-degree: 0%
 
 カタログレイヤーを使用すると、元のソースデータを変更せずに製品データを変更できます。 レイヤーは、基本カタログの上にレイヤーを作成することで、名前、説明、画像、リンク、メタデータなどの特定の製品属性に変更を適用します。 元の製品データはそのままの状態で維持されるので、製品を安全にカスタマイズして、いつでも変更を元に戻すことができます。
 
-![ カタログ画層 ](../assets/catalog-layers.png)
+![&#x200B; カタログ画層 &#x200B;](../assets/catalog-layers.png)
 
 ## カタログレイヤーの仕組み
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->カタログレイヤーは取り込み API を使用して読み込みますが、レイヤーの [ 順序の設定 ](#manage-layer-priorities) は UI を使用して行います。
+>カタログレイヤーは取り込み API を使用して読み込みますが、レイヤーの [&#x200B; 順序の設定 &#x200B;](#manage-layer-priorities) は UI を使用して行います。
 
 **前提条件：**
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 1. カタログビューの設定を確認して、レイヤーが正常に取り込まれたことを確認します。
 
-API の仕様とペイロードの例について詳しくは、開発者向けドキュメントの [ 製品レイヤー ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers) を参照してください。
+API の仕様とペイロードの例について詳しくは、開発者向けドキュメントの [&#x200B; 製品レイヤー &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers) を参照してください。
 
 ## UI での手動によるカタログレイヤーの追加
 
@@ -79,7 +79,7 @@ API の仕様とペイロードの例について詳しくは、開発者向け�
 
 >[!TIP]
 >
->一括レイヤー操作の場合は、（前述の [ データ取り込み API メソッドを使用 ](#add-a-catalog-layer-via-data-ingestion) ます。
+>一括レイヤー操作の場合は、（前述の [&#x200B; データ取り込み API メソッドを使用 &#x200B;](#add-a-catalog-layer-via-data-ingestion) ます。
 
 **手動レイヤーを作成するには：**
 
@@ -141,7 +141,7 @@ API の仕様とペイロードの例について詳しくは、開発者向け�
 
 **画層を削除するには：**
 
-データ取り込み API を使用して [ カタログレイヤーを削除 ](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers) します。
+データ取り込み API を使用して [&#x200B; カタログレイヤーを削除 &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers) します。
 
 ## レイヤーの優先度の管理
 
@@ -191,5 +191,5 @@ API の仕様とペイロードの例について詳しくは、開発者向け�
 
 ## その他の関連リソース
 
-- [ カタログビュー ](catalog-view.md) – 様々なストアフロントのカタログビューを設定します
-- [ 機会 ](../manage-results/opportunities.md) - カタログレイヤーを使用した AI を利用した最適化について説明します
+- [&#x200B; カタログビュー &#x200B;](catalog-view.md) – 様々なストアフロントのカタログビューを設定します
+- [&#x200B; 機会 &#x200B;](../manage-results/opportunities.md) - カタログレイヤーを使用した AI を利用した最適化について説明します
