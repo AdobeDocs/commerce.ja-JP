@@ -4,7 +4,7 @@ description: App Builderと AI 支援開発ツールを使用して、Adobe Comm
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
+source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 このチュートリアルでは、[!DNL Adobe Commerce as a Cloud Service] および AI を利用した開発ツールを使用して、[!DNL Adobe App Builder] 用の製品評価拡張機能を構築する手順を説明します。
 
-開始する前に、[&#x200B; 前提条件 &#x200B;](./tutorial-prerequisites.md) を完了してください。
+開始する前に、[ 前提条件 ](./tutorial-prerequisites.md) を完了してください。
 
 ## 前提条件を確認
 
@@ -39,7 +39,7 @@ git --version
 bash --version
 ```
 
-上記のコマンドのいずれかで期待される結果が返されない場合は、[&#x200B; 前提条件 &#x200B;](tutorial-prerequisites.md) を参照してガイダンスを確認してください。
+上記のコマンドのいずれかで期待される結果が返されない場合は、[ 前提条件 ](tutorial-prerequisites.md) を参照してガイダンスを確認してください。
 
 ## 拡張機能の開発
 
@@ -47,7 +47,7 @@ bash --version
 
 1. **[!UICONTROL Cursor]**/**[!UICONTROL Settings]**/**[!UICONTROL Cursor Settings]**/**[!UICONTROL Tools & MCP]** に移動し、`commerce-extensibility` ツールセットがエラーなく有効になっていることを確認します。 エラーが表示された場合は、ツールセットのオン/オフを切り替えます。
 
-   ![&#x200B; カーソル設定 &#x200B;](../assets/cursor-settings.png){width="600" zoomable="yes"}
+   ![ カーソル設定 ](../assets/cursor-settings.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -58,13 +58,13 @@ bash --version
 
    - [!UICONTROL **カーソル**]/[!UICONTROL **設定**]/[!UICONTROL **カーソル設定**]/[!UICONTROL **インデックスとドキュメント**] に移動し、一覧表示されているドキュメントを削除します。
 
-   ![&#x200B; ドキュメントを無効にする &#x200B;](../assets/disable-documentation.png){width="600" zoomable="yes"}
+   ![ ドキュメントを無効にする ](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. 製品評価拡張機能のコードを生成します：
    - カーソルからカーソルのチャットウィンドウで、**エージェント** モードを選択します。
    - 次のプロンプトを入力します。
 
-   ```plain
+   ```shell-session
    Implement an Adobe Commerce as a Cloud Service extension to handle Product Ratings.
    
    Implement a REST API to handle GET ratings requests.
@@ -80,13 +80,13 @@ bash --version
 
 1. エージェントが最適なコードを生成できるように、エージェントの質問に正確に答えます。
 
-   ![&#x200B; カーソルにプロンプトを入力 &#x200B;](../assets/enter-prompt.png){width="600" zoomable="yes"}
+   ![ カーソルにプロンプトを入力 ](../assets/enter-prompt.png){width="600" zoomable="yes"}
 
-   ![&#x200B; 代理人からの質問 &#x200B;](../assets/agent-questions.png){width="600" zoomable="yes"}
+   ![ 代理人からの質問 ](../assets/agent-questions.png){width="600" zoomable="yes"}
 
 1. 次のテキスト例を使用して、エージェントの質問に回答し、ランダム化された評価データを設定します。
 
-   ```plain
+   ```shell-session
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
    
@@ -102,7 +102,7 @@ bash --version
 
    エージェントは、実装の信頼できるソースとして機能する `requirements.md` ファイルを作成します。
 
-   ![&#x200B; 要件ファイルが作成されました &#x200B;](../assets/requirements-file.png){width="600" zoomable="yes"}
+   ![ 要件ファイルが作成されました ](../assets/requirements-file.png){width="600" zoomable="yes"}
 
 1. `requirements.md` ファイルを確認し、計画を検証します。
 
@@ -112,49 +112,49 @@ bash --version
 
    エージェントは、必要なコードを生成し、次の手順で詳細な概要を提供します。
 
-   ![&#x200B; アーキテクチャの計画 &#x200B;](../assets/architecture-planning.png){width="600" zoomable="yes"}
+   ![ アーキテクチャの計画 ](../assets/architecture-planning.png){width="600" zoomable="yes"}
 
-   ![&#x200B; コード生成の概要 &#x200B;](../assets/code-generation-summary.png){width="600" zoomable="yes"}
+   ![ コード生成の概要 ](../assets/code-generation-summary.png){width="600" zoomable="yes"}
 
-   ![&#x200B; 次の手順 &#x200B;](../assets/next-steps.png){width="600" zoomable="yes"}
+   ![ 次の手順 ](../assets/next-steps.png){width="600" zoomable="yes"}
 
 ### ローカルテスト
 
 1. コードをローカルでテストできるようにエージェントに依頼します。
 
-   ```plain
+   ```shell-session
    Test the ratings API locally on a dev server using cURL.
    ```
 
 1. エージェントの指示に従い、API がローカルで動作していることを確認します。
 
-   ![&#x200B; ローカルテスト &#x200B;](../assets/local-testing.png){width="600" zoomable="yes"}
+   ![ ローカルテスト ](../assets/local-testing.png){width="600" zoomable="yes"}
 
-   ![&#x200B; ローカルテストの結果 &#x200B;](../assets/local-testing-1.png){width="600" zoomable="yes"}
+   ![ ローカルテストの結果 ](../assets/local-testing-1.png){width="600" zoomable="yes"}
 
 ### 拡張機能のデプロイ
 
 1. 生成されたコードを検証した後、次のプロンプトを使用して拡張機能をデプロイします。
 
-   ```plain
+   ```shell-session
    Deploy the ratings API.
    ```
 
    エージェントは、デプロイ前に、デプロイメント前の準備状況の評価を実行します。
 
-   ![&#x200B; 導入前評価 &#x200B;](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+   ![ 導入前評価 ](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 1. 評価結果に自信がある場合は、エージェントにデプロイメントを続行するように指示します。
 
    エージェントは、MCP ツールキットを使用して、検証、ビルド、およびデプロイを自動的に行います。
 
-   ![&#x200B; デプロイメント &#x200B;](../assets/deployment-process.png){width="600" zoomable="yes"}
+   ![ デプロイメント ](../assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### デプロイメント後
 
 API は、ストアフロントに統合する前にテストできます。 担当者は、新しいアクションの場所とテスト戦略を指定する必要があります。
 
-![&#x200B; テスト方法 &#x200B;](../assets/testing-strategy.png){width="600" zoomable="yes"}
+![ テスト方法 ](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
 また、ターミナルで cURL を使用して、手動で API をテストすることもできます。
 
@@ -162,19 +162,19 @@ API は、ストアフロントに統合する前にテストできます。 担
 curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123"
 ```
 
-![cURL テスト &#x200B;](../assets/curl-test.png){width="600" zoomable="yes"}
+![cURL テスト ](../assets/curl-test.png){width="600" zoomable="yes"}
 
 ### Edge Delivery Servicesとの統合
 
 Ratings API を [!DNL Adobe Commerce] を利用した [!DNL Edge Delivery Services] ストアフロントに統合するには、エージェントに依頼して、ratings API の要件を含むサービス契約を作成してください。
 
-```plain
+```shell-session
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![&#x200B; サービス契約 &#x200B;](../assets/create-contract.png){width="600" zoomable="yes"}
+![ サービス契約 ](../assets/create-contract.png){width="600" zoomable="yes"}
 
-![&#x200B; サービス契約の詳細 &#x200B;](../assets/contract.png){width="600" zoomable="yes"}
+![ サービス契約の詳細 ](../assets/contract.png){width="600" zoomable="yes"}
 <!-- 
 Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
 
@@ -223,7 +223,7 @@ This section teaches you how to implement real storefront features and communica
 
 1. In a browser, navigate to the Apparel page:
 
-   ```plain
+   ```shell-session
    http://localhost:3000/apparel
    ```
 
@@ -231,7 +231,7 @@ This section teaches you how to implement real storefront features and communica
 
 1. Use the following prompt with your agent:
 
-   ```plain
+   ```shell-session
    Implement product ratings in the storefront.
 
    Add a 5-star rating display with a review count underneath each product name on the product list page, product details page, and product recommendations.
@@ -246,7 +246,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=ja).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
@@ -269,7 +269,7 @@ For further experimentation with this tutorial, use the following suggestions to
 
 Use the following prompt to your agent:
 
-```plain
+```shell-session
 Change the star fill color to red.
 ```
 
@@ -305,7 +305,7 @@ The following steps show how the agent handles complex UI features with visual r
 * If the modal does not appear, check the browser console for errors.
 * If positioning is off, ask the agent to fix it using the following format:
 
-   ```plain
+   ```shell-session
    adjust the modal position to be...
    ```
 
