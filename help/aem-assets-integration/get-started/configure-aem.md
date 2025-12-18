@@ -44,23 +44,23 @@ Adobeは、AEM Commerce環境設定にCommerce名前空間およびメタデー�
 
 `assets-commerce` パッケージコードをAEM Assets as a Cloud Service AEM環境にデプロイするには、次のリソースと権限が必要です。
 
-* プログラムおよびデプロイメントマネージャーの役割を使用して [AEM Assets Cloud Manager プログラムおよび環境にアクセス &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) します。
+* プログラムおよびデプロイメントマネージャーの役割を使用して [AEM Assets Cloud Manager プログラムおよび環境にアクセス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) します。
 
-* [&#x200B; ローカル AEMローカル開発環境 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) およびAEM開発プロセスに精通していること。
+* [&#x200B; ローカル AEMローカル開発環境 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) およびAEM開発プロセスに精通していること。
 
 * [AEM プロジェクト構造 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) およびCloud Managerを使用してカスタムコンテンツパッケージをデプロイする方法を理解します。
 
 ### 手順 1:`assets-commerce` パッケージのインストール
 
-1. 必要に応じて、AEM Assets プロジェクトの [&#x200B; 実稼動環境とステージング環境の作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)AEM Cloud Managerから行います。
+1. 必要に応じて、AEM Assets プロジェクトの [&#x200B; 実稼動環境とステージング環境の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)AEM Cloud Managerから行います。
 
-1. 必要に応じて、[&#x200B; デプロイメントパイプライン &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) を設定します。
+1. 必要に応じて、[&#x200B; デプロイメントパイプライン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) を設定します。
 
-1. [Git リポジトリのクローンを作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) します。
+1. [Git リポジトリのクローンを作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) します。
 
 1. GitHub で、[AEM Assets Commerce リポジトリ &#x200B;](https://github.com/ankumalh/assets-commerce) からパッケージコードをダウンロードします。
 
-1. [&#x200B; ローカル AEM開発環境 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) から、既存のプロジェクト設定にコードを手動でコピーし、`<my-app>` ージ内のすべての `filter.xml` と、プロジェクト内のすべての `pom.xml files` をアプリ名に置き換えます。
+1. [&#x200B; ローカル AEM開発環境 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) から、既存のプロジェクト設定にコードを手動でコピーし、`<my-app>` ージ内のすべての `filter.xml` と、プロジェクト内のすべての `pom.xml files` をアプリ名に置き換えます。
 
    >[!NOTE]
    >
@@ -154,4 +154,4 @@ AEM Assets オーサー環境で、メタデータプロファイルを作成し
 
 * [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}Adobe Commerce パッケ [&#x200B; ジのインストール &#x200B;](configure-commerce.md)
 
-* **Commerce ストアフロントの設定** - Edge Delivery Servicesを搭載したCommerce Storefront でAEM Assetsを使用するには、「[EDS AEM Assets設定 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/)」トピックで説明されているストアフロント設定を行います。
+* **Commerce ストアフロントの設定** - Edge Delivery Servicesを搭載したCommerce Storefront でAEM Assetsを使用するには、「[EDS AEM Assets設定 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=ja)」トピックで説明されているストアフロント設定を行います。
