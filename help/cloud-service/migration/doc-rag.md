@@ -22,7 +22,7 @@ ht-degree: 0%
 
 この RAG は、Adobe Commerceに関する質問を行うための IDE インターフェイスを提供し、アプリケーション開発やその他の移行作業のベストプラクティスについてアドバイスします。
 
-RAG サービスは、Cursor および他の MCP 互換 AI アシスタントと統合される [Commerce拡張ツール ](./coding-tools.md)MCP （Model Context Protocol）サーバーの一部です。
+RAG サービスは、Cursor および他の MCP 互換 AI アシスタントと統合される [Commerce拡張ツール &#x200B;](./coding-tools.md)MCP （Model Context Protocol）サーバーの一部です。
 
 ## 使用可能なドキュメント
 
@@ -30,14 +30,14 @@ RAG サービスは、Cursor および他の MCP 互換 AI アシスタントと
 
 | カテゴリ | 索引 | 含まれるコンテンツ | キーワード |
 |-------|---------|---------|------------------------|
-| [ ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services、ドロップダウン、ストアフロントコンポーネント | ストアフロント，ドロップダウン，EDS，製品一覧，チェックアウト |
-| [ 拡張性 ](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhook、イベント、拡張機能、統合 | webhook, イベント，拡張機能，API メッシュ，GraphQL |
+| [&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services、ドロップダウン、ストアフロントコンポーネント | ストアフロント，ドロップダウン，EDS，製品一覧，チェックアウト |
+| [&#x200B; 拡張性 &#x200B;](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhook、イベント、拡張機能、統合 | webhook, イベント，拡張機能，API メッシュ，GraphQL |
 | [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce（カタログ、顧客、注文） | カタログ，製品，顧客，注文，在庫 |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder、実行時のアクション、UI 拡張機能 | app builder, ランタイムアクション，React Spectrum |
 
-インデックスの選択の詳細については、「[ インデックスの自動選択 ](#automatic-index-selection-recommended)」および「[ インデックスの明示的な選択 ](#explicit-index-selection)」を参照してください。
+インデックスの選択の詳細については、「[&#x200B; インデックスの自動選択 &#x200B;](#automatic-index-selection-recommended)」および「[&#x200B; インデックスの明示的な選択 &#x200B;](#explicit-index-selection)」を参照してください。
 
-各インデックスに含まれているドキュメントについて詳しくは、[ 取り込まれたソースリスト ](https://github.com/adobe-commerce/azure-commerce-documentation-agent/blob/develop/docs/INGESTED_SOURCES.md) を参照してください。
+各インデックスに含まれているドキュメントについて詳しくは、[&#x200B; 取り込まれたソースリスト &#x200B;](https://github.com/adobe-commerce/azure-commerce-documentation-agent/blob/develop/docs/INGESTED_SOURCES.md) を参照してください。
 
 ## セキュリティとプライバシー
 
@@ -53,14 +53,14 @@ RAG サービスは、Cursor および他の MCP 互換 AI アシスタントと
 * エッジでの DDoS 保護
 * フロントドアからのトラフィックのみを受け入れるために API 管理バックエンドがロックダウンされる
 
-様々なセキュリティ要件に対して、カスタムエンドポイントを使用できます。 詳しくは、[ カスタム正面ドアの端点 ](#custom-front-door-endpoint) を参照してください。
+様々なセキュリティ要件に対して、カスタムエンドポイントを使用できます。 詳しくは、[&#x200B; カスタム正面ドアの端点 &#x200B;](#custom-front-door-endpoint) を参照してください。
 
 ## 前提条件
 
 インストールする前に、次のことを確認します。
 
 * [Node.js](https://nodejs.org/en/download){target="_blank"} 18 以降（LTS 推奨）
-* [ カーソル IDE](https://cursor.com/download){target="_blank"} （推奨）または別の MCP 互換 IDE
+* [&#x200B; カーソル IDE](https://cursor.com/download){target="_blank"} （推奨）または別の MCP 互換 IDE
 
   >[!NOTE]
   >
@@ -115,7 +115,7 @@ RAG サービスは、Cursor および他の MCP 互換 AI アシスタントと
 
    >[!NOTE]
    >
-   >Windows では、プロジェクトディレクトリへのパスを指定する際に問題が発生した場合は、[ パスの問題のトラブルシューティング ](#path-issues-windows) を参照してください。
+   >Windows では、プロジェクトディレクトリへのパスを指定する際に問題が発生した場合は、[&#x200B; パスの問題のトラブルシューティング &#x200B;](#path-issues-windows) を参照してください。
 
 1. Cursor IDE を再起動して、MCP サーバーを読み込みます。
 
@@ -127,7 +127,7 @@ RAG サービスは、Cursor および他の MCP 互換 AI アシスタントと
 
 ## 使用状況
 
-インストールが完了すると、インデックスを [ 自動的に ](#automatic-index-selection-recommended) または [ 明示的に ](#explicit-index-selection) 呼び出すことができます。 [`/search-commerce-docs` コマンドを使用することもでき ](#command-based-search) す。
+インストールが完了すると、インデックスを [&#x200B; 自動的に &#x200B;](#automatic-index-selection-recommended) または [&#x200B; 明示的に &#x200B;](#explicit-index-selection) 呼び出すことができます。 [`/search-commerce-docs` コマンドを使用することもでき &#x200B;](#command-based-search) す。
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ Windows の場合、次のようにスラッシュ `/` またはエスケープ�
 
 ## その他のリソース
 
-* [Adobe Commerce開発者向けドキュメント ](https://developer.adobe.com/commerce/docs/){target="_blank"}
-* [App Builder ドキュメント ](https://developer.adobe.com/app-builder/docs/){target="_blank"}
-* [ モデル コンテキスト プロトコル ](https://modelcontextprotocol.io/){target="_blank"}
-* [ カーソル IDE](https://cursor.sh/docs){target="_blank"}
+* [Adobe Commerce開発者向けドキュメント &#x200B;](https://developer.adobe.com/commerce/docs/){target="_blank"}
+* [App Builder ドキュメント &#x200B;](https://developer.adobe.com/app-builder/docs/){target="_blank"}
+* [&#x200B; モデル コンテキスト プロトコル &#x200B;](https://modelcontextprotocol.io/){target="_blank"}
+* [&#x200B; カーソル IDE](https://cursor.sh/docs){target="_blank"}
