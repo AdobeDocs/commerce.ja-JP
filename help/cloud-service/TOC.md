@@ -30,4 +30,4 @@ ht-degree: 10%
    - [評価拡張機能チュートリアルの前提条件](tutorials/tutorial-prerequisites.md)
    - [評価拡張機能のチュートリアル](tutorials/ratings-extension.md)
 - [リリースノート](release-notes.md)
-- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)

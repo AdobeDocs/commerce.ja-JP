@@ -1,7 +1,7 @@
 ---
 title: ドキュメント RAG サービス
 description: Adobe Commerce開発用の AI を利用したドキュメント検索サービスの使用方法を説明します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 role: Developer
 hide: true
 hidefromtoc: true
@@ -30,9 +30,9 @@ RAG サービスは、Cursor および他の MCP 互換 AI アシスタントと
 
 | カテゴリ | 索引 | 含まれるコンテンツ | キーワード |
 |-------|---------|---------|------------------------|
-| [&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services、ドロップダウン、ストアフロントコンポーネント | ストアフロント，ドロップダウン，EDS，製品一覧，チェックアウト |
+| [&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) | commerce-storefront-docs | Edge Delivery Services、ドロップダウン、ストアフロントコンポーネント | ストアフロント，ドロップダウン，EDS，製品一覧，チェックアウト |
 | [&#x200B; 拡張性 &#x200B;](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhook、イベント、拡張機能、統合 | webhook, イベント，拡張機能，API メッシュ，GraphQL |
-| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce（カタログ、顧客、注文） | カタログ，製品，顧客，注文，在庫 |
+| [Commerce](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce（カタログ、顧客、注文） | カタログ，製品，顧客，注文，在庫 |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder、実行時のアクション、UI 拡張機能 | app builder, ランタイムアクション，React Spectrum |
 
 インデックスの選択の詳細については、「[&#x200B; インデックスの自動選択 &#x200B;](#automatic-index-selection-recommended)」および「[&#x200B; インデックスの明示的な選択 &#x200B;](#explicit-index-selection)」を参照してください。
