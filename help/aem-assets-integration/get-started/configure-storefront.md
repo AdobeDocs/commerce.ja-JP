@@ -28,4 +28,4 @@ Edge Delivery Servicesを使用したCommerce ストアフロントの統合を�
 
 Commerceのドロップダウンが `commerce-assets-enabled` 設定を自動的に検出し、それに応じて画像処理を調整します。
 
-Edge Delivery Servicesを利用したCommerce Storefront でAEM Assetsを使用する方法について詳しくは、[Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) ドキュメントの *AEM Assetsの統合* に関するトピックに記載されているストアフロント設定を完了してください。
+Edge Delivery Servicesを利用したCommerce Storefront でAEM Assetsを使用する方法について詳しくは、[Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=ja) ドキュメントの *AEM Assetsの統合* に関するトピックに記載されているストアフロント設定を完了してください。
