@@ -20,7 +20,7 @@ CommerceのAEM Assets統合は、**[!UICONTROL Match by product SKU]** AEM Asset
 
 1. 一致するルールとして **[!UICONTROL Match by SKU]** を指定します。
 
-   ![ デフォルトの自動照合ルール ](../assets/ootb-matching-rule.png){width="600" zoomable="yes"}
+   ![&#x200B; デフォルトの自動照合ルール &#x200B;](../assets/ootb-matching-rule.png){width="600" zoomable="yes"}
 
 1. AEM Assetsでアセットの ID に使用するメタデータフィールド名を入力します。
 
@@ -34,7 +34,7 @@ Commerce管理で **[!UICONTROL Match by product SKU]** 一致ルールが設定
 
 1. AEM Assetsで、`Eligible for Commerce` フィールドを `Yes` に設定して画像メタデータを更新し、Adobe Commerceの関連付けを追加します。
 
-   ![ メタデータの例 ](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
+   ![&#x200B; メタデータの例 &#x200B;](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
 
 1. アセットを関連する製品 SKU にリンクするメタデータ（[!UICONTROL SKU]、[!UICONTROL position]、[!UICONTROL role]）を設定します。
 
@@ -44,6 +44,6 @@ Commerce管理で **[!UICONTROL Match by product SKU]** 一致ルールが設定
 
 1. 「`Basic`」タブで、「_[!UICONTROL Review Status]_」フィールドのデフォルト値を `approved` に設定します。
 
-   ![ メタデータの例 ](../assets/metadata-review-status.png){width="600" zoomable="yes"}
+   ![&#x200B; メタデータの例 &#x200B;](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
 このアプローチにより、デジタルアセットがAdobe Commerceで適切にリンクされ、表示されるようになります。 また、マーチャンダイザーやマーケターがAEM Assets内で直接ロールとアセットの位置を管理できるようになり、すべてのエンゲージメントチャネルをまたいで画像の選択と注文のための一貫性のある一元化されたメカニズムが提供されます。
