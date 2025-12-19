@@ -23,7 +23,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets統合ドキュメントの <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">AEMの設定 </a> トピックを更新しました。</p>
+      <td><p>AEM Assets統合ドキュメントの <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">AEMの設定 </a> トピックを更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -45,7 +45,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>次の新しいトピックを追加しました：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities"> オポチュニティ </a>Adobe Sites Optimizer統合を通じて AI を活用したサイト最適化の推奨事項を文書化します。これには、SEO、メタデータ、製品データ品質を向上させるための自動検出ワークフローと自動修正ワークフローが含まれます。<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer"> カタログレイヤー </a> ソースデータを変更せずに商品データを変更する方法を説明します。これには、レイヤーの優先度管理やSites Optimizer自動修正機能との統合が含まれます。</p>
+      <td><p>次の新しいトピックを追加しました：<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/manage-results/opportunities"> オポチュニティ </a>Adobe Sites Optimizer統合を通じて AI を活用したサイト最適化の推奨事項を文書化します。これには、SEO、メタデータ、製品データ品質を向上させるための自動検出ワークフローと自動修正ワークフローが含まれます。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-layer"> カタログレイヤー </a> ソースデータを変更せずに商品データを変更する方法を説明します。これには、レイヤーの優先度管理やSites Optimizer自動修正機能との統合が含まれます。</p>
 </td>
       <td>
         メジャーアップデート、新しいトピック
@@ -67,7 +67,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations"> プレビューペイン </a> として、Commerce Optimizer ドキュメントの Recommendations 機能の更新がサポートされるようになりました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations"> プレビューペイン </a> として、Commerce Optimizer ドキュメントの Recommendations 機能の更新がサポートされるようになりました。</p>
 </td>
       <td>
         技術
@@ -89,7 +89,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>11 月のAdobe Commerce as a Cloud Service リリースの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> リリースノート </a> を更新しました。</p>
+      <td><p>11 月のAdobe Commerce as a Cloud Service リリースの <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a> を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -111,7 +111,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce バックエンドに接続するCommerce Optimizerのお客様が、フィード同期のステータスページからデータフィードの書き出しを監視し、トラブルシューティングする方法について説明しました。 詳しくは、Adobe Commerce Optimizer ガイドの <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync"> データ同期 </a> を参照してください。</p>
+      <td><p>Adobe Commerce バックエンドに接続するCommerce Optimizerのお客様が、フィード同期のステータスページからデータフィードの書き出しを監視し、トラブルシューティングする方法について説明しました。 詳しくは、Adobe Commerce Optimizer ガイドの <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/data-sync"> データ同期 </a> を参照してください。</p>
 </td>
       <td>
         技術
@@ -133,7 +133,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>Payment Services v2.13.0 リリースの <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes"> リリースノート </a> を更新しました。</p>
+      <td><p>Payment Services v2.13.0 リリースの <a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/release-notes"> リリースノート </a> を更新しました。</p>
 </td>
       <td>
         技術
@@ -155,7 +155,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets統合 v1.2.7 リリースの <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes"> リリースノート </a> を更新しました。</p>
+      <td><p>AEM Assets統合 v1.2.7 リリースの <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/release-notes"> リリースノート </a> を更新しました。</p>
 </td>
       <td>
         技術
