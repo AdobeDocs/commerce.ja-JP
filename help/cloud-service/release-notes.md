@@ -3,9 +3,10 @@ title: '[!DNL Adobe Commerce as a Cloud Service] リリースノート'
 description: ' [!DNL Adobe Commerce as a Cloud Service] の最新の機能と改善点について説明します。'
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+level: Beginner
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
-source-git-commit: 925df19c2827f474efe85708ea49974b285df29e
+source-git-commit: 1ce3b6b6b94b1b4e94c0d34c081dec2884d7f0f8
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 # リリースノート
 
-以下のリリースノートには、[!DNL Adobe Commerce as a Cloud Service] の更新点が記載されています。 他の製品のリリース情報については、[Adobe Commerce Optimizer](../optimizer/release-notes.md) または [Adobe Commerce オンプレミスおよびAdobe Commerce on Cloud](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を参照してください。
+以下のリリースノートには、[!DNL Adobe Commerce as a Cloud Service] の更新点が記載されています。 他の製品のリリース情報については、[Adobe Commerce Optimizer](../optimizer/release-notes.md) または [Adobe Commerce オンプレミスおよびAdobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照してください。
 
 [!DNL Adobe Commerce as a Cloud Service] には、最新バージョンのマーチャンダイジングサービス、支払いサービスおよび拡張リリースが含まれています。 次のリンクを使用して、それぞれのリリースノートを表示します。
 
@@ -25,9 +26,9 @@ ht-degree: 0%
    * [製品レコメンデーション](../product-recommendations/release-notes.md)
    * [SaaS データ エクスポート](../data-export/release-notes.md)
 * 拡張性
-   * [&#x200B; 管理 UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)
-   * [API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)
-   * [&#x200B; イベント &#x200B;](https://developer.adobe.com/commerce/extensibility/events/release-notes/)
+   * [ 管理 UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)
+   * [API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)
+   * [ イベント ](https://developer.adobe.com/commerce/extensibility/events/release-notes/)
    * [Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)
 
 ## 2025 年 11 月
@@ -48,6 +49,6 @@ ht-degree: 0%
 
 #### カスタム注文属性
 
-* 管理者ユーザーは、管理パネルの注文ビュー、編集、作成画面から直接 [&#x200B; カスタム注文属性 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) を表示および編集できるようになりました。 この機能強化により、GraphQLを介して作成されたカスタム注文データの管理が向上します。<!-- CEXT-5044 -->
+* 管理者ユーザーは、管理パネルの注文ビュー、編集、作成画面から直接 [ カスタム注文属性 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) を表示および編集できるようになりました。 この機能強化により、GraphQLを介して作成されたカスタム注文データの管理が向上します。<!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]

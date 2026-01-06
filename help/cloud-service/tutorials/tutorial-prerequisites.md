@@ -1,12 +1,14 @@
 ---
 title: 評価拡張機能チュートリアルの前提条件
 description: 評価拡張機能のラボの前提条件について説明します。
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -17,7 +19,7 @@ ht-degree: 0%
 >
 >このチュートリアルで使用する AI ツールは、現在Betaにあり、バグやその他の問題が含まれている可能性があります。
 
-このページでは、[!DNL Adobe Commerce as a Cloud Service] 評価拡張機能チュートリアル [&#x200B; など、](./ratings-extension.md) を使用したチュートリアルの前提条件と設定手順を示します。
+このページでは、[!DNL Adobe Commerce as a Cloud Service] 評価拡張機能チュートリアル [ など、](./ratings-extension.md) のチュートリアルの前提条件と設定手順を示します。
 
 ## Adobe Commerce as a Cloud Serviceの前提条件
 
@@ -27,7 +29,7 @@ ht-degree: 0%
   npm install -g @adobe/aio-cli
   ```
 
-* [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)、[Adobe I/O CLI ランタイム &#x200B;](https://github.com/adobe/aio-cli-plugin-runtime)、[App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev) プラグインをインストールします。
+* [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)、[Adobe I/O CLI ランタイム ](https://github.com/adobe/aio-cli-plugin-runtime)、[App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev) プラグインをインストールします。
 
   ```bash
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
@@ -48,15 +50,15 @@ ht-degree: 0%
 1. [!UICONTROL **プロジェクトタイトル**] および [!UICONTROL **アプリ名**] を入力します。
 1. 「**[!UICONTROL Include Runtime]**」チェックボックスがオンになっていることを確認します。
 
-   ![App Builder テンプレートを使用したプロジェクトの作成 &#x200B;](../assets/app-builder-template.png){width="600" zoomable="yes"}
+   ![App Builder テンプレートを選択したAdobe Developer Console プロジェクトの作成 ](../assets/app-builder-template.png){width="600" zoomable="yes"}
 
-1. **保存** をクリックします。
+1. [!UICONTROL **保存**] をクリックします。
 
 #### ワークスペースへの API の追加
 
 1. [!UICONTROL **ステージング**] ワークスペースをクリックし、各 API に対して次の手順を繰り返します。
 
-   ![&#x200B; ワークスペースに追加された API](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
+   ![API の「サービスを追加」オプションを使用したステージワークスペース ](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
 1. [!UICONTROL **サービスを追加**] をクリックし、「[!UICONTROL **API**]」を選択します。
 
@@ -74,7 +76,7 @@ ht-degree: 0%
 
 1. すべての API がワークスペースに追加されるまで、前の手順を繰り返します。
 
-   ![&#x200B; ワークスペースに追加された API](../assets/apis-added.png){width="600" zoomable="yes"}
+   ![ 必要なすべての API が正常に追加されたことを示すWorkspace](../assets/apis-added.png){width="600" zoomable="yes"}
 
 ### Adobe I/O CLI の設定
 
@@ -104,7 +106,7 @@ ht-degree: 0%
    aio console workspace select
    ```
 
-   ![CLI 設定 &#x200B;](../assets/cli-configuration.png){width="600" zoomable="yes"}
+   ![Adobe I/O CLI の組織プロジェクトとワークスペースの選択を示すターミナル ](../assets/cli-configuration.png){width="600" zoomable="yes"}
 
 ### 統合スターターキットのクローン
 
@@ -115,7 +117,7 @@ git clone https://github.com/adobe/commerce-integration-starter-kit.git extensio
 cd extension
 ```
 
-![&#x200B; スターターキットの複製 &#x200B;](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
+![Commerce統合スターターキットの Git clone コマンドを示すターミナル出力 ](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
 
 ### .env ファイルの作成
 
@@ -137,7 +139,7 @@ OAUTH_ORG_ID=
 
 これらの値は、ワークスペースの「**[!UICONTROL Credential details]**」タブをクリックして、[Developer Console](https://developer.adobe.com/) の **[!UICONTROL OAuth Server-to-Server]** ページからコピーできます。
 
-![OAuth 認証情報 &#x200B;](../assets/oauth-credentials.png){width="600" zoomable="yes"}
+![Adobe Developer Consoleの OAuth サーバー間資格情報ページ ](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
 #### Commerce設定を追加
 
@@ -150,7 +152,7 @@ COMMERCE_GRAPHQL_ENDPOINT=
 
 これらの値を検索するには：
 
-1. [Commerce Cloud サービスインスタンス &#x200B;](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances) に移動します。
+1. [Commerce Cloud サービスインスタンス ](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances) に移動します。
 1. インスタンスの横にある「情報」アイコンをクリックします。
 1. REST エンドポイントを `COMMERCE_BASE_URL` としてコピーします。
 1. GraphQL エンドポイントを `COMMERCE_GRAPHQL_ENDPOINT` としてコピーします。
@@ -185,7 +187,7 @@ cp workspace.json scripts/
 aio app use workspace.json -m
 ```
 
-![&#x200B; ワークスペースに接続 &#x200B;](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![aio app use コマンドでワークスペース接続が成功したことを示すターミナル ](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
 ### 拡張 AI ツールのインストール
 
@@ -201,7 +203,7 @@ Cursor ルール ファイルと MCP 設定を更新して、`commerce-extensibi
    aio commerce extensibility tools-setup
    ```
 
-   ![AI ツールのインストール &#x200B;](../assets/install-ai-tools.png){width="600" zoomable="yes"}
+   ![AI 拡張ツール設定コマンド出力を示すターミナル ](../assets/install-ai-tools.png){width="600" zoomable="yes"}
 <!--
 ## Storefront prerequisites
 

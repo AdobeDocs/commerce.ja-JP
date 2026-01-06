@@ -3,11 +3,12 @@ title: '[!DNL Adobe Commerce as a Cloud Service] の概要'
 description: ' [!DNL Adobe Commerce as a Cloud Service] の主な機能とメリットについて説明します。'
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
+level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: d46526db56dad08a8f865664c92d1214bbf063d8
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # [!DNL Adobe Commerce as a Cloud Service] の概要
 
-[!DNL Adobe Commerce as a Cloud Service] は、企業がデジタルオペレーションを提供し、迅速に拡大し、イノベーションを促進できるようにすることで、柔軟性、拡張性、効率性を提供します。 Adobeのクラウドネイティブインフラストラクチャは、トラフィック、注文、カタログ管理に対するピーク時の需要に合わせてリソースを自動的に調整します。
+[!DNL Adobe Commerce as a Cloud Service] は、企業がイノベーションを促進しながらデジタルオペレーションを提供し、迅速に拡張できるようにすることで、柔軟性、拡張性、効率性を提供します。 Adobeのクラウドネイティブインフラストラクチャは、トラフィック、注文、カタログ管理に対するピーク時の需要に合わせてリソースを自動的に調整します。
 
 次の表に、[!DNL Adobe Commerce as a Cloud Service] を強化する製品を示します。
 
@@ -58,51 +59,51 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service] アーキテクチャの概要については、次のビデオを参照してください。 アーキテクチャを示す図をビデオの下に示します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443268?captions=jpn&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 次の図は、[!DNL Adobe Commerce as a Cloud Service] とすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
-![[!DNL Adobe Commerce as a Cloud Service] アーキテクチャ図 &#x200B;](./assets/data-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service] ソリューションとの統合 [!DNL Adobe Experience Cloud] 示すデータフロー図 ](./assets/data-flow.svg){zoomable="yes"}
 
 ## Commerce ストアフロント
 
-Edge Delivery Servicesを活用したAdobeの [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=ja) を使用すると、シンプルなドキュメントベースのオーサリングや Storefront ビルダーを使用したビジュアル編集で、数分で豊富なエクスペリエンスを作成できます。
+[[!DNL Commerce Storefront] を活用したAdobe ](https://experienceleague.adobe.com/developer/commerce/storefront)[!DNL Edge Delivery Services] を使用すると、シンプルなドキュメントベースのオーサリングや [!DNL Storefront Builder] を使用したビジュアル編集で、豊富なエクスペリエンスを数分で作成できます。
 
-Commerce ストアフロントは、GraphQL API レイヤーを通じてすべてのマーチャンダイジングサービスとデータを提供する、切り離されたアーキテクチャを備えた、完全にヘッドレスです。 このアーキテクチャにより、チームはCommerce財団とは独立してフロントエンドを開発でき、新しいテクノロジーを使用して新しいタッチポイントを構築およびテストする俊敏性が提供されます。
+[!DNL Commerce Storefront] は、GraphQL API レイヤーを通じてすべてのマーチャンダイジングサービスとデータを提供する、切り離されたアーキテクチャを持つ完全なヘッドレスです。 このアーキテクチャにより、チームはCommerce財団とは独立してフロントエンドを開発でき、新しいテクノロジーを使用して新しいタッチポイントを構築およびテストする俊敏性が提供されます。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] は、Luma ストアフロントをサポートしていません。 Adobe Commerce on Cloud またはオンプレミスから移行する場合は、[&#x200B; 既存のストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=ja#existing-storefronts) を参照して、移行のガイダンスを確認してください。
+>[!DNL Adobe Commerce as a Cloud Service] は、Luma ストアフロントをサポートしていません。 Adobe Commerce on Cloud またはオンプレミスから移行する場合は、[ 既存のストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) を参照して、移行のガイダンスを確認してください。
 
 ## マーチャンダイジングサービスと支払いサービス
 
 Adobeは、主要なビジネス目標をサポートするのに役立つ、インテリジェントで構成可能なマーチャンダイジングサービスの豊富なセットを提供します。 また、これらのサービスは、パフォーマンスを大規模に最適化するために重要な API も提供します。
 
-- [&#x200B; ライブ検索 &#x200B;](../live-search/overview.md) – この AI を活用した検索ツールにより、買い物客によりスマートで迅速かつ適切な結果を提供します。
-- [&#x200B; 製品レコメンデーション &#x200B;](../optimizer/merchandising/recommendations/overview.md) – 買い物客の行動、人気のトレンド、製品の類似性などに基づいて、AI を活用したレコメンデーションを追加します。
-- [&#x200B; カタログサービス &#x200B;](../catalog-service/guide-overview.md) – 顧客に最適化された製品体験を提供すると同時に、パフォーマンスの向上、スケーラビリティの向上、コンバージョンの増加を実現します。
-- [&#x200B; 支払いサービス &#x200B;](../payment-services/guide-overview.md)：利息なしの分割払い、支払い処理、オーダー、請求書の単一ビューなど、さまざまな支払い方法を提供することにより、顧客満足度を向上させます。
+- [ ライブ検索 ](../live-search/overview.md) – この AI を活用した検索ツールにより、買い物客によりスマートで迅速かつ適切な結果を提供します。
+- [ 製品レコメンデーション ](../optimizer/merchandising/recommendations/overview.md) – 買い物客の行動、人気のトレンド、製品の類似性などに基づいて、AI を活用したレコメンデーションを追加します。
+- [ カタログサービス ](../catalog-service/guide-overview.md) – 顧客に最適化された製品体験を提供すると同時に、パフォーマンスの向上、スケーラビリティの向上、コンバージョンの増加を実現します。
+- [ 支払いサービス ](../payment-services/guide-overview.md)：利息なしの分割払い、支払い処理、オーダー、請求書の単一ビューなど、さまざまな支払い方法を提供することにより、顧客満足度を向上させます。
 
-## AEM Assetsを活用した製品ビジュアル
+## [!DNL Product Visuals powered by AEM Assets]
 
 Product Visuals は、Adobe Experience Managerと統合してリッチメディアコンテンツを管理するデジタルアセット管理（DAM）システムを使用して、アセット管理をシンプル化します。
 
 統合により、商品画像やマーケティングコンテンツなどのデジタルアセットが、SKU やその他の主要な属性に基づいて、Adobe Commerceの商品やカテゴリなどの適切なマーチャンダイジングエンティティに動的にリンクされます。
 
-商品ビジュアルは [!DNL Adobe Commerce as a Cloud Service] ですぐに使用でき、AEM Assetsの機能の一部を提供します。
+[!DNL Product Visuals] は [!DNL Adobe Commerce as a Cloud Service] に標準で搭載されており、[!DNL AEM Assets] の機能の一部を提供します。
 
 また、[!DNL Adobe Commerce as a Cloud Service] のネイティブ機能は、デジタルアセットを保存および管理するための基本的なアセット管理ツールを提供します。
 
-AEM Assetsを利用した製品ビジュアルを [&#x200B; と統合する方法について詳しくは、](../aem-assets-integration/overview.md)AEM Assets統合 [!DNL Adobe Commerce as a Cloud Service] ガイドを参照してください。
+[ と ](../aem-assets-integration/overview.md) の統合方法について詳しくは、[!DNL Product Visuals powered by AEM Assets]AEM Assetsの統合 [!DNL Adobe Commerce as a Cloud Service] ガイドを参照してください。
 
-### 製品ビジュアルまたはAEM Assets
+### [!DNL Product Visuals] 以 [!DNL AEM Assets]
 
 次の比較は、supply chainが必要とするコンテンツに最適なオプションを選択する際に役立ちます。
 
 <table>
   <tr>
     <td align="left">
-      <strong>AEM Assetsを活用した製品のビジュアル </strong>
+      <strong>[!DNL Product Visuals powered by AEM Assets]</strong>
       <ul>
         <li>製品の画像およびビデオを統合し、自動化された Digital Asset Manager （DAM）</li>
         <li>画像のサイズ変更、切り抜き、変換</li>
@@ -146,7 +147,7 @@ AEM Assetsを利用した製品ビジュアルを [&#x200B; と統合する方�
 
 ## 開発者プラットフォーム
 
-Adobeは、Commerceの基盤機能を拡張するアプリケーションを構築し、サードパーティのシステム（CRM、ERPS、PIMS など）と統合するための包括的な拡張ポイントおよびツールを開発者に提供します。 これらのツールは、次の方法でプラットフォームの総所有コストを削減します。
+Adobeは、Commerceの基盤機能を拡張するアプリケーションの構築やサードパーティのシステム（CRM、ERP、PIM など）との統合を行うための包括的な拡張ポイントおよびツールを開発者に提供します。 これらのツールは、次の方法でプラットフォームの総所有コストを削減します。
 
 - **拡張性**：アプリケーションをコア・ソフトウェアとは別に拡張できるため、効率性が向上し、アップグレードが容易になります。
 - **分離** – 分離された環境とは、開発者がコアリリースに頼らずに自分の裁量で拡張機能をアップグレードまたは変更できることを意味します。
@@ -167,7 +168,7 @@ Adobeには、統合とカスタマイズを構築するための次の開発ツ
 
 ## Commerce財団
 
-Commerce Foundation は、クラウドネイティブな環境でCommerce アプリケーションを管理するための安全な自動ホスティングプラットフォームおよびセルフサービス機能を提供します。
+[!DNL Commerce Foundation] は、クラウドネイティブな環境でCommerce アプリケーションを管理するための、安全な自動ホスティングプラットフォームおよびセルフサービス機能を提供します。
 
 主な機能は次のとおりです。
 
@@ -177,9 +178,9 @@ Commerce Foundation は、クラウドネイティブな環境でCommerce アプ
 
 ### オンボーディングの簡素化
 
-[!UICONTROL Commerce Cloud Manager] セルフサービスプロビジョニングポータルを使用すると、サンドボックスおよび実稼動インスタンスを数分で起動できます。 マーチャンダイジングサービス、ヘッドレス Commerce インスタンス、App Builderなど、必要なものはすべて自動的に設定され、インスタンスと統合されます。
+[!UICONTROL Commerce Cloud Manager] セルフサービスプロビジョニングポータルを使用すると、サンドボックスおよび実稼動インスタンスを数分で起動できます。 マーチャンダイジングサービス、ヘッドレス Commerce インスタンス、[!DNL App Builder] など、必要なものはすべて自動的に設定され、インスタンスと統合されます。
 
-Commerce インスタンスを作成および管理する方法については、[&#x200B; はじめに &#x200B;](getting-started.md) を参照してください。
+Commerce インスタンスを作成および管理する方法については、[ はじめに ](getting-started.md) を参照してください。
 
 ### シームレスなアップグレード
 
@@ -189,15 +190,15 @@ Cloud 上のAdobe Commerceの一般的なアップグレードプロセスは、
 
 >[!NOTE]
 >
->Adobeでは、すべての更新に対して後方互換性が保証されます。 つまり、更新が適用されても、[API ファースト拡張機能 &#x200B;](https://developer.adobe.com/commerce/extensibility/) モデルに準拠する既存の機能やカスタマイズが損なわれることはありません。
+>Adobeでは、すべての更新に対して後方互換性が保証されます。 つまり、更新が適用されても、[API ファースト拡張機能 ](https://developer.adobe.com/commerce/extensibility/) モデルに準拠する既存の機能やカスタマイズが損なわれることはありません。
 
 ### サードパーティの統合
 
-開発者は、包括的な [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) および [REST API](https://developer.adobe.com/commerce/webapi/rest/) を使用して、Commerce Foundation をサードパーティシステムと統合し、Commerceの機能を拡張できます。
+開発者は、包括的な [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) および [REST API](https://developer.adobe.com/commerce/webapi/rest/) を使用して、[!DNL Commerce Foundation] をサードパーティシステムと統合し、Commerce機能を拡張できます。
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 

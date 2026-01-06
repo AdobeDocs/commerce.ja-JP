@@ -1,22 +1,24 @@
 ---
 title: 拡張機能の AI コーディングツール
 description: AI ツールを使用してCommerce App Builder拡張機能を作成する方法を説明します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+feature: App Builder, Cloud
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: d2f2563a1f3a656d7bfaa12a0c3ca2b828e7fc33
+source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
 
 # 拡張機能の AI コーディングツール
 
-[!DNL Adobe Commerce as a Cloud Service] に移行する際には、AI コーディングツールを使用して、既存の [!DNL Adobe Commerce] PHP 拡張機能を [!DNL Adobe Developer App Builder] 拡張機能に変換できます。 また、新しい [!DNL App Builder] 拡張機能の作成にも使用できます。
+[!DNL Adobe Commerce as a Cloud Service] に移行する際には、AI コーディングツールを使用して、既存の [!DNL Adobe Commerce] PHP 拡張機能を [!DNL Adobe Developer App Builder] 拡張機能に変換できます。 また、これらのツールを使用して、新しい [!DNL App Builder] 拡張機能を作成することもできます。
 
-AI コーディングツールを使用すると、次のような利点があります。
+AI コーディングツールには次の利点があります。
 
 * **開発ワークフローの強化**：統合されたAdobe Commerce開発ツールです。
 * **AI を利用した支援**：コンテキスト認識コードの生成とデバッグ。
@@ -26,10 +28,10 @@ AI コーディングツールを使用すると、次のような利点があ�
 ## 前提条件
 
 * 次のいずれかのコーディングエージェント。
-   * [&#x200B; カーソル &#x200B;](https://cursor.com/download) （推奨）
-   * [Github コパイロット &#x200B;](https://github.com/features/copilot)
+   * [ カーソル ](https://cursor.com/download) （推奨）
+   * [Github コパイロット ](https://github.com/features/copilot)
    * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
-   * [&#x200B; コードをクロード &#x200B;](https://www.claude.com/product/claude-code)
+   * [ コードをクロード ](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download):LTS バージョン
 * パッケージマネージャー：[npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) または [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git)：リポジトリのクローン作成とバージョン管理の場合
@@ -38,7 +40,7 @@ AI コーディングツールを使用すると、次のような利点があ�
 
 >[!NOTE]
 >
->AI コーディングツールパッケージ全体ではなく、ドキュメント RAG サービスのみをインストールする場合は、[&#x200B; ドキュメント RAG サービス &#x200B;](./doc-rag.md) を参照してください。
+>AI コーディングツールパッケージ全体ではなく、ドキュメント RAG サービスのみをインストールする場合は、[ ドキュメント RAG サービス ](./doc-rag.md) を参照してください。
 
 1. 最新の [Adobe I/O CLI](https://github.com/adobe/aio-cli) をグローバルにインストールします。
 
@@ -49,14 +51,14 @@ AI コーディングツールを使用すると、次のような利点があ�
 1. 次のプラグインをインストールします。
 
    * [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
-   * [Adobe I/O CLI ランタイム &#x200B;](https://github.com/adobe/aio-cli-plugin-runtime)
+   * [Adobe I/O CLI ランタイム ](https://github.com/adobe/aio-cli-plugin-runtime)
    * [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev)
 
    ```bash
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
-1. Commerceのクローン [&#x200B; 統合スターターキット &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
+1. Commerceのクローン [ 統合スターターキット ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration):
 
    ```bash
    git clone git@github.com:adobe/commerce-integration-starter-kit.git
@@ -74,7 +76,7 @@ AI コーディングツールを使用すると、次のような利点があ�
    aio commerce extensibility tools-setup
    ```
 
-セットアッププロセスにより、設定オプションが表示されます。 設定場所として「現在のディレクトリ」を選択し、現在のワークスペースにツールをインストールします。
+セットアッププロセスにより、設定オプションが求められます。 設定場所として「現在のディレクトリ」を選択し、現在のワークスペースにツールをインストールします。
 
 ```shell-session
 ? Where would you like to setup the tools?
@@ -122,17 +124,17 @@ Adobeでは、パッケージマネージャーを選択する場合、一貫性
 >
 >プロジェクトをデプロイする前に、次の設定タスクを完了する必要があります。
 >
->* Adobe I/O CLI を使用して [0&rbrace;Adobe Developer Console&rbrace; にログインします。](https://developer.adobe.com/console)
->* App Builder プロジェクトを作成します（「[&#x200B; プロジェクト設定 &#x200B;](https://developer.adobe.com/commerce/extensibility/events/project-setup) を参照）。
+>* Adobe I/O CLI を使用して [0}Adobe Developer Console} にログインします。](https://developer.adobe.com/console)
+>* App Builder プロジェクトを作成します（「[ プロジェクト設定 ](https://developer.adobe.com/commerce/extensibility/events/project-setup) を参照）。
 >* `.env` ファイルで環境変数を設定します。
 >
->これらの設定手順を手動で完了することも、AI コーディングツールを利用してプロセスをガイドすることもできます。 設定手順について詳しくは、[&#x200B; 統合の作成 &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) を参照してください。
+>これらの設定手順を手動で完了することも、AI コーディングツールを利用してプロセスをガイドすることもできます。 設定手順について詳しくは、[ 統合の作成 ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) を参照してください。
 
 ## インストール後の設定
 
-### [!DNL Adobe I/O CLI] にログインします
+### Adobe I/O CLI にログインします。
 
-[!DNL Adobe I/O CLI] をインストールした後、MCP サーバを使用する場合はいつでもログインする必要があります。
+[!DNL Adobe I/O CLI] をインストールした後、MCP サーバを使用する場合は常にログインする必要があります。
 
 ```bash
 aio auth login
@@ -155,7 +157,7 @@ aio auth login
 >
 >MCP サーバの一部の機能はログインしなくても動作しますが、RAG （Retrieval-Augmented Generation）サービスは動作しません。 RAG サービスは、Adobe Commerceの完全なドキュメントセットにリアルタイムでアクセスできる AI コーディングエージェントを提供し、現在のCommerceの開発手法、API、アーキテクチャパターンに基づいて質問に答え、コードを生成できるようにします。
 >
->RAG サービスを個別にインストールするには、[&#x200B; ドキュメント RAG サービス &#x200B;](./doc-rag.md) を参照してください。
+>RAG サービスを個別にインストールするには、[ ドキュメント RAG サービス ](./doc-rag.md) を参照してください。
 
 ### カーソル
 
@@ -193,9 +195,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 1. MCP サーバを有効にします。
 
    * 左側のサイドバーのアクティビティバーにある **拡張機能** アイコンをクリックするか、**Cmd+Shift+X** （macOs）または **Ctrl+Shift+X** （Windows および Linux）を使用して、拡張機能パネルを開きます。
-   * [**MCP SERVERS - INSTALLED**] をクリックします。
-   * **commerce-extensibility MCP Server** の横にある歯車アイコンをクリックし、サーバーが停止している場合は **サーバーを起動** を選択します。
-   * 歯車アイコンをもう一度クリックし、「**出力を表示**」を選択します。
+   * [[!UICONTROL **MCP SERVERS - INSTALLED**]] をクリックします。
+   * [!UICONTROL **commerce-extensibility MCP Server**] の横にある歯車アイコンをクリックし、サーバーが停止している場合は [!UICONTROL **サーバーを起動**] を選択します。
+   * 歯車アイコンをもう一度クリックし、「[!UICONTROL **出力を表示**]」を選択します。
 
 1. サーバーステータスを確認します。 `MCP:commerce-extensibility` の出力は、次のようになります。
 
@@ -253,7 +255,7 @@ Adobeでは、AI コーディングツールを使用する際に、次のベス
 
 開発中：
 
-* 4 段階の [&#x200B; プロトコル &#x200B;](#protocol) を信頼する
+* 4 段階の [ プロトコル ](#protocol) を信頼する
 * 複雑な開発のための実装計画の要求
 * 利用可能な場合は MCP ツールを使用
 * 実装後の各機能のテスト
@@ -277,10 +279,10 @@ AI コーディングツールを使用して開発する場合は、まずサ�
 
 使用を開始するには、次のリソースを参照してください。
 
-* [&#x200B; 統合スターターキット &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
-* [Adobe Commerce スターターキット テンプレート &#x200B;](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events スターターテンプレート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
-* [App Builder サンプルアプリケーション &#x200B;](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
+* [ 統合スターターキット ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
+* [Adobe Commerce スターターキット テンプレート ](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
+* [Adobe I/O Events スターターテンプレート ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [App Builder サンプルアプリケーション ](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### これらのリソースを使用する理由
 
@@ -306,7 +308,7 @@ AI コーディングツールを使用して開発する場合は、まずサ�
 
 ### 複雑な開発のための実装計画の要求
 
-複数の実行時アクション、タッチポイントまたは統合が関与する複雑な開発の場合、AI ツールに詳細な実装計画の作成を明示的にリクエストします。 複数のコンポーネントを含む [&#x200B; フェーズ 2](#protocol) の全体的な計画を確認したら、詳細な実装計画を求めて、管理可能なタスクに分類します。
+複数の実行時アクション、タッチポイントまたは統合が関与する複雑な開発の場合、AI ツールに詳細な実装計画の作成を明示的にリクエストします。 複数のコンポーネントを含む [ フェーズ 2](#protocol) の全体的な計画を確認したら、詳細な実装計画を求めて、管理可能なタスクに分類します。
 
 ```shell-session
 Create a detailed implementation plan for this complex development.
@@ -324,9 +326,9 @@ Create a detailed implementation plan for this complex development.
 
 >[!NOTE]
 >
->MCP ツールを使用する前に、[Adobe I/O CLI にログイン &#x200B;](#log-in-to-the-adobe-io-cli) していることを確認します。
+>MCP ツールを使用する前に、[Adobe I/O CLI にログイン ](#log-in-to-the-adobe-io-cli) していることを確認します。
 
-このツールはデフォルトで MCP ツールに設定されていますが、状況によっては CLI コマンドを使用することもできます。 MCP ツールを確実に使用するには、プロンプトで明示的にリクエストします。
+このツールはデフォルトで MCP ツールに設定されていますが、状況によっては CLI コマンドを使用できます。 MCP ツールを確実に使用するには、プロンプトで明示的にリクエストします。
 
 CLI コマンドが使用されていて、代わりに MCP ツールを使用する場合は、次のプロンプトを使用します。
 
@@ -346,7 +348,7 @@ CLI コマンドは、次のシナリオで使用できます。
 
 ### 開発
 
-AI ツールによって作成される不必要な複雑さに疑問を投げかけることが重要です。
+AI ツールによって作成される不必要な複雑さに疑問を投げかけます。
 
 単純な読み取り専用エンドポイントに不要なファイル（`validator.js`、`transformer.js`、`sender.js`）を追加する場合は、次のプロンプトを使用します。
 
@@ -466,7 +468,7 @@ Help me debug why this action is returning 500 errors
 
 #### 増分的にデプロイ
 
-変更したアクションのみをデプロイして、開発を高速化します。 これにより、既存の機能が中断されるリスクが軽減され、変更に関するフィードバックが迅速になります。 また、既存の機能を中断するリスクも軽減します。
+変更したアクションのみをデプロイして、開発を高速化します。 このアプローチは、既存の機能が中断されるリスクを軽減し、変更に関するフィードバックを迅速に提供します。
 
 * MCP ツールを使用した特定のアクションのデプロイ
 
@@ -479,7 +481,7 @@ Help me debug why this action is returning 500 errors
 
 #### 実行時のクリーンアップ
 
-大きな変更を加えた後、ツールを活用して、孤立したアクションをクリーンアップします。 AI ツールでクリーンアッププロセスを体系的に処理できるので、孤立したアクションを効率的に特定し、ステータスを確認し、手動の介入なしで安全に削除できます。
+大きな変更を加えた後、ツールを活用して、孤立したアクションをクリーンアップします。 AI ツールでクリーンアッププロセスを体系的に処理できます。 孤立したアクションを効率的に特定し、そのステータスを確認し、手動の介入なしで安全に削除できます。
 
 ```shell-session
 Help me identify and clean up orphaned runtime actions
@@ -520,7 +522,7 @@ Remove the orphaned actions that are no longer part of the current implementatio
 
 ## 回避すべき内容
 
-AI コーディングツールを使用する場合は、次のアンチパターンを避ける必要があります。
+AI コーディングツールを使用する場合は、次のアンチパターンを使用しないでください。
 
 * **説明フェーズをスキップしない** – 必ず、実装の前にフェーズ 1 が完了するようにします。
 * **各機能の後はテストをスキップしないでください** – 増分的にテストし、すべてが完了するまで待たないでください。

@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: このガイドでは、 [!DNL Adobe Commerce as a Cloud Service] を使用する詳細な手順を説明します。
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 8aa8a4f3eb6a1f8120bae15715cfb2c52de2dc02
+source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
 workflow-type: tm+mt
-source-wordcount: '55'
-ht-degree: 10%
+source-wordcount: '53'
+ht-degree: 11%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 10%
 - [はじめに](getting-started.md)
 - [ユーザーおよび ID 管理](user-management.md)
 - [ストアフロント](storefront.md)
-- [アセット管理](assets-management.md)
 - [ユースケース](use-cases.md)
 - [共有された責任](shared-responsibility.md)
 - 移行 {#migration}
@@ -30,4 +29,4 @@ ht-degree: 10%
    - [評価拡張機能チュートリアルの前提条件](tutorials/tutorial-prerequisites.md)
    - [評価拡張機能のチュートリアル](tutorials/ratings-extension.md)
 - [リリースノート](release-notes.md)
-- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

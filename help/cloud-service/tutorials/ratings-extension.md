@@ -1,12 +1,14 @@
 ---
 title: 評価拡張機能のチュートリアル
 description: App Builderと AI 支援開発ツールを使用して、Adobe Commerce as a Cloud Serviceの製品評価拡張機能を作成する方法について説明します。
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -19,7 +21,7 @@ ht-degree: 0%
 
 このチュートリアルでは、[!DNL Adobe Commerce as a Cloud Service] および AI を利用した開発ツールを使用して、[!DNL Adobe App Builder] 用の製品評価拡張機能を構築する手順を説明します。
 
-開始する前に、[&#x200B; 前提条件 &#x200B;](./tutorial-prerequisites.md) を完了してください。
+開始する前に、[ 前提条件 ](./tutorial-prerequisites.md) を完了してください。
 
 ## 前提条件を確認
 
@@ -39,29 +41,29 @@ git --version
 bash --version
 ```
 
-上記のコマンドのいずれかで期待される結果が返されない場合は、[&#x200B; 前提条件 &#x200B;](tutorial-prerequisites.md) を参照してガイダンスを確認してください。
+上記のコマンドのいずれかで期待される結果が返されない場合は、[ 前提条件 ](tutorial-prerequisites.md) を参照してガイダンスを確認してください。
 
 ## 拡張機能の開発
 
-この節では、AI を利用した開発ツールを使用して、Adobe Commerce as a Cloud Serviceの評価拡張機能を開発するプロセスについて説明します。
+この節では、AI を利用した開発ツールを使用して、Adobe Commerce as a Cloud Serviceの評価拡張機能を開発する手順について説明します。
 
 1. **[!UICONTROL Cursor]**/**[!UICONTROL Settings]**/**[!UICONTROL Cursor Settings]**/**[!UICONTROL Tools & MCP]** に移動し、`commerce-extensibility` ツールセットがエラーなく有効になっていることを確認します。 エラーが表示された場合は、ツールセットのオン/オフを切り替えます。
 
-   ![&#x200B; カーソル設定 &#x200B;](../assets/cursor-settings.png){width="600" zoomable="yes"}
+   ![MCP コマース拡張ツールセットが有効になっていることを示すカーソル IDE 設定 ](../assets/cursor-settings.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
-   >AI 支援開発ツールを使用する場合、エージェントによって生成されるコードと応答には自然なバリエーションがあります。
+   >AI 支援による開発ツールを使用する場合、エージェントによって生成されるコードと応答に自然なバリエーションが生じることを期待してください。
    >コードで問題が発生した場合は、いつでもエージェントにデバッグの支援を求めることができます。
 
 1. カーソルのコンテキストにドキュメントを追加した場合は、そのドキュメントを無効にします。
 
    - [!UICONTROL **カーソル**]/[!UICONTROL **設定**]/[!UICONTROL **カーソル設定**]/[!UICONTROL **インデックスとドキュメント**] に移動し、一覧表示されているドキュメントを削除します。
 
-   ![&#x200B; ドキュメントを無効にする &#x200B;](../assets/disable-documentation.png){width="600" zoomable="yes"}
+   ![ ドキュメントリストが空のカーソルインデックス作成とドキュメント設定 ](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. 製品評価拡張機能のコードを生成します：
-   - カーソルからカーソルのチャットウィンドウで、**エージェント** モードを選択します。
+   - Cursor chat ウィンドウで、[!UICONTROL **Agent**] モードを選択します。
    - 次のプロンプトを入力します。
 
    ```shell-session
@@ -80,9 +82,9 @@ bash --version
 
 1. エージェントが最適なコードを生成できるように、エージェントの質問に正確に答えます。
 
-   ![&#x200B; カーソルにプロンプトを入力 &#x200B;](../assets/enter-prompt.png){width="600" zoomable="yes"}
+   ![ 拡張機能プロンプトが入力されたエージェントモードのカーソルチャットウィンドウ ](../assets/enter-prompt.png){width="600" zoomable="yes"}
 
-   ![&#x200B; 代理人からの質問 &#x200B;](../assets/agent-questions.png){width="600" zoomable="yes"}
+   ![ 拡張要件を明確にする質問をする AI エージェント ](../assets/agent-questions.png){width="600" zoomable="yes"}
 
 1. 次のテキスト例を使用して、エージェントの質問に回答し、ランダム化された評価データを設定します。
 
@@ -90,7 +92,7 @@ bash --version
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
    
-   This extension will be called directly from the storefront, no async invocation, such as events or webhooks, is required.
+   This extension is called directly from the storefront, no async invocation, such as events or webhooks, is required.
    
    Start with just the GET API for now, we will implement other CRUD operations at a later time.
    
@@ -102,7 +104,7 @@ bash --version
 
    エージェントは、実装の信頼できるソースとして機能する `requirements.md` ファイルを作成します。
 
-   ![&#x200B; 要件ファイルが作成されました &#x200B;](../assets/requirements-file.png){width="600" zoomable="yes"}
+   ![AI エージェントによって作成された Requirements.md ファイルと実装の詳細 ](../assets/requirements-file.png){width="600" zoomable="yes"}
 
 1. `requirements.md` ファイルを確認し、計画を検証します。
 
@@ -112,11 +114,11 @@ bash --version
 
    エージェントは、必要なコードを生成し、次の手順で詳細な概要を提供します。
 
-   ![&#x200B; アーキテクチャの計画 &#x200B;](../assets/architecture-planning.png){width="600" zoomable="yes"}
+   ![AI エージェントフェーズ 2 Architecture Plan for Ratings API](../assets/architecture-planning.png){width="600" zoomable="yes"}
 
-   ![&#x200B; コード生成の概要 &#x200B;](../assets/code-generation-summary.png){width="600" zoomable="yes"}
+   ![ 生成されるコードファイルと構造の概要 ](../assets/code-generation-summary.png){width="600" zoomable="yes"}
 
-   ![&#x200B; 次の手順 &#x200B;](../assets/next-steps.png){width="600" zoomable="yes"}
+   ![ テストとデプロイメントの次のステップを提供する AI エージェント ](../assets/next-steps.png){width="600" zoomable="yes"}
 
 ### ローカルテスト
 
@@ -128,9 +130,9 @@ bash --version
 
 1. エージェントの指示に従い、API がローカルで動作していることを確認します。
 
-   ![&#x200B; ローカルテスト &#x200B;](../assets/local-testing.png){width="600" zoomable="yes"}
+   ![ ローカル API テスト用の AI エージェントの手順 ](../assets/local-testing.png){width="600" zoomable="yes"}
 
-   ![&#x200B; ローカルテストの結果 &#x200B;](../assets/local-testing-1.png){width="600" zoomable="yes"}
+   ![cURL でローカル API テストの結果が成功したことを示すターミナル ](../assets/local-testing-1.png){width="600" zoomable="yes"}
 
 ### 拡張機能のデプロイ
 
@@ -142,19 +144,19 @@ bash --version
 
    エージェントは、デプロイ前に、デプロイメント前の準備状況の評価を実行します。
 
-   ![&#x200B; 導入前評価 &#x200B;](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+   ![AI エージェントのデプロイメント前準備状況評価チェックリスト ](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 1. 評価結果に自信がある場合は、エージェントにデプロイメントを続行するように指示します。
 
    エージェントは、MCP ツールキットを使用して、検証、ビルド、およびデプロイを自動的に行います。
 
-   ![&#x200B; デプロイメント &#x200B;](../assets/deployment-process.png){width="600" zoomable="yes"}
+   ![MCP ツールキット検証ビルドおよびデプロイメントプロセス ](../assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### デプロイメント後
 
 API は、ストアフロントに統合する前にテストできます。 担当者は、新しいアクションの場所とテスト戦略を指定する必要があります。
 
-![&#x200B; テスト方法 &#x200B;](../assets/testing-strategy.png){width="600" zoomable="yes"}
+![ デプロイ済みのアクション URL とテストコマンドを使用した AI エージェントテスト戦略 ](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
 また、ターミナルで cURL を使用して、手動で API をテストすることもできます。
 
@@ -162,7 +164,7 @@ API は、ストアフロントに統合する前にテストできます。 担
 curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123"
 ```
 
-![cURL テスト &#x200B;](../assets/curl-test.png){width="600" zoomable="yes"}
+![ デプロイ済みの評価 API の cURL テストが成功したことを示すターミナル ](../assets/curl-test.png){width="600" zoomable="yes"}
 
 ### Edge Delivery Servicesとの統合
 
@@ -172,9 +174,9 @@ Ratings API を [!DNL Adobe Commerce] を利用した [!DNL Edge Delivery Servic
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![&#x200B; サービス契約 &#x200B;](../assets/create-contract.png){width="600" zoomable="yes"}
+![AI エージェントがストアフロント統合用のサービス契約ファイルを作成 ](../assets/create-contract.png){width="600" zoomable="yes"}
 
-![&#x200B; サービス契約の詳細 &#x200B;](../assets/contract.png){width="600" zoomable="yes"}
+![ エンドポイントと応答の詳細を含む評価 API 契約マークダウンファイル ](../assets/contract.png){width="600" zoomable="yes"}
 <!-- 
 Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
 
@@ -246,7 +248,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=ja).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
