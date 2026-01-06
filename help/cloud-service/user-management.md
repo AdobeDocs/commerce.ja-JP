@@ -21,28 +21,28 @@ ht-degree: 0%
 
 >[!TIP]
 >
->複数のユーザーを同時に追加するには、[CSV の一括アップロード ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"} を実行します。
+>複数のユーザーを同時に追加するには、[CSV の一括アップロード &#x200B;](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"} を実行します。
 >
-> [ ユーザーグループ ](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"} を作成して、1 つの役割に複数のユーザーを追加することもできます。 次に、[!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] 製品をユーザーグループに追加できます。
+> [&#x200B; ユーザーグループ &#x200B;](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"} を作成して、1 つの役割に複数のユーザーを追加することもできます。 次に、[!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] 製品をユーザーグループに追加できます。
 
 ## 役割について
 
 [!DNL Adobe Commerce as a Cloud Service] では、次の役割を使用できます。 これらのロールを表示または編集するには、Commerce管理者で [!UICONTROL **システム**]/[!UICONTROL **権限**]/[!UICONTROL **ユーザーロール**] に移動します。
 
-* **ユーザー** - ユーザーは、Commerce管理者に管理者アクセス権を持っていますが、Admin Consoleで製品レベルのアクセス権を管理することはできません。 ユーザーは、クレジットを使用して [ で ](./getting-started.md#create-an-instance) インスタンスを作成 [!DNL Commerce Cloud Manager] することもできます。
+* **ユーザー** - ユーザーは、Commerce管理者に管理者アクセス権を持っていますが、Admin Consoleで製品レベルのアクセス権を管理することはできません。 ユーザーは、クレジットを使用して [&#x200B; で &#x200B;](./getting-started.md#create-an-instance) インスタンスを作成 [!DNL Commerce Cloud Manager] することもできます。
 
   >[!NOTE]
   >
   >デベロッパーと管理者を含むすべてのCommerce ユーザーにも、ユーザーの役割を割り当てる必要があります。 これは、Commerceの基本的な権限に必要です。
 
-* [**開発者**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} – 開発者はユーザー権限を持ち、開発者ユーザーとしてCommerce インスタンスに追加されます。 [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[ イベントの設定 ](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}、[Webhook の作成 ](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"} を使用できます。
+* [**開発者**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} – 開発者はユーザー権限を持ち、開発者ユーザーとしてCommerce インスタンスに追加されます。 [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[&#x200B; イベントの設定 &#x200B;](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}、[Webhook の作成 &#x200B;](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"} を使用できます。
 
 * 管理者 – 管理者には次の 3 つのタイプがあります。
-   * [ システム管理者 ](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Admin Consoleを通じて組織内のすべての製品と製品プロファイルにアクセスできます。
-   * [ 製品管理者 ](#add-a-product-admin) – 製品管理者は [ 製品のユーザー、役割、権限を管理 ](#add-users)[!DNL Adobe Admin Console] で、[Commerce管理者でユーザーを管理 ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"} できます。
-   * [ 製品プロファイル管理者 ](#add-developers-and-product-profile-admins) – 製品プロファイル管理者は、Adobe Commerce管理者へのアクセス権を持っていませんが、[!DNL Adobe Admin Console] 内の製品のユーザーを管理できます。
+   * [&#x200B; システム管理者 &#x200B;](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Admin Consoleを通じて組織内のすべての製品と製品プロファイルにアクセスできます。
+   * [&#x200B; 製品管理者 &#x200B;](#add-a-product-admin) – 製品管理者は [&#x200B; 製品のユーザー、役割、権限を管理 &#x200B;](#add-users) [!DNL Adobe Admin Console] で、[Commerce管理者でユーザーを管理 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"} できます。
+   * [&#x200B; 製品プロファイル管理者 &#x200B;](#add-developers-and-product-profile-admins) – 製品プロファイル管理者は、Adobe Commerce管理者へのアクセス権を持っていませんが、[!DNL Adobe Admin Console] 内の製品のユーザーを管理できます。
 
-Adobe Commerce内の各ロールに付与される権限について詳しくは、[ ユーザー権限 ](#user-permissions) を参照してください。
+Adobe Commerce内の各ロールに付与される権限について詳しくは、[&#x200B; ユーザー権限 &#x200B;](#user-permissions) を参照してください。
 
 ## 製品管理者を追加
 
@@ -50,7 +50,7 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 
 >[!NOTE]
 >
->製品管理者を製品管理者として追加する前に、製品管理者に [ ユーザーの役割 ](#add-users) を割り当てます。 ユーザーの役割は、Commerceの基本的な権限に必要です。
+>製品管理者を製品管理者として追加する前に、製品管理者に [&#x200B; ユーザーの役割 &#x200B;](#add-users) を割り当てます。 ユーザーの役割は、Commerceの基本的な権限に必要です。
 
 >[!TAB GA （2025 年 10 月 13 日（PT）以降にプロビジョニング） ]
 
@@ -86,7 +86,7 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 
 1. 「[!UICONTROL **製品**]」タブの [!UICONTROL **製品とサービス**] で、[!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] を選択します。
 
-   ![Admin Consoleでの Adobe Commerce Cloud Manager を示す製品の選択 ](./assets/backend.png){width="600" zoomable="yes"}
+   ![Admin Consoleでの Adobe Commerce Cloud Manager を示す製品の選択 &#x200B;](./assets/backend.png){width="600" zoomable="yes"}
 
 1. 「[!UICONTROL **管理者**]」タブを選択します。
 
@@ -136,13 +136,13 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 
 1. 「[!UICONTROL **製品**]」タブの [!UICONTROL **製品とサービス**] で、[!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] を選択します。
 
-   ![Admin Consoleの Adobe Commerce Cloud Manager 製品 ](./assets/backend.png){width="600" zoomable="yes"}
+   ![Admin Consoleの Adobe Commerce Cloud Manager 製品 &#x200B;](./assets/backend.png){width="600" zoomable="yes"}
 
 1. [!UICONTROL **デフォルト - Cloud Manager**] 製品プロファイルをクリックします。
 
 1. 「[!UICONTROL **ユーザー**]」タブを選択し、「[!UICONTROL **ユーザーを追加**]」をクリックします。
 
-   ![Admin Console製品プロファイルでの「ユーザー」タブの選択 ](./assets/tab-select.png){width="600" zoomable="yes"}
+   ![Admin Console製品プロファイルでの「ユーザー」タブの選択 &#x200B;](./assets/tab-select.png){width="600" zoomable="yes"}
 
 1. 追加するユーザーのユーザー名またはメールアドレスを入力し、「[!UICONTROL **保存**]」をクリックします。
 
@@ -150,15 +150,15 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 
 ### 開発者と製品プロファイル管理者の追加
 
-開発者と製品プロファイル管理者を追加するには、[ ユーザーを追加 ](#add-users) プロセスを繰り返しますが、「[!UICONTROL **ユーザー**] タブではなく [!UICONTROL **開発者**] または [!UICONTROL **管理者**] タブを選択します。
+開発者と製品プロファイル管理者を追加するには、[&#x200B; ユーザーを追加 &#x200B;](#add-users) プロセスを繰り返しますが、「[!UICONTROL **ユーザー**] タブではなく [!UICONTROL **開発者**] または [!UICONTROL **管理者**] タブを選択します。
 
 >[!NOTE]
 >
->製品プロファイル管理者は、Commerce管理者にアクセスできません。 詳しくは、[ 役割について ](#understanding-roles) を参照してください。
+>製品プロファイル管理者は、Commerce管理者にアクセスできません。 詳しくは、[&#x200B; 役割について &#x200B;](#understanding-roles) を参照してください。
 >
 >開発者を開発者として追加する前に、開発者にユーザーの役割を割り当てます。 ユーザーの役割は、Commerceの基本的な権限に必要です。
 
-![Admin Consoleの「開発者」タブと「管理者」タブのオプション ](./assets/tab-select.png){width="600" zoomable="yes"}
+![Admin Consoleの「開発者」タブと「管理者」タブのオプション &#x200B;](./assets/tab-select.png){width="600" zoomable="yes"}
 
 ## 役割リソース
 
@@ -219,17 +219,17 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 
 [!DNL Adobe Experience Manager Assets] ユーザーと [!DNL Product Visuals powered by AEM Assets] ユーザーには、次の設定が必要です。
 
-アカウントが [[!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) へのアクセス権を持ち、ユーザーが [[!DNL AEM Assets] と共に ](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview){target="_blank"}[!DNL Adobe Commerce as a Cloud Service] の高度な機能にアクセスできるようにする場合は、次のプロセスを実行します。
+アカウントが [[!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service) へのアクセス権を持ち、ユーザーが [[!DNL AEM Assets] と共に &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview){target="_blank"}[!DNL Adobe Commerce as a Cloud Service] の高度な機能にアクセスできるようにする場合は、次のプロセスを実行します。
 
 >[!NOTE]
 >
->適切なアセット権限を持たないユーザーは、[!DNL AEM Assets]AI 画像の生成 [、](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"} 生成されたバリエーション [ など、](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"} の高度な機能にアクセスできません。
+>適切なアセット権限を持たないユーザーは、[!DNL AEM Assets]AI 画像の生成 [、](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"} 生成されたバリエーション [&#x200B; など、](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"} の高度な機能にアクセスできません。
 
 >[!TIP]
 >
->複数のユーザーを同時に追加するには、[CSV の一括アップロード ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"} を実行します。
+>複数のユーザーを同時に追加するには、[CSV の一括アップロード &#x200B;](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"} を実行します。
 >
->[ ユーザーグループ ](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"} を作成して、1 つの役割に複数のユーザーを追加することもできます。 次に、[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] 製品をユーザーグループに追加できます。
+>[&#x200B; ユーザーグループ &#x200B;](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"} を作成して、1 つの役割に複数のユーザーを追加することもできます。 次に、[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] 製品をユーザーグループに追加できます。
 
 1. <https://adminconsole.adobe.com> に移動し、Adobe IDを使用してログインします。
 
@@ -237,7 +237,7 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 
 1. [!UICONTROL **製品**] タブの [!UICONTROL **製品とサービス**] で、[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] を選択します。
 
-   ![Admin ConsoleのAEM Cloud Manager製品の選択 ](./assets/backend-aem.png){width="600" zoomable="yes"}
+   ![Admin ConsoleのAEM Cloud Manager製品の選択 &#x200B;](./assets/backend-aem.png){width="600" zoomable="yes"}
 
 1. 「[!UICONTROL **ユーザー**]」タブを選択します。
 
@@ -256,7 +256,7 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 
    >[!NOTE]
    >
-   >これらの権限が [!DNL AEM Assets] へのアクセスにどのように影響するかについて詳しくは、[Cloud Manager製品プロファイル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"} を参照してください。
+   >これらの権限が [!DNL AEM Assets] へのアクセスにどのように影響するかについて詳しくは、[Cloud Manager製品プロファイル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"} を参照してください。
 
 1. [!UICONTROL **適用**] をクリックします。
 
@@ -264,28 +264,28 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 
 ユーザーがアクセス権を持っていることを確認するには、ユーザーの名前をクリックして、自分のプロファイルページを開きます。 「[!UICONTROL **Products**]」セクションでは、「[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]」商品の下の「[!UICONTROL **完了**] と表示されます。 ユーザーを追加した後、プロファイルのステータスが更新されるのを確認するまでに数秒かかる場合があります。 ページを更新して、更新されたステータスを確認します。
 
-![ 完了した製品アクセスステータスを示すユーザープロファイル ](./assets/product-access.png){width="600" zoomable="yes"}
+![&#x200B; 完了した製品アクセスステータスを示すユーザープロファイル &#x200B;](./assets/product-access.png){width="600" zoomable="yes"}
 
 ## Experience Manager インターフェイスへのアクセス
 
-[!DNL AEM Assets] にユーザーを追加した後、[!DNL Experience Manager]https://experience.adobe.com/[ に移動すると、](https://experience.adobe.com/){target="_blank"} インターフェイスにアクセスできます。
+[!DNL AEM Assets] にユーザーを追加した後、[!DNL Experience Manager]https://experience.adobe.com/[&#x200B; に移動すると、](https://experience.adobe.com/){target="_blank"} インターフェイスにアクセスできます。
 
-1. 「[!UICONTROL **クイックアクセス**]」セクションで、「[!UICONTROL **Experience Manager**]」をクリックします。[!UICONTROL **6}Experience Manager**] が表示されていない場合は、「[!UICONTROL **すべて表示」をクリックします。**]&#x200B;次に、[!UICONTROL **Cloud Manager**] をクリックするか、[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に直接移動します。
+1. 「[!UICONTROL **クイックアクセス**]」セクションで、「[!UICONTROL **Experience Manager**]」をクリックします。[!UICONTROL **6&rbrace;Experience Manager**] が表示されていない場合は、「[!UICONTROL **すべて表示」をクリックします。**]&#x200B;次に、[!UICONTROL **Cloud Manager**] をクリックするか、[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"} に直接移動します。
 
 1. [!UICONTROL **Cloud Manager**] ページで、「[!UICONTROL **プログラムを追加**]」をクリックして開始します。
 
-1. [ 新しいプログラムを作成します ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}。
+1. [&#x200B; 新しいプログラムを作成します &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}。
 
-1. [ 新しい環境の作成 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}。
+1. [&#x200B; 新しい環境の作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}。
 
-1. 環境を作成したら、[Admin Consoleに戻り ](https://adminconsole.adobe.com){target="_blank"} 「[!UICONTROL **Adobe Experience Manager as a Cloud Service**]」を選択します。
+1. 環境を作成したら、[Admin Consoleに戻り &#x200B;](https://adminconsole.adobe.com){target="_blank"} 「[!UICONTROL **Adobe Experience Manager as a Cloud Service**]」を選択します。
 
 1. これで、新しい製品プロファイルが表示されます。 `- author -` を含むを選択します。 例：`<environment-name> - author - <program-id> - <environment-id>`。
 
-1. [ 製品プロファイルへのユーザーの追加 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}。
+1. [&#x200B; 製品プロファイルへのユーザーの追加 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}。
 
-* [Commerce メタデ  [!DNL AEM Assets]  タをサポートするように設定 ](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
-* [Commerce [!DNL AEM Assets]  統合してアセットを同期させる ](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
+* [Commerce メタデ  [!DNL AEM Assets]  タをサポートするように設定 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
+* [Commerce [!DNL AEM Assets]  統合してアセットを同期させる &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
 
 ## ID 管理とシングルサインオン設定
 

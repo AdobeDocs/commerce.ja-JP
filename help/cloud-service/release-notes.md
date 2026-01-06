@@ -26,9 +26,9 @@ ht-degree: 0%
    * [製品レコメンデーション](../product-recommendations/release-notes.md)
    * [SaaS データ エクスポート](../data-export/release-notes.md)
 * 拡張性
-   * [ 管理 UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)
-   * [API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)
-   * [ イベント ](https://developer.adobe.com/commerce/extensibility/events/release-notes/)
+   * [&#x200B; 管理 UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)
+   * [API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)
+   * [&#x200B; イベント &#x200B;](https://developer.adobe.com/commerce/extensibility/events/release-notes/)
    * [Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)
 
 ## 2025 年 11 月
@@ -49,6 +49,6 @@ ht-degree: 0%
 
 #### カスタム注文属性
 
-* 管理者ユーザーは、管理パネルの注文ビュー、編集、作成画面から直接 [ カスタム注文属性 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) を表示および編集できるようになりました。 この機能強化により、GraphQLを介して作成されたカスタム注文データの管理が向上します。<!-- CEXT-5044 -->
+* 管理者ユーザーは、管理パネルの注文ビュー、編集、作成画面から直接 [&#x200B; カスタム注文属性 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) を表示および編集できるようになりました。 この機能強化により、GraphQLを介して作成されたカスタム注文データの管理が向上します。<!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]

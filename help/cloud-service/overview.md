@@ -63,26 +63,26 @@ ht-degree: 0%
 
 次の図は、[!DNL Adobe Commerce as a Cloud Service] とすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
-![[!DNL Adobe Commerce as a Cloud Service] ソリューションとの統合 [!DNL Adobe Experience Cloud] 示すデータフロー図 ](./assets/data-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service] ソリューションとの統合 [!DNL Adobe Experience Cloud] 示すデータフロー図 &#x200B;](./assets/data-flow.svg){zoomable="yes"}
 
 ## Commerce ストアフロント
 
-[[!DNL Commerce Storefront] を活用したAdobe ](https://experienceleague.adobe.com/developer/commerce/storefront)[!DNL Edge Delivery Services] を使用すると、シンプルなドキュメントベースのオーサリングや [!DNL Storefront Builder] を使用したビジュアル編集で、豊富なエクスペリエンスを数分で作成できます。
+[[!DNL Commerce Storefront] を活用したAdobe &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront) [!DNL Edge Delivery Services] を使用すると、シンプルなドキュメントベースのオーサリングや [!DNL Storefront Builder] を使用したビジュアル編集で、豊富なエクスペリエンスを数分で作成できます。
 
 [!DNL Commerce Storefront] は、GraphQL API レイヤーを通じてすべてのマーチャンダイジングサービスとデータを提供する、切り離されたアーキテクチャを持つ完全なヘッドレスです。 このアーキテクチャにより、チームはCommerce財団とは独立してフロントエンドを開発でき、新しいテクノロジーを使用して新しいタッチポイントを構築およびテストする俊敏性が提供されます。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] は、Luma ストアフロントをサポートしていません。 Adobe Commerce on Cloud またはオンプレミスから移行する場合は、[ 既存のストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) を参照して、移行のガイダンスを確認してください。
+>[!DNL Adobe Commerce as a Cloud Service] は、Luma ストアフロントをサポートしていません。 Adobe Commerce on Cloud またはオンプレミスから移行する場合は、[&#x200B; 既存のストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) を参照して、移行のガイダンスを確認してください。
 
 ## マーチャンダイジングサービスと支払いサービス
 
 Adobeは、主要なビジネス目標をサポートするのに役立つ、インテリジェントで構成可能なマーチャンダイジングサービスの豊富なセットを提供します。 また、これらのサービスは、パフォーマンスを大規模に最適化するために重要な API も提供します。
 
-- [ ライブ検索 ](../live-search/overview.md) – この AI を活用した検索ツールにより、買い物客によりスマートで迅速かつ適切な結果を提供します。
-- [ 製品レコメンデーション ](../optimizer/merchandising/recommendations/overview.md) – 買い物客の行動、人気のトレンド、製品の類似性などに基づいて、AI を活用したレコメンデーションを追加します。
-- [ カタログサービス ](../catalog-service/guide-overview.md) – 顧客に最適化された製品体験を提供すると同時に、パフォーマンスの向上、スケーラビリティの向上、コンバージョンの増加を実現します。
-- [ 支払いサービス ](../payment-services/guide-overview.md)：利息なしの分割払い、支払い処理、オーダー、請求書の単一ビューなど、さまざまな支払い方法を提供することにより、顧客満足度を向上させます。
+- [&#x200B; ライブ検索 &#x200B;](../live-search/overview.md) – この AI を活用した検索ツールにより、買い物客によりスマートで迅速かつ適切な結果を提供します。
+- [&#x200B; 製品レコメンデーション &#x200B;](../optimizer/merchandising/recommendations/overview.md) – 買い物客の行動、人気のトレンド、製品の類似性などに基づいて、AI を活用したレコメンデーションを追加します。
+- [&#x200B; カタログサービス &#x200B;](../catalog-service/guide-overview.md) – 顧客に最適化された製品体験を提供すると同時に、パフォーマンスの向上、スケーラビリティの向上、コンバージョンの増加を実現します。
+- [&#x200B; 支払いサービス &#x200B;](../payment-services/guide-overview.md)：利息なしの分割払い、支払い処理、オーダー、請求書の単一ビューなど、さまざまな支払い方法を提供することにより、顧客満足度を向上させます。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -94,7 +94,7 @@ Product Visuals は、Adobe Experience Managerと統合してリッチメディ�
 
 また、[!DNL Adobe Commerce as a Cloud Service] のネイティブ機能は、デジタルアセットを保存および管理するための基本的なアセット管理ツールを提供します。
 
-[ と ](../aem-assets-integration/overview.md) の統合方法について詳しくは、[!DNL Product Visuals powered by AEM Assets]AEM Assetsの統合 [!DNL Adobe Commerce as a Cloud Service] ガイドを参照してください。
+[&#x200B; と &#x200B;](../aem-assets-integration/overview.md) の統合方法について詳しくは、[!DNL Product Visuals powered by AEM Assets]AEM Assetsの統合 [!DNL Adobe Commerce as a Cloud Service] ガイドを参照してください。
 
 ### [!DNL Product Visuals] 以 [!DNL AEM Assets]
 
@@ -180,7 +180,7 @@ Adobeには、統合とカスタマイズを構築するための次の開発ツ
 
 [!UICONTROL Commerce Cloud Manager] セルフサービスプロビジョニングポータルを使用すると、サンドボックスおよび実稼動インスタンスを数分で起動できます。 マーチャンダイジングサービス、ヘッドレス Commerce インスタンス、[!DNL App Builder] など、必要なものはすべて自動的に設定され、インスタンスと統合されます。
 
-Commerce インスタンスを作成および管理する方法については、[ はじめに ](getting-started.md) を参照してください。
+Commerce インスタンスを作成および管理する方法については、[&#x200B; はじめに &#x200B;](getting-started.md) を参照してください。
 
 ### シームレスなアップグレード
 
@@ -190,7 +190,7 @@ Cloud 上のAdobe Commerceの一般的なアップグレードプロセスは、
 
 >[!NOTE]
 >
->Adobeでは、すべての更新に対して後方互換性が保証されます。 つまり、更新が適用されても、[API ファースト拡張機能 ](https://developer.adobe.com/commerce/extensibility/) モデルに準拠する既存の機能やカスタマイズが損なわれることはありません。
+>Adobeでは、すべての更新に対して後方互換性が保証されます。 つまり、更新が適用されても、[API ファースト拡張機能 &#x200B;](https://developer.adobe.com/commerce/extensibility/) モデルに準拠する既存の機能やカスタマイズが損なわれることはありません。
 
 ### サードパーティの統合
 
