@@ -5,7 +5,7 @@ feature: Storefront
 role: Developer
 level: Beginner
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 source-git-commit: 6eda2197fde2e88292e58b2bb4fc4759f24da558
 workflow-type: tm+mt
 source-wordcount: '235'
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Storefront] for [!DNL Edge Delivery Services] （SaaS）を使用した [!DNL Adobe Commerce as a Cloud Service] を設定するには、次の手順を実行します。
 
-カスタマイズ可能で詳細なチュートリアルについては、[&#x200B; ストアフロントのドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) を参照してください。
+カスタマイズ可能で詳細なチュートリアルについては、[&#x200B; ストアフロントのドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja) を参照してください。
 
 1. [&#x200B; サイト作成ツール &#x200B;](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) を開きます。
 
@@ -47,4 +47,4 @@ ht-degree: 0%
 * ストアフロントでのコンテンツとデータの管理と表示について詳しくは、[&#x200B; ストアフロントコンテンツの更新 &#x200B;](./use-cases.md#update-storefront-content) を参照してください。
 * コンテキスト実験機能について詳しくは、「[&#x200B; コンテキスト実験 &#x200B;](./use-cases.md#contextual-experimentation)」を参照してください。
 * ジェネレーティブ AI を使用して高品質のコンテンツ生成を自動化する方法について詳しくは、[&#x200B; バリエーションの生成 &#x200B;](./use-cases.md#generate-variations) を参照してください。
-* サイトコンテンツの更新、Commerceのフロントエンドコンポーネントとバックエンドデータとの統合について詳しくは、[[!DNL Adobe Commerce Storefront documentation]](https://experienceleague.adobe.com/developer/commerce/storefront/) を参照してください。
+* サイトコンテンツの更新、Commerceのフロントエンドコンポーネントとバックエンドデータとの統合について詳しくは、[[!DNL Adobe Commerce Storefront documentation]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) を参照してください。
