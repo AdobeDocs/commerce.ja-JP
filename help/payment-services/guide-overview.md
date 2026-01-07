@@ -6,9 +6,9 @@ seo-description: Describes contents of the [!DNL Payment Services] for Adobe Com
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
 feature: Payments, Checkout, Paas, Saas
 recommendations: noCatalog
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: b75cad4fd71b5ab9c0199ca47800c36cbd1ae76c
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -24,21 +24,21 @@ Adobe CommerceおよびMagento Open Source向け [!DNL Payment Services] は、�
 
 このガイドでは、次の内容について説明します。
 
-![&#x200B; チェック &#x200B;](assets/icon-check.png) 目的、メリット、レポート機能やセキュリティコンプライアンスなどの主な機能の概要。
+![ チェック ](assets/icon-check.png) 目的、メリット、レポート機能やセキュリティコンプライアンスなどの主な機能の概要。
 
-![&#x200B; 小切手 &#x200B;](assets/icon-check.png) 互換性と利用可能な支払いエクスペリエンスオプション（地域によって決定）とサポートされている支払い方法。
+![ 小切手 ](assets/icon-check.png) 互換性と利用可能な支払いエクスペリエンスオプション（地域によって決定）とサポートされている支払い方法。
 
-![&#x200B; チェック &#x200B;](assets/icon-check.png) オンボーディング、設定オプション、サンドボックスの設定（テスト用）および実稼動の設定（ライブ支払い処理用）に関するステップバイステップのドキュメント。
+![ チェック ](assets/icon-check.png) オンボーディング、設定オプション、サンドボックスの設定（テスト用）および実稼動の設定（ライブ支払い処理用）に関するステップバイステップのドキュメント。
 
-![&#x200B; チェック &#x200B;](assets/icon-check.png) 財務報告、返金処理、無効など、支払いを管理および監視するためのツール。
+![ チェック ](assets/icon-check.png) 財務報告、返金処理、無効など、支払いを管理および監視するためのツール。
 
-![&#x200B; チェック &#x200B;](assets/icon-check.png) ベストプラクティス、サポートチャネル、継続的な更新のリリースノートなどの追加リソース。
+![ チェック ](assets/icon-check.png) ベストプラクティス、サポートチャネル、継続的な更新のリリースノートなどの追加リソース。
 
 ## ドキュメント [!DNL Payment Services] 参照
 
 コマース運用を変革する方法に興味があ [!DNL Payment Services] 場合や、Adobe CommerceとMagento Open Sourceの [!DNL Payment Services] に関するより技術的なガイダンスが必要な場合は、このガイドで説明しています。
 
-標準提供の支払いソリューション（機能や特典など）の概要については、[&#x200B; 主な特典 &#x200B;](introduction.md) から始めてください。 実装に関する段階的な手順については、[&#x200B; オンボーディング &#x200B;](onboard.md) にスキップしてください。
+標準提供の支払いソリューション（機能や特典など）の概要については、[ 主な特典 ](introduction.md) から始めてください。 実装に関する段階的な手順については、[ オンボーディング ](onboard.md) にスキップしてください。
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -113,16 +113,16 @@ Adobe CommerceおよびMagento Open Source向け [!DNL Payment Services] は、�
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=ja) - [!DNL Adobe Commerce] と [!DNL Magento Open Source] の両方に関するマーチャント向けドキュメント
-> * [[!DNL Adobe Commerce] 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=ja) - [!DNL Adobe Commerce] または [!DNL Magento Open Source] の作成とカスタマイズに使用する、開発者向けのドキュメント
-> * [&#x200B; リリースノート &#x200B;](release-notes.md) – 今後のリリース、製品の詳細、[!DNL Payment Services] 拡張機能をサポートするAdobe Commerce バージョンについて説明します
-> * [&#x200B; ヘルプセンター &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=ja) - ナレッジベースで [!DNL Payment Services] 関連のトラブルシューティング記事を検索します。
-> * [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) - Commerceのお客様はチケットを送信して、追加のヘルプを受けることができます
+> * [[!DNL Adobe Commerce] 2.4 ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) - [!DNL Adobe Commerce] と [!DNL Magento Open Source] の両方に関するマーチャント向けドキュメント
+> * [[!DNL Adobe Commerce] 2.4 ユーザーガイド ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) - [!DNL Adobe Commerce] または [!DNL Magento Open Source] の作成とカスタマイズに使用する、開発者向けのドキュメント
+> * [ リリースノート ](release-notes.md) – 今後のリリース、製品の詳細、[!DNL Payment Services] 拡張機能をサポートするAdobe Commerce バージョンについて説明します
+> * [ ヘルプセンター ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - ナレッジベースで [!DNL Payment Services] 関連のトラブルシューティング記事を検索します。
+> * [ サポートチケット ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Commerceのお客様はチケットを送信して、追加のヘルプを受けることができます
 
 ## サポート
 
-情報が必要な場合や、このガイドに記載されていない質問がある場合は、[!DNL Payment Services] の販売担当者に問い合わせるか、[!DNL Payment Services] ホームで利用できるリソースを使用します。
+[!DNL Payment Services] に関する情報が必要な場合や、このガイドに記載されていない質問がある場合は、[!DNL Payment Services] の販売担当者に問い合わせるか、[!DNL Payment Services] ホームで利用できるリソースを使用します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448228?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3447836)
 
-[&#x200B; 適切なオプショ  [!DNL Payment Services]  はどれか？](compatibility.md#which-payment-services-option-is-right-for-you) なたに最適な [!DNL Payment Services] のオプションであるかを確認するためのトピック。
+[ 適切なオプショ  [!DNL Payment Services]  はどれか？](compatibility.md#which-payment-services-option-is-right-for-you) なたに最適な [!DNL Payment Services] のオプションであるかを確認するためのトピック。
