@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 投稿者ガイドドキュメント
 
-詳しくは、[&#x200B; 投稿者ガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
+詳しくは、[&#x200B; 投稿者ガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
 
 ## 質問がある場合
 
@@ -54,11 +54,11 @@ Adobe CLA の提出は 1 回だけでかまいません。 以前に送信した
 
 ## セキュリティ上の問題
 
-セキュリティ上の問題を報告するには、[&#x200B; セキュリティの専門家に問題を報告してください &#x200B;](https://helpx.adobe.com/security/alertus.html)。
+セキュリティ上の問題を報告するには、[&#x200B; セキュリティの専門家に問題を報告してください &#x200B;](https://helpx.adobe.com/jp/security/alertus.html)。
 
 ## 新機能
 
-変更によって、強調表示する必要のある新しいトピック、重要な更新、修正が導入された場合は、プルリクエストの本文から [&#x200B; 新機能 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) のセクションに簡単な説明を追加できます。
+変更によって、強調表示する必要のある新しいトピック、重要な更新、修正が導入された場合は、プルリクエストの本文から [&#x200B; 新機能 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home#whats-new) のセクションに簡単な説明を追加できます。
 
 新機能のハイライトを追加するには：
 
@@ -102,4 +102,4 @@ Adobe CLA の提出は 1 回だけでかまいません。 以前に送信した
 1. `whatsnew` 部は、`whatsnew` タグから始めて、プルリクエスト本文の最後になければなりません。
 1. 変更の説明には、作業リンクを含める必要があります。 リンクが正しいことを確認し、目的のトピックに導いてください。 トピックが新規の場合は、プルリクエストを結合して新しいトピックを公開した後、リンクが機能していることを確認します。 プルリクエストが結合された後は、リンクを修正しても問題ありません。
 
-例えば、リポジトリ内でクローズドなプルリクエストを検索して既存のハイライトの書式を確認し、[&#x200B; 新機能 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) の節と比較して、ドキュメントにどのように表示されるかを確認します。
+例えば、リポジトリ内でクローズドなプルリクエストを検索して既存のハイライトの書式を確認し、[&#x200B; 新機能 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home#whats-new) の節と比較して、ドキュメントにどのように表示されるかを確認します。
