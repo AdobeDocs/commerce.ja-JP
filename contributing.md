@@ -1,8 +1,8 @@
 ---
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 4ddab6bbd62a3cc7c6dff089745c1b5ef5c20f70
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 3%
+source-wordcount: '551'
+ht-degree: 1%
 
 ---
 # 貢献
@@ -19,31 +19,29 @@ ht-degree: 3%
 
 ## 投稿者ガイドドキュメント
 
-詳しくは、[&#x200B; 投稿者ガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
+詳しくは、[ 投稿者ガイド ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) を参照してください。
 
 ## 質問がある場合
 
 まず、イシューを入力します。 このプロジェクトの既存のコントリビューターは、
 必要に応じて、イシュースレッド内のプロジェクトの方向性とイシューの解決策に関する合意。
 
-## 投稿者使用許諾契約
+## コントリビューター使用許諾契約
 
 このプロジェクトへのサードパーティ投稿者には、署名済みの投稿者が関連付けられている必要があります
 使用許諾契約。 これにより、Adobeに投稿を再配布する権限が付与されます
-プロジェクトの一環として。 [&#x200B; アドビの CLA に署名してください &#x200B;](https://opensource.adobe.com/cla.html)。 あなた
+プロジェクトの一環として。 [ アドビの CLA に署名してください ](https://opensource.adobe.com/cla.html)。 あなた
 Adobe CLA の提出は 1 回だけでかまいません。 以前に送信した場合、
 行ってもよろしい。
 
 ## コードレビュー
 
 すべての送信は、プルリクエスト形式でおこなわれ、レビューする必要があります
-プロジェクト寄稿者別。 [GitHub のプルリクエストドキュメントをお読みください &#x200B;](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+プロジェクト寄稿者別。 [GitHub のプルリクエストドキュメントをお読みください ](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 プルリクエストの送信に関する詳細情報。
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+最後に、次の場合は [ プルリクエストテンプレート ](PULL_REQUEST_TEMPLATE.md) に従ってください
+プルリクエストを送信しています！
 
 ## 投稿者からコミッターへ
 
@@ -56,4 +54,52 @@ submitting a pull request!
 
 ## セキュリティ上の問題
 
-セキュリティ上の問題を報告するには、[&#x200B; セキュリティの専門家に問題を報告してください &#x200B;](https://helpx.adobe.com/jp/security/alertus.html)。
+セキュリティ上の問題を報告するには、[ セキュリティの専門家に問題を報告してください ](https://helpx.adobe.com/security/alertus.html)。
+
+## 新機能
+
+変更によって、強調表示する必要のある新しいトピック、重要な更新、修正が導入された場合は、プルリクエストの本文から [ 新機能 ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) のセクションに簡単な説明を追加できます。
+
+新機能のハイライトを追加するには：
+
+1. `whatsnew` タグと適切な説明を、最後にプルリクエスト本文に含めます。 説明には、変更に関するコンテキストと、ターゲットのトピックまたはトピックへのリンクを指定する必要があります。 次の形式を使用します（コードブロックの引用符は表示専用であり、プルリクエスト本文に含めないでください）。
+
+   ```text
+   whatsnew
+   Short description of the change in the [target topic](https://experienceleague.adobe.com/en/docs/commerce/target-topic.html).
+   ```
+
+   または、複数のトピックがある場合は、次の操作を行います。
+
+   ```text
+   whatsnew
+   Short description of the changes in the [first target topic](https://experienceleague.adobe.com/en/docs/commerce/target-topic.html), [second target topic](https://experienceleague.adobe.com/en/docs/commerce/second-target-topic.html), and [third target topic](https://experienceleague.adobe.com/en/docs/commerce/third-target-topic.html).
+   ```
+
+   複数のハイライトにリストを使用することもできます。
+
+   ```text
+   whatsnew
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce/second-topic.html).
+   ```
+
+   ```text
+   whatsnew
+   The following changes were made to the documentation:
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce/second-topic.html).
+   ```
+
+1. 変更のタイプを示す、サポートされるラベルを追加します。 サポートされているラベルには、変更のタイプごとに次のようなラベルが含まれています。
+
+   - `new-topic` – 新しいトピック用
+   - `major-update` - コンテンツ、構造、機能に大幅な変更を含む可能性のある大規模な更新の場合
+   - `technical` - メジャーアップデートとは見なされないが、注意が必要な技術的な変更
+
+**重要：**
+
+1. `whatsnew` 部は、`whatsnew` タグから始めて、プルリクエスト本文の最後になければなりません。
+1. 変更の説明には、作業リンクを含める必要があります。 リンクが正しいことを確認し、目的のトピックに導いてください。 トピックが新規の場合は、プルリクエストを結合して新しいトピックを公開した後、リンクが機能していることを確認します。 プルリクエストが結合された後は、リンクを修正しても問題ありません。
+
+例えば、リポジトリ内でクローズドなプルリクエストを検索して既存のハイライトの書式を確認し、[ 新機能 ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) の節と比較して、ドキュメントにどのように表示されるかを確認します。
