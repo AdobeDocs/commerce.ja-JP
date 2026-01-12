@@ -16,7 +16,7 @@ CommerceをAEM Assets インスタンスに接続し、アセット同期の一�
 
 AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの間でアセットを同期するための一致ルールを選択します。
 
-* **[!UICONTROL Match by product SKU]** - アセットが正しい商品に関連付けられるようにするために、アセットメタデータの SKU を [1&rbrace;Commerce商品 SKU&rbrace; と一致させるデフォルトのルール。](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku)
+* **[!UICONTROL Match by product SKU]** - アセットが正しい商品に関連付けられるようにするために、アセットメタデータの SKU を [1&rbrace;Commerce商品 SKU&rbrace; と一致させるデフォルトのルール。](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/glossary#sku)
 
 * **[!UICONTROL Custom match]** - カスタム・マッチング・ロジックを必要とするより複雑なシナリオや特定のビジネス要件の照合ルール。 カスタムマッチングを実装するには、アセットと商品のマッチング方法を定義するカスタムコードをAdobe Developer App Builderで開発する必要があります。 詳細は近日公開予定です…
 
@@ -28,7 +28,7 @@ AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの
 
 * [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}[Adobe Commerce パッケージをインストール &#x200B;](configure-commerce.md) して、拡張機能を追加し、その拡張機能を使用するために必要な資格情報と接続を生成します。
 
-* AEM as a Cloud Serviceで [Dynamic Media を OpenAPI 機能と共に &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) 有効にするには、次の情報を入力して、Adobe サポートチケットを送信します。
+* AEM as a Cloud Serviceで [Dynamic Media を OpenAPI 機能と共に &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) 有効にするには、次の情報を入力して、Adobe サポートチケットを送信します。
 
    * タイトル：Adobe CommerceとAEM Assetsを活用したAEM Assets/製品ビジュアルの完全な統合のための Dynamic Media OpenAPI の有効化
 
@@ -43,7 +43,7 @@ AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの
 
 ## 接続の設定
 
-1. [AEM Assets オーサリング環境 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/quick-start) プロジェクトおよび環境 ID を取得します。
+1. [AEM Assets オーサリング環境 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/quick-start) プロジェクトおよび環境 ID を取得します。
 
    1. AEM Cloud Managerを開き、「**[!UICONTROL Assets]**」を選択します。
 
@@ -78,7 +78,7 @@ AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの
 1. **[!UICONTROL Asset matching rule]** ドロップダウンから、アセット同期用のアセット一致ルールの 1 つを選択します。
 
    * **[!UICONTROL Match by SKU]** デフォルトの自動照合 [&#x200B; の &#x200B;](../synchronize/default-match.md) を選択します。
-   * **[!UICONTROL Custom match]** カスタム自動照合 [&#x200B; の &#x200B;](../synchronize/custom-match.md) を選択します（[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) が必要です）。
+   * **[!UICONTROL Custom match]** カスタム自動照合 [&#x200B; の &#x200B;](../synchronize/custom-match.md) を選択します（[Adobe Developer App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) が必要です）。
 
 1. Commerce製品 SKU に対して定義された [0&rbrace;AEM Assets メタデータフィールド名を「](configure-aem.md#configure-metadata)」フィールドに追加します（デフォルトでは **[!UICONTROL Match by product SKU attribute name]**）。`commerce:skus`
 
@@ -105,7 +105,7 @@ AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの
 
 管理者には、その所有者で使用可能な画像が表示されますが、残りの画像はグレー表示され、「**非表示** ラベルで表示されます。
 
-画像の表示動作について詳しくは、[&#x200B; 画像の詳細を設定 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} トピックを参照してください。
+画像の表示動作について詳しくは、[&#x200B; 画像の詳細を設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} トピックを参照してください。
 
 >[!TIP]
 >
@@ -133,7 +133,7 @@ AEM Assets as a Cloud Service プロジェクトが [&#x200B; カスタムドメ
 
 ## 次の手順
 
-* **Commerce ストアフロントの設定** - Edge Delivery Servicesを使用したCommerce ストアフロントでAEM Assetsを使用するには、[Adobe Commerce ストアフロントのドキュメントの &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/)AEM Assetsの統合 *のトピックで説明されているストアフロント設定を行ってください*。
+* **Commerce ストアフロントの設定** - Edge Delivery Servicesを使用したCommerce ストアフロントでAEM Assetsを使用するには、[Adobe Commerce ストアフロントのドキュメントの &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=ja)AEM Assetsの統合 *のトピックで説明されているストアフロント設定を行ってください*。
 
 * Adobe CommerceとAEM Assets統合の間に [&#x200B; 一致ルール &#x200B;](../synchronize/default-match.md) を設定します。
 
