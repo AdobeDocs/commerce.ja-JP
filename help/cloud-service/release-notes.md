@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Commerce as a Cloud Service] の最新の機能と改
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
 source-git-commit: fb4c497c9efc184ffb6bd884cb2f37ad9cc87b02
 workflow-type: tm+mt
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce オンプレミスまたはAdobe Commerce on cloud infrastructure を使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照してください。
+>Adobe Commerce オンプレミスまたはAdobe Commerce on cloud infrastructure を使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を参照してください。
 
 ## 2026 年 1 月 {#latest}
 
@@ -37,7 +37,7 @@ Adobe IMS管理者認証用のアクセストークンは、POST リクエスト
 
 B2B ドロップインコンポーネントに次の変更が加えられました。
 
-* [!DNL Commerce Storefront on Edge Delivery Services] には、[B2B ドロップインコンポーネント &#x200B;](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/) が含まれるようになりました。 次の B2B ドロップダウンが使用できるようになりました。
+* [!DNL Commerce Storefront on Edge Delivery Services] には、[B2B ドロップインコンポーネント &#x200B;](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=ja) が含まれるようになりました。 次の B2B ドロップダウンが使用できるようになりました。
 
    * **会社管理** – 会社プロファイル管理を有効にし、Adobe Commerce ストアフロントに対する役割ベースの権限を有効にします。
    * **会社スイッチャー** - ユーザーが関連付けられている複数の会社を切り替えるための UI コンポーネントを提供します。
@@ -52,13 +52,13 @@ B2B ドロップインコンポーネントに次の変更が加えられまし�
 * B2B ストアフロント互換性パッケージをリリースしました。 このパッケージは、[!DNL Adobe Commerce] B2B GraphQL スキーマを強化して、B2B システムでの開発の改善を支援します。
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=ja). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
 
 * Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. -->
 
 ### 外部配送トラッカーへのクリック可能なリンク
 
-[&#x200B; カスタムトラッキング URL を有効にする &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls) ことで、買い物客のメールに含まれる出荷トラッキング番号をプレーンテキストからクリック可能なリンクに変換します。 この機能は、USPS、UPS、FedEx、および DHL でサポートされています。<!-- See PR #716 in commerce-admin -->
+[&#x200B; カスタムトラッキング URL を有効にする &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls) ことで、買い物客のメールに含まれる出荷トラッキング番号をプレーンテキストからクリック可能なリンクに変換します。 この機能は、USPS、UPS、FedEx、および DHL でサポートされています。<!-- See PR #716 in commerce-admin -->
 
 ### Google reCAPTCHA Enterprise サポート
 
@@ -74,7 +74,7 @@ Admin Console内の個々の [&#x200B; インスタンスに &#x200B;](./user-ma
 
 ### カタログ価格ルールの階層価格
 
-[&#x200B; カタログ価格ルール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules) を使用して、階層化された価格割引をカタログルール割引と組み合わせることができるようになりました。 この機能強化により、より動的で競争力のある価格戦略を作成でき、プロモーション割引を適用すると同時に一括購入にやりがいを与えることができます。 その結果、顧客を引き付け、注文価値を高め、コンバージョンを促進する柔軟性が向上します。<!-- See PR #708 in commerce-admin -->
+[&#x200B; カタログ価格ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules) を使用して、階層化された価格割引をカタログルール割引と組み合わせることができるようになりました。 この機能強化により、より動的で競争力のある価格戦略を作成でき、プロモーション割引を適用すると同時に一括購入にやりがいを与えることができます。 その結果、顧客を引き付け、注文価値を高め、コンバージョンを促進する柔軟性が向上します。<!-- See PR #708 in commerce-admin -->
 
 ### 機能強化とバグ修正
 
@@ -114,6 +114,6 @@ Admin Console内の個々の [&#x200B; インスタンスに &#x200B;](./user-ma
 
 #### カスタム注文属性
 
-* 管理者ユーザーは、管理パネルの注文ビュー、編集、作成画面から直接 [&#x200B; カスタム注文属性 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) を表示および編集できるようになりました。 この機能強化により、GraphQLを介して作成されたカスタム注文データの管理が向上します。<!-- CEXT-5044 -->
+* 管理者ユーザーは、管理パネルの注文ビュー、編集、作成画面から直接 [&#x200B; カスタム注文属性 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) を表示および編集できるようになりました。 この機能強化により、GraphQLを介して作成されたカスタム注文データの管理が向上します。<!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
