@@ -3,8 +3,8 @@ title: カテゴリマーチャンダイジング
 description: カテゴリ  [!DNL Live Search]  マーチャンダイジングを使用すると、ショッピングエクスペリエンスを高速化できます。
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
-source-git-commit: 59aa4ae67a1a8a853b72d78cd65a6cc44a6bc662
+badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
@@ -13,19 +13,19 @@ ht-degree: 0%
 
 # カテゴリマーチャンダイジング
 
-カテゴリマーチャンダイジングを使用すると、店舗所有者 [!DNL Live Search] 製品カテゴリとサブカテゴリにインテリジェントランキング [&#x200B; ルール &#x200B;](rules.md) を適用できます。
+カテゴリマーチャンダイジングを使用すると、店舗所有者 [!DNL Live Search] 製品カテゴリとサブカテゴリにインテリジェントランキング [ ルール ](rules.md) を適用できます。
 
 このビデオは、カテゴリマーチャンダイジングの概要です。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448852?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 この機能には、管理者の **マーケティング**/SEO と検索/**[!DNL Live Search]**/**カテゴリマーチャンダイジング** でアクセスします。
 
 >[!NOTE]
 >
->カテゴリマーチャンダイジングは、[!DNL Live Search] [3.0.0 以降 &#x200B;](release-notes.md) で使用できます。 カテゴリマーチャンダイジングワークスペースが表示されても、データが入力されていない場合は、[!DNL Live Search] モジュールを更新します。
+>カテゴリマーチャンダイジングは、[!DNL Live Search] [3.0.0 以降 ](release-notes.md) で使用できます。 カテゴリマーチャンダイジングワークスペースが表示されても、データが入力されていない場合は、[!DNL Live Search] モジュールを更新します。
 
-![&#x200B; カテゴリーマーチャンダイジング &#x200B;](assets/category_workspace.png)
+![ カテゴリーマーチャンダイジング ](assets/category_workspace.png)
 
 カテゴリマーチャンダイジング表示には、定義済みのカテゴリルールと、次の列が表示されます。
 
@@ -39,10 +39,10 @@ ht-degree: 0%
 
 ## ランキング戦略
 
-カテゴリマーチャンダイジングでは、[&#x200B; 個々の製品 &#x200B;](rules-workspace.md) と同じランキングタイプを使用します。
+カテゴリマーチャンダイジングでは、[ 個々の製品 ](rules-workspace.md) と同じランキングタイプを使用します。
 ランキングには、インテリジェントと手動の 2 種類があります。
 
-**インテリジェントランキング** では、[Adobe Sensei](https://www.adobe.com/sensei.html) によるストアフロントの行動データ分析を活用して、選択したカテゴリ内のすべての商品を特定のアルゴリズムで並べ替えます。 インテリジェントなランキングが選択されると、基になるデータが継続的にAdobe Senseiによって再分析されるので、商品の特定の順序は時間の経過と共に変化することが予想されます。 例えば、上位のトレンド製品は、買い物客の環境設定の変化に応じて、時間の経過と共に自動的に変化します。
+**インテリジェントランキング** では、[Adobe AI](https://business.adobe.com/ai.html) によるストアフロントの行動データ分析を活用して、選択したカテゴリ内のすべての商品を特定のアルゴリズムで並べ替えます。 インテリジェントなランキングが選択されると、基になるデータが継続的にAdobe AI によって再分析されるので、商品の特定の順序は時間の経過と共に変化することが予想されます。 例えば、上位のトレンド製品は、買い物客の環境設定の変化に応じて、時間の経過と共に自動的に変化します。
 インテリジェントなランキングメソッドは次のとおりです。
 
 * 最も多く購入された：過去 7 日間に買い物客が購入した頻度で製品をランク付けします。
@@ -66,11 +66,11 @@ ht-degree: 0%
 
 カテゴリにインテリジェントランキングを適用し、「**サブカテゴリにインテリジェントランキングを適用** オプションをオンにすると、サブカテゴリに既に適用されているインテリジェントランキングが上書きされます。
 
-![&#x200B; 上書きされたサブカテゴリリスト &#x200B;](assets/category_overwite_subs.png){width="700"}
+![ 上書きされたサブカテゴリリスト ](assets/category_overwite_subs.png){width="700"}
 
 **すべて表示** をクリックすると、提案された変更の詳細を示すダイアログが開きます。
 
-![&#x200B; ランキング変更の詳細 &#x200B;](assets/category_overwrite.png)
+![ ランキング変更の詳細 ](assets/category_overwrite.png)
 
 継承されたインテリジェントランキングを持つカテゴリにインテリジェントランキングを直接追加する場合、継承は新しいインテリジェントランキングによって上書きされます。
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 上位レベルのカテゴリに対して行った変更によって影響を受ける継承されたサブカテゴリを示すダイアログが表示されます。
 
-![&#x200B; ランキング変更モーダルダイアログ &#x200B;](assets/category_overwrite_modal.png){width="1200"}
+![ ランキング変更モーダルダイアログ ](assets/category_overwrite_modal.png){width="1200"}
 
 ## カテゴリルールの作成
 
@@ -92,13 +92,13 @@ ht-degree: 0%
 1. チェックボックスを選択して、ランク付けするカテゴリを選択します。
 1. **適用** をクリックします。
 
-   ![&#x200B; カテゴリを選択 &#x200B;](assets/category_select.png)
+   ![ カテゴリを選択 ](assets/category_select.png)
 
 1. _カテゴリルールを追加_ ビューで、カテゴリに適用するインテリジェントランキング方法を選択します。
 カテゴリプレビューページには、ライブ検索データを使用して、選択したランキングの実際の結果が表示されます。
 1. **保存して公開** をクリックして、ルールを保存します。
 
-![&#x200B; インテリジェントなランキング方法を選択する &#x200B;](assets/category_ranking.png)
+![ インテリジェントなランキング方法を選択する ](assets/category_ranking.png)
 
 [!DNL Live Search] サービスはルールを処理し、完了するとストア上でアクティブ化します。
 

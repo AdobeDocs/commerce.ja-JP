@@ -1,7 +1,8 @@
 ---
 title: ファセットのタイプ
 description: '[!DNL Live Search] ファセットは動的で、該当する場合はフィルターリストに表示されます。'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: cd05c0c5-1028-4d66-951d-0b61c1ecc440
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 [!DNL Live Search] では様々なファセットタイプを使用し、関連性がある場合にのみ *フィルター* リストに表示されます。 使用可能なファセットのリストは、返される製品に応じて変わります。 その表示と動作には、次の特徴が影響します。
 
 * ピンされたファセット – 最も一般的に使用されるファセットをリストの上部にピン留めできます。 残りのファセットは、ピン留めされたファセットの後に *並べ替えタイプ* の順序で一覧表示されます。
-* 動的ファセット - [Adobe Sensei](https://www.adobe.com/sensei.html) が商品セットおよびクエリと最も関連性の高い商品を見つけた商品属性。 計算では、カタログ全体の属性メタデータが考慮され、クエリ時に、クエリに最も関連性の高いファセットが決定されます。
+* 動的ファセット - [Adobe AI](https://business.adobe.com/ai.html) が商品セットおよびクエリと最も関連性の高い商品を見つける商品属性。 計算では、カタログ全体の属性メタデータが考慮され、クエリ時に、クエリに最も関連性の高いファセットが決定されます。
 
   >[!NOTE]
   >
@@ -24,17 +25,17 @@ ht-degree: 0%
 
 クエリ時に、[!DNL Live Search] は、動的なファセットと一般的なファセットのグループに検索結果を生成します。
 
-![&#x200B; ファセット – 価格 &#x200B;](assets/storefront-search-results-run-price.png)
+![ ファセット – 価格 ](assets/storefront-search-results-run-price.png)
 
 ## ストアフロントおよびヘッドレスオプション
 
 [!DNL Commerce] ストアフロント用にレンダリングされるファセットは、検索アダプターによって処理され、リクエストのルーティングとストアフロントでの結果のレンダリングを行います。 ストアフロント [!DNL Commerce] ファセットはすべて、対応する属性に割り当てられた入力タイプに関係なく、単一選択オプションを使用してアルファベット順に並べ替えられます。 ストアフロントで使用可能なファセットは、現在のテーマに従ってレンダリングされ、レイヤー化されたナビゲーションの表示に加えられたカスタマイズを反映します。
 
-これに対し、[&#x200B; ヘッドレス &#x200B;](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) 実装は API によって処理され、追加のオプションをサポートします。 ヘッドレスファセットは、アルファベット順またはカウント順に並べ替えることができ、単一選択または複数選択のオプションを設定できます。
+これに対し、[ ヘッドレス ](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) 実装は API によって処理され、追加のオプションをサポートします。 ヘッドレスファセットは、アルファベット順またはカウント順に並べ替えることができ、単一選択または複数選択のオプションを設定できます。
 
 ### ファセットラベル
 
-ストアフロント [!DNL Commerce] 場合、ファセットラベルは [*属性プロパティ*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) によって決まります。 複数のビューを持つストアの場合、追加のラベルは *ラベルを管理* で定義できます。 ヘッドレス実装の場合、ラベルは [&#x200B; ファセットワークスペース &#x200B;](faceting-workspace.md) から編集されます。
+ストアフロント [!DNL Commerce] 場合、ファセットラベルは [*属性プロパティ*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) によって決まります。 複数のビューを持つストアの場合、追加のラベルは *ラベルを管理* で定義できます。 ヘッドレス実装の場合、ラベルは [ ファセットワークスペース ](faceting-workspace.md) から編集されます。
 
 ### 並べ替えタイプ
 
