@@ -43,7 +43,7 @@ ht-degree: 0%
 
 [!DNL Product Recommendations] について詳しくは、このビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3449926?captions=jpn&quality=12)
 
 ## カタログデータ保持ポリシー
 
