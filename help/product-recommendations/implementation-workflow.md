@@ -21,15 +21,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> ストアフロントがPWA Studioを使用して実装されている場合は、[PWA ドキュメント ](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) を参照してください。 React や Vue JS などのカスタムフロントエンドテクノロジーを使用している場合は、ヘッドレスストアフロントに [ を ](headless.md) 統合 [!DNL Product Recommendations] する方法を説明します。
+> ストアフロントがPWA Studioを使用して実装されている場合は、[PWA ドキュメント &#x200B;](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) を参照してください。 React や Vue JS などのカスタムフロントエンドテクノロジーを使用している場合は、ヘッドレスストアフロントに [&#x200B; を &#x200B;](headless.md) 統合 [!DNL Product Recommendations] する方法を説明します。
 
 ## ワークフロー
 
 1. **データ収集の実稼動環境へのデプロイ**
 
-   [!DNL Product Recommendations] のデプロイには、カタログと行動という 2 つの主な [ データソース ](type.md) が必要です。 実稼動環境は買い物客のアクションを取得および分析する唯一の環境なので、できるだけ早く実稼動環境でデータ収集を開始します。 [Adobe AI が機械学習モデルをトレーニングして、より高品質のレコメンデーションを実現する方法を説明します ](events.md)。 さらに利点として、実稼動環境で行動データの収集を開始する際に、非実稼動環境で動作しながら、この実稼動データに基づいて [ レコメンデーションを取得 ](staging-environment.md#fetch-recommendations-from-production-environment-recommended) できます。 その後、実稼動環境で収集された実際の買い物客データに基づいて計算された、様々なレコメンデーションを使用してテストおよび実験できます。
+   [!DNL Product Recommendations] のデプロイには、カタログと行動という 2 つの主な [&#x200B; データソース &#x200B;](type.md) が必要です。 実稼動環境は買い物客のアクションを取得および分析する唯一の環境なので、できるだけ早く実稼動環境でデータ収集を開始します。 [Adobe AI が機械学習モデルをトレーニングして、より高品質のレコメンデーションを実現する方法を説明します &#x200B;](events.md)。 さらに利点として、実稼動環境で行動データの収集を開始する際に、非実稼動環境で動作しながら、この実稼動データに基づいて [&#x200B; レコメンデーションを取得 &#x200B;](staging-environment.md#fetch-recommendations-from-production-environment-recommended) できます。 その後、実稼動環境で収集された実際の買い物客データに基づいて計算された、様々なレコメンデーションを使用してテストおよび実験できます。
 
-   データ収集を実稼動環境にデプロイするには、[API キー ](install-configure.md) を指定して [!DNL Product Recommendations] モジュールを [ インストールおよび設定 ](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) する必要があります。
+   データ収集を実稼動環境にデプロイするには、[API キー &#x200B;](install-configure.md) を指定して [!DNL Product Recommendations] モジュールを [&#x200B; インストールおよび設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) する必要があります。
 
    >[!TIP]
    >
@@ -43,7 +43,7 @@ ht-degree: 0%
    >
    > テンプレートをカスタマイズすると、スタイルシートを指定したり、ページ上のレコメンデーションユニットの表示場所を上書きしたりできます。
 
-   この手順を完了する方法については、開発者ドキュメントの [ カスタマイズ ](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html) を参照してください。
+   この手順を完了する方法については、開発者ドキュメントの [&#x200B; カスタマイズ &#x200B;](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html) を参照してください。
 
 1. **非実稼動環境でのレコメンデーションのテスト**
 
@@ -53,8 +53,8 @@ ht-degree: 0%
    >
    > 実稼動以外の環境カタログが、実稼動環境とほとんど同じであることを確認します。 同様のカタログを使用すると、レコメンデーションユニットに返される製品が実稼動環境の製品に非常に近くなります。
 
-   この手順を完了する方法については、実稼動環境からの [ 取得 ](staging-environment.md) 行動データを参照してください。
+   この手順を完了する方法については、実稼動環境からの [&#x200B; 取得 &#x200B;](staging-environment.md) 行動データを参照してください。
 
 1. **レコメンデーションを作成して実稼動ストアフロントにデプロイする**
 
-   これで、行動データ収集を実稼動環境にデプロイし、製品レコメンデーションテンプレートを変更し、実際の買い物客の行動を使用してレコメンデーションをテストしたので、すべてのコードを実稼動環境に昇格し、実稼動環境で製品レコメンデーションを [ 作成 ](create.md) する準備が整いました。
+   これで、行動データ収集を実稼動環境にデプロイし、製品レコメンデーションテンプレートを変更し、実際の買い物客の行動を使用してレコメンデーションをテストしたので、すべてのコードを実稼動環境に昇格し、実稼動環境で製品レコメンデーションを [&#x200B; 作成 &#x200B;](create.md) する準備が整いました。
