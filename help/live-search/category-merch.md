@@ -3,7 +3,7 @@ title: カテゴリマーチャンダイジング
 description: カテゴリ  [!DNL Live Search]  マーチャンダイジングを使用すると、ショッピングエクスペリエンスを高速化できます。
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
+badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
 source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1118'
@@ -42,7 +42,7 @@ ht-degree: 0%
 カテゴリマーチャンダイジングでは、[&#x200B; 個々の製品 &#x200B;](rules-workspace.md) と同じランキングタイプを使用します。
 ランキングには、インテリジェントと手動の 2 種類があります。
 
-**インテリジェントランキング** では、[Adobe AI](https://business.adobe.com/ai.html) によるストアフロントの行動データ分析を活用して、選択したカテゴリ内のすべての商品を特定のアルゴリズムで並べ替えます。 インテリジェントなランキングが選択されると、基になるデータが継続的にAdobe AI によって再分析されるので、商品の特定の順序は時間の経過と共に変化することが予想されます。 例えば、上位のトレンド製品は、買い物客の環境設定の変化に応じて、時間の経過と共に自動的に変化します。
+**インテリジェントランキング** では、[Adobe AI](https://business.adobe.com/jp/ai.html) によるストアフロントの行動データ分析を活用して、選択したカテゴリ内のすべての商品を特定のアルゴリズムで並べ替えます。 インテリジェントなランキングが選択されると、基になるデータが継続的にAdobe AI によって再分析されるので、商品の特定の順序は時間の経過と共に変化することが予想されます。 例えば、上位のトレンド製品は、買い物客の環境設定の変化に応じて、時間の経過と共に自動的に変化します。
 インテリジェントなランキングメソッドは次のとおりです。
 
 * 最も多く購入された：過去 7 日間に買い物客が購入した頻度で製品をランク付けします。

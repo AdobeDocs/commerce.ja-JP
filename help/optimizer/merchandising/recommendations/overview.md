@@ -2,7 +2,7 @@
 title: Recommendations の概要
 description: Recommendations は、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる、強力なマーケティングツールです。
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: cb10c802-afaf-40fa-b463-73f5ae507d66
 source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Recommendations の概要
 
-Recommendations は、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる、強力なマーケティングツールです。 Recommendations は、[Adobe AI](https://business.adobe.com/ai.html) を活用しています。この AI は、人工知能と機械学習アルゴリズムを使用して、集計された訪問者データの詳細な分析を行います。 このデータをAdobe Commerce カタログと組み合わせると、非常に魅力的で関連性が高く、パーソナライズされたエクスペリエンスが実現します。
+Recommendations は、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる、強力なマーケティングツールです。 Recommendations は、[Adobe AI](https://business.adobe.com/jp/ai.html) を活用しています。この AI は、人工知能と機械学習アルゴリズムを使用して、集計された訪問者データの詳細な分析を行います。 このデータをAdobe Commerce カタログと組み合わせると、非常に魅力的で関連性が高く、パーソナライズされたエクスペリエンスが実現します。
 
 レコメンデーションは、「この商品を閲覧した顧客も閲覧した」などのラベル付きユニットとしてストアフロントに表示されます。 Adobe Commerce Optimizerから直接、ストアビュー全体でレコメンデーションを作成、管理およびデプロイできます。
 

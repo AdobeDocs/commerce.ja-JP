@@ -14,7 +14,7 @@ ht-degree: 0%
 [!DNL Live Search] では様々なファセットタイプを使用し、関連性がある場合にのみ *フィルター* リストに表示されます。 使用可能なファセットのリストは、返される製品に応じて変わります。 その表示と動作には、次の特徴が影響します。
 
 * ピンされたファセット – 最も一般的に使用されるファセットをリストの上部にピン留めできます。 残りのファセットは、ピン留めされたファセットの後に *並べ替えタイプ* の順序で一覧表示されます。
-* 動的ファセット - [Adobe AI](https://business.adobe.com/ai.html) が商品セットおよびクエリと最も関連性の高い商品を見つける商品属性。 計算では、カタログ全体の属性メタデータが考慮され、クエリ時に、クエリに最も関連性の高いファセットが決定されます。
+* 動的ファセット - [Adobe AI](https://business.adobe.com/jp/ai.html) が商品セットおよびクエリと最も関連性の高い商品を見つける商品属性。 計算では、カタログ全体の属性メタデータが考慮され、クエリ時に、クエリに最も関連性の高いファセットが決定されます。
 
   >[!NOTE]
   >
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ### ファセットラベル
 
-ストアフロント [!DNL Commerce] 場合、ファセットラベルは [*属性プロパティ*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) によって決まります。 複数のビューを持つストアの場合、追加のラベルは *ラベルを管理* で定義できます。 ヘッドレス実装の場合、ラベルは [&#x200B; ファセットワークスペース &#x200B;](faceting-workspace.md) から編集されます。
+ストアフロント [!DNL Commerce] 場合、ファセットラベルは [*属性プロパティ*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) によって決まります。 複数のビューを持つストアの場合、追加のラベルは *ラベルを管理* で定義できます。 ヘッドレス実装の場合、ラベルは [&#x200B; ファセットワークスペース &#x200B;](faceting-workspace.md) から編集されます。
 
 ### 並べ替えタイプ
 
