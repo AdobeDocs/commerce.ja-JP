@@ -3,7 +3,7 @@ title: 移行先  [!DNL Adobe Commerce as a Cloud Service]
 description: ' [!DNL Adobe Commerce as a Cloud Service] への移行方法を説明します。'
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 role: Developer
 level: Intermediate
 source-git-commit: af56d52f98a83310b858f82f16693f5323c1b962
@@ -25,8 +25,8 @@ ht-degree: 0%
 
 **主な違い**
 
-* [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**PaaS （最新）**：マーチャントは、Adobeがホストする環境内でアプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。 サービス（MySQL、Elasticsearchなど）の [&#x200B; 共有責任モデル &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)。
-* [!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}**SaaS （新規 – [!DNL Adobe Commerce as a Cloud Service]）**: Adobeは、コアアプリケーション、インフラストラクチャ、およびアップデートを完全に管理します。 マーチャントは、拡張ポイント(API、アプリケーションビルダー、UI SDK)を使用してカスタマイズをフォーカスするします。 コア アプリケーション コードはロックされています。
+* [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**PaaS （最新）**：マーチャントは、Adobeがホストする環境内でアプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。 サービス（MySQL、Elasticsearchなど）の [&#x200B; 共有責任モデル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/shared-responsibility)。
+* [!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}**SaaS （新規 – [!DNL Adobe Commerce as a Cloud Service]）**: Adobeは、コアアプリケーション、インフラストラクチャ、およびアップデートを完全に管理します。 マーチャントは、拡張ポイント(API、アプリケーションビルダー、UI SDK)を使用してカスタマイズをフォーカスするします。 コア アプリケーション コードはロックされています。
 
 **アーキテクチャへの影響**
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 * [Adobe Systems 開発者アプリケーションビルダー](https://developer.adobe.com/app-builder/) およびAdobe Systems開発者アプリケーションビルダー用の [API メッシュ](https://developer.adobe.com/graphql-mesh-gateway)
 * [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge 配信 サービス](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* [Edge 配信 サービス](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
 * [Commerce Cloud マネージャーによるセルフサービスプロビジョニング](../getting-started.md#create-an-instance)
 
 ## 移行パス
@@ -169,7 +169,7 @@ ht-degree: 0%
 
 * **カタログ データの同期**: Adobe Systems Commerce PaaS インスタンス が、商品およびカタログ データを既存の Adobe Systems コマース カタログ SaaS サービスに引き続き同期していることを確認します。 これは通常、PaaS インスタンス内の確立されたコネクタまたはモジュールに依存します。 カタログ SaaS サービスは、検索およびマーチャンダイジング機能の信頼できるソースであり続け、PaaS バックエンドからデータを派生させます。
 * **最適化のための API メッシュ**: ヘッドレス ストアフロント (Edge 配信 サービス上) やその他のサービスはカタログ SaaS サービスのデータを直接消費できますが、Adobe Systems (アプリケーション Builder 内) API メッシュを使用することを強くお勧めします。 API Mesh は、カタログ SaaS サービスの API と PaaS バックエンドの他の必要な API (トランザクションデータベースからのリアルタイムインベントリチェックや、カタログ SaaS サービスに完全にレプリケートされていないカスタム製品属性など) を単一のパフォーマンスの高い GraphQL エンドポイントに統合できます。 これにより、キャッシュ、認証、および応答変換を一元化することもできます。
-* **Live Search と Product Recommendations の統合**: Live Search と Product Recommendations SaaS サービスを設定して [&#x200B; カタログデータを取り込む &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) 既存のAdobe Commerce Catalog SaaS サービスから直接アクセスします。
+* **Live Search と Product Recommendations の統合**: Live Search と Product Recommendations SaaS サービスを設定して [&#x200B; カタログデータを取り込む &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/live-search/install#configure-the-data) 既存のAdobe Commerce Catalog SaaS サービスから直接アクセスします。
 
 **メリット**：既存および運用中のカタログ SaaS サービスとその PaaS バックエンドとの統合パイプラインを活用することで、ヘッドレスストアフロントおよび高度な SaaS マーチャンダイジング機能への迅速な道筋を提供します。 ただし、プライマリ カタログ データソースの PaaS バックエンドへの依存関係は保持され、新しいコンポーザブル カタログ データ モデルに固有のマルチソース集計機能は提供されません。 このオプションは、より完全でコンポーザブルなアーキテクチャに向けた有効な足掛かりとなります。
 
