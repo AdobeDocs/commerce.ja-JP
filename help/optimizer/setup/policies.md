@@ -2,11 +2,11 @@
 title: ポリシー
 description: ' [!DNL Adobe Commerce Optimizer] でポリシーを作成および管理する方法について説明します。'
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: 845d93e367c8e2495943afe8c7d5d0a4bde990c2
+source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 |---|---|---|
 | **属性** | フィルタリングに使用する製品属性。 | `part_category` |
 | **演算子** | 属性に適用される条件。 | `IN`、`EQUALS`、`CONTAINS` |
-| **値のソース** | 値が `STATIC` か `TRIGGER` かを指定します。 | `STATIC` [&#x200B; 詳細情報 &#x200B;](#value-source-types) |
+| **値のソース** | 値が `STATIC` か `TRIGGER` かを指定します。 | `STATIC` [ 詳細情報 ](#value-source-types) |
 | **値** | 条件を満たす特定の値。 | `brakes, suspension` |
 
 ### 例
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 **値のソース** が **トリガー** のポリシーは、排他的ポリシーと呼ばれます。 つまり、API 呼び出しのヘッダーでポリシーが指定されている場合にのみ、カタログビューがそのトリガーを実行します。 ストアフロントでは、買い物客が選択した内容に基づいて情報が表示されます。 例えば、次の画像には、**ブランド** と **モデル** の 2 つのドロップダウンメニューがあります。
 
-![&#x200B; ストアフロントのトリガー値ソース &#x200B;](../assets/policy-trigger.png)
+![ ストアフロントのトリガー値ソース ](../assets/policy-trigger.png)
 
 **ブランド** および **モデル** は、次のトリガーで定義されます。
 
@@ -76,7 +76,7 @@ ht-degree: 0%
    1. **属性** - カタログから属性を入力します。 例えば、「part_category」と入力します。 この名前は、カタログの属性の名前と完全に一致する必要があります。
    1. **演算子** - オペレーターを選択します。 例えば、**IN** です。&#x200B;
    1. **値Source** - 「**STATIC**」を選択します。&#x200B;
-   1. **値** – 以前に指定した属性定義の値を入力します。 たとえば、「ブレーキ」と入力して、ブレーキ パーツのフィルタを作成します。&#x200B;値は属性名と完全に一致する必要があります。
+   1. **値** – 以前に指定した属性定義の値を入力します。 たとえば、「ブレーキ」と入力して、ブレーキ パーツのフィルタを作成します。
    1. 値を保存するには、**Enter** キーを押します。
 
       ポリシーが複数の値でフィルタリングするように設計されている場合は、各値を個別に入力します。

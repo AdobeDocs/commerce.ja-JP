@@ -2,11 +2,11 @@
 title: 制限と境界
 description: 処理能力  [!DNL Adobe Commerce Optimizer]  計画し、パフォーマンスの問題を防ぐための制限と境界を理解します。
 role: Admin, Developer
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: f9ac230d448f071e6e8e6368b940f0c415abb02b
+source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1337'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,15 @@ ht-degree: 0%
 
 ## 追加容量のリクエスト
 
-ライセンスの上限は、[&#x200B; ライセンスの上限とシステムの範囲 &#x200B;](#license-limits-and-system-boundaries) の節に記載されているライセンスパッケージを購入するか、個別のユースケースに合わせてカスタムライセンスを交渉することで増やすことができます。 要件については、Adobe アカウント担当者にお問い合わせください。
+ライセンスの上限は、[ ライセンスの上限とシステムの範囲 ](#license-limits-and-system-boundaries) の節に記載されているライセンスパッケージを購入するか、個別のユースケースに合わせてカスタムライセンスを交渉することで増やすことができます。 要件については、Adobe アカウント担当者にお問い合わせください。
 
-システムの境界については、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support) にお問い合わせください。
+システムの境界については、[Adobe サポート ](https://experienceleague.adobe.com/home?lang=en#support) にお問い合わせください。
 
 ## パフォーマンスの問題を防ぐ
 
 次のベストプラクティスに従って、制限を超えないようにし、運用上の問題を回避します。
 
-- **上限をレビュー** – 新しいストアフロントやキャンペーンを開始する前に [&#x200B; 容量上限 &#x200B;](#license-limits-and-system-boundaries) を理解します。
+- **上限をレビュー** – 新しいストアフロントやキャンペーンを開始する前に [ 容量上限 ](#license-limits-and-system-boundaries) を理解します。
 - **使用状況の追跡** - ビルトインの指標ダッシュボードまたは CDN ログを使用します。
 
 ## ライセンスの制限とシステムの境界
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 | **機能** | **説明** | **基本配分** | **拡張可能** |
 | --- | --- | --- | --- |
-| 価格帳簿 | インスタンスごとに許可される価格帳簿の数 | [&#x200B; カタログバリエーション &#x200B;](#catalog) の数に基づく | はい <br> カタログのバリエーションを増やす |
+| 価格帳簿 | インスタンスごとに許可される価格帳簿の数 | [ カタログバリエーション ](#catalog) の数に基づく | はい <br> カタログのバリエーションを増やす |
 | 価格レコードあたりの割引 | 1 つの価格台帳内の製品価格に適用できる割引の数 | 10 | 不可 |
 
 {style="table-layout:auto"}
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**パワーユーザー** は、Adobe Expressに直接アクセスすることも、Adobe Commerce Optimizer内でアクセスすることもできます。 **共同作業者ユーザー** は、Adobe Expressアプリケーションに直接アクセスできます。 使用方法は、[Adobe ExpressとFirefly製品固有のライセンス条件 &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf) に準拠します。
+>**パワーユーザー** は、Adobe Expressに直接アクセスすることも、Adobe Commerce Optimizer内でアクセスすることもできます。 **共同作業者ユーザー** は、Adobe Expressアプリケーションに直接アクセスできます。 使用方法は、[Adobe ExpressとFirefly製品固有のライセンス条件 ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf) に準拠します。
 
 
 >[!BEGINSHADEBOX  「Dynamic Media の使用状況の計算」 ]
@@ -104,7 +104,7 @@ Dynamic Media 使用状況は、Adobe Commerce Optimizer内の Product Visuals �
 
 | **機能** | **説明** | **基本配分** | **拡張可能** |
 | --- | --- | --- | --- |
-| カタログビュー | マスターカタログの設定可能なサブセットの数 | [&#x200B; カタログバリエーション &#x200B;](#catalog) の数に基づく | はい <br> カタログのバリエーションを増やす |
+| カタログビュー | マスターカタログの設定可能なサブセットの数 | [ カタログバリエーション ](#catalog) の数に基づく | はい <br> カタログのバリエーションを増やす |
 | カタログビューごとのポリシー | 許可されるデータフィルターの数 | 10 | 不可 |
 | ポリシーの属性値 | フィルタリング用に設定できる製品特性の数 | 100 | 不可 |
 
@@ -149,7 +149,6 @@ Dynamic Media 使用状況は、Adobe Commerce Optimizer内の Product Visuals �
 | --- | --- | --- | --- |
 | アクティブなレコメンデーションユニット | ストアフロントにあるライブのレコメンデーションコンポーネントの数（「顧客も閲覧」や「お客様も気に入る可能性あり」） | 50 | 不可 |
 | カテゴリまたは属性の包含/除外 | レコメンデーションの対象となる特定のセットに製品をフィルタリングする | サポートなし | |
-| お勧めをプレビュー | 公開前に、ストアフロントでのレコメンデーションの表示方法をプレビューします | サポートなし | |
 
 {style="table-layout:auto"}
 
@@ -157,7 +156,7 @@ Dynamic Media 使用状況は、Adobe Commerce Optimizer内の Product Visuals �
 
 | **機能** | **説明** | **基本配分** | **拡張可能** | **備考** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | クラウドネイティブな拡張機能と統合を構築する機能 | GMV 層に基づく<p>最小割り当て：1 パック/年</p> | はい<p>追加パックを追加する</p> | パックごとに定義される制限については、以下を参照してください。<ul><li>パックごとに定義された制限に対する [0&rbrace;App Builder製品の説明 &rbrace;。](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-developer-app-builder.html)</li><li>[2&rbrace;App Builder Runtime Guides&rbrace; の &#x200B;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) システム設定と制限事項 *を参照してください。*</li><li>[App Builderのストレージ要件 &#x200B;](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | クラウドネイティブな拡張機能と統合を構築する機能 | GMV 層に基づく<p>最小割り当て：1 パック/年</p> | はい<p>追加パックを追加する</p> | パックごとに定義される制限については、以下を参照してください。<ul><li>パックごとに定義された制限に対する [0}App Builder製品の説明 }。](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)</li><li>[2}App Builder Runtime Guides} の ](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) システム設定と制限事項 *を参照してください。*</li><li>[App Builderのストレージ要件 ](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
