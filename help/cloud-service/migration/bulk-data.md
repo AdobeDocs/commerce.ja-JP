@@ -23,7 +23,7 @@ ht-degree: 0%
 
 次の画像は、一括データ移行ツールを使用する際のアーキテクチャと主要なコンポーネントの詳細を示しています。
 
-![PaaS から SaaS へのデータフローを示す一括データ移行ツールのアーキテクチャ図 ](../assets/bulk-data-diagram.png){zoomable="yes"}
+![PaaS から SaaS へのデータフローを示す一括データ移行ツールのアーキテクチャ図 &#x200B;](../assets/bulk-data-diagram.png){zoomable="yes"}
 
 ## 移行ワークフロー
 
@@ -65,7 +65,7 @@ ht-degree: 0%
       - IMS URL - ベースURL。 例えば、 `https://ims-na1.adobelogin.com/`。
       - IMS 組織 ID
 
-   IMS 範囲およびその他の値については、**Adobe Developer Console** のプロジェクト内の [ 資格情報 ](https://developer.adobe.com/console/) セクションで OAuth タイプを選択します。 詳しくは、抽出ツールに付属している `.example.env` ファイルを参照してください。
+   IMS 範囲およびその他の値については、**Adobe Developer Console** のプロジェクト内の [&#x200B; 資格情報 &#x200B;](https://developer.adobe.com/console/) セクションで OAuth タイプを選択します。 詳しくは、抽出ツールに付属している `.example.env` ファイルを参照してください。
 
 ### データを抽出
 

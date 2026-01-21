@@ -19,14 +19,14 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->移行ツールについて詳しくは、[ 一括データ移行ツール ](./bulk-data.md) を参照してください。
+>移行ツールについて詳しくは、[&#x200B; 一括データ移行ツール &#x200B;](./bulk-data.md) を参照してください。
 
 ## シフトの理解 – PaaS と SaaS の比較
 
 **主な違い**
 
-* [!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**PaaS （最新）**：マーチャントは、Adobeがホストする環境内でアプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。 サービス（MySQL、Elasticsearchなど）の [ 共有責任モデル ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)。
-* [!BADGE SaaS のみ ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}**SaaS （新規 – [!DNL Adobe Commerce as a Cloud Service]）**: Adobeは、コアアプリケーション、インフラストラクチャ、およびアップデートを完全に管理します。 マーチャントは、拡張ポイント(API、アプリケーションビルダー、UI SDK)を使用してカスタマイズをフォーカスするします。 コア アプリケーション コードはロックされています。
+* [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**PaaS （最新）**：マーチャントは、Adobeがホストする環境内でアプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。 サービス（MySQL、Elasticsearchなど）の [&#x200B; 共有責任モデル &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)。
+* [!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}**SaaS （新規 – [!DNL Adobe Commerce as a Cloud Service]）**: Adobeは、コアアプリケーション、インフラストラクチャ、およびアップデートを完全に管理します。 マーチャントは、拡張ポイント(API、アプリケーションビルダー、UI SDK)を使用してカスタマイズをフォーカスするします。 コア アプリケーション コードはロックされています。
 
 **アーキテクチャへの影響**
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 * **Commerce Optimizer** - このアプローチでは、Commerce Optimizer を移行フェーズとして使用して、複雑なカスタマイズやデータを自分のペースで [!DNL Adobe Commerce as a Cloud Service] に移行することで、繰り返し移行できます。 Commerce Optimizer は、カタログ ビューとポリシーを利用したマーチャンダイジング サービス、Edge 配信を利用したコマース ストアフロント、および [!DNL Product Visuals powered by AEM Assets]へのアクセスを提供します。
 
-![ 反復移行 ](../assets/optimizer.png){width="600" zoomable="yes"}
+![&#x200B; 反復移行 &#x200B;](../assets/optimizer.png){width="600" zoomable="yes"}
 
 * **完全移行**：このアプローチでは、すべてのデータ、カスタマイズ、統合を一度に移行する必要があります。 このアプローチは、[!DNL Adobe Commerce as a Cloud Service] に迅速に移行したいカスタマイズが少ない小規模なマーチャントに最適です。
 
@@ -74,8 +74,8 @@ ht-degree: 0%
 
 * **データ移行** - 提供されている [移行ツール](./bulk-data.md) を使用して、既存のインスタンスから [!DNL Adobe Commerce as a Cloud Service] にデータを移行します。
 * **ストアフロント** - Edge Deliveryを活用した既存のCommerce ストアフロントとヘッドレスストアフロントは軽減の必要はありませんが、Luma ストアフロントはEdge Deliveryを活用したCommerce Storefront に移行する必要があります。 PWA Studio ストアフロントは、Edge Deliveryを活用して、または現在の状態で維持しながら、Commerce ストアフロントに移行できます。 Adobeは、ストアフロントへの移行を支援するためのアクセラレーターを提供します。
-* **[API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway)** – 新しいメッシュを作成するか、既存のメッシュを修正します。 Adobeは、このプロセスを支援するために事前設定済みのメッシュを提供します。
-* **統合** – すべての統合は、[ 統合スターターキット ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) または [[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/) のいずれかを活用する必要があります。
+* **[API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway)** – 新しいメッシュを作成するか、既存のメッシュを修正します。 Adobeは、このプロセスを支援するために事前設定済みのメッシュを提供します。
+* **統合** – すべての統合は、[&#x200B; 統合スターターキット &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) または [[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/) のいずれかを活用する必要があります。
 * **カスタマイズ** – すべてのカスタマイズは、App Builderと API メッシュに移動する必要があります。
 * **Assets管理**:すべてを選択アセット管理には移行が必要です。 既に [!DNL AEM Assets] を使用している場合は、移行する必要はありません。
 * **Mixin** - インプロセス拡張機能をアウトプロセス拡張機能として再作成する必要があります。 2025年末までに、Adobe Systemsは最も人気のある拡張機能へのアクセスを提供し、ビルド時間を最小限に抑えます。
@@ -169,7 +169,7 @@ ht-degree: 0%
 
 * **カタログ データの同期**: Adobe Systems Commerce PaaS インスタンス が、商品およびカタログ データを既存の Adobe Systems コマース カタログ SaaS サービスに引き続き同期していることを確認します。 これは通常、PaaS インスタンス内の確立されたコネクタまたはモジュールに依存します。 カタログ SaaS サービスは、検索およびマーチャンダイジング機能の信頼できるソースであり続け、PaaS バックエンドからデータを派生させます。
 * **最適化のための API メッシュ**: ヘッドレス ストアフロント (Edge 配信 サービス上) やその他のサービスはカタログ SaaS サービスのデータを直接消費できますが、Adobe Systems (アプリケーション Builder 内) API メッシュを使用することを強くお勧めします。 API Mesh は、カタログ SaaS サービスの API と PaaS バックエンドの他の必要な API (トランザクションデータベースからのリアルタイムインベントリチェックや、カタログ SaaS サービスに完全にレプリケートされていないカスタム製品属性など) を単一のパフォーマンスの高い GraphQL エンドポイントに統合できます。 これにより、キャッシュ、認証、および応答変換を一元化することもできます。
-* **Live Search と Product Recommendations の統合**: Live Search と Product Recommendations SaaS サービスを設定して [ カタログデータを取り込む ](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) 既存のAdobe Commerce Catalog SaaS サービスから直接アクセスします。
+* **Live Search と Product Recommendations の統合**: Live Search と Product Recommendations SaaS サービスを設定して [&#x200B; カタログデータを取り込む &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) 既存のAdobe Commerce Catalog SaaS サービスから直接アクセスします。
 
 **メリット**：既存および運用中のカタログ SaaS サービスとその PaaS バックエンドとの統合パイプラインを活用することで、ヘッドレスストアフロントおよび高度な SaaS マーチャンダイジング機能への迅速な道筋を提供します。 ただし、プライマリ カタログ データソースの PaaS バックエンドへの依存関係は保持され、新しいコンポーザブル カタログ データ モデルに固有のマルチソース集計機能は提供されません。 このオプションは、より完全でコンポーザブルなアーキテクチャに向けた有効な足掛かりとなります。
 
