@@ -2,7 +2,7 @@
 title: 制限と境界
 description: 処理能力  [!DNL Adobe Commerce Optimizer]  計画し、パフォーマンスの問題を防ぐための制限と境界を理解します。
 role: Admin, Developer
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ライセンスの上限は、[&#x200B; ライセンスの上限とシステムの範囲 &#x200B;](#license-limits-and-system-boundaries) の節に記載されているライセンスパッケージを購入するか、個別のユースケースに合わせてカスタムライセンスを交渉することで増やすことができます。 要件については、Adobe アカウント担当者にお問い合わせください。
 
-システムの境界については、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/home?lang=en#support) にお問い合わせください。
+システムの境界については、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support) にお問い合わせください。
 
 ## パフォーマンスの問題を防ぐ
 
@@ -156,7 +156,7 @@ Dynamic Media 使用状況は、Adobe Commerce Optimizer内の Product Visuals �
 
 | **機能** | **説明** | **基本配分** | **拡張可能** | **備考** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | クラウドネイティブな拡張機能と統合を構築する機能 | GMV 層に基づく<p>最小割り当て：1 パック/年</p> | はい<p>追加パックを追加する</p> | パックごとに定義される制限については、以下を参照してください。<ul><li>パックごとに定義された制限に対する [0&rbrace;App Builder製品の説明 &rbrace;。](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)</li><li>[2&rbrace;App Builder Runtime Guides&rbrace; の &#x200B;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) システム設定と制限事項 *を参照してください。*</li><li>[App Builderのストレージ要件 &#x200B;](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | クラウドネイティブな拡張機能と統合を構築する機能 | GMV 層に基づく<p>最小割り当て：1 パック/年</p> | はい<p>追加パックを追加する</p> | パックごとに定義される制限については、以下を参照してください。<ul><li>パックごとに定義された制限に対する [0&rbrace;App Builder製品の説明 &rbrace;。](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-developer-app-builder.html)</li><li>[2&rbrace;App Builder Runtime Guides&rbrace; の &#x200B;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) システム設定と制限事項 *を参照してください。*</li><li>[App Builderのストレージ要件 &#x200B;](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
