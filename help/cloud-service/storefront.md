@@ -5,7 +5,7 @@ feature: Storefront
 role: Developer
 level: Beginner
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
 workflow-type: tm+mt
 source-wordcount: '250'
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Storefront] for [!DNL Edge Delivery Services] （SaaS）を使用した [!DNL Adobe Commerce as a Cloud Service] を設定するには、次の手順を実行します。
 
-カスタマイズ可能で詳細なチュートリアルについては、[&#x200B; ストアフロントのドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) を参照してください。
+カスタマイズ可能で詳細なチュートリアルについては、[&#x200B; ストアフロントのドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja) を参照してください。
 
 1. [&#x200B; サイト作成ツール &#x200B;](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator) を開きます。
 
@@ -47,5 +47,5 @@ ht-degree: 0%
 * [&#x200B; ストアフロントコンテンツの更新 &#x200B;](./use-cases.md#update-storefront-content) - ストアフロントのコンテンツとデータを管理および表示します。
 * [&#x200B; コンテキスト実験 &#x200B;](./use-cases.md#contextual-experimentation) - ストアフロントで実験を作成および管理します。
 * [&#x200B; バリエーションを生成 &#x200B;](./use-cases.md#generate-variations) – 生成 AI を使用して、高品質のコンテンツ生成を自動化します。
-* [Adobe Commerce ストアフロントのドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/) - サイトコンテンツの更新と、Commerceのフロントエンドコンポーネントおよびバックエンドデータとの統合に関する詳細情報を説明します。
+* [Adobe Commerce ストアフロントのドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) - サイトコンテンツの更新と、Commerceのフロントエンドコンポーネントおよびバックエンドデータとの統合に関する詳細情報を説明します。
 * [&#x200B; 設定サービス &#x200B;](https://www.aem.live/docs/config-service-setup) - `config.json` からストアフロント設定を移行して、リポジトリ設定やオーバーレイなどの高度なユースケースをサポートする設定サービスを使用する方法について説明します。

@@ -2,7 +2,7 @@
 title: ストアフロントの設定
 description: ストアフロントの設定方法  [!DNL Adobe Commerce Optimizer]  説明します。
 role: Developer
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
 workflow-type: tm+mt
@@ -218,28 +218,28 @@ Site Creator ツールは、次のコンポーネントを含む完全なスト�
 
 問題が解決しない場合：
 
-* [Adobe Commerce ストアフロントのドキュメントを確認してください &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* [Adobe Commerce ストアフロントのドキュメントを確認してください &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
 * [Adobe Commerce Optimizer開発者ガイドを確認してください &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)
-* [Adobe Commerce サポートリソース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) にアクセスします
+* [Adobe Commerce サポートリソース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview) にアクセスします
 
 ## 次の手順
 
 ストアフロントを設定して検証すると、次の操作を実行できます。
 
-1. **[Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** ブラウザー拡張機能をインストールして、web サイトから直接コンテンツを編集、プレビューおよび公開します。
+1. **[Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=ja#install-and-configure-sidekick)** ブラウザー拡張機能をインストールして、web サイトから直接コンテンツを編集、プレビューおよび公開します。
 
-2. **[ローカル開発環境の設定 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** - ストアフロントのコードとコンテンツをカスタマイズするローカル環境を作成します。
+2. **[ローカル開発環境の設定 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=ja#set-up-local-environment)** - ストアフロントのコードとコンテンツをカスタマイズするローカル環境を作成します。
 
 ### の学習と探索
 
 * **[エンドツーエンドの使用例を完了](./use-case/admin-use-case.md)** - [!DNL Adobe Commerce Optimizer] を使用したストアフロントのセットアップとカタログ管理の詳細について説明します。
 
-* **[ストアフロントのカスタマイズについて &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)** - セットアップと設定の詳細オプションについて説明します。
+* **[ストアフロントのカスタマイズについて &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=ja)** - セットアップと設定の詳細オプションについて説明します。
 
-* **[Commerce ドロップダウンを使用してストアフロントのエクスペリエンスをカスタマイズ &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)** 事前定義済みコンポーネントを追加して、ストアフロントのエクスペリエンスを強化します。
+* **[Commerce ドロップダウンを使用してストアフロントのエクスペリエンスをカスタマイズ &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=ja)** 事前定義済みコンポーネントを追加して、ストアフロントのエクスペリエンスを強化します。
 
 * **ストアフロント構成サービスに移行** – 初期ストアフロントを作成したら、構成サービスを使用するように構成を移行できます。このサービスは、リポジトリ構成やオーバーレイなどの高度なユースケースをサポートします。 詳しくは、Adobe Experience Managerにある [&#x200B; 設定サービス &#x200B;](https://www.aem.live/docs/config-service-setup) ドキュメントを参照してください。
 
 >[!MORELIKETHIS]
 >
-> サイトコンテンツの更新と [Adobe Commerceのフロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、](https://experienceleague.adobe.com/developer/commerce/storefront/)Commerce ストアフロントのドキュメントを参照してください。
+> サイトコンテンツの更新と [Adobe Commerceのフロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)Commerce ストアフロントのドキュメントを参照してください。
