@@ -2,11 +2,11 @@
 title: Adobe Commerce Optimizerとは
 description: ' [!DNL Adobe Commerce Optimizer]  とその主な機能について説明します。'
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer] の概要については、次のビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3450464?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## [!DNL Adobe Commerce Optimizer] から最も利益を得るのは誰ですか？
 
@@ -85,8 +85,12 @@ ht-degree: 0%
 - **Edge DeliveryによるCommerce ストアフロント** - Edge配信を使用すると、商品リストページ、商品詳細ページ、買い物かご、チェックアウトなど、統合されたコマース機能を備えた事前に作成されたストアフロントコンポーネントを使用して、すばやくサイトを起動できます。
 - **サードパーティの買い物かごとチェックアウト** - API メッシュと App Builder を使用して、サードパーティの買い物かごとチェックアウトシステムと統合します。
 
+>[!NOTE]
+>
+>[!DNL Adobe Commerce Optimizer] の機能のシステムの境界とライセンスについて理解するには、[ 制限と境界 ](boundaries-limits.md) のトピックを参照してください。
+
 ## アーキテクチャ
 
 次の図は、カタログデータの取り込みから、マーチャンダイジングサービス、ストアフロント、サードパーティの買い物かごとの統合とチェックアウトプロセスとの関係に至るまで、[!DNL Adobe Commerce Optimizer] の基本的なアーキテクチャを示しています。
 
-![[!DNL Adobe Commerce Optimizer] アーキテクチャ &#x200B;](./assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer] アーキテクチャ ](./assets/architecture.png)
