@@ -3,7 +3,7 @@ title: ログの確認とトラブルシューティング
 description: データの書き出しログと saas [!DNL data export]  書き出しログを使用してエラーのトラブルシューティングを行う方法を説明します。
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
+source-git-commit: a1afed7b635a2b05c5c0e0d1c9bf4a07fc5eef31
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 | SaaS エクスポート ログ | `saas-export.log` | Commerce SaaS サービスに送信されるデータに関する情報を提供します。 |
 | SaaS エクスポート エラーログ | `saas-export-errors.log` | Commerce SaaS サービスにデータを送信する際に発生するエラーについて説明します。 |
 
-Adobe Commerce サービスで予期されたデータが表示されない場合は、データエクスポート拡張機能のエラーログを使用して問題の発生場所を特定してください。 また、トラッキングやトラブルシューティングのために、追加データを使用してログを拡張することもできます。 [&#x200B; 拡張ログ &#x200B;](#extended-logging) を参照してください。
+Adobe Commerce サービスで予期されたデータが表示されない場合は、データエクスポート拡張機能のエラーログを使用して問題の発生場所を特定してください。 また、トラッキングやトラブルシューティングのために、追加データを使用してログを拡張することもできます。 [ 拡張ログ ](#extended-logging) を参照してください。
 
 ### ログ形式
 
@@ -80,7 +80,7 @@ Adobe Commerce サービスで予期されたデータが表示されない場�
 - **`"processed: 200"`** は、200 個の項目が処理されたことを示しています。
 - **`"synced: 100"`** は、100 項目が SaaS に送信されたことを示します。 `"synced"` が `"processed"` に等しくないと予想される。 次に例を示します。
    - **`"synced" < "processed"`** れは、以前に同期されたバージョンと比較して、フィードテーブルで項目の変更が検出されなかったことを意味します。 このような項目は、同期操作中は無視されます。
-   - 同じエンティティ id （`Product ID` など）に **`"synced" > "processed"`**、異なるスコープに複数の値を含めることができます。 例えば、1 つの製品を 5 つの web サイトに割り当てることができます。 この場合、「1 件の処理済み」項目と「5 件の同期済み」項目が存在する可能性があります。
+   - 同じエンティティ id （**`"synced" > "processed"`** など）に `Product ID`、異なるスコープに複数の値を含めることができます。 例えば、1 つの製品を 5 つの web サイトに割り当てることができます。 この場合、「1 件の処理済み」項目と「5 件の同期済み」項目が存在する可能性があります。
 
 +++ **例：価格フィードの完全再同期ログ**
 
@@ -116,7 +116,7 @@ Adobe Commerce ログをNew Relicに保存する場合は、解析ルールを�
 
    - **解析ルール**
 
-     `\[%{DATA:timestamp}\] report.%{DATA:logLevel} %{GREEDYDATA:feed:json}`
+     `\[%{DATA:timestamp}\] report.%{DATA:logLevel}: %{GREEDYDATA:feed:json}`
 
 この例では、特定のフィードのタイプや処理などでNew Relic ログをクエリできるルールを追加します。
 
@@ -129,7 +129,7 @@ Commerce Services のデータが見つからない場合や誤っている場�
 - データ書き出しエラーログ（`commerce-data-export-errors.log`）には、収集段階で発生したエラーが記録されます。
 - SaaS 書き出しエラーログ（`saas-export-errors.log`）は、送信段階で発生したエラーをキャプチャします。
 
-設定やサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を記載した [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) を送信します。
+設定やサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を記載した [ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) を送信します。
 
 ### カタログ同期の問題を解決 {#resolvesync}
 
@@ -140,15 +140,15 @@ Commerce Services のデータが見つからない場合や誤っている場�
 1. 検索結果に、該当する製品の詳細ビューを表示します。
 1. JSON 出力をコピーし、コンテンツが [!DNL Commerce] カタログの内容と一致することを確認します。
 1. コンテンツが一致しない場合は、スペースやピリオドの追加など、カタログの製品に小さな変更を加えます。
-1. 再同期を待つか、[&#x200B; 手動の再同期をトリガーしてください &#x200B;](#resync)。
+1. 再同期を待つか、[ 手動の再同期をトリガーしてください ](#resync)。
 
 #### 同期が実行されていません
 
-同期がスケジュールに従って実行されていない場合や、何も同期されていない場合は、この [KnowledgeBase](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) の記事を参照してください。
+同期がスケジュールに従って実行されていない場合や、何も同期されていない場合は、この [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) の記事を参照してください。
 
 #### 同期できませんでした
 
-カタログ同期のステータスが **失敗** の場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) を送信します。
+カタログ同期のステータスが **失敗** の場合は、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) を送信します。
 
 ## 拡張ログ
 
