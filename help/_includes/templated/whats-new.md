@@ -23,7 +23,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service&rbrace; のストアフロント設定ガイドが更新され </a> ストアフロントのボイラープレートリポジトリ内のファイルの代わりに設定サービスを使用するよう、Edge Delivery Services用のCommerce ストアフロント設定の移行に関する情報が追加 <code class="language-plaintext highlighter-rouge">config.json</code> れました。 Adobeでは、Configuration Service を使用して、Edge Delivery Servicesにデプロイされたストアフロントの設定を管理することをお勧めします。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> および <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service&rbrace; のストアフロント設定ガイドが更新され </a> ストアフロントのボイラープレートリポジトリ内のファイルの代わりに設定サービスを使用するよう、Edge Delivery Services用のCommerce ストアフロント設定の移行に関する情報が追加 <code class="language-plaintext highlighter-rouge">config.json</code> れました。 Adobeでは、Configuration Service を使用して、Edge Delivery Servicesにデプロイされたストアフロントの設定を管理することをお勧めします。</p>
 </td>
       <td>
         フィードバック、技術
@@ -89,7 +89,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest"> リリースノート </a> を更新しました。</p>
+      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes#latest"> リリースノート </a> を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -111,7 +111,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce Optimizerのトピック <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits"> 制限と制限 </a> を更新し、ライセンス制限とシステム範囲を説明し、制限の説明を追加し、キャパシティ計画のガイダンスとパフォーマンスの問題を防ぐガイダンスを含めました。</p>
+      <td><p>Adobe Commerce Optimizerのトピック <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits"> 制限と制限 </a> を更新し、ライセンス制限とシステム範囲を説明し、制限の説明を追加し、キャパシティ計画のガイダンスとパフォーマンスの問題を防ぐガイダンスを含めました。</p>
 </td>
       <td>
         フィードバック、技術
@@ -133,7 +133,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.16 および 103.4.17</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes"> カタログアダプターバージョン 1.10.0</a> のリリースノートを追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.16 および 103.4.17</a> および <a href="https://experienceleague.adobe.com/ja/docs/commerce/price-indexer/catalog-adapter/release-notes"> カタログアダプターバージョン 1.10.0</a> のリリースノートを追加しました。</p>
 </td>
       <td>
         技術
@@ -155,7 +155,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets統合ドキュメントの <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">AEMの設定 </a> トピックを更新しました。</p>
+      <td><p>AEM Assets統合ドキュメントの <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">AEMの設定 </a> トピックを更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -177,7 +177,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>次の新しいトピックを追加しました：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities"> オポチュニティ </a>Adobe Sites Optimizer統合を通じて AI を活用したサイト最適化の推奨事項を文書化します。これには、SEO、メタデータ、製品データ品質を向上させるための自動検出ワークフローと自動修正ワークフローが含まれます。<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer"> カタログレイヤー </a> ソースデータを変更せずに商品データを変更する方法を説明します。これには、レイヤーの優先度管理やSites Optimizer自動修正機能との統合が含まれます。</p>
+      <td><p>次の新しいトピックを追加しました：<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/manage-results/opportunities"> オポチュニティ </a>Adobe Sites Optimizer統合を通じて AI を活用したサイト最適化の推奨事項を文書化します。これには、SEO、メタデータ、製品データ品質を向上させるための自動検出ワークフローと自動修正ワークフローが含まれます。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-layer"> カタログレイヤー </a> ソースデータを変更せずに商品データを変更する方法を説明します。これには、レイヤーの優先度管理やSites Optimizer自動修正機能との統合が含まれます。</p>
 </td>
       <td>
         メジャーアップデート、新しいトピック
@@ -199,7 +199,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations"> プレビューペイン </a> として、Commerce Optimizer ドキュメントの Recommendations 機能の更新がサポートされるようになりました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations"> プレビューペイン </a> として、Commerce Optimizer ドキュメントの Recommendations 機能の更新がサポートされるようになりました。</p>
 </td>
       <td>
         技術
