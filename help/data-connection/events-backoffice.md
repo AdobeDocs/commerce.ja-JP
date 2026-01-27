@@ -4,24 +4,24 @@ description: バックオフィスイベントがそれぞれキャプチャす�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
-source-git-commit: 1750aee715946d3a871e021cbbee687f54d1ff09
+source-git-commit: 6ffa18a9f66b6be8cd40bda5aedc911b26fe0e1d
 workflow-type: tm+mt
-source-wordcount: '3618'
+source-wordcount: '3619'
 ht-degree: 0%
 
 ---
 
 # バックオフィスイベントの [!DNL Data Connection] スト
 
-[!DNL Data Connection] 拡張機能のインストール時に使用できるCommerce バックオフィスイベントの一覧を次に示します。 これらのイベントで収集されたデータは、Adobe Experience Platformに送信されます。 また、[&#x200B; カスタムイベント &#x200B;](custom-events.md) を作成して、初期設定では提供されていない追加のデータを収集することもできます。
+[!DNL Data Connection] 拡張機能のインストール時に使用できるCommerce バックオフィスイベントの一覧を次に示します。 これらのイベントで収集されたデータは、Adobe Experience Platformに送信されます。 また、[ カスタムイベント ](custom-events.md) を作成して、初期設定では提供されていない追加のデータを収集することもできます。
 
-次のイベントで収集されるデータに加えて、Adobe Experience Platform web SDKから提供される [&#x200B; その他のデータ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=ja) も取得します。
+次のイベントで収集されるデータに加えて、Adobe Experience Platform web SDKから提供される [ その他のデータ ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) も取得します。
 
-バックオフィスイベントには、サーバーサイドのデータが含まれます。 このデータは、注文が行われた、キャンセルされた、払い戻された、出荷された、完了したなどの [&#x200B; 注文ステータス &#x200B;](#order-status) 情報を含みます。 サーバーサイドのデータには、アカウントが作成、更新、削除されたかどうかなど、[&#x200B; 顧客プロファイルイベント &#x200B;](#customer-profile-events) 情報も含まれます。
+バックオフィスイベントには、サーバーサイドのデータが含まれます。 このデータは、注文が行われた、キャンセルされた、払い戻された、出荷された、完了したなどの [ 注文ステータス ](#order-status) 情報を含みます。 サーバーサイドのデータには、アカウントが作成、更新、削除されたかどうかなど、[ 顧客プロファイルイベント ](#customer-profile-events) 情報も含まれます。
 
 >[!NOTE]
 >
->すべてのバックオフィスイベントには、買い物客のメールアドレス（使用可能な場合）、ECID を含む「[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=ja)」フィールドが含まれます。
+>すべてのバックオフィスイベントには、買い物客のメールアドレス（使用可能な場合）、ECID を含む「[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html)」フィールドが含まれます。
 
 ## 注文ステータス
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 | `commerce.order.payments.paymentTransactionID` | この支払トランザクションの一意の ID。 |
 | `commerce.order.payments.paymentAmount` | 支払いの値。 |
 | `commerce.order.payments.paymentType` | この注文の支払い方法。 カウントされ、カスタム値が許可されます。 |
-| `commerce.order.payments.currencyCode` | [&#x200B; や &#x200B;](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
+| `commerce.order.payments.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `commerce.order.taxAmount` | 最終支払の一部として購入者が支払った税額。 |
 | `commerce.order.discountAmount` | 注文全体に適用される割引額を示します。 |
 | `commerce.order.createdDate` | コマースシステムで新しい注文が作成された日時。 例：`2022-10-15T20:20:39+00:00`。 |
@@ -75,7 +75,7 @@ ht-degree: 0%
 | `productListItems.priceTotal` | 商品品目の合計価格。 |
 | `productListItems.quantity` | 買い物かごに入っている商品の単位数。 |
 | `productListItems.discountAmount` | 適用される割引額を示します。 |
-| `productListItems.currencyCode` | [&#x200B; や &#x200B;](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
+| `productListItems.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `productListItems.selectedOptions` | 設定可能な製品に使用されるフィールド。 |
 | `productListItems.selectedOptions.attribute` | `size` や `color` など、設定可能な製品の属性を識別します。 |
 | `productListItems.selectedOptions.value` | `small` または `black` などの属性の値を識別します。 |
@@ -103,7 +103,7 @@ ht-degree: 0%
 | `commerce.order.currencyCode` | 注文合計に使用される ISO 4217 通貨コード。 |
 | `commerce.order.purchaseOrderNumber` | この購入または契約の購入者によって割り当てられた一意の ID。 |
 | `commerce.order.payments` | この注文の支払いのリスト。 |
-| `commerce.order.payments.currencyCode` | [&#x200B; や &#x200B;](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
+| `commerce.order.payments.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `commerce.order.payments.paymentType` | この注文の支払い方法。 カウントされ、カスタム値が許可されます。 |
 | `commerce.order.payments.paymentAmount` | 支払いの値。 |
 | `commerce.shipping` | 1 つ以上の商品に関する配送の詳細。 |
@@ -132,7 +132,7 @@ ht-degree: 0%
 
 | 説明 | XDM イベント名 |
 |---|---|
-| 注文が出荷されたときにトリガーされます。 | `commerce.backofficeOrderItemsShipped` |
+| 注文品目が出荷されたときにトリガーされます。 | `commerce.backofficeOrderItemsShipped` |
 
 #### orderItemsShipped から収集されたデータ
 
@@ -146,10 +146,10 @@ ht-degree: 0%
 | `commerce.order.payments.paymentTransactionID` | この支払トランザクションの一意の ID。 |
 | `commerce.order.payments.paymentAmount` | 支払いの値。 |
 | `commerce.order.payments.paymentType` | この注文の支払い方法。 カウントされ、カスタム値が許可されます。 |
-| `commerce.order.payments.currencyCode` | [&#x200B; や &#x200B;](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
+| `commerce.order.payments.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `commerce.order.priceTotal` | すべての割引および税金が適用された後のこの注文の合計金額。 |
 | `commerce.order.purchaseOrderNumber` | この購入または契約の購入者によって割り当てられた一意の ID。 |
-| `commerce.order.currencyCode` | [&#x200B; や &#x200B;](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
+| `commerce.order.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `commerce.order.lastUpdatedDate` | コマースシステムで特定の注文レコードが最後に更新された時間。 |
 | `commerce.shipping` | 1 つ以上の商品に関する配送の詳細。 |
 | `commerce.shipping.shippingMethod` | お客様が選択した配送方法（通常配送、優先配送、店舗での受け取りなど）。 |
@@ -161,7 +161,7 @@ ht-degree: 0%
 | `commerce.shipping.address.state` | 都道府県の名前。 これは自由形式フィールドです。 |
 | `commerce.shipping.address.postalCode` | 場所の郵便番号。 郵便番号は、すべての国で利用できるわけではありません。 一部の国では、郵便番号の一部のみが含まれます。 |
 | `commerce.shipping.address.country` | 政府が管理する領土の名前。 `xdm:countryCode` 以外の場合、これは自由形式のフィールドで、どの言語でも国名を持つことができます。 |
-| `commerce.shipping.currencyCode` | [&#x200B; や &#x200B;](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
+| `commerce.shipping.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `commerce.shipping.trackingNumber` | 注文品目出荷に対して出荷配送業者によって提供される追跡番号。 |
 | `commerce.shipping.trackingURL` | 注文項目の配送ステータスをトラッキングする URL。 |
 | `commerce.shipping.shipDate` | 注文から 1 つ以上の品目が出荷された日付。 |
@@ -185,7 +185,7 @@ ht-degree: 0%
 | `productListItems.priceTotal` | 商品品目の合計価格。 |
 | `productListItems.quantity` | 買い物かごに入っている商品の単位数。 |
 | `productListItems.discountAmount` | 適用される割引額を示します。 |
-| `productListItems.currencyCode` | [&#x200B; や &#x200B;](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
+| `productListItems.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `productListItems.selectedOptions` | 設定可能な製品に使用されるフィールド。 |
 | `productListItems.selectedOptions.attribute` | `size` や `color` など、設定可能な製品の属性を識別します。 |
 | `productListItems.selectedOptions.value` | `small` または `black` などの属性の値を識別します。 |
@@ -239,7 +239,7 @@ ht-degree: 0%
 | `commerce.refunds.transactionID` | この払戻の一意の ID。 |
 | `commerce.refunds.refundAmount` | 払い戻しの金額。 |
 | `commerce.refunds.refundPaymentType` | この注文の支払い方法。 カウントされ、カスタム値が許可されます。 |
-| `commerce.refunds.currencyCode` | [&#x200B; や &#x200B;](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
+| `commerce.refunds.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `personalEmail` | 個人の電子メールアドレス。 |
 | `personalEmail.address` | 例えば、技術的アドレス `name@domain.com`、RFC2822 および後続の標準で一般的に定義されています。 |
 | `productListItems` | 順序の商品の配列。 |
@@ -248,7 +248,7 @@ ht-degree: 0%
 | `productListItems.priceTotal` | 商品品目の合計価格。 |
 | `productListItems.quantity` | 買い物かごに入っている商品の単位数。 |
 | `productListItems.discountAmount` | 適用される割引額を示します。 |
-| `productListItems.currencyCode` | [&#x200B; や &#x200B;](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
+| `productListItems.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `productListItems.selectedOptions` | 設定可能な製品に使用されるフィールド。 |
 | `productListItems.selectedOptions.attribute` | `size` や `color` など、設定可能な製品の属性を識別します。 |
 | `productListItems.selectedOptions.value` | `small` または `black` などの属性の値を識別します。 |
@@ -364,7 +364,7 @@ ht-degree: 0%
 | `commerce.order.payments.paymentTransactionID` | この支払トランザクションの一意の ID。 |
 | `commerce.order.payments.paymentAmount` | 支払いの値。 |
 | `commerce.order.payments.paymentType` | この注文の支払い方法。 カウントされ、カスタム値が許可されます。 |
-| `commerce.order.payments.currencyCode` | [&#x200B; や &#x200B;](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
+| `commerce.order.payments.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `commerce.order.taxAmount` | 最終支払の一部として購入者が支払った税額。 |
 | `commerce.order.createdDate` | コマースシステムで新しい注文が作成された日時。 例：`2022-10-15T20:20:39+00:00`。 |
 | `commerce.shipping` | 1 つ以上の商品に関する配送の詳細。 |
@@ -393,7 +393,7 @@ ht-degree: 0%
 | `productListItems.priceTotal` | 商品品目の合計価格。 |
 | `productListItems.quantity` | 買い物かごに入っている商品の単位数。 |
 | `productListItems.discountAmount` | 適用される割引額を示します。 |
-| `productListItems.currencyCode` | [&#x200B; や &#x200B;](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
+| `productListItems.currencyCode` | [ や ](https://en.wikipedia.org/wiki/ISO_4217) など、使用される `USD`ISO 4217`EUR` 通貨コード。 |
 | `productListItems.selectedOptions` | 設定可能な製品に使用されるフィールド。 |
 | `productListItems.selectedOptions.attribute` | `size` や `color` など、設定可能な製品の属性を識別します。 |
 | `productListItems.selectedOptions.value` | `small` または `black` などの属性の値を識別します。 |
@@ -404,11 +404,11 @@ ht-degree: 0%
 
 ## 顧客プロファイルイベント
 
-サーバーサイドから取得したプロファイルイベントには、`accountCreated`、`accountUpdated`、`accountDeleted` などのアカウント情報が含まれます。 このデータは、新規登録割引オファーの送信、アカウント変更の確認など、セグメントを適切に定義したり、マーケティングキャンペーンを実行したりするために必要な、主な顧客詳細の入力に使用されます。 [&#x200B; ストアフロント &#x200B;](events.md#customer-profile-events) から取り込まれた類似のプロファイルイベントがあります。
+サーバーサイドから取得したプロファイルイベントには、`accountCreated`、`accountUpdated`、`accountDeleted` などのアカウント情報が含まれます。 このデータは、新規登録割引オファーの送信、アカウント変更の確認など、セグメントを適切に定義したり、マーケティングキャンペーンを実行したりするために必要な、主な顧客詳細の入力に使用されます。 [ ストアフロント ](events.md#customer-profile-events) から取り込まれた類似のプロファイルイベントがあります。
 
 >[!NOTE]
 >
->各顧客プロファイルイベントには、「[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=ja)」フィールドも含まれます。このフィールドには、プロファイルのプライマリ識別子としてシステム生成のCommerce顧客 ID と、セカンダリ識別子として使用されるメール ID が含まれます。 [&#x200B; 詳細情報 &#x200B;](custom-identities.md) 顧客プロファイルの ID を強化するカスタム ID 属性の作成方法。
+>各顧客プロファイルイベントには、「[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html)」フィールドも含まれます。このフィールドには、プロファイルのプライマリ識別子としてシステム生成のCommerce顧客 ID と、セカンダリ識別子として使用されるメール ID が含まれます。 [ 詳細情報 ](custom-identities.md) 顧客プロファイルの ID を強化するカスタム ID 属性の作成方法。
 
 ### accountCreated
 
