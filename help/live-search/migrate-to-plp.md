@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # 検索アダプタから PLP ウィジェットへの移行
 
-検索アダプタは [ 4.0.0 の時点で ](release-notes.md#live-search-400) 非推奨 [!DNL Live Search] となり、セキュリティアップデートのみが提供されます。 [ 製品リストページ（PLP）ウィジェット ](plp-styling.md) は、今後のすべての [!DNL Live Search] 実装でサポートされるソリューションです。 このガイドは、移行が簡単な場合や、追加の作業が必要な場合に役立ちます。
+検索アダプタは [&#x200B; 4.0.0 の時点で &#x200B;](release-notes.md#live-search-400) 非推奨 [!DNL Live Search] となり、セキュリティアップデートのみが提供されます。 [&#x200B; 製品リストページ（PLP）ウィジェット &#x200B;](plp-styling.md) は、今後のすべての [!DNL Live Search] 実装でサポートされるソリューションです。 このガイドは、移行が簡単な場合や、追加の作業が必要な場合に役立ちます。
 
 ## 前提条件
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 1. データベースとコードをバックアップします。
 1. 現在のカスタマイズを文書化します。
-1. [ 境界と制限 ](boundaries-limits.md) をレビューして、PLP ウィジェットがニーズを満たしていることを確認します。
+1. [&#x200B; 境界と制限 &#x200B;](boundaries-limits.md) をレビューして、PLP ウィジェットがニーズを満たしていることを確認します。
 1. トラフィックが少ない時間帯に移行をスケジュールします。
 1. ストアフロントの行動に対して変更が加えられる可能性があることを関係者に通知します。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 - Analytics にGoogle Tag Manager （GTM）を使用していない。
 - 検索動作を変更するサードパーティの拡張機能を使用していない。
 
-実装がこれらの条件に一致する場合は、[ 標準の移行手順 ](#standard-migration-steps) に進みます。
+実装がこれらの条件に一致する場合は、[&#x200B; 標準の移行手順 &#x200B;](#standard-migration-steps) に進みます。
 
 ### 追加作業が必要な移行
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 - 独自の CDN でウィジェットのカスタムバージョンをホストする。
 - 検索機能のためのカスタム JavaScript拡張機能。
 
-実装にこれらのシナリオがある場合は、[ 複雑な移行シナリオ ](#complex-migration-scenarios) を参照してください。
+実装にこれらのシナリオがある場合は、[&#x200B; 複雑な移行シナリオ &#x200B;](#complex-migration-scenarios) を参照してください。
 
 ## 標準の移行手順
 
@@ -214,7 +214,7 @@ Commerce Admin で PLP ウィジェットを設定します。
 
 1. 可能な場合は、メンテナンスウィンドウ中にデプロイメントをスケジュールします。
 1. 標準のデプロイメントプロセスに従います。
-1. [ 手順 2:PLP ウィジェットを有効にする ](#step-2-enable-the-plp-widget) を使用して、実稼動環境で PLP ウィジェットを有効にします。
+1. [&#x200B; 手順 2:PLP ウィジェットを有効にする &#x200B;](#step-2-enable-the-plp-widget) を使用して、実稼動環境で PLP ウィジェットを有効にします。
 1. デプロイメント直後の問題を監視します。
 1. 重大な問題が発生した場合は、ロールバック計画を準備します。
 
@@ -249,7 +249,7 @@ Commerce Admin で PLP ウィジェットを設定します。
    - カスタム JavaScript インタラクションを文書化する。
 
 1. **CSS ベースのカスタマイズへの移行**:
-   - PLP ウィジェットは特定の CSS クラスを使用します（『 [PLP スタイルガイド ](plp-styling.md) を参照）。
+   - PLP ウィジェットは特定の CSS クラスを使用します（『 [PLP スタイルガイド &#x200B;](plp-styling.md) を参照）。
    - PLP ウィジェットの CSS クラスを使用してビジュアルカスタマイズを再作成します。
    - カスタムスタイルが正しく適用されることをテストします。
 
@@ -275,7 +275,7 @@ Commerce Admin で PLP ウィジェットを設定します。
    - 現在のファセット設定をドキュメント化します。
 
 1. **PLP ウィジェットをアップグレードして有効にする**:
-   - [ 標準の移行手順 ](#standard-migration-steps) に従います。
+   - [&#x200B; 標準の移行手順 &#x200B;](#standard-migration-steps) に従います。
    - PLP ウィジェットは、カスタムソースモデル属性をサポートします。
 
 1. **ファセットの再設定**:
@@ -305,7 +305,7 @@ Commerce Admin で PLP ウィジェットを設定します。
 
 1. **カスタムイベントコレクションの実装**:
 
-   - [ ストアフロントイベントSDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) を使用します。
+   - [&#x200B; ストアフロントイベントSDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) を使用します。
    - 検索および製品インタラクションイベントをキャプチャします。
    - イベントを GTM データレイヤーに手動でプッシュします。
 
@@ -319,7 +319,7 @@ Commerce Admin で PLP ウィジェットを設定します。
 
 **オプション 3:GTM をAdobe Analyticsに置き換える**
 
-- 該当する場合は [0}Adobe Analytics} への移行を検討してください。](https://business.adobe.com/products/adobe-analytics.html)
+- 該当する場合は [0&rbrace;Adobe Analytics&rbrace; への移行を検討してください。](https://business.adobe.com/products/adobe-analytics.html)
 - サポートが必要な場合は、カスタマーエンジニアリングにお問い合わせください。
 
 **問い合わせ先**:GTM 互換性の更新またはカスタマーエンジニアリングサポートのサポートチケットを送信します。
@@ -331,9 +331,9 @@ Commerce Admin で PLP ウィジェットを設定します。
 **役割**：開発者/パートナー
 
 1. **リファレンス実装の確認**:
-   - [PLP ウィジェットのソースコード ](https://github.com/adobe/storefront-product-listing-page) を調べます。
+   - [PLP ウィジェットのソースコード &#x200B;](https://github.com/adobe/storefront-product-listing-page) を調べます。
    - [[!DNL Live Search] GraphQL](graphql.md) の API ドキュメントを確認してください。
-   - [ カタログサービスクエリ ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/) について
+   - [&#x200B; カタログサービスクエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/) について
 
 1. **カスタム UI の実装**:
    - クエリ [!DNL Live Search] は、GraphQL API を使用します。
@@ -342,7 +342,7 @@ Commerce Admin で PLP ウィジェットを設定します。
    - ページネーションと並べ替えを処理します。
 
 1. **イベント収集の実装**:
-   - [ ストアフロントイベントのドキュメント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search) を確認します。
+   - [&#x200B; ストアフロントイベントのドキュメント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search) を確認します。
    - 必要なイベントを実装します。
       - `search-request-sent`
       - `search-response-received`
@@ -375,12 +375,12 @@ Commerce Admin で PLP ウィジェットを設定します。
    - カスタマイズがまだ必要かどうかを確認します。
 
 1. **組み込み機能がニーズを満たしているかどうかを確認します**。
-   - [PLP ウィジェットの機能 ](plp-styling.md#widget-features) を確認します。
+   - [PLP ウィジェットの機能 &#x200B;](plp-styling.md#widget-features) を確認します。
    - CSS ベースのカスタマイズで十分かどうかを確認します。
    - PLP ウィジェットのデフォルト動作のテスト。
 
 1. **カスタムコードがまだ必要な場合**:
-   - [PLP ウィジェットリポジトリ ](https://github.com/adobe/storefront-product-listing-page) のクローンを作成します。
+   - [PLP ウィジェットリポジトリ &#x200B;](https://github.com/adobe/storefront-product-listing-page) のクローンを作成します。
    - カスタマイズを実装します。
    - 独自の CDN でホストする。
    - カスタムウィジェットを使用するように、Commerce設定を更新します。
@@ -420,7 +420,7 @@ Commerce Admin で PLP ウィジェットを設定します。
 
 **互換性の問題**:
 
-- Google Tag Manager の互換性の問題（「[GTM シナリオ ](#google-tag-manager-gtm-integration)」を参照）。
+- Google Tag Manager の互換性の問題（「[GTM シナリオ &#x200B;](#google-tag-manager-gtm-integration)」を参照）。
 - 一部のサードパーティの拡張機能は、PLP ウィジェットと競合する場合があります。
 - カスタムチェックアウトの拡張機能では、アップデートが必要になる場合があります。
 
@@ -444,7 +444,7 @@ Commerce Admin で PLP ウィジェットを設定します。
 - ヘッドレスまたはPWAの実装
 - カスタムイベントトラッキング
 
-Adobe サポートに問い合わせる方法については、[ ヘルプセンターユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) を参照してください。
+Adobe サポートに問い合わせる方法については、[&#x200B; ヘルプセンターユーザーガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) を参照してください。
 
 ## FAQ
 
@@ -472,7 +472,7 @@ A：通常は使用できませんが、検索アダプターでカスタムソ�
 
 **Q：カスタム CSS はどうですか？**
 
-A: PLP ウィジェットクラスをターゲットにするには、CSS を更新する必要があります。 [CSS クラスのリファレンス ](plp-styling.md#css-classes) を参照してください。
+A: PLP ウィジェットクラスをターゲットにするには、CSS を更新する必要があります。 [CSS クラスのリファレンス &#x200B;](plp-styling.md#css-classes) を参照してください。
 
 **Q：検索パフォーマンスに影響はありますか？**
 

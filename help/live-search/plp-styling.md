@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->非推奨（廃止予定）の検索アダプターから移行する場合は、[ 移行ガイド ](migrate-to-plp.md) を参照して、シナリオ、前提条件、詳細な手順を確認してください。
+>非推奨（廃止予定）の検索アダプターから移行する場合は、[&#x200B; 移行ガイド &#x200B;](migrate-to-plp.md) を参照して、シナリオ、前提条件、詳細な手順を確認してください。
 
 PLP ウィジェットをオンにするには：
 
@@ -54,7 +54,7 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 - 複数言語のサポート
 - 価格スライダー
 
-上記の機能を処理するための PLP ウィジェットのカスタマイズ方法については、次の `storefront-product-listing-page` リポジトリ [ の ](https://github.com/adobe/storefront-product-listing-page/) Readme を参照してください。 このリポジトリの Readme には、PLP ウィジェットをカスタマイズし、そのカスタマイズをサイトにデプロイする方法の例が記載されています。
+上記の機能を処理するための PLP ウィジェットのカスタマイズ方法については、次の `storefront-product-listing-page` リポジトリ [&#x200B; の &#x200B;](https://github.com/adobe/storefront-product-listing-page/) Readme を参照してください。 このリポジトリの Readme には、PLP ウィジェットをカスタマイズし、そのカスタマイズをサイトにデプロイする方法の例が記載されています。
 
 >[!WARNING]
 >
@@ -70,7 +70,7 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 
 ハイライト表示された div には、ターゲットクラスの `ds-sdk-product-item__product-name` が含まれています。
 
-![ ページネーション ](assets/plp-css-example.png)
+![&#x200B; ページネーション &#x200B;](assets/plp-css-example.png)
 
 製品名を大文字にするルールを追加して、製品名をカスタマイズします。
 
@@ -80,7 +80,7 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 }
 ```
 
-![ ページネーション ](assets/plp-css-example-after.png)
+![&#x200B; ページネーション &#x200B;](assets/plp-css-example-after.png)
 
 ## CSS クラス
 
@@ -89,21 +89,21 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 - `.ds-sdk-product-list`：外側の div
 - `.ds-sdk-product-list__grid`：内部 div
 
-![ ページネーション ](assets/plp-css-product-list.png)
+![&#x200B; ページネーション &#x200B;](assets/plp-css-product-list.png)
 
 #### 製品リストのページネーション
 
 - `.ds-plp-pagination`
 
-![ ページネーション ](assets/plp-css-pagination.png)
+![&#x200B; ページネーション &#x200B;](assets/plp-css-pagination.png)
 
 - `.ds-plp-pagination_item`
 
-![ ページネーション項目 ](assets/plp-css-pagination-item.png)
+![&#x200B; ページネーション項目 &#x200B;](assets/plp-css-pagination-item.png)
 
 - `.ds-plp-pagination_item--current`
 
-![ ページネーションの現在の項目 ](assets/plp-css-pagination-item-current.png)
+![&#x200B; ページネーションの現在の項目 &#x200B;](assets/plp-css-pagination-item-current.png)
 
 ### ウィジェット
 
@@ -111,33 +111,33 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 - `.ds-widgets__actions`：左側内側 div
 - `.ds-widgets__results`：右側内側 div
 
-![ ウィジェットの結果 ](assets/plp-css-widgets.png)
+![&#x200B; ウィジェットの結果 &#x200B;](assets/plp-css-widgets.png)
 
 ### 並べ替えドロップダウン
 
 - `.ds-sdk-sort-dropdown`
 
-![ 並べ替えドロップダウン ](assets/plp-css-dropdown.png)
+![&#x200B; 並べ替えドロップダウン &#x200B;](assets/plp-css-dropdown.png)
 
 - `.ds-sdk-sort-dropdown__button`
 
-![ ドロップダウンボタン ](assets/plp-css-dropdown-button.png)
+![&#x200B; ドロップダウンボタン &#x200B;](assets/plp-css-dropdown-button.png)
 
 - `.ds-sdk-sort-dropdown__items`
 
-![ ドロップダウン項目 ](assets/plp-css-dropdown-items.png)
+![&#x200B; ドロップダウン項目 &#x200B;](assets/plp-css-dropdown-items.png)
 
 - `.ds-sdk-sort-dropdown__items--item`
 
-![ ドロップダウン項目 ](assets/plp-css-dropdown-item.png)
+![&#x200B; ドロップダウン項目 &#x200B;](assets/plp-css-dropdown-item.png)
 
 - `.ds-sdk-sort-dropdown__items--item-selected`
 
-![ 選択した項目をドロップダウン ](assets/plp-css-dropdown-selected.png)
+![&#x200B; 選択した項目をドロップダウン &#x200B;](assets/plp-css-dropdown-selected.png)
 
 - `.ds-sdk-sort-dropdown__items--item-active`
 
-![ アクティブな選択項目をドロップダウン ](assets/plp-css-dropdown-active.png)
+![&#x200B; アクティブな選択項目をドロップダウン &#x200B;](assets/plp-css-dropdown-active.png)
 
 ### ファセット
 
@@ -146,21 +146,21 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 - `.ds-plp-facets__header_title`
 - `.ds-plp-facets__header__clear-all`
 
-![ ファセットヘッダータイトル ](assets/plp-css-facets-title-clear.png){width="350"}
+![&#x200B; ファセットヘッダータイトル &#x200B;](assets/plp-css-facets-title-clear.png){width="350"}
 
 - `.ds-plp-facets__pills`
 - `.ds-sdk-pill`
 
-![ ファセット剤 ](assets/plp-css-facets-pill.png){width="350"}
+![&#x200B; ファセット剤 &#x200B;](assets/plp-css-facets-pill.png){width="350"}
 
 - `.ds-sdk-pill__label`
 - `.ds-sdk-pill__cta`
 
-![ ファセットラベル ](assets/plp-css-pill-label-cta.png){width="350"}
+![&#x200B; ファセットラベル &#x200B;](assets/plp-css-pill-label-cta.png){width="350"}
 
 - `.ds-plp-facets__list`
 
-![ ファセットリスト ](assets/plp-css-facets-list.png){width="350"}
+![&#x200B; ファセットリスト &#x200B;](assets/plp-css-facets-list.png){width="350"}
 
 - `.ds-sdk-input`
 - `.ds-sdk-input__label`
@@ -168,16 +168,16 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 - `ds-sdk-product-item__product-swatch-item`
 - `.ds-sdk-input_fieldset_show-more`
 
-![ 入力 ](assets/plp-css-sdk-input.png)
+![&#x200B; 入力 &#x200B;](assets/plp-css-sdk-input.png)
 
 - `.ds-sdk-labelled-input`
 
-![ ラベル付き入力 ](assets/plp-css-labelled-input.png)
+![&#x200B; ラベル付き入力 &#x200B;](assets/plp-css-labelled-input.png)
 
 - `.ds-sdk-labelled-input__input`
 - `.ds-sdk-labelled-input__label`
 
-![ 入力ラベル ](assets/plp-css-labelled-input-label.png)
+![&#x200B; 入力ラベル &#x200B;](assets/plp-css-labelled-input-label.png)
 
 ### 商品品目
 
@@ -191,7 +191,7 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
    - `.ds-sdk-product-price--bundle`
    - `.ds-sdk-product-price--discount`
 
-![ 製品 ](assets/plp-css-product.png)
+![&#x200B; 製品 &#x200B;](assets/plp-css-product.png)
 
 ### 読み込み
 
@@ -199,7 +199,7 @@ PLP ウィジェットの標準機能に加え、ウィジェットをさらに�
 - `.ds-sdk-loading__spinner`
 - `.ds-sdk-loading__spinner-label`
 
-![ 読み込みインジケーター ](assets/plp-css-loading.png)
+![&#x200B; 読み込みインジケーター &#x200B;](assets/plp-css-loading.png)
 
 ## PLP ウィジェットの無効化
 
