@@ -16,8 +16,8 @@ ht-degree: 0%
 
 Adobe Commerceには、次の 3 つのデプロイメントモデルがあります。
 
-- [!BADGE SaaS のみ ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"} [Adobe Commerce as a Cloud Service](overview.md) （SaaS）
-- [!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"} [Cloud 上のAdobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) （Paa）
+- [!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"} [Adobe Commerce as a Cloud Service](overview.md) （SaaS）
+- [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"} [Cloud 上のAdobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) （Paa）
 - [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) （オンプレミス）
 
 この比較では、SaaS （software-as-a-service）モデルと PaaS （platform-as-a-service）モデルの違いに焦点を当てています。 これらのモデルにより、Commerce実装に対する様々なレベルのカスタマイズ、拡張機能、制御が提供されます。
@@ -212,4 +212,4 @@ Adobe Commerceには、次の 3 つのデプロイメントモデルがありま
 >- API 機能を拡張する場合は、[!DNL API Mesh] を検討してください。
 >- Adobeの継続的なプラットフォーム進化と新機能リリースを監視します。
 >- 使用可能な拡張オプションに照らして、業界固有のデータモデル要件を評価します。
->- [ カタログビューとポリシーを活用したマーチャンダイジングサービス ](../optimizer/setup/catalog-view.md) の採用を検討します。
+>- [&#x200B; カタログビューとポリシーを活用したマーチャンダイジングサービス &#x200B;](../optimizer/setup/catalog-view.md) の採用を検討します。

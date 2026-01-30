@@ -19,7 +19,7 @@ Adobeでは、e コマースビジネスの要件を満たすソリューショ�
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] （SaaS）で利用可能な機能と、それらの機能が [!DNL Adobe Commerce on Cloud] や [!DNL Adobe Commerce on Premises] （PaaS）などの他のバージョンのAdobe Commerceとどのように連携するかについて詳しくは、[ 機能の比較 ](../cloud-service/feature-comparison.md) を参照してください。
+>[!DNL Adobe Commerce as a Cloud Service] （SaaS）で利用可能な機能と、それらの機能が [!DNL Adobe Commerce on Cloud] や [!DNL Adobe Commerce on Premises] （PaaS）などの他のバージョンのAdobe Commerceとどのように連携するかについて詳しくは、[&#x200B; 機能の比較 &#x200B;](../cloud-service/feature-comparison.md) を参照してください。
 
 ## バッジ
 
@@ -27,7 +27,7 @@ Adobeでは、e コマースビジネスの要件を満たすソリューショ�
 
 バッジが表示された場合は、コンテンツが指定したソリューションにのみ適用されることを意味します。 バッジが表示されない場合は、コンテンツがすべてのAdobe Commerce ソリューションに適用されます。
 
-例えば、Adobe Commerce as a Cloud Serviceを使用している場合、Product Recommendations 拡張機能の [ インストール ](../product-recommendations/install-configure.md#install-product-recommendations) およびCommerce サービスコネクターの [ 設定 ](../product-recommendations/install-configure.md#configure-product-recommendations) に関する内容は無視してください。 Adobeでは、インスタンスを作成すると、これらの手順が自動的に完了します。
+例えば、Adobe Commerce as a Cloud Serviceを使用している場合、Product Recommendations 拡張機能の [&#x200B; インストール &#x200B;](../product-recommendations/install-configure.md#install-product-recommendations) およびCommerce サービスコネクターの [&#x200B; 設定 &#x200B;](../product-recommendations/install-configure.md#configure-product-recommendations) に関する内容は無視してください。 Adobeでは、インスタンスを作成すると、これらの手順が自動的に完了します。
 
 ### 定義
 
@@ -35,15 +35,15 @@ Adobeでは、e コマースビジネスの要件を満たすソリューショ�
 
 >[!BEGINSHADEBOX]
 
-![ 情報 ](../cloud-service/assets/Smock_InfoOutline_18_N.svg) ここで説明するバッジは、特にAdobe Commerce ドキュメントに当てはまります。 他のAdobe Experience Cloud製品のドキュメントでのバッジの使用方法を表すものではありません。
+![&#x200B; 情報 &#x200B;](../cloud-service/assets/Smock_InfoOutline_18_N.svg) ここで説明するバッジは、特にAdobe Commerce ドキュメントに当てはまります。 他のAdobe Experience Cloud製品のドキュメントでのバッジの使用方法を表すものではありません。
 
 >[!ENDSHADEBOX]
 
-#### [!BADGE SaaS のみ ]{type=Positive tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}
+#### [!BADGE SaaS のみ &#x200B;]{type=Positive tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}
 
 このバッジは、[Adobe Commerce as a Cloud Service](../cloud-service/overview.md) および [Adobe Commerce Optimizer](../optimizer/overview.md) プロジェクト専用のドキュメントを特定します。 これらのプロジェクトは、完全に管理されたクラウドネイティブのサービスとしてのソフトウェア（SaaS）ソリューションでホストされ、Adobeが継続的な更新、セキュリティの監視、スケーラビリティなどのほとんどの運用側面を担当するので、お客様はインフラストラクチャではなくコマースに集中できます。
 
-#### [!BADGE PaaS のみ ]{type=Informative tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+#### [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 
 このバッジは、[Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) およびオンプレミスプロジェクトに関連するドキュメントのみを特定します。 クラウドプロジェクト上のAdobe Commerceは、クラウドネイティブで完全に管理されたサービスとしてのプラットフォーム（PaaS）ソリューションにホストされ、Adobe Commerceのすべてのコア機能が事前にプロビジョニングされます。 オンプレミスのプロジェクトは、顧客が管理するインフラストラクチャでホストされます。
 
