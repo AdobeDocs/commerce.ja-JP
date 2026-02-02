@@ -45,7 +45,7 @@ _2025 年 4 月 3 日_
 
 _2025 年 2 月 20 日_
 
-![&#x200B; 新規 &#x200B;](../assets/new.svg)Commerceでは、複数の単語の同義語をサポートしています。 [&#x200B; 詳細情報 &#x200B;](synonyms-type.md#multi-word-synonym-behavior)。 複数語の同義語のサポートは、この 2 月 20 日のリリース日以降にのみ使用できます。 既存の複数ワードの同義語を使用する場合は、完全な再インデックスが必要になります。これは、[&#x200B; サポートチケットを作成 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) してリクエストできます。
+![&#x200B; 新規 &#x200B;](../assets/new.svg)Commerceでは、複数の単語の同義語をサポートしています。 [&#x200B; 詳細情報 &#x200B;](synonyms-type.md#multi-word-synonym-behavior)。 複数語の同義語のサポートは、この 2 月 20 日のリリース日以降にのみ使用できます。 既存の複数ワードの同義語を使用する場合は、完全な再インデックスが必要になります。これは、[&#x200B; サポートチケットを作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) してリクエストできます。
 
 _2025 年 1 月 31 日_
 
@@ -206,7 +206,7 @@ _2024 年 2 月 22 日_
 
 ### 新機能
 
-![&#x200B; 新規 &#x200B;](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) が利用可能になりました。 この刷新されたダッシュボードでは、[!DNL Product Recommendations]、[!DNL Live Search] および [!DNL Catalog Service] のデータストリームに関するインサイトが提供されます。
+![&#x200B; 新規 &#x200B;](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) が利用可能になりました。 この刷新されたダッシュボードでは、[!DNL Product Recommendations]、[!DNL Live Search] および [!DNL Catalog Service] のデータストリームに関するインサイトが提供されます。
 
 ### 更新
 
@@ -322,7 +322,7 @@ _2023 年 3 月 14 日_
 #### 新機能
 
 ![&#x200B; 新規 &#x200B;](../assets/new.svg) ルールプレビューの製品項目カード
-![&#x200B; 新規 &#x200B;](../assets/new.svg) 製品一覧ペ [&#x200B; ジウィジェット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
+![&#x200B; 新規 &#x200B;](../assets/new.svg) 製品一覧ペ [&#x200B; ジウィジェット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-storefront/plp-styling)
 ![&#x200B; 新規 &#x200B;](../assets/new.svg) カテゴリ [&#x200B; フィルタリングオプション &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
 ![&#x200B; 新規 &#x200B;](../assets/new.svg) ドラッグ&amp;ドロップでピンイベントを作成する機能が追加されました
 ![&#x200B; 新規 &#x200B;](../assets/new.svg) 新しいピン留めアクション：
@@ -330,8 +330,8 @@ _2023 年 3 月 14 日_
  – 先頭にピン留め – 製品を先頭に配置します
  – 下部にピン留め – 結果の下部に製品を配置します
 - ワンクリックでイベントのピン留めを解除
-![&#x200B; ルール &#x200B;](../assets/new.svg) 新しい [&#x200B; インテリジェントランキング &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add)
-![&#x200B; 新規 &#x200B;](../assets/new.svg) [!DNL Live Search] は、Commerce（旧称：マルチSourceインベントリ、MSI）で完全な [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) 機能をサポートするようになりました。 完全なサポートを有効にするには、依存関係モジュールをバージョン 102.2.0 以降に [&#x200B; 更新 &#x200B;](install.md#update) する必要 `commerce-data-export` あります。
+![&#x200B; ルール &#x200B;](../assets/new.svg) 新しい [&#x200B; インテリジェントランキング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/rules/rules-add)
+![&#x200B; 新規 &#x200B;](../assets/new.svg) [!DNL Live Search] は、Commerce（旧称：マルチSourceインベントリ、MSI）で完全な [Inventory management](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/introduction) 機能をサポートするようになりました。 完全なサポートを有効にするには、依存関係モジュールをバージョン 102.2.0 以降に [&#x200B; 更新 &#x200B;](install.md#update) する必要 `commerce-data-export` あります。
 
 #### 更新
 
@@ -401,7 +401,7 @@ _2023 年 3 月 14 日_
 ![&#x200B; 新規 &#x200B;](../assets/new.svg) [[!DNL storefront popover]](overview.md) で使用可能な行数は、*Admin* から設定できます。
 ![&#x200B; 新規 &#x200B;](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) が [!DNL Live Search] でサポートされました。
 ![&#x200B; 新規 &#x200B;](../assets/new.svg) [!DNL Live Search] インストールプロセスが、詳細なプロセス変更によって更新されました。
-![&#x200B; 修正 &#x200B;](../assets/fix.svg) [&#x200B; 詳細検索 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) リンクがストアフロントのフッターから削除されました。
+![&#x200B; 修正 &#x200B;](../assets/fix.svg) [&#x200B; 詳細検索 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search) リンクがストアフロントのフッターから削除されました。
 ![&#x200B; バグ &#x200B;](../assets/bug.svg) 次の製品属性は、PWAのベータ版リリースに関連して使用される場合、[Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) でサポートされていません：`description`、`name`、`short_description`
 ![&#x200B; バグ &#x200B;](../assets/bug.svg) PWA for [!DNL Live Search] のベータ版リリースでは、[&#x200B; イベント処理 &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) がサポートされていません。
 
@@ -409,9 +409,9 @@ _2023 年 3 月 14 日_
 
 [!BADGE &#x200B; サポート対象 &#x200B;]{type="Informative" tooltip="サポート"} Adobe Commerce バージョン 2.4.x 以降
 
-![Fix](../assets/fix.svg) [Custom price 属性 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) が [facet](facets-add.md) として設定された場合にエラーが返されなくなりました。
-![&#x200B; 修正 &#x200B;](../assets/fix.svg) [&#x200B; 通貨記号 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) （`data-currency-symbol`）が使用できない場合にエラーが発生する問題を修正しました。
-![&#x200B; 修正 &#x200B;](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) 利用可能な場合、[&#x200B; 特別価格 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) （最終価格の最小値）が表示されるようになりました。
+![Fix](../assets/fix.svg) [Custom price 属性 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/attributes-input-types) が [facet](facets-add.md) として設定された場合にエラーが返されなくなりました。
+![&#x200B; 修正 &#x200B;](../assets/fix.svg) [&#x200B; 通貨記号 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) （`data-currency-symbol`）が使用できない場合にエラーが発生する問題を修正しました。
+![&#x200B; 修正 &#x200B;](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) 利用可能な場合、[&#x200B; 特別価格 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/pricing/product-price-special) （最終価格の最小値）が表示されるようになりました。
 
 ### [!DNL Live Search] 1.3.0
 
@@ -420,9 +420,9 @@ _2023 年 3 月 14 日_
 ![&#x200B; 新規 &#x200B;](../assets/new.svg) [&#x200B; パフォーマンス &#x200B;](performance.md) レポートダッシュボードは、買い物客が使用する検索用語にinsightを提供します。
 ![&#x200B; 新規 &#x200B;](../assets/new.svg) [!DNL Live Search] [&#x200B; ストアフロントイベントSDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) を使用すると、イベントの公開サービス、サブスクリプションサービス、指標を含む共通のデータレイヤーにアクセスできます。
 ![&#x200B; 修正 &#x200B;](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) には、表示を制御する `active` コンテナ用の新しい `.search-autocomplete` クラスがあります。
-![&#x200B; 修正 &#x200B;](../assets/fix.svg) ストアフロントで、[&#x200B; 検索語句 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) フッターリンクが削除され、[!DNL Live Search] のインストールではキャッシュが無効になります。
+![&#x200B; 修正 &#x200B;](../assets/fix.svg) ストアフロントで、[&#x200B; 検索語句 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-terms) フッターリンクが削除され、[!DNL Live Search] のインストールではキャッシュが無効になります。
 ![&#x200B; バグ &#x200B;](../assets/bug.svg) 検索アダプタのパッチが重複した製品を処理します。
-![&#x200B; バグ &#x200B;](../assets/bug.svg) [!DNL Live Search] は、複数の [&#x200B; 仮想） &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) 在庫 [&#x200B; を持つ（単一ソース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) （物理）在庫の場所をサポートしています。 複数のインベントリソースは現在サポートされていません。
+![&#x200B; バグ &#x200B;](../assets/bug.svg) [!DNL Live Search] は、複数の [&#x200B; 仮想） &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/sources/sources-manage) 在庫 [&#x200B; を持つ（単一ソース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/stocks/stocks-manage) （物理）在庫の場所をサポートしています。 複数のインベントリソースは現在サポートされていません。
 
 ### [!DNL Live Search] 1.2.0
 
@@ -441,8 +441,8 @@ _2023 年 3 月 14 日_
 
 [!BADGE &#x200B; サポート対象 &#x200B;]{type="Informative" tooltip="サポート"} Adobe Commerce バージョン 2.4.x 以降
 
-![&#x200B; バグ &#x200B;](../assets/bug.svg) [!DNL Live Search] サービスでは、Adobe Commerce インストールの [&#x200B; 基本通貨 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration) のみをサポートしています。
-![&#x200B; バグ &#x200B;](../assets/bug.svg) ファセットを追加するときに、「`Update on Save`」に設定すると、製品属性フィードが正しく更新されない。 この問題を回避するには、[&#x200B; インデックス管理 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) に移動し、製品属性フィードを `Update by Schedule` に設定します。
+![&#x200B; バグ &#x200B;](../assets/bug.svg) [!DNL Live Search] サービスでは、Adobe Commerce インストールの [&#x200B; 基本通貨 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration) のみをサポートしています。
+![&#x200B; バグ &#x200B;](../assets/bug.svg) ファセットを追加するときに、「`Update on Save`」に設定すると、製品属性フィードが正しく更新されない。 この問題を回避するには、[&#x200B; インデックス管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management) に移動し、製品属性フィードを `Update by Schedule` に設定します。
 ![&#x200B; バグ &#x200B;](../assets/bug.svg) [!DNL Live Search] 同義語はストアビューごとに定義されていますが、現在は web サイトごとに保存され、`environmentId` と `storeViewCode` の組み合わせで識別されています。 その結果、Adobe Commerce インストール内のすべての web サイトとストアビューで同義語が共有されます。 ストア表示の最近作成された同義語セットが優先されます。
 ![&#x200B; バグ &#x200B;](../assets/bug.svg) 同義語の用語に複数の単語が含まれている場合、各単語は個別の同義語として扱われます。 例えば、「time piece」を「watch」の同義語として定義した場合、「time」と「piece」の両方が watch の同義語として扱われます。
 
@@ -453,5 +453,5 @@ _2023 年 3 月 14 日_
 詳細情報：
 
 - [Adobe Commerce開発者向けドキュメント &#x200B;](https://developer.adobe.com/commerce/docs)
-- [Adobe Commerce ユーザーガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce)
+- [Adobe Commerce ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce)
 - [[!DNL Live Search] on Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
