@@ -14,7 +14,7 @@ ht-degree: 0%
 
 カタログサービス、Live Search、Product Recommendations などのデータのエクスポートを必要とするCommerce サービスをインストールすると、データの収集と同期のプロセスを管理するために、Saas データのエクスポートモジュールのコレクションがインストールされます。
 
-SaaS データのエクスポートでは、商品データをAdobe Commerce インスタンスからCommerce サービスプラットフォームに継続的に移動して、データを最新の状態に保ちます。 例えば、製品レコメンデーションでは、現在のカタログ情報を使用して、正確な名前、価格、在庫を含むレコメンデーションを正確に返す必要があります。 [&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) を使用して、同期プロセスまたはコマンドラインインターフェイスを監視および管理し、同期をトリガーして、Commerce Services で使用するために製品データを再インデックス化します。
+SaaS データのエクスポートでは、商品データをAdobe Commerce インスタンスからCommerce サービスプラットフォームに継続的に移動して、データを最新の状態に保ちます。 例えば、製品レコメンデーションでは、現在のカタログ情報を使用して、正確な名前、価格、在庫を含むレコメンデーションを正確に返す必要があります。 [&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/data-services/catalog-sync) を使用して、同期プロセスまたはコマンドラインインターフェイスを監視および管理し、同期をトリガーして、Commerce Services で使用するために製品データを再インデックス化します。
 
 次の図は、SaaS データの書き出しフローを示しています。
 
@@ -65,7 +65,7 @@ Adobe Commerce インスタンスをCommerce サービスに接続した後、�
 
 部分同期を機能させるには、Commerce アプリケーションで次の設定が必要です。
 
-- [Cron ジョブを介してタスクスケジュールが有効になる &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
+- [Cron ジョブを介してタスクスケジュールが有効になる &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=ja)
 
 - すべての SaaS データ書き出しインデクサーは、`Update by Schedule` モードで設定されます。
 
@@ -82,19 +82,19 @@ Adobe Commerce インスタンスをCommerce サービスに接続した後、�
 
 ほとんどの同期アクティビティは、アプリケーション設定に基づいて自動的に処理されます。 ただし、SaaS データのエクスポートには、プロセスを監視および管理するためのツールも用意されています。
 
-- [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**[Data Management dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** – 管理者ユーザーは、Commerce サービスに同期され、ストアフロントサービスで使用可能なデータを表示および追跡できます。
+- [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**[Data Management dashboard](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** – 管理者ユーザーは、Commerce サービスに同期され、ストアフロントサービスで使用可能なデータを表示および追跡できます。
 
-- [!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce Optimizer（Adobeが管理する SaaS インフラストラクチャ）と統合されたAdobe Commerce プロジェクトに適用されます。"}**[データ同期ページ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)** - [!DNL Adobe Commerce Optimizer] を使用するCommerce プロジェクトの場合、Adobe Commerce Optimizerのデータ同期ページで、ストアフロントのカタログデータの可用性を確認します。
+- [!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce Optimizer（Adobeが管理する SaaS インフラストラクチャ）と統合されたAdobe Commerce プロジェクトに適用されます。"}**[データ同期ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/data-sync)** - [!DNL Adobe Commerce Optimizer] を使用するCommerce プロジェクトの場合、Adobe Commerce Optimizerのデータ同期ページで、ストアフロントのカタログデータの可用性を確認します。
 
 ### Commerce アプリケーション設定の確認
 
 部分同期および失敗した項目の再試行同期は、Commerce インスタンスが正しく設定されている場合にのみ機能します。 通常、設定はCommerce サービスを設定する際に完了します。 データの書き出しが正しく機能しない場合は、次の設定を確認します。
 
-- [cron ジョブが実行中であることを確認 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [cron ジョブが実行中であることを確認 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
 
-- インデクサーが [&#x200B; 管理者 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) から、またはCommerce CLI コマンド `bin/magento indexer:info` ールを使用して実行されていることを確認します。
+- インデクサーが [&#x200B; 管理者 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management) から、またはCommerce CLI コマンド `bin/magento indexer:info` ールを使用して実行されていることを確認します。
 
-- カタログ属性、製品、製品オーバーライド、製品バリアントのフィードのインデクサーが `Update by Schedule` に設定されていることを確認します。 インデクサーは、管理者の [&#x200B; インデックス管理 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) または CLI （`bin/magento indexer:show-mode | grep -i feed`）を使用して確認できます。
+- カタログ属性、製品、製品オーバーライド、製品バリアントのフィードのインデクサーが `Update by Schedule` に設定されていることを確認します。 インデクサーは、管理者の [&#x200B; インデックス管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management) または CLI （`bin/magento indexer:show-mode | grep -i feed`）を使用して確認できます。
 
 ### データ転送ログのイベント マネージャー通知
 
