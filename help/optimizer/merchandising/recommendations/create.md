@@ -1,7 +1,7 @@
 ---
 title: レコメンデーションの作成と管理
 description: レコメンデーションを作成および管理する方法を説明します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
 workflow-type: tm+mt
@@ -65,7 +65,7 @@ _推奨単位_
 
 1. 「**Recommendation ID**」セクションで、ID をコピーします。
 
-1. この ID を使用して、Edge Delivery Services ストアフロントに [&#x200B; レコメンデーションドロップダウン &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) を設定します。
+1. この ID を使用して、Edge Delivery Services ストアフロントに [&#x200B; レコメンデーションドロップダウン &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=ja) を設定します。
 
 ## 既存のお勧めを管理
 
