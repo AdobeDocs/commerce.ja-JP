@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 103.4.18 リリース
 
-![&#x200B; 修正 &#x200B;](../assets/fix.svg) アップデート中に項目バッチが許容制限を超えて、`items_limit_exceeded`Commerce サービスまたは [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) にデータを同期する際に [&#x200B; エラーが発生す &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync) 可能性がある問題を修正しました。 <!--MDEE-1264-->
+![&#x200B; 修正 &#x200B;](../assets/fix.svg) アップデート中に項目バッチが許容制限を超えて、`items_limit_exceeded`Commerce サービスまたは [Adobe Commerce Optimizer](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home) にデータを同期する際に [&#x200B; エラーが発生す &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/data-sync) 可能性がある問題を修正しました。 <!--MDEE-1264-->
 ![&#x200B; 修正 &#x200B;](../assets/fix.svg) バンドル製品オプションの収集時に失敗した項目を登録するロジックを追加することで、製品データ書き出しの信頼性が向上しました。<!--CCSAAS-4458-->
 
 ## 103.4.17 リリース   
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ## 103.4.15 リリース
 
-![&#x200B; 新規 &#x200B;](../assets/new.svg) Adobe Commerceから接続されたサービス（カタログサービス、ライブ検索、商品レコメンデーション）へのデータ転送をモニタリングおよびトラブルシューティングするためのデータフィード同期ステータス拡張機能のサポートが追加されました。 この拡張機能のインストールと使用について詳しくは、&lbrace;2[Commerce管理ガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) の「データフィード同期ステータスの監視 *を参照してください。*<!--MDEE-954-->
+![&#x200B; 新規 &#x200B;](../assets/new.svg) Adobe Commerceから接続されたサービス（カタログサービス、ライブ検索、商品レコメンデーション）へのデータ転送をモニタリングおよびトラブルシューティングするためのデータフィード同期ステータス拡張機能のサポートが追加されました。 この拡張機能のインストールと使用について詳しくは、&lbrace;2[Commerce管理ガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=ja) の「データフィード同期ステータスの監視 *を参照してください。*<!--MDEE-954-->
 
 ## 103.4.14 リリース
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## 103.4.11 リリース
 
-![New](../assets/new.svg) [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
+![New](../assets/new.svg) [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}
 商品フィードにCommerce商品コンフィギュレーションの税区分、属性セット、在庫データを含めるために、追加の商品属性のサポートが追加されました。 これらの属性を商品の書き出しフィードに含める場合は、Adobe Commerce プロジェクトに「その他の商品属性」モジュールを追加する必要があります。 [&#x200B; 税金区分、属性セットおよび在庫属性の追加 &#x200B;](add-tax-attribute-set-inventory-attributes.md) を参照してください。<!--MDEE-1135-->
 ![&#x200B; 修正 &#x200B;](../assets/fix.svg) 完全な製品インデックスの作成中にエラーが発生した場合に、削除された製品のアップデートの誤った同期が発生する問題を解決しました。 インデックス作成プロセス中にエラーが発生した場合でも、すべての製品の削除が正しく同期されるようになりました。<!--MDEE-1144-->
 
