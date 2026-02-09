@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # カスタムの自動照合
 
-デフォルトの自動一致戦略（**OOTB 自動一致**）が特定のビジネス要件に合っていない場合は、「カスタム一致」オプションを選択します。 このオプションは、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAdobe Developer App Builderに入力できないサードパーティシステムからのアセットを開発する [0}AEM Assets} の使用をサポートします。](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)
+デフォルトの自動一致戦略（**OOTB 自動一致**）が特定のビジネス要件に合っていない場合は、「カスタム一致」オプションを選択します。 このオプションは、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAdobe Developer App Builderに入力できないサードパーティシステムからのアセットを開発する [0&rbrace;AEM Assets&rbrace; の使用をサポートします。](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)
 
 ## カスタムの自動照合を設定
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 **[!UICONTROL Adobe I/O Workspace Configuration]** フィールドを使用すると、App Builder `workspace.json` 設定ファイルを読み込むことで、カスタムマッチャーを効率的に設定できます。
 
-`workspace.json` ファイルは [1}Adobe Developer Console} からダウンロードできます。 ](https://developer.adobe.com/console)このファイルには、App Builder Workspace のすべての資格情報と設定の詳細が含まれています。
+`workspace.json` ファイルは [1&rbrace;Adobe Developer Console&rbrace; からダウンロードできます。 &#x200B;](https://developer.adobe.com/console)このファイルには、App Builder Workspace のすべての資格情報と設定の詳細が含まれています。
 
 +++例 `workspace.json`
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 1. App Builder プロジェクトから `workspace.json` ファイルを「**[!UICONTROL Adobe I/O Workspace Configuration]**」フィールドにドラッグ&amp;ドロップします。 または、をクリックして、ファイルを参照して選択することもできます。
 
-![Workspaceの設定 ](../assets/workspace-configuration.png){width="600" zoomable="yes"}
+![Workspaceの設定 &#x200B;](../assets/workspace-configuration.png){width="600" zoomable="yes"}
 
 1. システムは自動的に次の処理を行います。
 
