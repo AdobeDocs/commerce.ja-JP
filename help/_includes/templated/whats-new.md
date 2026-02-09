@@ -23,7 +23,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets Integration v1.2.13 では、カスタムマッチャー設定に <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Adobe I/O Workspace Configuration</a> が追加されています。 App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code> をアップロードして自動検証や資格情報の抽出用に使用したり、手動で設定したりできます。 v1.2.13 の <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes"> リリースノート </a> および更新された <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match"> カスタムマッチング </a> ガイドを参照してください。</p>
+      <td><p>AEM Assets Integration v1.2.13 では、カスタムマッチャー設定に <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match">Adobe I/O Workspace Configuration</a> が追加されています。 App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code> をアップロードして自動検証や資格情報の抽出用に使用したり、手動で設定したりできます。 v1.2.13 の <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/release-notes"> リリースノート </a> および更新された <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match"> カスタムマッチング </a> ガイドを参照してください。</p>
 </td>
       <td>
         メジャーアップデート
@@ -45,7 +45,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.19</a> のリリースノートを追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.19</a> のリリースノートを追加しました。</p>
 </td>
       <td>
         技術
@@ -67,7 +67,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>2026 年 2 月のサンドボックスリリースの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Adobe Commerce as a Cloud Service リリースノート </a> を更新しました。</p>
+      <td><p>2026 年 2 月のサンドボックスリリースの <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes">Adobe Commerce as a Cloud Service リリースノート </a> を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -89,7 +89,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.18</a> のリリースノートを追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.18</a> のリリースノートを追加しました。</p>
 </td>
       <td>
         技術
@@ -111,7 +111,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>Commerceのお客様がCommerce Admin のフィード同期ステータスページからデータフィードの書き出しを監視およびトラブルシューティングする方法について説明しました。 データの書き出しガイドの <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process"> 同期プロセスの表示と管理 </a> を参照してください。</p>
+      <td><p>Commerceのお客様がCommerce Admin のフィード同期ステータスページからデータフィードの書き出しを監視およびトラブルシューティングする方法について説明しました。 データの書き出しガイドの <a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process"> 同期プロセスの表示と管理 </a> を参照してください。</p>
 </td>
       <td>
         技術
@@ -133,7 +133,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>新しいインフラストラクチャ、運用機能、マーケットプレイス情報など、<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison"> 機能比較ページ </a> に詳細情報を追加しました。</p>
+      <td><p>新しいインフラストラクチャ、運用機能、マーケットプレイス情報など、<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/feature-comparison"> 機能比較ページ </a> に詳細情報を追加しました。</p>
 </td>
       <td>
         Feedback
@@ -155,7 +155,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>非推奨の検索アダプタから移行するお客様のための <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Search Adapter to PLP Widget への移行 </a> ガイドに、詳細な移行シナリオ、段階的な手順、役割に基づくガイダンス、およびトラブルシューティングが追加されました。</p>
+      <td><p>非推奨の検索アダプタから移行するお客様のための <a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Search Adapter to PLP Widget への移行 </a> ガイドに、詳細な移行シナリオ、段階的な手順、役割に基づくガイダンス、およびトラブルシューティングが追加されました。</p>
 </td>
       <td>
         フィードバック、メジャーアップデート、新しいトピック
@@ -177,7 +177,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service&rbrace; のストアフロント設定ガイドが更新され </a> ストアフロントのボイラープレートリポジトリ内のファイルの代わりに設定サービスを使用するよう、Edge Delivery Services用のCommerce ストアフロント設定の移行に関する情報が追加 <code class="language-plaintext highlighter-rouge">config.json</code> れました。 Adobeでは、Configuration Service を使用して、Edge Delivery Servicesにデプロイされたストアフロントの設定を管理することをお勧めします。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> および <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service&rbrace; のストアフロント設定ガイドが更新され </a> ストアフロントのボイラープレートリポジトリ内のファイルの代わりに設定サービスを使用するよう、Edge Delivery Services用のCommerce ストアフロント設定の移行に関する情報が追加 <code class="language-plaintext highlighter-rouge">config.json</code> れました。 Adobeでは、Configuration Service を使用して、Edge Delivery Servicesにデプロイされたストアフロントの設定を管理することをお勧めします。</p>
 </td>
       <td>
         フィードバック、技術
@@ -243,7 +243,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest"> リリースノート </a> を更新しました。</p>
+      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes#latest"> リリースノート </a> を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -265,7 +265,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce Optimizerのトピック <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits"> 制限と制限 </a> を更新し、ライセンス制限とシステム範囲を説明し、制限の説明を追加し、キャパシティ計画のガイダンスとパフォーマンスの問題を防ぐガイダンスを含めました。</p>
+      <td><p>Adobe Commerce Optimizerのトピック <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits"> 制限と制限 </a> を更新し、ライセンス制限とシステム範囲を説明し、制限の説明を追加し、キャパシティ計画のガイダンスとパフォーマンスの問題を防ぐガイダンスを含めました。</p>
 </td>
       <td>
         フィードバック、技術
@@ -287,7 +287,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.16 および 103.4.17</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes"> カタログアダプターバージョン 1.10.0</a> のリリースノートを追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.16 および 103.4.17</a> および <a href="https://experienceleague.adobe.com/ja/docs/commerce/price-indexer/catalog-adapter/release-notes"> カタログアダプターバージョン 1.10.0</a> のリリースノートを追加しました。</p>
 </td>
       <td>
         技術
@@ -309,7 +309,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets統合ドキュメントの <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">AEMの設定 </a> トピックを更新しました。</p>
+      <td><p>AEM Assets統合ドキュメントの <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">AEMの設定 </a> トピックを更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -331,7 +331,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>次の新しいトピックを追加しました：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities"> オポチュニティ </a>Adobe Sites Optimizer統合を通じて AI を活用したサイト最適化の推奨事項を文書化します。これには、SEO、メタデータ、製品データ品質を向上させるための自動検出ワークフローと自動修正ワークフローが含まれます。<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer"> カタログレイヤー </a> ソースデータを変更せずに商品データを変更する方法を説明します。これには、レイヤーの優先度管理やSites Optimizer自動修正機能との統合が含まれます。</p>
+      <td><p>次の新しいトピックを追加しました：<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/manage-results/opportunities"> オポチュニティ </a>Adobe Sites Optimizer統合を通じて AI を活用したサイト最適化の推奨事項を文書化します。これには、SEO、メタデータ、製品データ品質を向上させるための自動検出ワークフローと自動修正ワークフローが含まれます。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-layer"> カタログレイヤー </a> ソースデータを変更せずに商品データを変更する方法を説明します。これには、レイヤーの優先度管理やSites Optimizer自動修正機能との統合が含まれます。</p>
 </td>
       <td>
         メジャーアップデート、新しいトピック
