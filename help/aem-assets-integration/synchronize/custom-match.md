@@ -3,16 +3,16 @@ title: カスタムの自動照合
 description: カスタム自動照合が、複雑な照合ロジックを持つマーチャントや、メタデータをAEM Assetsに入力できないサードパーティシステムに依存するマーチャントにとって特に役立つ仕組みを説明します。
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: ee1dd902a883e5653a9fb8764fac708975c37091
+source-git-commit: dfc4aaf1f780eb4a57aa4b624325fa24e571017d
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 1%
+source-wordcount: '432'
+ht-degree: 0%
 
 ---
 
 # カスタムの自動照合
 
-デフォルトの自動一致戦略（**OOTB 自動一致**）が特定のビジネス要件に合っていない場合は、「カスタム一致」オプションを選択します。 このオプションは、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAdobe Developer App Builderに入力できないサードパーティシステムからのアセットを開発する [0&rbrace;AEM Assets&rbrace; の使用をサポートします。](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)
+デフォルトの自動一致戦略（**OOTB 自動一致**）が特定のビジネス要件に合っていない場合は、「カスタム一致」オプションを選択します。 このオプションは、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAdobe Developer App Builderに入力できないサードパーティシステムからのアセットを開発する [0}AEM Assets} の使用をサポートします。](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)
 
 ## カスタムの自動照合を設定
 
@@ -22,9 +22,99 @@ ht-degree: 1%
 
 1. この一致ルールを選択すると、カスタム一致ロジックに必要な **認証パラメーター** および **エンドポイント** を設定するための追加フィールドが表示されます。
 
+### workspace.json
+
+**[!UICONTROL Adobe I/O Workspace Configuration]** フィールドを使用すると、App Builder `workspace.json` 設定ファイルを読み込むことで、カスタムマッチャーを効率的に設定できます。
+
+`workspace.json` ファイルは [1}Adobe Developer Console} からダウンロードできます。 ](https://developer.adobe.com/console)このファイルには、App Builder Workspace のすべての資格情報と設定の詳細が含まれています。
+
++++例 `workspace.json`
+
+```json
+{
+  "project": {
+    "id": "project_id",
+    "name": "project_name",
+    "title": "title_name",
+    "org": {
+      "id": "id",
+      "name": "Organization_name",
+      "ims_org_id": "ims_id"
+    },
+    "workspace": {
+      "id": "workspace_id",
+      "name": "workspace_name_id",
+      "title": "workspace_title_id",
+      "action_url": "https://action_url.net",
+      "app_url": "https://app_url.net",
+      "details": {
+        "credentials": [
+          {
+            "id": "credential_id",
+            "name": "credential_name_id",
+            "integration_type": "oauth_server_to_server",
+            "oauth_server_to_server": {
+              "client_id": "client_id",
+              "client_secrets": ["secret"],
+              "technical_account_email": "xx@technical_account_email.com",
+              "technical_account_id": "technical_account_id",
+              "scopes": [
+                "AdobeID",
+                "openid",
+                "read_organizations",
+                "additional_info.projectedProductContext",
+                "additional_info.roles",
+                "adobeio_api",
+                "read_client_secret",
+                "manage_client_secrets"
+              ]
+            }
+          }
+        ],
+        "services": [
+          {
+            "code": "AdobeIOManagementAPISDK",
+            "name": "I/O Management API"
+          }
+        ],
+        "runtime": {
+          "namespaces": [
+            {
+              "name": "namespace_name",
+              "auth": "example_auth"
+            }
+          ]
+        },
+        "events": {
+          "registrations": []
+        },
+        "mesh": {}
+      }
+    }
+  }
+}
+```
+
++++
+
+1. App Builder プロジェクトから `workspace.json` ファイルを「**[!UICONTROL Adobe I/O Workspace Configuration]**」フィールドにドラッグ&amp;ドロップします。 または、をクリックして、ファイルを参照して選択することもできます。
+
+![Workspaceの設定 ](../assets/workspace-configuration.png){width="600" zoomable="yes"}
+
+1. システムは自動的に次の処理を行います。
+
+   * JSON 構造を検証します。
+   * OAuth 認証情報を抽出して入力します
+   * ワークスペースで使用可能な実行時アクションを取得します
+   * 「**[!UICONTROL Product to Asset URL]**」フィールドと「**[!UICONTROL Asset to Product URL]**」フィールドのドロップダウンオプションを入力します
+
+1. 各フローのドロップダウンメニューから適切な実行時アクションを選択します。
+
+1. 「**[!UICONTROL Save Config]**」をクリックします。
+
 ## カスタムマッチャー API エンドポイント
 
-[App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} を使用してカスタムマッチャーアプリケーションを作成する場合、アプリケーションは次のエンドポイントを公開する必要があります。
+[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} を使用してカスタムマッチャーアプリケーションを作成する場合、アプリケーションは次のエンドポイントを公開する必要があります。
 
 * **App Builder asset to product URL** endpoint
 * **App Builder製品からアセットの URL** エンドポイント
@@ -176,6 +266,6 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | 属性 | データタイプ | 説明 |
 | --- | --- | --- |
 | `asset_id` | 文字列 | 更新されたアセット ID を表します。 |
-| `asset_roles` | 文字列 | 使用可能なすべてのアセットの役割を返します。 [、](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)、`thumbnail`、`image` など `small_image` サポートされる `swatch_image`Commerce アセットの役割を使用します。 |
+| `asset_roles` | 文字列 | 使用可能なすべてのアセットの役割を返します。 [、](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)、`thumbnail`、`image` など `small_image` サポートされる `swatch_image`Commerce アセットの役割を使用します。 |
 | `asset_format` | 文字列 | アセットで使用可能な形式を提供します。 使用可能な値は `image` および `video` です。 |
 | `asset_position` | 文字列 | アセットの位置を表示します。 |
