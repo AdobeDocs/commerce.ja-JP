@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Product Recommendations] ガイド'
 user-guide-description: このガイドでは、Adobe Commerceのを使用する詳細  [!DNL Product Recommendations]  手順を説明します。
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
+source-git-commit: 1b10163c39d9f309afd24aa2e808a57e069258f8
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 12%
+source-wordcount: '59'
+ht-degree: 11%
 
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 12%
 - [ガイドの概要](guide-overview.md)
 - [概要  [!DNL Product Recommendations]](overview.md)
 - [リリースノート](release-notes.md)
+- [境界と制限](boundaries-limits.md)
 - はじめに {#getting-started}
    - [オンボーディング](onboarding.md)
    - [実装ワークフロー](implementation-workflow.md)
@@ -35,4 +36,4 @@ ht-degree: 12%
    - [データを収集](events.md)
    - [Customize](customize.md)
    - [Cookie 制限の処理](setting-cookie.md)
-- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

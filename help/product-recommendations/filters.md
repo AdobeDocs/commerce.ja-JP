@@ -2,9 +2,9 @@
 title: 製品のフィルタリング
 description: レコメンデーションとして使用される製品を含める、または除外する条件を定義します。
 exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
-source-git-commit: 3821893c3df01e2e36ab0142616e52c1c92b4d51
+source-git-commit: 1b10163c39d9f309afd24aa2e808a57e069258f8
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Adobe Commerceは、設定不可のデフォルトフィルターをレコメンデーションユニットに自動的に適用します。 1 つのページに複数のレコメンデーションユニットがデプロイされている場合、Adobe Commerceでは、ユニットで繰り返される商品が除外されます。 他の製品を推奨する余地を残すために、繰り返し使用される製品への最初の参照のみが使用されます。 また、Adobe Commerceは、以前に購入した製品と、買い物かごに入っている製品も除外します。
 
-レコメンデーションユニットを [&#x200B; 作成 &#x200B;](create.md) する場合、レコメンデーションに表示する製品を制御するフィルターを定義できます。 これらのフィルターは、定義した一連の包含または除外条件に基づいています。 すべてのインクルージョン条件に一致する製品のみがレコメンデーションに表示されます。 除外条件のいずれかに一致する製品は推奨されません。
+レコメンデーションユニットを [ 作成 ](create.md) する場合、レコメンデーションに表示する製品を制御するフィルターを定義できます。 これらのフィルターは、定義した一連の包含または除外条件に基づいています。 すべてのインクルージョン条件に一致する製品のみがレコメンデーションに表示されます。 除外条件のいずれかに一致する製品は推奨されません。
 
 複数のフィルターを設定し、各フィルターページの切り替えを選択して、必要なフィルターのみを有効にすることができます。 これにより、後で使用するためにフィルターのドラフトを作成できます。 有効なフィルターの数は、タブごとに表示されます。
 
@@ -34,11 +34,11 @@ Adobe Commerceは、設定不可のデフォルトフィルターをレコメン
 
 >[!NOTE]
 >
-> 包含フィルターと除外フィルターは、`magento/product-recommendations` モジュールのバージョン 3.2.2 以降で従来のカテゴリの除外に置き換わります。 Adobe Commerce リリースについて詳しくは、[&#x200B; リリースノート &#x200B;](release-notes.md) を参照してください。
+> 包含フィルターと除外フィルターは、`magento/product-recommendations` モジュールのバージョン 3.2.2 以降で従来のカテゴリの除外に置き換わります。 Adobe Commerce リリースについて詳しくは、[ リリースノート ](release-notes.md) を参照してください。
 
 ## フィルターのタイプ {#filtertypes}
 
-![&#x200B; フィルター &#x200B;](assets/rec-conditions.png)
+![ フィルター ](assets/rec-conditions.png)
 
 ### カテゴリ
 
@@ -48,7 +48,7 @@ Adobe Commerceは、設定不可のデフォルトフィルターをレコメン
 
 >[!NOTE]
 >
->B2B マーチャントの場合、カテゴリフィルターは、設定した [&#x200B; 顧客固有の製品カテゴリ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=ja) に従います。
+>B2B マーチャントの場合、カテゴリフィルターは、設定した [ 顧客固有の製品カテゴリ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) に従います。
 
 Adobe Commerceでは、ページタイプにレコメンデーションをデプロイする際に、次のカテゴリフィルター設定を使用することをお勧めします。
 
@@ -78,11 +78,11 @@ Adobe Commerceでは、ページタイプにレコメンデーションをデプ
 
 ### 価格
 
-製品価格に基づくフィルターでは、最終価格を使用して比較を実行します。 最終価格には、匿名の買い物客が利用できる割引や特別価格が含まれます。 B2B マーチャントの場合、表示される価格は、設定した [&#x200B; 顧客固有のグループ価格 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja) を反映しています。
+製品価格に基づくフィルターでは、最終価格を使用して比較を実行します。 最終価格には、匿名の買い物客が利用できる割引が含まれます。 B2B マーチャントの場合、表示される価格は、設定した [ 顧客固有のグループ価格 ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) を反映しています。
 
 ### 在庫ステータス
 
 在庫ステータスに基づいて製品を除外するには、次の除外フィルターを使用できます。
 
 - 在庫切れ – （除外のみ）在庫切れの製品を除外します。
-- 低在庫 – （除外のみ）在庫が少ない製品を除外します。 在庫が少ないステータスは、_在庫設定_ の [&#x200B; 左側が X 個のみのしきい値 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=ja) の値に基づきます。
+- 低在庫 – （除外のみ）在庫が少ない製品を除外します。 在庫が少ないステータスは、_在庫設定_ の [ 左側が X 個のみのしきい値 ](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html) の値に基づきます。
