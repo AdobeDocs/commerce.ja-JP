@@ -3,9 +3,9 @@ title: AEMへのメディアファイルの移行
 description: Adobe Commerceまたは外部ソースからAEM Assets DAM にメディアファイルを移行します。
 feature: CMS, Media, Integration
 exl-id: ccb13e90-8b18-4f1e-94ce-f0dacea2f617
-source-git-commit: d46526db56dad08a8f865664c92d1214bbf063d8
+source-git-commit: ac880333814d9d9a45e658e2a637cd9634dbfb1f
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Adobe CommerceとAdobe Experience Manager（AEM）には、CommerceからAEM Ass
 |----------|-------------|
 | **必要システム構成** | <ul><li>AEM AssetsでプロビジョニングされたAEM as a Cloud Service環境</li><li>十分なストレージ容量</li><li>大きなファイル転送のネットワーク帯域幅</li></ul> |
 | **必要なアクセスと権限** | <ul><li>AEM Assets as a Cloud Serviceへの管理者アクセス</li><li>メディアファイルが格納されているソースシステム（Adobe Commerceまたは外部システム）へのアクセス</li><li>クラウドストレージサービスにアクセスするための適切な権限</li></ul> |
-| **クラウドストレージアカウント** | <ul><li>AWS S3 または Azure Blob Storage アカウント</li><li>プライベートコンテナ / バケット設定</li><li>認証資格情報</li></ul> |
-| **Source コンテンツ** | <ul><li>整理されたメディア ファイルの移行の準備ができました</li><li>の画像およびビデオファイル <a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">AEM Assetsでサポートされる形式 </a>。</li><li>重複したアセットのクリーンアップ</li></li> |
-| **メタデータの準備** | <ul><li><a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-aem">Commerce アセット用に設定されたAEM Assets メタデータプロファイル </a></li><li>各アセットのマッピングされたメタデータ値</li><li>CSV ファイルエディター（Microsoft Excel など）</li></ul> |
+| **クラウドストレージアカウント** | <ul><li>AWS S3 またはAzure Blob Storage アカウント</li><li>プライベートコンテナ / バケット設定</li><li>認証資格情報</li></ul> |
+| **Source コンテンツ** | <ul><li>整理されたメディア ファイルの移行の準備ができました</li><li>の画像およびビデオファイル <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">AEM Assetsでサポートされる形式 </a>。</li><li>重複したアセットのクリーンアップ</li></li> |
+| **メタデータの準備** | <ul><li><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-aem">Commerce アセット用に設定されたAEM Assets メタデータプロファイル </a></li><li>各アセットのマッピングされたメタデータ値</li><li>CSV ファイルエディター（Microsoft Excel など）</li></ul> |
 
 ## 移行のベストプラクティス
 
@@ -42,17 +42,50 @@ Adobe CommerceとAdobe Experience Manager（AEM）には、CommerceからAEM Ass
 
 ### 手順 1：既存のデータソースからのコンテンツのエクスポート
 
-[!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}
+[!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}
 
-Adobe Commerceのマーチャントにとっては、**リモートストレージモジュール** は、メディアファイルの読み込みと書き出しを容易にすることができます。 このモジュールを使用すると、企業はAWS S3 などのリモートストレージサービスを使用してメディアファイルを保存および管理できます。 Commerce インスタンスにリモートストレージを設定するには、[Commerce設定ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) の **リモートストレージの設定** を参照してください。
+Adobe Commerceのマーチャントにとっては、**リモートストレージモジュール** は、メディアファイルの読み込みと書き出しを容易にすることができます。 このモジュールを使用すると、企業はAWS S3 などのリモートストレージサービスを使用してメディアファイルを保存および管理できます。 Commerce インスタンスにリモートストレージを設定するには、[Commerce設定ガイド ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) の **リモートストレージの設定** を参照してください。
 
-メディアファイルがAdobe Commerce以外に保存されている場合は、AEM as a Cloud Serviceでサポートされている [&#x200B; データソース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites) の 1 つに直接アップロードします。
+メディアファイルがAdobe Commerce以外に保存されている場合は、AEM as a Cloud Serviceでサポートされている [ データソース ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites) の 1 つに直接アップロードします。
 
 ### 手順 2：メタデータマッピング用の CSV ファイルの作成
 
-メディアファイルを書き出したら、CSV ファイルを作成して、自動化に必要なメタデータでこれらのアセットをマッピングします。 CSV には、&lbrace;product **、&lbrace;position** および **role mapping** のフィールドを含める必要があり、**6** AEM Assets メタデータプロファイル [&#x200B; と整合している必要があります。](configure-aem.md#configure-a-metadata-profile)
+各メディアファイルをCommerceの商品データにマッピングする CSV ファイルを作成します。 次のいずれかの方法を選択します。
 
-次の表に示すように、Commerce アセットの [AEM Assets メタデータプロファイルに含まれるメタデータフィールドの値を &#x200B;](configure-aem.md) 移行するメディアファイルごとに指定します。
+* **Adobe Commerce（PaaS）**: CLI コマンドを使用して、カタログから CSV を自動生成します
+* CSV ファイルの手動作成
+
+#### CLI を使用したメタデータのエクスポート
+
+[!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}
+
+AEM Assets Integration CLI コマンドを使用して、Commerce プロジェクトに保存されている商品メディアファイルから、画像の URL、位置、ロールを含むメタデータ CSV ファイルを自動生成します。
+
+1. AEM Assets統合モジュールがインストールされていることを確認するために使用できるコマンドを次に示します。
+
+   ```bash
+   bin/magento list aem
+   ```
+
+   カスタム拡張機能コマンドは、コマンドリストの先頭にある `aem` の下に表示されます。
+
+1. メタデータの書き出しコマンドを、AEMのパスプレフィックスと共に実行します。
+
+   ```bash
+   bin/magento aem:assets:export:csv <AEM-path-prefix>
+   ```
+
+   `<AEM-path-prefix>` は、アセットがAEM Assets DAM に保存されるベースフォルダーパスです（例：`/content/dam/commerce/`）。
+
+   ```bash
+   bin/magento aem:assets:export:csv /content/dam/commerce/
+   ```
+
+   これにより、Commerce カタログ内の各商品アセットの画像 URL、位置、ロールを含む `metadata.csv` ファイルが `var/export` ディレクトリに作成されます。
+
+#### CSV を手動で作成
+
+Adobe Commerce以外に保存されたメディアファイルの場合は、CSV ファイルを手動で作成します。 列ヘッダー **一致する必要があります** は、[AEM Assets メタデータプロファイルで設定されたフィールド名 ](configure-aem.md) です。 ファイルを作成したら、各メディア・ファイルのメタデータ値を行に入力します。
 
 | メタデータ | 説明 | 値 |
 |-------|-------------|--------|
@@ -80,15 +113,15 @@ assetPath,commerce:positions{{Number: multi}},commerce:isCommerce{{String}},comm
 
 以下は、このツールの使用の概要です。
 
-1. [AEM Assets as a Cloud Service オーサー環境にログインします &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem)。
+1. [AEM Assets as a Cloud Service オーサー環境にログインします ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem)。
 
 1. Experience Managerのツール ビューで、**[!UICONTROL Assets]** / **[!UICONTROL Bulk Import]** を選択します。
 
-   ![AEM Assetsの作成 &#x200B;](../assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
+   ![AEM Assetsの作成 ](../assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
 
 1. 一括読み込み設定で「**[!UICONTROL Create]**」を選択して、設定フォームを開きます。
 
-   ![AEM Assetsの作成 &#x200B;](../assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
+   ![AEM Assetsの作成 ](../assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
 
 1. 設定を行い、設定を保存します。
 
@@ -99,12 +132,12 @@ assetPath,commerce:positions{{Number: multi}},commerce:isCommerce{{String}},comm
    * オプション。 読み込み設定をカスタマイズするための MIME タイプ、ファイルサイズおよびその他のパラメーターに関する情報です
    * クラウドストレージインスタンスにアップロードしたメタデータマッピング CSV ファイルへのパス。
 
-   手順について詳しくは、[AEM Assets as a Cloud Service ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/add-assets#configure-bulk-ingestor-tool) 一括読み込みツールの設定 *を参照してください*。
+   手順について詳しくは、[AEM Assets as a Cloud Service ユーザーガイド ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#configure-bulk-ingestor-tool) 一括読み込みツールの設定 *を参照してください*。
 
 1. 設定を保存したら、一括読み込みツールを使用して、読み込み操作をテストおよび実行します。
 
 >[!MORELIKETHIS]
 >
-> [&#x200B; 一括読み込みツールのビデオデモ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
-> [ヒント、ベストプラクティス、制限事項 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> [API を使用したアセットのアップロードまたは取り込み &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> [ 一括読み込みツールのビデオデモ ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
+> [ヒント、ベストプラクティス、制限事項 ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
+> [API を使用したアセットのアップロードまたは取り込み ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
