@@ -50,21 +50,21 @@ Adobeは、AEM Commerce環境設定にCommerce名前空間およびメタデー�
 
 `assets-commerce` パッケージコードをAEM Assets as a Cloud Service AEM環境にデプロイするには、次のリソースと権限が必要です。
 
-* プログラムおよびデプロイメントマネージャーの役割を使用して [AEM Assets Cloud Manager プログラムおよび環境にアクセス &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) します。
+* プログラムおよびデプロイメントマネージャーの役割を使用して [AEM Assets Cloud Manager プログラムおよび環境にアクセス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) します。
 
-* [&#x200B; ローカル AEMローカル開発環境 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) およびAEM開発プロセスに精通していること。
+* [&#x200B; ローカル AEMローカル開発環境 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) およびAEM開発プロセスに精通していること。
 
 * [AEM プロジェクト構造 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) およびCloud Managerを使用してカスタムコンテンツパッケージをデプロイする方法を理解します。
 
 * Commerce インスタンスの **IMS 組織 ID**。 Commerce インスタンスとAEM Assets オーサリング環境は、両方とも同じ IMS 組織内にある必要があります。
 
-* [OpenAPI 機能を備えた Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) を有効にするには：
+* [OpenAPI 機能を備えた Dynamic Media](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) を有効にするには：
 
 >[!BEGINTABS]
 
 >[!TAB  製品ビジュアル ]
 
-[!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}OpenAPI 機能を備えた Dynamic Media は、AEM Assetsを活用した Product Visuals のセルフサービスです。
+[!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}OpenAPI 機能を備えた Dynamic Media は、AEM Assetsを活用した Product Visuals のセルフサービスです。
 
 1. Cloud Managerに移動します。
 
@@ -93,15 +93,15 @@ Adobeは、AEM Commerce環境設定にCommerce名前空間およびメタデー�
 
 ## 手順 1:assets-commerce パッケージのインストール
 
-1. AEM Cloud Managerに移動してプログラムを選択し、Adobe Commerceと統合する [&#x200B; 実稼動環境とステージング環境の作成 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) を実行します。
+1. AEM Cloud Managerに移動してプログラムを選択し、Adobe Commerceと統合する [&#x200B; 実稼動環境とステージング環境の作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) を実行します。
 
-1. [&#x200B; デプロイメントパイプライン &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) を設定するか、パイプラインが選択した環境に変更をデプロイできることを確認します。
+1. [&#x200B; デプロイメントパイプライン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) を設定するか、パイプラインが選択した環境に変更をデプロイできることを確認します。
 
-1. 選択したプログラムの [Adobeの管理 Git リポジトリを複製 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) します。
+1. 選択したプログラムの [Adobeの管理 Git リポジトリを複製 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) します。
 
 1. GitHub で、[AEM Assets Commerce リポジトリ &#x200B;](https://github.com/ankumalh/assets-commerce) からパッケージコードをダウンロードします。
 
-1. [&#x200B; ローカル AEM開発環境 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) から、ダウンロードしたコードを既存のAdobeが管理するリポジトリに手動でコピーします。
+1. [&#x200B; ローカル AEM開発環境 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) から、ダウンロードしたコードを既存のAdobeが管理するリポジトリに手動でコピーします。
 
 1. プロジェクトのすべての `filter.xml` と `pom.xml files` で、`<my-app>` をアプリ名にすべて置き換えます。
 
@@ -135,7 +135,7 @@ Adobeは、AEM Commerce環境設定にCommerce名前空間およびメタデー�
 
 1. **checkbox** コンポーネントを **Commerce** タブにドラッグ&amp;ドロップし、プロパティ `commerce:isCommerce` にマッピングします。 **はい** と **いいえ** をオプションとして定義します。
 
-その他の問題が発生した場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) を作成するか、AEM Assets Integration の営業担当者にお問い合わせください。
+その他の問題が発生した場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) を作成するか、AEM Assets Integration の営業担当者にお問い合わせください。
 
 ## 手順 2：オプション。 メタデータプロファイルの設定
 
@@ -213,4 +213,4 @@ AEM Assets オーサー環境で、メタデータプロファイルを作成し
 
 * [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}Adobe Commerce パッケージ [&#x200B; インストール &#x200B;](configure-commerce.md)。
 
-* [!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}[Commerce Admin から統合を設定します &#x200B;](setup-synchronization.md)。
+* [!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}[Commerce Admin から統合を設定します &#x200B;](setup-synchronization.md)。
