@@ -4,9 +4,9 @@ description: 製品ページ、カテゴリページ、検索結果のページ�
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: e582bff6ee8ee7c4213f04bdab984efa94333fb6
+source-git-commit: 4f3f8accd653dbee6fec45c065f55ff04b17bd2d
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -34,10 +34,14 @@ ht-degree: 0%
 - **分離されたアーキテクチャ**：カタログデータ用の個別のGraphQL システムにより、Commerceのコア業務に影響を与えることなく高いパフォーマンスを確保します
 - **リアルタイムデータ同期**：カタログサービスは、SaaS Data Export 拡張機能を通じてAdobe Commerce アプリケーションと同期が維持され、クエリは最新のカタログデータを返します
 - **Data Management Dashboard**:Adobe Commerce Admin Interface からデータ同期処理をモニターおよび管理します
-- **API メッシュ統合**: オプションで [Adobe Developer App Builderの API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/) と統合して、Adobe Commerce GraphQL システムを他の内部およびサードパーティ API と組み合わせ、カタログサービスのGraphQL スキーマを拡張し、カスタムデータや機能を追加できます
+- **API メッシュ統合**: オプションで [Adobe Developer App Builderの API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/) と統合して、Adobe Commerce GraphQL システムを他の内部およびサードパーティ API と組み合わせ、カタログサービスのGraphQL スキーマを拡張し、カスタムデータや機能を追加できます
 
 
 ## アーキテクチャの概要
+
+>[!NOTE]
+>
+>Adobe Commerce OptimizerまたはAdobe Commerce Optimizer Connector で構成可能なカタログを使用してカタログを実装する場合は、[Adobe Commerce Optimizer ガイドおよびマーチャンダイジングサービス開発者ガイドを参照し ](../optimizer/overview.md#architecture) ください。
 
 [!DNL Catalog Service] は [GraphQL](https://graphql.org/) を使用して、商品、商品属性、在庫、価格などのカタログデータをリクエストおよび受け取ります。 GraphQLは、フロントエンドクライアントが、Adobe Commerceなどのバックエンドで定義されたアプリケーションプログラミングインターフェイス（API）との通信に使用するクエリ言語です。 GraphQLは軽量で、システムインテグレーターが各応答の内容と順序を指定できるため、一般的な通信方法です。
 
@@ -57,15 +61,15 @@ Adobe Commerceには、異なる目的に使用する 2 つのGraphQL システ�
 - **メリット**：製品データに関してコアシステムよりも大幅に高速
 - **ユースケース**：速度が重要なストアフロントの製品エクスペリエンス
 
-カタログサービスで使用可能なデータは、SaaS データエクスポート拡張機能によって配信されます。 この拡張機能では、Commerce アプリケーションと接続されたCommerce サービスの間でデータを同期し、サービス GraphQL API エンドポイントへのクエリが最新のカタログデータを返すようにします。 SaaS データ書き出し操作の管理とトラブルシューティングについては、『 [SaaS データ書き出しガイド &#x200B;](../data-export/overview.md) 』を参照してください。
+カタログサービスで使用可能なデータは、SaaS データエクスポート拡張機能によって配信されます。 この拡張機能では、Commerce アプリケーションと接続されたCommerce サービスの間でデータを同期し、サービス GraphQL API エンドポイントへのクエリが最新のカタログデータを返すようにします。 SaaS データ書き出し操作の管理とトラブルシューティングについては、『 [SaaS データ書き出しガイド ](../data-export/overview.md) 』を参照してください。
 
-[!DNL Catalog Service] のお客様は、より迅速な価格更新と同期時間を提供する [SaaS 価格インデクサー &#x200B;](../price-index/price-indexing.md) を使用できます。
+[!DNL Catalog Service] のお客様は、より迅速な価格更新と同期時間を提供する [SaaS 価格インデクサー ](../price-index/price-indexing.md) を使用できます。
 
 ## アーキテクチャの詳細
 
 次の図は、コア GraphQL システムと Catalog Service GraphQL システムのアーキテクチャの違いを示しており、これらのシステムが連携してストアフロントのパフォーマンスを最適化する仕組みを示しています。
 
-![&#x200B; カタログのアーキテクチャ図 &#x200B;](assets/catalog-service-architecture.png)
+![ カタログのアーキテクチャ図 ](assets/catalog-service-architecture.png)
 
 ### システムの仕組み
 
@@ -77,7 +81,7 @@ Adobe Commerceには、異なる目的に使用する 2 つのGraphQL システ�
 
 コアおよびサービスのGraphQL システムは、相互に直接通信しません。 異なる URL から各システムにアクセスする場合、呼び出しには異なるヘッダー情報が必要です。 2 つのGraphQL システムは、一緒に使用するように設計されています。 [!DNL Catalog Service] GraphQL システムは、コアシステムを強化して、製品ストアフロントのエクスペリエンスを高速化します。
 
-オプションで、[Adobe Developer App Builderの API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/) を実装して、2 つのAdobe Commerce GraphQL システムをAdobe Developerを使用してプライベートおよびサードパーティの API やその他のソフトウェアインターフェイスと統合できます。 メッシュは、各エンドポイントにルーティングされる呼び出しにヘッダーの正しい認証情報が含まれるように設定できます。
+オプションで、[Adobe Developer App Builderの API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/) を実装して、2 つのAdobe Commerce GraphQL システムをAdobe Developerを使用してプライベートおよびサードパーティの API やその他のソフトウェアインターフェイスと統合できます。 メッシュは、各エンドポイントにルーティングされる呼び出しにヘッダーの正しい認証情報が含まれるように設定できます。
 
 ## アーキテクチャの詳細
 
@@ -103,11 +107,11 @@ Adobe Commerceには、異なる目的に使用する 2 つのGraphQL システ�
 
 #### 製品ビュー属性
 
-シンプルな製品と複雑な製品にはどちらも、ストアフロントに表示できる顧客定義の属性があります。 これらの属性は [ProductViewAttributes](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) として返されます。 Adobe Commerceでは、使用可能な属性は商品の作成時に定義されます。 属性は、Adobe Commerce バックエンドから、またはプログラムを使用して追加できます。 [SaaS データ書き出しフィードデータの拡張とカスタマイズ &#x200B;](../data-export/extensibility-and-customizations.md) を参照してください。
+シンプルな製品と複雑な製品にはどちらも、ストアフロントに表示できる顧客定義の属性があります。 これらの属性は [ProductViewAttributes](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) として返されます。 Adobe Commerceでは、使用可能な属性は商品の作成時に定義されます。 属性は、Adobe Commerce バックエンドから、またはプログラムを使用して追加できます。 [SaaS データ書き出しフィードデータの拡張とカスタマイズ ](../data-export/extensibility-and-customizations.md) を参照してください。
 
 >[!TIP]
 >
->Commerce バックエンドにデータタイプを追加する代わりに、[API メッシュとカタログサービス &#x200B;](mesh.md) を使用して、カタログサービス GraphQL スキーマを拡張し、データを追加したり、既存のカタログデータを設定して新しい機能を有効にしたりできます。
+>Commerce バックエンドにデータタイプを追加する代わりに、[API メッシュとカタログサービス ](mesh.md) を使用して、カタログサービス GraphQL スキーマを拡張し、データを追加したり、既存のカタログデータを設定して新しい機能を有効にしたりできます。
 
 ### 価格
 
@@ -119,13 +123,13 @@ Adobe Commerceには、異なる目的に使用する 2 つのGraphQL システ�
 
 >[!NOTE]
 >
-> [!DNL Catalog Service] を使用するCommerceのお客様は、[SaaS 価格インデクサー &#x200B;](../price-index/price-indexing.md) を使用して、web サイトでの価格変更の更新と同期時間の高速化を活用できます。
+> [!DNL Catalog Service] を使用するCommerceのお客様は、[SaaS 価格インデクサー ](../price-index/price-indexing.md) を使用して、web サイトでの価格変更の更新と同期時間の高速化を活用できます。
 
 ## 実装
 
 実装プロセスには、以下が含まれます。
 
-1. [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**[カタログサービスをインストールして設定](installation.md)** – カタログサービス拡張機能をインストールして設定し、[!DNL Commerce Services Connector] を使用して SaaS 接続を設定します。
+1. [!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**[カタログサービスをインストールして設定](installation.md)** – カタログサービス拡張機能をインストールして設定し、[!DNL Commerce Services Connector] を使用して SaaS 接続を設定します。
 2. **ストアフロントコードの更新**：カタログサービスのGraphQL クエリをフロントエンドに統合します。
 3. **ルートクエリ**：すべてのカタログサービスクエリはGraphQL ゲートウェイを経由します（オンボーディング時に提供される URL）
 4. **データ同期の監視とトラブルシューティング**：向上したパフォーマンスの確認と結果の監視
