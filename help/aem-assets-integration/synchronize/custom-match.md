@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # カスタムの自動照合
 
-デフォルトの自動一致戦略（**OOTB 自動一致**）が特定のビジネス要件に合っていない場合は、「カスタム一致」オプションを選択します。 このオプションは、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAdobe Developer App Builderに入力できないサードパーティシステムからのアセットを開発する [0&rbrace;AEM Assets&rbrace; の使用をサポートします。](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)
+デフォルトの自動一致戦略（**OOTB 自動一致**）が特定のビジネス要件に合っていない場合は、「カスタム一致」オプションを選択します。 このオプションは、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAdobe Developer App Builderに入力できないサードパーティシステムからのアセットを開発する [0&rbrace;AEM Assets&rbrace; の使用をサポートします。](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)
 
 ## カスタムの自動照合を設定
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 
 ## カスタムマッチャー API エンドポイント
 
-[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} を使用してカスタムマッチャーアプリケーションを作成する場合、アプリケーションは次のエンドポイントを公開する必要があります。
+[App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} を使用してカスタムマッチャーアプリケーションを作成する場合、アプリケーションは次のエンドポイントを公開する必要があります。
 
 * **App Builder asset to product URL** endpoint
 * **App Builder製品からアセットの URL** エンドポイント
@@ -283,7 +283,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | 属性 | データタイプ | 説明 |
 | --- | --- | --- |
 | `asset_id` | 文字列 | アセット ID。 |
-| `asset_roles` | 配列 | アセットの役割。 [、](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)、`thumbnail`、`image` など `small_image` サポートされる `swatch_image`Commerce アセットの役割を使用します。 |
+| `asset_roles` | 配列 | アセットの役割。 [、](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)、`thumbnail`、`image` など `small_image` サポートされる `swatch_image`Commerce アセットの役割を使用します。 |
 | `asset_format` | 文字列 | アセットの形式。 使用可能な値は `image` および `video` です。 |
 | `asset_position` | 数値 | 商品ギャラリー内のアセットの位置。 |
 
