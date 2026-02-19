@@ -3,9 +3,9 @@ title: 統合の設定
 description: Adobe Commerce プロジェクトとExperience Manager Assets プロジェクトを接続して、これら 2 つのシステム間のアセット同期を有効にする方法を説明します。
 feature: CMS, Media
 exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
-source-git-commit: 2796a2246368d1baeb8721e1f4b74c5f30a5e73b
+source-git-commit: d59c9d179018318d7a0ab1685d8e9e172eefa3ed
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
@@ -16,45 +16,71 @@ CommerceをAEM Assets インスタンスに接続し、アセット同期の一�
 
 AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの間でアセットを同期するための一致ルールを選択します。
 
-* **[!UICONTROL Match by product SKU]** - アセットが正しい商品に関連付けられるようにするために、アセットメタデータの SKU を [1&rbrace;Commerce商品 SKU&rbrace; と一致させるデフォルトのルール。](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/glossary#sku)
+* **[!UICONTROL Match by product SKU]** - アセットが正しい商品に関連付けられるようにするために、アセットメタデータの SKU を [1}Commerce商品 SKU} と一致させるデフォルトのルール。](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku)
 
 * **[!UICONTROL Custom match]** - カスタム・マッチング・ロジックを必要とするより複雑なシナリオや特定のビジネス要件の照合ルール。 カスタムマッチングを実装するには、アセットと商品のマッチング方法を定義するカスタムコードをAdobe Developer App Builderで開発する必要があります。 詳細は近日公開予定です…
 
 初期設定では、デフォルトの *製品 SKU で一致* ルールを使用します。
 
-## Requeriments
+## 要件
+
+AEM Assets統合を設定する前に、次の手順を完了していることを確認してください。
 
 * [AEM Assets プロジェクトの設定](configure-aem.md)
 
-* [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}[Adobe Commerce パッケージをインストール &#x200B;](configure-commerce.md) して、拡張機能を追加し、その拡張機能を使用するために必要な資格情報と接続を生成します。
+* [!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}[Adobe Commerce パッケージをインストール ](configure-commerce.md) して、拡張機能を追加し、その拡張機能を使用するために必要な資格情報と接続を生成します。
+
+### IMS とユーザーの権限
+
+アセットセレクターを使用し、Commerceの設定をよりスムーズにするには、次の権限が必要です。
+
+>[!BEGINTABS]
+
+>[!TAB ACCS]
+
+[!BADGE SaaS のみ ]{type=Positive tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}
+
+IMS 認証はデフォルトで有効になっています。 ユーザーを **Adobe Admin Console} の** AEM Assets DM OpenAPI ユーザー – 配信 [ 製品プロファイルに追加して ](https://adminconsole.adobe.com/)AEM Assets配信レイヤーへのアクセスを許可します。
+
+![AEM Assets配信用のAdmin Console製品プロファイル ](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
+
+>[!TAB PaaS]
+
+[!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}
+
+1. [2}Commerce管理ガイド ](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html){target=_blank} の手順に従って、*CommerceのAdobe IMSを有効にする } を行います。*
+
+1. [ サポートチケットを開く ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) アセットセレクターのカスタム IMS クライアント ID をリクエストします。
+
+1. ユーザーを **Adobe Admin Console} の** AEM Assets DM OpenAPI ユーザー – 配信 [ 製品プロファイルに追加して ](https://adminconsole.adobe.com/)AEM Assets配信レイヤーへのアクセスを許可します。
+
+>[!ENDTABS]
 
 ## 接続の設定
-
-1. [AEM Assets オーサリング環境 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/quick-start) プロジェクトおよび環境 ID を取得します。
-
-   1. AEM Cloud Managerを開き、「**[!UICONTROL Assets]**」を選択します。
-
-   1. 次の URL からプロジェクト ID と環境 ID をコピーして保存します。<br>`https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
 1. Commerce Admin から、AEM Assets Integration configuration を開きます。
 
    1. **[!UICONTROL Store]**/設定/**[!UICONTROL ADOBE SERVICES]**/**[!UICONTROL AEM Assets Integration]** に移動します。
 
-      ![AEM Assets統合：統合の有効化 &#x200B;](../assets/aem-assets-view.png){width="600" zoomable="yes"}
+      ![AEM Assets統合：統合の有効化 ](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
 >[!INFO]
 >
 > AEM Assets統合では、グローバル（デフォルト）スコープでの設定のみがサポートされます。 Web サイトレベルの設定はサポートされていません。 Web サイトレベルで統合を設定しようとすると、システムは web サイトレベルの設定を無視して、代わりにグローバル設定値を使用します。
 
-1. AEM Assets環境 **[!UICONTROL Program ID]** と **[!UICONTROL Environment ID]** を入力します。
+1. [!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}**[!UICONTROL Asset Selector IMS Client ID]** を入力します。
+
+   この ID は、アセットセレクターおよび「プログラム ID」フィールドと「環境 ID」フィールドの自動入力機能を有効にするために必要です。 この ID を取得するには、[IMS とユーザー権限 ](#ims-and-user-permissions) を参照してください。 アセットセレクターについて詳しくは、[ 手動によるアセットの選択 ](../synchronize/asset-selector-integration.md) を参照してください。
+
+1. AEM Assets環境 **[!UICONTROL Program ID]** と **[!UICONTROL Environment ID]** をドロップダウンメニューから選択します。
+
+   ドロップダウンは、ユーザーの IMS セッションに基づいて自動入力されます。 この機能を使用するには、適切な [IMS およびユーザー権限 ](#ims-and-user-permissions) を持っていることを確認します。
+
+   ドロップダウンが使用できない場合は、AEM Cloud Managerの URL から ID を手動で入力できます（`https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`）。
 
    *[!UICONTROL Use system value]* から選択内容を削除して、設定値を編集します。
 
-1. [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}**[!UICONTROL Asset Selector IMS Client ID]** を入力します。
-
-   アセットセレクターについて詳しくは、「[&#x200B; 手動によるアセットの選択 &#x200B;](../synchronize/asset-selector-integration.md)」を参照してください。
-
-1. [!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"} Commerceとアセット照合サービスの間でリクエストを認証する [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) を選択します。
+1. [!BADGE PaaS のみ ]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"} Commerceとアセット照合サービスの間でリクエストを認証する [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) を選択します。
 
 1. **[!UICONTROL Synchronization enabled]** を `Yes` に設定して、CommerceがAEM Assetsからの受信アップデートを受け入れるようにします。
 
@@ -62,10 +88,10 @@ AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの
 
 1. **[!UICONTROL Asset matching rule]** ドロップダウンから、アセット同期用のアセット一致ルールの 1 つを選択します。
 
-   * **[!UICONTROL Match by SKU]** デフォルトの自動照合 [&#x200B; の &#x200B;](../synchronize/default-match.md) を選択します。
-   * **[!UICONTROL Custom match]** カスタム自動照合 [&#x200B; の &#x200B;](../synchronize/custom-match.md) を選択します（[Adobe Developer App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) が必要です）。
+   * **[!UICONTROL Match by SKU]** デフォルトの自動照合 [ の ](../synchronize/default-match.md) を選択します。
+   * **[!UICONTROL Custom match]** カスタム自動照合 [ の ](../synchronize/custom-match.md) を選択します（[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) が必要です）。
 
-1. Commerce製品 SKU に対して定義された [0&rbrace;AEM Assets メタデータフィールド名を「](configure-aem.md#configure-metadata)」フィールドに追加します（デフォルトでは **[!UICONTROL Match by product SKU attribute name]**）。`commerce:skus`
+1. Commerce製品 SKU に対して定義された [0}AEM Assets メタデータフィールド名を「](configure-aem.md#configure-metadata)」フィールドに追加します（デフォルトでは **[!UICONTROL Match by product SKU attribute name]**）。`commerce:skus`
 
 1. 「**[!UICONTROL Save Config]**」を選択すると、更新を適用し、アセットの同期を開始します。
 
@@ -86,11 +112,12 @@ AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの
 **ビジュアライゼーション所有者** 設定は、統合で製品画像を提供するシステムを決定します。
 
 * Adobe Commerce - Commerceでホストされる画像を使用します。
+
 * AEM Assets - AEMから同期された画像を使用します。
 
 管理者には、その所有者で使用可能な画像が表示されますが、残りの画像はグレー表示され、「**非表示** ラベルで表示されます。
 
-画像の表示動作について詳しくは、[&#x200B; 画像の詳細を設定 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} トピックを参照してください。
+画像の表示動作について詳しくは、[ 画像の詳細を設定 ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} トピックを参照してください。
 
 >[!TIP]
 >
@@ -98,7 +125,7 @@ AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの
 
 1. **[!UICONTROL Store]**/設定/**[!UICONTROL ADOBE SERVICES]**/**[!UICONTROL AEM Assets Integration]** に移動します。
 
-   ![AEM Assets統合ビジュアライゼーションオーナー機能 &#x200B;](../assets/visualization-owner-detail.png){width="400" zoomable="yes"}
+   ![AEM Assets統合ビジュアライゼーションオーナー機能 ](../assets/visualization-owner-detail.png){width="400" zoomable="yes"}
 
 1. **ビジュアライゼーション所有者** ソースを選択して画像を表示します。
 
@@ -106,11 +133,11 @@ AEM Assets プロジェクトを特定した後、Adobe CommerceとAEM Assetsの
 
 ### オプション。 カスタムドメイン URL の設定
 
-AEM Assets as a Cloud Service プロジェクトが [&#x200B; カスタムドメイン名 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank} で設定されている場合は、Commerce ストア設定にドメイン名を追加して、CommerceのAEM Assets統合で使用できるようにする必要があります。
+AEM Assets as a Cloud Service プロジェクトが [ カスタムドメイン名 ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank} で設定されている場合は、Commerce ストア設定にドメイン名を追加して、CommerceのAEM Assets統合で使用できるようにする必要があります。
 
 1. **[!UICONTROL Store]**/設定/**[!UICONTROL ADOBE SERVICES]**/**[!UICONTROL AEM Assets Integration]** に移動します。
 
-   ![AEM Assets統合：統合の有効化 &#x200B;](../assets/aem-assets-view.png){width="700" zoomable="yes"}
+   ![AEM Assets統合：統合の有効化 ](../assets/aem-assets-view.png){width="700" zoomable="yes"}
 
 1. **カスタムドメイン URL** を **[!UICONTROL Asset Custom Domain]** フィールドに追加します。
 
@@ -118,8 +145,8 @@ AEM Assets as a Cloud Service プロジェクトが [&#x200B; カスタムドメ
 
 ## 次の手順
 
-* **Commerce ストアフロントの設定** - Edge Delivery Servicesを使用したCommerce ストアフロントでAEM Assetsを使用するには、[Adobe Commerce ストアフロントのドキュメントの &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=ja)AEM Assetsの統合 *のトピックで説明されているストアフロント設定を行ってください*。
+* **Commerce ストアフロントの設定** - Edge Delivery Servicesを使用したCommerce ストアフロントでAEM Assetsを使用するには、[Adobe Commerce ストアフロントのドキュメントの ](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/)AEM Assetsの統合 *のトピックで説明されているストアフロント設定を行ってください*。
 
-* Adobe CommerceとAEM Assets統合の間に [&#x200B; 一致ルール &#x200B;](../synchronize/default-match.md) を設定します。
+* Adobe CommerceとAEM Assets統合の間に [ 一致ルール ](../synchronize/default-match.md) を設定します。
 
-* [Commerce アセットの管理 &#x200B;](../manage-assets.md).
+* [Commerce アセットの管理 ](../manage-assets.md).
