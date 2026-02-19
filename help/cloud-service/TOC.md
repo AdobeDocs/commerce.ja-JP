@@ -29,7 +29,7 @@ ht-degree: 11%
    - [評価拡張機能チュートリアルの前提条件](tutorials/tutorial-prerequisites.md)
    - [評価拡張機能のチュートリアル](tutorials/ratings-extension.md)
 - スキーマ {#schemas}
-   - [GraphQL スキーマ ](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
-   - [REST API スキーマ ](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
+   - [GraphQL スキーマ](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
+   - [REST API スキーマ](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [リリースノート](release-notes.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

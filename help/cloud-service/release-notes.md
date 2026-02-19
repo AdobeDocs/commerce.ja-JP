@@ -20,11 +20,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce オンプレミスまたはAdobe Commerce on cloud infrastructure を使用している場合は、[Adobe Commerce リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照してください。
+>Adobe Commerce オンプレミスまたはAdobe Commerce on cloud infrastructure を使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) を参照してください。
 
 ## 2026 年 2 月 – リリース #2 {#latest}
 
-[!BADGE  サンドボックス ]{type=Caution tooltip="リストされた項目は、現在、サンドボックス環境でのみ使用できます。 Adobeでは、最初にサンドボックス環境で新しいリリースを使用できるようにして、リリースが実稼動環境で使用できるようになる前に、今後の変更をテストするための時間を確保します。"}
+[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされた項目は、現在、サンドボックス環境でのみ使用できます。 Adobeでは、最初にサンドボックス環境で新しいリリースを使用できるようにして、リリースが実稼動環境で使用できるようになる前に、今後の変更をテストするための時間を確保します。"}
 
 次の項目は、現在 [!DNL Adobe Commerce as a Cloud Service] のサンドボックス環境で使用でき、2026 年 2 月 24 日（PT）に実稼動環境にリリースされる予定です。
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ### コマースイベントを含んだコンテキストフィールドの送信
 
-[!DNL Adobe Commerce as a Cloud Service] は、イベントペイロードで [ コンテキストフィールド ](https://developer.adobe.com/commerce/extensibility/events/context-fields/) をサポートするようになり、デフォルトでイベントに含まれていないデータを含めることができるようになりました。<!-- CEXT-5713 -->
+[!DNL Adobe Commerce as a Cloud Service] は、イベントペイロードで [&#x200B; コンテキストフィールド &#x200B;](https://developer.adobe.com/commerce/extensibility/events/context-fields/) をサポートするようになり、デフォルトでイベントに含まれていないデータを含めることができるようになりました。<!-- CEXT-5713 -->
 
 ### 新しい Webhook を使用して引用項目の保存イベントを購読
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ## 2026 年 2 月 – リリース #1
 
-[!BADGE  実稼動 ]{type=Neutral tooltip="リストされた項目は、現在、実稼動環境で使用できます。"}
+[!BADGE &#x200B; 実稼動 &#x200B;]{type=Neutral tooltip="リストされた項目は、現在、実稼動環境で使用できます。"}
 
 2026 年 2 月 10 日（PT）に、[!DNL Adobe Commerce as a Cloud Service] の実稼動環境にリリースされた項目は次のとおりです。
 
@@ -63,17 +63,17 @@ ht-degree: 0%
 
 [!DNL Commerce Admin] に次の機能強化が行われました。
 
-* アウトオブプロセスの機能強化 [ 配送用 Webhook ペイロード ](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload) に配送先住所のカスタム属性を含めました。 この変更により、マーチャントはカスタム配送方法を実装できます。<!-- ACCS-235 -->
+* アウトオブプロセスの機能強化 [&#x200B; 配送用 Webhook ペイロード &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload) に配送先住所のカスタム属性を含めました。 この変更により、マーチャントはカスタム配送方法を実装できます。<!-- ACCS-235 -->
 
-* [ 顧客 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports)、[ マーケティング ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports)、[ 製品 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/product-reports)、[ 販売 ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports) のレポートを含む、管理レポートへのアクセス権が追加されました。<!-- CCSAAS-3085 -->
+* [&#x200B; 顧客 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports)、[&#x200B; マーケティング &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports)、[&#x200B; 製品 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/product-reports)、[&#x200B; 販売 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports) のレポートを含む、管理レポートへのアクセス権が追加されました。<!-- CCSAAS-3085 -->
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] で使用できないレポートには、「PaaS のみ」のラベルが付けられます（[!BADGE PaaS のみ ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}）。
+>[!DNL Adobe Commerce as a Cloud Service] で使用できないレポートには、「PaaS のみ」のラベルが付けられます（[!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}）。
 
 ### REST API を使用したカスタム請求書金額のキャプチャ
 
-請求書 API では、拡張機能属性を使用して [ カスタムキャプチャ金額 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) をサポートするようになりました。<!-- ACCS-186, ACCS-197, ACCS-143 -->
+請求書 API では、拡張機能属性を使用して [&#x200B; カスタムキャプチャ金額 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) をサポートするようになりました。<!-- ACCS-186, ACCS-197, ACCS-143 -->
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 ## 2026 年 1 月
 
-[!BADGE  実稼動 ]{type=Neutral tooltip="リストされた項目は、現在、実稼動環境で使用できます。"}
+[!BADGE &#x200B; 実稼動 &#x200B;]{type=Neutral tooltip="リストされた項目は、現在、実稼動環境で使用できます。"}
 
 2026 年 1 月 20 日（PT）に、[!DNL Adobe Commerce as a Cloud Service] の実稼動環境にリリースされた項目は次のとおりです。
 
@@ -113,13 +113,13 @@ ht-degree: 0%
 
 B2B ドロップインコンポーネントに次の変更が加えられました。
 
-* [!DNL Commerce Storefront on Edge Delivery Services] には、[B2B ドロップインコンポーネント ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/) が含まれるようになりました。 次の B2B ドロップダウンが使用できるようになりました。
+* [!DNL Commerce Storefront on Edge Delivery Services] には、[B2B ドロップインコンポーネント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/) が含まれるようになりました。 次の B2B ドロップダウンが使用できるようになりました。
 
-   * **[会社管理 ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/)** – 会社プロファイル管理を有効にし、Adobe Commerce ストアフロントに対する役割ベースの権限を有効にします。
-   * **[会社スイッチャー ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** - ユーザーが関連付けられている複数の会社を切り替えるための UI コンポーネントを提供します。
-   * **[発注書 ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - B2B 取引の発注書ワークフロー、承認ルールおよび発注履歴を管理します。
-   * **[見積管理 ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** – 見積依頼、交渉および承認ワークフローを使用して、B2B 顧客に対して交渉可能な見積を有効にします。
-   * **[購買依頼リスト ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)**：繰返し購入および一括発注のための購買依頼リストを作成および管理するツールを提供します。
+   * **[会社管理 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/)** – 会社プロファイル管理を有効にし、Adobe Commerce ストアフロントに対する役割ベースの権限を有効にします。
+   * **[会社スイッチャー &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** - ユーザーが関連付けられている複数の会社を切り替えるための UI コンポーネントを提供します。
+   * **[発注書 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - B2B 取引の発注書ワークフロー、承認ルールおよび発注履歴を管理します。
+   * **[見積管理 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** – 見積依頼、交渉および承認ワークフローを使用して、B2B 顧客に対して交渉可能な見積を有効にします。
+   * **[購買依頼リスト &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)**：繰返し購入および一括発注のための購買依頼リストを作成および管理するツールを提供します。
 
 * B2B ストアフロント互換性パッケージをリリースしました。 このパッケージは、[!DNL Adobe Commerce] B2B GraphQL スキーマを強化して、B2B システムでの開発の改善を支援します。
 
@@ -130,7 +130,7 @@ B2B ドロップインコンポーネントに次の変更が加えられまし�
 
 ### 外部配送トラッカーへのクリック可能なリンク
 
-[ カスタムトラッキング URL を有効にする ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls) ことで、買い物客のメールに含まれる出荷トラッキング番号をプレーンテキストからクリック可能なリンクに変換します。 この機能は、USPS、UPS、FedEx、および DHL でサポートされています。<!-- See PR #716 in commerce-admin -->
+[&#x200B; カスタムトラッキング URL を有効にする &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls) ことで、買い物客のメールに含まれる出荷トラッキング番号をプレーンテキストからクリック可能なリンクに変換します。 この機能は、USPS、UPS、FedEx、および DHL でサポートされています。<!-- See PR #716 in commerce-admin -->
 
 ### Google reCAPTCHA Enterprise サポート
 
@@ -138,11 +138,11 @@ B2B ドロップインコンポーネントに次の変更が加えられまし�
 
 ### インスタンス固有の管理アクセス
 
-Admin Console内の個々の [ インスタンスに ](./user-management.md#add-users) ユーザーアクセスを割り当てる [!DNL Adobe Commerce as a Cloud Service] ことができるようになりました。<!-- CCSAAS-4337 --><!-- See PR #332 -->
+Admin Console内の個々の [&#x200B; インスタンスに &#x200B;](./user-management.md#add-users) ユーザーアクセスを割り当てる [!DNL Adobe Commerce as a Cloud Service] ことができるようになりました。<!-- CCSAAS-4337 --><!-- See PR #332 -->
 
 ### 可観測性
 
-[!DNL App Builder] を使用すると、[!DNL Adobe Commerce as a Cloud Service]OpenTelemetry observability[ が自動的に使用可能になり、](https://developer.adobe.com/commerce/extensibility/observability/) インスタンスをより深く可視化できます。 OpenTelemetry は、パフォーマンスの監視、問題の迅速なトラブルシューティング、ストアフロントの最適化に役立つ指標、ログおよびトレースを提供します。 この機能により、システムの正常性に関するプロアクティブなインサイトが可能になり、顧客の信頼性が向上します。
+[!DNL App Builder] を使用すると、[!DNL Adobe Commerce as a Cloud Service]OpenTelemetry observability[&#x200B; が自動的に使用可能になり、](https://developer.adobe.com/commerce/extensibility/observability/) インスタンスをより深く可視化できます。 OpenTelemetry は、パフォーマンスの監視、問題の迅速なトラブルシューティング、ストアフロントの最適化に役立つ指標、ログおよびトレースを提供します。 この機能により、システムの正常性に関するプロアクティブなインサイトが可能になり、顧客の信頼性が向上します。
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ Admin Console内の個々の [ インスタンスに ](./user-management.md#add-
 
 ### カタログ価格ルールの階層価格
 
-[ カタログ価格ルール ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules) を使用して、階層化された価格割引をカタログルール割引と組み合わせることができるようになりました。 この機能強化により、より動的で競争力のある価格戦略を作成し、プロモーションの割引を適用しながら、一括購入に報いることができます。 その結果、顧客を引き付け、注文価値を高め、コンバージョンを促進する柔軟性が向上します。<!-- See PR #708 in commerce-admin -->
+[&#x200B; カタログ価格ルール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules) を使用して、階層化された価格割引をカタログルール割引と組み合わせることができるようになりました。 この機能強化により、より動的で競争力のある価格戦略を作成し、プロモーションの割引を適用しながら、一括購入に報いることができます。 その結果、顧客を引き付け、注文価値を高め、コンバージョンを促進する柔軟性が向上します。<!-- See PR #708 in commerce-admin -->
 
 ### 機能強化とバグ修正
 
@@ -190,6 +190,6 @@ Admin Console内の個々の [ インスタンスに ](./user-management.md#add-
 
 #### カスタム注文属性
 
-* 管理者ユーザーは、管理パネルの注文ビュー、編集、作成画面から直接 [ カスタム注文属性 ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) を表示および編集できるようになりました。 この機能強化により、GraphQLを介して作成されたカスタム注文データの管理が向上します。<!-- CEXT-5044 -->
+* 管理者ユーザーは、管理パネルの注文ビュー、編集、作成画面から直接 [&#x200B; カスタム注文属性 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) を表示および編集できるようになりました。 この機能強化により、GraphQLを介して作成されたカスタム注文データの管理が向上します。<!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
