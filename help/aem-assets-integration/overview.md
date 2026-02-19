@@ -76,7 +76,7 @@ AEM Assetsの統合は、アセット管理ワークフローを自動化する�
 
 このビデオでは、Adobe CommerceとAEM Assetsを連携させてコンテンツワークフローを効率化する方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447884?captions=jpn)
 
 >[!TAB ACCS チュートリアル ]
 
