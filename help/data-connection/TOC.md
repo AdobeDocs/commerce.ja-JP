@@ -4,7 +4,7 @@ user-guide-description: このガイドでは、Adobe Commerce用の拡張機能
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
+badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
 source-git-commit: 60a8e8f5cedff0c6fa56c563807b9604e3ae1d21
 workflow-type: tm+mt
 source-wordcount: '138'
@@ -38,4 +38,4 @@ ht-degree: 1%
 - ユースケース {#use-cases}
    - [Adobe Journey Optimizerを使用して、放棄された買い物かごにメールを送信](using-ajo.md)
    - [Commerce イベントデータを使用したReal-Time CDPでのオーディエンスの作成](create-audience.md)
-- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
