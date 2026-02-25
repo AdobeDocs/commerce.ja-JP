@@ -1,25 +1,19 @@
 ---
-title: 評価拡張機能チュートリアルの前提条件
+title: チュートリアルの前提条件
 description: 評価拡張機能のラボの前提条件について説明します。
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
+source-git-commit: 68e34cecbc1b16194ccc2e0296c2d66f37855b7c
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
 
-# 評価の拡張チュートリアルの前提条件（Beta）
+# チュートリアルの前提条件
 
->[!NOTE]
->
->このチュートリアルで使用する AI ツールは、現在Betaにあり、バグやその他の問題が含まれている可能性があります。
-
-このページでは、[!DNL Adobe Commerce as a Cloud Service] 評価拡張機能チュートリアル [&#x200B; など、](./ratings-extension.md) のチュートリアルの前提条件と設定手順を示します。
+このページでは、[!DNL Adobe Commerce as a Cloud Service] 評価の拡張チュートリアル [ および ](./ratings-extension.md) 発送方法の拡張チュートリアル [ など、](./shipping-method-extension.md) のチュートリアルの前提条件と設定手順を示します。
 
 ## Adobe Commerce as a Cloud Serviceの前提条件
 
@@ -29,7 +23,7 @@ ht-degree: 0%
   npm install -g @adobe/aio-cli
   ```
 
-* [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)、[Adobe I/O CLI ランタイム &#x200B;](https://github.com/adobe/aio-cli-plugin-runtime)、[App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev) プラグインをインストールします。
+* [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)、[Adobe I/O CLI ランタイム ](https://github.com/adobe/aio-cli-plugin-runtime)、[App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev) プラグインをインストールします。
 
   ```bash
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
@@ -50,7 +44,7 @@ ht-degree: 0%
 1. [!UICONTROL **プロジェクトタイトル**] および [!UICONTROL **アプリ名**] を入力します。
 1. 「**[!UICONTROL Include Runtime]**」チェックボックスがオンになっていることを確認します。
 
-   ![App Builder テンプレートを選択したAdobe Developer Console プロジェクトの作成 &#x200B;](../assets/app-builder-template.png){width="600" zoomable="yes"}
+   ![App Builder テンプレートを選択したAdobe Developer Console プロジェクトの作成 ](../assets/app-builder-template.png){width="600" zoomable="yes"}
 
 1. [!UICONTROL **保存**] をクリックします。
 
@@ -58,7 +52,7 @@ ht-degree: 0%
 
 1. [!UICONTROL **ステージング**] ワークスペースをクリックし、各 API に対して次の手順を繰り返します。
 
-   ![API の「サービスを追加」オプションを使用したステージワークスペース &#x200B;](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
+   ![API の「サービスを追加」オプションを使用したステージワークスペース ](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
 1. [!UICONTROL **サービスを追加**] をクリックし、「[!UICONTROL **API**]」を選択します。
 
@@ -76,7 +70,7 @@ ht-degree: 0%
 
 1. すべての API がワークスペースに追加されるまで、前の手順を繰り返します。
 
-   ![&#x200B; 必要なすべての API が正常に追加されたことを示すWorkspace](../assets/apis-added.png){width="600" zoomable="yes"}
+   ![ 必要なすべての API が正常に追加されたことを示すWorkspace](../assets/apis-added.png){width="600" zoomable="yes"}
 
 ### Adobe I/O CLI の設定
 
@@ -106,18 +100,29 @@ ht-degree: 0%
    aio console workspace select
    ```
 
-   ![Adobe I/O CLI の組織プロジェクトとワークスペースの選択を示すターミナル &#x200B;](../assets/cli-configuration.png){width="600" zoomable="yes"}
+   ![Adobe I/O CLI の組織プロジェクトとワークスペースの選択を示すターミナル ](../assets/cli-configuration.png){width="600" zoomable="yes"}
 
-### 統合スターターキットのクローン
+### スターターキットのクローンを作成
 
-Commerce統合スターターキットリポジトリーのクローンを作成し、プロジェクトを準備します。
+構築している拡張機能に対して、次のCommerce スターターキットリポジトリーの 1 つを複製し、プロジェクトを準備します。
+
+統合スターターキット：
 
 ```bash
 git clone https://github.com/adobe/commerce-integration-starter-kit.git extension
 cd extension
 ```
 
-![Commerce統合スターターキットの Git clone コマンドを示すターミナル出力 &#x200B;](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
+スターターキットのチェックアウト：
+
+```bash
+git clone https://github.com/adobe/commerce-checkout-starter-kit.git extension
+cd extension
+```
+
+>[!BEGINTABS]
+
+>[!TAB  統合スターターキット ]
 
 ### .env ファイルの作成
 
@@ -139,7 +144,7 @@ OAUTH_ORG_ID=
 
 これらの値は、ワークスペースの「**[!UICONTROL Credential details]**」タブをクリックして、[Developer Console](https://developer.adobe.com/) の **[!UICONTROL OAuth Server-to-Server]** ページからコピーできます。
 
-![Adobe Developer Consoleの OAuth サーバー間資格情報ページ &#x200B;](../assets/oauth-credentials.png){width="600" zoomable="yes"}
+![Adobe Developer Consoleの OAuth サーバー間資格情報ページ ](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
 #### Commerce設定を追加
 
@@ -152,7 +157,7 @@ COMMERCE_GRAPHQL_ENDPOINT=
 
 これらの値を検索するには：
 
-1. [Commerce Cloud サービスインスタンス &#x200B;](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances) に移動します。
+1. [Commerce Cloud サービスインスタンス ](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances) に移動します。
 1. インスタンスの横にある「情報」アイコンをクリックします。
 1. REST エンドポイントを `COMMERCE_BASE_URL` としてコピーします。
 1. GraphQL エンドポイントを `COMMERCE_GRAPHQL_ENDPOINT` としてコピーします。
@@ -187,11 +192,28 @@ cp workspace.json scripts/
 aio app use workspace.json -m
 ```
 
-![aio app use コマンドでワークスペース接続が成功したことを示すターミナル &#x200B;](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![aio app use コマンドでワークスペース接続が成功したことを示すターミナル ](../assets/connect-workspace.png){width="600" zoomable="yes"}
+
+>[!TAB  スターターキットをチェックアウト ]
+
+### ローカルワークスペースのリモートワークスペースへの接続
+
+ローカルプロジェクトをリモートワークスペースにリンクします。 プロジェクトルート（`extension` フォルダー）から、次を実行します。
+
+```bash
+aio app use --merge
+```
+
+プロンプトが表示されたら、Adobe I/O CLI の設定時に選択した組織、プロジェクト、ワークスペースを使用するオプションを選択します。 これにより、ワークスペース設定がアプリに書き込まれ、デプロイとローカル開発でそのワークスペースが使用されるようになります。
+
+![aio app use コマンドでワークスペース接続が成功したことを示すターミナル ](../assets/connect-workspace.png){width="600" zoomable="yes"}
+
+>[!ENDTABS]
 
 ### 拡張 AI ツールのインストール
 
-Cursor ルール ファイルと MCP 設定を更新して、`commerce-extensibility-tools` パッケージを含めます。
+このプロセスにより、MCP 設定（`.<agent>/mcp.json`）、スキル ディレクトリ（`.<agent>/skills/`）が作成され、`AGENTS.md` がプロジェクト ルートに追加されます。 スターターキット、コーディングエージェント、パッケージマネージャーを選択するように求められます。
+
 
 1. 次のコマンドを使用して、`extension` フォルダー内に AI 支援開発ツールを設定します。
 
@@ -203,7 +225,16 @@ Cursor ルール ファイルと MCP 設定を更新して、`commerce-extensibi
    aio commerce extensibility tools-setup
    ```
 
-   ![AI 拡張ツール設定コマンド出力を示すターミナル &#x200B;](../assets/install-ai-tools.png){width="600" zoomable="yes"}
+   ![AI 拡張ツール設定コマンド出力を示すターミナル ](../assets/install-ai-tools.png){width="600" zoomable="yes"}
+
+1. セットアップが完了したら、コーディング エージェントを再起動して、新しい MCP ツールとスキルをロードできるようにします。 これで、お使いの環境でCommerce App Builder ツールを使用できるようになりました。
+
+   >[!NOTE]
+   >
+   >スターターキットのスキルが見つからないという警告が表示された場合は、問題が発生しました。多くの場合、セットアップがスターターキットのクローンを作成したフォルダー以外で実行されていることが原因です。 `aio commerce extensibility tools-setup` フォルダー（スターターキットプロジェクトルート）から `extension` を実行し、プロンプトが表示されたら適切なスターターキットを選択します。
+
+   ![ チェックアウトスターターキットが選択された状態で AI 拡張ツールが設定されていることを示すターミナル ](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
+
 <!--
 ## Storefront prerequisites
 
