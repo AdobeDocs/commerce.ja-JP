@@ -17,7 +17,7 @@ ht-degree: 0%
 
 この拡張機能により、チェックアウト時に設定可能な配送方法が追加されます。この方法では、料金は外部のモック配送料サービスから取得されます。 マーチャントは、管理 UI でサービス URL、API キー、ウェアハウス（出荷元）アドレスを設定し、チェックアウト時に、拡張機能がそのサービスに対するレートをリクエストし、返されたオプションを顧客に表示します。
 
-開始する前に、[ 前提条件 ](./tutorial-prerequisites.md) を完了してください。
+開始する前に、[&#x200B; 前提条件 &#x200B;](./tutorial-prerequisites.md) を完了してください。
 
 ## 前提条件を確認 {#tutorial-verify-prerequisites}
 
@@ -37,13 +37,13 @@ git --version
 bash --version
 ```
 
-上記のコマンドのいずれかで期待される結果が返されない場合は、[ 前提条件 ](./tutorial-prerequisites.md) を参照してガイダンスを確認してください。
+上記のコマンドのいずれかで期待される結果が返されない場合は、[&#x200B; 前提条件 &#x200B;](./tutorial-prerequisites.md) を参照してガイダンスを確認してください。
 
 ## モック配送料 API の作成
 
-[ 前提条件 ](./tutorial-prerequisites.md) を完了したら、モック配送料 API を作成して、サー [!DNL Commerce Admin] スで拡張機能を設定する際にサービス URL と API キーの準備を整えます。 拡張機能は外部配送料 API を呼び出します。 このチュートリアルでは、モック API を使用して、実際の通信事業者アカウントなしでフローを実行できます。 [Pipedream](https://pipedream.com) （無料アカウントが必要）を使用してモック API を作成します。 モック API では、通常の実際の配送料 API に似たリクエスト/応答契約を使用するので、後でこの拡張機能を実際のプロバイダーに接続するのは簡単です。
+[&#x200B; 前提条件 &#x200B;](./tutorial-prerequisites.md) を完了したら、モック配送料 API を作成して、サー [!DNL Commerce Admin] スで拡張機能を設定する際にサービス URL と API キーの準備を整えます。 拡張機能は外部配送料 API を呼び出します。 このチュートリアルでは、モック API を使用して、実際の通信事業者アカウントなしでフローを実行できます。 [Pipedream](https://pipedream.com) （無料アカウントが必要）を使用してモック API を作成します。 モック API では、通常の実際の配送料 API に似たリクエスト/応答契約を使用するので、後でこの拡張機能を実際のプロバイダーに接続するのは簡単です。
 
-モック API を作成するには、[ モックレート API 仕様ファイル ](../assets/mock-rates-api-spec.zip) をダウンロードして開き、`.md` ファイルをプロジェクトに追加します（例：`docs/mock-rates-api-spec.md`）。
+モック API を作成するには、[&#x200B; モックレート API 仕様ファイル &#x200B;](../assets/mock-rates-api-spec.zip) をダウンロードして開き、`.md` ファイルをプロジェクトに追加します（例：`docs/mock-rates-api-spec.md`）。
 
 **時間：** モック API の作成には約 **5～10 分かかります**。
 
@@ -56,7 +56,7 @@ bash --version
 1. Pipedream は、**などの一意の** HTTP エンドポイント URL`https://123456.m.pipedream.net` を表示します。
 1. Commerce Admin で拡張機能を設定する際には、**この URL をコピー** して、**サービス URL** として使用します。
 
-   ![HTTP/Webhook トリガーとエンドポイント URL が表示された Pipedream ワークフロー ](../assets/mock-api-trigger.png){width="600" zoomable="yes"}
+   ![HTTP/Webhook トリガーとエンドポイント URL が表示された Pipedream ワークフロー &#x200B;](../assets/mock-api-trigger.png){width="600" zoomable="yes"}
 
 トリガーに **Authorization** を設定する必要はありません。モック API は、コードステップの `API-Key` ヘッダーを検証します。
 
@@ -126,17 +126,17 @@ bash --version
 
 1. **デプロイ** をクリックします。
 
-   ![ モック配送料スクリプトを使用した Pipedream コードステップ ](../assets/mock-api-code-step.png){width="600" zoomable="yes"}
+   ![&#x200B; モック配送料スクリプトを使用した Pipedream コードステップ &#x200B;](../assets/mock-api-code-step.png){width="600" zoomable="yes"}
 
 モックは、空でない `API-Key` ヘッダーと `shipment` オブジェクトを含む有効なリクエストに対して、2 つの評価オプション（モックスタンダードとモックエクスプレス）を返します。 API キーの設定は、このチュートリアルの後半の [!DNL Commerce Admin] で行います。 また、同じ設定画面で Pipedream ワークフローの URL を指定するので、メモしておきます。
 
 ## 拡張機能の開発
 
-このセクションでは、[!DNL Adobe Commerce as a Cloud Service] チェックアウトスターターキット [ と AI アシスト開発ツールを使用して、](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"} の配送方法の拡張機能を開発する手順を説明します。
+このセクションでは、[!DNL Adobe Commerce as a Cloud Service] チェックアウトスターターキット [&#x200B; と AI アシスト開発ツールを使用して、](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"} の配送方法の拡張機能を開発する手順を説明します。
 
 1. コーディングエージェントの MCP 設定に移動します。 例えば、カーソルでは、**[!UICONTROL Cursor]**/**[!UICONTROL Settings]**/**[!UICONTROL Cursor Settings]**/**[!UICONTROL Tools & MCP]** に移動します。 `commerce-extensibility` ツールセットがエラーなく有効になっていることを確認します。 エラーが表示された場合は、ツールセットのオン/オフを切り替えます。
 
-   ![MCP コマース拡張ツールセットが有効になっていることを示すカーソル IDE 設定 ](../assets/cursor-settings-shipping.png){width="600" zoomable="yes"}
+   ![MCP コマース拡張ツールセットが有効になっていることを示すカーソル IDE 設定 &#x200B;](../assets/cursor-settings-shipping.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -146,9 +146,9 @@ bash --version
 
 1. カーソルのコンテキストにドキュメントを追加した場合は、無効にします。 [!UICONTROL **カーソル**]/[!UICONTROL **設定**]/[!UICONTROL **カーソル設定**]/[!UICONTROL **インデックスとドキュメント**] に移動し、一覧表示されているドキュメントを削除します。
 
-   ![ ドキュメントリストが空のカーソルインデックス作成とドキュメント設定 ](../assets/disable-documentation.png){width="600" zoomable="yes"}
+   ![&#x200B; ドキュメントリストが空のカーソルインデックス作成とドキュメント設定 &#x200B;](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
-1. エージェントにモック率 API 仕様へのアクセス権を付与して、クライアントを正しく実装できるようにします。 まだ行っていない場合は、[ モックリレート API 仕様ファイル ](../assets/mock-rates-api-spec.zip) をダウンロードして開き、`.md` ファイルをプロジェクト（例：`docs/mock-rates-api-spec.md`）に追加してから、プロンプトでそのファイルを参照します。
+1. エージェントにモック率 API 仕様へのアクセス権を付与して、クライアントを正しく実装できるようにします。 まだ行っていない場合は、[&#x200B; モックリレート API 仕様ファイル &#x200B;](../assets/mock-rates-api-spec.zip) をダウンロードして開き、`.md` ファイルをプロジェクト（例：`docs/mock-rates-api-spec.md`）に追加してから、プロンプトでそのファイルを参照します。
 
 1. 発送方法拡張機能を生成します。
 
@@ -172,9 +172,9 @@ bash --version
    >
    >エージェントがドキュメントの検索を要求した場合は、許可します。
 
-   ![Shipping extension プロンプトが入力されたエージェントモードのカーソルチャットウィンドウ ](../assets/enter-prompt-shipping.png){width="600" zoomable="yes"}
+   ![Shipping extension プロンプトが入力されたエージェントモードのカーソルチャットウィンドウ &#x200B;](../assets/enter-prompt-shipping.png){width="600" zoomable="yes"}
 
-1. エージェントが最適なコードを生成できるように、エージェントの質問に正確に答えます。 使用するキットまたはテンプレートを尋ねられた場合は、出荷先ドメインと管理者 UI SDK拡張機能を使用して [ チェックアウトスターターキット ](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"} に送ります。これにより、出荷 Webhook とマーチャント設定画面の両方が実装されます。
+1. エージェントが最適なコードを生成できるように、エージェントの質問に正確に答えます。 使用するキットまたはテンプレートを尋ねられた場合は、出荷先ドメインと管理者 UI SDK拡張機能を使用して [&#x200B; チェックアウトスターターキット &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"} に送ります。これにより、出荷 Webhook とマーチャント設定画面の両方が実装されます。
 
    エージェントは、実装の信頼できる情報源として機能する `requirements.md` （または同等の）ファイルを作成できます。
 
@@ -184,19 +184,19 @@ bash --version
    - **shipping-config** （または同等の）アクションは、GET（読み取り設定、API キーがマスクされた）および SET （保存サービス URL、API キー、ウェアハウスアドレス）をサポートします。設定は Runtime State などに安全に保存されます。
    - 管理 UI には、サービス URL、API キー（パスワード/マスク）、ウェアハウスのアドレスのフィールドを持つ **モック出荷** （または同様の）タブが含まれています。
 
-   ![AI エージェントによって作成された要件ファイルに出荷拡張機能の実装の詳細が含まれている ](../assets/requirements-file-shipping.png){width="600" zoomable="yes"}
+   ![AI エージェントによって作成された要件ファイルに出荷拡張機能の実装の詳細が含まれている &#x200B;](../assets/requirements-file-shipping.png){width="600" zoomable="yes"}
 
 1. エージェントがアーキテクチャプランを提供したら、レビューします。
 
-   ![ モック配送料延長に対応する AI エージェント実装計画 ](../assets/implementation-plan-shipping.png){width="600" zoomable="yes"}
+   ![&#x200B; モック配送料延長に対応する AI エージェント実装計画 &#x200B;](../assets/implementation-plan-shipping.png){width="600" zoomable="yes"}
 
 1. コードの生成を続行するようにエージェントに指示します。 エージェントは、Commerceが返されたメソッドを受け入れ、Webhook メソッドの **（Webhook タイプ** after`plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`、必須 **オプション**）を使用できるように、配送先設定に **モック** 配送業者を追加する必要があります。
 
    このエージェントは、必要なコードを生成し、次の手順（依存関係のインストール、モックキャリアの登録、Commerce Webhook の設定、デプロイなど）に関する詳細な概要を提供します。
 
-   ![ 生成されたコードの概要と出荷拡張機能の実装 ](../assets/code-generation-summary-shipping.png){width="600" zoomable="yes"}
+   ![&#x200B; 生成されたコードの概要と出荷拡張機能の実装 &#x200B;](../assets/code-generation-summary-shipping.png){width="600" zoomable="yes"}
 
-   ![AI エージェントは、Webhook のインストール、設定および出荷用拡張機能のデプロイに関する次の手順を実行します ](../assets/next-steps-shipping.png){width="600" zoomable="yes"}
+   ![AI エージェントは、Webhook のインストール、設定および出荷用拡張機能のデプロイに関する次の手順を実行します &#x200B;](../assets/next-steps-shipping.png){width="600" zoomable="yes"}
 
 ### デプロイ前のクリーンアップ
 
@@ -208,7 +208,7 @@ Proceed with Phase 5 cleanup.
 
 エージェントがクリーンアップレポートを生成し、未使用のアクション、設定およびスクリプトを削除して、プロジェクトを更新します。 デプロイする前に、この手順を完了してください。
 
-![ 削除および保持されたコンポーネントを示す AI エージェントフェーズ 5 クリーンアップレポート ](../assets/cleanup-report-shipping.png){width="600" zoomable="yes"}
+![&#x200B; 削除および保持されたコンポーネントを示す AI エージェントフェーズ 5 クリーンアップレポート &#x200B;](../assets/cleanup-report-shipping.png){width="600" zoomable="yes"}
 
 ### 拡張機能のデプロイ
 
@@ -220,11 +220,11 @@ Proceed with Phase 5 cleanup.
 
    エージェントは、デプロイメント前の準備状況を評価します（例えば、管理 UI またはCommerce API が使用されている場合、`.env`、`COMMERCE_WEBHOOKS_PUBLIC_KEY` および OAuth/IMS 変数に関する `COMMERCE_BASE_URL` を確認します）。
 
-   ![ モック出荷の拡張機能に対する AI エージェントのデプロイ前準備とデプロイ手順 ](../assets/pre-deployment-assessment-shipping.png){width="600" zoomable="yes"}
+   ![&#x200B; モック出荷の拡張機能に対する AI エージェントのデプロイ前準備とデプロイ手順 &#x200B;](../assets/pre-deployment-assessment-shipping.png){width="600" zoomable="yes"}
 
 1. 評価結果に自信がある場合は、エージェントにデプロイメントを続行するように指示します。 エージェントは、MCP ツールキットを使用して、検証、ビルド、およびデプロイを自動的に行います。
 
-   ![ デプロイされたパッケージと出荷用の Webhook URL を含む MCP ツールキットのデプロイメント出力 ](../assets/deployment-process-shipping.png){width="600" zoomable="yes"}
+   ![&#x200B; デプロイされたパッケージと出荷用の Webhook URL を含む MCP ツールキットのデプロイメント出力 &#x200B;](../assets/deployment-process-shipping.png){width="600" zoomable="yes"}
 
 ### デプロイメント後
 
@@ -245,9 +245,9 @@ Proceed with Phase 5 cleanup.
       - **Webhook メソッド：** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
       - **Webhook タイプ：** **after**
       - **URL:** デプロイされた **shipping-methods** web アクション URL （デプロイ出力または [!DNL Adobe Developer Console] から）。
-      - **必須：****オプション** – 外部 API がレートを返さない場合でも、チェックアウトを引き続き機能させることができます。
+      - **必須：**&#x200B;**オプション** – 外部 API がレートを返さない場合でも、チェックアウトを引き続き機能させることができます。
 
-   ![ モック配送料のCommerce管理 Webhook 設定 ](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
+   ![&#x200B; モック配送料のCommerce管理 Webhook 設定 &#x200B;](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
 
 1. **[!DNL Admin UI SDK] 拡張機能を設定します。**
 
@@ -257,7 +257,7 @@ Proceed with Phase 5 cleanup.
    - 「**拡張機能を設定**」をクリックし、アプリのデプロイ先のワークスペースを選択して、「**適用**」をクリックします。 また、「**カスタム**」オプションを選択して、ワークスペース名を入力することもできます。
    - リストで [!DNL App Builder] アプリを選択して保存します。 アプリが表示されない場合は、「**登録を更新**」をクリックして、もう一度試してください。
 
-   ![ 管理 UI SDK ワークスペースと拡張機能の選択を使用して拡張機能モーダルを設定する ](../assets/admin-ui-configure-extensions.png){width="600" zoomable="yes"}
+   ![&#x200B; 管理 UI SDK ワークスペースと拡張機能の選択を使用して拡張機能モーダルを設定する &#x200B;](../assets/admin-ui-configure-extensions.png){width="600" zoomable="yes"}
 
 1. **Adobe Commerce管理 UI でのモック出荷方法の設定：**
    - **アプリ** を開き、アプリを選択します。
@@ -268,11 +268,11 @@ Proceed with Phase 5 cleanup.
       - **倉庫（発送元）住所：** 名、電話、住所、市区町村、都道府県、郵便番号、国。
    - **保存** をクリックします。 設定はランタイム状態に保存され、shipping-methods アクションで使用されます。
 
-   ![ サービス URL、API キーおよびウェアハウスのアドレスを含んだモック出荷設定フォーム ](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}
+   ![&#x200B; サービス URL、API キーおよびウェアハウスのアドレスを含んだモック出荷設定フォーム &#x200B;](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}
 
 1. **チェックアウト時に確認：** 買い物かごに商品を追加し、チェックアウトに移動して、配送先住所を入力します。 例えば **Mock Standard** や **Mock Express** などのモック配送オプションが表示されます。
 
-   ![ 外部レート API からのモック配送オプションを示すチェックアウトページ ](../assets/checkout-mock-shipping.png){width="600" zoomable="yes"}
+   ![&#x200B; 外部レート API からのモック配送オプションを示すチェックアウトページ &#x200B;](../assets/checkout-mock-shipping.png){width="600" zoomable="yes"}
 
 ### トラブルシューティング
 
