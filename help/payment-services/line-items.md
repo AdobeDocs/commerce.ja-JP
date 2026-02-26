@@ -149,7 +149,7 @@ ht-degree: 0%
 
 ## 行項目の管理
 
-Adobe Commerce[&#x200B; 各行の合計金額に基づいて税金を計算します &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}。同じ品目の複数の数量が注文されている場合や、カタログに税込みの価格が表示されている場合は、丸めの問題が発生する可能性があります。 この場合、合計数量は 2 つの明細に分割できますが、数量は受注品目の合計と等しくなります。
+Adobe Commerce[&#x200B; 各行の合計金額に基づいて税金を計算します &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}。同じ品目の複数の数量が注文されている場合や、カタログに税込みの価格が表示されている場合は、丸めの問題が発生する可能性があります。 この場合、合計数量は 2 つの明細に分割できますが、数量は受注品目の合計と等しくなります。
 
 > 販売者ダッシュボード ビューでの丸め問題を含む品目の例
 
