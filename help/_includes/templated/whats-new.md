@@ -399,7 +399,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service} のストアフロント設定ガイドが更新され </a> ストアフロントのボイラープレートリポジトリ内のファイルの代わりに設定サービスを使用するよう、Edge Delivery Services用のCommerce ストアフロント設定の移行に関する情報が追加 <code class="language-plaintext highlighter-rouge">config.json</code> れました。 Adobeでは、Configuration Service を使用して、Edge Delivery Servicesにデプロイされたストアフロントの設定を管理することをお勧めします。</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service&rbrace; のストアフロント設定ガイドが更新され </a> ストアフロントのボイラープレートリポジトリ内のファイルの代わりに設定サービスを使用するよう、Edge Delivery Services用のCommerce ストアフロント設定の移行に関する情報が追加 <code class="language-plaintext highlighter-rouge">config.json</code> れました。 Adobeでは、Configuration Service を使用して、Edge Delivery Servicesにデプロイされたストアフロントの設定を管理することをお勧めします。</p>
 </td>
       <td>
         フィードバック、技術
