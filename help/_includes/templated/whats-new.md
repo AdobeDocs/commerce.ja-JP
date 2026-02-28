@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion"> 一括データ移行ツール </a> を更新し、カタログ設定は自動的には読み込まれないという重要な注記を追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion"> 一括データ移行ツール </a> を更新し、カタログ設定は自動的には読み込まれないという重要な注記を追加しました。</p>
 </td>
       <td>
         Feedback
@@ -31,7 +31,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1ac84e8f10f61a6b8f995f348d4872773d2890e8">コミット</a></td>
     </tr>
     <tr>
-      <td><p>ヨーロッパ市場向けの代替支払い方法（APM）、高速チェックアウトボタン、バイヤーズ国サンドボックス設定など、v2.14.0 リリースドキュメントを含む <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes"> 支払いサービス </a> を更新しました。</p>
+      <td><p>ヨーロッパ市場向けの代替支払い方法（APM）、高速チェックアウトボタン、バイヤーズ国サンドボックス設定など、v2.14.0 リリースドキュメントを含む <a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/release-notes"> 支払いサービス </a> を更新しました。</p>
 </td>
       <td>
         メジャーアップデート、新しいトピック
@@ -53,7 +53,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/coding-tools">Adobe Commerce App Builderの AI コーディング開発者ツール </a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/ratings-extension"> 評価拡張チュートリアル </a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/shipping-method-extension"> 発送方法の拡張チュートリアル </a>、および <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/tutorial-prerequisites"> チュートリアルの前提条件 </a> の各ページが使用できるようになりました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/coding-tools">Adobe Commerce App Builderの AI コーディング開発者ツール </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/tutorials/ratings-extension"> 評価拡張チュートリアル </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/tutorials/shipping-method-extension"> 発送方法の拡張チュートリアル </a>、および <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/tutorials/tutorial-prerequisites"> チュートリアルの前提条件 </a> の各ページが使用できるようになりました。</p>
 </td>
       <td>
         新しいトピック
@@ -75,7 +75,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> リリースノート </a> を実稼動環境に対する最新のリリースで更新しました。</p>
+      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a> を実稼動環境に対する最新のリリースで更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -97,7 +97,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets as a Cloud Service（ACCS）ユーザー向けの新しいチュートリアルビデオを追加して <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview"></a>Adobe Commerce統合の概要を更新しました。</p>
+      <td><p>AEM Assets as a Cloud Service（ACCS）ユーザー向けの新しいチュートリアルビデオを追加して <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/overview"></a>Adobe Commerce統合の概要を更新しました。</p>
 </td>
       <td>
         フィードバック、メジャーアップデート
@@ -105,7 +105,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1cef99b8284aef05e34ab8ca65b776492ec5bee7">コミット</a></td>
     </tr>
     <tr>
-      <td><p>Adobe Commerce as a Cloud Service<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> リリースノート </a> を最新のサンドボックスリリースに更新しました。</p>
+      <td><p>Adobe Commerce as a Cloud Service<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a> を最新のサンドボックスリリースに更新しました。</p>
 </td>
       <td>
         フィードバック、メジャーアップデート
@@ -127,7 +127,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match"> 同期パラメーターをサポートするように </a> カスタム自動マッチング <code class="language-plaintext highlighter-rouge">skip</code> を更新し、マッピングが変更されていない場合にカスタムマッチャーで同期処理をバイパスできるようにしました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match"> 同期パラメーターをサポートするように </a> カスタム自動マッチング <code class="language-plaintext highlighter-rouge">skip</code> を更新し、マッピングが変更されていない場合にカスタムマッチャーで同期処理をバイパスできるようにしました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -149,7 +149,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes"> カタログサービスリリースノート </a> の大幅な更新：再構築された紹介、追加されたストアフロントカタログサービスリリース v1.46-v1.36 および GA、GraphQLの例（属性フィルタリング、階層価格、製品階層、recommendationsByUnitIds など）を使用した機能説明の拡張、現在の形式とリンクを使用した以前のバージョンとの連携。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/catalog-service/release-notes"> カタログサービスリリースノート </a> の大幅な更新：再構築された紹介、追加されたストアフロントカタログサービスリリース v1.46-v1.36 および GA、GraphQLの例（属性フィルタリング、階層価格、製品階層、recommendationsByUnitIds など）を使用した機能説明の拡張、現在の形式とリンクを使用した以前のバージョンとの連携。</p>
 </td>
       <td>
         メジャーアップデート
@@ -171,7 +171,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>要件を明確にし、メタデータ書き出し用の <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/migrate-data">CLI コマンドドキュメント </a> を追加することで、AEM Assets統合ドキュメントを改善。</p>
+      <td><p>要件を明確にし、メタデータ書き出し用の <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/migrate-data">CLI コマンドドキュメント </a> を追加することで、AEM Assets統合ドキュメントを改善。</p>
 </td>
       <td>
         Feedback
@@ -193,7 +193,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Product Recommendations に、サポートされる製品タイプ、特別な価格制限、単位とフィルターの制限、プレビュー/API/cookie の動作、関連制約を記載した <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits"> 境界と制限 </a> を追加しました。</p>
+      <td><p>Product Recommendations に、サポートされる製品タイプ、特別な価格制限、単位とフィルターの制限、プレビュー/API/cookie の動作、関連制約を記載した <a href="https://experienceleague.adobe.com/ja/docs/commerce/product-recommendations/boundaries-limits"> 境界と制限 </a> を追加しました。</p>
 </td>
       <td>
         フィードバック、新しいトピック
@@ -201,7 +201,7 @@ ht-degree: 2%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2b850e32660f1a8540bb6a024f3617994b6c13f6">コミット</a></td>
     </tr>
     <tr>
-      <td><p>v2.12.0 PAY-6227 エントリを拡張して、新しい <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options#paypal-payment-buttons"> サーバーサイド出荷コールバック </a> セクションにリンクし、この機能によってチェックアウトプロセスを高速化する方法を明確にしました。</p>
+      <td><p>v2.12.0 PAY-6227 エントリを拡張して、新しい <a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/payments-checkout/payments-options#paypal-payment-buttons"> サーバーサイド出荷コールバック </a> セクションにリンクし、この機能によってチェックアウトプロセスを高速化する方法を明確にしました。</p>
 </td>
       <td>
         Feedback
@@ -223,7 +223,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>実稼動環境への 2 月のリリースに関して、Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> リリースノート </a> を更新しました。</p>
+      <td><p>実稼動環境への 2 月のリリースに関して、Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a> を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -245,7 +245,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets Integration v1.2.13 では、カスタムマッチャー設定に <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Adobe I/O Workspace Configuration</a> が追加されています。 App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code> をアップロードして自動検証や資格情報の抽出用に使用したり、手動で設定したりできます。 v1.2.13 の <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes"> リリースノート </a> および更新された <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match"> カスタムマッチング </a> ガイドを参照してください。</p>
+      <td><p>AEM Assets Integration v1.2.13 では、カスタムマッチャー設定に <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match">Adobe I/O Workspace Configuration</a> が追加されています。 App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code> をアップロードして自動検証や資格情報の抽出用に使用したり、手動で設定したりできます。 v1.2.13 の <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/release-notes"> リリースノート </a> および更新された <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match"> カスタムマッチング </a> ガイドを参照してください。</p>
 </td>
       <td>
         メジャーアップデート
@@ -267,7 +267,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.19</a> のリリースノートを追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.19</a> のリリースノートを追加しました。</p>
 </td>
       <td>
         技術
@@ -289,7 +289,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>2026 年 2 月のサンドボックスリリースの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Adobe Commerce as a Cloud Service リリースノート </a> を更新しました。</p>
+      <td><p>2026 年 2 月のサンドボックスリリースの <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes">Adobe Commerce as a Cloud Service リリースノート </a> を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -311,7 +311,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.18</a> のリリースノートを追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.18</a> のリリースノートを追加しました。</p>
 </td>
       <td>
         技術
@@ -333,7 +333,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Commerceのお客様がCommerce Admin のフィード同期ステータスページからデータフィードの書き出しを監視およびトラブルシューティングする方法について説明しました。 データの書き出しガイドの <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process"> 同期プロセスの表示と管理 </a> を参照してください。</p>
+      <td><p>Commerceのお客様がCommerce Admin のフィード同期ステータスページからデータフィードの書き出しを監視およびトラブルシューティングする方法について説明しました。 データの書き出しガイドの <a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process"> 同期プロセスの表示と管理 </a> を参照してください。</p>
 </td>
       <td>
         技術
@@ -355,7 +355,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>新しいインフラストラクチャ、運用機能、マーケットプレイス情報など、<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison"> 機能比較ページ </a> に詳細情報を追加しました。</p>
+      <td><p>新しいインフラストラクチャ、運用機能、マーケットプレイス情報など、<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/feature-comparison"> 機能比較ページ </a> に詳細情報を追加しました。</p>
 </td>
       <td>
         Feedback
@@ -377,7 +377,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>非推奨の検索アダプタから移行するお客様のための <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Search Adapter to PLP Widget への移行 </a> ガイドに、詳細な移行シナリオ、段階的な手順、役割に基づくガイダンス、およびトラブルシューティングが追加されました。</p>
+      <td><p>非推奨の検索アダプタから移行するお客様のための <a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Search Adapter to PLP Widget への移行 </a> ガイドに、詳細な移行シナリオ、段階的な手順、役割に基づくガイダンス、およびトラブルシューティングが追加されました。</p>
 </td>
       <td>
         フィードバック、メジャーアップデート、新しいトピック
@@ -399,7 +399,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service&rbrace; のストアフロント設定ガイドが更新され </a> ストアフロントのボイラープレートリポジトリ内のファイルの代わりに設定サービスを使用するよう、Edge Delivery Services用のCommerce ストアフロント設定の移行に関する情報が追加 <code class="language-plaintext highlighter-rouge">config.json</code> れました。 Adobeでは、Configuration Service を使用して、Edge Delivery Servicesにデプロイされたストアフロントの設定を管理することをお勧めします。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> および <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service&rbrace; のストアフロント設定ガイドが更新され </a> ストアフロントのボイラープレートリポジトリ内のファイルの代わりに設定サービスを使用するよう、Edge Delivery Services用のCommerce ストアフロント設定の移行に関する情報が追加 <code class="language-plaintext highlighter-rouge">config.json</code> れました。 Adobeでは、Configuration Service を使用して、Edge Delivery Servicesにデプロイされたストアフロントの設定を管理することをお勧めします。</p>
 </td>
       <td>
         フィードバック、技術
@@ -465,7 +465,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest"> リリースノート </a> を更新しました。</p>
+      <td><p>Adobe Commerce as a Cloud Serviceの <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes#latest"> リリースノート </a> を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -487,7 +487,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce Optimizerのトピック <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits"> 制限と制限 </a> を更新し、ライセンス制限とシステム範囲を説明し、制限の説明を追加し、キャパシティ計画のガイダンスとパフォーマンスの問題を防ぐガイダンスを含めました。</p>
+      <td><p>Adobe Commerce Optimizerのトピック <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits"> 制限と制限 </a> を更新し、ライセンス制限とシステム範囲を説明し、制限の説明を追加し、キャパシティ計画のガイダンスとパフォーマンスの問題を防ぐガイダンスを含めました。</p>
 </td>
       <td>
         フィードバック、技術
@@ -509,7 +509,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.16 および 103.4.17</a> および <a href="https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes"> カタログアダプターバージョン 1.10.0</a> のリリースノートを追加しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS データ書き出しバージョン 103.4.16 および 103.4.17</a> および <a href="https://experienceleague.adobe.com/ja/docs/commerce/price-indexer/catalog-adapter/release-notes"> カタログアダプターバージョン 1.10.0</a> のリリースノートを追加しました。</p>
 </td>
       <td>
         技術
