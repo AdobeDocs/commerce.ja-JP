@@ -4,10 +4,10 @@ user-guide-description: ドキュメントとリソース  [!DNL Adobe Commerce 
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 8ec4054a81981866b7837dfc2e89223328ccea89
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 10%
+source-wordcount: '106'
+ht-degree: 11%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 10%
    - [カタログ画層](./setup/catalog-layer.md)
    - [ポリシー](./setup/policies.md)
    - [価格台帳](./setup/pricebooks.md)
+   - [製品ビジュアル](./setup/product-visuals.md)
    - [データ同期](./setup/data-sync.md)
    - イベント {#events}
       - [概要](./setup/events/overview.md)
@@ -61,6 +62,6 @@ ht-degree: 10%
 - ユースケース {#use-case}
    - [ストアフロントとカタログ管理のエンドツーエンドのユースケース](./use-case/admin-use-case.md)
 - 開発者向けリソース {#developer}
-   - [&#x200B; 開発者ガイドおよび API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)
+   - [ 開発者ガイドおよび API リファレンス ](https://developer.adobe.com/commerce/services/optimizer/)
    - [Salesforce Commerce コネクタ](./developer/salesforce-connector.md)
 

@@ -2,11 +2,11 @@
 title: Adobe Commerce Optimizerとは
 description: ' [!DNL Adobe Commerce Optimizer]  とその主な機能について説明します。'
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer] の概要については、次のビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3450464?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## [!DNL Adobe Commerce Optimizer] から最も利益を得るのは誰ですか？
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 - 既存のバックエンドのコマースシステムを維持し、ストアフロントのエクスペリエンスのみを変換したいマーチャント。
 - サードパーティシステムが買い物かごとチェックアウトライフサイクルを管理する企業。
-- サードパーティのコマースエンジンから商品カタログを管理する簡単な方法を求めているAEMのお客様。
+- [AEMのお客様 ](setup/product-visuals.md) サードパーティのコマースエンジンから商品カタログを簡単に管理したいと考えています。
 
 ## クイックツアー
 
@@ -69,6 +69,7 @@ ht-degree: 0%
 カタログのビューとポリシーを定義します。 カタログには製品データが含まれているだけでなく、ビジネス構造を定義するのにも役立ちます。 また、ストアフロントの製品データの可用性に関する貴重なインサイトを表示して、買い物客に迅速に表示できるようにします。
 
 - **カタログ表示** – 小売構造を意味のあるビジネスグループに定義するのに役立ちます。 例えば、自動車業界向けのディーラー、マルチブランド複合企業の子会社、サプライヤーの製造場所などです。
+- **カタログレイヤー** - ソースデータを変更せずに製品データを変更します。 商品画像にAEM Assetsを使用する場合、AEM - Assets レイヤーは [ 商品ビジュアル ](setup/product-visuals.md) を通じて適用されます。 詳しくは、[ カタログレイヤー ](setup/catalog-layer.md) を参照してください。
 - **ポリシー** - カタログビュー内に格納されるデータアクセスフィルター。 ポリシーを使用すると、適切なコンテンツを適切な宛先に確実に送信できます。 例えば、実店舗、マーケットプレイス、広告パイプライン（Google、Facebook、Instagram）などの POS です。
 - **データ同期** - データソース（PIM、ERP など）から [!DNL Adobe Commerce Optimizer] に転送された製品データの同期ステータスの概要を表示します。 その製品データは、「**[!UICONTROL Catalog Service]**」、「**[!UICONTROL Search]**」、「**[!UICONTROL Recommendations]**」の各タブに表示されます。
 - **イベント** – 製品検出とレコメンデーションを強化するストアフロントイベントデータを表示します。 **イベント** ページを使用すると、マーチャントは、ストアフロントイベントを正しく実装したことと、イベントが正常にキャプチャされていることを確認できます。 マーチャントはこのページを使用して、潜在的な問題を特定し、イベントの問題を解決する手順を実行できます。
@@ -87,10 +88,10 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Optimizer] の機能のシステムの境界とライセンスについて理解するには、[&#x200B; 制限と境界 &#x200B;](boundaries-limits.md) のトピックを参照してください。
+>[!DNL Adobe Commerce Optimizer] の機能のシステムの境界とライセンスについて理解するには、[ 制限と境界 ](boundaries-limits.md) のトピックを参照してください。
 
 ## アーキテクチャ
 
 次の図は、カタログデータの取り込みから、マーチャンダイジングサービス、ストアフロント、サードパーティの買い物かごとの統合とチェックアウトプロセスとの関係に至るまで、[!DNL Adobe Commerce Optimizer] の基本的なアーキテクチャを示しています。
 
-![[!DNL Adobe Commerce Optimizer] アーキテクチャ &#x200B;](./assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer] アーキテクチャ ](./assets/architecture.png)
