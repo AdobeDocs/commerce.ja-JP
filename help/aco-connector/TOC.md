@@ -1,15 +1,16 @@
 ---
-user-guide-title: '[!DNL AEM Assets] 統合ガイド'
-user-guide-description: Adobe Commerce管理者、Magento Open Source管理者および e コマースマーケター向けのAEM Assets統合に関する包括的な情報です。
-feature: CMS, Page Content
-source-git-commit: 1931e269ef3166312d1c5f59897f8fdf4994e90c
+user-guide-title: '[!DNL Adobe Commerce Optimizer Connector] 統合ガイド'
+user-guide-description: Adobe Commerce Optimizer コネクタを設定して、カタログデータをエクスポートし、Commerce OptimizerとGraphQLを使用してEdge Delivery Services ストアフロントへの配信を最適化します。
+source-git-commit: 380d2c91a17a3e6b84d435774de1b05ada7d3a52
 workflow-type: tm+mt
-source-wordcount: '25'
-ht-degree: 4%
+source-wordcount: '36'
+ht-degree: 5%
 
 ---
 
 
-# Adobe Commerce Optimizer コネクタ {#aco-commerce-optimizer-connector}
+# Adobe Commerce Optimizer コネクタ {#aco-optimizer-connector}
 
-- [概要](overview.md)
+- [Commerce Optimizer コネクタ](overview.md)
+- [はじめに](get-started.md)
+- [リリースノート](release-notes.md)
