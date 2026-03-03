@@ -13,9 +13,9 @@ ht-degree: 0%
 
 このリリースノートでは、[!DNL Adobe Commerce Optimizer Connector] のすべてのリリースについて説明しており、次が含まれています。
 
-![ 新機能 ](../assets/new.svg) 新機能
-![ 修正された問題 ](../assets/fix.svg) 修正および改善
-![ 既知の問題 ](../assets/bug.svg)
+![&#x200B; 新機能 &#x200B;](../assets/new.svg) 新機能
+![&#x200B; 修正された問題 &#x200B;](../assets/fix.svg) 修正および改善
+![&#x200B; 既知の問題 &#x200B;](../assets/bug.svg)
 
 ## v1.0.9
 
