@@ -2,7 +2,7 @@
 title: Adobe Commerce Optimizer コネクタ
 description: Commerce Cloud またはオンプレミスプロジェクトからAdobe Commerce Optimizerにデータを接続する方法について説明します
 feature: Personalization, Integration, Configuration
-badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
+badgePaas: label="PaaS のみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"
 source-git-commit: 11bb5df2488a017065db44504f35612fe54e284c
 workflow-type: tm+mt
 source-wordcount: '471'
