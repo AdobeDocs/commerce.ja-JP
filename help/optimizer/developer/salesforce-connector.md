@@ -15,7 +15,7 @@ Adobe App Builder テクノロジーに基づいて構築された [!DNL Commerc
 
 標準で、信頼性の高いデータ同期機能と、ビジネスニーズに合わせてワークフローをカスタマイズする柔軟性を提供します。
 
-ビデオチュートリアルシリーズのエンドツーエンドについては、[Salesforce Commerce Cloud スターターキットの詳細 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview) を参照してください。
+ビデオチュートリアルシリーズのエンドツーエンドについては、[Salesforce Commerce Cloud スターターキットの詳細 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview) を参照してください。
 
 ## 主な機能
 
