@@ -303,7 +303,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
    開発環境とブラウザーに、次の変更が表示されます。
 
    * 製品評価コンポーネントが自動的に作成されます。
-   * このコンポーネントは、選択したアーキテクチャに応じて、[&#x200B; ドロップインスロット &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) を使用するか、スタンドアロンブロックとして PDP に統合されます。
+   * このコンポーネントは、選択したアーキテクチャに応じて、[&#x200B; ドロップインスロット &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=ja) を使用するか、スタンドアロンブロックとして PDP に統合されます。
    * 星は、API の評価値に基づいて、適切な盛土比率で表示されます。
 
    ![&#x200B; 製品タイトルの下に統合された星評価を示す製品の詳細ページ &#x200B;](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
