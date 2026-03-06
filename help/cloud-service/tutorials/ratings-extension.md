@@ -18,7 +18,7 @@ ht-degree: 0%
 
 このチュートリアルでは、[!DNL Adobe Commerce as a Cloud Service] および AI を利用した開発ツールを使用して、[!DNL Adobe App Builder] 用の製品評価拡張機能を構築する手順を説明します。
 
-開始する前に、[ 前提条件 ](./tutorial-prerequisites.md) を完了してください。
+開始する前に、[&#x200B; 前提条件 &#x200B;](./tutorial-prerequisites.md) を完了してください。
 
 ## 前提条件を確認
 
@@ -38,7 +38,7 @@ git --version
 bash --version
 ```
 
-上記のコマンドのいずれかで期待される結果が返されない場合は、[ 前提条件 ](./tutorial-prerequisites.md) を参照してガイダンスを確認してください。
+上記のコマンドのいずれかで期待される結果が返されない場合は、[&#x200B; 前提条件 &#x200B;](./tutorial-prerequisites.md) を参照してガイダンスを確認してください。
 
 ## 拡張機能の開発
 
@@ -46,7 +46,7 @@ bash --version
 
 1. **[!UICONTROL Cursor]**/**[!UICONTROL Settings]**/**[!UICONTROL Cursor Settings]**/**[!UICONTROL Tools & MCP]** に移動し、`commerce-extensibility` ツールセットがエラーなく有効になっていることを確認します。 エラーが表示された場合は、ツールセットのオン/オフを切り替えます。
 
-   ![MCP コマース拡張ツールセットが有効になっていることを示すカーソル IDE 設定 ](../assets/cursor-settings.png){width="600" zoomable="yes"}
+   ![MCP コマース拡張ツールセットが有効になっていることを示すカーソル IDE 設定 &#x200B;](../assets/cursor-settings.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -57,7 +57,7 @@ bash --version
 
    * **[!UICONTROL Cursor]**/**[!UICONTROL Settings]**/**[!UICONTROL Cursor Settings]**/**[!UICONTROL Indexing & Docs]** に移動し、一覧表示されているドキュメントをすべて削除します。
 
-   ![ ドキュメントリストが空のカーソルインデックス作成とドキュメント設定 ](../assets/disable-documentation.png){width="600" zoomable="yes"}
+   ![&#x200B; ドキュメントリストが空のカーソルインデックス作成とドキュメント設定 &#x200B;](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. 製品評価拡張機能のコードを生成します：
    * カーソルチャットウィンドウから、モード **[!UICONTROL Agent]** 選択します。
@@ -79,9 +79,9 @@ bash --version
 
 1. エージェントが最適なコードを生成できるように、エージェントの質問に正確に答えます。
 
-   ![ 拡張機能プロンプトが入力されたエージェントモードのカーソルチャットウィンドウ ](../assets/enter-prompt.png){width="600" zoomable="yes"}
+   ![&#x200B; 拡張機能プロンプトが入力されたエージェントモードのカーソルチャットウィンドウ &#x200B;](../assets/enter-prompt.png){width="600" zoomable="yes"}
 
-   ![ 拡張要件を明確にする質問をする AI エージェント ](../assets/agent-questions.png){width="600" zoomable="yes"}
+   ![&#x200B; 拡張要件を明確にする質問をする AI エージェント &#x200B;](../assets/agent-questions.png){width="600" zoomable="yes"}
 
 1. 次のテキスト例を使用して、エージェントの質問に回答し、ランダム化された評価データを設定します。
 
@@ -101,7 +101,7 @@ bash --version
 
    エージェントは、実装の信頼できるソースとして機能する `requirements.md` ファイルを作成します。
 
-   ![AI エージェントによって作成された Requirements.md ファイルと実装の詳細 ](../assets/requirements-file.png){width="600" zoomable="yes"}
+   ![AI エージェントによって作成された Requirements.md ファイルと実装の詳細 &#x200B;](../assets/requirements-file.png){width="600" zoomable="yes"}
 
 1. `requirements.md` ファイルを確認し、計画を検証します。
 
@@ -115,9 +115,9 @@ bash --version
 
    ![AI エージェントフェーズ 2 Architecture Plan for Ratings API](../assets/architecture-planning.png){width="600" zoomable="yes"}
 
-   ![ 生成されるコードファイルと構造の概要 ](../assets/code-generation-summary.png){width="600" zoomable="yes"}
+   ![&#x200B; 生成されるコードファイルと構造の概要 &#x200B;](../assets/code-generation-summary.png){width="600" zoomable="yes"}
 
-   ![ テストとデプロイメントの次のステップを提供する AI エージェント ](../assets/next-steps.png){width="600" zoomable="yes"}
+   ![&#x200B; テストとデプロイメントの次のステップを提供する AI エージェント &#x200B;](../assets/next-steps.png){width="600" zoomable="yes"}
 
 ### ローカルでの拡張機能のテスト
 
@@ -131,9 +131,9 @@ bash --version
 
 1. エージェントの指示に従い、API がローカルで動作していることを確認します。
 
-   ![ ローカル API テスト用の AI エージェントの手順 ](../assets/local-testing.png){width="600" zoomable="yes"}
+   ![&#x200B; ローカル API テスト用の AI エージェントの手順 &#x200B;](../assets/local-testing.png){width="600" zoomable="yes"}
 
-   ![cURL でローカル API テストの結果が成功したことを示すターミナル ](../assets/local-testing-1.png){width="600" zoomable="yes"}
+   ![cURL でローカル API テストの結果が成功したことを示すターミナル &#x200B;](../assets/local-testing-1.png){width="600" zoomable="yes"}
 
 ### 拡張機能のデプロイ
 
@@ -147,19 +147,19 @@ bash --version
 
    エージェントは、デプロイ前に、デプロイメント前の準備状況の評価を実行します。
 
-   ![AI エージェントのデプロイメント前準備状況評価チェックリスト ](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+   ![AI エージェントのデプロイメント前準備状況評価チェックリスト &#x200B;](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 1. 評価結果に自信がある場合は、エージェントにデプロイメントを続行するように指示します。
 
    エージェントは、MCP ツールキットを使用して、検証、ビルド、およびデプロイを自動的に行います。
 
-   ![MCP ツールキット検証ビルドおよびデプロイメントプロセス ](../assets/deployment-process.png){width="600" zoomable="yes"}
+   ![MCP ツールキット検証ビルドおよびデプロイメントプロセス &#x200B;](../assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### デプロイメントの検証
 
 ストアフロントに統合する前に API をテストします。 担当者は、新しいアクションの場所とテスト戦略を指定する必要があります。
 
-![ デプロイ済みのアクション URL とテストコマンドを使用した AI エージェントテスト戦略 ](../assets/testing-strategy.png){width="600" zoomable="yes"}
+![&#x200B; デプロイ済みのアクション URL とテストコマンドを使用した AI エージェントテスト戦略 &#x200B;](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
 また、ターミナルで cURL を使用して、手動で API をテストすることもできます。
 
@@ -167,7 +167,7 @@ bash --version
 curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123"
 ```
 
-![ デプロイ済みの評価 API の cURL テストが成功したことを示すターミナル ](../assets/curl-test.png){width="600" zoomable="yes"}
+![&#x200B; デプロイ済みの評価 API の cURL テストが成功したことを示すターミナル &#x200B;](../assets/curl-test.png){width="600" zoomable="yes"}
 
 ### Edge Delivery Servicesとの統合
 
@@ -177,9 +177,9 @@ Ratings API を [!DNL Adobe Commerce] を利用した [!DNL Edge Delivery Servic
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![AI エージェントがストアフロント統合用のサービス契約ファイルを作成 ](../assets/create-contract.png){width="600" zoomable="yes"}
+![AI エージェントがストアフロント統合用のサービス契約ファイルを作成 &#x200B;](../assets/create-contract.png){width="600" zoomable="yes"}
 
-![ エンドポイントと応答の詳細を含む評価 API 契約マークダウンファイル ](../assets/contract.png){width="600" zoomable="yes"}
+![&#x200B; エンドポイントと応答の詳細を含む評価 API 契約マークダウンファイル &#x200B;](../assets/contract.png){width="600" zoomable="yes"}
 
 ターミナルに戻り、`extension` フォルダーで次のコマンドを実行して、契約ファイルを `storefront` フォルダーにコピーします。
 
@@ -204,7 +204,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
 ストアフロントの統合を開始する前に、次の点を確認してください。
 
 * [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクト
-* Commerce ストアフロントの AI ツール [CLI を使用してインストール ](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+* Commerce ストアフロントの AI ツール [CLI を使用してインストール &#x200B;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 
 ### ストアフロントのワークスペースの設定
 
@@ -303,10 +303,10 @@ cp RATINGS_API_CONTRACT.md ../storefront
    開発環境とブラウザーに、次の変更が表示されます。
 
    * 製品評価コンポーネントが自動的に作成されます。
-   * このコンポーネントは、選択したアーキテクチャに応じて、[ ドロップインスロット ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) を使用するか、スタンドアロンブロックとして PDP に統合されます。
+   * このコンポーネントは、選択したアーキテクチャに応じて、[&#x200B; ドロップインスロット &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) を使用するか、スタンドアロンブロックとして PDP に統合されます。
    * 星は、API の評価値に基づいて、適切な盛土比率で表示されます。
 
-   ![ 製品タイトルの下に統合された星評価を示す製品の詳細ページ ](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
+   ![&#x200B; 製品タイトルの下に統合された星評価を示す製品の詳細ページ &#x200B;](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
 
 ## チュートリアルの概要
 
@@ -335,7 +335,7 @@ Change the star fill color to red.
 
 星が赤に変わる。
 
-![ 赤い星の塗り潰し色で表示された製品の評価 ](../assets/red-star-colors.png){width="600" zoomable="yes"}
+![&#x200B; 赤い星の塗り潰し色で表示された製品の評価 &#x200B;](../assets/red-star-colors.png){width="600" zoomable="yes"}
 
 ### 評価配分モーダルの追加
 
@@ -343,7 +343,7 @@ Change the star fill color to red.
 
 1. **開始する前に：** 次のモック画像を保存し、ストアフロントエージェントとのチャットに貼り付けます。
 
-   ![ 星レベルによる格付分布の内訳を示したモックアップ ](../assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
+   ![&#x200B; 星レベルによる格付分布の内訳を示したモックアップ &#x200B;](../assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
 
 1. 参照画像をガイドとして使用して評価配布モーダルを作成するには、次の手順に従います。
 
@@ -369,4 +369,4 @@ Change the star fill color to red.
   adjust the modal position to be...
   ```
 
-![ 星レベルの分類バーを使用して、詳細な評価分布を表示するモーダル ](../assets/rating-distribution-modal.png){width="600" zoomable="yes"}
+![&#x200B; 星レベルの分類バーを使用して、詳細な評価分布を表示するモーダル &#x200B;](../assets/rating-distribution-modal.png){width="600" zoomable="yes"}
