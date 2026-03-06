@@ -2,10 +2,11 @@
 title: 同義語のベストプラクティス
 description: ストアで同義語を実装するためのベストプラクティスを説明します。
 role: Admin, Developer
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 54b300ed89f830c2fe5258ec889302a59decd59f
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
+exl-id: 026bb17b-14e3-4493-ae10-376837b69de6
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 同義語を作成する際のベストプラクティスのリストを次に示します。
 
-- [!DNL Adobe Commerce Optimizer] は、デフォルトでスペルミスを管理します。 同義語を設定すると、買い物客がカタログで指定した単語とは異なる単語を使用する可能性があります。 あなたの製品が「ソファ」としてリストされている間、誰かが「ソファ」を探しているので、あなたは販売を失いたくありません。 顧客が商品の検索に使用する可能性のあるすべての単語を入力することで、様々な検索語句を取り込むことができます。 結果を向上させるには [&#x200B; 同義語を一方向または双方向として設定 &#x200B;](add.md#step-2-define-the-synonym-by-type) できます。
+- [!DNL Adobe Commerce Optimizer] は、デフォルトでスペルミスを管理します。 同義語を設定すると、買い物客がカタログで指定した単語とは異なる単語を使用する可能性があります。 あなたの製品が「ソファ」としてリストされている間、誰かが「ソファ」を探しているので、あなたは販売を失いたくありません。 顧客が商品の検索に使用する可能性のあるすべての単語を入力することで、様々な検索語句を取り込むことができます。 結果を向上させるには [ 同義語を一方向または双方向として設定 ](add.md#step-2-define-the-synonym-by-type) できます。
 
 - ブランド名および略称をフルネームにマッピングします（「HP」から「Hewlett-Packard」など）。一般的な商品のニックネーム（「iPhone」から「Apple iPhone」など）。
 

@@ -4,16 +4,16 @@ user-guide-description: ドキュメントとリソース  [!DNL Adobe Commerce 
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '103'
 ht-degree: 11%
 
 ---
 
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [Adobe Commerce Optimizerとは](overview.md)
+- [何  [!DNL Adobe Commerce Optimizer]?](overview.md)
 - [はじめに](get-started.md)
 - [ユーザーおよび ID 管理](user-management.md)
 - [共有された責任](shared-responsibility.md)
@@ -62,6 +62,6 @@ ht-degree: 11%
 - ユースケース {#use-case}
    - [ストアフロントとカタログ管理のエンドツーエンドのユースケース](./use-case/admin-use-case.md)
 - 開発者向けリソース {#developer}
-   - [&#x200B; 開発者ガイドおよび API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)
+   - [ 開発者ガイドおよび API リファレンス ](https://developer.adobe.com/commerce/services/optimizer/)
    - [Salesforce Commerce コネクタ](./developer/salesforce-connector.md)
 

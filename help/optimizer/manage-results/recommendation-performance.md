@@ -1,11 +1,11 @@
 ---
 title: Recommendations パフォーマンス
 description: Recommendations のパフォーマンスページには、製品のレコメンデーションのパフォーマンスに関するinsightが表示されます。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -18,21 +18,23 @@ Recommendations のパフォーマンス ページには、設定済みのレコ
 >
 >レコメンデーションユニットは、推奨される製品 _項目_ を含むウィジェットです。
 
-![&#x200B; 推奨事項のパフォーマンス &#x200B;](../assets/rec-performance.png){zoomable="yes"}
+![ 推奨事項のパフォーマンス ](../assets/rec-performance.png){zoomable="yes"}
 
 ## レポートの表示
 
-1. お勧めを適用する場所など、**カタログソース**`en-US` 選択します。
+1. レコメンデーションが適用される **すべてのビュー** など *カタログビュー* を選択します。
+
+   Recommendations の [ カタログビュー ](#select-catalog-view) について説明します。
 
 1. **[!UICONTROL Date Range]** をクリックして、次のいずれかの範囲を選択します。
 
-   ![&#x200B; 推奨日付範囲 &#x200B;](../assets/rec-perf-date-range.png)
+   ![ 推奨日付範囲 ](../assets/rec-perf-date-range.png)
 
-   レコメンデーションテーブルが更新され、その日付範囲の指標が表示されます。
+   レコメンデーションテーブルが更新され、その日付範囲とカタログビューの指標が表示されます。
 
 ## テーブルをカスタマイズ
 
-1. 左上隅の ![&#x200B; 列セレクター &#x200B;](../assets/icon-show-hide-columns.png) アイコンをクリックして、テーブルをカスタマイズします。
+1. 左上隅の ![ 列セレクター ](../assets/icon-show-hide-columns.png) アイコンをクリックして、テーブルをカスタマイズします。
 
    表示されている列にはチェックマークが付いています。
 
@@ -45,21 +47,22 @@ Recommendations のパフォーマンス ページには、設定済みのレコ
 
 ## 詳細を表示
 
-1. テーブルで、調査するレコメンデーションの横にある（![&#x200B; その他のセレクター &#x200B;](../assets/btn-more.png)）アイコンをクリックします。
+1. テーブルで、調査するレコメンデーションの横にある（![ その他のセレクター ](../assets/btn-more.png)）アイコンをクリックします。
 
 1. レコメンデーションのステータスを変更するには、「**アクティブ化**」または **非アクティブ化** をクリックします。
 
 ## お勧めを作成または管理
 
-[&#x200B; 新しいレコメンデーションの作成または既存のレコメンデーションの管理 &#x200B;](../merchandising/recommendations/create.md) を行う方法について説明します。
+[ 新しいレコメンデーションの作成または既存のレコメンデーションの管理 ](../merchandising/recommendations/create.md) を行う方法について説明します。
 
 ## Workspaceの制御
 
 | 制御 | 説明 |
 |---|---|
-| ![&#x200B; 日付範囲 &#x200B;](../assets/rec-perf-date-range.png) | 指標の計算に使用される時間範囲を決定します。 |
-| ![&#x200B; 列の選択 &#x200B;](../assets/icon-show-hide-columns.png) | Recommendations テーブルに表示される列を決定します。 |
-| レコメンデーションの作成 | [&#x200B; 新しいレコメンデーションを作成 &#x200B;](../merchandising/recommendations/create.md) ページを開きます。 |
+| ![ 日付範囲 ](../assets/rec-perf-date-range.png) | 指標の計算に使用される時間範囲を決定します。 |
+| ![ 列の選択 ](../assets/icon-show-hide-columns.png) | Recommendations テーブルに表示される列を決定します。 |
+| レコメンデーションの作成 | [ 新しいレコメンデーションを作成 ](../merchandising/recommendations/create.md) ページを開きます。 |
+| [ カタログ表示 ](#select-catalog-view) | カタログビューを選択してテーブルをフィルタリングし、選択したカタログビューに適用されるレコメンデーションのみを表示します。 この選択項目は、新しいレコメンデーションを [ 作成 ](../merchandising/recommendations/create.md) する際にカタログビューとしても使用されます。 オプションは *すべてのビュー* または特定の [ カタログビュー ](../setup/catalog-view.md) です。 |
 
 ## 列の説明
 
@@ -80,3 +83,34 @@ Recommendations のパフォーマンス ページには、設定済みのレコ
 | 視認性 | ビューに登録するレコメンデーションユニットの割合。 |
 | CTR | （クリックスルー率）クリックを登録したレコメンデーションに対する単位インプレッションの割合。 CTR は、ユニットが買い物客のビューに入らない場合でも、すべてのインプレッションをカウントします。 レコメンデーションユニットが表示されない場合、クリックされる可能性は低くなります。 ただし、これらの目に見えないインプレッションは CTR スコアにカウントされ、全体的な CTR の割合が減ります。 |
 | vCTR | （ビューアブルクリックスルー率）は、ビューアブルインプレッション数（買い物客の画面の表示可能な部分に実際に表示されたレコメンデーション）に基づいてのみクリックを測定し、買い物客のエンゲージメントのより正確なゲージを提供します。 |
+
+## カタログ ビューを選択
+
+>[!IMPORTANT]
+>
+>この機能は現在ベータ版です。
+
+**[!UICONTROL Catalog view]** Recommendations **ページの** セレクターには、次の 2 つの機能があります。
+
+1. **テーブルをフィルター** – 選択したカタログビューに適用されるレコメンデーション（およびその指標）のみを表示します。
+1. **新しいレコメンデーションの範囲を設定** - レコメンデーションを [ 作成 ](../merchandising/recommendations/create.md) すると、選択したカタログビューがユニットの範囲として使用されます。 オプションは *すべてのビュー* または特定の [ カタログビュー ](../setup/catalog-view.md) です。
+
+   - **すべてのビュー** - レコメンデーションはすべてのカタログビューに適用されます（製品の可用性は引き続きビューごとにフィルタリングされます）。
+   - **カタログ表示** – 推奨は、選択したカタログ表示（ストアフロント、言語、ブランドなど）にのみ適用されます。
+
+レコメンデーションごとにカタログビューを指定すると、次のことができます。
+
+- すべてのカタログビュー（グローバル）または 1 つのカタログビューのレコメンデーションを設定します。
+- [ 作成 ](../merchandising/recommendations/create.md) レコメンデーションページのカタログビュー別でのプレビューと製品のフィルタリング。
+- 各ストアフロントで利用可能な製品のみを表示します。
+- カタログビューごとに指標とストアフロントの動作を表示します。
+
+### カタログ表示での製品のフィルタリング方法
+
+**すべての表示** 選択で、レコメンデーションユニットに対しても、製品の可用性がカタログ表示ごとに適用されます。 これは、レコメンデーションユニットで設定した [ 包含または除外フィルター ](../merchandising/recommendations/filters.md) に加えて機能します。
+
+**例：すべてのビュー選択の下にインクルージョンフィルターを含むレコメンデーション**
+
+- **すべての表示** SKU （SKU_ABC、SKU_CDE、SKU_XYZ）を含む推奨事項。
+- **カタログ表示：Kingsbluff** は SKU_ABC または SKU_CDE を販売できません。 **表示：** SKU_XYZ に加えて、Kingsbluff で有効なその他の SKU。
+- **カタログビュー：Arkbridge** は付属の SKU を販売できません。 **表示：** Arkbridge で許可されている SKU のみ。 使用できるレコメンデーションユニットがない場合、そのストアフロントにはレコメンデーションユニットは表示されません。

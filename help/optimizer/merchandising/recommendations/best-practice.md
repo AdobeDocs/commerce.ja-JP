@@ -1,10 +1,11 @@
 ---
 title: Recommendations ベストプラクティス
 description: サイトの様々なページにどこにレコメンデーションを配置できるかを説明し、レコメンデーションタイプごとに頻繁に使用するラベルの提案を示します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
+exl-id: 08d7aeff-8b86-4fa3-93e6-4b72dc1ab117
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -31,7 +32,7 @@ Adobeでは、レコメンデーションを使用する際に次のガイドラ
 | 製品ページ | `Viewed this, viewed that` |
 | カート | `Bought this, bought that` |
 
-[&#x200B; 指標 &#x200B;](../../manage-results/recommendation-performance.md) を追跡し、必要に応じて調整できます。 実験が重要であることを忘れないでください。
+[ 指標 ](../../manage-results/recommendation-performance.md) を追跡し、必要に応じて調整できます。 実験が重要であることを忘れないでください。
 
 ## 推奨ラベル
 

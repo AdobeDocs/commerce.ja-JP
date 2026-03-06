@@ -3,12 +3,12 @@ title: リリースノート
 description: ' [!DNL Adobe Commerce Optimizer] の最新のリリース情報。'
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 3%
+source-wordcount: '100'
+ht-degree: 4%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 3%
 
 ### EU 地域が利用可能になりました
 
-顧客 IMS 組織に対する欧州連合地域（eu1）のサポートが利用できるようになりました。 Cloud Managerで **Commerce Optimizer インスタンスを追加** する際に、**地域** として [&#x200B; 欧州連合 &#x200B;](./get-started.md#step-1-create-an-instance) を選択できるようになりました。 欧州連合（EU）地域は、実稼動環境でのみ使用できます。
+顧客 IMS 組織に対する欧州連合地域（eu1）のサポートが利用できるようになりました。 Cloud Managerで **Commerce Optimizer インスタンスを追加** する際に、**地域** として [ 欧州連合 ](./get-started.md#step-1-create-an-instance) を選択できるようになりました。 欧州連合（EU）地域は、実稼動環境でのみ使用できます。
 
 EU 地域のベースの実稼動 URL は次のとおりです。
 
 * 管理者：`https://eu1.admin.commerce.adobe.com`
 * REST とGraphQL:`https://eu1.api.commerce.adobe.com`
 
-![&#x200B; インスタンスを作成 &#x200B;](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
+![ インスタンスを作成 ](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
 
 >[!ENDSHADEBOX]

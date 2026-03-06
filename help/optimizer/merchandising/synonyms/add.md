@@ -1,57 +1,51 @@
 ---
 title: シノニムの作成および管理
 description: ' [!DNL Adobe Commerce Optimizer] に対してシノニムを作成および管理する方法を説明します。'
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
 exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
 # シノニムの作成
 
-独自にキュレートされた [!DNL Adobe Commerce Optimizer] 同義語のリストを追加して、顧客エンゲージメントを向上させます。 ストアごとに最大 200 個の同義語を追加できます。
+独自にキュレートされた [!DNL Adobe Commerce Optimizer] 同義語のリストを追加して、顧客エンゲージメントを向上させます。 カタログソースごとに最大 200 個の同義語を追加できます。
 
-![Workspaceのシノニム &#x200B;](../../assets/synonym-workspace.png)
+![Workspaceのシノニム ](../../assets/synonym-workspace.png)
 
 ## 手順 1：シノニムの追加
 
 1. 左パネルから、_マーチャンダイジング_/**シノニム** に移動します。
-1. **[!UICONTROL Add synonyms]** ボタンをクリックします。
+1. **[!UICONTROL Create synonyms]** ボタンをクリックします。
 
 ## 手順 2：タイプによるシノニムの定義
 
-作成する [&#x200B; シノニムのタイプ &#x200B;](type.md) の手順に従います。
+作成する [ シノニムのタイプ ](type.md) の手順に従います。
 
 ### 双方向類義語
-
-1. デフォルトの **双方向** オプションを受け入れます。
-
-   ![&#x200B; 双方向類義語の追加 &#x200B;](../../assets/synonym-add-two-way.png)
 
 1. 照合する **キーワード** 用語または語句を入力します。
 1. キーワードの同義語として追加する **拡張** 用語を入力します。 複数の用語はコンマで区切ります。
 この例では、一致させるキーワードは「pants」で、展開用語のセットは「trousers, slacks」です。
 
-   ![&#x200B; 双方向類義語の例 &#x200B;](../../assets/synonym-add-two-way-example.png)
+   ![ 双方向類義語 ](../../assets/synonym-add-two-way.png)
 
 1. 完了したら、「**保存**」をクリックします。
 
    同義語のセットがリストに表示され、各用語の間に双方向矢印が表示されます。これは、用語が交換可能であることを意味します。
 
-   ![&#x200B; 双方向類義語 &#x200B;](../../assets/synonym-two-way.png)
+   ![ 双方向類義語の例 ](../../assets/synonym-add-two-way-example.png)
 
 ### 一方向のシノニム
 
 1. **一方向** シノニム タイプをクリックします。
 
-   ![&#x200B; 一方向シノニムの追加 &#x200B;](../../assets/synonym-add-one-way.png)
-
 1. **キーワード** と **拡張** の用語を入力します。 複数の用語はコンマで区切ります。
 
-   ![&#x200B; 一方向シノニムの例 &#x200B;](../../assets/synonym-add-one-way-example.png)
+   ![ 一方向のシノニム ](../../assets/synonym-add-one-way.png)
 
    この例では、キーワードが「pants」で、一方向の拡張用語「capris, peddle-pushers」はそれぞれ「pants」のサブセットですが、特定の意味を持ちます。
 
@@ -59,7 +53,7 @@ ht-degree: 0%
 
    同義語のセットがリストに表示され、展開用語からキーワードを指す一方向矢印が表示されます。この矢印は、キーワードのサブセットであることを示します。 各拡張語句はプラス記号で区切られます。
 
-   ![&#x200B; 一方向のシノニム &#x200B;](../../assets/synonym-one-way.png)
+   ![ 一方向シノニムの例 ](../../assets/synonym-add-one-way-example.png)
 
 ## 手順 3：変更を公開する
 
@@ -70,13 +64,13 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |--- |--- |
-| [&#x200B; タイプ &#x200B;](type.md) | シノニムがキーワードと同じ意味を持つか、キーワードのサブセットであるかを判断します。 オプション：<br /> 双方向（デフォルト） – キーワードと同じ意味を持ち、同じ検索結果を返す用語 <br /> 一方向 – キーワードのサブセットである用語。 一方向の同義語は、特定の製品のより狭いリストを返します。 |
+| [ タイプ ](type.md) | シノニムがキーワードと同じ意味を持つか、キーワードのサブセットであるかを判断します。 オプション：<br /> 双方向（デフォルト） – キーワードと同じ意味を持ち、同じ検索結果を返す用語 <br /> 一方向 – キーワードのサブセットである用語。 一方向の同義語は、特定の製品のより狭いリストを返します。 |
 | キーワード | カタログ内の商品の選択に一般的に関連付けられている単語。 |
 | 展開 | キーワードと同じ、または類似の意味を持つ追加の用語。 |
 
 ## シノニムの管理
 
-既存の [!DNL Adobe Commerce Optimizer] ード [&#x200B; シノニム &#x200B;](overview.md) を管理するには、次の手順に従います。
+既存の [!DNL Adobe Commerce Optimizer] ード [ シノニム ](overview.md) を管理するには、次の手順に従います。
 
 ## シノニムの検索
 

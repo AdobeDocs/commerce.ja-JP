@@ -2,11 +2,11 @@
 title: マーチャンダイジングの概要
 description: ' [!DNL Adobe Commerce Optimizer] のマーチャンダイジング機能について説明します。'
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
-source-git-commit: 5f6c7e68d330a063fbdb2fce1aeb86a08cf25a80
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 製品の検出を使用すると、次のことができます。
 
-* **[&#x200B; ファセット &#x200B;](./facets/overview.md)、[&#x200B; マーチャンダイジングルール &#x200B;](./rules/overview.md) および [&#x200B; 同義語](./synonyms/overview.md)** を設定して、最小限の摩擦で最も関連性の高い製品に買い物客を導きます。
+* **[ ファセット ](./facets/overview.md)、[ マーチャンダイジングルール ](./rules/overview.md) および [ 同義語](./synonyms/overview.md)** を設定して、最小限の摩擦で最も関連性の高い製品に買い物客を導きます。
 * **マーチャンダイジング戦略と季節的な優先度を反映した、直感的で目標指向の検索エクスペリエンスを作成します**。
 * **AI 駆動の動的ファセットと結果の再ランキングを使用** して、買い物客の行動に基づいて検索結果をリアルタイムに適応させ、エンゲージメントと売上を向上させます。
 * **プロモーションや優先度の高い項目が効果的に表示されるように** して、検索結果をビジネス目標に合わせます。

@@ -2,10 +2,11 @@
 title: 共有責任
 description: プロジェクトに関与する各パーティのセキュリティ責任について説明  [!DNL Adobe Commerce Optimizer]  ます。
 role: Admin, Architect, Leader
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
-source-git-commit: 7c407bfc2becfb0ba6babe5958bcb790c178f406
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
+exl-id: 9e09790f-832d-43ab-b2df-6389ad52b43d
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -43,12 +44,12 @@ ht-degree: 0%
 | バックエンド CDN のサポート | RA |  |
 | バックエンド DNS プロバイダーを取得しています | RA | |
 | 実稼動環境とサンドボックス環境のプロビジョニング | A | R |
-| Adobe Commerce Optimizer用 Dynamics へのアクセス | R | C |
+| [!DNL Adobe Commerce Optimizer] 用 Dynamics へのアクセス | R | C |
 | バックエンドの顧客セキュリティ問題の解決 | RA | I |
 | バックエンド CDN セキュリティの問題の解決 | RA | |
 | Adobeのセキュリティリサーチの支援（スキャン/監査） | RA | |
 | PCI ASV スキャンの実行 | RA | I |
-| Adobe Commerce Optimizer インフラストラクチャの PCI スキャンの修正 | R | |
+| インフラストラクチャ [!DNL Adobe Commerce Optimizer]PCI スキャンの修正 | R | |
 | OS およびプラットフォームの秘密鍵の管理 | RA | |
 | バックエンドのセキュリティログの監視 | RA | |
 | カスタマーサポートおよびアクセスの制御 | A | R |
@@ -56,5 +57,5 @@ ht-degree: 0%
 | ディザスタリカバリ計画の年 1 回のテストと文書化 | RA | |
 | デバッグとイシューの分離 | R | R |
 | デバッグと問題の分離プロセスをタイムリーにサポート | R | R |
-| Adobe Commerce Optimizerへのアップデートとパッチのインストール | RA | I |
-| コア Adobe Commerce Optimizer アプリケーションの品質 | RA | |
+| [!DNL Adobe Commerce Optimizer] へのアップデートとパッチのインストール | RA | I |
+| コア [!DNL Adobe Commerce Optimizer] アプリケーション品質 | RA | |

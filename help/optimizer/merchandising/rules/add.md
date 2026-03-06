@@ -1,11 +1,11 @@
 ---
 title: ルールの作成と管理
 description: マーチャンダイジングルールを作成および管理する方法について説明します。
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: bd54ff7afb0b6a5d78098225a8f98f81f96a7923
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2219'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,15 @@ ht-degree: 0%
 ## ルールの作成
 
 1. 左パネルで、_マーチャンダイジング_/**マーチャンダイジングルール** に移動します。
-1. 「**ルールを作成**」をクリックして、ルールエディターを起動します。
+1. （オプション）「**カタログ表示**」ドロップダウンを使用して、ルールを適用するカタログ表示を選択します。 作成するルールは、選択したビュー（「すべてのビュー **が選択されている場合は、すべてのカタログビュー** が対象となります。 カタログビューのスコーピングの仕組みについては、[ カタログビューを選択 ](workspace.md#select-catalog-view) を参照してください。
 
-![&#x200B; ルールの作成 &#x200B;](../../assets/create-rule.png)
+   >[!IMPORTANT]
+   >
+   >この機能は現在ベータ版です。
+
+1. 「**[!UICONTROL Create rule]**」をクリックして、ルールエディターを起動します。
+
+![ ルールの作成 ](../../assets/create-rule.png)
 
 「**ルールを作成**」セクションでは、特定の検索条件、条件、ランキングタイプを定義します。
 
@@ -35,7 +41,7 @@ ht-degree: 0%
 
 条件は、イベントをトリガーするための要件です。 1 つのルールには、最大 10 個の条件と 25 個のイベントを含めることができます。 既定のルールには条件を設定できません。
 
-![&#x200B; ルール条件の選択 &#x200B;](../../assets/rule-set-condition.png)
+![ ルール条件の選択 ](../../assets/rule-set-condition.png)
 
 #### 単一条件
 
@@ -75,7 +81,7 @@ ht-degree: 0%
 インテリジェントランキングは、ユーザーの行動とサイト統計を組み合わせて、製品ランキングを決定します。
 ストアの所有者は、次のタイプのランキング戦略を設定できます。
 
-![&#x200B; インテリジェント・ランキング &#x200B;](../../assets/rule-intelligent-ranking.png)
+![ インテリジェント・ランキング ](../../assets/rule-intelligent-ranking.png)
 
 - 最も多く購入された：これにより、過去 7 日間の SKU あたりの合計購入数で製品がランク付けされます。
 - 買い物かごに最も追加された – 過去 7 日間の合計「買い物かごに追加」アクティビティの順にランク付けされます。
@@ -111,7 +117,7 @@ ht-degree: 0%
 
 - **YAN-K-E-512** （下段）:「最も多く閲覧された」行動データでは最も高い表示百分率であるにもかかわらず、SKU ベースの複雑な名前によってテキスト関連性スコアが低くなります。 固定された行動ブーストでは、このテキストの関連性のギャップを克服するのに十分ではありません。
 
-ルールを使用して製品の検索性を向上させる方法については、[&#x200B; 検索ルール &#x200B;](./best-practice.md#tips-to-optimize-search-rules) を参照してください。
+ルールを使用して製品の検索性を向上させる方法については、[ 検索ルール ](./best-practice.md#tips-to-optimize-search-rules) を参照してください。
 
 #### 注意事項
 
@@ -165,7 +171,7 @@ ht-degree: 0%
 
 ## ルールの編集、表示、削除
 
-既存のルールのプロパティを更新するには、次の手順に従います。
+既存のルールのプロパティを更新するには、次の手順に従います。 ルールの作成後に、そのルールのカタログビュー（スコープ）を変更することはできません。スコープは、ルールの作成時に設定します。 [ カタログビューを選択 ](workspace.md#select-catalog-view) を参照してください。
 
 ### ルールを編集
 
