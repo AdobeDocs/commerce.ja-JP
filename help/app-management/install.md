@@ -31,7 +31,7 @@ ht-degree: 1%
 
 >[!TAB Adobe Commerceas a Cloud Service]
 
-[!DNL App Management] は [!DNL Adobe Commerce as a Cloud Service] で自動的に使用可能になります。 インストールは不要です。 [ 管理者で有効にします ](#access-app-management) アプリの関連付けを開始します。
+[!DNL App Management] は [!DNL Adobe Commerce as a Cloud Service] で自動的に使用可能になります。 インストールは不要です。 [&#x200B; 管理者で有効にします &#x200B;](#access-app-management) アプリの関連付けを開始します。
 
 >[!TAB Adobe Commerce on Cloud （PaaS）およびオンプレミス ]
 
@@ -52,7 +52,7 @@ ht-degree: 1%
   bin/magento cache:clean
   ```
 
-詳しくは、[Adobe Commerce管理 UI SDKのインストールまたは更新 ](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/){target="_blank"} を参照してください。
+詳しくは、[Adobe Commerce管理 UI SDKのインストールまたは更新 &#x200B;](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/){target="_blank"} を参照してください。
 
 >[!ENDTABS]
 
@@ -66,6 +66,6 @@ ht-degree: 1%
 
 ## App Builder アプリのインストール
 
-Adobe ExchangeからApp Builder アプリ（事前定義済みの統合や Marketplace アプリなど）をインストールする必要がある場合は、[Adobe ExchangeからのApp Builder アプリのインストール ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} を参照してください。
+Adobe ExchangeからApp Builder アプリ（事前定義済みの統合や Marketplace アプリなど）をインストールする必要がある場合は、[Adobe ExchangeからのApp Builder アプリのインストール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} を参照してください。
 
-アプリケーションをインストールしてデプロイした後、[!DNL App Management] を使用して [Commerce インスタンスに関連付け ](manage-app.md#associate-an-app) 設定を行います。
+アプリケーションをインストールしてデプロイした後、[!DNL App Management] を使用して [Commerce インスタンスに関連付け &#x200B;](manage-app.md#associate-an-app) 設定を行います。

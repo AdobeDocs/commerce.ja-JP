@@ -17,4 +17,4 @@ ht-degree: 7%
 - アプリの管理 {#manage-app}
    - [アプリの管理](manage-app.md)
    - [トラブルシューティング](troubleshooting.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
