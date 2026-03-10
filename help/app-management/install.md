@@ -66,6 +66,6 @@ ht-degree: 1%
 
 ## App Builder アプリのインストール
 
-Adobe ExchangeからApp Builder アプリ（事前定義済みの統合や Marketplace アプリなど）をインストールする必要がある場合は、[Adobe ExchangeからのApp Builder アプリのインストール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} を参照してください。
+Adobe ExchangeからApp Builder アプリ（事前定義済みの統合や Marketplace アプリなど）をインストールする必要がある場合は、[Adobe ExchangeからのApp Builder アプリのインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} を参照してください。
 
 アプリケーションをインストールしてデプロイした後、[!DNL App Management] を使用して [Commerce インスタンスに関連付け &#x200B;](manage-app.md#associate-an-app) 設定を行います。
