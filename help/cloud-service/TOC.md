@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: このガイドでは、 [!DNL Adobe Commerce as a Cloud Service] を使用する詳細な手順を説明します。
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 52a3e1dcc10f478677764e058ceee494b45dadd4
+source-git-commit: e15af3dc45e2acebf8f069d56c7d1a01f8757285
 workflow-type: tm+mt
-source-wordcount: '65'
+source-wordcount: '68'
 ht-degree: 10%
 
 ---
@@ -31,7 +31,8 @@ ht-degree: 10%
    - [評価拡張機能のチュートリアル](tutorials/ratings-extension.md)
    - [発送方法拡張のチュートリアル](tutorials/shipping-method-extension.md)
 - スキーマ {#schemas}
-   - [GraphQL スキーマ](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
-   - [REST API スキーマ](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
+   - [GraphQL スキーマ ](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
+   - [REST API スキーマ ](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
+- [ ビデオチュートリアル ](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [リリースノート](release-notes.md)
-- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
+- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
