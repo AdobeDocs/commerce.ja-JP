@@ -29,4 +29,4 @@ ht-degree: 4%
    - [カスタムの自動照合](synchronize/custom-match.md)
    - [手動でのアセット選択](synchronize/asset-selector-integration.md)
 - [Commerce Media アセットの管理](manage-assets.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
