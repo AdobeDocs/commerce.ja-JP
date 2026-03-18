@@ -29,7 +29,7 @@ ht-degree: 0%
 >
 >AI エージェントは非決定的です。 このチュートリアルのプロンプト、質問および出力は、例です。 エージェントは、異なる質問、要件、またはアーキテクチャの提案を作成する場合があります。 このチュートリアルの例を使用して、エージェントを同様の結果に導きます。
 
-開始する前に、[ 前提条件 ](./tutorial-prerequisites.md) を完了してください。 このチュートリアルでは、**統合スターターキット** を使用します。 クローンが既に作成されていて、前提条件ページに記載されている設定手順を完了していることを確認します。
+開始する前に、[&#x200B; 前提条件 &#x200B;](./tutorial-prerequisites.md) を完了してください。 このチュートリアルでは、**統合スターターキット** を使用します。 クローンが既に作成されていて、前提条件ページに記載されている設定手順を完了していることを確認します。
 
 ## 前提条件を確認
 
@@ -49,12 +49,12 @@ git --version
 bash --version
 ```
 
-上記のコマンドのいずれかで期待される結果が返されない場合は、[ 前提条件 ](./tutorial-prerequisites.md) を参照してガイダンスを確認してください。
+上記のコマンドのいずれかで期待される結果が返されない場合は、[&#x200B; 前提条件 &#x200B;](./tutorial-prerequisites.md) を参照してガイダンスを確認してください。
 
 さらに、次の点も確認してください。
 
-- 製品データを含む [!DNL Adobe Commerce as a Cloud Service] インスタンスがあります。 [Commerce Cloud サービスインスタンス ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"} を参照してください。
-- [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクトがある。 ストアフロントがない場合は、[ ストアフロントの作成 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"} の手順に従ってください。
+- 製品データを含む [!DNL Adobe Commerce as a Cloud Service] インスタンスがあります。 [Commerce Cloud サービスインスタンス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"} を参照してください。
+- [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクトがある。 ストアフロントがない場合は、[&#x200B; ストアフロントの作成 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"} の手順に従ってください。
 - `aem` CLI がインストールされます。
 
   ```bash
@@ -176,9 +176,9 @@ STOP and ask me any clarifying questions you have about the requirements before 
 
    イベントレコードのテーブルが表示されます。
 
-   ![ イベント購読セクションがハイライト表示されたCommerce管理メニュー ](../assets/in-stock-event-subscriptions.png){width="600" zoomable="yes"}
+   ![&#x200B; イベント購読セクションがハイライト表示されたCommerce管理メニュー &#x200B;](../assets/in-stock-event-subscriptions.png){width="600" zoomable="yes"}
 
-   ![ 登録されたイベントエントリを含むイベント購読テーブル ](../assets/in-stock-event-table.png){width="600" zoomable="yes"}
+   ![&#x200B; 登録されたイベントエントリを含むイベント購読テーブル &#x200B;](../assets/in-stock-event-table.png){width="600" zoomable="yes"}
 
 ### 手順 6：拡張機能をテストする
 
@@ -236,17 +236,17 @@ curl -X GET "$API_URL"
 1. 製品の在庫ステータスを **[!UICONTROL Out of Stock]** に設定します。
 1. 約 1 分待ってから、在庫ステータスを **[!UICONTROL In Stock]** に戻します。
 
-   ![ 在庫あり/在庫切れのオプションがある在庫状況ドロップダウンを示すCommerce管理者の製品編集ページ ](../assets/in-stock-product-stock-status-toggle.png){width="600" zoomable="yes"}
+   ![&#x200B; 在庫あり/在庫切れのオプションがある在庫状況ドロップダウンを示すCommerce管理者の製品編集ページ &#x200B;](../assets/in-stock-product-stock-status-toggle.png){width="600" zoomable="yes"}
 
 1. イベントがトリガーしてサービスに送信されるまで、約 5 分待ちます。
 
 1. [!DNL Adobe Developer Console] から、「App Builder ログ」セクションに移動します。
 
-   ![Adobe Developer Console App Builderのログセクション ](../assets/in-stock-developer-console-logs.png){width="600" zoomable="yes"}
+   ![Adobe Developer Console App Builderのログセクション &#x200B;](../assets/in-stock-developer-console-logs.png){width="600" zoomable="yes"}
 
 1. ログで、イベントが処理されたことを確認するエントリがあり、メールと SKU の正しいサブスクリプションペアが特定されたことを確認します。
 
-   ![ 在庫切れイベントの処理を示すApp Builder ログエントリ ](../assets/in-stock-log-entries.png){width="600" zoomable="yes"}
+   ![&#x200B; 在庫切れイベントの処理を示すApp Builder ログエントリ &#x200B;](../assets/in-stock-log-entries.png){width="600" zoomable="yes"}
 
 >[!TIP]
 >
@@ -281,7 +281,7 @@ Create an API service contract for the Out of Stock notification service and its
 ストアフロントの統合を開始する前に、次の点を確認してください。
 
 - [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクト
-- Commerce ストアフロントの AI ツール [CLI を使用してインストール ](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+- Commerce ストアフロントの AI ツール [CLI を使用してインストール &#x200B;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 - ストアフロントプロジェクトにコピーされた `OUT_OF_STOCK_NOTIFICATION_CONTRACT.md` ファイル
 
 ### 手順 1：環境を検証する
@@ -398,7 +398,7 @@ Use the project manager skill to plan this implementation.
 Run complete browser testing. Use the following out of stock product 'http://localhost:3000/products/<out-of-stock-product-slug>/<sku>'
 ```
 
-![ 「買い物かごに追加」ボタンの下に在庫切れ通知フォームを示す製品詳細ページ ](../assets/in-stock-notification-form.png){width="600" zoomable="yes"}
+![&#x200B; 「買い物かごに追加」ボタンの下に在庫切れ通知フォームを示す製品詳細ページ &#x200B;](../assets/in-stock-notification-form.png){width="600" zoomable="yes"}
 
 ### 手順 7：クリーンアップ
 

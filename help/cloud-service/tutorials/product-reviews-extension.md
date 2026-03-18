@@ -29,7 +29,7 @@ ht-degree: 0%
 >
 >AI エージェントは非決定的です。 このチュートリアルのプロンプト、質問および出力は、例です。 エージェントは、異なる質問、要件、またはアーキテクチャの提案を作成する場合があります。 このチュートリアルの例を使用して、エージェントを同様の結果に導きます。
 
-開始する前に、[ 前提条件 ](./tutorial-prerequisites.md) を完了してください。 このチュートリアルでは、**統合スターターキット** を使用します。 クローンが既に作成されていて、前提条件ページに記載されている設定手順を完了していることを確認します。
+開始する前に、[&#x200B; 前提条件 &#x200B;](./tutorial-prerequisites.md) を完了してください。 このチュートリアルでは、**統合スターターキット** を使用します。 クローンが既に作成されていて、前提条件ページに記載されている設定手順を完了していることを確認します。
 
 ## 前提条件を確認
 
@@ -49,12 +49,12 @@ git --version
 bash --version
 ```
 
-上記のコマンドのいずれかで期待される結果が返されない場合は、[ 前提条件 ](./tutorial-prerequisites.md) を参照してガイダンスを確認してください。
+上記のコマンドのいずれかで期待される結果が返されない場合は、[&#x200B; 前提条件 &#x200B;](./tutorial-prerequisites.md) を参照してガイダンスを確認してください。
 
 さらに、次の点も確認してください。
 
-- 製品データを含む [!DNL Adobe Commerce as a Cloud Service] インスタンスがあります。 [Commerce Cloud サービスインスタンス ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"} を参照してください。
-- [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクトがある。 ストアフロントがない場合は、[ ストアフロントの作成 ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"} の手順に従ってください。
+- 製品データを含む [!DNL Adobe Commerce as a Cloud Service] インスタンスがあります。 [Commerce Cloud サービスインスタンス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"} を参照してください。
+- [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクトがある。 ストアフロントがない場合は、[&#x200B; ストアフロントの作成 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"} の手順に従ってください。
 - `aem` CLI がインストールされます。
 
   ```bash
@@ -309,7 +309,7 @@ Create a service contract for the Product Review and Q&A application that define
 ストアフロントの統合を開始する前に、次の点を確認してください。
 
 - [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクト
-- Commerce ストアフロントの AI ツール [CLI を使用してインストール ](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+- Commerce ストアフロントの AI ツール [CLI を使用してインストール &#x200B;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 - ストアフロントプロジェクトにコピーされた `PRODUCT_REVIEW_QA_CONTRACT.md` ファイル
 
 ### 手順 1：環境を検証する
