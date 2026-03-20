@@ -37,8 +37,8 @@ ht-degree: 5%
    - [In Stock 通知拡張機能のチュートリアル](tutorials/in-stock-notification-extension.md)
    - [製品レビュー拡張機能のチュートリアル](tutorials/product-reviews-extension.md)
 - スキーマ {#schemas}
-   - [GraphQL スキーマ ](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
-   - [REST API スキーマ ](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [ ビデオチュートリアル ](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
+   - [GraphQL スキーマ](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
+   - [REST API スキーマ](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
+- [&#x200B; ビデオチュートリアル](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [リリースノート](release-notes.md)
-- [Commerce サービスホームに戻る ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

@@ -39,7 +39,7 @@ ht-degree: 0%
 
 * **顧客の同意** – 顧客は、`login_as_customer_assistance_allowed` 拡張機能の属性を **2 に設定する必要があります**。 これは、管理者の **カスタマーを編集** ページで設定することも、カスタマーを作成または編集する際にGraphQLを通じて設定することもできます。
 
-  ![ 顧客の編集ページの顧客同意拡張属性の設定 ](./assets/customer-consent-attribute.png){width="600" zoomable="yes"}
+  ![&#x200B; 顧客の編集ページの顧客同意拡張属性の設定 &#x200B;](./assets/customer-consent-attribute.png){width="600" zoomable="yes"}
 
 * **カスタマーとしてログインが有効** - カスタマーとしてログイン拡張機能が無効な場合、カスタマーとしてログイン機能は使用できません。 拡張機能が有効であることを確認するには、[!UICONTROL **ストア**]/[!UICONTROL **設定**]/[!UICONTROL **顧客**]/[!UICONTROL **顧客としてログイン**]/[!UICONTROL **拡張機能を有効にする**] に移動します。
 
@@ -49,11 +49,11 @@ ht-degree: 0%
 
 1. 顧客の編集ページで、「[!UICONTROL **顧客ログイン OTC の取得**]」をクリックします。
 
-   ![ 顧客の編集ページの [ 顧客ログイン OTC の取得 ] ボタン ](./assets/get-customer-login-otc-button.png){width="600" zoomable="yes"}
+   ![&#x200B; 顧客の編集ページの [ 顧客ログイン OTC の取得 ] ボタン &#x200B;](./assets/get-customer-login-otc-button.png){width="600" zoomable="yes"}
 
 1. [!UICONTROL **理由**] （必須）を入力し、「[!UICONTROL **リクエスト**]」をクリックします。
 
-   ![ 理由フィールドを含む OTC リクエストモーダル ](./assets/otc-reason-modal.png){width="600" zoomable="yes"}
+   ![&#x200B; 理由フィールドを含む OTC リクエストモーダル &#x200B;](./assets/otc-reason-modal.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 1. 生成された OTC がモーダルに表示されます。 このコードを `generateCustomerToken` またはGraphQL mutation と共 `exchangeOtpForCustomerToken` 使用して、お客様の承認を得ます。
 
-   ![ 生成された OTC がモーダルに表示される ](./assets/otc-generated-code.png){width="300" zoomable="yes"}
+   ![&#x200B; 生成された OTC がモーダルに表示される &#x200B;](./assets/otc-generated-code.png){width="300" zoomable="yes"}
 
 >[!IMPORTANT]
 >

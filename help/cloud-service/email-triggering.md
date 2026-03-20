@@ -36,10 +36,10 @@ ht-degree: 0%
 ### エンドポイント
 
 - **URL** - `POST /rest/V1/custom-email/send`
-- **認証** - **サービス間 IMS 認証** のみがサポートされています。 呼び出し元は、**API を使用してカスタムメールを送信** （`Magento_CustomEmailSend::send_custom_email`）リソースにアクセスできる必要があります。 詳しくは、[REST 認証 ](https://developer.adobe.com/commerce/webapi/rest/authentication/) を参照してください。
+- **認証** - **サービス間 IMS 認証** のみがサポートされています。 呼び出し元は、**API を使用してカスタムメールを送信** （`Magento_CustomEmailSend::send_custom_email`）リソースにアクセスできる必要があります。 詳しくは、[REST 認証 &#x200B;](https://developer.adobe.com/commerce/webapi/rest/authentication/) を参照してください。
 - **非同期使用** （推奨） – このエンドポイントは同期的に実装されますが、リクエストがコンシューマーによってキューに入れられ処理されるように、**非同期 REST API** を使用して呼び出すことをお勧めします。これにより、長期間有効な HTTP 接続を回避できます。 [!DNL Adobe Commerce as a Cloud Service] では、`/async` の後に `V1` を使用してルートを使用できます。例：`POST https://<server>.api.commerce.adobe.com/<tenant-id>/V1/async/custom-email/send`。
 
-  詳しくは、[ 非同期 Web エンドポイント（SaaS） ](https://developer.adobe.com/commerce/webapi/rest/use-rest/asynchronous-web-endpoints/) を参照してください。
+  詳しくは、[&#x200B; 非同期 Web エンドポイント（SaaS） &#x200B;](https://developer.adobe.com/commerce/webapi/rest/use-rest/asynchronous-web-endpoints/) を参照してください。
 
 ### リクエスト本文
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 - **recipientEmail** （文字列、必須） – ターゲットのメールアドレス。 有効なメールフォーマットを指定する必要があります。 値が見つからないか空の場合、検証エラーがトリガーします。
 - **variables** （オブジェクト、オプション） – `UnstructuredArray` としてテンプレートに挿入されるキー値マップ。
 
-  変数を使用しない場合は、空のオブジェクトを渡すか省略します。 メールテンプレートの本文と件名では、変数の構文を使用して変数を参照します（例：`var order_id`）。 また、サブジェクトは、[ サポートされるテンプレートシナリオ ](#supported-template-scenarios) で説明したのと同じカスタム変数および構文をサポートします。
+  変数を使用しない場合は、空のオブジェクトを渡すか省略します。 メールテンプレートの本文と件名では、変数の構文を使用して変数を参照します（例：`var order_id`）。 また、サブジェクトは、[&#x200B; サポートされるテンプレートシナリオ &#x200B;](#supported-template-scenarios) で説明したのと同じカスタム変数および構文をサポートします。
 
 ### 成功応答（HTTP 200）
 
