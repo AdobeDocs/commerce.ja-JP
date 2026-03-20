@@ -3,7 +3,7 @@ title: ギフトカードアカウントの REST エンドポイント
 description: ' [!DNL Adobe Commerce as a Cloud Service] でギフトカードアカウント REST API を使用して、ギフトカードアカウントをプログラムで作成、更新、削除およびクエリする方法を説明します。'
 role: Admin, Developer
 level: Experienced
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 source-git-commit: 160180d9d779514f6faee3c7de46531ebf191c7d
 workflow-type: tm+mt
 source-wordcount: '807'

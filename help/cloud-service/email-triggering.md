@@ -3,7 +3,7 @@ title: REST によるメールのトリガー
 description: ' [!DNL Adobe Commerce as a Cloud Service] のテンプレート ID、受信者のメールおよびテンプレート変数を指定し、REST API を使用してオンデマンドでトランザクションメールをトリガーにする方法を説明します。'
 role: Admin
 level: Experienced
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
 source-git-commit: 9661e368f7a0dc85edcd3e52a67ae2a98355d8b5
 workflow-type: tm+mt
 source-wordcount: '523'
