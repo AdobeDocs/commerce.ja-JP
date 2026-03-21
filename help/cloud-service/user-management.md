@@ -264,7 +264,7 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
    >
    >これらの権限が [!DNL AEM Assets] へのアクセスにどのように影響するかについて詳しくは、[Cloud Manager製品プロファイル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"} を参照してください。
 
-   Commerce管理者のアセットセレクターおよび自動入力された設定フィールド（プログラム ID、環境 ID、ドメインマッピング）については、**AEM Assets DM OpenAPI Users – 配信** 製品プロファイルも必要です。 詳しくは、[&#x200B; ユーザー権限と IMS](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"} を参照してください。
+   Commerce管理者のアセットセレクターおよび自動入力された設定フィールド（プログラム ID、環境 ID、ドメインマッピング）については、**AEM Assets DM OpenAPI Users – 配信** 製品プロファイルも必要です。 詳しくは、[&#x200B; ユーザー権限と IMS](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"} を参照してください。
 
 1. [!UICONTROL **適用**] をクリックします。
 

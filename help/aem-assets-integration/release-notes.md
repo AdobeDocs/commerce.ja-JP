@@ -46,7 +46,7 @@ _2026 年 3 月 11 日_
 
 ![&#x200B; 新規問題 &#x200B;](../assets/new.svg)<!-- Issue PAY-1041 --> Adobe Commerce 2.4.9-beta1 および PHP 8.5 がサポートされるようになりました。
 
-![&#x200B; 新しい問題 &#x200B;](../assets/new.svg)<!-- Issue ACCS-169 -->**[!UICONTROL Program ID]**、**[!UICONTROL Environment ID]**、[**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank} の各フィールドが、[&#x200B; ユーザーの IMS セッション &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank} に基づくドロップダウンとして自動入力されるようになりました。
+![&#x200B; 新しい問題 &#x200B;](../assets/new.svg)<!-- Issue ACCS-169 -->**[!UICONTROL Program ID]**、**[!UICONTROL Environment ID]**、[**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank} の各フィールドが、[&#x200B; ユーザーの IMS セッション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank} に基づくドロップダウンとして自動入力されるようになりました。
 
 ## v1.2.14
 
