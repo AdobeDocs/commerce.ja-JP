@@ -49,7 +49,7 @@ ht-degree: 0%
 
 1. お客様を編集ページで、[!UICONTROL **お客様のログイン情報を取得**]&#x200B;をクリックします。
 
-   ![お客様のページの「お客様ログイン OTCを取得」ボタン ](./assets/get-customer-login-otc-button.png){width="600" zoomable="yes"}
+   ![お客様のページの「お客様ログイン OTCを取得」ボタン &#x200B;](./assets/get-customer-login-otc-button.png){width="600" zoomable="yes"}
 
 1. [!UICONTROL **理由**] （必須）を入力し、[!UICONTROL **リクエスト**]&#x200B;をクリックします。
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->生成されたワンタイムコード OTCは、デフォルトで30秒間有効で、1回使用すると無効になります。 TTLは、[ サポートチケット ](https://experienceleague.adobe.com/home?support-tab=home#support)を送信することで設定できます。
+>生成されたワンタイムコード OTCは、デフォルトで30秒間有効で、1回使用すると無効になります。 TTLは、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/home?support-tab=home#support)を送信することで設定できます。
 
 ワンタイムコードが生成されたら、ストアフロントに移動し、次の資格情報を使用してログインすることで使用できます。
 
