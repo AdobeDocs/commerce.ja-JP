@@ -3,7 +3,7 @@ title: 1回限りのコードを使用して顧客としてログイン
 description: 顧客OTCとしてログイン機能を使用して、 [!DNL Adobe Commerce as a Cloud Service]で顧客認証用の1回限りのコードを生成する方法を説明します。
 role: Admin
 level: Intermediate
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 source-git-commit: 2de1006ad3cee936d114bcf1b9a98b43a54d8c76
 workflow-type: tm+mt
 source-wordcount: '861'
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->生成されたワンタイムコード OTCは、デフォルトで30秒間有効で、1回使用すると無効になります。 TTLは、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/home?support-tab=home#support)を送信することで設定できます。
+>生成されたワンタイムコード OTCは、デフォルトで30秒間有効で、1回使用すると無効になります。 TTLは、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/home?lang=ja&support-tab=home#support)を送信することで設定できます。
 
 ワンタイムコードが生成されたら、ストアフロントに移動し、次の資格情報を使用してログインすることで使用できます。
 
