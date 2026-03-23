@@ -398,7 +398,7 @@ aio app use --merge
 
 * [Google Chrome](https://www.google.com/chrome/) - ストアフロントのテストに必要
 
-* [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクト。 ストアフロントプロジェクトがない場合は、[&#x200B; ストアフロントを作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}の手順に従います。これには、[&#x200B; コマースデータへのリポジトリのリンク &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}の節が含まれます。
+* [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクト。 ストアフロントプロジェクトがない場合は、[&#x200B; ストアフロントを作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=ja){target="_blank"}の手順に従います。これには、[&#x200B; コマースデータへのリポジトリのリンク &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=ja#link-repo-to-commerce-data){target="_blank"}の節が含まれます。
 
 ### ストアフロントリポジトリの複製
 
