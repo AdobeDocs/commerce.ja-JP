@@ -1,69 +1,74 @@
 ---
 title: '[!DNL Adobe Commerce as a Cloud Service] リリースノート'
-description: ' [!DNL Adobe Commerce as a Cloud Service] の最新の機能と改善点について説明します。'
+description: ' [!DNL Adobe Commerce as a Cloud Service]の最新の機能と改善点について説明します。'
 feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
-source-git-commit: 160180d9d779514f6faee3c7de46531ebf191c7d
+source-git-commit: 9d4192bae09fce4f08baf4b3e2826302667cd55f
 workflow-type: tm+mt
-source-wordcount: '2105'
+source-wordcount: '2091'
 ht-degree: 0%
 
 ---
 
 # リリースノート
 
-以下のリリースノートには、[!DNL Adobe Commerce as a Cloud Service] の更新点が記載されています。
+次のリリースノートには、[!DNL Adobe Commerce as a Cloud Service]の更新が含まれています。
 
 >[!NOTE]
 >
->Adobe Commerce オンプレミスまたはAdobe Commerce on cloud infrastructure を使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview) を参照してください。
+>Adobe Commerce オンプレミスまたはAdobe Commerce オンクラウドインフラストラクチャを使用している場合は、[Adobe Commerce リリースノート ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)を参照してください。
 
-## 2026 年 3 月 – リリース #2 {#latest}
+## 2026年3月 – リリース #2 {#latest}
 
-[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされた項目は、現在、サンドボックス環境でのみ使用できます。 Adobeでは、最初にサンドボックス環境で新しいリリースを使用できるようにして、リリースが実稼動環境で使用できるようになる前に、今後の変更をテストするための時間を確保します。"}
 
-次の項目は、現在、[!DNL Adobe Commerce as a Cloud Service] のサンドボックス環境で使用でき、2026 年 3 月 24 日（PT）に実稼動環境にリリースされる予定です。
+[!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
+
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+2026年3月24日（PT）に実稼動環境に公開されたアイテムは次のとおりです。
 
 >[!BEGINSHADEBOX]
 
 ### ワンタイムコードを使用して顧客としてログイン
 
-管理者は、[&#x200B; API と REST API を使用して、顧客偽装のために &#x200B;](./login-as-customer.md)1 回限りのコード [!DNL Commerce Admin] を生成できるようになりました。 ワンタイムコードは、`generateCustomerToken` または `exchangeOtpForCustomerToken` のGraphQLのミューテーションを通じて、カスタマーアクセストークンと交換できます。これにより、売り手が支援するショッピングシナリオ向けに、パスワードレスの「Login as Customer」フローが可能になります。<!-- ACCS-404 -->
+管理者は、[およびREST APIを通じて、顧客の偽装のために](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer)1回限りのコード [!DNL Commerce Admin]を生成できるようになりました。 1回限りのコードは、`generateCustomerToken`または`exchangeOtpForCustomerToken`個のGraphQLの変異を介して顧客アクセストークンと交換でき、出品者が支援するショッピング シナリオのパスワードなし「顧客としてログイン」フローを有効にします。<!-- ACCS-404 -->
 
-### REST API を使用したギフトカードアカウントの管理
+APIを使用してこの機能を実装する方法については、[REST API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/)および[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/)のドキュメントを参照してください。
 
-[&#x200B; ギフトカードアカウント &#x200B;](./gift-card-account-api.md) は、REST API を使用して、作成、更新、削除、クエリできるようになりました。 さらに、`/V1/import/json` エンドポイントを介して JSON の一括読み込みがサポートされるようになり、サードパーティとの統合でギフトカードをプログラムによって同期できるようになります。<!-- ACCS-476 -->
+### REST APIによるギフトカードアカウントの管理
 
-### REST API を使用したトランザクションメールのトリガー
+[ ギフトカードアカウント ](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/)は、REST APIを通じて作成、更新、削除、およびクエリできるようになりました。 さらに、JSON一括読み込みサポートは`/V1/import/json` エンドポイントを通じて利用でき、サードパーティ統合でギフトカードをプログラムで同期できるようになります。<!-- ACCS-476 -->
 
-新しい REST API エンドポイント（`POST /V1/custom-email/send`）を使用すると、メールテンプレート ID、トリガーメール [&#x200B; テンプレート変数を指定して、トランザクションメールをオンデマンドで &#x200B;](./email-triggering.md) 受信者にすることができます。 この API は、複雑なメールコンテンツのテンプレート変数として、ネストされた配列をサポートします。<!-- ACCS-325, ACCS-481 -->
+### REST APIを介したトランザクションメールのトリガー
 
-### プロセス外の配送料を請求する Webhook を購読する
+新しいREST API エンドポイント （`POST /V1/custom-email/send`）を使用すると、電子メールテンプレート ID、受信者メール、テンプレート変数を指定して、必要に応じてトランザクションメール [を](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)トリガーできます。 APIは、複雑なメールコンテンツのテンプレート変数として、ネストされた配列をサポートしています。<!-- ACCS-325, ACCS-481 -->
 
-`plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` Webhook が [!DNL Adobe Commerce as a Cloud Service] の Admin Webhook リストで使用できるようになりました。 [&#x200B; カスタム配送方法 &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#shipping-methods) の実装に使用します。<!-- ACCS-478 -->
+### すぐに使用できる送料無料のget-rates webhookを購入する
 
-### 製品属性を使用した PDF およびその他のファイルのアップロード
+`plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` Webhookは、[!DNL Adobe Commerce as a Cloud Service]のAdmin Webhook リストで利用できるようになりました。 [ カスタム配送方法](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#shipping-methods)の実装に使用します。<!-- ACCS-478 -->
 
-新しい「ファイル」 [&#x200B; 属性入力タイプ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/attributes-input-types) を使用すると、PDF などのファイルを個々の製品にアップロードできる属性セットを作成できます。 [!UICONTROL **ストア**]/[!UICONTROL **設定**]/[!UICONTROL _カタログ_]/[!UICONTROL **製品ファイル属性**] に移動して、許可されるファイル拡張子と最大ファイルサイズを設定できます。<!-- ACCS-535, ACCS-565 -->
+### 製品属性を使用したPDFやその他のファイルのアップロード
+
+新しい「ファイル」 [属性入力タイプ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)を使用すると、PDFなどのファイルを個々の製品にアップロードできる属性セットを作成できます。 [!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL _Catalog_] > [!UICONTROL **製品ファイル属性**]&#x200B;に移動して、許可されたファイル拡張子と最大ファイルサイズを設定できます。<!-- ACCS-535, ACCS-565 -->
 
 ### 会社のカスタム属性の設定
 
-管理者は、[!DNL Commerce Admin] の会社編集ページで会社のカスタム属性を管理できるようになりました。 カスタム属性は、管理 UI から設定、保存、検証して [!DNL Adobe Commerce as a Cloud Service] 用できます。
+管理者は、[!DNL Commerce Admin]の会社編集ページで、会社のカスタム属性を管理できるようになりました。 カスタム属性は、[!DNL Adobe Commerce as a Cloud Service]の管理UIから設定、保存、検証できます。
 
-会社のカスタム属性を設定するには、[!UICONTROL **顧客**]/[!UICONTROL **会社**] に移動し、会社を選択して、編集ページを開きます。 次に、「[!UICONTROL **カスタム属性**] タブを選択して新しい属性を追加します。
+会社のカスタム属性を設定するには、[!UICONTROL **Customers**] > [!UICONTROL **Companies**]&#x200B;に移動し、会社を選択して編集ページを開きます。 次に、[!UICONTROL **カスタム属性**] タブを選択して、新しい属性を追加します。
 <!-- ACCS-294 -->
 
-### GraphQLを通じた価格および在庫アラートの配信
+### GraphQLで価格と在庫のアラートを購読する
 
-EDS のストアフロントが [&#x200B; 価格および在庫アラート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup) と連携するようになりました。<!-- ACCS-334 -->
+EDS ストアフロントが[価格と在庫アラート ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup)で機能するようになりました。<!-- ACCS-334 -->
 
-さらに、価格とストックアラートを登録および登録解除できる新しいGraphQLの突然変異がいくつか用意されています。
+さらに、価格と在庫アラートを購読および購読解除するための新しいGraphQLの突然変異がいくつかあります。
 
-+++新しいGraphQLの突然変異
++++新しいGraphQL変異
 
 ```graphql
 mutation {
@@ -123,260 +128,260 @@ mutation {
 
 ### 機能強化とバグ修正
 
-このリリースには、選択した次の機能強化、最適化、バグ修正が含まれています。
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
 
-* [!UICONTROL Sales]/[!UICONTROL View Orders] の会社の役割が期待どおりに機能するようになりました。<!-- ACCS-604 -->
+* [!UICONTROL Sales] > [!UICONTROL View Orders]会社の役割が期待どおりに機能するようになりました。<!-- ACCS-604 -->
 
-* REST API を使用して `last_login_at` カスタマー拡張機能属性が使用できるようになり、統合で各カスタマーの最新のログイン日を取得できるようになりました。<!-- ACCS-555 -->
+* `last_login_at`の顧客拡張機能の属性がREST APIを通じて利用できるようになりました。これにより、統合は各顧客の最新のログイン日を取得できるようになります。<!-- ACCS-555 -->
 
-* [!DNL AEM Assets] 統合フォームの提案に関する問題を修正しました。<!-- ACCS-209 -->
+* [!DNL AEM Assets]統合フォームの提案に関する問題を修正しました。<!-- ACCS-209 -->
 
-* 共有カタロググリッドでの会社の一括割り当ておよび割り当て解除アクションによってエラーが発生する可能性がある問題を修正しました。<!-- CCSAAS-4614 -->
+* 共有カタロググリッドで一括会社の割り当てと割り当て解除アクションがエラーを引き起こす可能性がある問題を修正しました。<!-- CCSAAS-4614 -->
 
-* 同じ製品が異なる数量またはカスタム価格で買い物かごに再度追加された場合に、カスタムの買い物かごの価格が上書きされる問題を修正しました。<!-- ACCS-529 -->
+* 同じ商品が異なる数量またはカスタム価格で再びカートに追加されたときに、カスタムカートの価格が上書きされる問題を修正しました。<!-- ACCS-529 -->
 
-* 購買依頼リスト項目 UID がカートおよびウィッシュリスト項目 UID と一致するようになりました。<!-- ACCS-349 -->
+* リクエストリスト項目のUIDが、買い物かごおよびウィッシュリスト項目のUIDと一致するようになりました。<!-- ACCS-349 -->
 
-* 大きな共有カタログで発生する可能性がある製品編集ページのタイムアウトを修正しました。<!-- CCSAAS-4657 -->
+* 大規模な共有カタログで発生する可能性がある製品編集ページのタイムアウトを修正しました。<!-- CCSAAS-4657 -->
 
-* 管理統合用にGET `/V1/directory/countries` およびGET `/V1/directory/countries/:countryId` REST API エンドポイントを再有効化し、クライアントが有効な国と地域のデータを検索できるようになりました。<!-- ACCS-518 -->
+* GET `/V1/directory/countries`およびGET `/V1/directory/countries/:countryId`のREST API エンドポイントを管理者統合に対して再度有効にし、クライアントが有効な国と地域のデータを検索できるようにしました。<!-- ACCS-518 -->
 
-* ユーザーが大きな共有カタログを持つ場合に、REST API で発生する可能性があるタイムアウトの問題を修正しました。<!-- ACCS-4657 -->
+* ユーザーが大規模な共有カタログを持っている場合にREST APIで発生する可能性があるタイムアウトの問題を修正しました。<!-- ACCS-4657 -->
 
-* ブロックされた B2B 会社が引き続き商品を買い物かごに追加できる問題を修正しました。<!-- ACCS-552 -->
+* ブロックされたB2B企業が引き続き商品をカートに追加できる問題を修正しました。<!-- ACCS-552 -->
 
-* 顧客グリッドまたは会社グリッドに大量のデータがある場合、エラーを防ぐために書き出しボタンは使用できなくなりました。<!-- ACCS-320 -->
+* お客様または会社のグリッドに大量のデータがある場合、書き出しボタンを使用してエラーを防止できなくなります。<!-- ACCS-320 -->
 
-* 添付ファイルのサイズが正しく表示されない問題を修正しました。<!-- ACCS-566 -->
+* 添付ファイルサイズが正しく表示されない問題を修正しました。<!-- ACCS-566 -->
 
-* [!DNL Commerce Admin] で「File」属性タイプを作成および削除する際の問題を修正しました。<!-- ACCS-605, ACCS-606 -->
+* [!DNL Commerce Admin]で「ファイル」属性タイプを作成および削除する際の問題を修正しました。<!-- ACCS-605, ACCS-606 -->
 
 {{accs-release}}
 
 >[!ENDSHADEBOX]
 
 
-## 2026 年 3 月 – リリース #1
+## 2026年3月 – リリース #1
 
-[!BADGE &#x200B; 実稼動 &#x200B;]{type=Neutral tooltip="リストされた項目は、現在、実稼動環境で使用できます。"}
+[!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 
-2026 年 3 月 9 日（PT）に、[!DNL Adobe Commerce as a Cloud Service] の実稼動環境にリリースされた項目は次のとおりです。
+以下の項目は、2026年3月9日に[!DNL Adobe Commerce as a Cloud Service]の実稼動環境にリリースされました。
 
 >[!BEGINSHADEBOX]
 
-### App Builder AI コーディングツールとチュートリアル
+### App BuilderのAI コーディングツールとチュートリアル
 
-[AI コーディング開発者ツール &#x200B;](./migration/coding-tools.md) を使用して、新しい [!DNL App Builder] アプリケーションを作成し、既存の [!DNL Adobe Commerce] PHP 拡張機能を [!DNL App Builder] アプリケーションに変換できるようになりました。 ツールの使用方法を示すチュートリアルを次に示します。
+[AI コーディング開発者ツール ](./migration/coding-tools.md)を使用して、新しい[!DNL App Builder] アプリケーションを作成し、既存の[!DNL Adobe Commerce]のPHP拡張機能を[!DNL App Builder] アプリケーションに変換できるようになりました。 ツールの使用方法を示すために、次のチュートリアルを利用できます。
 
 * [チュートリアルの前提条件](./tutorials/tutorial-prerequisites.md)
 * [評価拡張機能のチュートリアル](./tutorials/ratings-extension.md)
-* [発送方法拡張のチュートリアル](./tutorials/shipping-method-extension.md)
+* [出荷方法の拡張機能チュートリアル](./tutorials/shipping-method-extension.md)
 
-### 管理者を通じたApp Builder アプリ管理へのアクセス
+### 管理者からApp Builder アプリ管理にアクセス
 
-[!DNL Commerce Admin] には、Commerce インスタンスに関連付けられたアプリを管理するための統合シェルである [App Management](https://developer.adobe.com/commerce/extensibility/app-management/){target="_blank"} にリンクしたメニュー項目 [!DNL App Builder] 含まれるようになりました。 この追加は、最新の管理 UI SDK アップデートを利用しています。<!-- CEXT-5755 -->
+[!DNL Commerce Admin]には、Commerce インスタンスに関連付けられた[個のアプリを管理するための統合シェルである](https://developer.adobe.com/commerce/extensibility/app-management/){target="_blank"}App Management[!DNL App Builder]にリンクするメニュー項目が含まれるようになりました。 この機能は、管理者UI SDKの最新アップデートによって強化されています。<!-- CEXT-5755 -->
 
-### リクエストエンティティの作成制限の変更
+### 要求エンティティ作成制限の変更
 
-Web サイト、ストア、ストアビューの数の制限は、以前は 50 に制限されていました。 必要に応じて、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/home?lang=ja&support-tab=home#support) を送信して、これらの制限を変更できるようになりました。<!-- ACCS-398 -->
+web サイト、実店舗、実店舗の閲覧数は、以前は50に制限されていました。 必要に応じて、[ サポートリクエスト ](https://experienceleague.adobe.com/home?support-tab=home#support)を送信して、これらの制限を変更できるようになりました。<!-- ACCS-398 -->
 
-### 構造化エラーコードを使用したストアフロント認証メッセージのカスタマイズ
+### 構造化されたエラーコードを使用して、ストアフロント認証メッセージをカスタマイズする
 
-[`generateCustomerToken` GraphQLのミューテーションで &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"} エラーメッセージと共に、入力されたエラーコードが返されるようになりました。これにより、ストアフロントで、エラー理由に応じて特定の UI メッセージを表示できます。 使用可能なエラーコードは、`CUSTOMER_MISSING_EMAIL`、`CUSTOMER_MISSING_PASSWORD`、`CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`、`CUSTOMER_ACCOUNT_NOT_CONFIRMED`、`CUSTOMER_GENERIC_ERROR` です。<!-- ACCS-301 -->
+[`generateCustomerToken` GraphQLの突然変異](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"}は、入力されたエラーコードをエラーメッセージとともに返すようになり、ストアフロントでエラーの理由ごとに特定のUI メッセージを表示できるようになりました。 使用可能なエラーコードは、`CUSTOMER_MISSING_EMAIL`、`CUSTOMER_MISSING_PASSWORD`、`CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`、`CUSTOMER_ACCOUNT_NOT_CONFIRMED`および`CUSTOMER_GENERIC_ERROR`です。<!-- ACCS-301 -->
 
-### 買い物かごやウィッシュリストの無操作状態に対して自動メールでリマインダーを送信
+### カートやウィッシュリストが非アクティブな場合の自動メールリマインダーの送信
 
-[&#x200B; メールリマインダーモジュール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) （`Magento_Reminder`）が [!DNL Adobe Commerce as a Cloud Service] でアクティブになり、マーチャントは、買い物かごやウィッシュリストの無操作状態に基づいて顧客にメールをトリガーする、自動リマインダールールを作成できるようになりました。<!-- CCSAAS-4597 -->
+[電子メールリマインダーモジュール ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) （`Magento_Reminder`）が[!DNL Adobe Commerce as a Cloud Service]でアクティブになりました。これにより、加盟店は、カートとウィッシュリストの非アクティブな状態に基づいて顧客に電子メールをトリガーする、自動リマインダールールを作成できます。<!-- CCSAAS-4597 -->
 
-### カテゴリ削除イベント Webhook の購読
+### カテゴリ削除イベント webhookの購読
 
-`observer.catalog_category_delete_before` Webhook が [!DNL Adobe Commerce as a Cloud Service] で使用できるようになりました。 カテゴリが削除される前にロジックを実行する場合に使用します。<!-- CEXT-5862 -->
+`observer.catalog_category_delete_before` Webhookが[!DNL Adobe Commerce as a Cloud Service]で利用できるようになりました。 カテゴリが削除される前にロジックを実行する場合に使用します。<!-- CEXT-5862 -->
 
-### 登録された E メールで行われたゲストの注文の追跡
+### 登録済みの電子メールによるゲスト注文の追跡
 
-新しいオプションの店舗レベル設定では、登録済みの顧客アカウントと一致するメールアドレスを使用して注文が行われた場合、顧客は [&#x200B; ゲストの注文を追跡 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails) できます。<!-- ACCS-289 -->
+新しいオプションのストアレベル設定では、登録済みの顧客アカウントと一致するメールアドレスを使用して注文が行われた場合、顧客は[ ゲスト注文を追跡できます](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails)。<!-- ACCS-289 -->
 
 ### 機能強化とバグ修正
 
-このリリースには、選択した次の機能強化、最適化、バグ修正が含まれています。
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
 
-* 一部の組織管理者が、テナントごとの使用権限を持たずに誤ってテナントインスタンスにアクセスできてしまう問題を修正しました。<!-- ACCS-335 -->
+* 一部の組織の管理者が、テナントごとの使用権限を持たずにテナントインスタンスに誤ってアクセスする問題を修正しました。<!-- ACCS-335 -->
 
-* 共有カタログに変更を加えると、ユーザーが [!DNL Commerce Admin] からログアウトされる可能性がある問題を修正しました。<!-- ACCS-318 -->
+* 共有カタログを変更すると、ユーザーが[!DNL Commerce Admin]からログアウトする可能性がある問題を修正しました。<!-- ACCS-318 -->
 
-* [!DNL Commerce Admin] UI で一部の Webhook フィールドが正しく表示されない問題を修正しました。<!-- CEXT-5874 -->
+* [!DNL Commerce Admin] UIで一部のWebhook フィールドが正しく表示されない問題を修正しました。<!-- CEXT-5874 -->
 
 {{accs-release}}
 
 >[!ENDSHADEBOX]
 
-## 2026 年 2 月 – リリース #2
+## 2026年2月 – リリース #2
 
-[!BADGE &#x200B; 実稼動 &#x200B;]{type=Neutral tooltip="リストされた項目は、現在、実稼動環境で使用できます。"}
+[!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 
-2026 年 2 月 24 日（PT）に、[!DNL Adobe Commerce as a Cloud Service] の実稼動環境にリリースされた項目は次のとおりです。
+以下の項目は、2026年2月24日に[!DNL Adobe Commerce as a Cloud Service]の実稼動環境にリリースされました。
 
 >[!BEGINSHADEBOX]
 
-### コマースイベントを含んだコンテキストフィールドの送信
+### コマースイベントを使用したコンテキストフィールドの送信
 
-[!DNL Adobe Commerce as a Cloud Service] は、イベントペイロードで [&#x200B; コンテキストフィールド &#x200B;](https://developer.adobe.com/commerce/extensibility/events/context-fields/) をサポートするようになり、デフォルトでイベントに含まれていないデータを含めることができるようになりました。<!-- CEXT-5713 -->
+[!DNL Adobe Commerce as a Cloud Service]では、イベントペイロードで[ コンテキストフィールド ](https://developer.adobe.com/commerce/extensibility/events/context-fields/)がサポートされるようになりました。これにより、デフォルトでイベントに含まれていないデータを含めることができます。<!-- CEXT-5713 -->
 
-### 新しい Webhook を使用して引用項目の保存イベントを購読
+### 新しいWebhookを使用して見積もり項目の保存イベントを購読する
 
-`observer.sales_quote_item_save_before` Webhook が [!DNL Adobe Commerce as a Cloud Service] で使用できるようになりました。 引用項目を保存する前にロジックを実行する場合に使用します。<!-- ACCS-346 -->
+`observer.sales_quote_item_save_before` Webhookが[!DNL Adobe Commerce as a Cloud Service]で利用できるようになりました。 見積もり項目を保存する前にロジックを実行する場合に使用します。<!-- ACCS-346 -->
 
 ### 機能強化とバグ修正
 
-このリリースには、選択した次の機能強化、最適化、バグ修正が含まれています。
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
 
-* [!DNL Commerce Admin] 製品リストの表示に関する問題を引き起こす可能性があるエラーを修正しました。 製品リストで、表示される共有カタログの数が制限され、パフォーマンスが向上するようになりました。<!-- CCSAAS-1242 -->
+* [!DNL Commerce Admin]製品リストの表示の問題を引き起こす可能性のあるエラーを修正しました。 製品リストでは、パフォーマンスを向上させるために、表示される共有カタログの数が制限されるようになりました。<!-- CCSAAS-1242 -->
 
-* カスタマイズ可能なギフトカードを買い物かごに追加できないGraphQL エラーを修正しました。<!-- ACCS-313 -->
+* カスタマイズ可能なギフトカードをカートに追加できない可能性があるGraphQLのエラーを修正しました。<!-- ACCS-313 -->
 
 {{accs-release}}
 
 >[!ENDSHADEBOX]
 
-## 2026 年 2 月 – リリース #1
+## 2026年2月 – リリース #1
 
-[!BADGE &#x200B; 実稼動 &#x200B;]{type=Neutral tooltip="リストされた項目は、現在、実稼動環境で使用できます。"}
+[!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 
-2026 年 2 月 10 日（PT）に、[!DNL Adobe Commerce as a Cloud Service] の実稼動環境にリリースされた項目は次のとおりです。
+以下の項目は、2026年2月10日に[!DNL Adobe Commerce as a Cloud Service]の実稼動環境にリリースされました。
 
 >[!BEGINSHADEBOX]
 
-### 発送方法のカスタマイズと管理レポートの表示
+### 配送方法のカスタマイズと管理者レポートの表示
 
-[!DNL Commerce Admin] に次の機能強化が行われました。
+[!DNL Commerce Admin]に対して次の機能強化が行われました：
 
-* アウトオブプロセスの機能強化 [&#x200B; 配送用 Webhook ペイロード &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload) に配送先住所のカスタム属性を含めました。 この変更により、マーチャントはカスタム配送方法を実装できます。<!-- ACCS-235 -->
+* 発送先住所のカスタム属性を含めるように、[shipping webhook ペイロード ](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload)のプロセスを強化しました。 この変更により、販売者はカスタム配送方法を実装できるようになります。<!-- ACCS-235 -->
 
-* [&#x200B; 顧客 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/customer-reports)、[&#x200B; マーケティング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/marketing-reports)、[&#x200B; 製品 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/product-reports)、[&#x200B; 販売 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/sales-reports) のレポートを含む、管理レポートへのアクセス権が追加されました。<!-- CCSAAS-3085 -->
-
->[!NOTE]
->
->[!DNL Adobe Commerce as a Cloud Service] で使用できないレポートには、「PaaS のみ」のラベルが付けられます（[!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}）。
-
-### REST API を使用したカスタム請求書金額のキャプチャ
-
-請求書 API では、拡張機能属性を使用して [&#x200B; カスタムキャプチャ金額 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) をサポートするようになりました。<!-- ACCS-186, ACCS-197, ACCS-143 -->
+* [顧客](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports)、[ マーケティング ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports)、[製品](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/product-reports)、および[販売](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports)のレポートを含む管理者レポートへのアクセスを追加しました。<!-- CCSAAS-3085 -->
 
 >[!NOTE]
 >
->法的な制限により、カスタムキャプチャ金額は、北米（NA）地域および支払い超過キャプチャが許可されているその他の地域でのみ利用できます。
+>[!DNL Adobe Commerce as a Cloud Service]で使用できないレポートは、PaaSとしてのみラベル付けされます（[!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}）。
+
+### REST APIを使用してカスタム請求金額を取得します
+
+請求書APIで、拡張機能の属性を使用して[ カスタムキャプチャ金額](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)がサポートされるようになりました。<!-- ACCS-186, ACCS-197, ACCS-143 -->
+
+>[!NOTE]
+>
+>法的な制限により、カスタムキャプチャ金額は、北米（NA）地域および支払い超過キャプチャが許可されているその他の地域でのみ使用できます。
 
 ### 機能強化とバグ修正
 
-このリリースには、選択した次の機能強化、最適化、バグ修正が含まれています。
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
 
-* クーポングリッドフィルターを修正して、API または読み込みによって作成されたすべてのカスタムクーポンを表示するようにしました。<!-- CCSAAS-4509 -->
+* クーポングリッドフィルターを修正して、APIまたは読み込みによって作成されたすべてのカスタムクーポンを表示しました。<!-- CCSAAS-4509 -->
 
-* [!DNL Storefront Compatibility B2B Package] が `setNegotiableQuoteShippingAddress` に設定されている場合でも、`save_in_address_book` のミューテーションが、手動で入力されたアドレスを顧客のアドレス帳に保存しなかった問題を `true` で修正しました。<!-- LYNX-1031 -->
+* [!DNL Storefront Compatibility B2B Package]が`setNegotiableQuoteShippingAddress`に設定されている場合でも、`save_in_address_book`の突然変異が手動で入力されたアドレスを顧客のアドレス帳に保存しなかった`true`の問題を修正しました。<!-- LYNX-1031 -->
 
 <!-- The above change will also be covered by the B2B changelog published on February 13, 2026. -->
 
-* アセットの役割に関連するカスタム属性の [!DNL Edge Delivery Services] 値が破損していることが原因で、`no_selection` に製品画像が正しく表示されない問題を修正しました。<!-- ACAP-1206 -->
+* アセットの役割に関連するカスタム属性の[!DNL Edge Delivery Services]値が破損しているため、`no_selection`で製品画像が正しく表示されない問題を解決しました。<!-- ACAP-1206 -->
 
-* null の名または姓の値を持つフェデレーティッドユーザーアカウントがCommerce Admin にアクセスできない問題を修正しました。<!-- ACCS-200 -->
+* nullの名または姓の値を持つフェデレーションユーザーアカウントがCommerce管理者にアクセスできない問題を解決しました。<!-- ACCS-200 -->
 
-* 地域固有の IMS クライアント ID を自動的に提供することで、アセットセレクター設定を簡略化しました。 マーチャントは、製品カテゴリ画像をアセットにマッピングするためにアセットセレクターを設定するためのサポートチケットを送信する必要がなくなりました。 Commerce リージョンに基づいて専用の IMS クライアント ID が自動的に使用されるようになりました。<!-- ACCS-175 -->
+* 地域固有のIMS クライアント IDを自動的に提供することで、アセットセレクターの設定を簡素化しました。 マーチャントは、製品カテゴリ画像とアセットをマッピングするためにアセットセレクターを設定するサポートチケットを送信する必要がなくなりました。 Commerce リージョンに基づいて、専用のIMS クライアント IDが自動的に使用されるようになりました。<!-- ACCS-175 -->
 
-* 様々なパフォーマンスと最適化の改善。<!-- CCSAAS-4485, CCSAAS-4497, ACCS-196 -->
+* さまざまなパフォーマンスと最適化の改善。<!-- CCSAAS-4485, CCSAAS-4497, ACCS-196 -->
 
 {{accs-release}}
 
 >[!ENDSHADEBOX]
 
-## 2026 年 1 月
+## 「Generative AI tool deployment - internal study
 
-[!BADGE &#x200B; 実稼動 &#x200B;]{type=Neutral tooltip="リストされた項目は、現在、実稼動環境で使用できます。"}
+[!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 
-2026 年 1 月 20 日（PT）に、[!DNL Adobe Commerce as a Cloud Service] の実稼動環境にリリースされた項目は次のとおりです。
+以下の項目は、2026年1月20日に[!DNL Adobe Commerce as a Cloud Service]の実稼動環境にリリースされました。
 
 >[!BEGINSHADEBOX]
 
-### B2B ドロップダウン
+### B2B ドロップイン
 
 B2B ドロップインコンポーネントに次の変更が加えられました。
 
-* [!DNL Commerce Storefront on Edge Delivery Services] には、[B2B ドロップインコンポーネント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=ja) が含まれるようになりました。 次の B2B ドロップダウンが使用できるようになりました。
+* [!DNL Commerce Storefront on Edge Delivery Services]には、[B2B ドロップインコンポーネント ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/)が含まれています。 次のB2B ドロップインを使用できるようになりました。
 
-   * **[会社管理 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=ja)** – 会社プロファイル管理を有効にし、Adobe Commerce ストアフロントに対する役割ベースの権限を有効にします。
-   * **[会社スイッチャー &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=ja)** - ユーザーが関連付けられている複数の会社を切り替えるための UI コンポーネントを提供します。
-   * **[発注書 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=ja)** - B2B 取引の発注書ワークフロー、承認ルールおよび発注履歴を管理します。
-   * **[見積管理 &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=ja)** – 見積依頼、交渉および承認ワークフローを使用して、B2B 顧客に対して交渉可能な見積を有効にします。
-   * **[購買依頼リスト &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=ja)**：繰返し購入および一括発注のための購買依頼リストを作成および管理するツールを提供します。
+   * **[会社管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/)** - Adobe Commerce ストアフロントの会社プロファイル管理とロールベースの権限を有効にします。
+   * **[会社スイッチャー](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** - ユーザーが関連付けられている複数の会社を切り替えるためのUI コンポーネントを提供します。
+   * **[発注](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - B2B トランザクションの発注ワークフロー、承認ルール、発注履歴を管理します。
+   * **[見積もり管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** – 見積もり要求、交渉、承認ワークフローを使用して、B2B顧客に対して交渉可能な見積もりを有効にします。
+   * **[購買リスト ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)** - リピート購入と一括注文の購買リストを作成および管理するためのツールを提供します。
 
-* B2B ストアフロント互換性パッケージをリリースしました。 このパッケージは、[!DNL Adobe Commerce] B2B GraphQL スキーマを強化して、B2B システムでの開発の改善を支援します。
+* B2B Storefront互換性パッケージをリリース。 このパッケージは、[!DNL Adobe Commerce] B2B GraphQL スキーマを強化して、B2B システムの開発を改善するのに役立ちます。
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=ja). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/?lang=ja). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. -->
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. -->
 
-### 外部配送トラッカーへのクリック可能なリンク
+### クリック可能な外部シッピングトラッカーへのリンク
 
-[&#x200B; カスタムトラッキング URL を有効にする &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls) ことで、買い物客のメールに含まれる出荷トラッキング番号をプレーンテキストからクリック可能なリンクに変換します。 この機能は、USPS、UPS、FedEx、および DHL でサポートされています。<!-- See PR #716 in commerce-admin -->
+カスタムトラッキング URL[を有効にして、買い物客のメールに含まれる出荷追跡番号をプレーンテキストからクリック可能なリンクに](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls)変換します。 この機能は、USPS、UPS、FedEx、およびDHLでサポートされています。<!-- See PR #716 in commerce-admin -->
 
 ### Google reCAPTCHA Enterprise サポート
 
-[!DNL Adobe Commerce as a Cloud Service] ストアフロントで [reCAPTCHA Enterprise](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise) がサポートされるようになりました。 この機能は、アダプティブリスク分析と機械学習を使用して、自動ボットから人間のユーザーを正確に区別することで、高度なボット保護を提供します。 サイトのセキュリティを強化し、詐欺行為を防ぎ、スパムや虐待を減らして、信頼できるショッピングエクスペリエンスを維持します。<!-- CCSAAS-4242 -->
+[!DNL Adobe Commerce as a Cloud Service]のストアフロントで[reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise)がサポートされるようになりました。 この機能は、適応型リスク分析とマシンラーニング（機械学習）を使用して、自動化されたボットと人間のユーザーを正確に区別することで、高度なボット保護を実現します。 サイトのセキュリティを強化し、不正なアクティビティを防止し、迷惑メールや悪用を低減することで、信頼できるショッピング体験を維持できます。<!-- CCSAAS-4242 -->
 
-### インスタンス固有の管理アクセス
+### インスタンス固有の管理者アクセス
 
-Admin Console内の個々の [&#x200B; インスタンスに &#x200B;](./user-management.md#add-users) ユーザーアクセスを割り当てる [!DNL Adobe Commerce as a Cloud Service] ことができるようになりました。<!-- CCSAAS-4337 --><!-- See PR #332 -->
+Admin Consoleの個々の[ インスタンスに](./user-management.md#add-users) ユーザーのアクセス権[!DNL Adobe Commerce as a Cloud Service]を割り当てることができるようになりました。<!-- CCSAAS-4337 --><!-- See PR #332 -->
 
 ### 可観測性
 
-[!DNL App Builder] を使用すると、[!DNL Adobe Commerce as a Cloud Service]OpenTelemetry observability[&#x200B; が自動的に使用可能になり、](https://developer.adobe.com/commerce/extensibility/observability/) インスタンスをより深く可視化できます。 OpenTelemetry は、パフォーマンスの監視、問題の迅速なトラブルシューティング、ストアフロントの最適化に役立つ指標、ログおよびトレースを提供します。 この機能により、システムの正常性に関するプロアクティブなインサイトが可能になり、顧客の信頼性が向上します。
+[!DNL App Builder]を使用すると、[!DNL Adobe Commerce as a Cloud Service]OpenTelemetry observability[で](https://developer.adobe.com/commerce/extensibility/observability/) インスタンスをより詳細に可視化できます。これは自動的に使用できるようになりました。 OpenTelemetryは、パフォーマンスの監視、問題の迅速なトラブルシューティング、ストアフロントの最適化に役立つ指標、ログ、トレースを提供します。 この機能により、システムの健全性に関する先見的なインサイトが可能になり、顧客の信頼性を向上させます。
 
 >[!NOTE]
 >
->OpenTelemetry の観測機能を使用するには、[!DNL App Builder] または他のプロセス外の拡張機能（OOPE）ソリューションを使用する必要があります。
+>OpenTelemetry オブザーバビリティを使用するには、[!DNL App Builder]またはその他のプロセス外拡張機能（OOPE）製品を使用する必要があります。
 
 ### カタログ価格ルールの階層価格
 
-[&#x200B; カタログ価格ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules) を使用して、階層化された価格割引をカタログルール割引と組み合わせることができるようになりました。 この機能強化により、より動的で競争力のある価格戦略を作成し、プロモーションの割引を適用しながら、一括購入に報いることができます。 その結果、顧客を引き付け、注文価値を高め、コンバージョンを促進する柔軟性が向上します。<!-- See PR #708 in commerce-admin -->
+[ カタログ価格ルール ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules)を使用して、階層制の価格割引とカタログ ルール割引を組み合わせることができるようになりました。 この機能強化により、より動的で競争力のある価格戦略を構築し、一括購入に特典を提供すると同時に、プロモーション割引を適用することができます。 その結果、顧客を惹きつけ、注文額を増やし、コンバージョンを促進するための柔軟性が高まります。<!-- See PR #708 in commerce-admin -->
 
 ### 機能強化とバグ修正
 
-このリリースに含まれる、選択した次の機能強化、最適化、バグ修正は次のとおりです。
+このリリースに含まれる以下の選択された機能強化、最適化、およびバグ修正：
 
-* ファイルを S3 にアップロードする際に発生する可能性があるエラーを修正しました。<!-- CCSAAS-4189 -->
+* S3にファイルをアップロードする際に発生する可能性があるエラーを解決しました。<!-- CCSAAS-4189 -->
 
-* Commerce管理者にログインする際や REST API にアクセスする際に発生する可能性がある `User is not entitled to access this instance` エラーを修正しました。<!-- CCSAAS-4324 -->
+* Commerce管理者にログインするか、REST APIにアクセスする際に発生する可能性がある`User is not entitled to access this instance` エラーを解決しました。<!-- CCSAAS-4324 -->
 
-* ニュースレターテンプレートグリッドからニュースレターをプレビューまたはキューに入れる際に発生していたエラーを修正しました。<!-- CCSAAS-4398 -->
+* ニュースレターテンプレートグリッドからニュースレターをプレビューまたはキューに入れる際に発生するエラーを修正しました。<!-- CCSAAS-4398 -->
 
-* 管理ダッシュボ `404` ドで「[!UICONTROL **データを再読み込み**] ボタンをクリックしたときに発生していたエラーを修正しました。<!-- CCSAAS-4468 -->
+* 管理者ダッシュボードの「`404` データを再読み込み&#x200B;[!UICONTROL **」ボタンをクリックしたときに発生した**] エラーを修正しました。<!-- CCSAAS-4468 -->
 
-* [!DNL AEM Assets integration] が有効になっており、製品に画像が含まれている場合に、製品のカスタム属性が REST API を通じて更新されない問題を解決しました。<!-- ACAP-1178 -->
+* [!DNL AEM Assets integration]が有効になっていて、製品に画像がある場合に、REST APIを介して製品カスタム属性を更新できない問題を解決しました。<!-- ACAP-1178 -->
 
-* 様々なパフォーマンスと最適化の改善 <!-- CCSAAS-4255 --><!-- CCSAAS-4233 --><!-- CCSAAS-4220 --><!-- CCSAAS-4252 --><!-- CCSAAS-4330 --><!-- CCSAAS-3669 --><!-- CCSAAS-4462 -->
+* 様々なパフォーマンスと最適化の改善。<!-- CCSAAS-4255 --><!-- CCSAAS-4233 --><!-- CCSAAS-4220 --><!-- CCSAAS-4252 --><!-- CCSAAS-4330 --><!-- CCSAAS-3669 --><!-- CCSAAS-4462 -->
 
 {{accs-release}}
 
 >[!ENDSHADEBOX]
 
-## 2025 年 11 月
+## 2025年11月
 
 >[!BEGINSHADEBOX]
 
 ### 機能強化
 
-* [User Management](./user-management.md) - Admin Consoleの **Product Admin** の役割を変更して、Commerce管理者へのユーザーアクセスを自動的に更新しました。<!-- CCSAAS-3012 -->
+* [User management](./user-management.md) - Commerce管理者へのユーザーアクセス権を自動的に更新するように、Admin Consoleの&#x200B;**Product Admin**&#x200B;の役割を変更しました。<!-- CCSAAS-3012 -->
 
-* [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads) および [REST](https://developer.adobe.com/commerce/webapi/rest/modules/s3-uploads) の事前署名済み URL を使用して、Amazon S3 に、交渉可能な見積書の添付ファイルや、顧客および顧客アドレスに関連付けられたファイルと画像をアップロードおよび取得する機能が追加されました。 REST では、カテゴリ画像をアップロードすることもできます。<!-- CCSAAS-3250 -->
+* [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads)および[REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads)で、事前に署名されたURLを使用して、交渉可能な見積もり添付ファイルおよびお客様とお客様のアドレスに関連付けられたファイルと画像をAmazon S3にアップロードして取得する機能を追加しました。 RESTでは、カテゴリ画像をアップロードすることもできます。<!-- CCSAAS-3250 -->
 
-* 顧客を作成および更新するために、`POST /V1/customers` エンドポイントと `PUT /V1/customers/{customerId}` エンドポイントを [REST API](https://developer.adobe.com/commerce/webapi/rest/reference/) に追加しました。 これらのエンドポイントには IMS 認証が必要です。<!-- CCSAAS-3112 -->
+* `POST /V1/customers`および`PUT /V1/customers/{customerId}` エンドポイントを[REST API](https://developer.adobe.com/commerce/webapi/rest/reference/)に追加して、顧客を作成および更新しました。 これらのエンドポイントにはIMS認証が必要です。<!-- CCSAAS-3112 -->
 
-* 買い物客のメールアドレスと 1 回限りのパスワード（OTP）を必要とし [`exchangeOtpForCustomerToken` 引き換えに顧客トークンを受け取る、](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) ミューテーションを追加しました。 このミューテーションは、通常、顧客がメールまたは電話に送信された OTP を使用して認証する必要があるシナリオで使用されます。
+* 買い物客の電子メールアドレスとワンタイムパスワード（OTP）が必要で、引き換えに顧客トークンを受け取る[`exchangeOtpForCustomerToken`の変異](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/)を追加しました。 この突然変異は、通常、顧客が電子メールまたは電話に送信されたOTPを使用して認証する必要があるシナリオで使用されます。
 
-* 管理者の [!UICONTROL **メールアドレスを保存**] 設定画面で定義されたアドレスに、`example.com` で終わる値が含まれている場合、Commerceはこのアドレスにメールを送信しません。 代わりに、システムはメールが送信されなかったことをログに記録します。 <!-- CCSAAS-3533 -->
+* 管理画面の&#x200B;[!UICONTROL **メールアドレスの保存**]&#x200B;設定画面で定義されたアドレスに`example.com`で終わる値が含まれている場合、Commerceはこのアドレスにメールを送信しません。 代わりに、電子メールが送信されなかったことがログに記録されます。 <!-- CCSAAS-3533 -->
 
 #### カスタム注文属性
 
-* 管理者ユーザーは、管理パネルの注文ビュー、編集、作成画面から直接 [&#x200B; カスタム注文属性 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) を表示および編集できるようになりました。 この機能強化により、GraphQLを介して作成されたカスタム注文データの管理が向上します。<!-- CEXT-5044 -->
+* 管理者ユーザーは、管理パネルの注文表示、編集、作成画面から直接[ カスタム注文属性](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes)を表示および編集できるようになりました。 この機能強化により、GraphQLで作成されたカスタム注文データの管理が改善されます。<!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
