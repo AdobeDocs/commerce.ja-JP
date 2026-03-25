@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## App Builder アプリのインストール
 
-Adobe ExchangeからApp Builder アプリをインストールする必要がある場合（事前定義済みの統合アプリやマーケットプレイスアプリなど）、ステップバイステップの手順については、[Adobe ExchangeからApp Builder アプリをインストール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"}を参照してください。
+Adobe ExchangeからApp Builder アプリをインストールする必要がある場合（事前定義済みの統合アプリやマーケットプレイスアプリなど）、ステップバイステップの手順については、[Adobe ExchangeからApp Builder アプリをインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"}を参照してください。
 
 アプリをインストールしてデプロイしたら、[!DNL App Management]を使用して[Commerce インスタンスに関連付け](manage-app.md#associate-an-app)し、設定を行います。
 
@@ -74,7 +74,7 @@ Adobe ExchangeからApp Builder アプリをインストールする必要があ
 
 一部のApp Builder アプリケーションでは、[Adobe Commerce Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)を使用して、特定のイベントが発生した場合（商品が保存された後など）にCommerceからHTTP経由でアプリを呼び出すことができます。 Webhook エンドポイントとサブスクリプション ロジックは、アプリケーションのビルドおよびデプロイ時に&#x200B;**アプリ開発者**&#x200B;によって定義されます。ストア管理者は、アプリ管理でWebhookを個別に設定しません。
 
-アプリを[Commerce インスタンスに関連付け](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app)し、アプリの設定手順を完了すると、Webhookの動作はアプリの実装に従います。
+アプリを[Commerce インスタンスに関連付け](https://experienceleague.adobe.com/ja/docs/commerce/app-management/manage-app/manage-app)し、アプリの設定手順を完了すると、Webhookの動作はアプリの実装に従います。
 
 [!DNL App Management]がアプリの検証エンドポイントをトリガーできない場合（例えば、URLに到達できない、または回答が要件を満たさない）、[!DNL App Management] ダッシュボードに次のようなエラーが表示される可能性があります。
 
