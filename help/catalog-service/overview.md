@@ -39,7 +39,7 @@ Adobe Commerce拡張機能の[!DNL Catalog Service]は、専用のGraphQL APIを
 
 >[!NOTE]
 >
->Adobe Commerce OptimizerまたはAdobe Commerce Optimizer Connectorでコンポーザブルカタログを使用してカタログを実装する場合は、[Adobe Commerce Optimizer ガイド ](../optimizer/overview.md#architecture)およびマーチャンダイジングサービス開発者ガイドを参照してください。
+>Adobe Commerce OptimizerまたはAdobe Commerce Optimizer Connectorでコンポーザブルカタログを使用してカタログを実装する場合は、[Adobe Commerce Optimizer ガイド &#x200B;](../optimizer/overview.md#architecture)およびマーチャンダイジングサービス開発者ガイドを参照してください。
 
 [!DNL Catalog Service]では、[GraphQL](https://graphql.org/)を使用して、商品、商品属性、在庫、価格などのカタログデータをリクエストおよび受け取ります。 GraphQLは、フロントエンドクライアントが、Adobe Commerceなどのバックエンドで定義されたアプリケーションプログラミングインターフェイス（API）と通信するために使用するクエリ言語です。 GraphQLは軽量で、システムインテグレーターが各応答の内容と順序を指定できるため、一般的な通信方法です。
 
@@ -59,7 +59,7 @@ Adobe Commerceには、異なる目的に対応する2つのGraphQL システム
 - **Advantage**：製品データのコアシステムよりも大幅に高速
 - **ユースケース**：スピードが重要なストアフロント製品エクスペリエンス
 
-カタログサービスで使用可能なデータは、SaaS データ書き出し拡張機能によって配信されます。 この拡張機能は、Commerce アプリケーションと接続されたCommerce サービス間でデータを同期し、サービス GraphQL API エンドポイントへのクエリが最新のカタログデータを返すようにします。 SaaS データ書き出し操作の管理とトラブルシューティングについて詳しくは、[SaaS データ書き出しガイド ](../data-export/overview.md)を参照してください。
+カタログサービスで使用可能なデータは、SaaS データ書き出し拡張機能によって配信されます。 この拡張機能は、Commerce アプリケーションと接続されたCommerce サービス間でデータを同期し、サービス GraphQL API エンドポイントへのクエリが最新のカタログデータを返すようにします。 SaaS データ書き出し操作の管理とトラブルシューティングについて詳しくは、[SaaS データ書き出しガイド &#x200B;](../data-export/overview.md)を参照してください。
 
 [!DNL Catalog Service]のお客様は[SaaS価格インデクサー](../price-index/price-indexing.md)を使用できます。これにより、価格の更新と同期時間を短縮できます。
 
@@ -67,7 +67,7 @@ Adobe Commerceには、異なる目的に対応する2つのGraphQL システム
 
 次の図は、コア GraphQL システムとカタログサービス GraphQL システムのアーキテクチャの違いを示し、それらが連携してストアフロントのパフォーマンスを最適化する方法を示しています。
 
-![ カタログアーキテクチャ図](assets/catalog-service-architecture.png)
+![&#x200B; カタログアーキテクチャ図](assets/catalog-service-architecture.png)
 
 ### システムの仕組み
 
@@ -105,11 +105,11 @@ Adobe Commerceには、異なる目的に対応する2つのGraphQL システム
 
 #### 製品ビューの属性
 
-シンプルな商品も複雑な商品も、ストアフロントに表示できる顧客定義の属性を備えています。 これらの属性は[ProductViewAttributes](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type)として返されます。 Adobe Commerceでは、商品の作成時に使用可能な属性が定義されます。 Adobe Commerceのバックエンドから属性を追加することも、プログラムで追加することもできます。 [SaaS データ書き出しフィード データの拡張とカスタマイズ ](../data-export/extensibility-and-customizations.md)を参照してください。
+シンプルな商品も複雑な商品も、ストアフロントに表示できる顧客定義の属性を備えています。 これらの属性は[ProductViewAttributes](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type)として返されます。 Adobe Commerceでは、商品の作成時に使用可能な属性が定義されます。 Adobe Commerceのバックエンドから属性を追加することも、プログラムで追加することもできます。 [SaaS データ書き出しフィード データの拡張とカスタマイズ &#x200B;](../data-export/extensibility-and-customizations.md)を参照してください。
 
 >[!TIP]
 >
->Commerce バックエンドにデータタイプを追加する代わりに、[API Meshとカタログサービス ](mesh.md)を使用して、カタログサービス GraphQL スキーマを拡張してデータを追加したり、既存のカタログデータを設定して新しい機能を有効にしたりできます。
+>Commerce バックエンドにデータタイプを追加する代わりに、[API Meshとカタログサービス &#x200B;](mesh.md)を使用して、カタログサービス GraphQL スキーマを拡張してデータを追加したり、既存のカタログデータを設定して新しい機能を有効にしたりできます。
 
 ### 価格
 
