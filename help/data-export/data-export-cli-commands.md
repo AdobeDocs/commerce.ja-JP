@@ -62,7 +62,7 @@ bin/magento saas:resync --help
 
 >[!NOTE]
 >
->書き出し処理を管理するための詳細なオプションについては、[書き出し処理のカスタマイズ ](customize-export-processing.md)を参照してください。
+>書き出し処理を管理するための詳細なオプションについては、[書き出し処理のカスタマイズ &#x200B;](customize-export-processing.md)を参照してください。
 
 ## `--by-ids`
 
@@ -168,7 +168,7 @@ bin/magento saas:resync --feed products
 
 インデックス再作成せずに既存のカタログ データを[!DNL Commerce Services]に再送信します。 製品関連のフィードではサポートされていません。
 
-動作は[書き出しモード ](data-synchronization.md#synchronization-modes)によって異なります。
+動作は[書き出しモード &#x200B;](data-synchronization.md#synchronization-modes)によって異なります。
 
 - レガシーモード：すべてのデータを切り捨てずに再送信します。
 - 即時モード：オプションは無視され、更新/失敗のみを同期します。
@@ -191,4 +191,4 @@ bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
 
 ## トラブルシューティング
 
-接続されたCommerce サービスに期待されるデータが表示されない場合は、データ書き出しエラーログを確認し、環境変数で`saas:resync` コマンドを使用してペイロードとプロファイラーデータを確認して、問題をトラブルシューティングします。 [ ログの確認とトラブルシューティング ](troubleshooting-logging.md)を参照してください。
+接続されたCommerce サービスに期待されるデータが表示されない場合は、データ書き出しエラーログを確認し、環境変数で`saas:resync` コマンドを使用してペイロードとプロファイラーデータを確認して、問題をトラブルシューティングします。 [&#x200B; ログの確認とトラブルシューティング &#x200B;](troubleshooting-logging.md)を参照してください。
