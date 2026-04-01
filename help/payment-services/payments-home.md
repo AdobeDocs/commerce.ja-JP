@@ -40,14 +40,14 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Pa
 
 ## ホーム
 
-[!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
+[!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
 
 | フィールド | 説明 |
 |---|---|
 | [!UICONTROL Orders] | これらのレポートにより、注文の支払い状況をすばやく確認し、潜在的な問題を特定できます。 |
 | [!UICONTROL Payouts] | 支払いレポートには、包括的な支払い情報が一目で表示され、支払い金額、処理済み数量、財務の調整のためのトランザクションレベルに関する詳細なレポートの透明性を完全に確保できます。 |
 
-[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}
+[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}
 
 | フィールド | 説明 |
 |---|---|
