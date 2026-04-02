@@ -1,7 +1,7 @@
 ---
 title: レコメンデーションフィルター
 description: 'フィルターを使用して、レコメンデーションに表示される製品を制御する方法を説明します。 [!DNL Adobe Commerce Optimizer] '
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 source-git-commit: e15624322fabb89d0b618f9d6c689445a7c448df
 workflow-type: tm+mt
