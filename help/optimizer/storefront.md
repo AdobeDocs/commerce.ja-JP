@@ -2,7 +2,7 @@
 title: ストアフロントの設定
 description: ' [!DNL Adobe Commerce Optimizer]  ストアフロントの設定方法について説明します。'
 role: Developer
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 source-git-commit: b6f7286f223c6253ab9edbead63a4bc4a9baddfe
 workflow-type: tm+mt
@@ -57,7 +57,7 @@ ht-degree: 0%
 * **サイト**：ボイラープレートコンテンツを含むストアフロントのランディングページ
 * **コード**：定型文ソースファイルを含むリポジトリ
 * **コンテンツ**: サイト コンテンツ ファイルを含むドキュメント オーサー環境
-* **Commerce Config**: [Commerce ストアフロント設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} （インスタンス固有の設定）
+* **Commerce Config**: [Commerce ストアフロント設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=ja){target="_blank"} （インスタンス固有の設定）
 
 ### ステップ 1：プロジェクトの生成
 
@@ -218,25 +218,25 @@ ht-degree: 0%
 
 問題が解決しない場合：
 
-* [Adobe Commerce Storefront ドキュメントを確認](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}
+* [Adobe Commerce Storefront ドキュメントを確認](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja){target="_blank"}
 * [Adobe Commerce Optimizer開発者向けガイド &#x200B;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}を確認する
-* [Adobe Commerce サポートリソース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}にアクセス
+* [Adobe Commerce サポートリソース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview){target="_blank"}にアクセス
 
 ## 次のステップ
 
-* **[ローカル開発環境の設定](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}** – ローカル環境を作成して、ストアフロントコードとコンテンツをカスタマイズします。
-* **[ユニバーサルエディターを有効にする](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/){target="_blank"}**- ユニバーサルエディターを使用すると、レンダリングされたページのコンテキストでストアフロントコンテンツを編集できます。 コンテンツはドキュメント作成（DA.live）プロジェクトに保存され、ローカライゼーション、一括公開、スナップショットなど、ほとんどのコンテンツオーケストレーションアプリを使用できます。
+* **[ローカル開発環境の設定](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=ja#set-up-local-environment){target="_blank"}** – ローカル環境を作成して、ストアフロントコードとコンテンツをカスタマイズします。
+* **[ユニバーサルエディターを有効にする](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/?lang=ja){target="_blank"}**- ユニバーサルエディターを使用すると、レンダリングされたページのコンテキストでストアフロントコンテンツを編集できます。 コンテンツはドキュメント作成（DA.live）プロジェクトに保存され、ローカライゼーション、一括公開、スナップショットなど、ほとんどのコンテンツオーケストレーションアプリを使用できます。
 
 ### 学習と探索
 
 * **[エンドツーエンドのユースケースを完了](./use-case/admin-use-case.md)**-[!DNL Adobe Commerce Optimizer]を使用したストアフロントの設定とカタログ管理について詳しく説明します。
 
-* **[ストアフロントのカスタマイズ &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}**&#x200B;の詳細な設定と設定オプションについて説明します。
+* **[ストアフロントのカスタマイズ &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=ja){target="_blank"}**&#x200B;の詳細な設定と設定オプションについて説明します。
 
-* **[Commerce ドロップインを使用してストアフロント エクスペリエンスをカスタマイズする](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/){target="_blank"}** – 事前定義済みコンポーネントを追加して、ストアフロント エクスペリエンスを強化します。
+* **[Commerce ドロップインを使用してストアフロント エクスペリエンスをカスタマイズする](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=ja){target="_blank"}** – 事前定義済みコンポーネントを追加して、ストアフロント エクスペリエンスを強化します。
 
 * **ストアフロント設定サービスへの移行** – 最初のストアフロントを作成した後、設定を移行して、再帰設定やオーバーレイなどの高度なユースケースをサポートする設定サービスを使用できます。 詳しくは、Adobe Experience Managerの[Configuration Service](https://www.aem.live/docs/config-service-setup){target="_blank"} ドキュメントを参照してください。
 
 >[!MORELIKETHIS]
 >
-> サイトコンテンツの更新と、Commerce フロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、[Adobe Commerce Storefront ドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}を参照してください。
+> サイトコンテンツの更新と、Commerce フロントエンドコンポーネントおよびバックエンドデータとの統合について詳しくは、[Adobe Commerce Storefront ドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja){target="_blank"}を参照してください。
