@@ -1,43 +1,52 @@
 ---
 title: '[!DNL Adobe Commerce Optimizer Connector] リリースノート'
-description: Adobe Commerceの最新  [!DNL Adobe Commerce Optimizer Connector]  リリース情報です。
+description: Adobe Commerceの [!DNL Adobe Commerce Optimizer Connector] の最新リリース情報。
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 4da2776c561d88b5343442df84b691cb857fada3
+source-git-commit: 205fca38b379f94027a965b58826ffd922577f61
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce Optimizer Connector リリースノート
 
-このリリースノートでは、[!DNL Adobe Commerce Optimizer Connector] のすべてのリリースについて説明しており、次が含まれています。
+これらのリリースノートには、[!DNL Adobe Commerce Optimizer Connector]のすべてのリリースが記載されており、次の内容が含まれています。
 
-![&#x200B; 新機能 &#x200B;](../assets/new.svg) 新機能
-![&#x200B; 修正された問題 &#x200B;](../assets/fix.svg) 修正および改善
-![&#x200B; 既知の問題 &#x200B;](../assets/bug.svg)
+![新機能](../assets/new.svg)
+![修正された問題](../assets/fix.svg)修正と改善
+![既知の問題](../assets/bug.svg)既知の問題
+
+## 2026 リリース
+
+### 1.0.12 リリース
+
+_2026年4月2日_
+
+![新規](../assets/new.svg) **`saas:resync` コマンドのカテゴリフィードのサポートを追加しました**- `saas:resync` CLI コマンドを使用して、最新のカテゴリデータを簡単に更新および表示できるようになりました。
+
+```terminal
+bin/magento saas:resync --feed=categories
+```
+
+_2026年3月10日_
+
+![修正済みの問題](../assets/fix.svg) Adobe Commerce Optimizer ConnectorがCommerce インスタンスにインストールされている場合に、Commerce管理システムと設定メニューからCommerce Services Connector設定ページへのアクセスをブロックする互換性の問題を修正しました。  両方の拡張機能がインストールされている場合は、Commerce Services Connector設定ページにアクセスできます。<!--MDEE-1322-->
 
 
-## v1.0.11
+### v1.0.10 リリース
 
-_2026 年 3 月 10 日_
+_2026年3月9日_
 
-![&#x200B; 修正された問題 &#x200B;](../assets/fix.svg) Adobe Commerce Optimizer Connector がCommerce インスタンスにインストールされている場合に、Commerce Admin System および Configuration メニューからCommerce Services Connector Configuration ページへのアクセスがブロックされる互換性の問題を修正しました。  両方の拡張機能がインストールされている場合に、Commerce サービスコネクタ設定ページにアクセスできるようになりました。<!--MDEE-1322-->
+![修正](../assets/fix.svg) コネクタ設定を完了する前にデータフィード同期ステータス ページにアクセスすると、コネクタ設定ページに自動的にリダイレクトされるようになりました。 このガイド付きフローは、コネクタの設定が完了したことを確認し、失敗または不完全なステータス項目につながる可能性のある構成設定が欠落したことによるエラーを防ぐのに役立ちます。<!--MDEE-1296-->
 
+### v1.0.9 リリース
 
-## v1.0.10
+_2026年3月1日_
 
-_2026 年 3 月 9 日_
-
-![&#x200B; 修正 &#x200B;](../assets/fix.svg) コネクタ設定を完了する前にデータフィード同期ステータスページにアクセスすると、自動的にコネクタ設定ページにリダイレクトされるようになりました。 このガイド付きフローは、コネクタのセットアップが完了したことを確認し、ステータス項目が失敗したり不完全になったりする可能性のある構成設定の欠落に起因するエラーを防ぐのに役立ちます。<!--MDEE-1296-->
-
-## v1.0.9
-
-_2026 年 3 月 1 日_
-
-Adobe Commerce Optimizer Connector の一般提供リリースです。
+Adobe Commerce Optimizer Connectorの一般公開リリース。
 
 >[!NOTE]
 >
->Adobe Commerce Optimizer Connector のBeta プログラムに参加し、以前のバージョンの拡張機能がインストールされている場合は、一般提供バージョンにアップグレードして最新のアップデートを入手します。
+>Adobe Commerce Optimizer ConnectorのBeta プログラムに参加し、以前のバージョンの拡張機能がインストールされている場合は、一般公開版にアップグレードして最新のアップデートを入手してください。
 
