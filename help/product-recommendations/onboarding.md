@@ -42,18 +42,18 @@ ht-degree: 0%
 
 ### ページビルダーのサポート
 
-[!DNL Product Recommendations]は、ページビルダーのコンテンツタイプとしてページに追加できます。 ページビルダーのサポートを製品レコメンデーションに追加するには、[ インストールと設定](install-configure.md)を参照してください。
+[!DNL Product Recommendations]は、ページビルダーのコンテンツタイプとしてページに追加できます。 ページビルダーのサポートを製品レコメンデーションに追加するには、[&#x200B; インストールと設定](install-configure.md)を参照してください。
 
 [[!DNL Page Builder] を](page-builder.md) コンテンツに追加する方法については、[!DNL Product Recommendations]統合[!DNL Page Builder]を参照してください。
 
 ### SaaS価格インデックス
 
-商品レコメンデーションのお客様は[SaaS価格インデックス ](../price-index/price-indexing.md)を使用できます。これにより、価格の更新と同期時間を迅速に行うことができます。
+商品レコメンデーションのお客様は[SaaS価格インデックス &#x200B;](../price-index/price-indexing.md)を使用できます。これにより、価格の更新と同期時間を迅速に行うことができます。
 
 ### B2B サポート {#b2bsupport}
 
-B2Bのストアフロントでは、買い物客や顧客グループごとに商品の可視性や価格を決定する複雑なロジックが必要になることがよくあります。 [!DNL Product Recommendations]様は、[ カテゴリの権限](release-notes.md)、[共有カタログ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)、[顧客グループ固有の価格](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)を尊重することで、この機能を[ サポート ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)するようになりました。 たとえば、特定のカテゴリーを小売顧客セグメントから隠している場合、そのセグメントの買い物客には、それらのカテゴリーの商品に関するレコメンデーションは表示されません。 また、特定の顧客グループや企業向けに共有カタログを定義すると、それらの買い物客は、アクセス可能な商品に関してのみレコメンデーションを見ることができます。 あらゆる推奨商品には、各買い物客の顧客グループに基づいた、正しい顧客グループ固有の価格が反映されています。
+B2Bのストアフロントでは、買い物客や顧客グループごとに商品の可視性や価格を決定する複雑なロジックが必要になることがよくあります。 [!DNL Product Recommendations]様は、[&#x200B; カテゴリの権限](release-notes.md)、[共有カタログ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)、[顧客グループ固有の価格](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)を尊重することで、この機能を[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)するようになりました。 たとえば、特定のカテゴリーを小売顧客セグメントから隠している場合、そのセグメントの買い物客には、それらのカテゴリーの商品に関するレコメンデーションは表示されません。 また、特定の顧客グループや企業向けに共有カタログを定義すると、それらの買い物客は、アクセス可能な商品に関してのみレコメンデーションを見ることができます。 あらゆる推奨商品には、各買い物客の顧客グループに基づいた、正しい顧客グループ固有の価格が反映されています。
 
 >[!NOTE]
 >
->販売者は、[ カタログサービス ](../catalog-service/overview.md) Storefront APIを使用して、ウィジェットまたはストアフロント要素をカスタマイズおよび拡張できますが、Adobe サポートチームでは、カスタマイズは対象外です。
+>販売者は、[&#x200B; カタログサービス &#x200B;](../catalog-service/overview.md) Storefront APIを使用して、ウィジェットまたはストアフロント要素をカスタマイズおよび拡張できますが、Adobe サポートチームでは、カスタマイズは対象外です。
