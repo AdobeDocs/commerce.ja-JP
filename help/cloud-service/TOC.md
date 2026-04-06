@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: このガイドでは、 [!DNL Adobe Commerce as a Cloud Service]の使用方法について詳しく説明します。
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 5c84464a463672d48544031bb365f3484065acf4
+source-git-commit: 6c7055be007d75ff4cf3673da9938d9d79779aef
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 5%
+source-wordcount: '101'
+ht-degree: 4%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 5%
    - [概要](migration/overview.md)
    - 移行ツール {#migration-tools}
       - [バルクデータ移行ツール](migration/bulk-data.md)
-      - [コーディングツール](migration/coding-tools.md)
+      - [ コーディングツール ](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
    - [Documentation RAG Service](migration/doc-rag.md)
-- [顧客としてログイン](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
-- [&#x200B; ギフトカードアカウントのREST エンドポイント](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
-- [RESTを通じた電子メールトリガー](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
+- [顧客としてログイン ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [ ギフトカードアカウントのREST エンドポイント ](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
+- [REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}を通じた電子メールトリガー
 - チュートリアル {#tutorials}
    - [チュートリアルの前提条件](tutorials/tutorial-prerequisites.md)
    - [レーティング拡張機能チュートリアル](tutorials/ratings-extension.md)
@@ -37,8 +37,9 @@ ht-degree: 5%
    - [Stock通知の拡張機能チュートリアル](tutorials/in-stock-notification-extension.md)
    - [製品レビュー拡張機能チュートリアル](tutorials/product-reviews-extension.md)
 - スキーマ {#schemas}
-   - [GraphQL スキーマ](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
-   - [REST API スキーマ](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [&#x200B; ビデオチュートリアル](https://experienceleague.adobe.com/ja/playlists/accs-getting-started-product-overview){target="_blank"}
+   - [GraphQL スキーマ ](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
+   - [REST API スキーマ ](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
+- [開発者エージェント ](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
+- [ ビデオチュートリアル ](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [リリースノート](release-notes.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
