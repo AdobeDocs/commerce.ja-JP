@@ -2,7 +2,7 @@
 title: マーチャンダイジングルールのベストプラクティス
 description: 検索、デフォルトのリスト、カテゴリーページにマーチャンダイジングルールを実装するためのベストプラクティスについて説明します。
 role: Admin, Developer
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
 source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
 workflow-type: tm+mt

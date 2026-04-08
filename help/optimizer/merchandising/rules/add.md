@@ -1,7 +1,7 @@
 ---
 title: ルールの作成と管理
 description: 検索、デフォルトの商品リスト、カテゴリーページのマーチャンダイジングルールを作成および管理する方法について説明します。
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 source-git-commit: 0d1ebaddada8be82645164368ebfbb6dd0a569cd
 workflow-type: tm+mt
@@ -21,7 +21,7 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >カタログビューは現在[&#x200B; ベータ版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta)です。 Betaの参加者は、新しいカタログビュースコープを活用するために、既存のマーチャンダイジングルールを再作成する必要があります。
+   >カタログビューは現在[&#x200B; ベータ版](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta)です。 Betaの参加者は、新しいカタログビュースコープを活用するために、既存のマーチャンダイジングルールを再作成する必要があります。
 
 1. 「**[!UICONTROL Create rule]**」をクリックして、ルールエディターを起動します。
 
