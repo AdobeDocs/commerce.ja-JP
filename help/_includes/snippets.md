@@ -39,7 +39,7 @@ ht-degree: 0%
 >
 >この機能は予告なく変更される場合があります。
 
-[!BADGE  サンドボックス ]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
 
 ## AEM Assets インスタンスのマッピング {#aem-assets-instance-mapping}
 
@@ -61,7 +61,7 @@ Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Ado
 
 | サービス | 拡張機能 | ストアフロント |
 | --- | --- | --- |
-| <ul><li>[ カタログ サービス ](../catalog-service/release-notes.md)</li><li>[ ライブサーチ ](../live-search/release-notes.md)</li><li>[決済サービス ](../payment-services/release-notes.md)</li><li>[商品レコメンデーション ](../product-recommendations/release-notes.md)</li><li>[SaaS データ書き出し](../data-export/release-notes.md)</li></ul> | <ul><li>[管理者UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[ イベント ](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[ リリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
+| <ul><li>[&#x200B; カタログ サービス &#x200B;](../catalog-service/release-notes.md)</li><li>[&#x200B; ライブサーチ &#x200B;](../live-search/release-notes.md)</li><li>[決済サービス &#x200B;](../payment-services/release-notes.md)</li><li>[商品レコメンデーション &#x200B;](../product-recommendations/release-notes.md)</li><li>[SaaS データ書き出し](../data-export/release-notes.md)</li></ul> | <ul><li>[管理者UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[&#x200B; イベント &#x200B;](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[&#x200B; リリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
 
 ## Adobe Commerce Optimizer サービスのリリースノート {#aco-release}
 
@@ -71,4 +71,4 @@ Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Ado
 
 | サービス | ストアフロント |
 | --- | --- |
-| [AEM Assetsとの統合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer コネクタ ](../aco-connector/release-notes.md) | [ ストアフロントのリリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[ ストアフロントの変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [AEM Assetsとの統合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer コネクタ &#x200B;](../aco-connector/release-notes.md) | [&#x200B; ストアフロントのリリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[&#x200B; ストアフロントの変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |

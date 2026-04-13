@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ### カタログルール（ベータ版）
 
-マーチャンダイジングルールに[ カテゴリルール ](./merchandising/rules/add.md)が含まれるようになりました。これにより、検索と同じインテリジェントなランキングと手動アクション（ピン、ブースト、埋め込み）を使用して、1つ以上のカテゴリをターゲットにして、カテゴリページ上の商品の順序を制御できます。
+マーチャンダイジングルールに[&#x200B; カテゴリルール &#x200B;](./merchandising/rules/add.md)が含まれるようになりました。これにより、検索と同じインテリジェントなランキングと手動アクション（ピン、ブースト、埋め込み）を使用して、1つ以上のカテゴリをターゲットにして、カテゴリページ上の商品の順序を制御できます。
 
 ### 価格フィルター（ベータ版）
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 ### マーチャンダイジングルールとレコメンデーションのカタログビュー（ベータ版）
 
-レコメンデーションユニットを[作成](./merchandising/recommendations/create.md)または[ マーチャンダイジングルール ](./merchandising/rules/add.md)するときに、カタログビューを指定する機能を追加しました。
+レコメンデーションユニットを[作成](./merchandising/recommendations/create.md)または[&#x200B; マーチャンダイジングルール &#x200B;](./merchandising/rules/add.md)するときに、カタログビューを指定する機能を追加しました。
 
 {{aco-release}}
 
@@ -60,7 +60,7 @@ AIを活用したサイト最適化のレコメンデーションは、[Adobe Si
 
 ### カタログレイヤー
 
-[ カタログレイヤー](./setup/catalog-layer.md)を追加しました。これにより、レイヤーの優先度管理やAdobe Sites Optimizerの自動修正機能との統合など、ソースデータを変更せずに商品データを変更できます。
+[&#x200B; カタログレイヤー](./setup/catalog-layer.md)を追加しました。これにより、レイヤーの優先度管理やAdobe Sites Optimizerの自動修正機能との統合など、ソースデータを変更せずに商品データを変更できます。
 
 {{aco-release}}
 
@@ -93,7 +93,7 @@ AIを活用したサイト最適化のレコメンデーションは、[Adobe Si
 
 ### カテゴリ API
 
-新しいカテゴリ REST APIが利用可能になり、管理者と開発者は、ナビゲーションと製品グループ化のために複数のカテゴリーツリーをプログラムで作成、更新、管理できるようになりました。 このAPIは、グローバル設定とチャネル固有の設定の両方をサポートし、高い拡張性を実現するように設計されており、1つのツリーにつき最大10,000個のカテゴリーツリーと500個のカテゴリーをサポートできます。 詳しくは、[ マーチャンダイジングサービス開発者ガイド ](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#categories)の&#x200B;_カテゴリー_&#x200B;を参照してください。<!--DCAT-2649-->
+新しいカテゴリ REST APIが利用可能になり、管理者と開発者は、ナビゲーションと製品グループ化のために複数のカテゴリーツリーをプログラムで作成、更新、管理できるようになりました。 このAPIは、グローバル設定とチャネル固有の設定の両方をサポートし、高い拡張性を実現するように設計されており、1つのツリーにつき最大10,000個のカテゴリーツリーと500個のカテゴリーをサポートできます。 詳しくは、[&#x200B; マーチャンダイジングサービス開発者ガイド &#x200B;](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#categories)の&#x200B;_カテゴリー_&#x200B;を参照してください。<!--DCAT-2649-->
 
 {{aco-release}}
 
@@ -114,7 +114,7 @@ AIを活用したサイト最適化のレコメンデーションは、[Adobe Si
 * 管理者：`https://eu1.admin.commerce.adobe.com`
 * RESTとGraphQL: `https://eu1.api.commerce.adobe.com`
 
-![ インスタンスを作成](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
+![&#x200B; インスタンスを作成](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
 
 {{aco-release}}
 
