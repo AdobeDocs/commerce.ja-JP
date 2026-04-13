@@ -3,12 +3,12 @@ title: リリースノート
 description: ' [!DNL Adobe Commerce Optimizer]の最新のリリース情報。'
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
-source-git-commit: d0967674d05018f13dc6c8a562005d65d44e42ab
+source-git-commit: a42f6b3348eed476095c6d9777ac9486579fe6ea
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 0%
+source-wordcount: '461'
+ht-degree: 1%
 
 ---
 
@@ -22,21 +22,15 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-### カタログルール
+### カタログルール（ベータ版）
 
-マーチャンダイジングルールに[&#x200B; カテゴリルール &#x200B;](./merchandising/rules/add.md)が含まれるようになりました。これにより、検索と同じインテリジェントなランキングと手動アクション（ピン、ブースト、埋め込み）を使用して、1つ以上のカテゴリをターゲットにして、カテゴリページ上の商品の順序を制御できます。
+マーチャンダイジングルールに[ カテゴリルール ](./merchandising/rules/add.md)が含まれるようになりました。これにより、検索と同じインテリジェントなランキングと手動アクション（ピン、ブースト、埋め込み）を使用して、1つ以上のカテゴリをターゲットにして、カテゴリページ上の商品の順序を制御できます。
 
-### 価格フィルター
+### 価格フィルター（ベータ版）
 
 レコメンデーションフィルターは、商品の最低価格帯と最高価格帯の設定に使用できる[価格フィルター](./merchandising/recommendations/filters.md#price)をサポートするようになりました。
 
-### その他のリリースノート
-
-[!DNL Adobe Commerce Optimizer]は、AEM Assets統合の最新リリース、Commerce Optimizer コネクタ、および[!DNL Adobe Commerce Storefront]で動作します。 以下のリンクを使用して、各領域のリリースノートを表示します。
-
-| 拡張機能 | ストアフロント |
-| --- | --- |
-| [AEM Assetsとの統合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer コネクタ &#x200B;](../aco-connector/release-notes.md) | [&#x200B; ストアフロントのリリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=ja)<br>[&#x200B; ストアフロントの変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
 
@@ -46,15 +40,11 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-レコメンデーションユニットを[作成](./merchandising/recommendations/create.md)または[&#x200B; マーチャンダイジングルール &#x200B;](./merchandising/rules/add.md)するときに、カタログビューを指定する機能を追加しました。
+### マーチャンダイジングルールとレコメンデーションのカタログビュー（ベータ版）
 
-### その他のリリースノート
+レコメンデーションユニットを[作成](./merchandising/recommendations/create.md)または[ マーチャンダイジングルール ](./merchandising/rules/add.md)するときに、カタログビューを指定する機能を追加しました。
 
-[!DNL Adobe Commerce Optimizer]は、AEM Assets統合の最新リリース、Commerce Optimizer コネクタ、および[!DNL Adobe Commerce Storefront]で動作します。 以下のリンクを使用して、各領域のリリースノートを表示します。
-
-| 拡張機能 | ストアフロント |
-| --- | --- |
-| [AEM Assetsとの統合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer コネクタ &#x200B;](../aco-connector/release-notes.md) | [&#x200B; ストアフロントのリリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=ja)<br>[&#x200B; ストアフロントの変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
 
@@ -70,15 +60,9 @@ AIを活用したサイト最適化のレコメンデーションは、[Adobe Si
 
 ### カタログレイヤー
 
-[&#x200B; カタログレイヤー](./setup/catalog-layer.md)を追加しました。これにより、レイヤーの優先度管理やAdobe Sites Optimizerの自動修正機能との統合など、ソースデータを変更せずに商品データを変更できます。
+[ カタログレイヤー](./setup/catalog-layer.md)を追加しました。これにより、レイヤーの優先度管理やAdobe Sites Optimizerの自動修正機能との統合など、ソースデータを変更せずに商品データを変更できます。
 
-### その他のリリースノート
-
-[!DNL Adobe Commerce Optimizer]は、AEM Assets統合の最新リリース、Commerce Optimizer コネクタ、および[!DNL Adobe Commerce Storefront]で動作します。 以下のリンクを使用して、各領域のリリースノートを表示します。
-
-| 拡張機能 | ストアフロント |
-| --- | --- |
-| [AEM Assetsとの統合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer コネクタ &#x200B;](../aco-connector/release-notes.md) | [&#x200B; ストアフロントのリリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=ja)<br>[&#x200B; ストアフロントの変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
 
@@ -109,15 +93,9 @@ AIを活用したサイト最適化のレコメンデーションは、[Adobe Si
 
 ### カテゴリ API
 
-新しいカテゴリ REST APIが利用可能になり、管理者と開発者は、ナビゲーションと製品グループ化のために複数のカテゴリーツリーをプログラムで作成、更新、管理できるようになりました。 このAPIは、グローバル設定とチャネル固有の設定の両方をサポートし、高い拡張性を実現するように設計されており、1つのツリーにつき最大10,000個のカテゴリーツリーと500個のカテゴリーをサポートできます。 詳しくは、[&#x200B; マーチャンダイジングサービス開発者ガイド &#x200B;](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#categories)の&#x200B;_カテゴリー_&#x200B;を参照してください。<!--DCAT-2649-->
+新しいカテゴリ REST APIが利用可能になり、管理者と開発者は、ナビゲーションと製品グループ化のために複数のカテゴリーツリーをプログラムで作成、更新、管理できるようになりました。 このAPIは、グローバル設定とチャネル固有の設定の両方をサポートし、高い拡張性を実現するように設計されており、1つのツリーにつき最大10,000個のカテゴリーツリーと500個のカテゴリーをサポートできます。 詳しくは、[ マーチャンダイジングサービス開発者ガイド ](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#categories)の&#x200B;_カテゴリー_&#x200B;を参照してください。<!--DCAT-2649-->
 
-### その他のリリースノート
-
-[!DNL Adobe Commerce Optimizer]は、AEM Assets統合の最新リリース、Commerce Optimizer コネクタ、および[!DNL Adobe Commerce Storefront]で動作します。 以下のリンクを使用して、各領域のリリースノートを表示します。
-
-| 拡張機能 | ストアフロント |
-| --- | --- |
-| [AEM Assetsとの統合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer コネクタ &#x200B;](../aco-connector/release-notes.md) | [&#x200B; ストアフロントのリリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=ja)<br>[&#x200B; ストアフロントの変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
 
@@ -136,14 +114,8 @@ AIを活用したサイト最適化のレコメンデーションは、[Adobe Si
 * 管理者：`https://eu1.admin.commerce.adobe.com`
 * RESTとGraphQL: `https://eu1.api.commerce.adobe.com`
 
-![&#x200B; インスタンスを作成](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
+![ インスタンスを作成](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
 
-### その他のリリースノート
-
-[!DNL Adobe Commerce Optimizer]は、AEM Assets統合の最新リリース、Commerce Optimizer コネクタ、および[!DNL Adobe Commerce Storefront]で動作します。 以下のリンクを使用して、各領域のリリースノートを表示します。
-
-| 拡張機能 | ストアフロント |
-| --- | --- |
-| [AEM Assetsとの統合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer コネクタ &#x200B;](../aco-connector/release-notes.md) | [&#x200B; ストアフロントのリリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=ja)<br>[&#x200B; ストアフロントの変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja) |
+{{aco-release}}
 
 >[!ENDSHADEBOX]
