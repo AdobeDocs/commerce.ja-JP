@@ -24,7 +24,7 @@ ht-degree: 0%
 Adobe Commerce Optimizer コネクタは、Adobe Commerce（クラウドまたはオンプレミス）と[!DNL Adobe Commerce Optimizer]の間でカタログと価格データを同期するブリッジです。 コネクタを有効にすると、Commerceは商品データの記録システムのままになり、[!DNL Adobe Commerce Optimizer]は商品の検索、レコメンデーション、マーチャンダイジングルール、分析、ヘッドレスストアフロント体験を強化します。
 
 - [Adobe Commerce Optimizer コネクタの概要](../../aco-connector/overview.md){target="_blank"}
-- [ コネクタの使用を開始する](../../aco-connector/get-started.md){target="_blank"}
+- [&#x200B; コネクタの使用を開始する](../../aco-connector/get-started.md){target="_blank"}
 
 ## AEM Assetsを使用した製品ビジュアル {#product-visuals}
 
@@ -51,5 +51,5 @@ Commerce Salesforce Connector （Adobe App Builder上に構築）は、Salesforc
 
 >[!MORELIKETHIS]
 >
->- [Adobe Commerce Optimizer テクニカルドキュメント ](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+>- [Adobe Commerce Optimizer テクニカルドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 >- [Adobe Commerce Optimizerの基本を学ぶ](../get-started.md)

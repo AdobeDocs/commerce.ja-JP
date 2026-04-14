@@ -13,7 +13,7 @@ ht-degree: 12%
 
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [ [!DNL Adobe Commerce Optimizer]とは](overview.md)
+- [&#x200B; [!DNL Adobe Commerce Optimizer]とは](overview.md)
 - [基本を学ぶ](get-started.md)
 - [連携](./integrations/integrations-overview.md)
 - [ユーザーとIDの管理](user-management.md)
