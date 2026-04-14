@@ -1,34 +1,34 @@
 ---
-title: カスタムの自動照合
-description: カスタム自動照合が、複雑な照合ロジックを持つマーチャントや、メタデータをAEM Assetsに入力できないサードパーティシステムに依存するマーチャントにとって特に役立つ仕組みを説明します。
+title: カスタム自動一致
+description: カスタムの自動マッチングが、複雑なマッチングロジックを使用するマーチャントや、メタデータをAEM Assetsに入力できないサードパーティシステムに依存しているマーチャントにとって、特に有用である方法を説明します。
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: 6e8d266aeaec4d47b82b0779dfc3786ccaa7d83a
+source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
 
-# カスタムの自動照合
+# カスタム自動一致
 
-デフォルトの自動一致戦略（**OOTB 自動一致**）が特定のビジネス要件に合っていない場合は、「カスタム一致」オプションを選択します。 このオプションは、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAdobe Developer App Builderに入力できないサードパーティシステムからのアセットを開発する [0&rbrace;AEM Assets&rbrace; の使用をサポートします。](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)
+デフォルトの自動一致の戦略（**OOTB自動一致**）が特定のビジネス要件に一致しない場合は、「カスタム一致」オプションを選択します。 このオプションでは、[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)を使用して、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAEM Assetsに入力できないサードパーティシステムからのアセットを開発できます。
 
-## カスタムの自動照合を設定
+## カスタム自動マッチングの設定
 
-1. Commerce管理者から、**[!UICONTROL Store]** /設定/ **[!UICONTROL ADOBE SERVICES]** / **[!UICONTROL AEM Assets Integration]** に移動します。
+1. Commerce管理者から、**[!UICONTROL Store]** / 設定/ **[!UICONTROL ADOBE SERVICES]** / **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
 
-1. 一致ルールとして「**[!UICONTROL Custom Matcher]**」を選択します。
+1. 一致するルールとして&#x200B;**[!UICONTROL Custom Matcher]**&#x200B;を選択します。
 
-1. この一致ルールを選択すると、カスタム一致ロジックに必要な **認証パラメーター** および **エンドポイント** を設定するための追加フィールドが表示されます。
+1. この一致するルールを選択すると、管理者は、カスタムマッチングロジックに必要な&#x200B;**エンドポイント**&#x200B;と&#x200B;**認証パラメーター**&#x200B;を設定するための追加フィールドを表示します。
 
 ### workspace.json
 
-**[!UICONTROL Adobe I/O Workspace Configuration]** フィールドを使用すると、App Builder `workspace.json` 設定ファイルを読み込むことで、カスタムマッチャーを効率的に設定できます。
+**[!UICONTROL Adobe I/O Workspace Configuration]** フィールドでは、App Builder `workspace.json`設定ファイルを読み込むことで、カスタムマッチャーを効率的に設定できます。
 
-`workspace.json` ファイルは [1&rbrace;Adobe Developer Console&rbrace; からダウンロードできます。 &#x200B;](https://developer.adobe.com/console)このファイルには、App Builder Workspace のすべての資格情報と設定の詳細が含まれています。
+`workspace.json` ファイルは、[Adobe Developer Console](https://developer.adobe.com/console)からダウンロードできます。 このファイルには、App Builder ワークスペースのすべての資格情報と設定の詳細が含まれています。
 
-+++例 `workspace.json`
++++例`workspace.json`
 
 ```json
 {
@@ -97,31 +97,31 @@ ht-degree: 0%
 
 +++
 
-1. App Builder プロジェクトから `workspace.json` ファイルを「**[!UICONTROL Adobe I/O Workspace Configuration]**」フィールドにドラッグ&amp;ドロップします。 または、をクリックして、ファイルを参照して選択することもできます。
+1. App Builder プロジェクトから`workspace.json` ファイルを&#x200B;**[!UICONTROL Adobe I/O Workspace Configuration]** フィールドにドラッグ&amp;ドロップします。 または、をクリックしてファイルを参照し、選択することもできます。
 
-![Workspaceの設定 &#x200B;](../assets/workspace-configuration.png){width="600" zoomable="yes"}
+![Workspace Configuration](../assets/workspace-configuration.png){width="600" zoomable="yes"}
 
-1. システムは自動的に次の処理を行います。
+1. システムは自動的に：
 
-   * JSON 構造を検証します。
-   * OAuth 認証情報を抽出して入力します
-   * ワークスペースで使用可能な実行時アクションを取得します
-   * 「**[!UICONTROL Product to Asset URL]**」フィールドと「**[!UICONTROL Asset to Product URL]**」フィールドのドロップダウンオプションを入力します
+   * JSON構造を検証します
+   * OAuth資格情報を抽出して入力します
+   * ワークスペースで使用可能なランタイムアクションを取得します
+   * **[!UICONTROL Product to Asset URL]**&#x200B;および&#x200B;**[!UICONTROL Asset to Product URL]** フィールドのドロップダウンオプションを入力します
 
-1. 各フローのドロップダウンメニューから適切な実行時アクションを選択します。
+1. 各フローのドロップダウンメニューから適切なランタイムアクションを選択します。
 
-1. 「**[!UICONTROL Save Config]**」をクリックします。
+1. **[!UICONTROL Save Config]**&#x200B;をクリックします。
 
-## カスタムマッチャー API エンドポイント
+## カスタムマッチャーAPI エンドポイント
 
-[App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank} を使用してカスタムマッチャーアプリケーションを作成する場合、アプリケーションは次のエンドポイントを公開する必要があります。
+[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}を使用してカスタムマッチャーアプリケーションを構築する場合、アプリケーションは次のエンドポイントを公開する必要があります。
 
-* **App Builder asset to product URL** endpoint
-* **App Builder製品からアセットの URL** エンドポイント
+* **App Builder アセットから商品URL** エンドポイント
+* **App Builder製品からアセット URL** エンドポイント
 
-### App Builder asset to product URL endpoint
+### App Builderアセットから商品URLへのエンドポイント
 
-このエンドポイントは、特定のアセットに関連付けられた SKU のリストを取得します。
+このエンドポイントは、特定のアセットに関連付けられているSKUのリストを取得します。
 
 #### 使用例
 
@@ -170,8 +170,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 | パラメーター | データタイプ | 説明 |
 | --- | --- | --- |
-| `assetId` | 文字列 | 更新されたアセット ID を表します。 |
-| `eventData` | 文字列 | アセット ID に関連付けられたデータペイロードを返します。 |
+| `assetId` | 文字列 | 更新されたアセット IDを表します。 |
+| `eventData` | オブジェクト | アセットに関連付けられたイベントペイロード（たとえば、マッチャーが`eventData.assetMetadata`から読み取るアセットメタデータ）。 |
 
 **応答**
 
@@ -194,13 +194,13 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 | パラメーター | データタイプ | 説明 |
 | --- | --- | --- |
-| `asset_id` | 文字列 | 一致させるアセット ID。 |
+| `asset_id` | 文字列 | 一致するアセット ID。 |
 | `product_matches` | 配列 | アセットに関連付けられている製品のリスト。 |
-| `skip` | ブール値 | （任意） `true` の場合、ルールエンジンはこのアセットの同期をスキップします（製品マッピングは更新されません）。 `false` 省略すると、通常の処理が実行されます。 [&#x200B; 同期処理をスキップ &#x200B;](#skip-sync-processing) を参照してください。 |
+| `skip` | ブーリアン | （オプション） `true`の場合、ルールエンジンはこのアセットの同期をスキップします（製品マッピングの更新はありません）。 `false`または省略すると、通常の処理が実行されます。 [同期処理をスキップ ](#skip-sync-processing)を参照してください。 |
 
-### App Builder製品からアセット URL のエンドポイント
+### App Builderの商品からアセットへのURL エンドポイント
 
-このエンドポイントは、特定の SKU に関連付けられたアセットのリストを取得します。
+このエンドポイントは、特定のSKUに関連付けられているアセットのリストを取得します。
 
 #### 使用例
 
@@ -246,8 +246,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 
 | パラメーター | データタイプ | 説明 |
 | --- | --- | --- |
-| `productSKU` | 文字列 | 更新された製品 SKU を表します。 |
-| `eventData` | 文字列 | 製品 SKU に関連付けられているデータペイロードを返します。 |
+| `productSku` | 文字列 | 更新された製品SKUを表します。 |
+| `eventData` | オブジェクト | 製品に関連付けられたイベントペイロード（たとえば、マッチャーが受信イベントから使用するフィールド）。 |
 
 **応答**
 
@@ -274,21 +274,21 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 
 | パラメーター | データタイプ | 説明 |
 | --- | --- | --- |
-| `product_sku` | 文字列 | 照合する製品 SKU。 |
+| `product_sku` | 文字列 | 製品SKUが一致しています。 |
 | `asset_matches` | 配列 | 製品に関連付けられているアセットのリスト。 |
-| `skip` | ブール値 | （任意） `true` の場合、ルールエンジンはこの製品の同期をスキップします（アセットマッピングが更新されません）。 `false` 省略すると、通常の処理が実行されます。 [&#x200B; 同期処理をスキップ &#x200B;](#skip-sync-processing) を参照してください。 |
+| `skip` | ブーリアン | （オプション） `true`の場合、ルールエンジンはこの製品の同期をスキップします（アセットマッピングの更新はありません）。 `false`または省略すると、通常の処理が実行されます。 [同期処理をスキップ ](#skip-sync-processing)を参照してください。 |
 
-`asset_matches` パラメーターには、次の属性が含まれます。
+`asset_matches` パラメーターには、次の属性が含まれています。
 
 | 属性 | データタイプ | 説明 |
 | --- | --- | --- |
 | `asset_id` | 文字列 | アセット ID。 |
-| `asset_roles` | 配列 | アセットの役割。 [、](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)、`thumbnail`、`image` など `small_image` サポートされる `swatch_image`Commerce アセットの役割を使用します。 |
-| `asset_format` | 文字列 | アセットの形式。 使用可能な値は `image` および `video` です。 |
-| `asset_position` | 数値 | 商品ギャラリー内のアセットの位置。 |
+| `asset_roles` | 配列 | アセットの役割： [、](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)、`thumbnail`、`image`など、サポートされている`small_image`Commerce アセットの役割`swatch_image`を使用します。 |
+| `asset_format` | 文字列 | アセットの形式です。 指定できる値は`image`と`video`です。 |
+| `asset_position` | 数値 | 製品ギャラリー内のアセットの位置。 |
 
 ## 同期処理をスキップ
 
-`skip` パラメーターを使用すると、カスタムマッチャーで特定のアセットや製品の同期処理をバイパスできます。
+`skip` パラメーターを使用すると、カスタムマッチャーで特定のアセットまたは製品の同期処理をバイパスできます。
 
-App Builder アプリケーションが応答で `"skip": true` を返しても、ルールエンジンは、そのアセットまたは商品の API リクエストの更新または削除をCommerceに送信しません。 この最適化により、不要な API 呼び出しが減り、パフォーマンスが向上します。
+App Builder アプリケーションが応答で`"skip": true`を返す場合、ルールエンジンは、そのアセットまたは商品に対するAPI リクエストをCommerceに送信または削除しません。 この最適化により、不要なAPI呼び出しが減り、パフォーマンスが向上します。
