@@ -3,7 +3,7 @@ title: データの同期
 description: Commerce データソースから [!DNL Adobe Commerce Optimizer]に同期中のカタログデータを確認します。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
 source-git-commit: 604f46a65b2bfa84e1be07f410a4e36051eb1a29
 workflow-type: tm+mt

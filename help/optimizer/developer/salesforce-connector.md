@@ -15,7 +15,7 @@ Adobe App Builder テクノロジに基づいて構築された[!DNL Commerce Op
 
 すぐに使用できるコネクタを使用すれば、信頼性の高いデータ同期機能を実現し、ビジネスニーズに合わせてワークフローを柔軟にカスタマイズできます。
 
-エンドツーエンドのビデオチュートリアルシリーズについては、[Salesforce Commerce Cloud スターターキットについて説明](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)を参照してください。
+エンドツーエンドのビデオチュートリアルシリーズについては、[Salesforce Commerce Cloud スターターキットについて説明](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)を参照してください。
 
 >[!NOTE]
 >
