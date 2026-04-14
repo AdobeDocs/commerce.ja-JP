@@ -1,147 +1,151 @@
 ---
-title: Salesforce Commerce コネクタ
-description: Salesforce Commerce B2C と  [!DNL Commerce Optimizer SFCC Connector]  を統合してカタログデータを同期し、ビジネス運営をサポートするためにコネクタを実装およびカスタマイズするための出発点となる  [!DNL Adobe Commerce Optimizer]  について説明します。
+title: Salesforce Commerce Connector
+description: Salesforce Commerce B2Cと [!DNL Commerce Optimizer SFCC Connector] を統合してカタログデータを同期し、コネクタを実装およびカスタマイズして業務運営をサポートするための出発点となる [!DNL Adobe Commerce Optimizer] について説明します。
 role: Admin, Developer
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 0afa51c00ee52a9ff2f81d61cbbbf29378ab7ab3
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Commerce Optimizer] 用Salesforce Commerce コネクタ
+# [!DNL Adobe Commerce Optimizer]用Salesforce Commerce コネクタ
 
-Adobe App Builder テクノロジーに基づいて構築された [!DNL Commerce Optimizer Salesforce Commerce Connector] は、Salesforce Commerce Cloud B2C から [!DNL Adobe Commerce Optimizer] へのカタログデータのシームレスな転送および管理を可能にします。 プラットフォームを再構築することなく、製品情報、価格、更新を同期させて、両方のプラットフォームを橋渡しします。
+Adobe App Builder テクノロジに基づいて構築された[!DNL Commerce Optimizer Salesforce Commerce Connector]を使用すると、Salesforce Commerce Cloud B2Cから[!DNL Adobe Commerce Optimizer]へのカタログデータのシームレスな転送と管理が可能になります。 リプラットフォームすることなく、両方のプラットフォームを橋渡しし、製品情報、価格設定、アップデートを同期させます。
 
-標準で、信頼性の高いデータ同期機能と、ビジネスニーズに合わせてワークフローをカスタマイズする柔軟性を提供します。
+すぐに使用できるコネクタを使用すれば、信頼性の高いデータ同期機能を実現し、ビジネスニーズに合わせてワークフローを柔軟にカスタマイズできます。
 
-ビデオチュートリアルシリーズのエンドツーエンドについては、[Salesforce Commerce Cloud スターターキットの詳細 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview) を参照してください。
-
-## 主な機能
-
-* **カタログデータの同期：** バリエーション、価格台帳、構造などの製品データをSalesforce Commerce B2C から [!DNL Adobe Commerce Optimizer] にプッシュして、ストアフロントやエクスペリエンス駆動型アプリケーションを最新の状態に保ちます。
-* **価格同期：** Salesforce Commerce B2C から価格データを直接読み込んで管理します。
-* **複数のデータタイプをサポートします。** 製品、価格およびカタログ構造を同期して、複雑なマーチャンダイジング設定を反映させます。
-
-* **柔軟な同期ワークフロー**
-   * **スケジュールされた同期：** Cron ジョブスケジュールを使用して更新を自動化。手動で行う必要はありません。
-   * **オンデマンド更新：** 緊急の変更、修正、製品発売に対して、SKU レベルの更新を即座にトリガーします。
-
-* **拡張機能向けに構築**
-   * カスタムの [Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) （SCAPI）エンドポイントを使用して互換性を確保し、独自のユースケースや高度なユースケースに簡単に対応できます。
-   * カタログおよび価格の同期を使用してビジネスの開始に合わせて拡張してから、ワークフローを拡張して追加の統合やビジネスロジックをサポートします。
-   * コア統合を再構築することなく、ワークフローを設定し進化させます。
+エンドツーエンドのビデオチュートリアルシリーズについては、[Salesforce Commerce Cloud スターターキットについて説明](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)を参照してください。
 
 >[!NOTE]
 >
->コネクタは、Salesforce Commerce Cloud B2C 専用に設計されています。 異なるテクノロジースタック上に構築されているSalesforce B2B または D2C 製品はサポートしていません。
+>Adobe Commerce Optimizerで利用できるその他の統合機能の概要については、[統合機能](../integrations/integrations-overview.md)を参照してください。
 
-## Salesforce Connector のメリットは誰ですか？
+## 主な能力
 
-[!DNL Salesforce Commerce Connector] は、次の場合に最適です。
+* **カタログデータの同期：** Salesforce Commerce B2Cから[!DNL Adobe Commerce Optimizer]に商品データ（バリエーション、価格表、構造など）をプッシュして、ストアフロントとエクスペリエンス主導のアプリケーションを最新の状態に保ちます。
+* **価格同期：** Salesforce Commerce B2Cから直接価格データを読み込んで管理します。
+* **複数のデータ型をサポートしています：**&#x200B;複雑なマーチャンダイジング設定を反映するために、製品、価格設定、カタログ構造を同期します。
 
-* **Salesforce Commerce Cloud B2C の既存のお客様** ストアフロント機能の強化
-* **マルチブランド組織** 複数のストアフロントで高度なマーチャンダイジングとパーソナライゼーション機能が必要
-* **AdobeのEdge Delivery Servicesを利用してストアフロント体験を高速化し、パフォーマンスの向上を求める企業**
-* **複雑な価格体系を持つ企業** 高度な価格台帳と地域固有の価格設定を同期化
-* **AEMのお客様** Edge Delivery ServicesでAdobe Commerce ストアフロントを使用しながら、Salesforce Commerce B2C の製品カタログを管理しています
-* **マルチロケール要件を持つ小売業者** 市場や言語をまたいでローカライズされた製品情報を同期
+* **柔軟な同期ワークフロー**
+   * **スケジュールされた同期：** cron ジョブのスケジュールを使用して更新を自動化します。手作業は必要ありません。
+   * **オンデマンドの更新：**&#x200B;緊急の変更、修正、または製品の発表に関するSKU レベルの更新を即座にトリガーします。
+
+* **拡張性を重視して構築**
+   * カスタム [Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) （SCAPI）エンドポイントを使用して、互換性を確保し、独自または高度なユースケースに簡単に適応できます。
+   * カタログと価格同期を利用してビジネスを開始してから、ワークフローを拡張して他の統合やビジネスロジックに対応させることができます。
+   * 中核的な統合を再構築することなく、ワークフローを設定、進化できます。
+
+>[!NOTE]
+>
+>コネクタは、Salesforce Commerce Cloud B2C専用に設計されています。 異なるテクノロジースタック上に構築されたSalesforce B2BまたはD2C製品はサポートしていません。
+
+## Salesforce Connectorのメリットを教えてください。
+
+[!DNL Salesforce Commerce Connector]は次の用途に適しています。
+
+* **既存のSalesforce Commerce Cloud B2Cのお客様**&#x200B;がストアフロント機能を強化
+* 複数のストアフロントで高度なマーチャンダイジングとパーソナライゼーション機能を必要とする&#x200B;**マルチブランド組織**
+* **パフォーマンスの向上を求める企業**、より高速なストアフロント体験を実現するためにAdobe Edge Delivery Servicesを通じて
+* **複雑な価格構造を持つ企業**&#x200B;高度な価格表とロケール固有の価格設定を同期しています
+* **AEMのお客様**&#x200B;様は、Edge Delivery ServicesでAdobe Commerce ストアフロントを使用しながら、Salesforce Commerce B2Cから商品カタログを管理しています
+* **複数ロケールの要件を持つ小売業者**&#x200B;が、市場や言語をまたいでローカライズされた製品情報を同期しています
 
 ## ユースケース
 
-このコネクタは、次のようないくつかの主要なユースケースをサポートしています。
+コネクタは、いくつかの重要なユースケースをサポートしています。
 
-### カタログデータの取り込みとストアフロントの表示
+### カタログデータの取り込みとストアフロント表示
 
-この主な使用例では、Salesforce Commerce B2C からAdobe Commerce ストアフロントへのデータフロー全体を示します。
+この主なユースケースは、Salesforce Commerce B2CからAdobe Commerce ストアフロントへのデータフロー全体を示しています。
 
-1. **カタログの初回取り込み：** バリアント付きのシンプルな商品、価格台帳、価格情報を含む、Salesforce Commerce カタログ全体を一括で読み込みます。
-1. **差分の自動更新：** 製品の更新をSalesforce Commerce カタログ管理 UI から [!DNL Commerce Optimizer] に自動的に同期します。
-1. **ストアフロント統合：** ストアフロント API を使用して、Adobe Commerce Edge Delivery サービスのストアフロントに同期されたカタログデータ [!DNL Commerce Optimizer] 表示します。
-1. **リアルタイムの更新：** Salesforceで変更を加えた後、更新された商品情報（名前、価格、説明）をストアフロントですぐに表示します。
+1. **最初のカタログ取り込み：** バリエーション、価格表、価格情報を含むシンプルな商品を含む、Salesforce commerce カタログ全体を一括で読み込みます。
+1. **自動デルタ更新：** Salesforce Commerce カタログ管理UIから[!DNL Commerce Optimizer]に製品の更新を自動的に同期します。
+1. **ストアフロント統合：** [!DNL Commerce Optimizer]個のストアフロント APIを使用して、Adobe Commerce Edge Delivery Service ストアフロントに同期カタログデータを表示します。
+1. **リアルタイムの更新：** Salesforceで変更を加えた後、更新された製品情報（名前、価格、説明）をストアフロントですぐに確認できます。
 
-### マルチロケール製品の管理
+### 複数ロケールの製品管理
 
-Salesforce Commerce B2C ローカライゼーション機能の活用：
+Salesforce Commerce B2C ローカライズ機能を活用する：
 
-* 様々なロケールに対応する、Salesforce Commerce B2C のローカライズ版の製品テキストフィールド（名前、説明）を同期します。
-* Salesforce ロケールの概念 1:1 を [!DNL Commerce Optimizer] ロケールにマッピングします。
-* 異なるローカライゼーションに対して複数の製品取り込みサイクルをサポートします。
-* グローバル製品カタログ間の一貫性を維持します。
+* Salesforce Commerce B2Cの商品テキストフィールド（名前、説明）のローカライズ版を、異なるロケール向けに同期します。
+* Salesforce ロケールの概念1:1を[!DNL Commerce Optimizer] ロケールにマップします。
+* 様々なローカライゼーションで複数の製品取り込みサイクルをサポートします。
+* グローバル製品カタログ全体で一貫性を維持。
 
 ## アーキテクチャとコンポーネント
 
-この [!DNL SFCC Connector] は、Salesforce Commerce B2C インスタンスと [!DNL Commerce Optimizer] の間に堅牢な統合レイヤーを提供します。 コネクタは、カタログデータ、価格台帳、製品情報を転送する一連の同期アクションを通じて動作します。
+[!DNL SFCC Connector]は、Salesforce Commerce B2C インスタンスと[!DNL Commerce Optimizer]の間に堅牢な統合レイヤーを提供します。 コネクタは、カタログデータ、価格表、製品情報を転送する一連の同期アクションを通じて動作します。
 
-1. **データ抽出** - Salesforce Commerce B2C インスタンスで認証を行い、カスタム SCAPI API を使用してカタログデータを抽出します。
-1. **データ変換** -[!DNL Commerce Optimizer] のデータモデルおよびスキーマ要件に合わせて製品データを変換します。
-1. **Data Ingestion** - ACO TypeScript SDKを使用して、変換されたデータを [!DNL Commerce Optimizer] に安全に転送します。
-1. **ストアフロント統合** - ストアフロントエクスペリエンスの [!DNL Commerce Optimizer] API を使用して、同期されたデータを使用できるようになります。
+1. **データ抽出**:Salesforce Commerce B2C インスタンスで認証し、カスタム SCAPI APIを使用してカタログデータを抽出します。
+1. **データ変換** – 製品データを[!DNL Commerce Optimizer] データモデルとスキーマ要件に一致するように変換します。
+1. **Data Ingestion**:ACO TypeScript SDKを使用して、変換されたデータを[!DNL Commerce Optimizer]に安全に転送します。
+1. **ストアフロント統合** – 同期データは、[!DNL Commerce Optimizer]のAPIを通じてストアフロントエクスペリエンスで利用できるようになります。
 
-次の図は、統合の大まかなデータフローを示しています。
+次の図に、統合の概要データフローを示します。
 
-![Salesforce Commerce Connector のアーキテクチャ &#x200B;](../assets/sfcc_starter_kit.png){zoomable="yes"}
+![Salesforce Commerce Connector Architecture](../assets/sfcc_starter_kit.png){zoomable="yes"}
 
 ### 主要コンポーネント
 
-[!DNL Commerce Optimizer SFCC Connector] は、次のいくつかの主要コンポーネントで構成されます。
+[!DNL Commerce Optimizer SFCC Connector]は、いくつかの主要なコンポーネントで構成されています。
 
-* **ACO SFCC スターターキット App Builder アプリケーション** - SFCC と [!DNL Adobe Commerce Optimizer] の間のデータ同期を処理するサーバーレス関数を提供します。
-* **カスタム SFCC カートリッジ** - データ抽出に必要な API を使用してSalesforce Commerce Cloud インスタンスを拡張する必要なカートリッジ。
-* **管理 UI** – 同期ステータスの監視とコネクタ操作の管理を行う web インターフェイス。
+* **ACO SFCC スターターキット App Builder アプリケーション**-SFCCと[!DNL Adobe Commerce Optimizer]間のデータ同期を処理するサーバーレス関数を提供します。
+* **カスタム SFCC カートリッジ** - データ抽出に必要なAPIを使用してSalesforce Commerce Cloud インスタンスを拡張する必要なカートリッジ。
+* **管理UI** – 同期ステータスを監視し、コネクタ操作を管理するためのWeb インターフェイス。
 
 ### 同期プロセス
 
-コネクターは複数の同期モードをサポートしています。
+コネクタは複数の同期モードをサポートしています。
 
 | 同期モード | 説明 |
 |-----------|-------------|
-| **完全なサイト同期** | 設定済みのSalesforce Commerce Cloud サイトとロケールのすべての製品、価格台帳、価格を包括的に同期します。 これには以下が含まれます <ul><li>製品のメタデータと属性</li><li>カタログの構造とカテゴリ</li><li>価格帳簿</li><li>価格情報</li><li>マルチロケール製品データ</li></ul> |
-| **差分同期** | 前回の同期以降にSalesforceの商品と価格データに加えられた変更のみを取得して同期し、効率的でタイムリーな更新を確保します。<br> 差分同期は、データの鮮度を維持するために、スケジュールに従って自動的に実行されます（デフォルトは 1 時間ごと）。 |
-| **ターゲット同期オプション** | 次のようなきめ細かい同期機能を提供します。 <ul><li>**価格台帳同期** 価格台帳情報のみを同期します</li><li>**メタデータ同期** 製品のメタデータと属性定義を更新</li><li>**特定の製品同期** SKU 別に個々の製品を同期します</li></ul> |
+| **完全なサイト同期** | 設定したSalesforce Commerce Cloud サイトとロケールのすべての商品、価格表、価格を包括的に同期します。 これには次が含まれます <ul><li>製品のメタデータと属性</li><li>カタログ構造とカテゴリ</li><li>プライスブック</li><li>価格情報</li><li>マルチロケールの商品データ</li></ul> |
+| **デルタ同期** | 前回の同期以降にSalesforceの商品と価格データで行われた変更のみを取得して同期し、効率的でタイムリーな更新を実現します。<br>Delta同期は、データの鮮度を維持するために、スケジュールに従って自動的に実行されます（デフォルトは毎時間）。 |
+| **ターゲット同期オプション** | 詳細な同期機能を提供します。 <ul><li>**価格表同期**&#x200B;は価格表情報のみを同期します</li><li>**メタデータ同期**&#x200B;は、製品メタデータと属性定義を更新します</li><li>**特定の製品同期**&#x200B;は、SKUによって個々の製品を同期します</li></ul> |
 
-## 重要な考慮事項
+## 重要な検討事項
 
-実装を計画する際には、次の重要な要因を考慮します。
+CDPの導入を計画する際には、次の重要な要素を考慮してください。
 
 ### データマッピングと属性
 
-* **検索可能な属性：** Salesforce Commerce B2C は、UI を通じて検索可能な属性を設定しますが、これは API では公開されません。 [[!DNL Catalog Data Ingestion metadata APIs] で検索可能なこれらの属性を手動で設定するには、](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) [!DNL Adobe Commerce Optimizer] を使用します。
-* **属性マッピング：** ビジネス要件に基づいて、Salesforce Commerce B2C 製品属性のマッピングを [!DNL Commerce Optimizer] メタデータに計画します。
-* **デフォルトの検索可能なフィールド：** コネクタにより、コア属性（`name`、`description`、`ID`）がデフォルトで自動的に検索可能になります。
+* **検索可能な属性：** Salesforce Commerce B2Cは、APIが公開しないUIを使用して検索可能な属性を設定します。 [[!DNL Catalog Data Ingestion metadata APIs]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)を使用して、[!DNL Adobe Commerce Optimizer]でこれらの検索可能な属性を手動で設定します。
+* **属性マッピング：** ビジネス要件に基づいて、Salesforce Commerce B2C製品属性を[!DNL Commerce Optimizer] メタデータにマッピングすることを計画します。
+* **デフォルトの検索可能フィールド：** コネクタにより、コア属性（`name`、`description`、`ID`）がデフォルトで自動的に検索可能になります。
 
 ### 同期範囲
 
-* **サイトの選択：** Salesforce Commerce B2C には、カタログが接続するサイトの概念があります。 完全同期の際に、同期するSalesforce サイトを選択します。
-* **ロケール管理：** Salesforce Commerceの各ロケールが、[!DNL Commerce Optimizer] の個別の製品取り込みサイクルになります。
-* **データ量：** 実装を計画する際には、カタログのサイズと同期の頻度を考慮してください。
+* **サイト選択：** Salesforce Commerce B2Cには、カタログが添付されるサイトのコンセプトがあります。 完全同期中に、同期するSalesforce サイトを選択します。
+* **ロケール管理：**&#x200B;各Salesforce Commerce ロケールは、[!DNL Commerce Optimizer]で個別の製品取り込みサイクルになります。
+* **データ量：**&#x200B;実装を計画する際に、カタログのサイズと同期頻度を検討します。
 
-## 監視と管理
+## 追跡と管理
 
-インストールと設定が完了すると、[!DNL Commerce Optimizer SFCC Connector] は [!DNL SFCC to ACO Sync Panel] の機能を使用した包括的な監視および管理機能を提供します。
+インストールおよび設定が完了すると、[!DNL Commerce Optimizer SFCC Connector]は[!DNL SFCC to ACO Sync Panel]から包括的な監視および管理機能を提供します。
 
 ![Salesforce Commerce Connector Management UI](../assets/sfcc_management_ui.png){width="700" zoomable="yes"}
 
-このインターフェイスの URL は、[!DNL Commerce Optimizer SFCC Connector Starter Kit] をApp Builder プロジェクトにデプロイした後に指定されます。
+このインターフェイスのURLは、[!DNL Commerce Optimizer SFCC Connector Starter Kit]をApp Builder プロジェクトにデプロイした後に提供されます。
 
 主な機能は次のとおりです。
 
-* **同期ステータストラッキング：** すべての同期操作のステータスとタイムスタンプを監視します。
-* **接続の検証：** Salesforce Commerce Cloudと [!DNL Adobe Commerce Optimizer] の両方への接続をテストします。
-* **製品データの検証：** 同期された製品データがストアフロントに正しく表示されることを確認します。
-* **エラーログとトラブルシューティング：** トラブルシューティングのエラーログには、App Builder CLI からアクセスできます。
-* **状態管理：** 同期の進行状況を追跡し、ビルトインの状態管理との競合を防ぎます。
+* **同期ステータスの追跡：**&#x200B;すべての同期操作のステータスとタイムスタンプを監視します。
+* **接続性の検証：** Salesforce Commerce Cloudと[!DNL Adobe Commerce Optimizer]の両方への接続をテストします。
+* **製品データ検証：**&#x200B;同期された製品データがストアフロントに正しく表示されることを確認します。
+* **エラーログとトラブルシューティング：** トラブルシューティング用のエラーログには、App Builder CLIからアクセスできます。
+* **状態管理：**&#x200B;同期の進行状況を追跡し、組み込みの状態管理との競合を防ぎます。
 
-## Sourceのコードと開発のリソース
+## Sourceのコードと開発に関するリソース
 
-この [!DNL Commerce Optimizer SFCC Connector] はオープンソースで、カスタマイズできます。 主なリポジトリーには、次のものが含まれます。
+[!DNL Commerce Optimizer SFCC Connector]はオープンソースで、カスタマイズ可能です。 主要なリポジトリは次のとおりです。
 
-* **[ACO SFCC スターターキット &#x200B;](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** - メインコネクタアプリケーションとドキュメント。
-* **[ACO SFCC カートリッジ &#x200B;](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - API 統合に必要な SFCC カートリッジ。
-* **[ACO TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** - [!DNL Adobe Commerce Optimizer] 統合のためのSDK。
+* **[ACO SFCC スターターキット ](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** - メインコネクタ アプリケーションとドキュメント。
+* **[ACO SFCC カートリッジ ](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - API統合に必要なSFCC カートリッジ。
+* **[ACO TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** - [!DNL Adobe Commerce Optimizer]統合用SDK。
 
-これらのリポジトリは、完全なソースコード、詳細なドキュメント、およびコネクタの実装とカスタマイズの例を提供します。
+これらのリポジトリには、完全なソースコード、詳細なドキュメント、コネクタの実装とカスタマイズの例が用意されています。
 
-## 次の手順
+## 次のステップ
 
-Salesforce Commerce Cloud データを [!DNL Adobe Commerce Optimizer] と統合する準備はできていますか？ まず、[ACO SFCC スターターキットリポジトリ &#x200B;](https://github.com/adobe-commerce/aco-sfcc-starter-kit) の詳細な実装ガイドを確認し、必要な前提条件が整っていることを確認します。
+Salesforce Commerce Cloud データを[!DNL Adobe Commerce Optimizer]と統合する準備ができましたか？ まず、[ACO SFCC スターターキット リポジトリ ](https://github.com/adobe-commerce/aco-sfcc-starter-kit)の詳細な実装ガイドを確認し、必要な前提条件が整っていることを確認します。
