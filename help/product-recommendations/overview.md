@@ -23,7 +23,7 @@ ht-degree: 0%
 
 商品レコメンデーションは、「この商品を閲覧したお客様も閲覧した」などのラベル付きのユニットとしてストアフロントに表示されます。 Adobe Commerce管理者から直接、ストアビュー全体でレコメンデーションを作成、管理、デプロイできます。
 
-ストアフロントがPWA Studioを使用して実装されている場合は、[PWA ドキュメント ](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)を参照してください。 ReactやVue JSなどのカスタムフロントエンドテクノロジーを使用する場合は、[ ヘッドレスストアフロントに](headless.md) [!DNL Product Recommendations]を統合する方法を説明します。
+ストアフロントがPWA Studioを使用して実装されている場合は、[PWA ドキュメント &#x200B;](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)を参照してください。 ReactやVue JSなどのカスタムフロントエンドテクノロジーを使用する場合は、[&#x200B; ヘッドレスストアフロントに](headless.md) [!DNL Product Recommendations]を統合する方法を説明します。
 
 >[!NOTE]
 >
@@ -33,11 +33,11 @@ ht-degree: 0%
 
 [!DNL Product Recommendations]の目的でのデータ収集には、個人を特定できる情報（PII）は含まれません。 また、Cookie IDやIP アドレスなどのユーザーIDはすべて厳密に匿名化されています。 詳しくは、[Adobe プライバシーポリシー](https://www.adobe.com/privacy/policy.html)を参照してください。
 
-[!DNL Product Recommendations]人のユーザーは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)で、データの同期に関する詳細なデータを参照できます。
+[!DNL Product Recommendations]人のユーザーは、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)で、データの同期に関する詳細なデータを参照できます。
 
 ## 商品レコメンデーションと商品関係
 
-オンラインショッピングの複雑さが絶えず変化していることを考えると、ストアフロントで最も効果的なものは、複数の主要なテクノロジーの組み合わせであることが多いです。 [!DNL Product Recommendations]と[製品関係](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html)の両方を使用すると、製品のプロモーションをより柔軟に行うことができます。 Adobe AIが提供する[!DNL Product Recommendations]を活用して、大規模なレコメンデーションをインテリジェントに自動化できます。 次に、手動で介入して、ターゲットの買い物客セグメントに対して特定のレコメンデーションが行われていることを確認する必要がある場合、または特定のビジネス目標を達成する必要がある場合は、[関連製品ルール ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html)を活用できます。
+オンラインショッピングの複雑さが絶えず変化していることを考えると、ストアフロントで最も効果的なものは、複数の主要なテクノロジーの組み合わせであることが多いです。 [!DNL Product Recommendations]と[製品関係](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html)の両方を使用すると、製品のプロモーションをより柔軟に行うことができます。 Adobe AIが提供する[!DNL Product Recommendations]を活用して、大規模なレコメンデーションをインテリジェントに自動化できます。 次に、手動で介入して、ターゲットの買い物客セグメントに対して特定のレコメンデーションが行われていることを確認する必要がある場合、または特定のビジネス目標を達成する必要がある場合は、[関連製品ルール &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html)を活用できます。
 
 商品レコメンデーションを活用すると、以下のことが可能になります。
 
@@ -57,10 +57,10 @@ ht-degree: 0%
 
 ### 非アクティブなテスト環境
 
-テスト環境でカタログデータを再アクティブ化するには、[ サポートリクエスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Product Recommendations]」というタイトルで送信し、環境IDを含めます。 テスト環境のカタログデータは、数時間以内に復元する必要があります。
+テスト環境でカタログデータを再アクティブ化するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Product Recommendations]」というタイトルで送信し、環境IDを含めます。 テスト環境のカタログデータは、数時間以内に復元する必要があります。
 
 ### 空のカタログ
 
 環境に空のカタログが作成されてから45日後に存在する場合、カタログデータは休止モードに設定され、クエリに対してデータは返されません。 これには、実稼動環境とテスト環境の両方が含まれます。
 
-環境でカタログデータを再アクティブ化するには、[ サポートリクエスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Product Recommendations]」というタイトルで送信し、環境IDを含めます。 環境内のカタログデータは、数時間以内に復元する必要があります。
+環境でカタログデータを再アクティブ化するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Product Recommendations]」というタイトルで送信し、環境IDを含めます。 環境内のカタログデータは、数時間以内に復元する必要があります。

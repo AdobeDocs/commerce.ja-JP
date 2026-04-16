@@ -27,9 +27,9 @@ ht-degree: 1%
 
 ## デザイン
 
-アーキテクチャのAdobe Commerce側では、検索&#x200B;*管理者*&#x200B;のホスト、カタログデータの同期、クエリサービスの実行が含まれます。 [!DNL Live Search]をインストールして設定すると、Adobe Commerceは検索データとカタログデータのSaaS サービスとの共有を開始します。 この時点で、管理者ユーザーは、検索[ ファセット ](facets.md)、[類義語](synonyms.md)、[ マーチャンダイジングルール ](category-merch.md)を設定、カスタマイズ、管理できます。
+アーキテクチャのAdobe Commerce側では、検索&#x200B;*管理者*&#x200B;のホスト、カタログデータの同期、クエリサービスの実行が含まれます。 [!DNL Live Search]をインストールして設定すると、Adobe Commerceは検索データとカタログデータのSaaS サービスとの共有を開始します。 この時点で、管理者ユーザーは、検索[&#x200B; ファセット &#x200B;](facets.md)、[類義語](synonyms.md)、[&#x200B; マーチャンダイジングルール &#x200B;](category-merch.md)を設定、カスタマイズ、管理できます。
 
-![ ライブ検索データフロー](assets/ls-cs-data-flow.png)
+![&#x200B; ライブ検索データフロー](assets/ls-cs-data-flow.png)
 
 ## クイックツアー
 
@@ -37,21 +37,21 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-ライブサーチの使用と設定に関する詳細なビデオについては、[ [!DNL Live Search]の](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)完全デモを参照してください。
+ライブサーチの使用と設定に関する詳細なビデオについては、[&#x200B; [!DNL Live Search]の](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)完全デモを参照してください。
 
 ### 入力中に検索
 
-買い物客が[!DNL Live Search]検索[ ボックスにクエリを入力すると、](storefront-popover.md)様が[ ポップオーバー](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)で推奨商品とトップ検索結果のサムネイル画像を返します。 [商品の詳細](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) ページは、買い物客が推奨商品または特集商品をクリックすると表示されます。 ポップオーバーのフッターに&#x200B;_すべて表示_ リンクが表示され、検索結果ページが表示されます。
+買い物客が[!DNL Live Search]検索[&#x200B; ボックスにクエリを入力すると、](storefront-popover.md)様が[&#x200B; ポップオーバー](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)で推奨商品とトップ検索結果のサムネイル画像を返します。 [商品の詳細](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) ページは、買い物客が推奨商品または特集商品をクリックすると表示されます。 ポップオーバーのフッターに&#x200B;_すべて表示_ リンクが表示され、検索結果ページが表示されます。
 
 [!DNL Live Search]は、2文字以上のクエリに対して「入力中に検索」の結果を返します。 部分一致の場合、1語あたりの最大文字数は20文字です。 クエリ内の文字数は設定できません。 ポップオーバーには、`name`、`sku`、および`category_ids` フィールドが含まれています。
 
-![ ストアフロントの例 – 入力時に検索](assets/storefront-search-as-you-type.png)
+![&#x200B; ストアフロントの例 – 入力時に検索](assets/storefront-search-as-you-type.png)
 
 ### すべての検索結果を見る
 
 「入力中に検索」クエリによって返されたすべての製品を一覧表示するには、ポップオーバーのフッターで「_すべて表示_」をクリックします。
 
-![ ストアフロントの例 – 価格ファセット ](assets/storefront-view-all-search-results.png)
+![&#x200B; ストアフロントの例 – 価格ファセット &#x200B;](assets/storefront-view-all-search-results.png)
 
 ### [!DNL Live Search]でのタイプミスの処理方法
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ### ファセットを使用したフィルター検索
 
-フィルター検索では、検索条件として、属性値の複数のディメンション、つまり[ ファセット ](facets.md)を使用します。 フィルターの選択はマーチャントが定義し、返される商品に応じて変更します。最も一般的なファセットはリストの上部にピン留めされています。
+フィルター検索では、検索条件として、属性値の複数のディメンション、つまり[&#x200B; ファセット &#x200B;](facets.md)を使用します。 フィルターの選択はマーチャントが定義し、返される商品に応じて変更します。最も一般的なファセットはリストの上部にピン留めされています。
 
 ファセットをURL パラメーター`http://yourwebsite.com?color=red`として使用し、ライブ検索はこれらの属性値に基づいて結果をフィルタリングします。
 
@@ -77,21 +77,21 @@ ht-degree: 1%
 
 ### マーチャンダイジングルール
 
-マーチャンダイジング [ ルール ](rules.md)は、検索にロジックとイベントを追加するif-then ステートメントを使用して、ショッピング体験を形成します。 プロモーションや季節限定などの期間限定で、商品を簡単に強化したり埋めたりすることができます。
+マーチャンダイジング [&#x200B; ルール &#x200B;](rules.md)は、検索にロジックとイベントを追加するif-then ステートメントを使用して、ショッピング体験を形成します。 プロモーションや季節限定などの期間限定で、商品を簡単に強化したり埋めたりすることができます。
 
 ## ライブサーチのコンポーネント
 
-- [!DNL Live Search] [ ポップオーバーウィジェット ](storefront-popover.md)は、検索結果を含む検索フィールドの下に表示されるボックスです。
-- [製品リストページ ウィジェット ](plp-styling.md) （PLP）は、ファセットと同義語のサポートを備えた検索可能な製品リストページを提供します。 ウィジェットはLive Search 4.0.0以降にインストールされ、有効になり、検索アダプターに置き換わります。
-- （**非推奨**）検索アダプターはPLP ウィジェットの前身であり、ライブサーチ &lt; 4.0.0でインストールされました。4.0.0より前のバージョンのライブサーチを使用している場合、Commerceでは、PLP ウィジェット機能と今後の機能強化のメリットを受け取るためにアップグレードすることをお勧めします。 今後、検索アダプタは、セキュリティの問題に対処するためにのみ更新されます。 PLP ウィジェットへの移行について詳しくは、[移行ガイド ](migrate-to-plp.md)を参照してください。
+- [!DNL Live Search] [&#x200B; ポップオーバーウィジェット &#x200B;](storefront-popover.md)は、検索結果を含む検索フィールドの下に表示されるボックスです。
+- [製品リストページ ウィジェット &#x200B;](plp-styling.md) （PLP）は、ファセットと同義語のサポートを備えた検索可能な製品リストページを提供します。 ウィジェットはLive Search 4.0.0以降にインストールされ、有効になり、検索アダプターに置き換わります。
+- （**非推奨**）検索アダプターはPLP ウィジェットの前身であり、ライブサーチ &lt; 4.0.0でインストールされました。4.0.0より前のバージョンのライブサーチを使用している場合、Commerceでは、PLP ウィジェット機能と今後の機能強化のメリットを受け取るためにアップグレードすることをお勧めします。 今後、検索アダプタは、セキュリティの問題に対処するためにのみ更新されます。 PLP ウィジェットへの移行について詳しくは、[移行ガイド &#x200B;](migrate-to-plp.md)を参照してください。
 
 ## [!DNL Live Search] ワークスペース
 
-[!DNL Live Search] [ ワークスペース ](workspace.md)は、管理画面の領域で、類義語、ファセット、カテゴリ マーチャンダイジングなどの[!DNL Live Search]機能を設定します。
+[!DNL Live Search] [&#x200B; ワークスペース &#x200B;](workspace.md)は、管理画面の領域で、類義語、ファセット、カテゴリ マーチャンダイジングなどの[!DNL Live Search]機能を設定します。
 
 ## イベント
 
-[!DNL Live Search]では、[ イベント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)を使用して、[ インテリジェントマーチャンダイジング ](category-merch.md)および[ パフォーマンス ](performance.md)のダッシュボードを計算します。 イベントにはデフォルトの実装が用意されています。 ヘッドレスストアフロントのイベントは、手動で有効にする必要があります。
+[!DNL Live Search]では、[&#x200B; イベント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)を使用して、[&#x200B; インテリジェントマーチャンダイジング &#x200B;](category-merch.md)および[&#x200B; パフォーマンス &#x200B;](performance.md)のダッシュボードを計算します。 イベントにはデフォルトの実装が用意されています。 ヘッドレスストアフロントのイベントは、手動で有効にする必要があります。
 
 ## カタログデータ保持ポリシー
 
@@ -99,10 +99,10 @@ ht-degree: 1%
 
 ### 非アクティブなテスト環境
 
-テスト環境でカタログデータを再アクティブ化するには、[ サポートリクエスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Live Search]」というタイトルで送信し、環境IDを含めます。 テスト環境のカタログデータは、数時間以内に復元する必要があります。
+テスト環境でカタログデータを再アクティブ化するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Live Search]」というタイトルで送信し、環境IDを含めます。 テスト環境のカタログデータは、数時間以内に復元する必要があります。
 
 ### 空のカタログ
 
 環境に空のカタログが作成されてから45日後に存在する場合、カタログデータは休止モードに設定され、検索クエリに対してデータは返されません。 これには、実稼動環境とテスト環境の両方が含まれます。
 
-環境でカタログデータを再アクティブ化するには、[ サポートリクエスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Live Search]」というタイトルで送信し、環境IDを含めます。 環境内のカタログデータは、数時間以内に復元する必要があります。
+環境でカタログデータを再アクティブ化するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Live Search]」というタイトルで送信し、環境IDを含めます。 環境内のカタログデータは、数時間以内に復元する必要があります。
