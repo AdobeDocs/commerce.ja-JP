@@ -117,7 +117,7 @@ _2025年11月3日_
 - レイヤーマスクを使用したフィールドレベルのオーバーライドの制御
 - プレミアム、季節、モバイルに最適化されたコンテンツレイヤーのサポート
 
-  レイヤーは、既存の`products` クエリを使用して取得され、リクエストヘッダーからサーバーサイドで適用され、スキーマの変更は必要ありません。 [Adobe Commerce Optimizer ガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer)の&#x200B;_カタログ レイヤー_&#x200B;を参照してください。
+  レイヤーは、既存の`products` クエリを使用して取得され、リクエストヘッダーからサーバーサイドで適用され、スキーマの変更は必要ありません。 [Adobe Commerce Optimizer ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-layer)の&#x200B;_カタログ レイヤー_&#x200B;を参照してください。
 
 ![修正](../assets/fix.svg) グループ化された製品は、親に価格が設定されていない場合にクエリできるようになりました。子製品は、独自の表示役割を返します。<!--DATA-6779-->
 
@@ -228,7 +228,7 @@ _2025年7月15日_
 
 _2025年6月20日_
 
-![新規](../assets/new.svg) **階層価格表設定** – 親子価格表の正確な価格範囲。 計算では、階層と継承されたルールが尊重され、複数の価格表がリンクされている場合の価格エラーが軽減されます。 Adobe Commerce Optimizerのみ。 [価格表](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks)を参照してください。
+![新規](../assets/new.svg) **階層価格表設定** – 親子価格表の正確な価格範囲。 計算では、階層と継承されたルールが尊重され、複数の価格表がリンクされている場合の価格エラーが軽減されます。 Adobe Commerce Optimizerのみ。 [価格表](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/pricebooks)を参照してください。
 
 ![新規](../assets/new.svg) **大文字と小文字を区別しないキー** - クエリ内のキー検索では、大文字と小文字が区別されなくなりました。キーの大文字と小文字が区別されなくなりました。<!--DATA-6494, DCAT-2495-->
 
@@ -357,7 +357,7 @@ _2024年5月23日_
 
 ![修正](../assets/fix.svg) <!--DATA-5033--> オプション値の`InStock` フラグが、製品バリアントのスコープ付き`enabled` ステータスを尊重するようになりました。
 
-![修正](../assets/fix.svg) <!--DATA-5888-->最大16桁、小数点以下桁の製品価格のサポートを追加しました。 [&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)または[CLI](../landing/catalog-sync.md#command-line-interface)から再同期して、更新を適用します。
+![修正](../assets/fix.svg) <!--DATA-5888-->最大16桁、小数点以下桁の製品価格のサポートを追加しました。 [&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)または[CLI](../landing/catalog-sync.md#command-line-interface)から再同期して、更新を適用します。
 
 #### 既知の制限事項
 
@@ -391,7 +391,7 @@ _2024年2月22日_
 
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![新規](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)は、データストリーム（商品レコメンデーション、ライブサーチ、カタログサービス）で利用できるようになりました。 `catalog-service` メタパッケージ v3.1.0以降が必要です。
+![新規](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=ja)は、データストリーム（商品レコメンデーション、ライブサーチ、カタログサービス）で利用できるようになりました。 `catalog-service` メタパッケージ v3.1.0以降が必要です。
 
 ### v1.16 リリース
 
