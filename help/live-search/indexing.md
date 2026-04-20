@@ -1,7 +1,8 @@
 ---
 title: インデックス作成
-description: 製品属性プロパティ  [!DNL Live Search]  インデックスを作成する方法について説明します。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+description: 製品属性プロパティを [!DNL Live Search]  インデックス作成する方法について説明します。
+exl-id: 01cbbf56-2e12-4ad0-a56d-de0fe13df50f
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -10,49 +11,49 @@ ht-degree: 0%
 
 # インデックス作成
 
-[!DNL Live Search] のインデックス作成プロセスでは、カタログを読み取って製品属性を取得し、製品をすばやく検索、フィルタリング、提示できるようにインデックスを作成します。
+[!DNL Live Search]のインデックス作成プロセスでは、カタログ内の製品属性を読み取り、インデックスを作成して、製品を迅速に検索、フィルタリング、表示できるようにします。
 
-製品属性プロパティ（メタデータ）によって次が決まります。
+製品属性のプロパティ（メタデータ）により、次のことが決定されます。
 
 * カタログでの属性の使用方法
-* ストア内の外観と動作
+* 店舗での外観と行動
 * データ転送操作に含まれるデータ
 
-属性メタデータの範囲は `website/store/store view` です。
+属性メタデータの範囲は`website/store/store view`です。
 
-[!DNL Live Search] API を使用すると、クライアントは、Adobe Commerce管理で [storefront プロパティ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes) が `Yes` に設定されている任意の product 属性で並べ替え `Use in Search` ことができます。 有効にすると、属性に `Search Weight` を設定できます。
+[!DNL Live Search] APIを使用すると、クライアントは、Adobe Commerce Adminで[storefront プロパティ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search`が`Yes`に設定されている任意のproduct属性で並べ替えることができます。 有効にすると、属性に`Search Weight`を設定できます。
 
-[!DNL Live Search] は、削除された製品または `Not Visible Individually` に設定された製品のインデックスを作成しません。
+[!DNL Live Search]は、削除された製品または`Not Visible Individually`に設定された製品をインデックス付けしません。
 
 >[!NOTE]
 >
-> [!DNL Live Search] を使用するCommerceのお客様は、[SaaS 価格インデクサー &#x200B;](../price-index/price-indexing.md) を使用して、web サイトでの価格変更の更新と同期時間の高速化を活用できます。
+> [!DNL Live Search]をご利用のお客様は、[SaaS価格インデクサー](../price-index/price-indexing.md)を使用して、web サイトでの迅速な価格変更と同期時間を活用できます。
 
-## インデックス作成パイプライン
+## パイプラインのインデックス作成
 
-クライアントはストアフロントから検索サービスを呼び出して、（フィルタリング可能、並べ替え可能な）インデックスメタデータを取得します。 *レイヤーナビゲーションで使用* プロパティが `Filterable (with results)` に設定され、*製品リストで並べ替えに使用* が `Yes` に設定された検索可能な製品属性のみが、検索サービスによって呼び出すことができます。
+クライアントは、ストアフロントから検索サービスを呼び出し、（フィルタリング可能で並べ替え可能な）インデックスメタデータを取得します。 検索サービスは、*レイヤーナビゲーションで使用* プロパティが`Filterable (with results)`に設定され、*製品リストで並べ替えに使用*&#x200B;が`Yes`に設定されている検索可能な製品属性のみを呼び出すことができます。
 
-動的クエリを作成するには、検索サービスが検索可能な属性とその [&#x200B; 重み付け &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results) を把握している必要があります。 [!DNL Live Search] は、Adobe Commerce検索の重み付け（1 ～ 10、10 が最も優先度が高い）に従います。 カタログサービスで同期および共有されるデータのリストは、スキーマで見つけることができます。このスキーマは、次で定義されています。
+動的クエリを作成するには、検索サービスは、どの属性が検索可能で、[重み](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)を知っている必要があります。 [!DNL Live Search]はAdobe Commerce検索の重み付けを尊重します（1-10、10は最優先度）。 カタログサービスと同期および共有されるデータのリストは、スキーマで見つけることができます。スキーマは、次の場所で定義されています。
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
-![[!DNL Live Search] ンデックス作成クライアント検索図 &#x200B;](assets/indexing-pipeline.svg)
+![[!DNL Live Search] クライアント検索図のインデックス作成](assets/indexing-pipeline.svg)
 
-1. [!DNL Live Search] の使用権限についてマーチャントを確認してください。
-1. 属性メタデータの変更を含むストアビューを取得します。
+1. [!DNL Live Search]の使用権限について加盟店を確認します。
+1. 属性メタデータに変更を加えてストアビューを取得します。
 1. インデックス属性を保存します。
-1. 検索インデックスの再インデックスを実行します。
+1. 検索インデックスのインデックスを再作成します。
 
-### 完全インデックス
+### フルインデックス
 
-オンボーディング中に [!DNL Live Search] を設定して同期すると、初期インデックスの作成に最大 60 分かかる場合があります。 大規模なカタログのインデックス作成には時間がかかる場合があります。 このプロセスは、フィード `cron` 送信し、実行が完了した後に開始されます。
+[!DNL Live Search]が設定され、オンボーディング中に同期されると、最初のインデックスの作成に最大60分かかる場合があります。 大きなカタログのインデックス作成には時間がかかる場合があります。 プロセスは、`cron`がフィードを送信し、実行を完了した後に開始されます。
 
-次のイベントは、完全同期とインデックスのビルドをトリガーにします。
+次のイベントは、完全なシンクとインデックスのビルドをトリガーします。
 
-* オンボーディング [&#x200B; カタログデータ同期 &#x200B;](install.md#synchronize-catalog-data)
+* [ カタログデータ同期](install.md#sync)のオンボーディング
 * 属性メタデータの変更
 
-例えば、`color` 属性の `Use in Search` プロパティを `No` から `Yes` に変更すると、属性メタデータが `searchable=true` に変更され、フル同期と再インデックスがトリガーされます。 次の属性メタデータトリガーは、変更時に完全な同期と再インデックスを行います。
+例えば、`Use in Search`属性の`color` プロパティを`No`から`Yes`に変更すると、属性メタデータが`searchable=true`に変更され、完全な同期と再インデックスがトリガーされます。 次の属性メタデータは、完全な同期をトリガーし、変更されたときにインデックスを再作成します。
 
 * `filterableInSearch`
 * `searchable`
@@ -61,49 +62,49 @@ ht-degree: 0%
 
 ### 製品アップデートのストリーミング
 
-[&#x200B; オンボーディング &#x200B;](install.md#synchronize-catalog-data) 中に初期インデックスが作成されると、次の製品の増分更新が継続的に同期され、インデックスが再作成されます。
+[ オンボーディング ](install.md#sync)中に最初のインデックスが構築された後、次の製品の増分更新が継続的に同期され、インデックスが再作成されます。
 
-* カタログに新しい製品が追加されました
+* カタログに追加された新商品
 * 製品属性値の変更
 
-例えば、`color` 属性に新しいスウォッチ値を追加すると、ストリーミング製品の更新として処理されます。
+例えば、`color`属性に新しいスウォッチ値を追加すると、ストリーミング製品の更新として処理されます。
 
 ストリーミング更新ワークフロー：
 
-1. 更新された製品は、Adobe Commerce インスタンスからカタログサービスに同期されます。
-1. インデックス サービスは、カタログ サービスから製品の更新を継続的に検索します。 更新された製品には、カタログサービスに到着した時点でインデックスが付けられます。
-1. 製品アップデートが [!DNL Live Search] で使用可能になるまで、最大 15 分かかる場合があります。
+1. 更新された商品は、Adobe Commerce インスタンスからカタログサービスに同期されます。
+1. インデックスサービスは、カタログサービスから製品の更新を継続的に検索します。 更新された製品は、カタログサービスに到着すると、インデックスに登録されます。
+1. 製品の更新が[!DNL Live Search]で利用できるようになるまでに、最大15分かかる場合があります。
 
 #### 製品の表示に影響するアップデート
 
-[!DNL Live Search] Admin 設定、Adobe Commerce Admin 設定、またはカタログデータを更新した場合、それらの変更がストアフロントに表示されるまでに遅延が生じる可能性があります。
+[!DNL Live Search]管理者設定、Adobe Commerce管理者設定、またはカタログデータの更新を行う場合、これらの変更がストアフロントに表示されるまでに遅延が発生する可能性があります。
 
-次の表に、様々な変更と、ストアフロントに表示されるまでの待ち時間のおおよその値を示します。
+次の表に、様々な変更と、ストアフロントに表示されるまでの概算の待ち時間を示します。
 
-| 更新 | ストアフロントに表示されるまで遅延する |
+| 更新 | ストアフロントに表示されるまでの遅延時間 |
 |---|---|
-| [!DNL Live Search] Admin は、ファセット、価格設定、検索またはカテゴリマーチャンダイジングルールを変更しました。 | 15～20 分。 |
-| [!DNL Live Search] Admin で、インデックス再作成が必要な変更（言語設定または同義語）を行います。 | 再インデックスが完了してから最大 15 分後。 |
-| 完全な再インデックス（検索可能、並べ替え可能またはフィルタリング可能な属性メタデータ）を必要とするAdobe Commerce管理者の変更 | 再インデックスが完了してから最大 15 分後。 |
-| インデックス再作成を必要としないカタログデータの増分変更：製品在庫、価格、名前など。 | Elastic Search インデックスが最新のデータで更新されてから最大 15 分後。 |
+| ファセット、価格設定、検索またはカテゴリ マーチャンダイジングルールの[!DNL Live Search]管理者による変更。 | 15～20分。 |
+| インデックス再作成が必要な[!DNL Live Search]管理者の変更：言語設定または同義語。 | インデックス再作成が完了してから最大15分後です。 |
+| 完全なインデックス再作成が必要なAdobe Commerce管理者の変更：検索可能、並べ替え可能、またはフィルター可能な属性メタデータ | インデックス再作成が完了してから最大15分後です。 |
+| インデックス再作成が不要なカタログデータの増分変更（商品の在庫、価格、名前など）。 | Elastic Search インデックスが最新のデータで更新されてから最大15分後。 |
 
 ## クライアント検索
 
-[!DNL Live Search] API では、[storefront プロパティ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes)、*製品リストでの並べ替えに使用* を `Yes` に設定することで、クライアントは並べ替え可能な製品属性で並べ替えることができます。 テーマによっては、この設定を使用すると、カタログページ上の [&#x200B; 並べ替え基準 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/navigation/navigation) ページネーションコントロールに属性がオプションとして含められます。 検索およびフィルタリング可能な [&#x200B; ストアフロントプロパティ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes) を使用して、[!DNL Live Search] でインデックスを作成できる製品属性は最大 200 個です。
+[!DNL Live Search] APIを使用すると、[storefront プロパティ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)、*製品リスト*&#x200B;から`Yes`の並べ替えに使用されるプロパティを設定して、任意の並べ替え可能な製品属性でクライアントを並べ替えることができます。 テーマに応じて、この設定を使用すると、カタログ ページの[並べ替え](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation) ページネーション コントロールのオプションとして属性が含まれます。 最大200個の製品属性を[!DNL Live Search]でインデックス付けでき、検索可能でフィルタリング可能な[ ストアフロントプロパティ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)があります。
 
 インデックスメタデータはインデックスパイプラインに保存され、検索サービスからアクセスできます。
 
-イ ![[!DNL Live Search] デックスのメタデータ API の図 &#x200B;](assets/index-metadata-api.svg)
+![[!DNL Live Search] インデックス メタデータ API ダイアグラム ](assets/index-metadata-api.svg)
 
 ### 並べ替え可能な属性ワークフロー
 
-1. クライアントが検索サービスを呼び出します。
-1. Search サービスは、Search Admin Service を呼び出します。
-1. 検索サービスはインデックスパイプラインを呼び出します。
+1. クライアントは検索サービスを呼び出します。
+1. 検索サービスは、検索管理サービスを呼び出します。
+1. 検索サービスは、インデックスパイプラインを呼び出します。
 
-## すべての商品に対してインデックスを作成
+## すべての製品のインデックス
 
-このリストのフィールドの順序は、書き出された製品データの一般的な列の順序を反映しています。
+このリストのフィールドの順序は、書き出された製品データの列の一般的な順序を反映しています。
 
 * `environment_id`
 * `website_code`
@@ -130,6 +131,6 @@ ht-degree: 0%
 * `in_stock`
 * `low_stock`
 
-次のフィールドは、設定可能なすべての製品に対してインデックスが作成されています。
+次のフィールドは、設定可能なすべての製品に対してインデックスが作成されます。
 
 * `childrenSkus`

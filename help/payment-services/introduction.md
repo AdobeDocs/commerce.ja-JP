@@ -1,55 +1,55 @@
 ---
-title: 概要  [!DNL Payment Services]
-description: Web サイトに自動で堅牢で安全な支払  [!DNL Payment Services]  処理ソリューションをインストールして使用する方法について説明  [!DNL Adobe Commerce]  ま  [!DNL Magento Open Source] 。
+title: ' [!DNL Payment Services]の概要'
+description: ' [!DNL Payment Services] および [!DNL Adobe Commerce] のweb サイトのターンキーで堅牢かつ安全な決済処理ソリューションとして [!DNL Magento Open Source] をインストールして使用する方法について説明します。'
 role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+exl-id: 191467ab-4c5e-4df1-b423-7a470a4910ea
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
+# [!DNL Payment Services]の概要
 
-# [!DNL Payment Services] の概要
+Adobe CommerceおよびMagento Open Sourceの[!DNL Payment Services]は、Commerce web サイトに堅牢で安全な決済処理を提供するための、サンドボックステストやシンプルなセットアップなど、すぐに使えるセルフサービスソリューションです。
 
-Adobe CommerceとMagento Open Sourceの [!DNL Payment Services] は、Commerce web サイトに対して堅牢で安全な支払い処理を提供するための、サンドボックステストやシンプルなセットアップを含む、自動セルフサービスソリューションです。
-
-この支払いソリューションは、小規模ビジネス、中堅企業、大企業を問わず、運用にかかる諸経費の削減、収益の増加、買い物客エクスペリエンス全体の改善に役立つツールの提供に役立ちます。 [!DNL Payment Services] は、バージョン 2.4.7 以降の [!DNL Adobe Commerce] で標準で使用できます。
+小規模な企業、中規模の企業、大企業のいずれであっても、この決済ソリューションは、運用上のオーバーヘッドを削減し、売上を高め、買い物客全体を向上させるための便利なツールを提供します。 [!DNL Payment Services]は、バージョン 2.4.7以降、[!DNL Adobe Commerce]ですぐに利用できます。
 
 >[!BEGINSHADEBOX]
 
-支払いサービスは次のとおりです。
+決済サービスは：
 
-![&#x200B; チェック &#x200B;](assets/icon-check.png) 設定と保守が容易
+![check](assets/icon-check.png)設定とメンテナンスが簡単
 
-![&#x200B; チェック &#x200B;](assets/icon-check.png) 利益を最大化するように設計されています
+![check](assets/icon-check.png)あなたの利益を最大化するために設計
 
-![&#x200B; チェック &#x200B;](assets/icon-check.png) 安全かつセキュア
+![check](assets/icon-check.png)安全かつセキュア
 
-![&#x200B; チェック &#x200B;](assets/icon-check.png) お客様のすべての支払いニーズを満たすように設計
+![check](assets/icon-check.png)すべての支払いニーズを満たすように設計されています
 
-![&#x200B; チェック &#x200B;](assets/icon-check.png) 管理内で自己完結型
+![check](assets/icon-check.png)管理者内の自己完結型
 
 >[!ENDSHADEBOX]
 
 ## 機能
 
-Commerceの質の高いエクスペリエンスに対する需要は高く、統合された支払いプロセスはその実現に不可欠です。 決済や払い戻しから支払 [!DNL Payment Services] まで、オンラインチェックアウトのワンストップショップです。 購入者にとって最適なジャーニーを作成するために必要なinsightと制御を提供する強力なツールを提供します。
+Commerceの質の高い体験に対する需要は高く、それを実現するには、決済プロセスの統合が不可欠です。 [!DNL Payment Services]は、決済や返金から支払いの受け取りまで、すべてをカバーするオンラインチェックアウトのワンストップショップです。 また、バイヤーに最適なジャーニーを構築するために必要なinsightとコントロールを提供する強力なツールも備えています。
 
-[!DNL Payment Services] オファー：
+[!DNL Payment Services]件のオファー：
 
-1. **[支払いオプション](payments-options.md)** - デビットカードやクレジットカードのフィールド、デジタルウォレット、PayPal の製品やサービスなど、ストア（またはマルチストア）の顧客が使用できる方法をカスタマイズするための複数の支払いオプション。
+1. **[支払いオプション](payments-options.md)** - デビットカードやクレジットカードのフィールド、デジタルウォレット、PayPalの製品やサービスなど、複数の支払いオプションを使用して、ストア（またはマルチストア）のお客様が利用できる方法をカスタマイズします。
 
-1. **効率的なチェックアウト・エクスペリエンス**：迅速かつシンプルなチェックアウトに関する障壁を取り除き、[&#x200B; カード・ヴォールティング &#x200B;](vaulting.md) によって常連客を生み出します。
+1. **効率的なチェックアウトエクスペリエンス**：迅速でシンプルなチェックアウトの妨げになるものを取り除き、[ カードヴォールティング ](vaulting.md)でロイヤルティの高い顧客を作成します。
 
-1. **カスタマイズされたチェックアウトフロー** - コマースジャーニーの様々な段階でチェックアウトオプションを提供して、購入プロセス中の摩擦を減らし、コンバージョン率を高めます。
+1. **カスタマイズされたチェックアウトフロー**- コマースジャーニーのさまざまな段階でチェックアウトオプションを提供し、購入プロセスにおけるフリクションを減らし、コンバージョン率を高めることができます。
 
-1. **[GraphQLとのヘッドレス互換性 &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)** - マーチャントは、フロントエンド開発のために REST およびSOAP web API の代替手段を使用できます。
+1. **[GraphQLとのヘッドレス互換性](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)**：マーチャントには、フロントエンド開発用のRESTおよびSOAP web APIの代替手段があります。
 
-1. **財務報告** - [&#x200B; 支払いの詳細 &#x200B;](order-payment-status.md) と注文を同期して、処理済みのボリューム、支払い残高、[&#x200B; 支払い &#x200B;](payouts.md)、詳細な [&#x200B; トランザクションレベルのレポート &#x200B;](reporting.md) に対する完全な透明性を取得し、財務調整を行い、トランザクションの可視性を最大限に高めます。
+1. **財務報告** - [支払いの詳細](order-payment-status.md)を注文と同期することで、処理済み数量、支払い残高、[支払い](payouts.md)、詳細な[ トランザクションレベルのレポート ](reporting.md)に対する完全な透明性を取得し、財務調整とトランザクションの可視性を最大限に高めます。
 
 >[!NOTE]
 >
-> ここで説明する機能の一部は、まだ市場で利用できない場合があります。 詳しくは、[&#x200B; 互換性 &#x200B;](compatibility.md) を参照してください。
+> ここに記載されている機能の一部は、お客様の市場ではまだ利用できない場合があります。 詳しくは、[互換性](compatibility.md#standard-vs-advanced-payment-services-experience)を参照してください。

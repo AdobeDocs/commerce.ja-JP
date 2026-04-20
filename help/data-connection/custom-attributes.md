@@ -1,10 +1,10 @@
 ---
 title: 注文へのカスタム属性の追加
-description: バックオフィスデータにカスタム注文属性を追加し、それらの属性をExperience Platformに送信する方法を説明します。
+description: バックオフィスデータにカスタム注文属性を追加し、その属性をExperience Platformに送信する方法について説明します。
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
-source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 2%
@@ -13,39 +13,39 @@ ht-degree: 2%
 
 # 注文へのカスタム属性の追加
 
-この記事では、バックオフィスイベントにカスタム属性を追加する方法について説明します。 カスタム属性を使用すると、豊富なデータインサイトを取得して分析を強化し、買い物客向けにパーソナライズされたエクスペリエンスをさらに作成できます。
+この記事では、バックオフィスイベントにカスタム属性を追加する方法について説明します。 カスタム属性を使用すると、豊富なデータインサイトを取得して分析を強化し、買い物客にパーソナライズされた体験をさらに構築できます。
 
 >[!NOTE]
 >
->プロファイルに [&#x200B; カスタム ID を追加 &#x200B;](custom-identities.md) する方法を説明します。
+>プロファイルにカスタム ID[を](custom-identities.md)追加する方法について説明します。
 
-カスタム属性は、次の 2 つのレベルでサポートされます。
+カスタム属性は、次の2つのレベルでサポートされています。
 
 - 注文レベル
 - 注文品目レベル
 
 >[!NOTE]
 >
->Adobe [!DNL Commerce] は、文字列、ブール値または日付のデータタイプを持つカスタム属性をサポートしています。
+>Adobe [!DNL Commerce]は、文字列、ブール値、または日付のデータタイプを持つカスタム属性をサポートしています。
 
-バックオフィスイベントにカスタム属性を追加するには、次の操作が必要です。
+バックオフィスイベントにカスタム属性を追加するには、次の操作を行う必要があります。
 
-1. [!DNL Commerce] インストールにプロジェクトを作成します。
-1. 新しいカスタム属性がExperience Platformに適切に取り込まれるように、スキーマを更新します。
-1. 管理者で、カスタム属性が取り込まれてExperience Platformに送信されていることを確認します。
+1. [!DNL Commerce] インストールでプロジェクトを作成します。
+1. 新しいカスタム属性をExperience Platformに正しく取り込めるように、スキーマを更新します。
+1. 管理者で、カスタム属性がキャプチャされ、Experience Platformに送信されていることを確認します。
 
 >[!IMPORTANT]
 >
 >以下のディレクトリ構造とコードサンプルは、カスタム属性を実装する方法を示しています。 実際に必要なディレクトリ構造とコードは、ストアの設定と環境によって異なります。
 
-## 手順 1：ディレクトリ構造の作成
+## 手順1：ディレクトリ構造の作成
 
-1. `app/code` インストールの [!DNL Commerce] ディレクトリに移動し、モジュールディレクトリを作成します。 例：`Magento/AepCustomAttributes`。 このディレクトリには、カスタム アトリビュートに必要なファイルが含まれています。
-1. モジュールディレクトリに、`etc` というサブディレクトリを作成します。 `etc` ディレクトリには、`module.xml`、`query.xml`、`di.xml` および `et_schema.xml` ファイルが含まれます。
+1. `app/code` インストールの[!DNL Commerce] ディレクトリに移動し、モジュールディレクトリを作成します。 例：`Magento/AepCustomAttributes`。 このディレクトリには、カスタム属性に必要なファイルが含まれています。
+1. モジュールディレクトリに、`etc`というサブディレクトリを作成します。 `etc` ディレクトリには、`module.xml`、`query.xml`、`di.xml`および`et_schema.xml`個のファイルが含まれています。
 
-## 手順 2：依存関係とセットアップバージョンを定義する
+## 手順2：依存関係と設定バージョンの定義
 
-依存関係とセットアップバージョンを定義する `module.xml` ファイルを作成します。 例：
+依存関係と設定バージョンを定義する`module.xml` ファイルを作成します。 例：
 
 ```xml
 <?xml version="1.0"?>
@@ -58,9 +58,9 @@ ht-degree: 2%
 </config>
 ```
 
-## 手順 3：受注データの取得
+## 手順3：受注データの取得
 
-受注データを取得する `query.xml` ファイルを作成します。 例：
+販売注文データを取得する`query.xml` ファイルを作成します。 例：
 
 ```xml
 <?xml version="1.0"?>
@@ -78,9 +78,9 @@ ht-degree: 2%
   </config>
 ```
 
-## 手順 4：依存関係の挿入を設定する
+## 手順4：依存関係インジェクションの設定
 
-依存関係の挿入を設定する `di.xml` ファイルを作成します。 例：
+依存関係インジェクションを設定する`di.xml` ファイルを作成します。 例：
 
 ```xml
   <?xml version="1.0"?>
@@ -101,9 +101,9 @@ ht-degree: 2%
   </config>
 ```
 
-## 手順 5：依存関係の挿入に使用するサービスを定義する
+## 手順5：依存関係インジェクションに使用するサービスの定義
 
-依存関係の挿入に使用するサービスを定義する `et_schema.xml` ファイルを作成します。 例：
+依存関係インジェクションに使用されるサービスを定義する`et_schema.xml` ファイルを作成します。 例：
 
 ```xml
   <?xml version="1.0"?>
@@ -121,13 +121,13 @@ ht-degree: 2%
   </config>
 ```
 
-## 手順 6:PHP ファイル用のディレクトリの作成
+## 手順6:PHP ファイルのディレクトリを作成する
 
-`etc` ディレクトリと同じレベルに、`Module/Provider` という名前のディレクトリを作成します。 このディレクトリには、`OrderCustomAttributes` および `OrderItemCustomAttributes` の PHP ファイルが含まれています。
+`etc` ディレクトリと同じレベルで、`Module/Provider`という名前のディレクトリを作成します。 このディレクトリには、`OrderCustomAttributes`および`OrderItemCustomAttributes`個のPHP ファイルが含まれています。
 
-## 手順 7:OrderCustomAttributes の定義
+## 手順7:OrderCustomAttributesの定義
 
-順序のカスタム属性を定義する `OrderCustomAttributes.php` ファイルを作成します。 例：
+注文カスタム属性を定義する`OrderCustomAttributes.php` ファイルを作成します。 例：
 
 ```php
 declare(strict_types=1);
@@ -213,9 +213,9 @@ class CustomAttribute
 }
 ```
 
-## 手順 8: OrderItemCustomAttributes の定義
+## 手順8:OrderItemCustomAttributesの定義
 
-注文項目のカスタム属性を定義する `OrderItemCustomAttributes.php` ファイルを作成します。 例：
+注文項目のカスタム属性を定義する`OrderItemCustomAttributes.php` ファイルを作成します。 例：
 
 ```php
 declare(strict_types=1);
@@ -295,13 +295,13 @@ class OrderItemCustomAttribute
 }
 ```
 
-## 手順 9:productContext ファイルのディレクトリの作成
+## 手順9:productContext ファイルのディレクトリを作成する
 
-`etc` ディレクトリと同じレベルに、`Plugin/Module` という名前のディレクトリを作成します。 このディレクトリには `ProductContext.php` ファイルが含まれています。
+`etc` ディレクトリと同じレベルで、`Plugin/Module`という名前のディレクトリを作成します。 このディレクトリには`ProductContext.php` ファイルが含まれています。
 
-## 手順 10:ProductContext クラスの定義
+## 手順10:ProductContext クラスの定義
 
-`ProductContext.php` クラスを定義する `ProductContext` というファイルを作成します。 例：
+`ProductContext.php` クラスを定義する`ProductContext`という名前のファイルを作成します。 例：
 
 ```php
 <?php>
@@ -328,9 +328,9 @@ class ProductContext
   }
 ```
 
-## 手順 11：モジュールを登録
+## 手順11：モジュールの登録
 
-`etc` ディレクトリと同じレベルで、モジュールを登録する `registration.php` ファイルを作成します。 例：
+`etc` ディレクトリと同じレベルで、モジュールを登録する`registration.php` ファイルを作成します。 例：
 
 ```php
 <?php>
@@ -345,32 +345,32 @@ ComponentRegistrar::register(
 );
 ```
 
-## 手順 12：既存の XDM スキーマを拡張する
+## 手順12：既存のXDM スキーマの拡張
 
-新しいカスタム注文属性をExperience Platformの [!DNL Commerce] スキーマで確実に取り込めるようにするには、スキーマを拡張してこれらのカスタムフィールドを含める必要があります。
+新しいカスタム注文属性をExperience Platformの[!DNL Commerce] スキーマで取り込むことができるようにするには、スキーマを拡張してこれらのカスタムフィールドを含める必要があります。
 
-既存の XDM スキーマを拡張してこれらのカスタムフィールドを含める方法については、Experience Platform ドキュメントの [UI でのスキーマの作成と編集 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) の記事を参照してください。 テナント ID フィールドは動的に生成されますが、フィールド構造はExperience Platformのドキュメントで提供されている例に類似している必要があります。
+既存のXDM スキーマを拡張してこれらのカスタムフィールドを含める方法については、Experience Platform ドキュメントの「[UIでのスキーマの作成と編集」を参照してください。 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)テナント ID フィールドは動的に生成されますが、フィールド構造はExperience Platform ドキュメントに記載されている例に似ている必要があります。
 
 >[!IMPORTANT]
 >
->XDM カスタム属性は、[!DNL Commerce] から送信された属性と一致する必要があります。
+>XDM カスタム属性は、[!DNL Commerce]から送信された属性と一致する必要があります。
 
-`commerce.order` に、注文レベルのフィールドを追加します。
+`commerce.order`に、注文レベルのフィールドを追加します。
 
-![&#x200B; 注文レベル &#x200B;](assets/order-level.png)
+![注文レベル ](assets/order-level.png)
 
-`productListItems` に、注文項目レベルのフィールドを追加します。
+`productListItems`に、注文項目レベルのフィールドを追加します：
 
-![&#x200B; 注文品目レベル &#x200B;](assets/order-item-level.png)
+![注文品目レベル ](assets/order-item-level.png)
 
-## 手順 12：データがキャプチャされていることを確認する
+## 手順12：データがキャプチャされていることを確認する
 
-管理者の「[&#x200B; データのカスタマイズ &#x200B;](connect-data.md#data-customization)」タブを表示し、カスタム属性データがキャプチャされてExperience Platformに送信されていることを確認します。
+管理者の「[Data Customization](connect-data.md#data-customization)」タブを表示して、カスタム属性データがキャプチャされ、Experience Platformに送信されていることを確認します。
 
 ### トラブルシューティング
 
-「`No custom order attributes found.`」タブにメッセージ **[!UICONTROL Data Customization]** が表示された場合は、次の確認を行ってください。
+「`No custom order attributes found.`」タブに「**[!UICONTROL Data Customization]**」というメッセージが表示された場合は、次の点を確認してください。
 
-1. [&#x200B; データコネクタ拡張機能 &#x200B;](overview.md#prerequisites) を有効にするための前提条件は完了しています。
-1. [&#x200B; カスタム注文属性 &#x200B;](#add-custom-order-attributes) を設定しました。
-1. 1 つ以上の注文イベントが生成されています。
+1. [Data Connector拡張機能](overview.md#prerequisites)を有効にするための前提条件が完了しました。
+1. [ カスタム注文属性](#add-custom-attributes-to-orders)を設定しました。
+1. 少なくとも1つの注文イベントが生成されました。

@@ -1,85 +1,85 @@
 ---
-title: クレジットカードの保管
-description: 買い物客は、今後の購入のためにクレジットカードの詳細をヴォールティング（保存）できます。
+title: クレジットカードのヴォールティング
+description: 買い物客は、将来の購入のためにクレジットカードの詳細を保管（保存）することができます。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
-# クレジットカードの保管
+# クレジットカードのヴォールティング
 
-クレジットカードヴォールティングを使用して、1 回限りの買い物客を常連客に変換します。 ログイン済みのお客様は、同じマーチャントアカウント内の同じ店舗または別の店舗で後で購入する際に使用するために、クレジットカード資格情報を保存（または「vault」）することができます。
+クレジットカードのヴォールティングで、1回限りの買い物客をロイヤル顧客に変える。 ログインした顧客は、クレジットカードの資格情報を保存して、後で同じアカウントまたは別のアカウントで購入する際に、同じアカウント内に保存できます（または「保管」）。
 
-## ボルトを有効にする
+## 保管を有効にする
 
-マーチャントは、[!DNL Payment Services] 設定 [&#x200B; でストアのクレジットカードヴォールティングを有効にでき &#x200B;](configure-admin.md#card-vaulting) す。
+加盟店は、[!DNL Payment Services] [設定](configure-admin.md#card-vaulting)で店舗のクレジットカードの保管を有効にできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Sales]**/**[!UICONTROL Payment Services]** に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**&#x200B;に移動します。
 
-1. 「**[!UICONTROL Settings]**」をクリックします。
+1. **[!UICONTROL Settings]**&#x200B;をクリックします。
 
-1. **[!UICONTROL Vault enabled]** セレクターを切り替えます。 詳しくは、[&#x200B; 有効にする  [!DNL Payment Services]](configure-admin.md#enable-payment-services) を参照してください。
+1. **[!UICONTROL Vault enabled]** セレクターを切り替えます。 詳しくは、[有効にする [!DNL Payment Services]](configure-admin.md#enable-payment-services)を参照してください。
 
-## 購入なしのヴォールティング
+## 購入せずに保管
 
-ログイン済みのお客様は、次の方法で **マイアカウント** ダッシュボードの支払い方法をヴォールティングできます。
+ログインしたお客様は、次の方法で&#x200B;**マイアカウント** ダッシュボードに支払い方法を保管できます。
 
-1. ストアフロントで **マイアカウント** にログインします。
+1. ストアフロントの&#x200B;**マイアカウント**&#x200B;にログインします。
 
-1. 左側のナビゲーションの **[!UICONTROL Stored Payment Methods]** に移動すると、保存されているすべての支払い方法が表示されます。
+1. 左側のナビゲーションの&#x200B;**[!UICONTROL Stored Payment Methods]**&#x200B;に移動して、保存されているすべての支払い方法を表示します。
 
-   詳しくは、[&#x200B; 保管済支払方法 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/payments/stored-payment-methods) を参照してください。
+   詳しくは、[ ストアド支払い方法](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods)を参照してください。
 
-1. 顧客は、**[!UICONTROL Add New Card]** をクリックして新しいカードを保存します。
+1. お客様は&#x200B;**[!UICONTROL Add New Card]**&#x200B;をクリックして新しいカードを保存します。
 
-   ![&#x200B; 新しいカードを追加 &#x200B;](assets/add-new-card.png){width="400" zoomable="yes"}
+   ![新しいカードを追加](assets/add-new-card.png){width="400" zoomable="yes"}
 
-   お客様は、支払い方法をヴォールティングするために、カードや請求情報など、必要なすべての詳細を提供する必要があります。
-ヴォールティングされたすべての支払い方法は、買い物客の PayPal アカウントでカードをヴォールティングする際に設定された請求先住所を使用します。 お客様には、Commerceに表示される請求先住所とは異なる請求先住所が表示される場合があります。
+   お客様は、支払い方法を保管するために、カードや請求情報など、必要なすべての詳細を提供する必要があります。
+ヴォールトされたすべての支払い方法では、買い物客のPayPal アカウントにあるカードをヴォールトする際に、請求先住所セットを使用します。 Commerceに表示されている請求先住所とは異なる請求先住所が表示される場合があります。
 
-1. **[!UICONTROL Save New Card]** をクリック
+1. **[!UICONTROL Save New Card]**&#x200B;をクリック
 
-   ![&#x200B; マイアカウントに保存されているお支払い方法 &#x200B;](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+   ![自分のアカウントに支払い方法を保存](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
-保存されたカードは、注文する際に使用できます。
+ストアドカードは、注文の際に使用できます。
 
-![&#x200B; 今後の購入のために保存された資格情報を使用する &#x200B;](assets/use-stored-card.png){width="400" zoomable="yes"}
+![今後の購入に保存された資格情報を使用](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-### 保存されている支払方法の削除
+### 保存されている支払い方法の削除
 
-お客様は、特定のカードに対して **削除** をクリックすることで、**マイアカウント** の **保存された支払い方法** から簡単にヴォールトされたクレジットカードを削除できます。
+お客様は、特定のカードの「**削除**」をクリックすると、**マイアカウント**&#x200B;の&#x200B;**ストアド支払い方法**&#x200B;から有料支払いカードを簡単に削除できます。
 
-## チェックアウト時の支払方法のヴォールティング
+## チェックアウト時に支払い方法を検討する
 
-ログイン済みのお客様は、チェックアウト時にクレジットカードをヴォールティングし、現在の店舗または同じマーチャントアカウント内の他の店舗での後の購入に使用できます。
+ログインしたお客様は、チェックアウト時にクレジットカードを保管し、現在の店舗または同じ加盟店アカウント内の他の店舗で後で購入する際に使用できます。
 
-![&#x200B; 後で使用するためにクレジットカードをヴォールティングする &#x200B;](assets/save-card-for-later.png){width="400" zoomable="yes"}
+![後で使用するためにクレジットカードを保管する](assets/save-card-for-later.png){width="400" zoomable="yes"}
 
-Commerceには、保存されたクレジットカード情報を取得して今後のチェックアウトを完了するのに役立つトークンが格納されています。 顧客アカウントから、またはチェックアウト中にカードをヴォールティングすると、異なる支払いトークンが発生します。
+Commerceには、保存されたクレジットカード情報を取得することで、今後のチェックアウトを完了するのに役立つトークンが保存されています。 顧客アカウントやチェックアウト時にカードを保管すると、支払いトークンが異なります。
 
 >[!WARNING]
 >
-> PayPal は現在、最大 5 枚のボルト付きカードを保存できます。
+> PayPalは現在、最大5枚のヴォールトカードを保存できます。
 
-## 管理者でボルトを使用
+## 管理者でVaultingを使用する
 
-お客様が以前にヴォールティングされたクレジットカードを持っている場合、マーチャントは、これらのヴォールティングされた支払い方法のいずれかを使用して、管理者でその顧客の後続の注文を作成できます。
+顧客が以前にヴォールトしたクレジットカードを持っている場合、マーチャントはAdminでこれらのヴォールトした支払い方法のいずれかを使用して、その顧客の後続の注文を作成できます。
 
-管理者でボルト付きカードを使用できるのは、顧客が既存のアカウントと、以前に完了した支払いからシステムに保存された有効なトークンの両方を持っている場合のみです。
+Adminでヴォールトカードを使用できるのは、お客様が既存のアカウントと、以前に完了した支払いからシステムに保存されている有効なトークンの両方を持っている場合のみです。
 
-ボールトに保管されたクレジット・カードを使用して顧客の受注を管理で作成する手順は、次のとおりです。
+管理画面で、保管されているクレジットカードを使用して顧客の注文を作成するには：
 
-1. [&#x200B; 注文を作成して製品を追加する &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=ja)。
-1. _[!UICONTROL Payment & Shipping Information]_&#x200B;で、支払方法として&#x200B;**[!UICONTROL Stored Cards]**&#x200B;を選択します。
-1. 目的のボルト付きクレジットカードの支払方法を選択します。
-1. 注文に必要なその他の手順を完了したら、[&#x200B; 送信 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=ja#step-3%3A-submit-the-order) します。
+1. [注文を作成して商品を追加](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html)。
+1. _[!UICONTROL Payment & Shipping Information]_で、支払い方法として&#x200B;**[!UICONTROL Stored Cards]**を選択します。
+1. 希望するアーチ付きクレジットカードの支払い方法を選択します。
+1. 注文に必要なその他の手順を完了した後、[それを送信](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order)。
 
-   ![&#x200B; 管理者がボルト化されたクレジットカードを顧客に使用 &#x200B;](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
+   ![管理者で顧客に対して保管されているクレジットカードを使用](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## セキュリティ
 
-最小限のクレジットカード情報は、買い物客と共有され、保管されたクレジットカードの最後の 4 桁、有効期限、ブランドのみが表示されます。 クレジットカード情報は、[PCI](security.md#PCI-compliance) コンプライアンス基準を満たすために支払いプロバイダーに保存されます。
+最小限のクレジットカード情報は買い物客と共有され、最後の4桁、有効期限、ヴォールトしたクレジットカードのブランドのみが表示されます。 クレジットカード情報は、決済代行会社と共に保存され、[PCI](security.md#pci-compliance)のコンプライアンス基準を満たします。
