@@ -195,7 +195,7 @@ Commerceは既に過去の注文データを収集していますが、そのデ
 
 このビデオでは、過去の注文について詳しく説明し、次の手順を完了して過去の注文収集を実装します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
+>[!VIDEO](https://video.tv.adobe.com/v/3450228?captions=jpn)
 
 #### Order Sync サービスの設定
 
