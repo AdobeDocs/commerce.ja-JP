@@ -19,7 +19,7 @@ Adobe Commerce Optimizer コネクタは、Adobe Commerce オンクラウド イ
 
 Adobe Commerce Optimizer コネクタは、次の図に示すように、Commerce web サイトとストアビューをCommerce Optimizer プロジェクトにマッピングすることで機能します。
 
-![Commerce データのAdobe Commerce Optimizerへのマッピング ](./assets/storeview-to-catalogview-mapping.png){width="700" zoomable="yes"}
+![Commerce データのAdobe Commerce Optimizerへのマッピング &#x200B;](./assets/storeview-to-catalogview-mapping.png){width="700" zoomable="yes"}
 
 データがCommerceからCommerce Optimizerに書き出される場合：
 
@@ -28,7 +28,7 @@ Adobe Commerce Optimizer コネクタは、次の図に示すように、Commerc
 
 関連するカタログと価格データが書き出され、後でカタログビューを作成し、オプションでポリシーを定義して、特定のビジネスユースケースのカタログと価格データをフィルタリングします。
 
-コネクタが有効になっている場合は、[[!DNL Adobe Commerce Optimizer]  マーチャンダイジングツール ](../optimizer/overview.md#quick-tour)を使用して、商品の発見とレコメンデーションのルールのマーチャンダイジングルールを設定および管理することもできます。Adobe Commerce インスタンスは、カタログと価格データのデータソースになります。 Commerceでデータが更新されると、更新は[!DNL Adobe Commerce Optimizer] インスタンスに同期されます。
+コネクタが有効になっている場合は、[[!DNL Adobe Commerce Optimizer]  マーチャンダイジングツール &#x200B;](../optimizer/overview.md#quick-tour)を使用して、商品の発見とレコメンデーションのルールのマーチャンダイジングルールを設定および管理することもできます。Adobe Commerce インスタンスは、カタログと価格データのデータソースになります。 Commerceでデータが更新されると、更新は[!DNL Adobe Commerce Optimizer] インスタンスに同期されます。
 
 ## ワークフロー
 

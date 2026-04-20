@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # 実稼動用に[!DNL Payment Services]を有効にする
 
-このトピックの手順に従って、サービスを実稼動環境に入れ、[ オンボーディングプロセス ](onboard.md)を完了できます。次の手順を実行します。
+このトピックの手順に従って、サービスを実稼動環境に入れ、[&#x200B; オンボーディングプロセス &#x200B;](onboard.md)を完了できます。次の手順を実行します。
 
-* [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} [決済サービス拡張機能をインストール ](install.md)
-* [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} [ インスタンスの設定と接続](connect.md)
-* [ サンドボックスを設定](sandbox.md)して[ テスト ](test-validate.md)します
+* [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} [決済サービス拡張機能をインストール &#x200B;](install.md)
+* [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} [&#x200B; インスタンスの設定と接続](connect.md)
+* [&#x200B; サンドボックスを設定](sandbox.md)して[&#x200B; テスト &#x200B;](test-validate.md)します
 
 ## [!DNL Payment Services]を支払方法として設定
 
-[Commerce サービス ](connect.md#configure-commerce-services)を設定し、[ サンドボックステスト ](sandbox.md#sandbox-onboarding)または[ ライブ支払い](#enable-live-payments)のいずれかを有効にした後、支払い方法として[!DNL Payment Services]を設定する必要があります。
+[Commerce サービス &#x200B;](connect.md#configure-commerce-services)を設定し、[&#x200B; サンドボックステスト &#x200B;](sandbox.md#sandbox-onboarding)または[&#x200B; ライブ支払い](#enable-live-payments)のいずれかを有効にした後、支払い方法として[!DNL Payment Services]を設定する必要があります。
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**&#x200B;に移動します。
 1. **[!UICONTROL Enable Payment Services]**&#x200B;をクリックします。
@@ -29,8 +29,8 @@ ht-degree: 0%
 
    関連するオプションが展開されたホームビューの設定領域（**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_）に移動します。ここで、[!DNL Payment Services] オプションを[支払い方法](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}として有効にできます。
 
-1. _[!UICONTROL General Configuration]_で、**[!UICONTROL Enable]**を`Yes`に設定します。
-1. **[!UICONTROL Payment Action]**&#x200B;と&#x200B;_[!UICONTROL Credit Card Fields]_の_[!UICONTROL PayPal payment buttons]_&#x200B;を次のいずれかに設定します。
+1. _[!UICONTROL General Configuration]_&#x200B;で、**[!UICONTROL Enable]**&#x200B;を`Yes`に設定します。
+1. **[!UICONTROL Payment Action]**&#x200B;と&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;の_[!UICONTROL PayPal payment buttons]_&#x200B;を次のいずれかに設定します。
 
    | 設定 | 説明 |
    |---|---|
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Save]**&#x200B;をクリックします。
 1. **[!UICONTROL Go to Payment Services]**&#x200B;をクリックして、[!DNL Payment Services] ホームに戻ります。
-1. [ キャッシュをクリア ](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html)。
+1. [&#x200B; キャッシュをクリア &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html)。
 
    設定を変更するたびに消去を実行する必要があります。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 店舗で決済サービスを利用できるようにするための次のステップは、ライブオンボーディングを完了することです。
 
-決済サービスでは、お客様が運営する国と希望する支払い体験に応じて、[**Advanced** （完全サポート）および&#x200B;**Standard** （Express Checkout）の支払いオプション ](../payment-services/payments-options.md#standard-vs-advanced-payments-experience)とオンボーディングフローを提供しています。
+決済サービスでは、お客様が運営する国と希望する支払い体験に応じて、[**Advanced** （完全サポート）および&#x200B;**Standard** （Express Checkout）の支払いオプション &#x200B;](../payment-services/payments-options.md#standard-vs-advanced-payments-experience)とオンボーディングフローを提供しています。
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**&#x200B;に移動します。
 1. **[!UICONTROL Live onboarding]**&#x200B;をクリックします。
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ### 標準オンボーディング
 
-この標準オンボーディングフローは、[Express チェックアウトサポート ](compatibility.md#accepted-credit-cards-and-currencies)のみが提供されている利用可能な国のマーチャントに対して利用できます。
+この標準オンボーディングフローは、[Express チェックアウトサポート &#x200B;](compatibility.md#accepted-credit-cards-and-currencies)のみが提供されている利用可能な国のマーチャントに対して利用できます。
 
 国を選択した後：
 
@@ -99,13 +99,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->[Appleの支払いフィールドとクレジットカードのフィールド ](../payment-services/payments-options.md)は、**標準オンボーディング**&#x200B;では使用できません。
+>[Appleの支払いフィールドとクレジットカードのフィールド &#x200B;](../payment-services/payments-options.md)は、**標準オンボーディング**&#x200B;では使用できません。
 
 ## メールアドレスを確認
 
 1. 管理者サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**&#x200B;に移動します
 
-   _[!UICONTROL Live onboarding]_ボタンが表示されなくなり、「[!UICONTROL Live payments pending]」テキストボックスが表示されます。
+   _[!UICONTROL Live onboarding]_&#x200B;ボタンが表示されなくなり、「[!UICONTROL Live payments pending]」テキストボックスが表示されます。
 
    このテキストボックスでは、オンボーディングを完了するために、PayPalでメールアドレスを確認するように求められる場合もあります。
 
@@ -142,10 +142,10 @@ ht-degree: 0%
 [!DNL Payment Services] _販売者ID_&#x200B;を取得：
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**&#x200B;に移動します。
-1. ホーム ビューで、**[!UICONTROL Settings]**&#x200B;をクリックします。 詳しくは、[ ホーム ](payments-home.md)を参照してください。
+1. ホーム ビューで、**[!UICONTROL Settings]**&#x200B;をクリックします。 詳しくは、[&#x200B; ホーム &#x200B;](payments-home.md)を参照してください。
 1. 必要な&#x200B;_Merchant ID_&#x200B;を選択し、営業担当者に送信します。営業担当者は、適切な価格帯を設定します。
 
-支払いトランザクションについて詳しくは、[ レベル 2およびレベル 3の処理](levels-card-payment-transactions.md)を参照してください。
+支払いトランザクションについて詳しくは、[&#x200B; レベル 2およびレベル 3の処理](levels-card-payment-transactions.md)を参照してください。
 
 ## ライブ決済を有効にする
 
@@ -154,10 +154,10 @@ _実稼動用マーチャント ID_&#x200B;が自動生成され、[設定](conf
 ライブ決済を有効にする：
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**&#x200B;に移動します。
-1. ホームで、ページの右上にある「**[!UICONTROL Settings]**」をクリックします。 詳しくは、[ ホーム ](payments-home.md)を参照してください。
-1. _[!UICONTROL General Configuration]_セクションで、**[!UICONTROL Payment mode]**を`Production`に設定します。
+1. ホームで、ページの右上にある「**[!UICONTROL Settings]**」をクリックします。 詳しくは、[&#x200B; ホーム &#x200B;](payments-home.md)を参照してください。
+1. _[!UICONTROL General Configuration]_&#x200B;セクションで、**[!UICONTROL Payment mode]**&#x200B;を`Production`に設定します。
 1. **[!UICONTROL Save]**&#x200B;をクリックします。
-1. [ キャッシュをクリア ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
+1. [&#x200B; キャッシュをクリア &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
 
    >[!IMPORTANT]
    >
@@ -175,4 +175,4 @@ _実稼動用マーチャント ID_&#x200B;が自動生成され、[設定](conf
 
 この機能を買い物客に公開する前に、実際のクレジットカードや銀行を使用して、実稼動環境で支払いをテストすることを強くお勧めします。
 
-詳しくは、[ テストと検証](test-validate.md)を参照してください。
+詳しくは、[&#x200B; テストと検証](test-validate.md)を参照してください。

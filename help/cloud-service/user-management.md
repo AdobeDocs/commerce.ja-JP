@@ -21,9 +21,9 @@ ht-degree: 0%
 
 >[!TIP]
 >
->複数のユーザーを同時に追加するには、[一括CSV アップロード ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}を実行できます。
+>複数のユーザーを同時に追加するには、[一括CSV アップロード &#x200B;](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}を実行できます。
 >
-> [ ユーザーグループ ](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}を作成して、役割に複数のユーザーを追加することもできます。 次に、適切な商品をユーザーグループに追加します。
+> [&#x200B; ユーザーグループ &#x200B;](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}を作成して、役割に複数のユーザーを追加することもできます。 次に、適切な商品をユーザーグループに追加します。
 
 ## 役割について
 
@@ -39,14 +39,14 @@ ht-degree: 0%
   >
   >Commerce管理者へのアクセスをIP アドレスで制限する場合は、[IP アドレスで製品アクセスを制限](https://helpx.adobe.com/enterprise/using/ip-based-access.html){target="_blank"}を参照してください。
 
-* [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}：開発者にはユーザー権限があり、開発者ユーザーとしてCommerce インスタンスに追加されます。 [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[ イベントの設定](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}、[webhookの作成](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}を使用できます。
+* [**Developers**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}：開発者にはユーザー権限があり、開発者ユーザーとしてCommerce インスタンスに追加されます。 [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[&#x200B; イベントの設定](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}、[webhookの作成](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}を使用できます。
 
 * 管理者 – 管理者には3つの種類があります。
-   * [ システム管理者](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Admin Consoleを通じて、組織内のすべての製品および製品プロファイルにアクセスできます。
+   * [&#x200B; システム管理者](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Admin Consoleを通じて、組織内のすべての製品および製品プロファイルにアクセスできます。
    * [製品管理者](#add-a-product-admin) – 製品管理者は、[の製品](#add-users)のユーザー、ロール、権限を[!DNL Adobe Admin Console]管理し、[Commerce管理者](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}のユーザーを管理できます。
    * [製品プロファイル管理者](#add-developers-and-product-profile-admins) – 製品プロファイル管理者はAdobe Commerce管理者にアクセスできませんが、[!DNL Adobe Admin Console]で製品のユーザーを管理できます。
 
-Adobe Commerce内の各ロールに付与される権限について詳しくは、[ ロールリソース ](#role-resources)を参照してください。
+Adobe Commerce内の各ロールに付与される権限について詳しくは、[&#x200B; ロールリソース &#x200B;](#role-resources)を参照してください。
 
 ## 製品管理者の追加
 
@@ -54,7 +54,7 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 
 >[!NOTE]
 >
->製品管理者として追加する前に、製品管理者に[ ユーザーの役割](#add-users)を割り当てます。 Commerceの基本権限には、ユーザーロールが必要です。
+>製品管理者として追加する前に、製品管理者に[&#x200B; ユーザーの役割](#add-users)を割り当てます。 Commerceの基本権限には、ユーザーロールが必要です。
 
 >[!TAB GA （2025年10月13日（PT）以降にプロビジョニング） ]
 
@@ -156,7 +156,7 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 
 ### 開発者と製品プロファイル管理者の追加
 
-開発者と製品プロファイル管理者を追加するには、[ ユーザーを追加](#add-users) プロセスを繰り返しますが、[!UICONTROL **ユーザー**] タブの代わりに&#x200B;[!UICONTROL **開発者**]&#x200B;または&#x200B;[!UICONTROL **管理者**] タブを選択します。
+開発者と製品プロファイル管理者を追加するには、[&#x200B; ユーザーを追加](#add-users) プロセスを繰り返しますが、[!UICONTROL **ユーザー**] タブの代わりに&#x200B;[!UICONTROL **開発者**]&#x200B;または&#x200B;[!UICONTROL **管理者**] タブを選択します。
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 >
 >開発者として追加する前に、開発者にユーザーの役割を割り当てます。 Commerceの基本権限には、ユーザーロールが必要です。
 
-Admin Consoleの「![開発者と管理者」タブのオプション ](./assets/tab-select.png){width="600" zoomable="yes"}
+Admin Consoleの「![開発者と管理者」タブのオプション &#x200B;](./assets/tab-select.png){width="600" zoomable="yes"}
 
 ## 役割のリソース
 
@@ -233,9 +233,9 @@ Admin Consoleの「![開発者と管理者」タブのオプション ](./assets
 
 >[!TIP]
 >
->複数のユーザーを同時に追加するには、[一括CSV アップロード ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}を実行できます。
+>複数のユーザーを同時に追加するには、[一括CSV アップロード &#x200B;](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}を実行できます。
 >
->[ ユーザーグループ ](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}を作成して、役割に複数のユーザーを追加することもできます。 次に、[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;商品をユーザーグループに追加できます。
+>[&#x200B; ユーザーグループ &#x200B;](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}を作成して、役割に複数のユーザーを追加することもできます。 次に、[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;商品をユーザーグループに追加できます。
 
 1. <https://adminconsole.adobe.com>に移動し、Adobe IDでログインします。
 
@@ -243,7 +243,7 @@ Admin Consoleの「![開発者と管理者」タブのオプション ](./assets
 
 1. [!UICONTROL **製品**] タブの&#x200B;[!UICONTROL **製品とサービス**]&#x200B;で、[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;製品を選択します。
 
-   ![Admin ConsoleでのAEM Cloud Managerの商品セレクション ](./assets/backend-aem.png){width="600" zoomable="yes"}
+   ![Admin ConsoleでのAEM Cloud Managerの商品セレクション &#x200B;](./assets/backend-aem.png){width="600" zoomable="yes"}
 
 1. 「[!UICONTROL **ユーザー**]」タブを選択します。
 
@@ -262,9 +262,9 @@ Admin Consoleの「![開発者と管理者」タブのオプション ](./assets
 
    >[!NOTE]
    >
-   >これらの権限が[!DNL AEM Assets]へのアクセスにどのように影響するかについては、[Cloud Manager製品プロファイル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}を参照してください。
+   >これらの権限が[!DNL AEM Assets]へのアクセスにどのように影響するかについては、[Cloud Manager製品プロファイル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}を参照してください。
 
-   Commerce AdminのAsset Selectorおよび自動入力された設定フィールド（プログラム ID、Environment ID、Domain mapping）の場合、ユーザーには&#x200B;**AEM Assets DM OpenAPI Users - delivery**&#x200B;製品プロファイルも必要です。 詳しくは、[ ユーザー権限とIMS](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"}を参照してください。
+   Commerce AdminのAsset Selectorおよび自動入力された設定フィールド（プログラム ID、Environment ID、Domain mapping）の場合、ユーザーには&#x200B;**AEM Assets DM OpenAPI Users - delivery**&#x200B;製品プロファイルも必要です。 詳しくは、[&#x200B; ユーザー権限とIMS](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"}を参照してください。
 
 1. 「[!UICONTROL **適用**]」をクリックします。
 
@@ -272,7 +272,7 @@ Admin Consoleの「![開発者と管理者」タブのオプション ](./assets
 
 ユーザーにアクセス権があることを確認するには、ユーザーの名前をクリックしてプロファイルページを開きます。 [!UICONTROL **製品**] セクションでは、[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;製品の下の&#x200B;[!UICONTROL **完了済み**]&#x200B;と表示する必要があります。 ユーザーを追加してプロファイルでステータスが更新されるのを確認するには、数秒かかる場合があります。 ページを更新して、更新されたステータスを確認します。
 
-完了製品のアクセス状態を表示する![ ユーザープロファイル ](./assets/product-access.png){width="600" zoomable="yes"}
+完了製品のアクセス状態を表示する![&#x200B; ユーザープロファイル &#x200B;](./assets/product-access.png){width="600" zoomable="yes"}
 
 ## Experience Managerのインターフェイスにアクセス
 
@@ -293,7 +293,7 @@ Admin Consoleの「![開発者と管理者」タブのオプション ](./assets
 1. [製品プロファイルにユーザーを追加](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}。
 
 * [Commerce メタデータをサポートするように [!DNL AEM Assets] 設定](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
-* [ アセットの同期のために [!DNL AEM Assets] Commerceと統合](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
+* [&#x200B; アセットの同期のために [!DNL AEM Assets] Commerceと統合](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
 
 {{aem-assets-instance-mapping}}
 

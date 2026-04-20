@@ -20,11 +20,11 @@ ht-degree: 1%
 
 ![新機能](../assets/new.svg) – 新機能
 ![修正](../assets/fix.svg) – 修正と改善
-![ バグ ](../assets/bug.svg) – 既知の問題
+![&#x200B; バグ &#x200B;](../assets/bug.svg) – 既知の問題
 
 [!DNL Data Connection]拡張機能で使用される拡張機能に関連する機能の変更と修正については、**サポートされているサービスの更新**&#x200B;を参照してください。
 
-リリーススケジュールとサポートについて詳しくは、[今後のリリース ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)を参照してください。
+リリーススケジュールとサポートについて詳しくは、[今後のリリース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)を参照してください。
 
 [このモジュールをサポートするCommerceのバージョンについては、開発者向けドキュメントを参照してください](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 _2025年8月7日_
 
-![新規](../assets/new.svg) - 3.3.0 リリースでは、[ カスタム属性をプロファイル ](custom-identities.md)に追加できるようになりました。
+![新規](../assets/new.svg) - 3.3.0 リリースでは、[&#x200B; カスタム属性をプロファイル &#x200B;](custom-identities.md)に追加できるようになりました。
 
 _2024年8月2日_
 
@@ -77,8 +77,8 @@ _2023年3月30日_
 
 _2022年10月12日_
 
-![新規](../assets/new.svg) - 2つの[ ストアフロントイベント ](events.md)、`openCart`および`removeFromCart`をAdobe Commerce Storefront Events SDKおよびCollectorに追加しました。
-![新規](../assets/new.svg) - [AEM ストアフロント ](overview.md#supported-architecture)のサポートを追加しました。
+![新規](../assets/new.svg) - 2つの[&#x200B; ストアフロントイベント &#x200B;](events.md)、`openCart`および`removeFromCart`をAdobe Commerce Storefront Events SDKおよびCollectorに追加しました。
+![新規](../assets/new.svg) - [AEM ストアフロント &#x200B;](overview.md#supported-architecture)のサポートを追加しました。
 
 +++
 
@@ -121,7 +121,7 @@ _2024年10月7日_
 
 [!BADGE 互換性]{type=Informative tooltip="互換性"} Adobe Commerce バージョン 2.4.4以降
 
-![新規](../assets/new.svg) - バックオフィス データに[ カスタム注文属性](custom-attributes.md)を作成する機能を追加しました。
+![新規](../assets/new.svg) - バックオフィス データに[&#x200B; カスタム注文属性](custom-attributes.md)を作成する機能を追加しました。
 ![新規](../assets/new.svg) - [で設定され、Experience Platformに送信されたカスタム属性を表示するために、新しい](connect-data.md#data-customization) カスタム注文属性[!DNL Commerce] テーブルを追加しました。
 ![新規](../assets/new.svg) - プロファイルレコード [とデータを](connect-data.md#send-customer-profile-data)収集してExperience Platformに送信する機能を追加しました。
 
@@ -204,7 +204,7 @@ _2023年10月10日_
 
 _2023年6月27日_
 
-[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
 
 ![新規](../assets/new.svg) - Experience Platformへのストアフロントイベント [の送信を](connect-data.md#data-collection) オフにする機能を追加しました。
 ![修正](../assets/fix.svg) - コンテンツセキュリティポリシー設定を更新しました。
@@ -215,24 +215,24 @@ _2023年6月27日_
 
 _2023年6月13日_
 
-[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
 
-![新規](../assets/new.svg) - （Beta）過去の注文[ データとステータスを](connect-data.md#send-historical-order-data)Experience Platformに送信する機能を追加しました。
+![新規](../assets/new.svg) - （Beta）過去の注文[&#x200B; データとステータスを](connect-data.md#send-historical-order-data)Experience Platformに送信する機能を追加しました。
 
 ## 2.2.0
 
 _2023年3月30日_
 
-[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
 
-![新規](../assets/new.svg) - `commerce-data-export`および`saas-export`の依存関係を`experience-platform-connector`拡張にバンドルしました。 以前は、これらの依存関係を個別にインストールする必要がありました。 これらの依存関係とマーチャント設定により、[ バックオフィスイベント ](events-backoffice.md)のサーバーサイド処理が可能になります。
+![新規](../assets/new.svg) - `commerce-data-export`および`saas-export`の依存関係を`experience-platform-connector`拡張にバンドルしました。 以前は、これらの依存関係を個別にインストールする必要がありました。 これらの依存関係とマーチャント設定により、[&#x200B; バックオフィスイベント &#x200B;](events-backoffice.md)のサーバーサイド処理が可能になります。
 ![新規](../assets/new.svg) - [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted)という新しいバックオフィスイベントを追加しました。
 
 ## 2.1.1
 
 _2023年2月28日_
 
-[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
 
 ![新規](../assets/new.svg) – すべての[!DNL Data Connection]拡張機能に対するPHP 8.2のサポートを追加しました。
 
@@ -240,7 +240,7 @@ _2023年2月28日_
 
 _2023年1月17日_
 
-[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
 
 ![新規](../assets/new.svg) - [[!DNL Data Connection] 拡張機能の管理者](connect-data.md)を更新して、独自のAEP Web SDK （合金）を指定できるようにしました。
 エッジにプッシュされたデータのプライマリ IDを設定する際に、![修正](../assets/fix.svg)が`identityMap`ではなく`personID`を使用するように変更されました。
@@ -249,7 +249,7 @@ _2023年1月17日_
 
 _2022年11月10日_
 
-[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
 
 ![修正](../assets/fix.svg) - Storefront Event CollectorとStorefront Event SDKが正常に読み込まれた後にのみ、Adobe Experience Platform コンテキストが設定されるようになりました。
 
@@ -257,7 +257,7 @@ _2022年11月10日_
 
 _2022年10月12日_
 
-[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
 
 ![新規](../assets/new.svg) - Adobe Commerce インスタンスを[Experience Platformに](connect-data.md)接続する際に、独自のAEP Web SDKを指定できるようになりました。
 ![修正](../assets/fix.svg) - データストリーム IDがストアビューではなくweb サイトにスコープされるように、データストリーム スコープの要件を更新しました。
@@ -266,6 +266,6 @@ _2022年10月12日_
 
 _2022年8月9日_
 
-[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
 
 ![新規](../assets/new.svg) – 一般公開リリース。

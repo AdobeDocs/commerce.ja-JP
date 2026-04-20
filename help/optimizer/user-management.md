@@ -21,7 +21,7 @@ ht-degree: 0%
 - [**Developer**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} – 開発者には、ユーザー権限とAdobe Developer Consoleへのアクセス権があります。 つまり、[!DNL Adobe Commerce Optimizer] APIやSDKなどの開発者ツールと、App BuilderやAPI MeshなどのAdobe拡張性ツールを使用して、プロジェクトを作成し、資格情報を設定することができます。
 
 - **管理者** – 管理者ロールには3つの異なるタイプがあります。
-   - [ システム管理者](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Adobe Admin Consoleを通じて、組織内のすべての製品および製品プロファイルにアクセスできます。
+   - [&#x200B; システム管理者](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Adobe Admin Consoleを通じて、組織内のすべての製品および製品プロファイルにアクセスできます。
    - [製品管理者](#add-a-product-admin) – 製品管理者は、[の](#add-users)製品のユーザー、役割、権限を[!DNL Adobe Admin Console]管理できます。
    - [製品プロファイル管理者](#add-developers-and-product-profile-admins) – 製品プロファイル管理者は[!DNL Adobe Admin Console]の製品のユーザーを管理できます。
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->製品管理者として追加する前に、製品管理者に[ ユーザーの役割](#add-users)を割り当てます。 Commerceの基本権限には、ユーザーロールが必要です。
+>製品管理者として追加する前に、製品管理者に[&#x200B; ユーザーの役割](#add-users)を割り当てます。 Commerceの基本権限には、ユーザーロールが必要です。
 
 組織がプロビジョニングされた時点に基づいて、製品管理者ユーザーを[!DNL Adobe Commerce Optimizer]に追加するには、2つの異なる方法があります。 早期アクセス組織では、製品管理者の役割を割り当てられた各ユーザーに、組織内のすべてのインスタンスを管理する権限が付与されます。 2025年10月13日以降にプロビジョニングされた一般提供（GA）組織では、特定のインスタンスの製品管理者としてユーザーを割り当てることができます。 製品管理者ユーザーがログインすると、管理する権限を持つインスタンスのみが表示されます。
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 1. 「[!UICONTROL **ユーザー**]」タブを選択し、「[!UICONTROL **ユーザーを追加**]」をクリックします。
 
-   ![ タブ選択](/help/cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
+   ![&#x200B; タブ選択](/help/cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
 
 1. 追加するユーザーのユーザー名またはメールアドレスを入力し、[!UICONTROL **保存**]&#x200B;をクリックします。
 
@@ -133,20 +133,20 @@ ht-degree: 0%
 
 ### 開発者と製品プロファイル管理者の追加
 
-開発者と製品プロファイル管理者を追加するには、[ ユーザーを追加](#add-users) プロセスを繰り返しますが、[!UICONTROL **ユーザー**] タブの代わりに&#x200B;[!UICONTROL **開発者**]&#x200B;または&#x200B;[!UICONTROL **管理者**] タブを選択します。
+開発者と製品プロファイル管理者を追加するには、[&#x200B; ユーザーを追加](#add-users) プロセスを繰り返しますが、[!UICONTROL **ユーザー**] タブの代わりに&#x200B;[!UICONTROL **開発者**]&#x200B;または&#x200B;[!UICONTROL **管理者**] タブを選択します。
 
 >[!NOTE]
 >
 >開発者として追加する前に、開発者にユーザーの役割を割り当てます。 Commerceの基本権限には、ユーザーロールが必要です。
 
-![ タブ選択](/help//cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
+![&#x200B; タブ選択](/help//cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
 
 ## バルクユーザー管理
 
 次のいずれかの方法を使用すると、複数のユーザーをより効率的に追加できます。
 
-- Adobe Admin Consoleの&#x200B;**Add Users by CSV**&#x200B;機能を使用して、[一括CSV アップロード ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}を実行します。
-- [ ユーザーグループ ](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}を作成して、役割に複数のユーザーを追加します。 次に、適切な商品をユーザーグループに追加します。
+- Adobe Admin Consoleの&#x200B;**Add Users by CSV**&#x200B;機能を使用して、[一括CSV アップロード &#x200B;](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}を実行します。
+- [&#x200B; ユーザーグループ &#x200B;](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}を作成して、役割に複数のユーザーを追加します。 次に、適切な商品をユーザーグループに追加します。
 
 ## ID管理とシングルサインオン設定
 

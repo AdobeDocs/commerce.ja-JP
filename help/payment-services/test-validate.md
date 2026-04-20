@@ -18,14 +18,14 @@ ht-degree: 0%
 
 サンドボックス環境で[!DNL Payment Services]をテストすることは、実際の銀行やマーチャントではなく、PayPal サンドボックスにのみ接続されたシミュレート環境であるにもかかわらず、重要な検証ステップです。
 
-1. [ クレジットカードのフィールド ](payments-options.md#credit-card-fields)または[PayPal支払いボタン ](payments-options.md#paypal-payment-buttons)のいずれかを使用して、ストアから正常にチェックアウトを完了します。 偽造クレジットカードをテストに使用する方法について詳しくは、[資格情報のテスト ](#testing-credentials)を参照してください。
+1. [&#x200B; クレジットカードのフィールド &#x200B;](payments-options.md#credit-card-fields)または[PayPal支払いボタン &#x200B;](payments-options.md#paypal-payment-buttons)のいずれかを使用して、ストアから正常にチェックアウトを完了します。 偽造クレジットカードをテストに使用する方法について詳しくは、[資格情報のテスト &#x200B;](#testing-credentials)を参照してください。
 1. 決済アクションが[に`Authorize and Capture`](production.md#set-payment-services-as-payment-method)に設定されている場合、注文が完了したばかりの注文を[払い戻し](refunds.md)または[void](voids.md)取り込みます。 支払いアクションが[ではなく](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}に設定されている場合、注文の請求書`Authorize`を`Authorize and Capture`作成することもできます。
-1. 24 ～ 48時間以内に、[支払いレポート ](payouts.md)でトランザクションおよびその他の情報を表示します。
-1. 注文の詳細については、[注文支払い状況レポート ](order-payment-status.md)を参照してください。
+1. 24 ～ 48時間以内に、[支払いレポート &#x200B;](payouts.md)でトランザクションおよびその他の情報を表示します。
+1. 注文の詳細については、[注文支払い状況レポート &#x200B;](order-payment-status.md)を参照してください。
 
 ### ローカル開発環境でのテスト
 
-ローカル開発環境でPayPal、PayLater、Venmoの支払い方法をテストするには、インターネットからアクセスできる環境が必要です。 これらの支払い方法では、[ サーバーサイドの配送コールバック ](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/)を使用します。このコールバックでは、PayPalがCommerce インスタンスと通信して配送オプションを取得し、合計を計算する必要があります。
+ローカル開発環境でPayPal、PayLater、Venmoの支払い方法をテストするには、インターネットからアクセスできる環境が必要です。 これらの支払い方法では、[&#x200B; サーバーサイドの配送コールバック &#x200B;](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/)を使用します。このコールバックでは、PayPalがCommerce インスタンスと通信して配送オプションを取得し、合計を計算する必要があります。
 
 >[!INFO]
 >
@@ -58,18 +58,18 @@ Apple Payでは、ローカル開発用に追加の設定が必要です。 Appl
 * **一般にアクセス可能**。Appleは、インターネットからドメインにアクセスできる必要があります。
 * **HTTPS プロトコル**、Apple Payは安全な接続でのみ機能します。
 
-[ngrok](https://ngrok.com/)のようなトンネリングサービスを使用すると、両方の要件を満たすことができます。 前述のようにngrokを設定した後、[ サンドボックスドメイン ](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains)を&#x200B;**ngrok** URLを使用してPayPalに登録します。
+[ngrok](https://ngrok.com/)のようなトンネリングサービスを使用すると、両方の要件を満たすことができます。 前述のようにngrokを設定した後、[&#x200B; サンドボックスドメイン &#x200B;](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains)を&#x200B;**ngrok** URLを使用してPayPalに登録します。
 
 ### 資格情報のテスト
 
 サンドボックスのテストと検証を行う際には、既存のクレジットカード口座に実際の料金を請求しないように、偽のクレジットカード番号を使用する必要があります。
 
-PayPalのクレジットカード ジェネレーターを使用して、[ テスト用にランダムなクレジットカード情報](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157)を生成します。
+PayPalのクレジットカード ジェネレーターを使用して、[&#x200B; テスト用にランダムなクレジットカード情報](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157)を生成します。
 
 Apple Payをサンドボックスモードでテストするには：
 
-* [Apple サンドボックス テスターアカウント ](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)を作成し、偽のクレジットカード情報と請求情報を入力します。
-* [ サンドボックスドメインを登録](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains)。
+* [Apple サンドボックス テスターアカウント &#x200B;](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)を作成し、偽のクレジットカード情報と請求情報を入力します。
+* [&#x200B; サンドボックスドメインを登録](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains)。
 
 >[!NOTE]
 >

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 拡張機能のインストール
 
-[!DNL Data Connection]拡張機能は、[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)から入手できます。 この拡張機能をサーバーのコマンドラインからインストールすると、Adobe Commerce インストールに[ サービス ](../landing/saas.md)として接続されます。 プロセスが完了すると、Commerce **[!DNL Data Connection]**&#x200B;管理者&#x200B;**の** サービス **の** システム **メニューに**&#x200B;と&#x200B;_Commerce サービス コネクタ_&#x200B;が表示されます。
+[!DNL Data Connection]拡張機能は、[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)から入手できます。 この拡張機能をサーバーのコマンドラインからインストールすると、Adobe Commerce インストールに[&#x200B; サービス &#x200B;](../landing/saas.md)として接続されます。 プロセスが完了すると、Commerce **[!DNL Data Connection]**&#x200B;管理者&#x200B;**の** サービス **の** システム **メニューに**&#x200B;と&#x200B;_Commerce サービス コネクタ_&#x200B;が表示されます。
 
 ![[!DNL Data Connection]拡張機能の管理者ビュー](assets/epc-adminui.png)
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. （オプション） [!DNL Live Search]検索イベント [を含む](events.md#search-events) データを含めるには、[[!DNL Live Search]](../live-search/install.md)拡張機能をインストールします。
 
-1. （オプション） [要件イベント ](events.md#b2b-events)を含むB2B データを含めるには、[B2B拡張機能](#install-the-b2b-extension)をインストールします。
+1. （オプション） [要件イベント &#x200B;](events.md#b2b-events)を含むB2B データを含めるには、[B2B拡張機能](#install-the-b2b-extension)をインストールします。
 
 1. （オプション）ヘルスケア販売者の場合は、[のバックオフィスデータがHIPAA対応となるように、](#install-the-data-services-hipaa-extension)Data Services HIPAA[!DNL Commerce]拡張機能をインストールします。
 
@@ -105,7 +105,7 @@ bin/magento config:set adobe_io_events/eventing/enabled 1
 
 ### B2B拡張機能のインストール
 
-B2B マーチャントの場合は、次の拡張機能をインストールして、[要求リスト ](events.md#b2b-events)のイベントデータを含めます。
+B2B マーチャントの場合は、次の拡張機能をインストールして、[要求リスト &#x200B;](events.md#b2b-events)のイベントデータを含めます。
 
 コマンドラインから次を実行して、`magento/experience-platform-connector-b2b`拡張機能をダウンロードします。
 
@@ -165,4 +165,4 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 ## [!DNL Data Connection]拡張機能のアンインストール {#uninstall}
 
-[!DNL Data Connection]拡張機能をアンインストールするには、[ モジュールのアンインストール ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html)を参照してください。
+[!DNL Data Connection]拡張機能をアンインストールするには、[&#x200B; モジュールのアンインストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html)を参照してください。

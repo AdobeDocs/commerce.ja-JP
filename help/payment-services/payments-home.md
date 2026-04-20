@@ -22,21 +22,21 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Pa
 
 >[!TAB  クラウドおよびオンプレミスでのAdobe Commerce]
 
-![ ホームビュー](assets/home-view.png){width="700" zoomable="yes"}
+![&#x200B; ホームビュー](assets/home-view.png){width="700" zoomable="yes"}
 
 >[!TAB Adobe Commerce as a Cloud ServiceとCommerce Optimizer]
 
-オンボーディングが完了するまで、**[!UICONTROL Home]**&#x200B;には&#x200B;**[!UICONTROL ACCS Onboarding Required]**&#x200B;が表示されます。 この通知は、[ サンドボックスサービスを設定](sandbox.md#sandbox-onboarding) （テスト PayPal処理アカウントを使用）するか、別の環境で既にテストしている場合は[ ライブ決済を有効にする](production.md#enable-live-payments)にリンクしています。
+オンボーディングが完了するまで、**[!UICONTROL Home]**&#x200B;には&#x200B;**[!UICONTROL ACCS Onboarding Required]**&#x200B;が表示されます。 この通知は、[&#x200B; サンドボックスサービスを設定](sandbox.md#sandbox-onboarding) （テスト PayPal処理アカウントを使用）するか、別の環境で既にテストしている場合は[&#x200B; ライブ決済を有効にする](production.md#enable-live-payments)にリンクしています。
 
 ![決済サービスホームでACCS オンボーディングが必要](assets/payment-services-home-accs-onboarding.png){width="700" zoomable="yes"}
 
 オンボーディングが完了した後（または既に設定されているインスタンスで）、**[!UICONTROL Home]**&#x200B;には、表形式のレポートの&#x200B;**[!UICONTROL Transactions]**&#x200B;に&#x200B;**[!UICONTROL View Report]**&#x200B;が表示され、さらに&#x200B;**[!UICONTROL Learn]**&#x200B;と&#x200B;**[!UICONTROL Help]**&#x200B;の領域が表示されます。
 
-![SaaSの決済サービスホーム ](assets/payment-services-home-saas.png){width="700" zoomable="yes"}
+![SaaSの決済サービスホーム &#x200B;](assets/payment-services-home-saas.png){width="700" zoomable="yes"}
 
 >[!ENDTABS]
 
-このホームビューでは、_ホーム_、_学習_&#x200B;に[!DNL Payment Services]についてアクセスしたり、拡張機能&#x200B;_設定_&#x200B;を設定したり、_ヘルプ_&#x200B;を取得したりできます。 レポートを開くには、**[!UICONTROL View Report]** （SaaS）または&#x200B;**[!UICONTROL Orders]**&#x200B;および&#x200B;**[!UICONTROL Payouts]**&#x200B;のエントリポイント （クラウドおよびオンプレミスのAdobe Commerce）を使用します。[ レポート ](reporting.md)を参照してください。
+このホームビューでは、_ホーム_、_学習_&#x200B;に[!DNL Payment Services]についてアクセスしたり、拡張機能&#x200B;_設定_&#x200B;を設定したり、_ヘルプ_&#x200B;を取得したりできます。 レポートを開くには、**[!UICONTROL View Report]** （SaaS）または&#x200B;**[!UICONTROL Orders]**&#x200B;および&#x200B;**[!UICONTROL Payouts]**&#x200B;のエントリポイント （クラウドおよびオンプレミスのAdobe Commerce）を使用します。[&#x200B; レポート &#x200B;](reporting.md)を参照してください。
 
 ## ホーム
 
@@ -51,7 +51,7 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Pa
 
 | フィールド | 説明 |
 |---|---|
-| [!UICONTROL Transactions] | 特定のトランザクションの結果を把握するのに役立つトランザクション レポートを要約します。 「**[!UICONTROL View Report]**」をクリックして、トランザクションのグリッド（注文とPayPalのトランザクション ID、支払い方法、結果、応答コードなど）を開きます。 [ トランザクション レポート ビュー](reporting.md#transactions-report-view)を参照してください。 |
+| [!UICONTROL Transactions] | 特定のトランザクションの結果を把握するのに役立つトランザクション レポートを要約します。 「**[!UICONTROL View Report]**」をクリックして、トランザクションのグリッド（注文とPayPalのトランザクション ID、支払い方法、結果、応答コードなど）を開きます。 [&#x200B; トランザクション レポート ビュー](reporting.md#transactions-report-view)を参照してください。 |
 
 ## 学ぶ
 

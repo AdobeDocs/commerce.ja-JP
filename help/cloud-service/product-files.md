@@ -14,19 +14,19 @@ ht-degree: 0%
 
 # 製品へのファイルの追加
 
-[!DNL Adobe Commerce as a Cloud Service]は、販売者がファイル（PDF、マニュアル、証明書、データシートなど）を製品に直接添付できる「ファイル」 [製品属性入力タイプ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"}をサポートしています。 ファイルはAmazon S3 メディアストレージに保存され、GraphQLを使用してストアフロントからアクセスすることも、REST APIを使用して統合を介してアクセスすることもできます。
+[!DNL Adobe Commerce as a Cloud Service]は、販売者がファイル（PDF、マニュアル、証明書、データシートなど）を製品に直接添付できる「ファイル」 [製品属性入力タイプ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"}をサポートしています。 ファイルはAmazon S3 メディアストレージに保存され、GraphQLを使用してストアフロントからアクセスすることも、REST APIを使用して統合を介してアクセスすることもできます。
 
 製品ファイル属性にファイルをアップロードするには、次の3つの方法があります。
 
 * [管理者UI](#upload-files-through-the-admin) – 製品編集ページでファイルを手動でアップロードします。
 * [REST API](#upload-through-the-rest-api) - S3事前署名済みURLを使用して、REST APIを介してファイルをアップロードします。
-* [製品インポート ](#upload-through-product-import) - CSVで外部URLを指定して、ファイルを一括インポートします。
+* [製品インポート &#x200B;](#upload-through-product-import) - CSVで外部URLを指定して、ファイルを一括インポートします。
 
 ## 前提条件
 
 ファイルをアップロードする前に、ファイル属性を作成し、属性セットに割り当てる必要があります。
 
-* [ ファイル属性を作成](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - **[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;を&#x200B;**[!UICONTROL File]**&#x200B;に設定します。
+* [&#x200B; ファイル属性を作成](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - **[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;を&#x200B;**[!UICONTROL File]**&#x200B;に設定します。
 
 * [属性を属性セットに割り当てる](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} – 新しいファイル属性を目的のグループにドラッグします。
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## 管理者を介したファイルのアップロード
 
-[ ファイル属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"}を作成して属性セットに割り当てたら、製品編集ページから直接ファイルをアップロードできます。
+[&#x200B; ファイル属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"}を作成して属性セットに割り当てたら、製品編集ページから直接ファイルをアップロードできます。
 
 1. _管理者_ サイドバーで、**[!UICONTROL Catalog]** > **[!UICONTROL Products]**&#x200B;に移動します。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 1. ファイル名と製品ファイル属性の`POST V1/media/initiate-upload`を使用して`media_resource_type`を呼び出します。
 1. 返された事前署名済みURLを`PUT`に使用して、ファイルを直接Amazon S3に送信します。
 1. `POST V1/media/finish-upload`に電話して、アップロードを確認してください。
-1. 返されたキーを`PUT /V1/products/{sku}`を通じて製品のファイル属性に割り当て、キーを[ カスタム属性](https://developer.adobe.com/commerce/webapi/rest/modules/custom-attributes/)値として渡します。
+1. 返されたキーを`PUT /V1/products/{sku}`を通じて製品のファイル属性に割り当て、キーを[&#x200B; カスタム属性](https://developer.adobe.com/commerce/webapi/rest/modules/custom-attributes/)値として渡します。
 
 ## 製品の読み込みを通じてアップロード
 
@@ -129,7 +129,7 @@ ADB112,"My Product",file_upload=https://example.com/files/manual.pdf
 
 >[!NOTE]
 >
->このクエリには、`Magento-Website-Code`および`Magento-Store-View-Code`個のヘッダーが必要です。 詳しくは、[ カタログサービス製品のクエリ ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"}を参照してください。
+>このクエリには、`Magento-Website-Code`および`Magento-Store-View-Code`個のヘッダーが必要です。 詳しくは、[&#x200B; カタログサービス製品のクエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"}を参照してください。
 
 ## REST APIを使用したファイルの取得
 

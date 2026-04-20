@@ -16,17 +16,17 @@ ht-degree: 0%
 
 管理者の便利な設定オプションを使用して、[!DNL Payment Services]をニーズに合わせてカスタマイズできます。
 
-管理者で[!DNL Payment Services]および[!DNL Adobe Commerce]の[!DNL Magento Open Source]を設定する場合、これらの設定は&#x200B;_[!UICONTROL Method]_の_[!UICONTROL General Configuration]_ フィールドで設定されている環境にのみ適用されます。 設定フィールドで行った変更は、_[!UICONTROL Method]_の選択を切り替えることとは関係ありません。メソッドを切り替えた場合、選択はリセットされません。
+管理者で[!DNL Payment Services]および[!DNL Adobe Commerce]の[!DNL Magento Open Source]を設定する場合、これらの設定は&#x200B;_[!UICONTROL Method]_&#x200B;の_[!UICONTROL General Configuration]_ フィールドで設定されている環境にのみ適用されます。 設定フィールドで行った変更は、_[!UICONTROL Method]_&#x200B;の選択を切り替えることとは関係ありません。メソッドを切り替えた場合、選択はリセットされません。
 
 ## 一般設定
 
-ストアと[!DNL Payment Services]に対して&#x200B;_[!UICONTROL Merchant Location]_を有効にし、_[!UICONTROL General Configuration]_ セクションでサンドボックステストまたはライブ支払いを有効にすることができます。
+ストアと[!DNL Payment Services]に対して&#x200B;_[!UICONTROL Merchant Location]_&#x200B;を有効にし、_[!UICONTROL General Configuration]_ セクションでサンドボックステストまたはライブ支払いを有効にすることができます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
-1. _[!UICONTROL Merchant Country]_に_[!UICONTROL Merchant Location]_ フィールドを設定します。 _[!UICONTROL Merchant Country]_が指定されていない場合は、一般設定の_[!UICONTROL Default Country]_&#x200B;が使用されます。
-1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_セクションを展開して、_[!UICONTROL [!DNL Payment Services]]_ セクションにアクセスします。
-1. _[!UICONTROL [!DNL Payment Services]]_セクションで、_[!UICONTROL General Configuration]_ セクションを展開します。
+1. _[!UICONTROL Merchant Country]_&#x200B;に_[!UICONTROL Merchant Location]_ フィールドを設定します。 _[!UICONTROL Merchant Country]_&#x200B;が指定されていない場合は、一般設定の&#x200B;_[!UICONTROL Default Country]_&#x200B;が使用されます。
+1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開して、_[!UICONTROL [!DNL Payment Services]]_ セクションにアクセスします。
+1. _[!UICONTROL [!DNL Payment Services]]_&#x200B;セクションで、_[!UICONTROL General Configuration]_ セクションを展開します。
 1. **Enable**&#x200B;の場合は、ストアで`Yes`を有効にするために[!DNL Payment Services]に設定します。
 1. **メソッド**&#x200B;の場合、ストアの`Sandbox`をまだテストしている場合は[!DNL Payment Services]に、ライブ支払いを有効にする準備ができている場合は`Production`に設定します。
 1. **[!UICONTROL Payment Services Sandbox ID]**&#x200B;および&#x200B;**[!UICONTROL Payment Services Production ID]**&#x200B;の値は、[Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank}を設定し、初めて[!DNL Payment Services] ダッシュボードにアクセスすると、自動的に入力されます。 これは、サンドボックスや実稼動環境のオンボーディングを完了するために実行します。 これらの値は、SaaS IDを[!DNL Payment Services]に関連付けます。
@@ -56,12 +56,12 @@ ht-degree: 0%
 
 [!UICONTROL Credit Card Fields]の支払いオプションは、クレジットカードまたはデビットカードの支払い方法にシンプルで安全なチェックアウトを提供します。
 
-詳しくは、[支払いオプション ](payments-options.md#paypal-payment-buttons)を参照してください。
+詳しくは、[支払いオプション &#x200B;](payments-options.md#paypal-payment-buttons)を参照してください。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
-1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_セクションを展開します。
-1. _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL Credit Card Fields]_ セクションを展開します。
+1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
+1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL Credit Card Fields]_ セクションを展開します。
 1. 「**[!UICONTROL Title]**」に、チェックアウト時に表示される支払い方法の名前を変更するテキスト（必要に応じて）を入力します。
 1. 支払いアクション [を](production.md#set-payment-services-as-payment-method)設定するには、**[!UICONTROL Authorize]**&#x200B;または&#x200B;**承認とキャプチャ**&#x200B;を選択します。
 1. チェックアウトページで支払い方法を優先するには、`Numeric Only` フィールドに&#x200B;**[!UICONTROL Sort order]**&#x200B;値を入力します。
@@ -78,10 +78,10 @@ ht-degree: 0%
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストアビュー | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：[!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | ストアビュー | チェックアウトページで指定した支払い方法の並べ替え順序。 `Numeric Only`値 |
 | [!UICONTROL Show on checkout page] | web サイト | チェックアウトページでクレジットカード情報フィールドを有効または無効にします。 オプション：[!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | ストアビュー | [ クレジットカードの資格情報の保管](vaulting.md)を有効または無効にします。 オプション：[!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | ストアビュー | [&#x200B; クレジットカードの資格情報の保管](vaulting.md)を有効または無効にします。 オプション：[!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled in Admin] | ストアビュー | 管理者[の顧客に対する注文を](vaulting.md) マーチャントが優先支払い方法を使用して完了する機能を有効または無効にします。 オプション：[!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL 3D Secure authentication] | web サイト | [3DS セキュア認証](security.md#3ds)を有効または無効にします。 オプション：[!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -90,12 +90,12 @@ ht-degree: 0%
 
 [[!DNL Fastlane by PayPal]](https://www.paypal.com/us/cshelp/article/what-is-fastlane-by-paypal-help1096)は、オンラインで安全に支払うための高速で簡単な方法です。 **ゲストチェックアウト**&#x200B;中に、今後さらに迅速に購入できるように、カードと配送情報を安全に保存できます。
 
-詳しくは、[支払いオプション ](payments-options.md#fastlane-button)を参照してください。
+詳しくは、[支払いオプション &#x200B;](payments-options.md#fastlane-button)を参照してください。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
-1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_セクションを展開します。
-1. _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL Fastlane]_ セクションを展開します。
+1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
+1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL Fastlane]_ セクションを展開します。
 1. 有効にするには、`Yes`の&#x200B;**[!UICONTROL Enable Fastlane]**&#x200B;を選択します（`No`は無効にします）。
 
    >[!NOTE]
@@ -119,7 +119,7 @@ ht-degree: 0%
 |---|---|---|
 | [!UICONTROL Enable Fastlane] | ストアビュー | チェックアウトページで[!DNL Fastlane]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Title] | ストアビュー | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 デフォルト値は`Credit Card (via Fastlane)`です。 オプション：[!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3D Secure authentication] | ストアビュー | Fastlane[の](security.md#3ds)3D セキュア認証を有効または無効にします。 オプション：[!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Sort order] | ストアビュー | チェックアウトページで指定した支払い方法の並べ替え順序。 `Numeric Only`値 |
 | [!UICONTROL Enable messaging] | ストアビュー | Adobe Commerceのチェックアウト時に[!UICONTROL Fastlane] ブランディングを有効にするかどうかを指定します。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -132,8 +132,8 @@ ht-degree: 0%
 >
 >アクセシビリティガイドラインを満たさないスタイルは、デフォルト設定に戻ります。
 
-1. _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL Fastlane]_ セクションに移動します。
-1. _[!UICONTROL Advanced Style Settings (optional)]_セクションを展開します。
+1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL Fastlane]_ セクションに移動します。
+1. _[!UICONTROL Advanced Style Settings (optional)]_&#x200B;セクションを展開します。
 1. 必要に応じて設定を変更します。
 1. **[!UICONTROL Save Config]**&#x200B;をクリックして変更を保存します。
 
@@ -172,14 +172,14 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
-> Appleは、未確認のドメインからの支払いを拒否します。 加盟店は、Appleの「支払い」ボタンが使用されているドメインを確認する必要があります。 国の制限が適用されます。 ドメイン認証要件について詳しくは、[Apple Pay ドキュメント ](https://developer.apple.com/documentation/apple_pay_on_the_web)を参照してください。
+> Appleは、未確認のドメインからの支払いを拒否します。 加盟店は、Appleの「支払い」ボタンが使用されているドメインを確認する必要があります。 国の制限が適用されます。 ドメイン認証要件について詳しくは、[Apple Pay ドキュメント &#x200B;](https://developer.apple.com/documentation/apple_pay_on_the_web)を参照してください。
 
-詳しくは、[支払いオプション ](payments-options.md#apple-pay-button)を参照してください。
+詳しくは、[支払いオプション &#x200B;](payments-options.md#apple-pay-button)を参照してください。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
-1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_セクションを展開します。
-1. _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL Apple Pay]_ セクションを展開します。
+1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
+1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL Apple Pay]_ セクションを展開します。
 1. 「**[!UICONTROL Title]**」に、チェックアウト時に表示される支払い方法の名前を変更するテキスト（必要に応じて）を入力します。
 1. 支払いアクション [を](production.md#set-payment-services-as-payment-method)設定するには、**[!UICONTROL Authorize]**&#x200B;または&#x200B;**[!UICONTROL Authorize and Capture]**&#x200B;を選択します。
 1. Adobe Commerceで[!DNL Apple Pay] オプションを有効にする場所を指定するには、必要に応じて次のオプションで`Yes`を選択します。
@@ -197,7 +197,7 @@ ht-degree: 0%
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストアビュー | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：[!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show Apple Pay on checkout page] | web サイト | チェックアウトページで[!DNL Apple Pay]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Apple Pay at start of checkout] | ストアビュー | チェックアウトフローの開始時に[!DNL Apple Pay]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | ストアビュー | チェックアウトページで指定した支払い方法の並べ替え順序。 `Numeric Only`値 |
@@ -210,14 +210,14 @@ ht-degree: 0%
 
 [!UICONTROL Google Pay]支払いオプションを使用すると、販売者は買い物客にGoogle Payを提供でき、買い物客はデバイスでGoogle Walletを使用して購入できます。
 
-詳しくは、[支払いオプション ](payments-options.md#google-pay-button)を参照してください。
+詳しくは、[支払いオプション &#x200B;](payments-options.md#google-pay-button)を参照してください。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
-1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_セクションを展開します。
-1. _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL Google Pay]_ セクションを展開します。
+1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
+1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL Google Pay]_ セクションを展開します。
 1. （オプション） **[!UICONTROL Title]** フィールドに新しい名前を入力して、チェックアウト時に表示される支払い方法の名前を変更します。
-1. [](production.md#set-payment-services-as-payment-method)または&#x200B;**[!UICONTROL Authorize]**&#x200B;を選択して、支払いアクション **[!UICONTROL Authorize and Capture]**&#x200B;を設定します。
+1. [&#128279;](production.md#set-payment-services-as-payment-method)または&#x200B;**[!UICONTROL Authorize]**&#x200B;を選択して、支払いアクション **[!UICONTROL Authorize and Capture]**&#x200B;を設定します。
 1. Adobe Commerceで[!DNL Google Pay] オプションを有効にする場所を指定するには、必要に応じて次のオプションで`Yes`を選択します。
    * **[!UICONTROL Show Google Pay on checkout page]**
    * **[!UICONTROL Show Google Pay at start of checkout]**
@@ -226,7 +226,7 @@ ht-degree: 0%
    * **[!UICONTROL Show Google Pay on cart page]**
 1. **[!UICONTROL 3D Secure authentication]**&#x200B;を有効にするには（`Off`をデフォルトで有効にする）、`Always`または`When required`を選択します。
 1. デバッグモードを有効にするには、`Yes`の&#x200B;**[!UICONTROL Debug Mode]**&#x200B;を選択します（`No`は無効にします）。
-1. 必要に応じて&#x200B;_[!UICONTROL Google Pay]_、**[!UICONTROL Button Color]**および&#x200B;**[!UICONTROL Button Type]**を選択して、**[!UICONTROL Button Style]**ボタンの外観を設定します。
+1. 必要に応じて&#x200B;_[!UICONTROL Google Pay]_、**[!UICONTROL Button Color]**&#x200B;および&#x200B;**[!UICONTROL Button Type]**&#x200B;を選択して、**[!UICONTROL Button Style]**&#x200B;ボタンの外観を設定します。
 1. 高さを設定するには、**[!UICONTROL Button Style]**&#x200B;で定義された高さのデフォルト値を使用します。
 1. 変更を保存するには、「**[!UICONTROL Save Config]**」をクリックします。
 1. **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;に移動し、**[!UICONTROL Flush Cache]**&#x200B;をクリックして、無効なすべてのキャッシュを更新します。
@@ -236,7 +236,7 @@ ht-degree: 0%
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストアビュー | チェックアウト時に支払い方法ビューにこの支払いオプションに表示されるテキストラベルを指定します。 オプション：`[!UICONTROL text field]` |
-| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション ](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：`[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
+| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html)。 オプション：`[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
 | [!UICONTROL Show Google Pay on checkout page] | web サイト | チェックアウトページで[!DNL Google Pay]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay at start of checkout] | ストアビュー | チェックアウトフローの開始時に[!DNL Google Pay]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | ストアビュー | チェックアウトページで指定した支払い方法の並べ替え順序。 `Numeric Only`値 |
@@ -248,28 +248,28 @@ ht-degree: 0%
 | [!UICONTROL Button Color] | ストアビュー | [!DNL Google Pay] ボタンの色を定義します。 オプション：`[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
 | [!UICONTROL Button Type] | ストアビュー | [!DNL Google Pay] ボタンの種類を定義します。 オプション：`[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |
 
-詳しくは、[Google Pay API リクエストオブジェクトオプション ](https://developers.google.com/pay/api/web/reference/request-objects)のドキュメントを参照してください。
+詳しくは、[Google Pay API リクエストオブジェクトオプション &#x200B;](https://developers.google.com/pay/api/web/reference/request-objects)のドキュメントを参照してください。
 
 ## [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons]の支払いオプションは、顧客にシンプルで迅速かつ安全なチェックアウトプロセスを提供します。
 
-詳しくは、[支払いオプション ](payments-options.md#paypal-payment-buttons)を参照してください。
+詳しくは、[支払いオプション &#x200B;](payments-options.md#paypal-payment-buttons)を参照してください。
 
 [!DNL PayPal payment buttons]の設定
 
 管理画面でPayPal支払いボタン支払いオプションを有効にして設定できます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
-1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_セクションを展開します。
-1. _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL PayPal payment buttons]_ セクションを展開します。
-1. チェックアウト時に表示される支払い方法の名前を変更するには、_[!UICONTROL Title]_フィールドを編集します。
+1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
+1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL PayPal payment buttons]_ セクションを展開します。
+1. チェックアウト時に表示される支払い方法の名前を変更するには、_[!UICONTROL Title]_&#x200B;フィールドを編集します。
 1. 支払いアクション [を](production.md#set-payment-services-as-payment-method)設定するには、**[!UICONTROL Authorize]**&#x200B;または&#x200B;**[!UICONTROL Authorize and Capture]**&#x200B;を選択します。
 1. チェックアウトページで支払い方法を優先するには、`Numeric Only` フィールドに&#x200B;**[!UICONTROL Sort order]**&#x200B;値を入力します。
-1. [後払いメッセージ ](payments-options.md#pay-later-button)を有効または無効にするには、`Yes`の`No`/**[!UICONTROL Display Pay Later Message]**&#x200B;を選択します。
+1. [後払いメッセージ &#x200B;](payments-options.md#pay-later-button)を有効または無効にするには、`Yes`の`No`/**[!UICONTROL Display Pay Later Message]**&#x200B;を選択します。
 
-   * [後払いメッセージ ](payments-options.md#pay-later-button)を有効にすると、**[!UICONTROL Configure Messaging]** モーダルボタンが表示され、**[!UICONTROL PayPal Pay Later messaging]**&#x200B;のスタイルを設定できます。
+   * [後払いメッセージ &#x200B;](payments-options.md#pay-later-button)を有効にすると、**[!UICONTROL Configure Messaging]** モーダルボタンが表示され、**[!UICONTROL PayPal Pay Later messaging]**&#x200B;のスタイルを設定できます。
 
 1. Adobe CommerceでPayPal支払いボタンを有効にする場所を指定するには、必要に応じて次のオプションで`Yes`を選択します。
    * **[!UICONTROL Show buttons on checkout page]**
@@ -289,7 +289,7 @@ ht-degree: 0%
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストアビュー | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：テキストフィールド |
-| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | web サイト | ショッピングカート、商品ページ、ミニカート、チェックアウトフロー中に、PayPal Pay Later メッセージを有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Configure Messaging] | ストアビュー | PayPal Pay Later Messagingのスタイルを変更する。 オプション：`[!UICONTROL Product page]` / `[!UICONTROL Cart]` |
 | [!UICONTROL Show buttons on checkout page] | ストアビュー | チェックアウトページで[!DNL PayPal payment buttons]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -307,12 +307,12 @@ ht-degree: 0%
 
 ## 現地での支払い方法
 
-ローカル支払い方法（LPM）は、銀行振込やローカライズされた支払いソリューションなど、地域固有およびローカルの支払い方法と、既存のカードベースのオプションをサポートします。 マーチャントは、Commerce設定内で利用可能なLPMを直接有効または無効にできます。 利用可能な支払い方法について詳しくは、[支払いオプション ](payments-options.md#local-payment-methods)を参照してください。
+ローカル支払い方法（LPM）は、銀行振込やローカライズされた支払いソリューションなど、地域固有およびローカルの支払い方法と、既存のカードベースのオプションをサポートします。 マーチャントは、Commerce設定内で利用可能なLPMを直接有効または無効にできます。 利用可能な支払い方法について詳しくは、[支払いオプション &#x200B;](payments-options.md#local-payment-methods)を参照してください。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
-1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_セクションを展開します。
-1. _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL Local Payment Methods]_ セクションを展開します。
+1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
+1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL Local Payment Methods]_ セクションを展開します。
 1. **[!UICONTROL Active]**&#x200B;の場合、`Yes`を選択してLPMを有効にするか、`No`を選択して無効にします。
 1. **[!UICONTROL Title]**&#x200B;の場合、チェックアウト時に支払い方法の名前として表示するテキストを入力します。 このタイトルは、受注グリッドにも表示されます。
 1. **[!UICONTROL Allowed Payment Methods]**&#x200B;で、提供する支払い方法を選択します。 利用可能な支払い方法は、購入者の請求先住所とweb サイトの基本通貨によって異なります。
@@ -345,12 +345,12 @@ ht-degree: 0%
 
 ## ボタンのスタイル
 
-支払いボタンの&#x200B;_[!UICONTROL Button style]_オプションを設定することもできます。
+支払いボタンの&#x200B;_[!UICONTROL Button style]_&#x200B;オプションを設定することもできます。
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
-1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_セクションを展開します。
-1. _[!UICONTROL [!DNL Payment Services]]_セクションで、_[!UICONTROL PayPal Smart Button Styling]_ セクションを展開します。
+1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
+1. _[!UICONTROL [!DNL Payment Services]]_&#x200B;セクションで、_[!UICONTROL PayPal Smart Button Styling]_ セクションを展開します。
 1. レイアウトを設定するには、`Vertical`の`Horizontal`または&#x200B;**[!UICONTROL Layout]**&#x200B;を選択します
 1. 色を設定するには、**[!UICONTROL Color]**&#x200B;の使用可能な色から選択します。
 1. シェイプを設定するには、`Rectangular`の`Pill`または&#x200B;**[!UICONTROL Shape]**&#x200B;を選択します。
@@ -381,13 +381,13 @@ Apple Pay、Venmo、PayPal PayLater ボタンの切り替えなど、_Settings_&
 
 キャッシュ管理テーブルのキャッシュタイプのステータスが`INVALIDATED`の場合、ストアにその項目の最新の設定が表示されない可能性があります。 キャッシュをフラッシュしてストアを更新し、最新の設定を表示します。
 
-ストアに正しい設定が表示されていることを確認するには、定期的に[ キャッシュをフラッシュします](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)。
+ストアに正しい設定が表示されていることを確認するには、定期的に[&#x200B; キャッシュをフラッシュします](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)。
 
 ## 役割の設定
 
 管理者ユーザーがCommerce Adminで注文を作成および管理できるようにするには、[!DNL Payment Services]固有のリソースをユーザーロールに対して有効にします。
 
-役割の管理方法については、[ ユーザーの役割](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html)を参照してください。
+役割の管理方法については、[&#x200B; ユーザーの役割](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html)を参照してください。
 
 役割にリソースを割り当てる場合は、次を選択する必要があります。
 
@@ -395,7 +395,7 @@ Apple Pay、Venmo、PayPal PayLater ボタンの切り替えなど、_Settings_&
 
 * **[!DNL Payment Services]** – このリソースには、**ダッシュボード**&#x200B;および&#x200B;**SaaS サービスプロキシ**&#x200B;のリソースが含まれています。これも選択する必要があります。 [!DNL Payment Services]が&#x200B;_Sales_ メニューに表示されていることを確認します。
 
-  ![決済サービスリソース ](assets/roles-payments.png){width="400" zoomable="yes"}
+  ![決済サービスリソース &#x200B;](assets/roles-payments.png){width="400" zoomable="yes"}
 
 
 ## カード保管
@@ -404,15 +404,15 @@ Apple Pay、Venmo、PayPal PayLater ボタンの切り替えなど、_Settings_&
 
 管理画面のカード保管を使用して、既存顧客に対する後続の注文を完了することもできます。
 
-[ クレジットカードのフィールド設定](#credit-card-fields)でカードの保管を有効または無効にします。
+[&#x200B; クレジットカードのフィールド設定](#credit-card-fields)でカードの保管を有効または無効にします。
 
-詳しくは、[ クレジットカードの保管](vaulting.md)を参照してください。
+詳しくは、[&#x200B; クレジットカードの保管](vaulting.md)を参照してください。
 
 ## 3DS
 
 3DSは、お客様や販売者を店舗での不正行為から守り、欧州連合（EU）基準への準拠を可能にします。
 
-[ クレジットカードのフィールド設定](#credit-card-fields)で3DSを有効または無効にします。
+[&#x200B; クレジットカードのフィールド設定](#credit-card-fields)で3DSを有効または無効にします。
 
 詳細については、「[3DS in Security](security.md#3ds)」を参照してください。
 
@@ -420,9 +420,9 @@ Apple Pay、Venmo、PayPal PayLater ボタンの切り替えなど、_Settings_&
 
 [!UICONTROL Payment Services]では、web サイト レベルで&#x200B;**1**&#x200B;個の加盟店アカウント内で複数のPayPal アカウントを使用できます。 例えば、複数の国（異なる[通貨](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency)を使用する）でストアを運営している場合、またはビジネスの一部にAdobe Commerceを使用するが&#x200B;_all_&#x200B;を使用しない場合は、複数のPayPal アカウントを使用するように加盟店アカウントを設定できます。
 
-Web サイト、ストア、ストアビューの階層について詳しくは、[ サイト、ストア、およびビューの範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)を参照してください。
+Web サイト、ストア、ストアビューの階層について詳しくは、[&#x200B; サイト、ストア、およびビューの範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)を参照してください。
 
-CLIを使用した複数のPayPal アカウントのスコープの設定について詳しくは、[ コマンドライン設定](configure-cli.md#configure-scope-via-cli)を参照してください。
+CLIを使用した複数のPayPal アカウントのスコープの設定について詳しくは、[&#x200B; コマンドライン設定](configure-cli.md#configure-scope-via-cli)を参照してください。
 
-営業担当者は、加盟店アカウント用に新しい[ スコープ ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)を作成し、PayPalで追加サイトをオンボーディングして、表示するように設定したPayPal ボタンがサイトに表示されるようにすることができます。 営業担当者に問い合わせる
+営業担当者は、加盟店アカウント用に新しい[&#x200B; スコープ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)を作成し、PayPalで追加サイトをオンボーディングして、表示するように設定したPayPal ボタンがサイトに表示されるようにすることができます。 営業担当者に問い合わせる
 web サイトで複数のPayPal アカウントを使用する場合のサポートを担当します。
