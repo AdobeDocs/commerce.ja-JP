@@ -27,7 +27,7 @@ ht-degree: 0%
 
    このオプションは、1つ以上のWeb サイトの支払い方法として[!DNL Payment Services]をまだ設定していない場合に表示されます。
 
-   関連するオプションが展開されたホームビューの設定領域（**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_）に移動します。ここで、[!DNL Payment Services] オプションを[支払い方法](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}として有効にできます。
+   関連するオプションが展開されたホームビューの設定領域（**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_）に移動します。ここで、[!DNL Payment Services] オプションを[支払い方法](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}として有効にできます。
 
 1. _[!UICONTROL General Configuration]_&#x200B;で、**[!UICONTROL Enable]**&#x200B;を`Yes`に設定します。
 1. **[!UICONTROL Payment Action]**&#x200B;と&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;の_[!UICONTROL PayPal payment buttons]_&#x200B;を次のいずれかに設定します。
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Save]**&#x200B;をクリックします。
 1. **[!UICONTROL Go to Payment Services]**&#x200B;をクリックして、[!DNL Payment Services] ホームに戻ります。
-1. [&#x200B; キャッシュをクリア &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html)。
+1. [&#x200B; キャッシュをクリア &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=ja)。
 
    設定を変更するたびに消去を実行する必要があります。
 
@@ -131,7 +131,7 @@ ht-degree: 0%
 1. フォームに記入してください。
 1. 営業担当者からご連絡させていただきます。
 
-または、[business.adobe.com](https://business.adobe.com/resources/payment-services.html)でAdobeから支払い資格をリクエストすることもできます。
+または、[business.adobe.com](https://business.adobe.com/jp/resources/payment-services.html)でAdobeから支払い資格をリクエストすることもできます。
 
 >[!IMPORTANT]
 >
@@ -157,7 +157,7 @@ _実稼動用マーチャント ID_&#x200B;が自動生成され、[設定](conf
 1. ホームで、ページの右上にある「**[!UICONTROL Settings]**」をクリックします。 詳しくは、[&#x200B; ホーム &#x200B;](payments-home.md)を参照してください。
 1. _[!UICONTROL General Configuration]_&#x200B;セクションで、**[!UICONTROL Payment mode]**&#x200B;を`Production`に設定します。
 1. **[!UICONTROL Save]**&#x200B;をクリックします。
-1. [&#x200B; キャッシュをクリア &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
+1. [&#x200B; キャッシュをクリア &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
 
    >[!IMPORTANT]
    >

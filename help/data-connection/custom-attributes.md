@@ -349,7 +349,7 @@ ComponentRegistrar::register(
 
 新しいカスタム注文属性をExperience Platformの[!DNL Commerce] スキーマで取り込むことができるようにするには、スキーマを拡張してこれらのカスタムフィールドを含める必要があります。
 
-既存のXDM スキーマを拡張してこれらのカスタムフィールドを含める方法については、Experience Platform ドキュメントの「[UIでのスキーマの作成と編集」を参照してください。 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)テナント ID フィールドは動的に生成されますが、フィールド構造はExperience Platform ドキュメントに記載されている例に似ている必要があります。
+既存のXDM スキーマを拡張してこれらのカスタムフィールドを含める方法については、Experience Platform ドキュメントの「[UIでのスキーマの作成と編集」を参照してください。 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)テナント ID フィールドは動的に生成されますが、フィールド構造はExperience Platform ドキュメントに記載されている例に似ている必要があります。
 
 >[!IMPORTANT]
 >

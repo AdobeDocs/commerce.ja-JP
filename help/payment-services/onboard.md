@@ -42,7 +42,7 @@ ht-degree: 0%
 1. [サンドボックスサービスの設定](sandbox.md#sandbox-onboarding)
 1. [&#x200B; サンドボックス &#x200B;](sandbox.md#test-in-sandbox-environment)環境で支払いをテストします。
 
-[![詳細情報](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![詳細情報](assets/learn-more-button.svg)](https://helpx.adobe.com/jp/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB 本番]
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 1. [サンドボックスサービスの設定](sandbox.md#sandbox-onboarding)
 1. [&#x200B; サンドボックス &#x200B;](sandbox.md#test-in-sandbox-environment)環境で支払いをテストします。
 
-[![詳細情報](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![詳細情報](assets/learn-more-button.svg)](https://helpx.adobe.com/jp/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB 本番]
 
@@ -110,8 +110,8 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> * [&#x200B; トラブルシューティング  [!DNL Payment Services]  インストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
-> * [PayPal サンドボックスアカウントが確認されていません](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
-> * [遅延 [!DNL Payment Services]  レポートデータ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
-> * [&#x200B; サンドボックス環境で支払いを処理する際に、PayPalでクレジットカードのテストが失敗する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)
-> * [拡張機能 [!DNL Payment Services] を無効にする](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)
+> * [&#x200B; トラブルシューティング  [!DNL Payment Services]  インストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=ja)
+> * [PayPal サンドボックスアカウントが確認されていません](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=ja)
+> * [遅延 [!DNL Payment Services]  レポートデータ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=ja)
+> * [&#x200B; サンドボックス環境で支払いを処理する際に、PayPalでクレジットカードのテストが失敗する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=ja)
+> * [拡張機能 [!DNL Payment Services] を無効にする](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)

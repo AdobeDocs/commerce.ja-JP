@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Commerce Data Ingestionの時系列イベントスキーマの更新
 
-[拡張機能を使用するための](overview.md#onboarding-steps) オンボーディング手順[!DNL Data Connection]の1つは、データストリームワークスペースにアクセスし、[Adobe Commerce固有のデータストリーム &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)を作成することです。 そのデータストリームを作成する場合は、取り込むデータを説明するスキーマも選択する必要があります。 このスキーマには、コマース固有のフィールドグループを含める必要があります。
+[拡張機能を使用するための](overview.md#onboarding-steps) オンボーディング手順[!DNL Data Connection]の1つは、データストリームワークスペースにアクセスし、[Adobe Commerce固有のデータストリーム &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ja)を作成することです。 そのデータストリームを作成する場合は、取り込むデータを説明するスキーマも選択する必要があります。 このスキーマには、コマース固有のフィールドグループを含める必要があります。
 
 この記事では、Adobe Commerce イベントによって提供される次の時系列データを正常に収集するために、スキーマに含める必要があるフィールドグループについて説明します。
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 [時系列データ &#x200B;](data-ingestion.md)について詳しく見る。
 
-スキーマ構成[の](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)基本事項について詳しく説明します。
+スキーマ構成[の](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja)基本事項について詳しく説明します。
 
 ## 時系列行動データとバックオフィスイベントデータでスキーマを更新する
 
@@ -32,9 +32,9 @@ ht-degree: 0%
 >
 >プロファイル固有のフィールドを追加する方法については、[時系列プロファイルイベントデータ &#x200B;](#time-series-profile-event-data)を参照してください。
 
-1. まだスキーマがない場合は、クラスが[Experience Event](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create)に設定された&#x200B;**create**&#x200B;を作成します。
+1. まだスキーマがない場合は、クラスが[Experience Event](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ja#create)に設定された&#x200B;**create**&#x200B;を作成します。
 
-1. [次のCommerce固有のフィールドグループを](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups)追加します（または、既存のスキーマを編集してこれらのフィールドグループを追加します）。
+1. [次のCommerce固有のフィールドグループを](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ja#add-field-groups)追加します（または、既存のスキーマを編集してこれらのフィールドグループを追加します）。
 
    - サイト検索
    - Web ページを見る
@@ -51,15 +51,15 @@ ht-degree: 0%
 
    スキーマにCommerce固有のフィールドグループが含まれるようになり、Commerce [行動](events.md)および[&#x200B; バックオフィス &#x200B;](events-backoffice.md) イベントから収集された時系列データがスキーマで表されるようになりました。
 
-1. [&#x200B; プロファイルのスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile)。
+1. [&#x200B; プロファイルのスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ja#profile)。
 
    プロファイルに対してスキーマが有効になっている場合、このスキーマから作成されたすべてのデータセットがReal-Time CDPに組み込まれ、様々なソースからデータが結合され、各顧客の全体像が構築されます。
 
-1. [作成または更新したスキーマに基づいてデータセット &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset)を作成します。
+1. [作成または更新したスキーマに基づいてデータセット &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html?lang=ja#create-a-dataset)を作成します。
 
    データセットは、データのコレクションを格納および管理するための構成図です。通常、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータのさまざまな側面を説明するメタデータも含まれます。
 
-1. [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)を作成し、Commerce固有のフィールドグループと対応するデータセットを含むスキーマを選択します。
+1. [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ja)を作成し、Commerce固有のフィールドグループと対応するデータセットを含むスキーマを選択します。
 
    データストリームは、収集したデータをデータセットに転送します。 選択したスキーマに基づいて、データセットにデータが表示されます。
 
@@ -97,24 +97,24 @@ ht-degree: 0%
 
 [&#x200B; サーバーサイドのプロファイルイベントデータ &#x200B;](events-backoffice.md#customer-profile-events)を新しいプロファイル固有のデータストリームとスキーマに追加する場合は、次の手順を実行します。
 
-1. [&#x200B; スキーマを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create)し、クラスを&#x200B;**エクスペリエンスイベント**&#x200B;に設定します。
+1. [&#x200B; スキーマを作成](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ja#create)し、クラスを&#x200B;**エクスペリエンスイベント**&#x200B;に設定します。
 
-1. [次のプロファイル固有のフィールドグループを](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups)追加します。
+1. [次のプロファイル固有のフィールドグループを](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ja#add-field-groups)追加します。
 
    - デモグラフィック情報
    - 個人の連絡先詳細
    - チャネル詳細
    - Commerceの詳細
 
-1. [&#x200B; プロファイルのスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile)。
+1. [&#x200B; プロファイルのスキーマを有効にする](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=ja#profile)。
 
    プロファイルに対してスキーマが有効になっている場合、このスキーマから作成されたすべてのデータセットがReal-Time CDPに組み込まれ、様々なソースからデータが結合され、各顧客の全体像が構築されます。
 
-1. [作成したスキーマに基づいてデータセット &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset)を作成します。
+1. [作成したスキーマに基づいてデータセット &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html?lang=ja#create-a-dataset)を作成します。
 
    データセットは、データのコレクションを格納および管理するための構成図です。通常、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータのさまざまな側面を説明するメタデータも含まれます。
 
-1. [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)を作成し、Commerce固有のフィールドグループと対応するデータセットを含むXDM スキーマを選択します。
+1. [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ja)を作成し、Commerce固有のフィールドグループと対応するデータセットを含むXDM スキーマを選択します。
 
    データストリームは、収集したデータをデータセットに転送します。 選択したスキーマに基づいて、データセットにデータが表示されます。
 
