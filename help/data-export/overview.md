@@ -1,44 +1,48 @@
 ---
 title: '[!DNL SaaS Data Export Guide]'
-description: 'Adobe Commerceと接続されたCommerce サービスの間でデータを同期するAdobe Commerce SaaS サービス用の拡張機能の使用について説明します  [!DNL data export] '
+description: Adobe Commerceと接続されたCommerce サービス間でデータを同期するAdobe Commerce SaaS サービスに [!DNL data export] 拡張機能を使用する方法について説明します。
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
-source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
+source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
 # [!DNL SaaS Data Export] ガイド
 
-Adobe Commerce インスタンスと接続されたCommerce サービスの間でデータを同期で [!DNL SaaS data export] ます。 Adobe Commerceのインストールに Live Search、Product Recommendations またはカタログサービスを追加すると、[!DNL Data export] 拡張機能が自動的にインストールされます。
+[!DNL SaaS data export]は、Adobe Commerce インスタンスと接続されたCommerce サービスとの間でデータを同期します。 ライブサーチ、商品レコメンデーション、またはカタログサービスをAdobe Commerce インストールに追加すると、[!DNL Data export]拡張機能が自動的にインストールされます。
 
-SaaS データ エクスポートは、さまざまな種類のデータを収集してエクスポートします。これらのデータは _フィード_ と呼ばれ、特定の種類の情報を集計します。 インストールされているCommerce サービスに応じて、SaaS データ書き出しフィードには次のものが含まれます。
+SaaS データ書き出しは、_フィード_&#x200B;と呼ばれる様々なタイプのデータを収集および書き出し、特定のタイプの情報を集約します。 インストールされているCommerce サービスに応じて、SaaS データエクスポートフィードには次のものが含まれます。
 
-- **カタログエンティティフィード** 製品データを集計します。 データには、製品、製品属性、製品価格、製品バリエーション、カテゴリ、カテゴリ権限、製品権限が含まれます。
-- **スコープフィード** は、顧客グループ、web サイト、ストアおよびストアビューのデータを集計します。
-- **受注フィード** は、請求書、出荷、クレジット・メモなどの関連エンティティを含む受注データを集約します。
-- **マルチSourceインベントリフィード** は、在庫ステータス項目に関するデータを集計します。
+- **カタログエンティフィード**&#x200B;の製品データの集約。 データには、製品、製品属性、製品価格、製品バリエーション、カテゴリー、カテゴリー権限、製品権限が含まれます。
+- **スコープフィード**&#x200B;は、顧客グループ、web サイト、ストア、ストアビューのデータを集計します。
+- **販売注文フィード**&#x200B;は、請求書、出荷、クレジットメモなどの関連エンティティを含む注文データを集計します。
+- **マルチSource在庫フィード**&#x200B;は、在庫の在庫状況アイテムに関するデータを集計します。
 
-SaaS データのエクスポートは、PHP 拡張モジュールとして提供されます。 データ同期プロセスを開始および管理するためのいくつかの方法をサポートしています。
+SaaS データエクスポートは、PHP拡張機能として配信されます。 データ同期プロセスを開始および管理するための複数の方法をサポートしています。
 
 - **管理者またはコマンドラインからの手動同期**
 
-   - Commerce管理の [&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) には、同期ステータスがグラフィカルに表示されます。 ダッシュボードを使用して、すべてのフィードの完全再同期（_完全同期_）を実行できます。 ただし、Adobeでは、Adobe CommerceをCommerce サービスに初めて接続する際にのみ、完全同期を実行することをお勧めします。 [&#x200B; 同期処理 &#x200B;](data-synchronization.md) を参照してください。
+   - Commerce Adminの[Data Management ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)には、商品データがコマースサービスに正常に同期されたことを示す同期ステータスのグラフィカルビューが表示されます。 ダッシュボードを使用して、すべてのフィードの完全な再同期（_完全同期_）を実行できます。 ただし、Adobeでは、Adobe CommerceをCommerce サービスに初めて接続する場合にのみ、完全同期を実行することをお勧めします。 [同期プロセス ](data-synchronization.md)を参照してください。
 
-   - [Adobe Commerce コマンドラインツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/config-cli) （CLI）には、特定のフィードを同期するコマンドが用意されており、フィード処理をカスタマイズするオプションが追加されています。
+     {{aco-data-sync-verification}}
 
-- **Cron ジョブとの自動同期**
+   - [ データフィードの同期ステータス ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページでは、Commerceから商品レコメンデーション、ライブサーチ、カタログサービス、Adobe Commerce Optimizerなどの外部サービスに商品データやカテゴリデータを転送するデータエクスポートフィードの健全性とパフォーマンスに関するリアルタイムのインサイトを提供します。
 
-   - [&#x200B; 部分的なデータ同期 &#x200B;](data-synchronization.md#partial-synchronization-with-cron-jobs) - Commerce管理者ユーザーがエンティティを更新すると、Cron ジョブは部分的なデータ同期をトリガーにします。 データの書き出しプロセスでは、接続されたCommerce サービスに対してこれらの更新のみが送信されます。 部分同期プロセスはビューメカニズムに基づいており、管理者ユーザーまたはシステムインテグレーターの操作は必要ありません。
+   - [Adobe Commerce コマンドライン ツール ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) （CLI）には、特定のフィードを同期するコマンドが用意されており、フィード処理をカスタマイズするためのその他のオプションも用意されています。
 
-   - [Automatic retry for synchronization errors](data-synchronization.md#failed-items-sync-for-error-recovery):Cron ジョブ・トリガーーデータ同期プロセス中にエラーが発生した場合の同期プロセスの自動再試行。
+- **cron ジョブとの自動同期**
 
-- **輸出の予定及び実施**
+   - [部分データトリガー](data-synchronization.md#partial-sync) - Commerce管理者ユーザーがエンティティを更新すると、Cron ジョブが部分的データ同期を同期します。 データ書き出しプロセスでは、これらの更新のみが接続されたCommerce サービスに送信されます。 部分同期プロセスはMView メカニズムに基づいており、管理者ユーザーまたはシステムインテグレーターのアクションは必要ありません。
 
-   - 開発者とシステムインテグレーターは、SaaS データの書き出しに要する時間を推定して、Adobe Commerceと接続されたサービスの間でデータを同期させることができます。 この概算は、サイトの中断を防ぐためにデータのエクスポート処理をスケジュールするのに役立ちます。 [&#x200B; データ量と送信時間の予測 &#x200B;](estimate-data-volume-sync-time.md) を参照してください。
+   - [同期エラーに対する自動再試行](data-synchronization.md#retry-failed-items-sync) - Cron ジョブのトリガーデータ同期プロセス中にエラーが発生した場合の同期プロセスの自動再試行。
 
-   - 同期をより迅速に行う必要がある場合は、SaaS データのエクスポートを使用すると、エクスポート処理のパフォーマンスを向上させるためのカスタマイズオプションを利用できます。 [&#x200B; データ書き出しのパフォーマンスの向上 &#x200B;](customize-export-processing.md) を参照してください。
+- **スケジュールとパフォーマンスの書き出し**
 
-- **データの書き出しアクティビティの追跡とトラブルシューティング** - データの書き出しログと saas-export ログを使用して、同期とインデックス作成のプロセス中に同期ステータスを確認し、ペイロードをフィードします。 [&#x200B; ログとトラブルシューティング &#x200B;](troubleshooting-logging.md) を参照してください。
+   - 開発者やシステムインテグレーターは、Adobe Commerceと接続されたサービス間でSaaS データを同期するために必要な時間を見積もることができます。 この見積もりは、データ書き出し処理のスケジュールを設定し、サイトの混乱を防ぐのに役立ちます。 [ データ量と送信時間の見積もり](estimate-data-volume-sync-time.md)を参照してください。
+
+   - SaaS データ書き出しは、同期をより迅速におこなう必要がある場合、書き出し処理のパフォーマンスを向上させるためのカスタマイズオプションを提供します。 [ データ書き出しのパフォーマンスの向上](customize-export-processing.md)を参照してください。
+
+- **データ書き出しアクティビティの追跡とトラブルシューティング** - データ書き出しとsaas書き出しのログを使用して、同期およびインデックス作成プロセス中に同期ステータスとフィード ペイロードを確認します。 [ ログとトラブルシューティング ](troubleshooting-logging.md)を参照してください。

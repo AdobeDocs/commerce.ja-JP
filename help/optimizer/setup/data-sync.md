@@ -3,11 +3,11 @@ title: データの同期
 description: Commerce データソースから [!DNL Adobe Commerce Optimizer]に同期中のカタログデータを確認します。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
-source-git-commit: 604f46a65b2bfa84e1be07f410a4e36051eb1a29
+source-git-commit: 2cb17424a0f063a585ddd861b7057d9851467fbc
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **データ同期** ページは、*設定* > **データ同期**&#x200B;にあります。
 
-![&#x200B; データ同期](../assets/data-sync.png)
+![ データ同期](../assets/data-sync.png)
 
 **データ同期** ページには、次のフィールドが含まれています。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## 同期済み製品のリスト
 
-同期済み製品の詳細をJSON形式で表示するには、同期済み製品テーブルの製品の行にあるコードアイコン ![&#x200B; コードリンク &#x200B;](../assets/data-sync-details.png)をクリックします。
+同期済み製品の詳細をJSON形式で表示するには、同期済み製品テーブルの製品の行にあるコードアイコン ![ コードリンク ](../assets/data-sync-details.png)をクリックします。
 
 ![製品の詳細を同期](../assets/synced-products.png)
 
@@ -54,10 +54,10 @@ ht-degree: 0%
 
 ## データ同期ステータスの監視
 
-Commerce Optimizer コネクタを介してAdobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合、Commerce管理者の[&#x200B; データフィード同期ステータス ページ &#x200B;](../../data-export/data-synchronization.md)からデータ書き出しプロセスを監視し、再同期操作を開始できます。
+Commerce Optimizer コネクタを介してAdobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合、Commerce管理者の[ データフィード同期ステータス ページ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)からデータエクスポートプロセスをモニターし、再同期操作を開始できます。
 
 ## 関連トピック
 
-- [Adobe Commerce Optimizer コネクタ &#x200B;](../../aco-connector/overview.md){target="_blank"}
+- [Adobe Commerce Optimizer コネクタ ](../../aco-connector/overview.md){target="_blank"}
 
 

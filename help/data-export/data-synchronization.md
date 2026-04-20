@@ -1,104 +1,111 @@
 ---
-title: データを SaaS データ書き出しと同期
-description: Adobe Commerce インスタンスと接続された SaaS サ  [!DNL SaaS Data Export]  ビスとの間でデータを収集および同期する方法について説明します。
+title: SaaS データ書き出しとデータの同期
+description: Adobe Commerce インスタンスと接続されたSaaS サービス間で [!DNL SaaS Data Export] がデータを収集して同期する方法について説明します。
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
-source-git-commit: ea425b56fe7afd9bdaa813d040ac9e47b7022908
+source-git-commit: 966daee60fa8945a68424fca8bda4fe4b9599872
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
 
-# SaaS データ エクスポートを使用してデータを同期する
+# SaaS データ書き出しとデータの同期
 
-カタログサービス、Live Search、Product Recommendations などのデータのエクスポートを必要とするCommerce サービスをインストールすると、データの収集と同期のプロセスを管理するために、Saas データのエクスポートモジュールのコレクションがインストールされます。
+カタログサービス、ライブサーチ、商品レコメンデーションなどのデータ書き出しを必要とするCommerce サービスをインストールすると、データ収集と同期プロセスを管理するために、Saas データエクスポートモジュールのコレクションがインストールされます。
 
-SaaS データのエクスポートでは、商品データをAdobe Commerce インスタンスからCommerce サービスプラットフォームに継続的に移動して、データを最新の状態に保ちます。 例えば、製品レコメンデーションでは、現在のカタログ情報を使用して、正確な名前、価格、在庫を含むレコメンデーションを正確に返す必要があります。 [&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/data-services/catalog-sync) を使用して、同期プロセスまたはコマンドラインインターフェイスを監視および管理し、同期をトリガーして、Commerce Services で使用するために製品データを再インデックス化します。
+SaaS データ書き出しは、データを最新の状態に保つために、継続的にAdobe CommerceインスタンスからCommerce Services プラットフォームに商品データを移動します。 たとえば、商品レコメンデーションを利用するには、正しい名前、価格、在庫状況を反映したレコメンデーションを正確に返すために、最新のカタログ情報が必要です。 同期プロセスの監視について詳しくは、[同期プロセスの表示と管理](#view-and-manage-the-synchronization-process)を参照してください。
 
-次の図は、SaaS データの書き出しフローを示しています。
 
-![Adobe Commerceの SaaS データ書き出し収集および同期フロー &#x200B;](assets/data-export-flow.png){width="900" zoomable="yes"}
+次の図は、SaaS データ書き出しフローを示しています。
 
-SaaS データ書き出しフローの主なコンポーネントは次のとおりです。
+Adobe Commerce![の](assets/data-export-flow.png){width="900" zoomable="yes"}SaaS データ書き出し収集と同期フロー
 
-- Adobe Commerceからフィードのデータを収集し、フィード項目を組み立て、更新をリッスンし、フィードステータスを保持する SaaS データエクスポートモジュール。
-- SaaS は、データをエクスポートするモジュールをエクスポートし、ルーティングを設定して、接続されたサービスにフィードを公開します。
-- Adobe Commerce サービスは、データ取得プロセスを管理して、受信フィードを検証し、接続されたサービスの更新を保持します。
+SaaS データエクスポートフローの主な要素には、次のようなものがあります。
+
+- Adobe Commerceからフィード用にデータを収集し、フィード項目を組み立て、更新をリッスンして、フィードのステータスを保持するSaaS データエクスポートモジュール。
+- SaaS書き出しモジュール：データの書き出し、ルーティングの設定、接続されたサービスへのフィードの公開を行います。
+- Adobe Commerce Serviceは、データ収集プロセスを管理し、受信フィードを検証して、接続されたサービスに更新を永続化します。
 
 >[!NOTE]
 >
->スケジュールをスムーズに設定し、サイト操作の中断を避けるために、Adobeでは、データフィードの同期を開始する前に、データの量と同期時間を予測することをお勧めします。 この見積もりは、初期同期や大規模なカタログ更新（一括価格変更など）を計画する際に重要です。 詳しくは、[&#x200B; データ同期のデータ量と送信時間の予測 &#x200B;](estimate-data-volume-sync-time.md) を参照してください。
+>スムーズなスケジュール設定を実現し、サイト運用の中断を回避するために、Adobeでは、データフィードの同期を開始する前に、データ量と同期時間を見積もることをお勧めします。 この見積もりは、初回の同期や、大量価格の変更などの大規模なカタログ更新を計画する際に重要です。 詳しくは、[ データ同期のデータ量と送信時間の見積もり](estimate-data-volume-sync-time.md)を参照してください
 
 ## 同期モード
 
-SaaS データ エクスポートには、エンティティ フィードを処理するための 2 つのモードがあります。
+SaaS データの書き出しには、エンティティフィードを処理するための2つのモードがあります。
 
-- **即時エクスポートモード** – このモードでは、データが収集され、1 回のイテレーションでCommerce サービスにすぐに送信されます。 このモードでは、Commerce サービスへのエンティティの更新の配信が高速化され、フィードテーブルのストレージサイズが縮小されます。
+- **即時エクスポート モード** – このモードでは、データが収集され、1回のイテレーションですぐにCommerce サービスに送信されます。 このモードは、Commerce サービスへのエンティティ更新の配信を高速化し、フィードテーブルのストレージサイズを削減します。
 
-- **レガシーエクスポートモード** – このモードでは、データは 1 つのプロセスで収集されます。 次に、cron ジョブが、収集したデータを接続されたコマースサービスに送信します。 データ書き出しログエントリでは、レガシーモードを使用するフィードには `(legacy)` というラベルが付けられます。
+- **従来の書き出しモード** – このモードでは、データは単一のプロセスで収集されます。 次に、cron ジョブが、収集したデータを接続されたコマースサービスに送信します。 データ書き出しログのエントリでは、従来のモードを使用するフィードには`(legacy)`というラベルが付けられます。
 
 ## 同期タイプ
 
-SaaS データのエクスポートでは、フル同期、部分同期、および失敗した項目同期の再試行の 3 種類の同期タイプがサポートされています。
+SaaS データの書き出しは、3つの同期タイプのフル同期、部分同期、失敗した項目の同期を再試行することをサポートしています。
 
 ### 完全同期
 
-Adobe Commerce インスタンスをCommerce サービスに接続した後、完全同期を実行して、Adobe Commerceから接続されたサービスにエンティティフィードデータを送信します。
+Adobe Commerce インスタンスをCommerce サービスに接続した後、完全同期を実行して、Adobe Commerceから接続されたサービスにエンティティ フィード データを送信します。
 
 >[!NOTE]
 >
->フル同期は主にオンボーディングフェーズ用です。 データベース容量超過を防ぐために、通常の使用は避けます。 初期同期の後、進行中の変更は、部分同期を使用して自動的に同期されます。
+>完全同期は主にオンボーディングフェーズ用です。 データベースの過負荷を防ぐために、定期的な使用は避けてください。 初期同期後、部分同期を使用して継続的な変更が自動的に同期されます。
 
 ### 部分同期
 
-部分同期を使用すると、SaaS データの書き出しは、Commerce アプリケーションから接続されたコマースサービスに、商品名の変更や価格の更新などのアップデートを自動的に送信します。
+部分的な同期により、SaaS データの書き出しは、Commerceアプリケーションから、製品名の変更や価格の更新などの更新情報を、接続されたコマースサービスに自動的に送信します。
 
-データの書き出しプロセスでは、次の cron ジョブを使用して部分同期操作を自動化します。
+データ書き出しプロセスでは、次のcron ジョブを使用して、部分同期操作を自動化します。
 
-- cron グループジョブの「インデックス」:
-   - `indexer_reindex_all_invalid` ジョブでは、無効なフィードのインデックスがすべて再作成されます。 これは、標準のAdobe Commerce cron ジョブです。
-   - `saas_data_exporter` のジョブは、従来のエクスポートフィードに対するものです。
-   - `sales_data_exporter` ジョブは、販売データのエクスポート フィードに固有です。
+- 「インデックス」 cron グループジョブ：
+   - `indexer_reindex_all_invalid` ジョブは、すべての無効なフィードのインデックスを再作成します。 これはAdobe Commerceの標準的なcron ジョブです。
+   - `saas_data_exporter` ジョブは従来の書き出しフィード用です。
+   - `sales_data_exporter` ジョブは、セールスデータ書き出しフィードに固有です。
 
-これらのジョブは毎分実行されます。
+毎分このジョブが実行されます。
 
-部分同期を機能させるには、Commerce アプリケーションで次の設定が必要です。
+部分的な同期を機能させるには、Commerce アプリケーションで次の設定が必要です。
 
-- [Cron ジョブを介してタスクスケジュールが有効になる &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=ja)
+- [ タスクのスケジュール設定はcron ジョブを使用して有効になっています](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
 
-- すべての SaaS データ書き出しインデクサーは、`Update by Schedule` モードで設定されます。
+- すべてのSaaS データ書き出しインデクサーは`Update by Schedule` モードで設定されます。
 
-  SaaS データ エクスポート バージョン 103.1.0 以降では、`Update by Schedule` モードはデフォルトで有効になっています。 Commerce CLI コマンド（`bin/magento indexer:show-mode | grep -i feed`）を使用して、サーバー上のインデックス設定を確認できます。
+  SaaS データ書き出しバージョン 103.1.0以降では、`Update by Schedule` モードがデフォルトで有効になっています。 Commerce CLI コマンド `bin/magento indexer:show-mode | grep -i feed`を使用して、サーバーのインデックス設定を確認できます
 
 ### 失敗した項目の同期を再試行
 
-失敗した項目の同期の再試行では、アプリケーション エラー、ネットワーク障害、SaaS サービス エラーなど、同期プロセス中のエラーが原因で同期に失敗した項目を、別のプロセスを使用して再送信します。 この同期の実装は、cron ジョブにも基づいています。
+再試行に失敗した項目の同期では、同期プロセス中のエラー（アプリケーションエラー、ネットワークの中断、SaaS サービスエラーなど）が原因で同期に失敗した項目を再送信するために、別のプロセスを使用します。 この同期の実装もcron ジョブに基づいています。
 
-- `resync_failed_feeds_data_exporter` cron グループジョブ：
+- `resync_failed_feeds_data_exporter`件のcron グループジョブ：
    - `<feed name>_feed_resend_failed_feeds_items` ジョブは、同期に失敗した項目（例：`products_feed_resend_failed_items`）を再送信します。
 
 ### 同期プロセスの表示と管理
 
-ほとんどの同期アクティビティは、アプリケーション設定に基づいて自動的に処理されます。 ただし、SaaS データのエクスポートには、プロセスを監視および管理するためのツールも用意されています。
+ほとんどの同期アクティビティは、アプリケーション設定に基づいて自動的に処理されます。 ただし、SaaS データの書き出しは、プロセスを監視および管理するためのツールも提供します。
 
-- [!BADGE PaaS のみ &#x200B;]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeが管理する PaaS インフラストラクチャ）およびオンプレミスプロジェクトにのみ適用されます。"}**[Data Management dashboard](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** – 管理者ユーザーは、Commerce サービスに同期され、ストアフロントサービスで使用可能なデータを表示および追跡できます。
+- [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"} **[Data Management ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**：管理者ユーザーは、Commerce サービスに同期され、ストアフロントサービスで利用可能なデータを表示および追跡できます。 このダッシュボードには、Commerce Servicesに同期された商品が表示されます。
 
-- [!BADGE SaaS のみ &#x200B;]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce Optimizer（Adobeが管理する SaaS インフラストラクチャ）と統合されたAdobe Commerce プロジェクトに適用されます。"}**[データ同期ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/data-sync)** - [!DNL Adobe Commerce Optimizer] を使用するCommerce プロジェクトの場合、Adobe Commerce Optimizerのデータ同期ページで、ストアフロントのカタログデータの可用性を確認します。
+  {{aco-data-sync-verification}}
 
-### Commerce アプリケーション設定の確認
+- [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce Optimizer（Adobeが管理するSaaS インフラストラクチャ）と統合されたAdobe Commerce プロジェクトに適用されます。"} **[データ同期フィード同期の状態ページ ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)**-[!DNL Adobe Commerce Optimizer]を使用するCommerce プロジェクトの場合、Adobe Commerce Optimizerのデータフィード同期の状態ページから、ストアフロントのカタログデータの可用性を確認します。 このダッシュボードには、データ書き出しフィードの同期ステータスが表示されます。
 
-部分同期および失敗した項目の再試行同期は、Commerce インスタンスが正しく設定されている場合にのみ機能します。 通常、設定はCommerce サービスを設定する際に完了します。 データの書き出しが正しく機能しない場合は、次の設定を確認します。
+>[!NOTE]
+>
+>データ管理ダッシュボードは、ライブサーチ、製品レコメンデーション、またはカタログサービスがインストールされている場合にのみ使用できます。 これらのサービスがある場合、または[Adobe Commerce Optimizer Connector](../aco-connector/overview.md)がインストールされている場合は、データフィード同期ステータスダッシュボードを利用できます。
 
-- [cron ジョブが実行中であることを確認 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+### Commerce アプリケーション設定の検証
 
-- インデクサーが [&#x200B; 管理者 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management) から、またはCommerce CLI コマンド `bin/magento indexer:info` ールを使用して実行されていることを確認します。
+一部の同期と失敗した項目の再試行は、Commerce インスタンスが正しく設定されている場合にのみ機能します。 通常、Commerce サービスの設定時に設定は完了します。 データの書き出しが正しく機能しない場合は、次の設定を確認してください。
 
-- カタログ属性、製品、製品オーバーライド、製品バリアントのフィードのインデクサーが `Update by Schedule` に設定されていることを確認します。 インデクサーは、管理者の [&#x200B; インデックス管理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management) または CLI （`bin/magento indexer:show-mode | grep -i feed`）を使用して確認できます。
+- [cron ジョブが実行中であることを確認します](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
 
-### データ転送ログのイベント マネージャー通知
+- インデックスが[管理者](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)から実行されているか、またはCommerce CLI コマンド `bin/magento indexer:info`を使用して実行されていることを確認します。
 
-バージョン 103.3.4 以降では、Commerce インスタンスからAdobe Commerce サービスにデータが送信されると、SaaS データエクスポートによって `data_sent_outside` イベントがディスパッチされます。
+- 次のフィードのインデックスが`Update by Schedule`に設定されていることを確認します。カタログ属性、製品、製品の上書き、製品バリアント。 管理者またはCLI （[）を使用して、](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)Index Management`bin/magento indexer:show-mode | grep -i feed`のインデクサーを確認できます。
+
+### データ転送ログのイベントマネージャー通知
+
+バージョン 103.3.4以降では、Commerce インスタンスからAdobe Commerce サービスにデータが送信されると、SaaS Data Exportによって`data_sent_outside` イベントがディスパッチされます。
 
 ```php
 $this->eventManager->dispatch(
@@ -113,4 +120,4 @@ $this->eventManager->dispatch(
 
 >[!NOTE]
 >
->イベントとその登録方法について詳しくは、Adobe Commerce Developer ドキュメントの [&#x200B; イベントとオブザーバー &#x200B;](https://developer.adobe.com/commerce/php/development/components/events-and-observers) を参照してください。
+>イベントとそのサブスクライブ方法について詳しくは、Adobe Commerce Developer ドキュメントの[ イベントとオブザーバー](https://developer.adobe.com/commerce/php/development/components/events-and-observers)を参照してください。
