@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![新機能](../assets/new.svg)
 ![修正](../assets/fix.svg)修正と機能強化
-![ バグ ](../assets/bug.svg)既知の問題
+![&#x200B; バグ &#x200B;](../assets/bug.svg)既知の問題
 
 >[!NOTE]
 >
@@ -99,13 +99,13 @@ _2025年11月24日_
 
 _2025年10月22日_
 
-![新規](../assets/new.svg) Adobe Commerceから接続されたサービス（カタログサービス、ライブサーチ、商品レコメンデーション）へのデータ転送を監視およびトラブルシューティングするためのData Feed Sync Status拡張機能のサポートを追加しました。 この拡張機能のインストールと使用について詳しくは、[Commerce管理ガイド ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html)の&#x200B;*Data Feed Sync Status Monitoring*&#x200B;を参照してください。<!--MDEE-954-->
+![新規](../assets/new.svg) Adobe Commerceから接続されたサービス（カタログサービス、ライブサーチ、商品レコメンデーション）へのデータ転送を監視およびトラブルシューティングするためのData Feed Sync Status拡張機能のサポートを追加しました。 この拡張機能のインストールと使用について詳しくは、[Commerce管理ガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html)の&#x200B;*Data Feed Sync Status Monitoring*&#x200B;を参照してください。<!--MDEE-954-->
 
 ### 103.4.14 リリース
 
 _2025年10月10日_
 
-![修正](../assets/fix.svg) [ テーブルが見つからない場合、](https://developer.adobe.com/commerce/php/development/components/indexing/#mview)mview インデクサー`cde_product_overrides_feed_cl` ジョブが失敗する問題を解決しました。 この修正により、安定したインデックス再作成が保証され、マルチテナント環境でこのテーブルに関連するジョブの失敗を防ぐことができます。<!--MDEE-1175-->
+![修正](../assets/fix.svg) [&#x200B; テーブルが見つからない場合、](https://developer.adobe.com/commerce/php/development/components/indexing/#mview)mview インデクサー`cde_product_overrides_feed_cl` ジョブが失敗する問題を解決しました。 この修正により、安定したインデックス再作成が保証され、マルチテナント環境でこのテーブルに関連するジョブの失敗を防ぐことができます。<!--MDEE-1175-->
 
 ### 103.4.13 リリース
 
