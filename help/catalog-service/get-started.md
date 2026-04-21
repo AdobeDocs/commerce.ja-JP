@@ -20,14 +20,14 @@ ht-degree: 0%
 
 [!DNL Catalog Service]はGraphQL APIとして利用でき、Commerce管理者またはGraphQL クエリをサポートするあらゆるフロントエンドアプリケーションからアクセスできます。 このサービスは、SaaS環境とPaaS環境の両方で利用できます。
 
-[!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
+[!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
 
 | 環境 | エンドポイント |
 | ------------ | ----------: |
 | **テスト** | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **本番** | `https://catalog-service.adobe.io/graphql` |
 
-[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}
+[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}
 
 | 環境 | エンドポイント |
 | ----------- | --------:|
@@ -50,7 +50,7 @@ https://<region>-<environment>.api.commerce.adobe.com/<tenantId>/graphql
 
 ヘッドレスストアフロントと統合するには、ストアフロントと[!DNL Catalog Service]間の通信を有効にして製品およびカテゴリーデータを取得できるように、ストアフロント設定を更新する必要があります。
 
-Edge Delivery ServicesでAdobe Commerce ストアフロントを使用している場合は、カタログサービスエンドポイントをストアフロント設定に追加します。 詳しくは、[Edge Delivery Services ドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration)を参照してください。
+Edge Delivery ServicesでAdobe Commerce ストアフロントを使用している場合は、カタログサービスエンドポイントをストアフロント設定に追加します。 詳しくは、[Edge Delivery Services ドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=ja#storefront-configuration)を参照してください。
 
 その他の統合については、サービスとバックエンドのデータソース間の統合を設定する方法について詳しくは、プロジェクト設定ドキュメントを参照してください。
 
@@ -66,4 +66,4 @@ Adobe Developer App Builder向け[API Mesh](https://developer.adobe.com/graphql-
 
 ## データ管理ダッシュボードの活用
 
-[Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)を使用して、[!DNL Catalog Service]とAdobe Commerce インスタンス間のデータ同期を監視します。 ダッシュボードには、データ書き出しのステータスや同期済み製品のリストなど、データ転送プロセスに関するインサイトが表示されます。
+[Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)を使用して、[!DNL Catalog Service]とAdobe Commerce インスタンス間のデータ同期を監視します。 ダッシュボードには、データ書き出しのステータスや同期済み製品のリストなど、データ転送プロセスに関するインサイトが表示されます。

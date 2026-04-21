@@ -34,10 +34,10 @@ ht-degree: 0%
 <table style="table-layout:fixed">
   <tr>
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/?lang=ja"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 Adobe Commerce IDの管理と認証は、Adobe Identity Management System （IMS）によってAdobe Admin Consoleを通じて管理されます。
 
-Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Adobe アプリへの安全なアクセス用にシングルサインオン（SSO）を設定する手順について詳しくは、[Enterprise Admin Console](https://helpx.adobe.com/enterprise/using/set-up-identity.html) ドキュメントの&#x200B;*IDとシングルサインオンの設定*&#x200B;を参照してください。
+Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Adobe アプリへの安全なアクセス用にシングルサインオン（SSO）を設定する手順について詳しくは、[Enterprise Admin Console](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html) ドキュメントの&#x200B;*IDとシングルサインオンの設定*&#x200B;を参照してください。
 
 ## ACCS サービスと拡張性のリリースノート {#accs-release}
 
@@ -74,7 +74,7 @@ Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Ado
 
 | サービス | 拡張機能 | ストアフロント |
 | --- | --- | --- |
-| <ul><li>[&#x200B; カタログ サービス &#x200B;](../catalog-service/release-notes.md)</li><li>[&#x200B; ライブサーチ &#x200B;](../live-search/release-notes.md)</li><li>[決済サービス &#x200B;](../payment-services/release-notes.md)</li><li>[商品レコメンデーション &#x200B;](../product-recommendations/release-notes.md)</li><li>[SaaS データ書き出し](../data-export/release-notes.md)</li></ul> | <ul><li>[管理者UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[&#x200B; イベント &#x200B;](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[&#x200B; リリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
+| <ul><li>[&#x200B; カタログ サービス &#x200B;](../catalog-service/release-notes.md)</li><li>[&#x200B; ライブサーチ &#x200B;](../live-search/release-notes.md)</li><li>[決済サービス &#x200B;](../payment-services/release-notes.md)</li><li>[商品レコメンデーション &#x200B;](../product-recommendations/release-notes.md)</li><li>[SaaS データ書き出し](../data-export/release-notes.md)</li></ul> | <ul><li>[管理者UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[&#x200B; イベント &#x200B;](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[&#x200B; リリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=ja)</li><li>[変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja)</li></ul> |
 
 ## Adobe Commerce Optimizer サービスのリリースノート {#aco-release}
 
@@ -84,4 +84,4 @@ Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Ado
 
 | サービス | ストアフロント |
 | --- | --- |
-| [AEM Assetsとの統合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer コネクタ &#x200B;](../aco-connector/release-notes.md) | [&#x200B; ストアフロントのリリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[&#x200B; ストアフロントの変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [AEM Assetsとの統合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer コネクタ &#x200B;](../aco-connector/release-notes.md) | [&#x200B; ストアフロントのリリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=ja)<br>[&#x200B; ストアフロントの変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja) |
