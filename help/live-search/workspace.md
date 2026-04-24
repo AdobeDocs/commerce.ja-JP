@@ -2,9 +2,9 @@
 title: ライブサーチの設定
 description: ' [!DNL Live Search]  ワークスペースは、検索パフォーマンスの設定、管理、監視に使用されます。'
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2317'
 ht-degree: 0%
 
 ---
@@ -24,33 +24,33 @@ ht-degree: 0%
 
 ヘッドレスストアフロントを使用している場合は、追加する必要がある必須イベントについて詳しくは、次のドキュメントを参照してください。
 
-- ライブ検索ダッシュボードの[必要なイベント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)。
-- 前提条件として追加する必要がある[&#x200B; ストアフロントイベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)です。
+- ライブ検索ダッシュボードの[必要なイベント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)。
+- 前提条件として追加する必要がある[ ストアフロントイベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)です。
 - イベント構造の[例](https://github.com/adobe/commerce-events/tree/main/examples)。
 
 ### 医療業界のユーザー事例
 
-ヘルスケアのお客様で、[Data Connection](../data-connection/hipaa-readiness.md#installation)拡張機能の一部である[Data Services HIPAA拡張機能](../data-connection/overview.md)をインストールした場合、[!DNL Live Search]によって使用されるストアフロントイベントデータはキャプチャされなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるためです。 ストアフロントイベントデータの取得と送信を続行するには、[!DNL Live Search]のイベント収集を再度有効にします。 詳しくは、[一般設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/general/general#data-services)を参照してください。
+ヘルスケアのお客様で、[Data Connection](../data-connection/overview.md)拡張機能の一部である[Data Services HIPAA拡張機能](../data-connection/hipaa-readiness.md#installation)をインストールした場合、[!DNL Live Search]によって使用されるストアフロントイベントデータはキャプチャされなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるためです。 ストアフロントイベントデータの取得と送信を続行するには、[!DNL Live Search]のイベント収集を再度有効にします。 詳しくは、[一般設定](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)を参照してください。
 
 ## 範囲の設定
 
-最初に、すべての[設定の](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings) スコープ [!DNL Live Search]が`Default Store View`に設定されます。 [!DNL Commerce]のインストールに複数のストアビューが含まれる場合は、**スコープ**&#x200B;をファセット設定が適用される[&#x200B; ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja)に設定します。
+最初に、すべての[!DNL Live Search]設定の[ スコープ ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)が`Default Store View`に設定されます。 [!DNL Commerce]のインストールに複数のストアビューが含まれる場合は、**スコープ**&#x200B;をファセット設定が適用される[ ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)に設定します。
 
 ## メニューオプション
 
 | オプション | 説明 |
 |--- |--- |
-| [&#x200B; パフォーマンス &#x200B;](performance.md) | ダッシュボードでは、insightで商品検索のパフォーマンスを確認できます。 |
-| [&#x200B; ファセット &#x200B;](facets.md) | 属性値の複数のディメンションを使用して検索条件を絞り込む、パフォーマンスの高いフィルタリング。 |
+| [ パフォーマンス ](performance.md) | ダッシュボードでは、insightで商品検索のパフォーマンスを確認できます。 |
+| [ ファセット ](facets.md) | 属性値の複数のディメンションを使用して検索条件を絞り込む、パフォーマンスの高いフィルタリング。 |
 | [同義語](synonyms.md) | 検索のリーチを拡大し、買い物客がカタログとは異なる商品を見つけるために使用する可能性のある単語を含めます。 |
-| [&#x200B; マーチャンダイジングの検索](rules.md) | スケジュールされたアクションをトリガーする論理ルールを使用して、検索エクスペリエンスを形作りましょう。 商品の販売促進、埋め込み、ピン留め、非表示などの操作を行って、検索結果のキャリブレーションを行い、ビジネス目標を達成。 |
-| [&#x200B; カテゴリ マーチャンダイジング &#x200B;](category-merch.md) | カテゴリーレベルでルールとインテリジェントなマーチャンダイジングを適用します。 |
-| [GraphQL](graphql.md) | ストアの管理者にログインした開発者は、実際のカタログデータを使用してクエリを作成し、テストできます。 詳しくは、[開発者向けドキュメントの](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)GraphQLの概要[!DNL Live Search]にアクセスしてください。 |
+| [ マーチャンダイジングの検索](rules.md) | スケジュールされたアクションをトリガーする論理ルールを使用して、検索エクスペリエンスを形作りましょう。 商品の販売促進、埋め込み、ピン留め、非表示などの操作を行って、検索結果のキャリブレーションを行い、ビジネス目標を達成。 |
+| [ カテゴリ マーチャンダイジング ](category-merch.md) | カテゴリーレベルでルールとインテリジェントなマーチャンダイジングを適用します。 |
+| [GraphQL](graphql.md) | ストアの管理者にログインした開発者は、実際のカタログデータを使用してクエリを作成し、テストできます。 詳しくは、[!DNL Live Search]開発者向けドキュメントの[GraphQLの概要](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)にアクセスしてください。 |
 | [設定](settings.md) | ストアフロントで価格ファセット値を価格範囲ごとにグループ化する方法を決定し、インデックス言語を設定します。 |
 
 ## 属性を検索可能に設定する
 
-高度にターゲットを絞った結果を生成するには、[検索可能](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=ja) （`searchable=true`）製品属性のセットを確認します。 関連性を確保するために、属性に明確で簡潔な意味を持つコンテンツが含まれている場合にのみ、属性を検索できるようにします。 デフォルトでは検索機能が有効になっていますが、検索結果の精度を低下させる可能性がある`description`のように、精度の低い長いテキストを含む属性を使用しないでください。 例えば、「ショートパンツ」と検索した際に、「半袖」という言葉が入った説明のシャツがある場合、そのシャツは検索結果に表示されます。
+高度にターゲットを絞った結果を生成するには、[検索可能](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) （`searchable=true`）製品属性のセットを確認します。 関連性を確保するために、属性に明確で簡潔な意味を持つコンテンツが含まれている場合にのみ、属性を検索できるようにします。 デフォルトでは検索機能が有効になっていますが、検索結果の精度を低下させる可能性がある`description`のように、精度の低い長いテキストを含む属性を使用しないでください。 例えば、「ショートパンツ」と検索した際に、「半袖」という言葉が入った説明のシャツがある場合、そのシャツは検索結果に表示されます。
 
 属性を検索可能にするには、次の手順を実行します。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 1. 検索可能にする属性（`color`など）を選択します。
 1. **ストアフロントのプロパティ**&#x200B;を選択し、**検索での使用**&#x200B;を`yes`に設定します。
 
-[!DNL Live Search]は、Adobe Commerce内で設定されたproduct属性の[weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=ja#weighted-search)も尊重します。 重みが大きい属性は、検索結果で高く表示されます。
+[!DNL Live Search]は、Adobe Commerce内で設定されたproduct属性の[weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search)も尊重します。 重みが大きい属性は、検索結果で高く表示されます。
 
 次の属性は常に検索可能です。
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 - 買い物客が検索結果から検索できるようにします。
 - レイヤー検索の2番目のレイヤーで`startsWith`と`contains`の検索インデックスを使用して、結果をさらに絞り込みます。
 
-高度な検索機能は、特定の演算子を使用して、`filter` クエリ [`productSearch`の](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) パラメーターを通じて実装されます。
+高度な検索機能は、特定の演算子を使用して、[`productSearch` クエリ ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)の`filter` パラメーターを通じて実装されます。
 
 - **階層検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリに対して最大2つの検索レイヤーを実行できます。 例：
 
@@ -113,15 +113,15 @@ ht-degree: 0%
 
 #### 導入
 
-1. 管理画面で、[製品属性](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)を検索可能に設定します。
+1. 管理画面で、[製品属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)を検索可能に設定します。
 
-   検索可能な[属性](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/attributes-input-types)の一覧を参照してください。
+   検索可能な[属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)の一覧を参照してください。
 
 1. その属性の検索機能を指定します（**Contains** （デフォルト）または&#x200B;**Starts with**&#x200B;など）。 **Contains**&#x200B;に対して有効にする属性を最大6つ、および&#x200B;**に対して有効にする属性を最大6つ指定できます。最初は**&#x200B;です。 さらに、**Contains**&#x200B;の索引の場合、文字列の長さは50文字以下に制限されます。
 
    ![検索機能を指定](./assets/search-filters-admin.png)
 
-1. 新しい[および](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability)検索機能を使用して[!DNL Live Search] API呼び出しを更新する方法の例については、`contains`開発者ドキュメント `startsWith`を参照してください。
+1. 新しい`contains`および`startsWith`検索機能を使用して[!DNL Live Search] API呼び出しを更新する方法の例については、[開発者ドキュメント ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability)を参照してください。
 
    これらの新しい条件を検索結果ページに実装できます。 例えば、ページに新しいセクションを追加し、検索結果をさらに絞り込むことができます。 買い物客が「製造元」、「部品番号」、「説明」など、特定の製品属性を選択できるようにします。 そこから、`contains`または`startsWith`条件を使用して、これらの属性内を検索します。
 
@@ -151,11 +151,11 @@ ht-degree: 0%
 
 ファセットと類義語は、買い物客の検索体験を向上させるもうひとつの方法です。
 
-[&#x200B; ファセット &#x200B;](facets.md)は、[!DNL Live Search]で定義され、フィルタリング可能な製品属性です。 フィルター可能な任意の属性を[!DNL Live Search]のファセットとして設定できますが、一度に検索できるファセットの数には[制限](boundaries-limits.md)があります。
+[ ファセット ](facets.md)は、[!DNL Live Search]で定義され、フィルタリング可能な製品属性です。 フィルター可能な任意の属性を[!DNL Live Search]のファセットとして設定できますが、一度に検索できるファセットの数には[制限](boundaries-limits.md)があります。
 
 >[!NOTE]
 >
->製品属性は、製品属性の設定に必要なプロパティが含まれている場合にのみフィルタリング可能です。*検索で使用= Yes*、*検索結果で使用= Yes*、*レイヤーナビゲーションで使用= フィルター可能（結果を含む）*。 これらのプロパティが見つからないか、正しく設定されていない場合、属性はファセット設定に表示されません。 設定手順については、[&#x200B; ファセットの追加](facets-add.md#step-1-add-a-facet)を参照してください。
+>製品属性は、製品属性の設定に必要なプロパティが含まれている場合にのみフィルタリング可能です。*検索で使用= Yes*、*検索結果で使用= Yes*、*レイヤーナビゲーションで使用= フィルター可能（結果を含む）*。 これらのプロパティが見つからないか、正しく設定されていない場合、属性はファセット設定に表示されません。 設定手順については、[ ファセットの追加](facets-add.md#step-1-add-a-facet)を参照してください。
 
 [類義語](synonyms.md)は、ユーザーを正しい製品に誘導するために定義できる用語です。 ズボンを探しているユーザーは、「ズボン」または「スラックス」と入力します。 これらの検索語がユーザーを「ズボン」の結果に誘導するように、類義語を設定できます。
 
@@ -167,7 +167,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Live Search 4.0.0でデフォルトで有効になっている製品リストウィジェットを使用することを強くお勧めします。ウィジェットは、今後のリリースでアダプタ実装を完全に置き換えることを目的としています。 詳しくは、[製品リストウィジェットを有効にする](install.md#enable-product-listing-widgets)を参照してください。
+>Live Search 4.0.0でデフォルトで有効になっている製品リストウィジェットを使用することを強くお勧めします。 ウィジェットは、今後のリリースでアダプタ実装を完全に置き換えることを目的としています。 詳しくは、[製品リストウィジェットを有効にする](install.md#enable-product-listing-widgets)を参照してください。
 
 | Commerceの設定 | 説明 | Popoverによるサポート | アダプタでサポート |
 |---|---|---|---|
@@ -188,11 +188,11 @@ ht-degree: 0%
 | ストア/設定/カタログ/ストアフロント/リストモード | 検索結果リストの形式を指定します。 | 正しくレンダリングされますが、一部のページインタラクションではイベントが送信されません |
 | ストア/設定/カタログ/カタログ/カタログ検索/クエリの最大長 | カタログ検索で許可される最大文字数。 | 実装されていません。Search Servicesは最大255文字を受け付けます |
 | 設定/売上/税金/価格表示設定/カタログでの製品価格の表示 | カタログに掲載されている製品価格に税金が含まれているか除外されているか、または価格の2つのバージョンを表示しているかを指定します。1つは税抜き、もう1つは税抜き |  |
-| ストア/設定/カタログ/ストアフロント/製品リスト並べ替え基準 | 検索結果リストの並べ替え順序を指定します。 | [!DNL Live Search] [製品リストページ ウィジェット &#x200B;](plp-styling.md)には適用されません |
+| ストア/設定/カタログ/ストアフロント/製品リスト並べ替え基準 | 検索結果リストの並べ替え順序を指定します。 | [!DNL Live Search] [製品リストページ ウィジェット ](plp-styling.md)には適用されません |
 
 ## デフォルトの属性値
 
-次の製品属性には、[によって使用され、デフォルトで有効になっている](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=ja) ストアフロントプロパティ [!DNL Live Search]があります。
+次の製品属性には、[!DNL Live Search]によって使用され、デフォルトで有効になっている[ ストアフロントプロパティ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)があります。
 
 | プロパティ | Storefront プロパティ | 属性 |
 |---|---|---|

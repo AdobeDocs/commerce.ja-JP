@@ -5,35 +5,35 @@ product: magento
 type: Documentation
 audience: end-user
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/commerce.ja-JP
-index: y
+git-repo: https://github.com/AdobeDocs/commerce.en
+index: true
 role: User
 feature-set: Commerce
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
 
 
-# 内部使用のメタデータ
+# 内部使用のためのメタデータ
 
-`metadata.md` ファイルには、リポジトリ内のファイルに関するユーザーガイドを通じて渡される、リポジトリレベル `TOC.md` メタデータが含まれています。 任意のユーザーガイドの metadata.md コンテンツを変更するには、任意の `TOC.md` ファイルで行います。
+`metadata.md` ファイルには、リポジトリ内のユーザーガイド `TOC.md` ファイルに渡されるリポジトレベルのメタデータが含まれています。 任意のユーザーガイドのmetadata.md コンテンツを変更する場合は、任意の`TOC.md` ファイルで変更します。
 
-| メタデータ | 機能 |
+| metadata | 機能 |
 |--- |--- |
-| solution-title | 記事ヘッダーでリンクとして使用されます |
-| solution-hub-url | helpx ハブページを開きます。 |
+| solution-title | 記事ヘッダーにリンクとして使用 |
+| solution-hub-url | helpx ハブページを開きます |
 | solution-icon | ソリューションタイトルの横にソリューションアイコンを表示します。 まだ実装されていません |
-| getting-started-url | helpx の「はじめに」のページへのリンク |
-| tutorials-url | ビデオチュートリアル（helpx チュートリアルまたは KT チュートリアル）へのリンク |
-| mini-toc-levels | 右側のパネルに表示される見出しレベルの数を決定します。 デフォルトは 2 です |
+| getting-started-url | Helpx入門ページへのリンク |
+| tutorials-url | ビデオチュートリアルへのリンク - helpx チュートリアルまたはKT チュートリアル |
+| ミニ目次レベル | 右側のパネルに表示される見出しレベルの数を指定します。 デフォルトは2です |
 | git-repo | 内部使用のマスターリポジトリの場所を指定します |
 
-TOC.md ファイル内
+TOC.md ファイル
 
-| メタデータ | 機能 |
+| metadata | 機能 |
 |--- |--- |
-| user-guide-title | 記事ヘッダーでリンクとして使用されます |
-| user-guide-url | helpx ハブページを開きます。 |
+| user-guide-title | 記事ヘッダーにリンクとして使用 |
+| user-guide-url | helpx ハブページを開きます |

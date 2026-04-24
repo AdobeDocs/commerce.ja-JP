@@ -1,11 +1,11 @@
 ---
 title: レコメンデーションフィルター
 description: 'フィルターを使用して、レコメンデーションに表示される製品を制御する方法を説明します。 [!DNL Adobe Commerce Optimizer] '
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
-source-git-commit: e15624322fabb89d0b618f9d6c689445a7c448df
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ### 製品
 
-製品フィルターは、**SKU**&#x200B;によって個々のカタログ項目をターゲットにします。 **価格フィルター**&#x200B;と同じ&#x200B;**ページを使用して、1つ以上のSKUを追加して、それらの製品のみを許可（** Inclusions **[!UICONTROL Filter products]**）するか、それらをブロック（[Exclusions](#price)）します。 レコメンデーションユニットに個別に表示されない無効な製品や製品を表示することはできません。これらの製品は、フィルターに関係なくストアフロントに表示されません。
+製品フィルターは、**SKU**&#x200B;によって個々のカタログ項目をターゲットにします。 [価格フィルター](#price)と同じ&#x200B;**[!UICONTROL Filter products]** ページを使用して、1つ以上のSKUを追加して、それらの製品のみを許可（**Inclusions**）するか、それらをブロック（**Exclusions**）します。 レコメンデーションユニットに個別に表示されない無効な製品や製品を表示することはできません。これらの製品は、フィルターに関係なくストアフロントに表示されません。
 
 #### 製品フィルターの設定
 
@@ -98,6 +98,8 @@ ht-degree: 0%
 >
 >設定可能な製品の子製品は、推奨単位に表示されません。これらの子製品には、_個別に表示されない_&#x200B;という表示があります。
 
-<!--### Attribute
+<!--
+### Attribute
 
-You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.-->
+You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.
+-->

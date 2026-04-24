@@ -1,13 +1,13 @@
 ---
 title: Documentation RAG サービス
 description: Adobe Commerce開発にAIを活用したドキュメント検索サービスを使用する方法について説明します。
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6c7055be007d75ff4cf3673da9938d9d79779aef
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 このRAGは、Adobe Commerceに関する質問を行うためのIDE インターフェイスを提供し、アプリケーションの開発やその他の移行タスクに関するベストプラクティスについてアドバイスします。
 
-RAG サービスは、[Commerce拡張ツール &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} MCP （Model Context Protocol） サーバーの一部であり、Cursorおよびその他のMCP互換AI アシスタントと統合されています。
+RAG サービスは、[Commerce拡張ツール ](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} MCP （Model Context Protocol） サーバーの一部であり、Cursorおよびその他のMCP互換AI アシスタントと統合されています。
 
 ## 使用可能なドキュメント
 
@@ -30,14 +30,14 @@ RAG サービスは、[Commerce拡張ツール &#x200B;](https://developer.adobe
 
 | カテゴリ | Index | 含まれるコンテンツ | キーワード |
 |-------|---------|---------|------------------------|
-| [&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) | commerce-storefront-docs | Edge Delivery Services、ドロップイン、ストアフロントコンポーネント | ストアフロント、ドロップイン、EDS、製品リスト、チェックアウト |
+| [ ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services、ドロップイン、ストアフロントコンポーネント | ストアフロント、ドロップイン、EDS、製品リスト、チェックアウト |
 | [拡張性](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhook、イベント、拡張機能、統合 | webhook, イベント，拡張機能，API メッシュ，GraphQL |
-| [Commerce](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce（カタログ、顧客、注文） | カタログ，製品，顧客，注文，在庫 |
+| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce（カタログ、顧客、注文） | カタログ，製品，顧客，注文，在庫 |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, ランタイムアクション，UI拡張機能 | アプリビルダー、ランタイムアクション、React Spectrum |
 
 インデックス選択について詳しくは、[自動インデックス選択](#automatic-index-selection-recommended)および[明示的インデックス選択](#explicit-index-selection)を参照してください。
 
-各インデックスに含まれるドキュメントについて詳しくは、[取り込まれたソースリスト &#x200B;](https://github.com/adobe-commerce/azure-commerce-documentation-agent/blob/develop/docs/INGESTED_SOURCES.md)を参照してください。
+各インデックスに含まれるドキュメントについて詳しくは、[取り込まれたソースリスト ](https://github.com/adobe-commerce/azure-commerce-documentation-agent/blob/develop/docs/INGESTED_SOURCES.md)を参照してください。
 
 ## セキュリティとプライバシー
 
@@ -46,21 +46,21 @@ RAG サービスは、[Commerce拡張ツール &#x200B;](https://developer.adobe
 * **ローカル実行** – すべてのツールがコンピューター上でローカルに実行されます。
 * **安全な通信** - ドキュメント検索では、トークン検証にHTTPSが使用されます。
 
-実稼動エンドポイントは、[Azure フロントドア &#x200B;](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)によって保護されます。これには、次の保護機能が含まれます。
+実稼動エンドポイントは、[Azure フロントドア ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)によって保護されます。これには、次の保護機能が含まれます。
 
 * Microsoft Default RuleSet 2.1およびBot Manager RuleSet 1.0を使用したWeb Application Firewall （WAF）
 * 米国の禁輸地域（キューバ、イラン、北朝鮮、シリア、クリミア、ルハンスク、ドネツク）のジオブロッキング
 * エッジでのDDoS対策
 * フロントドアからのトラフィックのみを受け入れるようにAPI管理バックエンドをロックダウン
 
-セキュリティ要件が異なる場合は、カスタムエンドポイントを使用できます。 詳しくは、[&#x200B; カスタムフロントドアエンドポイント &#x200B;](#custom-front-door-endpoint)を参照してください。
+セキュリティ要件が異なる場合は、カスタムエンドポイントを使用できます。 詳しくは、[ カスタムフロントドアエンドポイント ](#custom-front-door-endpoint)を参照してください。
 
 ## 前提条件
 
 インストールする前に、次のことを確認してください。
 
 * [Node.js](https://nodejs.org/en/download){target="_blank"} 18以上（LTSを推奨）
-* [&#x200B; カーソル IDE](https://cursor.com/download){target="_blank"} （推奨）または他のMCP互換IDE
+* [ カーソル IDE](https://cursor.com/download){target="_blank"} （推奨）または他のMCP互換IDE
 
   >[!NOTE]
   >
@@ -93,7 +93,7 @@ RAG サービスは、[Commerce拡張ツール &#x200B;](https://developer.adobe
    npm install
    ```
 
-1. `.cursor/mcp.json` MCP サーバーを含めるには、（グローバルではなく）Commerce プロジェクトディレクトリで`commerce-extensibility-tools`を作成または更新します。
+1. `commerce-extensibility-tools` MCP サーバーを含めるには、（グローバルではなく）Commerce プロジェクトディレクトリで`.cursor/mcp.json`を作成または更新します。
 
    ```json
    {
@@ -115,7 +115,7 @@ RAG サービスは、[Commerce拡張ツール &#x200B;](https://developer.adobe
 
    >[!NOTE]
    >
-   >Windowsで、プロジェクトディレクトリへのパスの提供に関する問題が発生した場合は、[&#x200B; パスの問題に関するトラブルシューティング &#x200B;](#path-issues-windows)を参照してください。
+   >Windowsで、プロジェクトディレクトリへのパスの提供に関する問題が発生した場合は、[ パスの問題に関するトラブルシューティング ](#path-issues-windows)を参照してください。
 
 1. カーソル IDEを再起動して、MCP サーバーを読み込みます。
 
@@ -127,7 +127,7 @@ RAG サービスは、[Commerce拡張ツール &#x200B;](https://developer.adobe
 
 ## 使用状況
 
-インストールが完了したら、インデックス [自動的](#automatic-index-selection-recommended)または[明示的](#explicit-index-selection)を呼び出すことができます。 [`/search-commerce-docs` コマンド &#x200B;](#command-based-search)も使用できます。
+インストールが完了したら、インデックス [自動的](#automatic-index-selection-recommended)または[明示的](#explicit-index-selection)を呼び出すことができます。 [`/search-commerce-docs` コマンド ](#command-based-search)も使用できます。
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ RAG サービスが使用されていることを確認する場合は、`/searc
 
 ## カスタム正面玄関エンドポイント
 
-デフォルトでは、ドキュメント検索では、WAF保護を備えた実稼動[Azure フロントドア &#x200B;](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) エンドポイントが使用されます。 テストまたは開発の目的で、`FRONT_DOOR_URL`環境変数でこれを上書きできます。
+デフォルトでは、ドキュメント検索では、WAF保護を備えた実稼動[Azure フロントドア ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) エンドポイントが使用されます。 テストまたは開発の目的で、`FRONT_DOOR_URL`環境変数でこれを上書きできます。
 
 カスタムエンドポイントを使用するには、それをCursor MCP設定に追加します。
 
@@ -293,7 +293,7 @@ Windowsでは、フォワードスラッシュ `/`またはエスケープバッ
 
 ## 関連資料
 
-* [Adobe Commerce開発者向けドキュメント &#x200B;](https://developer.adobe.com/commerce/docs/){target="_blank"}
-* [App Builder ドキュメント &#x200B;](https://developer.adobe.com/app-builder/docs/){target="_blank"}
-* [&#x200B; モデル コンテキスト プロトコル &#x200B;](https://modelcontextprotocol.io/){target="_blank"}
-* [&#x200B; カーソル IDE](https://cursor.sh/docs){target="_blank"}
+* [Adobe Commerce開発者用マニュアル](https://developer.adobe.com/commerce/docs/){target="_blank"}
+* [App Builder ドキュメント](https://developer.adobe.com/app-builder/docs/){target="_blank"}
+* [モデルコンテキストプロトコル](https://modelcontextprotocol.io/){target="_blank"}
+* [カーソル IDE](https://cursor.sh/docs){target="_blank"}
