@@ -27,7 +27,7 @@ ht-degree: 0%
 
 「**イベント数**」タブでは、検索、クリック、購入などの買い物客のインタラクションを追跡して、トレンドを分析し、ショッピング体験を向上させることができます。
 
-![ イベント数](../../assets/event-counts.png){zoomable="yes"}
+![&#x200B; イベント数](../../assets/event-counts.png){zoomable="yes"}
 
 | フィールド | 説明 |
 |---|---|
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 「**健全性チェック**」タブでは、各行動イベントの健全性に関するインサイトが提供され、正確なデータ収集と機能が保証されます。 &#x200B;
 
-![健全性チェック ](../../assets/sanity-check.png){zoomable="yes"}
+![健全性チェック &#x200B;](../../assets/sanity-check.png){zoomable="yes"}
 
 | フィールド | 説明 |
 |---|---|
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 製品ディスカバリーでは、「Most Viewed （最も閲覧された製品）」や「Viewed This, Viewed That （最も閲覧された製品）」などの検索アルゴリズムを強化するためにイベントを使用します。
 
-この表は、製品検出[ ランキング戦略](../../merchandising/rules/add.md#intelligent-ranking)で使用されるイベントを示しています。
+この表は、製品検出[&#x200B; ランキング戦略](../../merchandising/rules/add.md#intelligent-ranking)で使用されるイベントを示しています。
 
 | ランキング戦略 | イベント | ページ |
 | --- | --- | --- |
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 #### 必須ダッシュボードイベント
 
-一部のイベントは、[検索パフォーマンス ダッシュボード ](../../manage-results/search-performance.md)に入力するために必要です
+一部のイベントは、[検索パフォーマンス ダッシュボード &#x200B;](../../manage-results/search-performance.md)に入力するために必要です
 
 | ダッシュボード領域 | イベント | 連結フィールド |
 | ------------------- | ------------- | ---------- |
@@ -103,7 +103,7 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 - レコメンデーションタイプによっては、他のタイプよりも学習が速いものもあります
 - [!DNL Adobe Commerce Optimizer]は4時間ごとに行動データを再計算します。 レコメンデーションは、サイトで長く使用するにつれて精度が向上します。
 
-各レコメンデーションタイプのトレーニングの進捗状況を視覚化するために、[ レコメンデーションの作成](../../merchandising/recommendations/create.md#readiness-indicators) ページには準備状況インジケーターが表示されます。
+各レコメンデーションタイプのトレーニングの進捗状況を視覚化するために、[&#x200B; レコメンデーションの作成](../../merchandising/recommendations/create.md#readiness-indicators) ページには準備状況インジケーターが表示されます。
 
 ライブサイトでデータを収集し、マシンラーニングモデルをトレーニングしている間に、レコメンデーションの設定に必要なその他のテストや設定タスクを完了できます。 この作業が完了する頃には、モデルには有用なレコメンデーションを作成するのに十分なデータが揃っており、ストアフロントに展開することができます。
 
@@ -136,7 +136,7 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 
 #### 必須ダッシュボードイベント
 
-次のイベントは、[Recommendations Performance ダッシュボード ](../../manage-results/recommendation-performance.md)に入力するために必要です
+次のイベントは、[Recommendations Performance ダッシュボード &#x200B;](../../manage-results/recommendation-performance.md)に入力するために必要です
 
 | ダッシュボード列 | イベント | 連結フィールド |
 | ---------------- | --------- | ----------- |
@@ -174,4 +174,4 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 
 ## サポート
 
-データの不一致に気づく場合、または推奨事項と検索結果が期待どおりに機能しない場合は、[ サポートチケットを送信します](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+データの不一致に気づく場合、または推奨事項と検索結果が期待どおりに機能しない場合は、[&#x200B; サポートチケットを送信します](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。

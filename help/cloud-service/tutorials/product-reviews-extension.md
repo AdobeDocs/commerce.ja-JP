@@ -53,8 +53,8 @@ bash --version
 
 さらに、次の点を確認します。
 
-- 製品データを含む[!DNL Adobe Commerce as a Cloud Service] インスタンスがあります。 [Commerce Cloud サービスインスタンス ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}を参照してください。
-- [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクトがあります。 ストアフロントがない場合は、[ ストアフロントの作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}の手順に従います。
+- 製品データを含む[!DNL Adobe Commerce as a Cloud Service] インスタンスがあります。 [Commerce Cloud サービスインスタンス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}を参照してください。
+- [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクトがあります。 ストアフロントがない場合は、[&#x200B; ストアフロントの作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}の手順に従います。
 - `aem` CLIがインストールされています：
 
   ```bash
@@ -309,7 +309,7 @@ Create a service contract for the Product Review and Q&A application that define
 ストアフロント統合を開始する前に、次の点を確認してください。
 
 - [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクト
-- Commerce ストアフロント AI ツール [CLIを使用してインストール ](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+- Commerce ストアフロント AI ツール [CLIを使用してインストール &#x200B;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 - `PRODUCT_REVIEW_QA_CONTRACT.md` ファイルがストアフロントプロジェクトにコピーされました
 
 ### 手順1：環境の検証

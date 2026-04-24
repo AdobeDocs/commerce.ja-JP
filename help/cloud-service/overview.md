@@ -63,7 +63,7 @@ ht-degree: 0%
 
 この図は、[!DNL Adobe Commerce as a Cloud Service]とすべてのAdobe Experience Cloud ソリューション間のデータ フローを示しています。
 
-[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![ データフロー図](./assets/data-flow.svg){zoomable="yes"}
+[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![&#x200B; データフロー図](./assets/data-flow.svg){zoomable="yes"}
 
 ## Commerce ストアフロント
 
@@ -73,16 +73,16 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 クラウドまたはオンプレミスのAdobe Commerceから移行する場合は、移行に関するガイダンスについては、[既存のストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts)を参照してください。
+>[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 クラウドまたはオンプレミスのAdobe Commerceから移行する場合は、移行に関するガイダンスについては、[既存のストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts)を参照してください。
 
 ## マーチャンダイジングサービスと決済サービス
 
 Adobeでは、主要なビジネス目標をサポートする、インテリジェントで構成可能なマーチャンダイジングサービスを豊富に提供しています。 これらのサービスは、大規模なパフォーマンスの最適化に不可欠なAPIも提供します。
 
-- [ ライブサーチ ](../live-search/overview.md) – このAIを活用した検索ツールを使用して、買い物客によりスマートで迅速かつ適切な検索結果を提供します。
-- [商品レコメンデーション ](../optimizer/merchandising/recommendations/overview.md)：買い物客の行動、人気のレンド、商品の類似性などに基づいて、AIを活用したレコメンデーションを追加します。
-- [ カタログサービス ](../catalog-service/guide-overview.md) - パフォーマンスの向上、拡張性の向上、コンバージョンの増加を実現しながら、顧客に最適化された製品体験を提供します。
-- [支払いサービス ](../payment-services/guide-overview.md) – 無利息の支払い分割払い、支払い処理、注文、請求書に関する単一のビューなど、さまざまな支払い方法を提供することで、顧客満足度を向上させます。
+- [&#x200B; ライブサーチ &#x200B;](../live-search/overview.md) – このAIを活用した検索ツールを使用して、買い物客によりスマートで迅速かつ適切な検索結果を提供します。
+- [商品レコメンデーション &#x200B;](../optimizer/merchandising/recommendations/overview.md)：買い物客の行動、人気のレンド、商品の類似性などに基づいて、AIを活用したレコメンデーションを追加します。
+- [&#x200B; カタログサービス &#x200B;](../catalog-service/guide-overview.md) - パフォーマンスの向上、拡張性の向上、コンバージョンの増加を実現しながら、顧客に最適化された製品体験を提供します。
+- [支払いサービス &#x200B;](../payment-services/guide-overview.md) – 無利息の支払い分割払い、支払い処理、注文、請求書に関する単一のビューなど、さまざまな支払い方法を提供することで、顧客満足度を向上させます。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 

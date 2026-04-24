@@ -16,12 +16,12 @@ ht-degree: 2%
 # Commerce用[!DNL Payment Services] {#payment-services}
 
 - [ガイド概要](guide-overview.md)
-- [ [!DNL Payment Services]の概要](introduction.md)
-- [ [!DNL Payment Services]の互換性](compatibility.md)
+- [&#x200B; [!DNL Payment Services]の概要](introduction.md)
+- [&#x200B; [!DNL Payment Services]の互換性](compatibility.md)
 - [リリースノート](release-notes.md)
 - [!DNL Payment Services]のオンボード {#get-started}
    - [オンボーディングの概要](onboard.md)
-   - [ [!DNL Payment Services] 拡張機能のインストール](install.md)
+   - [&#x200B; [!DNL Payment Services] 拡張機能のインストール](install.md)
    - [インスタンスの接続](connect.md)
    - [テストサンドボックスの設定](sandbox.md)
    - [実稼動用に有効](production.md)
@@ -33,13 +33,13 @@ ht-degree: 2%
 - 支払いとチェックアウト {#payments-checkout}
    - [支払い方法](payments-options.md)
    - [クレジットカードの保管](vaulting.md)
-   - [ [!DNL Payment Services]でのチェックアウト](checkout.md)
+   - [&#x200B; [!DNL Payment Services]でのチェックアウト](checkout.md)
    - 決済を管理 {#manage}
-      - [ [!DNL Payment Services]の行項目](line-items.md)
+      - [&#x200B; [!DNL Payment Services]の行項目](line-items.md)
       - [返金](refunds.md)
       - [ボイド](voids.md)
    - [管理画面で注文を作成する](create-order.md)
-   - [ [!DNL Payment Services]での配送を追跡しています](track-shipment.md)
+   - [&#x200B; [!DNL Payment Services]での配送を追跡しています](track-shipment.md)
 - Financial Reporting {#financial-reports}
    - [レポート](reporting.md)
    - [注文支払い状況レポート](order-payment-status.md)

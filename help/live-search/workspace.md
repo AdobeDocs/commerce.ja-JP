@@ -24,8 +24,8 @@ ht-degree: 0%
 
 ヘッドレスストアフロントを使用している場合は、追加する必要がある必須イベントについて詳しくは、次のドキュメントを参照してください。
 
-- ライブ検索ダッシュボードの[必要なイベント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)。
-- 前提条件として追加する必要がある[ ストアフロントイベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)です。
+- ライブ検索ダッシュボードの[必要なイベント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)。
+- 前提条件として追加する必要がある[&#x200B; ストアフロントイベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)です。
 - イベント構造の[例](https://github.com/adobe/commerce-events/tree/main/examples)。
 
 ### 医療業界のユーザー事例
@@ -34,17 +34,17 @@ ht-degree: 0%
 
 ## 範囲の設定
 
-最初に、すべての[!DNL Live Search]設定の[ スコープ ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)が`Default Store View`に設定されます。 [!DNL Commerce]のインストールに複数のストアビューが含まれる場合は、**スコープ**&#x200B;をファセット設定が適用される[ ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)に設定します。
+最初に、すべての[!DNL Live Search]設定の[&#x200B; スコープ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)が`Default Store View`に設定されます。 [!DNL Commerce]のインストールに複数のストアビューが含まれる場合は、**スコープ**&#x200B;をファセット設定が適用される[&#x200B; ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)に設定します。
 
 ## メニューオプション
 
 | オプション | 説明 |
 |--- |--- |
-| [ パフォーマンス ](performance.md) | ダッシュボードでは、insightで商品検索のパフォーマンスを確認できます。 |
-| [ ファセット ](facets.md) | 属性値の複数のディメンションを使用して検索条件を絞り込む、パフォーマンスの高いフィルタリング。 |
+| [&#x200B; パフォーマンス &#x200B;](performance.md) | ダッシュボードでは、insightで商品検索のパフォーマンスを確認できます。 |
+| [&#x200B; ファセット &#x200B;](facets.md) | 属性値の複数のディメンションを使用して検索条件を絞り込む、パフォーマンスの高いフィルタリング。 |
 | [同義語](synonyms.md) | 検索のリーチを拡大し、買い物客がカタログとは異なる商品を見つけるために使用する可能性のある単語を含めます。 |
-| [ マーチャンダイジングの検索](rules.md) | スケジュールされたアクションをトリガーする論理ルールを使用して、検索エクスペリエンスを形作りましょう。 商品の販売促進、埋め込み、ピン留め、非表示などの操作を行って、検索結果のキャリブレーションを行い、ビジネス目標を達成。 |
-| [ カテゴリ マーチャンダイジング ](category-merch.md) | カテゴリーレベルでルールとインテリジェントなマーチャンダイジングを適用します。 |
+| [&#x200B; マーチャンダイジングの検索](rules.md) | スケジュールされたアクションをトリガーする論理ルールを使用して、検索エクスペリエンスを形作りましょう。 商品の販売促進、埋め込み、ピン留め、非表示などの操作を行って、検索結果のキャリブレーションを行い、ビジネス目標を達成。 |
+| [&#x200B; カテゴリ マーチャンダイジング &#x200B;](category-merch.md) | カテゴリーレベルでルールとインテリジェントなマーチャンダイジングを適用します。 |
 | [GraphQL](graphql.md) | ストアの管理者にログインした開発者は、実際のカタログデータを使用してクエリを作成し、テストできます。 詳しくは、[!DNL Live Search]開発者向けドキュメントの[GraphQLの概要](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)にアクセスしてください。 |
 | [設定](settings.md) | ストアフロントで価格ファセット値を価格範囲ごとにグループ化する方法を決定し、インデックス言語を設定します。 |
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 - 買い物客が検索結果から検索できるようにします。
 - レイヤー検索の2番目のレイヤーで`startsWith`と`contains`の検索インデックスを使用して、結果をさらに絞り込みます。
 
-高度な検索機能は、特定の演算子を使用して、[`productSearch` クエリ ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)の`filter` パラメーターを通じて実装されます。
+高度な検索機能は、特定の演算子を使用して、[`productSearch` クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)の`filter` パラメーターを通じて実装されます。
 
 - **階層検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリに対して最大2つの検索レイヤーを実行できます。 例：
 
@@ -121,7 +121,7 @@ ht-degree: 0%
 
    ![検索機能を指定](./assets/search-filters-admin.png)
 
-1. 新しい`contains`および`startsWith`検索機能を使用して[!DNL Live Search] API呼び出しを更新する方法の例については、[開発者ドキュメント ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability)を参照してください。
+1. 新しい`contains`および`startsWith`検索機能を使用して[!DNL Live Search] API呼び出しを更新する方法の例については、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability)を参照してください。
 
    これらの新しい条件を検索結果ページに実装できます。 例えば、ページに新しいセクションを追加し、検索結果をさらに絞り込むことができます。 買い物客が「製造元」、「部品番号」、「説明」など、特定の製品属性を選択できるようにします。 そこから、`contains`または`startsWith`条件を使用して、これらの属性内を検索します。
 
@@ -151,11 +151,11 @@ ht-degree: 0%
 
 ファセットと類義語は、買い物客の検索体験を向上させるもうひとつの方法です。
 
-[ ファセット ](facets.md)は、[!DNL Live Search]で定義され、フィルタリング可能な製品属性です。 フィルター可能な任意の属性を[!DNL Live Search]のファセットとして設定できますが、一度に検索できるファセットの数には[制限](boundaries-limits.md)があります。
+[&#x200B; ファセット &#x200B;](facets.md)は、[!DNL Live Search]で定義され、フィルタリング可能な製品属性です。 フィルター可能な任意の属性を[!DNL Live Search]のファセットとして設定できますが、一度に検索できるファセットの数には[制限](boundaries-limits.md)があります。
 
 >[!NOTE]
 >
->製品属性は、製品属性の設定に必要なプロパティが含まれている場合にのみフィルタリング可能です。*検索で使用= Yes*、*検索結果で使用= Yes*、*レイヤーナビゲーションで使用= フィルター可能（結果を含む）*。 これらのプロパティが見つからないか、正しく設定されていない場合、属性はファセット設定に表示されません。 設定手順については、[ ファセットの追加](facets-add.md#step-1-add-a-facet)を参照してください。
+>製品属性は、製品属性の設定に必要なプロパティが含まれている場合にのみフィルタリング可能です。*検索で使用= Yes*、*検索結果で使用= Yes*、*レイヤーナビゲーションで使用= フィルター可能（結果を含む）*。 これらのプロパティが見つからないか、正しく設定されていない場合、属性はファセット設定に表示されません。 設定手順については、[&#x200B; ファセットの追加](facets-add.md#step-1-add-a-facet)を参照してください。
 
 [類義語](synonyms.md)は、ユーザーを正しい製品に誘導するために定義できる用語です。 ズボンを探しているユーザーは、「ズボン」または「スラックス」と入力します。 これらの検索語がユーザーを「ズボン」の結果に誘導するように、類義語を設定できます。
 
@@ -188,11 +188,11 @@ ht-degree: 0%
 | ストア/設定/カタログ/ストアフロント/リストモード | 検索結果リストの形式を指定します。 | 正しくレンダリングされますが、一部のページインタラクションではイベントが送信されません |
 | ストア/設定/カタログ/カタログ/カタログ検索/クエリの最大長 | カタログ検索で許可される最大文字数。 | 実装されていません。Search Servicesは最大255文字を受け付けます |
 | 設定/売上/税金/価格表示設定/カタログでの製品価格の表示 | カタログに掲載されている製品価格に税金が含まれているか除外されているか、または価格の2つのバージョンを表示しているかを指定します。1つは税抜き、もう1つは税抜き |  |
-| ストア/設定/カタログ/ストアフロント/製品リスト並べ替え基準 | 検索結果リストの並べ替え順序を指定します。 | [!DNL Live Search] [製品リストページ ウィジェット ](plp-styling.md)には適用されません |
+| ストア/設定/カタログ/ストアフロント/製品リスト並べ替え基準 | 検索結果リストの並べ替え順序を指定します。 | [!DNL Live Search] [製品リストページ ウィジェット &#x200B;](plp-styling.md)には適用されません |
 
 ## デフォルトの属性値
 
-次の製品属性には、[!DNL Live Search]によって使用され、デフォルトで有効になっている[ ストアフロントプロパティ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)があります。
+次の製品属性には、[!DNL Live Search]によって使用され、デフォルトで有効になっている[&#x200B; ストアフロントプロパティ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)があります。
 
 | プロパティ | Storefront プロパティ | 属性 |
 |---|---|---|

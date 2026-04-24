@@ -27,7 +27,7 @@ Adobeは、コマースビジネスの要件を満たすソリューションを
 
 バッジが表示されている場合、コンテンツは指定されたソリューションにのみ適用されます。 バッジが表示されない場合は、その内容がすべてのAdobe Commerce ソリューションに適用されます。
 
-例えば、Adobe Commerce as a Cloud Serviceを使用している場合、Product Recommendations拡張機能を[ インストール ](../product-recommendations/install-configure.md#install-product-recommendations)し、Commerce Services Connectorを[設定](../product-recommendations/install-configure.md#configure-product-recommendations)するといった内容は無視する必要があります。 Adobeは、インスタンスを作成すると、これらの手順を自動的に実行します。
+例えば、Adobe Commerce as a Cloud Serviceを使用している場合、Product Recommendations拡張機能を[&#x200B; インストール &#x200B;](../product-recommendations/install-configure.md#install-product-recommendations)し、Commerce Services Connectorを[設定](../product-recommendations/install-configure.md#configure-product-recommendations)するといった内容は無視する必要があります。 Adobeは、インスタンスを作成すると、これらの手順を自動的に実行します。
 
 ### 定義
 

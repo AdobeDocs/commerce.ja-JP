@@ -20,7 +20,7 @@ ht-degree: 0%
 - コンバージョン率
 - 成果率ゼロ
 
-![検索パフォーマンス ](../assets/search-performance.png){zoomable="yes"}
+![検索パフォーマンス &#x200B;](../assets/search-performance.png){zoomable="yes"}
 
 >[!IMPORTANT]
 >
@@ -28,9 +28,9 @@ ht-degree: 0%
 
 ## **カタログビュー**&#x200B;を選択
 
-[ カタログビュー](../setup/catalog-view.md)を選択して、特定の検索結果を表示します。
+[&#x200B; カタログビュー](../setup/catalog-view.md)を選択して、特定の検索結果を表示します。
 
-![ カタログ ビュー](../assets/catalog-view.png)
+![&#x200B; カタログ ビュー](../assets/catalog-view.png)
 
 ## レポートを読む
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 検索結果の関連性と効果を決定する重要な要素がいくつかあります。
 
 - 適切に構造化された商品データにより、検索アルゴリズムが商品とクエリを効果的に一致させることができます。 商品データが少ないと、関連性の低い検索結果につながります。 マーチャンダイジング戦略の成功に直接影響を与えるには：
-   - 検索可能な](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)として、対応する重みで正しい[属性を設定します。
+   - 検索可能な[&#128279;](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)として、対応する重みで正しい属性を設定します。
    - これらの属性内のデータが適切であることを確認します。
 - 適切に設計された検索体験は、顧客との信頼関係を構築し、顧客が必要な商品を確実に見つけるという安心感をもたらします。
 - 検索ルールは、人気度、新規到達率、プロモーション基準など、ビジネス要件を満たす他のマーチャンダイジング戦略にもとづいて、特定の商品の認知度を高めることができる上で、非常に重要です。
@@ -66,7 +66,7 @@ ht-degree: 0%
 
    - 人気の高い検索トレンドと頻繁に検索される商品を特定する。
    - 製品カタログやコンテンツの潜在的なギャップを検出する。
-   - [類義語](../merchandising/synonyms/overview.md)を追加するか、[検索ルール ](../merchandising/rules/overview.md)を作成または更新することで、検索機能を最適化します。
+   - [類義語](../merchandising/synonyms/overview.md)を追加するか、[検索ルール &#x200B;](../merchandising/rules/overview.md)を作成または更新することで、検索機能を最適化します。
 
 - **平均クリック位置** – 買い物客がサイトで検索クエリを実行した後にクリックした検索結果の平均位置を示します。 この指標は、検索結果の関連性と効果に関するインサイトを提供します。
 
@@ -94,11 +94,11 @@ ht-degree: 0%
 
 ## 検索機能の最適化
 
-検索機能を最適化するには、[類義語とスペル ](../merchandising/synonyms/overview.md)を使用して、買い物客が異なる単語を使用する場合でも商品を見つけられるようにし、買い物客が検索結果を絞り込めるようにするために[ ファセット ](../merchandising/facets/overview.md)を使用します。
+検索機能を最適化するには、[類義語とスペル &#x200B;](../merchandising/synonyms/overview.md)を使用して、買い物客が異なる単語を使用する場合でも商品を見つけられるようにし、買い物客が検索結果を絞り込めるようにするために[&#x200B; ファセット &#x200B;](../merchandising/facets/overview.md)を使用します。
 
 ## 検索結果の関連性の向上
 
-検索結果の関連性を向上させるには、効果的な[検索ルール ](../merchandising/rules/overview.md)を実装し、商品メタデータを使用して、正確で詳細な[属性を検索可能](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)にします。
+検索結果の関連性を向上させるには、効果的な[検索ルール &#x200B;](../merchandising/rules/overview.md)を実装し、商品メタデータを使用して、正確で詳細な[属性を検索可能](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)にします。
 
 ### 画像
 
