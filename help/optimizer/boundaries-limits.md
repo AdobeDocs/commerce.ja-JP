@@ -2,7 +2,7 @@
 title: 制限と境界
 description: キャパシティを計画し、パフォーマンスの問題を防ぐため、 [!DNL Adobe Commerce Optimizer] 制限と境界について理解します。
 role: Admin, Developer
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ライセンス制限は、[&#x200B; ライセンス制限とシステム境界](#license-limits-and-system-boundaries) セクションに記載されているライセンスパッケージを購入するか、独自のユースケースに対するカスタムライセンスを交渉することで増やすことができます。 お客様の要件については、Adobeの担当者にお問い合わせください。
 
-システムの境界について質問がある場合は、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/home?lang=en#support)にお問い合わせください。
+システムの境界について質問がある場合は、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support)にお問い合わせください。
 
 ## パフォーマンスの問題を防止
 
@@ -156,7 +156,7 @@ Dynamic Mediaの使用状況は、[!DNL Adobe Commerce Optimizer]内の製品ビ
 
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** | **メモ** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | クラウドネイティブな拡張機能や統合機能の構築能力 | GMV層に基づく<p>最小配分：1 パック/年</p> | はい<p>追加パックを追加</p> | パックごとに定義される制限については、次を参照してください。<ul><li>パックごとに定義された制限の[App Builder製品説明](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder Runtime Guides*&#x200B;の[&#x200B; システム設定と制限](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder ストレージの要件](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | クラウドネイティブな拡張機能や統合機能の構築能力 | GMV層に基づく<p>最小配分：1 パック/年</p> | はい<p>追加パックを追加</p> | パックごとに定義される制限については、次を参照してください。<ul><li>パックごとに定義された制限の[App Builder製品説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder Runtime Guides*&#x200B;の[&#x200B; システム設定と制限](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder ストレージの要件](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 

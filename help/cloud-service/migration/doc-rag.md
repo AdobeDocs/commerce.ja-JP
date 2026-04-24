@@ -1,7 +1,7 @@
 ---
 title: Documentation RAG サービス
 description: Adobe Commerce開発にAIを活用したドキュメント検索サービスを使用する方法について説明します。
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 role: Developer
 hide: true
 hidefromtoc: true
@@ -30,9 +30,9 @@ RAG サービスは、[Commerce拡張ツール &#x200B;](https://developer.adobe
 
 | カテゴリ | Index | 含まれるコンテンツ | キーワード |
 |-------|---------|---------|------------------------|
-| [&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services、ドロップイン、ストアフロントコンポーネント | ストアフロント、ドロップイン、EDS、製品リスト、チェックアウト |
+| [&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) | commerce-storefront-docs | Edge Delivery Services、ドロップイン、ストアフロントコンポーネント | ストアフロント、ドロップイン、EDS、製品リスト、チェックアウト |
 | [拡張性](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhook、イベント、拡張機能、統合 | webhook, イベント，拡張機能，API メッシュ，GraphQL |
-| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce（カタログ、顧客、注文） | カタログ，製品，顧客，注文，在庫 |
+| [Commerce](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce（カタログ、顧客、注文） | カタログ，製品，顧客，注文，在庫 |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, ランタイムアクション，UI拡張機能 | アプリビルダー、ランタイムアクション、React Spectrum |
 
 インデックス選択について詳しくは、[自動インデックス選択](#automatic-index-selection-recommended)および[明示的インデックス選択](#explicit-index-selection)を参照してください。
