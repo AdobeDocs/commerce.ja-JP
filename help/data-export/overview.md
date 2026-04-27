@@ -25,13 +25,13 @@ SaaS データエクスポートは、PHP拡張機能として配信されます
 
 - **管理者またはコマンドラインからの手動同期**
 
-   - Commerce Adminの[Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)には、商品データがコマースサービスに正常に同期されたことを示す同期ステータスのグラフィカルビューが表示されます。 ダッシュボードを使用して、すべてのフィードの完全な再同期（_完全同期_）を実行できます。 ただし、Adobeでは、Adobe CommerceをCommerce サービスに初めて接続する場合にのみ、完全同期を実行することをお勧めします。 [同期プロセス &#x200B;](data-synchronization.md)を参照してください。
+   - Commerce Adminの[Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)には、商品データがコマースサービスに正常に同期されたことを示す同期ステータスのグラフィカルビューが表示されます。 ダッシュボードを使用して、すべてのフィードの完全な再同期（_完全同期_）を実行できます。 ただし、Adobeでは、Adobe CommerceをCommerce サービスに初めて接続する場合にのみ、完全同期を実行することをお勧めします。 [同期プロセス &#x200B;](data-synchronization.md)を参照してください。
 
   {{aco-data-sync-verification}}
 
-   - [&#x200B; データフィードの同期ステータス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページでは、Commerceから商品レコメンデーション、ライブサーチ、カタログサービス、Adobe Commerce Optimizerなどの外部サービスに商品データやカテゴリデータを転送するデータエクスポートフィードの健全性とパフォーマンスに関するリアルタイムのインサイトを提供します。
+   - [&#x200B; データフィードの同期ステータス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページでは、Commerceから商品レコメンデーション、ライブサーチ、カタログサービス、Adobe Commerce Optimizerなどの外部サービスに商品データやカテゴリデータを転送するデータエクスポートフィードの健全性とパフォーマンスに関するリアルタイムのインサイトを提供します。
 
-   - [Adobe Commerce コマンドライン ツール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) （CLI）には、特定のフィードを同期するコマンドが用意されており、フィード処理をカスタマイズするためのその他のオプションも用意されています。
+   - [Adobe Commerce コマンドライン ツール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/config-cli) （CLI）には、特定のフィードを同期するコマンドが用意されており、フィード処理をカスタマイズするためのその他のオプションも用意されています。
 
 - **cron ジョブとの自動同期**
 
