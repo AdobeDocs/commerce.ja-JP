@@ -1,0 +1,48 @@
+---
+source-git-commit: 65c2720f8e21089e45948a2a5fe3828ca28f0dbd
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
+
+---
+%%{ init: { &quot;flowchart&quot;: { &quot;curve&quot;: &quot;linear&quot; } } }%
+
+graph BT
+サブグラフコマース [ 「Adobe Commerce」]
+event_mod[&quot;イベント \n モジュール&quot;]
+webhook_mod[&quot;Webhook \n Module&quot;]
+admin_sdk[&quot;Admin UI \n SDK&quot;]
+終了
+
+    subgraph appbuilder[&quot;App Builder&quot;]
+    int_sk[&quot;Integration \n Starter Kit&quot;]
+    checkout_sk[&quot;Checkout \n Starter Kit&quot;]
+    generic_app[&quot;Generic \n Application&quot;]
+    end
+    
+    subgraph apimesh[&quot;API Mesh&quot;]
+    api_mesh_log[&quot;API Mesh \n Logging&quot;]
+    end
+    
+    subgraph storefront[&quot;Storefront&quot;]
+    cdn_rum[&quot;CDN / User \n Monitoring&quot;]
+    op_tel[&quot;Operational \n Telemetry&quot;]
+    end
+    
+    commerce —> obs_mod[&quot;Observability \n Module&quot;]
+    appbuilder —> aio_tel[&quot;AIO lib \n Telemetry&quot;]
+    
+    obs_mod —> OTel[&quot;OpenTelemetry&quot;]
+    aio_tel —> OTel
+    
+    OTel —> backends[&quot;Third-party Observability \n （例：Grafana, New Relic） Splunk）&quot;]
+    api_mesh_log —> backends
+    cdn_rum —> backends
+    op_tel —> backends
+    
+    style commerce fill:#cc0000,color:#fff,stroke:#cc0000
+    style appbuilder fill:#cc0000,color:#fff,stroke:#cc0000
+    style apimesh fill:#cc0000,color:#fff,stroke:#cc0000
+    style storefront fill:#cc0000,color:#fff,stroke:#cc0000
+    style fill:#f0f0f0 #333,color:#9992}stroke:OT塗り：#fff，色：#333，線：#333
+    
