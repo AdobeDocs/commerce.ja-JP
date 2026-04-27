@@ -28,7 +28,7 @@ ht-degree: 2%
       - [バルクデータ移行ツール](migration/bulk-data.md)
       - [コーディングツール](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
    - [Documentation RAG Service](migration/doc-rag.md)
-- [顧客としてログイン](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [顧客としてログイン](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [ギフトカードアカウントのREST エンドポイント](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [RESTを介した電子メールトリガー](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - チュートリアル {#tutorials}
@@ -42,6 +42,6 @@ ht-degree: 2%
    - [GraphQL Schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST API スキーマ](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [ビデオチュートリアル](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
+- [ビデオチュートリアル](https://experienceleague.adobe.com/ja/playlists/accs-getting-started-product-overview){target="_blank"}
 - [リリースノート](release-notes.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
