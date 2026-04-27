@@ -46,7 +46,7 @@ App Managerは、App Builder アプリケーションをCommerce インスタン
 
 このビデオでは、アプリをCommerce インスタンスに関連付けて設定する方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478944)
+>[!VIDEO](https://video.tv.adobe.com/v/3478956?captions=jpn)
 
 ## アプリの関連付け
 
