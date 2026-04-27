@@ -62,11 +62,11 @@ ht-degree: 0%
 
 1. **[!UICONTROL Apps]** > **[!UICONTROL App Management]**&#x200B;に移動します。
 
-[!DNL App Management] ビューが表示されます。 ここでは、App Builder アプリケーションを関連付け、設定および管理できます。 その画面の検索、フィルター、および&#x200B;**[!UICONTROL Acquire App]** アクションについては、[ アプリの管理](manage-app.md)の「[管理者](manage-app.md#find-an-application-in-the-admin) アプリケーションを検索する」を参照してください。
+[!DNL App Management] ビューが表示されます。 ここでは、App Builder アプリケーションを関連付け、設定および管理できます。 その画面の検索、フィルター、および&#x200B;**[!UICONTROL Acquire App]** アクションについては、[&#x200B; アプリの管理](manage-app.md)の「[管理者](manage-app.md#find-an-application-in-the-admin) アプリケーションを検索する」を参照してください。
 
 ## App Builder アプリのインストール
 
-Adobe ExchangeからApp Builder アプリをインストールする必要がある場合（事前定義済みの統合アプリやマーケットプレイスアプリなど）、ステップバイステップの手順については、[Adobe ExchangeからApp Builder アプリをインストール ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"}を参照してください。
+Adobe ExchangeからApp Builder アプリをインストールする必要がある場合（事前定義済みの統合アプリやマーケットプレイスアプリなど）、ステップバイステップの手順については、[Adobe ExchangeからApp Builder アプリをインストール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"}を参照してください。
 
 アプリをインストールしてデプロイしたら、[!DNL App Management]を使用して[Commerce インスタンスに関連付け](manage-app.md#associate-an-app)し、設定を行います。
 
