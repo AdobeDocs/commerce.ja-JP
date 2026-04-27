@@ -2,9 +2,9 @@
 title: インストールして [!DNL App Management]にアクセス
 description: Adobe Commerce [!DNL App Management]を使用するための前提条件とアクセス要件。
 feature: App Builder, Extensibility, Integration
-source-git-commit: 86c0945bbb0a562de1b66d420dec2a05d4d81e5f
+source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -62,11 +62,11 @@ ht-degree: 0%
 
 1. **[!UICONTROL Apps]** > **[!UICONTROL App Management]**&#x200B;に移動します。
 
-[!DNL App Management] ビューが表示されます。 ここでは、App Builder アプリケーションを関連付け、設定および管理できます。
+[!DNL App Management] ビューが表示されます。 ここでは、App Builder アプリケーションを関連付け、設定および管理できます。 その画面の検索、フィルター、および&#x200B;**[!UICONTROL Acquire App]** アクションについては、[ アプリの管理](manage-app.md)の「[管理者](manage-app.md#find-an-application-in-the-admin) アプリケーションを検索する」を参照してください。
 
 ## App Builder アプリのインストール
 
-Adobe ExchangeからApp Builder アプリをインストールする必要がある場合（事前定義済みの統合アプリやマーケットプレイスアプリなど）、ステップバイステップの手順については、[Adobe ExchangeからApp Builder アプリをインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"}を参照してください。
+Adobe ExchangeからApp Builder アプリをインストールする必要がある場合（事前定義済みの統合アプリやマーケットプレイスアプリなど）、ステップバイステップの手順については、[Adobe ExchangeからApp Builder アプリをインストール ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"}を参照してください。
 
 アプリをインストールしてデプロイしたら、[!DNL App Management]を使用して[Commerce インスタンスに関連付け](manage-app.md#associate-an-app)し、設定を行います。
 
@@ -74,7 +74,7 @@ Adobe ExchangeからApp Builder アプリをインストールする必要があ
 
 一部のApp Builder アプリケーションでは、[Adobe Commerce Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)を使用して、特定のイベントが発生した場合（商品が保存された後など）にCommerceからHTTP経由でアプリを呼び出すことができます。 Webhook エンドポイントとサブスクリプション ロジックは、アプリケーションのビルドおよびデプロイ時に&#x200B;**アプリ開発者**&#x200B;によって定義されます。ストア管理者は、アプリ管理でWebhookを個別に設定しません。
 
-アプリを[Commerce インスタンスに関連付け](https://experienceleague.adobe.com/ja/docs/commerce/app-management/manage-app/manage-app)し、アプリの設定手順を完了すると、Webhookの動作はアプリの実装に従います。
+アプリを[Commerce インスタンスに関連付け](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app)し、アプリの設定手順を完了すると、Webhookの動作はアプリの実装に従います。
 
 [!DNL App Management]がアプリの検証エンドポイントをトリガーできない場合（例えば、URLに到達できない、または回答が要件を満たさない）、[!DNL App Management] ダッシュボードに次のようなエラーが表示される可能性があります。
 
