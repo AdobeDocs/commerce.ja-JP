@@ -2,7 +2,7 @@
 title: Adobe Commerce Optimizer Connector
 description: Commerce クラウドまたはオンプレミス プロジェクトのデータをAdobe Commerce Optimizerに接続する方法について説明します
 feature: Personalization, Integration, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 source-git-commit: c9cce4766ef3f30390d50f53237328be1cfeefdf
 workflow-type: tm+mt
 source-wordcount: '1233'
