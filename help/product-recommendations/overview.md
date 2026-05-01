@@ -24,19 +24,19 @@ ht-degree: 0%
 
 [!DNL Product Recommendations]のデータ収集には、個人を特定できる情報（PII）が含まれていません。 Cookie IDやIP アドレスなどのユーザーIDはすべて厳密に匿名化されます。 詳しくは、[Adobe プライバシーポリシー](https://www.adobe.com/privacy/policy.html)を参照してください。
 
-データの同期について詳しくは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)を参照してください。
+データの同期について詳しくは、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)を参照してください。
 
 ## レコメンデーションの表示場所
 
-「この商品を閲覧したお客様も閲覧した」などのラベルが付いたユニットとして、ストアフロントにレコメンデーションが表示されます。 Adobe Commerce管理者から、ストアビュー全体でレコメンデーションを作成、管理、デプロイできます。 Commerce プロジェクトで[Adobe Commerce Optimizer コネクタ ](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)を使用している場合、[Adobe Commerce Optimizer](../optimizer/overview.md)を通じてレコメンデーションを作成、管理、デプロイします。
+「この商品を閲覧したお客様も閲覧した」などのラベルが付いたユニットとして、ストアフロントにレコメンデーションが表示されます。 Adobe Commerce管理者から、ストアビュー全体でレコメンデーションを作成、管理、デプロイできます。 Commerce プロジェクトで[Adobe Commerce Optimizer コネクタ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)を使用している場合、[Adobe Commerce Optimizer](../optimizer/overview.md)を通じてレコメンデーションを作成、管理、デプロイします。
 
 ## ストアフロントの導入
 
 ストアフロントに一致するドキュメントを選択します。
 
-- **PWA Studio** — [PWA ドキュメント ](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
-- **カスタムフロントエンド（ReactまたはVue.jsなど）** — [ ヘッドレスストアフロントに [!DNL Product Recommendations]](headless.md)統合
-- **Commerce Edge Delivery Services （EDS）** — EDS](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)の[Adobe Commerce Storefront ドキュメント
+- **PWA Studio** — [PWA ドキュメント &#x200B;](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
+- **カスタムフロントエンド（ReactまたはVue.jsなど）** — [&#x200B; ヘッドレスストアフロントに [!DNL Product Recommendations]](headless.md)統合
+- **Commerce Edge Delivery Services （EDS）** — EDS[&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)のAdobe Commerce Storefront ドキュメント
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 商品レコメンデーションと商品関係
 
-オンラインショッピングの複雑さが絶えず変化していることを考えると、ストアフロントで最も効果的なものは、複数の主要なテクノロジーの組み合わせであることが多いです。 [!DNL Product Recommendations]と[製品関係](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html)の両方を使用すると、製品のプロモーションをより柔軟に行うことができます。 Adobe AIが提供する[!DNL Product Recommendations]を活用して、大規模なレコメンデーションをインテリジェントに自動化できます。 次に、手動で介入して、ターゲットの買い物客セグメントに対して特定のレコメンデーションが行われていることを確認する必要がある場合、または特定のビジネス目標を達成する必要がある場合は、[関連製品ルール ](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html)を活用できます。
+オンラインショッピングの複雑さが絶えず変化していることを考えると、ストアフロントで最も効果的なものは、複数の主要なテクノロジーの組み合わせであることが多いです。 [!DNL Product Recommendations]と[製品関係](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html)の両方を使用すると、製品のプロモーションをより柔軟に行うことができます。 Adobe AIが提供する[!DNL Product Recommendations]を活用して、大規模なレコメンデーションをインテリジェントに自動化できます。 次に、手動で介入して、ターゲットの買い物客セグメントに対して特定のレコメンデーションが行われていることを確認する必要がある場合、または特定のビジネス目標を達成する必要がある場合は、[関連製品ルール &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html)を活用できます。
 
 商品レコメンデーションを活用すると、以下のことが可能になります。
 
@@ -68,4 +68,4 @@ ht-degree: 0%
 
 ### カタログデータの再アクティブ化
 
-休止後にカタログデータを復元するには、[ サポートリクエスト ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Product Recommendations]」というタイトルで送信し、環境IDを含めます。 カタログデータは数時間以内に復元する必要があります。
+休止後にカタログデータを復元するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Product Recommendations]」というタイトルで送信し、環境IDを含めます。 カタログデータは数時間以内に復元する必要があります。
