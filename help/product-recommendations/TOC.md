@@ -13,7 +13,7 @@ ht-degree: 10%
 # Commerce用[!DNL Product Recommendations] {#product-recommendations}
 
 - [ガイドの概要](guide-overview.md)
-- [ [!DNL Product Recommendations]とは](overview.md)
+- [&#x200B; [!DNL Product Recommendations]とは](overview.md)
 - [リリースノート](release-notes.md)
 - [限界と限界](boundaries-limits.md)
 - 詳細を見る {#getting-started}
