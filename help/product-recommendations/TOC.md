@@ -1,39 +1,39 @@
 ---
 user-guide-title: '[!DNL Product Recommendations] ガイド'
-user-guide-description: このガイドでは、Adobe Commerceのを使用する詳細  [!DNL Product Recommendations]  手順を説明します。
+user-guide-description: このガイドでは、Adobe Commerceから [!DNL Product Recommendations] を使用する方法について詳しく説明します。
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 1b10163c39d9f309afd24aa2e808a57e069258f8
+source-git-commit: 2b1186d83718347149516de469c31cdfeaa72b4a
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 11%
+source-wordcount: '64'
+ht-degree: 10%
 
 ---
 
-# Commerceの [!DNL Product Recommendations] {#product-recommendations}
+# Commerce用[!DNL Product Recommendations] {#product-recommendations}
 
 - [ガイドの概要](guide-overview.md)
-- [概要  [!DNL Product Recommendations]](overview.md)
+- [ [!DNL Product Recommendations]とは](overview.md)
 - [リリースノート](release-notes.md)
-- [境界と制限](boundaries-limits.md)
-- はじめに {#getting-started}
+- [限界と限界](boundaries-limits.md)
+- 詳細を見る {#getting-started}
    - [オンボーディング](onboarding.md)
-   - [実装ワークフロー](implementation-workflow.md)
+   - [導入ワークフロー](implementation-workflow.md)
    - [ヘッドレス](headless.md)
    - [インストール](install-configure.md)
    - [設定](settings.md)
    - [ステージング環境](staging-environment.md)
    - [ページビルダーの統合](page-builder.md)
-- [!DNL Product Recommendations] Admin {#admin}
+- [!DNL Product Recommendations]管理者 {#admin}
    - [Workspace](workspace.md)
-   - [作成](create.md)
-   - [編集](edit.md)
+   - [制作](create.md)
+   - [Edit](edit.md)
    - [レコメンデーションタイプ](type.md)
    - [フィルター](filters.md)
    - [配置とラベル](placement.md)
-- [!DNL Product Recommendations] Developer {#developer}
+- [!DNL Product Recommendations]人の開発者 {#developer}
    - [概要](development-overview.md)
-   - [データを収集](events.md)
-   - [Customize](customize.md)
-   - [Cookie 制限の処理](setting-cookie.md)
-- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
+   - [Collect Data](events.md)
+   - [カスタマイズ](customize.md)
+   - [Cookie制限への対応](setting-cookie.md)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
