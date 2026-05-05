@@ -3,7 +3,7 @@ title: カタログレイヤー
 description: カタログレイヤーを使用すると、元のソースデータを変更せずに製品データを変更できるので、いつでも安全にカスタマイズして変更を元に戻すことができます。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 source-git-commit: 00f5aaa4d08e686195096b3fee0dcca2d2ac56d8
 workflow-type: tm+mt
 source-wordcount: '1555'
