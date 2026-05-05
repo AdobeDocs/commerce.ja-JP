@@ -1,28 +1,30 @@
 ---
-user-guide-title: SaaS サービスの [!DNL Data Export] ガイド
-user-guide-description: 'このガイドでは、Adobe Commerce SaaS サービスの拡張機能を使用する際の詳細な手順を説明します。 [!DNL Data Export] '
+user-guide-title: SaaS サービスの[!DNL Data Export] ガイド
+user-guide-description: このガイドでは、Adobe Commerce SaaS サービスの [!DNL Data Export] 拡張機能の使用方法について詳しく説明します。
 role: Admin
 feature: Services
-source-git-commit: 6abfeca68ab67fb11493f78440e09408479e1535
+source-git-commit: 843316ddbaae26d14a0bd72af24369f1ec1164c9
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '93'
 ht-degree: 4%
 
 ---
 
-# Adobe Commerceの [!DNL SaaS Data Export Guide] {#saas-data-export}
+# Adobe Commerce用[!DNL SaaS Data Export Guide] {#saas-data-export}
 
 - [ガイドの概要](overview.md)
 - [データ同期](data-synchronization.md)
-- スケジュールとパフォーマンスのエクスポート {#performance}
+- 書き出しのスケジュールとパフォーマンス {#performance}
    - [データ量と送信時間の推定](estimate-data-volume-sync-time.md)
-   - [書き出しパフォーマンスの向上](customize-export-processing.md)
-- [Commerce CLI を使用したフィードの同期](data-export-cli-commands.md)
-- [ログの確認とトラブルシューティング](troubleshooting-logging.md)
+   - [書き出しのパフォーマンスの向上](customize-export-processing.md)
+- [Commerce CLIを使用したフィードの同期](data-export-cli-commands.md)
+- [ ログとトラブルシューティング ]{#logs-troubleshooting}
+   - [ログの確認とトラブルシューティング](troubleshooting-logging.md)
+   - [ログコード参照](log-codes-reference.md)
 - [SaaS データ書き出し拡張機能の管理](manage-extension.md)
-- 拡張性 {#extensibility}
-   - [SaaS データ書き出しフィードの拡張とカスタマイズ](extensibility-and-customizations.md)
-   - [製品属性の動的な追加](add-attribute-dynamically.md)
-   - [税クラス、属性セット、および在庫メタデータの追加](add-tax-attribute-set-inventory-attributes.md)
+- 拡張機能 {#extensibility}
+   - [SaaS データエクスポートフィードの拡張とカスタマイズ](extensibility-and-customizations.md)
+   - [製品属性を動的に追加](add-attribute-dynamically.md)
+   - [税区分、属性セットおよび在庫メタデータの追加](add-tax-attribute-set-inventory-attributes.md)
 - [リリースノート](release-notes.md)
-- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
