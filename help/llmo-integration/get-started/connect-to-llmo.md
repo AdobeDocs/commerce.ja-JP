@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この記事では、統合のCommerce側に焦点を当てます。 LLM Optimizerについて詳しくは、[LLM Optimizer製品ドキュメント ](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/home)を参照してください。
+>この記事では、統合のCommerce側に焦点を当てます。 LLM Optimizerについて詳しくは、[LLM Optimizer製品ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/home)を参照してください。
 
 ## 必要なCommerce サービスを有効にする {#enable-commerce-services}
 

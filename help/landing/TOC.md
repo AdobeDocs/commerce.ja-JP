@@ -28,7 +28,7 @@ ht-degree: 13%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html)
    - [[!DNL App Management]](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview)
    - [サービスコネクタ](/help/landing/saas.md)
-   - [ [!DNL Adobe Commerce] と [!DNL Adobe LLM Optimizer]の統合](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html)
+   - [&#x200B; [!DNL Adobe Commerce] と [!DNL Adobe LLM Optimizer]の統合](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html)
 - データツール {#data-services}
    - [SaaS データの書き出し](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html)
    - [SaaS価格インデックス](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html)
