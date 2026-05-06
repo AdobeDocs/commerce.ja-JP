@@ -3,7 +3,7 @@ title: 統合の制限と境界
 description: サードパーティカタログの範囲の制限、自動修正の範囲、クロールの前提条件、エンタープライズ規模に関する考慮事項、LLM OptimizerとCommerceの制限付きベータアクセスの制約について説明します。
 role: Admin, User, Leader
 recommendations: noCatalog
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '258'

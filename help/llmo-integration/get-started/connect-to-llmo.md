@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Commerce] から [!DNL Adobe LLM Optimizer]への接続'
 description: 必要なCommerce サービスを有効にし、LLM Optimizer接続を設定し、カタログアクセスを検証し、テナントの準備を確認してから、機会を確認するか、更新をデプロイします。
 role: Admin, User
 recommendations: noCatalog
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '543'
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この記事では、統合のCommerce側に焦点を当てます。 LLM Optimizerについて詳しくは、[LLM Optimizer製品ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/home)を参照してください。
+>この記事では、統合のCommerce側に焦点を当てます。 LLM Optimizerについて詳しくは、[LLM Optimizer製品ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/llm-optimizer/using/home)を参照してください。
 
 ## 必要なCommerce サービスを有効にする {#enable-commerce-services}
 

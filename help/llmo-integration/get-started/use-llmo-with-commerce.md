@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Commerce]で [!DNL Adobe LLM Optimizer] を使用'
 description: LLM OptimizerでCommerceの商談を移動し、PDPおよびカタログのエンリッチメントを確認し、 [!DNL Adobe Commerce]への更新をデプロイし、管理者およびストアフロントで検証し、上書きおよび取り込みマークの商談がどのように古くなったかを説明します。
 role: Admin, User
 recommendations: noCatalog
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '1175'

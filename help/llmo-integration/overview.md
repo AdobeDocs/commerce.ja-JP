@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Commerce] と [!DNL Adobe LLM Optimizer]の統合'
 description: ' [!DNL Adobe Commerce] から [!DNL Adobe LLM Optimizer] に接続して、LLMのカタログシグナルを監視し、承認済みのカタログ最適化をデプロイします。'
 role: Admin, User, Leader
 recommendations: noCatalog
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '902'
