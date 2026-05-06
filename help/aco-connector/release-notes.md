@@ -2,9 +2,9 @@
 title: '[!DNL Adobe Commerce Optimizer Connector] リリースノート'
 description: Adobe Commerceの [!DNL Adobe Commerce Optimizer Connector] の最新リリース情報。
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 205fca38b379f94027a965b58826ffd922577f61
+source-git-commit: e0f7b9b860f8dce18b357d479cbc021f32970c18
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,13 @@ ht-degree: 0%
 ![既知の問題](../assets/bug.svg)既知の問題
 
 ## 2026 リリース
+
+### 1.0.13 リリース
+
+_2026年5月6日_
+
+![修正](../assets/fix.svg) **コネクタの設定手順**&#x200B;の改善 – Commerce管理者のCommerce Optimizer設定ページを&#x200B;_Adobe Commerce コネクタ ガイド_&#x200B;にリンクするように更新しました。 <!--COMOPT-1922-->
+![修正](../assets/fix.svg) **コネクターのメタデータの機能強化**-ACO コネクタに、インストール済みのバージョンがメタデータヘッダーに含まれるようになりました。 この改善により、トラブルシューティングまたはサポートの取り組み中に使用されているコネクタバージョンをすばやく特定できるようになります。<!--MDEE-1323-->
 
 ### 1.0.12 リリース
 
