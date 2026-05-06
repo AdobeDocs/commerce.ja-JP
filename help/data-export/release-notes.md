@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![新機能](../assets/new.svg)
 ![修正](../assets/fix.svg)修正と機能強化
-![ バグ ](../assets/bug.svg)既知の問題
+![&#x200B; バグ &#x200B;](../assets/bug.svg)既知の問題
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ _2026年2月6日_
 
 _2026年2月2日_
 
-![修正](../assets/fix.svg)更新中にアイテムバッチが許可された上限を超える可能性がある問題を修正しました。これにより、[Commerce サービス ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)または[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)にデータを同期する際に`items_limit_exceeded`個のエラーが発生します。<!--MDEE-1264-->
+![修正](../assets/fix.svg)更新中にアイテムバッチが許可された上限を超える可能性がある問題を修正しました。これにより、[Commerce サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)または[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)にデータを同期する際に`items_limit_exceeded`個のエラーが発生します。<!--MDEE-1264-->
 
 ![修正](../assets/fix.svg) バンドル製品オプションの収集時に、失敗した項目を登録するロジックを追加することで、製品データの書き出しの信頼性を向上しました。<!--CCSAAS-4458-->
 
