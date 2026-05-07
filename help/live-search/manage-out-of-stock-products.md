@@ -25,7 +25,7 @@ Adobe Commerce stock属性`quantity_and_stock_status`はファセットとして
 
 ### Commerce設定
 
-&#x200B;1. *管理者*&#x200B;から、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Catalog]**>**[!UICONTROL Inventory]**に移動します。
+&#x200B;1. *管理者*&#x200B;から、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Catalog]**>**[!UICONTROL Inventory]**&#x200B;に移動します。
 
 &#x200B;1. **[!UICONTROL Display Out of Stock Products]**&#x200B;を&#x200B;**[!UICONTROL No]**&#x200B;に設定します。
 
@@ -57,14 +57,14 @@ query productSearchInStockOnly {
 }
 ```
 
-この方法は、[Live Search PLP ウィジェット ](plp-styling.md)を通じてリクエストをルーティングしない場合に使用します。
+この方法は、[Live Search PLP ウィジェット &#x200B;](plp-styling.md)を通じてリクエストをルーティングしない場合に使用します。
 
 ### 在庫切れ後の在庫切れを表示
 
 関連度でソートする際に、結果セットで在庫切れの商品を常に在庫切れの商品の後に残しておくために、Adobeでは環境用の内部機能フラグを有効にすることができます。
 
 - この機能フラグは[!DNL Live Search]管理UIでは公開されません。
-- リクエストするには、[Adobe サポート ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}に連絡し、在庫切れの商品を検索結果の最後に移動する機能を参照してください。
+- リクエストするには、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}に連絡し、在庫切れの商品を検索結果の最後に移動する機能を参照してください。
 
 >[!NOTE]
 >
@@ -86,5 +86,5 @@ query productSearchInStockOnly {
 
 >[!MORELIKETHIS]
 >
-> - [ マーチャンダイジングルールの検索](rules.md)
+> - [&#x200B; マーチャンダイジングルールの検索](rules.md)
 > - [Inventory managementのグローバルオプションの設定](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)
