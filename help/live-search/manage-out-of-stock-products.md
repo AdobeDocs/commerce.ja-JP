@@ -64,7 +64,7 @@ query productSearchInStockOnly {
 関連度でソートする際に、結果セットで在庫切れの商品を常に在庫切れの商品の後に残しておくために、Adobeでは環境用の内部機能フラグを有効にすることができます。
 
 - この機能フラグは[!DNL Live Search]管理UIでは公開されません。
-- リクエストするには、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}に連絡し、在庫切れの商品を検索結果の最後に移動する機能を参照してください。
+- リクエストするには、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}に連絡し、在庫切れの商品を検索結果の最後に移動する機能を参照してください。
 
 >[!NOTE]
 >
@@ -87,4 +87,4 @@ query productSearchInStockOnly {
 >[!MORELIKETHIS]
 >
 > - [&#x200B; マーチャンダイジングルールの検索](rules.md)
-> - [Inventory managementのグローバルオプションの設定](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)
+> - [Inventory managementのグローバルオプションの設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/configuration/configuration)
