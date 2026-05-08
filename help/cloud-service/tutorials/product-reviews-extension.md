@@ -8,8 +8,7 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-hidefromtoc: true
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '2533'
 ht-degree: 0%
@@ -382,29 +381,29 @@ Analyze @PRODUCT_REVIEW_QA_CONTRACT.md and build a product review block using th
 - より詳細に制御して段階的に実行できるレビュー可能なプランが必要な場合は、最初のオプションを選択します。
 - エージェントに最小限の介入で完全な実装を行わせたい場合は、2番目のオプションを選択します。
 
-実装時に、エージェントはブロックファイルを作成および変更します。 生成されるコードを確認し、必要に応じて質問したり、担当者に連絡したりできます。 If the block does not render, ask the agent to analyze the section decoration and block discovery pattern — the block element must be a direct child of the section so the framework can find it.
+実装時に、エージェントはブロックファイルを作成および変更します。 生成されるコードを確認し、必要に応じて質問したり、担当者に連絡したりできます。 ブロックがレンダリングされない場合は、エージェントにセクションの装飾とブロック検出パターンを分析するように依頼します。ブロック要素は、フレームワークが見つけられるように、セクションの直接の子である必要があります。
 
-### Step 6: Add the block to the product page in Document Authoring
+### 手順6：文書オーサリングの製品ページにブロックを追加する
 
-Add the product review block to the product page template so it appears on all PDPs. Use the Document Authoring service (da.live) to add and configure the block.
+製品レビューブロックを製品ページテンプレートに追加し、すべてのPDPに表示します。 ドキュメント作成サービス（da.live）を使用して、ブロックを追加および設定します。
 
-1. Open your document authoring service, for example [da.live](https://da.live/)
+1. ドキュメント作成サービスを開きます（例：[da.live](https://da.live/)）
 
-1. Click on your project space, open the **products** folder and select **default** (`products/default`).
+1. プロジェクトスペースをクリックし、**products** フォルダーを開き、**default** （`products/default`）を選択します。
 
-1. Add a new block section.
+1. 新しいブロックセクションを追加します。
 
-   In the block table, add a row with the block name **product-review** (or the block name your agent created).
+   ブロック テーブルに、ブロック名&#x200B;**product-review** （またはエージェントが作成したブロック名）の行を追加します。
 
-1. Configure the block with the required settings:
-   - **apiBaseUrl** — Your App Builder runtime URL (for example, `https://<namespace>-<app-name>-stage.adobeioruntime.net`).
-   - **sku** — Leave empty to use the current product&#39;s SKU on the PDP, or enter a specific SKU to display reviews for that product only.
+1. 必要な設定でブロックを設定します。
+   - **apiBaseUrl** — App Builder ランタイム URL （例：`https://<namespace>-<app-name>-stage.adobeioruntime.net`）。
+   - **sku** – 現在の製品のSKUをPDPで使用するには空のままにするか、特定のSKUを入力して、その製品のレビューのみを表示します。
 
-1. Click **[!UICONTROL Publish]** to publish your changes.
+1. **[!UICONTROL Publish]**&#x200B;をクリックして変更を公開します。
 
-### Step 7: Start the server and test
+### 手順7：サーバーを起動してテストする
 
-After you add the block to the product page in Document Authoring, start the development server and test the block.
+Document Authoringで製品ページにブロックを追加したら、開発サーバーを起動し、ブロックをテストします。
 
 1. ローカル開発サーバーを起動します。
 
@@ -412,13 +411,13 @@ After you add the block to the product page in Document Authoring, start the dev
    npm run start
    ```
 
-1. In a browser, navigate to a product page that has pre-populated reviews and Q&amp;A content. 例：
+1. ブラウザーで、レビューとQ&amp;A コンテンツが事前入力されている製品ページに移動します。 例：
 
    ```shell-session
    http://localhost:3000/products/<product-slug>/ADB153
    ```
 
-1. Verify that the product review block displays reviews and Q&amp;A content, and that the submission forms work.
+1. 製品レビューブロックにレビューとQ&amp;A コンテンツが表示され、送信フォームが機能することを確認します。
 
 手動テストを実行するか、担当者にブラウザー機能を使用してテストを依頼します。
 
@@ -426,30 +425,30 @@ After you add the block to the product page in Document Authoring, start the dev
 Run complete browser testing. Use the following product page 'http://localhost:3000/products/<product-slug>/ADB153'
 ```
 
-### Step 8: Clean up
+### ステップ 8：クリーンアップ
 
 テストをスキップまたは完了した後、エージェントは最終的な&#x200B;**クリーンアップ** フェーズに進むよう促します。 確認すると、エージェントは実装中に作成されたすべてのドキュメントアーティファクトをアーカイブします。
 
 ## トラブルシューティング
 
-Use the following tips if you encounter issues during the tutorial.
+チュートリアル中に問題が発生した場合は、次のヒントを参考にしてください。
 
-### Backend (App Builder)
+### バックエンド（App Builder）
 
-| Symptom | 原因 | Fix |
+| 症状 | 原因 | 修正 |
 |---------|-------|-----|
-| GET or POST returns 500 &quot;Cannot find module&quot; | The product-reviews actions use `require("../../utils")` or `require("../../constants")`, which escape the package bundle. Those files are not included when the package is deployed. | Make the product-reviews package self-contained. Add `actions/product-reviews/lib/constants.js` and `actions/product-reviews/lib/utils.js`, and update all four actions to require from `../lib/...` instead of `../../`. |
-| GET returns 500 with &quot;key must match pattern&quot; | State keys use colons (for example, `reviews:ADB153`). `aio-lib-state` allows only `[a-zA-Z0-9-_.]`. | Change prefixes from `reviews:` and `qa:` to `reviews.` and `qa.`. Add a `stateKey(prefix, sku)` helper that sanitizes the SKU (replace invalid chars with `_`). |
-| POST returns 500 with &quot;value must be string&quot; | `aio-lib-state` accepts only string values. The code passes arrays or objects to `state.put()`. | Serialize with `JSON.stringify()` when writing and `JSON.parse()` when reading. Update all four actions. |
+| GETまたはPOSTが500を返す「モジュールが見つかりません」 | product-reviews アクションでは、パッケージ バンドルをエスケープする`require("../../utils")`または`require("../../constants")`を使用します。 これらのファイルは、パッケージのデプロイ時には含まれません。 | product-reviews パッケージを自己完結型にします。 `actions/product-reviews/lib/constants.js`と`actions/product-reviews/lib/utils.js`を追加し、`../../`ではなく`../lib/...`から必要なすべての4つのアクションを更新します。 |
+| GETが「key must match pattern」で500を返す | 状態キーはコロンを使用します（例：`reviews:ADB153`）。 `aio-lib-state`は`[a-zA-Z0-9-_.]`のみを許可します。 | プレフィックスを`reviews:`および`qa:`から`reviews.`および`qa.`に変更します。 SKUをサニタイズする`stateKey(prefix, sku)` ヘルパーを追加します（無効なグラフを`_`に置き換えます）。 |
+| POSTは、「値は文字列である必要があります」で500を返します | `aio-lib-state`は文字列値のみを受け入れます。 コードは配列またはオブジェクトを`state.put()`に渡します。 | 書き込み時には`JSON.stringify()`、読み取り時には`JSON.parse()`でシリアル化します。 4つのアクションをすべて更新します。 |
 
 {style="table-layout:auto"}
 
-### Storefront (Edge Delivery Services)
+### ストアフロント（Edge Delivery Services）
 
-| Symptom | 原因 | Fix |
+| 症状 | 原因 | 修正 |
 |---------|-------|-----|
-| Block does not render on test page | The block element is nested inside an extra `div`, so after `decorateSections` the block selector (`div.section > div > div`) does not match. | Make the block a direct child of the section. Structure: `section > div.product-review` (or equivalent block class). Avoid `section > div > div.product-review`. |
-| Invalid CSS tokens | The block uses design tokens that do not exist in `styles/styles.css` (for example, `--color-error-100`, `--type-detail-font-size`). | Ask the agent to validate tokens against the project&#39;s `styles/styles.css` and replace invalid tokens with existing ones (for example, `--color-alert-*`, `--type-details-caption-*`). |
+| ブロックがテストページでレンダリングされない | ブロック要素は追加の`div`内にネストされているため、`decorateSections`以降、ブロックセレクター（`div.section > div > div`）が一致しません。 | ブロックをセクションの直接の子にします。 構造：`section > div.product-review` （または同等のブロッククラス）。 `section > div > div.product-review`を避けます。 |
+| 無効なCSS トークン | ブロックは、`styles/styles.css`に存在しないデザイントークン （例：`--color-error-100`、`--type-detail-font-size`）を使用します。 | エージェントに、プロジェクトの`styles/styles.css`に対してトークンを検証し、無効なトークンを既存のトークンに置き換えるように依頼します（例：`--color-alert-*`、`--type-details-caption-*`）。 |
 
 {style="table-layout:auto"}
 
@@ -457,19 +456,19 @@ Use the following tips if you encounter issues during the tutorial.
 
 このチュートリアルで取り上げたトピックの概要を次に示します。
 
-- **Extension development:** Describing functionality to create and view product review and Q&amp;A content  on a storefront with an Adobe Commerce as a Cloud Service backend to an AI agent and how to implement this functionality by generating a working REST API with four endpoints using [!DNL App Builder].
-- **Persistence:** Using `aio-lib-state` with correct key format and JSON-serialized values.
-- **Mock data and pre-population:** Creating a mock data file and using curl to pre-populate the API for CLI and storefront testing.
+- **拡張機能の開発：** Adobe Commerce as a Cloud Service バックエンドを使用してストアフロントで製品レビューとQ&amp;A コンテンツを作成および表示する機能と、[!DNL App Builder]を使用して4つのエンドポイントで動作するREST APIを生成することでこの機能を実装する方法について説明します。
+- **永続性：**&#x200B;正しいキー形式とJSON シリアル化された値で`aio-lib-state`を使用しています。
+- **モックデータと事前入力：** モックデータファイルを作成し、curlを使用してCLIおよびストアフロントテスト用にAPIを事前入力します。
 - **サービス契約：** バックエンドの拡張機能とストアフロント実装を橋渡しするAPI契約を作成しています。
 - **段階的なストアフロント統合：** AI支援のスキルを使用して、要件、アーキテクチャ、実装を進める。
-- **PDP block:** Adding a product review block to the PDP that displays reviews and Q&amp;A with submission forms and pagination.
+- **PDP ブロック：**&#x200B;製品レビューブロックをPDPに追加します。このブロックには、提出フォームとページネーションを含むレビューとQ&amp;Aが表示されます。
 
 ## 次のステップ
 
-Use the following suggestions to extend your product reviews service:
+商品レビューサービスを拡張するには、次の推奨事項を使用してください。
 
-- **Add moderation:** Implement a moderation workflow for review and Q&amp;A content before it is published.
-- **Add authentication:** Require shoppers to be logged in to submit reviews or Q&amp;A content, and associate submissions with customer accounts.
-- **Add a subscription management page:** Create a storefront page where shoppers can view and edit their reviews.
+- **モデレーションを追加：**&#x200B;公開前に、レビューおよびQ&amp;A コンテンツ用のモデレーションワークフローを実装します。
+- **認証を追加：**&#x200B;買い物客がログインしてレビューまたはQ&amp;A コンテンツを送信し、送信を顧客アカウントに関連付ける必要があります。
+- **サブスクリプション管理ページを追加：**&#x200B;買い物客がレビューを表示および編集できるストアフロントページを作成します。
 - **マルチテナントのデプロイメントをサポート：** ステート管理を拡張して、1つのApp Builder アプリで複数のCommerce テナントをサポートします。
-- **Add rate limiting:** Implement rate limits on the API to prevent abuse.
+- **レート制限を追加：**&#x200B;不正使用を防ぐために、APIにレート制限を実装します。

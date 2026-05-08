@@ -1,58 +1,58 @@
 ---
 source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 5%
+source-wordcount: '506'
+ht-degree: 0%
 
 ---
-# Adobe Commerce技術ドキュメント
+# Adobe Commerceのユーザーガイド
 
-ドキュメントチーム以外のAdobe社員やコミュニティからのコントリビューションを歓迎します。
+私たちは、コミュニティやAdobeの職員によるドキュメント部門以外からの貢献を歓迎します。
 
-## Adobe オープン Source行動規範
+## AdobeオープンSource行動規範
 
-このプロジェクトでは、[アドビオープンソース行動規範](code-of-conduct.md) または [.NET Foundation 行動規範](https://dotnetfoundation.org/code-of-conduct)を採用しています。詳しくは、[投稿](contributing.md)の記事を参照してください。
+このプロジェクトでは、[Adobe Open Source Code of Conduct](code-of-conduct.md)または[.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)を採用しています。 詳しくは、[寄付](contributing.md)の記事を参照してください。
 
-## Adobe コンテンツへの投稿について
+## Adobe コンテンツへのコントリビューションについて
 
-[Adobe ドキュメント投稿者ガイドを参照してください &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)。
+[Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
-投稿方法は、投稿者と、投稿したい変更の種類に応じて異なります。
+貢献の方法は、自身が誰であるか、また貢献したい変更の種類によって異なります。
 
 ### 軽微な変更
 
-軽微な変更をコントリビューションする場合は、記事にアクセスして記事の下部に表示されるフィードバックエリアをクリックし、**詳細なフィードバックオプション** をクリックします。次に、**編集の提案** をクリックして、GitHub の Markdown ソースファイルに移動します。 GitHub UI を使用して更新を行います。 一般的な [Adobe ドキュメント投稿者ガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
+マイナーアップデートを投稿する場合は、記事にアクセスし、記事の下部に表示されるフィードバック領域をクリックし、**詳細なフィードバックオプション**&#x200B;をクリックしてから、**編集を提案**&#x200B;をクリックして、GitHubのマークダウンソースファイルに移動します。 GitHub UIを使用して更新します。 詳しくは、[Adobe Docs コントリビューターガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
-このリポジトリのドキュメントおよびコード例について投稿者が送信した軽微な修正や説明は、Adobeの利用規約の対象となります。
+このリポジトリのドキュメントやコード例に対して提出する軽微な修正や明確化は、Adobe利用条件の対象となります。
 
-### コミュニティメンバーによる大幅な変更または新しい記事
+### コミュニティメンバーからの主な変更点や新しい記事
 
-Adobe コミュニティのメンバーが新しい記事を作成したり、大きな変更をコントリビューションしたりする場合は、Git リポジトリーの「イシュー」タブを使用してイシューを送信し、ドキュメントチームとのやり取りを開始してください。 計画に同意したら、公開リポジトリと非公開リポジトリでの作業を組み合わせて新しいコンテンツを取り込むために、従業員と協力する必要があります。
+Adobe コミュニティに参加していて、新しい記事を作成したり、大きな変更を送信したりしたい場合は、Git リポジトリの「イシュー」タブを使用してイシューを送信し、ドキュメントチームとの会話を開始してください。 計画に同意したら、従業員と協力して、公開リポジトリと非公開リポジトリの作業を組み合わせて、新しいコンテンツを導入する必要があります。
 
-### Adobe社員からの大きな変化
+### Adobe社員の主な変化
 
-Adobe Experience Cloud ソリューションの製品チームのテクニカルライター、プログラムマネージャー、または開発者で技術記事の投稿または作成を担当している場合は、`https://git.corp.adobe.com/AdobeDocs` のプライベートリポジトリを使用する必要があります。
+テクニカルライター、プログラムマネージャー、またはAdobe Experience Cloud ソリューションのプロダクトチームの開発者で、技術記事の投稿や作成を担当する場合は、`https://git.corp.adobe.com/AdobeDocs`にあるプライベートリポジトリを使用してください。
 
 ## ツールと設定
 
-コミュニティのコントリビューターは、基本的な編集を行う場合は GitHub UI を使用し、大きな変更を加える場合はリポジトリをフォークします。
+コミュニティのコントリビューターは、GitHub UIを使用して基本的な編集をおこなったり、リポジトリをフォークして主要なコントリビューションを作成したりできます。
 
-詳しくは、[Adobe ドキュメント投稿者ガイド &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja) を参照してください。
+詳しくは、[Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
-## Markdown を使用してトピックを書式設定する方法
+## Markdownを使用してトピックを書式設定する方法
 
-このリポジトリ内の記事はすべて、GitHub 固有の Markdown を使用しています。 Markdown について詳しくは、以下を参照してください。
+このリポジトリのすべての記事では、GitHubでカスタマイズされたMarkdownを使用しています。 Markdownに詳しくない方は、以下を参照してください。
 
-- [Markdown の基本 &#x200B;](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-- [&#x200B; 印刷用 Markdown チートシート &#x200B;](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+- [Markdownの基本](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+- [印刷可能なマークダウンのチートシート](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
-## 画像の最適化のプリコミットフック
+## 画像の最適化のためのプリコミットフック
 
-このリポジトリには、コミット前に画像を最適化する、自動プリコミットフックが含まれています。 **すべてのコントリビューターは、これらのフックを有効にして** 一貫性のある画像の最適化とリポジトリサイズの縮小を実現する必要があります。
+このリポジトリには、コミット前に画像を最適化する自動のプリコミットフックが含まれています。 **すべてのコントリビューターは、一貫した画像の最適化とリポジトリサイズの削減を確実にするために、これらのフック**&#x200B;を有効にする必要があります。
 
-### クイックセットアップ
+### クイック設定
 
-リポジトリのクローンを作成したら、次のコマンドを実行します。
+リポジトリのクローンを作成したら、次を実行します。
 
 ```bash
 .githooks/setup-hooks.sh
@@ -60,23 +60,23 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 
 ### フックの機能
 
-- ステージングされた画像ファイル（PNG、JPG、JPEG、GIF、SVG）を自動検出
-- `image_optim` を実行して画像を圧縮および最適化する
-- 最適化された画像を自動的に再ステージ
-- コミットされたイメージがすべて適切に最適化されていることを確認します。
+- ステージングされた画像ファイルを自動検出（PNG、JPG、JPEG、GIF、SVG）
+- `image_optim`を実行して画像を圧縮および最適化
+- 最適化された画像を自動的にリステージ
+- コミットされたすべての画像が適切に最適化されていることを確認します
 
-### 利点
+### Adobe Workfrontの利点
 
-- リポジトリサイズの縮小
-- ドキュメントのページ読み込みの高速化
-- すべてのコントリビューターで一貫した画質
-- 手動での最適化は不要です
+- リポジトリサイズの削減
+- ドキュメントのページ読み込みを高速化
+- あらゆる貢献者で一貫した画質
+- 手作業による最適化は不要です
 
-設定手順、トラブルシューティング、設定について詳しくは、[`.githooks/README.md`](.githooks/README.md) を参照してください。
+セットアップ手順、トラブルシューティング、設定の詳細については、[`.githooks/README.md`](.githooks/README.md)を参照してください。
 
-## 使用可能な Rake タスク
+## 使用可能なレイク タスク
 
-このリポジトリは、`adobe-comdox-exl-rake-tasks` gem が提供する rake タスクを使用します。 使用可能なすべてのタスクを表示するには、次を実行します。
+このリポジトリは、`adobe-comdox-exl-rake-tasks` gemが提供するrake タスクを使用します。 使用可能なすべてのタスクを表示するには、次を実行します。
 
 ```bash
 cd _jekyll
