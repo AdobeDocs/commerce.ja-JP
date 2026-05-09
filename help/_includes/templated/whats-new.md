@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4b38ce9b1585fa7414e323b08bf8d09d6da46a6c
+source-git-commit: feb450ecd425d7e3ce7f8e354aeb294bb7d5d1ce
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1333'
 ht-degree: 1%
 
 ---
@@ -503,58 +503,6 @@ ht-degree: 1%
         新しいトピック
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ab635fecb7b82294bd4a4fd045ed71931e9d265d">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月6日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/tutorials/ratings-extension">評価チュートリアル </a>にストアフロント統合を追加しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.ja-JP/pull/15">プルリクエスト</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月3日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>一般公開リリース用に<a href="https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer Connector v1.0.9 ドキュメント </a>を公開しました。</p>
-</td>
-      <td>
-        メジャーアップデート、新トピック、テクニカル
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/216958e287993d1a212fb59fdaa8e2ba3e931b97">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>最新のサンドボックスリリースでAdobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を更新しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6fc1fbd8b70459e6473b48fdc4bb6fc75f6dc559">コミット</a></td>
     </tr>
   </tbody>
 </table>
