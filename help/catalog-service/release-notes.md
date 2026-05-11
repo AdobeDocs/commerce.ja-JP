@@ -3,9 +3,9 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: Adobe Commerceの [!DNL Catalog Service] の最新リリース情報。
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: a7a48e0150d817d29c147c504353245f12d2089c
+source-git-commit: ba78e2dd6ae6e075579b045b57cdcf98798aa983
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2709'
 ht-degree: 0%
 
 ---
@@ -14,79 +14,77 @@ ht-degree: 0%
 
 このリリースノートでは、次のような最新のCommerce カタログサービスのアップデートについて説明します。
 
-- **ストアフロントカタログサービスのリリース**
+- **[ストアフロントカタログサービスのリリース](#storefront-catalog-service)**
 
-   - カタログサービス API スキーマの機能強化によるデータ取得の改善。
+   - カタログサービス API スキーマの機能強化によるデータ取得の改善
    - カタログサービス APIとその基盤となるインフラストラクチャのセキュリティ、パフォーマンス、信頼性を向上させます。
 
-- **カタログサービス メタパッケージリリース**
+  これらのAPIについて詳しくは、Commerce Developer ドキュメントの[Storefront Services スキーマ ](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/)を参照してください。
+
+- **[カタログサービス メタパッケージリリース](#catalog-service-metapackage)**
 
    - パフォーマンス、安定性、他のAdobe Commerce コンポーネントとの互換性を向上させるために、依存関係を更新しました。
+
+- **[カタログ サービス インストーラーのリリース](#catalog-service-installer)**
+
+   - カタログサービスとCommerce スタックの互換性を維持するために、依存関係を更新しました。
+
+>[!NOTE]
+>
+>Commerce プロジェクトでAdobe Commerce Optimizerを使用してカタログデータをCommerce Edge Delivery サービスまたはヘッドレスストアフロントに配信する場合は、最新のAPI アップデートについて[Adobe Commerce Optimizer リリースノート ](../optimizer/release-notes.md)を参照してください。
 
 更新はタイプ別に分類されます。
 
 ![新機能](../assets/new.svg)
 ![修正](../assets/fix.svg)修正と機能強化
-![&#x200B; バグ &#x200B;](../assets/bug.svg)既知の問題
+![ バグ ](../assets/bug.svg)既知の問題
 
 最新バージョンのサポートが提供されます。 古いバージョンのリリースノートは、参照用に含まれています。
 
 ## Storefront Catalog Service
 
-### v1.53 リリース
+### 2026年5月
 
-_2026年5月4日_
+**リリース日**: 2026年5月4日
+<!-- v1.53 -->
 
-![修正](../assets/fix.svg) ストアフロントの商品価格には、すべての商品タイプに対して正しい通貨コード（例：USD）が表示されるようになりました。 以前は、一部の製品で予想される通貨の代わりに`NONE`が表示され、価格が欠落していました。 この更新により、ストアフロント全体で一貫性のある正確な価格レンダリングが保証されます。<!--DATA-7115-->
+![修正](../assets/fix.svg) ストアフロントの製品価格には、すべての製品タイプに対して正しい通貨コード（USDなど）が表示されるようになりました。 以前は、一部の製品で予想される通貨の代わりに`NONE`が表示され、価格が欠落していました。 この更新により、ストアフロント全体で一貫性のある正確な価格レンダリングが保証されます。<!--DATA-7115-->
 
-### v1.52 リリース
+### 2026年4月
 
-_2026年4月29日_
+**リリース日**: 2026年4月29日
+<!--v1.52-->
 
 ![新規](../assets/new.svg) Adobe Commerce OptimizerおよびAdobe Commerce as a Cloud Serviceのリクエストごとに、最大100 SKUの制限が適用されました
-[文書化された制限と境界](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits)に従うクライアント。<!--DATA-7156-->
+[文書化された制限と境界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)に従うクライアント。<!--DATA-7156-->
 
-### v1.51 リリース
-
-_2026年4月17日_
+**リリース日**: 2026年4月17日
+<!--v1.51-->
 
 ![新規](../assets/new.svg) クライアントがページ区切りの結果を含むカテゴリを名前で検索できる新しい`searchCategory` GraphQL クエリを追加しました。 クエリは、必須の`searchTerm` （最低3文字）およびオプションの`family`、`pageSize`、および`currentPage`個のパラメーターを受け入れます。 結果には、完全なカテゴリ メタデータを持つ`CategoryTreeView` オブジェクト、ページネーション用の`totalCount`および`pageInfo`が含まれます。<!--COMOPT-1819-->
 
 このクエリは、Adobe Commerce Optimizer マーチャンダイジングサービスを使用しているお客様のみが使用できます。 [searchCategory](https://developer.adobe.com/commerce/services/reference/graphql/)を参照してください。
 
-### v1.50 リリース
+### 2026年3月
 
-_2026年4月7日_
+**リリース日**: 2026年3月24日
+<!--v1.49-->
 
-![新規](../assets/new.svg) [categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) クエリに、オプションとしてファミリー入力パラメーターが追加されました。 これにより、特定のファミリーパラメーターに依存することなくスラグ経由でアクセスできるため、より柔軟なカテゴリ取得が可能になります。 このクエリは、[Adobe Commerce Optimizer マーチャンダイジングサービス &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)でのみ使用できます。
+![新規](../assets/new.svg)動的バンドルの価格帯を計算および返すためのサポートを追加しました。
+<!--DATA-7115-->
 
-### v1.49 リリース
+### 2025年12月
 
-_2026年3月24日_
+**リリース日**: 2025年12月11日
+<!-- v1.46 -->
 
-![新規](../assets/new.svg)動的バンドルの価格帯を計算および返すためのサポートを追加しました。<!--DATA-7014-->
+![ パフォーマンスと安定性を向上させるために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。
+<!--DATA-6852, DATA-6864-->
 
-### v1.48 リリース
+### 2025年11月
 
-_2026年2月19日_
-
-![新規](../assets/new.svg) GraphQL APIの`categoryTree` クエリで、カテゴリの説明、画像、SEO メタタグが返されるようになりました。 このアップデートでは、ストアフロント開発者がカテゴリーイメージを表示し、適切なメタタイトル、説明、キーワードを使用して検索エンジンの最適化を改善するために必要なデータが提供されます。 ヘッドレスストアフロント用の[&#x200B; コンポーザブルカタログデータモデル &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)を使用するCommerce実装でのみサポートされています&lt;<!--DATA-6933-->
-
-### v1.47 リリース
-
-_2026年2月12日_
-
-![新規](../assets/new.svg) API サービスで`CategoryProductView` タイプがサポートされるようになりました。カテゴリ別の製品の拡張ビューとクエリを有効にできます。 このアップデートにより、開発者はカテゴリに基づいて製品データを効率的に取得およびフィルタリングできるようになり、カテゴリ主導のユースケースに対する柔軟性とパフォーマンスが向上しました。 詳しくは、[&#x200B; ストアフロントでのカテゴリの実装](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)を参照してください。 ヘッドレスストアフロント <!--DATA-6949-->の[&#x200B; コンポーザブルカタログデータモデル &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)を使用するCommerce実装でのみサポートされます
-
-### v1.46 リリース
-
-_2025年12月11日_
-
-![&#x200B; パフォーマンスと安定性を向上させるために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6852, DATA-6864-->
-
-### v1.45 リリース
-
-_2025年11月17日_
+**リリース日**: 2025年11月17日
+<!-- v1.45 -->
 
 ![新規](../assets/new.svg) **名前による属性のフィルタリング**- `productSearch` GraphQL クエリで、`names` フィールドでの商品属性のフィルタリングがサポートされるようになりました。<!--DATA-6831--> このフィルターを使用すると、次のことが可能になります。
 
@@ -127,32 +125,19 @@ _2025年11月17日_
 >
 >フィルターを適用せずにすべての属性を取得するには、`names`引数を省略するか、空の配列を指定します。
 
-### v1.44 リリース
+**リリース日**: 2025年11月6日
+<!-- v1.44 -->
 
-_2025年11月6日_
-
-![&#x200B; パフォーマンスと安定性を向上させるために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6852, DATA-6864-->
-
-### v1.43 リリース
-
-_2025年11月3日_
-
-![新規](../assets/new.svg) **多次元製品カスタマイズ用の製品レイヤー** - Adobe Commerce Optimizer実装のチャネル固有の、ロケールに応じたコンテンツ配信のサポートが追加されました。<!--DATA-6632-->
-
-- 顧客セグメントごとに異なる商品コンテンツを提供する
-- 基本データを複製することなく、ロケール固有のカスタマイズを適用します
-- レイヤーマスクを使用したフィールドレベルのオーバーライドの制御
-- プレミアム、季節、モバイルに最適化されたコンテンツレイヤーのサポート
-
-  レイヤーは、既存の`products` クエリを使用して取得され、リクエストヘッダーからサーバーサイドで適用され、スキーマの変更は必要ありません。 _Adobe Commerce Optimizer ガイド_&#x200B;の[&#x200B; カタログ レイヤー](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-layer)を参照してください。
+![ パフォーマンスと安定性を向上させるために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6852, DATA-6864-->
 
 ![修正](../assets/fix.svg) グループ化された製品は、親に価格が設定されていない場合にクエリできるようになりました。子製品は、独自の表示役割を返します。<!--DATA-6779-->
 
-![&#x200B; パフォーマンスと安定性を向上させるために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6721, DATA-6864-->
+![ パフォーマンスと安定性を向上させるために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6721, DATA-6864-->
 
-### v1.42 リリース
+### 2025年9月
 
-_2025年9月8日_
+**リリース日**: 2025年9月8日
+<!-- v1.42 -->
 
 ![新規](../assets/new.svg) **階層価格設定サポート**&#x200B;を追加して、クエリのボリューム価格を確認しました：<!--DATA-6643-->
 
@@ -193,23 +178,22 @@ APIは、割引価格が製品の最終価格の最低価格の&#x200B;**より*
 - **シンプルな製品**: `price.tiers`には、`tier.amount.value` &lt; `price.final.amount.value`の階層のみが含まれます（最終版の最小値）。
 - **複雑な商品**: `priceRange.minimum.tiers`と`priceRange.maximum.tiers`は、価格帯を作成する際に同じルールを使用します。
 
-### v1.41 リリース
-
-_2025年9月2日_
+**リリース日**: 2025年9月2日
+<!-- v1.41 -->
 
 ![修正](../assets/fix.svg) **価格データの欠落に対するエラー処理の改善** – 価格データがまだ受信されていない場合、APIはエラーをスローする代わりに価格フィールドに`null`を返します。クライアントは欠落データを適切に処理できます。<!--DATA-6612-->
 
-![&#x200B; パフォーマンスと安定性を向上させるために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6671-->
+![ パフォーマンスと安定性を向上させるために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6671-->
 
-### v1.40 リリース
+### 2025年7月
 
-_2025年7月30日_
+**リリース日**: 2025年7月30日
+<!-- v1.40 -->
 
-![&#x200B; セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6619-->
+![ セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6619-->
 
-### v1.39 リリース
-
-_2025年7月24日_
+**リリース日**: 2025年7月24日
+<!-- v1.39 -->
 
 ![新規](../assets/new.svg) **単位IDでレコメンデーションユニットを取得** – 新しいGraphQL エンドポイント `recommendationsByUnitIds`は、より柔軟でターゲットを絞ったアクセスを実現するために、一意のIDでレコメンデーションユニットを取得します。
 
@@ -242,26 +226,26 @@ _2025年7月24日_
   }
   ```
 
-![&#x200B; セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6316-->
+![ セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6316-->
 
-### v1.38 リリース
-
-_2025年7月15日_
+**リリース日**: 2025年7月15日
+<!-- v1.38 -->
 
 ![新規](../assets/new.svg) **ギフトカード製品タイプ** – カタログのストアフロントサービスで、商品属性をJSON オブジェクトまたは配列としてサポートするようになり、ギフトカードなどの複雑なタイプの柔軟な管理が可能になりました。<!--DATA-6573-->
 
++++以前のバージョン
 
-### v1.37 リリース
+### 2025年6月
 
-_2025年6月20日_
+**リリース日**: 2025年6月20日
+<!-- v1.37 -->
 
-![新規](../assets/new.svg) **階層価格表設定** – 親子価格表の正確な価格範囲。 計算では、階層と継承されたルールが尊重され、複数の価格表がリンクされている場合の価格エラーが軽減されます。 Adobe Commerce Optimizerのみ。 [価格表](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/pricebooks)を参照してください。
+![新規](../assets/new.svg) **階層価格表設定** – 親子価格表の正確な価格範囲。 計算では、階層と継承されたルールが尊重され、複数の価格表がリンクされている場合の価格エラーが軽減されます。 Adobe Commerce Optimizerのみ。 [価格表](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks)を参照してください。
 
 ![新規](../assets/new.svg) **大文字と小文字を区別しないキー** - クエリ内のキー検索では、大文字と小文字が区別されなくなりました。キーの大文字と小文字が区別されなくなりました。<!--DATA-6494, DCAT-2495-->
 
-### v1.36 リリース
-
-_2025年6月20日_
+**リリース日**: 2025年6月20日
+<!-- v1.36 -->
 
 ![新規](../assets/new.svg) **Catalog Storefront**&#x200B;のパブリック IO イベント – リアルタイム統合と識別可能性（CSSおよびEDS）用のパブリック IO イベントを追加しました。<!--DATA-6329-->
 
@@ -271,13 +255,10 @@ _2025年6月20日_
 
 ![新規](../assets/new.svg) **イベント形式と識別可能性** – 合理化されたペイロード、監視の強化、バリアントイベントデータの改善<!--DATA-6332, DATA-6402, -->
 
-![&#x200B; セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6404, DATA-6410, -->
+![ セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6404, DATA-6410, -->
 
-+++ 以前のバージョン
-
-## v1.35 リリース
-
-_2025年6月13日_
+**リリース日**: 2025年6月13日
+<!-- v1.35 -->
 
 ![新規](../assets/new.svg) **キャッシュされていないデータを取得** – キャッシュされていないデータをカタログ エンドポイントから検索サービスに渡すために`Magento-Is-Preview` ヘッダーを有効にします。<!--DATA-6345-->
 
@@ -287,39 +268,41 @@ _2025年6月13日_
 
 ![修正](../assets/fix.svg) Adobe Commerce Optimizerのシンプルなバンドル価格のエラー処理を改善しました。<!--DATA-6541-->
 
-![&#x200B; セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6273, DATA-6485, -->
+![ セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6273, DATA-6485, -->
 
-## v1.34 リリース
+### 2025年4月
 
-_2025年3月23日_
+**リリース日**: 2025年4月8日
+<!-- v1.34 -->
 
-![&#x200B; セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-5732-->
+![ セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-5732-->
 
-## v1.33 リリース
+<!-- v1.33 -->
+![Fix](../assets/fix.svg) インフラストラクチャは、既存のワークロードに影響を与えることなく、非常に大きなカタログ（最大4億4,000万SKU）をサポートするようになりました。
 
-_2025年4月29日_
+### 2025年3月
 
-![修正](../assets/fix.svg) システムレベルとインフラストラクチャの改善。 インフラストラクチャは、既存のワークロードに影響を与えることなく、非常に大きなカタログ（最大4億4,000万SKU）をサポートするようになりました。
-
-### v1.32 リリース
-
-_2025年3月28日_
+**リリース日**: 2025年3月28日
+<!-- v1.32 -->
 
 役割のない![修正](../assets/fix.svg)属性は、コンポーザブルカタログのデフォルトでインデックス作成されなくなり、インデックス作成時間が短縮され、ストレージが削減されました。 従来の動作は、機能フラグを使用して再度有効にできます。
 
-![&#x200B; セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6348, DATA-6440, DATA-6446, DATA-6641-->
+![ セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。
+<!--DATA-6348, DATA-6440, DATA-6446, DATA-6641-->
 
-### v1.31 リリース
+### 2025年2月
 
-_2025年2月18日_
+**リリース日**: 2025年2月18日
+<!-- v1.31 -->
 
-![&#x200B; セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6389, DATA-6367, DATA-6373-->
+![ セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6389, DATA-6367, DATA-6373-->
 
-### v1.30 リリース
+### 2024年12月
 
-_2024年12月9日_
+**リリース日**: 2024年12月9日
+<!-- v1.30 -->
 
-メジャーリリース：ヘッドレスストアフロント、ヘッダー管理、製品データ処理用の[構成可能なカタログデータモデル &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)。
+メジャーリリース：ヘッドレスストアフロント、ヘッダー管理、製品データ処理用の[構成可能なカタログデータモデル ](https://developer.adobe.com/commerce/services/optimizer/)。
 
 ![新規](../assets/new.svg) **コンポーザブルカタログデータモデル（CCDM）**：ヘッドレスストアフロントにコンポーザブルカタログを使用する顧客をサポートします。 新しいエンドポイントでは、カタログビューとポリシーID （後方互換性）を使用できます。 組み込みのページネーションを使用した設定可能な製品の詳細と価格。<!--DATA-6018, DATA-6288-->
 
@@ -333,58 +316,69 @@ _2024年12月9日_
 
 ![修正](../assets/fix.svg) バンドル製品オプションに、有効な製品のみが表示されるようになりました。<!--DATA-6347-->
 
-### v1.29 リリース
-
-_2024年12月9日_
+**リリース日**: 2024年12月9日
+<!-- v1.29 -->
 
 ![新規](../assets/new.svg) **商品クエリでの画像順序** - GraphQL `images` フィールドの商品画像が、一貫したストアフロントとAPI動作のためにカタログの書き出し`sortOrder`に従うようになりました。<!--DATA-6258-->
 
-![&#x200B; セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6619-->
+![ セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6619-->
 
-### v1.28 リリース
+**リリース日**: 2024年12月
+<!-- v1.28 -->
 
-![&#x200B; セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6180, DATA-6230, DATA-6254, DATA-6257-->
+![ セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。
+<!--DATA-6180, DATA-6230, DATA-6254, DATA-6257-->
 
-### v1.27 リリース
+### 2024年10月
 
-_2024年9月26日_
+**リリース日**: 2024年10月22日
+<!-- v1.26 -->
 
-![&#x200B; セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。<!--DATA-6243-->
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-### v1.26 リリース
+![新規](../assets/new.svg) GraphQL スキーマには、正確なサイトマップと検索エンジンのインデックス再作成（Googleなど）のために、商品情報に`lastModifiedAt`が含まれるようになりました。
+<!--DATA-6209-->
 
-_2024年10月22日_
+### 2024年9月
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+**リリース日**: 2024年9月26日
+<!-- v1.27 -->
 
-![新規](../assets/new.svg) GraphQL スキーマには、正確なサイトマップと検索エンジンのインデックス再作成（Googleなど）のために、商品情報に`lastModifiedAt`が含まれるようになりました。<!--DATA-6209-->
+![ セキュリティ、パフォーマンス、安定性を強化するために、システム レベルとインフラストラクチャの改善を](../assets/fix.svg)修正します。
+<!--DATA-6243-->
 
-### v1.23 リリース
+### 2024年8月
 
-_2024年8月22日_
+**リリース日**: 2024年8月22日
+<!-- v1.23 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![修正](../assets/fix.svg)製品情報は、製品の上書き（価格）データなしで取得できるようになりました。 以前は、これらのクエリが返されました：`The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.` <!--DATA-6121-->
+![修正](../assets/fix.svg)製品情報は、製品の上書き（価格）データなしで取得できるようになりました。 以前は、次のクエリが返されていました。 `The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.`
+<!--DATA-6121-->
 
-### v1.22 リリース
+**リリース日**: 2024年8月13日
+<!-- v1.22 -->
 
-_2024年8月13日_
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+![新規](../assets/new.svg)製品SKUですべてのバリエーションを取得するためのサポートを追加しました。 [ カタログサービス API リファレンス ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)を参照してください。
+<!--DATA-6067-->
 
-![新規](../assets/new.svg)製品SKUですべてのバリエーションを取得するためのサポートを追加しました。 [&#x200B; カタログサービス API リファレンス &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)を参照してください。<!--DATA-6067-->
+### 2024年5月
 
-### v1.19 リリース
+**リリース日**: 2024年5月23日
+<!-- v1.19 -->
 
-_2024年5月23日_
-
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 
-![修正](../assets/fix.svg) <!--DATA-5033--> オプション値の`InStock` フラグが、製品バリアントのスコープ付き`enabled` ステータスを尊重するようになりました。
+![修正](../assets/fix.svg) オプション値の`InStock` フラグが、製品バリアントのスコープ `enabled` ステータスを尊重するようになりました。
 
-![修正](../assets/fix.svg) <!--DATA-5888-->最大16桁、小数点以下桁の製品価格のサポートを追加しました。 [&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)または[CLI](../data-export/data-export-cli-commands.md)から再同期して、更新を適用します。
+<!--DATA-5033-->
+
+![修正](../assets/fix.svg)最大16桁と小数点以下桁の製品価格のサポートを追加しました。 [ データ管理ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)または[CLI](../data-export/data-export-cli-commands.md)から再同期して、更新を適用します。
+<!--DATA-5033-->
 
 #### 既知の制限事項
 
@@ -400,31 +394,32 @@ API MeshとCore GraphQL APIを使用して、次のことを行います。
 - 階層の価格
 - 固定価格のバンドル商品
 
-詳細と例については、[&#x200B; カタログサービスとAPI メッシュ &#x200B;](mesh.md)を参照してください。
+詳細と例については、[ カタログサービスとAPI メッシュ ](mesh.md)を参照してください。
 
-### v1.18 リリース
+### 2024年4月
 
-_2024年4月11日_
+**リリース日**: 2024年4月11日
+<!-- v1.18 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg) PHP 8.3のサポートを追加しました。
 
 ![新規](../assets/new.svg) [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)および[`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) クエリでは、シンプルな製品と複雑な製品の両方に対して、カスタマイズ可能なオプション データが返されるようになりました。<!--DATA-5538-->
 
-### v1.17 リリース
+### 2024年2月
 
-_2024年2月22日_
+**リリース日**: 2024年2月22日
+<!-- v1.17 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![新規](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=ja)は、データストリーム（商品レコメンデーション、ライブサーチ、カタログサービス）で利用できるようになりました。 `catalog-service` メタパッケージ v3.1.0以降が必要です。
+![新規](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)は、データストリーム（商品レコメンデーション、ライブサーチ、カタログサービス）で利用できるようになりました。 `catalog-service` メタパッケージ v3.1.0以降が必要です。
 
-### v1.16 リリース
+**リリース日**: 2024年2月13日
+<!-- v1.16 -->
 
-_2024年2月13日_
-
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg)製品ビデオがカタログサービス APIでサポートされるようになりました。
 ![修正](../assets/fix.svg)在庫切れオプションがPDP ウィジェットに表示されるようになりました。
@@ -442,123 +437,134 @@ API MeshとCore GraphQL APIを使用して、次のことを行います。
 - 最低広告価格
 - [階層の価格](mesh.md)
 
-### v1.13 リリース
+### 2023年10月
 
-_2023年10月12日_
+**リリース日**: 2023年10月12日
+<!-- v1.13 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg) カタログサービスは、製品バリエーションの`inStock` フラグをサポートしています。
 ![新規](../assets/new.svg) `urlKey`および`externalId` フィールドがGraphQL スキーマに追加されました。
 ![新規](../assets/new.svg) ダウンロード可能な製品とギフトカードがサポートされるようになりました。
 
-### v1.12 リリース
+### 2023年9月
 
-_2023年9月19日_
+**リリース日**: 2023年9月19日
+<!-- v1.12 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![New](../assets/new.svg) Catalog Serviceで[SaaS価格インデックス &#x200B;](../price-index/price-indexing.md)が使用されるようになりました。
+![New](../assets/new.svg) Catalog Serviceで[SaaS価格インデックス ](../price-index/price-indexing.md)が使用されるようになりました。
 ![修正](../assets/fix.svg)このリリースには、サービス側のバグ修正と機能強化が含まれています。
 
-### v1.11 リリース
+### 2023年7月
 
-_2023年7月18日_
+**リリース日**: 2023年7月18日
+<!-- v1.11 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![New](../assets/new.svg) Catalog Serviceで、商品レコメンデーション用の[`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL クエリがサポートされるようになりました。
 
-### v1.10 リリース
+### 2023年6月
 
-_2023年6月27日_
+**リリース日**: 2023年6月27日（PT）
+<!-- v1.10 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg) カタログサービス APIで`related products`がサポートされるようになりました。
 
-### v1.7 リリース
+### 2023年4月
 
-_2023年4月12日_
+**リリース日**: 2023年4月12日
+<!-- v1.7 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg) カタログサービスで、削除された製品バリエーションをクリーンアップできるようになりました。
 ![修正](../assets/fix.svg) インフラストラクチャのスケーラビリティとパフォーマンスの改善。
 
-### v1.6 リリース
+### 2023年3月
 
-_2023年3月28日_
+**リリース日**: 2023年3月28日（PT）
+<!-- v1.6 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg) [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) クエリにスウォッチを追加しました。
 ![新規](../assets/new.svg) [API Mesh](mesh.md)を使用して`entityId`を取得する機能を追加しました。
 
-### v1.5 リリース
+**リリース日**: 2023年3月6日（PT）
+<!-- v1.5 -->
 
-_2023年3月6日_
-
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg)さんが[`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/)個のGraphQL機能を追加しました。
 ![修正](../assets/fix.svg) パフォーマンスとAPIのスケーラビリティが向上しました。
 
-### v1.4 リリース
+### 2023年2月
 
-_2023年2月7日_
+**リリース日**: 2023年2月7日
+<!-- v1.4 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
 ![新規](../assets/new.svg)公開されたカタログサービスメタパッケージは、インストール手順を簡素化します。
 ![APIのスケーラビリティとパフォーマンスの改善を修正](../assets/fix.svg)。
 
-### v1.3 リリース
+### 「Generative AI tool deployment - internal study
 
-_2023年1月17日_
+**リリース日**: 2023年1月17日（PT）
+<!-- v1.3 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
 ![新規](../assets/new.svg) オンボーディング体験を簡略化および改善しました。
 ![新規](../assets/new.svg)新しい顧客サンドボックスエンドポイントを実稼動前テストで使用できます。
 ![新しい](../assets/new.svg)仮想プロダクトのサポートが追加されました。
 ![APIのスケーラビリティとパフォーマンスの改善を修正](../assets/fix.svg)。
 
-### v1.1 リリース
+### 2022年11月
 
-_2022年11月18日_
+**リリース日**: 2022年11月18日
+<!-- v1.1 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
-![新規](../assets/new.svg) カタログサービスで、Adobeの[API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/)がサポートされるようになりました。
+![新規](../assets/new.svg) カタログサービスで、Adobeの[API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/)がサポートされるようになりました。
 ![修正](../assets/fix.svg) APIのスケーラビリティと全体的なパフォーマンスが向上しました。
 
-### v1.0 リリース
+### 2022年10月
 
-_2022年10月4日_
+**リリース日**: 2022年10月4日
+<!-- v1.0 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
 ![新しい](../assets/new.svg) バンドルおよびグループ化された製品のサポート。
 ![新規](../assets/new.svg)さんがB2B表示の上書きを追加しました。 製品は検索可能になり、特定の顧客グループのカートに追加できます。
 ![修正](../assets/fix.svg) サービスは安定し、パフォーマンスが向上しました。
 
-### 0.3 リリース - Beta+
+### 2022年9月
 
-_2022年9月12日_
+**リリース日**: 2022年9月12日
+<!-- v0.3 -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
 ![新規](../assets/new.svg) バリアント画像：選択したオプションに基づいて返される製品画像。
 ![新規](../assets/new.svg)価格役割：特定の顧客グループのメンバーのみが製品価格を表示できます。
 ![修正](../assets/fix.svg) サービスの安定性とパフォーマンスが向上しました。
 ![新規](../assets/new.svg)製品がカタログから削除されると、更新が受信されます。
 
-### Beta リリース
+### 2022年8月
 
-_2022年8月9日_
+**リリース日**: 2022年8月9日
+<!-- Beta -->
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
 ![新規](../assets/new.svg) `products`および`refineProduct` クエリでは、次のデータが返されます。
 
@@ -578,13 +584,13 @@ _2022年8月9日_
 
 - Adobe Commerce as a Cloud Serviceのお客様の場合、最新バージョンが環境にインストールされます。
 
-- Adobe Commerce オンプレミス版の場合、Adobeでは、最新リリースのクラウド環境でカタログサービスメタパッケージをアップグレードするためにComposerを使用することをお勧めします。
+- クラウド上またはオンプレミスのAdobe Commerceの場合、Adobeでは、最新リリースのカタログサービスメタパッケージをクラウド環境でアップグレードするためにComposerを使用することをお勧めします。
 
 ### v3.3.0 リリース
 
-_2025年10月14日_
+**リリース日**: 2025年10月14日
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg) **データサービスのアップグレード**—`magento/data-services`依存関係が^8.0.0に更新されました。 アップグレードする前に、環境とカスタム Data Services APIの使用状況を8.x互換性で確認してください。
 
@@ -592,17 +598,17 @@ _2025年10月14日_
 
 ### v3.2.0 リリース
 
-_2024年4月12日_
+**リリース日**: 2024年4月12日
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg) バージョンとメタデータが3.2.0に更新されました。 その他の依存関係は変更されません。
 
 ### v3.1.0 リリース
 
-_2024年1月26日_
+**リリース日**: 2024年1月26日
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg)新しいパッケージの依存関係を追加しました：
 
@@ -617,11 +623,13 @@ _2024年1月26日_
 
 - **Adobe Commerce as a Cloud Service**&#x200B;のお客様の場合、最新のインストーラーのバージョンが環境にインストールされます。
 
-- **クラウド インフラストラクチャ上のAdobe Commerce**&#x200B;または&#x200B;**オンプレミス**&#x200B;の場合、インストーラーを[&#x200B; カタログサービス メタパッケージ &#x200B;](#catalog-service-metapackage)に合わせます。`magento/catalog-service`をアップグレードするたびに、またはこれらのリリースノートで必要な変更（新しいPHP バージョンのサポートなど）が記載されている場合は、Composerを使用して`magento/catalog-service-installer`をアップグレードします。 これにより、インストールツールは、実行するカタログサービスバージョンとの互換性を維持できます。
+- **クラウド インフラストラクチャ上のAdobe Commerce**&#x200B;または&#x200B;**オンプレミス**&#x200B;の場合、インストーラーを[Catalog Service メタパッケージ ](#catalog-service-metapackage)に合わせます。
+
+Composerを使用して`magento/catalog-service`をアップグレードすると、インストーラーパッケージが自動的に最新バージョンに更新されます。 これらのリリースノートで必要な変更（新しいPHP バージョンのサポートなど）が記述されている場合は、Composerを使用して`magento/catalog-service-installer`を個別にアップグレードすることもできます。 これにより、インストールツールは、実行するカタログサービスバージョンとの互換性を維持できます。
 
 ### v1.0.6 リリース
 
-_2026年3月25日_
+**リリース日**: 2026年3月25日
 
 ![新規](../assets/new.svg) **PHP 8.5** - カタログサービスがPHP 8.5で動作する場合に互換性を確保します。
 
