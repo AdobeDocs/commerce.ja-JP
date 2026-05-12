@@ -1,46 +1,51 @@
 ---
-title: Commerce データ取り込み用のプロファイルレコードスキーマの更新
+title: Commerce Data Ingestionのプロファイルレコードスキーマの更新
 description: スキーマ、データセット、データストリームを作成して、Commerce プロファイルレコードデータを収集し、Experience Platformに送信する方法を説明します。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 25741837-f423-4204-8520-80b7cd9d44bd
+TQID: https://experienceleague.adobe.com/I8bptw1tNdzXfCC6hFtn7fuz-BIiALXG4g6lLhga6ec
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: 340
 ht-degree: 0%
 
 ---
 
-# Commerce データ取り込み用のプロファイルレコードスキーマの更新
+# Commerce Data Ingestionのプロファイルレコードスキーマの更新
 
-買い物客がCommerce サイトでプロファイルを作成すると、プロファイルレコードが作成され、データが取り込まれます。 プロファイルデータをExperience Platformにストリーミングするには、そのプロファイルレコードに固有のスキーマとデータセットを作成する必要があります。
+顧客がCommerceサイトでプロファイルを作成すると、プロファイルレコードが作成され、データが取得されます。 そのプロファイルデータをExperience Platformにストリーミングする前に、そのプロファイルレコードに固有のスキーマとデータセットを作成する必要があります。
 
-1. [&#x200B; 作成 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas) スキーマを作成し、クラスを **個人プロファイル** に設定します。
+1. [ スキーマを作成](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)し、クラスを&#x200B;**個人プロファイル**&#x200B;に設定します。
 
-1. [&#x200B; 追加 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas) 次のプロファイル固有のフィールドグループ：
+1. [次のプロファイル固有のフィールドグループを](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)追加します。
 
    - identityMap
-   - 人口統計の詳細
-   - 個人の連絡先の詳細
+   - デモグラフィック情報
+   - 個人の連絡先詳細
    - ユーザーアカウントの詳細
 
-1. プロファイルのスキーマ [&#128279;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas) 有効 。
+1. [ プロファイルのスキーマを有効にする](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)。
 
-   スキーマがプロファイルで有効になっている場合、このスキーマから作成されたデータセットは、異なるソースのデータを結合して各顧客の全体像を構築するReal-Time CDPに関与します。
+   プロファイルに対してスキーマが有効になっている場合、このスキーマから作成されたすべてのデータセットがReal-Time CDPに組み込まれ、様々なソースからデータが結合され、各顧客の全体像が構築されます。
 
-1. 作成または更新したスキーマに基づいて [&#128279;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform) データセットを作成  します。
+1. [作成または更新したスキーマに基づいてデータセット ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform)を作成します。
 
-   データセットは、データのコレクションのためのストレージおよび管理用の構成体で、通常は、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータの様々な側面を記述したメタデータも含まれます。
+   データセットは、データのコレクションを格納および管理するための構成図です。通常、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータのさまざまな側面を説明するメタデータも含まれます。
 
-1. 次の値を持つ [&#x200B; カスタムネームスペース &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/namespaces#create-namespaces) をExperience Platformに作成します。
+1. 次の値を持つ[ カスタム名前空間](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#create-namespaces)をExperience Platformに作成します。
 
-   - **表示名**: _Commerce顧客 ID_
-   - **ID シンボル**: _CustomerId_
-   - **タイプ**:_個々のクロスデバイス ID_
+   - **表示名**: _Commerce Customer ID_
+   - **ID シンボル**: _顧客ID_
+   - **種類**: _個々のクロスデバイス ID_
 
-   ![&#x200B; カスタム名前空間の作成 &#x200B;](assets/custom-namespace.png){width="700" zoomable="yes"}
+   ![ カスタム名前空間を作成](assets/custom-namespace.png){width="700" zoomable="yes"}
 
-   「**[!UICONTROL Create]**」をクリックします。 カスタム名前空間は、プロファイルフラグメントをステッチして結合するために、統合プロファイルサービスで使用されます。
+   **[!UICONTROL Create]**&#x200B;をクリックします。 カスタム名前空間は、統合プロファイルサービスでプロファイルフラグメントをつなぎ合わせるために使用されます。
 
-顧客プロファイルレコードデータ用に設定されたスキーマ、データセット、カスタムネームスペースを使用すると、Commerce インスタンスを [&#x200B; 設定 &#x200B;](connect-data.md#data-collection) し、そのデータを収集してExperience Platformに送信できます。
+顧客プロファイルレコードデータ用に設定されたスキーマ、データセット、カスタム名前空間を使用すると、Commerce インスタンスを[設定](connect-data.md#data-collection)して、そのデータを収集し、Experience Platformに送信できます。
 
-行動およびバックオフィスイベントデータのスキーマ、データセット、データストリームを作成するには、[Commerce データ取り込みの時系列イベントスキーマを更新 &#x200B;](update-xdm.md) を参照してください。
+行動およびバックオフィスのイベントデータのスキーマ、データセット、データストリームを作成するには、[Commerce データ取り込みの時系列イベントスキーマの更新](update-xdm.md)を参照してください。

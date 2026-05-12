@@ -3,16 +3,21 @@ title: カスタム自動一致
 description: カスタムの自動マッチングが、複雑なマッチングロジックを使用するマーチャントや、メタデータをAEM Assetsに入力できないサードパーティシステムに依存しているマーチャントにとって、特に有用である方法を説明します。
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
+TQID: https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: 603
 ht-degree: 0%
 
 ---
 
 # カスタム自動一致
 
-デフォルトの自動一致の戦略（**OOTB自動一致**）が特定のビジネス要件に一致しない場合は、「カスタム一致」オプションを選択します。 このオプションでは、[Adobe Developer App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)を使用して、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAEM Assetsに入力できないサードパーティシステムからのアセットを開発できます。
+デフォルトの自動一致の戦略（**OOTB自動一致**）が特定のビジネス要件に一致しない場合は、「カスタム一致」オプションを選択します。 このオプションでは、[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)を使用して、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAEM Assetsに入力できないサードパーティシステムからのアセットを開発できます。
 
 ## カスタム自動マッチングの設定
 
@@ -114,7 +119,7 @@ ht-degree: 0%
 
 ## カスタムマッチャーAPI エンドポイント
 
-[App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}を使用してカスタムマッチャーアプリケーションを構築する場合、アプリケーションは次のエンドポイントを公開する必要があります。
+[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}を使用してカスタムマッチャーアプリケーションを構築する場合、アプリケーションは次のエンドポイントを公開する必要があります。
 
 * **App Builder アセットから商品URL** エンドポイント
 * **App Builder製品からアセット URL** エンドポイント
@@ -196,7 +201,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 | --- | --- | --- |
 | `asset_id` | 文字列 | 一致するアセット ID。 |
 | `product_matches` | 配列 | アセットに関連付けられている製品のリスト。 |
-| `skip` | ブーリアン | （オプション） `true`の場合、ルールエンジンはこのアセットの同期をスキップします（製品マッピングの更新はありません）。 `false`または省略すると、通常の処理が実行されます。 [同期処理をスキップ &#x200B;](#skip-sync-processing)を参照してください。 |
+| `skip` | ブーリアン | （オプション） `true`の場合、ルールエンジンはこのアセットの同期をスキップします（製品マッピングの更新はありません）。 `false`または省略すると、通常の処理が実行されます。 [同期処理をスキップ ](#skip-sync-processing)を参照してください。 |
 
 ### App Builderの商品からアセットへのURL エンドポイント
 
@@ -276,14 +281,14 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | --- | --- | --- |
 | `product_sku` | 文字列 | 製品SKUが一致しています。 |
 | `asset_matches` | 配列 | 製品に関連付けられているアセットのリスト。 |
-| `skip` | ブーリアン | （オプション） `true`の場合、ルールエンジンはこの製品の同期をスキップします（アセットマッピングの更新はありません）。 `false`または省略すると、通常の処理が実行されます。 [同期処理をスキップ &#x200B;](#skip-sync-processing)を参照してください。 |
+| `skip` | ブーリアン | （オプション） `true`の場合、ルールエンジンはこの製品の同期をスキップします（アセットマッピングの更新はありません）。 `false`または省略すると、通常の処理が実行されます。 [同期処理をスキップ ](#skip-sync-processing)を参照してください。 |
 
 `asset_matches` パラメーターには、次の属性が含まれています。
 
 | 属性 | データタイプ | 説明 |
 | --- | --- | --- |
 | `asset_id` | 文字列 | アセット ID。 |
-| `asset_roles` | 配列 | アセットの役割： [、](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)、`thumbnail`、`image`など、サポートされている`small_image`Commerce アセットの役割`swatch_image`を使用します。 |
+| `asset_roles` | 配列 | アセットの役割： `thumbnail`、`image`、`small_image`、`swatch_image`など、サポートされている[Commerce アセットの役割](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)を使用します。 |
 | `asset_format` | 文字列 | アセットの形式です。 指定できる値は`image`と`video`です。 |
 | `asset_position` | 数値 | 製品ギャラリー内のアセットの位置。 |
 

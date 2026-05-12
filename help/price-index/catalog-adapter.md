@@ -1,70 +1,74 @@
 ---
-title: カタログ アダプタ拡張
-description: カタログアダプターを使用したCommerce Services からの価格のレンダリング
+title: カタログアダプタ拡張機能
+description: カタログアダプタを使用したCommerce サービスからの価格のレンダリング
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
 exl-id: e42101fa-9c30-482c-a649-44dc35376abb
-source-git-commit: 74f6cb64724194651c4eeb538c0c69142b01ac5d
+TQID: https://experienceleague.adobe.com/WnL4dJbZV0acHT5kpEAOyTVjhzW23RjHbQFVdDl4HDk
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: 758
 ht-degree: 0%
 
 ---
 
 # カタログアダプタ
 
-`[!DNL Catalog Adapter]` 拡張機能は、Commerce アプリケーションに含まれているデフォルトの製品価格インデクサーを無効にし、代わりに [&#x200B; カタログサービス &#x200B;](../catalog-service/overview.md) から提供される価格を使用します。
+`[!DNL Catalog Adapter]`拡張機能は、Commerce アプリケーションに含まれるデフォルトの製品価格インデクサーを無効にし、代わりに[ カタログサービス ](../catalog-service/overview.md)が提供する価格を使用します。
 
-このアダプタは、[SaaS データ書き出し &#x200B;](../data-export/overview.md) およびAdobe Commerce サービスで動作するように設計されています。 SaaS データのエクスポートは価格の送信を担当し、[!DNL Catalog Adapter] はAdobe Commerceサービスからすべての価格を取得します。
+アダプターは、[SaaS データ書き出し](../data-export/overview.md)およびAdobe Commerce サービスと連携するように設計されています。 SaaS データ書き出しは価格の送信を担当し、[!DNL Catalog Adapter]はAdobe Commerce サービスからすべての価格を取得します。
 
-[!DNL Catalog Adapter] を有効にすると、価格のインデックス作成と操作が次のような影響を受けます。
+[!DNL Catalog Adapter]を有効にすると、価格インデックスと操作は次の方法で影響を受けます。
 
-- Adobe Commerce アプリケーションに含まれる価格インデクサーが無効になっています。
-- 価格は、SaaS データのエクスポートと [SaaS 価格インデクサー &#x200B;](price-indexing.md) を使用して管理されます。
-- お客様が商品や商品の価格を表示するページを開くと、その価格はAdobe Commerce サービスから取得されます。
-- 価格は、[SaaS データ書き出し &#x200B;](../data-export/overview.md) からのデータを同期してAdobe Commerce サービスに送信されます。
-- チェックアウトでは価格が動的に再計算されます。
+- Adobe Commerce アプリケーションに含まれている価格インデクサーが無効になっています。
+- 価格は、SaaS データの書き出しと[SaaS価格インデクサー](price-indexing.md)を使用して管理されます。
+- お客様が商品、カテゴリ、または商品の価格を表示するその他のページを開くと、価格はAdobe Commerce サービスから取得されます。
+- 価格は、[SaaS データ書き出し](../data-export/overview.md)からのデータを同期してAdobe Commerce サービスに送信されます。
+- チェックアウトでは、価格が動的に再計算されます。
 
-カタログアダプタ拡張機能を削除または無効にすることで、Commerce アプリケーションで価格インデックスを再度有効にすることができます。
+カタログアダプタ拡張機能を削除または無効にすることで、Commerce アプリケーションで価格インデックスを再度有効にできます。
 
-## 要件
+## 要件定義
 
-- Adobe Commerce 2.4.4 以降
-- Adobe Commerce環境で、次のCommerce サービスのいずれかが有効になり設定されている必要があります。
+- Adobe Commerce 2.4.4以降
+- Adobe Commerce環境では、次のいずれかのCommerce サービスを有効にして設定する必要があります。
 
-   - [Live Search](../live-search/install.md)
-   - [製品レコメンデーション](../product-recommendations/install-configure.md)
+   - [ライブサーチ](../live-search/install.md)
+   - [商品レコメンデーション](../product-recommendations/install-configure.md)
    - [カタログサービス](../catalog-service/installation.md)
 
 ## インストール
 
-カタログ アダプタ拡張機能は、次のモジュールをインストールする Composer メタパッケージです。
+Catalog Adapter拡張機能は、次のモジュールをインストールするComposer メタパッケージです。
 
-- **Price Indexer Disabler**-Commerce アプリケーションの価格インデックスを無効にして、SaaS 価格インデックスを使用して価格が配信されるようにします。 SaaS 価格インデックス作成拡張機能がインストールされている場合、Commerce アプリケーションの製品価格インデックス作成を有効にすることはできません。
-- **価格プロバイダー**-Adobe Commerce サービスの商品の価格を提供します。 検索クエリを作成し、フロントエンドの製品の価格を取得します。
-- **カタログサービス検索アダプター** – 商品検索リクエストに応じて、Adobe Commerce アプリケーションからAdobe Commerce サービスに価格を転送します。
+- **価格インデクサー無効化** – このモジュールは、Commerce アプリケーションの価格インデックスを無効化して、価格がSaaS価格インデックスを介して配信されるようにします。 SaaS価格インデックス拡張機能がインストールされている場合、Commerce アプリケーションの製品価格インデックスをオンにすることはできません。
+- **価格プロバイダー** – このモジュールは、Adobe Commerce サービスの商品の価格を提供します。 検索クエリを形成し、フロントエンドの商品の価格を取得します。
+- **カタログサービス検索アダプタ** – このモジュールは、商品検索リクエストに応じて、Adobe Commerce アプリケーションからAdobe Commerce サービスに価格を転送します。
 
 ## インストール手順
 
 >[!BEGINTABS]
 
->[!TAB  クラウドインフラストラクチャ ]
+>[!TAB  クラウド インフラストラクチャ ]
 
-このメソッドを使用して、Commerce Cloud インスタンスの [!DNL Catalog Adapter] をインストールします。
+Commerce Cloud インスタンスの[!DNL Catalog Adapter]をインストールするには、この方法を使用します。
 
 1. ローカルワークステーションで、Adobe Commerce on cloud infrastructure プロジェクトのプロジェクトディレクトリに移動します。
 
    >[!NOTE]
    >
-   >Commerce Adobe Commerce プロジェクト環境のローカル管理について詳しくは、[&#x200B; クラウドインフラストラクチャユーザーガイドの &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/cli-branches)CLI を使用したブランチの管理 _を参照してください_。
+   >Commerce プロジェクト環境のローカル管理について詳しくは、_Adobe Commerce on Cloud Infrastructure ユーザーガイド_&#x200B;の「[CLIを使用した分岐の管理](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches)」を参照してください。
 
-1. Adobe Commerce Cloud CLI を使用して更新する環境ブランチを確認します。
+1. Adobe Commerce Cloud CLIを使用して更新する環境ブランチを確認します。
 
    ```shell
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. カタログアダプタモジュールを追加します。
+1. カタログアダプターモジュールを追加します。
 
    ```bash
    composer require magento/catalog-adapter --no-update
@@ -76,9 +80,9 @@ ht-degree: 0%
    composer update "magento/catalog-adapter"
    ```
 
-1. `composer.json` ファイルと `composer.lock` ファイルのコード変更をコミットしプッシュします。
+1. `composer.json`および`composer.lock` ファイルのコード変更をコミットしてプッシュします。
 
-1. `composer.json` ファイルと `composer.lock` ファイルのコード変更を追加、コミットし、クラウド環境にプッシュします。
+1. `composer.json`および`composer.lock` ファイルのコード変更を追加、コミット、クラウド環境にプッシュします。
 
    ```shell
    git add -A
@@ -86,13 +90,13 @@ ht-degree: 0%
    git push origin <branch-name>
    ```
 
-   アップデートをクラウド環境にプッシュすると、[Commerce クラウドデプロイメントプロセスが開始され &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/process) 変更が適用されます。 [&#x200B; デプロイメントログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) からデプロイメントステータスを確認します。
+   更新をクラウド環境にプッシュすると、[Commerce クラウド デプロイメント プロセス ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process)が開始され、変更が適用されます。 [ デプロイ ログ ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log)のデプロイメント ステータスを確認します。
 
 >[!TAB  オンプレミス ]
 
-オンプレミスのインスタンスに [!DNL Catalog Adapter] をインストールするには、この方法を使用します。
+オンプレミス インスタンスの[!DNL Catalog Adapter]をインストールするには、この方法を使用します。
 
-1. Composer を使用して、プロジェクトにカタログアダプタを追加します。
+1. Composerを使用してプロジェクトにカタログアダプタを追加します。
 
    ```bash
    composer require magento/catalog-adapter --no-update
@@ -104,13 +108,13 @@ ht-degree: 0%
    composer update  "magento/catalog-adapter"
    ```
 
-1. Adobe Commerceをアップグレード :
+1. Adobe Commerceのアップグレード：
 
    ```bash
    bin/magento setup:upgrade
    ```
 
-1. キャッシュをクリアする：
+1. キャッシュをクリアします。
 
    ```bash
    bin/magento cache:clean
@@ -118,14 +122,14 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   >場合によっては（特に実稼動環境にデプロイする場合）、コンパイル済みのコードは時間がかかるので、クリアしないようにしたい場合があります。 変更を加える前に、システムを必ずバックアップしてください。
+   >場合によっては、特に実稼動環境にデプロイする場合は、コンパイル済みコードの消去は時間がかかることがあるため、避けた方がよいでしょう。 変更を加える前に、システムを必ずバックアップしてください。
 
 >[!ENDTABS]
 
 
-## Adobe Commerce製品価格インデクサーを再度有効にします。
+## Adobe Commerce製品価格インデクサーを再度有効にする
 
-デフォルトのAdobe Commerce product price indexer に依存するサードパーティアプリケーションがある場合は、次のコマンドを使用して再度有効にすることができます。
+デフォルトのAdobe Commerce製品価格インデクサーに依存するサードパーティアプリケーションがある場合は、次のコマンドを使用して再度有効にできます。
 
 ```bash
 # re-enable Product Price indexer
@@ -134,9 +138,9 @@ bin/magento module:disable Magento_PriceIndexerDisabler
 bin/magento index:reindex catalog_product_price
 ```
 
-## ヘッドレスストアフロントシナリオに対する製品価格インデクサーの無効化
+## ヘッドレスストアフロントシナリオの製品価格インデクサーを無効にする
 
-ヘッドレス Commerce インスタンスがある場合は、Adobe Commerce product price indexer を無効にして、Adobe Commerce インスタンスの負荷を軽減する必要がある場合があります。 `magento/module-price-indexer-disabler` モジュールをインストールすると、このタスクを完了できます。
+ヘッドレス Commerce インスタンスを使用している場合は、Adobe Commerce インスタンスの負荷を軽減するために、Adobe Commerce製品価格インデクサーを無効にする必要がある場合があります。 このタスクは、`magento/module-price-indexer-disabler` モジュールをインストールすることで完了できます。
 
 ```bash
 composer require magento/module-price-indexer-disabler
@@ -144,26 +148,26 @@ composer require magento/module-price-indexer-disabler
 
 ## 使用シナリオ
 
-一般的な `[!DNL Catalog Adapter]` シナリオを次に示します。
+`[!DNL Catalog Adapter]`の一般的なシナリオを次に示します。
 
-### Adobe Commerce product price indexer に依存しない
+### Adobe Commerce製品価格インデクサーに依存しない
 
-- 必要なサービス（ライブ検索、商品レコメンデーション、カタログサービス）がインストールされている Luma またはAdobe Commerce Core GraphQL マーチャントです
-- Adobe Commerce product price indexer に依存するサードパーティの拡張機能との統合はありません。
+- 必要なサービス（ライブサーチ、商品レコメンデーション、カタログサービス）がインストールされているLumaまたはAdobe Commerce Core GraphQLのマーチャント
+- Adobe Commerceの製品価格インデックスに依存するサードパーティ製の拡張機能との統合はありません
 
-1. [!DNL Catalog Adapter] のインストール
+1. [!DNL Catalog Adapter]をインストールします。
 
-### Adobe Commerce product price indexer に依存する
+### Adobe Commerce製品価格インデクサーへの依存
 
-- サポートされているサービス（ライブ検索、商品レコメンデーション、カタログサービス）がインストールされている Luma またはAdobe Commerce Core GraphQL マーチャントです
-- Adobe Commerce product price indexer に基づくサードパーティの拡張機能を使用します。
+- サポート対象のサービス（ライブサーチ、商品レコメンデーション、カタログサービス）がインストールされているLumaまたはAdobe Commerce Core GraphQLのマーチャント
+- Adobe Commerceの商品価格インデクサーに依存するサードパーティ製の拡張機能を使用している
 
-1. [!DNL Catalog Adapter] のインストール
+1. [!DNL Catalog Adapter]をインストールします。
 1. デフォルトのAdobe Commerce製品価格インデクサーを再度有効にします。
 
 ### ヘッドレス Commerce インスタンス
 
-- 必要なサービス（ライブ検索、商品レコメンデーション、カタログサービス）がインストールされたヘッドレス Commerce インスタンスを持つマーチャント
+- 必要なサービス（ライブサーチ、商品レコメンデーション、カタログサービス）がインストールされたヘッドレスCommerceインスタンスを持つマーチャント
 - デフォルトのAdobe Commerce製品価格インデクサーに依存しない
 
-1. `magento/module-price-indexer-disabler` パッケージから [!DNL Catalog Adapter] モジュールをインストールします。
+1. [!DNL Catalog Adapter] パッケージから`magento/module-price-indexer-disabler` モジュールをインストールします。

@@ -1,38 +1,42 @@
 ---
-title: API メッシュを使用した課税価格の表示
-description: Adobe Commerceおよびカタログサービスに  [!DNL API Mesh]  を使用して、税を含む価格を表示します。
+title: API Meshでの課税価格の表示
+description: Adobe Commerceおよびカタログサービスの [!DNL API Mesh] を使用して、税金を含む価格を表示します。
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: ca62c653-29b9-45cf-b2d4-8cb693b08aac
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+TQID: https://experienceleague.adobe.com/mK-o11X-G7WZgCL9BmVnDMfTDBg3lDemTNkxqkhyMZM
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: 292
 ht-degree: 0%
 
 ---
 
-# Adobe Developer App Builderの API メッシュで課税価格を表示
+# Adobe Developer App BuilderのAPI Meshによる税金価格の表示
 
-[API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、デベロッパーはAdobe I/O Runtimeを使用して、プライベートまたはサードパーティの API およびその他のインターフェイスをAdobe製品と統合できます。
+[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)を使用すると、開発者はAdobe I/O Runtimeを使用して、プライベートまたはサードパーティのAPIやその他のインターフェイスをAdobe製品と統合できます。
 
-このトピックでは、API メッシュを使用して、税金が設定された製品詳細ページに製品価格を表示します。
+このトピックでは、API Meshを使用して、製品の詳細ページに製品価格を表示し、税金を表示します。
 
 ## 税率の設定
 
-製品の詳細ページに表示するには、税金を設定する必要があります。
+商品詳細ページに表示するには、税金を設定する必要があります。
 
-1. [&#x200B; 税率を設定します &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=ja)。
-1. 税金を [&#x200B; カタログに表示 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=ja#step-1%3A-configure-catalog-prices-display-settings) できるようにして、`Including and Excluding Tax` または `Including Tax` に設定します。
+1. [税率を設定](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html)。
+1. 税金を有効にして[ カタログに表示](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings)し、`Including and Excluding Tax`または`Including Tax`のいずれかに設定します。
 
-製品の詳細ページを確認して、カタログサービスが機能していることを確認します。
+カタログサービスが機能していることを確認するには、製品詳細ページを確認します。
 
-![&#x200B; 製品詳細ページに表示される税金 &#x200B;](assets/display-tax.png)
+![製品詳細ページに表示される税金](assets/display-tax.png)
 
 ## API メッシュの設定
 
-まだ行っていない場合は、API メッシュとカタログサービスをインスタンスに接続します。 『 API メッシュ デベロッパーガイド』の [&#x200B; はじめに &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) のトピックの詳細な手順を参照してください。
+まだ完了していない場合は、API Mesh with Catalog Serviceをインスタンスに接続します。 API Mesh開発者ガイドの「[はじめに](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/)」トピックの詳細な手順を参照してください。
 
-`mesh.json` ファイルで、`name`、`endpoint`、`x-api-key` の値を
+`mesh.json` ファイルで、`name`、`endpoint`、`x-api-key`の値を置き換えます。
 
 ```json
 {
@@ -105,17 +109,17 @@ ht-degree: 0%
   }
 ```
 
-この `mesh.json` 設定ファイルは次のとおりです。
+この`mesh.json`設定ファイル：
 
-* Commerce コアアプリケーションを、そのクエリまたはタイプの先頭に「Core_」を付加するように変換します。 これにより、カタログサービスとの名前の競合の可能性を防ぐことができます。
-* `ComplexProductView` という新しいフィールドを使用して、`SimpleProductView` 型および `priceWithTaxes` 型を拡張します。
-* 新しいフィールドのカスタムリゾルバーを追加します。
+* Commerce コアアプリケーションを変換し、クエリまたは型の前に「Core_」を付ける必要があります。 これにより、カタログサービスとの名前の競合を回避できます。
+* `ComplexProductView`型と`SimpleProductView`型を`priceWithTaxes`という新しいフィールドで拡張します。
+* 新しいフィールドにカスタムリゾルバーを追加します。
 
-[&#x200B; ファイルで &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1)create コマンド `mesh.json` を使用してメッシュを作成します。
+[create コマンド ](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1)でメッシュを`mesh.json` ファイルで作成します。
 
 ### GraphQL クエリ
 
-GraphQLを使用して新しい `priceWithTaxes` データを取得できます。
+GraphQLを使用して新しい`priceWithTaxes` データを取得できます。
 
 クエリの例：
 

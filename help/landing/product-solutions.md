@@ -5,16 +5,21 @@ feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: true
 exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+TQID: https://experienceleague.adobe.com/oZhTlFfL9a27vwbBhbSVS2NYptl13DDkYJZcuV0cM5U
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: 576
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce製品ソリューション
 
-Adobeは、コマースビジネスの要件を満たすソリューションをいくつかご提供しています。 [Experience League](https://experienceleague.adobe.com/ja/docs/commerce)および[Adobe Developer](https://developer.adobe.com/commerce/docs/) サイトのAdobe Commerce ドキュメントでは、すべてのソリューションをサポートするセルフサービス リソースをお客様に提供しています。 しかし、こうした膨大なコンテンツを適切に管理することは、容易なことではありません。
+Adobeは、コマースビジネスの要件を満たすソリューションをいくつかご提供しています。 [Experience League](https://experienceleague.adobe.com/en/docs/commerce)および[Adobe Developer](https://developer.adobe.com/commerce/docs/) サイトのAdobe Commerce ドキュメントでは、すべてのソリューションをサポートするセルフサービス リソースをお客様に提供しています。 しかし、こうした膨大なコンテンツを適切に管理することは、容易なことではありません。
 
 >[!NOTE]
 >
@@ -26,7 +31,7 @@ Adobeは、コマースビジネスの要件を満たすソリューションを
 
 バッジが表示されている場合、コンテンツは指定されたソリューションにのみ適用されます。 バッジが表示されない場合は、その内容がすべてのAdobe Commerce ソリューションに適用されます。
 
-例えば、Adobe Commerce as a Cloud Serviceを使用している場合、Product Recommendations拡張機能を[&#x200B; インストール &#x200B;](../product-recommendations/install-configure.md#install-product-recommendations)し、Commerce Services Connectorを[設定](../product-recommendations/install-configure.md#configure-product-recommendations)するといった内容は無視する必要があります。 Adobeは、インスタンスを作成すると、これらの手順を自動的に実行します。
+例えば、Adobe Commerce as a Cloud Serviceを使用している場合、Product Recommendations拡張機能を[ インストール ](../product-recommendations/install-configure.md#install-product-recommendations)し、Commerce Services Connectorを[設定](../product-recommendations/install-configure.md#configure-product-recommendations)するといった内容は無視する必要があります。 Adobeは、インスタンスを作成すると、これらの手順を自動的に実行します。
 
 ### 定義
 
@@ -44,7 +49,7 @@ Adobeは、コマースビジネスの要件を満たすソリューションを
 
 #### [!BADGE PaaSのみ]{type=Informative tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
 
-このバッジは、[Adobe Commerce on Cloud](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview)およびオンプレミス プロジェクトに関連するドキュメントのみを識別します。 Adobe Commerce on Cloud プロジェクトは、Adobe Commerceのすべてのコア機能を備えた、クラウドネイティブでフルマネージドのPaaS （Platform-as-a-Service）ソリューション上で事前プロビジョニングされた環境でホストされます。 オンプレミスのプロジェクトは、顧客が管理するインフラストラクチャ上でホストされます。
+このバッジは、[Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)およびオンプレミス プロジェクトに関連するドキュメントのみを識別します。 Adobe Commerce on Cloud プロジェクトは、Adobe Commerceのすべてのコア機能を備えた、クラウドネイティブでフルマネージドのPaaS （Platform-as-a-Service）ソリューション上で事前プロビジョニングされた環境でホストされます。 オンプレミスのプロジェクトは、顧客が管理するインフラストラクチャ上でホストされます。
 
 >[!NOTE]
 >

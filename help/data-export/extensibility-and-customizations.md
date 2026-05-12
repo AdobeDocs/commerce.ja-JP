@@ -1,32 +1,37 @@
 ---
 title: SaaS データ書き出しフィードデータの拡張とカスタマイズ
-description: フィードデータを拡張してカスタマイズする方法  [!DNL SaaS Data Export]  説明します。
+description: ' [!DNL SaaS Data Export]  フィード データを拡張してカスタマイズする方法について説明します。'
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
-source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
+TQID: https://experienceleague.adobe.com/T71zNl7WOrqzEsz4H8A8arx--q6w1B0h33CF2Q0VI4A
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: 542
 ht-degree: 0%
 
 ---
 
 # SaaS データ書き出しフィードデータの拡張とカスタマイズ
 
-[!DNL Commerce Data Export] 拡張機能を使用すると、[!DNL Commerce] アプリケーションからCommerce サービス（Live Search、カタログサービス、Product Recommendations など）にデータを書き出すことができます。 必要に応じて、フィードデータを拡張およびカスタマイズして追加の属性データを含めたり、収集したデータを変更したりできます。
+[!DNL Commerce Data Export]拡張機能を使用すると、[!DNL Commerce] アプリケーションから、ライブサーチ、カタログサービス、商品レコメンデーションなどのCommerce サービスにデータを書き出すことができます。 必要であれば、フィードデータを拡張してカスタマイズし、属性データを追加したり、収集したデータを変更したりできます。
 
-属性データを追加した後、ストアフロントサービスのGraphQL スキーマの [&#x200B; 属性 &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) フィールドからアクセスできます。
+属性データを追加すると、ストアフロントサービスのGraphQL スキーマの[属性フィールド ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type)からアクセスできるようになります。
 
 >[!NOTE]
 >
->フィードデータを追加または変更すると、Commerce バックエンドのパフォーマンスと処理ロジックに影響を与える可能性があります。 実稼動環境に結合する前に、カスタマイズされたコードをテストします。 バックエンドにデータを追加する代わりに、API メッシュを使用してカタログサービスのGraphQL スキーマを拡張します。 設定について詳しくは、[&#x200B; カタログサービスと API メッシュ &#x200B;](../catalog-service/mesh.md) を参照してください。
+>フィードデータを追加または変更すると、Commerce バックエンドのパフォーマンスと処理ロジックに影響を与える可能性があります。 本番環境にマージする前に、カスタマイズしたコードをテストします。 バックエンドにデータを追加する代わりに、API メッシュを使用してCatalog Service GraphQL スキーマを拡張します。 設定の詳細については、[ カタログサービスとAPI メッシュ ](../catalog-service/mesh.md)を参照してください。
 
-## 製品フィードでのシステム属性データの拡張
+## 製品フィードのシステム属性データの拡張
 
-製品フィードには、製品の処理に必要な、または消費者によって一般的に使用されるデフォルトのシステム属性が含まれています。 製品フィードに追加することで、製品フィードに追加のシステム属性を含めることができます。
+製品フィードには、製品処理に必要な、または消費者が一般的に使用するデフォルトのシステム属性が含まれています。 製品フィードに追加することで、製品フィードに追加のシステム属性を含めることができます。
 
-このタスクを完了するには、`magento/catalog-data-exporter` モジュールを更新して、追加のシステム属性を [&#x200B; 依存関係インジェクション設定ファイル &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）に追加します。
+このタスクを完了するには、`magento/catalog-data-exporter` モジュールを更新して、[依存関係インジェクション設定ファイル ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）に追加のシステム属性を追加します。
 
-製品属性クエリに属性 `Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery` 追加します。
+製品属性クエリ（`Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery`）に属性を追加します。
 
 **例**
 
@@ -42,36 +47,36 @@ ht-degree: 0%
     </type>
 ```
 
-## Adobe Commerceへの製品属性の追加
+## Adobe Commerceへの商品属性の追加
 
-開発者は、次のいずれかの方法を使用して、[&#x200B; 製品属性フィールド &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields) からアクセスできる製品属性を追加できます。
+開発者は、次のいずれかの方法を使用して、[製品属性フィールド ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields)からアクセスできる製品属性を追加できます。
 
-- Adobe Commerce ストアフロントサービスに書き出した `products` フィードデータに含めるために、Commerceに属性を追加します。
-- プラグインを使用したフィード同期プロセス中に、属性を動的に追加します。
+- Commerce ストアフロントサービスに書き出された`products` フィードデータに含める属性をAdobe Commerceに追加します。
+- プラグインを使用して、フィード同期プロセス中に属性を動的に追加します。
 
 ### Adobe Commerceへの属性の追加
 
-product 属性は、Commerce管理者から、またはカスタム PHP モジュールを使用してプログラムで追加し、属性を定義してAdobe Commerceを更新することができます。 Commerce管理者から属性を追加する方法は、属性と必要なすべてのメタデータを一度に追加できるので、最も簡単な方法です。 新しい属性とそのメタデータ プロパティは、次にスケジュールされた同期中に SaaS サービスに自動的にエクスポートされます。
+Commerce Adminからproduct属性を追加するか、カスタム PHP モジュールを使用してプログラムで属性を定義し、Adobe Commerceを更新できます。 Commerce管理者から属性を追加すると、属性と必要なすべてのメタデータを一度に追加できるため、最も簡単な方法です。 新しい属性とそのメタデータプロパティは、次にスケジュールされた同期中に、自動的にSaaS サービスに書き出されます。
 
-#### 管理者からの製品属性の作成
+#### 管理者から製品属性を作成します
 
-1. Commerce管理者で、製品属性設定ページ（[!UICONTROL Stores]/*[!UICONTROL Attributes]*/[!UICONTROL Product]）から属性を作成します。
+1. Commerce管理者から、製品属性設定ページ（[!UICONTROL Stores] > *[!UICONTROL Attributes]* > [!UICONTROL Product]）から属性を作成します。
 
 1. 必要に応じて、属性を属性セットに追加します。
 
-[2&rbrace;Adobe Commerce管理ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) 製品属性の作成 *を参照してください。*
+*Adobe Commerce管理ガイド*&#x200B;の「[製品属性を作成](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)」を参照してください。
 
 #### プログラムによる製品属性の作成
 
-`DataPatchInterface` を実装するデータパッチを作成してプログラムで製品属性を追加し、コンストラクター内で `EavSetup Factory` クラスのコピーをインスタンス化して、属性オプションを設定します。
+`DataPatchInterface`を実装するデータパッチを作成して、プログラムで製品属性を追加し、コンストラクター内の`EavSetup Factory` クラスのコピーをインスタンス化して、属性オプションを設定します。
 
-属性オプションを定義する場合、`type`、`label`、`input` を除くすべての属性パラメーターはオプションです。 次の追加パラメーターや、デフォルト設定とは異なるその他のパラメーターを定義します。
+属性オプションを定義する場合、`type`、`label`および`input`を除くすべての属性パラメーターはオプションです。 次の追加パラメーターと、デフォルト設定と異なるその他のパラメーターを定義します。
 
-- **`user_defined`=`1`** - データ同期中にストアフロント・サービスに属性をエクスポートします
-- **`used_in_product_listing`=`1`** – 製品リスト・データベース・クエリー内で属性をアクセス可能にします。
+- **`user_defined`=`1`** - データ同期中にストアフロントサービスに属性をエクスポートします
+- **`used_in_product_listing`=`1`** – 製品リスト データベース クエリ内で属性にアクセスできるようにします
 
-データパッチの作成については、『 *PHP 開発者ガイド* の [&#x200B; データおよびスキーマパッチの開発 &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) を参照してください。
+データパッチの作成について詳しくは、*PHP開発者ガイド*&#x200B;の[ データおよびスキーマパッチの開発](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/)を参照してください。
 
-### 製品属性の動的な追加
+### product属性を動的に追加します
 
-新しい EAV 属性を導入せずに製品属性を動的に作成する方法について詳しくは、[&#x200B; 属性の動的な追加 &#x200B;](add-attribute-dynamically.md) を参照してください。
+新しいEAV属性を導入せずに製品属性を動的に作成する方法について詳しくは、[属性を動的に追加](add-attribute-dynamically.md)を参照してください。

@@ -4,9 +4,14 @@ description: 検索とレコメンデーションの改善に [!DNL Adobe Commer
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+TQID: https://experienceleague.adobe.com/7GSnvyld0t1w3j86HIty1DiQgR8AxYZys3YcGXQ16yQ
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1411'
+source-wordcount: 1411
 ht-degree: 0%
 
 ---
@@ -27,7 +32,7 @@ ht-degree: 0%
 
 「**イベント数**」タブでは、検索、クリック、購入などの買い物客のインタラクションを追跡して、トレンドを分析し、ショッピング体験を向上させることができます。
 
-![&#x200B; イベント数](../../assets/event-counts.png){zoomable="yes"}
+![ イベント数](../../assets/event-counts.png){zoomable="yes"}
 
 | フィールド | 説明 |
 |---|---|
@@ -39,7 +44,7 @@ ht-degree: 0%
 
 「**健全性チェック**」タブでは、各行動イベントの健全性に関するインサイトが提供され、正確なデータ収集と機能が保証されます。 &#x200B;
 
-![健全性チェック &#x200B;](../../assets/sanity-check.png){zoomable="yes"}
+![健全性チェック ](../../assets/sanity-check.png){zoomable="yes"}
 
 | フィールド | 説明 |
 |---|---|
@@ -53,7 +58,7 @@ ht-degree: 0%
 
 製品ディスカバリーでは、「Most Viewed （最も閲覧された製品）」や「Viewed This, Viewed That （最も閲覧された製品）」などの検索アルゴリズムを強化するためにイベントを使用します。
 
-この表は、製品検出[&#x200B; ランキング戦略](../../merchandising/rules/add.md#intelligent-ranking)で使用されるイベントを示しています。
+この表は、製品検出[ ランキング戦略](../../merchandising/rules/add.md#intelligent-ranking)で使用されるイベントを示しています。
 
 | ランキング戦略 | イベント | ページ |
 | --- | --- | --- |
@@ -64,7 +69,7 @@ ht-degree: 0%
 
 #### 必須ダッシュボードイベント
 
-一部のイベントは、[検索パフォーマンス ダッシュボード &#x200B;](../../manage-results/search-performance.md)に入力するために必要です
+一部のイベントは、[検索パフォーマンス ダッシュボード ](../../manage-results/search-performance.md)に入力するために必要です
 
 | ダッシュボード領域 | イベント | 連結フィールド |
 | ------------------- | ------------- | ---------- |
@@ -103,7 +108,7 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 - レコメンデーションタイプによっては、他のタイプよりも学習が速いものもあります
 - [!DNL Adobe Commerce Optimizer]は4時間ごとに行動データを再計算します。 レコメンデーションは、サイトで長く使用するにつれて精度が向上します。
 
-各レコメンデーションタイプのトレーニングの進捗状況を視覚化するために、[&#x200B; レコメンデーションの作成](../../merchandising/recommendations/create.md#readiness-indicators) ページには準備状況インジケーターが表示されます。
+各レコメンデーションタイプのトレーニングの進捗状況を視覚化するために、[ レコメンデーションの作成](../../merchandising/recommendations/create.md#readiness-indicators) ページには準備状況インジケーターが表示されます。
 
 ライブサイトでデータを収集し、マシンラーニングモデルをトレーニングしている間に、レコメンデーションの設定に必要なその他のテストや設定タスクを完了できます。 この作業が完了する頃には、モデルには有用なレコメンデーションを作成するのに十分なデータが揃っており、ストアフロントに展開することができます。
 
@@ -136,7 +141,7 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 
 #### 必須ダッシュボードイベント
 
-次のイベントは、[Recommendations Performance ダッシュボード &#x200B;](../../manage-results/recommendation-performance.md)に入力するために必要です
+次のイベントは、[Recommendations Performance ダッシュボード ](../../manage-results/recommendation-performance.md)に入力するために必要です
 
 | ダッシュボード列 | イベント | 連結フィールド |
 | ---------------- | --------- | ----------- |
@@ -174,4 +179,4 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 
 ## サポート
 
-データの不一致に気づく場合、または推奨事項と検索結果が期待どおりに機能しない場合は、[&#x200B; サポートチケットを送信します](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+データの不一致に気づく場合、または推奨事項と検索結果が期待どおりに機能しない場合は、[ サポートチケットを送信します](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。

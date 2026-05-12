@@ -1,18 +1,21 @@
 ---
 title: 同義語
-description: 同義語 [!DNL Live Search]、カタログ内の単語とは異なる単語でクエリを展開します。
+description: '[!DNL Live Search]類義語は、カタログ内の単語とは異なる単語でクエリを展開します。'
 exl-id: 4aa731b0-b922-476b-a311-5c400f31f749
-source-git-commit: f96e7d8d2a31d5e0f49bd3ac2da320313908a868
+TQID: https://experienceleague.adobe.com/FjK6ZX-ktMEIBt1txcMIiQZKz8WqM0ZYjdhjlrmjIwQ
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: 126
 ht-degree: 0%
 
 ---
 
 # 同義語
 
-同義語は、検索クエリを拡張して、カタログ内の用語とは異なる、買い物客が使用する可能性のある用語を含めます。 あなたの製品が「ソファ」としてリストされている間、誰かが「ソファ」を探しているので、あなたはセールを失いたくありません。 顧客が商品の検索に使用する可能性のあるすべての単語を入力することで、様々な検索語句を取り込むことができます。
+類義語は、検索クエリを展開し、買い物客がカタログ内の単語とは異なる使用する可能性のある単語を含めます。 誰かが「ソファ」を探している一方で、あなたの商品は「ソファ」としてリストされているので、販売を失いたくはありません。 顧客が自社商品を探す際に使用する可能性のあるあらゆる単語を入力することで、幅広い検索語を取得できます。
 
 >[!IMPORTANT]
 >
->[!DNL Live Search] がインストールされているAdobe Commerceのインストールでは、標準のAdobe Commerce[!DNL Live Search] シノニムを検索 [&#x200B; 機能が &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=ja#search-synonyms) シノニムに置き換わります。ただし、どちらもマーケティングメニューの「*SEO と検索*」セクションに表示されます。 [!DNL Live Search] を使用する場合は、この節の手順に従ってください。
+>[!DNL Live Search]がインストールされたAdobe Commerceのインストールでは、[!DNL Live Search]類義語が標準のAdobe Commerce [類義語検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms)機能に取って代わりますが、どちらもマーケティングメニューの&#x200B;*SEOと検索* セクションに表示されます。 [!DNL Live Search]を使用する場合は、この節の手順に従ってください。

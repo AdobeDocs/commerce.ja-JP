@@ -1,34 +1,38 @@
 ---
 title: 同義語のベストプラクティス
-description: ストアで同義語を実装するためのベストプラクティスを説明します。
+description: ストアに類義語を実装するためのベストプラクティスについて説明します。
 role: Admin, Developer
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 026bb17b-14e3-4493-ae10-376837b69de6
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/2ktYgzsiM-BvHEJNeu0-XkxhgDThHVuXMnDux3Fb9WA
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: 433
 ht-degree: 0%
 
 ---
 
 # 同義語のベストプラクティス
 
-同義語を作成する際のベストプラクティスのリストを次に示します。
+次に、類義語を作成する際のベストプラクティスのリストを示します。
 
-- [!DNL Adobe Commerce Optimizer] は、デフォルトでスペルミスを管理します。 同義語を設定すると、買い物客がカタログで指定した単語とは異なる単語を使用する可能性があります。 あなたの製品が「ソファ」としてリストされている間、誰かが「ソファ」を探しているので、あなたは販売を失いたくありません。 顧客が商品の検索に使用する可能性のあるすべての単語を入力することで、様々な検索語句を取り込むことができます。 結果を向上させるには [&#x200B; 同義語を一方向または双方向として設定 &#x200B;](add.md#step-2-define-the-synonym-by-type) できます。
+- [!DNL Adobe Commerce Optimizer]はスペルの間違いを既定で管理します。 カタログで指定した単語とは異なる、買い物客が使用する可能性のある単語を含めるように類義語を設定できます。 誰かが「ソファ」を探している間に、製品が「ソファ」としてリストされているので、販売を失いたくありません。 顧客が自社商品を探す際に使用する可能性のあるあらゆる単語を入力することで、幅広い検索語を取得できます。 [類義語を1つの方法または2つの方法](add.md#step-2-define-the-synonym-by-type)として設定して、結果を改善できます。
 
-- ブランド名および略称をフルネームにマッピングします（「HP」から「Hewlett-Packard」など）。一般的な商品のニックネーム（「iPhone」から「Apple iPhone」など）。
+- ブランド名と略語をフルネームにマッピングします（例：「HP」、「Hewlett-Packard」、「iPhone」、「Apple iPhone」など）。
 
-- 業界特有の専門用語や、買い物客が同じ意味で使用する用語（例えば、「スニーカー」や「ランニングシューズ」）を含めます。
+- 「スニーカー」や「ランニングシューズ」など、業界固有の用語や、買い物客が区別せずに使用する可能性のある用語を含めます。
 
-- 新しい検索トレンド、製品の追加、買い物客の行動に基づいて、同義語リストを定期的に更新します。
+- 新しい検索トレンド、商品の追加、買い物客の行動にもとづいて、類義語リストを定期的に更新します。
 
-- 検索結果と買い物客のフィードバックを分析して、シノニムマッピングの有効性をテストします。 マッピングを調整して、精度と関連性を向上させます。
+- 検索結果と買い物客のフィードバックを分析することで、類義語マッピングの効果をテストできます。 マッピングを調整して、精度と関連性を向上させます。
 
-- ストップワードは、同義語をより意味のあるものにするのではなく、処理する必要があるデータの量を増やすので、使用しないでください。 [!DNL Adobe Commerce Optimizer] は、次のような一般的な英語の「ストップワード」を同義語から除外します。
+- ストップワードは、類義語をより意味のあるものにするのではなく、処理する必要があるデータの量を増やします。 [!DNL Adobe Commerce Optimizer]は、類義語から一般的な英語の「ストップ ワード」を除外します。例えば、次のようになります。
 
-  a、an、and、are、as、at、be、but、by、for、if、in、into、is、it、no、not、of、on、or、such、that、the、their、then、there、these、they、this、to、was、will、with
+  a, an, and, are, at, be, but, by, for, for, in, is, it, no, not, of, on, or, such, that, the, their, then, then, there, these, they, this, to, was, with, with
 
-- 単語の単数形と複数形の両方を同義語として定義する必要はありません。 カタログ内の用語が単数と複数の場合、正しい商品セットが検索されます。 例えば、製品名に「pant」という単語を使用し、買い物客が「pants」を検索すると、正しい商品セットが返され、提案として「pant」という単数形の単語が提供されます。 ファッション業界や小売業では単数形の「パンツ」が使われることが多いが、一部の地域では複数形の「パンツ」が一般的に使われている。 （パンツとは厳密には片方の足を覆う衣服の一部を指し、そのため両足を覆う「パンツ」が必要になります。
+- 単語の単一形と複数形の両方を同義語として定義する必要はありません。 カタログに単一語と複数語が混在している場合、検索で正しい商品セットが見つかります。 例えば、商品名に「pant」という単語を使用し、買い物客が「pants」と検索した場合、正しい商品セットが返され、「pant」という単語が候補として提示されます。 単数形の「パンツ」は、ファッション業界や小売業界でよく使用されますが、複数形の「パンツ」は一部の地域でより一般的に使用されています。 （パンツという言葉は技術的には、片足を覆う衣服の部分を指します。そのため、両足を覆うために「パンツのペア」が必要です。
 
-- カタログ内での用語の使用方法に一貫性を持たせます。 使用には地域による違いがあり、場合によっては業界内でも違いがあることに注意してください。
+- カタログ内で使用する用語と一貫性を持たせます。 使用には地域ごとの違いがあり、業界内でも時には違いがあることに留意してください。

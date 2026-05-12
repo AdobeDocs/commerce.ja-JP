@@ -1,31 +1,35 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '[!DNL API Mesh] for Adobe Commerceを使用すると、共通のGraphQL エンドポイントを介して複数のデータソースを統合できます。'
+description: Adobe Commerceの[!DNL API Mesh]では、共通のGraphQL エンドポイントを通じて複数のデータ ソースを統合する方法を提供します。
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+TQID: https://experienceleague.adobe.com/FPo8tOFgizn4m-6DFo0ayRf6ct-Oepl6kczu3kZSaVg
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: 324
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-Adobe Developer App Builderの [API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) を使用すると、デベロッパーはAdobe I/O Runtimeを使用して、プライベートまたはサードパーティの API およびその他のインターフェイスをAdobe製品と統合できます。
+Adobe Developer App Builder向け[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)を使用すると、開発者はAdobe I/O Runtimeを使用して、プライベートまたはサードパーティのAPIやその他のインターフェイスをAdobe製品と統合できます。
 
-![&#x200B; カタログのアーキテクチャ図 &#x200B;](assets/catalog-service-architecture-mesh.png)
+![ カタログアーキテクチャ図](assets/catalog-service-architecture-mesh.png)
 
-カタログサービスで API メッシュを使用するには、API メッシュをインスタンスに接続し、カタログサービスに接続するための設定を提供する API メッシュソース [CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/) を追加する必要があります。
+カタログサービスでAPI Meshを使用するには、API Meshをインスタンスに接続し、カタログサービスに接続するための設定を提供するAPI Mesh ソース [CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/)を追加する必要があります。
 
-## API メッシュを接続して設定します。
+## API Meshを接続して設定します。
 
-1. [API メッシュ開発者ガイド &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) の _メッシュを作成する_ 手順に従って、Adobe Commerce インスタンスに API メッシュを接続します。
+1. Adobe Commerce インスタンスにAPI Meshを接続するには、_API Mesh開発者ガイド_&#x200B;の[Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)の手順に従います。
 
-   API メッシュを初めて使用する場合は、メッシュを作成する前に [&#x200B; はじめに &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) プロセスを完了してください。
+   API Meshを初めて使用する場合は、メッシュを作成する前に、[はじめにプロセス ](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)を完了してください。
 
-1. 次の形式を使用して、プロジェクトの Catalog Service API キーを含む `variables.json` などの JSON ファイルを作成します。
+1. 次の形式を使用して、プロジェクトのカタログサービス API キーを含む`variables.json`などのJSON ファイルを作成します。
 
    ```json
    {
@@ -33,24 +37,24 @@ Adobe Developer App Builderの [API メッシュ &#x200B;](https://developer.ado
    }
    ```
 
-1. `CommerceCatalogServiceGraph`Adobe I/O拡張可能 CLI[&#x200B; を使用して、](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli) ソースをメッシュに追加します。
+1. [Adobe I/O拡張可能CLI](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli)を使用して、メッシュに`CommerceCatalogServiceGraph` ソースを追加します。
 
    ```bash
    aio api-mesh source install "CommerceCatalogServiceGraph" -f variables.json
    ```
 
-   `-f variables.json` オプションは、設定の更新に必要な Catalog Service API キー値を提供します。
+   `-f variables.json` オプションは、設定の更新に必要なカタログサービス API キー値を提供します。
 
-このコマンドを実行すると、API メッシュを介してカタログサービスが実行されます。 `aio api-mesh get` コマンドを使用して、更新されたメッシュの設定を表示します。
+このコマンドを実行した後、カタログサービスはAPI メッシュを通じて実行される必要があります。 更新したメッシュの設定を表示するには、`aio api-mesh get` コマンドを使用します。
 
 ## API メッシュの例
 
-API メッシュを使用すると、外部データソースを使用してAdobe Commerce インスタンスを強化できます。 また、既存のCommerce データを設定して新しい機能を有効にすることもできます。
+API Meshを使用すると、ユーザーは外部データソースを使用して、Adobe Commerce インスタンスを強化できます。 また、既存のCommerce データを設定して、新しい機能を有効にするためにも使用できます。
 
-### 階層価格を有効にする
+### 階層の価格の有効化
 
-この例では、API メッシュを使用して、Adobe Commerceで階層価格を有効にします。
-`name`、`endpoint`、`x-api-key` の値を置き換えます。
+この例では、API Meshを使用して、Adobe Commerceでティア価格を有効にします。
+`name`、`endpoint`、`x-api-key`の値を置き換えます。
 
 ```json
 {
@@ -134,7 +138,7 @@ API メッシュを使用すると、外部データソースを使用してAdob
 }
 ```
 
-設定が完了したら、メッシュに対して階層化された価格のクエリを実行します。
+設定が完了したら、メッシュに対して階層価格のクエリを実行します。
 
 ```graphql
 query {
@@ -163,9 +167,9 @@ query {
 }
 ```
 
-### エンティティ ID を取得
+### エンティティ IDを取得
 
-このメッシュは、`entityId` を ProductView インタフェースに追加します。 `name`、`endpoint`、`x-api-key` の値を置き換えます。
+このメッシュは、ProductView インターフェイスに`entityId`を追加します。 `name`、`endpoint`、`x-api-key`の値を置き換えます。
 
 ```json
 {
@@ -242,7 +246,7 @@ query {
   }
 ```
 
-`entityId` をクエリできるようになりました。
+`entityId`に対するクエリを実行できるようになりました：
 
 ```graphql
 query {

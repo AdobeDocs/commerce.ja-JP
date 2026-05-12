@@ -2,11 +2,16 @@
 title: マーチャンダイジングの概要
 description: ' [!DNL Adobe Commerce Optimizer]のマーチャンダイジング機能について説明します。'
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
-source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
+TQID: https://experienceleague.adobe.com/GJ7017EEKg4wd4Wjom5-FrEcfrPbmvwEAJw0AFgGc64
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: 264
 ht-degree: 0%
 
 ---
@@ -21,7 +26,7 @@ ht-degree: 0%
 
 商品ディスカバリーを活用すると、次のことが可能になります。
 
-* **最も関連性の高い商品に顧客を誘導するために、[&#x200B; ファセット &#x200B;](./facets/overview.md)、[&#x200B; マーチャンダイジング検索とカテゴリのルール &#x200B;](./rules/overview.md)および[類義語](./synonyms/overview.md)**&#x200B;を構成します。これにより、顧客の摩擦を最小限に抑えることができます。
+* **最も関連性の高い商品に顧客を誘導するために、[ ファセット ](./facets/overview.md)、[ マーチャンダイジング検索とカテゴリのルール ](./rules/overview.md)および[類義語](./synonyms/overview.md)**&#x200B;を構成します。これにより、顧客の摩擦を最小限に抑えることができます。
 * **マーチャンダイジング戦略と季節ごとの優先事項を反映した、直観的で目標志向の検索体験**&#x200B;を作成します。
 * **AIを活用した動的ファセット処理と結果のランキング**&#x200B;を使用して、買い物客の行動にもとづいて検索結果をリアルタイムで調整し、エンゲージメントと売上を向上させます。
 * **プロモーションと優先度の高い項目を効果的に表示し**&#x200B;検索の結果とビジネス目標を一致させます。

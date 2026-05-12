@@ -2,21 +2,26 @@
 title: Commerce CLIを使用したフィードの同期
 description: コマンドライン インターフェイス コマンドを使用して、Adobe Commerce SaaS サービスの [!DNL data export extension] のフィードとプロセスを管理する方法を説明します。
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: a05f716200fbf2af74b8488ae66053a56e7037a0
+TQID: https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: 583
 ht-degree: 0%
 
 ---
 
 # Commerce CLIを使用したフィードの同期
 
-`saas:resync` パッケージの`magento/saas-export` コマンドを使用すると、Adobe Commerce SaaS サービスのデータ同期を管理できます。
+`magento/saas-export` パッケージの`saas:resync` コマンドを使用すると、Adobe Commerce SaaS サービスのデータ同期を管理できます。
 
 Adobeでは、`saas:resync` コマンドを定期的に使用することはお勧めしません。 コマンドを使用するための一般的なシナリオは次のとおりです。
 
 - 初期同期
-- [SaaS データスペース ID](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/services/saas)を変更した後、データを新しいデータスペースに同期する
+- [SaaS データスペース ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)を変更した後、データを新しいデータスペースに同期する
 - トラブルシューティング
 
 `var/log/saas-export.log` ファイルの同期操作を監視します。
@@ -62,7 +67,7 @@ bin/magento saas:resync --help
 
 >[!NOTE]
 >
->書き出し処理を管理するための詳細なオプションについては、[書き出し処理のカスタマイズ &#x200B;](customize-export-processing.md)を参照してください。
+>書き出し処理を管理するための詳細なオプションについては、[書き出し処理のカスタマイズ ](customize-export-processing.md)を参照してください。
 
 ## `--by-ids`
 
@@ -109,7 +114,7 @@ bin/magento saas:resync --feed productAttributes --continue-resync
 
 フィードをSaaSに送信せず、フィードのテーブルに保存せずに、フィードの再インデックスプロセスを実行します。 このオプションは、データセットの問題を特定するのに便利です。
 
-ペイロードを`EXPORTER_EXTENDED_LOG=1`に保存する`var/log/saas-export.log`環境変数を追加します。
+ペイロードを`var/log/saas-export.log`に保存する`EXPORTER_EXTENDED_LOG=1`環境変数を追加します。
 
 **例：**
 
@@ -168,7 +173,7 @@ bin/magento saas:resync --feed products
 
 インデックス再作成せずに既存のカタログ データを[!DNL Commerce Services]に再送信します。 製品関連のフィードではサポートされていません。
 
-動作は[書き出しモード &#x200B;](data-synchronization.md#synchronization-modes)によって異なります。
+動作は[書き出しモード ](data-synchronization.md#synchronization-modes)によって異なります。
 
 - レガシーモード：すべてのデータを切り捨てずに再送信します。
 - 即時モード：オプションは無視され、更新/失敗のみを同期します。
@@ -181,7 +186,7 @@ bin/magento saas:resync --feed productAttributes --no-reindex
 
 ## `--id-type=ProductId`
 
-デフォルトでは、`saas:resync feed` オプションで`--by-ids` コマンドを使用する際に指定されたエンティティは、製品SKUで指定されます。 製品IDでエンティティを指定するには、`--id-type=ProductId` オプションを使用します。
+デフォルトでは、`--by-ids` オプションで`saas:resync feed` コマンドを使用する際に指定されたエンティティは、製品SKUで指定されます。 製品IDでエンティティを指定するには、`--id-type=ProductId` オプションを使用します。
 
 ```shell
 bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
@@ -191,4 +196,4 @@ bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
 
 ## トラブルシューティング
 
-接続されたCommerce サービスに期待されるデータが表示されない場合は、データ書き出しエラーログを確認し、環境変数で`saas:resync` コマンドを使用してペイロードとプロファイラーデータを確認して、問題をトラブルシューティングします。 [&#x200B; ログの確認とトラブルシューティング &#x200B;](troubleshooting-logging.md)を参照してください。
+接続されたCommerce サービスに期待されるデータが表示されない場合は、データ書き出しエラーログを確認し、環境変数で`saas:resync` コマンドを使用してペイロードとプロファイラーデータを確認して、問題をトラブルシューティングします。 [ ログの確認とトラブルシューティング ](troubleshooting-logging.md)を参照してください。

@@ -1,33 +1,38 @@
 ---
 title: カスタムイベントの作成
-description: カスタムイベントを作成して、Adobe Commerce データを他のAdobe DX 製品に接続する方法を説明します。
+description: カスタムイベントを作成して、Adobe Commerce データを他のAdobe DX製品に接続する方法を説明します。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 4e8cf0ad3f8f94d4f59bc8d78a44f4b3e86cbc3e
+TQID: https://experienceleague.adobe.com/D1fAIJRYegeZakCdJLB6F1HME4rUQaeoUjMFNgmqpzs
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: 371
 ht-degree: 0%
 
 ---
 
 # カスタムイベントの作成
 
-独自のストアフロントイベントを作成して業界に固有のデータを収集することで、[&#x200B; イベントプラットフォーム &#x200B;](events.md) を拡張できます。 カスタムイベントを作成して設定すると、そのイベントは [Adobe Commerce イベントコレクター &#x200B;](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector) に送信されます。
+独自のストアフロントイベントを作成して、業界固有のデータを収集することで、[ イベントプラットフォーム ](events.md)を拡張できます。 カスタムイベントを作成して設定すると、[Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector)に送信されます。
 
 ## カスタムイベントの処理
 
-カスタムイベントは、Adobe Experience Platformでのみサポートされています。 カスタムデータは、Adobe Commerce ダッシュボードおよび指標トラッカーに転送されません。
+カスタムイベントは、Adobe Experience Platformでのみサポートされています。 カスタムデータは、Adobe Commerce ダッシュボードや指標トラッカーには転送されません。
 
-`custom` イベントの場合、コレクターは以下を行います。
+任意の`custom` イベントの場合、コレクター：
 
-- `identityMap` をプライマリ ID として `ECID` を追加します
-- イベントで設定されているセカンダリ ID`email`if`identityMap`_として_ に `personalEmail.address` を含めます
+- `identityMap`を`ECID`のプライマリ IDとして追加します
+- `email`がセカンダリ ID _として`identityMap`に含まれます（_ `personalEmail.address`がイベントで設定されている場合）
 - Edgeに転送する前に、`xdm` オブジェクト内でイベント全体をラップします
 
 例：
 
-Adobe Commerce イベント SDKを通じて公開されたカスタムイベント：
+Adobe Commerce Events SDKを通じて公開されたカスタムイベント：
 
 ```javascript
 mse.publish.custom({
@@ -39,7 +44,7 @@ mse.publish.custom({
 });
 ```
 
-Experience Platform Edgeで：
+Experience Platform Edgeでは、
 
 ```javascript
 {
@@ -69,17 +74,17 @@ Experience Platform Edgeで：
 
 >[!NOTE]
 >
-> カスタムイベントを使用すると、デフォルトのAdobe Analytics レポートに影響する可能性があります。
+> カスタムイベントを使用すると、デフォルトのAdobe Analytics レポートに影響する場合があります。
 
-## イベントの上書きの処理（カスタム属性）
+## イベントの上書き（カスタム属性）の処理
 
-`customContext` を含むイベントセットの場合、コレクターが `custom context` のフィールドからイベントペイロードのフィールドを上書きまたは拡張します。 オーバーライドのユースケースは、開発者が、既にサポートされているイベントでページの他の部分が設定したコンテキストを再利用および拡張する場合です。
+`customContext`を持つ任意のイベントセットの場合、コレクターは、イベントペイロードのフィールドを`custom context`のフィールドから上書きまたは拡張します。 オーバーライドのユースケースは、開発者が既にサポートされているイベントでページの他の部分によって設定されたコンテキストを再利用および拡張したい場合です。
 
-イベントの上書きは、Experience Platformへの転送時にのみ適用されます。 これらは、Adobe CommerceおよびSensei analytics イベントには適用されません。 Adobe Commerce イベントコレクター [README](https://github.com/adobe/commerce-events/blob/e34bcfc0deca8d5ac1f9310fc1ee4c1becf4ffbb/packages/storefront-events-collector/README.md) には、追加情報が記載されています。
+イベントの上書きは、Experience Platformに転送する場合にのみ適用されます。 Adobe CommerceおよびSensei Analytics イベントには適用されません。 Adobe Commerce Events Collector [README](https://github.com/adobe/commerce-events/blob/e34bcfc0deca8d5ac1f9310fc1ee4c1becf4ffbb/packages/storefront-events-collector/README.md)は、追加情報を提供します。
 
 >[!NOTE]
 >
->Experience Platform イベントペイロードでカスタム属性を使用して `productListItems` を拡張する場合は、SKU を使用して商品を照合します。 この要件は、`product-page-view` のイベントには適用されません。
+>Experience Platform イベントペイロードのカスタム属性で`productListItems`を強化する場合は、SKUを使用して商品を一致させます。 この要件は、`product-page-view` イベントには適用されません。
 
 ### 使用状況
 
@@ -89,9 +94,9 @@ const mse = window.magentoStorefrontEvents;
 mse.publish.productPageView(customCtx);
 ```
 
-### 例 1
+### 例1
 
-次の例では、イベントを公開する際にカスタムコンテキストを追加します。
+次の使用例は、イベントの公開時にカスタム コンテキストを追加します。
 
 ```javascript
 magentoStorefrontEvents.publish.productPageView({
@@ -109,9 +114,9 @@ magentoStorefrontEvents.publish.productPageView({
 });
 ```
 
-### 例 2
+### 例2
 
-次の使用例は、イベントを発行する前にカスタム コンテキストを追加します。
+次の使用例は、イベントを公開する前にカスタム コンテキストを追加します。
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -133,11 +138,11 @@ mse.context.setCustom({
 mse.publish.productPageView();
 ```
 
-### 例 3
+### 例3
 
-次の使用例は、発行元のカスタム コンテキストを設定し、Adobe Client Data Layer で既に設定されているカスタム コンテキストを上書きします。
+次の使用例は、パブリッシャーでカスタムコンテキストを設定し、以前にAdobe Client Data Layerで設定したカスタムコンテキストを上書きします。
 
-この例では、`pageView` イベントの **フィールドに** カスタムページ名 2`web.webPageDetails.name` が表示されます。
+この例では、`pageView` イベントには、`web.webPageDetails.name` フィールドに&#x200B;**カスタムページ名2**&#x200B;が含まれます。
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -159,9 +164,9 @@ mse.publish.pageView({
 });
 ```
 
-### 例 4
+### 例4
 
-この例では、複数の製品を持つ `productListItems` イベントにカスタムコンテキストを追加します。
+次の使用例は、複数の製品を含む`productListItems`件のイベントにカスタム コンテキストを追加します。
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -186,7 +191,7 @@ mse.publish.shoppingCartView();
 
 Luma ベースのストア：
 
-Luma ベースのストアは、公開イベントをネイティブに実装するので、`customContext` を拡張してカスタムデータを設定できます。
+Luma ベースのストアは公開イベントをネイティブに実装するので、`customContext`を拡張してカスタムデータを設定できます。
 
 例：
 
