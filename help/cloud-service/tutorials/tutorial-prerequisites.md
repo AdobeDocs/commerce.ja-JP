@@ -7,16 +7,25 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-source-git-commit: 0ece7b58bdafd664297cbdee809c53ef2389fb12
+TQID: https://experienceleague.adobe.com/UvtVXuUjbanuVWqNG3-bYQh6IzY1OuDjGYpojtXHMHY
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: 1291
 ht-degree: 0%
 
 ---
 
 # チュートリアルの前提条件
 
-このページでは、[!DNL Adobe Commerce as a Cloud Service]評価の拡張機能チュートリアル [や](./ratings-extension.md)配送方法の拡張機能チュートリアル [など、](./shipping-method-extension.md) チュートリアルの前提条件と設定手順について説明します。
+このページでは、[評価の拡張機能チュートリアル &#x200B;](./ratings-extension.md)や[配送方法の拡張機能チュートリアル &#x200B;](./shipping-method-extension.md)など、[!DNL Adobe Commerce as a Cloud Service] チュートリアルの前提条件と設定手順について説明します。
 
 ## 一般的な前提条件
 
@@ -293,9 +302,9 @@ OAUTH_TECHNICAL_ACCOUNT_EMAIL=
 OAUTH_ORG_ID=
 ```
 
-ワークスペースの「**[!UICONTROL Credential details]**」タブをクリックして、[Developer Console](https://developer.adobe.com/)の&#x200B;**[!UICONTROL OAuth Server-to-Server]** ページからこれらの値をコピーします。
+ワークスペースの「**[!UICONTROL OAuth Server-to-Server]**」タブをクリックして、[Developer Console](https://developer.adobe.com/)の&#x200B;**[!UICONTROL Credential details]** ページからこれらの値をコピーします。
 
-Adobe Developer Console![の](../assets/oauth-credentials.png){width="600" zoomable="yes"}OAuth サーバー間の資格情報ページ
+Adobe Developer Console![&#128279;](../assets/oauth-credentials.png){width="600" zoomable="yes"}のOAuth サーバー間の資格情報ページ
 
 #### Commerce設定の追加
 
@@ -382,7 +391,7 @@ aio app use --merge
 
    >[!NOTE]
    >
-   >スターターキットにスキルが見つからないという警告が表示された場合、何らかの問題が発生しました。多くの場合、セットアップはスターターキットがクローンされた場所以外のフォルダーで実行されたためです。 `aio commerce extensibility tools-setup` フォルダー（スターターキットプロジェクトのルート）から`extension`を実行し、プロンプトが表示されたら適切なスターターキットを選択します。
+   >スターターキットにスキルが見つからないという警告が表示された場合、何らかの問題が発生しました。多くの場合、セットアップはスターターキットがクローンされた場所以外のフォルダーで実行されたためです。 `extension` フォルダー（スターターキットプロジェクトのルート）から`aio commerce extensibility tools-setup`を実行し、プロンプトが表示されたら適切なスターターキットを選択します。
 
    ![&#x200B; チェックアウトスターターキットを選択した状態でAI拡張性ツールのセットアップを表示している端末](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
 
@@ -390,11 +399,11 @@ aio app use --merge
 
 この節では、[評価の拡張機能チュートリアル &#x200B;](./ratings-extension.md)およびその他のストアフロントチュートリアル用にストアフロントを手動で設定する方法について説明します。
 
-ストアフロントを自動的に設定するには、`app-setup`Automated setup[&#x200B; セクションで説明されている](#automated-setup) コマンドを実行し、[!DNL AEM Boilerplate Commerce] スターターキットを選択します。
+ストアフロントを自動的に設定するには、[Automated setup](#automated-setup) セクションで説明されている`app-setup` コマンドを実行し、[!DNL AEM Boilerplate Commerce] スターターキットを選択します。
 
 ### 前提条件
 
-[評価の拡張機能チュートリアル &#x200B;](./ratings-extension.md#connect-to-the-storefront)の[&#x200B; ストアフロント &#x200B;](./ratings-extension.md) セクションを完了し、ストアで製品の評価を表示するには、次の項目が必要です。
+[評価の拡張機能チュートリアル &#x200B;](./ratings-extension.md)の[&#x200B; ストアフロント &#x200B;](./ratings-extension.md#connect-to-the-storefront) セクションを完了し、ストアで製品の評価を表示するには、次の項目が必要です。
 
 * [Google Chrome](https://www.google.com/chrome/) - ストアフロントのテストに必要
 

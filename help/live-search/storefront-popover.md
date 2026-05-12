@@ -1,43 +1,53 @@
 ---
 title: '[!DNL Storefront Popover]'
-description: は  [!DNL Live Search storefront popover]  推奨される製品とサムネールを動的に返します。
+description: ' [!DNL Live Search storefront popover] は、提案された製品とサムネールを動的に返します。'
 exl-id: 240a5333-15e9-4178-ba3c-ae6c62c2238c
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/nGvwmtPuwoiFgCxrK9shUPS-FSKr-ZxWNUf-qDWjOdQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: 479
 ht-degree: 0%
 
 ---
 
 # [!DNL Storefront Popover]
 
-[!DNL Live Search] が [&#x200B; インストール済み &#x200B;](install.md) になると、買い物客が [!DNL popover] 検索 [&#x200B; ボックスに入力したときに &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=ja#quick-search) がストアフロントに表示されます。 各文字を入力すると、検索結果の候補となる製品やサムネール画像が [!DNL popover] に表示されます。
+[!DNL Live Search]が[&#x200B; インストールされている](install.md)場合、買い物客が[検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=ja#quick-search) ボックスに入力すると、[!DNL popover]がストアフロントに表示されます。 文字を入力するたびに、[!DNL popover]が更新され、上位の検索結果の推奨商品とサムネイル画像が表示されます。
 
-[!DNL Live Search] は、2 文字以上のクエリの結果を返します。 部分一致の場合、1 単語あたりの最大文字数は 20 文字です。 「入力中の検索」クエリの文字数は設定できません。
+[!DNL Live Search]は、2文字以上のクエリの結果を返します。 部分一致の場合、1語あたりの最大文字数は20文字です。 「入力中に検索」クエリの文字数は設定できません。
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 >[!TIP]
 >
->製品属性を検索可能として設定する方法については、「[Live Search の設定 &#x200B;](workspace.md) 記事を参照してください。
+>製品属性を検索可能として設定する方法については、[&#x200B; ライブサーチの設定](workspace.md)記事を参照してください。
 
 ## [!DNL Popover] ページサイズ
 
-[!DNL popover] ージのページサイズによって、オートコンプリートされた商品を返せるライン数が決まります。 Live Search のインストール中、`page_size` の値は [&#x200B; カタログ検索 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html?lang=ja) - `Autocomplete Limit` 設定の現在の値に変更されます。
+[!DNL popover]のページサイズにより、自動完了製品を返すことができる行数が決まります。 ライブ検索のインストール中に、`page_size`の値が[&#x200B; カタログ検索](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html?lang=ja) - `Autocomplete Limit`設定の現在の値に変更されます。
 
-デフォルトでは、「カタログ検索 – オートコンプリートの制限」の値は 8 行（1 行）に設定されています。 [!DNL popover] ージのページサイズを変更するには、次の手順を実行します。
+デフォルトでは、カタログ検索 – 自動完了制限値は8行（または行）に設定されています。 [!DNL popover]のページサイズを変更するには、次の操作を行います。
 
-1. *管理者* サイドバーで、**ストア**/設定/**設定** に移動します。
-1. 左側のパネルで、「**カタログ**」を展開し、設定のリストから **カタログ** を選択します。
+1. *管理者* サイドバーで、**ストア**/設定/**構成**&#x200B;に移動します。
+1. 左側のパネルで、**カタログ**&#x200B;を展開し、設定のリストから&#x200B;**カタログ**&#x200B;を選択します。
 1. 「*カタログ検索*」セクションを展開します。
-1. 「**オートコンプリート制限**」を、[!DNL popover] ージで許可する行数に設定します。
-1. 完了したら、「**設定を保存**」をクリックします。
+1. **オートコンプリート制限**&#x200B;を[!DNL popover]で許可する行数に設定します。
+1. 完了したら、**設定を保存**&#x200B;をクリックします。
 
-## スタイル設定 [!DNL Popover] 例
+## スタイル設定[!DNL Popover]の例
 
-[!DNL Popover] ウィジェットのルックアンドフィールは、会社のスタイルやブランディングガイドラインに合わせてカスタマイズできます。
+[!DNL Popover] ウィジェットのルック アンド フィールは、会社のスタイルとブランド ガイドラインに合わせてカスタマイズできます。
 
-[!DNL storefront popover] には常に製品 `name` と `price` が表示され、フィールドの選択は設定できません。 ただし、[!DNL popover] 要素は [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/) クラスを使用してスタイルを設定できます。 例えば、次の宣言は、[!DNL popover] のコンテナとフッターの背景色を変更します。
+[!DNL storefront popover]には常に商品`name`と`price`が表示され、フィールドの選択は設定可能ではありません。 ただし、[!DNL popover]要素は[CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/) クラスを使用してスタイル設定できます。 例えば、次の宣言は、[!DNL popover] コンテナとフッターの背景色を変更します。
 
 ```css
 .livesearch.popover-container {
@@ -49,20 +59,20 @@ ht-degree: 0%
 }
 ```
 
-## コンテナの表示
+## コンテナの可視化
 
-`.livesearch.popover-container` の親コンポーネントは `.search-autocomplete` です。  `.active` クラスは、コンテナの表示を示します。 `.active` クラスは、[!DNL popover] が開いている場合に条件付きで追加されます。
+`.livesearch.popover-container`の親コンポーネントは`.search-autocomplete`です。  `.active` クラスは、コンテナの可視性を示します。 [!DNL popover]が開いているときに、`.active` クラスが条件付きで追加されます。
 
 ```css
 .search-autocomplete.active   /* visible */
 .search-autocomplete          /* not visible */
 ```
 
-ストアフロント要素のスタイル設定について詳しくは、『 [&#x200B; フロントエンド開発者ガイド &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/css/) のカスケーディングスタイルシート（CSS） [&#x200B; を参照してください &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/)。
+ストアフロント要素のスタイル設定について詳しくは、[&#x200B; フロントエンド開発者ガイド &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/)の[&#x200B; カスケーディングスタイルシート（CSS） &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/css/)を参照してください。
 
 ## クラスセレクター
 
-次のクラスセレクターを使用して、コンテ [!DNL popover] 内のコンテナおよび製品要素のスタイルを設定できます。
+次のクラスセレクターを使用して、[!DNL popover]内のコンテナと製品の要素にスタイルを設定できます。
 
 - `.livesearch.popover-container`
 - `.livesearch.view-all-footer`
@@ -79,33 +89,33 @@ ht-degree: 0%
 
 #### .livesearch.view-all-footer
 
-![&#x200B; すべてのフッターを表示 &#x200B;](assets/livesearch-view-all-footer.png)
+![すべてのフッターを表示](assets/livesearch-view-all-footer.png)
 
 ### 製品クラスセレクター
 
 #### .livesearch.products-container
 
-![&#x200B; 製品コンテナ &#x200B;](assets/livesearch-product-container.png)
+![製品コンテナ &#x200B;](assets/livesearch-product-container.png)
 
 #### .livesearch.product-result
 
-![&#x200B; 製品結果 &#x200B;](assets/livesearch-product-result.png)
+![製品結果](assets/livesearch-product-result.png)
 
 #### .livesearch.product-name
 
-![&#x200B; 製品名 &#x200B;](assets/livesearch-product-name.png)
+![製品名](assets/livesearch-product-name.png)
 
 #### .livesearch.product-price
 
-![&#x200B; 製品価格 &#x200B;](assets/livesearch-product-price.png)
+![製品価格](assets/livesearch-product-price.png)
 
 #### .livesearch product-link
 
-![&#x200B; 製品結果 &#x200B;](assets/livesearch-product-link.png)
+![製品結果](assets/livesearch-product-link.png)
 
-## 変更したテーマの操作 {#working-with-modified-theme}
+## 変更されたテーマの操作 {#working-with-modified-theme}
 
-カスタマイズした [!DNL storefront popover] テーマ [&#x200B; で &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/themes/) を使用し、必要なファイルを *Luma* から継承することができます。 `top.search` モジュールの `header-wrapper` の `Magento_Search` ブロックは変更できません。
+[!DNL storefront popover]は、*Luma*&#x200B;から必要なファイルを継承するカスタマイズされた[&#x200B; テーマ &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/themes/)で使用できます。 `Magento_Search` モジュールの`header-wrapper`の`top.search` ブロックは変更できません。
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -117,9 +127,9 @@ ht-degree: 0%
 </referenceContainer>
 ```
 
-## [!DNL popover] の無効化
+## [!DNL popover]を無効にしています
 
-[!DNL popover] を無効にして標準の [&#x200B; クイック検索 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=ja#quick-search) 機能を復元するには、次のコマンドを入力します。
+[!DNL popover]を無効にし、標準の[&#x200B; クイック検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=ja#quick-search)機能を復元するには、次のコマンドを入力します。
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover
@@ -127,4 +137,4 @@ bin/magento module:disable Magento_LiveSearchStorefrontPopover
 
 ## ヘッドレス実装
 
-ヘッドレス実装を使用するユーザーの場合は、[!DNL Live Search popover]npm パッケージ [&#x200B; を使用して &#x200B;](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils) をインストールできます。
+ヘッドレス実装を使用している場合は、[npm パッケージ &#x200B;](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils)を使用して[!DNL Live Search popover]をインストールできます。

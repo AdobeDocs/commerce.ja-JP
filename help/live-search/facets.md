@@ -1,50 +1,58 @@
 ---
 title: ファセット
-description: ファセット [!DNL Live Search]、複数のディメンションの属性値を検索条件として使用します。
+description: '[!DNL Live Search]個のファセットでは、属性値の複数のディメンションを検索条件として使用します。'
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
-source-git-commit: 86484d49aa4b79bfe64455dba18b84bcd9073736
+TQID: https://experienceleague.adobe.com/bTE-Ow8xEDfK-saxGxotnvkgHZI4QThno1dCqRbjvCc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: 452
 ht-degree: 0%
 
 ---
 
 # ファセット
 
-ファセットは、複数のディメンションの属性値を検索条件として使用する、高パフォーマンスのフィルタリング方法です。 ファセット検索も似ていますが、標準の [&#x200B; レイヤー化されたナビゲーション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja) よりも大幅に「スマート」です。 使用可能なフィルターのリストは、検索結果で返される製品の [&#x200B; フィルタリング可能な属性 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja#filterable-attributes) によって決まります。
+ファセット処理は、属性値の複数の次元を検索条件として使用する高性能フィルタリングの方法です。 ファセット検索は類似していますが、標準の[階層化ナビゲーション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja)よりもかなり「スマート」です。 使用可能なフィルターのリストは、検索結果で返される商品の[&#x200B; フィルター可能な属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja#filterable-attributes)によって決まります。
 
-[!DNL Live Search] は `productSearch` クエリを使用して、[!DNL Live Search] に固有のファセットやその他のデータを返します。 コード例については [`productSearch` 開発者向けドキュメントの &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) クエリを参照してください。
+[!DNL Live Search]は`productSearch` クエリを使用しています。このクエリは、[!DNL Live Search]に固有のファセットおよびその他のデータを返します。 コード例については、開発者ドキュメントの[`productSearch` クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)を参照してください。
 
-![&#x200B; フィルタリングされた検索結果 &#x200B;](assets/storefront-search-results-run.png)
+![&#x200B; フィルターされた検索結果](assets/storefront-search-results-run.png)
 
-ファセット内で、買い物客は「スタイル」の「基本」や「スナッグ」など、複数のオプションを選択でき、検索結果はこれらのスタイルのみを表示するように更新されます。 同様に、買い物客がファセットをまたいだオプション（「スタイル」の「基本」や「気候」の「屋内」など）を選択すると、検索結果が更新され、選択したスタイルと選択した気候が表示されます。
+買い物客は、ファセット内で「スタイル」の下の「基本」や「スナップ」など、複数のオプションを選択でき、検索結果はそれらのスタイルのみを表示するように更新されます。 同様に、買い物客が「スタイル」の「基本」や「気候」の「屋内」など、複数のファセットにまたがるオプションを選択した場合、検索結果は選択したスタイルと選択した気候を表示するように更新されます。
 
-定義済みのファセットを URL パラメーターとして使用でき、結果はパラメーター値 `http://yourstore.com?brand=acme&color=red` に基づいてフィルターされます。
+定義されたファセットはURL パラメーターとして使用でき、結果はパラメーター値`http://yourstore.com?brand=acme&color=red`に基づいてフィルタリングされます。
 
-## ファセットの要件
+## ファセット要件
 
-ファセットのカテゴリと製品属性の要件は、レイヤーナビゲーションで使用するフィルタリング可能な属性に似ています。 属性の各ストアフロントのプロパティでは、「検索結果の階層型ナビゲーションで使用」の値を「はい」に設定する必要があります。 属性設定の確認と更新は、管理者の [!DNL Stores]/[!DNL Attribute] メニューから行えます。
+ファセットのカテゴリと製品属性の要件は、階層化されたナビゲーションに使用されるフィルター可能な属性と似ています。 属性の各ストアフロントプロパティには、「検索結果レイヤーナビゲーションで使用」の値を「はい」に設定する必要があります。 管理画面の[!DNL Stores] > [!DNL Attribute] メニューから属性設定を確認し、更新できます。
 
 >[!NOTE]
 >
->製品カテゴリをファセットとして定義した場合、ファセットにはカテゴリとサブカテゴリの `url_path` が表示されます。
+>製品カテゴリをファセットとして定義すると、ファセットにはカテゴリの`url_path`とサブカテゴリが表示されます。
 >
->![&#x200B; カテゴリファセット &#x200B;](assets/facet-category.png)
+>![&#x200B; カテゴリーファセット &#x200B;](assets/facet-category.png)
 
-[&#x200B; のファセット要件について詳しくは、](./boundaries-limits.md#facets) 境界と制限 [!DNL Live Search] を参照してください。
+[!DNL Live Search]のファセット要件について詳しくは、[境界と制限](./boundaries-limits.md#facets)を参照してください。
 
-競合する属性が多数ある場合は、属性を 1 つの「meta-attribute」に組み合わせることを検討してください。 例えば、靴は一般的に数値サイズ、シャツは一般的に「S/M/L/XL」サイズです。 これら 2 種類のサイズを 1 つの検索可能な属性に組み合わせることができます。
+対応する属性が多数ある場合は、属性を単一の「メタ属性」に組み合わせることを検討してください。 例えば、靴は一般的に数値サイズですが、シャツは一般的に「S/M/L/XL」サイズです。 これら2種類のサイズを組み合わせて、1つの検索可能な属性にすることができます。
 
 | 設定 | 説明 |
 |--- |--- |
-| [&#x200B; カテゴリの表示設定 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=ja) | アンカー – `Yes` |
-| [&#x200B; 属性プロパティ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) | [&#x200B; カタログ入力タイプ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=ja) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （ウィジェットのみ）、`Text swatch` （ウィジェットのみ） |
-| 属性ストアフロント プロパティ | 検索結果での使用階層ナビゲーション - `Yes` |
+| [&#x200B; カテゴリの表示設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=ja) | アンカー – `Yes` |
+| [属性プロパティ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) | [&#x200B; カタログ入力タイプ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=ja) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （ウィジェットのみ）、`Text swatch` （ウィジェットのみ） |
+| 属性ストアフロントプロパティ | 検索結果の階層化されたナビゲーションで使用 – `Yes` |
 
-## ファセットの集約
+## ファセット集計
 
-ファセットの集計は、ストアフロントに 3 つのファセット（カテゴリ、カラー、価格）があり、3 つすべてに対して買い物客がフィルターを適用する場合（カラー= ブルー、価格は$10.00～50.00、カテゴリ = `promotions`）に実行されます。
+ファセットの集計は次のように実行されます。ストアフロントが3つのファセット（カテゴリ、色、価格）を持ち、買い物客が3つすべてのファセットにフィルターを適用した場合（色=青、価格は$10.00～50.00、カテゴリ= `promotions`）。
 
-* `categories` aggregation - `categories` を集計して、`color` フィルターと `price` フィルターを適用しますが、`categories` フィルターは適用しません。
-* `color` aggregation - `color` を集計して、`price` フィルターと `categories` フィルターを適用しますが、`color` フィルターは適用しません。
-* `price` aggregation - `price` を集計して、`color` フィルターと `categories` フィルターを適用しますが、`price` フィルターは適用しません。
+* `categories`集計 – `categories`を集計し、`color`および`price` フィルターを適用しますが、`categories` フィルターは適用しません。
+* `color`集計 – `color`を集計し、`price`および`categories` フィルターを適用しますが、`color` フィルターは適用しません。
+* `price`集計 – `price`を集計し、`color`および`categories` フィルターを適用しますが、`price` フィルターは適用しません。

@@ -6,9 +6,21 @@ role: Admin
 level: Intermediate
 exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
-source-git-commit: cdb15907871faec9a94b2671a44ac2d6ce8f51c5
+TQID: https://experienceleague.adobe.com/8cIklZrl3rmXMD4Hf6oTU5bBuseh3ianLw2IMujps-E
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: 1787
 ht-degree: 0%
 
 ---
@@ -29,7 +41,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service]に対して次の役割を使用できます。 これらのロールを表示または編集するには、Commerce管理者で&#x200B;[!UICONTROL **System**] > [!UICONTROL **権限**] > [!UICONTROL **User Roles**]&#x200B;に移動します。
 
-* **ユーザー** - ユーザーはCommerce管理者に対する管理者アクセス権を持っていますが、Admin Consoleでは製品レベルのアクセス権を管理できません。 ユーザーは、[で](./getting-started.md#create-an-instance) インスタンスを作成[!DNL Commerce Cloud Manager]するためのクレジットを使用することもできます。
+* **ユーザー** - ユーザーはCommerce管理者に対する管理者アクセス権を持っていますが、Admin Consoleでは製品レベルのアクセス権を管理できません。 ユーザーは、[!DNL Commerce Cloud Manager]で[&#x200B; インスタンスを作成](./getting-started.md#create-an-instance)するためのクレジットを使用することもできます。
 
   >[!NOTE]
   >
@@ -43,7 +55,7 @@ ht-degree: 0%
 
 * 管理者 – 管理者には3つの種類があります。
    * [&#x200B; システム管理者](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Admin Consoleを通じて、組織内のすべての製品および製品プロファイルにアクセスできます。
-   * [製品管理者](#add-a-product-admin) – 製品管理者は、[の製品](#add-users)のユーザー、ロール、権限を[!DNL Adobe Admin Console]管理し、[Commerce管理者](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}のユーザーを管理できます。
+   * [製品管理者](#add-a-product-admin) – 製品管理者は、[!DNL Adobe Admin Console]の製品[&#128279;](#add-users)のユーザー、ロール、権限を管理し、[Commerce管理者](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}のユーザーを管理できます。
    * [製品プロファイル管理者](#add-developers-and-product-profile-admins) – 製品プロファイル管理者はAdobe Commerce管理者にアクセスできませんが、[!DNL Adobe Admin Console]で製品のユーザーを管理できます。
 
 Adobe Commerce内の各ロールに付与される権限について詳しくは、[&#x200B; ロールリソース &#x200B;](#role-resources)を参照してください。
@@ -225,11 +237,11 @@ Admin Consoleの「![開発者と管理者」タブのオプション &#x200B;](
 
 [!DNL Adobe Experience Manager Assets]および[!DNL Product Visuals powered by AEM Assets] ユーザーには、次の設定が必要です。
 
-アカウントに[[!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service)へのアクセス権があり、[[!DNL AEM Assets]とともに](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/overview){target="_blank"}[!DNL Adobe Commerce as a Cloud Service]の高度な機能へのアクセスをユーザーに許可する場合は、次のプロセスを完了してください。
+アカウントに[[!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service)へのアクセス権があり、[!DNL Adobe Commerce as a Cloud Service]とともに[[!DNL AEM Assets]](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/overview){target="_blank"}の高度な機能へのアクセスをユーザーに許可する場合は、次のプロセスを完了してください。
 
 >[!NOTE]
 >
->適切なアセット権限を持たないユーザーは、[!DNL AEM Assets]AI画像生成[、](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"}生成バリエーション [など、](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"}の高度な機能にアクセスできません。
+>適切なアセット権限を持たないユーザーは、[AI画像生成](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"}、[生成バリエーション &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"}など、[!DNL AEM Assets]の高度な機能にアクセスできません。
 
 >[!TIP]
 >
@@ -276,7 +288,7 @@ Admin Consoleの「![開発者と管理者」タブのオプション &#x200B;](
 
 ## Experience Managerのインターフェイスにアクセス
 
-ユーザーを[!DNL AEM Assets]に追加した後、[!DNL Experience Manager]https://experience.adobe.com/[に移動して](https://experience.adobe.com/){target="_blank"} インターフェイスにアクセスできます。
+ユーザーを[!DNL AEM Assets]に追加した後、[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}に移動して[!DNL Experience Manager] インターフェイスにアクセスできます。
 
 1. [!UICONTROL **クイックアクセス**] セクションで、[!UICONTROL **Experience Manager**]&#x200B;をクリックするか、[!UICONTROL **Experience Manager**]&#x200B;が表示されない場合は&#x200B;[!UICONTROL **すべて表示**]&#x200B;をクリックします。 次に、[!UICONTROL **Cloud Manager**]&#x200B;をクリックするか、[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}に直接移動します。
 
@@ -292,8 +304,8 @@ Admin Consoleの「![開発者と管理者」タブのオプション &#x200B;](
 
 1. [製品プロファイルにユーザーを追加](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}。
 
-* [Commerce メタデータをサポートするように [!DNL AEM Assets] 設定](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/configure-aem)
-* [&#x200B; アセットの同期のために [!DNL AEM Assets] Commerceと統合](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
+* [Commerce メタデータをサポートするように [!DNL AEM Assets] を設定](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/configure-aem)
+* [Commerceと [!DNL AEM Assets] を連携してアセットを同期](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
 
 {{aem-assets-instance-mapping}}
 

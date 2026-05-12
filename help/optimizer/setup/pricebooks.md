@@ -1,49 +1,57 @@
 ---
-title: 価格台帳
-description: ' [!DNL Adobe Commerce Optimizer] で価格台帳を管理する方法を説明します。'
+title: プライスブック
+description: ' [!DNL Adobe Commerce Optimizer]の価格表の管理方法について説明します。'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/-vL79MMePcUdhE-gPwjFJZStZUtNLKAUxpePm4Fvmfk
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: 384
 ht-degree: 0%
 
 ---
 
-# 価格台帳
+# プライスブック
 
-価格台帳を使用すると、様々な顧客層や市場をまたいでカタログソースの製品価格を定義できます。 価格台帳は階層モデルをサポートしており、各ベース価格台帳の下にネストされた子価格台帳を最大 3 レベルまで作成できます。 各価格台帳は、親価格台帳を参照し、価格設定カタログ・ソースのツリー構造を形成できます。
+価格表：様々な顧客層や市場をまたいで、カタログソースの製品価格を定義できます。 プライスブックは階層モデルをサポートしており、各ベースプライスブックの下にネストされた子プライスブックを最大3つのレベルで表示できます。 各価格表は親価格表を参照し、価格表カタログ ソースのツリー構造を形成できます。
 
-![&#x200B; 価格台帳階層 &#x200B;](../assets/price-book-hier.png)
+![価格表の階層](../assets/price-book-hier.png)
 
-基本価格台帳では、それ自体とすべての子価格台帳に対して通貨が定義されます。 子の価格帳簿はこの通貨を継承し、上書きすることはできません。
+基本価格表は、それ自体とそのすべての子価格表の通貨を定義します。 子価格表はこの通貨を継承し、上書きできません。
 
-## [!DNL Adobe Commerce Optimizer] に価格帳簿を追加します
+## 価格表を[!DNL Adobe Commerce Optimizer]に追加
 
-価格台帳 API を使用して、[!DNL Adobe Commerce Optimizer] に価格台帳を追加します。 [&#x200B; の価格帳簿を作成、更新、削除する方法については、](https://developer.adobe.com/commerce/services/reference/rest/) 開発者向けドキュメント [!DNL Adobe Commerce Optimizer] を参照してください。
+価格表APIを使用して[!DNL Adobe Commerce Optimizer]に価格表を追加します。 [!DNL Adobe Commerce Optimizer]の価格表を作成、更新、削除する方法については、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/)を参照してください。
 
-## [!DNL Adobe Commerce Optimizer] での価格帳簿の表示
+## [!DNL Adobe Commerce Optimizer]の価格表を表示
 
-価格台帳を [!DNL Adobe Commerce Optimizer] に取り込むと、価格台帳のリストと対応する ID が **カタログ表示** ページに表示されます。
+価格表を[!DNL Adobe Commerce Optimizer]に取り込むと、**カタログ ビュー** ページに価格表のリストと対応するIDが表示されます。
 
-1. _ストアの設定_ に移動し、「**[!UICONTROL Catalog views]**」をクリックします。
+1. _ストア設定_&#x200B;に移動し、**[!UICONTROL Catalog views]**&#x200B;をクリックします。
 
-1. 「**[!UICONTROL Create catalog view]**」をクリックします。&#x200B;
+1. **[!UICONTROL Create catalog view]**&#x200B;をクリックします。 &#x200B;
 
-   カタログ表示の詳細を設定で、使用可能な価格台帳の 1 つを選択します。
+   カタログビューの詳細を設定で、使用可能な価格表のいずれかを選択します。
 
-   ![&#x200B; 価格簿名及び ID](../assets/price-book-name-ids.png)
+   ![価格書名とID](../assets/price-book-name-ids.png)
 
 ## 主要な概念
 
-| 用語 | 説明 |
+| 条件 | 説明 |
 |------|-------------|
-| **価格台帳** | カタログソース（特定の地域や顧客層など）の価格を定義する論理グループ化で、製品価格の管理に使用されます。 |
-| **フォールバック価格台帳** | 階層内で最上位の価格台帳。 親がなく、それ自体とすべての下位価格帳簿の通貨を定義する *唯一* 価格帳簿です。<br/><br/> 価格台帳の作成中に親が定義されていない場合（API を介して）、新しいフォールバック価格台帳が作成されます。 |
-| **親価格台帳** | 子に明示的に設定されていない場合に、子の価格台帳が価格を継承できる上位レベルの価格台帳。 |
-| **階層の深度** | 取り込み時に最大 3 つのレベル（フォールバック/子/孫） <br/><br/> 適用されません。 |
-| **通貨** | フォールバック価格帳簿に対してのみ定義します。 すべての児童価格帳簿に引き継がれます。<br/><br/> フォールバック価格台帳の作成時に（API を通じて）通貨を指定しない場合、通貨はデフォルトで USD になります。 |
-| **製品価格** | 特定の価格台帳内で製品（SKU）に割り当てられた特定の価格。 |
-| **割引** | 割引は製品価格で定義されます。 継承されません。 |
+| **価格表** | カタログソースの価格を定義する論理グループ（特定の地域や顧客層など）。製品価格の管理に使用されます。 |
+| **フォールバック価格表** | 階層の最上位の価格表。 親は持たず、*のみ*&#x200B;の価格表で、それ自体とそのすべての子孫の価格表の通貨を定義します。<br/><br/>価格表の作成中に（APIを介して）親が定義されていない場合、新しいフォールバック価格表が作成されます。 |
+| **親価格表** | 子で明示的に設定されていない場合に、子の価格表が価格を継承できる、より上位レベルの価格表。 |
+| **階層の深さ** | 最大3つのレベル（フォールバック/子/孫） <br/><br/>取り込み時に適用されません。 |
+| **通貨** | フォールバック価格表にのみ定義されます。 すべての児童価格本に継承されます。<br/><br/> フォールバック価格表の作成中に（APIを介して）通貨が指定されていない場合、通貨はデフォルトでUSDになります。 |
+| **製品価格** | 特定の価格表の中の製品（SKU）に割り当てられた特定の価格。 |
+| **割引** | 割引は商品価格で定義されています。 継承しない。 |

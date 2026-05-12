@@ -2,9 +2,19 @@
 title: インデックス作成
 description: 製品属性プロパティを [!DNL Live Search]  インデックス作成する方法について説明します。
 exl-id: 01cbbf56-2e12-4ad0-a56d-de0fe13df50f
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/8STop-AunMGpKCLgjQaywtpPRNHF-l7sobRnh82QOXI
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: 787
 ht-degree: 0%
 
 ---
@@ -53,7 +63,7 @@ ht-degree: 0%
 * [&#x200B; カタログデータ同期](install.md#sync)のオンボーディング
 * 属性メタデータの変更
 
-例えば、`Use in Search`属性の`color` プロパティを`No`から`Yes`に変更すると、属性メタデータが`searchable=true`に変更され、完全な同期と再インデックスがトリガーされます。 次の属性メタデータは、完全な同期をトリガーし、変更されたときにインデックスを再作成します。
+例えば、`color`属性の`Use in Search` プロパティを`No`から`Yes`に変更すると、属性メタデータが`searchable=true`に変更され、完全な同期と再インデックスがトリガーされます。 次の属性メタデータは、完全な同期をトリガーし、変更されたときにインデックスを再作成します。
 
 * `filterableInSearch`
 * `searchable`

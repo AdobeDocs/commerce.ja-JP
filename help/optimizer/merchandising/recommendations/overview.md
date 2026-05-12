@@ -1,24 +1,38 @@
 ---
-title: Recommendations の概要
-description: Recommendations は、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる、強力なマーケティングツールです。
+title: 推奨事項の概要
+description: レコメンデーションは、コンバージョンと売上を向上し、買い物客のエンゲージメントを促進するための優れたマーケティングツールです。
 recommendations: noCatalog
-badgeSaas: label="SaaS のみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよびプロジェクトのみ（Adobe [!DNL Adobe Commerce Optimizer]  管理される SaaS インフラストラクチャ）に適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: cb10c802-afaf-40fa-b463-73f5ae507d66
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/dTvy4IlHTOcCHpytRxFkGXCZqUvQwYz4-5q1BXjywII
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: 202
 ht-degree: 0%
 
 ---
 
-# Recommendations の概要
+# 推奨事項の概要
 
-Recommendations は、コンバージョンを増やし、売上高を増やし、買い物客のエンゲージメントを促進するために使用できる、強力なマーケティングツールです。 Recommendations は、人工知能と機械学習アルゴリズムを使用して集計された訪問者データの詳細な分析を実行する [0&rbrace;Adobe AI&rbrace; を活用しています。 &#x200B;](https://business.adobe.com/jp/ai.html)このデータをAdobe Commerce カタログと組み合わせると、非常に魅力的で関連性が高く、パーソナライズされたエクスペリエンスが実現します。
+レコメンデーションは、コンバージョンと売上を向上し、買い物客のエンゲージメントを促進するための優れたマーケティングツールです。 レコメンデーションは、[Adobe AI](https://business.adobe.com/jp/ai.html)によって提供されます。このアルゴリズムは、人工知能とマシンラーニング アルゴリズムを使用して、集約された訪問者データを詳細に分析します。 このデータをAdobe Commerceカタログと組み合わせることで、非常に魅力的で関連性の高い、パーソナライズされた体験を生み出すことができます。
 
-レコメンデーションは、「この商品を閲覧した顧客も閲覧した」などのラベル付きユニットとしてストアフロントに表示されます。 [!DNL Adobe Commerce Optimizer] から直接、ストア表示にわたってレコメンデーションを作成、管理およびデプロイできます。
+「この商品を閲覧したお客様も閲覧した」などのラベル付きのユニットとして、ストアフロントにレコメンデーションが表示されます。 [!DNL Adobe Commerce Optimizer]から直接、ストアビュー全体でレコメンデーションを作成、管理、デプロイできます。
 
 ## プライバシー
 
-Recommendations の目的でのデータ収集には、個人を特定できる情報（PII）は含まれません。 また、Cookie ID や IP アドレスなどのすべてのユーザー識別子は、厳密に匿名化されます。 詳しくは、[Adobeのプライバシーポリシー &#x200B;](https://www.adobe.com/privacy/policy.html) を参照してください。
+Recommendationsの目的でのデータ収集には、個人を特定できる情報（PII）は含まれません。 また、Cookie IDやIP アドレスなどのユーザーIDはすべて厳密に匿名化されています。 詳しくは、[Adobe プライバシーポリシー](https://www.adobe.com/privacy/policy.html)を参照してください。
 
-Recommendations のユーザーは、データ同期について詳しくは [&#x200B; データ同期 &#x200B;](../../setup/data-sync.md) ページを参照できます。
+データの同期に関する詳細なデータについては、[&#x200B; データ同期](../../setup/data-sync.md) ページを参照してください。

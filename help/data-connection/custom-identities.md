@@ -1,61 +1,77 @@
 ---
 title: プロファイルへのカスタム属性の追加
-description: 顧客プロファイルにカスタム属性を追加する方法を説明します。
+description: 顧客プロファイルにカスタム属性を追加する方法について説明します。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 5489910382edc70eea5d7c0ca94da41c653b577d
+exl-id: ad786572-9158-429a-b4dd-5f15efc0f624
+TQID: https://experienceleague.adobe.com/yCA2EjsIzzx7AEOQubLMW4Ib3v8Bbad1Wsq3RsgvCXM
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: 473
 ht-degree: 0%
 
 ---
 
-
 # プロファイルへのカスタム属性の追加
 
-カスタムプロファイル属性を使用すると、デフォルトの `customerId` や `emailId` 以外の識別子を使用して、Experience Platformで顧客プロファイルの ID を強化できます。 これらの識別子を追加することで、より正確な顧客マッチングが可能になり、Commerce プラットフォームとExperience Platformの間のデータ統合が向上します。
+カスタムプロファイル属性を使用すると、デフォルトの`customerId`および`emailId`以外のIDを使用して、Experience Platformでの顧客プロファイルのIDを強化できます。 これらのIDを追加することで、より正確なカスタマーマッチングと、CommerceプラットフォームとExperience Platform間のデータ統合の向上が可能になります。
 
 >[!NOTE]
 >
->注文に [&#x200B; カスタム属性を追加 &#x200B;](custom-attributes.md) する方法を説明します。
+>注文にカスタム属性[&#128279;](custom-attributes.md)を追加する方法について説明します。
 
-## 利点
+## Adobe Workfrontの利点
 
-- 複数の識別子を使用して、顧客とのマッチングを改善します。
-- ビジネスニーズに基づいて、カスタムフィールドを ID 属性にマッピングします。
-- 重複プロファイルを減らし、顧客データの精度を向上させます。
-- よりターゲットを絞った顧客体験を可能にします。
+- 複数のIDを使用して顧客とのマッチングを向上。
+- ビジネスニーズにもとづいて、カスタムフィールドをID属性にマッピングできます。
+- 重複するプロファイルを減らし、顧客データの精度を向上させます。
+- 的を絞った顧客体験を実現。
 
 ## 前提条件
 
-カスタム ID 属性を実装する前に、次のことを確認します。
+カスタム ID属性を実装する前に、次のことを確認してください。
 
-- [データ接続拡張機能のインストール](install.md)
-- [Adobe Experience Platformへの接続](connect-data.md)
+- [Data Connection拡張機能のインストール](install.md)
+- [Adobe Experience Platformに接続](connect-data.md)
 - [顧客プロファイルデータの送信](connect-data.md#send-customer-profile-data)
 
-## 手順 1:Experience Platform スキーマを設定する
+## 手順1:Experience Platform スキーマの設定
 
 1. Adobe Experience Platformにログインし、Commerce スキーマを選択します。
-1. ルートレベルで [&#x200B; カスタム ID フィールドを追加 &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups) します。
-   - `hashedPID` （String） - プライマリ ID ハッシュ
-   - `hashedSID` （String） -セカンダリID ハッシュ
-   - `primaryID` （String） -プライマリID フィールド名
-   - `secondaryID` （String） -セカンダリID フィールド名
+1. [&#x200B; ルートレベルでカスタム ID フィールド &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups)を追加：
+   - `hashedPID` （文字列） - プライマリ ID ハッシュ
+   - `hashedSID` （文字列） -セカンダリID ハッシュ
+   - `primaryID` （文字列） - プライマリ ID フィールド名
+   - `secondaryID` （文字列） -セカンダリID フィールド名
 
-![Experience Platform スキーマの設定 &#x200B;](./assets/aep-schema-configuration.png)
+![Experience Platform Schema Configuration](./assets/aep-schema-configuration.png)
 
 >[!NOTE]
 >
->必要に応じて、正確なフィールド名をカスタマイズできます。 この例では、`hashedPID` および `hashedSID` を ID フィールドとして使用します。
+>必要に応じて、フィールド名を正確にカスタマイズできます。 この例では、ID フィールドとして`hashedPID`と`hashedSID`を使用しています。
 
-## 手順 2：プロセッサクラスの作成
+## 手順2：プロセッサクラスの作成
 
-次の PHP プロセッサクラスをカスタムモジュールに作成します。
+カスタムモジュールに次のPHP プロセッサクラスを作成します。
 
 ### AddressCustomHashedId クラス
 
-このプロセッサーは、顧客アドレス用に `parent_id` と `entity_id` をハッシュ化します。
+このプロセッサーは、顧客アドレスに対して`parent_id`と`entity_id`をハッシュします。
 
 ```php
 <?php declare(strict_types=1);
@@ -80,7 +96,7 @@ class AddressCustomHashedId implements EventDataProcessorInterface
 
 ### AddressCustomId クラス
 
-このプロセッサは、アドレスイベントのプライマリ ID フィールド名とセカンダリ ID フィールド名を設定します。
+このプロセッサーは、アドレスイベントのプライマリ ID フィールド名とセカンダリ ID フィールド名を設定します。
 
 ```php
 <?php declare(strict_types=1);
@@ -109,7 +125,7 @@ class AddressCustomId implements EventDataProcessorInterface
 
 ### CustomHashedId クラス
 
-このプロセッサーは、顧客プロファイルの `entity_id` および `email` をハッシュ化します。
+このプロセッサーは、顧客プロファイルに対して`entity_id`と`email`をハッシュします。
 
 ```php
 <?php declare(strict_types=1);
@@ -134,7 +150,7 @@ class CustomHashedId implements EventDataProcessorInterface
 
 ### CustomId クラス
 
-このプロセッサは、プロファイルイベントのプライマリ ID フィールド名とセカンダリ ID フィールド名を設定します。
+このプロセッサーは、プロファイルイベントのプライマリ ID フィールド名とセカンダリ ID フィールド名を設定します。
 
 ```php
 <?php declare(strict_types=1);
@@ -162,25 +178,25 @@ class CustomId implements EventDataProcessorInterface
 ```
 
 >[!NOTE]
->`primaryID` と `secondaryID` の両方がイベントデータで送信されていることを確認します。 いずれかが見つからない場合、Commerceのデフォルトでは次のようになります。
+>`primaryID`と`secondaryID`の両方がイベントデータで送信されていることを確認してください。 いずれかのオプションがない場合、Commerceのデフォルトは次のようになります。
 >
 >- primaryID = customerId
 >- secondaryID = emailId
 
 >[!BEGINSHADEBOX]
 
-次の 2 つの手順を完了した後：
+次の2つの手順を完了した後：
 
-- Experience PlatformのCommerce スキーマは、プロファイルイベントデータのカスタム ID を適切に取り込むことができます。
-- Commerce PHP コード内のプロセッサクラスは、プロファイルイベントからカスタム ID 情報を収集します。
+- Experience PlatformのCommerce スキーマは、プロファイルイベントデータのカスタム IDを適切に取り込むことができます。
+- CommerceのPHP コード内のプロセッサークラスは、プロファイルイベントからカスタム ID情報を収集します。
 
-これで、Commerceから送信されるプロファイルイベントデータに、カスタム ID 情報が含まれるようになりました。
+Commerceから送信されるプロファイルイベントデータには、カスタム ID情報が含まれます。
 
 >[!ENDSHADEBOX]
 
 ## データ形式の例
 
-次の例は、プロファイル属性と完全な顧客プロファイルデータ形式の両方でカスタム ID 属性に対して期待される JSON 構造を示しています。
+次の例では、プロファイル属性と完全な顧客プロファイルデータ形式の両方で、カスタム ID属性に期待されるJSON構造を示します。
 
 ### プロファイル属性形式
 
@@ -198,7 +214,7 @@ class CustomId implements EventDataProcessorInterface
 }
 ```
 
-### 完全な顧客プロファイル構造
+### 顧客プロファイルの全体構造
 
 ```json
 {
@@ -232,22 +248,22 @@ class CustomId implements EventDataProcessorInterface
 
 ## トラブルシューティング
 
-### プライマリ ID またはセカンダリ ID がありません
+### primaryIDまたはsecondaryIDがありません
 
-- **症状：** データは、デフォルトでカスタム値ではなく customerId/emailId に設定されます。
-- **解決策：** `primaryID` と `secondaryID` の両方が `profileAttributes` オブジェクトに設定されていることを確認します。
+- **症状：** データは、カスタム値の代わりにcustomerId/emailIdにデフォルトで設定されます。
+- **解決策：** `primaryID`と`secondaryID`の両方が`profileAttributes` オブジェクトに設定されていることを確認します。
 
 ### 無効なハッシュ値
 
-- **症状：** ハッシュ値が空か、形式が正しくありません。
-- **解決策：** ハッシュ化する前に、ソースフィールド（`parent_id`、`entity_id`、`email`）に有効なデータが含まれていることを確認してください。
+- **症状：** ハッシュ値が空であるか、形式が正しくありません。
+- **解決策：** ソースフィールド （`parent_id`、`entity_id`、`email`）に有効なデータが含まれていることを確認してからハッシュします。
 
-### プロセッサが実行されていません
+### プロセッサーが実行されない
 
-- **症状：** カスタム属性がイベントデータに表示されない。
-- **解決策：** プロセッサが `events.xml` に正しく登録され、モジュールが有効になっていることを確認してください。
+- **症状：** カスタム属性がイベントデータに表示されません。
+- **解決策：** プロセッサが`events.xml`に正しく登録され、モジュールが有効になっていることを確認してください。
 
 ### Experience Platform スキーマの不一致
 
-- **症状：** Experience Platformまたはスキーマ検証エラーで、データが表示されない。
-- **解決策：** Experience Platform スキーマに、正しいデータタイプを持つカスタム ID フィールドが含まれていることを確認してください。
+- **現象：** データがExperience Platformまたはスキーマ検証エラーに表示されません。
+- **解決策：** Experience Platform スキーマに、正しいデータタイプを持つカスタム ID フィールドが含まれていることを確認します。

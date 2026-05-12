@@ -3,9 +3,18 @@ title: カスタム自動一致
 description: カスタムの自動マッチングが、複雑なマッチングロジックを使用するマーチャントや、メタデータをAEM Assetsに入力できないサードパーティシステムに依存しているマーチャントにとって、特に有用である方法を説明します。
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
+TQID: https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: 603
 ht-degree: 0%
 
 ---
@@ -283,7 +292,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | 属性 | データタイプ | 説明 |
 | --- | --- | --- |
 | `asset_id` | 文字列 | アセット ID。 |
-| `asset_roles` | 配列 | アセットの役割： [、](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)、`thumbnail`、`image`など、サポートされている`small_image`Commerce アセットの役割`swatch_image`を使用します。 |
+| `asset_roles` | 配列 | アセットの役割： `thumbnail`、`image`、`small_image`、`swatch_image`など、サポートされている[Commerce アセットの役割](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)を使用します。 |
 | `asset_format` | 文字列 | アセットの形式です。 指定できる値は`image`と`video`です。 |
 | `asset_position` | 数値 | 製品ギャラリー内のアセットの位置。 |
 

@@ -1,11 +1,24 @@
 ---
 title: カタログ同期
-description: ' [!DNL Commerce] server から  [!DNL Commerce Services] に製品データを書き出す方法を説明します。'
+description: 製品データを [!DNL Commerce]  サーバーから [!DNL Commerce Services]に書き出す方法について説明します。
 feature: Catalog Management, Data Import/Export, Catalog Service
 exl-id: 99f96b93-b036-490c-8c57-40463a0de365
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/-X5W4TJNW6pduPsWH-SLuAXrfP7iReCpaVg5qeu2odA
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: 567
 ht-degree: 0%
 
 ---
@@ -14,70 +27,70 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> カタログ同期ダッシュボードが、データ管理ダッシュボードになりました。 この刷新されたダッシュボードは、[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0 以降、[[!DNL Live Search]](../live-search/overview.md) v4.1.0 以降および [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17 以降をサポートするようになりました。 お客様は、これらのサービスのいずれかの最新バージョンに更新することで、データ管理ダッシュボードを取得できます。 詳しくは、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=ja) ドキュメントを参照してください。 この現在のトピックは、まだアップグレードしておらず、カタログ同期ダッシュボードを使用しているユーザー向けです。
+> カタログ同期ダッシュボードがデータ管理ダッシュボードになりました。 この刷新されたダッシュボードでは、[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0以降、[[!DNL Live Search]](../live-search/overview.md) v4.1.0以降、[[!DNL Catalog Service]](../catalog-service/overview.md) v1.17以降がサポートされるようになりました。 お客様は、これらのサービスの最新バージョンに更新することで、データ管理ダッシュボードを入手できます。 詳しくは、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=ja)のドキュメントを参照してください。 この現在のトピックは、まだアップグレードしておらず、カタログ同期ダッシュボードを持っているユーザーに残ります。
 
-Adobe Commerceはインデクサーを使用して、カタログデータをテーブルにコンパイルします。 プロセスは、製品価格や在庫レベルの変更など [&#x200B; イベント &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=ja#events-that-trigger-full-reindexing) によって自動的にトリガーされます。
+Adobe Commerceでは、インデックスを使用してカタログデータをテーブルにコンパイルします。 このプロセスは、製品価格や在庫レベルの変更など、[&#x200B; イベント &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=ja#events-that-trigger-full-reindexing)によって自動的にトリガーされます。
 
-カタログ同期サービスは、製品データを [!DNL Adobe Commerce] インスタンスから [!DNL Commerce Services] プラットフォームに継続的に移動して、データを最新の状態に保ちます。 例えば、[[!DNL Product Recommendations]](/help/product-recommendations/overview.md) では、現在のカタログ情報を使用して、正確な名前、価格、在庫状況のレコメンデーションを正確に返す必要があります。 _カタログ同期_ ダッシュボードを使用すると、同期プロセスまたはコマンドラインインターフェイスを監視および管理して、カタログ同期をトリガーし、[!DNL Commerce Services] で使用するために製品データを再インデックス化できます。 『 [SaaS データ書き出し &#x200B;](../data-export/data-export-cli-commands.md) ガイド』の「_コマンド ライン インターフェイス リファレンス_」を参照してください。
+カタログ同期サービスは、製品データを継続的に[!DNL Adobe Commerce] インスタンスから[!DNL Commerce Services] プラットフォームに移動し、データを最新の状態に保ちます。 例えば、[[!DNL Product Recommendations]](/help/product-recommendations/overview.md)では、現在のカタログ情報を使用して、正しい名前、価格、および空き状況のレコメンデーションを正確に返す必要があります。 _カタログ同期_ ダッシュボードを使用して、同期プロセスまたはコマンドラインインターフェイスを監視および管理し、カタログ同期をトリガーして、[!DNL Commerce Services]までに商品データを再インデックス化します。 _SaaS データ書き出し_ ガイドの[&#x200B; コマンドラインインターフェイスのリファレンス &#x200B;](../data-export/data-export-cli-commands.md)を参照してください。
 
-## カタログ同期ダッシュボードへのアクセス
+## カタログ同期ダッシュボードにアクセスする
 
-カタログ同期ダッシュボードにアクセスするには、**システム**/_データ転送_/**カタログ同期** を選択します。
+カタログ同期ダッシュボードにアクセスするには、**システム**/_データ転送_/**カタログ同期**&#x200B;を選択します。
 
-**カタログ同期** ダッシュボードを使用すると、次のことができます。
+**カタログ同期** ダッシュボードを使用すると、次のことが可能になります。
 
-- 同期ステータス （**処理中**、**成功**、**失敗**）を表示します
-- 同期された製品の合計数を表示します
-- 同期された製品を検索して現在の状態を表示
-- 名前、SKU などでストアカタログを検索
-- 同期の不一致を診断するのに役立つ、同期された製品の詳細を JSON で表示します
-- 同期プロセスの再開
+- 同期ステータスの表示（**進行中**、**成功**、**失敗**）
+- 同期済み製品の合計数を表示
+- 同期した商品を検索して現在の状態を確認
+- ストア カタログを名前、SKUなどで検索します。
+- 同期された製品の詳細をJSONで表示し、同期の不一致を診断できます
+- 同期プロセスを再開します
 
-### 最終同期
+### 前回の同期
 
-次の同期ステータスを報告：
+次の同期ステータスをレポートします。
 
 - **成功** – 同期が成功した日時と、更新された製品数を表示します
 - **失敗** – 同期が試行された日時を表示します
-- **処理中** – 前回成功した同期の日時を表示します
+- **処理中** – 前回の同期が成功した日時を表示します
 
-カタログ同期プロセスは、1 時間ごとに自動的に実行されます。 ストアフロントに期待した製品が表示されない場合、または製品が最近の変更を反映していない場合は、[&#x200B; カタログ同期の問題 &#x200B;](#resolvesync) を解決できます。
+カタログ同期プロセスは、1時間ごとに自動的に実行されます。 ストアフロントに予想される製品が表示されない場合、または製品が最近の変更を反映しない場合は、[&#x200B; カタログ同期の問題](#resolvesync)を解決できます。
 
-### 同期済み製品
+### 製品の同期
 
-[!DNL Commerce] カタログから同期された製品の合計数を表示します。 最初の同期の後は、変更された製品のみ同期する必要があります。
+[!DNL Commerce] カタログから同期された製品の合計数を表示します。 最初の同期後、変更された製品のみが同期されます。
 
 ## 再同期 {#resync}
 
-1 時間ごとのスケジュールされた同期が発生する前にカタログの再同期を開始する必要がある場合は、再同期を強制できます。
+時間単位でスケジュールされた同期が実行される前にカタログの再同期を開始する必要がある場合は、再同期を強制的に実行できます。
 
 >[!NOTE]
 >
-> 再同期を強制すると、商品カタログ全体の再同期がトリガーされ、ハードウェアリソースの負荷が増す可能性があります。
+> 再同期を強制すると、商品カタログ全体が再トリガーされ、ハードウェアリソースの負荷が増加する可能性があります。
 
-1. _カタログ同期_ ダッシュボードから、「**設定**」を選択します。
+1. _カタログ同期_ ダッシュボードから、**設定**&#x200B;を選択します。
 
    _カタログ同期設定_ ページが表示されます。
 
-1. 「_データの再同期_」セクションで、「[!UICONTROL Resync]」をクリックします。
+1. _データの再同期_ セクションで、[!UICONTROL Resync]をクリックします。
 
-   [!DNL Commerce] は、次にスケジュールされた同期期間中にカタログを同期します。 カタログのサイズによっては、この操作に時間がかかる場合があります。
+   [!DNL Commerce]は、次のスケジュールされた同期ウィンドウ中にカタログを同期します。 カタログのサイズによっては、この操作に時間がかかる場合があります。
 
-## 同期されたカタログ製品
+## 同期されたカタログ商品
 
-**同期されたカタログ製品** テーブルには、次の情報が表示されます。
+**同期済みカタログ製品** テーブルには、次の情報が表示されます。
 
 | フィールド | 説明 |
 |---|---|
-| ID | 商品の一意の ID |
-| 名前 | 商品のストアフロント名 |
-| タイプ | 商品タイプ（シンプル、設定可能、ダウンロード可能など）を識別します |
-| 前回のエクスポート | 商品が最後にカタログから正常に書き出された日付 |
-| 最終変更日 | カタログで製品が最後に変更された日付 |
-| SKU | 商品の在庫管理単位を表示します |
-| 価格 | 商品の価格 |
-| 可視性 | [!DNL Commerce] カタログで定義された製品の表示設定 |
+| ID | 製品の一意のID |
+| 名前 | 製品のストアフロント名 |
+| タイプ | シンプル、設定可能、ダウンロード可能など、製品タイプを示します |
+| 最終書き出し | 商品がカタログから最後に正常にエクスポートされた日付 |
+| 最終変更日 | 商品がカタログで最後に変更された日付 |
+| SKU | 製品の在庫保管単位を表示します |
+| 価格 | 製品の価格 |
+| 表示 | [!DNL Commerce] カタログで定義された製品の表示設定 |
 
-## カタログ同期の問題を解決 {#resolvesync}
+## カタログ同期の問題を解決する {#resolvesync}
 
-[SaaS データ書き出しガイド &#x200B;](../data-export/troubleshooting-logging.md#troubleshooting) の _ログとトラブルシューティング_ を参照してください。
+_SaaS データ書き出しガイド_&#x200B;の「[&#x200B; ログとトラブルシューティング &#x200B;](../data-export/troubleshooting-logging.md#troubleshooting)」を参照してください。

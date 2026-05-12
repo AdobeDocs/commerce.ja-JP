@@ -3,10 +3,26 @@ title: リリースノート
 description: Adobe Commerceの [!DNL Data Connection] 拡張機能の最新のリリース情報。
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/kjXCkifzTRTjVJZuy3fb6VPhQkblOaT7-GxwJP4Dv3Y
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 1%
+source-wordcount: 1350
+ht-degree: 2%
 
 ---
 
@@ -60,7 +76,7 @@ _2023年10月10日_
 ![修正](../assets/fix.svg) - キャッシュを更新した後、通貨設定の変更がイベントに反映されない問題を修正しました。
 ![修正](../assets/fix.svg) – 非同期注文の配置が有効になっている場合に注文確認メッセージが表示されないエラーを修正しました。
 ![新規](../assets/new.svg) - カテゴリ表示ページのシンプルな製品のデータを`addToRequisitionList` イベントに追加しました。
-![修正](../assets/fix.svg) – 注文確認ページから商品が追加された際の`selectedOptions` イベントの`addToRequisitionList` データの問題を修正しました。
+![修正](../assets/fix.svg) – 注文確認ページから商品が追加された際の`addToRequisitionList` イベントの`selectedOptions` データの問題を修正しました。
 ![新規](../assets/new.svg) - カテゴリ表示ページから商品が購買リストに追加されたときに、商品データを`addToRequisitionList` イベントに追加しました。
 ![新規](../assets/new.svg) – 構成可能な製品が製品ビューページから購買リストに追加されたときに`addToRequisitionList` イベントを追加しました。
 ![新規](../assets/new.svg) – 製品数量が購買リストから増加または減少した場合に、`addToRequisitionList`および`removeFromRequisitionList`件のイベントを追加しました。
@@ -72,7 +88,7 @@ _2023年6月10日_
 
 _2023年3月30日_
 
-![新規](../assets/new.svg) - B2B マーチャントの`data-services-b2b`購買リストイベント [を含む](events.md#b2b-events)という拡張機能を追加しました。
+![新規](../assets/new.svg) - B2B マーチャントの[購買リストイベント &#x200B;](events.md#b2b-events)を含む`data-services-b2b`という拡張機能を追加しました。
 ![新規](../assets/new.svg) - `uniqueIdentifier` フィールドを[検索](events.md#search-events) イベントに追加しました。 この新しいフィールドにより、マーチャントは検索リクエストと検索応答を相互参照できます。
 
 _2022年10月12日_
@@ -122,8 +138,8 @@ _2024年10月7日_
 [!BADGE 互換性]{type=Informative tooltip="互換性"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg) - バックオフィス データに[&#x200B; カスタム注文属性](custom-attributes.md)を作成する機能を追加しました。
-![新規](../assets/new.svg) - [で設定され、Experience Platformに送信されたカスタム属性を表示するために、新しい](connect-data.md#data-customization) カスタム注文属性[!DNL Commerce] テーブルを追加しました。
-![新規](../assets/new.svg) - プロファイルレコード [とデータを](connect-data.md#send-customer-profile-data)収集してExperience Platformに送信する機能を追加しました。
+![新規](../assets/new.svg) - [!DNL Commerce]で設定され、Experience Platformに送信されたカスタム属性を表示するために、新しい[&#x200B; カスタム注文属性](connect-data.md#data-customization) テーブルを追加しました。
+![新規](../assets/new.svg) - プロファイルレコード [&#128279;](connect-data.md#send-customer-profile-data)とデータを収集してExperience Platformに送信する機能を追加しました。
 
 ## 3.2.0-beta3
 
@@ -175,8 +191,8 @@ _2024年3月4日_
 [!BADGE 互換性]{type=Informative tooltip="互換性"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg) - ベータ版に参加する場合は、`composer.json` ファイルのルートレベルが`"minimum-stability": "beta"`であることを確認してください。 また、`composer require "magento/customers-connector: ^1.2.0"`を追加して、お客様のCommerce インスタンスからSaaSに顧客プロファイルを送信します。
-![新規](../assets/new.svg) - カスタム属性[を](custom-attributes.md)追加する機能を追加しました。
-![新規](../assets/new.svg) - プロファイルレコード [とデータを](connect-data.md#send-customer-profile-data)収集してExperience Platformに送信する機能を追加しました。
+![新規](../assets/new.svg) - カスタム属性[&#128279;](custom-attributes.md)を追加する機能を追加しました。
+![新規](../assets/new.svg) - プロファイルレコード [&#128279;](connect-data.md#send-customer-profile-data)とデータを収集してExperience Platformに送信する機能を追加しました。
 
 ## 3.1.0
 
@@ -197,7 +213,7 @@ _2023年10月10日_
 これはメジャーバージョンのリリースです。 プロジェクトのルート composer.json ファイルを[編集](install.md#update)します。
 
 ![新規](../assets/new.svg) - [への一般提供は、過去の注文](connect-data.md#send-historical-order-data) データとステータスをExperience Platformに送信します。
-![新規](../assets/new.svg) - [拡張機能を](connect-data.md#connect-commerce-data-to-adobe-experience-platform)構成[!DNL Data Connection]するときにOAuth 2.0のサポートを追加しました。
+![新規](../assets/new.svg) - [!DNL Data Connection]拡張機能を[構成](connect-data.md#connect-commerce-data-to-adobe-experience-platform)するときにOAuth 2.0のサポートを追加しました。
 ![新規](../assets/new.svg) - Adobe Commerce 2.4.3のサポートを終了しました。
 
 ## 2.3.0
@@ -206,7 +222,7 @@ _2023年6月27日_
 
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
 
-![新規](../assets/new.svg) - Experience Platformへのストアフロントイベント [の送信を](connect-data.md#data-collection) オフにする機能を追加しました。
+![新規](../assets/new.svg) - Experience Platformへのストアフロントイベント [&#128279;](connect-data.md#data-collection)の送信を オフにする機能を追加しました。
 ![修正](../assets/fix.svg) - コンテンツセキュリティポリシー設定を更新しました。
 ![修正](../assets/fix.svg) - Commerce 2.4.7 バージョンでのバックオフィスイベントのサポートを修正しました。
 ![新規](../assets/new.svg) - [!DNL Data Connection]拡張機能フォームに変更を保存する際に、キャッシュの無効化に関する通知メッセージを追加しました。
@@ -217,7 +233,7 @@ _2023年6月13日_
 
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
 
-![新規](../assets/new.svg) - （Beta）過去の注文[&#x200B; データとステータスを](connect-data.md#send-historical-order-data)Experience Platformに送信する機能を追加しました。
+![新規](../assets/new.svg) - （Beta）過去の注文[&#128279;](connect-data.md#send-historical-order-data) データとステータスをExperience Platformに送信する機能を追加しました。
 
 ## 2.2.0
 
@@ -243,7 +259,7 @@ _2023年1月17日_
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.3以降
 
 ![新規](../assets/new.svg) - [[!DNL Data Connection] 拡張機能の管理者](connect-data.md)を更新して、独自のAEP Web SDK （合金）を指定できるようにしました。
-エッジにプッシュされたデータのプライマリ IDを設定する際に、![修正](../assets/fix.svg)が`identityMap`ではなく`personID`を使用するように変更されました。
+エッジにプッシュされたデータのプライマリ IDを設定する際に、![修正](../assets/fix.svg)が`personID`ではなく`identityMap`を使用するように変更されました。
 
 ## 2.0.1
 

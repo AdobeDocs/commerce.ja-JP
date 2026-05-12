@@ -2,9 +2,19 @@
 title: ルールを追加
 description: 検索マーチャンダイジングルールの作成方法を説明します。
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/QnJ-q-Y-ccQ7HKEt2RgPYQFeWcBnhjwSDOtKjlF7Rp0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: 2085
 ht-degree: 0%
 
 ---
@@ -16,7 +26,7 @@ ht-degree: 0%
 ## ルールを追加
 
 1. 管理画面で、**マーケティング**/SEOと検索> **[!DNL Live Search]**&#x200B;に移動します。
-1. ルールが適用される&#x200B;**ストアビュー**&#x200B;を識別するために、[&#x200B; スコープ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings)を設定します。
+1. ルールが適用される[&#x200B; ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings)を識別するために、**スコープ**&#x200B;を設定します。
 1. 「**マーチャンダイジングを検索**」ワークスペースをクリックします。
 1. 「**ルールを追加**」をクリックして、ルールエディターを起動します。
 
@@ -46,7 +56,7 @@ ht-degree: 0%
    * 検索クエリーの開始位置 – 買い物客のクエリーの先頭に必要なテキストの文字または文字列を入力します。
    * 検索クエリーの末尾に – 買い物客のクエリーの末尾に必要なテキストの文字または文字列を入力します。
 
-   結果は、*ルールのテスト* ペインですぐに表示され、優先度で番号が付けられます。 上部の&#x200B;*行あたりの結果* スライダーを使用できます    各行の製品数を変更する権限。
+   結果は、*ルールのテスト* ペインですぐに表示され、優先度で番号が付けられます。 右上の&#x200B;*Results per row* スライダーを使用して、各行の商品数を変更できます。
 
    ![&#x200B; ルール – シンプル &#x200B;](assets/rule-simple-test.png)
 

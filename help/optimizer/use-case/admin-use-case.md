@@ -5,9 +5,26 @@ role: Admin, Developer
 feature: Personalization, Integration
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+TQID: https://experienceleague.adobe.com/sqz0syCSh3ls8F-WIbuzPyqeRguyXdsPw-7OerOnDes
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: 2205
 ht-degree: 0%
 
 ---
@@ -253,17 +270,17 @@ Carveloのコマースマネージャーは、*イーストコースト社*&#x20
    - カタログビューIDが表示され、コピーできます
    - カタログソースに「en-US」と表示される
 
-After you create the Celport catalog view and associated policies, the next step is to configure the storefront to use your new Celport catalog.
+Celport カタログビューと関連ポリシーを作成したら、次の手順は、新しいCelport カタログを使用するようにストアフロントを設定することです。
 
-## 3. Update your storefront
+## &#x200B;3. ストアフロントを更新する
 
-The final piece of this tutorial involves updating the storefront that [you already created](#prerequisites) to deliver data to the new Celport catalog. In this section, you replace the catalog view ID in your storefront configuration file with the catalog view ID for Celport.
+このチュートリアルの最後の部分では、[既に作成した](#prerequisites) ストアフロントを更新して、新しいCelport カタログにデータを配信します。 このセクションでは、ストアフロント設定ファイルのカタログビューIDを、CelportのカタログビューIDに置き換えます。
 
-1. In your local development environment, open the folder where you cloned the GitHub repository with your storefront boilerplate configuration files.
+1. ローカル開発環境で、GitHub リポジトリを複製したフォルダーとストアフロントボイラープレート設定ファイルを開きます。
 
-1. In the root directory of the folder, open the `config.json` file.
+1. フォルダーのルートディレクトリで、`config.json` ファイルを開きます。
 
-   +++config.json code
+   +++config.json コード
 
    ```json
    {
@@ -296,26 +313,26 @@ The final piece of this tutorial involves updating the storefront that [you alre
 
    +++
 
-   Notice that the catalog view header includes the following values:
+   カタログビューヘッダーには、次の値が含まれていることに注意してください。
 
    - `commerce-endpoint`: `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
    - `ac-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
    - `ac-price-book-id`: `"west_coast_inc"`
    - `ac-source-locale`: `"en-US"`
 
-1. In the `commerce-endpoint` value, replace the tenant ID in the URL with the URL for your [!DNL Adobe Commerce Optimizer] instance.
+1. `commerce-endpoint`値で、URLのテナント IDを[!DNL Adobe Commerce Optimizer] インスタンスのURLに置き換えます。
 
-   You can find the tenant ID in the URL for the Commerce Optimizer UI. For example, in the following URL, the tenant ID is `XDevkG9W6UbwgQmPn995r3`.
+   テナント IDは、Commerce Optimizer UIのURLで確認できます。 例えば、次のURLでは、テナント IDは`XDevkG9W6UbwgQmPn995r3`です。
 
    ```text
    https://experience.adobe.com/#/@commerceprojectbeacon/in:XDevkG9W6UbwgQmPn995r3/commerce-optimizer-studio/catalog
    ```
 
-1. Replace the `ac-view-id` value with Celport catalog view ID that you copied previously.
+1. `ac-view-id`値を、以前にコピーしたCelport カタログ ビューIDに置き換えます。
 
-1. Replace the `ac-price-book-id` value with `"east_coast_inc"`.
+1. `ac-price-book-id`の値を`"east_coast_inc"`に置き換えます。
 
-   After you make these changes, your `config.json` file should look similar to the following, with the `ACO-tenant-id` and `celport-catalog-view-id` placeholders replaced with your values:
+   これらの変更を行うと、`config.json` ファイルは次のようになり、プレースホルダー`ACO-tenant-id`と`celport-catalog-view-id`が値に置き換えられます。
 
    ```json
    {
@@ -346,17 +363,17 @@ The final piece of this tutorial involves updating the storefront that [you alre
    }
    ```
 
-1. Save the file.
+1. ファイルを保存します。
 
-   When you save the changes, you update the catalog configuration to use the Carvelo catalog view which has been configured to sell only brake and suspension parts.
+   変更を保存する際に、ブレーキとサスペンションの部品のみを販売するように設定されているCarvelo カタログビューを使用するようにカタログ設定を更新します。
 
-## 4. Preview the storefront
+## &#x200B;4. ストアフロントのプレビュー
 
-Now that you have updated the storefront configuration to use the Celport catalog view, you can preview the storefront to see how it renders the catalog data.
+Celport カタログビューを使用するようにストアフロント設定を更新したので、ストアフロントをプレビューして、カタログデータがどのようにレンダリングされるかを確認できます。
 
-1. Launch the storefront to view the Celport-specific catalog experience created by your storefront configuration.
+1. ストアフロントを起動して、ストアフロント設定で作成されたCelport固有のカタログエクスペリエンスを表示します。
 
-   1. From the terminal window in your IDE, start your local storefront preview.
+   1. IDEのターミナルウィンドウから、ローカルストアフロントのプレビューを開始します。
 
       ```shell
       npm start
@@ -410,43 +427,43 @@ Now that you have updated the storefront configuration to use the Celport catalo
 
 - **解決策：**&#x200B;属性名がカタログ内のSKU属性と完全に一致することを確認します
 
-### Catalog view issues
+### カタログ表示の問題
 
-**Problem:** Catalog view not appearing in the list
+**問題：** カタログ ビューがリストに表示されません
 
-- **Solution:** Verify that all associated policies are enabled and properly configured
+- **解決策：**&#x200B;関連するすべてのポリシーが有効で、適切に設定されていることを確認します
 
-### Storefront Configuration Issues
+### ストアフロント設定の問題
 
-**Problem:** Storefront not loading
+**問題：** ストアフロントが読み込まれていません
 
-- **Solution:** Check that your tenant ID and catalog view ID are correctly entered in the config.json file
+- **解決策：** テナント IDとカタログ ビューIDがconfig.json ファイルに正しく入力されていることを確認してください
 
-**Problem:** No products displaying
+**問題：**&#x200B;製品が表示されていません
 
-- **Solution:** Verify that the price book ID matches the one available in your [!DNL Adobe Commerce Optimizer] instance
+- **解決策：**&#x200B;価格表IDが[!DNL Adobe Commerce Optimizer] インスタンスで使用可能なIDと一致することを確認します
 
-**Problem:** Search returning no results
+**問題：**&#x200B;検索結果なし
 
-- **Solution:** Confirm that the catalog view policies allow the searched product category
+- **解決策：** カタログ表示ポリシーで、検索された製品カテゴリが許可されていることを確認します
 
-For additional help, see the [[!DNL Adobe Commerce Optimizer] documentation](../overview.md) or contact Adobe support.
+その他のヘルプについては、[[!DNL Adobe Commerce Optimizer]  ドキュメント &#x200B;](../overview.md)を参照するか、Adobe サポートにお問い合わせください。
 
 ## 概要
 
-In this tutorial, you successfully:
+このチュートリアルでは、次の操作を正常に実行しました。
 
-- Created a new policy to filter product categories for the Celport dealership
-- Set up a catalog view with multiple policies to control product visibility
-- Configured a storefront to use the new catalog view
-- Verified the configuration by testing product visibility and pricing
+- Celport ディーラーの製品カテゴリをフィルタリングする新しいポリシーを作成しました
+- 複数のポリシーを使用してカタログビューを設定し、製品の表示を制御する
+- 新しいカタログビューを使用するようにストアフロントを設定
+- 製品の可視性と価格設定をテストすることで、構成を検証
 
 ## 次のステップ
 
-To continue learning about [!DNL Adobe Commerce Optimizer]:
+[!DNL Adobe Commerce Optimizer]について学び続けるには：
 
-- Explore [merchandising features](../merchandising/overview.md) to personalize the shopping experience
-- Learn about [advanced policy configurations](../setup/policies.md)
-- Set up [additional catalog views](../setup/catalog-view.md) for other dealerships
-- Review the [API documentation](https://developer.adobe.com/commerce/services/optimizer/) for programmatic catalog management
-- Learn how to configure drop-in components for your Edge Delivery Services storefront to create custom storefront experiences for product discovery, recommendations, and other storefront capabilities. See the [Storefront documentation](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=ja)
+- ショッピング体験をパーソナライズするために、[&#x200B; マーチャンダイジング機能](../merchandising/overview.md)を確認してください
+- [詳細ポリシー設定](../setup/policies.md)について説明します
+- 他のディーラー向けに[追加のカタログビュー](../setup/catalog-view.md)を設定
+- プログラマティック カタログ管理については、[API ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)を参照してください
+- Edge Delivery Services ストアフロントのドロップインコンポーネントを設定して、商品の検索やレコメンデーションなどのストアフロント機能のためにカスタムストアフロントエクスペリエンスを作成する方法を説明します。 [Storefront ドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=ja)を参照してください

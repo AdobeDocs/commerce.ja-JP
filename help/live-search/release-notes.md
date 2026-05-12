@@ -3,10 +3,26 @@ title: '[!DNL Live Search] リリースノート'
 description: Adobe Commerceからの [!DNL Live Search] の最新のリリース情報。
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/yqNae8Xsc51q4Zn-WXJ3y48cNnzUDTkDncv-RppkIlI
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2708'
-ht-degree: 0%
+source-wordcount: 2996
+ht-degree: 1%
 
 ---
 
@@ -31,7 +47,7 @@ _2025年10月1日_
 
 _2025年4月29日_
 
-![修正](../assets/fix.svg) 「**パフォーマンス**」タブの&#x200B;[**CSV**](./performance.md)への書き出しレポートに、日付範囲で指定されたすべてのデータが含まれていない問題を修正しました。
+![修正](../assets/fix.svg) 「[**パフォーマンス**](./performance.md)」タブの&#x200B;**CSV**&#x200B;への書き出しレポートに、日付範囲で指定されたすべてのデータが含まれていない問題を修正しました。
 ![修正](../assets/fix.svg)検索クエリフィルターを使用した場合、[&#x200B; マーチャンダイジングルール &#x200B;](./rules.md)を保存できない問題を修正しました。
 ![修正](../assets/fix.svg)結果ページの上部に[&#x200B; ピン留めされた製品](./facets-manage.md#pinunpin-facet)が表示されない問題を修正しました。
 
@@ -45,7 +61,7 @@ _2025年4月3日_
 
 _2025年2月20日_
 
-![新規](../assets/new.svg) Commerceは、複数の単語の類義語をサポートしています。 [詳細情報](synonyms-type.md#multi-word-synonym-behavior)。 マルチワードの類義語のサポートは、この2月20日のリリース日以降のみ利用可能です。 既存のマルチワードの類義語を使用する場合は、完全なインデックス再作成が必要です。このインデックスを作成するには、[&#x200B; サポートチケットの作成](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)を依頼してください。
+![新規](../assets/new.svg) Commerceは、複数の単語の類義語をサポートしています。 [学習を増やす](synonyms-type.md#multi-word-synonym-behavior)。 マルチワードの類義語のサポートは、この2月20日のリリース日以降のみ利用可能です。 既存のマルチワードの類義語を使用する場合は、完全なインデックス再作成が必要です。このインデックスを作成するには、[&#x200B; サポートチケットの作成](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)を依頼してください。
 
 _2025年1月31日_
 
@@ -124,8 +140,8 @@ _2025年10月9日_
 
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-次の高度な検索機能に関する![新規](../assets/new.svg)のGA リリース：`startsWith`と`contains`を使用した階層検索。 [詳細情報](workspace.md#layered-search-and-expansion-of-search-types)。
-![修正](../assets/fix.svg) `ProductInterface` ライブサーチ [&#x200B; サービスの](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) オブジェクトは非推奨（廃止予定）になりました。 代わりに、カタログサービスで`ProductView` オブジェクトを使用してください。
+次の高度な検索機能に関する![新規](../assets/new.svg)のGA リリース：`startsWith`と`contains`を使用した階層検索。 [学習を増やす](workspace.md#layered-search-and-expansion-of-search-types)。
+![修正](../assets/fix.svg) [&#x200B; ライブサーチ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) サービスの`ProductInterface` オブジェクトは非推奨（廃止予定）になりました。 代わりに、カタログサービスで`ProductView` オブジェクトを使用してください。
 
 ## [!DNL Live Search] 4.5.0
 
@@ -273,8 +289,8 @@ _2023年9月15日_
 ![新](../assets/new.svg) インテリジェントなランキングを使用してサブカテゴリを削除すると、詳細な情報が提供されます
 ![新規](../assets/new.svg)継承されたランキング戦略のルールを削除する機能を追加しました
 ![新規](../assets/new.svg)単一カテゴリのルールを削除する機能を追加しました
-![新規](../assets/new.svg) ユーザーがルールを追加するときに、カテゴリ名で検索できるようになりました
-![新規](../assets/new.svg) カテゴリツリー表示で、ユーザーはルールが適用されているカテゴリを表示できるようになりました。
+![新規](../assets/new.svg) ユーザーがルールを追加する際に、カテゴリ名で検索できるようになりました
+![新規](../assets/new.svg) カテゴリーツリー表示では、適用されたルールを持つカテゴリを表示できるようになりました。
 ![新規](../assets/new.svg) カテゴリのプレビューには、選択したカテゴリのみが表示されます。
 ![新規](../assets/new.svg) AEM CIF [&#x200B; ポップオーバーウィジェット &#x200B;](https://github.com/adobe/aem-cif-guides-venia/pull/319)および[PLP ウィジェット &#x200B;](https://github.com/adobe/aem-cif-guides-venia/pull/320) コンポーネントを使用すると、AEM サイトで[!DNL Live Search]を利用できます。
 
@@ -286,9 +302,9 @@ _2023年9月15日_
 - 3日間（デフォルト）
 - 14日間
 - 30日間
-![修正](../assets/fix.svg) 「イベント」（ブースト/ピン/埋め込み/非表示）の名前が「手動ランキング」に変更されました
+![修正](../assets/fix.svg) &#39;イベント&#39; （Boost/Pin/Bury/Hide）の名前が「手動ランキング」に変更されました
 ![修正](../assets/fix.svg) 「ランキングタイプ」の名前が「インテリジェントランキング」に変更されました
-![軽微なバグの修正](../assets/fix.svg)
+![軽微なバグ修正](../assets/fix.svg)件
 
 ### [!DNL Live Search] 3.1.0
 
@@ -338,23 +354,23 @@ _2023年3月14日_
 #### 新機能
 
 ルールプレビューの![新規](../assets/new.svg)製品項目カード
-![新規](../assets/new.svg) [製品リストページ ウィジェット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-storefront/plp-styling)
-![新規](../assets/new.svg) [&#x200B; カテゴリフィルターオプション &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
-![新規](../assets/new.svg) ピンイベントを作成するためのドラッグ&amp;ドロップ機能を追加しました
-![新規](../assets/new.svg)新しいピン操作：
+![新規](../assets/new.svg) [製品リストページ ウィジェット](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-storefront/plp-styling)
+![新規](../assets/new.svg) [&#x200B; カテゴリのフィルターオプション](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![新規](../assets/new.svg) ピンイベントを作成するためにドラッグ&amp;ドロップ機能を追加しました
+![新規](../assets/new.svg)件の新しいピン操作：
 - Pin to spot - Pin ボタンをクリックするだけでPin イベントを作成
 - Pin to top – 製品を最初の位置に配置します
 - Pin to bottom – 結果の一番下に製品を配置します
 - ワンクリックでイベントのピン留めを解除
-![新規](../assets/new.svg) [&#x200B; ルールのインテリジェントなランキング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/rules/rules-add)
-![新規](../assets/new.svg) [!DNL Live Search]では、Commerceの[Inventory management](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/introduction)機能が完全にサポートされるようになりました（以前はマルチSource インベントリ（MSI）と呼ばれていました）。 完全なサポートを有効にするには、依存関係モジュール [をバージョン 102.2.0以降に](install.md#updating-live-search)更新`commerce-data-export`する必要があります。
+ルールの![新規](../assets/new.svg) [&#x200B; インテリジェントなランキング](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/rules/rules-add)
+![新規](../assets/new.svg) [!DNL Live Search]では、Commerceの[Inventory management](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/introduction)機能が完全にサポートされるようになりました（以前はマルチSource インベントリ（MSI）と呼ばれていました）。 完全なサポートを有効にするには、依存関係モジュール `commerce-data-export`をバージョン 102.2.0以降に[更新](install.md#updating-live-search)する必要があります。
 
 #### 更新
 
 ![修正](../assets/fix.svg) ルールの設定で、位置が一意に自動的に並べ替えられるようになりました
 ![修正](../assets/fix.svg)既存のイベントを削除すると、プレビューが更新されます
 イベントのない![修正](../assets/fix.svg) ルールは保存できません
-![修正](../assets/fix.svg) ファセットの削除「タイプを選択」セレクター
+![修正](../assets/fix.svg) ファセットの「タイプを選択」セレクターの削除
 ![修正](../assets/fix.svg)未保存のルールの新しい「編集」ステータスを追加しました
 
 #### 修正
@@ -362,10 +378,10 @@ _2023年3月14日_
 ![修正](../assets/fix.svg)保存中に未完成のイベントがある場合の固定サーバーエラー
 ![修正](../assets/fix.svg)複数のイベントがある場合に特定のイベントを正しく削除する問題を修正しました
 ![修正](../assets/fix.svg)新しいイベントが追加されたときに、既存のルールイベントが更新されない問題を修正しました
-![修正](../assets/fix.svg) 2回目の「編集」クリックで修正されました。詳細、[!DNL Live Search] ページで再読み込みが必要です
-![修正](../assets/fix.svg)類義語：ユーザーが入力からクリックアウトした際に、フィールドにフォーカスを返すことができなかった問題を修正しました
+![修正](../assets/fix.svg)詳細から2回目の「編集」クリック時に修正されました。[!DNL Live Search] ページでリロードが必要です
+![修正](../assets/fix.svg)類義語：ユーザーが入力からクリックアウトした際に、フォーカスをフィールドに戻すことができなかった問題を修正しました
 ![修正](../assets/fix.svg)その他のマイナーなバグ修正とパフォーマンスの更新
-![&#x200B; バグ &#x200B;](../assets/bug.svg) - 「おすすめ」によるランキングは、ライブサーチウィジェット内でのみサポートされています。 デフォルトのLumaおよびPWA検索機能ではサポートされていません。
+![&#x200B; バグ &#x200B;](../assets/bug.svg) - 「おすすめ」によるランキングは、ライブサーチ ウィジェット内でのみサポートされています。 デフォルトのLumaおよびPWA検索機能ではサポートされていません。
 ![&#x200B; バグ &#x200B;](../assets/bug.svg) - カスタム価格属性ファセットがLumaで正しくレンダリングされませんが、APIは正しくフィルタリングします。
 
 これらの機能にアクセスするには、[!DNL Live Search]拡張機能バージョン >= 3.0.1をアップグレードする必要があります。
@@ -418,8 +434,8 @@ _2023年3月14日_
 ![新規](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/)は[!DNL Live Search]でサポートされています。
 ![新規](../assets/new.svg) [!DNL Live Search]のインストールプロセスが更新され、高度なプロセスが変更されます。
 ![修正](../assets/fix.svg) [詳細検索](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search) リンクがストアフロント フッターから削除されました。
-![&#x200B; バグ &#x200B;](../assets/bug.svg)次の製品属性は、[Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)で、PWAのベータ版リリースに関連して使用されている場合はサポートされていません：`description`、`name`、`short_description`
-![&#x200B; バグ &#x200B;](../assets/bug.svg) [!DNL Live Search]のPWAのベータ版リリースは、[&#x200B; イベント処理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)をサポートしていません。
+![&#x200B; バグ &#x200B;](../assets/bug.svg)次の製品属性は、[Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)で、PWAのベータ版リリースに関連して使用される場合はサポートされていません：`description`、`name`、 `short_description`
+![&#x200B; バグ &#x200B;](../assets/bug.svg) [!DNL Live Search]向けPWAのベータ版リリースは、[&#x200B; イベント処理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)をサポートしていません。
 
 ### [!DNL Live Search] 1.3.1
 
@@ -435,10 +451,10 @@ _2023年3月14日_
 
 ![新規](../assets/new.svg) [&#x200B; パフォーマンス &#x200B;](performance.md) レポート ダッシュボードでは、買い物客が使用する検索語にinsightが使用されます。
 ![新規](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)では、イベントの公開とサブスクリプションサービス、および指標を使用して、共通のデータレイヤーにアクセスできます。
-![修正](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)には、表示を制御する`active` コンテナ用の新しい`.search-autocomplete` クラスがあります。
+![修正](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)には、表示を制御する`.search-autocomplete` コンテナ用の新しい`active` クラスがあります。
 ![修正](../assets/fix.svg) ストアフロントでは、[検索語](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-terms) フッターリンクが削除され、[!DNL Live Search]回のインストールでキャッシュが無効になります。
 検索アダプタの![&#x200B; バグ &#x200B;](../assets/bug.svg) パッチは、重複する製品を処理します。
-![&#x200B; バグ &#x200B;](../assets/bug.svg) [!DNL Live Search]は、複数の（仮想） [在庫](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/sources/sources-manage)を持つ[&#x200B; シングルソース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/stocks/stocks-manage) （物理）在庫場所をサポートしています。 現在、複数の在庫ソースはサポートされていません。
+![&#x200B; バグ &#x200B;](../assets/bug.svg) [!DNL Live Search]は、複数の（仮想） [在庫](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/stocks/stocks-manage)を持つ[&#x200B; シングルソース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/sources/sources-manage) （物理）在庫場所をサポートしています。 現在、複数の在庫ソースはサポートされていません。
 
 ### [!DNL Live Search] 1.2.0
 
@@ -448,9 +464,9 @@ _2023年3月14日_
 キーボードが非アクティブな状態が長期間続くと、![新規](../assets/new.svg) Commerce *管理者* セッションが開いたままになる
 ![新規](../assets/new.svg) [!DNL Live Search]は、オンボーディング後に自動的に有効になります
 ![修正](../assets/fix.svg)最初のインデックス作成時間が1時間未満です
-![修正](../assets/fix.svg)製品の増分更新をほぼリアルタイムで（インストールおよびセットアップ後）
-![類義語エディターの](../assets/fix.svg)並べ替え可能な列の修正
-検索条件に空のソート順序値が含まれている場合、![修正](../assets/fix.svg) [!DNL Live Search]でエラーがスローされなくなりました
+![修正](../assets/fix.svg)製品の増分更新をほぼリアルタイムで実行します（インストールおよびセットアップ後）
+同義語エディターの![修正](../assets/fix.svg)並べ替え可能な列
+検索条件に空の並べ替え順序値が含まれている場合、![修正](../assets/fix.svg) [!DNL Live Search]でエラーがスローされなくなりました
 ![属性コードに「から」または「から」の文字列が含まれている場合、範囲フィルタリングが壊れなくなりました](../assets/fix.svg)
 
 ### [!DNL Live Search] 1.1.0
@@ -468,6 +484,6 @@ _2023年3月14日_
 
 詳細については、こちらをご覧ください：
 
-- [Adobe Commerce開発者向けドキュメント &#x200B;](https://developer.adobe.com/commerce/docs)
-- [Adobe Commerce ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce)
-- [[!DNL Live Search]  マーケットプレイス &#x200B;](https://commercemarketplace.adobe.com/magento-live-search.html)
+- [Adobe Commerce開発者向けドキュメント](https://developer.adobe.com/commerce/docs)
+- [Adobe Commerce ユーザーガイド](https://experienceleague.adobe.com/ja/docs/commerce)
+- [Marketplace上の[!DNL Live Search]](https://commercemarketplace.adobe.com/magento-live-search.html)
