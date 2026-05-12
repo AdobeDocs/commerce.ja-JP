@@ -26,7 +26,7 @@ ht-degree: 0%
 
 このビデオでは、カテゴリーマーチャンダイジングの概要を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424617)
+>[!VIDEO](https://video.tv.adobe.com/v/3448852?captions=jpn)
 
 この機能は、管理画面の&#x200B;**マーケティング**/SEOと検索> **[!DNL Live Search]**> **カテゴリーマーチャンダイジング**&#x200B;からアクセスできます。
 

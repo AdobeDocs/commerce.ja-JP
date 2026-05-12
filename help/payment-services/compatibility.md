@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ### どの[!DNL Payment Services] オプションが適していますか？
 
->[!VIDEO](https://video.tv.adobe.com/v/3447811)
+>[!VIDEO](https://video.tv.adobe.com/v/3447919?captions=jpn)
 
 [!DNL Payment Services]拡張機能の設定について詳しくは、[Connect](connect.md)を参照してください。
 
