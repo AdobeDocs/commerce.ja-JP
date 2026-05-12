@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c3e995d46b7cfca3186b7599e22b825f0efa80f1
 workflow-type: tm+mt
-source-wordcount: 2996
+source-wordcount: 3052
 ht-degree: 1%
 
 ---
@@ -117,6 +117,15 @@ _2024年5月31日_
 _2023年10月27日_
 
 ![新規](../assets/new.svg) [!DNL Live Search] PLP ウィジェットでカラースウォッチがサポートされるようになりました。
+
+
+## [!DNL Live Search] 4.7.1
+
+_2026年5月12日_
+
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+
+![修正](../assets/fix.svg)CSPが制限モードで設定され、インラインスクリプトが無効になっている場合に、[!DNL Live Search] ストアフロントポップオーバースクリプトがコンテンツセキュリティポリシー（CSP）エラーを引き起こす問題を修正しました。 拡張機能では、これらのスクリプトに対してセキュアレンダリングが使用されるようになったため、ページはCSP script-src違反なしで読み込まれます。
 
 ## [!DNL Live Search] 4.7.0
 
