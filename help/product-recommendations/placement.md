@@ -3,10 +3,14 @@ title: 配置とラベル
 description: サイトのさまざまなページにレコメンデーションを配置する場所と、各レコメンデーションタイプで頻繁に使用するラベルの推奨事項について説明します。
 exl-id: 0576add8-50dd-4aac-91f5-38b7d85b751f
 TQID: https://experienceleague.adobe.com/Bu5SbZHmj-PfJ3-KnVTu6sc4emkmRJeWTusmQHYz1aU
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 500
@@ -31,14 +35,14 @@ ht-degree: 0%
 - メインコンテンツの上部 – レコメンデーションは、上部のナビゲーションバーのすぐ下のメインコンテンツ領域の上に表示されます。
 - メインコンテンツの下部（デフォルト） – レコメンデーションは、メインコンテンツ領域の下、および&#x200B;_関連製品_&#x200B;など、ページ上の他のコンテンツブロックの前に表示されます。
 
-![ レコメンデーションの配置](assets/storefront-home-page-top.png)
+![&#x200B; レコメンデーションの配置](assets/storefront-home-page-top.png)
 _ホームページ上部のレコメンデーション_
 
 ## レコメンデーションラベル
 
 ストアフロントのレコメンデーションに割り当てられたラベルは、買い物客がそれらのレコメンデーションをどのように解釈するかに影響します。 以下のラベルは、レコメンデーションのタイプごとに頻繁に使用されます。
 
-![ レコメンデーションの配置](assets/storefront-search-results-top.png)
+![&#x200B; レコメンデーションの配置](assets/storefront-search-results-top.png)
 _検索結果の上位のレコメンデーション_
 
 | レコメンデーションタイプ | 推奨ラベル |
@@ -64,4 +68,4 @@ _検索結果の上位のレコメンデーション_
 | 商品詳細 | メインコンテンツの下部（デフォルト） | 最も閲覧された<br>最も購入された商品<br>最も購入された商品<br>これを閲覧した商品、<br>閲覧した商品、<br>購入した商品、<br>購入した商品など<br> トレンド <br>視覚的な類似性 |
 | 買い物かご | メインコンテンツの下部（デフォルト） | 最も閲覧された<br>最も購入された商品<br>最も購入された商品<br>これを閲覧した商品、<br>これを閲覧した商品、<br>これを購入した商品、<br>追加商品<br> トレンド |
 | 確認 | メインコンテンツの下部（デフォルト） | 最も閲覧された<br>最も購入された商品<br>最も購入された商品<br>これを閲覧した商品、<br>これを閲覧した商品、<br>これを購入した商品、<br>追加商品<br> トレンド |
-| ページビルダー | [ ドラッグ&amp;ドロップ ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)でコンテンツの種類を配置 | 最も閲覧された商品<br>最も購入された商品<br>最もカートに追加された商品<br>あなたにおすすめ<br> トレンド |
+| ページビルダー | [&#x200B; ドラッグ&amp;ドロップ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)でコンテンツの種類を配置 | 最も閲覧された商品<br>最も購入された商品<br>最もカートに追加された商品<br>あなたにおすすめ<br> トレンド |

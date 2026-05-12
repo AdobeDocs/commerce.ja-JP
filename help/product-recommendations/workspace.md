@@ -3,10 +3,18 @@ title: '[!DNL Product Recommendations] Workspace'
 description: 商品レコメンデーションのパフォーマンスを設定、管理、監視する方法について説明します。
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
 TQID: https://experienceleague.adobe.com/1dnLBQhNwu1rP0FtnvUGMGpdbKveACW9SNMBIHYzmAg
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 919
@@ -34,17 +42,17 @@ _推奨事項Workspace_
 
 ヘッドレスストアフロントを使用している場合は、追加する必要がある必須イベントについて詳しくは、次のドキュメントを参照してください。
 
-- 商品レコメンデーションダッシュボードの[必要なイベント ](events.md)。
-- 前提条件として追加する必要がある[ ストアフロントイベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)です。
+- 商品レコメンデーションダッシュボードの[必要なイベント &#x200B;](events.md)。
+- 前提条件として追加する必要がある[&#x200B; ストアフロントイベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)です。
 - イベント構造の[例](https://github.com/adobe/commerce-events/tree/main/examples)。
 
 ## 範囲の設定
 
-最初は、すべてのレコメンデーション設定の[ スコープ ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)が`Default Store View`に設定されます。 Commerceのインストールに複数のストアビューが含まれる場合は、推奨事項が適用される&#x200B;**Scope**&#x200B;を[ ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)に設定します。
+最初は、すべてのレコメンデーション設定の[&#x200B; スコープ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)が`Default Store View`に設定されます。 Commerceのインストールに複数のストアビューが含まれる場合は、推奨事項が適用される&#x200B;**Scope**&#x200B;を[&#x200B; ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)に設定します。
 
 ## 指標の日付範囲の設定
 
-1. **カレンダー** ![ カレンダーセレクター](assets/icon-calendar.png) コントロールをクリックします。
+1. **カレンダー** ![&#x200B; カレンダーセレクター](assets/icon-calendar.png) コントロールをクリックします。
 
 1. 次のいずれかを選択します。
 
@@ -56,7 +64,7 @@ _推奨事項Workspace_
 
    >[!NOTE]
    >
-   >製品レコメンデーション指標は、Luma ストアフロント用に最適化されています。 ストアフロントがLuma ベース以外の場合、指標がデータを追跡する方法は、[ イベントコレクションの実装方法](events.md)によって異なります。
+   >製品レコメンデーション指標は、Luma ストアフロント用に最適化されています。 ストアフロントがLuma ベース以外の場合、指標がデータを追跡する方法は、[&#x200B; イベントコレクションの実装方法](events.md)によって異なります。
 
 ## 列の表示/非表示
 
@@ -106,7 +114,7 @@ _推奨事項の設定_
 
 | 制御 | 説明 |
 |---|---|
-| ![ カレンダーセレクター](assets/icon-calendar.png) | 指標の計算に使用する時間の範囲を指定します。 オプション：24時間/7日/30日 |
+| ![&#x200B; カレンダーセレクター](assets/icon-calendar.png) | 指標の計算に使用する時間の範囲を指定します。 オプション：24時間/7日/30日 |
 | ![列セレクター](assets/icon-show-hide-columns.png) | [!DNL Product Recommendations] テーブルに表示される列を決定します。 |
 | 設定 | レコメンデーションと行動データが取得されるSaaS データスペースを決定し、視覚的な類似性レコメンデーションタイプも有効にします。 |
 | レコメンデーションを作成 | [新しいレコメンデーションの作成](create.md) ページを開きます。 |

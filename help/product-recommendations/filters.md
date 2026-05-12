@@ -3,9 +3,12 @@ title: 商品を絞り込む
 description: 商品をレコメンデーションに含めるか、除外する条件を定義します。
 exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
 TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 775
@@ -38,11 +41,11 @@ Adobe Commerceは、設定不可能なデフォルトフィルターをレコメ
 
 >[!NOTE]
 >
-> 包含フィルターと除外フィルターは、バージョン 3.2.2以降の`magento/product-recommendations` モジュールの従来のカテゴリの除外に置き換わります。 Adobe Commerce リリースについて詳しくは、[ リリースノート ](release-notes.md)を参照してください。
+> 包含フィルターと除外フィルターは、バージョン 3.2.2以降の`magento/product-recommendations` モジュールの従来のカテゴリの除外に置き換わります。 Adobe Commerce リリースについて詳しくは、[&#x200B; リリースノート &#x200B;](release-notes.md)を参照してください。
 
 ## フィルターの種類 {#filtertypes}
 
-![ フィルター](assets/rec-conditions.png)
+![&#x200B; フィルター](assets/rec-conditions.png)
 
 ### カテゴリ
 
@@ -52,7 +55,7 @@ Adobe Commerceは、設定不可能なデフォルトフィルターをレコメ
 
 >[!NOTE]
 >
->B2B マーチャントの場合、カテゴリーフィルターは、設定した[顧客固有の製品カテゴリ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)に準拠します。
+>B2B マーチャントの場合、カテゴリーフィルターは、設定した[顧客固有の製品カテゴリ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)に準拠します。
 
 Adobe Commerceでは、ページタイプにレコメンデーションをデプロイする際に、次のカテゴリーフィルター設定を使用することをお勧めします。
 

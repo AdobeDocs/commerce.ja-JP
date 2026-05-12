@@ -3,9 +3,12 @@ title: マーチャンダイジングの検索
 description: '[!DNL Live Search]件のマーチャンダイジングルールは、ロジックとアクションを組み合わせて、ショッピング体験を形成します。'
 exl-id: 9894bf2b-8556-4057-aa23-ebdcb1599914
 TQID: https://experienceleague.adobe.com/WP92dt45BJo8-pJDaWY-9ocDd4GdJVWcOqzVLfjnEkI
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 695
@@ -78,5 +81,5 @@ ht-degree: 0%
 
 ## カテゴリマーチャンダイジングとカテゴリ製品の割り当て
 
-[!DNL Live Search]では、カテゴリ別にフィルタリングできます。 詳しくは、[ カテゴリーマーチャンダイジング ](category-merch.md)を参照してください。
-ただし、Adobe Commerceでは、[ カテゴリー商品の割り当て](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)を含むバーチャルカテゴリーを作成できます。 この種類のカテゴリは実行時に構築され、カテゴリデータベースには存在しません。 したがって、[!DNL Live Search]はこのカテゴリの種類を読み取ったり使用したりすることはできません。
+[!DNL Live Search]では、カテゴリ別にフィルタリングできます。 詳しくは、[&#x200B; カテゴリーマーチャンダイジング &#x200B;](category-merch.md)を参照してください。
+ただし、Adobe Commerceでは、[&#x200B; カテゴリー商品の割り当て](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)を含むバーチャルカテゴリーを作成できます。 この種類のカテゴリは実行時に構築され、カテゴリデータベースには存在しません。 したがって、[!DNL Live Search]はこのカテゴリの種類を読み取ったり使用したりすることはできません。

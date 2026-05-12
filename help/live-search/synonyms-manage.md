@@ -3,8 +3,10 @@ title: 同義語の管理
 description: 既存の [!DNL Live Search] 類義語を管理する方法について説明します。
 exl-id: 648e5fec-acc5-4244-aa26-8120c62abe6a
 TQID: https://experienceleague.adobe.com/-B-ixlItkljDDCrau969-DPOvxPxhWM6NWRSG-TFcak
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 222
@@ -32,7 +34,7 @@ ht-degree: 0%
 
 1. 編集する同義語を見つけて、**詳細** （。..）をクリックします。 オプション：
 
-1. **編集**をクリックします。
+1. **編集**&#x200B;をクリックします。
 キーワードはリストの最初の用語で、各用語はコンマで区切られます。 キーワードと拡張の用語は更新できますが、類義語のタイプを変更することはできません。
 1. 編集する項目をクリックします。 次に、必要に応じてテキストを更新します。
 

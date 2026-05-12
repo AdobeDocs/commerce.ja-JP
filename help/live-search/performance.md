@@ -3,9 +3,12 @@ title: パフォーマンス
 description: ' [!DNL Live Search]  パフォーマンスワークスペースでは、買い物客が使用する検索語にinsightが提供されます。'
 exl-id: 07a63df8-b981-4913-841a-7e81ec634281
 TQID: https://experienceleague.adobe.com/COyaQi4zdeb4Uyf7XV1iYJa-bbDkEP-Os59bmfdLV0w
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 668
@@ -21,9 +24,9 @@ ht-degree: 0%
 * 結果ゼロ
 * 注目の検索結果
 
-![ パフォーマンス ](assets/performance-unique-searches.png)
+![&#x200B; パフォーマンス &#x200B;](assets/performance-unique-searches.png)
 
-データの同期について詳しくは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)を参照してください。
+データの同期について詳しくは、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)を参照してください。
 
 >[!NOTE]
 >
@@ -31,7 +34,7 @@ ht-degree: 0%
 
 ## レポートを読む
 
-1. **日付範囲**&#x200B;を入力するには、カレンダー（![ カレンダー](assets/btn-calendar.png)）をクリックし、次のいずれかの操作を行います。
+1. **日付範囲**&#x200B;を入力するには、カレンダー（![&#x200B; カレンダー](assets/btn-calendar.png)）をクリックし、次のいずれかの操作を行います。
 
    * 1つの日付を指定するには、カレンダーの日付をダブルクリックします。
    * 日付の範囲を指定するには、カレンダーの最初と最後の日付をクリックします。

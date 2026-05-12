@@ -8,10 +8,14 @@ role: Developer
 level: Intermediate
 type: Tutorial
 TQID: https://experienceleague.adobe.com/UvtVXuUjbanuVWqNG3-bYQh6IzY1OuDjGYpojtXHMHY
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1291
@@ -21,7 +25,7 @@ ht-degree: 0%
 
 # チュートリアルの前提条件
 
-このページでは、[評価の拡張機能チュートリアル ](./ratings-extension.md)や[配送方法の拡張機能チュートリアル ](./shipping-method-extension.md)など、[!DNL Adobe Commerce as a Cloud Service] チュートリアルの前提条件と設定手順について説明します。
+このページでは、[評価の拡張機能チュートリアル &#x200B;](./ratings-extension.md)や[配送方法の拡張機能チュートリアル &#x200B;](./shipping-method-extension.md)など、[!DNL Adobe Commerce as a Cloud Service] チュートリアルの前提条件と設定手順について説明します。
 
 ## 一般的な前提条件
 
@@ -42,9 +46,9 @@ ht-degree: 0%
 
 * バッシュシェル
    * macOS/Linux：インストールは不要
-   * Windows: [Git Bash](https://git-scm.com/install)または[Windows Subsystem for Linux （WSL） ](https://learn.microsoft.com/en-us/windows/wsl/install)を使用
+   * Windows: [Git Bash](https://git-scm.com/install)または[Windows Subsystem for Linux （WSL） &#x200B;](https://learn.microsoft.com/en-us/windows/wsl/install)を使用
 
-* [ カーソル ](https://cursor.com/download)などのAI支援IDEのダウンロード（推奨）。 Claude Code、Gemini CLI、Copilotなどの他のIDEもサポートされていますが、チュートリアルのプロンプトやその他の手順の変更が必要になる場合があります。
+* [&#x200B; カーソル &#x200B;](https://cursor.com/download)などのAI支援IDEのダウンロード（推奨）。 Claude Code、Gemini CLI、Copilotなどの他のIDEもサポートされていますが、チュートリアルのプロンプトやその他の手順の変更が必要になる場合があります。
 
 ## [!DNL Adobe Commerce as a Cloud Service]の前提条件
 
@@ -62,7 +66,7 @@ ht-degree: 0%
 
 [!DNL Adobe I/O CLI]と必要なプラグインをインストールしたら、拡張性ワークスペースを設定します。 Adobeでは、最速のエクスペリエンスを得るために自動セットアップを使用することをお勧めします。
 
-* **[自動セットアップ ](#automated-setup) （推奨）** – 単一のコマンドを実行して、ワークスペースを自動的に設定します。
+* **[自動セットアップ &#x200B;](#automated-setup) （推奨）** – 単一のコマンドを実行して、ワークスペースを自動的に設定します。
 * **[手動設定](#manual-setup)** – 各コンポーネントを個別に設定するには、手順に従います。
 
 ### 自動設定（推奨） {#automated-setup}
@@ -206,7 +210,7 @@ Adobe Developer ConsoleでApp Builder プロジェクトを作成し、拡張機
 
 1. **[!UICONTROL Stage]** ワークスペースをクリックし、各APIについて次の手順を繰り返します。
 
-   ![APIの「サービスを追加」オプションを使用したステージングワークスペース ](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
+   ![APIの「サービスを追加」オプションを使用したステージングワークスペース &#x200B;](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
 1. **[!UICONTROL Add Service]**&#x200B;をクリックし、**[!UICONTROL API]**&#x200B;を選択します。
 
@@ -256,7 +260,7 @@ Adobe Developer ConsoleでApp Builder プロジェクトを作成し、拡張機
    aio console workspace select
    ```
 
-   ![Adobe I/O CLI組織プロジェクトとワークスペースの選択を示すターミナル ](../assets/cli-configuration.png){width="600" zoomable="yes"}
+   ![Adobe I/O CLI組織プロジェクトとワークスペースの選択を示すターミナル &#x200B;](../assets/cli-configuration.png){width="600" zoomable="yes"}
 
 ### スターターキットの複製
 
@@ -300,7 +304,7 @@ OAUTH_ORG_ID=
 
 ワークスペースの「**[!UICONTROL OAuth Server-to-Server]**」タブをクリックして、[Developer Console](https://developer.adobe.com/)の&#x200B;**[!UICONTROL Credential details]** ページからこれらの値をコピーします。
 
-Adobe Developer Console](../assets/oauth-credentials.png){width="600" zoomable="yes"}の![OAuth サーバー間の資格情報ページ
+Adobe Developer Console![&#128279;](../assets/oauth-credentials.png){width="600" zoomable="yes"}のOAuth サーバー間の資格情報ページ
 
 #### Commerce設定の追加
 
@@ -313,7 +317,7 @@ COMMERCE_GRAPHQL_ENDPOINT=
 
 これらの値を検索するには：
 
-1. [Commerce Cloud サービスインスタンス ](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances)に移動します。
+1. [Commerce Cloud サービスインスタンス &#x200B;](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances)に移動します。
 1. インスタンスの横にある情報アイコンをクリックします。
 1. REST エンドポイントを`COMMERCE_BASE_URL`としてコピーします。
 1. GraphQL エンドポイントを`COMMERCE_GRAPHQL_ENDPOINT`としてコピーします。
@@ -348,7 +352,7 @@ cp workspace.json scripts/
 aio app use workspace.json -m
 ```
 
-![aio アプリ使用コマンドでワークスペース接続が成功したことを示すターミナル ](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![aio アプリ使用コマンドでワークスペース接続が成功したことを示すターミナル &#x200B;](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
 >[!TAB  チェックアウトスターターキット ]
 
@@ -362,7 +366,7 @@ aio app use --merge
 
 プロンプトが表示されたら、Adobe I/O CLIの設定時に選択した組織、プロジェクト、ワークスペースを使用するオプションを選択します。 これにより、デプロイとローカル開発がそのワークスペースを使用するように、ワークスペース設定がアプリに書き込まれます。
 
-![aio アプリ使用コマンドでワークスペース接続が成功したことを示すターミナル ](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![aio アプリ使用コマンドでワークスペース接続が成功したことを示すターミナル &#x200B;](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -389,21 +393,21 @@ aio app use --merge
    >
    >スターターキットにスキルが見つからないという警告が表示された場合、何らかの問題が発生しました。多くの場合、セットアップはスターターキットがクローンされた場所以外のフォルダーで実行されたためです。 `extension` フォルダー（スターターキットプロジェクトのルート）から`aio commerce extensibility tools-setup`を実行し、プロンプトが表示されたら適切なスターターキットを選択します。
 
-   ![ チェックアウトスターターキットを選択した状態でAI拡張性ツールのセットアップを表示している端末](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
+   ![&#x200B; チェックアウトスターターキットを選択した状態でAI拡張性ツールのセットアップを表示している端末](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
 
 ## Storefrontの手動設定
 
-この節では、[評価の拡張機能チュートリアル ](./ratings-extension.md)およびその他のストアフロントチュートリアル用にストアフロントを手動で設定する方法について説明します。
+この節では、[評価の拡張機能チュートリアル &#x200B;](./ratings-extension.md)およびその他のストアフロントチュートリアル用にストアフロントを手動で設定する方法について説明します。
 
 ストアフロントを自動的に設定するには、[Automated setup](#automated-setup) セクションで説明されている`app-setup` コマンドを実行し、[!DNL AEM Boilerplate Commerce] スターターキットを選択します。
 
 ### 前提条件
 
-[評価の拡張機能チュートリアル ](./ratings-extension.md)の[ ストアフロント ](./ratings-extension.md#connect-to-the-storefront) セクションを完了し、ストアで製品の評価を表示するには、次の項目が必要です。
+[評価の拡張機能チュートリアル &#x200B;](./ratings-extension.md)の[&#x200B; ストアフロント &#x200B;](./ratings-extension.md#connect-to-the-storefront) セクションを完了し、ストアで製品の評価を表示するには、次の項目が必要です。
 
 * [Google Chrome](https://www.google.com/chrome/) - ストアフロントのテストに必要
 
-* [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクト。 ストアフロントプロジェクトがない場合は、[ ストアフロントを作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}の手順に従います。これには、[ コマースデータへのリポジトリのリンク ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}の節が含まれます。
+* [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクト。 ストアフロントプロジェクトがない場合は、[&#x200B; ストアフロントを作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}の手順に従います。これには、[&#x200B; コマースデータへのリポジトリのリンク &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}の節が含まれます。
 
 ### ストアフロントリポジトリの複製
 

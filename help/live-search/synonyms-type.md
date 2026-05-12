@@ -3,8 +3,10 @@ title: 類義語の種類
 description: 一方向および双方向の [!DNL Live Search] 類義語は、キーワードの定義を拡張します。
 exl-id: f5522428-c7cc-4627-a09b-d9148918c127
 TQID: https://experienceleague.adobe.com/n0ON02CVlSTTOdRCPFRGVIVPWbGRltq4B0INC-U3ldo
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 617
@@ -58,4 +60,4 @@ a, an, and, are, at, be, but, by, for, for, in, is, it, no, not, of, on, or, suc
 
 同義語を作成すると、検索動作が変更され、厳密なフレーズ **キッチンテーブル**&#x200B;が検索されます。 正確なフレーズが付いた商品のみが表示されるため、結果の数が減少する可能性があります。
 
-以前と同様に条件を個別に検索する場合は、[ サポートチケットを作成できます](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。 十分な需要がある場合は、Commerceでは、今後のリリースでこの機能を製品に追加することを検討します。
+以前と同様に条件を個別に検索する場合は、[&#x200B; サポートチケットを作成できます](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。 十分な需要がある場合は、Commerceでは、今後のリリースでこの機能を製品に追加することを検討します。

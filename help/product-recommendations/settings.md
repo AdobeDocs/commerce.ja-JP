@@ -3,10 +3,17 @@ title: 設定
 description: ' [!DNL Product Recommendations]  データのソースを変更する方法と、視覚的な推奨事項を有効にする方法について説明します。'
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
 TQID: https://experienceleague.adobe.com/GJ8h9mX-3vlH1AUxk7FyM0-7rZTt40SGmdwfEMlvLvE
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 477
@@ -16,7 +23,7 @@ ht-degree: 0%
 
 # 設定
 
-Recommendations用に[SaaS データスペース ](../landing/saas.md#saas-configuration)を設定すると、SaaS データスペースはカタログデータとストアフロント行動データを収集します。 [Adobe AI](https://business.adobe.com/ai.html)は、そのデータを分析し、商品レコメンデーションを提供するために使用される商品の関連付けを計算します。
+Recommendations用に[SaaS データスペース &#x200B;](../landing/saas.md#saas-configuration)を設定すると、SaaS データスペースはカタログデータとストアフロント行動データを収集します。 [Adobe AI](https://business.adobe.com/ai.html)は、そのデータを分析し、商品レコメンデーションを提供するために使用される商品の関連付けを計算します。
 
 テストやステージングを行う本番以外の環境では、通常、現実的な商品レコメンデーションを提供するためのストアフロントの行動データの量や品質は確保されていません。 実際の買い物客の大規模な行動は、本番環境でのみキャプチャできます。 この課題を解決するために、Adobe Commerceでは、本番環境の商品レコメンデーションを、本番以外のSaaS データスペースと組み合わせて使用することができます。 実稼動以外の環境で実際のストアフロントデータを使用すると、買い物客に表示されるレコメンデーションをプレビューし、さまざまなレコメンデーションタイプやプレースメントの場所を試すことができます。 異なるSaaS データスペースからのレコメンデーションは、買い物客がプレビューすることはできますが、クリックすることはありません。
 
@@ -63,7 +70,7 @@ Recommendations用に[SaaS データスペース ](../landing/saas.md#saas-confi
 
 1. Recommendations ソースセクションで、**設定の編集**&#x200B;をクリックします。
 
-1. 手順に従って、新しい[[!DNL Commerce]  サービス ](/help/landing/saas.md)を設定します。
+1. 手順に従って、新しい[[!DNL Commerce]  サービス &#x200B;](/help/landing/saas.md)を設定します。
 
 ## 視覚的なレコメンデーションの有効化
 

@@ -3,10 +3,14 @@ title: ファセットの管理
 description: 既存の [!DNL Live Search]  ファセットを管理する方法について説明します。
 exl-id: 5062bb1f-ce6f-4244-a1df-65ae1ce868b9
 TQID: https://experienceleague.adobe.com/KWh5KwVRNJO3XLiG9xbqhBsGkt99BgY0hPnPbxDd8vY
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 481
@@ -30,28 +34,28 @@ ht-degree: 0%
    * ピン留め
    * 動的
 
-   詳しくは、[ ファセットタイプ ](facets-type.md)にアクセスしてください。
+   詳しくは、[&#x200B; ファセットタイプ &#x200B;](facets-type.md)にアクセスしてください。
 
-   ![ ファセットの絞り込み](assets/facets-filter-by-cropped.png)
+   ![&#x200B; ファセットの絞り込み](assets/facets-filter-by-cropped.png)
 
 1. ファセットプロパティを編集するには、**詳細** （。..）をクリックします。 オプション：
 1. **編集**&#x200B;をクリック
 
-   ![ オプションを編集](assets/facet-edit-menu.png)
+   ![&#x200B; オプションを編集](assets/facet-edit-menu.png)
 
 1. ファセットラベルを編集するには、次のいずれかの操作を行います。
 
-   * [!DNL Commerce] ストアフロントの場合、[属性ラベル ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)を編集します。
+   * [!DNL Commerce] ストアフロントの場合、[属性ラベル &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)を編集します。
    * ヘッドレス実装の場合は、最初の列の値をクリックし、必要に応じてテキストを編集します。
 
-   ![ ラベルを編集](assets/facet-edit-label.png)
+   ![&#x200B; ラベルを編集](assets/facet-edit-label.png)
 
 1. （ヘッドレスのみ）ファセット値の並べ替えに使用するメソッドを変更するには、*並べ替えタイプ*&#x200B;列の値をクリックし、次のいずれかを選択します。
 
    * アルファベット
    * カウント
 
-   ![ カウントを編集](assets/facets-edit-count.png)
+   ![&#x200B; カウントを編集](assets/facets-edit-count.png)
 
 1. **Max Value**&#x200B;列で、ストアフロントに表示するファセットフィルター値の最大数（0 ～ 10）を設定します。
 1. 完了したら、**保存**&#x200B;をクリックします。
@@ -62,15 +66,15 @@ ht-degree: 0%
 
 ピンはクリックすると色が変わり、ファセットを&#x200B;*ピン留めファセット*&#x200B;または&#x200B;*動的ファセット* セクションのいずれかに移動するために使用されます。
 
-1. ファセットを&#x200B;*フィルター* リストの先頭にピン留めするには、*動的ファセット* リストでファセットを見つけ、グレーのピン （![ ピンセレクター](assets/btn-pin-gray.png)）をクリックします。
+1. ファセットを&#x200B;*フィルター* リストの先頭にピン留めするには、*動的ファセット* リストでファセットを見つけ、グレーのピン （![&#x200B; ピンセレクター](assets/btn-pin-gray.png)）をクリックします。
 
    ピンが青になり、ファセットが&#x200B;*ピン留めファセット* セクションに移動します。
 
-1. ファセットのピン留めを解除するには、*ピン留めファセット* リストでファセットを見つけ、青いピン （![ ピン セレクター](assets/btn-pin-blue.png)）をクリックします。
+1. ファセットのピン留めを解除するには、*ピン留めファセット* リストでファセットを見つけ、青いピン （![&#x200B; ピン セレクター](assets/btn-pin-blue.png)）をクリックします。
 
    ピンがグレーになり、ファセットが&#x200B;*動的ファセット* セクションに移動します。
 
-   ![ ピン留めされた動的ファセット ](assets/facets-pinned-unpinned.png)
+   ![&#x200B; ピン留めされた動的ファセット &#x200B;](assets/facets-pinned-unpinned.png)
 
 >[!NOTE]
 >
@@ -93,7 +97,7 @@ ht-degree: 0%
 
 1. リスト内のファセットを見つけ、**詳細** （。..）をクリックします。 オプション：
 1. 「**削除**」をクリックします。
-1. 確認を求められたら、**ファセットを削除**をクリックします。
+1. 確認を求められたら、**ファセットを削除**&#x200B;をクリックします。
 変更が公開されると、ファセットはストアフロントから削除されます。
 
 ## 変更を公開

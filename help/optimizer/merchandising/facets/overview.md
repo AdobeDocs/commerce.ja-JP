@@ -4,10 +4,18 @@ description: ' [!DNL Adobe Commerce Optimizer] のファセットと、それら
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
 TQID: https://experienceleague.adobe.com/-LxTEulpf87FieM4mQCsoIkbPfGKDOzceX2fg9z5cSg
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 966
@@ -19,7 +27,7 @@ ht-degree: 0%
 
 ファセットは、属性値の複数の次元を検索条件として使用する高性能フィルタリングの方法です。
 
-![ フィルターされた検索結果](../../assets/storefront-search-results-run.png)
+![&#x200B; フィルターされた検索結果](../../assets/storefront-search-results-run.png)
 
 買い物客は、ファセット内で「スタイル」の下の「基本」や「スナップ」など、複数のオプションを選択でき、検索結果はそれらのスタイルのみを表示するように更新されます。 同様に、買い物客が「スタイル」の「基本」や「気候」の「屋内」など、複数のファセットにまたがるオプションを選択した場合、検索結果は選択したスタイルと選択した気候を表示するように更新されます。
 
@@ -53,7 +61,7 @@ ht-degree: 0%
 - 買い物客が検索結果から検索できるようにします。
 - レイヤー検索の2番目のレイヤーで`startsWith`と`contains`の検索インデックスを使用して、結果をさらに絞り込みます。
 
-高度な検索機能は、特定の演算子を使用して、[`productSearch` クエリ ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)の`filter` パラメーターを通じて実装されます。
+高度な検索機能は、特定の演算子を使用して、[`productSearch` クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)の`filter` パラメーターを通じて実装されます。
 
 - **階層検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリに対して最大2つの検索レイヤーを実行できます。 例：
 
@@ -82,7 +90,7 @@ ht-degree: 0%
 
 1. その属性の検索機能を指定します（**Contains** （デフォルト）または&#x200B;**Starts with**&#x200B;など）。 **Contains**&#x200B;に対して有効にする属性を最大6つ、および&#x200B;**に対して有効にする属性を最大6つ指定できます。最初は**&#x200B;です。 さらに、**Contains**&#x200B;の索引の場合、文字列の長さは50文字以下に制限されます。
 
-1. 新しい`contains`および`startsWith`検索機能を使用して[!DNL Commerce Optimizer] API呼び出しを更新する方法の例については、[開発者ドキュメント ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability)を参照してください。
+1. 新しい`contains`および`startsWith`検索機能を使用して[!DNL Commerce Optimizer] API呼び出しを更新する方法の例については、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability)を参照してください。
 
    これらの新しい条件を検索結果ページに実装できます。 例えば、ページに新しいセクションを追加し、検索結果をさらに絞り込むことができます。 買い物客が「製造元」、「部品番号」、「説明」など、特定の製品属性を選択できるようにします。 そこから、`contains`または`startsWith`条件を使用して、これらの属性内を検索します。
 

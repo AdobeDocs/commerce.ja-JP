@@ -5,9 +5,13 @@ role: Admin, Developer
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: b9da6853-c846-4267-8dee-17abc034ead0
 TQID: https://experienceleague.adobe.com/B2Um9FH-XvhgzfMrCltjw83rY9xm5DDOQVrbCVig99U
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 367
@@ -21,10 +25,10 @@ ht-degree: 0%
 
 ## ファセットを最適化するためのヒント
 
-- タイトル、カテゴリ、ブランド、価格帯、色、サイズなど、製品に最も関連性が高く有用な属性を決定し、[動的ファセット ](type.md)として設定します。 
+- タイトル、カテゴリ、ブランド、価格帯、色、サイズなど、製品に最も関連性が高く有用な属性を決定し、[動的ファセット &#x200B;](type.md)として設定します。 
 - カタログ全体で一貫性があり、製品に非常に関連性の高い製品属性を設定して並べ替え、買い物客の関連性とフィルタリング機能を向上させます。
 - ファセットラベルはわかりやすく、サイト全体で一貫性のある名前が付けられていることを確認します。 例えば、「コスト」の代わりに「価格帯」を使用します。
-- ファセットの数を最も重要なファセットに制限することで、買い物客に負担をかけないようにしましょう。 選択肢が多すぎると、意思決定の疲労を招く可能性があります。 デフォルトでは、[!DNL Adobe Commerce Optimizer]は、ファセットとして設定された最大100個の属性と、各ファセット内で返される30個のバケットに制限されています。 [ ファセットの制限](../../boundaries-limits.md#catalog-views-and-policies)の詳細をご覧ください。 
+- ファセットの数を最も重要なファセットに制限することで、買い物客に負担をかけないようにしましょう。 選択肢が多すぎると、意思決定の疲労を招く可能性があります。 デフォルトでは、[!DNL Adobe Commerce Optimizer]は、ファセットとして設定された最大100個の属性と、各ファセット内で返される30個のバケットに制限されています。 [&#x200B; ファセットの制限](../../boundaries-limits.md#catalog-views-and-policies)の詳細をご覧ください。 
 - 買い物客が複数のフィルター条件を同時に選択し、結果を絞り込めるようにします。 例えば、「赤」と「青」の両方の色を選択できるようにします。
 - 各ファセットオプションの横に利用可能な商品数を表示して、買い物客が期待できる検索結果を把握できるようにします。
 - 折りたたみ可能なファセットセクションを実装して、特にモバイルデバイスで、インターフェイスをクリーンで管理しやすくします。

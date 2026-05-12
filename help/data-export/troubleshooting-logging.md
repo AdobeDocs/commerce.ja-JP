@@ -4,10 +4,16 @@ description: データ書き出しとsaas書き出しのログを使用して [!
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 TQID: https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1155
@@ -21,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->また、管理画面の[ データフィード同期ステータスダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)から、製品データとカテゴリーデータのデータエクスポートフィードの正常性とパフォーマンスを追跡することもできます。
+>また、管理画面の[&#x200B; データフィード同期ステータスダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)から、製品データとカテゴリーデータのデータエクスポートフィードの正常性とパフォーマンスを追跡することもできます。
 
 ## ログ
 
@@ -34,7 +40,7 @@ ht-degree: 0%
 | SaaS書き出しログ | `saas-export.log` | Commerce SaaS サービスに送信されるデータに関する情報を提供します。 |
 | SaaS書き出しエラーログ | `saas-export-errors.log` | Commerce SaaS サービスにデータを送信する際に発生するエラーに関する情報を提供します。 |
 
-Adobe Commerce サービスに期待されるデータが表示されない場合は、データ書き出し拡張機能のエラーログを使用して、問題が発生した場所を確認します。 また、追跡とトラブルシューティングのために追加のデータを使用してログを拡張することもできます。 [拡張ログ ](#extended-logging)を参照してください。
+Adobe Commerce サービスに期待されるデータが表示されない場合は、データ書き出し拡張機能のエラーログを使用して、問題が発生した場所を確認します。 また、追跡とトラブルシューティングのために追加のデータを使用してログを拡張することもできます。 [拡張ログ &#x200B;](#extended-logging)を参照してください。
 
 ### ログ形式
 
@@ -138,7 +144,7 @@ Commerce サービスでデータが欠落または正しくない場合は、Ad
 - データ書き出しエラーログ （`commerce-data-export-errors.log`）は、収集フェーズで発生したエラーをキャプチャします。
 - SaaS書き出しエラーログ （`saas-export-errors.log`）は、送信段階で発生したエラーをキャプチャします。
 
-設定またはサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を含む[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)を送信してください。
+設定またはサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を含む[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)を送信してください。
 
 ### カタログ同期の問題を解決する {#resolvesync}
 
@@ -157,7 +163,7 @@ Commerce サービスでデータが欠落または正しくない場合は、Ad
 
 #### 同期できませんでした
 
-カタログ同期のステータスが&#x200B;**失敗**&#x200B;の場合は、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を送信します。
+カタログ同期のステータスが&#x200B;**失敗**&#x200B;の場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を送信します。
 
 ## 拡張ログ
 

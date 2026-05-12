@@ -5,9 +5,14 @@ role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
 TQID: https://experienceleague.adobe.com/FPo8tOFgizn4m-6DFo0ayRf6ct-Oepl6kczu3kZSaVg
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 324
@@ -19,7 +24,7 @@ ht-degree: 0%
 
 Adobe Developer App Builder向け[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)を使用すると、開発者はAdobe I/O Runtimeを使用して、プライベートまたはサードパーティのAPIやその他のインターフェイスをAdobe製品と統合できます。
 
-![ カタログアーキテクチャ図](assets/catalog-service-architecture-mesh.png)
+![&#x200B; カタログアーキテクチャ図](assets/catalog-service-architecture-mesh.png)
 
 カタログサービスでAPI Meshを使用するには、API Meshをインスタンスに接続し、カタログサービスに接続するための設定を提供するAPI Mesh ソース [CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/)を追加する必要があります。
 
@@ -27,7 +32,7 @@ Adobe Developer App Builder向け[API Mesh](https://developer.adobe.com/graphql-
 
 1. Adobe Commerce インスタンスにAPI Meshを接続するには、_API Mesh開発者ガイド_&#x200B;の[Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)の手順に従います。
 
-   API Meshを初めて使用する場合は、メッシュを作成する前に、[はじめにプロセス ](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)を完了してください。
+   API Meshを初めて使用する場合は、メッシュを作成する前に、[はじめにプロセス &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)を完了してください。
 
 1. 次の形式を使用して、プロジェクトのカタログサービス API キーを含む`variables.json`などのJSON ファイルを作成します。
 

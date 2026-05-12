@@ -5,9 +5,14 @@ recommendations: noCatalog
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
 TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 917
@@ -48,7 +53,7 @@ ht-degree: 0%
 
 **ポリシー**&#x200B;のうち&#x200B;**バリューソース**&#x200B;を持つトリガーは、排他的なポリシーと呼ばれます。 つまり、カタログビューは、API呼び出しのヘッダーでトリガーが指定された場合にのみ、そのポリシーを実行します。 ストアフロントでは、買い物客の選択内容に応じて情報が表示されます。 例えば、次の画像では、2つのドロップダウンメニューがあります：**ブランド**&#x200B;と&#x200B;**モデル**。
 
-![ ストアフロントのトリガー値ソース ](../assets/policy-trigger.png)
+![&#x200B; ストアフロントのトリガー値ソース &#x200B;](../assets/policy-trigger.png)
 
 **ブランド**&#x200B;と&#x200B;**モデル**&#x200B;は定義されたトリガーです：
 

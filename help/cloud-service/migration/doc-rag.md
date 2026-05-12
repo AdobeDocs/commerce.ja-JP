@@ -5,10 +5,20 @@ badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adob
 role: Developer
 hide: true
 TQID: https://experienceleague.adobe.com/eGNktkTH-i2HV8iEFTfSFtGlsyr4ZUVuRXxj9XcwbZk
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1027
@@ -26,7 +36,7 @@ ht-degree: 0%
 
 このRAGは、Adobe Commerceに関する質問を行うためのIDE インターフェイスを提供し、アプリケーションの開発やその他の移行タスクに関するベストプラクティスについてアドバイスします。
 
-RAG サービスは、[Commerce拡張ツール ](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} MCP （Model Context Protocol） サーバーの一部であり、Cursorおよびその他のMCP互換AI アシスタントと統合されています。
+RAG サービスは、[Commerce拡張ツール &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} MCP （Model Context Protocol） サーバーの一部であり、Cursorおよびその他のMCP互換AI アシスタントと統合されています。
 
 ## 使用可能なドキュメント
 
@@ -34,14 +44,14 @@ RAG サービスは、[Commerce拡張ツール ](https://developer.adobe.com/com
 
 | カテゴリ | Index | 含まれるコンテンツ | キーワード |
 |-------|---------|---------|------------------------|
-| [ ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services、ドロップイン、ストアフロントコンポーネント | ストアフロント、ドロップイン、EDS、製品リスト、チェックアウト |
+| [&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services、ドロップイン、ストアフロントコンポーネント | ストアフロント、ドロップイン、EDS、製品リスト、チェックアウト |
 | [拡張性](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhook、イベント、拡張機能、統合 | webhook, イベント，拡張機能，API メッシュ，GraphQL |
 | [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce（カタログ、顧客、注文） | カタログ，製品，顧客，注文，在庫 |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, ランタイムアクション，UI拡張機能 | アプリビルダー、ランタイムアクション、React Spectrum |
 
 インデックス選択について詳しくは、[自動インデックス選択](#automatic-index-selection-recommended)および[明示的インデックス選択](#explicit-index-selection)を参照してください。
 
-各インデックスに含まれるドキュメントについて詳しくは、[取り込まれたソースリスト ](https://github.com/adobe-commerce/azure-commerce-documentation-agent/blob/develop/docs/INGESTED_SOURCES.md)を参照してください。
+各インデックスに含まれるドキュメントについて詳しくは、[取り込まれたソースリスト &#x200B;](https://github.com/adobe-commerce/azure-commerce-documentation-agent/blob/develop/docs/INGESTED_SOURCES.md)を参照してください。
 
 ## セキュリティとプライバシー
 
@@ -50,21 +60,21 @@ RAG サービスは、[Commerce拡張ツール ](https://developer.adobe.com/com
 * **ローカル実行** – すべてのツールがコンピューター上でローカルに実行されます。
 * **安全な通信** - ドキュメント検索では、トークン検証にHTTPSが使用されます。
 
-実稼動エンドポイントは、[Azure フロントドア ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)によって保護されます。これには、次の保護機能が含まれます。
+実稼動エンドポイントは、[Azure フロントドア &#x200B;](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)によって保護されます。これには、次の保護機能が含まれます。
 
 * Microsoft Default RuleSet 2.1およびBot Manager RuleSet 1.0を使用したWeb Application Firewall （WAF）
 * 米国の禁輸地域（キューバ、イラン、北朝鮮、シリア、クリミア、ルハンスク、ドネツク）のジオブロッキング
 * エッジでのDDoS対策
 * フロントドアからのトラフィックのみを受け入れるようにAPI管理バックエンドをロックダウン
 
-セキュリティ要件が異なる場合は、カスタムエンドポイントを使用できます。 詳しくは、[ カスタムフロントドアエンドポイント ](#custom-front-door-endpoint)を参照してください。
+セキュリティ要件が異なる場合は、カスタムエンドポイントを使用できます。 詳しくは、[&#x200B; カスタムフロントドアエンドポイント &#x200B;](#custom-front-door-endpoint)を参照してください。
 
 ## 前提条件
 
 インストールする前に、次のことを確認してください。
 
 * [Node.js](https://nodejs.org/en/download){target="_blank"} 18以上（LTSを推奨）
-* [ カーソル IDE](https://cursor.com/download){target="_blank"} （推奨）または他のMCP互換IDE
+* [&#x200B; カーソル IDE](https://cursor.com/download){target="_blank"} （推奨）または他のMCP互換IDE
 
   >[!NOTE]
   >
@@ -119,7 +129,7 @@ RAG サービスは、[Commerce拡張ツール ](https://developer.adobe.com/com
 
    >[!NOTE]
    >
-   >Windowsで、プロジェクトディレクトリへのパスの提供に関する問題が発生した場合は、[ パスの問題に関するトラブルシューティング ](#path-issues-windows)を参照してください。
+   >Windowsで、プロジェクトディレクトリへのパスの提供に関する問題が発生した場合は、[&#x200B; パスの問題に関するトラブルシューティング &#x200B;](#path-issues-windows)を参照してください。
 
 1. カーソル IDEを再起動して、MCP サーバーを読み込みます。
 
@@ -131,7 +141,7 @@ RAG サービスは、[Commerce拡張ツール ](https://developer.adobe.com/com
 
 ## 使用状況
 
-インストールが完了したら、インデックス [自動的](#automatic-index-selection-recommended)または[明示的](#explicit-index-selection)を呼び出すことができます。 [`/search-commerce-docs` コマンド ](#command-based-search)も使用できます。
+インストールが完了したら、インデックス [自動的](#automatic-index-selection-recommended)または[明示的](#explicit-index-selection)を呼び出すことができます。 [`/search-commerce-docs` コマンド &#x200B;](#command-based-search)も使用できます。
 
 >[!NOTE]
 >
@@ -191,7 +201,7 @@ RAG サービスが使用されていることを確認する場合は、`/searc
 
 ## カスタム正面玄関エンドポイント
 
-デフォルトでは、ドキュメント検索では、WAF保護を備えた実稼動[Azure フロントドア ](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) エンドポイントが使用されます。 テストまたは開発の目的で、`FRONT_DOOR_URL`環境変数でこれを上書きできます。
+デフォルトでは、ドキュメント検索では、WAF保護を備えた実稼動[Azure フロントドア &#x200B;](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) エンドポイントが使用されます。 テストまたは開発の目的で、`FRONT_DOOR_URL`環境変数でこれを上書きできます。
 
 カスタムエンドポイントを使用するには、それをCursor MCP設定に追加します。
 

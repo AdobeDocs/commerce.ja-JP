@@ -4,10 +4,20 @@ description: イベントが [!DNL Product Recommendations]のデータを収集
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
 TQID: https://experienceleague.adobe.com/efHRMj3u3w-xvUgMnEYDpX0D-BDCUyjhhrkMaa3n-xg
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1019
@@ -19,7 +29,7 @@ ht-degree: 0%
 
 [[!DNL Product Recommendations]](install-configure.md)をインストールして設定すると、モジュールは行動データ収集をストアフロントにデプロイします。 このメカニズムは、買い物客から匿名化された行動データを収集し、[!DNL Product Recommendations]を強化します。 例えば、`view` イベントは`Viewed this, viewed that`のレコメンデーションタイプの計算に使用され、`place-order` イベントは`Bought this, bought that`のレコメンデーションタイプの計算に使用されます。
 
-[!DNL Product Recommendations] イベントが収集する行動データについて詳しくは、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を参照してください。
+[!DNL Product Recommendations] イベントが収集する行動データについて詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を参照してください。
 
 >[!NOTE]
 >
@@ -64,7 +74,7 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 - レコメンデーションタイプによっては、他のタイプよりも学習が速いものもあります
 - Adobe Commerceは、行動データを4時間ごとに再計算します。 レコメンデーションは、サイトで長く使用するにつれて精度が向上します。
 
-各レコメンデーションタイプのトレーニングの進捗状況を視覚化するために、[ レコメンデーションの作成](create.md#readiness-indicators) ページには準備状況インジケーターが表示されます。
+各レコメンデーションタイプのトレーニングの進捗状況を視覚化するために、[&#x200B; レコメンデーションの作成](create.md#readiness-indicators) ページには準備状況インジケーターが表示されます。
 
 ライブサイトでデータを収集し、マシンラーニングモデルをトレーニングしている間に、レコメンデーションの設定に必要なその他のテストや設定タスクを完了できます。 この作業が完了する頃には、モデルには有用なレコメンデーションを作成するのに十分なデータが揃っており、ストアフロントに展開することができます。
 
@@ -87,9 +97,9 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 #### 注意事項
 
 - 広告ブロッカーとプライバシー設定により、イベントのキャプチャが妨げられ、エンゲージメントと収益[指標](workspace.md#column-descriptions)が過小報告される可能性があります。 さらに、買い物客がページを離れたり、ネットワーク上の問題が原因で、イベントが送信されない場合もあります。
-- 商品レコメンデーションダッシュボードを強化するには、[ ヘッドレス実装](headless.md)でイベントを実装する必要があります。
+- 商品レコメンデーションダッシュボードを強化するには、[&#x200B; ヘッドレス実装](headless.md)でイベントを実装する必要があります。
 - 設定可能な製品の場合、製品レコメンデーションでは、レコメンデーションユニット内の親製品の画像を使用します。 設定可能な製品に画像が指定されていない場合、その製品のレコメンデーションユニットは空になります。
 
 >[!NOTE]
 >
->[Cookie制限モード ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)が有効になっている場合、Adobe Commerceは、買い物客がCookieの使用に同意するまで行動データを収集しません。 Cookie制限モードが無効な場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[Cookie制限モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)が有効になっている場合、Adobe Commerceは、買い物客がCookieの使用に同意するまで行動データを収集しません。 Cookie制限モードが無効な場合、Adobe Commerceはデフォルトで行動データを収集します。

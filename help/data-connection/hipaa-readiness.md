@@ -5,10 +5,19 @@ role: Admin, Leader
 feature: Security, Compliance
 exl-id: 8851e6d2-c466-4d8e-bfa4-20d0ad6522b5
 TQID: https://experienceleague.adobe.com/PxrtL1nHtJsRJuAehDVKRk0ZuJz0ta7i84j1K6An1QU
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 601
@@ -22,7 +31,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->ストアフロントイベントはクライアント側で生成されるため、Experience Platformにストアフロントイベントデータ ](connect-data.md#data-collection)を送信しないのは販売者の責任[です。
+>ストアフロントイベントはクライアント側で生成されるため、Experience Platformにストアフロントイベントデータ [&#128279;](connect-data.md#data-collection)を送信しないのは販売者の責任です。
 
 主な内容：
 
@@ -42,15 +51,15 @@ Adobe [!DNL Commerce]のヘルスケアアドオンを購入した場合は、[H
 
 [!DNL Data Connection]拡張機能がExperience Platformに送信するすべてのバックオフィスイベントデータは、[!DNL Commerce]内では機密性が高いと見なされます。 ただし、特定のデータを機密性の高いものとして明示的に識別するには、Experience Platformの[!DNL Commerce] スキーマにデータ使用ラベルを適用する必要があります。 データ使用ラベルをスキーマに直接適用すると、そのラベルは、そのスキーマに基づくすべての既存および将来のデータセットに反映されます。
 
-Data Governance フレームワーク内でのデータ使用ラベルとその役割の概要については、Experience Platform ドキュメントの[ データ使用ラベルの概要](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview)を参照してください。
+Data Governance フレームワーク内でのデータ使用ラベルとその役割の概要については、Experience Platform ドキュメントの[&#x200B; データ使用ラベルの概要](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview)を参照してください。
 
 ### データ使用ラベルを[!DNL Commerce] フィールドに適用する
 
-[!DNL Commerce] スキーマにラベルを適用する方法については、[ スキーマのデータ使用ラベルの管理](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels) チュートリアルの手順に従ってください。
+[!DNL Commerce] スキーマにラベルを適用する方法については、[&#x200B; スキーマのデータ使用ラベルの管理](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels) チュートリアルの手順に従ってください。
 
 [!DNL Commerce] スキーマのフィールドに適用できる使用可能なラベルについて詳しくは、[機密ラベルの用語集](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference#sensitive)を参照してください。 例えば、ラベル `RHD`は、保護された医療情報（PHI）またはAdobeによってアップロードが契約上許可されている患者に関する情報を識別します。
 
-[!DNL Commerce] データが機密としてラベル付けされている場合、ポリシーを適用して、ポリシー違反を構成するデータ操作を防止できます。 Experience Platformの[ ポリシーの適用](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)の詳細をご覧ください。
+[!DNL Commerce] データが機密としてラベル付けされている場合、ポリシーを適用して、ポリシー違反を構成するデータ操作を防止できます。 Experience Platformの[&#x200B; ポリシーの適用](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)の詳細をご覧ください。
 
 ## Commerceでのデータの暗号化
 

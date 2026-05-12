@@ -3,10 +3,14 @@ title: レコメンデーションを編集
 description: 商品レコメンデーションの編集方法を説明します。
 exl-id: 57bc68c0-03ba-4b66-8c75-14e49176670b
 TQID: https://experienceleague.adobe.com/iynpVCKsygJXg2v-Djctfb4bhV9FMheA0ab66IBOvCg
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 428
@@ -48,7 +52,7 @@ ht-degree: 0%
 
 ストアフロントのレコメンデーションユニットのラベルとして使用するテキストを入力します。
 
-![ ラベルを編集](assets/edit-storefront-label.png)
+![&#x200B; ラベルを編集](assets/edit-storefront-label.png)
 
 ### 製品数 {#number}
 
@@ -63,7 +67,7 @@ ht-degree: 0%
    - メインコンテンツの下部に
    - メインコンテンツの上部
 
-   ![ プレースメントを編集](assets/edit-placement.png)
+   ![&#x200B; プレースメントを編集](assets/edit-placement.png)
 
 1. ユニットに含まれるレコメンデーションの順序を変更するには、**移動** ![移動セレクター](assets/icon-move.png) コントロールを使用して、レコメンデーションを位置にドラッグします。
 
@@ -71,15 +75,15 @@ ht-degree: 0%
 
 ### 商品を絞り込む {#filters}
 
-製品[ フィルター](filters.md)に加えられた変更は、_おすすめ製品プレビュー_&#x200B;に反映されます。 インクルージョンフィルターに一致する製品のみを推奨できます。 除外フィルターに一致する製品はお勧めしません。
+製品[&#x200B; フィルター](filters.md)に加えられた変更は、_おすすめ製品プレビュー_&#x200B;に反映されます。 インクルージョンフィルターに一致する製品のみを推奨できます。 除外フィルターに一致する製品はお勧めしません。
 
 「_インクルージョン_」タブと「_除外_」タブには、各タイプの使用可能なフィルターが一覧表示されます。 リストでは、アクティブな各フィルターに青いドットが付いています。
 
 - 各フィルターの詳細を表示するには、フィルター名をクリックします。
 - フィルターのステータスを変更するには、**フィルターを有効にする** トグルを`on`または`off`の位置に設定します。
 
-![ フィルターの編集](assets/edit-filters.png)
+![&#x200B; フィルターの編集](assets/edit-filters.png)
 
 フィルター設定は、レコメンデーションユニットに含める製品または除外する製品を記述します。 例えば、_カテゴリ_ フィルターの包含設定では、選択したカテゴリの製品のみを含めるようにシステムに指示します。
 
-![ カテゴリーフィルターを編集](assets/edit-filter-category.png)
+![&#x200B; カテゴリーフィルターを編集](assets/edit-filter-category.png)

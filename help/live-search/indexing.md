@@ -3,10 +3,15 @@ title: インデックス作成
 description: 製品属性プロパティを [!DNL Live Search]  インデックス作成する方法について説明します。
 exl-id: 01cbbf56-2e12-4ad0-a56d-de0fe13df50f
 TQID: https://experienceleague.adobe.com/8STop-AunMGpKCLgjQaywtpPRNHF-l7sobRnh82QOXI
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 787
@@ -26,7 +31,7 @@ ht-degree: 0%
 
 属性メタデータの範囲は`website/store/store view`です。
 
-[!DNL Live Search] APIを使用すると、クライアントは、Adobe Commerce Adminで[storefront プロパティ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search`が`Yes`に設定されている任意のproduct属性で並べ替えることができます。 有効にすると、属性に`Search Weight`を設定できます。
+[!DNL Live Search] APIを使用すると、クライアントは、Adobe Commerce Adminで[storefront プロパティ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search`が`Yes`に設定されている任意のproduct属性で並べ替えることができます。 有効にすると、属性に`Search Weight`を設定できます。
 
 [!DNL Live Search]は、削除された製品または`Not Visible Individually`に設定された製品をインデックス付けしません。
 
@@ -55,7 +60,7 @@ ht-degree: 0%
 
 次のイベントは、完全なシンクとインデックスのビルドをトリガーします。
 
-* [ カタログデータ同期](install.md#sync)のオンボーディング
+* [&#x200B; カタログデータ同期](install.md#sync)のオンボーディング
 * 属性メタデータの変更
 
 例えば、`color`属性の`Use in Search` プロパティを`No`から`Yes`に変更すると、属性メタデータが`searchable=true`に変更され、完全な同期と再インデックスがトリガーされます。 次の属性メタデータは、完全な同期をトリガーし、変更されたときにインデックスを再作成します。
@@ -67,7 +72,7 @@ ht-degree: 0%
 
 ### 製品アップデートのストリーミング
 
-[ オンボーディング ](install.md#sync)中に最初のインデックスが構築された後、次の製品の増分更新が継続的に同期され、インデックスが再作成されます。
+[&#x200B; オンボーディング &#x200B;](install.md#sync)中に最初のインデックスが構築された後、次の製品の増分更新が継続的に同期され、インデックスが再作成されます。
 
 * カタログに追加された新商品
 * 製品属性値の変更
@@ -95,11 +100,11 @@ ht-degree: 0%
 
 ## クライアント検索
 
-[!DNL Live Search] APIを使用すると、[storefront プロパティ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)、*製品リスト*&#x200B;から`Yes`の並べ替えに使用されるプロパティを設定して、任意の並べ替え可能な製品属性でクライアントを並べ替えることができます。 テーマに応じて、この設定を使用すると、カタログ ページの[並べ替え](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation) ページネーション コントロールのオプションとして属性が含まれます。 最大200個の製品属性を[!DNL Live Search]でインデックス付けでき、検索可能でフィルタリング可能な[ ストアフロントプロパティ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)があります。
+[!DNL Live Search] APIを使用すると、[storefront プロパティ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)、*製品リスト*&#x200B;から`Yes`の並べ替えに使用されるプロパティを設定して、任意の並べ替え可能な製品属性でクライアントを並べ替えることができます。 テーマに応じて、この設定を使用すると、カタログ ページの[並べ替え](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation) ページネーション コントロールのオプションとして属性が含まれます。 最大200個の製品属性を[!DNL Live Search]でインデックス付けでき、検索可能でフィルタリング可能な[&#x200B; ストアフロントプロパティ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)があります。
 
 インデックスメタデータはインデックスパイプラインに保存され、検索サービスからアクセスできます。
 
-![[!DNL Live Search] インデックス メタデータ API ダイアグラム ](assets/index-metadata-api.svg)
+![[!DNL Live Search] インデックス メタデータ API ダイアグラム &#x200B;](assets/index-metadata-api.svg)
 
 ### 並べ替え可能な属性ワークフロー
 

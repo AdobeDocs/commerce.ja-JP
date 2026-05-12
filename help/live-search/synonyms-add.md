@@ -3,9 +3,12 @@ title: 同義語を追加
 description: ' [!DNL Live Search] 類義語を追加して、検索リクエストへの応答を改善します。'
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
 TQID: https://experienceleague.adobe.com/eGBxKnn3lLD5VQel52jyrt7EB8rcrhGOi-DDwhW7wzc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 410
@@ -22,7 +25,7 @@ ht-degree: 0%
 ## 手順1：同義語の追加
 
 1. 管理画面で、**マーケティング**/SEOと検索> **[!DNL Live Search]**&#x200B;に移動します。
-1. 複数のストアの場合は、**スコープ**&#x200B;を[ ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)に設定し、同義語の設定を適用します。
+1. 複数のストアの場合は、**スコープ**&#x200B;を[&#x200B; ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)に設定し、同義語の設定を適用します。
 1. 「**類義語**」タブをクリックします。
 1. 「**類義語を追加**」ボタンをクリックします。
 
@@ -37,12 +40,12 @@ ht-degree: 0%
    ![双方向の同義語を追加](assets/synonym-add-two-way.png)
 
 1. 一致させる&#x200B;**キーワード**&#x200B;の語句またはフレーズを入力します。
-1. キーワードの類義語として追加する&#x200B;**拡張**語句を入力します。 複数の用語はコンマで区切ります。
+1. キーワードの類義語として追加する&#x200B;**拡張**&#x200B;語句を入力します。 複数の用語はコンマで区切ります。
 この例では、一致するキーワードは「パンツ」で、拡張用語のセットは「ズボン、スラックス」です。
 
    ![双方向同義語の例](assets/synonym-add-two-way-example.png)
 
-1. 完了したら、**保存**をクリックします。
+1. 完了したら、**保存**&#x200B;をクリックします。
 類義語のセットは、各用語の間に双方向矢印が表示され、用語が交換可能であることを意味します。
 
    ![双方向同義語](assets/synonym-two-way.png)
@@ -59,7 +62,7 @@ ht-degree: 0%
 
    この例では、キーワードは「パンツ」で、「capris, peddle-pushers」という一方向の拡張語は、それぞれ「パンツ」のサブセットですが、特定の意味を持ちます。
 
-1. 完了したら、**保存**をクリックします。
+1. 完了したら、**保存**&#x200B;をクリックします。
 類義語のセットがリストに表示され、拡張語からキーワードを指す一方向の矢印が表示され、その用語がキーワードのサブセットであることを示します。 プラス記号は、各拡張語句を区切ります。
 
    ![一方向の同義語](assets/synonym-one-way.png)

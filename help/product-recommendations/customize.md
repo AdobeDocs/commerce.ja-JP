@@ -3,9 +3,13 @@ title: カスタマイズ
 description: 商品レコメンデーションをカスタマイズする方法をご確認ください。
 exl-id: b59932e1-748a-432d-b65b-13cf1c287fb2
 TQID: https://experienceleague.adobe.com/-49Lqkuhnrn5GCQtHLO-9gr1nHwMjEQeEVDRR4cDk5Y
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 645
@@ -19,7 +23,7 @@ ht-degree: 0%
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-テンプレートファイルの変更について詳しくは、『フロントエンド開発者ガイド』の「[ テンプレートのカスタマイズ ](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/)」を参照してください。
+テンプレートファイルの変更について詳しくは、『フロントエンド開発者ガイド』の「[&#x200B; テンプレートのカスタマイズ &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/)」を参照してください。
 
 `recommendations.html` ファイルを変更する場合は、Adobe Commerceがストアフロントからレコメンデーション指標を収集できるように、ファイルに次のタグを保持する必要があります。
 
@@ -107,7 +111,7 @@ ht-degree: 0%
 
    この変更により、商品の詳細ページで商品の画像の後にレコメンデーションユニットが表示されます。 レコメンデーションユニットを`product.info.media`の前に表示する場合は、`after="-"`属性を`before="-"`に変更します。 `pagePlacement`引数は、変更できない内部引数です。
 
-ページ上のブロックの種類について詳しくは、[ レイアウトの概要](https://developer.adobe.com/commerce/frontend-core/guide/layouts/)を参照してください。
+ページ上のブロックの種類について詳しくは、[&#x200B; レイアウトの概要](https://developer.adobe.com/commerce/frontend-core/guide/layouts/)を参照してください。
 
 ## カスタム製品属性
 
@@ -115,7 +119,7 @@ ht-degree: 0%
 
 例えば、ストアでオーガニック商品を販売している場合、これらの商品に`Organic = Yes`として指定するカスタム属性がある可能性があります。 ストアフロントでこの属性値にアクセスし、「Recommendations」に表示されたときにこれらの製品に特別な視覚的処理を行えるようにすることができます。 同様に、これらのカスタム製品属性値にアクセスすると、サイトのプレゼンテーション層で製品をバッジしたり、カスタムロジックを駆動したりできます。
 
-![ バッジを追加](assets/unit-custom.png)
+![&#x200B; バッジを追加](assets/unit-custom.png)
 
 レコメンデーションユニットをページ上でレンダリングするときにカスタム製品属性を使用できるようにするには、管理者の[製品属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) ページで`Used in Product Listing` プロパティを`Yes`に設定します。
 
