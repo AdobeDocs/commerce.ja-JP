@@ -23,7 +23,7 @@ ht-degree: 2%
 
 [Data Connection拡張機能](overview.md)は、Commerce データをExperience Platformに接続します。 Experience Platformで使用するデータは、**Experience Event** クラスに属する時系列データと、**Individual Profile** クラスに属するレコードデータの2つのビヘイビアータイプにグループ化されます。
 
-Experience Platformの[data behavior](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors)および[classes](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class)の詳細をご覧ください。
+Experience Platformの[data behavior](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja#data-behaviors)および[classes](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja#class)の詳細をご覧ください。
 
 ## 時系列データ
 

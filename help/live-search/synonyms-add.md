@@ -25,7 +25,7 @@ ht-degree: 0%
 ## 手順1：同義語の追加
 
 1. 管理画面で、**マーケティング**/SEOと検索> **[!DNL Live Search]**&#x200B;に移動します。
-1. 複数のストアの場合は、**スコープ**&#x200B;を[&#x200B; ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)に設定し、同義語の設定を適用します。
+1. 複数のストアの場合は、**スコープ**&#x200B;を[&#x200B; ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings)に設定し、同義語の設定を適用します。
 1. 「**類義語**」タブをクリックします。
 1. 「**類義語を追加**」ボタンをクリックします。
 

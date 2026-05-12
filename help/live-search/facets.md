@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # ファセット
 
-ファセット処理は、属性値の複数の次元を検索条件として使用する高性能フィルタリングの方法です。 ファセット検索は類似していますが、標準の[階層化ナビゲーション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html)よりもかなり「スマート」です。 使用可能なフィルターのリストは、検索結果で返される商品の[&#x200B; フィルター可能な属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes)によって決まります。
+ファセット処理は、属性値の複数の次元を検索条件として使用する高性能フィルタリングの方法です。 ファセット検索は類似していますが、標準の[階層化ナビゲーション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja)よりもかなり「スマート」です。 使用可能なフィルターのリストは、検索結果で返される商品の[&#x200B; フィルター可能な属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=ja#filterable-attributes)によって決まります。
 
 [!DNL Live Search]は`productSearch` クエリを使用しています。このクエリは、[!DNL Live Search]に固有のファセットおよびその他のデータを返します。 コード例については、開発者ドキュメントの[`productSearch` クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)を参照してください。
 
@@ -45,8 +45,8 @@ ht-degree: 0%
 
 | 設定 | 説明 |
 |--- |--- |
-| [&#x200B; カテゴリの表示設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | アンカー – `Yes` |
-| [属性プロパティ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [&#x200B; カタログ入力タイプ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （ウィジェットのみ）、`Text swatch` （ウィジェットのみ） |
+| [&#x200B; カテゴリの表示設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=ja) | アンカー – `Yes` |
+| [属性プロパティ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) | [&#x200B; カタログ入力タイプ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=ja) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （ウィジェットのみ）、`Text swatch` （ウィジェットのみ） |
 | 属性ストアフロントプロパティ | 検索結果の階層化されたナビゲーションで使用 – `Yes` |
 
 ## ファセット集計

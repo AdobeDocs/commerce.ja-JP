@@ -24,24 +24,24 @@ ht-degree: 0%
 
 顧客がCommerceサイトでプロファイルを作成すると、プロファイルレコードが作成され、データが取得されます。 そのプロファイルデータをExperience Platformにストリーミングする前に、そのプロファイルレコードに固有のスキーマとデータセットを作成する必要があります。
 
-1. [&#x200B; スキーマを作成](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)し、クラスを&#x200B;**個人プロファイル**&#x200B;に設定します。
+1. [&#x200B; スキーマを作成](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas)し、クラスを&#x200B;**個人プロファイル**&#x200B;に設定します。
 
-1. [次のプロファイル固有のフィールドグループを](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)追加します。
+1. [次のプロファイル固有のフィールドグループを](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas)追加します。
 
    - identityMap
    - デモグラフィック情報
    - 個人の連絡先詳細
    - ユーザーアカウントの詳細
 
-1. [&#x200B; プロファイルのスキーマを有効にする](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)。
+1. [&#x200B; プロファイルのスキーマを有効にする](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/ui/resources/schemas)。
 
    プロファイルに対してスキーマが有効になっている場合、このスキーマから作成されたすべてのデータセットがReal-Time CDPに組み込まれ、様々なソースからデータが結合され、各顧客の全体像が構築されます。
 
-1. [作成または更新したスキーマに基づいてデータセット &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform)を作成します。
+1. [作成または更新したスキーマに基づいてデータセット &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform)を作成します。
 
    データセットは、データのコレクションを格納および管理するための構成図です。通常、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータのさまざまな側面を説明するメタデータも含まれます。
 
-1. 次の値を持つ[&#x200B; カスタム名前空間](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#create-namespaces)をExperience Platformに作成します。
+1. 次の値を持つ[&#x200B; カスタム名前空間](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/namespaces#create-namespaces)をExperience Platformに作成します。
 
    - **表示名**: _Commerce Customer ID_
    - **ID シンボル**: _顧客ID_

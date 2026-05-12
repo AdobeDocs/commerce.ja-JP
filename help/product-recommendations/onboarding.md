@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >**製品レコメンデーションはHIPAA対応サービスではありません。** HIPAA対応の製品を使用するAdobe Commerceの実装や、保護された医療情報（PHI）を処理する製品レコメンデーションを有効にしたり、使用したりしないでください。 商品レコメンデーションは、現在HIPAA非対応として分類されているCommerce SaaS サービスの一部です。
 >
->どのAdobe Commerce機能がHIPAAに対応しているか、どのサービスをPHIで使用してはならないかについて詳しくは、[Adobe CommerceでのHIPAA対応](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)および[操作](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)を参照してください。
+>どのAdobe Commerce機能がHIPAAに対応しているか、どのサービスをPHIで使用してはならないかについて詳しくは、[Adobe CommerceでのHIPAA対応](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)および[操作](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)を参照してください。
 
 [!DNL Product Recommendations]のオンボーディングプロセスでは、サーバーのコマンドラインへのアクセスが必要で、次の手順で構成されています。 コマンドラインでの作業に慣れていない場合は、開発者またはシステムインテグレータに助けを求めてください。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ### B2B サポート {#b2bsupport}
 
-B2Bのストアフロントでは、買い物客や顧客グループごとに商品の可視性や価格を決定する複雑なロジックが必要になることがよくあります。 [!DNL Product Recommendations]様は、[&#x200B; カテゴリの権限](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)、[共有カタログ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)、[顧客グループ固有の価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)を尊重することで、この機能を[&#x200B; サポート &#x200B;](release-notes.md)するようになりました。 たとえば、特定のカテゴリーを小売顧客セグメントから隠している場合、そのセグメントの買い物客には、それらのカテゴリーの商品に関するレコメンデーションは表示されません。 また、特定の顧客グループや企業向けに共有カタログを定義すると、それらの買い物客は、アクセス可能な商品に関してのみレコメンデーションを見ることができます。 あらゆる推奨商品には、各買い物客の顧客グループに基づいた、正しい顧客グループ固有の価格が反映されています。
+B2Bのストアフロントでは、買い物客や顧客グループごとに商品の可視性や価格を決定する複雑なロジックが必要になることがよくあります。 [!DNL Product Recommendations]様は、[&#x200B; カテゴリの権限](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=ja)、[共有カタログ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=ja)、[顧客グループ固有の価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja)を尊重することで、この機能を[&#x200B; サポート &#x200B;](release-notes.md)するようになりました。 たとえば、特定のカテゴリーを小売顧客セグメントから隠している場合、そのセグメントの買い物客には、それらのカテゴリーの商品に関するレコメンデーションは表示されません。 また、特定の顧客グループや企業向けに共有カタログを定義すると、それらの買い物客は、アクセス可能な商品に関してのみレコメンデーションを見ることができます。 あらゆる推奨商品には、各買い物客の顧客グループに基づいた、正しい顧客グループ固有の価格が反映されています。
 
 >[!NOTE]
 >

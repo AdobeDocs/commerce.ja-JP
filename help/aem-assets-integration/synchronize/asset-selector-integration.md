@@ -31,11 +31,11 @@ ht-degree: 0%
 
 * カテゴリー画像を容易に管理し、ブランドとキャンペーンのガイドラインに沿ったものにできます。
 * [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} ページビルダーで直接アセットを割り当てて、視覚的に充実したコンテンツを提供します。
-* [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} Edge Delivery Servicesを活用したCommerce Storefrontで直接Assetsを割り当てて、視覚的に充実したコンテンツを提供します。
+* [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} Edge Delivery Servicesを活用したCommerce Storefrontで直接Assetsを割り当てて、視覚的に充実したコンテンツを提供します。
 
 >[!NOTE]
 >
-> AEM Asset Selectorは、AEMとオーサリングアプリケーションを統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、*AEM as a Cloud Service ユーザーガイド*&#x200B;の[&#x200B; マイクロフロントエンドアセットセレクター](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}を参照してください。
+> AEM Asset Selectorは、AEMとオーサリングアプリケーションを統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、*AEM as a Cloud Service ユーザーガイド*&#x200B;の[&#x200B; マイクロフロントエンドアセットセレクター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}を参照してください。
 
 ## 主な特長
 

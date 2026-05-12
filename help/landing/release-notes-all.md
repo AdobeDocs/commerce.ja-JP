@@ -29,24 +29,24 @@ ht-degree: 0%
       <td><strong>Commerce サービス </strong>
         <p>拡張機能として利用できる革新的なCommerce サービスの最新の改善点について説明します。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">[!DNL Catalog Service]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">[!DNL Live Search]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">[!DNL Payment Services]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">商品レコメンデーション</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=ja">[!DNL Catalog Service]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=ja">[!DNL Live Search]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=ja">[!DNL Payment Services]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=ja">商品レコメンデーション</a></li>
           </ul>
         </td>
       <td><strong>統合サービス </strong>
         <p>Commerce サービスが他のサービスやAdobeの拡張機能や製品と連携できるようにする統合サービスの最新の改善点について説明します。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/data-connection/release-notes.html">[!DNL Data Connection]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html">[!DNL Services Connector]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/data-connection/release-notes.html?lang=ja">[!DNL Data Connection]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html?lang=ja">[!DNL Services Connector]</a></li>
           </ul>
       </td>
       <td><strong> データサービス </strong>
         <p>Commerce サービスで商品データを管理できるようにするデータサービスの最新の改善点について説明します。</p>
           <ul>
-           <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">SaaS データ書き出し拡張機能</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/data-services/catalog-sync.html">カタログ同期</a></li>
+           <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/release-notes">SaaS データ書き出し拡張機能</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/data-services/catalog-sync.html?lang=ja">カタログ同期</a></li>
           </ul>
       </td>
     </tr>

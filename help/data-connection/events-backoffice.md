@@ -25,13 +25,13 @@ ht-degree: 0%
 
 次に、[!DNL Data Connection]拡張機能のインストール時に使用できるCommerce バックオフィスイベントを示します。 これらのイベントで収集されたデータは、Adobe Experience Platformに送信されます。 [&#x200B; カスタムイベント &#x200B;](custom-events.md)を作成して、標準提供されていない追加データを収集することもできます。
 
-次のイベントが収集するデータに加えて、Adobe Experience Platform Web SDKが提供する[その他のデータ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html)も取得できます。
+次のイベントが収集するデータに加えて、Adobe Experience Platform Web SDKが提供する[その他のデータ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=ja)も取得できます。
 
 バックオフィスイベントには、サーバーサイドのデータが含まれます。 このデータには、注文が行われたか、キャンセルされたか、返金されたか、出荷されたか、完了したかなどの[注文状況](#order-status)情報が含まれます。 サーバーサイドのデータには、アカウントが作成、更新、削除されたかどうかなど、[顧客プロファイルイベント &#x200B;](#customer-profile-events)の情報も含まれます。
 
 >[!NOTE]
 >
->すべてのバックオフィスイベントには、買い物客の電子メールアドレス（使用可能な場合）、およびECIDを含む[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) フィールドが含まれます。
+>すべてのバックオフィスイベントには、買い物客の電子メールアドレス（使用可能な場合）、およびECIDを含む[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=ja) フィールドが含まれます。
 
 ## 注文ステータス
 
@@ -418,7 +418,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->各顧客プロファイルイベントには、[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) フィールドも含まれます。このフィールドには、プロファイルのプライマリ IDとして生成されたシステムのCommerce Customer IDと、セカンダリ IDとして使用される電子メール IDが含まれます。 顧客プロファイル IDを強化するためのカスタム ID属性の作成方法を[学習](custom-identities.md)します。
+>各顧客プロファイルイベントには、[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=ja) フィールドも含まれます。このフィールドには、プロファイルのプライマリ IDとして生成されたシステムのCommerce Customer IDと、セカンダリ IDとして使用される電子メール IDが含まれます。 顧客プロファイル IDを強化するためのカスタム ID属性の作成方法を[学習](custom-identities.md)します。
 
 ### accountCreated
 

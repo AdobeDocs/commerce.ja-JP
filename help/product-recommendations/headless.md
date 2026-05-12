@@ -28,7 +28,7 @@ ht-degree: 0%
 
 カスタムインテグレーターおよびヘッドレスインテグレーターは、これらのLumaおよびPWAの手順を推奨される実装として参照する必要があります。 ヘッドレスソリューションに製品レコメンデーションを実装する方法はたくさんあり、このドキュメントではすべてのシナリオを説明しません。 インテグレーターは、実装のイベント、設計、テストをカバーする必要があります。
 
-[!DNL Product Recommendations]を操作するには[行動データとカタログデータ &#x200B;](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html)が必要です。 カタログデータの同期プロセスはヘッドレス実装でも変更されませんが、行動データの収集には変更が必要です。
+[!DNL Product Recommendations]を操作するには[行動データとカタログデータ &#x200B;](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=ja)が必要です。 カタログデータの同期プロセスはヘッドレス実装でも変更されませんが、行動データの収集には変更が必要です。
 
 >[!NOTE]
 >

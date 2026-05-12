@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # カスタム自動一致
 
-デフォルトの自動一致の戦略（**OOTB自動一致**）が特定のビジネス要件に一致しない場合は、「カスタム一致」オプションを選択します。 このオプションでは、[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)を使用して、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAEM Assetsに入力できないサードパーティシステムからのアセットを開発できます。
+デフォルトの自動一致の戦略（**OOTB自動一致**）が特定のビジネス要件に一致しない場合は、「カスタム一致」オプションを選択します。 このオプションでは、[Adobe Developer App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)を使用して、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAEM Assetsに入力できないサードパーティシステムからのアセットを開発できます。
 
 ## カスタム自動マッチングの設定
 
@@ -123,7 +123,7 @@ ht-degree: 0%
 
 ## カスタムマッチャーAPI エンドポイント
 
-[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}を使用してカスタムマッチャーアプリケーションを構築する場合、アプリケーションは次のエンドポイントを公開する必要があります。
+[App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}を使用してカスタムマッチャーアプリケーションを構築する場合、アプリケーションは次のエンドポイントを公開する必要があります。
 
 * **App Builder アセットから商品URL** エンドポイント
 * **App Builder製品からアセット URL** エンドポイント
@@ -292,7 +292,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | 属性 | データタイプ | 説明 |
 | --- | --- | --- |
 | `asset_id` | 文字列 | アセット ID。 |
-| `asset_roles` | 配列 | アセットの役割： `thumbnail`、`image`、`small_image`、`swatch_image`など、サポートされている[Commerce アセットの役割](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)を使用します。 |
+| `asset_roles` | 配列 | アセットの役割： `thumbnail`、`image`、`small_image`、`swatch_image`など、サポートされている[Commerce アセットの役割](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)を使用します。 |
 | `asset_format` | 文字列 | アセットの形式です。 指定できる値は`image`と`video`です。 |
 | `asset_position` | 数値 | 製品ギャラリー内のアセットの位置。 |
 

@@ -121,7 +121,7 @@ ht-degree: 0%
 
 ![&#x200B; バッジを追加](assets/unit-custom.png)
 
-レコメンデーションユニットをページ上でレンダリングするときにカスタム製品属性を使用できるようにするには、管理者の[製品属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) ページで`Used in Product Listing` プロパティを`Yes`に設定します。
+レコメンデーションユニットをページ上でレンダリングするときにカスタム製品属性を使用できるようにするには、管理者の[製品属性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja) ページで`Used in Product Listing` プロパティを`Yes`に設定します。
 
 このプロパティが設定されている場合、JSON ペイロードには、属性コードと値の配列を含む`attributes` オブジェクトが含まれます。 その後、前述のように特別な視覚的処理やバッジを追加するなど、これらの属性値に基づいてカスタムストアフロントのスタイルを適用できます。
 

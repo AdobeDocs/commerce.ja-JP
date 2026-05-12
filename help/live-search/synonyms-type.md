@@ -60,4 +60,4 @@ a, an, and, are, at, be, but, by, for, for, in, is, it, no, not, of, on, or, suc
 
 同義語を作成すると、検索動作が変更され、厳密なフレーズ **キッチンテーブル**&#x200B;が検索されます。 正確なフレーズが付いた商品のみが表示されるため、結果の数が減少する可能性があります。
 
-以前と同様に条件を個別に検索する場合は、[&#x200B; サポートチケットを作成できます](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。 十分な需要がある場合は、Commerceでは、今後のリリースでこの機能を製品に追加することを検討します。
+以前と同様に条件を個別に検索する場合は、[&#x200B; サポートチケットを作成できます](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。 十分な需要がある場合は、Commerceでは、今後のリリースでこの機能を製品に追加することを検討します。

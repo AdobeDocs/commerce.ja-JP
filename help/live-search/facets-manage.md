@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. ファセットラベルを編集するには、次のいずれかの操作を行います。
 
-   * [!DNL Commerce] ストアフロントの場合、[属性ラベル &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)を編集します。
+   * [!DNL Commerce] ストアフロントの場合、[属性ラベル &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=ja)を編集します。
    * ヘッドレス実装の場合は、最初の列の値をクリックし、必要に応じてテキストを編集します。
 
    ![&#x200B; ラベルを編集](assets/facet-edit-label.png)

@@ -35,11 +35,11 @@ _レコメンデーションユニット_
 
 1. _管理者_ サイドバーで、**マーケティング** > _プロモーション_ > **製品レコメンデーション**&#x200B;に移動して、_製品レコメンデーション_ ワークスペースを表示します。
 
-1. レコメンデーションを表示する[&#x200B; ストアビュー](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)を指定します。
+1. レコメンデーションを表示する[&#x200B; ストアビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views)を指定します。
 
    >[!NOTE]
    >
-   > ページビルダーのレコメンデーションユニットは、デフォルトのストアビューで作成する必要がありますが、任意の場所で使用できます。 ページビルダーを使用した商品レコメンデーションの作成について詳しくは、[&#x200B; コンテンツの追加 – 商品レコメンデーション &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)を参照してください。
+   > ページビルダーのレコメンデーションユニットは、デフォルトのストアビューで作成する必要がありますが、任意の場所で使用できます。 ページビルダーを使用した商品レコメンデーションの作成について詳しくは、[&#x200B; コンテンツの追加 – 商品レコメンデーション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/add-content/recommendations)を参照してください。
 
 1. 「**レコメンデーションを作成**」をクリックします。
 
@@ -49,14 +49,14 @@ _レコメンデーションユニット_
 
    >[!NOTE]
    >
-   > ストアが[製品をカートに追加した直後にショッピングカートページを表示するように設定されている場合、製品レコメンデーションはカートページでサポートされません](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
+   > ストアが[製品をカートに追加した直後にショッピングカートページを表示するように設定されている場合、製品レコメンデーションはカートページでサポートされません](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
 
    * ホームページ
    * カテゴリ
    * 商品詳細
    * 買い物かご
    * 確認
-   * [ページビルダー](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [ページビルダー](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/add-content/recommendations)
 
    ページの種類ごとに最大50個のアクティブなレコメンデーションユニットを作成できます。 制限に達すると、ページタイプがグレー表示されます。
 

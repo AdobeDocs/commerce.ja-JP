@@ -72,7 +72,7 @@ bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 
 マルチスレッドを使用してすべてのデータ書き出し操作を処理するには、システムインテグレーターまたは開発者は、Commerce アプリケーション設定の各フィードのスレッド数とバッチサイズを変更できます。
 
-これらの変更は、設定ファイル `app/etc/config.php`の[&#x200B; システム セクション &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)にカスタム値を追加することで適用できます。
+これらの変更は、設定ファイル `app/etc/config.php`の[&#x200B; システム セクション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)にカスタム値を追加することで適用できます。
 
 **例：商品と価格のマルチスレッドの設定**
 

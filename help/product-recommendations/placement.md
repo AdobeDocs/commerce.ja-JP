@@ -68,4 +68,4 @@ _検索結果の上位のレコメンデーション_
 | 商品詳細 | メインコンテンツの下部（デフォルト） | 最も閲覧された<br>最も購入された商品<br>最も購入された商品<br>これを閲覧した商品、<br>閲覧した商品、<br>購入した商品、<br>購入した商品など<br> トレンド <br>視覚的な類似性 |
 | 買い物かご | メインコンテンツの下部（デフォルト） | 最も閲覧された<br>最も購入された商品<br>最も購入された商品<br>これを閲覧した商品、<br>これを閲覧した商品、<br>これを購入した商品、<br>追加商品<br> トレンド |
 | 確認 | メインコンテンツの下部（デフォルト） | 最も閲覧された<br>最も購入された商品<br>最も購入された商品<br>これを閲覧した商品、<br>これを閲覧した商品、<br>これを購入した商品、<br>追加商品<br> トレンド |
-| ページビルダー | [&#x200B; ドラッグ&amp;ドロップ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)でコンテンツの種類を配置 | 最も閲覧された商品<br>最も購入された商品<br>最もカートに追加された商品<br>あなたにおすすめ<br> トレンド |
+| ページビルダー | [&#x200B; ドラッグ&amp;ドロップ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=ja)でコンテンツの種類を配置 | 最も閲覧された商品<br>最も購入された商品<br>最もカートに追加された商品<br>あなたにおすすめ<br> トレンド |

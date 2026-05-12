@@ -20,4 +20,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->[!DNL Live Search]がインストールされたAdobe Commerceのインストールでは、[!DNL Live Search]類義語が標準のAdobe Commerce [類義語検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms)機能に取って代わりますが、どちらもマーケティングメニューの&#x200B;*SEOと検索* セクションに表示されます。 [!DNL Live Search]を使用する場合は、この節の手順に従ってください。
+>[!DNL Live Search]がインストールされたAdobe Commerceのインストールでは、[!DNL Live Search]類義語が標準のAdobe Commerce [類義語検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=ja#search-synonyms)機能に取って代わりますが、どちらもマーケティングメニューの&#x200B;*SEOと検索* セクションに表示されます。 [!DNL Live Search]を使用する場合は、この節の手順に従ってください。
