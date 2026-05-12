@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 118e2865ce9d4903b9a82254e0f56fc76c9fdadf
 workflow-type: tm+mt
-source-wordcount: 1787
+source-wordcount: 1822
 ht-degree: 0%
 
 ---
@@ -53,10 +53,15 @@ ht-degree: 0%
 
 * [**Developers**](https://helpx.adobe.com/jp/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}：開発者にはユーザー権限があり、開発者ユーザーとしてCommerce インスタンスに追加されます。 [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[&#x200B; イベントの設定](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}、[webhookの作成](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}を使用できます。
 
-* 管理者 – 管理者には3つの種類があります。
+* 管理者 – 管理者の役割にはさまざまな種類があります。
    * [&#x200B; システム管理者](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Admin Consoleを通じて、組織内のすべての製品および製品プロファイルにアクセスできます。
    * [製品管理者](#add-a-product-admin) – 製品管理者は、[!DNL Adobe Admin Console]の製品[&#128279;](#add-users)のユーザー、ロール、権限を管理し、[Commerce管理者](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}のユーザーを管理できます。
    * [製品プロファイル管理者](#add-developers-and-product-profile-admins) – 製品プロファイル管理者はAdobe Commerce管理者にアクセスできませんが、[!DNL Adobe Admin Console]で製品のユーザーを管理できます。
+   * サポート管理者 – サポート管理者は、サポートチケットを作成および管理できます。
+
+>[!NOTE]
+>
+>サポートチケットを作成する機能をユーザーに付与するには、Admin Consoleで&#x200B;**サポート管理者** ロールを割り当てる必要があります。
 
 Adobe Commerce内の各ロールに付与される権限について詳しくは、[&#x200B; ロールリソース &#x200B;](#role-resources)を参照してください。
 
