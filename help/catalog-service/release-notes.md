@@ -72,7 +72,7 @@ ht-degree: 0%
 <!--v1.52-->
 
 ![新規](../assets/new.svg) Adobe Commerce OptimizerおよびAdobe Commerce as a Cloud Serviceのリクエストごとに、最大100 SKUの制限が適用されました
-[文書化された制限と境界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)に従うクライアント。<!--DATA-7156-->
+[文書化された制限と境界](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits)に従うクライアント。<!--DATA-7156-->
 
 **リリース日**: 2026年4月17日
 <!--v1.51-->
@@ -256,7 +256,7 @@ APIは、割引価格が製品の最終価格の最低価格の&#x200B;**より*
 **リリース日**: 2025年6月20日
 <!-- v1.37 -->
 
-![新規](../assets/new.svg) **階層価格表設定** – 親子価格表の正確な価格範囲。 計算では、階層と継承されたルールが尊重され、複数の価格表がリンクされている場合の価格エラーが軽減されます。 Adobe Commerce Optimizerのみ。 [価格表](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks)を参照してください。
+![新規](../assets/new.svg) **階層価格表設定** – 親子価格表の正確な価格範囲。 計算では、階層と継承されたルールが尊重され、複数の価格表がリンクされている場合の価格エラーが軽減されます。 Adobe Commerce Optimizerのみ。 [価格表](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/pricebooks)を参照してください。
 
 ![新規](../assets/new.svg) **大文字と小文字を区別しないキー** - クエリ内のキー検索では、大文字と小文字が区別されなくなりました。キーの大文字と小文字が区別されなくなりました。<!--DATA-6494, DCAT-2495-->
 
@@ -393,7 +393,7 @@ APIは、割引価格が製品の最終価格の最低価格の&#x200B;**より*
 
 <!--DATA-5033-->
 
-![修正](../assets/fix.svg)最大16桁と小数点以下桁の製品価格のサポートを追加しました。 [&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)または[CLI](../data-export/data-export-cli-commands.md)から再同期して、更新を適用します。
+![修正](../assets/fix.svg)最大16桁と小数点以下桁の製品価格のサポートを追加しました。 [&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)または[CLI](../data-export/data-export-cli-commands.md)から再同期して、更新を適用します。
 <!--DATA-5033-->
 
 #### 既知の制限事項
@@ -430,7 +430,7 @@ API MeshとCore GraphQL APIを使用して、次のことを行います。
 
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![新規](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)は、データストリーム（商品レコメンデーション、ライブサーチ、カタログサービス）で利用できるようになりました。 `catalog-service` メタパッケージ v3.1.0以降が必要です。
+![新規](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=ja)は、データストリーム（商品レコメンデーション、ライブサーチ、カタログサービス）で利用できるようになりました。 `catalog-service` メタパッケージ v3.1.0以降が必要です。
 
 **リリース日**: 2024年2月13日
 <!-- v1.16 -->
