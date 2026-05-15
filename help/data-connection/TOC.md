@@ -21,7 +21,7 @@ ht-degree: 1%
 - [Commerce サービスによるプライバシーリクエストの処理](handle-privacy-request.md)
 - [リリースノート](release-notes.md)
 - 基本 {#fundamentals}
-   - [ [!DNL Data Connection] 拡張機能のインストール](install.md)
+   - [&#x200B; [!DNL Data Connection] 拡張機能のインストール](install.md)
    - [Adobe Experience Platformに接続](connect-data.md)
    - [Commerceデータの種類](data-ingestion.md)
    - [時系列イベントスキーマの更新](update-xdm.md)

@@ -33,7 +33,7 @@ ht-degree: 4%
    - 移行ツール {#migration-tools}
       - [バルクデータ移行ツール](migration/bulk-data.md)
       - [コーディングツール](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-   - {hide-from-toc}[ ドキュメント RAG サービス ](migration/doc-rag.md)
+   - {hide-from-toc}[&#x200B; ドキュメント RAG サービス &#x200B;](migration/doc-rag.md)
 - [顧客としてログイン](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [ギフトカードアカウントのREST エンドポイント](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [RESTを介した電子メールトリガー](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
@@ -41,9 +41,9 @@ ht-degree: 4%
    - [チュートリアルの前提条件](tutorials/tutorial-prerequisites.md)
    - [レーティング拡張機能チュートリアル](tutorials/ratings-extension.md)
    - [出荷方法の拡張チュートリアル](tutorials/shipping-method-extension.md)
-   - {hide-from-toc}[配信の見積もり拡張機能チュートリアル ](tutorials/delivery-estimates-extension.md)
-   - {hide-from-toc}[Stock通知拡張機能チュートリアル ](tutorials/in-stock-notification-extension.md)で
-   - {hide-from-toc}[製品レビュー拡張機能チュートリアル ](tutorials/product-reviews-extension.md)
+   - {hide-from-toc}[配信の見積もり拡張機能チュートリアル &#x200B;](tutorials/delivery-estimates-extension.md)
+   - {hide-from-toc}[Stock通知拡張機能チュートリアル で](tutorials/in-stock-notification-extension.md)
+   - {hide-from-toc}[製品レビュー拡張機能チュートリアル &#x200B;](tutorials/product-reviews-extension.md)
 - スキーマ {#schemas}
    - [GraphQL Schema](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST API スキーマ](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
