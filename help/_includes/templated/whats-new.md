@@ -1,7 +1,7 @@
 ---
-source-git-commit: feb450ecd425d7e3ce7f8e354aeb294bb7d5d1ce
+source-git-commit: c435c7751fca8c46077cbab3534bd9f47cd03b2b
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1144'
 ht-degree: 1%
 
 ---
@@ -429,80 +429,6 @@ ht-degree: 1%
         新しいトピック
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0fd98bf86555c914f7a5b1e177c31c37764dbf84">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月12日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>AEM Assetsで製品アセットを設定するユーザー向けに、より明確なナビゲーションガイダンスを使用して、<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/manage-assets">Commerce メディアアセットの管理</a>と<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/default-match"> デフォルトの自動一致</a>を更新しました。</p>
-</td>
-      <td>
-        テクニカル
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a0eaaf0de53962b37c7b52f3e7e13aac4c62e372">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月11日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>v1.3.4で<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/release-notes">AEM Assets統合リリースノート </a>を更新しました。Adobe Commerce 2.4.9-beta1およびPHP 8.5のサポート、および設定UIでのドメインマッピングの自動生成。</p>
-</td>
-      <td>
-        テクニカル
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/85579e3f2f8fc49f46f9201f31908602ee5d3259">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月10日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceの<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を最新のリリースで実稼動環境に更新しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd9b660729f7c8616347d3222fdfb3b83a774e56">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>新しい<a href="https://experienceleague.adobe.com/ja/docs/commerce/app-management/overview">App Management</a> ドキュメントガイドを追加して、App Managementと、Commerce インスタンスにApp Builder アプリケーションを関連付け、設定、管理する方法を紹介しました。</p>
-</td>
-      <td>
-        新しいトピック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ab635fecb7b82294bd4a4fd045ed71931e9d265d">コミット</a></td>
     </tr>
   </tbody>
 </table>
