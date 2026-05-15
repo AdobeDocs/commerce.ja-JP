@@ -1,9 +1,10 @@
 ---
 user-guide-title: SaaS サービスの[!DNL Data Export] ガイド
+breadcrumb-title: '[!DNL Data Export]'
 user-guide-description: このガイドでは、Adobe Commerce SaaS サービスの [!DNL Data Export] 拡張機能の使用方法について詳しく説明します。
 role: Admin
 feature: Services
-source-git-commit: 15e11d76532fa98dc6a432480ab1110a0fbcd781
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 4%

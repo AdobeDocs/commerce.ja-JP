@@ -1,11 +1,12 @@
 ---
 user-guide-title: '[!DNL App Management]'
-user-guide-description: App Builder アプリケーションをAdobe Commerce インスタンスに関連付け、設定および管理します。
+breadcrumb-title: '[!DNL App Management]'
+user-guide-description: App Builder アプリケーションをAdobe Commerce インスタンスに関連付け、設定、管理します。
 feature: App Builder, Extensibility, Integration
-source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
-source-wordcount: '27'
-ht-degree: 7%
+source-wordcount: '34'
+ht-degree: 5%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 7%
 
 - [概要](overview.md)
 - [インストール](install.md)
-- アプリの管理 {#manage-app}
-   - [アプリの管理](manage-app.md)
+- アプリを管理 {#manage-app}
+   - [アプリを管理](manage-app.md)
    - [トラブルシューティング](troubleshooting.md)
-- [Commerce サービスホームに戻る &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)

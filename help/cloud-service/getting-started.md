@@ -23,7 +23,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: 1343
 ht-degree: 0%
@@ -79,13 +79,13 @@ ht-degree: 0%
 
 この図では、システム管理者とマーチャントが[!DNL Adobe Commerce as a Cloud Service] インスタンスにアクセスして管理する方法の概要を示します。 管理者ワークフローについて詳しくは、[Adobe Admin Console ガイド &#x200B;](https://helpx.adobe.com/jp/enterprise/admin-guide.html)を参照してください。
 
-Adobe Commerce as a Cloud Serviceの![&#x200B; システム管理者とマーチャントのワークフロー図](./assets/merchant-flow.svg){zoomable="yes"}
+Adobe Commerce as a Cloud Serviceの![&#x200B; システム管理者とマーチャントのワークフロー図](./assets/merchant-flow.png){zoomable="yes"}
 
 >[!TAB 開発者ワークフロー]
 
 この図では、App Builderを使用して開発者が[!DNL Adobe Commerce as a Cloud Service]の統合を作成する方法の概要を示します。 詳しくは、[API ドキュメント &#x200B;](https://developer.adobe.com/commerce/webapi/rest/)を参照してください。
 
-![Adobe Commerce as a Cloud Serviceとの統合を作成するための開発者ワークフロー図](./assets/developer-flow.svg){zoomable="yes"}
+![Adobe Commerce as a Cloud Serviceとの統合を作成するための開発者ワークフロー図](./assets/developer-flow.png){zoomable="yes"}
 
 >[!ENDTABS]
 
