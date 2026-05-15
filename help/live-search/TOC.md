@@ -1,9 +1,10 @@
 ---
 user-guide-title: '[!DNL Live Search] ガイド'
+breadcrumb-title: '[!DNL Live Search]'
 user-guide-description: このガイドでは、Adobe Commerceから [!DNL Live Search] を使用する方法について詳しく説明します。
 role: Admin
 feature: Services, Search
-source-git-commit: d6228861f479efd92886f8c8d70a785aee164c9e
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 8%
@@ -12,7 +13,7 @@ ht-degree: 8%
 
 # Commerce用[!DNL Live Search] {#live-search}
 
-- [&#x200B; [!DNL Live Search]とは](overview.md)
+- [ [!DNL Live Search]とは](overview.md)
 - [インストール](install.md)
 - [ライブサーチの設定](workspace.md)
 - [限界と限界](boundaries-limits.md)
@@ -47,4 +48,4 @@ ht-degree: 8%
    - [GraphQL](graphql.md)
    - [設定](settings.md)
 - [開発者ガイド](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

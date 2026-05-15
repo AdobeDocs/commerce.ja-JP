@@ -1,27 +1,28 @@
 ---
 user-guide-title: '[!DNL Catalog Service] ガイド'
-user-guide-description: This guide provides detailed instructions for using [!DNL Catalog Service] for Adobe Commerce.
+breadcrumb-title: '[!DNL Catalog Service]'
+user-guide-description: このガイドでは、Adobe Commerceの [!DNL Catalog Service] の使用方法について詳しく説明します。
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 9%
 
 ---
 
-# [!DNL Catalog Service] for Adobe Commerce {#catalog-service}
+# Adobe Commerce用[!DNL Catalog Service] {#catalog-service}
 
 - [ガイドの概要](guide-overview.md)
-- [Introduction to [!DNL Catalog Service]](overview.md)
+- [ [!DNL Catalog Service]の概要](overview.md)
 - [インストール](installation.md)
-- [Get Started with the [!DNL Catalog Service]](get-started.md)
-- [Retrieve catalog data](graphql-queries.md)
-- Integrating with other applications {#integration}
-   - [Catalog Service and API Mesh](mesh.md)
-   - [Use Case: Display Taxed Prices](taxes.md)
+- [ [!DNL Catalog Service]の基本を学ぶ](get-started.md)
+- [カタログデータの取得](graphql-queries.md)
+- 他のアプリケーションとの統合 {#integration}
+   - [カタログサービスとAPI メッシュ](mesh.md)
+   - [ユースケース：課税価格の表示](taxes.md)
 - [リリースノート](release-notes.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 

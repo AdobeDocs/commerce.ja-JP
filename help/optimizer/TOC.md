@@ -1,11 +1,12 @@
 ---
 user-guide-title: '[!DNL Adobe Commerce Optimizer] ガイド'
+breadcrumb-title: '[!DNL Adobe Commerce Optimizer]'
 user-guide-description: ' [!DNL Adobe Commerce Optimizer]のドキュメントとリソース。'
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
 nudge: true
-source-git-commit: 185985dd75404ea9ab586ede32753503617d071d
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 12%
@@ -14,7 +15,7 @@ ht-degree: 12%
 
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [&#x200B; [!DNL Adobe Commerce Optimizer]とは](overview.md)
+- [ [!DNL Adobe Commerce Optimizer]とは](overview.md)
 - [基本を学ぶ](get-started.md)
 - [連携](./integrations/integrations-overview.md)
 - [ユーザーとIDの管理](user-management.md)
