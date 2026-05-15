@@ -28,4 +28,4 @@ ht-degree: 4%
    - [製品属性を動的に追加](add-attribute-dynamically.md)
    - [税区分、属性セットおよび在庫メタデータの追加](add-tax-attribute-set-inventory-attributes.md)
 - [リリースノート](release-notes.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
