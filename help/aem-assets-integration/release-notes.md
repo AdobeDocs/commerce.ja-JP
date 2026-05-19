@@ -3,9 +3,9 @@ title: AEM Assets統合のリリースノート
 description: すべてのAEM Assets統合リリースについて詳しくは、リリースノートを参照してください。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
+source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,21 @@ ht-degree: 0%
 
 _2025年9月11日_
 
-![新しい問題](../assets/new.svg)新しい[属性を持つ](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} カスタム自動一致`asset_matches` エンドポイントを更新しました。
+![新しい問題](../assets/new.svg)新しい`asset_matches`属性を持つ[&#x200B; カスタム自動一致](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} エンドポイントを更新しました。
 
 _2025年2月11日_
 
 ![新しい問題](../assets/new.svg)これで、マーチャントは商品とカテゴリの画像を同期できます。
 
 +++
+
+## v1.3.6
+
+_2026年5月14日_
+
+[!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
+
+![新しい問題](../assets/new.svg)<!-- Issue ACAP-1268 -->画像またはアセットがAEMからCommerceの商品メディアギャラリーに読み込まれると、代替テキストが同期の一部として引き継がれます。 AEM Assetsでは、ストアビューごとに代替テキストを設定できます。 AEM Assets メタデータの[代替テキスト &#x200B;](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}を参照してください。
 
 ## v1.3.5
 
@@ -72,7 +80,7 @@ _2026年2月10日_
 
 [!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
 
-![新しい問題](../assets/new.svg)<!-- Issue ACCS-171 --> **[!UICONTROL Adobe I/O Workspace Configuration]**&#x200B;一致するカスタム [設定を簡素化する](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} フィールドを追加しました。 マーチャントは、App Builder `workspace.json` ファイルをアップロードして、OAuth資格情報とランタイムアクションエンドポイントを自動的に入力できるようになりました。
+![新しい問題](../assets/new.svg)<!-- Issue ACCS-171 --> [一致するカスタム &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}設定を簡素化する&#x200B;**[!UICONTROL Adobe I/O Workspace Configuration]** フィールドを追加しました。 マーチャントは、App Builder `workspace.json` ファイルをアップロードして、OAuth資格情報とランタイムアクションエンドポイントを自動的に入力できるようになりました。
 
 ## v1.2.12
 
@@ -160,7 +168,7 @@ _2025年8月7日_
 
 ![新しい問題](../assets/new.svg)<!-- Issue ACAP-1018 -->これで、管理者からAssets統合を設定する際に[&#x200B; ビジュアライゼーションオーナー](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank}を選択することで、画像アセットとメディアアセットのソースを選択できるようになりました。
 
-![新しい問題](../assets/new.svg)<!-- Issue ACAP-1078 -->新しい[属性を持つ](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} カスタム自動一致`asset_matches` エンドポイントを更新しました。 この変更により、特定の`productSku`に関連付けられたすべてのアセットを返すために、独自のマッチングロジックを実装できます。
+![新しい問題](../assets/new.svg)<!-- Issue ACAP-1078 -->新しい`asset_matches`属性を持つ[&#x200B; カスタム自動一致](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank} エンドポイントを更新しました。 この変更により、特定の`productSku`に関連付けられたすべてのアセットを返すために、独自のマッチングロジックを実装できます。
 
 ## v1.1.2
 
