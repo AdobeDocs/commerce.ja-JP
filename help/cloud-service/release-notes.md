@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
 workflow-type: tm+mt
-source-wordcount: 3633
+source-wordcount: 4032
 ht-degree: 0%
 
 ---
@@ -42,11 +42,51 @@ ht-degree: 0%
 >
 >Adobe Commerce オンプレミスまたはAdobe Commerce オンクラウドインフラストラクチャを使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview)を参照してください。
 
-## 2026年5月 – リリース #1 {#latest}
+## 2026年5月 – リリース #2 {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+
+以下の項目は、2026年5月21日に実稼動環境にリリースされます。
+
+>[!BEGINSHADEBOX]
+
+### デフォルトキャリアとカスタムキャリアを使用して出荷を追跡
+
+[!DNL Commerce Admin]のデフォルトおよびカスタムの配送業者に対して注文追跡が信頼性が向上し、加盟店が一貫した購入後の追跡体験を提供できるようになりました。 以前は、UPSやFedExなどの通信事業者を選択し、トラッキング IDを適用すると、トラッキングリンクが表示されない可能性がありました。この動作を復元するために加盟店の操作は必要ありません。 トラッキングリンクのサポートは、[!DNL App Builder Integration Starter Kit]で作成された[&#x200B; カスタムキャリア &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference/)でも利用できます。<!-- ACCS-891 -->
+
+### 製品属性グリッドでの属性入力タイプの表示
+
+新しい&#x200B;[!UICONTROL **属性タイプ**]&#x200B;列が（[!UICONTROL **Stores**] > _[!UICONTROL Attributes]_>[!UICONTROL **Product**]）の製品属性グリッドに表示され、拡張機能によって提供されたタイプを含む、各製品属性の入力タイプ（テキストフィールド、ドロップダウン、yes/noなど）が表示されるようになりました。 これにより、大規模な属性セットを操作する際の属性の識別と管理が容易になります。<!-- ACCS-925 -->
+
+### 機能強化とバグ修正
+
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
+
+* POST `V1/async/custom-email/send` REST エンドポイントで`UnstructuredArray`検証エラーが返される問題を修正しました。 非同期エンドポイントは、同期POST `V1/custom-email/send` エンドポイントと一貫して機能するようになりました。<!-- ACCS-921 -->
+
+* ペイロードにカスタム属性を含めずにRESTを使用してエンティティを更新する際に、会社などのエンティティのカスタム シリアル化可能な属性が意図せずクリアされる問題を修正しました。 カスタム属性が指定されていない場合に保持されるようになりました。<!-- ACCS-946 -->
+
+* `X-Adobe-Company` ヘッダーがリクエストに存在する場合にゲスト GraphQLのログインを妨げる「consumer is not authorized」エラーを解決しました。<!-- ACCS-949 -->
+
+* PUT `V1/customers/companies` REST エンドポイントを介して会社に顧客を割り当てた後、[!DNL Commerce Admin]の会社を編集または削除すると、「そのようなエンティティはありません」エラーで失敗する可能性がある問題を修正しました。<!-- ACCS-856 -->
+
+* 古い受注グリッドのステータスに関する問題を解決しました。<!-- CCSAAS-4915 -->
+
+* ダウンロード可能な製品のサンプルおよびリンクとして添付されたファイルが、製品編集ページからアクセスしたときに`404` エラーを返す[!DNL Commerce Admin]の問題を修正しました。<!-- CCSAAS-4394 -->
+
+* 設定可能な製品を含む注文の出荷を作成する際に発生する可能性がある「未定義の配列キー「simple_sku」エラーを修正しました。<!-- CCSAAS-4877 -->
+
+* `guestOrderByToken` GraphQL クエリは、内部サーバーエラーではなく、形式が正しくないトークンで呼び出された場合に、より有益なエラーメッセージを返すようになりました。<!-- CCSAAS-4921 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年5月 – リリース #1
 
 [!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
-
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
 2026年5月7日（PT）に実稼動環境に公開されたアイテムは次のとおりです。
 
