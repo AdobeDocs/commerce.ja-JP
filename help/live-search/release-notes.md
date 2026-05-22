@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
 workflow-type: tm+mt
-source-wordcount: 3060
+source-wordcount: 3098
 ht-degree: 1%
 
 ---
@@ -40,6 +40,10 @@ ht-degree: 1%
 ## ホスト型サービスの更新
 
 これらのメモでは、バージョン管理されたリリース以外で公開されたアップデートや、ホストされたサービスの改善について説明します。
+
+_2026年5月22日_
+
+![新規](../assets/new.svg)検索マーチャンダイジングルール、デフォルトルール、および[&#x200B; カテゴリマーチャンダイジングルール &#x200B;](./category-merch.md)が&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;を含むようになりました。これにより、インテリジェントなランキング戦略がテキストの関連性に対して結果にどの程度影響を与えるかを調整できます。 ルールプレビューは、設定されたブーストと一致します。 [学習を増やす](./rules-add.md#intelligent-ranking-boost)。
 
 _2025年10月1日_
 
