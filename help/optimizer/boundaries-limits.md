@@ -1,19 +1,19 @@
 ---
-title: 制限と境界
-description: キャパシティを計画し、パフォーマンスの問題を防ぐため、 [!DNL Adobe Commerce Optimizer] 制限と境界について理解します。
+title: Adobe Commerce Optimizer限界
+description: Adobe Commerce Optimizerのライセンス制限とシステムの制限について説明します。 キャパシティを計画し、使用状況を追跡し、制限を超えた場合の待ち時間とスロットリングを回避します。
 role: Admin, Developer
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
 
 # 制限と境界
 
-[!DNL Adobe Commerce Optimizer]には、次の2種類の制限があります。
+[!DNL Adobe Commerce Optimizer]は、プロジェクトで使用できるキャパシティを定義する&#x200B;**ライセンス制限**&#x200B;および&#x200B;**システム境界**&#x200B;を適用します。
 
 - **ライセンス制限** – 購入済みの容量に基づいて、追加のパッケージを購入することで拡張できます。
 - **システムの境界** - システム リソースを保護し、すべてのユーザーに信頼性の高いパフォーマンスを確保するための制限を修正しました。
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 ## 追加能力を求める
 
-ライセンス制限は、[&#x200B; ライセンス制限とシステム境界](#license-limits-and-system-boundaries) セクションに記載されているライセンスパッケージを購入するか、独自のユースケースに対するカスタムライセンスを交渉することで増やすことができます。 お客様の要件については、Adobeの担当者にお問い合わせください。
+ライセンス制限は、[ ライセンス制限とシステム境界](#license-limits-and-system-boundaries) セクションに記載されているライセンスパッケージを購入するか、独自のユースケースに対するカスタムライセンスを交渉することで増やすことができます。 お客様の要件については、Adobeの担当者にお問い合わせください。
 
-システムの境界について質問がある場合は、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support)にお問い合わせください。
+システムの境界について質問がある場合は、[Adobe サポート ](https://experienceleague.adobe.com/home?lang=en#support)にお問い合わせください。
 
 ## パフォーマンスの問題を防止
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 | **環境** | **説明** | **基本配分** | **拡張可能ですか？** |
 | --- | --- | --- | --- |
 | **サンドボックス環境** | 含まれているサンドボックス環境の数 | 2/インスタンス | はい<p>インスタンスごとに環境ライセンスを追加</p> |
-| **実稼動環境** | 含まれる実稼動環境の数 | 1/インスタンス | ライセンス<p>インスタンスごとに環境ライセンスを追加</p> |
+| **実稼動環境** | 含まれる実稼動環境の数 | 1/インスタンス | はい<p>インスタンスごとに環境ライセンスを追加</p> |
 
 {style="table-layout:auto"}
 
@@ -63,28 +63,28 @@ ht-degree: 0%
 
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** |
 | --- | --- | --- | --- |
-| プライスブック | インスタンスごとに許可される価格台帳の数 | [&#x200B; カタログのバリエーション数](#catalog)に基づく | はい<br> カタログのバリエーションを増やす |
+| プライスブック | インスタンスごとに許可される価格台帳の数 | [ カタログのバリエーション数](#catalog)に基づく | はい<br> カタログのバリエーションを増やす |
 | 価格記録ごとの割引 | 1つの価格表に適用できる割引数 | 10 | いいえ |
 
 {style="table-layout:auto"}
 
-### AEM Assetsを活用した商品ビジュアル
+### [!DNL Product Visuals]個の制限
 
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** |
 | --- | --- | --- | --- |
-| 製品ビジュアルがユーザーを動かす | AI ツール、Adobe ExpressとFireflyの統合、Content Hubとの共有など、包括的なデジタルアセット管理機能を備えたライセンスユーザーは、主要なDAM タスクと高度なクラウドネイティブ機能を処理して、効率を最大化できます。 | 2 | はい<p>AEM Assets ライセンスへのアップグレード</p> |
-| Product Visuals Collaborator ユーザー | AEM Commerceとの連携によるアセットへのアクセスと作業、Adobe ExpressとFireflyを使用したコンテンツの制作と編集、および有効な場合はContent Hub ポータルを介した承認済みアセットの活用。 | 2 | はい<p>AEM Assets ライセンスへのアップグレード</p> |
+| 製品ビジュアルがユーザーを動かす | AI ツール、[!DNL Adobe Express]/[!DNL Firefly]との統合、Content Hubの共有など、包括的なデジタルアセット管理機能を備えたライセンスユーザーが、主要なDAM タスクと高度なクラウドネイティブ機能を処理して、効率を最適化しています。 | 2 | はい<p>[!DNL AEM Assets] ライセンスへのアップグレード</p> |
+| Product Visuals Collaborator ユーザー | AEM Commerceとの連携によるアセットへのアクセスと操作、[!DNL Adobe Express]と[!DNL Firefly]を使用したコンテンツの制作と編集、および有効な場合はContent Hub ポータルを介した承認済みアセットの活用。 | 2 | はい<p>[!DNL AEM Assets] ライセンスへのアップグレード</p> |
 | 製品ビジュアルのストレージ | アセットに割り当てられたストレージ容量 | 1 TB ストレージ | いいえ |
-| Dynamic Mediaの使用状況 | 以下を含むダイナミックメディア処理操作の許可<ul><li>画像配信</li><li>スマートイメージング</li><li>動画配信</li></ul><p>詳しくは、以下の「*Dynamic Mediaの使用状況の計算*」を参照してください。 | GMVによる<p>最小配分：5M オペレーション/月</p> | はい<ul><li>追加操作の購入ライセンス</li><li>AEM Assets ライセンスへのアップグレード</li></ul> |
-| 動画配信 | ビデオ配信またはダウンロードの許可 | 300本、1分/ビデオ | はい<p>AEM Assets ライセンスへのアップグレード</p> |
-| アセット生成 | 画像を作成するためのAdobe ExpressとAdobe Fireflyの生成AIへのアクセス | なし | 生成AI クレジットは別途購入する |
+| Dynamic Mediaの使用状況 | 以下を含むダイナミックメディア処理操作の許可<ul><li>画像配信</li><li>スマートイメージング</li><li>動画配信</li></ul><p>詳しくは、以下の「*Dynamic Mediaの使用状況の計算*」を参照してください。 | GMV （グロス・マーチャンダイジング・バリュー）ベース<p>最小配分：5M オペレーション/月</p> | はい<ul><li>追加操作の購入ライセンス</li><li>[!DNL AEM Assets] ライセンスへのアップグレード</li></ul> |
+| 動画配信 | ビデオ配信またはダウンロードの許可 | 300本、1分/ビデオ | はい<p>[!DNL AEM Assets] ライセンスへのアップグレード</p> |
+| アセット生成 | 画像を作成するための[!DNL Adobe Express]および[!DNL Adobe Firefly]生成AIへのアクセス | なし | 生成AI クレジットは別途購入する |
 
 {style="table-layout:auto"}
 
 
 >[!NOTE]
 >
->**パワーユーザー**&#x200B;は、直接または[!DNL Adobe Commerce Optimizer]内でAdobe Expressにアクセスできます。 **共同作業者ユーザー**&#x200B;は、Adobe Express アプリケーションに直接アクセスできます。 利用方法は、[Adobe Express with Firefly Product Specific Licensing Terms](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf)に準拠します。
+>**パワーユーザー**&#x200B;は[!DNL Adobe Express]に直接または[!DNL Adobe Commerce Optimizer]内でアクセスできます。 **共同作業者ユーザー**&#x200B;は[!DNL Adobe Express] アプリケーションに直接アクセスできます。 利用方法は、[Adobe Express with Firefly Product Specific Licensing Terms](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf)に準拠します。
 
 
 >[!BEGINSHADEBOX &quot;Dynamic Mediaの使用状況の計算&quot;]
@@ -104,40 +104,42 @@ Dynamic Mediaの使用状況は、[!DNL Adobe Commerce Optimizer]内の製品ビ
 
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** |
 | --- | --- | --- | --- |
-| カタログビュー | マスターカタログの設定可能なサブセットの数 | [&#x200B; カタログのバリエーション数](#catalog)に基づく | はい<br> カタログのバリエーションを増やす |
+| カタログビュー | マスターカタログの設定可能なサブセットの数 | [ カタログのバリエーション数](#catalog)に基づく | はい<br> カタログのバリエーションを増やす |
 | カタログビューごとのポリシー | 許可されるデータフィルターの数 | 10 | いいえ |
 | ポリシーの属性値 | フィルタリング用に設定できる製品特性の数 | 100 | いいえ |
 
 {style="table-layout:auto"}
 
-### Catalog storefront
+### カタログストアフロント
 
-カタログストアフロント機能のベース配分は、GMV層に基づいて決定されます。 The table indicates the minimum allocation for each capability.
+カタログストアフロント能力の基本配分は、GMV （商品総価値）層に基づいて決定されます。 この表は、各機能の最小割り当てを示しています。
 
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** |
 | --- | --- | --- | --- |
-| Catalog retrieval rate | Number of times a catalog API is called per month by a system (storefront, transaction system, ERP, or other) to retrieve data from the catalog | Based on GMV tier<p>Minimum allocation: 10M/month</p> | はい<p>Add 1M requests per month license packs</p> |
-| Content requests | Requests to Commerce Storefront for HTML page views or JSON API calls. Counted as 1 page view or 5 API calls. | Based on GMV tier<p>Minimum allocation: 2M/month</p> | はい<p>Add 1M per month license pack</p> |
-| Storefront GenAI variations | Allowance for text-based content generation | Based on GMV tier<p>Minimum allocation: 1K variations/month</p> | はい<p>生成AI クレジットは別途購入する</p> |
+| カタログ検索率 | カタログ APIが、カタログからデータを取得するためにシステム（ストアフロント、トランザクションシステム、ERPなど）によって1か月に呼び出される回数 | GMV層に基づく<p>最小配分：10M/月</p> | はい<p>1か月あたり100万リクエストのライセンスパックを追加</p> |
+| コンテンツリクエスト | HTML ページビューまたはJSON API呼び出しのストアフロントへのリクエスト。 1 ページビューまたは5回のAPI呼び出しとしてカウント。 | GMV層に基づく<p>最小配分：2M/月</p> | はい<p>1か月あたり1 Mのライセンスパックを追加</p> |
+| バリエーション | テキストベースのコンテンツ生成の許可 | GMV層に基づく<p>最小配分：1K バリエーション/月</p> | はい<p>生成AI クレジットは別途購入する</p> |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->画像を生成するには、[!DNL Adobe Commerce Optimizer]と同じIMS組織にプロビジョニングされたAdobe Firefly ライセンスが必要です。
+>画像の生成には、[!DNL Adobe Commerce Optimizer]と同じIMS組織にプロビジョニングされた[!DNL Adobe Firefly] ライセンスが必要です。
 
 
 ### 製品の発見
 
+ストアフロントの商品検索、リスト、マーチャンダイジング設定には、次の制限が適用されます。
+
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** |
 | --- | --- | --- | --- |
-| 検索リクエストあたりの商品 | 検索結果でページごとに返される製品の最大数 | 100 | いいえ |
+| 商品検索 | `products`、`productSearch`、`refineProduct`、`variants`で商品データを取得する際の[!DNL Catalog Service] GraphQL リクエストあたりの最大SKU数。 複数の呼び出しに対して、大きなリクエストを分割します。 | 100 | いいえ |
 | フィルター可能な属性 | 階層化されたナビゲーションとファセットで有効にできる製品特性（色、サイズ、ブランド、素材など）の数 | 200 | いいえ |
-| 検索可能な属性 | 製品カタログ検索サービスで使用するように設定できる製品特性の数 | 200 | いいえ |
-| ソート可能な属性 | 検索結果の値の順序を決定するために設定できる製品特性の数 | 50 | いいえ |
-| 検索ページの深さ | ページ分割を通じてアクセスできる製品の最大数（例：100 ページ× 100 ページの製品/ページ） | 10K | いいえ |
+| 検索可能な属性 | カタログ検索でインデックスを作成できる製品特性の数 | 200 | いいえ |
+| ソート可能な属性 | 検索ページとカテゴリーページの並べ替えオプションとして使用できる製品特性の数。 | 50 | いいえ |
+| 検索ページの深さ | 検索ページネーションを通じて到達できる最大の商品（例：100 ページ× 100 ページの商品/ページ） | 10K | いいえ |
 | ファセット | 買い物客が検索結果を絞り込み、カテゴリーを閲覧するのに役立つ、フィルター可能な商品属性（ブランド、色、サイズ、価格など）の数 | 100<p>フィルター可能な属性である必要があります</p> | いいえ |
-| ファセットごとのオプション | 買い物客がリストから選択できるフィルター可能な商品属性値の数（例：色の場合は「赤」、「青」、サイズの場合は「小」、「Medium」） | 100 | はい<p>サポートリクエストで増加する可能性があります</p> |
+| ファセットごとのオプション | 買い物客がファセット内で選択できるフィルター可能な商品属性値の数（例：色の場合は「赤」、「青」、サイズの場合は「小」、「Medium」） | 100 | はい<p>サポートリクエストで増加する可能性があります</p> |
 
 {style="table-layout:auto"}
 
@@ -148,7 +150,7 @@ Dynamic Mediaの使用状況は、[!DNL Adobe Commerce Optimizer]内の製品ビ
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** |
 | --- | --- | --- | --- |
 | アクティブなレコメンデーションユニット | ストアフロント上のライブレコメンデーションコンポーネントの数（「顧客も閲覧した」または「気に入ったかもしれない」など） | 50 | いいえ |
-| カテゴリまたは属性のインクルード/除外 | レコメンデーションの対象となる特定のセットに商品をフィルタリング | サポートされていません | |
+| カテゴリまたは属性のインクルード/除外 | レコメンデーションの対象となる特定のセットに商品をフィルタリング | サポートされていません | — |
 
 {style="table-layout:auto"}
 
@@ -156,7 +158,7 @@ Dynamic Mediaの使用状況は、[!DNL Adobe Commerce Optimizer]内の製品ビ
 
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** | **メモ** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | クラウドネイティブな拡張機能や統合機能の構築能力 | GMV層に基づく<p>最小配分：1 パック/年</p> | はい<p>追加パックを追加</p> | パックごとに定義される制限については、次を参照してください。<ul><li>パックごとに定義された制限の[App Builder製品説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder Runtime Guides*&#x200B;の[&#x200B; システム設定と制限](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder ストレージの要件](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | クラウドネイティブな拡張機能や統合機能の構築能力 | GMV層に基づく<p>最小配分：1 パック/年</p> | はい<p>追加パックを追加</p> | パックごとに定義される制限については、次を参照してください。<ul><li>パックごとに定義された制限の[App Builder製品説明](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder Runtime Guides*&#x200B;の[ システム設定と制限](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder ストレージの要件](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -193,5 +195,5 @@ This approach ensures your solution is accurately sized for your business needs.
 1. **GenAI or Media Needs**
 
    * Need: +10M dynamic media ops/month
-   * Add-On: 10 × dynamic media packs (1M each) 
+   * Add-On: 10 × dynamic media packs (1M each)
 -->
