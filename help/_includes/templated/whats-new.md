@@ -1,7 +1,7 @@
 ---
-source-git-commit: bfbfd43620580b8db464b823be6f0f64c97c261d
+source-git-commit: 976bc4114790473d3bdcab6c06684f0c955893ee
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1103'
 ht-degree: 1%
 
 ---
@@ -225,7 +225,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8f2cc1e79ede56192a8ab03194b0f69854f89f7b">コミット</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/release-notes">AEM Assets統合v1.3.5</a>を文書化し、<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match">自動一致</a> API リクエストフィールド （<code class="language-plaintext highlighter-rouge">eventData</code>、<code class="language-plaintext highlighter-rouge">productSku</code>）を修正しました。</p>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/release-notes">AEM Assets統合v1.3.5</a>を文書化し、<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match">自動一致</a> API リクエストフィールド （<code>eventData</code>、<code>productSku</code>）を修正しました。</p>
 </td>
       <td>
         新しいトピック
@@ -371,58 +371,6 @@ ht-degree: 1%
         メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4a60783dbed189475bcd0090c949cd76b0566f54">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月27日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>最新のサンドボックスリリース情報を含むAdobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を更新しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ccecbf0dcbb0cb02d7874beba5d4b14d7f04cd44">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月25日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>CommerceのWebhook セクションと、App Management ダッシュボードのWebhook検証エラーのスクリーンショットを使用して、<a href="https://experienceleague.adobe.com/ja/docs/commerce/app-management/install">App Management</a>をインストールしてアクセスできるようになりました。</p>
-</td>
-      <td>
-        テクニカル
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/86c0945bbb0a562de1b66d420dec2a05d4d81e5f">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>3月リリース#2を実稼動環境に移行するために、<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes#latest"> リリースノート </a>を更新しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/522240cfd305bb00026ba477dc94e0bd2de30f06">コミット</a></td>
     </tr>
   </tbody>
 </table>
