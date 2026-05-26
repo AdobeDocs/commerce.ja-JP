@@ -48,4 +48,4 @@ ht-degree: 8%
    - [GraphQL](graphql.md)
    - [設定](settings.md)
 - [開発者ガイド](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
