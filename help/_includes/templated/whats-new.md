@@ -1,7 +1,7 @@
 ---
-source-git-commit: c435c7751fca8c46077cbab3534bd9f47cd03b2b
+source-git-commit: bfbfd43620580b8db464b823be6f0f64c97c261d
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1218'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年5月22日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>2026年5月20日（PT）リリースの<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a>およびCommerce <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/release-notes"> カタログサービス </a>のAPI アップデートに関するリリースノートを追加しました。これにより、商品データを取得する際に、リクエストごとに文書化された100 SKU制限が適用されるようになりました。 <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits">制限と境界</a>を参照してください。</p>
+</td>
+      <td>
+        テクニカル
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/342a3015f743e12b7089e4d430a517804a7cd40c">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost"> ルールを追加</a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/best-practice"> ベストプラクティス </a>の[!DNL Live Search]のインテリジェントなランキング向上（ルールごとに設定可能な行動の重み付け、デフォルトは5.0）を、<a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/category-merch"> カテゴリーマーチャンダイジング </a>から相互参照して文書化しました。 <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">作成と管理</a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/best-practice"> マーチャンダイジングルールのベストプラクティス </a>で、[!DNL Adobe Commerce Optimizer]に対して同じガイダンスを追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/40b4528d417a4df09ac9ae9fb0d97b0f678b55ac">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年5月19日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>AEM Assets統合ガイドでは、エディターが<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/release-notes">AEM Assets統合v1.3.6 </a>で<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata">代替テキスト </a>をどのように設定するかを説明します。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d3dfbc59e72c00c3552af5805b57c69e60b38b4">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年4月30日（PT）
 
@@ -363,72 +423,6 @@ ht-degree: 1%
         メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/522240cfd305bb00026ba477dc94e0bd2de30f06">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月23日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/tutorials/tutorial-prerequisites"> チュートリアルの前提条件</a>に新しい自動インストールを追加しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a383e95e23291959f039390dfd3943bf98aa83ef">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月19日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新しいトピックが追加されました：<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer">Adobe Commerce as a Cloud Serviceのお客様としてログイン </a>。<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/">Adobe Commerce as a Cloud Serviceのギフトカードアカウント REST エンドポイント </a>。<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/">Adobe Commerce as a Cloud ServiceのREST</a>を通じたメールトリガー。<br />2026年3月の<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を更新 – リリース # 2 リリース情報。</p>
-</td>
-      <td>
-        新しいトピック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/58b94a9a587b3947d4b340ce77c8b3f7b28c27f4">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月17日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>AEM Assets統合</a>に対するIMS ユーザー権限を<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/permissions">設定して、アセットセレクターと管理者に自動入力された設定フィールド（プログラム ID、環境ID、ドメインマッピング）を有効にするためのIMSおよび配信階層の権限を設定する方法を説明しました。</p>
-</td>
-      <td>
-        新しいトピック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0fd98bf86555c914f7a5b1e177c31c37764dbf84">コミット</a></td>
     </tr>
   </tbody>
 </table>
