@@ -17,10 +17,10 @@ ht-degree: 0%
 
 - **製品タイプ** - サポートされている製品タイプには、_シンプル_、_設定可能_、_バーチャル_、_ダウンロード可能_、_ギフトカード_&#x200B;などがあります。 _バンドル_、_グループ化_、カスタム製品タイプはサポートされていません。 カタログにサポートされていない製品タイプが多数含まれている場合は、[準備状況スコア &#x200B;](create.md#readiness-indicators)が低くなる可能性があります。 製品タイプ別[&#x200B; フィルター](filters.md#type)を参照してください。
 - スペースを含む&#x200B;**SKU** - スペースを含むSKUは、推奨事項の関連性を減らすことができ、可能な場合は避ける必要があります。
-- **買い物かごページ** - ストアが[買い物かごページを買い物かごに商品を追加した直後に表示するように設定されている場合、商品レコメンデーションは買い物かごページでサポートされません](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。 [推奨事項の作成](create.md)を参照してください。
+- **買い物かごページ** - ストアが[買い物かごページを買い物かごに商品を追加した直後に表示するように設定されている場合、商品レコメンデーションは買い物かごページでサポートされません](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。 [推奨事項の作成](create.md)を参照してください。
 - **子製品** – 設定可能な製品の子製品（表示&#x200B;_個別に表示されない_）は、レコメンデーションユニットに表示されません。 設定可能（親）製品のみが表示されます。 [商品のフィルター](filters.md#product)を参照してください。
 - **無効な製品または非表示の製品** – 無効な製品または個別に表示されない製品は、レコメンデーションに表示されず、製品フィルターで選択できません。
-- **特別価格** - [開始日と終了日を含む特別価格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special)は、レコメンデーション単位ではサポートされていません。 特別価格の商品はレコメンデーションに表示できますが、ユニットには特別価格、開始日、終了日は表示されません。 顧客が商品ページを開くまで、通常価格（またはカタログや価格フィードから提供されるその他の価格データ）を確認できます。
+- **特別価格** - [開始日と終了日を含む特別価格](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/pricing/product-price-special)は、レコメンデーション単位ではサポートされていません。 特別価格の商品はレコメンデーションに表示できますが、ユニットには特別価格、開始日、終了日は表示されません。 顧客が商品ページを開くまで、通常価格（またはカタログや価格フィードから提供されるその他の価格データ）を確認できます。
 
 ## レコメンデーションユニット
 
@@ -63,4 +63,4 @@ ht-degree: 0%
 
 ## トラブルシューティング
 
-カタログの同期、表示されない推奨事項、その他の一般的な問題については、[Commerce ナレッジベース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)を検索するか、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)にお問い合わせください。
+カタログの同期、表示されない推奨事項、その他の一般的な問題については、[Commerce ナレッジベース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview)を検索するか、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)にお問い合わせください。

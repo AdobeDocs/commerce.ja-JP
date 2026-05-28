@@ -222,7 +222,7 @@ ht-degree: 0%
 検索用の商品属性について詳しく見る：
 
 - [属性を検索可能に設定する](workspace.md#set-attributes-as-searchable)
-- [属性に重みを割り当てる](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [属性に重みを割り当てる](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 検索結果の監視
 
