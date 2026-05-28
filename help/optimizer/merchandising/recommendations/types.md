@@ -1,22 +1,13 @@
 ---
 title: レコメンデーションタイプ
 description: サイトの様々なページにデプロイできるレコメンデーションについて説明します。
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
 TQID: https://experienceleague.adobe.com/GRGSFrVMS8gSjkpvnirUZQR4qaxGMBMrMeu2t21Yk6Y
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: beb7a3c1-66ab-4786-b879-7621375b3c40id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1638
@@ -45,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この記事で説明されているイベントについて詳しくは、開発者ドキュメントの[&#x200B; ストアフロントイベント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を参照してください。
+>この記事で説明されているイベントについて詳しくは、開発者ドキュメントの[ ストアフロントイベント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を参照してください。
 
 ## データ要件と行動
 
@@ -60,7 +51,7 @@ ht-degree: 0%
 レコメンデーションを生成するのに十分なイベントデータがない場合、システムは次のことが可能になります。
 
 - レコメンデーション単位の空の結果を返します。
-- パーソナライズされたレコメンデーションがまだ利用できない場合に`Most viewed`商品を表示するなど、[&#x200B; バックアップのレコメンデーション &#x200B;](../../setup/events/overview.md#backup-recommendations)をトリガーします。
+- パーソナライズされたレコメンデーションがまだ利用できない場合に`Most viewed`商品を表示するなど、[ バックアップのレコメンデーション ](../../setup/events/overview.md#backup-recommendations)をトリガーします。
 - レコメンデーション単位に[設定](create.md)より少ない製品を表示します。
 
 ## Personalized {#personalized}
@@ -69,7 +60,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->パーソナライズされたレコメンデーションを提供するには、買い物客の行動履歴を把握する必要があります。 十分なインタラクション履歴を持たない新規訪問者や買い物客には、サイトで十分な行動シグナルが生成されるまで、「最も閲覧された商品」などの[&#x200B; バックアップのレコメンデーション &#x200B;](../../setup/events/overview.md#backup-recommendations)が表示されます。
+>パーソナライズされたレコメンデーションを提供するには、買い物客の行動履歴を把握する必要があります。 十分なインタラクション履歴を持たない新規訪問者や買い物客には、サイトで十分な行動シグナルが生成されるまで、「最も閲覧された商品」などの[ バックアップのレコメンデーション ](../../setup/events/overview.md#backup-recommendations)が表示されます。
 
 | タイプ | 説明 |
 |---|---|
@@ -100,7 +91,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->人気にもとづくレコメンデーションには、ストアフロントからの十分なイベントデータが必要です。 ストアが新しい場合やトラフィックが少ない場合は、適切な行動データが収集されるまで、これらのレコメンデーションタイプから返される結果が限定的であったり、結果が出ないことがあります。 最適なパフォーマンスを確保するために、[&#x200B; データ準備状況インジケーター](../../manage-results/recommendation-performance.md)を監視します。
+>人気にもとづくレコメンデーションには、ストアフロントからの十分なイベントデータが必要です。 ストアが新しい場合やトラフィックが少ない場合は、適切な行動データが収集されるまで、これらのレコメンデーションタイプから返される結果が限定的であったり、結果が出ないことがあります。 最適なパフォーマンスを確保するために、[ データ準備状況インジケーター](../../manage-results/recommendation-performance.md)を監視します。
 
 | タイプ | 説明 |
 |---|---|
