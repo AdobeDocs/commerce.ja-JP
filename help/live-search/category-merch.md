@@ -5,10 +5,14 @@ gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
 badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
 source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
 source-wordcount: 1171
@@ -18,7 +22,7 @@ ht-degree: 0%
 
 # カテゴリーマーチャンダイジング
 
-カテゴリーマーチャンダイジングを使用すると、ストア所有者は、インテリジェントなランキング [ ルール ](rules.md)を製品カテゴリとサブカテゴリに適用できます。[!DNL Live Search]
+カテゴリーマーチャンダイジングを使用すると、ストア所有者は、インテリジェントなランキング [&#x200B; ルール &#x200B;](rules.md)を製品カテゴリとサブカテゴリに適用できます。[!DNL Live Search]
 
 このビデオでは、カテゴリーマーチャンダイジングの概要を説明します。
 
@@ -30,7 +34,7 @@ ht-degree: 0%
 >
 >カテゴリ マーチャンダイジングは、[!DNL Live Search] [3.0.0以降](release-notes.md)で利用できます。 カテゴリ マーチャンダイジング ワークスペースが表示されますが、データが入力されていない場合は、[!DNL Live Search] モジュールを更新してください。
 
-![ カテゴリ マーチャンダイジング ワークスペース ](assets/category_workspace.png)
+![&#x200B; カテゴリ マーチャンダイジング ワークスペース &#x200B;](assets/category_workspace.png)
 
 カテゴリマーチャンダイジングビューには、定義されたカテゴリルールが表示され、次の列が表示されます。
 
@@ -58,7 +62,7 @@ ht-degree: 0%
 * なし：デフォルトの順序で商品をランク付けします。
 
 
-**None**&#x200B;を除くインテリジェントなランキング方法では、ルールエディターで&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;を設定して、行動シグナルが商品の注文に与える影響を強く調整できます。 デフォルト、制限、プレビュー動作、およびboostが&#x200B;**手動ランキング**&#x200B;と比較される方法について詳しくは、[ インテリジェント ランキング boost](rules-add.md#intelligent-ranking-boost)を参照してください。
+**None**&#x200B;を除くインテリジェントなランキング方法では、ルールエディターで&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;を設定して、行動シグナルが商品の注文に与える影響を強く調整できます。 デフォルト、制限、プレビュー動作、およびboostが&#x200B;**手動ランキング**&#x200B;と比較される方法について詳しくは、[&#x200B; インテリジェント ランキング boost](rules-add.md#intelligent-ranking-boost)を参照してください。
 
 **手動ランキング**&#x200B;を使用すると、手動ピン、ブースト、埋め込み、非表示のルールを定義することで、自動商品の並べ替え順序を上書きできます。
 
@@ -74,11 +78,11 @@ ht-degree: 0%
 
 インテリジェントランキングをカテゴリに適用し、**サブカテゴリにインテリジェントランキングを適用** オプションをオンにすると、サブカテゴリに既に適用されているインテリジェントランキングは上書きされます。
 
-![上書きされたサブカテゴリーリスト ](assets/category_overwite_subs.png){width="700"}
+![上書きされたサブカテゴリーリスト &#x200B;](assets/category_overwite_subs.png){width="700"}
 
 **すべて表示**&#x200B;をクリックすると、提案された変更の詳細を示すダイアログが開きます。
 
-![ ランキング変更の詳細](assets/category_overwrite.png)
+![&#x200B; ランキング変更の詳細](assets/category_overwrite.png)
 
 継承されたインテリジェントランキングを持つカテゴリにインテリジェントランキングを直接追加する場合、継承は新しいインテリジェントランキングによって上書きされます。
 
@@ -89,7 +93,7 @@ ht-degree: 0%
 
 上位レベルのカテゴリに加えた変更の影響を受ける継承されたサブカテゴリを示すダイアログが表示されます。
 
-![ ランキング変更モーダルダイアログ ](assets/category_overwrite_modal.png){width="1200"}
+![&#x200B; ランキング変更モーダルダイアログ &#x200B;](assets/category_overwrite_modal.png){width="1200"}
 
 ## カテゴリルールの作成
 
@@ -100,13 +104,13 @@ ht-degree: 0%
 1. チェックボックスを選択して、ランク付けするカテゴリを選択します。
 1. 「**適用**」をクリックします。
 
-   ![ カテゴリを選択](assets/category_select.png)
+   ![&#x200B; カテゴリを選択](assets/category_select.png)
 
 1. _カテゴリ ルールを追加_ ビューで、カテゴリに適用するインテリジェント ランキング方法を選択します。
 カテゴリープレビューページには、[!DNL Live Search] データを使用して、選択したランキングの実際の結果が表示されます。
 1. 「**保存して公開**」をクリックして、ルールを保存します。
 
-![ インテリジェントランキング方法を選択](assets/category_ranking.png)
+![&#x200B; インテリジェントランキング方法を選択](assets/category_ranking.png)
 
 [!DNL Live Search] サービスはルールを処理し、完了時にストア上でルールをアクティブ化します。
 
