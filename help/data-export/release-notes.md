@@ -5,10 +5,19 @@ feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 8f424228d96072636ac24a2d50dd58e5c8d655da
 workflow-type: tm+mt
 source-wordcount: 2868
@@ -24,7 +33,7 @@ ht-degree: 0%
 
 ![新機能](../assets/new.svg)
 ![修正](../assets/fix.svg)修正と機能強化
-![ バグ ](../assets/bug.svg)既知の問題
+![&#x200B; バグ &#x200B;](../assets/bug.svg)既知の問題
 
 >[!NOTE]
 >
@@ -103,7 +112,7 @@ _2026年2月6日_
 
 _2026年2月2日_
 
-![修正](../assets/fix.svg)更新中にアイテムバッチが許可された上限を超える可能性がある問題を修正しました。これにより、[Commerce サービス ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)または[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)にデータを同期する際に`items_limit_exceeded`個のエラーが発生します。<!--MDEE-1264-->
+![修正](../assets/fix.svg)更新中にアイテムバッチが許可された上限を超える可能性がある問題を修正しました。これにより、[Commerce サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)または[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)にデータを同期する際に`items_limit_exceeded`個のエラーが発生します。<!--MDEE-1264-->
 
 ![修正](../assets/fix.svg) バンドル製品オプションの収集時に、失敗した項目を登録するロジックを追加することで、製品データの書き出しの信頼性を向上しました。<!--CCSAAS-4458-->
 

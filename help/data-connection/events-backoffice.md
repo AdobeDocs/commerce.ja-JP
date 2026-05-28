@@ -5,10 +5,15 @@ role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
 TQID: https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 3714
@@ -18,11 +23,11 @@ ht-degree: 0%
 
 # [!DNL Data Connection] バックオフィスイベント
 
-次に、[!DNL Data Connection]拡張機能のインストール時に使用できるCommerce バックオフィスイベントを示します。 これらのイベントで収集されたデータは、Adobe Experience Platformに送信されます。 [ カスタムイベント ](custom-events.md)を作成して、標準提供されていない追加データを収集することもできます。
+次に、[!DNL Data Connection]拡張機能のインストール時に使用できるCommerce バックオフィスイベントを示します。 これらのイベントで収集されたデータは、Adobe Experience Platformに送信されます。 [&#x200B; カスタムイベント &#x200B;](custom-events.md)を作成して、標準提供されていない追加データを収集することもできます。
 
-次のイベントが収集するデータに加えて、Adobe Experience Platform Web SDKが提供する[その他のデータ ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html)も取得できます。
+次のイベントが収集するデータに加えて、Adobe Experience Platform Web SDKが提供する[その他のデータ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html)も取得できます。
 
-バックオフィスイベントには、サーバーサイドのデータが含まれます。 このデータには、注文が行われたか、キャンセルされたか、返金されたか、出荷されたか、完了したかなどの[注文状況](#order-status)情報が含まれます。 サーバーサイドのデータには、アカウントが作成、更新、削除されたかどうかなど、[顧客プロファイルイベント ](#customer-profile-events)の情報も含まれます。
+バックオフィスイベントには、サーバーサイドのデータが含まれます。 このデータには、注文が行われたか、キャンセルされたか、返金されたか、出荷されたか、完了したかなどの[注文状況](#order-status)情報が含まれます。 サーバーサイドのデータには、アカウントが作成、更新、削除されたかどうかなど、[顧客プロファイルイベント &#x200B;](#customer-profile-events)の情報も含まれます。
 
 >[!NOTE]
 >
@@ -409,7 +414,7 @@ ht-degree: 0%
 
 ## 顧客プロファイルイベント
 
-サーバーサイドからキャプチャされたプロファイルイベントには、`accountCreated`、`accountUpdated`、`accountDeleted`などのアカウント情報が含まれます。 これらのデータは、セグメントの定義やマーケティング施策の実行に必要な顧客の詳細情報（サインアップ割引オファーの送信やアカウント変更確認の送信など）を提供するのに役立ちます。 [ ストアフロント ](events.md#customer-profile-events)からキャプチャされた類似のプロファイルイベントがあります。
+サーバーサイドからキャプチャされたプロファイルイベントには、`accountCreated`、`accountUpdated`、`accountDeleted`などのアカウント情報が含まれます。 これらのデータは、セグメントの定義やマーケティング施策の実行に必要な顧客の詳細情報（サインアップ割引オファーの送信やアカウント変更確認の送信など）を提供するのに役立ちます。 [&#x200B; ストアフロント &#x200B;](events.md#customer-profile-events)からキャプチャされた類似のプロファイルイベントがあります。
 
 >[!NOTE]
 >
