@@ -21,7 +21,7 @@ ht-degree: 0%
 
 次の2つの部分を作成します。
 
-- **App Builder拡張機能** — GETおよびPOST操作を使用したREST APIにより、`aio-lib-state`で検証、ページネーション、永続性を持つ製品レビューおよびQ&amp;A コンテンツを作成および表示します。
+- **App Builder拡張機能** — GETおよびPOST操作を備えたREST APIにより、`aio-lib-state`で検証、ページネーション、永続性を備えた製品レビューおよびQ&amp;A コンテンツを作成および表示します。
 - **ストアフロント統合** – 買い物客がレビュー、質問、回答を送信するためのフォームを含む、レビューとQ&amp;Aを表示するPDP上の製品レビューブロック。
 
 >[!NOTE]
@@ -52,8 +52,8 @@ bash --version
 
 さらに、次の点を確認します。
 
-- 製品データを含む[!DNL Adobe Commerce as a Cloud Service] インスタンスがあります。 [Commerce Cloud サービスインスタンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview){target="_blank"}を参照してください。
-- [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクトがあります。 ストアフロントがない場合は、[&#x200B; ストアフロントの作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=ja){target="_blank"}の手順に従います。
+- 製品データを含む[!DNL Adobe Commerce as a Cloud Service] インスタンスがあります。 [Commerce Cloud サービスインスタンス ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}を参照してください。
+- [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクトがあります。 ストアフロントがない場合は、[ ストアフロントの作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}の手順に従います。
 - `aem` CLIがインストールされています：
 
   ```bash
@@ -135,7 +135,7 @@ STOP and ask me any clarifying questions you have about the requirements before 
 1. **REST API — ホストとコンシューマー** — CRUD REST APIは、ストアフロントが呼び出すこのApp Builder アプリ（Adobe I/O Runtime上のweb アクション）に含める必要がありますか？ 誰が呼ぶのか（EDS Storefront、カスタム/ヘッドレスストアフロント、またはその両方）? CORS、パブリック（未認証）アクセスが必要ですか、それとも呼び出し元はAPI キーまたはOAuthを使用しますか？
 1. **データモデル** — 「レビュー」または「質問」は何を表すべきですか？ 顧客識別子（メールのみ、または顧客ID）? 商品識別子（SKUのみ、またはSKU + ストアビュー）? 同じ顧客が同じSKUに対して複数のレビューを送信できますか？
 1. **永続性** — `aio-lib-state`はレビューやQ&amp;Aを永続化するのに適した場所ですか、それとも外部ストアを持っていますか？ デザインはマルチテナントまたはシングルテナントを前提とすべきですか？
-1. **ページネーションのセマンティクス** — Q&amp;A GETの場合、`limit`は質問のみ（ネストされた回答を含む）に適用されますか、質問の合計数と回答に適用されますか？
+1. **ページネーションのセマンティクス** — Q&amp;A GETの場合、`limit`は（ネストされた回答を含む）質問にのみ適用されるか、質問と回答の合計数に適用されますか？
 
 **回答の例：**
 
@@ -308,7 +308,7 @@ Create a service contract for the Product Review and Q&A application that define
 ストアフロント統合を開始する前に、次の点を確認してください。
 
 - [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクト
-- Commerce ストアフロント AI ツール [CLIを使用してインストール &#x200B;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+- Commerce ストアフロント AI ツール [CLIを使用してインストール ](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 - `PRODUCT_REVIEW_QA_CONTRACT.md` ファイルがストアフロントプロジェクトにコピーされました
 
 ### 手順1：環境の検証

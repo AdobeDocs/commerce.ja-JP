@@ -3,16 +3,12 @@ title: プライスブック
 description: ' [!DNL Adobe Commerce Optimizer]の価格表の管理方法について説明します。'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
 TQID: https://experienceleague.adobe.com/-vL79MMePcUdhE-gPwjFJZStZUtNLKAUxpePm4Fvmfk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 384
@@ -30,7 +26,7 @@ ht-degree: 0%
 
 ## 価格表を[!DNL Adobe Commerce Optimizer]に追加
 
-価格表APIを使用して[!DNL Adobe Commerce Optimizer]に価格表を追加します。 [!DNL Adobe Commerce Optimizer]の価格表を作成、更新、削除する方法については、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/)を参照してください。
+価格表APIを使用して[!DNL Adobe Commerce Optimizer]に価格表を追加します。 [!DNL Adobe Commerce Optimizer]の価格表を作成、更新、削除する方法については、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/reference/rest/)を参照してください。
 
 ## [!DNL Adobe Commerce Optimizer]の価格表を表示
 
