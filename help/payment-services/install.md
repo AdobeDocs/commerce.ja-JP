@@ -4,7 +4,7 @@ description: Payments Services拡張機能をインストールします。
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade, Paas
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '606'
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 >[!INFO]
 >
-> 詳しくは、[Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services)の設定 [!DNL Payment Services] のビデオを参照してください。
+> 詳しくは、[Adobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services)の設定 [!DNL Payment Services] のビデオを参照してください。
 
 [!DNL Adobe Commerce]および[!DNL Magento Open Source]の[!DNL Payment Services]拡張機能をダウンロードしてインストールすることは、[!DNL Payment Services]を使用するための前提条件です。
 
 ## 拡張機能をダウンロード
 
-拡張機能をインストールするには、まず[Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html)からダウンロードする必要があります。
+拡張機能をインストールするには、まず[Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html?lang=ja)からダウンロードする必要があります。
 
 1. Commerce Marketplace[&#128279;](https://commercemarketplace.adobe.com/magento-payment-services.html)のPayment Services拡張機能に移動します。
 1. エディションとバージョンを選択するには、**[!UICONTROL Edition]**&#x200B;と&#x200B;**[!UICONTROL Your store version]**&#x200B;を任意の選択範囲に切り替えます。
@@ -43,9 +43,9 @@ ht-degree: 0%
 
 Composerは、最初の[!DNL Adobe Commerce]のインストール中、またはComposer キーが以前に`auth.json` ファイルに保存されていなかった状況で、これらのキーを使用します。
 
-Composer キーの取得について詳しくは、[認証キーの取得](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)を参照してください。
+Composer キーの取得について詳しくは、[認証キーの取得](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)を参照してください。
 
-拡張機能をダウンロードしてインストールする前に考慮すべき点について詳しくは、[拡張機能をインストール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)を参照してください。
+拡張機能をダウンロードしてインストールする前に考慮すべき点について詳しくは、[拡張機能をインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/extensions)を参照してください。
 
 ### クラウド インフラストラクチャ上の[!DNL Adobe Commerce]
 
@@ -156,7 +156,7 @@ Composer キーが有効であり、他のMagento パッケージにアクセス
    cat /path/to/auth.json
    ```
 
-1. Commerce アカウント `MageID`[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)に関連付けられているキーはを参照してください。
+1. Commerce アカウント `MageID`[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)に関連付けられているキーはを参照してください。
 
 ### PHPに十分なメモリがありません
 
@@ -166,7 +166,7 @@ Composer キーが有効であり、他のMagento パッケージにアクセス
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[環境上のPHPのメモリ制限](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit)を`php.ini`に増やします。
+[環境上のPHPのメモリ制限](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit)を`php.ini`に増やします。
 
 または、次のコマンドを使用してメモリ制限を指定できます：`php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`。
 
