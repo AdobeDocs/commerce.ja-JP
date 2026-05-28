@@ -26,7 +26,7 @@ ht-degree: 0%
 
 拡張機能をインストールするには、まず[Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html)からダウンロードする必要があります。
 
-1. Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)の[Payment Services拡張機能に移動します。
+1. Commerce Marketplace[&#128279;](https://commercemarketplace.adobe.com/magento-payment-services.html)のPayment Services拡張機能に移動します。
 1. エディションとバージョンを選択するには、**[!UICONTROL Edition]**&#x200B;と&#x200B;**[!UICONTROL Your store version]**&#x200B;を任意の選択範囲に切り替えます。
 1. **[!UICONTROL Add to Cart]**&#x200B;をクリックします。
 1. チェックアウトを完了し、**[!UICONTROL Place Order]**&#x200B;をクリックします。
@@ -45,7 +45,7 @@ Composerは、最初の[!DNL Adobe Commerce]のインストール中、または
 
 Composer キーの取得について詳しくは、[認証キーの取得](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)を参照してください。
 
-拡張機能をダウンロードしてインストールする前に考慮すべき点について詳しくは、[拡張機能をインストール ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)を参照してください。
+拡張機能をダウンロードしてインストールする前に考慮すべき点について詳しくは、[拡張機能をインストール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)を参照してください。
 
 ### クラウド インフラストラクチャ上の[!DNL Adobe Commerce]
 
@@ -156,7 +156,7 @@ Composer キーが有効であり、他のMagento パッケージにアクセス
    cat /path/to/auth.json
    ```
 
-1. Commerce アカウント `MageID`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)に関連付けられているキーは[を参照してください。
+1. Commerce アカウント `MageID`[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)に関連付けられているキーはを参照してください。
 
 ### PHPに十分なメモリがありません
 
