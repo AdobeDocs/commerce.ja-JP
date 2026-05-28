@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # [!DNL Storefront Popover]
 
-[!DNL Live Search]が[&#x200B; インストールされている](install.md)場合、買い物客が[検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) ボックスに入力すると、[!DNL popover]がストアフロントに表示されます。 文字を入力するたびに、[!DNL popover]が更新され、上位の検索結果の推奨商品とサムネイル画像が表示されます。
+[!DNL Live Search]が[&#x200B; インストールされている](install.md)場合、買い物客が[検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=ja#quick-search) ボックスに入力すると、[!DNL popover]がストアフロントに表示されます。 文字を入力するたびに、[!DNL popover]が更新され、上位の検索結果の推奨商品とサムネイル画像が表示されます。
 
 [!DNL Live Search]は、2文字以上のクエリの結果を返します。 部分一致の場合、1語あたりの最大文字数は20文字です。 「入力中に検索」クエリの文字数は設定できません。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## [!DNL Popover] ページサイズ
 
-[!DNL popover]のページサイズにより、自動完了製品を返すことができる行数が決まります。 ライブ検索のインストール中に、`page_size`の値が[&#x200B; カタログ検索](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit`設定の現在の値に変更されます。
+[!DNL popover]のページサイズにより、自動完了製品を返すことができる行数が決まります。 ライブ検索のインストール中に、`page_size`の値が[&#x200B; カタログ検索](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html?lang=ja) - `Autocomplete Limit`設定の現在の値に変更されます。
 
 デフォルトでは、カタログ検索 – 自動完了制限値は8行（または行）に設定されています。 [!DNL popover]のページサイズを変更するには、次の操作を行います。
 
@@ -129,7 +129,7 @@ ht-degree: 0%
 
 ## [!DNL popover]を無効にしています
 
-[!DNL popover]を無効にし、標準の[&#x200B; クイック検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search)機能を復元するには、次のコマンドを入力します。
+[!DNL popover]を無効にし、標準の[&#x200B; クイック検索](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=ja#quick-search)機能を復元するには、次のコマンドを入力します。
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover
