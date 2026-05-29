@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
+source-git-commit: de02e13e169ab336bac09ebff90c44b3b707efce
 workflow-type: tm+mt
-source-wordcount: 1717
+source-wordcount: 1775
 ht-degree: 1%
 
 ---
@@ -135,21 +135,29 @@ OpenAPI機能を備えた[!BADGE SaaSのみ]{type=Positive url="https://experien
 
 1. AEM Cloud Managerに移動し、プログラムを選択し、Adobe Commerceと統合する実稼動環境とステージング環境を[作成します](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)。
 
-1. [&#x200B; デプロイメントパイプライン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline)を設定するか、パイプラインが選択した環境に変更をデプロイできることを確認します。
-
 1. [選択したプログラムのAdobe管理Git リポジトリ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access)を複製します。
+
+   ![Cloud Manager リポジトリの資格情報とコピーコマンド &#x200B;](../assets/cloud-manager-repository-info.png){width="600" zoomable="yes"}
+
+   Cloud Manager **パイプライン**&#x200B;で、**[!UICONTROL Access Repo Info]**&#x200B;を選択して&#x200B;**[!UICONTROL Repository Info]**&#x200B;を開きます。 **[!UICONTROL URL]**&#x200B;または&#x200B;**[!UICONTROL Git command line]**&#x200B;の値をコピーし、必要に応じてアクセス パスワードを生成してから、Git クライアントとローカルにクローンを作成します。
 
 1. GitHubから、[AEM Assets Commerce リポジトリ &#x200B;](https://github.com/ankumalh/assets-commerce)からパッケージコードをダウンロードします。
 
 1. [&#x200B; ローカルのAEM開発環境](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)から、ダウンロードしたコードを既存のAdobe管理リポジトリに手動でコピーします。
 
-1. プロジェクトのすべての`filter.xml`および`pom.xml` ファイルで、`<my-app>`のすべての出現箇所をアプリ名に置き換えます。
+1. プロジェクトのすべての`filter.xml`および`pom.xml` ファイルで、&lt;my-app>のすべての出現箇所をアプリ名に置き換えます。
 
    >[!NOTE]
    >
    > または、カスタムコードを&#x200B;**Maven** パッケージとしてAEM Assets プロジェクト設定にインストールすることもできます。
 
 1. 変更を確定し、ローカル開発ブランチをCloud Manager Git リポジトリにプッシュします。
+
+1. [&#x200B; デプロイメントパイプライン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline)を設定するか、パイプラインが選択した環境に変更をデプロイできることを確認します。
+
+   ![Cloud Manager パイプライン &#x200B;](../assets/cloud-manager-pipelines.png){width="600" zoomable="yes"}
+
+   パイプラインが存在する場合、アクションメニュー（**...**）を開きます **[!UICONTROL Run]**、**[!UICONTROL Edit]**、**[!UICONTROL View/Edit variables]**&#x200B;またはその他のアクションへ – 上記のリンクされたCloud Manager パイプラインのドキュメントを参照してください。
 
 1. AEM Cloud Managerから、[&#x200B; パイプラインを使用してコードをデプロイし、AEM環境を更新します](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager)。
 
@@ -161,7 +169,7 @@ OpenAPI機能を備えた[!BADGE SaaSのみ]{type=Positive url="https://experien
 
 ### 「Commerce」タブがプロパティに表示されない
 
-**Commerce** タブがプロパティに表示されない場合は、メタデータスキーマエディターでタブを手動で作成する必要があります。
+「**Commerce**」タブがプロパティに表示されない場合は、メタデータスキーマエディターで次の手順を手動で実行する必要があります。
 
 1. メタデータスキーマエディターに移動します。
 

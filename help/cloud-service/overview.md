@@ -90,7 +90,7 @@ ht-degree: 0%
 
 この図は、[!DNL Adobe Commerce as a Cloud Service]とすべてのAdobe Experience Cloud ソリューション間のデータ フローを示しています。
 
-[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![&#x200B; データフロー図](./assets/data-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す&#x200B; データフロー図](./assets/data-flow.svg){zoomable="yes"}
 
 ## Commerce ストアフロント
 

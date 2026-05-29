@@ -70,7 +70,7 @@ ht-degree: 0%
 
 * `X-Adobe-Company` ヘッダーがリクエストに存在する場合にゲスト GraphQLのログインを妨げる「consumer is not authorized」エラーを解決しました。<!-- ACCS-949 -->
 
-* PUT `V1/customers/companies` REST エンドポイントを介して会社に顧客を割り当てた後、[!DNL Commerce Admin]の会社を編集または削除すると、「そのようなエンティティはありません」エラーで失敗する可能性がある問題を修正しました。<!-- ACCS-856 -->
+* PUT `V1/customers/companies` REST エンドポイントを介して顧客を会社に割り当てた後、[!DNL Commerce Admin]の会社を編集または削除すると、「そのようなエンティティはありません」エラーで失敗する可能性がある問題を修正しました。<!-- ACCS-856 -->
 
 * 古い受注グリッドのステータスに関する問題を解決しました。<!-- CCSAAS-4915 -->
 
@@ -355,7 +355,7 @@ mutation {
 
 * 大規模な共有カタログで発生する可能性がある製品編集ページのタイムアウトを修正しました。<!-- CCSAAS-4657 -->
 
-* GET `/V1/directory/countries`およびGET `/V1/directory/countries/:countryId`のREST API エンドポイントを管理者統合に対して再度有効にし、クライアントが有効な国と地域のデータを検索できるようにしました。<!-- ACCS-518 -->
+* 管理者統合のGET `/V1/directory/countries`およびGET `/V1/directory/countries/:countryId` REST API エンドポイントを再度有効にし、クライアントが有効な国と地域のデータを検索できるようにしました。<!-- ACCS-518 -->
 
 * ユーザーが大規模な共有カタログを持っている場合にREST APIで発生する可能性があるタイムアウトの問題を修正しました。<!-- ACCS-4657 -->
 

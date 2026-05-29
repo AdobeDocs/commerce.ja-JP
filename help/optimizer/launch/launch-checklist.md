@@ -11,7 +11,7 @@ recommendations: noCatalog
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 source-git-commit: 37b8b8a334ca11daacfd3da03b0441e77329e2e1
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '2194'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Edge Delivery Services ストアフロントサイトが存在し、アクセス
 
 ▢ ストアフロントサイトが存在します。 [&#x200B; ストアフロントの作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=ja)を参照してください。
 ▢ サイト名を知っています。
-▢承認済みのユーザーのみが[を公開する](https://tools.aem.live/tools/user-admin/index.html)権限を持っています。
+▢承認済みのユーザーのみが[&#128279;](https://tools.aem.live/tools/user-admin/index.html)を公開する権限を持っています。
 ▢承認済みのユーザーのみが[作成権限](https://docs.da.live/administrators/guides/permissions)を持っています。
 
 ## CloudとOptimizerの統合の検証 {#cloud-optimizer-integration}
@@ -171,7 +171,7 @@ Cloud プロジェクトでこれらのチェックを完了します。
 
 メタデータ、URLを確認し、ビヘイビアーをクロールします。
 
-▢主要ページ（特にPDPおよびPLP）に対して、ドキュメント タイトルのメタデータが存在します。 [Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/?lang=ja){target="_blank"} ドキュメントの&#x200B;_SEO メタデータ_を参照してください。
+▢主要ページ（特にPDPおよびPLP）に対して、ドキュメント タイトルのメタデータが存在します。 _Adobe Commerce Storefront_ ドキュメントの[SEO メタデータ &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/?lang=ja){target="_blank"}を参照してください。
 ▢個のPDPには、[&#x200B; メタデータと構造化データ &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/?lang=ja){target="_blank"} （JSON-LDなど）が含まれます。
 ▢製品URL形式が一貫しています（例：`domain/product-name`）。
 ▢個のバニティ URLが正規URLにリダイレクトされます。
@@ -186,7 +186,7 @@ Cloud プロジェクトでこれらのチェックを完了します。
 
 有効にする場所でサーバーサイドレンダリングを確認します。
 
-▢のプリレンダリングは、主要なページに対して有効です。 [AEM Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-prerender/?lang=ja){target="_blank"} ドキュメントの&#x200B;_Adobe Commerce_の事前レンダリングを参照してください。
+▢のプリレンダリングは、主要なページに対して有効です。 _AEM Storefront_ ドキュメントの[Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-prerender/?lang=ja){target="_blank"}の事前レンダリングを参照してください。
 ▢個のURLは小文字を使用するため、事前レンダリングでリンクが壊れることはありません。
 ▢ HTML ソースには、事前レンダリングの動作を確認するメタデータと本文コンテンツが含まれています。
 ▢ ロケールは、該当する場合は正しい翻訳済みページを表示します。
@@ -196,10 +196,10 @@ Cloud プロジェクトでこれらのチェックを完了します。
 
 パフォーマンスのベースラインと分析の配線を確認します。
 
-▢お客様のストアフロントは、[Adobe Commerce ストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/?lang=ja){target="_blank"} ドキュメントの&#x200B;_パフォーマンスのベストプラクティス_に従っています。
+▢お客様のストアフロントは、_Adobe Commerce ストアフロント_ ドキュメントの[&#x200B; パフォーマンスのベストプラクティス &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/?lang=ja){target="_blank"}に従っています。
 ▢ （オプション）Google AnalyticsとGoogle Tag Managerが設定されています。
 ▢ [Storefront events](https://github.com/adobe/commerce-events/tree/main/examples/events/snowplow-debugger)の実装は有効で、データは[!DNL Live Search]および[!DNL Product Recommendations]のダッシュボードにAdobe Commerce *管理者*に表示されます。
-▢ `environment`Commerce configuration[の](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=ja){target="_blank"}分析パラメーターは、開発中は`"Testing"`で、公開時は`"Production"`です。 [Analytics インストルメンテーション &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=ja){target="_blank"}を参照してください。
+▢ [Commerce configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=ja){target="_blank"}の`environment`分析パラメーターは、開発中は`"Testing"`で、公開時は`"Production"`です。 [Analytics インストルメンテーション &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=ja){target="_blank"}を参照してください。
 このトピックのガイダンスに従って、▢個のLighthouse スコアが目標（主要ページの`100`など）を満たしています。
 
 ### セキュリティとアクセス
@@ -208,7 +208,7 @@ Cloud プロジェクトでこれらのチェックを完了します。
 
 ▢適切な権限がDA コンテンツおよびEDS サイト用に設定されています。 オーサリング用の[DA.live権限](https://da.live/docs/administration/permissions)と[認証の設定](https://www.aem.live/docs/authentication-setup-authoring)を参照してください。
 ▢製品ビジュアル統合がプロビジョニングされます。 [AEM Cloud Service アクセスの概要](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/overview#)を参照してください。
-電子メールテンプレートの▢ パスワードリセットリンクが、Edge Delivery Services設定と一致しています。 ストアフロントに関するFAQを参照してください。[Edge Delivery ServicesまたはHelixへの移行後にメールテンプレートのリンクが壊れた場合、どうすればよいですか？](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/?lang=ja#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}。
+電子メールテンプレートの▢ パスワードリセットリンクが、Edge Delivery Services設定と一致しています。 ストアフロントに関するFAQを参照してください。[Edge Delivery ServicesまたはHelixへの移行後にメールテンプレートのリンクが壊れた場合はどうすればよいですか？](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/?lang=ja#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}
 ▢統合と支払いプロバイダーの実稼動キーが配置されています。
 ▢ ドメインが許可リストに加えるされ、バックエンドのWebhookが機能します。
 
@@ -240,7 +240,7 @@ CDN、DNS、およびキャッシュの動作を確認します。
 ▢ **PCI:**&#x200B;実稼動環境（PCI スコープ）でのセキュリティ侵入テストが完了しました。
 ▢ **スキャン：** Adobe セキュリティスキャンツールが登録され、最初のスキャンが完了しました。
 ▢ **アクセス：** CORSでは、承認済みのオリジンのみが許可されます。
-▢ **コンプライアンス：** [の](../shared-responsibility.md)共通責任モデル [!DNL Adobe Commerce Optimizer]は最新であり、Adobeとお客様の責任を明確に定義しています。
+▢ **コンプライアンス：** [!DNL Adobe Commerce Optimizer]の[共通責任モデル &#x200B;](../shared-responsibility.md)は最新であり、Adobeとお客様の責任を明確に定義しています。
 ▢ **コンプライアンス：** プライバシーポリシー、Cookieの同意、GDPRまたはCCPAの要件が検証されます。
 
 ## 分析と監視 {#analytics-monitoring}

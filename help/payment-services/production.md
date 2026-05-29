@@ -5,7 +5,7 @@ exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
 source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1080'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
    関連するオプションが展開されたホームビューの設定領域（**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_）に移動します。ここで、[!DNL Payment Services] オプションを[支払い方法](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}として有効にできます。
 
 1. _[!UICONTROL General Configuration]_&#x200B;で、**[!UICONTROL Enable]**&#x200B;を`Yes`に設定します。
-1. **[!UICONTROL Payment Action]**&#x200B;と&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;の_[!UICONTROL PayPal payment buttons]_&#x200B;を次のいずれかに設定します。
+1. _[!UICONTROL Credit Card Fields]_&#x200B;と_[!UICONTROL PayPal payment buttons]_&#x200B;の&#x200B;**[!UICONTROL Payment Action]**&#x200B;を次のいずれかに設定します。
 
    | 設定 | 説明 |
    |---|---|
@@ -117,14 +117,14 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >支払いを処理するための[!DNL Payment Services]および[!DNL Adobe Commerce]の[!DNL Magento Open Source]への同意を（PayPal アカウント設定で）取り消した場合、ストア内の注文は[!DNL Payment Services]によって処理できません。 支払いサービスホームに、失効した同意に関するアラートが表示されます。
+   >支払いを処理するための[!DNL Adobe Commerce]および[!DNL Magento Open Source]の[!DNL Payment Services]への同意を（PayPal アカウント設定で）取り消した場合、ストア内の注文は[!DNL Payment Services]によって処理できません。 支払いサービスホームに、失効した同意に関するアラートが表示されます。
 
 ## Adobeから支払い権限をリクエスト
 
 ストアを有効にするには、Adobeから支払い資格をリクエストします（[高度なオンボーディングのみ](#advanced-onboarding)の場合）。
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**&#x200B;に移動します。
-1. **[!UICONTROL Get Live Payments]** ホームで「[!DNL Payment Services]」をクリックします。
+1. [!DNL Payment Services] ホームで「**[!UICONTROL Get Live Payments]**」をクリックします。
 
    ![使用権限の要求](assets/request-entitlements.png){width="500" zoomable="yes"}
 
