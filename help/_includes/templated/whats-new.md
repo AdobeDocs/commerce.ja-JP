@@ -1,7 +1,7 @@
 ---
-source-git-commit: 976bc4114790473d3bdcab6c06684f0c955893ee
+source-git-commit: dcb3300c80fb74d597cee66e981acb426490d34b
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1201'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,30 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年5月28日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><ul>
+  <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/configure-aco">Commerce Optimizer用AEM Assetsの設定</a>を改善し、AEM Assetsの設定がテナント登録の前に来るように、専用カタログレイヤーとレイヤー関連の制限に関するガイダンスを明確にしました。<br /> – 更新された<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/configure-aem"> リポジトリへのアクセスとパイプラインのデプロイメント用に、再オーダーされたインストール手順とCloud Managerのスクリーンショットを使用してAEM Assets プロジェクト </a>を設定します。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/setup-synchronization">統合</a>のIMS ベースのプログラム IDとと環境IDのIDの選択を簡素化をします。</li>
+</ul>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年5月22日（PT）
 
@@ -23,7 +47,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>2026年5月20日（PT）リリースの<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a>およびCommerce <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/release-notes"> カタログサービス </a>のAPI アップデートに関するリリースノートを追加しました。これにより、商品データを取得する際に、リクエストごとに文書化された100 SKU制限が適用されるようになりました。 <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits">制限と境界</a>を参照してください。</p>
+      <td><p>2026年5月20日（PT）リリースの<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a>およびCommerce <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/release-notes"> カタログサービス </a>に対するAPI アップデートのリリースノートが追加されました。これにより、商品データを取得する際に、リクエストごとに文書化された100 SKU制限が適用されるようになりました。</p>
 </td>
       <td>
         テクニカル
