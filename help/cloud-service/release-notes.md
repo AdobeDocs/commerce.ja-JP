@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
+source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
 workflow-type: tm+mt
-source-wordcount: 4032
+source-wordcount: 4189
 ht-degree: 0%
 
 ---
@@ -42,15 +42,19 @@ ht-degree: 0%
 >
 >Adobe Commerce オンプレミスまたはAdobe Commerce オンクラウドインフラストラクチャを使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview)を参照してください。
 
-## 2026年5月 – リリース #2 {#latest}
+## 2026年6月 – リリース #1 {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
 [!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
 
-以下の項目は、2026年5月21日に実稼動環境にリリースされます。
+以下の項目は、2026年6月4日に実稼動環境にリリースされます。
 
 >[!BEGINSHADEBOX]
+
+### 管理画面でのカスタムクーポンコードの追加と編集
+
+販売者は、手動カート価格ルールで[!DNL Commerce Admin]から直接カスタムクーポンコードを作成および編集できるようになりました。 新しい「[!UICONTROL **カスタムクーポンを追加**]」ボタンは、カート価格ルールの編集時に「[!UICONTROL **クーポンコードを管理**]」セクションで使用できます。<!-- CCSAAS-4508 -->
 
 ### デフォルトキャリアとカスタムキャリアを使用して出荷を追跡
 
@@ -59,6 +63,14 @@ ht-degree: 0%
 ### 製品属性グリッドでの属性入力タイプの表示
 
 新しい&#x200B;[!UICONTROL **属性タイプ**]&#x200B;列が（[!UICONTROL **Stores**] > _[!UICONTROL Attributes]_>[!UICONTROL **Product**]）の製品属性グリッドに表示され、拡張機能によって提供されたタイプを含む、各製品属性の入力タイプ（テキストフィールド、ドロップダウン、yes/noなど）が表示されるようになりました。 これにより、大規模な属性セットを操作する際の属性の識別と管理が容易になります。<!-- ACCS-925 -->
+
+### カスタムメールの返信先ヘッダーをカスタマイズする
+
+販売者は、[POST /rest/V1/custom-email/send](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) エンドポイントで使用される&#x200B;[!UICONTROL **Reply-To**] ヘッダーを設定できるようになりました。これにより、顧客からの返信を送信者とは別のアドレスにルーティングできます。<!-- ACCS-1037 -->
+
+### 大規模な共有カタログ環境で、製品編集ページで階層価格を表示します
+
+多数の共有カタログを持つマーチャントは、[!DNL Commerce Admin]の製品編集ページの読み取り専用&#x200B;[!UICONTROL **階層の価格**] タブにアクセスできるようになりました。<!-- CCSAAS-4922 -->
 
 ### 機能強化とバグ修正
 
@@ -70,7 +82,7 @@ ht-degree: 0%
 
 * `X-Adobe-Company` ヘッダーがリクエストに存在する場合にゲスト GraphQLのログインを妨げる「consumer is not authorized」エラーを解決しました。<!-- ACCS-949 -->
 
-* PUT `V1/customers/companies` REST エンドポイントを介して顧客を会社に割り当てた後、[!DNL Commerce Admin]の会社を編集または削除すると、「そのようなエンティティはありません」エラーで失敗する可能性がある問題を修正しました。<!-- ACCS-856 -->
+* PUT `V1/customers/companies` REST エンドポイントを介して会社に顧客を割り当てた後、[!DNL Commerce Admin]の会社を編集または削除すると、「そのようなエンティティはありません」エラーで失敗する可能性がある問題を修正しました。<!-- ACCS-856 -->
 
 * 古い受注グリッドのステータスに関する問題を解決しました。<!-- CCSAAS-4915 -->
 
@@ -79,6 +91,10 @@ ht-degree: 0%
 * 設定可能な製品を含む注文の出荷を作成する際に発生する可能性がある「未定義の配列キー「simple_sku」エラーを修正しました。<!-- CCSAAS-4877 -->
 
 * `guestOrderByToken` GraphQL クエリは、内部サーバーエラーではなく、形式が正しくないトークンで呼び出された場合に、より有益なエラーメッセージを返すようになりました。<!-- CCSAAS-4921 -->
+
+* お客様の注文を読み込めなくなったときに、`customer` GraphQL クエリが、より情報の多いエラーメッセージを返すようになりました。<!-- ACCS-867 -->
+
+* GET `V1/customers/{customerId}` REST エンドポイントが`assistance_allowed`設定フィールドを返すようになりました。<!-- USF-4132 -->
 
 {{accs-release}}
 
