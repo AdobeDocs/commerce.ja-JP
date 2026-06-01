@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 423b35b15e845e49b1cf36910ffbad775de9758c
 workflow-type: tm+mt
-source-wordcount: 1181
+source-wordcount: 1332
 ht-degree: 0%
 
 ---
@@ -32,6 +32,17 @@ ht-degree: 0%
 # 詳細を見る
 
 このガイドでは、[!DNL Adobe Commerce Optimizer]を最初から最後まで設定する方法について説明します。 このガイドでは、すべての役割について説明しますが、開発者固有の詳細なコンテンツについては、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)を参照してください。
+
+## インスタンスタイプと環境の分離
+
+Adobe Commerce Optimizerでは、**sandbox**&#x200B;や&#x200B;**production**&#x200B;など、異なる環境に対して個別のインスタンスを使用します。 各インスタンスには、独自のインスタンス IDと、カタログビュー、ポリシー、検索設定、製品レコメンデーションなどの独自の分離データがあります。
+
+Adobe Commerce as a Cloud Service、サードパーティのコマースプラットフォーム、Edge Delivery Servicesストアフロントと連携する際は、常に次の環境に対応します。
+
+- **sandbox Optimizer インスタンス**&#x200B;を実稼動以外のコマース環境およびストアフロント環境に接続します。
+- **production Optimizer インスタンス**&#x200B;を実稼動コマースおよびストアフロント環境に接続します。
+
+サンドボックス環境と本番環境を混在すると、カタログデータに一貫性がなくなり、予期しない検索やマーチャンダイジングの動作が発生したり、指標の信頼性が低下したりします。 Commerce Cloud Managerのインスタンスタイプとインスタンス IDを、統合を設定する際の信頼できる唯一の情報源として使用します。
 
 ## 前提条件
 
@@ -140,21 +151,23 @@ Adobe Commerce Cloud製品インスタンスの検索およびフィルターオ
 
 フィルターツールと検索ツールを使用して、作成日、地域、作成者、製品タイプ、環境、ステータスごとに特定のインスタンスをすばやく検索できます。
 
-### [!DNL Adobe Commerce Optimizer] アプリケーションへのアクセス
+### [!DNL Adobe Commerce Optimizer Studio]管理者インターフェイスへのアクセス
 
-アプリを開いたら、Commerce Cloud Managerに戻ることなく、サンドボックスや本番環境などの環境を簡単に切り替えて、それぞれのデータや設定を確認できます。
+アプリを開いたら、Commerce Cloud Managerに戻ることなく、サンドボックスや実稼動環境などの環境を簡単に切り替えて、それぞれのデータや設定を表示できます。
 
-1. Commerce Cloud Managerで、インスタンス名をクリックして[!DNL Adobe Commerce Optimizer] アプリケーションを開きます。
+1. Commerce Cloud Managerで、インスタンス名をクリックして[!DNL Adobe Commerce Optimizer Studio]を開きます。
 
 1. アプリケーションを終了せずに[!DNL Adobe Commerce Optimizer] インスタンスを切り替えます。
 
-   インスタンス ドロップダウンには、組織で使用可能なすべてのOptimizer インスタンスが一覧表示されます。 表示するインスタンスを選択します。
+   - インスタンス ドロップダウンをクリックして、組織で使用可能なすべてのOptimizer インスタンスを表示します。
 
-   [!DNL Adobe Commerce Optimizer]環境を選択するための![&#x200B; インスタンス切り替えドロップダウン &#x200B;](./assets/context-switcher.png){zoomable="yes"}
+     [!DNL Adobe Commerce Optimizer]環境を選択するための![&#x200B; インスタンス切り替えドロップダウン &#x200B;](./assets/context-switcher.png){zoomable="yes"}
+
+- 表示するインスタンスを選択します。
 
 >[!NOTE]
 >
->Commerce Cloud Managerに戻ってインスタンスの詳細を表示したり、インスタンスを管理したりする必要がある場合は、アプリアイコン ![&#x200B; アイコンをクリックして、Commerce Optimizerの上部ナビゲーションの左上隅にあるExperience Cloud アプリケーション &#x200B;](./assets/apps-icon.png)を開きます。
+>Commerce Cloud Managerに戻ってインスタンスの詳細を表示したり、インスタンスを管理したりするには、![&#x200B; アイコンをクリックして、Commerce Optimizerの上部ナビゲーションの左上隅にあるExperience Cloud アプリケーション &#x200B;](./assets/apps-icon.png) （アプリ）アイコンを開きます。
 
 ### インスタンスの詳細を取得
 
@@ -164,10 +177,10 @@ Adobe Commerce Cloud製品インスタンスの検索およびフィルターオ
 
 次の重要な情報に注意してください。
 
-- Merchandising APIを使用してCommerce カタログデータを取得する&#x200B;**GraphQL エンドポイント**
-- REST APIを使用してCommerce Optimizerにカタログデータを取り込むための&#x200B;**カタログエンドポイント**
-- **Commerce Optimizer URL**&#x200B;から[!DNL Adobe Commerce Optimizer] アプリケーションにアクセス
-- **インスタンス ID**: インスタンスを識別する一意のID。 インスタンス IDは&#x200B;*tenant_id*&#x200B;とも呼ばれます。
+- **GraphQL エンドポイント** ストアフロントが[&#x200B; マーチャンダイジングサービス API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=_blank}を使用して、このインスタンスからカタログおよびマーチャンダイジングデータをクエリするために使用するGraphQL エンドポイント
+- **カタログエンドポイント** REST API エンドポイントを使用して、コマースまたはPIM システムからAdobe Commerce Optimizerに商品と価格を取り込みます。 [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)を参照してください
+- **Commerce Optimizer URL** [Adobe Commerce Optimizer Studio](overview.md)の管理UIを開いて、カタログビュー、ポリシー、マーチャンダイジングを設定および管理します。
+- **インスタンス ID**：このAdobe Commerce Optimizer インスタンスの一意のID （テナント ID）。ストアフロント、API、およびツールが正しい環境に接続するために使用します。
 
 開発者の場合は、開発環境を設定し、[!DNL Adobe Commerce Optimizer] APIに接続するために、次の詳細が必要です。
 

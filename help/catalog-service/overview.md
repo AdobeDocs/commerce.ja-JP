@@ -17,9 +17,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70990a7bb7e8926a171ea6d2148542b7b73f4dba
 workflow-type: tm+mt
-source-wordcount: 1398
+source-wordcount: 1405
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Adobe Commerce拡張機能の[!DNL Catalog Service]は、専用のGraphQL APIを
 
 >[!NOTE]
 >
->Adobe Commerce OptimizerまたはAdobe Commerce Optimizer Connectorでコンポーザブルカタログを使用してカタログを実装する場合は、[Adobe Commerce Optimizer ガイド &#x200B;](../optimizer/overview.md#architecture)およびマーチャンダイジングサービス開発者ガイドを参照してください。
+>Adobe Commerce OptimizerまたはAdobe Commerce Optimizer Connectorでコンポーザブルカタログを使用してカタログを実装する場合は、[Adobe Commerce Optimizer ガイド &#x200B;](../optimizer/overview.md#architecture)および[&#x200B; マーチャンダイジングサービス開発者ガイド &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/)を参照してください。
 
 [!DNL Catalog Service]では、[GraphQL](https://graphql.org/)を使用して、商品、商品属性、在庫、価格などのカタログデータをリクエストおよび受け取ります。 GraphQLは、フロントエンドクライアントが、Adobe Commerceなどのバックエンドで定義されたアプリケーションプログラミングインターフェイス（API）と通信するために使用するクエリ言語です。 GraphQLは軽量で、システムインテグレーターが各応答の内容と順序を指定できるため、一般的な通信方法です。
 
