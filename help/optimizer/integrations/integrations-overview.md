@@ -53,5 +53,5 @@ Commerce Salesforce Connector （Adobe App Builder上に構築）は、Salesforc
 
 >[!MORELIKETHIS]
 >
->- [Adobe Commerce Optimizer テクニカルドキュメント ](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+>- [Adobe Commerce Optimizer テクニカルドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 >- [Adobe Commerce Optimizerの基本を学ぶ](../get-started.md)
