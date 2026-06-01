@@ -5,11 +5,11 @@ solution: Commerce
 feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip=" [!DNL Adobe Commerce Optimizer] 件のプロジェクトにのみ適用されます（Adobeが管理するSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip=" [!DNL Adobe Commerce Optimizer] 件のプロジェクトにのみ適用されます（Adobeが管理するSaaS インフラストラクチャ）。"
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
-source-git-commit: d8cd6f543353e1b11f3aa14b3b97b02155d23809
+source-git-commit: a404c2ff7cec5e72ce65d3670330b1f3f3c4702d
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -19,12 +19,14 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer]には、Adobe Commerce クラウドまたはオンプレミスからデータを同期し、アセットを管理し、ストアフロント エクスペリエンスを向上させ、外部システムを接続するための統合機能が含まれています。 以下の節では、各統合が[!DNL Adobe Commerce Optimizer]でどのように機能するかを説明します。 設定、設定、日常使用のリンクに従います。
 
+{{aco-integration-environment-alignment}}
+
 ## Adobe Commerce Optimizer Connector {#aco-connector}
 
 Adobe Commerce Optimizer コネクタは、Adobe Commerce（クラウドまたはオンプレミス）と[!DNL Adobe Commerce Optimizer]の間でカタログと価格データを同期するブリッジです。 コネクタを有効にすると、Commerceは商品データの記録システムのままになり、[!DNL Adobe Commerce Optimizer]は商品の検索、レコメンデーション、マーチャンダイジングルール、分析、ヘッドレスストアフロント体験を強化します。
 
 - [Adobe Commerce Optimizer コネクタの概要](../../aco-connector/overview.md){target="_blank"}
-- [&#x200B; コネクタの使用を開始する](../../aco-connector/get-started.md){target="_blank"}
+- [コネクタの基本を学ぶ](../../aco-connector/get-started.md){target="_blank"}
 
 ## AEM Assetsを使用した製品ビジュアル {#product-visuals}
 
@@ -51,5 +53,5 @@ Commerce Salesforce Connector （Adobe App Builder上に構築）は、Salesforc
 
 >[!MORELIKETHIS]
 >
->- [Adobe Commerce Optimizer テクニカルドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+>- [Adobe Commerce Optimizer テクニカルドキュメント ](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 >- [Adobe Commerce Optimizerの基本を学ぶ](../get-started.md)
