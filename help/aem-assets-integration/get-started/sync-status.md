@@ -24,7 +24,7 @@ ht-degree: 0%
 
 _管理者_ サイドバーで、**[!UICONTROL System]** > **[!UICONTROL AEM Assets]** > **[!UICONTROL Sync Status]**&#x200B;に移動します。
 
-![ システムメニューのAEM Assets Sync ステータス ](../assets/aem-assets-configuration-admin-menu.png){width="600" zoomable="yes"}
+![&#x200B; システムメニューのAEM Assets Sync ステータス &#x200B;](../assets/aem-assets-configuration-admin-menu.png){width="600" zoomable="yes"}
 
 ## 統合同期の正常性
 
