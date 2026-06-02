@@ -3,10 +3,10 @@ user-guide-title: '[!DNL AEM Assets]統合ガイド'
 breadcrumb-title: '[!DNL AEM Assets]統合'
 user-guide-description: Adobe CommerceとMagento Open Sourceの管理者およびe コマースマーケター向けのAEM Assets統合に関する包括的な情報を提供します。
 feature: CMS, Page Content
-source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
+source-git-commit: 04c1717905367549d2818b1842f05a6a1488ccfd
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 4%
+source-wordcount: '101'
+ht-degree: 3%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 4%
    - [Commerce Optimizerの設定](get-started/configure-aco.md)
    - [ストアフロントの設定](get-started/configure-storefront.md)
    - [ログの表示と管理](get-started/logs.md)
+   - [AEM Assetsの同期ステータスの表示](get-started/sync-status.md)
    - [データの移行](get-started/migrate-data.md)
 - 同期メカニズム {#synchronize}
    - [正確かつ適切なコンテンツを維持したい](synchronize/commerce-content.md)
@@ -30,4 +31,4 @@ ht-degree: 4%
    - [カスタム自動一致](synchronize/custom-match.md)
    - [アセットの手動選択](synchronize/asset-selector-integration.md)
 - [Commerce メディアアセットの管理](manage-assets.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
