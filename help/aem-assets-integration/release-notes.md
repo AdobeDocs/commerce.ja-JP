@@ -3,9 +3,9 @@ title: AEM Assets統合のリリースノート
 description: すべてのAEM Assets統合リリースについて詳しくは、リリースノートを参照してください。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
+source-git-commit: cf623b835d5590b32f1425c4aab25efa52b50498
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,14 @@ _2025年2月11日_
 ![新しい問題](../assets/new.svg)これで、マーチャントは商品とカテゴリの画像を同期できます。
 
 +++
+
+## v1.3.7
+
+_2026年6月2日_
+
+[!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
+
+![新しい問題](../assets/new.svg)<!-- Issue ACAP-1246 --> Commerce管理者には、関連付けの代わりにアセット属性で同期されたAEM Assetsを検索、フィルタリング、並べ替え、レビューするための、アセット中心の[!UICONTROL Sync Status] リストが含まれています。 [AEM Assetsの同期ステータスの表示](get-started/sync-status.md){target=_blank}を参照してください。
 
 ## v1.3.6
 
