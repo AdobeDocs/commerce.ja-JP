@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
+source-git-commit: 9e4bf260a145815f97a69251005309edb480ae11
 workflow-type: tm+mt
-source-wordcount: 4189
+source-wordcount: 4182
 ht-degree: 0%
 
 ---
@@ -44,17 +44,17 @@ ht-degree: 0%
 
 ## 2026年6月 – リリース #1 {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 
-[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-以下の項目は、2026年6月4日に実稼動環境にリリースされます。
+2026年6月4日に実稼動環境に公開されたアイテムは次のとおりです。
 
 >[!BEGINSHADEBOX]
 
 ### 管理画面でのカスタムクーポンコードの追加と編集
 
-販売者は、手動カート価格ルールで[!DNL Commerce Admin]から直接カスタムクーポンコードを作成および編集できるようになりました。 新しい「[!UICONTROL **カスタムクーポンを追加**]」ボタンは、カート価格ルールの編集時に「[!UICONTROL **クーポンコードを管理**]」セクションで使用できます。<!-- CCSAAS-4508 -->
+販売者は、手動カート価格ルールで[!DNL Commerce Admin]から直接カスタムクーポンコード [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon#method-3-custom-coupon-codes)を作成および編集できるようになりました。 新しい「[!UICONTROL **カスタムクーポンを追加**]」ボタンは、カート価格ルールの編集時に「[!UICONTROL **クーポンコードを管理**]」セクションで使用できます。<!-- CCSAAS-4508 -->
 
 ### デフォルトキャリアとカスタムキャリアを使用して出荷を追跡
 
