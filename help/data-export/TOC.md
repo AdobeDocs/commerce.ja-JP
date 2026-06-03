@@ -4,17 +4,18 @@ breadcrumb-title: '[!DNL Data Export]'
 user-guide-description: このガイドでは、Adobe Commerce SaaS サービスの [!DNL Data Export] 拡張機能の使用方法について詳しく説明します。
 role: Admin
 feature: Services
-source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
+source-git-commit: 0a6f579740176399f66686472ed28db10c390615
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 4%
+source-wordcount: '96'
+ht-degree: 2%
 
 ---
 
 # Adobe Commerce用[!DNL SaaS Data Export Guide] {#saas-data-export}
 
-- [ガイドの概要](overview.md)
-- [データ同期](data-synchronization.md)
+- [ガイド概要](overview.md)
+- [データの同期](data-synchronization.md)
+- [フィードロック機構](feed-lock-mechanism.md)
 - 書き出しのスケジュールとパフォーマンス {#performance}
    - [データ量と送信時間の推定](estimate-data-volume-sync-time.md)
    - [書き出しのパフォーマンスの向上](customize-export-processing.md)
