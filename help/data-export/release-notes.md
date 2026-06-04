@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d35a3ad39c504c5c6eb1073737babae252a3127d
+source-git-commit: f472cadb124207b04b158b410b7fe1db8f5a9f7d
 workflow-type: tm+mt
-source-wordcount: 2818
+source-wordcount: 2855
 ht-degree: 0%
 
 ---
@@ -40,6 +40,13 @@ ht-degree: 0%
 >SaaS データ書き出し拡張機能は、ライブサーチ、商品レコメンデーション、カタログサービスと共に自動的にインストールされるモジュールのコレクションです。 Composerを使用して、システムにインストールされているバージョンを確認できます。 場合によっては、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップするために、システムのデータエクスポート拡張機能をアップグレードすることをお勧めします。
 
 ## 2026 リリース
+
+### 103.4.27 リリース
+
+_2026年6月4日_
+
+![修正](../assets/fix.svg) **バンドル製品がカタログの同時更新後も表示されたままになる** – 構成可能な製品とバンドル製品が同時に更新されたときに、バンドル製品がストアフロントに表示されない問題を修正しました。`magento/module-data-exporter`をバージョン 103.4.27にアップグレードすると、製品フィードが自動的に再同期するようにスケジュールされ、[!DNL Catalog Service]、[!DNL Live Search]、およびその他の接続されたCommerce サービスの既存のバンドルデータの不整合が修正されます。
+<!--MDEE-1379-->
 
 ### 103.4.26 リリース
 
