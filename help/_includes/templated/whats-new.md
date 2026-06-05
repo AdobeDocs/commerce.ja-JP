@@ -1,7 +1,7 @@
 ---
-source-git-commit: dcb3300c80fb74d597cee66e981acb426490d34b
+source-git-commit: 61e34c6fb4a004789bffa43c5b9356ad4edc685e
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1182'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,80 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年6月3日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce as a Cloud Serviceの実稼動<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>SaaS データ書き出し</a>の<a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/feed-lock-mechanism"> フィードロック機能を追加して、フィードのロックが同時同期の競合を防ぐ仕組みと、Commerce データ書き出しログ （<code>commerce-data-export.log</code>）に含まれる通常のスキップメッセージを解釈する方法を説明しました。</p>
+</td>
+      <td>
+        新しいトピック
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/cb045b490482649a65bac9d763062700a90e9ecd">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年6月2日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Commerce管理者は、アセット属性によって同期されたAEM Assetsを検索、フィルタリング、およびトラブルシューティングするために、アセット中心の<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/sync-status">同期ステータス </a> リストを追加します。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1cb3a063d9c4595220ca431356d34e6cbe8ea33">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年6月1日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/3e5f1a5366cb57cbdd1ed3f5721a82cd0c5c5271">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年5月28日（PT）
 
@@ -321,80 +395,6 @@ ht-degree: 1%
         メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7845129c055619e09fbf7c5f860795be6bf81533">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月2日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>価格と商品のフィルター手順、フィルターと表示価格に関する価格表ベースの最終価格行動、フィルター製品UIの新しいスクリーンショットを含む<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/recommendations/filters">おすすめフィルター</a>を更新しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d67df3c05f1202e361d0c8972d6f1bf7a5b8854">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月1日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>SaaS/ACCS スクリーンショットとUI ガイダンス（オンボーディングバナー、トランザクションに焦点を当てたホーム、トランザクショングリッド）を使用して、<a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/configure/payments-home">決済サービスホーム </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/financial-reports/reporting"> レポート </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/get-started/onboard"> オンボーディングの概要</a>を更新しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/79c71b55e463d7e9570fe67b664b4e77a0d741f7">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceの4月の実稼動<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a28d4b467dc51f70509ab19dbdbaf2cd3f59a208">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月31日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>最新のサンドボックスのデプロイメントで、Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を更新します。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4a60783dbed189475bcd0090c949cd76b0566f54">コミット</a></td>
     </tr>
   </tbody>
 </table>
