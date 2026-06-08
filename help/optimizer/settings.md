@@ -4,10 +4,16 @@ description: ' [!DNL Adobe Commerce Optimizer]の設定を構成します。'
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
 TQID: https://experienceleague.adobe.com/9-BMXoWad0bbvsnwgHQrs19ZC9ngGrVE9J7PszcX4Zc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
 source-wordcount: 867
@@ -104,7 +110,7 @@ ht-degree: 0%
 
 ## 高度な検索 {#advanced-search}
 
-検索を1か所で管理するには、**[!UICONTROL Advanced search]** タブを使用します。 [!DNL Adobe Commerce Optimizer]は、ストアフロントで統一された検索エクスペリエンスを提供します。買い物客に対してキーワード検索とセマンティック検索を別々に設定しないでください。 **[!UICONTROL Enable semantic search]**&#x200B;は、適格な英語カタログに対して、デフォルトで&#x200B;**有効になっています**。 セマンティック検索は、既存の設定と並行して機能します。[ マーチャンダイジングルール ](./merchandising/rules/overview.md)、[類義語](./merchandising/synonyms/overview.md)、[ ファセット ](./merchandising/facets/overview.md)、ブースト、フィルターは引き続き適用されます。 システムは、事前定義済みのカタログ属性を自動的に使用します。管理者は、属性を選択したり優先順位付けしたりしません。 ストアフロントや開発者の変更は必要ありません。
+検索を1か所で管理するには、**[!UICONTROL Advanced search]** タブを使用します。 [!DNL Adobe Commerce Optimizer]は、ストアフロントで統一された検索エクスペリエンスを提供します。買い物客に対してキーワード検索とセマンティック検索を別々に設定しないでください。 **[!UICONTROL Enable semantic search]**&#x200B;は、適格な英語カタログに対して、デフォルトで&#x200B;**有効になっています**。 セマンティック検索は、既存の設定と並行して機能します。[&#x200B; マーチャンダイジングルール &#x200B;](./merchandising/rules/overview.md)、[類義語](./merchandising/synonyms/overview.md)、[&#x200B; ファセット &#x200B;](./merchandising/facets/overview.md)、ブースト、フィルターは引き続き適用されます。 システムは、事前定義済みのカタログ属性を自動的に使用します。管理者は、属性を選択したり優先順位付けしたりしません。 ストアフロントや開発者の変更は必要ありません。
 
 ![高度な検索設定](./assets/advanced-search.png)
 
@@ -130,7 +136,7 @@ ht-degree: 0%
 - **[!UICONTROL Fuzzy search]** — **on**&#x200B;を有効にして、検索クエリに近い一致を見つけます。これは、タイプミスや小さなバリエーションの修正に役立ちます。
 - **[!UICONTROL Fuzzy search similarity threshold]** — ファジィ一致が表示されるために必要な最小類似度（パーセント）を設定します。 しきい値を小さくすると、より類似した一致が返されます。ファジーな結果が広すぎると感じる場合は、しきい値を上げます。
 
-利点、検証ガイダンス、ベストプラクティス、トラブルシューティング、制限事項については、[ セマンティック検索](setup/semantic-search.md)を参照してください。
+利点、検証ガイダンス、ベストプラクティス、トラブルシューティング、制限事項については、[&#x200B; セマンティック検索](setup/semantic-search.md)を参照してください。
 
 ### フィールドの説明
 
