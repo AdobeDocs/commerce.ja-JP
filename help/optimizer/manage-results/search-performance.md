@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 1863
+source-wordcount: 1905
 ht-degree: 0%
 
 ---
@@ -64,6 +64,7 @@ ht-degree: 0%
 検索結果の関連性と効果を決定する重要な要素がいくつかあります。
 
 - 適切に構造化された商品データにより、検索アルゴリズムが商品とクエリを効果的に一致させることができます。 商品データが少ないと、関連性の低い検索結果につながります。 マーチャンダイジング戦略の成功に直接影響を与えるには：
+   - 自然言語とインテントベースのマッチング用に[&#x200B; セマンティック検索](../setup/semantic-search.md)を設定します。
    - 検索可能な[&#128279;](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)として、対応する重みで正しい属性を設定します。
    - これらの属性内のデータが適切であることを確認します。
 - 適切に設計された検索体験は、顧客との信頼関係を構築し、顧客が必要な商品を確実に見つけるという安心感をもたらします。
@@ -92,6 +93,7 @@ ht-degree: 0%
 
   検索結果ゼロ率を減らすには、次の操作を行います。
 
+   - [&#x200B; セマンティック検索](../setup/semantic-search.md)が設定の「**[詳細検索](../settings.md#advanced-search)**」タブで有効になっていることを確認します。 セマンティック検索は、[!DNL Adobe Commerce Optimizer]人の顧客に対してデフォルトで有効になっています。ストアフロントや開発者の変更は必要ありません。 インデックス作成完了後に結果が更新されます。
    - 正確な一致が見つからない場合は、[類義語](../merchandising/synonyms/overview.md)などの代替または関連する検索語を提供します。
    - 結果がゼロのクエリを定期的に確認してパターンを特定し、商品カタログと検索設定を必要に応じて調整します。
 

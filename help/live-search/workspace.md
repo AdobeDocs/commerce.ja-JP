@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 2317
+source-wordcount: 2318
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
 | [&#x200B; マーチャンダイジングの検索](rules.md) | スケジュールされたアクションをトリガーする論理ルールを使用して、検索エクスペリエンスを形作りましょう。 商品の販売促進、埋め込み、ピン留め、非表示などの操作を行って、検索結果のキャリブレーションを行い、ビジネス目標を達成。 |
 | [&#x200B; カテゴリ マーチャンダイジング &#x200B;](category-merch.md) | カテゴリーレベルでルールとインテリジェントなマーチャンダイジングを適用します。 |
 | [GraphQL](graphql.md) | ストアの管理者にログインした開発者は、実際のカタログデータを使用してクエリを作成し、テストできます。 詳しくは、[!DNL Live Search]開発者向けドキュメントの[GraphQLの概要](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)にアクセスしてください。 |
-| [設定](settings.md) | ストアフロントで価格ファセット値を価格範囲ごとにグループ化する方法を決定し、インデックス言語を設定します。 |
+| [設定](settings.md) | セマンティック検索を管理し（デフォルトで[!DNL Adobe Commerce as a Cloud Service]に対して有効）、ストアフロントの価格ファセットグループ化を設定し、インデックス言語を設定します。 |
 
 ## 属性を検索可能に設定する
 
