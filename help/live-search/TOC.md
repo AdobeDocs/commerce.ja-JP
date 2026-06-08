@@ -49,4 +49,4 @@ ht-degree: 8%
    - [設定](settings.md)
    - [セマンティック検索](semantic-search.md)
 - [開発者ガイド](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)

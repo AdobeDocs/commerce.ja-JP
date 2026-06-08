@@ -1,7 +1,7 @@
 ---
 title: 同義語の概要
 description: ' [!DNL Adobe Commerce Optimizer] の類義語とその検索結果の改善方法について説明します。'
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 9efa7b7b-4559-4e23-8858-d2f5da90455b
 TQID: https://experienceleague.adobe.com/Y92PBdhfA6TxH1qFWtllycIqB5XuXCtCgT-ezYvOKhk
 product_v2:
