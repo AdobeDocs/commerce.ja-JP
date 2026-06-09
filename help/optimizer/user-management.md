@@ -19,7 +19,7 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
 source-wordcount: 816
 ht-degree: 0%
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 1. **+**&#x200B;をクリックして製品を追加します。
 
-1. 管理者を追加する既存のCommerce Optimizer インスタンスを選択します。 Commerce Optimizer インスタンスでは、次のフォーマットが使用されます：`Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`。
+1. 管理者を追加する既存のCommerce Optimizer インスタンスを選択します。 Commerce Optimizer インスタンスでは、次のフォーマットが使用されます：`Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`。
 
 1. 製品プロファイルを選択します。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 1. 「[!UICONTROL **Adobe Commerce**]」商品を選択します。
 
-1. Commerce Cloud インスタンスを作成および管理できるcloud manager インターフェイスにユーザーを追加する場合は、Commerce Optimizer Manager製品を選択するか、ユーザーを追加する既存のCommerce Optimizer インスタンスを選択します。 Commerce Optimizer インスタンスでは、次のフォーマットが使用されます：`Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`。
+1. Commerce Cloud インスタンスを作成および管理できるcloud manager インターフェイスにユーザーを追加する場合は、Commerce Optimizer Manager製品を選択するか、ユーザーを追加する既存のCommerce Optimizer インスタンスを選択します。 Commerce Optimizer インスタンスでは、次のフォーマットが使用されます：`Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`。
 
 1. 「[!UICONTROL **ユーザー**]」タブを選択し、「[!UICONTROL **ユーザーを追加**]」をクリックします。
 

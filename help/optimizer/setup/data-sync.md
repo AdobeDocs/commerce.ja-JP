@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: 483
+source-wordcount: 484
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## データ同期ステータスの監視
 
-Commerce Optimizer コネクタを介してAdobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合、Commerce管理者の[&#x200B; データフィード同期ステータス ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)からデータエクスポートプロセスをモニターし、再同期操作を開始できます。
+Adobe Commerce Optimizer コネクタを介してAdobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合、Commerce管理者の[&#x200B; データフィード同期ステータス ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)からデータエクスポートプロセスをモニターし、再同期操作を開始できます。
 
 ## 関連トピック
 

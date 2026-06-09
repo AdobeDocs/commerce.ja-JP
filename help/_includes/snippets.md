@@ -1,14 +1,14 @@
 ---
-source-git-commit: edc47115830f5ca7ec1e485de1ddf9939de2586d
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 # Commerce スニペット
 
 
-## ACO統合環境の調整 {#aco-integration-environment-alignment}
+## Adobe Commerce Optimizerとの連携 {#aco-integration-environment-alignment}
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ ht-degree: 0%
 >
 >カタログデータをAdobe Commerce Optimizerに書き出すために[Adobe Commerce Optimizer Connector](../aco-connector/overview.md)をインストールした場合は、Commerce Optimizer Studioの[Data Feed Sync Status page](../optimizer/setup/data-sync.md)を使用して、Data Management ダッシュボードではなくAdobe Commerce Optimizerに正常に同期されたデータを確認します。
 
-## API アップデート用のACO ドロップインノート {#aco-api-updates-and-dropins}
+## API更新のためのAdobe Commerce Optimizer ドロップインノート {#aco-api-updates-and-dropins}
 
 >[!NOTE]
 >

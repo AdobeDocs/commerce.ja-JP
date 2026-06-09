@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f472cadb124207b04b158b410b7fe1db8f5a9f7d
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: 2855
+source-wordcount: 2857
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ _2026年4月13日_
 - 削除中に書き出しサービスが利用できない場合に、接続されているCommerce サービスから削除された製品が正しく削除されない問題を修正しました。 再試行および再同期操作により、削除された製品がSaaSに正しく反映されるようになりました。<!--MDEE-1319-->
 - 管理者ストアビューに属性値がない場合でも、カタログエンティティ（製品およびカテゴリ）を接続されたCommerce サービスに書き出せるようになりました。 これにより、サードパーティの拡張機能との互換性が向上し、デフォルト値が欠落しているために発生する書き出しエラーが軽減されます。<!--MDEE-1333-->
 
-![修正](../assets/fix.svg) フィード レコードに予期しないデータまたは不足しているデータが含まれている場合に発生する可能性があるデータ フィード同期ステータス ページのエラーを解決しました。 現在、システムはこのようなケースを適切に処理し、安定性を向上させ、クラッシュを防ぎます。 Adobe Commerce Optimizer コネクタを使用してAdobe CommerceからAdobe Commerce Optimizerにデータを同期する場合は、修正プログラムとして[ACO コネクタ バージョン 1.0.11](https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/release-notes)以降に更新してください。<!--MDEE-1327-->
+![修正](../assets/fix.svg) フィード レコードに予期しないデータまたは不足しているデータが含まれている場合に発生する可能性があるデータ フィード同期ステータス ページのエラーを解決しました。 現在、システムはこのようなケースを適切に処理し、安定性を向上させ、クラッシュを防ぎます。 Adobe Commerce Optimizer Connectorを使用してAdobe CommerceからAdobe Commerce Optimizerにデータを同期する場合は、修正プログラムとして[Adobe Commerce Optimizer Connector バージョン 1.0.11](https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/release-notes)以降に更新してください。<!--MDEE-1327-->
 
 ### 103.4.21 リリース
 
