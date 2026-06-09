@@ -1,25 +1,15 @@
 ---
 title: ユーザーとIdentity Management
 description: ' [!DNL Adobe Commerce Optimizer]のユーザーを作成および管理し、ユーザーの役割を割り当てる方法について説明します。'
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
 TQID: https://experienceleague.adobe.com/ORS8H-GM48FMaTL7ywENU6lJnPrz7PULLhlu5AVlzDc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-  - id: ce84ce08-883f-4337-ae83-6bb1855ca732
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c4f010fa-1478-4300-a88d-706fbc036a7aid: cc250cf1-34eb-4863-80d0-d170d45ea067id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598id: ce84ce08-883f-4337-ae83-6bb1855ca732
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
 source-wordcount: 816
 ht-degree: 0%
@@ -34,11 +24,11 @@ ht-degree: 0%
 
 - **ユーザー**— ユーザーは[!DNL Adobe Commerce Optimizer] UIにアクセスして、カタログビューとマーチャンダイジングルールを表示および管理し、パフォーマンス指標を追跡できます。
 
-- [**Developer**](https://helpx.adobe.com/jp/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} – 開発者には、ユーザー権限とAdobe Developer Consoleへのアクセス権があります。 つまり、[!DNL Adobe Commerce Optimizer] APIやSDKなどの開発者ツールと、App BuilderやAPI MeshなどのAdobe拡張性ツールを使用して、プロジェクトを作成し、資格情報を設定することができます。
+- [**Developer**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} – 開発者には、ユーザー権限とAdobe Developer Consoleへのアクセス権があります。 つまり、[!DNL Adobe Commerce Optimizer] APIやSDKなどの開発者ツールと、App BuilderやAPI MeshなどのAdobe拡張性ツールを使用して、プロジェクトを作成し、資格情報を設定することができます。
 
 - **管理者** – 管理者ロールには3つの異なるタイプがあります。
-   - [&#x200B; システム管理者](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Adobe Admin Consoleを通じて、組織内のすべての製品および製品プロファイルにアクセスできます。
-   - [製品管理者](#add-a-product-admin) – 製品管理者は、[!DNL Adobe Admin Console]の[&#128279;](#add-users)製品のユーザー、役割、権限を管理できます。
+   - [ システム管理者](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Adobe Admin Consoleを通じて、組織内のすべての製品および製品プロファイルにアクセスできます。
+   - [製品管理者](#add-a-product-admin) – 製品管理者は、[!DNL Adobe Admin Console]の](#add-users)製品のユーザー、役割、権限を[管理できます。
    - [製品プロファイル管理者](#add-developers-and-product-profile-admins) – 製品プロファイル管理者は[!DNL Adobe Admin Console]の製品のユーザーを管理できます。
 
 ## 製品管理者の追加
@@ -47,7 +37,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->製品管理者として追加する前に、製品管理者に[&#x200B; ユーザーの役割](#add-users)を割り当てます。 Commerceの基本権限には、ユーザーロールが必要です。
+>製品管理者として追加する前に、製品管理者に[ ユーザーの役割](#add-users)を割り当てます。 Commerceの基本権限には、ユーザーロールが必要です。
 
 組織がプロビジョニングされた時点に基づいて、製品管理者ユーザーを[!DNL Adobe Commerce Optimizer]に追加するには、2つの異なる方法があります。 早期アクセス組織では、製品管理者の役割を割り当てられた各ユーザーに、組織内のすべてのインスタンスを管理する権限が付与されます。 2025年10月13日以降にプロビジョニングされた一般提供（GA）組織では、特定のインスタンスの製品管理者としてユーザーを割り当てることができます。 製品管理者ユーザーがログインすると、管理する権限を持つインスタンスのみが表示されます。
 
@@ -69,7 +59,7 @@ ht-degree: 0%
 
 1. **+**&#x200B;をクリックして製品を追加します。
 
-1. 管理者を追加する既存のCommerce Optimizer インスタンスを選択します。 Commerce Optimizer インスタンスでは、次のフォーマットが使用されます：`Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`。
+1. 管理者を追加する既存のCommerce Optimizer インスタンスを選択します。 Commerce Optimizer インスタンスでは、次のフォーマットが使用されます：`Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`。
 
 1. 製品プロファイルを選択します。
 
@@ -115,7 +105,7 @@ ht-degree: 0%
 
 1. 「[!UICONTROL **Adobe Commerce**]」商品を選択します。
 
-1. Commerce Cloud インスタンスを作成および管理できるcloud manager インターフェイスにユーザーを追加する場合は、Commerce Optimizer Manager製品を選択するか、ユーザーを追加する既存のCommerce Optimizer インスタンスを選択します。 Commerce Optimizer インスタンスでは、次のフォーマットが使用されます：`Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`。
+1. Commerce Cloud インスタンスを作成および管理できるcloud manager インターフェイスにユーザーを追加する場合は、Commerce Optimizer Manager製品を選択するか、ユーザーを追加する既存のCommerce Optimizer インスタンスを選択します。 Commerce Optimizer インスタンスでは、次のフォーマットが使用されます：`Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`。
 
 1. 「[!UICONTROL **ユーザー**]」タブを選択し、「[!UICONTROL **ユーザーを追加**]」をクリックします。
 
@@ -141,7 +131,7 @@ ht-degree: 0%
 
 1. 「[!UICONTROL **ユーザー**]」タブを選択し、「[!UICONTROL **ユーザーを追加**]」をクリックします。
 
-   ![&#x200B; タブ選択](/help/cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
+   ![ タブ選択](/help/cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
 
 1. 追加するユーザーのユーザー名またはメールアドレスを入力し、[!UICONTROL **保存**]&#x200B;をクリックします。
 
@@ -149,20 +139,20 @@ ht-degree: 0%
 
 ### 開発者と製品プロファイル管理者の追加
 
-開発者と製品プロファイル管理者を追加するには、[&#x200B; ユーザーを追加](#add-users) プロセスを繰り返しますが、[!UICONTROL **ユーザー**] タブの代わりに&#x200B;[!UICONTROL **開発者**]&#x200B;または&#x200B;[!UICONTROL **管理者**] タブを選択します。
+開発者と製品プロファイル管理者を追加するには、[ ユーザーを追加](#add-users) プロセスを繰り返しますが、[!UICONTROL **ユーザー**] タブの代わりに&#x200B;[!UICONTROL **開発者**]&#x200B;または&#x200B;[!UICONTROL **管理者**] タブを選択します。
 
 >[!NOTE]
 >
 >開発者として追加する前に、開発者にユーザーの役割を割り当てます。 Commerceの基本権限には、ユーザーロールが必要です。
 
-![&#x200B; タブ選択](/help//cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
+![ タブ選択](/help//cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
 
 ## バルクユーザー管理
 
 次のいずれかの方法を使用すると、複数のユーザーをより効率的に追加できます。
 
-- Adobe Admin Consoleの&#x200B;**Add Users by CSV**&#x200B;機能を使用して、[一括CSV アップロード &#x200B;](https://helpx.adobe.com/jp/enterprise/using/bulk-upload-users.html){target="_blank"}を実行します。
-- [&#x200B; ユーザーグループ &#x200B;](https://helpx.adobe.com/jp/enterprise/using/user-groups.html){target="_blank"}を作成して、役割に複数のユーザーを追加します。 次に、適切な商品をユーザーグループに追加します。
+- Adobe Admin Consoleの&#x200B;**Add Users by CSV**&#x200B;機能を使用して、[一括CSV アップロード ](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}を実行します。
+- [ ユーザーグループ ](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}を作成して、役割に複数のユーザーを追加します。 次に、適切な商品をユーザーグループに追加します。
 
 ## ID管理とシングルサインオン設定
 
