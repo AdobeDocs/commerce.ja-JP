@@ -3,7 +3,7 @@ title: データの同期
 description: Commerce データソースから [!DNL Adobe Commerce Optimizer]に同期中のカタログデータを確認します。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
 TQID: https://experienceleague.adobe.com/ZTMFkch-YNS-CUgCdadmg1kemA8ORXQ7KGCEkI7d-Yw
 product_v2:
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## データ同期ステータスの監視
 
-Adobe Commerce Optimizer コネクタを介してAdobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合、Commerce管理者の[&#x200B; データフィード同期ステータス ページ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)からデータエクスポートプロセスをモニターし、再同期操作を開始できます。
+Adobe Commerce Optimizer コネクタを介してAdobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合、Commerce管理者の[&#x200B; データフィード同期ステータス ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)からデータエクスポートプロセスをモニターし、再同期操作を開始できます。
 
 ## 関連トピック
 
