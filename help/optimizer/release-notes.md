@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
+source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: 1319
 ht-degree: 0%
 
 ---
@@ -31,6 +31,22 @@ ht-degree: 0%
 * ストアフロントカタログデータ取得[&#128279;](https://developer.adobe.com/commerce/services/reference/graphql/)用の[&#x200B; データ取り込みREST API](https://developer.adobe.com/commerce/services/reference/rest/)およびGraphQL APIを更新しました。
 
   {{aco-api-updates-and-dropins}}
+
+## 2026年6月
+
+>[!BEGINSHADEBOX]
+
+### セマンティック検索
+
+[!DNL Adobe Commerce Optimizer]は、**[!UICONTROL Settings]**&#x200B;の&#x200B;[**詳細検索**](./settings.md#advanced-search) タブで&#x200B;**[セマンティック検索]**&#x200B;をサポートするようになりました。 セマンティック検索では、AIを利用して意味やコンテキストをまたいで商品をキーワード検索と一致させ、自然言語のクエリに対して空の検索ページを減らします。 適格な英語カタログの場合は、デフォルトで有効になっています。 オプションで、**[!UICONTROL Semantic boost]**、**[!UICONTROL Similarity threshold]**&#x200B;および&#x200B;**[!UICONTROL Fuzzy search]**&#x200B;を同じタブで調整できます。 属性の設定やストアフロントの変更は必要ありません。 [学習を増やす](./setup/semantic-search.md)。
+
+### 推奨価格フィルター（ベータ版）
+
+商品レコメンデーションユニットは、**[!UICONTROL Filter products]**&#x200B;段階で&#x200B;[**価格フィルター**](./merchandising/recommendations/filters.md#price)&#x200B;をサポートするようになりました。 商品の詳細ページで&#x200B;**static**&#x200B;の最小範囲と最大範囲または&#x200B;**dynamic** ルールを使用して、ストアフロントのアクティブな価格表から推奨商品を現在表示されている商品の&#x200B;**最終計算価格**&#x200B;と比較する候補を含めるか、除外します。 価格ルールでは、候補セットがフィルタリングされます。 商品を再分類しません。 [学習を増やす](./merchandising/recommendations/filters.md#price)。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## 2026年5月
 
