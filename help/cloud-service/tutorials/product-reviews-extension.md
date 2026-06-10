@@ -8,9 +8,13 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+TQID: 'https://experienceleague.adobe.com/vsy2xSV-3oVjPNc0JUzsunl3ooiWjWrWo1poXHB1TgY'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '2533'
+source-wordcount: 2533
 ht-degree: 0%
 
 ---
@@ -52,8 +56,8 @@ bash --version
 
 さらに、次の点を確認します。
 
-- 製品データを含む[!DNL Adobe Commerce as a Cloud Service] インスタンスがあります。 [Commerce Cloud サービスインスタンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview){target="_blank"}を参照してください。
-- [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクトがあります。 ストアフロントがない場合は、[&#x200B; ストアフロントの作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=ja){target="_blank"}の手順に従います。
+- 製品データを含む[!DNL Adobe Commerce as a Cloud Service] インスタンスがあります。 [Commerce Cloud サービスインスタンス ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}を参照してください。
+- [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクトがあります。 ストアフロントがない場合は、[ ストアフロントの作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}の手順に従います。
 - `aem` CLIがインストールされています：
 
   ```bash
@@ -308,7 +312,7 @@ Create a service contract for the Product Review and Q&A application that define
 ストアフロント統合を開始する前に、次の点を確認してください。
 
 - [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクト
-- Commerce ストアフロント AI ツール [CLIを使用してインストール &#x200B;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+- Commerce ストアフロント AI ツール [CLIを使用してインストール ](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 - `PRODUCT_REVIEW_QA_CONTRACT.md` ファイルがストアフロントプロジェクトにコピーされました
 
 ### 手順1：環境の検証
