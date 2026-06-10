@@ -2,7 +2,7 @@
 title: コンプライアンスと認定制度
 description: Adobe Commerce as a Cloud Serviceのコンプライアンスと認定資格について説明します。
 role: Admin, Developer, Leader
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 TQID: 'https://experienceleague.adobe.com/EdrT-C-iVmebE5SN7jWdUACjSCqarNnzcfW3w9dapnE'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -42,4 +42,4 @@ Adobeの認定とコンプライアンスに関するドキュメントの一覧
 
 ## 実務担当者を対象とした認定
 
-Adobeは、[!DNL Adobe Commerce]と連携する開発者、アーキテクト、およびビジネス実務担当者に対しても、ロールベースの資格認定を提供しています。 これらの認定は、安全な実装とプラットフォームガバナンスにおける専門知識を証明するものです。 詳しくは、[Adobe認定ポータル &#x200B;](https://experienceleague.adobe.com/en/docs/certification/program/technical-certifications/ac/ac-overview){target="_blank"}を参照してください。
+Adobeは、[!DNL Adobe Commerce]と連携する開発者、アーキテクト、およびビジネス実務担当者に対しても、ロールベースの資格認定を提供しています。 これらの認定は、安全な実装とプラットフォームガバナンスにおける専門知識を証明するものです。 詳しくは、[Adobe認定ポータル &#x200B;](https://experienceleague.adobe.com/ja/docs/certification/program/technical-certifications/ac/ac-overview){target="_blank"}を参照してください。

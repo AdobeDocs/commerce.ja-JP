@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 TQID: 'https://experienceleague.adobe.com/fGnz7X-DD5KzHhVtS0VR2NpVVEpwMQjzD2l0KO97-r4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 >[!TAB  システム管理者とマーチャントのワークフロー]
 
-この図では、システム管理者とマーチャントが[!DNL Adobe Commerce as a Cloud Service] インスタンスにアクセスして管理する方法の概要を示します。 管理者ワークフローについて詳しくは、[Adobe Admin Console ガイド &#x200B;](https://helpx.adobe.com/enterprise/admin-guide.html)を参照してください。
+この図では、システム管理者とマーチャントが[!DNL Adobe Commerce as a Cloud Service] インスタンスにアクセスして管理する方法の概要を示します。 管理者ワークフローについて詳しくは、[Adobe Admin Console ガイド &#x200B;](https://helpx.adobe.com/jp/enterprise/admin-guide.html)を参照してください。
 
 Adobe Commerce as a Cloud Serviceの![&#x200B; システム管理者とマーチャントのワークフロー図](./assets/merchant-flow.png){zoomable="yes"}
 
@@ -232,7 +232,7 @@ Adobe Commerce as a Cloud Serviceの![&#x200B; システム管理者とマーチ
 
 カタログを[!DNL Adobe Commerce as a Cloud Service]に読み込む方法は2つあります。
 
-* [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - カタログ データを数回クリックするだけで読み込むことができる、使いやすいインターフェイスです。
+* [**Commerce Admin**](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/import/data-import) - カタログ データを数回クリックするだけで読み込むことができる、使いやすいインターフェイスです。
 * [**Import JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - プログラムでカタログデータをインポートできるREST APIです。
 
 ### ストアフロントの設定
@@ -243,4 +243,4 @@ Adobe Commerce as a Cloud Serviceの![&#x200B; システム管理者とマーチ
 
 * [リリースノート](release-notes.md)
 * [移行ガイド](migration/overview.md)
-* [Commerce Storefrontのドキュメント](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* [Commerce Storefrontのドキュメント](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
