@@ -5,11 +5,19 @@ feature: Storefront, Integration, GraphQL
 badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-09T16:27:30.102Z'
 TQID: 'https://experienceleague.adobe.com/Orif1rROglTQ-3ZkRj5LMF90Y-AdpfTnOgPmJXQjYgc'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
 workflow-type: tm+mt
 source-wordcount: 237
@@ -21,7 +29,7 @@ ht-degree: 0%
 
 `CommerceAdapter` モジュールは、[!DNL Adobe Commerce]を拡張して、ヘッドレスストアフロントと[!DNL Adobe Commerce Optimizer]のギャップを埋めます。 お客様の価格表のコンテキストを解決するためのGraphQL クエリを提供し、[!DNL Adobe Commerce Optimizer] GraphQL APIで想定されるバンドル製品エンコーディングを適用します。
 
-上位レベルのストアフロントの設定手順については、[!DNL Adobe Commerce Optimizer Connector]概要の[ マーチャンダイジングとストアフロントの設定](./overview.md#merchandising-storefronts)を参照してください。
+上位レベルのストアフロントの設定手順については、[!DNL Adobe Commerce Optimizer Connector]概要の[&#x200B; マーチャンダイジングとストアフロントの設定](./overview.md#merchandising-storefronts)を参照してください。
 
 ## GraphQL: `commerceOptimizer` クエリ {#graphql-commerceoptimizer-query}
 
