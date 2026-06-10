@@ -2,7 +2,7 @@
 title: カタログ同期パイプライン
 description: フィード変換、cron スケジュール、スコープ管理、エラー処理など、 [!DNL Adobe Commerce Optimizer Connector] 同期パイプラインの仕組みについて説明します。
 feature: Integration, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
 product_v2:
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 # コネクタ同期パイプライン
 
-[[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview)に基づいて構築された&#x200B;**[!DNL Adobe Commerce Optimizer Connector]**&#x200B;は、[!DNL SaaS Data Export]個のインデクサーによって収集されたデータを[!DNL Adobe Commerce Optimizer]個の[!DNL Catalog Data Ingestion API]で必要な形式にマッピングし、認証、一括送信、およびスコープベースの同期制御を処理します。 以下の節では、その同期の仕組みについて説明します。
+[[!DNL SaaS Data Export]](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/overview)に基づいて構築された&#x200B;**[!DNL Adobe Commerce Optimizer Connector]**&#x200B;は、[!DNL SaaS Data Export]個のインデクサーによって収集されたデータを[!DNL Adobe Commerce Optimizer]個の[!DNL Catalog Data Ingestion API]で必要な形式にマッピングし、認証、一括送信、およびスコープベースの同期制御を処理します。 以下の節では、その同期の仕組みについて説明します。
 
 関連トピック：
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 #### 要件定義
 
-- [Commerce cronが実行中である必要があります](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}。
+- [Commerce cronが実行中である必要があります](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}。
 - フィードのインデクサーは&#x200B;**[!UICONTROL Update by Schedule]** モードを使用する必要があります。 [Commerce アプリケーション設定の確認](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}を参照してください。
 
 ## スコープベースの同期制御
@@ -88,7 +88,7 @@ ht-degree: 1%
 | 一時的なエラー | 5分ごとに再試行 |
 | フルシンクまたは大きなカタログ | 分から時間 |
 
-Commerce Adminの[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページからフィードごとのステータスを監視します。 [&#x200B; データ同期が機能していることを確認してください](./get-started.md#verify-that-the-data-sync-is-working)。
+Commerce Adminの[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページからフィードごとのステータスを監視します。 [&#x200B; データ同期が機能していることを確認してください](./get-started.md#verify-that-the-data-sync-is-working)。
 
 ## フィードの送信とエラー処理
 
