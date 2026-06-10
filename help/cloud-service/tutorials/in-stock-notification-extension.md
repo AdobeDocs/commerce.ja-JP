@@ -9,9 +9,19 @@ level: Intermediate
 type: Tutorial
 hide: true
 TQID: 'https://experienceleague.adobe.com/ogyONrudoCu-SmmG9oxTMrA0m-evEkIBXb1wRyCsyks'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: ce44533e-8ec8-4e11-a9e9-78b0fe561832id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+  - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
 source-wordcount: 2693
@@ -56,8 +66,8 @@ bash --version
 
 さらに、次の点を確認します。
 
-- 製品データを含む[!DNL Adobe Commerce as a Cloud Service] インスタンスがあります。 [Commerce Cloud サービスインスタンス ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}を参照してください。
-- [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクトがあります。 ストアフロントがない場合は、[ ストアフロントの作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}の手順に従います。
+- 製品データを含む[!DNL Adobe Commerce as a Cloud Service] インスタンスがあります。 [Commerce Cloud サービスインスタンス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}を参照してください。
+- [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクトがあります。 ストアフロントがない場合は、[&#x200B; ストアフロントの作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}の手順に従います。
 - `aem` CLIがインストールされています：
 
   ```bash
@@ -179,9 +189,9 @@ STOP and ask me any clarifying questions you have about the requirements before 
 
    イベントレコードのテーブルが表示されます。
 
-   ![ イベント購読セクションを強調表示するCommerce管理メニュー](../assets/in-stock-event-subscriptions.png){width="600" zoomable="yes"}
+   ![&#x200B; イベント購読セクションを強調表示するCommerce管理メニュー](../assets/in-stock-event-subscriptions.png){width="600" zoomable="yes"}
 
-   ![登録済みイベントエントリを含むイベント購読テーブル ](../assets/in-stock-event-table.png){width="600" zoomable="yes"}
+   ![登録済みイベントエントリを含むイベント購読テーブル &#x200B;](../assets/in-stock-event-table.png){width="600" zoomable="yes"}
 
 ### 手順6：拡張機能のテスト
 
@@ -245,7 +255,7 @@ curl -X GET "$API_URL"
 
 1. [!DNL Adobe Developer Console]から、「App Builder ログ」セクションに移動します。
 
-   ![Adobe Developer Console App Builder ログセクション ](../assets/in-stock-developer-console-logs.png){width="600" zoomable="yes"}
+   ![Adobe Developer Console App Builder ログセクション &#x200B;](../assets/in-stock-developer-console-logs.png){width="600" zoomable="yes"}
 
 1. ログで、イベントが処理されたことを確認するエントリがあり、正しい電子メールとSKUのサブスクリプションペアが識別されたことを確認します。
 
@@ -284,7 +294,7 @@ Create an API service contract for the Out of Stock notification service and its
 ストアフロント統合を開始する前に、次の点を確認してください。
 
 - [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクト
-- Commerce ストアフロント AI ツール [CLIを使用してインストール ](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+- Commerce ストアフロント AI ツール [CLIを使用してインストール &#x200B;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 - `OUT_OF_STOCK_NOTIFICATION_CONTRACT.md` ファイルがストアフロントプロジェクトにコピーされました
 
 ### 手順1：環境の検証
@@ -401,7 +411,7 @@ Use the project manager skill to plan this implementation.
 Run complete browser testing. Use the following out of stock product 'http://localhost:3000/products/<out-of-stock-product-slug>/<sku>'
 ```
 
-![ カートに追加ボタンの下に入荷後通知フォームが表示されている製品詳細ページ ](../assets/in-stock-notification-form.png){width="600" zoomable="yes"}
+![&#x200B; カートに追加ボタンの下に入荷後通知フォームが表示されている製品詳細ページ &#x200B;](../assets/in-stock-notification-form.png){width="600" zoomable="yes"}
 
 ### ステップ 7：クリーンアップ
 
