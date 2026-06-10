@@ -1,17 +1,25 @@
 ---
 user-guide-title: '[!DNL Adobe Commerce Optimizer Connector]統合ガイド'
 breadcrumb-title: '[!DNL Optimizer Connector]'
-user-guide-description: Adobe Commerce Optimizer Connectorを設定して、カタログデータを書き出し、Commerce OptimizerとGraphQLを使用してEdge Delivery Services ストアフロントへの配信を最適化します。
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+user-guide-description: ' [!DNL Adobe Commerce Optimizer Connector]  ガイドを使用して、カタログデータを書き出し、価格を同期し、 [!DNL Adobe Commerce Optimizer]を使用して [!DNL Edge Delivery Services]  ストアフロントを配信します。'
+role: Developer, Admin
+feature: Integration, Configuration
+source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 5%
+source-wordcount: '39'
+ht-degree: 7%
 
 ---
 
 
 # Adobe Commerce Optimizer Connector {#aco-optimizer-connector}
 
-- [Adobe Commerce Optimizer Connector](overview.md)
+- [[!DNL Adobe Commerce Optimizer Connector]](overview.md)
 - [詳細を見る](get-started.md)
+- [コネクタ同期パイプライン](connector-sync-pipeline.md)
+- [ヘッドレスストアフロントの統合](headless-storefront.md)
+- [トラブルシューティング](troubleshooting.md)
+- 参照 {#reference}
+   - [コネクタモジュールとフィードエンドポイント](./reference/connector-reference.md)
+   - [コネクタフィードのフィールドマッピング](./reference/field-mapping.md)
 - [リリースノート](release-notes.md)

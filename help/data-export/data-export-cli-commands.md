@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 583
+source-wordcount: 605
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 # Commerce CLIを使用したフィードの同期
 
 `magento/saas-export` パッケージの`saas:resync` コマンドを使用すると、Adobe Commerce SaaS サービスのデータ同期を管理できます。
+
+>[!NOTE]
+>
+>`saas:resync` コマンドは、`products`、`categories`、`priceBooks`などの[!DNL Adobe Commerce Optimizer Connector] フィードにも適用されます。 コネクタフィードとインデクサー名の完全なリストについては、[&#x200B; サポートされているフィード &#x200B;](../aco-connector/reference/connector-reference.md#supported-feeds)を参照してください。
 
 Adobeでは、`saas:resync` コマンドを定期的に使用することはお勧めしません。 コマンドを使用するための一般的なシナリオは次のとおりです。
 
