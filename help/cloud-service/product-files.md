@@ -5,9 +5,17 @@ feature: Catalog Management, Products, Integration
 role: Admin, Developer
 level: Intermediate
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: 'https://experienceleague.adobe.com/fFbsXGO54L1lSuQULqfP7A-BJKSYggdt7cy-GDvaSzU'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: 753
 ht-degree: 0%
 
 ---
@@ -54,14 +62,14 @@ ht-degree: 0%
 
 プロセスには4つのステップがあります。
 
-1. ファイル名と製品ファイル属性の`POST V1/media/initiate-upload`を使用して`media_resource_type`を呼び出します。
+1. ファイル名と製品ファイル属性の`media_resource_type`を使用して`POST V1/media/initiate-upload`を呼び出します。
 1. 返された事前署名済みURLを`PUT`に使用して、ファイルを直接Amazon S3に送信します。
 1. `POST V1/media/finish-upload`に電話して、アップロードを確認してください。
 1. 返されたキーを`PUT /V1/products/{sku}`を通じて製品のファイル属性に割り当て、キーを[&#x200B; カスタム属性](https://developer.adobe.com/commerce/webapi/rest/modules/custom-attributes/)値として渡します。
 
 ## 製品の読み込みを通じてアップロード
 
-[import API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}または管理者インポート UIを使用して、製品にファイルを一括で添付できます。 製品ファイル属性では、外部URLからの読み込みのみがサポートされます。これは、製品画像の読み込み[の](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}方法2と同じ方法です。 Commerceは、指定されたURLからファイルをダウンロードし、S3 メディアストレージに保存します。
+[import API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}または管理者インポート UIを使用して、製品にファイルを一括で添付できます。 製品ファイル属性では、外部URLからの読み込みのみがサポートされます。これは、製品画像の読み込み[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}の方法2と同じ方法です。 Commerceは、指定されたURLからファイルをダウンロードし、S3 メディアストレージに保存します。
 
 >[!NOTE]
 >
@@ -89,7 +97,7 @@ ADB112,"My Product",file_upload=https://example.com/files/manual.pdf
 
 ## GraphQLによるファイルの取得
 
-[!DNL Adobe Commerce as a Cloud Service]では、[Catalog Service GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"} エンドポイントが商品データを提供します。 ファイル属性は`attributes`の`ProductView` フィールドに表示され、`value`にはファイルの完全なパブリック URLが含まれています。
+[!DNL Adobe Commerce as a Cloud Service]では、[Catalog Service GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"} エンドポイントが商品データを提供します。 ファイル属性は`ProductView`の`attributes` フィールドに表示され、`value`にはファイルの完全なパブリック URLが含まれています。
 
 ```graphql
 {

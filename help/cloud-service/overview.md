@@ -6,7 +6,7 @@ role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
-TQID: https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI
+TQID: 'https://experienceleague.adobe.com/RWF0BsS24AJtkoPNxRtvTNyM971IBEEt-NTbPT5Nub8'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
@@ -34,7 +34,8 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
 source-wordcount: 1444
 ht-degree: 0%
@@ -88,9 +89,9 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3443268?captions=jpn&learn=on)
 
-この図は、[!DNL Adobe Commerce as a Cloud Service]とすべてのAdobe Experience Cloud ソリューション間のデータ フローを示しています。
+この図は、[!DNL Adobe Commerce as a Cloud Service]とすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
-![[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す&#x200B; データフロー図](./assets/data-flow.svg){zoomable="yes"}
+[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![&#x200B; データフロー図](./assets/data-flow.svg){zoomable="yes"}
 
 ## Commerce ストアフロント
 
