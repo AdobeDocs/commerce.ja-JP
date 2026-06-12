@@ -3,9 +3,9 @@ title: AEM Assets統合のリリースノート
 description: すべてのAEM Assets統合リリースについて詳しくは、リリースノートを参照してください。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: cf623b835d5590b32f1425c4aab25efa52b50498
+source-git-commit: e055a3d44eda7e7f082a884c316ad437ea9ac15e
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,24 @@ _2025年2月11日_
 ![新しい問題](../assets/new.svg)これで、マーチャントは商品とカテゴリの画像を同期できます。
 
 +++
+
+## v1.4.1
+
+_2026年6月15日_
+
+[!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
+
+![修正済みの問題](../assets/fix.svg) AEM Assets統合が有効になっている際に、管理者&#x200B;**[!UICONTROL System]** メニューに&#x200B;**[!UICONTROL OBSERVABILITY]** セクション ヘッダーが表示されず、**[!UICONTROL Subscription List]** リンクが見出しなしで表示される問題を修正しました。<!--ACAP-1302 -->
+
+![修正済みの問題](../assets/fix.svg) Dynamic Media Open APIが有効になっていないインスタンスで、AEM Assets統合設定を保存すると、明確なメッセージではなく生のPHP警告が表示される問題を修正しました。 明確で一般的なエラーメッセージが表示されるようになりました。<!-- ACAP-1298 -->
+
+## v1.4.0
+
+_2026年6月12日_
+
+[!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
+
+![新しい問題](../assets/new.svg)<!-- Issue ACAP-1101 -->一括アセット更新の呼び出しにより、全体的な安定性とイベント処理のパフォーマンスが向上しました。
 
 ## v1.3.7
 
