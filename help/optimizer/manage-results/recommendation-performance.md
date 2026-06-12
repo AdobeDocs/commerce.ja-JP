@@ -1,22 +1,15 @@
 ---
 title: Recommendations パフォーマンス
 description: Recommendationsのパフォーマンスページでは、insightで商品レコメンデーションのパフォーマンスを確認できます。
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
 TQID: https://experienceleague.adobe.com/YDgbC964pr7YI4Yas7pHTgnzDY2oxk-uR-eM6eVJE1w
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 964
+source-wordcount: 958
 ht-degree: 0%
 
 ---
@@ -29,13 +22,13 @@ ht-degree: 0%
 >
 >レコメンデーションユニットは、推奨製品&#x200B;_個のアイテム_&#x200B;を含むウィジェットです。
 
-![おすすめのパフォーマンス &#x200B;](../assets/rec-performance.png){zoomable="yes"}
+![おすすめのパフォーマンス ](../assets/rec-performance.png){zoomable="yes"}
 
 ## レポートを読む
 
 1. レコメンデーションが適用される&#x200B;*すべてのビュー*&#x200B;など、**カタログビュー**&#x200B;を選択します。
 
-   レコメンデーションの[&#x200B; カタログビュー](#select-catalog-view)の詳細をご覧ください。
+   レコメンデーションの[ カタログビュー](#select-catalog-view)の詳細をご覧ください。
 
 1. **[!UICONTROL Date Range]**&#x200B;をクリックし、次のいずれかの範囲を選択します。
 
@@ -73,7 +66,7 @@ ht-degree: 0%
 | ![日付範囲](../assets/rec-perf-date-range.png) | 指標の計算に使用する時間の範囲を指定します。 |
 | ![列セレクター](../assets/icon-show-hide-columns.png) | Recommendations テーブルに表示される列を指定します。 |
 | レコメンデーションを作成 | [新しいレコメンデーションの作成](../merchandising/recommendations/create.md) ページを開きます。 |
-| [&#x200B; カタログ ビュー](#select-catalog-view) | カタログ ビューを選択してテーブルをフィルタリングし、選択したカタログ ビューに適用されるレコメンデーションのみを表示します。 この選択範囲は、新しいレコメンデーションを[作成](../merchandising/recommendations/create.md)するときに、カタログビューとしても使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[&#x200B; カタログビュー](../setup/catalog-view.md)です。 |
+| [ カタログ ビュー](#select-catalog-view) | カタログ ビューを選択してテーブルをフィルタリングし、選択したカタログ ビューに適用されるレコメンデーションのみを表示します。 この選択範囲は、新しいレコメンデーションを[作成](../merchandising/recommendations/create.md)するときに、カタログビューとしても使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[ カタログビュー](../setup/catalog-view.md)です。 |
 
 ## 列の説明
 
@@ -97,14 +90,10 @@ ht-degree: 0%
 
 ## カタログ ビューを選択
 
->[!IMPORTANT]
->
->この機能は現在ベータ版です。
-
 **Recommendations** ページの&#x200B;**[!UICONTROL Catalog view]** セレクターには、次の2つの機能があります。
 
 1. **テーブルをフィルター** – 選択したカタログ ビューに適用されるレコメンデーション （およびその指標）のみを表示します。
-1. **新しいレコメンデーションの範囲を設定** - レコメンデーションを[作成](../merchandising/recommendations/create.md)すると、選択したカタログ ビューがユニットの範囲として使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[&#x200B; カタログビュー](../setup/catalog-view.md)です。
+1. **新しいレコメンデーションの範囲を設定** - レコメンデーションを[作成](../merchandising/recommendations/create.md)すると、選択したカタログ ビューがユニットの範囲として使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[ カタログビュー](../setup/catalog-view.md)です。
 
    - **すべてのビュー** – 推奨事項はすべてのカタログビューに適用されます（製品の可用性は引き続きビューごとにフィルタリングされます）。
    - **カタログ ビュー** – 推奨事項は、選択したカタログ ビュー（1つのストアフロント、言語、ブランドなど）にのみ適用されます。
