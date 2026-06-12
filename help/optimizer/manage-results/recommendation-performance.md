@@ -14,9 +14,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 964
+source-wordcount: 958
 ht-degree: 0%
 
 ---
@@ -96,10 +96,6 @@ ht-degree: 0%
 | vCTR | （表示可能なクリック率）は、表示可能なインプレッション（買い物客の画面の表示部分に実際に表示されたレコメンデーション）にもとづいてクリック数を測定し、より正確なエンゲージメントを提供します。 |
 
 ## カタログ ビューを選択
-
->[!IMPORTANT]
->
->この機能は現在ベータ版です。
 
 **Recommendations** ページの&#x200B;**[!UICONTROL Catalog view]** セレクターには、次の2つの機能があります。
 

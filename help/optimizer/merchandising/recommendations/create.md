@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1615
+source-wordcount: 1556
 ht-degree: 0%
 
 ---
@@ -35,10 +35,6 @@ _レコメンデーションユニット_
 1. _[!DNL Adobe Commerce Optimizer]_&#x200B;サイドバーで、_ マーチャンダイジング _>**Recommendations**&#x200B;に移動して、_ Recommendations _ワークスペースを表示します。
 
 1. **カタログ ビュー** フィールドで、レコメンデーションを使用するカタログ ビューを選択します。 レコメンデーションにカタログビューを使用する[の詳細](../../manage-results/recommendation-performance.md#select-catalog-view)。
-
-   >[!IMPORTANT]
-   >
-   >この機能は現在[&#x200B; ベータ版](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta)です。 Betaの参加者は、新しいカタログビュースコープを活用するために、既存のレコメンデーションユニットを再作成する必要があります。
 
 1. 「**レコメンデーションを作成**」をクリックします。
 

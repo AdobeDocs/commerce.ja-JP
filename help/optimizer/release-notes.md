@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1319
+source-wordcount: 1316
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ### インテリジェントなランキング向上
 
-検索の[&#x200B; マーチャンダイジングルール &#x200B;](./merchandising/rules/add.md#intelligent-ranking-boost)、デフォルトの製品リスト、および[&#x200B; カテゴリーページ &#x200B;](./merchandising/rules/add.md#rule-types) （ベータ版）に&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;が含まれるようになりました。 **最も閲覧された**&#x200B;や&#x200B;**トレンド**&#x200B;などの戦略が、カテゴリーリストの検索や行動シグナルに対するテキストの関連性に関連して、商品の順序にどの程度影響を与えているかを調整できます。 ルールのプレビューに設定が反映されます。 ブーストはクエリ時に適用されるため、変更するときにカタログの再同期は必要ありません。
+検索の[&#x200B; マーチャンダイジングルール &#x200B;](./merchandising/rules/add.md#intelligent-ranking-boost)、デフォルトの製品リスト、および[&#x200B; カテゴリーページ &#x200B;](./merchandising/rules/add.md#rule-types)に&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;が含まれるようになりました。 **最も閲覧された**&#x200B;や&#x200B;**トレンド**&#x200B;などの戦略が、カテゴリーリストの検索や行動シグナルに対するテキストの関連性に関連して、商品の順序にどの程度影響を与えているかを調整できます。 ルールのプレビューに設定が反映されます。 ブーストはクエリ時に適用されるため、変更するときにカタログの再同期は必要ありません。
 
 ### APIの更新
 
@@ -89,7 +89,7 @@ _2026年5月4日_
 
 >[!BEGINSHADEBOX]
 
-### カタログルール（ベータ版）
+### カタログルール
 
 [&#x200B; カテゴリルール &#x200B;](./merchandising/rules/add.md)は、マーチャンダイジングルールを拡張して、検索と同じランキングとアクション（ピン、ブースト、埋め込み）を持つカテゴリページで、カテゴリをターゲットにして商品の順序を制御できるようにします。
 
@@ -145,7 +145,7 @@ _2026年3月24日_
 
 >[!BEGINSHADEBOX]
 
-### マーチャンダイジングルールとレコメンデーションのカタログビュー（ベータ版）
+### マーチャンダイジングルールとレコメンデーションのカタログビュー
 
 レコメンデーションユニットを[作成](./merchandising/recommendations/create.md)または[&#x200B; マーチャンダイジングルール &#x200B;](./merchandising/rules/add.md)するときに、カタログビューを指定できるようになりました。
 

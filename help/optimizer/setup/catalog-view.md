@@ -19,9 +19,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4d08de7974c79dc6fe20366e0164f6078e83be5f
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1216
+source-wordcount: 1210
 ht-degree: 0%
 
 ---
@@ -81,10 +81,6 @@ ht-degree: 0%
 これらの手順を完了すると、カタログビューが設定され、選択したソースとポリシーに基づいて製品と価格が表示されるようになりました。
 
 ### レコメンデーションと製品発見ルールのカタログビューの指定
-
->[!IMPORTANT]
->
->この機能は現在ベータ版です。
 
 [&#x200B; レコメンデーションユニット &#x200B;](../merchandising/recommendations/create.md)または[&#x200B; マーチャンダイジングルール &#x200B;](../merchandising/rules/add.md)を作成するときに、カタログビューを指定できます。
 
