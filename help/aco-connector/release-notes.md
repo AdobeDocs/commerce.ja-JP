@@ -3,23 +3,14 @@ title: '[!DNL Adobe Commerce Optimizer Connector] リリースノート'
 description: カタログの同期と書き出しに関する新機能、バグ修正、既知の問題など、 [!DNL Adobe Commerce Optimizer Connector]  リリースノートについて説明します。
 feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/6NeLAfThvIWIyV4Y6OWtL8V9mC7lPy7UH-Zli8E-WEk'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-subfeature_v2:
-  - id: dad884f1-e840-49a1-970e-2f965bdbc410
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: f08fa0de-a550-4acd-b570-f81cf1d03aafid: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+subfeature_v2: id: dad884f1-e840-49a1-970e-2f965bdbc410id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: af45543a52d1c88149574dc22cdef37af01404c8
 workflow-type: tm+mt
-source-wordcount: 267
+source-wordcount: 353
 ht-degree: 0%
 
 ---
@@ -33,6 +24,18 @@ ht-degree: 0%
 ![既知の問題](../assets/bug.svg)既知の問題
 
 ## 2026 リリース
+
+### 1.0.14 リリース
+
+_2026年6月11日_
+
+![修正](../assets/fix.svg) **PHP 8.5との互換性** - [!DNL Adobe Commerce Optimizer Connector]はPHP 8.5をサポートするようになりました。これにより、コネクタ機能やカタログ同期を中断することなく[!DNL Adobe Commerce]環境をアップグレードできます。<!--MDEE-1388-->
+
+![修正](../assets/fix.svg) **価格表は通貨変更後に更新されます** – 更新された価格は、通貨変更後にAdobe Commerce Optimizerに自動的に反映されます。<!--MDEE-1384-->
+
+![修正](../assets/fix.svg) **ナビゲーションが無効または非表示の親カテゴリを尊重** – 無効または非表示のカテゴリ階層の製品がナビゲーションエクスペリエンスに予期せず表示されなくなりました。<!--MDEE-1385-->
+
+![修正](../assets/fix.svg) **ステージング更新後の一貫したカテゴリ URL** - ステージング更新が適用された後も、カテゴリリンクとナビゲーションは正確なままです。<!--MDEE-1395-->
 
 ### 1.0.13 リリース
 
