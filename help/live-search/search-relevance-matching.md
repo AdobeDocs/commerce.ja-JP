@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->次の機能は[&#x200B; プライベートベータ版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)です。
+>次の機能は[&#x200B; プライベートベータ版](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/beta)です。
 
 [!DNL Live Search]が検索結果をランク付けして、買い物客が最初に最も関連性の高い商品を見られるようにします。 このサービスは、カタログのテキスト **が買い物客のタイプと密接に一致し**&#x200B;した商品に最も強力なブーストを与え、クエリ用語が意味のある方法で一緒に表示されるマッチを優先し、最終的により幅広いマッチを含みます（オートコンプリート形式のマッチングをサポートする動作を含む）。
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 - **完全一致/ほぼ**&#x200B;語一致からのブースト
 - **すべてのクエリ用語**&#x200B;が&#x200B;**same** フィールドに表示されるときにブーストします
 - テキストの関連性と行動シグナルをブレンドする&#x200B;**インテリジェントランキング** （有効な場合）、[&#x200B; インテリジェントランキングスコアリングの仕組み](rules-add.md#how-intelligent-ranking-scoring-works)を参照
-- 各属性およびその他のテキストに関する関連要因について&#x200B;**[重み](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;を検索します（例えば、用語が発生する頻度、名前または説明の長さ）。 [!DNL Adobe Commerce]管理者で、製品属性に「**検索で使用**」と「**重み**」を設定します。
+- 各属性およびその他のテキストに関する関連要因について&#x200B;**[重み](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;を検索します（例えば、用語が発生する頻度、名前または説明の長さ）。 [!DNL Adobe Commerce]管理者で、製品属性に「**検索で使用**」と「**重み**」を設定します。
 - ピン、ブースト、埋め込みなどの&#x200B;**[マーチャンダイジングルール](rules.md)**&#x200B;を検索
 
 これらのシグナルは相互作用するので、最も広いレベルでのみ一致する商品は、よりタイトなフレイズマッチの上にランク付けされることがあります。例えば、**検索の重み**&#x200B;や、高重フィールド内の用語の頻度が、他の場所でより弱いフレイズマッチを上回っている場合などです。
