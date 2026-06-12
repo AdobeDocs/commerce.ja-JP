@@ -12,9 +12,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 787
+source-wordcount: 812
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ ht-degree: 0%
 動的クエリを作成するには、検索サービスは、どの属性が検索可能で、[重み](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results)を知っている必要があります。 [!DNL Live Search]はAdobe Commerce検索の重み付けを尊重します（1-10、10は最優先度）。 カタログサービスと同期および共有されるデータのリストは、スキーマで見つけることができます。スキーマは、次の場所で定義されています。
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+検索可能な属性と重みが、クエリ時に&#x200B;**exact**、**near**、同一フィールド、およびクロスフィールドのマッチングとどのように相互作用するかを理解するには、[&#x200B; マッチングとランキング &#x200B;](search-relevance-matching.md)を参照してください。
 
 ![[!DNL Live Search] クライアント検索図のインデックス作成](assets/indexing-pipeline.svg)
 

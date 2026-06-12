@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 1167
+source-wordcount: 1195
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 1%
 
 - 有意義な検索体験を構築し、買い物客や購入者が求めているものを可能な限り容易に見つけられるようにしましょう。
 - AIを活用した動的ファセット処理と、セッション中の買い物客の行動に応じた検索結果のランキング付けを活用できます。
+- **完全一致とほぼ一致**&#x200B;および同一フィールドの一致を優先して、最も関連性の高いクエリが最初に最も関連性の高い製品を返すようにします。 詳しくは、*[一致とランキングの検索](search-relevance-matching.md)*&#x200B;を参照してください。
 - 軽量なSaaS ベースのサービスを利用して、容易にアップデートでき、ライセンスに含まれているため、総所有コストを削減できます。
 - GraphQL API、ヘッドレスの柔軟性、API サンドボックス環境、超高速のSaaSを有効にすることで、技術的な知識を習得できます。
 

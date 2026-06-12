@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: b9b57bb7279354c9d5c2a7efc6e1ba14c1c36598
 workflow-type: tm+mt
-source-wordcount: 1905
+source-wordcount: 1936
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >検索パフォーマンス指標が表示されない場合は、検索イベントデータが[収集されていることを確認してください](../setup/events/overview.md)。
+
+>[!NOTE]
+>
+>製品の検出で&#x200B;**完全一致と近似一致**、同一分野の一致、およびより広範な一致（およびキーワードの重み付けとマーチャンダイジングルールとの相互作用）をどのようにランク付けするかを理解するには、[一致とランキングの検索](../search-relevance-matching.md)を参照してください。
 
 ## **カタログビュー**&#x200B;を選択
 
