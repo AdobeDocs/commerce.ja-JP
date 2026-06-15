@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Commerce用[!DNL Live Search] {#live-search}
 
-- [ [!DNL Live Search]とは](overview.md)
+- [&#x200B; [!DNL Live Search]とは](overview.md)
 - [インストール](install.md)
 - [ライブサーチの設定](workspace.md)
 - [限界と限界](boundaries-limits.md)
