@@ -2,9 +2,9 @@
 title: ' [!DNL Adobe Commerce Optimizer]とは'
 description: ' [!DNL Adobe Commerce Optimizer] とその主な機能について説明します。'
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: e68d731bbcc168439c9a56a7cb778648a7c473e9
+source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 0%
@@ -21,12 +21,12 @@ ht-degree: 0%
 - あらゆるソースからカタログデータを取り込むことができます。
 - ビジネスカタログのビューとポリシーを定義します。
 - AIとマシンラーニングを活用して、パーソナライズされた検索とレコメンデーションを作成。
-- **完全一致とほぼ一致**&#x200B;および同一フィールドの一致を優先するランキングで、商品の見つけやすさを向上させます。[一致とランキングの検索](search-relevance-matching.md)を参照してください。
+- **完全一致とほぼ一致**&#x200B;および同一フィールドの一致を優先するランキングで、商品の見つけやすさを向上させます。[一致とランキングの検索](./manage-results/search-relevance-matching.md)を参照してください。
 - 同期状況やストアフロントイベントデータなど、重要な製品データの可用性を表示し、正確な実装とトラブルシューティングを行うことができます。
 
 [!DNL Adobe Commerce Optimizer]の概要については、次のビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3450464?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## [!DNL Adobe Commerce Optimizer]から最も恩恵を受けるのは誰ですか？
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 カタログのビューとポリシーを定義します。 カタログには商品データだけでなく、ビジネス構造を定義するのにも役立ちます。 また、ストアフロントの商品データの可用性に関する貴重なインサイトを表示し、買い物客に迅速に表示できます。
 
 - **カタログ ビュー** – 小売構造を有意義なビジネス グループに定義するのに役立ちます。 たとえば、自動車産業のディーラー、マルチブランドコングロマリットの子会社、サプライヤーの製造拠点などです。
-- **カタログレイヤー** - ソースデータを変更せずに製品データを変更します。 AEM Assetsを商品画像に使用する場合、AEMとAssetsのレイヤーは[商品ビジュアル &#x200B;](setup/product-visuals.md)を通じて適用されます。 詳しくは、[&#x200B; カタログレイヤー](setup/catalog-layer.md)を参照してください。
+- **カタログレイヤー** - ソースデータを変更せずに製品データを変更します。 AEM Assetsを商品画像に使用する場合、AEMとAssetsのレイヤーは[商品ビジュアル ](setup/product-visuals.md)を通じて適用されます。 詳しくは、[ カタログレイヤー](setup/catalog-layer.md)を参照してください。
 - **ポリシー** - カタログビュー内に格納されたデータアクセスフィルター。 ポリシーは、適切なコンテンツが適切な宛先に送信されるようにするのに役立ちます。 たとえば、販売時点実店舗、マーケットプレイス、広告パイプライン（Google、Facebook、Instagram）などです。
 - **データ同期** - データソース （PIM、ERPなど）から[!DNL Adobe Commerce Optimizer]に転送された製品データの同期ステータスの概要を表示します。 その製品データは&#x200B;**[!UICONTROL Catalog Service]**、**[!UICONTROL Search]**、**[!UICONTROL Recommendations]**&#x200B;のタブ内に表示されます。
 - **イベント** – 製品の検出とレコメンデーションを強化するストアフロントイベントデータを表示します。 **イベント** ページでは、マーチャントがストアフロントイベントを正しく実装していること、およびイベントが正常にキャプチャされていることを確認できます。 このページで潜在的な課題を特定し、その課題を解決するための手順を実施することができます。
@@ -95,4 +95,4 @@ ht-degree: 0%
 
 次の図は、カタログデータの取り込みから、マーチャンダイジングサービス、ストアフロント、サードパーティのカートとチェックアウトプロセスとの統合に至るまで、[!DNL Adobe Commerce Optimizer]の基本的なアーキテクチャを示しています。
 
-![[!DNL Adobe Commerce Optimizer] アーキテクチャ &#x200B;](./assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer] アーキテクチャ ](./assets/architecture.png)
