@@ -15,7 +15,7 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b9b57bb7279354c9d5c2a7efc6e1ba14c1c36598
+source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
 workflow-type: tm+mt
 source-wordcount: 1936
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->製品の検出で&#x200B;**完全一致と近似一致**、同一分野の一致、およびより広範な一致（およびキーワードの重み付けとマーチャンダイジングルールとの相互作用）をどのようにランク付けするかを理解するには、[一致とランキングの検索](../search-relevance-matching.md)を参照してください。
+>製品の検出で&#x200B;**完全一致と近似一致**、同一分野の一致、およびより広範な一致（およびキーワードの重み付けとマーチャンダイジングルールとの相互作用）をどのようにランク付けするかを理解するには、[一致とランキングの検索](search-relevance-matching.md)を参照してください。
 
 ## **カタログビュー**&#x200B;を選択
 

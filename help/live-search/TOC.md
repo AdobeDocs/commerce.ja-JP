@@ -4,10 +4,10 @@ breadcrumb-title: '[!DNL Live Search]'
 user-guide-description: このガイドでは、Adobe Commerceから [!DNL Live Search] を使用する方法について詳しく説明します。
 role: Admin
 feature: Services, Search
-source-git-commit: 8b93be7e618c7a93803e62eabb1cd38ebe8b45ba
+source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 8%
+source-wordcount: '104'
+ht-degree: 7%
 
 ---
 
@@ -45,6 +45,7 @@ ht-degree: 8%
    - [カテゴリーマーチャンダイジング](category-merch.md)
    - [在庫切れ商品の管理](manage-out-of-stock-products.md)
    - [インデックス作成](indexing.md)
+   - {hide-from-toc}[一致とランキングを検索](search-relevance-matching.md)
    - [GraphQL](graphql.md)
    - [設定](settings.md)
    - [セマンティック検索](semantic-search.md)

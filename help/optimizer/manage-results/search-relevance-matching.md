@@ -20,7 +20,7 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: da5950c0f2071f48f163dd02f6c38953804ae152
+source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
 workflow-type: tm+mt
 source-wordcount: 946
 ht-degree: 0%
@@ -71,7 +71,7 @@ ht-degree: 0%
 - **同じフィールド内のすべての単語** – 検索可能な&#x200B;**同じ**&#x200B;属性で&#x200B;**brauseschlauch**&#x200B;と&#x200B;**chrom**&#x200B;を検索します。ただし、解体は行われません（例えば、**name**&#x200B;の両方）。
 - **異なるフィールドをまたぐ単語** — **Brauseschlauch**&#x200B;を&#x200B;**brause**&#x200B;と&#x200B;**schlauch**&#x200B;に分解します。 これらのトークンは、**same** フィールドに表示する必要があります（必ずしも隣接するフレーズとは限りません）。 **chrom**&#x200B;は、**異なる** フィールドで一致できます（例：**name**&#x200B;の&#x200B;**brause**&#x200B;と&#x200B;**schlauch**、**color**&#x200B;の&#x200B;**chrom**）。
 
-[設定](./settings.md)の[言語](./settings.md#language) タブで&#x200B;**言語**&#x200B;を&#x200B;**ドイツ語**&#x200B;に設定して、解体ルールを適用します。 本番環境での変更を有効にする前に、ステージングストアフロントで価値の高いドイツ語のクエリを検証します。
+[設定](../settings.md)の[言語](../settings.md#language) タブで&#x200B;**言語**&#x200B;を&#x200B;**ドイツ語**&#x200B;に設定して、解体ルールを適用します。 本番環境での変更を有効にする前に、ステージングストアフロントで価値の高いドイツ語のクエリを検証します。
 
 分解はルールベースで、このレイヤーにエッジケースを追加できます。 辞書にサブワードが含まれていない場合、トークン化は不完全で、期待よりも幅広い一致を返します。例えば、**gaszähler**&#x200B;から&#x200B;**gas**&#x200B;が含まれていない場合、**zahl**&#x200B;しか出力せず、**サーモスタット**&#x200B;から&#x200B;**stat**&#x200B;しか出力されない可能性があります。 ステマーは、予期しないルートを生成することもできます（例えば、**schraub**&#x200B;が&#x200B;**schraub**&#x200B;に由来する、または&#x200B;**schelle**～**schell**&#x200B;に由来する）。 Adobeは、問題が特定されると、既知のケースのディクショナリとステミングのオーバーライドを更新します。
 
@@ -81,9 +81,9 @@ ht-degree: 0%
 
 - **完全一致/ほぼ**&#x200B;語一致からのブースト
 - **すべてのクエリ用語**&#x200B;が&#x200B;**same** フィールドに表示されるときにブーストします
-- テキストの関連性と行動シグナルをブレンドする&#x200B;**インテリジェントランキング** （有効な場合）、[&#x200B; インテリジェントランキングスコアリングの仕組み](./merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)を参照
-- 各属性およびその他のテキストに関する関連要因について&#x200B;**[重み](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;を検索します（例えば、用語が発生する頻度、名前または説明の長さ）。 *設定*&#x200B;で、キーワード検索に使用する属性と相対&#x200B;**[キーワード検索の重み](./settings.md)**&#x200B;を設定します。
-- ピン、ブースト、埋め込みなどの&#x200B;**[マーチャンダイジングルール](./merchandising/rules/overview.md)**
+- テキストの関連性と行動シグナルをブレンドする&#x200B;**インテリジェントランキング** （有効な場合）、[&#x200B; インテリジェントランキングスコアリングの仕組み](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)を参照
+- 各属性およびその他のテキストに関する関連要因について&#x200B;**[重み](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;を検索します（例えば、用語が発生する頻度、名前または説明の長さ）。 *設定*&#x200B;で、キーワード検索に使用する属性と相対&#x200B;**[キーワード検索の重み](../settings.md)**&#x200B;を設定します。
+- ピン、ブースト、埋め込みなどの&#x200B;**[マーチャンダイジングルール](../merchandising/rules/overview.md)**
 
 これらのシグナルは相互作用するので、最も広いレベルでのみ一致する商品は、よりタイトなフレイズマッチの上にランク付けされることがあります。例えば、**検索の重み**&#x200B;や、高重フィールド内の用語の頻度が、他の場所でより弱いフレイズマッチを上回っている場合などです。
 
@@ -97,8 +97,8 @@ ht-degree: 0%
 
 ## 関連トピック
 
-- [設定](./settings.md)
-- [検索パフォーマンス](./manage-results/search-performance.md)
-- [マーチャンダイジングルールの概要](./merchandising/rules/overview.md)
-- [検索ルールを追加](./merchandising/rules/add.md)
-- [同義語の概要](./merchandising/synonyms/overview.md)
+- [設定](../settings.md)
+- [検索パフォーマンス](search-performance.md)
+- [マーチャンダイジングルールの概要](../merchandising/rules/overview.md)
+- [検索ルールを追加](../merchandising/rules/add.md)
+- [同義語の概要](../merchandising/synonyms/overview.md)

@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Commerce Optimizer] とその主な機能について
 recommendations: noCatalog
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: e68d731bbcc168439c9a56a7cb778648a7c473e9
+source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 - あらゆるソースからカタログデータを取り込むことができます。
 - ビジネスカタログのビューとポリシーを定義します。
 - AIとマシンラーニングを活用して、パーソナライズされた検索とレコメンデーションを作成。
-- **完全一致とほぼ一致**&#x200B;および同一フィールドの一致を優先するランキングで、商品の見つけやすさを向上させます。[一致とランキングの検索](search-relevance-matching.md)を参照してください。
+- **完全一致とほぼ一致**&#x200B;および同一フィールドの一致を優先するランキングで、商品の見つけやすさを向上させます。[一致とランキングの検索](./manage-results/search-relevance-matching.md)を参照してください。
 - 同期状況やストアフロントイベントデータなど、重要な製品データの可用性を表示し、正確な実装とトラブルシューティングを行うことができます。
 
 [!DNL Adobe Commerce Optimizer]の概要については、次のビデオをご覧ください。
