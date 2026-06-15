@@ -21,4 +21,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->デプロイメントによって、これらのレポートのうち、[!DNL Payment Services] **ダッシュボード**&#x200B;に表示されるものを決定します。 [!DNL Adobe Commerce as a Cloud Service]および[!DNL Adobe Commerce Optimizer]で、ダッシュボードは&#x200B;**selected**&#x200B;件のレポート（[ トランザクション ](reporting.md)件のホームからの報告を含む）を公開します。 [注文支払い状況](order-payment-status.md)および[支払い](payouts.md) ホーム ビューとリンクされたレポートは、これらのトピックで説明されているように、クラウドおよびオンプレミスのAdobe Commerceで利用できます。 [[!DNL Payment Services]  ホーム ](payments-home.md)を参照してください。
+>デプロイメントによって、これらのレポートのうち、[!DNL Payment Services] **ダッシュボード**&#x200B;に表示されるものを決定します。 [!DNL Adobe Commerce as a Cloud Service]および[!DNL Adobe Commerce Optimizer]で、ダッシュボードは&#x200B;**selected**&#x200B;件のレポート（[&#x200B; トランザクション &#x200B;](reporting.md)件のホームからの報告を含む）を公開します。 [注文支払い状況](order-payment-status.md)および[支払い](payouts.md) ホーム ビューとリンクされたレポートは、これらのトピックで説明されているように、クラウドおよびオンプレミスのAdobe Commerceで利用できます。 [[!DNL Payment Services]  ホーム &#x200B;](payments-home.md)を参照してください。
