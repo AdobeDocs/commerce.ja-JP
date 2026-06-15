@@ -1,20 +1,24 @@
 ---
-title: 財務報告
-description: '[!DNL Payment Services] は、店舗の注文と支払いを明確に把握できる包括的なレポートを提供しています。'
+title: Financial Reporting
+description: '[!DNL Payment Services]では、ストアの注文と支払いを明確に把握できるように、包括的なレポートを提供しています。'
 role: User
 feature: Payments, Checkout, Paas, Saas
 level: Intermediate
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 13160864673baae7043463d4596f3464a0c7ec5e
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---
 
-# 財務報告
+# Financial Reporting
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] は、店舗の注文と支払いを明確に把握できる包括的なレポートを提供します。
+[!DNL Adobe Commerce]と[!DNL Magento Open Source]の[!DNL Payment Services]では、ストアの注文と支払いを明確に把握するために、包括的なレポートが提供されます。
 
-![&#x200B; 財務報告書の表示 &#x200B;](assets/reports-view.png){width="600" zoomable="yes"}
+![財務報告書ビュー](assets/reports-view.png){width="600" zoomable="yes"}
 
-キャッシュ・フロー管理レポート（支払い、取引、注文の支払いステータス）では、支払いの詳細と注文情報が同期され、処理済のボリューム、支払い残高、財務調整のための取引レベルの詳細レポートが完全に表示されます。
+キャッシュフロー管理レポート（支払い、トランザクション、注文支払い状況）では、支払い詳細を注文情報と同期させ、処理された金額、支払い残高、財務の調整のためにトランザクションレベルに関する詳細なレポートを完全に透明性を持たせます。
+
+>[!NOTE]
+>
+>デプロイメントによって、これらのレポートのうち、[!DNL Payment Services] **ダッシュボード**&#x200B;に表示されるものを決定します。 [!DNL Adobe Commerce as a Cloud Service]および[!DNL Adobe Commerce Optimizer]で、ダッシュボードは&#x200B;**selected**&#x200B;件のレポート（[ トランザクション ](reporting.md)件のホームからの報告を含む）を公開します。 [注文支払い状況](order-payment-status.md)および[支払い](payouts.md) ホーム ビューとリンクされたレポートは、これらのトピックで説明されているように、クラウドおよびオンプレミスのAdobe Commerceで利用できます。 [[!DNL Payment Services]  ホーム ](payments-home.md)を参照してください。
