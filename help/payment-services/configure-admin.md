@@ -4,10 +4,10 @@ description: インストール後、ストア設定の管理者で [!DNL Paymen
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-feature: Payments, Checkout, Configuration
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+feature: Payments, Checkout, Configuration, Paas, Saas
+source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3710'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,26 @@ ht-degree: 0%
 | [!UICONTROL PayPal Merchant ID] | ストアビュー | PayPal アカウントの作成時に生成された、一意のPayPal加盟店アカウント ID。 |
 | [!UICONTROL PayPal Merchant Status] | ストアビュー | PayPal加盟店IDのステータス。 |
 | [!UICONTROL Soft Descriptor] | web サイトまたはストアビュー | Web サイトとストアビューにソフト記述子を追加して、ブランド、ストア、または製品ラインを描く顧客トランザクションに情報を追加します。 |
+
+## Web サイトの別のPayPal アカウントを接続する
+
+**複数のweb サイト** （およびストアビュー）で1つのCommerce インスタンスを実行する場合、一部のweb サイトに&#x200B;**異なるPayPal マーチャント アカウント**&#x200B;が必要になる場合があります。 [!DNL Payment Services]では、**グローバル** （デフォルト）スコープでインスタンスを設定してオンボーディングした後、管理画面で&#x200B;**web サイト範囲**&#x200B;のPayPal オンボーディングを完了できます。
+
+以前のリリースでは、web サイト レベルのPayPal アカウントマッピングでは、通常、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#Solution)またはAdobe担当者にお問い合わせください。 以下の前提条件を満たす場合は、**[!UICONTROL Connect different account for website]** アクションを使用します。
+
+### 前提条件（グローバルスコープ）
+
+**[!UICONTROL Connect different account for website]** コントロールは、**デフォルト/グローバル**&#x200B;設定のインスタンスに対して次の&#x200B;**すべて**&#x200B;が既にtrueである場合、**web サイト** スコープでのみ使用でき、有効になります。
+
+1. [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas)のセットアップが完了しました。
+
+1. [&#x200B; サンドボックスおよび実稼動](connect.md#configure-commerce-services)のAPI キー（公開および非公開）が管理者に保存されます。
+
+1. **[!UICONTROL Payment Services Sandbox ID]**&#x200B;と&#x200B;**[!UICONTROL Payment Services Production ID]**&#x200B;は[一般設定](#general-configuration)に入力されています。
+
+1. **グローバル**&#x200B;のPayPal マーチャント アカウントは&#x200B;**接続**&#x200B;であり、そのデフォルトスコープに対して&#x200B;**完了したPayPal オンボーディング**&#x200B;があります（**[!UICONTROL PayPal Merchant ID]**&#x200B;と関連フィールドは、[一般設定](#general-configuration)で説明されているように、グローバル スコープに入力されます）。
+
+   グローバルオンボーディングが完了していない場合は、設定範囲を&#x200B;**[!UICONTROL Website]**&#x200B;に切り替え、**[!UICONTROL Payment Methods]**&#x200B;で&#x200B;**[!UICONTROL Payment Services]**&#x200B;を開き、**[!UICONTROL Connect different account for website]** ボタンは&#x200B;**無効**&#x200B;です。コネクタの設定を完了し、最初に&#x200B;**グローバル**&#x200B;のPayPal オンボーディングを行います。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -168,7 +188,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Apple Pay]
 
-[!DNL Apple Pay]を使用すると、加盟店はSafariで安全で高速かつシームレスなチェックアウト体験を提供できます。加盟店アカウントごとに最大99 ドメインをサポートできます。 [!DNL Apple Pay] ボタンを押すと、お客様のiOSまたはmacOS デバイスから支払い、連絡先、配送情報が自動的に入力されるので、ワンタップですばやく購入できるので、コンバージョン率を高めることができます。
+[!DNL Apple Pay]を使用すると、マーチャントは安全で高速かつシームレスなチェックアウト体験を提供でき、1 アカウントにつき最大99 ドメインをサポートできます。 **Safari** （macOSおよびiOS）では、[!DNL Apple Pay] ボタンは、チェックアウトの開始時（express）と最終チェックアウトページの両方で、お客様のデバイスから支払い、連絡先、配送情報を自動的に入力します。 **Chrome、Firefox、またはMicrosoft Edge**&#x200B;では、[!DNL Apple Pay]は&#x200B;**express checkout**&#x200B;および&#x200B;**final checkout ステップ**&#x200B;の両方で利用できます。デスクトップでは、QR コードと&#x200B;**iPhone** （iOS 18以降）が表示され、買い物客はApple支払い用紙で支払いを完了できます。 Express チェックアウトを行う場所で、**[!UICONTROL Show Apple Pay on product detail page]**&#x200B;またはその他のプレースメントが有効になっていることを確認してください。
 
 >[!IMPORTANT]
 >
@@ -179,7 +199,7 @@ ht-degree: 0%
 1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
 1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
-1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL Apple Pay]_ セクションを展開します。
+1. _[!UICONTROL [!DNL Payment Services]]_&#x200B;セクションで、_[!UICONTROL Apple Pay]_ セクションを展開します。
 1. 「**[!UICONTROL Title]**」に、チェックアウト時に表示される支払い方法の名前を変更するテキスト（必要に応じて）を入力します。
 1. 支払いアクション [&#128279;](production.md#set-payment-services-as-payment-method)を設定するには、**[!UICONTROL Authorize]**&#x200B;または&#x200B;**[!UICONTROL Authorize and Capture]**&#x200B;を選択します。
 1. Adobe Commerceで[!DNL Apple Pay] オプションを有効にする場所を指定するには、必要に応じて次のオプションで`Yes`を選択します。
@@ -215,7 +235,7 @@ ht-degree: 0%
 1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
 1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
-1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL Google Pay]_ セクションを展開します。
+1. _[!UICONTROL [!DNL Payment Services]]_&#x200B;セクションで、_[!UICONTROL Google Pay]_ セクションを展開します。
 1. （オプション） **[!UICONTROL Title]** フィールドに新しい名前を入力して、チェックアウト時に表示される支払い方法の名前を変更します。
 1. [**[!UICONTROL Authorize]**&#x200B;または&#x200B;**[!UICONTROL Authorize and Capture]**&#x200B;を選択して、支払いアクション &#x200B;](production.md#set-payment-services-as-payment-method)を設定します。
 1. Adobe Commerceで[!DNL Google Pay] オプションを有効にする場所を指定するには、必要に応じて次のオプションで`Yes`を選択します。
@@ -224,10 +244,11 @@ ht-degree: 0%
    * **[!UICONTROL Show Google Pay on product detail page]**
    * **[!UICONTROL Show Google Pay in mini cart preview]**
    * **[!UICONTROL Show Google Pay on cart page]**
+1. Googleの支払い明細の後に&#x200B;**Googleの支払いレビュー** ページを表示するかどうかを選択するには、**[!UICONTROL Skip Review]**&#x200B;を`Yes`または`No`に設定します。 `Yes`に設定すると、サポートされているExpress フローは、Google支払いシート **（クライアント側の送料）の**&#x200B;配送方法を示し、追加のレビュー手順なしで完了する場合があります。 `No`に設定すると、買い物客は支払い前にレビューページで送料と合計を確認できます。
 1. **[!UICONTROL 3D Secure authentication]**&#x200B;を有効にするには（`Off`をデフォルトで有効にする）、`Always`または`When required`を選択します。
 1. デバッグモードを有効にするには、**[!UICONTROL Debug Mode]**&#x200B;の`Yes`を選択します（`No`は無効にします）。
 1. 必要に応じて&#x200B;**[!UICONTROL Button Color]**、**[!UICONTROL Button Type]**&#x200B;および&#x200B;**[!UICONTROL Button Style]**&#x200B;を選択して、_[!UICONTROL Google Pay]_&#x200B;ボタンの外観を設定します。
-1. 高さを設定するには、**[!UICONTROL Button Style]**&#x200B;で定義された高さのデフォルト値を使用します。
+1. 高さを設定するには、**[!UICONTROL Button Style]**&#x200B;で定義されている高さの既定値を使用します。
 1. 変更を保存するには、「**[!UICONTROL Save Config]**」をクリックします。
 1. **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;に移動し、**[!UICONTROL Flush Cache]**&#x200B;をクリックして、無効なすべてのキャッシュを更新します。
 
@@ -243,6 +264,7 @@ ht-degree: 0%
 | [!UICONTROL Show Google Pay on product detail page] | ストアビュー | 製品詳細ページで[!DNL Google Pay]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay in mini cart preview] | ストアビュー | ミニカートのプレビューで[!DNL Google Pay]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay on cart page] | ストアビュー | 買い物かごページの[!DNL Google Pay]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Skip Review] | ストアビュー | `[!UICONTROL Yes]`に設定すると、対象となる[!DNL Google Pay]のExpress フローでは、支払い用紙の後に別のレビューページを省略できます。Google支払い用紙に配送方法が表示されます。 `[!UICONTROL No]`に設定すると、買い物客はレビューページに進み、配送と合計を確認します。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL 3D Secure authentication] | ストアビュー | [3D セキュア認証](security.md#3ds)を有効または無効にします。 オプション：[!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | web サイト | デバッグモードを有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | ストアビュー | [!DNL Google Pay] ボタンの色を定義します。 オプション：`[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
@@ -422,7 +444,6 @@ Apple Pay、Venmo、PayPal PayLater ボタンの切り替えなど、_Settings_&
 
 Web サイト、ストア、ストアビューの階層について詳しくは、[&#x200B; サイト、ストア、およびビューの範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja)を参照してください。
 
-CLIを使用した複数のPayPal アカウントのスコープの設定について詳しくは、[&#x200B; コマンドライン設定](configure-cli.md#configure-scope-via-cli)を参照してください。
+**グローバル**&#x200B;のCommerce サービスとPayPal オンボーディングが完了した後、管理者から&#x200B;**異なるPayPal アカウントを個々のweb サイト**&#x200B;に接続するには、**[!UICONTROL Website]**&#x200B;の範囲で&#x200B;**[!UICONTROL Connect different account for website]**&#x200B;を使用します。 「[Web サイトの別のPayPal アカウントを接続する](#connect-a-different-paypal-account-for-a-website)」を参照してください。
 
-営業担当者は、加盟店アカウント用に新しい[&#x200B; スコープ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings)を作成し、PayPalで追加サイトをオンボーディングして、表示するように設定したPayPal ボタンがサイトに表示されるようにすることができます。 営業担当者に問い合わせる
-web サイトで複数のPayPal アカウントを使用する場合のサポートを担当します。
+CLIを使用した複数のPayPal アカウントのスコープの設定について詳しくは、[&#x200B; コマンドライン設定](configure-cli.md#configure-scope-via-cli)を参照してください。

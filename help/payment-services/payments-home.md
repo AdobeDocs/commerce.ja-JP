@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -30,13 +30,17 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Pa
 
 ![決済サービスホームでACCS オンボーディングが必要](assets/payment-services-home-accs-onboarding.png){width="700" zoomable="yes"}
 
-オンボーディングが完了した後（または既に設定されているインスタンスで）、**[!UICONTROL Home]**&#x200B;には、表形式のレポートの&#x200B;**[!UICONTROL Transactions]**&#x200B;に&#x200B;**[!UICONTROL View Report]**&#x200B;が表示され、さらに&#x200B;**[!UICONTROL Learn]**&#x200B;と&#x200B;**[!UICONTROL Help]**&#x200B;の領域が表示されます。
+オンボーディングが完了した後（または既に設定されているインスタンスで）、**[!UICONTROL Home]**&#x200B;には、表形式のレポートの&#x200B;**[!UICONTROL View Report]**&#x200B;に&#x200B;**[!UICONTROL Transactions]**&#x200B;が表示され、さらに&#x200B;**[!UICONTROL Learn]**&#x200B;と&#x200B;**[!UICONTROL Help]**&#x200B;の領域が表示されます。
 
 ![SaaSの決済サービスホーム &#x200B;](assets/payment-services-home-saas.png){width="700" zoomable="yes"}
 
 >[!ENDTABS]
 
 このホームビューでは、_ホーム_、_学習_&#x200B;に[!DNL Payment Services]についてアクセスしたり、拡張機能&#x200B;_設定_&#x200B;を設定したり、_ヘルプ_&#x200B;を取得したりできます。 レポートを開くには、**[!UICONTROL View Report]** （SaaS）または&#x200B;**[!UICONTROL Orders]**&#x200B;および&#x200B;**[!UICONTROL Payouts]**&#x200B;のエントリポイント （クラウドおよびオンプレミスのAdobe Commerce）を使用します。[&#x200B; レポート &#x200B;](reporting.md)を参照してください。
+
+>[!NOTE]
+>
+>[!DNL Adobe Commerce as a Cloud Service]および[!DNL Adobe Commerce Optimizer]では、[!DNL Payment Services] **ダッシュボード**&#x200B;が&#x200B;**選択**&#x200B;のレポートのみを公開しています。**[!UICONTROL Home]**&#x200B;から[&#x200B; トランザクション &#x200B;](reporting.md) レポートを取得します（以下のSaaS テーブルを参照）。 ホームの&#x200B;**[!UICONTROL Orders]**&#x200B;および&#x200B;**[!UICONTROL Payouts]**&#x200B;の領域と、それらのグラフとリンクされたレポートは、クラウドおよびオンプレミス （[PaaS](#home)）でのみAdobe Commerceに適用されます。 デプロイメント全体のキャッシュフローレポートの概要については、[財務レポート &#x200B;](financial-reporting.md)を参照してください。
 
 ## ホーム
 
@@ -66,7 +70,7 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Pa
 | フィールド | 説明 |
 |---|---|
 | [!UICONTROL Visit help center] | [!DNL Adobe Commerce] ヘルプセンターには、[!DNL Payment Services]に関するナレッジベース記事があります。 |
-| [!UICONTROL Get support] | [!DNL Adobe Commerce]のサポートについては、[!DNL Payment Services] サポートポータルにアクセスしてください。 |
+| [!UICONTROL Get support] | [!DNL Payment Services]のサポートについては、[!DNL Adobe Commerce] サポートポータルにアクセスしてください。 |
 
 ## 設定
 

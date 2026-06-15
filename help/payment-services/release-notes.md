@@ -1,11 +1,13 @@
 ---
 title: '[!DNL Payment Services] リリースノート'
 description: すべての [!DNL Payment Services]  リリースについて詳しくは、リリースノートを参照してください。
+role: Admin, User
+level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: e0f8437d1d4592e8bff2f718352977832d64a100
+source-git-commit: 29747e38a2800997c251f24f70b6356aada9fab9
 workflow-type: tm+mt
-source-wordcount: '5019'
+source-wordcount: '5401'
 ht-degree: 0%
 
 ---
@@ -32,6 +34,10 @@ Adobeでは、最新リリースのPayments Services バージョンをサポー
 このリリースノートでは、ホストされたサービスの通常の機能リリース以外で発生した機能変更と修正について説明します。
 
 +++ホスト型サービスの更新
+
+_2026年6月8日_
+
+![新しい問題](../assets/new.svg)<!-- Issue PAY-6510 --> [!DNL Adobe Commerce as a Cloud Service]の場合、[!DNL Commerce Admin]の[!DNL Payment Services] ダッシュボード UIを使用すると、マーチャントはダッシュボードから直接[&#x200B; トランザクションレポート &#x200B;](reporting.md#transactions-report-view)を開くことができます。 このSaaS ダッシュボードは、**選択した**&#x200B;件のレポートのみを公開します（クラウドおよびオンプレミスのAdobe Commerceで利用できるすべてのレポートまたはホームエントリポイントではありません）。[[!DNL Payment Services]  ホーム &#x200B;](payments-home.md)を参照してください。 ACCSのリリースノートとタイミングについては、[決済サービストランザクションレポートを表示](../cloud-service/release-notes.md#view-the-payment-services-transactions-report)を参照してください。
 
 _2026年1月21日_
 
@@ -77,7 +83,7 @@ _2023年6月9日_
 
 ![修正済みの問題](../assets/fix.svg)<!-- Issue PAY-4486-->以前は、英国のマーチャントのチェックアウトにPayPal PayLater ボタンが表示されませんでした。 その問題は解決されました。
 
-![修正済みの問題](../assets/fix.svg)<!-- Issue PAY-4485--> [!DNL Payment Services]が無効になっている場合、[!DNL Payment Services] ホームにレポート データ ビジュアライゼーション ビューが表示されるようになりました。
+![修正された問題](../assets/fix.svg)<!-- Issue PAY-4485--> [!DNL Payment Services]が無効になっている場合、[!DNL Payment Services] ホームにレポート データの可視化ビューが表示されるようになりました。
 
 _2023年1月25日_
 
@@ -110,6 +116,28 @@ _2021年6月28日_
 >[!NOTE]
 >
 > リリースは、必要に応じて新しい機能や修正を提供するために頻繁に発生します。 リリーススケジュールは固定されていません。
+
+## v2.15.0
+
+_2026年6月15日_
+
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+
+![新規](../assets/new.svg)<!-- PAY-6564 -->現在、[!DNL Google Pay]のExpress Checkoutでは、クライアント側の送料の折り返しを使用してGoogleの支払い用紙に配送方法を表示できるので、買い物客は支払いを確定する前に送料を選択できます。 販売者は、[Google支払い設定](configure-admin.md#google-pay)の&#x200B;**[!UICONTROL Skip Review]**&#x200B;を使用して、別のGoogle支払いレビュー手順を表示または非表示にすることができます。 レビュー手順をスキップすると、ウォレットの住所または配送方法が変更されたときに、配送オプションがシートに残ります。
+
+![新規](../assets/new.svg)<!-- PAY-6565 -->買い物客は、[!DNL Google Pay] Express支払いシートにプロモーションコードを適用できます。これは、Google Payのレビュー手順が表示されるかどうかにかかわらず適用されます。 注文ごとに複数のクーポンが可能な店舗でも、支払いシートごとに1つのコードのみを適用できます。 詳しくは、[支払いオプション &#x200B;](payments-options.md#google-pay-button)を参照してください。
+
+![新規](../assets/new.svg)<!-- PAY-6567 -->現在、[!DNL Apple Pay]のExpress チェックアウトは、Safariに加えて、Chrome、Firefox、Microsoft Edgeで利用できます。 PC版では、iOS 18以降が動作するiPhoneでQR コードをスキャンし、Appleの支払い用紙で支払いを完了できます。 Express プレースメント （製品詳細ページなど）は、[Apple Pay設定](configure-admin.md#apple-pay)で有効にする必要があります。
+
+![新規](../assets/new.svg)<!-- PAY-6566 -->買い物客は、[!DNL Apple Pay]のExpress支払いシートで1つの割引コードを適用または削除でき、合計はシートで更新されます。 Adminで通常どおりカート価格ルールを作成して有効にします。
+
+![新規](../assets/new.svg)<!-- PAY-6151 -->現在、Luma商品の詳細ページとチェックアウトページの[!DNL Apple Pay]は、支払いSDKを介してレンダリングされるので、エクスペリエンスはエクスプレスチェックアウトに使用される最新のPayPal統合と一致します。
+
+![新規](../assets/new.svg)<!-- PAY-6611 -->現在、[!DNL Adobe Commerce]注文詳細ページには、[!DNL Payment Services]を通じて処理されたトランザクションの追加の支払い詳細が表示されています。これには、[!DNL PayPal] トランザクション ID、PayPal デバッグ ID、支払い者の電子メール、マーチャント保護適格性、AVS/CVV検証コードが含まれます。 詳しくは、[3DS](security.md#3ds)を参照してください。
+
+![修正済みの問題](../assets/fix.svg)<!-- PAY-6513 -->支払いの試行に失敗し、後でチェックアウトに成功した後も、[!DNL Apple Pay] エラーメッセージが注文成功ページに表示される問題を修正しました。
+
+![修正された問題](../assets/fix.svg)<!-- PAY-6585 -->州/地域が必須フィールドではない英国および欧州の住所に対して、[!DNL Apple Pay]のExpress支払いシートに&#x200B;**[!UICONTROL Please select a state/region]** エラーが表示される問題を修正しました。
 
 ## v2.14.0
 
@@ -684,8 +712,8 @@ _2021年11月29日_
 
 ![新規](../assets/new.svg)<!-- Issue PAY-1443 --> [!DNL Payment Services]拡張機能のPayPal支払いボタンとクレジットカードのフィールドのルックアンドフィール [&#128279;](payments-options.md)を簡単に カスタマイズできます。
 
-![既知の問題](../assets/bug.svg)<!-- Issue PAY-2473 -->拡張機能のインストール中に[不正なComposer キー](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=ja)を使用すると、ユーザーは[正しい`MAGEID`を使用して](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)認証できません。
+![既知の問題](../assets/bug.svg)<!-- Issue PAY-2473 -->拡張機能のインストール中に[不正なComposer キー](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html)を使用すると、ユーザーは[正しい`MAGEID`を使用して](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)認証できません。
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services]件のレポート [はすぐに同期できません](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=ja)。
 
-![既知の問題](../assets/bug.svg)<!-- Issue PAY-2475 --> [!DNL Payment Services]の[PayPal サンドボックスアカウント &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=ja)は、オンボーディング中にそのアカウントを作成した場合、確認できません。
+![既知の問題](../assets/bug.svg)<!-- Issue PAY-2475 --> [!DNL Payment Services]の[PayPal サンドボックスアカウント &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)は、オンボーディング中にそのアカウントを作成した場合、確認できません。

@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d0d0634283493f61faae94bebb9da1c8bd177e55
 workflow-type: tm+mt
-source-wordcount: 1391
+source-wordcount: 1439
 ht-degree: 0%
 
 ---
@@ -59,9 +59,13 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Pa
 
 >[!TAB Adobe Commerce as a Cloud ServiceとCommerce Optimizer]
 
-同じレポート機能がSaaSのデプロイメントにも適用されます。 パンくずリストには&#x200B;**[!UICONTROL Home]** > **[!UICONTROL Transactions]**&#x200B;が表示され、グリッドには&#x200B;**[!UICONTROL Order ID]**、**[!UICONTROL PayPal Transaction ID]**、**[!UICONTROL Customer ID]**、**[!UICONTROL Transaction Date]**、**[!UICONTROL Payment Method]**、**[!UICONTROL Payment Detail]**、**[!UICONTROL Card Last Four]**、**[!UICONTROL Result]**、および&#x200B;**[!UICONTROL Response Code]**&#x200B;などの列が含まれます。
+これらのSaaS デプロイメントの場合、ダッシュボードの表形式トランザクションレポートは、このトピックで説明されている機能（フィルター、列、データソース、ダウンロードなど）と一致します。 パンくずリストには&#x200B;**[!UICONTROL Home]** > **[!UICONTROL Transactions]**&#x200B;が表示され、グリッドには&#x200B;**[!UICONTROL Order ID]**、**[!UICONTROL PayPal Transaction ID]**、**[!UICONTROL Customer ID]**、**[!UICONTROL Transaction Date]**、**[!UICONTROL Payment Method]**、**[!UICONTROL Payment Detail]**、**[!UICONTROL Card Last Four]**、**[!UICONTROL Result]**、および&#x200B;**[!UICONTROL Response Code]**&#x200B;などの列が含まれます。
 
 ![SaaSのトランザクションレポート表示](assets/transactions-report-view-saas.png){width="800" zoomable="yes"}
+
+>[!NOTE]
+>
+>SaaS [!DNL Payment Services] ダッシュボードには、クラウド上およびオンプレミス上のAdobe Commerceに表示されるすべてのレポートまたはホーム エントリ ポイントが含まれていません。 デプロイメントごとに利用できる内容については、[[!DNL Payment Services]  ホーム &#x200B;](payments-home.md)を参照してください。
 
 >[!ENDTABS]
 
