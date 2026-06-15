@@ -129,7 +129,7 @@ Appleのこのフローの概要については、[Walletの新機能および [
 * [!DNL Google Pay]の支払い用紙に追加されたコードは、Commerceの買い物かごページからではなく、支払い用紙からのみ削除できます。
 * Adobe Commerce 2.4.4-2.4.6では、プラットフォームの制限により、[!DNL Google Pay]支払いシートの割引明細に値が表示されない場合があります。
 * Adobe Commerce 2.4.7では、GraphQLの応答のプラットフォームの制限により、一部の商品（主にダウンロード可能な商品）に対して[!DNL Google Pay]支払いシートに割引値が表示されない場合があります。
-* 自動[買い物かご価格ルール &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html)が適用される場合（例：200 ドルを超える支出の場合は「$50 オフ」など）は、買い物客が支払いシートに適用するコードと組み合わされます。 [!DNL Google Pay]支払いシートに表示される合計は、結果として注文概要と異なる場合があります。
+* 自動[買い物かご価格ルール &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html?lang=ja)が適用される場合（例：200 ドルを超える支出の場合は「$50 オフ」など）は、買い物客が支払いシートに適用するコードと組み合わされます。 [!DNL Google Pay]支払いシートに表示される合計は、結果として注文概要と異なる場合があります。
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -208,7 +208,7 @@ _のみ_&#x200B;のPayPal支払いボタン（_ではなく_ PayPal クレジッ
 1. ストアが実稼動モード [&#128279;](configure-admin.md#general-configuration)のであることを確認します。
 1. [PayPal支払いボタンを設定します](configure-admin.md#paypal-payment-buttons)。
 1. _[!UICONTROL Payment buttons]_&#x200B;セクションの&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;オプションを_ オフ _にします。
-1. _[!UICONTROL Credit card fields]_&#x200B;セクションの&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;オプションを_ オフ _にし、[既存のクレジットカード プロバイダーのアカウント &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)を使用します。
+1. _[!UICONTROL Credit card fields]_&#x200B;セクションの&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;オプションを_ オフ _にし、[既存のクレジットカード プロバイダーのアカウント &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=ja#payments)を使用します。
 
 ## 現地での支払い方法
 
