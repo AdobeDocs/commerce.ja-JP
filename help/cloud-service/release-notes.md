@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
 workflow-type: tm+mt
-source-wordcount: 4182
+source-wordcount: 4439
 ht-degree: 0%
 
 ---
@@ -47,7 +47,45 @@ ht-degree: 0%
 >
 >Adobe Commerce オンプレミスまたはAdobe Commerce オンクラウドインフラストラクチャを使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview)を参照してください。
 
-## 2026年6月 – リリース #1 {#latest}
+## 2026年6月 – リリース #2 {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+
+以下の項目は現在、サンドボックス環境でのみ使用でき、7月に実稼動環境に移行する予定です。
+
+>[!BEGINSHADEBOX]
+
+### 会社ごとの注文と請求書のフィルタリング
+
+`GET /V1/orders`および`GET /V1/invoices`のREST API エンドポイントで、`company_id`および`company_name`によるフィルタリングがサポートされるようになりました。これにより、B2B統合で1回のリクエストで特定の企業の注文または請求書を取得できるようになりました。<!-- ACCS-1111, CCSAAS-5076 -->
+
+### 管理画面での注文変更履歴の表示
+
+[!DNL Commerce Admin]の注文詳細ページに、元の注文と、その後の編集で作成されたすべての子注文を含む注文の完全な変更チェーンが表示されるようになりました。 加盟店は、注文間を移動したり、キャンセルされた注文の表示を切り替えたり、関連するすべての請求書、出荷、クレジットメモ、注文コメントにチェーンビュー内からアクセスしたりできます。<!-- ACCS-968 -->
+
+>[!NOTE]
+>
+>この機能を有効にするには、Adobe Commerce カスタマーサクセスマネージャーにお問い合わせください。
+
+### [!DNL AEM Assets]の同期済みアセットの表示
+
+[!DNL AEM Assets]統合には、[!UICONTROL **Sync Status**] ページ （[!UICONTROL **Stores**] > [!UICONTROL **AEM Assets**] > [!UICONTROL **Sync Status**]）が含まれ、フィルタリング、前回の同期日などの並べ替え可能な列、失敗した同期のエラー詳細など、同期されたすべてのアセットのアセット中心のリストビューが表示されるようになりました。<!-- ACAP-1246 -->
+
+### 機能強化とバグ修正
+
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
+
+* 大規模な共有カタログは、管理者での管理が容易になり、読み込み時間が短縮され、タイムアウトの可能性も減りました。<!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
+
+* 設定可能な製品を含む注文の出荷を作成する際に発生した出荷作成エラーを修正しました。<!-- ACCS-1095 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年6月 – リリース #1
 
 [!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 
