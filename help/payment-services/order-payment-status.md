@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2254'
 ht-degree: 0%
 
 ---
@@ -108,9 +108,22 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL Payment 
 
 保留中のキャプチャトランザクションが`Completed` ステータスに入ったときに検出し、影響を受けた注文の処理を再開できるようにします。
 
-このプロセスが期待どおりに機能することを確認するには、マーチャントは新しいcron ジョブを設定する必要があります。 ジョブが自動的に実行されるように設定されると、他の介入はマーチャントから期待されません。
+>[!NOTE]
+>
+>非同期モニタリングはデフォルトで無効になっています。 無効にした場合、`Pending`件の取り込みトランザクションを持つ注文は、自動的に`Payment Review`に移動しません。 この動作を有効にするには、次の手順に従って非同期モニタリングをオンにします。
 
-[cron ジョブの設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=ja)を参照してください。 設定が完了すると、新しいジョブは30分ごとに実行され、`Payment Review` ステータスの注文の更新を取得します。
+非同期監視を有効にする：[!BADGE PaaSのみ]{type=Informative tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
+
+1. `async_status_updates`設定を有効にします。 この設定は管理者では使用できないので、コマンドラインから有効にします。
+
+   ```bash
+   bin/magento config:set payment/payment_services/async_status_updates 1
+   ```
+
+1. ステータス更新が自動的に取得されるように、`sync_order_payment_status` cron ジョブを有効にしてスケジュールします。 [cron ジョブの設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=ja)を参照してください。
+
+設定とcron ジョブが有効になると、cron ジョブは10分ごとに実行され、`Payment Review` ステータスの注文の更新を取得します。 設定後、通常の操作中に追加の加盟店アクションは必要ありません。
+
 
 加盟店は、注文支払い状況レポートビューで更新された支払い状況を確認できます。
 
