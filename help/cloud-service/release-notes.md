@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
+source-git-commit: 469111676c7ac8bdf66f8f42bd26745ce7f88928
 workflow-type: tm+mt
-source-wordcount: 4439
+source-wordcount: 4489
 ht-degree: 0%
 
 ---
@@ -60,6 +60,10 @@ ht-degree: 0%
 ### 会社ごとの注文と請求書のフィルタリング
 
 `GET /V1/orders`および`GET /V1/invoices`のREST API エンドポイントで、`company_id`および`company_name`によるフィルタリングがサポートされるようになりました。これにより、B2B統合で1回のリクエストで特定の企業の注文または請求書を取得できるようになりました。<!-- ACCS-1111, CCSAAS-5076 -->
+
+### APIを介したカスタムメールテンプレートのリスト
+
+新しい`GET /V1/custom-email/templates` REST API エンドポイントは、各テンプレートのID、コード、件名を含む[&#x200B; カスタムメールテンプレート &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)を返します。 統合は、IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンドポイントで返されたテンプレート IDを使用できます。<!-- CCSAAS-5089 -->
 
 ### 管理画面での注文変更履歴の表示
 
@@ -451,7 +455,7 @@ mutation {
 
 ### 要求エンティティ作成制限の変更
 
-web サイト、実店舗、実店舗の閲覧数は、以前は50に制限されていました。 必要に応じて、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/home?lang=ja&support-tab=home#support)を送信して、これらの制限を変更できるようになりました。<!-- ACCS-398 -->
+web サイト、実店舗、実店舗の閲覧数は、以前は50に制限されていました。 必要に応じて、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/home?support-tab=home#support)を送信して、これらの制限を変更できるようになりました。<!-- ACCS-398 -->
 
 ### 構造化されたエラーコードを使用して、ストアフロント認証メッセージをカスタマイズする
 
