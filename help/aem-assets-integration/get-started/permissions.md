@@ -56,19 +56,19 @@ IMS認証はデフォルトで有効になっています。 ユーザーがAdmi
 >
 > また、CommerceとAEM Assetsにユーザーを追加する必要があります。 完全な設定については、_ユーザーおよびIdentity Management_ ガイドの「[AEM Assetsまたは製品ビジュアルにユーザーを追加](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}」を参照してください。
 
-![AEM Assets deliveryのAdmin Console製品プロファイル ](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
+![AEM Assets deliveryのAdmin Console製品プロファイル &#x200B;](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
 
 >[!TAB  クラウドまたはオンプレミスのAdobe Commerce]
 
 [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}
 
-PaaSでアセットセレクターを有効にするには、**IMS クライアント ID**&#x200B;が必要です。 OpenAPIでDynamic Mediaを有効にする際にIMS クライアント IDを取得する方法など、前提条件については、[AEM Assets プロジェクト ](configure-aem.md#prerequisites)の設定を参照してください。
+PaaSでアセットセレクターを有効にするには、**IMS クライアント ID**&#x200B;が必要です。 OpenAPIでDynamic Mediaを有効にする際にIMS クライアント IDを取得する方法など、前提条件については、[AEM Assets プロジェクト &#x200B;](configure-aem.md#prerequisites)の設定を参照してください。
 
 アセットセレクターと自動入力された設定フィールド（プログラム ID、環境ID、ドメインマッピング）を使用するには：
 
 1. [CommerceのAdobe IMSを有効にして、Commerce管理者がIMS認証を使用し、ユーザーのAdmin Console製品プロファイルを読み取れるようにします](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html){target=_blank}。
 
-1. [ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases)を開いて、アセットセレクターのカスタム IMS クライアント IDをリクエストします。
+1. [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases)を開いて、アセットセレクターのカスタム IMS クライアント IDをリクエストします。
 
 1. [Adobe Admin Console](https://adminconsole.adobe.com/)から、**AEM Assets DM OpenAPI Users - delivery**&#x200B;製品プロファイル、または&#x200B;**author**&#x200B;製品プロファイル（例：`<environment-name> - author - <program-id> - <environment-id>`）に、ユーザーがAdmin ConsoleにAEM配信製品プロファイルを持っていない場合のフォールバックとしてユーザーを追加します。
 
@@ -79,6 +79,6 @@ IMSを使用しない場合でも、Commerce管理者にプログラム IDと環
 ## 関連ドキュメント
 
 * [AEM Assets統合のIMS ユーザー権限を設定](setup-synchronization.md):CommerceをAEM Assetsに接続し、一致するルールを設定します。
-* [ アセットの手動選択](../synchronize/asset-selector-integration.md) - カテゴリ画像とページビルダーにアセットセレクターを使用します。
+* [&#x200B; アセットの手動選択](../synchronize/asset-selector-integration.md) - カテゴリ画像とページビルダーにアセットセレクターを使用します。
 * [AEM AssetsまたはProduct Visuals](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}にユーザーを追加する – [!DNL Adobe Commerce as a Cloud Service]には、まずCommerceとAEM Cloud Manager（Business Owner, Deployment Manager）にユーザーを追加します。 **AEM Assets DM OpenAPI Users - delivery** プロファイル（またはフォールバックとして&#x200B;**author** プロファイル）は、アセットセレクターと自動入力機能の追加要件です。
 * [AEM配信レイヤーにチームメンバーを割り当てる](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}。 配信アクセスのAEM ドキュメント。
