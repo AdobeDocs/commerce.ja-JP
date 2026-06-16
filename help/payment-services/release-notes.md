@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 29747e38a2800997c251f24f70b6356aada9fab9
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '5401'
+source-wordcount: '5400'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Adobeでは、最新リリースのPayments Services バージョンをサポー
 
 _2026年6月8日_
 
-![新しい問題](../assets/new.svg)<!-- Issue PAY-6510 --> [!DNL Adobe Commerce as a Cloud Service]の場合、[!DNL Commerce Admin]の[!DNL Payment Services] ダッシュボード UIを使用すると、マーチャントはダッシュボードから直接[&#x200B; トランザクションレポート &#x200B;](reporting.md#transactions-report-view)を開くことができます。 このSaaS ダッシュボードは、**選択した**&#x200B;件のレポートのみを公開します（クラウドおよびオンプレミスのAdobe Commerceで利用できるすべてのレポートまたはホームエントリポイントではありません）。[[!DNL Payment Services]  ホーム &#x200B;](payments-home.md)を参照してください。 ACCSのリリースノートとタイミングについては、[決済サービストランザクションレポートを表示](../cloud-service/release-notes.md#view-the-payment-services-transactions-report)を参照してください。
+![新しい問題](../assets/new.svg)<!-- Issue PAY-6510 --> [!DNL Adobe Commerce as a Cloud Service]の場合、[!DNL Commerce Admin]の[!DNL Payment Services] ダッシュボード UIを使用すると、マーチャントはダッシュボードから直接[&#x200B; トランザクションレポート &#x200B;](reporting.md#transactions-report-view)を開くことができます。 このSaaS ダッシュボードは、**選択した**&#x200B;件のレポートのみを公開します（クラウドおよびオンプレミスのAdobe Commerceで利用できるすべてのレポートまたはホームエントリポイントではありません）。[[!DNL Payment Services]  ホーム &#x200B;](payments-home.md)を参照してください。 [!DNL Adobe Commerce as a Cloud Service]件のリリースノートとタイミングについては、[支払いサービストランザクションレポートを表示](../cloud-service/release-notes.md#view-the-payment-services-transactions-report)を参照してください。
 
 _2026年1月21日_
 
@@ -712,8 +712,8 @@ _2021年11月29日_
 
 ![新規](../assets/new.svg)<!-- Issue PAY-1443 --> [!DNL Payment Services]拡張機能のPayPal支払いボタンとクレジットカードのフィールドのルックアンドフィール [&#128279;](payments-options.md)を簡単に カスタマイズできます。
 
-![既知の問題](../assets/bug.svg)<!-- Issue PAY-2473 -->拡張機能のインストール中に[不正なComposer キー](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html)を使用すると、ユーザーは[正しい`MAGEID`を使用して](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)認証できません。
+![既知の問題](../assets/bug.svg)<!-- Issue PAY-2473 -->拡張機能のインストール中に[不正なComposer キー](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=ja)を使用すると、ユーザーは[正しい`MAGEID`を使用して](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)認証できません。
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services]件のレポート [はすぐに同期できません](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=ja)。
 
-![既知の問題](../assets/bug.svg)<!-- Issue PAY-2475 --> [!DNL Payment Services]の[PayPal サンドボックスアカウント &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)は、オンボーディング中にそのアカウントを作成した場合、確認できません。
+![既知の問題](../assets/bug.svg)<!-- Issue PAY-2475 --> [!DNL Payment Services]の[PayPal サンドボックスアカウント &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=ja)は、オンボーディング中にそのアカウントを作成した場合、確認できません。

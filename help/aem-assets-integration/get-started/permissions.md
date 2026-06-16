@@ -1,84 +1,84 @@
 ---
-title: AEM Assets統合用の IMS ユーザー権限の設定
-description: IMS ID およびAdmin Console プロファイルを使用して、AEM Assets配信アクセス、アセットセレクターおよび自動入力されたCommerce設定フィールドを有効にする方法について説明します。
+title: AEM Assets統合用のIMS ユーザー権限の設定
+description: IMS IDとAdmin Console プロファイルで、AEM Assets配信アクセス、アセットセレクター、自動入力されたCommerce設定フィールドを有効にする方法について説明します。
 feature: CMS, Media, Configuration
-source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
 
-# ユーザー権限と IMS
+# ユーザー権限とIMS
 
-**IMS** （Adobe Identity Management System）は認証レイヤーです。 Adobe Commerce as a Cloud Serviceの場合、管理者では IMS 認証がデフォルトで有効になっています。 Adobe Commerce on cloud またはオンプレミスの場合、IMS はオプションです。[Commerceに対する IMS の有効化 &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=ja){target=_blank} は拡張された設定 UI （アセットセレクター、自動入力されたドロップダウン）を提供しますが、**プログラム ID** および **環境 ID** を手動で入力することで、IMS なしで統合を設定できます。
+**IMS** （Adobe Identity Management System）は認証レイヤーです。 Adobe Commerce as a Cloud Serviceの場合、IMS認証は管理者でデフォルトで有効になっています。 Adobe Commerce オンクラウドまたはオンプレミスの場合、IMSはオプションです。[CommerceのIMSを有効にすると、強化された設定UI （Asset Selector、自動入力ドロップダウン）が提供されますが、**プログラム ID**&#x200B;および&#x200B;**環境ID**&#x200B;を手動で入力することで、IMSなしで統合を設定できます。](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=ja){target=_blank}
 
-IMS を使用する場合、AEM Assets統合には特定の **Adobe Admin Console製品プロファイル** も必要です。 Commerce Admin で統合を設定するユーザーには、フォールバックとして、**AEM Assets DM OpenAPI Users – 配信** 製品プロファイル、または **オーサー** 製品プロファイルが必要です。 これは、ユーザーの IMS 組織内のAdmin Console製品プロファイルを通じて制御され、次のことを可能にします。
+AEM Assets統合では、IMSを使用する場合、特定の&#x200B;**Adobe Admin Console製品プロファイル**&#x200B;も必要です。 Commerce Adminで統合を設定するユーザーには、**AEM Assets DM OpenAPI Users - delivery**&#x200B;製品プロファイル、または&#x200B;**author**&#x200B;製品プロファイルがフォールバックとして必要です。 これは、ユーザーのIMS組織内のAdmin Console製品プロファイルを通じて制御され、次のことが可能になります。
 
-* **アセットセレクター** を使用すると、カテゴリ画像またはページビルダーコンテンツを管理する際に、AEM Assetsから画像を選択できます。
-* **プログラム ID**、**環境 ID** **、**&#x200B;**ドメインマッピング** などの自動入力された設定フィールドは、Admin Consoleの製品プロファイル（配信またはオーサー）に基づいて、ユーザーの IMS セッションから値を取り込みます。
+* **アセットセレクター**&#x200B;を使用すると、カテゴリ画像またはページビルダーコンテンツを管理する際に、AEM Assetsから画像を選択できます。
+* **自動入力された設定フィールド** （**プログラム ID**、**Environment ID**、**Domain mapping** ドロップダウンなど）。ユーザーのIMS セッションから、Admin Console製品プロファイル（配信または作成者）に基づいて値を取得します。
 
-適切な権限がないと、アセットセレクターは使用できず、これらのフィールドは空で表示されるか、手動で入力する必要があります。
+適切な権限がないと、アセットセレクターは使用できず、これらのフィールドは空のように見えるか、手動で入力する必要があります。
 >[!BEGINSHADEBOX]
 
-**IMS と権限の連携方法**
+**IMSと権限の連携**
 
-Adobe IMSはユーザー ID と組織コンテキストを提供し、Adobe Admin Consoleはどの **製品プロファイル** （権限）を持っているかを定義します。 AEM Assets統合は、IMS の詳細と割り当てられたプロファイルを使用して、設定フィールドに自動入力できるかどうかを判断し、アセットセレクターを有効にします。
+Adobe IMSは、ユーザーIDと組織のコンテキストを提供します。一方、Adobe Admin Consoleは、どの&#x200B;**製品プロファイル** （権限）を持つかを定義します。 AEM Assets統合では、IMSの詳細と割り当てられたプロファイルを使用して、設定フィールドを自動入力し、アセットセレクターを有効にできるかどうかを判断します。
 
 >[!ENDSHADEBOX]
 
 ## 製品プロファイルが必要な理由
 
-統合では、プロファイルにマッピングされたドメインのみを読み込むことができます。 したがって、ユーザーは次の製品プロファイルを持つことができます。
+統合は、プロファイルにマッピングされたドメインのみを読み込むことができます。 したがって、ユーザーは次の製品プロファイルを持つことができます。
 
-* **AEM配信製品プロファイル**。 作成者プロファイルと配信プロファイルの両方を持つユーザーの場合、アセットセレクターおよび設定 UI で必須。 利用可能な場合、統合ではAEM配信製品プロファイルを使用します。
+* **AEM配信製品プロファイル**。 ユーザーがオーサープロファイルと配信プロファイルの両方を持っている場合に、アセットセレクターと設定UIに必要です。 統合では、利用可能な場合はAEM配信製品プロファイルを使用します。
 
-* **オーサー製品プロファイル**。 AEM Assets UI にアクセスするために必要です。 は、ユーザーがAdmin ConsoleにAEM配信製品プロファイルを持っていない場合、アセットセレクターと設定 UI のフォールバックとしても機能します。
+* **製品プロファイルの作成**。 AEM Assets UIにアクセスするために必要です。 また、ユーザーがAdmin ConsoleにAEM配信製品プロファイルを持っていない場合は、アセットセレクターと設定UIのフォールバックとしても機能します。
 
-ドメイン（プログラム ID、環境 ID、ドメインマッピングを含む）がAEM配信製品プロファイルに割り当てられます。 この統合は、**AEM配信製品プロファイル** が使用可能な場合はそのプロファイルからドメインを読み込みます。または、AEM配信製品プロファイルがユーザーのAdmin Consoleにない場合は **オーサー製品プロファイル** にフォールバックします。 ユーザーが次の操作を行うには、これらのプロファイルのいずれかが必要です。
+ドメイン（プログラム ID、環境ID、ドメインマッピングなど）は、AEM配信製品プロファイルに割り当てられます。 統合は、使用可能な場合は&#x200B;**AEM配信製品プロファイル**&#x200B;からドメインを読み込むか、ユーザーのAdmin ConsoleにAEM配信製品プロファイルが含まれていない場合は&#x200B;**オーサー製品プロファイル**&#x200B;にフォールバックします。 ユーザーは、次のいずれかのプロファイルを使用する必要があります。
 
-* Commerce Admin 設定の **プログラム ID**、**環境 ID**、および **ドメインマッピング** ドロップダウンに入力します。
-* アセットセレクターを使用して、AEM Assetsからアセットを参照して選択します。
+* Commerce管理者設定の&#x200B;**プログラム ID**、**Environment ID**&#x200B;および&#x200B;**Domain mapping** ドロップダウンを入力します。
+* AEM Assetsからアセットを参照して選択するには、アセットセレクターを使用します。
 
-どちらのプロファイルも設定されていない場合も、ユーザーは **プログラム ID** と **環境 ID** を手動で入力できますが、アセットセレクターは使用できません。
+どちらのプロファイルも設定されていない場合、ユーザーは&#x200B;**プログラム ID**&#x200B;と&#x200B;**環境ID**&#x200B;を手動で入力できますが、アセットセレクターは使用できません。
 
 ## デプロイメントタイプ別の権限の付与
 
 >[!BEGINTABS]
 
->[!TAB Adobe Commerceas a Cloud Service]
+>[!TAB Adobe Commerce as a Cloud Service]
 
-[!BADGE SaaS のみ &#x200B;]{type=Positive tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用されます（Adobeで管理される SaaS インフラストラクチャ）。"}
+[!BADGE SaaSのみ]{type=Positive tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}
 
-IMS 認証はデフォルトで有効になっています。 ユーザーを **AEM Assets DM OpenAPI ユーザー – 配信**&#x200B;[Adobe Admin Console](https://adminconsole.adobe.com/) の製品プロファイル、またはユーザーがAdmin ConsoleにAEM配信製品プロファイルを持っていない場合は、フォールバックとして **オーサー** 製品プロファイル（例：`<environment-name> - author - <program-id> - <environment-id>`）に追加します。
+IMS認証はデフォルトで有効になっています。 ユーザーがAdmin ConsoleにAEM Assets配信製品プロファイルを持っていない場合は、フォールバックとして、[Adobe Admin Console](https://adminconsole.adobe.com/)の&#x200B;**AEM DM OpenAPI Users - delivery**&#x200B;製品プロファイルに、または&#x200B;**author**&#x200B;製品プロファイル（例：`<environment-name> - author - <program-id> - <environment-id>`）にユーザーを追加します。
 
 >[!NOTE]
 >
-> また、ユーザーはCommerceとAEM Assetsにも追加する必要があります。 完全な設定については、『 [&#x200B; ユーザーとIdentity Management](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} ガイドの _AEM Assetsまたは製品ビジュアルへのユーザーの追加_ を参照してください。
+> また、CommerceとAEM Assetsにユーザーを追加する必要があります。 完全な設定については、_ユーザーおよびIdentity Management_ ガイドの「[AEM Assetsまたは製品ビジュアルにユーザーを追加](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}」を参照してください。
 
-![AEM Assets配信用のAdmin Console製品プロファイル &#x200B;](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
+![AEM Assets deliveryのAdmin Console製品プロファイル &#x200B;](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
 
 >[!TAB  クラウドまたはオンプレミスのAdobe Commerce]
 
-[!BADGE PaaS のみ &#x200B;]{type=Informative tooltip="クラウドプロジェクト上のAdobe Commerceにのみ適用されます（Adobeが管理する PaaS インフラストラクチャ）。"}
+[!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}
 
-**IMS クライアント ID** は、PaaS でアセットセレクターを有効にするために必要です。 OpenAPI で Dynamic Media を有効にする際に IMS クライアント ID を取得する方法など、前提条件については、[AEM Assets プロジェクトの設定 &#x200B;](configure-aem.md#prerequisites) を参照してください。
+PaaSでアセットセレクターを有効にするには、**IMS クライアント ID**&#x200B;が必要です。 OpenAPIでDynamic Mediaを有効にする際にIMS クライアント IDを取得する方法など、前提条件については、[AEM Assets プロジェクト &#x200B;](configure-aem.md#prerequisites)の設定を参照してください。
 
-アセットセレクターと自動入力された設定フィールド（プログラム ID、環境 ID、ドメインマッピング）を使用するには：
+アセットセレクターと自動入力された設定フィールド（プログラム ID、環境ID、ドメインマッピング）を使用するには：
 
-1. [CommerceのAdobe IMSを有効にする &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=ja){target=_blank} これにより、Commerce管理者が IMS 認証を使用し、ユーザーのAdmin Console製品プロファイルを読み取ることができます。
+1. [CommerceのAdobe IMSを有効にして、Commerce管理者がIMS認証を使用し、ユーザーのAdmin Console製品プロファイルを読み取れるようにします](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=ja){target=_blank}。
 
-1. [&#x200B; サポートチケットを開く &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) アセットセレクターのカスタム IMS クライアント ID をリクエストします。
+1. [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases)を開いて、アセットセレクターのカスタム IMS クライアント IDをリクエストします。
 
-1. [Adobe Admin Console](https://adminconsole.adobe.com/) から、**AEM Assets DM OpenAPI Users – 配信** 製品プロファイル、またはAdmin ConsoleにAEM配信製品プロファイルがない場合のフォールバックとして **オーサー** 製品プロファイル （例：`<environment-name> - author - <program-id> - <environment-id>`）にユーザーを追加します。
+1. [Adobe Admin Console](https://adminconsole.adobe.com/)から、**AEM Assets DM OpenAPI Users - delivery**&#x200B;製品プロファイル、または&#x200B;**author**&#x200B;製品プロファイル（例：`<environment-name> - author - <program-id> - <environment-id>`）に、ユーザーがAdmin ConsoleにAEM配信製品プロファイルを持っていない場合のフォールバックとしてユーザーを追加します。
 
-IMS がインストールされていない場合でも、Commerce Admin でプログラム ID と環境 ID を手動で入力することで、統合を設定できます。
+IMSを使用しない場合でも、Commerce管理者にプログラム IDと環境IDを手動で入力することで、統合を設定できます。
 
 >[!ENDTABS]
 
 ## 関連ドキュメント
 
-* [AEM Assets統合の IMS ユーザー権限の設定 &#x200B;](setup-synchronization.md) - CommerceをAEM Assetsに接続して、マッチングルールを設定します。
-* [&#x200B; 手動のアセット選択 &#x200B;](../synchronize/asset-selector-integration.md) - カテゴリ画像とページビルダーにアセットセレクターを使用します。
-* [AEM Assetsまたは製品ビジュアルへのユーザーの追加 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} - ACCS の場合、最初にCommerceおよびAEM Cloud Manager（ビジネスオーナー、デプロイメントマネージャー）にユーザーを追加します。 **AEM Assets DM OpenAPI Users – 配信** プロファイル（またはフォールバックとして **作成者** プロファイル）は、アセットセレクターおよび自動入力機能のその他の要件です。
-* [&#x200B; チームメンバーをAEM配信レイヤーに割り当てる &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}。 配信アクセスに関するAEM ドキュメント。
+* [AEM Assets統合のIMS ユーザー権限を設定](setup-synchronization.md):CommerceをAEM Assetsに接続し、一致するルールを設定します。
+* [&#x200B; アセットの手動選択](../synchronize/asset-selector-integration.md) - カテゴリ画像とページビルダーにアセットセレクターを使用します。
+* [AEM AssetsまたはProduct Visuals](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}にユーザーを追加する – [!DNL Adobe Commerce as a Cloud Service]には、まずCommerceとAEM Cloud Manager（Business Owner, Deployment Manager）にユーザーを追加します。 **AEM Assets DM OpenAPI Users - delivery** プロファイル（またはフォールバックとして&#x200B;**author** プロファイル）は、アセットセレクターと自動入力機能の追加要件です。
+* [AEM配信レイヤーにチームメンバーを割り当てる](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}。 配信アクセスのAEM ドキュメント。
