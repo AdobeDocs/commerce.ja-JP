@@ -13,7 +13,7 @@ ht-degree: 0%
 
    **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**&#x200B;に移動します。
 
-   ![ フィード項目のステータスがレポートされるデータフィードの同期ステータス ページ ](/help/aco-connector/assets/data-feed-sync-status.png){width="700" zoomable="yes"}
+   ![&#x200B; フィード項目のステータスがレポートされるデータフィードの同期ステータス ページ &#x200B;](/help/aco-connector/assets/data-feed-sync-status.png){width="700" zoomable="yes"}
 
    同期を実行すると、フィード データに正常に送信されたレコードが表示されます。 フィードを選択して、詳細を表示したり、同期の問題をトラブルシューティングしたりします。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
    [!DNL Commerce Optimizer] メニューから、**[!UICONTROL Data Sync]**&#x200B;を選択します。
 
-   同期されたカタログデータを表示するAdobe Commerce Optimizerの![ データ同期ページ ](/help/aco-connector/assets/data-sync.png){width="700" zoomable="yes"}
+   同期されたカタログデータを表示するAdobe Commerce Optimizerの![&#x200B; データ同期ページ &#x200B;](/help/aco-connector/assets/data-sync.png){width="700" zoomable="yes"}
 
    予想される商品、価格、属性が表示されることを確認します。
 
@@ -32,4 +32,4 @@ ht-degree: 0%
 
 >[!TIP]
 >
->データ同期に問題がある場合は、[ トラブルシューティング ](/help/aco-connector/troubleshooting.md) ガイドを参照してください。
+>データ同期に問題がある場合は、[&#x200B; トラブルシューティング &#x200B;](/help/aco-connector/troubleshooting.md) ガイドを参照してください。

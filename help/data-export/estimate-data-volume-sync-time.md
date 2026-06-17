@@ -5,10 +5,19 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 787d05d6-fc2f-4f23-8ea7-ef54330e1f37
 TQID: https://experienceleague.adobe.com/nhVfGHgrsvqIjUcWfsVDcriEFwUhRQa9D-4xAU-cAnU
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 585
@@ -22,7 +31,7 @@ Adobeでは、データフィードの同期を開始する前にデータ量と
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Optimizer Connector]回のデプロイメントの場合、[ コネクタモジュールとフィードエンドポイント ](../aco-connector/reference/connector-reference.md#supported-feeds)でコネクタ固有のサポートされているフィードとバッチ制限を確認します。
+>[!DNL Adobe Commerce Optimizer Connector]回のデプロイメントの場合、[&#x200B; コネクタモジュールとフィードエンドポイント &#x200B;](../aco-connector/reference/connector-reference.md#supported-feeds)でコネクタ固有のサポートされているフィードとバッチ制限を確認します。
 
 デフォルトでは、データ書き出しツールは、デフォルトのバッチサイズでシングルスレッドモードでデータを処理します。 デフォルト設定では、フィード送信プロセスの並列化はありません。 さらに、このコンポーネントはリクエスト/秒（RPS）を受け入れますが、これは次のようになります。
 
@@ -59,6 +68,6 @@ Adobeでは、データフィードの同期を開始する前にデータ量と
 
 >[!MORELIKETHIS]
 >
-> - [ データ書き出しのパフォーマンスを向上](customize-export-processing.md)
+> - [&#x200B; データ書き出しのパフォーマンスを向上](customize-export-processing.md)
 > - [同期の管理](data-sync-manage.md)
 > - [同期の仕組み](sync-overview.md)

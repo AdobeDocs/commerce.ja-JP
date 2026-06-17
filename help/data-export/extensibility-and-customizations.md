@@ -5,10 +5,19 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
 TQID: https://experienceleague.adobe.com/T71zNl7WOrqzEsz4H8A8arx--q6w1B0h33CF2Q0VI4A
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 815
@@ -20,17 +29,17 @@ ht-degree: 0%
 
 [!DNL Commerce Data Export]拡張機能を使用すると、[!DNL Commerce] アプリケーションから、ライブサーチ、カタログサービス、商品レコメンデーションなどのCommerce サービスにデータを書き出すことができます。 必要であれば、フィードデータを拡張してカスタマイズし、属性データを追加したり、収集したデータを変更したりできます。
 
-属性データを追加すると、ストアフロントサービスのGraphQL スキーマの[属性フィールド ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type)からアクセスできるようになります。
+属性データを追加すると、ストアフロントサービスのGraphQL スキーマの[属性フィールド &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type)からアクセスできるようになります。
 
 >[!NOTE]
 >
->フィードデータを追加または変更すると、Commerce バックエンドのパフォーマンスと処理ロジックに影響を与える可能性があります。 本番環境にマージする前に、カスタマイズしたコードをテストします。 バックエンドにデータを追加する代わりに、API メッシュを使用してCatalog Service GraphQL スキーマを拡張します。 設定の詳細については、[ カタログサービスとAPI メッシュ ](../catalog-service/mesh.md)を参照してください。
+>フィードデータを追加または変更すると、Commerce バックエンドのパフォーマンスと処理ロジックに影響を与える可能性があります。 本番環境にマージする前に、カスタマイズしたコードをテストします。 バックエンドにデータを追加する代わりに、API メッシュを使用してCatalog Service GraphQL スキーマを拡張します。 設定の詳細については、[&#x200B; カタログサービスとAPI メッシュ &#x200B;](../catalog-service/mesh.md)を参照してください。
 
 ## 製品フィードのシステム属性データの拡張
 
 製品フィードには、製品処理に必要な、または消費者が一般的に使用するデフォルトのシステム属性が含まれています。 製品フィードに追加することで、製品フィードに追加のシステム属性を含めることができます。
 
-このタスクを完了するには、`magento/catalog-data-exporter` モジュールを更新して、[依存関係インジェクション設定ファイル ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）に追加のシステム属性を追加します。
+このタスクを完了するには、`magento/catalog-data-exporter` モジュールを更新して、[依存関係インジェクション設定ファイル &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）に追加のシステム属性を追加します。
 
 製品属性クエリ（`Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery`）に属性を追加します。
 
@@ -50,7 +59,7 @@ ht-degree: 0%
 
 ## Adobe Commerceへの商品属性の追加
 
-開発者は、次のいずれかの方法を使用して、[製品属性フィールド ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields)からアクセスできる製品属性を追加できます。
+開発者は、次のいずれかの方法を使用して、[製品属性フィールド &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields)からアクセスできる製品属性を追加できます。
 
 - Commerce ストアフロントサービスに書き出された`products` フィードデータに含める属性をAdobe Commerceに追加します。
 - プラグインを使用して、フィード同期プロセス中に属性を動的に追加します。
@@ -76,7 +85,7 @@ Commerce Adminからproduct属性を追加するか、カスタム PHP モジュ
 - **`user_defined`=`1`** - データ同期中にストアフロントサービスに属性をエクスポートします
 - **`used_in_product_listing`=`1`** – 製品リスト データベース クエリ内で属性にアクセスできるようにします
 
-データパッチの作成について詳しくは、*PHP開発者ガイド*&#x200B;の[ データおよびスキーマパッチの開発](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/)を参照してください。
+データパッチの作成について詳しくは、*PHP開発者ガイド*&#x200B;の[&#x200B; データおよびスキーマパッチの開発](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/)を参照してください。
 
 ### product属性を動的に追加します
 
@@ -154,7 +163,7 @@ class DataSentOutsideObserver implements ObserverInterface
 </event>
 ```
 
-イベントとオブザーバーの一般的な情報については、Adobe Commerce Developer ドキュメントの[ イベントとオブザーバー](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"}を参照してください。
+イベントとオブザーバーの一般的な情報については、Adobe Commerce Developer ドキュメントの[&#x200B; イベントとオブザーバー](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"}を参照してください。
 
 ## 送信前にデータをフィルタリング
 
