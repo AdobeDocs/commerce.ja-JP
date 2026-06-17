@@ -59,7 +59,7 @@ Composerを使用すると、インストールされているコマースデー
    composer require magento/module-data-exporter:103.0.4 --with-all-dependencies
    ```
 
-Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 _Adobe Commerce on Cloud Infrastructure ガイド_&#x200B;の[拡張機能のアップグレード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)を参照してください。
+Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 _Adobe Commerce on Cloud Infrastructure ガイド_&#x200B;の[拡張機能のアップグレード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)を参照してください。
 
 >[!MORELIKETHIS]
 >

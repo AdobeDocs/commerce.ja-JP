@@ -26,7 +26,7 @@ ht-degree: 0%
 
 SaaS価格インデックス機能は、インデックス作成や価格計算など、リソースを必要とする作業をCommerceアプリケーションからAdobe Cloud インフラストラクチャにオフロードすることで、サイトパフォーマンスを最適化します。 このアプローチにより、マーチャントはリソースを迅速に拡張して価格インデックス時間を短縮し、ストアフロントと接続されたCommerceサービスの価格アップデートをより迅速に提供できるようになります。
 
-次の図は、CommerceがCommerce アプリケーションに含まれる[価格インデックス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) プロセスを使用している場合のSaaS サービスへのデータフローを示しています。
+次の図は、CommerceがCommerce アプリケーションに含まれる[価格インデックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers) プロセスを使用している場合のSaaS サービスへのデータフローを示しています。
 
 ![既定のデータ フロー](assets/old_way.png)
 

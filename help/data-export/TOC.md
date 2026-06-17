@@ -35,4 +35,4 @@ ht-degree: 2%
    - [SaaS データ書き出し拡張機能の管理](manage-extension.md)
    - [Commerce CLIを使用したフィードの同期](data-export-cli-commands.md)
    - [フィードテーブルスキーマ](reference/feed-table-reference.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)

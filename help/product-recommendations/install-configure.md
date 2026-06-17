@@ -56,7 +56,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-ページビルダーで[!DNL Product Recommendations]を有効にすると、既存のアクティブな[&#x200B; レコメンデーションユニット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)を、ページビルダーで作成されたコンテンツ（ページ、ブロック、動的ブロックなど）に追加できます。
+ページビルダーで[!DNL Product Recommendations]を有効にすると、既存のアクティブな[&#x200B; レコメンデーションユニット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/add-content/recommendations)を、ページビルダーで作成されたコンテンツ（ページ、ブロック、動的ブロックなど）に追加できます。
 
 詳しい手順については、[&#x200B; ページビルダーコンテンツを使用した [!DNL Product Recommendations] の使用](page-builder.md)を参照してください。
 
@@ -74,13 +74,13 @@ composer require magento/module-visual-product-recommendations
 
    この接続を設定すると、Commerce インスタンス、カタログサービス、およびその他のサポートサービス間のデータ同期と通信が可能になります。 データの同期は、[SaaS データ書き出し拡張機能](../data-export/overview.md)によって処理されます。
 
-1. カタログの書き出しを正しく実行できるようにするには、[cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) ジョブと[&#x200B; インデクサー](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)が実行されており、`Product Feed` インデクサーが`Update by Schedule`に設定されていることを確認します。
+1. カタログの書き出しを正しく実行できるようにするには、[cron](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) ジョブと[&#x200B; インデクサー](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers)が実行されており、`Product Feed` インデクサーが`Update by Schedule`に設定されていることを確認します。
 
 Commerce アプリケーションをCommerce サービスに正常にリンクし、[SaaS データスペース &#x200B;](../landing/saas.md#saas-configuration)を指定すると、カタログの同期が開始されます。 その後、[&#x200B; ストアフロントに行動データが送信されていることを](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)確認できます。
 
 ## データ同期の監視とトラブルシューティング
 
-Commerce Adminから、[Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)を使用して同期プロセスをモニターできます。 [Commerce CLI](../data-export/data-export-cli-commands.md)および[logs](../data-export/troubleshooting/logging.md)を使用して、プロセスを管理およびトラブルシューティングします。
+Commerce Adminから、[Data Management Dashboard](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)を使用して同期プロセスをモニターできます。 [Commerce CLI](../data-export/data-export-cli-commands.md)および[logs](../data-export/troubleshooting/logging.md)を使用して、プロセスを管理およびトラブルシューティングします。
 
 その後、[&#x200B; ストアフロントに行動データが送信されていることを](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)確認できます。
 
@@ -134,4 +134,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## [!DNL Product Recommendations]をアンインストール {#uninstall}
 
-必要に応じて、product-recommendations モジュールを[&#x200B; アンインストール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)できます。
+必要に応じて、product-recommendations モジュールを[&#x200B; アンインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)できます。

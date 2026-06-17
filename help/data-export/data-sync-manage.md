@@ -36,7 +36,7 @@ Adobe Commerce オンクラウド、オンプレミス、またはAdobe Commerce
 
 - **[データフィードの同期ステータス ページ](../optimizer/setup/data-sync.md)** - [!DNL Live Search]、[!DNL Product Recommendations]または[!DNL Catalog Service]に接続されたデプロイメントのフィード書き出しステータスを確認します。 このダッシュボードには、各フィードのフィード書き出しステータス（発生したエラーを含む）が表示されます。 詳細ビューには、個々のフィード項目のフィード書き出しステータスが表示されます。
 
-- **[Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**：管理者ユーザーは、正常にエクスポートされ、接続されたCommerce サービスに同期されたデータを表示および追跡できます。 このダッシュボードには、Commerce Servicesに同期された商品データが表示されます。
+- **[Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**：管理者ユーザーは、正常にエクスポートされ、接続されたCommerce サービスに同期されたデータを表示および追跡できます。 このダッシュボードには、Commerce Servicesに同期された商品データが表示されます。
 
 >[!NOTE]
 >

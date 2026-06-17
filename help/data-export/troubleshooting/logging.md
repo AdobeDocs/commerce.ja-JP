@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->また、管理画面の[&#x200B; データフィード同期ステータスダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)から、製品データとカテゴリーデータのデータエクスポートフィードの正常性とパフォーマンスを追跡することもできます。
+>また、管理画面の[&#x200B; データフィード同期ステータスダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)から、製品データとカテゴリーデータのデータエクスポートフィードの正常性とパフォーマンスを追跡することもできます。
 
 ## ログ
 
@@ -148,7 +148,7 @@ Commerce サービスでデータが欠落または正しくない場合は、Ad
 - データ書き出しエラーログ （`commerce-data-export-errors.log`）は、収集フェーズで発生したエラーをキャプチャします。
 - SaaS書き出しエラーログ （`saas-export-errors.log`）は、送信段階で発生したエラーをキャプチャします。
 
-設定またはサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を含む[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)を送信してください。
+設定またはサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を含む[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)を送信してください。
 
 ### カタログ同期の問題を解決する {#resolvesync}
 

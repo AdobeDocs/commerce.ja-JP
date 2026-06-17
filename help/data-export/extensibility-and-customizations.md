@@ -74,7 +74,7 @@ Commerce Adminからproduct属性を追加するか、カスタム PHP モジュ
 
 1. 必要に応じて、属性を属性セットに追加します。
 
-*Adobe Commerce管理ガイド*&#x200B;の「[製品属性を作成](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)」を参照してください。
+*Adobe Commerce管理ガイド*&#x200B;の「[製品属性を作成](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)」を参照してください。
 
 #### プログラムによる製品属性の作成
 
