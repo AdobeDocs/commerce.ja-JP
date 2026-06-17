@@ -4,7 +4,8 @@ breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: このガイドでは、 [!DNL Adobe Commerce as a Cloud Service]の使用方法について詳しく説明します。
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 48171a525ad5e5f4b02da89753df6ea7e7ff9926
+nudge: true
+source-git-commit: 99ad11aa255d35dcee4ffa80b4a38916d0c21766
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 4%

@@ -15,8 +15,8 @@ feature_v2:
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-nudge: true
-source-git-commit: 48171a525ad5e5f4b02da89753df6ea7e7ff9926
+nudge: true1
+source-git-commit: 99ad11aa255d35dcee4ffa80b4a38916d0c21766
 workflow-type: tm+mt
 source-wordcount: 2505
 ht-degree: 0%
@@ -33,10 +33,6 @@ ht-degree: 0%
 Commerceの移行評価は、既存のAdobe Commerceの導入を自動的に分析するものです。 Adobeのツールは、Commerceのコードベースをスキャンし、構築、カスタマイズ、変更されたあらゆる要素を一覧表示する構造化レポートを生成します。 次に、コードベースに対して行われたカスタマイズが、[!DNL Adobe Commerce as a Cloud Service]への移行にどのような影響を与えるかを示します。
 
 レポートは、任意のブラウザーで開くことができるHTML ファイルとして配信されます。 本番環境へのアクセスは必要ありません。ただし、最初にプロジェクトコードベースを共有する必要があります。
-
->[!TIP]
->
->既存のインスタンスの移行評価をリクエストするには、ソリューションアカウントマネージャーにお問い合わせください。
 
 **評価で提供される：**
 
@@ -321,3 +317,7 @@ Manages custom shipping rate calculations based on customer account tier and ord
 - ストアフロント開発
    - [概要](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
    - [ストアフロント AI スキル](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=ja)
+
+>[!TIP]
+>
+>既存のインスタンスの移行評価をリクエストするには、ソリューションアカウントマネージャーにお問い合わせください。
