@@ -1,39 +1,34 @@
 ---
 title: 製品属性の動的な追加
 description: データ同期プロセス中に、カスタム製品属性をデータ書き出しフィードに動的に追加する方法について説明します。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
 TQID: https://experienceleague.adobe.com/SZWtLSvxb-w-968f4wqWrPTBn1c9IEuthvhIv86Pvss
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 297
+source-wordcount: 267
 ht-degree: 0%
 
 ---
 
-# データの同期中に製品属性を動的に追加
+# 製品属性の動的な追加
 
-Adobe Commerceに登録せずに製品属性を拡張するには、データ同期プロセス中に属性を追加するプラグインを作成します。
+データ同期プロセス中に属性を追加するプラグインを作成することで、製品属性を[!DNL Adobe Commerce]に登録せずに拡張できます。
 
 >[!NOTE]
 >
->製品属性を拡張する最適な方法は、[Adobe Commerce](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce)に追加し、Commerce管理者から設定および管理できるようにすることです。 Commerce ストアフロントサービスにのみ必要で、Adobe Commerceに登録しない場合にのみ、動的に追加します。 また、[API Meshとカタログサービス &#x200B;](../catalog-service/mesh.md)を使用してカスタム属性を管理し、カタログサービスのGraphQL スキーマを拡張することもできます。
+>製品属性を拡張する最適な方法は、[!DNL Catalog Service] [!DNL GraphQL] スキーマを拡張するために [!DNL Catalog Service]](../catalog-service/mesh.md)で [!DNL Adobe Commerce]](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) where you can configure and manage them from the Commerce Admin. Only add them dynamically if you need them solely for Commerce storefront services and do not want to register them in [!DNL Adobe Commerce]. You also have the option to manage custom attributes using [[!DNL API Mesh] に追加することです。[
 
 ## 製品属性の追加
 
 `customer_attribute`を`Magento\CatalogDataExporter\Model\Provider\Product\Attributes` クラスに追加するプラグインを作成します。
 
-1. [依存関係インジェクション設定ファイル &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）を更新して、プラグインを定義します。
+1. [依存関係インジェクション設定ファイル ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）を更新して、プラグインを定義します。
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
@@ -98,7 +93,7 @@ Adobe Commerceに登録せずに製品属性を拡張するには、データ同
 
    プラグインを追加すると、次にスケジュールされた同期中に、変更が接続されたストアフロントサービスに同期されます。 更新をすぐに送信するには、次のCLI コマンドを使用して同期プロセスを手動で開始します。
 
-   ```
+   ```shell
    bin/magento saas:resync --feed=products
    ```
 
@@ -106,15 +101,15 @@ Adobe Commerceに登録せずに製品属性を拡張するには、データ同
 
 カスタム製品属性を動的に作成し、ストアフロントサービスでの表示、検索、フィルタリングに使用する場合は、製品属性メタデータを追加してストアフロントの動作を設定します。
 
-1. [依存関係インジェクション設定ファイル &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）を更新して、製品属性メタデータのプラグインを定義します。
+1. [依存関係インジェクション設定ファイル ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）を更新して、製品属性メタデータのプラグインを定義します。
 
    ```xml
-   <type name="\Magento\CatalogDataExporter\Model\Provider\ProductMetadata">
+   <type name="Magento\CatalogDataExporter\Model\Provider\ProductMetadata">
      <plugin name="product_customer_attributes_metadata" type="Vendor\CatalogDataExporter\Model\Plugin\AddAttributeMetadata"/>
    </type>
    ```
 
-1. 次のプロバイダー`\Magento\CatalogDataExporter\Model\Provider\ProductMetadata`にプラグインを作成します。
+1. 次のプロバイダー`Magento\CatalogDataExporter\Model\Provider\ProductMetadata`のプラグインを作成します。
 
    必須フィールドについては、`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`の`ProductAttributeMetadata`を確認してください。
 
@@ -184,7 +179,13 @@ Adobe Commerceに登録せずに製品属性を拡張するには、データ同
 
    プラグインを追加すると、次にスケジュールされた同期中に、変更が接続されたストアフロントサービスに同期されます。 更新をすぐに送信するには、次のCLI コマンドを使用して同期プロセスを手動で開始します。
 
-   ```
-   bin/magento saas:resync --feed=productattributes
+   ```shell
+   bin/magento saas:resync --feed=productAttributes
    ```
 
+>[!MORELIKETHIS]
+>
+> * [SaaS データ書き出しフィードの拡張とカスタマイズ ](extensibility-and-customizations.md)
+> * [Commerce CLIを使用してフィードを同期](data-export-cli-commands.md)
+> * [同期の仕組み](sync-overview.md) – 同期モードとスケジュール済み再同期と手動再同期の違いについて説明します。
+> * [ ログの確認とトラブルシューティング ](troubleshooting/logging.md)

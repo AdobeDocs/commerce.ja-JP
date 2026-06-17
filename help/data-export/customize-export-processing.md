@@ -1,17 +1,15 @@
 ---
 title: SaaS データ書き出しのパフォーマンスを向上
 description: マルチスレッドデータエクスポートモードを使用して、Commerce サービスのSaaS データエクスポートのパフォーマンスを向上させる方法について説明します。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
 TQID: https://experienceleague.adobe.com/k-gizR-v-zQjQiN5IZm1Mv87J6j9eMsxH8vl-K1Co2M
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 669
 ht-degree: 0%
@@ -27,11 +25,11 @@ ht-degree: 0%
 ## マルチスレッドモードを使用する際の考慮事項
 
 データ書き出しサービスを使用する場合は、正確な同期を確保しながらパフォーマンスを最適化する必要があります。
-Adobeでは、データ取り込みにデフォルト設定を使用することをお勧めします。これは、通常、Commerce マーチャントの同期要件を満たしています。 ただし、カスタマイズによって処理時間が短縮される場合があります。
+Adobeでは、データ取り込みにデフォルト設定を使用することをお勧めします。これは、通常、Commerce マーチャントの同期要件を満たしています。ただし、カスタマイズによって処理時間が短縮される場合があります。
 
 データ書き出し設定をカスタマイズするかどうかを決定する際には、次の重要な要素を考慮してください。
 
-- **初期同期** – 製品数を評価し、デフォルト設定に基づいて[&#x200B; データ量と送信時間を見積もる](estimate-data-volume-sync-time.md)。 Commerce サービスをオンボーディングした後、この最初のデータ同期を待つことはできますか？
+- **初期同期** – 製品数を評価し、デフォルト設定に基づいて[ データ量と送信時間を見積もる](estimate-data-volume-sync-time.md)。 Commerce サービスをオンボーディングした後、この最初のデータ同期を待つことはできますか？
 
 - **新しいストアビューまたはWeb サイトの追加** – 本番稼働後に同じ商品数のストアビューまたはWeb サイトを追加する場合は、データ量と送信時間を見積もります。 デフォルト設定で同期時間を許容できるか、マルチスレッド処理が必要かどうかを判断します。
 
@@ -47,10 +45,14 @@ Adobeでは、データ取り込みにデフォルト設定を使用すること
 
 ## マルチスレッドの設定
 
-マルチスレッドモードは、すべての[同期方法](data-synchronization.md#view-and-manage-the-synchronization-process)でサポートされています。完全同期、部分同期、および失敗した項目の同期です。 マルチスレッドを設定するには、同期中に使用するスレッド数とバッチサイズを指定します。
+マルチスレッドモードは、すべての[同期方法](sync-overview.md#synchronization-types)でサポートされています。完全同期、部分同期、および失敗した項目の同期です。 マルチスレッドを設定するには、同期中に使用するスレッド数とバッチサイズを指定します。
 
 - `thread-count`は、プロセス エンティティに対してアクティブ化されたスレッドの数です。 既定の`thread-count`は`1`です。
 - `batch-size`は、1回のイテレーションで処理されるエンティティの数です。 デフォルトの`batch-size`は、価格フィードを除くすべてのフィードの`100` レコードです。 価格フィードの場合、デフォルト値は`500` レコードです。
+
+>[!NOTE]
+>
+>[!DNL Adobe Commerce Optimizer Connector]回のデプロイメントの場合、[ コネクタモジュールとフィードエンドポイント ](../aco-connector/reference/connector-reference.md#supported-feeds)でコネクタ固有のサポートされているフィードとバッチ制限を確認します。
 
 マルチスレッドを一時的なオプションとして設定するには、再同期コマンドを実行するか、マルチスレッド設定をAdobe Commerce アプリケーション設定に追加します。
 
@@ -62,7 +64,7 @@ Adobeでは、データ取り込みにデフォルト設定を使用すること
 
 コマンドラインから完全同期コマンドを実行する場合は、`thread-count`および`batch-size` オプションをCLI コマンドに追加して、マルチスレッド処理を指定します。
 
-```
+```shell
 bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
@@ -72,7 +74,7 @@ bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 
 マルチスレッドを使用してすべてのデータ書き出し操作を処理するには、システムインテグレーターまたは開発者は、Commerce アプリケーション設定の各フィードのスレッド数とバッチサイズを変更できます。
 
-これらの変更は、設定ファイル `app/etc/config.php`の[&#x200B; システム セクション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)にカスタム値を追加することで適用できます。
+これらの変更は、設定ファイル `app/etc/config.php`の[ システム セクション ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)にカスタム値を追加することで適用できます。
 
 **例：商品と価格のマルチスレッドの設定**
 
@@ -95,3 +97,9 @@ return [
             ],
 //   ...
 ```
+
+>[!MORELIKETHIS]
+>
+> - [ データ量と送信時間の見積もり](estimate-data-volume-sync-time.md)
+> - [同期の仕組み](sync-overview.md)
+> - [ テーブル スキーマをフィード ](reference/feed-table-reference.md)

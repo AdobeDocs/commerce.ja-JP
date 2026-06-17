@@ -1,24 +1,16 @@
 ---
 title: '[!DNL SaaS Data Export Extension] リリースノート'
 description: Adobe Commerceの [!DNL Data Export Extension] の最新リリース情報。
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 2903
 ht-degree: 0%
@@ -33,7 +25,7 @@ ht-degree: 0%
 
 ![新機能](../assets/new.svg)
 ![修正](../assets/fix.svg)修正と機能強化
-![&#x200B; バグ &#x200B;](../assets/bug.svg)既知の問題
+![ バグ ](../assets/bug.svg)既知の問題
 
 >[!NOTE]
 >
@@ -72,7 +64,7 @@ _2026年5月19日_
 
 _2026年5月5日_
 
-![修正](../assets/fix.svg) **書き出しログのトラブルシューティングが簡単** – 多くの書き出し関連のエラーと警告に、一貫したログコードが含まれるようになりました。これらのコードは、サポートやドキュメントを利用する際の問題を迅速に追跡するのに役立ちます。詳しくは、ログコードリファレンスを参照してください。
+![修正](../assets/fix.svg) **書き出しログのトラブルシューティングが簡単** – 多くの書き出し関連のエラーと警告に、一貫したログコードが含まれるようになりました。これらのコードは、サポートやドキュメントを利用する際の問題を迅速に追跡するのに役立ちます。詳しくは、[ ログコード参照](troubleshooting/log-codes-reference.md)を参照してください。
 <!--MDEE-1276-->
 
 ![修正](../assets/fix.svg) **属性オプションラベルが変更された場合の自動再同期** – ストアビューの製品属性オプションラベルを変更すると（複数選択属性を含む）、影響を受ける製品が再び書き出しにキューに入れられるようになり、ライブサーチ、商品レコメンデーション、カタログサービスおよびその他の接続されたCommerce サービスで、更新されたファセットとフィルターラベルが買い物客ビューに表示されるようになりました。以前は、ラベルのみの編集では、より広範な製品変更で同期がトリガーされるまで、SaaS カタログに古い文言が表示される可能性がありました。
@@ -107,7 +99,7 @@ _2026年4月13日_
 - 削除中に書き出しサービスが利用できない場合に、接続されているCommerce サービスから削除された製品が正しく削除されない問題を修正しました。 再試行および再同期操作により、削除された製品がSaaSに正しく反映されるようになりました。<!--MDEE-1319-->
 - 管理者ストアビューに属性値がない場合でも、カタログエンティティ（製品およびカテゴリ）を接続されたCommerce サービスに書き出せるようになりました。 これにより、サードパーティの拡張機能との互換性が向上し、デフォルト値が欠落しているために発生する書き出しエラーが軽減されます。<!--MDEE-1333-->
 
-![修正](../assets/fix.svg) フィード レコードに予期しないデータまたは不足しているデータが含まれている場合に発生する可能性があるデータ フィード同期ステータス ページのエラーを解決しました。 現在、システムはこのようなケースを適切に処理し、安定性を向上させ、クラッシュを防ぎます。 Adobe Commerce Optimizer Connectorを使用してAdobe CommerceからAdobe Commerce Optimizerにデータを同期する場合は、修正プログラムとして[Adobe Commerce Optimizer Connector バージョン 1.0.11](https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/release-notes)以降に更新してください。<!--MDEE-1327-->
+![修正](../assets/fix.svg) フィード レコードに予期しないデータまたは不足しているデータが含まれている場合に発生する可能性があるデータ フィード同期ステータス ページのエラーを解決しました。 現在、システムはこのようなケースを適切に処理し、安定性を向上させ、クラッシュを防ぎます。 Adobe Commerce Optimizer Connectorを使用してAdobe CommerceからAdobe Commerce Optimizerにデータを同期する場合は、修正プログラムとして[Adobe Commerce Optimizer Connector バージョン 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes)以降に更新してください。<!--MDEE-1327-->
 
 ### 103.4.21 リリース
 
@@ -133,7 +125,7 @@ _2026年2月6日_
 
 _2026年2月2日_
 
-![修正](../assets/fix.svg)更新中にアイテムバッチが許可された上限を超える可能性がある問題を修正しました。これにより、[Commerce サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)または[Adobe Commerce Optimizer](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/data-sync)にデータを同期する際に`items_limit_exceeded`個のエラーが発生します。<!--MDEE-1264-->
+![修正](../assets/fix.svg)更新中にアイテムバッチが許可された上限を超える可能性がある問題を修正しました。これにより、[Commerce サービス ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)または[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)にデータを同期する際に`items_limit_exceeded`個のエラーが発生します。<!--MDEE-1264-->
 
 ![修正](../assets/fix.svg) バンドル製品オプションの収集時に、失敗した項目を登録するロジックを追加することで、製品データの書き出しの信頼性を向上しました。<!--CCSAAS-4458-->
 
@@ -161,7 +153,7 @@ _2025年11月24日_
 
 _2025年10月22日_
 
-![新規](../assets/new.svg) Adobe Commerceから接続されたサービス（カタログサービス、ライブサーチ、商品レコメンデーション）へのデータ転送を監視およびトラブルシューティングするためのData Feed Sync Status拡張機能のサポートを追加しました。 この拡張機能のインストールと使用について詳しくは、*Commerce管理ガイド*&#x200B;の[Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=ja)を参照してください。<!--MDEE-954-->
+![新規](../assets/new.svg) Adobe Commerceから接続されたサービス（カタログサービス、ライブサーチ、商品レコメンデーション）へのデータ転送を監視およびトラブルシューティングするためのData Feed Sync Status拡張機能のサポートを追加しました。 この拡張機能のインストールと使用について詳しくは、*Commerce管理ガイド*&#x200B;の[Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html)を参照してください。<!--MDEE-954-->
 
 ### 103.4.14 リリース
 
@@ -187,7 +179,7 @@ _2025年9月18日_
 
 _2025年8月29日_
 
-![新規](../assets/new.svg) [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
+![新規](../assets/new.svg) [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
 商品フィードにCommerceの商品設定から税区分、属性セット、インベントリのデータを含める追加の商品属性のサポートを追加しました。 これらの属性を商品の書き出しフィードに含めるには、Adobe Commerce プロジェクトに追加の商品属性モジュールを追加する必要があります。 [税区分、属性セットおよび在庫属性の追加](add-tax-attribute-set-inventory-attributes.md)を参照してください。<!--MDEE-1135-->
 
 ![修正](../assets/fix.svg)完全な製品インデックスの実行中にエラーが発生した場合に、削除された製品の更新を誤って同期する問題を解決しました。 インデックス作成プロセス中にエラーが発生した場合でも、すべての製品の削除が正しく同期されるようになりました。<!--MDEE-1144-->

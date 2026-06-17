@@ -2,30 +2,18 @@
 title: ' [!DNL Adobe Commerce Optimizer Connector]の基本を学ぶ'
 description: ' [!DNL Adobe Commerce Optimizer Connector]のインストール、スコープ書き出し設定の設定、IMS認証の有効化、カタログ同期の検証方法について説明します。'
 feature: Integration, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-09T16:55:50.934Z'
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-subfeature_v2:
-  - id: e126554b-28f9-4290-b58c-10b888b88174
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+subfeature_v2: id: e126554b-28f9-4290-b58c-10b888b88174id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 1184
+source-wordcount: 1079
 ht-degree: 0%
 
 ---
@@ -44,54 +32,54 @@ ht-degree: 0%
    * PHP 8.2、8.3、または8.4
    * Composer 2.x
 
-* プロビジョニングされたサンドボックスインスタンスを使用する[!DNL Adobe Commerce Optimizer] ライセンス。
+* プロビジョニングされたサンドボックスインスタンスを使用する[!DNL Commerce Optimizer] ライセンス。
 
-* Composerを使用してコネクタメタパッケージをダウンロードするための[認証キー](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
+* Composerを使用してコネクタメタパッケージをダウンロードするための[認証キー](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
 
-* [[!DNL Adobe Commerce Optimizer]  サンドボックスインスタンス &#x200B;](../optimizer/get-started.md)への管理者アクセス。
+* [[!DNL Commerce Optimizer]  サンドボックスインスタンス ](../optimizer/get-started.md)への管理者アクセス。
 
 統合を構成する[!DNL Adobe Commerce] ユーザーには、次の要件が必要です。
 
 * Commerce管理者への管理者アクセス。
 
-* [&#x200B; アプリケーションサーバー [!DNL Adobe Commerce] へのコマンドラインアクセス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/user-access)。
+* [ アプリケーションサーバー [!DNL Adobe Commerce] へのコマンドラインアクセス ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)。
 
-* [!DNL Adobe Commerce Optimizer] プロジェクトがプロビジョニングされている[IMS組織](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/organizations?)への開発者アクセス。
+* [!DNL Commerce Optimizer] プロジェクトがプロビジョニングされている[IMS組織](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?)への開発者アクセス。
 
 >[!BEGINSHADEBOX]
 
-## 前提条件
+## 競合する拡張機能の削除 {#remove-conflicting-extensions}
 
 次のいずれかの拡張機能がインストールされている場合は、[!DNL Adobe Commerce Optimizer Connector]をインストールする前にアンインストールしてください。
 
 * [!DNL Adobe Commerce Live Search] (`magento/live-search`)
 * [!DNL Adobe Commerce Product Recommendations] (`magento/product-recommendations`)
 * [!DNL Adobe Commerce Catalog Service] (`magento/catalog-service`, `magento/catalog-service-installer`)
-* データ管理ダッシュボード （`magento-catalog-sync-admin`）
+* **[!UICONTROL Data Management Dashboard]** (`magento-catalog-sync-admin`)
 
-これらの拡張機能に関連付けられたデータは、引き続きCommerce データベースで使用できます。 ただし、コネクタが有効になっている場合は、[!DNL Adobe Commerce Optimizer]に書き出されません。 コネクタを有効にした後、これらの拡張機能によって提供される検索およびマーチャンダイジング機能を実装するには、[[!DNL Adobe Commerce Optimizer] 管理UI](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/overview#quick-tour)からそれらを設定します。
+これらの拡張機能に関連付けられたデータは、引き続きCommerce データベースで使用できます。 ただし、コネクタが有効になっている場合は、[!DNL Commerce Optimizer]に書き出されません。 コネクタを有効にした後、これらの拡張機能によって提供される検索およびマーチャンダイジング機能を実装するには、[[!DNL Commerce Optimizer] 管理UI](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour)からそれらを設定します。
 
 >[!IMPORTANT]
 >
->コネクタを有効にする前にこれらの拡張機能が削除されない場合、接続済みサービスで拡張機能とコネクタが認証する方法の競合により、同じデータがコネクタと既存の拡張機能の両方から書き出されるため、設定画面が壊れ、[!DNL Adobe Commerce Optimizer]にデータが重複し、ログに401または403のエラーが発生する可能性があります。
+>コネクタを有効にする前にこれらの拡張機能が削除されない場合、接続済みサービスで拡張機能とコネクタが認証する方法の競合により、同じデータがコネクタと既存の拡張機能の両方から書き出されるため、設定画面が壊れ、[!DNL Commerce Optimizer]にデータが重複し、ログに401または403のエラーが発生する可能性があります。
 
 >[!ENDSHADEBOX]
 
-## 設定手順
+## 設定手順 {#configuration-steps}
 
-次の手順に従って、[!DNL Commerce Optimizer Connector]を有効にし、[!DNL Adobe Commerce]から[!DNL Commerce Optimizer] インスタンスへのデータの同期を開始します。
+次の手順に従って、[!DNL Adobe Commerce Optimizer Connector]を有効にし、[!DNL Adobe Commerce]から[!DNL Commerce Optimizer] インスタンスへのデータの同期を開始します。
 
-1. **[Composerを使用して [!DNL Commerce Optimizer Connector]  パッケージ](#install-the-adobe-commerce-optimizer-connector-package)**&#x200B;をインストールし、[!DNL Adobe Commerce] インスタンスを[!DNL Adobe Commerce Optimizer]に接続します。
+1. **[Composerを使用して [!DNL Adobe Commerce Optimizer Connector]  パッケージ](#install-the-adobe-commerce-optimizer-connector-package)**&#x200B;をインストールし、[!DNL Adobe Commerce] インスタンスを[!DNL Commerce Optimizer]に接続します。
 
-1. **[管理者からデータ書き出し設定](#customize-the-commerce-scopes-export-configuration)**&#x200B;をカスタマイズします。
+1. **[管理者からCommerce スコープの書き出し設定](#customize-the-commerce-scopes-export-configuration)**&#x200B;をカスタマイズします。
 
-1. **[&#x200B; [!DNL Adobe Commerce Optimizer] 統合](#enable-the-adobe-commerce-optimizer-integration)**&#x200B;を有効にします。
+1. **[ [!DNL Commerce Optimizer] 統合](#enable-the-adobe-commerce-optimizer-integration)**&#x200B;を有効にします。
 
 1. **[データ同期が機能していることを確認します](#verify-that-the-data-sync-is-working)**。
 
-## [!DNL Commerce Optimizer Connector] パッケージのインストール {#install-the-adobe-commerce-optimizer-connector-package}
+## [!DNL Adobe Commerce Optimizer Connector] パッケージのインストール {#install-the-adobe-commerce-optimizer-connector-package}
 
-[!DNL Commerce Optimizer Connector]は、[!DNL Adobe Commerce Optimizer]のアクティブなライセンスを持つすべてのCommerce マーチャントが利用できるComposer メタパッケージとして配信されます。
+[!DNL Adobe Commerce Optimizer Connector]は、[!DNL Commerce Optimizer]のアクティブなライセンスを持つすべてのCommerce マーチャントが利用できるComposer メタパッケージとして配信されます。
 
 ### インストール手順
 
@@ -103,42 +91,42 @@ ht-degree: 0%
 
 1. [!DNL Adobe Commerce] ステージング環境に変更をデプロイします。
 
-   デプロイメントが完了すると、[!DNL Commerce Optimizer] オプションがCommerce管理メニューから使用できるようになります。 「**[!UICONTROL Commerce Optimizer]**」を選択して、Commerce管理者から直接[!DNL Adobe Commerce Optimizer] インスタンスを開きます。
+   デプロイメントが完了すると、[!DNL Commerce Optimizer] オプションがCommerce管理メニューから使用できるようになります。 「**[!UICONTROL Commerce Optimizer]**」を選択して、Commerce管理者から直接[!DNL Commerce Optimizer] インスタンスを開きます。
 
 >[!NOTE]
 >
 >拡張機能のインストール手順について詳しくは、次のガイドを参照してください。
 >
->[&#x200B; クラウドインフラストラクチャ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/extensions)の [!DNL Adobe Commerce] に拡張機能をインストールする
+>[ クラウドインフラストラクチャ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)の [!DNL Adobe Commerce] に拡張機能をインストールする
 >
->[&#x200B; オンプレミス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/extensions)に拡張機能をインストールする [!DNL Adobe Commerce] 
+>[ オンプレミス ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)に拡張機能をインストールする [!DNL Adobe Commerce] 
 
 ## Commerce スコープ書き出し設定のカスタマイズ {#customize-the-commerce-scopes-export-configuration}
 
-デフォルトでは、すべてのCommerce スコープ（web サイト、カスタマーグループ、ストアビュー）でカタログデータの同期が有効になっています。 ビジネスニーズに基づいて、特定の範囲のデータのみを同期するように書き出し設定をカスタマイズできます。 例えば、同じ言語を共有する複数のストアビューがある場合、ストアビューの1つだけのデータを書き出し、[!DNL Adobe Commerce Optimizer]の複数のカタログビューの[&#x200B; カタログソース &#x200B;](../optimizer/setup/catalog-source.md)として使用することができます。
+デフォルトでは、すべてのCommerce スコープ（web サイト、カスタマーグループ、ストアビュー）でカタログデータの同期が有効になっています。 ビジネスニーズに基づいて、特定の範囲のデータのみを同期するように書き出し設定をカスタマイズできます。 例えば、同じ言語を共有する複数のストアビューがある場合、ストアビューの1つだけのデータを書き出し、[!DNL Commerce Optimizer]の複数のカタログビューの[ カタログソース ](../optimizer/setup/catalog-sources.md)として使用することを選択できます。
 
 >[!IMPORTANT]
 >
->書き出し設定を変更すると、カタログのサイズに応じて大幅な時間がかかる場合がある、完全なインデックス再作成がトリガーされます。 Adobeでは、統合を有効にして最初のデータ同期を開始する前に、Commerce スコープを[!DNL Adobe Commerce Optimizer]に同期するように設定することをお勧めします。
+>書き出し設定を変更すると、カタログのサイズに応じて大幅な時間がかかる場合がある、完全なインデックス再作成がトリガーされます。 Adobeでは、統合を有効にして最初のデータ同期を開始する前に、Commerce スコープを[!DNL Commerce Optimizer]に同期するように設定することをお勧めします。
 
 次の表に、各範囲レベルで書き出されるデータを示します。
 
 | 範囲 | 書き出されたデータ | メモ |
 | ----- | ------------- | ----- |
-| web サイトと顧客グループ | 価格と価格表 | 各価格セットは、命名規則`<website>::<SHA1 of customer group ID>`を使用して[価格表](../optimizer/setup/pricebooks.md)として書き出されます。 Web サイトのすべての顧客グループが含まれます。 |
-| ストアビュー | 製品と製品属性 | 各ストアビューは、[!DNL Adobe Commerce Optimizer]に個別の[&#x200B; カタログソース &#x200B;](../optimizer/setup/catalog-source.md)を作成します。 |
+| web サイトと顧客グループ | 価格と価格表 | 各価格セットは、命名規則`&lt;website&gt;::&lt;SHA1 of customer group ID&gt;`を使用して[価格表](../optimizer/setup/pricebooks.md)として書き出されます。 Web サイトのすべての顧客グループが含まれます。 |
+| ストアビュー | 製品と製品属性 | 各ストアビューは、[!DNL Commerce Optimizer]に個別の[ カタログソース ](../optimizer/setup/catalog-sources.md)を作成します。 |
 
-![Commerce Optimizerの同期設定を使用したストアグリッド &#x200B;](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
+![Commerce Optimizerの同期設定を使用したストアグリッド ](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
 
-**Web サイトまたはストアビューの設定を変更するには：**
+### 範囲の書き出し設定を変更するには
 
 1. Commerce Adminで、**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL All Stores]**&#x200B;に移動します。
 
 1. 設定するweb サイトまたはストアビューを選択します。
 
-1. **[!DNL Adobe Commerce Optimizer]エクスポーター設定**&#x200B;で、チェックボックスを使用して、必要に応じてデータ同期を有効または無効にします。
+1. **[!DNL Commerce Optimizer]エクスポーター設定**&#x200B;で、チェックボックスを使用して、必要に応じてデータ同期を有効または無効にします。
 
-   ![&#x200B; データ同期設定の更新](./assets/aco-connector-storeview-export-settings.png){width="500" zoomable="yes"}
+   ![ データ同期設定の更新](./assets/aco-connector-storeview-export-settings.png){width="500" zoomable="yes"}
 
 1. 変更を保存します。
 
@@ -146,15 +134,15 @@ ht-degree: 0%
 
 | アクション | 結果 |
 | -------- | -------- |
-| ストアビューを無効にする | カタログ ソースは[!DNL Adobe Commerce Optimizer]に残りますが、すべてのデータは削除されます。 |
+| ストアビューを無効にする | **同期を無効にすると、ストアフロントからカタログデータが削除されます。** カタログ ソースは[!DNL Commerce Optimizer]に残りますが、次回のcron実行時にすべての同期データが削除されます。 |
 | ストアビューを無効にして再度有効にする | 同じカタログソースに、完全なデータ再同期が再入力されます。 |
 
-## [!DNL Adobe Commerce Optimizer]統合を有効にする
+## [!DNL Commerce Optimizer]統合を有効にする {#enable-the-adobe-commerce-optimizer-integration}
 
 統合を有効にし、`aco:config:init` CLI コマンドを実行してデータ同期を開始します。 このコマンドは、次の手順を完了します。
 
 1. コマンドライン引数として指定された資格情報を使用して、IMS アクセストークンを取得します。
-1. `https://ccm.api.commerce.adobe.com/api/v1/tenants/{tenantId}/owner/{orgId}`のCommerce Cloud Manager （CCM） サービスを呼び出して、テナントを検証し、取り込みURLと[!DNL Adobe Commerce Optimizer] Studio URLを抽出します。
+1. `https://ccm.api.commerce.adobe.com/api/v1/tenants/{tenantId}/owner/{orgId}`のCommerce Cloud Manager （CCM） サービスを呼び出して、テナントを検証し、取り込みURLと[!DNL Commerce Optimizer] Studio URLを抽出します。
 1. すべての設定（クライアントシークレットが暗号化）を`core_config_data`に保存します。
 1. すべての[!DNL Commerce Optimizer] フィードのインデクサーを無効にすることで、最初の完全同期をスケジュールします。
 
@@ -164,7 +152,7 @@ ht-degree: 0%
 
 ### 必要な接続の詳細を取得
 
-[Adobe Developer Console](https://developer.adobe.com/console)から、[!DNL Adobe Commerce Optimizer]取り込みサービスに対して有効な新しいプロジェクトを作成し、OAuth サーバー間の資格情報を生成します。 詳細な手順については、*マーチャンダイジング開発者ガイド*&#x200B;の[IMS資格情報の取得](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)を参照してください。
+[Adobe Developer Console](https://developer.adobe.com/console)から、[!DNL Commerce Optimizer]取り込みサービスに対して有効な新しいプロジェクトを作成し、OAuth サーバー間の資格情報を生成します。 詳細な手順については、*マーチャンダイジング開発者ガイド*&#x200B;の[IMS資格情報の取得](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)を参照してください。
 
 資格情報ページから次の値を保存します。
 
@@ -174,57 +162,36 @@ ht-degree: 0%
 
 ![Adobe Developer Console プロジェクトページから資格情報の詳細を取得](./assets/developer-console-project-credentials.png){width="500" zoomable="yes"}
 
-### [!DNL Adobe Commerce Optimizer] インスタンスの詳細を取得
+### [!DNL Commerce Optimizer] インスタンスの詳細を取得
 
-_テナント ID_&#x200B;を、[!DNL Adobe Commerce Optimizer] インスタンス [[!DNL Instance details]  ページ &#x200B;](../optimizer/get-started.md#manage-instances)の&#x200B;_[!DNL Instance Id]_&#x200B;フィールドまたはインスタンスへのアクセスに使用したURLから取得します。 例：`https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`。
+_テナント ID_&#x200B;を、[!DNL Commerce Optimizer] インスタンス [[!DNL Instance details]  ページ ](../optimizer/get-started.md#manage-instances)の&#x200B;_[!DNL Instance Id]_フィールドまたはインスタンスへのアクセスに使用したURLから取得します。 例：`https://experience.adobe.com/#/@&lt;your organization&gt;/in:&lt;tenant ID&gt;/commerce-optimizer-studio/home`。
 
 1. Commerce管理者から「**[!UICONTROL Adobe Commerce Optimizer]**」を選択し、手順を含む設定ページを表示します。
 
-   ![[!DNL Adobe Commerce Optimizer]設定ページ &#x200B;](./assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
+   ![[!DNL Commerce Optimizer]設定ページ ](./assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
-1. コマンドラインから、[SSH](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/secure-connections)を使用して[!DNL Adobe Commerce] ステージング環境に接続します。
+1. コマンドラインから、[SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)を使用して[!DNL Adobe Commerce] ステージング環境に接続します。
 
 1. 次の[!DNL Adobe Commerce] CLI コマンドを実行して統合を設定し、プレースホルダー値を[!DNL Commerce Optimizer] プロジェクトの値に置き換えます。
 
-   ```terminal
+   ```shell
    bin/magento aco:config:init --org_id=your-org --tenant_id=your-tenant --client_id=your-client-id --client_secret=your-secret
    ```
 
 1. Commerce管理者に戻り、[!UICONTROL Adobe Commerce Optimizer] オプションを選択して、接続を確認します。
 
-   オプションを選択すると、新しいタブで[!DNL Adobe Commerce Optimizer] UIが開きます。
+   オプションを選択すると、新しいタブで[!DNL Commerce Optimizer] UIが開きます。
 
-## データ同期が機能していることを確認します
+## データ同期が機能していることを確認します {#verify-that-the-data-sync-is-working}
 
-管理者で利用可能な[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページから同期が機能していることを監視および確認できます。
-
-1. **Commerce管理者の同期ステータスを確認：**
-
-   **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**&#x200B;に移動します。
-
-   ![&#x200B; フィード項目のステータスがレポートされるデータフィードの同期ステータス ページ &#x200B;](./assets/data-feed-sync-status.png){width="500" zoomable="yes"}
-
-   同期を実行すると、フィード データに正常に送信されたレコードが表示されます。 フィードを選択して、詳細を表示したり、同期の問題をトラブルシューティングしたりします。
-
-1. **確認データが[!DNL Commerce Optimizer]に到着しました：**
-
-   [!DNL Adobe Commerce Optimizer] メニューから、**[!UICONTROL Data Sync]**&#x200B;を選択します。
-
-   同期されたカタログデータを表示するAdobe Commerce Optimizerの![&#x200B; データ同期ページ &#x200B;](./assets/data-sync.png){width="500" zoomable="yes"}
-
-   予想される商品、価格、属性が表示されることを確認します。
-
->[!TIP]
->
->データ同期に問題がある場合は、[&#x200B; トラブルシューティング &#x200B;](troubleshooting.md) ガイドを参照してください。
+{{$include /help/_includes/aco-connector/verify-optimizer-data-sync.md}}
 
 ## 次のステップ
 
-1. **カタログ ビューとポリシー[!DNL Adobe Commerce Optimizer]を設定**
+1. **カタログ ビューとポリシー[!DNL Commerce Optimizer]を設定**
 
-   [!DNL Adobe Commerce Optimizer] UIでカタログ ビューとポリシーを作成します。 価格表は、[!DNL Adobe Commerce]個の顧客グループから自動的に作成されます。 手順については、*[!DNL Adobe Commerce Optimizer]ユーザーガイド*&#x200B;の[&#x200B; カタログビュー](../optimizer/setup/catalog-view.md)および[&#x200B; ポリシー](../optimizer/setup/policies.md)のドキュメントを参照してください。
+   [!DNL Commerce Optimizer] UIでカタログ ビューとポリシーを作成します。 価格表は、[!DNL Adobe Commerce]個の顧客グループから自動的に作成されます。 手順については、*[!DNL Commerce Optimizer]ユーザーガイド*&#x200B;の[ カタログビュー](../optimizer/setup/catalog-view.md)および[ ポリシー](../optimizer/setup/policies.md)のドキュメントを参照してください。
 
 1. **[!DNL Edge Delivery Services]**&#x200B;にCommerce ストアフロントを設定
 
-   [&#x200B; ストアフロント設定ドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=ja){target="_blank"}に従って、ストアフロントを[!DNL Adobe Commerce Optimizer] インスタンスに接続し、パーソナライズされたコマースエクスペリエンスの提供を開始します。
-
+   [ ストアフロント設定ドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}に従って、ストアフロントを[!DNL Commerce Optimizer] インスタンスに接続し、パーソナライズされたコマースエクスペリエンスの提供を開始します。
