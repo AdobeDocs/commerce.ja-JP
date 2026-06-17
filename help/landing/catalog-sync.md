@@ -1,6 +1,7 @@
 ---
 title: カタログ同期
 description: 製品データを [!DNL Commerce]  サーバーから [!DNL Commerce Services]に書き出す方法について説明します。
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Catalog Management, Data Import/Export, Catalog Service
 exl-id: 99f96b93-b036-490c-8c57-40463a0de365
 TQID: https://experienceleague.adobe.com/-X5W4TJNW6pduPsWH-SLuAXrfP7iReCpaVg5qeu2odA
@@ -16,9 +17,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 567
+source-wordcount: 565
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> カタログ同期ダッシュボードがデータ管理ダッシュボードになりました。 この刷新されたダッシュボードでは、[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0以降、[[!DNL Live Search]](../live-search/overview.md) v4.1.0以降、[[!DNL Catalog Service]](../catalog-service/overview.md) v1.17以降がサポートされるようになりました。 お客様は、これらのサービスの最新バージョンに更新することで、データ管理ダッシュボードを入手できます。 詳しくは、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=ja)のドキュメントを参照してください。 この現在のトピックは、まだアップグレードしておらず、カタログ同期ダッシュボードを持っているユーザーに残ります。
+> カタログ同期ダッシュボードがデータ管理ダッシュボードになりました。 この刷新されたダッシュボードでは、[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0以降、[[!DNL Live Search]](../live-search/overview.md) v4.1.0以降、[[!DNL Catalog Service]](../catalog-service/overview.md) v1.17以降がサポートされるようになりました。 お客様は、これらのサービスの最新バージョンに更新することで、データ管理ダッシュボードを入手できます。 詳しくは、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)のドキュメントを参照してください。 この現在のトピックは、まだアップグレードしておらず、カタログ同期ダッシュボードを持っているユーザーに残ります。
 
 Adobe Commerceでは、インデックスを使用してカタログデータをテーブルにコンパイルします。 このプロセスは、製品価格や在庫レベルの変更など、[&#x200B; イベント &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=ja#events-that-trigger-full-reindexing)によって自動的にトリガーされます。
 
@@ -93,4 +94,4 @@ Adobe Commerceでは、インデックスを使用してカタログデータを
 
 ## カタログ同期の問題を解決する {#resolvesync}
 
-_SaaS データ書き出しガイド_&#x200B;の「[&#x200B; ログとトラブルシューティング &#x200B;](../data-export/troubleshooting-logging.md#troubleshooting)」を参照してください。
+_SaaS データ書き出しガイド_&#x200B;の「[&#x200B; トラブルシューティング &#x200B;](../data-export/troubleshooting/logging.md#troubleshooting)」を参照してください。

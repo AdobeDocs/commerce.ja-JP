@@ -8,6 +8,8 @@ autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/ei86QuJ3nQ2d-6NRoAeJslgDxjGlZRejD-Nx-6SAVdc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
   - id: c32adafa-ed01-4b31-997e-2413013911b0
@@ -22,14 +24,14 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 1f901b4a72c10dc4e710742b98c03e88cbc8739f
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 273
+source-wordcount: 331
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce Optimizer コネクタのトラブルシューティング
+# [!DNL Adobe Commerce Optimizer Connector]のトラブルシューティング
 
 このガイドでは、初期設定、カタログフィードの同期、スコープの書き出し設定中に[!DNL Adobe Commerce Optimizer Connector]に発生する一般的な問題を診断および解決する方法を説明します。 以下のセクションでは、資格情報とテナントの検証、データ同期エラー、および関連する[!DNL SaaS Data Export]診断について説明します。
 
@@ -39,14 +41,13 @@ ht-degree: 0%
 
 - `bin/magento aco:config:show` [!DNL Adobe Commerce] CLI コマンドを実行して、保存された値を確認します。
 - テナント IDが、資格情報の取得に使用するIMS組織に属していることを確認します。
-- OAuth クライアントが[!DNL Commerce Optimizer]取り込みサービスに必要なスコープを持っていることを確認します（[IMS資格情報の取得](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)を参照）。
+- OAuth クライアントが[!DNL Adobe Commerce Optimizer]取り込みサービスに必要なスコープを持っていることを確認します（[IMS資格情報の取得](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)を参照）。
 
 ## データが同期されていません
 
 **アイテムレベルのエラーの詳細を確認：**
 
-1. Commerce管理者から、**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**&#x200B;に移動します。
-2. 失敗したフィードを選択して、項目ごとのエラーの詳細を表示します。
+Commerce Adminで&#x200B;**[!UICONTROL Data Feed Sync Status]**&#x200B;を開く手順については、[&#x200B; データ同期が機能していることを確認する](./data-sync-manage.md#verify-that-the-data-sync-is-working)を参照してください。 失敗したフィードを選択して、項目ごとのエラーの詳細を表示します。
 
 エラー処理に関する重要なポイント：
 
@@ -55,8 +56,16 @@ ht-degree: 0%
 
 **スコープ設定を確認：**
 
-問題が特定のカタログソース（ストアビューコード）または価格表のみに影響する場合は、対応するweb サイトまたはストアビューの同期が無効になっているかどうかを確認します。 [&#x200B; データ書き出し設定のカスタマイズ &#x200B;](./get-started.md#customize-the-commerce-scopes-export-configuration)を参照してください。
+問題が特定のカタログソース（ストアビューコード）または価格表のみに影響する場合は、対応するweb サイトまたはストアビューの同期が無効になっているかどうかを確認します。 [Commerce スコープの書き出し設定のカスタマイズ &#x200B;](./get-started.md#customize-the-commerce-scopes-export-configuration)を参照してください。
+
+**解決時：**
+
+コネクターフィードは&#x200B;**[!UICONTROL Data Feed Sync Status]**&#x200B;で成功したステータスを示し、予想される製品、価格、属性は[!DNL Commerce Optimizer]の&#x200B;**[!UICONTROL Data Sync]** ページに表示されます。
+
+## 設定ミスと結果解釈
+
+製品の欠落、価格の誤り、スコープレベルのデータギャップなど、同期結果の誤設定または誤解釈によって引き起こされる特定の動作のカタログについては、[&#x200B; シナリオのトラブルシューティング &#x200B;](troubleshooting/troubleshooting-scenarios.md)を参照してください。
 
 ## [!DNL SaaS Data Export]診断
 
-ログの場所とフィード再同期コマンドを含む下位レベルの[!DNL SaaS Data Export]診断については、[[!DNL SaaS Data Export]  トラブルシューティングガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging){target="_blank"}を参照してください。
+ログの場所とフィード再同期コマンドを含む下位レベルの[!DNL SaaS Data Export]診断については、[[!DNL SaaS Data Export]  トラブルシューティングガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}を参照してください。

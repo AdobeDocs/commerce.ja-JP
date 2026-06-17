@@ -1,7 +1,7 @@
 ---
-source-git-commit: 61e34c6fb4a004789bffa43c5b9356ad4edc685e
+source-git-commit: 2cae607e49298fa07c35e59bfc1e8388fe3b58cf
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1184'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">コミット</a></td>
     </tr>
     <tr>
-      <td><p>SaaS データ書き出し</a>の<a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/feed-lock-mechanism"> フィードロック機能を追加して、フィードのロックが同時同期の競合を防ぐ仕組みと、Commerce データ書き出しログ （<code>commerce-data-export.log</code>）に含まれる通常のスキップメッセージを解釈する方法を説明しました。</p>
+      <td><p>SaaS データ書き出し</a>の<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/feed-lock-mechanism"> フィードロック機能を追加して、フィードのロックが同時同期の競合を防ぐ仕組みと、Commerce データ書き出しログ （<code>commerce-data-export.log</code>）に含まれる通常のスキップメッセージを解釈する方法を説明しました。</p>
 </td>
       <td>
         新しいトピック

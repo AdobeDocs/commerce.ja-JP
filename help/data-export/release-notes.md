@@ -1,12 +1,16 @@
 ---
 title: '[!DNL SaaS Data Export Extension] リリースノート'
 description: Adobe Commerceの [!DNL Data Export Extension] の最新リリース情報。
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -18,7 +22,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 2903
 ht-degree: 0%
@@ -72,7 +76,7 @@ _2026年5月19日_
 
 _2026年5月5日_
 
-![修正](../assets/fix.svg) **書き出しログのトラブルシューティングが簡単** – 多くの書き出し関連のエラーと警告に、一貫したログコードが含まれるようになりました。これらのコードは、サポートやドキュメントを利用する際の問題を迅速に追跡するのに役立ちます。詳しくは、ログコードリファレンスを参照してください。
+![修正](../assets/fix.svg) **書き出しログのトラブルシューティングが簡単** – 多くの書き出し関連のエラーと警告に、一貫したログコードが含まれるようになりました。これらのコードは、サポートやドキュメントを利用する際の問題を迅速に追跡するのに役立ちます。詳しくは、[&#x200B; ログコード参照](troubleshooting/log-codes-reference.md)を参照してください。
 <!--MDEE-1276-->
 
 ![修正](../assets/fix.svg) **属性オプションラベルが変更された場合の自動再同期** – ストアビューの製品属性オプションラベルを変更すると（複数選択属性を含む）、影響を受ける製品が再び書き出しにキューに入れられるようになり、ライブサーチ、商品レコメンデーション、カタログサービスおよびその他の接続されたCommerce サービスで、更新されたファセットとフィルターラベルが買い物客ビューに表示されるようになりました。以前は、ラベルのみの編集では、より広範な製品変更で同期がトリガーされるまで、SaaS カタログに古い文言が表示される可能性がありました。

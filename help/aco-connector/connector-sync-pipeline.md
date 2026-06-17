@@ -7,6 +7,8 @@ autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
   - id: c32adafa-ed01-4b31-997e-2413013911b0
@@ -22,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 625
+source-wordcount: 662
 ht-degree: 1%
 
 ---
@@ -47,26 +49,29 @@ ht-degree: 1%
 
 [!DNL Adobe Commerce]でカタログデータが変更されると、同期はこれらのステージを移動します。
 
-1. **Entity Change Detection** — （1分ごと） cron ジョブ （`indexer_reindex_all_invalid`）は、[!DNL Adobe Commerce]個のエンティティの変更を検出し、フィード項目を組み立ててステータスをトラッキングする[!DNL SaaS Data Export]をトリガーします。
+1. **Entity Change Detection** — （1分ごと） cron ジョブ （`indexer_reindex_all_invalid`）は、[!DNL Adobe Commerce]個のエンティティの変更を検出し、フィード項目を組み立てる[!DNL SaaS Data Export]をトリガーします。
 1. **変換** — [!DNL Commerce Optimizer Connector]は、組み立てられたフィードをピックアップし、[!DNL Adobe Commerce]個のエンティティとスコープを[!DNL Commerce Optimizer] APIで必要な形式にマッピングし、送信のためのペイロードを準備します。
 1. **送信** – 変換されたデータはHTTP POST （`/v1/catalog/<feed name>`）を介して[!DNL Adobe I/O Gateway]から[!DNL Commerce Optimizer]まで送信され、受信フィードを検証して保持します。
+1. **結果を永続化** — API応答ステータスを[&#x200B; フィード テーブル &#x200B;](reference/connector-reference.md#supported-feeds)に永続化します。
 1. **失敗の再試行** （5分ごと） – 別のcron ジョブ （`*_resend_failed_items`）が失敗したフィード項目を検出し、同じパイプラインを通じて再送信します。
 
 ### スケジュール済みcron ジョブ
 
-2つのcron グループが、固定スケジュールでパイプラインを自動化します。
+次のcron ジョブは、固定スケジュールでパイプラインを自動化します。
 
-| Cron グループ | 目的 | スケジュール |
-| ---------- | ------- | -------- |
-| `indexer_reindex_all_invalid` | エンティティの更新をリッスンし、フィード項目をアセンブリし、フィードのステータスを保持します | 1分ごと |
-| `*_resend_failed_items` | 失敗したフィード項目を確認し、[!DNL Commerce Optimizer]に再送信します | 5分ごとに |
+| Cron グループ | Cron ジョブ | 目的 | スケジュール |
+|-------------------------------------|-------------------------------|------------------------------------------------------------------------------|----------------|
+| `index` | `indexer_update_all_views` | エンティティの更新をリッスンし、フィード項目をアセンブリし、フィードのステータスを保持します | 1分ごと |
+| `index` | `indexer_reindex_all_invalid` | 「Reindex required」としてマークされたフィード インデックスに対して完全な再同期を実行します | 1分ごと |
+| `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | 失敗したフィード項目を確認し、[!DNL Commerce Optimizer]に再送信します | 5分ごとに |
+| `commerce_data_export` | `cleanup_deleted_feed_items` | 保存期間（7日間）を過ぎて同期された削除されたフィード項目をクリーンアップします | 毎日、午前2:00時 |
 
 **[!DNL SaaS Data Export]**&#x200B;拡張機能は、フィードの収集とステータスの追跡を処理します。 コネクタレイヤーは、エンティティとスコープを[!DNL Commerce Optimizer] APIで必要な形式にマッピングし、`POST /v1/catalog/<feed name>`を介して送信します。
 
 #### 要件定義
 
 - [Commerce cronが実行中である必要があります](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}。
-- フィードのインデクサーは&#x200B;**[!UICONTROL Update by Schedule]** モードを使用する必要があります。 [Commerce アプリケーション設定の確認](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}を参照してください。
+- フィードのインデクサーは&#x200B;**[!UICONTROL Update by Schedule]** モードを使用する必要があります。 [部分同期](../data-export/sync-overview.md#partial-sync){target="_blank"}を参照してください。
 
 ## スコープベースの同期制御
 
@@ -88,7 +93,7 @@ ht-degree: 1%
 | 一時的なエラー | 5分ごとに再試行 |
 | フルシンクまたは大きなカタログ | 分から時間 |
 
-Commerce Adminの[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページからフィードごとのステータスを監視します。 [&#x200B; データ同期が機能していることを確認してください](./get-started.md#verify-that-the-data-sync-is-working)。
+Commerce Adminの[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページからフィードごとのステータスを監視します。 [&#x200B; データ同期が機能していることを確認してください](./data-sync-manage.md#verify-that-the-data-sync-is-working)。
 
 ## フィードの送信とエラー処理
 

@@ -7,6 +7,8 @@ autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -24,9 +26,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 23e4f419628a7838357752ecef0c242f1dcdd4c4
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 990
+source-wordcount: 1075
 ht-degree: 0%
 
 ---
@@ -49,7 +51,7 @@ ht-degree: 0%
 | **[!DNL Adobe Commerce Optimizer]**&#x200B;で価値実現までの時間を短縮 | 既存の[!DNL Adobe Commerce]展開に加えて、AI 検索、レコメンデーション、ヘッドレスストアフロントを有効にします。 |
 | **Commerce スコープと整列** | Web サイト、ストアビュー、顧客グループを[!DNL Adobe Commerce Optimizer]個のカタログ構成（カタログソースと価格表）に自動的にマッピングします。 |
 | **運用上の可視性** | 専用の[!UICONTROL Data Feed Sync Status] ビューから、フィードの正常性、最終同期時間、SKUごとのステータスを監視します。 |
-| **SaaSに向けた将来への道筋** | PaaSから[!DNL Adobe Commerce as a Cloud Service] + [!DNL Adobe Commerce Optimizer]までの低リスクの近代化パスを、再プラットフォームなしで提供します。 |
+| **SaaSに向けた将来への道筋** | クラウドまたはオンプレミスのCommerceから、再プラットフォームなしで[!DNL Adobe Commerce as a Cloud Service] + [!DNL Adobe Commerce Optimizer]への段階的な移行パスを提供します。 |
 
 ## コネクタアーキテクチャ {#connector-architecture}
 
@@ -63,6 +65,8 @@ ht-degree: 0%
 - コネクタは、カタログ、価格、カテゴリフィードを書き出します
 - [!DNL Adobe Commerce Optimizer]は、フィード データを取り込み、カタログ ソース、価格表、カタログ ビューに正規化します
 - ストアフロント（[!DNL Edge Delivery Services]またはカスタムヘッドレスビルドのCommerce ストアフロント）は、検出とレコメンデーションのために[!DNL Adobe Commerce Optimizer]のGraphQL APIを呼び出し、カートとチェックアウトの操作のために[!DNL Adobe Commerce]または他の接続されたサードパーティプラットフォームを呼び出します
+
+[[!DNL SaaS Data Export]](/help/data-export/overview.md)上に構築されたコネクタは、収集したフィードを[!DNL Catalog Data Ingestion API]形式にマッピングし、認証と送信を処理します。 同期動作、スコープ制御、エラー処理については、[&#x200B; コネクタ同期パイプライン &#x200B;](/help/aco-connector/connector-sync-pipeline.md)を参照してください。
 
 ## コネクタの[!DNL Adobe Commerce]の仕組み {#how-the-connector-works-with-adobe-commerce}
 
@@ -102,6 +106,8 @@ _はじめに_ ガイドの[設定手順](/help/aco-connector/get-started.md#con
 - 製品または価格が変更されたときに継続的に更新する場合は、**Deltaが同期**&#x200B;します
 - ターゲット フィードの&#x200B;**コマンドの再同期**
 
+自動化された同期動作、cron スケジュール、エラー処理については、[&#x200B; コネクタ同期パイプライン &#x200B;](/help/aco-connector/connector-sync-pipeline.md)を参照してください。 カタログの完全な同期または大規模な更新の前に、[&#x200B; データ量と同期時間の見積もり](/help/aco-connector/reference/estimate-data-volume-sync-time.md)を使用して、タイミングを計画し、サイトの中断を回避します。
+
 [!DNL Adobe Commerce Optimizer Connector]では、次のフィードを利用できます。
 
 - `products` – 製品データ
@@ -112,7 +118,8 @@ _はじめに_ ガイドの[設定手順](/help/aco-connector/get-started.md#con
 
 詳細については、次のトピックを参照してください。
 
-- [!DNL Adobe Commerce] CLI再同期操作については、[CLI再同期コマンド &#x200B;](/help/data-export/data-export-cli-commands.md#sync-using-cli-commands){target="_blank"}を参照してください
+- カタログデータの同期を確認し、コネクタフィードを手動で再同期します：[同期を管理](/help/aco-connector/data-sync-manage.md)
+- [!DNL Adobe Commerce]件のCLI再同期操作については、[Commerce CLIを使用したフィードの同期](/help/data-export/data-export-cli-commands.md)を参照してください
 - [[!DNL Adobe Commerce Optimizer Connector]個のモジュールとフィード エンドポイント](/help/aco-connector/reference/connector-reference.md)
 - [コネクタフィードのフィールドマッピング](/help/aco-connector/reference/field-mapping.md)
 
@@ -122,7 +129,7 @@ _はじめに_ ガイドの[設定手順](/help/aco-connector/get-started.md#con
 
 - **カタログビューとポリシー** – 地域、ブランド、または顧客固有のサブセットを定義し、[!UICONTROL Store setup] メニューからルールにアクセスします
 - **製品の発見とレコメンデーション** — [!UICONTROL Merchandising] メニューで検索、ファセット、マーチャンダイジングルール、類義語、レコメンデーションユニットを設定します。 検索とレコメンデーションの動作は[!DNL Adobe Commerce Optimizer]で管理されています。管理者権限[!DNL Adobe Commerce]の[!DNL Live Search]および[!DNL Product Recommendations]の設定は、これらのフローには適用されなくなりました
-- **ストアフロント接続** – 正しい[!DNL Adobe Commerce Optimizer] テナント、カタログビュー、マーチャンダイジング API エンドポイントで、[!DNL Edge Delivery Services]またはサードパーティのヘッドレスビルドにCommerce ストアフロントをポイントします。 サードパーティ統合の例については、 [!DNL Adobe Commerce Optimizer][&#128279;](/help/optimizer/developer/salesforce-connector.md)のSalesforce Commerce コネクタを参照してください
+- **ストアフロント接続** – 正しい[!DNL Adobe Commerce Optimizer] テナント、カタログビュー、マーチャンダイジング API エンドポイントで、[!DNL Edge Delivery Services]またはサードパーティのヘッドレスビルドにCommerce ストアフロントをポイントします。 カスタムヘッドレス統合については、[&#x200B; ヘッドレスストアフロント統合](/help/aco-connector/headless-storefront.md)を参照してください。 サードパーティ統合の例については、 [!DNL Adobe Commerce Optimizer][&#128279;](/help/optimizer/developer/salesforce-connector.md)のSalesforce Commerce コネクタを参照してください
 - **チェックアウト** — カート、チェックアウト、注文管理、顧客アカウントを[!DNL Adobe Commerce]または接続されたサードパーティのプラットフォームに保存します。 必要に応じて、[!DNL App Builder]と[!DNL API Mesh]をカートのハンドオフに使用します
 
 ステップバイステップの設定ガイダンスについては、[基本を学ぶ](/help/aco-connector/get-started.md)と[[!DNL Adobe Commerce Optimizer]  マーチャンダイジングツール &#x200B;](/help/optimizer/overview.md#quick-tour)を参照してください。
@@ -133,7 +140,7 @@ _はじめに_ ガイドの[設定手順](/help/aco-connector/get-started.md#con
 
 **一般的な使用例：**
 
-- **ストアフロントのみの最新化**
+- **ストアフロントのEdge Deliveryへの移行**
 既存の[!DNL Adobe Commerce] バックエンドを維持し、PLP/Search/PDPを[!DNL Adobe Commerce Optimizer]を利用した[!DNL Edge Delivery Services] ストアフロントに移動します
 
 - **カタログと検索パフォーマンスの拡張**
@@ -144,7 +151,7 @@ _はじめに_ ガイドの[設定手順](/help/aco-connector/get-started.md#con
 
 ## 責任と実装の前提条件 {#responsibilities-prerequisites}
 
-[!DNL Adobe Commerce]は、製品、価格設定、顧客グループに関する信頼できる唯一の情報源です。 [!DNL Adobe Commerce]で変更を行います。コネクタは変更を[!DNL Adobe Commerce Optimizer]に同期します。
+[!DNL Adobe Commerce]は、製品、価格設定、顧客グループに関する信頼できる唯一の情報源です。 [!DNL Adobe Commerce]で変更を行うと、コネクタによって[!DNL Adobe Commerce Optimizer]に同期されます。
 
 **[!DNL Adobe Commerce Optimizer]は次の責任を負います：**
 
@@ -162,11 +169,11 @@ _はじめに_ ガイドの[設定手順](/help/aco-connector/get-started.md#con
 - [!DNL Adobe Commerce]が最小バージョンと[!DNL Adobe Commerce Optimizer Connector]要件を満たしていることを確認してください。 詳しくは、[基本を学ぶ](/help/aco-connector/get-started.md#requirements-to-use-the-integration)を参照してください。
 - IMS組織アクセス、インスタンス [!DNL Adobe Commerce Optimizer]、必要な資格情報および地域の詳細があることを確認します。
 
-## このトピックの詳細ヘルプ {#more-help-on-this-topic}
-
-- 統合を設定し、主要なワークフローを有効にする：[&#x200B; [!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/get-started.md)を使い始める
-- [!DNL Adobe Commerce Optimizer]の概念とアーキテクチャについて説明します：[何ですか [!DNL Adobe Commerce Optimizer]?](/help/optimizer/overview.md)
-- 同期メカニズム、初期化、およびエラー処理について説明します。[&#x200B; コネクタ同期パイプライン &#x200B;](/help/aco-connector/connector-sync-pipeline.md)
-- すべてのフィードのフィールドレベルのデータマッピング：[&#x200B; コネクタフィードのフィールドマッピング &#x200B;](/help/aco-connector/reference/field-mapping.md)
-- GraphQLとバンドルエンコーディングを使用したヘッドレスストアフロントの統合：[&#x200B; ヘッドレスストアフロントの統合](/help/aco-connector/headless-storefront.md)
-- 同期と設定の問題の診断：[&#x200B; トラブルシューティング &#x200B;](/help/aco-connector/troubleshooting.md)
+>[!MORELIKETHIS]
+>
+> - [の基本を学ぶ [!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/get-started.md) – 統合を設定し、主要なワークフローを有効にします。
+> - [&#x200B; コネクタ同期パイプライン &#x200B;](/help/aco-connector/connector-sync-pipeline.md) – 同期メカニズム、初期化、エラー処理について説明します。
+> - [同期の管理](/help/aco-connector/data-sync-manage.md) — カタログデータの同期を確認し、フィードを手動で再同期します。
+> - コネクタフィードの[&#x200B; フィールドマッピング &#x200B;](/help/aco-connector/reference/field-mapping.md) – すべてのフィードのフィールドレベルのデータマッピングを確認します。
+> - [&#x200B; トラブルシューティング シナリオ &#x200B;](/help/aco-connector/troubleshooting/troubleshooting-scenarios.md) – 設定ミスまたは予期しない同期結果を解決します。
+> - [&#x200B; リリースノート &#x200B;](/help/aco-connector/release-notes.md) — コネクタの更新と既知の問題を確認します。
