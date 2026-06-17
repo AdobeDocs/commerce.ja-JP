@@ -32,7 +32,8 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 469111676c7ac8bdf66f8f42bd26745ce7f88928
+nudge: true
+source-git-commit: 48171a525ad5e5f4b02da89753df6ea7e7ff9926
 workflow-type: tm+mt
 source-wordcount: 4489
 ht-degree: 0%
@@ -455,7 +456,7 @@ mutation {
 
 ### 要求エンティティ作成制限の変更
 
-web サイト、実店舗、実店舗の閲覧数は、以前は50に制限されていました。 必要に応じて、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/home?support-tab=home#support)を送信して、これらの制限を変更できるようになりました。<!-- ACCS-398 -->
+web サイト、実店舗、実店舗の閲覧数は、以前は50に制限されていました。 必要に応じて、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/home?lang=ja&support-tab=home#support)を送信して、これらの制限を変更できるようになりました。<!-- ACCS-398 -->
 
 ### 構造化されたエラーコードを使用して、ストアフロント認証メッセージをカスタマイズする
 
