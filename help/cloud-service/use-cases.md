@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 autotag-review: '2026-06-18T16:06:00.993Z'
 TQID: 'https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ'
 product_v2:
@@ -220,7 +220,7 @@ ht-degree: 0%
 
 #### 画像を[!DNL Commerce AEM Assets]に追加
 
-1. [!DNL AEM as a Cloud Service]の[&#x200B; ナビゲーションパネル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)から、[!UICONTROL **Assets**] > [!UICONTROL **ファイル**] > [!UICONTROL **Commerce**]&#x200B;を選択し、前のセクションで作成したアセットをクリックします。
+1. [!DNL AEM as a Cloud Service]の[&#x200B; ナビゲーションパネル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)から、[!UICONTROL **Assets**] > [!UICONTROL **ファイル**] > [!UICONTROL **Commerce**]&#x200B;を選択し、前のセクションで作成したアセットをクリックします。
 
    ![商品画像](./assets/commerce-folder.png){width="600" zoomable="yes"}を含む[!DNL AEM Assets]のCommerce フォルダー
 
@@ -270,7 +270,7 @@ ht-degree: 0%
 
 ### テキストを生成
 
-1. [&#x200B; ユニバーサルエディター](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)を使用してストアフロントサイトを開きます。
+1. [&#x200B; ユニバーサルエディター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)を使用してストアフロントサイトを開きます。
 
 1. 編集するテキストブロックを選択します。
 
@@ -284,7 +284,7 @@ ht-degree: 0%
 
 ### コンテンツと画像の生成
 
-1. [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)を開く
+1. [[!DNL Generate Variations]](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)を開く
 
 1. 「[!UICONTROL **ヒーローバナー**]」テンプレートを選択します。
 
