@@ -6,9 +6,11 @@ role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
-TQID: 'https://experienceleague.adobe.com/RWF0BsS24AJtkoPNxRtvTNyM971IBEEt-NTbPT5Nub8'
+autotag-review: '2026-06-18T16:02:31.185Z'
+TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
@@ -34,8 +36,7 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+source-git-commit: 55eeb27812ce67a1b26705864ec969b826580452
 workflow-type: tm+mt
 source-wordcount: 1444
 ht-degree: 0%
@@ -91,11 +92,11 @@ ht-degree: 0%
 
 この図は、[!DNL Adobe Commerce as a Cloud Service]とすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
-[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![&#x200B; データフロー図](./assets/data-flow.svg){zoomable="yes"}
+[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![&#x200B; データフロー図](./assets/data-flow.png){zoomable="yes"}
 
 ## Commerce ストアフロント
 
-[!DNL Edge Delivery Services]によって強化されたAdobeの[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=ja)を使用して、シンプルなドキュメントベースのオーサリングまたは[!DNL Storefront Builder]によるビジュアル編集で、リッチなエクスペリエンスを数分で作成できます。
+[!DNL Edge Delivery Services]によって強化されたAdobeの[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront)を使用して、シンプルなドキュメントベースのオーサリングまたは[!DNL Storefront Builder]によるビジュアル編集で、リッチなエクスペリエンスを数分で作成できます。
 
 [!DNL Commerce Storefront]は、GraphQL API レイヤーを介してすべてのマーチャンダイジングサービスとデータを提供する分離型アーキテクチャを備えた完全ヘッドレスです。 このアーキテクチャにより、Commerce Foundationから独立してフロントエンドを開発することができ、新しいテクノロジーを使用して新しいタッチポイントを迅速に構築し、テストすることができます。
 

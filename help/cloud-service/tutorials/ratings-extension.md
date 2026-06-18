@@ -7,24 +7,22 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-TQID: 'https://experienceleague.adobe.com/vqVQg6XUHNyrNMh5vJR13SgswBMj9eFXMQ7Cow-FLHU'
+autotag-review: '2026-06-18T16:24:27.547Z'
+TQID: 'https://experienceleague.adobe.com/FozTiUWpL6Ab2eqbbf3nhL-faFHdwBIFOgAkvGe5jXQ'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-  - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 1738
 ht-degree: 0%
@@ -320,7 +318,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
    開発環境とブラウザーに次の変更が表示されます。
 
    * 製品評価コンポーネントが自動的に作成されます。
-   * コンポーネントは、選択したアーキテクチャに応じて、[&#x200B; ドロップインスロット &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=ja)またはスタンドアロンブロックとしてPDPに統合されます。
+   * コンポーネントは、選択したアーキテクチャに応じて、[&#x200B; ドロップインスロット &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots)またはスタンドアロンブロックとしてPDPに統合されます。
    * 星は、APIの評定値に基づいて適切な塗りつぶしの縦横比で表示されます。
 
    ![製品タイトルの下に統合された星評価を表示する製品詳細ページ &#x200B;](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
