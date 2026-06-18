@@ -4,18 +4,15 @@ description: App Builder、チェックアウトスターターキット、AI支
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
+autotag-review: '2026-06-18T16:22:26.484Z'
 TQID: 'https://experienceleague.adobe.com/vU71zRP-KEPdrmTW-M1mwkv-FFa0oHOcUJcG4afFo2s'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 1893
 ht-degree: 0%
@@ -24,7 +21,7 @@ ht-degree: 0%
 
 # 出荷方法の拡張機能チュートリアル
 
-このチュートリアルでは、[!DNL Adobe App Builder]、[&#x200B; チェックアウトスターターキット &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"}およびAI支援の開発ツールを使用して、[!DNL Adobe Commerce as a Cloud Service]の配送方法の拡張機能を構築する方法について説明します。
+このチュートリアルでは、[!DNL Adobe App Builder]、[ チェックアウトスターターキット ](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"}およびAI支援の開発ツールを使用して、[!DNL Adobe Commerce as a Cloud Service]の配送方法の拡張機能を構築する方法について説明します。
 
 この拡張機能は、チェックアウト時に設定可能な配送方法を追加し、料金が外部モック配送料サービスから発生します。 マーチャントは、Admin UIでサービス URL、API キー、およびウェアハウス（送信元）アドレスを設定し、チェックアウト時に、拡張機能がそのサービスからの料金をリクエストし、返されたオプションを顧客に表示します。
 
@@ -54,7 +51,7 @@ bash --version
 
 [前提条件](./tutorial-prerequisites.md)を完了したら、モック送料APIを作成し、[!DNL Commerce Admin]で拡張機能を設定する際にサービス URLとAPI キーを準備します。 拡張機能が外部送料APIを呼び出します。 このチュートリアルでは、モック APIを使用して、実際のキャリア アカウントなしでフローを実行できるようにします。 [Pipedream](https://pipedream.com)を使用してモック APIを作成します（無料アカウントが必要です）。 モック APIは、一般的な実際の配送料APIと同様のリクエスト/レスポンス契約を使用するため、この拡張機能を後で実際のプロバイダーに接続するのは簡単です。
 
-モック APIを作成するには、[&#x200B; モックレート API仕様ファイル &#x200B;](../assets/mock-rates-api-spec.zip)をダウンロードして開き、`.md` ファイルをプロジェクトに追加します（例：`docs/mock-rates-api-spec.md`）。
+モック APIを作成するには、[ モックレート API仕様ファイル ](../assets/mock-rates-api-spec.zip)をダウンロードして開き、`.md` ファイルをプロジェクトに追加します（例：`docs/mock-rates-api-spec.md`）。
 
 **時間：** モック APIの作成には約&#x200B;**5 ～ 10分**&#x200B;かかる必要があります。
 
@@ -143,7 +140,7 @@ bash --version
 
 ## 拡張機能の開発
 
-このセクションでは、[&#x200B; チェックアウトスターターキット &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"}とAI支援の開発ツールを使用して、[!DNL Adobe Commerce as a Cloud Service]の配送方法の拡張機能を開発する方法について説明します。
+このセクションでは、[ チェックアウトスターターキット ](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"}とAI支援の開発ツールを使用して、[!DNL Adobe Commerce as a Cloud Service]の配送方法の拡張機能を開発する方法について説明します。
 
 1. コーディングエージェントのMCP設定に移動します。 例えば、カーソルで、**[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**&#x200B;に移動します。 エラーなしで`commerce-extensibility` ツールセットが有効になっていることを確認します。 エラーが表示された場合は、ツールセットのオンとオフを切り替えます。
 
@@ -157,9 +154,9 @@ bash --version
 
 1. Cursorのコンテキストにドキュメントが追加されている場合は、そのドキュメントを無効にします。 [!UICONTROL **Cursor**] > [!UICONTROL **Settings**] > [!UICONTROL **Cursor Settings**] > [!UICONTROL **Indexing &amp; Docs**]&#x200B;に移動し、リストされているドキュメントをすべて削除します。
 
-   ![&#x200B; カーソルのインデックス作成とドキュメントの設定（ドキュメント リストが空） &#x200B;](../assets/disable-documentation.png){width="600" zoomable="yes"}
+   ![ カーソルのインデックス作成とドキュメントの設定（ドキュメント リストが空） ](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
-1. エージェントにモックレート API仕様へのアクセス権を付与して、クライアントを正しく実装できるようにします。 まだ実行していない場合は、[&#x200B; モックレート API仕様ファイル &#x200B;](../assets/mock-rates-api-spec.zip)をダウンロードして開き、`.md` ファイルをプロジェクト （例：`docs/mock-rates-api-spec.md`）に追加してから、プロンプトでそのファイルを参照してください。
+1. エージェントにモックレート API仕様へのアクセス権を付与して、クライアントを正しく実装できるようにします。 まだ実行していない場合は、[ モックレート API仕様ファイル ](../assets/mock-rates-api-spec.zip)をダウンロードして開き、`.md` ファイルをプロジェクト （例：`docs/mock-rates-api-spec.md`）に追加してから、プロンプトでそのファイルを参照してください。
 
 1. 配送方法の拡張機能を生成：
 
@@ -183,7 +180,7 @@ bash --version
    >
    >担当者がドキュメントの検索をリクエストした場合は、許可します。
 
-   ![配送拡張機能プロンプトが入力されたエージェント モードのカーソル チャット ウィンドウ &#x200B;](../assets/enter-prompt-shipping.png){width="600" zoomable="yes"}
+   ![配送拡張機能プロンプトが入力されたエージェント モードのカーソル チャット ウィンドウ ](../assets/enter-prompt-shipping.png){width="600" zoomable="yes"}
 
 1. 担当者の質問に正確に答えて、最適なコードを生成できます。 使用するキットまたはテンプレートが必要な場合は、担当者が配送ドメインとAdmin UI SDK拡張機能を使用して[checkout starter kit](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"}に転送し、配送Webhookとマーチャント設定画面の両方を実装します。
 
@@ -219,7 +216,7 @@ Proceed with Phase 5 cleanup.
 
 エージェントはクリーンアップレポートを生成し、未使用のアクション、設定、スクリプトを削除し、プロジェクトを更新します。 デプロイする前に、この手順を完了してください。
 
-![削除されたコンポーネントと保持されたコンポーネントを示すAI エージェント フェーズ 5 クリーンアップ レポート &#x200B;](../assets/cleanup-report-shipping.png){width="600" zoomable="yes"}
+![削除されたコンポーネントと保持されたコンポーネントを示すAI エージェント フェーズ 5 クリーンアップ レポート ](../assets/cleanup-report-shipping.png){width="600" zoomable="yes"}
 
 ### 拡張機能のデプロイ
 
@@ -235,7 +232,7 @@ Proceed with Phase 5 cleanup.
 
 1. 評価結果に確信がある場合は、展開を続行するようにエージェントに指示します。 エージェントはMCP ツールキットを使用して、検証、ビルド、デプロイを自動的に行います。
 
-   ![&#x200B; デプロイ済みのパッケージと、出荷拡張機能のWebhook URLを含むMCP ツールキットのデプロイメント出力](../assets/deployment-process-shipping.png){width="600" zoomable="yes"}
+   ![ デプロイ済みのパッケージと、出荷拡張機能のWebhook URLを含むMCP ツールキットのデプロイメント出力](../assets/deployment-process-shipping.png){width="600" zoomable="yes"}
 
 ### 導入後
 
@@ -258,7 +255,7 @@ Proceed with Phase 5 cleanup.
       - **URL:**&#x200B;は、デプロイされた&#x200B;**shipping-methods** web アクション URL （デプロイ出力または[!DNL Adobe Developer Console]から）です。
       - **必須：** **オプション** – これにより、外部APIが料金を返さない場合でも、チェックアウトを引き続き機能させることができます。
 
-   ![&#x200B; モック発送率のCommerce管理者Webhook設定](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
+   ![ モック発送率のCommerce管理者Webhook設定](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
 
 1. **拡張機能[!DNL Admin UI SDK]を設定：**
 
@@ -279,11 +276,11 @@ Proceed with Phase 5 cleanup.
       - **倉庫（出荷元）住所：**&#x200B;名、電話、通り、都市、州、郵便番号、国。
    - **保存**&#x200B;をクリックします。 設定はランタイム状態に保存され、shipping-methods アクションで使用されます。
 
-   ![&#x200B; サービス URL、API キー、倉庫アドレスを含むモック出荷設定フォーム &#x200B;](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}
+   ![ サービス URL、API キー、倉庫アドレスを含むモック出荷設定フォーム ](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}
 
 1. **チェックアウト時に確認：**&#x200B;商品をカートに追加し、チェックアウトに移動して、配送先住所を入力します。 **Mock Standard**&#x200B;や&#x200B;**Mock Express**&#x200B;などの模擬発送オプションが表示されます。
 
-   ![外部レート APIからのモック出荷オプションを表示するチェックアウトページ &#x200B;](../assets/checkout-mock-shipping.png){width="600" zoomable="yes"}
+   ![外部レート APIからのモック出荷オプションを表示するチェックアウトページ ](../assets/checkout-mock-shipping.png){width="600" zoomable="yes"}
 
 ### トラブルシューティング
 
