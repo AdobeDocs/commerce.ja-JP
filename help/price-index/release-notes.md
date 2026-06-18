@@ -10,9 +10,9 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d5e10c1b3014d2b74c323d6a34e5f73a97d494ce
 workflow-type: tm+mt
-source-wordcount: 193
+source-wordcount: 218
 ht-degree: 0%
 
 ---
@@ -33,6 +33,12 @@ ht-degree: 0%
 >[Catalog Adapter拡張機能](catalog-adapter.md)は、Adobe Commerce価格インデックス作成を無効にします。 インストール済みの場合は、composerを使用してシステムにインストールされているバージョンを確認できます。 場合によっては、システムのカタログアダプタ拡張機能をアップグレードして、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップする場合があります。
 
 ## 現在のメジャーバージョン
+
+## 1.0.11 リリース
+
+_2026年6月18日_
+
+![修正](../assets/fix.svg) **PHP 8.5との互換性** - Adobe Commerce Catalog Adapterは、Adobe Commerce バージョン 2.4.9以降との互換性のためにPHP 8.5をサポートするようになりました。<!--MDEE-1368-->
 
 ## 1.0.10 リリース
 
