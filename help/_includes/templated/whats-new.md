@@ -1,7 +1,7 @@
 ---
-source-git-commit: 71c8c06fbc4e8717d02b1da3001985f7203a8adf
+source-git-commit: 7a4031966113a9131b85a7d0bfc4a3add606d2f7
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1690'
 ht-degree: 1%
 
 ---
@@ -445,28 +445,6 @@ ht-degree: 1%
         メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/eb10bd0ff636f70360e1ca35e51b6643ad1f70d4">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月20日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>SaaS データの書き出しと同期の監視場所（<a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">Data Management ダッシュボード </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status"> データフィードの同期ステータス </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/data-sync">Commerce Optimizer Data Sync</a>）を明確にしました。</p>
-</td>
-      <td>
-        フィードバック、テクニカル
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fcb9d4ae76bf0336fbad0dbff6518ed661d5b23b">コミット</a></td>
     </tr>
   </tbody>
 </table>
