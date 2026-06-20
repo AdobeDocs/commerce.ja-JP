@@ -326,7 +326,7 @@ Manages custom shipping rate calculations based on customer account tier and ord
       - [チェックアウトスターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - ストアフロント開発
    - [概要](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
-   - [ストアフロント AI スキル](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
+   - [ストアフロント AI スキル](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=ja)
 
 >[!TIP]
 >

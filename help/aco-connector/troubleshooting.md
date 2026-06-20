@@ -68,4 +68,4 @@ Commerce Adminで&#x200B;**[!UICONTROL Data Feed Sync Status]**&#x200B;を開く
 
 ## [!DNL SaaS Data Export]診断
 
-ログの場所とフィード再同期コマンドを含む下位レベルの[!DNL SaaS Data Export]診断については、[[!DNL SaaS Data Export]  トラブルシューティングガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}を参照してください。
+ログの場所とフィード再同期コマンドを含む下位レベルの[!DNL SaaS Data Export]診断については、[[!DNL SaaS Data Export]  トラブルシューティングガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}を参照してください。

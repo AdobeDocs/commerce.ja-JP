@@ -96,7 +96,7 @@ ht-degree: 0%
 
 ## Commerce ストアフロント
 
-[!DNL Edge Delivery Services]によって強化されたAdobeの[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront)を使用して、シンプルなドキュメントベースのオーサリングまたは[!DNL Storefront Builder]によるビジュアル編集で、リッチなエクスペリエンスを数分で作成できます。
+[!DNL Edge Delivery Services]によって強化されたAdobeの[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=ja)を使用して、シンプルなドキュメントベースのオーサリングまたは[!DNL Storefront Builder]によるビジュアル編集で、リッチなエクスペリエンスを数分で作成できます。
 
 [!DNL Commerce Storefront]は、GraphQL API レイヤーを介してすべてのマーチャンダイジングサービスとデータを提供する分離型アーキテクチャを備えた完全ヘッドレスです。 このアーキテクチャにより、Commerce Foundationから独立してフロントエンドを開発することができ、新しいテクノロジーを使用して新しいタッチポイントを迅速に構築し、テストすることができます。
 
