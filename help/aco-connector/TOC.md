@@ -5,10 +5,10 @@ user-guide-description: このガイドでは、 [!DNL Adobe Commerce Optimizer 
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
 nudge: false
-source-git-commit: 83218416c513412f2ff6328aa8a23e915cbb8750
+source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 6%
+source-wordcount: '69'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,8 @@ ht-degree: 6%
    - [シナリオのトラブルシューティング](troubleshooting/troubleshooting-scenarios.md)
 - 参照 {#reference}
    - [コネクタモジュールとフィードエンドポイント](reference/connector-reference.md)
+   - [フィードテーブルスキーマ参照](reference/feed-table-reference.md)
    - [コネクタフィードのフィールドマッピング](reference/field-mapping.md)
    - [データ量と同期時間の推定](reference/estimate-data-volume-sync-time.md)
 - [リリースノート](release-notes.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
