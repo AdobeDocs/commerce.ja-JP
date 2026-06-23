@@ -29,4 +29,4 @@ ht-degree: 5%
    - [コネクタフィードのフィールドマッピング](reference/field-mapping.md)
    - [データ量と同期時間の推定](reference/estimate-data-volume-sync-time.md)
 - [リリースノート](release-notes.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
