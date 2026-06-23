@@ -4,11 +4,20 @@ description: ' [!DNL Catalog Service] にアクセスし、フロントエンド
 role: Admin, Developer
 exl-id: ee178e67-519d-4283-8de8-2634ae1f347a
 TQID: https://experienceleague.adobe.com/KBdWesEoKJu-qWsY-Ny1Om-msUkyUPfUTQWftEqSg1g
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
 source-wordcount: 437
@@ -50,13 +59,13 @@ https://<region>-<environment>.api.commerce.adobe.com/<tenantId>/graphql
 - `<environment>`は、`sandbox`などの環境タイプです。 環境が実稼動環境の場合、この値は省略されます。
 - `<tenantId>`は、Adobe Experience Cloud内の組織の特定のインスタンスの一意のIDです。
 
-カタログサービス GraphQL APIの使用について詳しくは、*Adobe Commerce Developer* ドキュメントの[Adobe Commerce向けカタログサービス ガイド ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)を参照してください。
+カタログサービス GraphQL APIの使用について詳しくは、*Adobe Commerce Developer* ドキュメントの[Adobe Commerce向けカタログサービス ガイド &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)を参照してください。
 
 ## ヘッドレスストアフロントやサードパーティサービスとの統合
 
 ヘッドレスストアフロントと統合するには、ストアフロントと[!DNL Catalog Service]間の通信を有効にして製品およびカテゴリーデータを取得できるように、ストアフロント設定を更新する必要があります。
 
-Edge Delivery ServicesでAdobe Commerce ストアフロントを使用している場合は、カタログサービスエンドポイントをストアフロント設定に追加します。 詳しくは、[Edge Delivery Services ドキュメント ](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration)を参照してください。
+Edge Delivery ServicesでAdobe Commerce ストアフロントを使用している場合は、カタログサービスエンドポイントをストアフロント設定に追加します。 詳しくは、[Edge Delivery Services ドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration)を参照してください。
 
 その他の統合については、サービスとバックエンドのデータソース間の統合を設定する方法について詳しくは、プロジェクト設定ドキュメントを参照してください。
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
    **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**&#x200B;に移動します。
 
-   ![ フィード項目のステータスがレポートされるデータフィードの同期ステータス ページ ](/help/data-export/assets/data-feed-sync-status.png){width="800" zoomable="yes"}
+   ![&#x200B; フィード項目のステータスがレポートされるデータフィードの同期ステータス ページ &#x200B;](/help/data-export/assets/data-feed-sync-status.png){width="800" zoomable="yes"}
 
    同期を実行すると、フィード データに正常に送信されたレコードが表示されます。 フィードを選択して、詳細を表示したり、同期の問題をトラブルシューティングしたりします。
 
@@ -23,11 +23,11 @@ ht-degree: 0%
 
    Commerce管理者から、**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**&#x200B;に移動します。
 
-   ![接続されたCommerce サービスに同期されたカタログ データを表示するData Management ダッシュボード ](/help/data-export/assets/data-management-dashboard.png){width="700" zoomable="yes"}
+   ![接続されたCommerce サービスに同期されたカタログ データを表示するData Management ダッシュボード &#x200B;](/help/data-export/assets/data-management-dashboard.png){width="700" zoomable="yes"}
 
    予想される商品、価格、属性が表示されることを確認します。
 
 >[!TIP]
 >
->データ同期に関する追加の問題がある場合は、[ ログの確認とトラブルシューティング ](/help/data-export/troubleshooting/logging.md)を参照してください。
+>データ同期に関する追加の問題がある場合は、[&#x200B; ログの確認とトラブルシューティング &#x200B;](/help/data-export/troubleshooting/logging.md)を参照してください。
 
