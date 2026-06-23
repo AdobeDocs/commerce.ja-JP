@@ -25,9 +25,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 2883
+source-wordcount: 2842
 ht-degree: 0%
 
 ---
@@ -235,21 +235,19 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 同期の進行状況を監視
 
-同期の進行状況を監視するには、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)を使用します。 このダッシュボードは、ストアフロント上の商品データの可用性に関する貴重なインサイトを提供し、顧客に迅速に表示できるようにします。
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-![&#x200B; データ管理ダッシュボード &#x200B;](assets/data-management-dashboard.png)
+{{install-data-sync-feed-status}}
 
-[Commerce CLI](../data-export/data-export-cli-commands.md)と[data export extension logs](../data-export/troubleshooting/logging.md)を使用して、同期コマンドを実行し、同期プロセスをトラブルシューティングすることもできます。
-
-#### 今後の製品アップデート
+### 今後の製品アップデート
 
 初期同期後、ストアフロント検索で製品の増分更新が利用可能になるまでに、最大15分かかることがあります。 詳しくは、インデックス作成ドキュメントの「[製品アップデートのストリーミング &#x200B;](indexing.md)」を参照してください。
 
 ## &#x200B;4. データがエクスポートされたことを確認します {#verify}
 
-カタログデータがAdobe Commerceから書き出され、[!DNL Live Search]と同期されているかどうかを確認するには、いくつかのオプションがあります。
+データフィードの同期ステータス ページとData Management ダッシュボードを使用するだけでなく、データベース内で直接Adobe Commerceから書き出されたカタログデータを確認し、[!DNL Live Search] GraphQL ワークスペースを使用してデータが[!DNL Live Search]に正常に同期されたことを確認できます。
 
-- 次の表のエントリを探します。
+- データベースから、SQL クエリを使用して次のテーブルのエントリを検索します。
 
    - `cde_products_feed`
    - `cde_product_attributes_feed`

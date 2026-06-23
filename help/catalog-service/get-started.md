@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: 437
 ht-degree: 0%
 
 ---
@@ -81,12 +81,8 @@ Adobe Developer App Builder向け[API Mesh](https://developer.adobe.com/graphql-
 
 ## データ書き出しの監視とトラブルシューティング
 
-Commerce管理者は、Commerceから接続されたサービスへのデータ書き出しを監視およびトラブルシューティングするためのツールを提供します。
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-- **[Data Management Dashboard](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** - [!DNL Catalog Service]とAdobe Commerce インスタンス間のデータ同期を監視します。 ダッシュボードには、全体的な同期ステータスが表示され、同期済みのすべての製品が一覧表示されます。
+必要に応じて手動でフィードを再同期するには、[Commerce CLI](../data-export/data-export-cli-commands.md)を使用します。 再同期オプションとその他のトラブルシューティング手順については、_SaaS データ書き出しガイド_&#x200B;の[同期の管理](../data-export/data-sync-manage.md)を参照してください。
 
-- **[データフィードの同期ステータス ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** – すべてのデータフィードの書き出しステータスを追跡して、データの一貫性を確保します。 このページでは、書き出しプロセス中に発生した問題を警告し、迅速に解決できるようにします。 「Success」ステータスは、データが書き出され、データの同期プロセスが完了すると、接続されたCommerce サービスで使用可能であることを示します。
-
->[!NOTE]
->
->Data Feed Sync Status ページがCommerce Admin for Commerce on Cloudまたはオンプレミスのデプロイメントで使用できない場合は、[拡張機能のインストール手順](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)に従って有効にします。
+{{install-data-sync-feed-status}}

@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: e7d9c056ef8d565b4a143b05ff4e06d607fbfa8e
 workflow-type: tm+mt
-source-wordcount: 652
+source-wordcount: 544
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 Adobe Commerce オンクラウド、オンプレミス、またはAdobe Commerce as a Cloud Service デプロイメントの場合は、次のCommerce管理者リソースから同期プロセスを表示および管理します。
 
-- **[データフィードの同期ステータス ページ](../optimizer/setup/data-sync.md)** - [!DNL Live Search]、[!DNL Product Recommendations]または[!DNL Catalog Service]に接続されたデプロイメントのフィード書き出しステータスを確認します。 このダッシュボードには、各フィードのフィード書き出しステータス（発生したエラーを含む）が表示されます。 詳細ビューには、個々のフィード項目のフィード書き出しステータスが表示されます。
+- **[データフィードの同期ステータス ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** - [!DNL Live Search]、[!DNL Product Recommendations]または[!DNL Catalog Service]に接続されたデプロイメントのフィード書き出しステータスを確認します。 このダッシュボードには、各フィードのフィード書き出しステータス（発生したエラーを含む）が表示されます。 詳細ビューには、個々のフィード項目のフィード書き出しステータスが表示されます。
 
 - **[Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)**：管理者ユーザーは、正常にエクスポートされ、接続されたCommerce サービスに同期されたデータを表示および追跡できます。 このダッシュボードには、Commerce Servicesに同期された商品データが表示されます。
 
@@ -46,7 +46,7 @@ Adobe Commerce オンクラウド、オンプレミス、またはAdobe Commerce
 
 [!DNL Commerce Optimizer]と統合されたCommerce オンクラウドまたはオンプレミスのデプロイメントの場合、次のリソースを使用して同期プロセスを表示および管理します。
 
-- **[データフィード同期のステータス ページ](../optimizer/setup/data-sync.md)**-[!DNL Commerce Optimizer]を使用するCommerce プロジェクトの場合、[!DNL Commerce Optimizer]のデータフィード同期のステータス ページで、ストアフロントのカタログデータの可用性を確認します。 このダッシュボードには、データ書き出しフィードの同期ステータスが表示されます。
+- **[データフィードの同期ステータス ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** - Commerce管理者からのコネクタフィードの書き出しステータスを監視します。 このページは、フィードごとのエラーとアイテムごとのエラーの詳細を含め、[!DNL Adobe Commerce]からカタログデータが正常にエクスポートされたかどうかを示します。
 
 - **[データ同期ページ](../optimizer/setup/data-sync.md)** - データ同期ページには、アップストリーム カタログ ソースから[!DNL Commerce Optimizer]に送信される製品データの同期ステータスの概要が表示されます。
 
@@ -56,29 +56,8 @@ Adobe Commerce オンクラウド、オンプレミス、またはAdobe Commerce
 
 ## データ同期が機能していることを確認します {#verify-that-the-data-sync-is-working}
 
-データの同期が機能していることを確認するには、[!DNL Adobe Commerce]から正常に書き出され、接続されているCommerce サービスにデータが正常に配信されたことを確認します。 デプロイメントにダッシュボードを使用して、両方の手順を確認します。
 
-エクスポートから開始し、配信を確認します。
-
-1. Commerce Adminで同期ステータスを確認します。
-
-   **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**&#x200B;に移動します。
-
-   ![&#x200B; フィード項目のステータスがレポートされるデータフィードの同期ステータス ページ &#x200B;](./assets/data-feed-sync-status.png){width="800" zoomable="yes"}
-
-   同期を実行すると、フィード データに正常に送信されたレコードが表示されます。 フィードを選択して、詳細を表示したり、同期の問題をトラブルシューティングしたりします。
-
-1. データが接続されたCommerce サービスに配信されたことを確認します。
-
-   Commerce管理者から、**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**&#x200B;に移動します。
-
-   ![接続されたCommerce サービスに同期されたカタログ データを表示するData Management ダッシュボード &#x200B;](./assets/data-management-dashboard.png){width="700" zoomable="yes"}
-
-   予想される商品、価格、属性が表示されることを確認します。
-
->[!TIP]
->
->データ同期に問題がある場合は、[&#x200B; ログの確認とトラブルシューティング &#x200B;](troubleshooting/logging.md)を参照してください。
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
 ## データを手動で再同期
 
@@ -100,5 +79,3 @@ Adobe Commerce オンクラウド、オンプレミス、またはAdobe Commerce
 > - [Commerce CLI](data-export-cli-commands.md)を使用してフィードを同期する – ターゲットフィードの再同期には`saas:resync` コマンドを使用します。
 > - [&#x200B; ログを確認し、トラブルシューティング &#x200B;](troubleshooting/logging.md) — データ書き出しとSaaS書き出しのエラーを診断します。
 > - [同期を [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md)に管理 – カタログデータの同期を確認し、コネクタのフィードを手動で再同期します。
-
-

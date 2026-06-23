@@ -15,9 +15,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 029d78d5c87bf75ccc26b8af462081f8e08d1176
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 475
 ht-degree: 0%
 
 ---
@@ -71,7 +71,17 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-### カスタム商品タイプの価格
+## 同期の進行状況を監視
+
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+必要に応じて手動でフィードを再同期するには、[Commerce CLI](../data-export/data-export-cli-commands.md)を使用します。 再同期オプションとその他のトラブルシューティング手順については、_SaaS データ書き出しガイド_&#x200B;の[同期の管理](../data-export/data-sync-manage.md)を参照してください。
+
+>[!NOTE]
+>
+>Data Feed Sync Status ページがCommerce Admin for Commerce on Cloudまたはオンプレミスのデプロイメントで使用できない場合は、[拡張機能のインストール手順](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)に従って有効にします。
+
+## カスタム商品タイプの価格
 
 価格計算は、基本価格、特別価格、グループ価格、カタログルール価格などのカスタム製品タイプでサポートされています。
 
@@ -102,7 +112,7 @@ bin/magento saas:resync --feed=prices
        */
        public function afterGet(ProductPrice $subject, array $result, array $values) : array
        {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
+           // Override the output $result with your data for the corresponding products (see original method for details)
            return $result;
        }
    }

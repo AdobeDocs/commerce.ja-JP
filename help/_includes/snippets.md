@@ -1,11 +1,17 @@
 ---
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
 # Commerce スニペット
+
+## データフィード同期ステータス拡張機能のインストールノート {#install-data-sync-feed-status}
+
+>[!NOTE]
+>
+>Data Feed Sync Status ページがCommerce Admin for Commerce on Cloudまたはオンプレミスのデプロイメントで使用できない場合は、[拡張機能のインストール手順](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"}に従って有効にします。
 
 
 ## Adobe Commerce Optimizerとの連携 {#aco-integration-environment-alignment}
@@ -25,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->カタログデータをAdobe Commerce Optimizerに書き出すために[Adobe Commerce Optimizer Connector](../aco-connector/overview.md)をインストールした場合は、Commerce Optimizer Studioの[Data Feed Sync Status page](../optimizer/setup/data-sync.md)を使用して、Data Management ダッシュボードではなくAdobe Commerce Optimizerに正常に同期されたデータを確認します。
+>[[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md)を使用してカタログデータを[!DNL Adobe Commerce Optimizer]に書き出すデプロイメントの場合、[Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)ではなく、Commerce管理者の[&#x200B; データフィード同期ステータス ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)と[!DNL Adobe Commerce Optimizer Studio]の[&#x200B; データ同期ページ &#x200B;](../optimizer/setup/data-sync.md)を使用して、カタログデータの同期を確認します。
 
 ## API更新のためのAdobe Commerce Optimizer ドロップインノート {#aco-api-updates-and-dropins}
 

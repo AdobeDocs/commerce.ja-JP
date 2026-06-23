@@ -14,7 +14,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: c7633056caec2fcec318f8ebcc9664cfc7b3b9b4
 workflow-type: tm+mt
 source-wordcount: 484
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 **データ同期** ページには、次のフィールドが含まれています。
 
 | フィールド | 説明 |
-|--- |--- |
+| --- | --- |
 | カタログソース | 同期データの特定のロケール。 |
 | [!DNL Catalog Service] | 最新の同期更新、受信した合計製品、検索フィールド、および[!DNL Catalog Service]の同期製品のテーブルを表示します。 |
 | 製品の発見 | 最新の同期更新、受信した合計製品、検索フィールド、および同期済み製品のテーブルを検索用に表示します。 |
@@ -61,12 +61,11 @@ ht-degree: 0%
 >
 >同期を完了するのにかかる時間は、カタログサイズや更新されるデータ量によって異なります。
 
-## データ同期ステータスの監視
+## データ同期が機能していることを確認します
 
-Adobe Commerce Optimizer コネクタを介してAdobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合、Commerce管理者の[&#x200B; データフィード同期ステータス ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)からデータエクスポートプロセスをモニターし、再同期操作を開始できます。
+Adobe Commerce Optimizer コネクタを介してAdobe Commerceをアップストリームデータソースとして使用するプロジェクトの場合、データエクスポートプロセスを監視し、データフィード同期ステータス ページから再同期操作を開始できます。 詳しくは、_Adobe Commerce Optimizer Connector_ ドキュメントの[&#x200B; データ同期が機能していることを確認する](../../aco-connector/data-sync-manage.md#verify-that-the-data-sync-is-working)を参照してください。
 
 ## 関連トピック
 
 - [Adobe Commerce Optimizer Connector](../../aco-connector/overview.md){target="_blank"}
-
 
