@@ -5,10 +5,23 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
 TQID: https://experienceleague.adobe.com/wM71qxvduDr77EW6Y8mSNfBXlqkloC-PGOOBOl-mZQM
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
 workflow-type: tm+mt
 source-wordcount: 907
@@ -24,7 +37,7 @@ SaaS データ書き出しは、データを最新の状態に保つために、
 
 次の図は、SaaS データ書き出しフローを示しています。
 
-Adobe Commerce](assets/data-export-flow.png){width="900" zoomable="yes"}の![SaaS データ書き出し収集と同期フロー
+Adobe Commerce![&#128279;](assets/data-export-flow.png){width="900" zoomable="yes"}のSaaS データ書き出し収集と同期フロー
 
 [!DNL Adobe Commerce]でカタログデータが変更されると、同期はこれらのステージを移動します。
 
@@ -33,16 +46,16 @@ Adobe Commerce](assets/data-export-flow.png){width="900" zoomable="yes"}の![Saa
 1. **データの収集と変換** - フィード スキーマ [`et_schema.xml`](extensibility-and-customizations.md#feed-schema-overview)に登録されているプロバイダーは、フィールド データを収集します。
 1. **ハッシュ重複排除** - フィード項目ごとにコンテンツハッシュが計算されます。 前回の書き出しからハッシュが変更されていない項目はスキップされるので、変更されたデータのみが送信されます。
 1. **HTTP送信** - フィード項目は、認証されたHTTP POST バッチとしてAdobe SaaS フィード取得サービスに送信されます。
-1. **ステータスの永続性** - API応答のステータスが、各項目の[ フィードテーブル ](reference/feed-table-reference.md)に書き戻されます。
+1. **ステータスの永続性** - API応答のステータスが、各項目の[&#x200B; フィードテーブル &#x200B;](reference/feed-table-reference.md)に書き戻されます。
 1. **失敗の再試行** – 書き出しに失敗したアイテムは、スケジュールされたcron ジョブによって自動的に再試行されます。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Optimizer Connector]回のデプロイメントの場合、[!DNL SaaS Data Export]はエンティティの変更の検出とフィード アセンブリを処理します。 その後、コネクタはフィードを[!DNL Catalog Data Ingestion API]形式にマッピングし、[!DNL Adobe Commerce Optimizer]に送信します。 スコープの制御、送信、エラー処理については、[ コネクタ同期パイプライン ](../aco-connector/connector-sync-pipeline.md)を参照してください。
+>[!DNL Adobe Commerce Optimizer Connector]回のデプロイメントの場合、[!DNL SaaS Data Export]はエンティティの変更の検出とフィード アセンブリを処理します。 その後、コネクタはフィードを[!DNL Catalog Data Ingestion API]形式にマッピングし、[!DNL Adobe Commerce Optimizer]に送信します。 スコープの制御、送信、エラー処理については、[&#x200B; コネクタ同期パイプライン &#x200B;](../aco-connector/connector-sync-pipeline.md)を参照してください。
 
 >[!NOTE]
 >
->スムーズなスケジュール設定を実現し、サイト運用の中断を回避するために、Adobeでは、データフィードの同期を開始する前に、データ量と同期時間を見積もることをお勧めします。 この見積もりは、初回の同期や、大量価格の変更などの大規模なカタログ更新を計画する際に重要です。 詳しくは、[ データ同期のデータ量と送信時間の見積もり](estimate-data-volume-sync-time.md)を参照してください
+>スムーズなスケジュール設定を実現し、サイト運用の中断を回避するために、Adobeでは、データフィードの同期を開始する前に、データ量と同期時間を見積もることをお勧めします。 この見積もりは、初回の同期や、大量価格の変更などの大規模なカタログ更新を計画する際に重要です。 詳しくは、[&#x200B; データ同期のデータ量と送信時間の見積もり](estimate-data-volume-sync-time.md)を参照してください
 
 ## 同期モード
 
@@ -111,5 +124,5 @@ Commerce Adminの[[!UICONTROL Data Feed Sync Status]](https://experienceleague.a
 >[!MORELIKETHIS]
 >
 > - [同期を管理](data-sync-manage.md) – 同期ステータスを確認し、フィードを手動で再同期します。
-> - [ フィード テーブル スキーマ ](reference/feed-table-reference.md) – 項目レベルのステータスとエラーの詳細を調べます。
-> - [ データ書き出しのパフォーマンスを向上](customize-export-processing.md) — バッチ サイズとスレッド数を調整します。
+> - [&#x200B; フィード テーブル スキーマ &#x200B;](reference/feed-table-reference.md) – 項目レベルのステータスとエラーの詳細を調べます。
+> - [&#x200B; データ書き出しのパフォーマンスを向上](customize-export-processing.md) — バッチ サイズとスレッド数を調整します。
