@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: e7d9c056ef8d565b4a143b05ff4e06d607fbfa8e
+source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
 workflow-type: tm+mt
-source-wordcount: 544
+source-wordcount: 557
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Adobe Commerce オンクラウド、オンプレミス、またはAdobe Commerce
 | タスク | オプション | メモ |
 | --- | --- | --- |
 | 選択した失敗したフィード項目または問題のあるフィード項目の再同期 | **[!UICONTROL Data Feed Sync Status]ページ** | 選択したフィード項目をCommerce管理者からモニタリングして再同期します。 [&#x200B; データ同期が機能していることを確認してください](#verify-that-the-data-sync-is-working)。 |
-| すべてのフィードの完全再同期 | **[!UICONTROL Data Management Dashboard]** | Commerce管理者から、すべてのフィードの完全な再同期を実行します。Adobeでは、Commerce サービスに初めて接続する場合に主に再同期を推奨します。 [&#x200B; データ同期が機能していることを確認してください](#verify-that-the-data-sync-is-working)。 |
+| すべてのフィードの完全再同期 | **[!UICONTROL Data Management Dashboard]** | Commerce管理者から、すべてのフィードの完全な再同期を実行します。Adobeでは、Commerce サービスに初めて接続する場合に主に再同期を推奨します。 前回の書き出し以降にコンテンツハッシュが変更されていない項目はスキップされます。 [&#x200B; データ同期が機能していることを確認してください](#verify-that-the-data-sync-is-working)。 |
 | 運用管理によるターゲットフィードの再同期 | **Commerce CLI** | ターゲット フィードの再同期には、`saas:resync` コマンドを使用します。 Commerce CLI[&#128279;](data-export-cli-commands.md)を使用したSync フィードの同期を参照してください。 |
 
 >[!MORELIKETHIS]

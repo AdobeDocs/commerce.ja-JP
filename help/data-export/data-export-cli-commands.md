@@ -16,9 +16,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
 workflow-type: tm+mt
-source-wordcount: 670
+source-wordcount: 728
 ht-degree: 0%
 
 ---
@@ -96,6 +96,10 @@ bin/magento saas:resync --help
 >
 >インストールされているモジュールによって、再同期できるフィードが決まります。 例えば、`productOverrides`にはクラウド、オンプレミス、またはCommerce as a Cloud Serviceの[!DNL Adobe Commerce]が必要であり、`orders`には受注モジュールが必要です。
 
+>[!NOTE]
+>
+>`saas:resync` コマンドは、新しい項目、更新された項目、以前に書き出せなかった項目のみを送信します。 前回の書き出し以降にコンテンツハッシュが変更されていない項目はスキップされます。
+
 **例：**
 
 ```shell
@@ -107,6 +111,10 @@ bin/magento saas:resync --feed products
 IDによって特定のエンティティの一部を再同期します。 `products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`および`categoryPermissions` フィードをサポートしています。
 
 デフォルトでは、`--by-ids` オプションを使用する場合、製品SKU値を使用して値を指定します。 代わりに製品IDを使用するには、`--id-type=productId` オプションを追加します。
+
+>[!NOTE]
+>
+>標準の再同期とは異なり、`--by-ids`はハッシュ検証を回避し、最後の書き出し以降にコンテンツが変更されたかどうかに関係なく、指定されたエンティティを接続されたCommerce サービスに強制的に送信します。
 
 **例：**
 

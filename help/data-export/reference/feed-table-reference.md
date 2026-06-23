@@ -17,9 +17,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: c70c1643afbf8e9633df89a613d6798416c8eb44
 workflow-type: tm+mt
-source-wordcount: 416
+source-wordcount: 429
 ht-degree: 0%
 
 ---
@@ -71,25 +71,75 @@ ht-degree: 0%
 
 ## 一般的な診断クエリ
 
-次のSQL クエリを使用して、フィード テーブルの状態を直接検査します。 `cde_products_feed`を調査中のフィードのテーブルに置き換えます。 テーブル名の完全なリストについては、[&#x200B; サポートされているフィード &#x200B;](#supported-feeds)を参照してください。
+次のSQL クエリを使用して、フィード テーブルの状態を直接検査します。 `<SKU>`、`<ATTRIBUTE_CODE>`、`<CATEGORY_ID>`などのプレースホルダー値を、お使いの環境の実際の値に置き換えます。 テーブル名の完全なリストについては、[&#x200B; サポートされているフィード &#x200B;](#supported-feeds)を参照してください。
 
-**正常にエクスポートされなかった項目をすべて検索：**
+**製品フィード — SKU:**
 
 ```sql
-SELECT source_entity_id, status, errors, modified_at
-FROM cde_products_feed
-WHERE status != 200
-ORDER BY modified_at DESC
-LIMIT 50;
+SELECT JSON_EXTRACT(f.feed_data, '$.sku') AS 'SKU',
+       JSON_EXTRACT(f.feed_data, '$.storeViewCode') AS 'store view code',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_products_feed f
+WHERE JSON_EXTRACT(f.feed_data, '$.sku') IN ('<SKU>');
 ```
 
-**すべてのスコープで特定のSKUの書き出しステータスを確認する：**
+**製品属性フィード – 属性コード：**
 
 ```sql
-SELECT p.sku, f.status, f.modified_at, f.is_deleted, f.feed_data, f.errors
-FROM catalog_product_entity p
-LEFT JOIN cde_products_feed f ON f.source_entity_id = p.entity_id
-WHERE p.sku = 'ADB295';
+SELECT JSON_EXTRACT(f.feed_data, '$.attributeCode') AS 'code',
+       JSON_EXTRACT(f.feed_data, '$.storeViewCode') AS 'store view code',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_product_attributes_feed f
+WHERE JSON_EXTRACT(f.feed_data, '$.attributeCode') IN ('<ATTRIBUTE_CODE>');
+```
+
+**価格フィード — SKU:**
+
+```sql
+SELECT JSON_EXTRACT(f.feed_data, '$.sku') AS 'SKU',
+       JSON_EXTRACT(f.feed_data, '$.websiteCode') AS 'website code',
+       JSON_EXTRACT(f.feed_data, '$.customerGroupCode') AS 'customer group code',
+       IFNULL(cg.customer_group_code, '-- (base price)') AS 'AC customer group',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_product_prices_feed f
+LEFT JOIN customer_group cg
+       ON sha1(cg.customer_group_id) = JSON_EXTRACT(f.feed_data, '$.customerGroupCode')
+WHERE JSON_EXTRACT(f.feed_data, '$.sku') IN ('<SKU>');
+```
+
+**製品の上書きフィード — SKU:**
+
+```sql
+SELECT JSON_EXTRACT(f.feed_data, '$.sku') AS 'SKU',
+       JSON_EXTRACT(f.feed_data, '$.websiteCode') AS 'website code',
+       JSON_EXTRACT(f.feed_data, '$.customerGroupCode') AS 'customer group code',
+       IFNULL(cg.customer_group_code, 'NA (deleted)') AS 'AC customer group',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_product_overrides_feed f
+LEFT JOIN customer_group cg
+       ON sha1(cg.customer_group_id) = JSON_EXTRACT(f.feed_data, '$.customerGroupCode')
+WHERE JSON_EXTRACT(f.feed_data, '$.sku') IN ('<SKU>');
+```
+
+**カテゴリフィード – カテゴリ ID:**
+
+```sql
+SELECT JSON_EXTRACT(feed_data, '$.categoryId') AS 'Category ID',
+       JSON_EXTRACT(f.feed_data, '$.storeViewCode') AS 'store view code',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_categories_feed f
+WHERE JSON_EXTRACT(feed_data, '$.categoryId') IN (<CATEGORY_ID>);
+```
+
+**バリエーション フィード – 設定可能な製品SKU:**
+
+```sql
+SELECT JSON_EXTRACT(feed_data, '$.parentSku') AS 'configurable SKU',
+       JSON_EXTRACT(feed_data, '$.productSku') AS 'Variant SKU',
+       JSON_EXTRACT(f.feed_data, '$.optionValues') AS 'options',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_product_variants_feed f
+WHERE JSON_EXTRACT(feed_data, '$.parentSku') = '<SKU>';
 ```
 
 

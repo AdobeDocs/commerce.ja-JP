@@ -20,14 +20,14 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: 301
 ht-degree: 1%
 
 ---
 
-# コネクタモジュールとフィードエンドポイント
+# Adobe Commerce Optimizer Connectorのコネクタモジュールとフィードエンドポイント
 
 このリファレンスには、[!DNL Adobe Commerce Optimizer Connector] モジュールパッケージ、サポートされるフィード API エンドポイント、および`core_config_data`に保存されている設定キーパスが一覧表示されます。 これらのコンポーネントが同期中にどのように連携するかを確認するには、[&#x200B; コネクタ同期パイプライン &#x200B;](../connector-sync-pipeline.md)を参照してください。
 
