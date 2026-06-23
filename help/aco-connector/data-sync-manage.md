@@ -4,7 +4,7 @@ description: カタログデータの同期を検証し、 [!DNL Adobe Commerce]
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -54,5 +54,5 @@ ht-degree: 0%
 > - [&#x200B; データ量と同期時間の見積もり](reference/estimate-data-volume-sync-time.md) – 予想される同期時間の計算
 > - [&#x200B; トラブルシューティング &#x200B;](troubleshooting.md) – 資格情報、同期、スコープ書き出しの問題を診断します
 > - [&#x200B; コネクタ モジュールとフィード エンドポイント &#x200B;](reference/connector-reference.md) — モジュール、API エンドポイント、サポートされているフィードの確認
-> - Commerce Admin[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"}の データフィードの同期ステータス ページ – フィードのステータスをモニタリングするために使用できるフィールドと機能について詳しく説明します
+> - Commerce Admin[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"}の データフィードの同期ステータス ページ – フィードのステータスをモニタリングするために使用できるフィールドと機能について詳しく説明します
 > - [&#x200B; データ同期ダッシュボード in [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"} — カタログデータ同期の監視に使用できるフィールドとアクションに関する参照ドキュメント
