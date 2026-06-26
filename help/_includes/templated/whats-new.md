@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7a4031966113a9131b85a7d0bfc4a3add606d2f7
+source-git-commit: b5e8f023260bd5bfffb76084c175a01cd6a61ff3
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 1%
+source-wordcount: '1783'
+ht-degree: 0%
 
 ---
 # 新しいテンプレート
@@ -10,6 +10,36 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年6月23日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Commerce サービスドキュメント全体でカタログデータの同期の検証ガイダンスを更新しました。 サービスのインストールと設定のトピックで、一貫した2段階のワークフローが使用されるようになりました。つまり、<a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status"> データフィードの同期ステータスのページ </a>で書き出しを確認し、<a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard"> データ管理ダッシュボード </a>で配信を確認します。手順は、<a href="https://experienceleague.adobe.com/ja/docs/commerce/catalog-service/get-started#monitor-and-troubleshoot-data-export"> カタログサービスの開始</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/install#monitor-sync-progress"> ライブサーチのインストール </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/product-recommendations/getting-started/install-configure#monitor-and-troubleshoot-data-synchronization">製品の推奨インストール </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/data-synchronization/data-sync-manage#verify-that-the-data-sync-is-working">SaaS データ書ききき出しガイド </a>で3&rbrace;を更新します。<em></em></p>
+</td>
+      <td>
+        フィードバック
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/82bdfd342d2d745721ed2b35f2dbfd8fa394ab5a">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>新しい<a href="https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/reference/feed-table-reference">Adobe Commerce Optimizer コネクタ フィード テーブル スキーマ参照</a>を追加し、<a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/data-synchronization/sync-overview">SaaS データ書き出し同期</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">手動同期管理</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/reference/data-export-cli-commands">Commerce CLI再同期コマンド </a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/reference/feed-table-reference"> フィード テーブル スキーマ </a> ガイダンスを更新しました。</p>
+</td>
+      <td>
+        メジャーアップデート、新しいトピック
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/601d02435f388096d59ce7f8e2a9e3e7c8bec65b">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年6月17日（PT）
 
@@ -385,66 +415,6 @@ ht-degree: 1%
         フィードバック、メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月27日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adobe Commerce as a Cloud Service用に<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview">observability</a> ページを追加しました。</p>
-</td>
-      <td>
-        フィードバック、新しいトピック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf83f213d1774845c4c99f3b154e9fb3220c3cd1">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>管理者（検索、ステータス、および拡張性パターンフィルター）でアプリケーションを検索する方法と、Adobe Exchangeへのアプリパスを取得する方法を含む<a href="https://experienceleague.adobe.com/ja/docs/commerce/app-management/manage-app/manage-app"> アプリの管理</a>を更新し、<a href="https://experienceleague.adobe.com/ja/docs/commerce/app-management/overview"> アプリ管理の概要</a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce/app-management/install"> アプリ管理のインストールとアクセス </a>のリンクを追加しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/780cef7af3574cd846fd7ee82d7814f2ebe9d6cc">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceの実稼動<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/41035e75111d370e5dc40c17607337ae75f11fa0">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月24日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/eb10bd0ff636f70360e1ca35e51b6643ad1f70d4">コミット</a></td>
     </tr>
   </tbody>
 </table>
