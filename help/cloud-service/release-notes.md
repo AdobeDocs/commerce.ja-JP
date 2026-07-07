@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
 workflow-type: tm+mt
-source-wordcount: 4489
+source-wordcount: 4655
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 >
 >Adobe Commerce オンプレミスまたはAdobe Commerce オンクラウドインフラストラクチャを使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview)を参照してください。
 
-## 2026年6月 – リリース #2 {#latest}
+## 2026年7月 – リリース #1 {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
@@ -64,6 +64,27 @@ ht-degree: 0%
 ### APIを介したカスタムメールテンプレートのリスト
 
 新しい`GET /V1/custom-email/templates` REST API エンドポイントは、各テンプレートのID、コード、件名を含む[&#x200B; カスタムメールテンプレート &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)を返します。 統合は、IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンドポイントで返されたテンプレート IDを使用できます。<!-- CCSAAS-5089 -->
+
+### REST APIを使用したフルオーダーチェーンの管理
+
+>[!IMPORTANT]
+>
+>この機能は実験的な機能であり、Adobe Commerce カスタマーサクセスマネージャーに連絡するか、サポートチケットを作成して有効にする必要があります。
+
+新しい`orderChain`REST API エンドポイントを使用すると、統合はIDを使用して注文を変更し、編集された注文のチェーン全体を自動的に解決できます。
+
+| メソッド | エンドポイント | 説明 |
+| --- | --- | --- |
+| `POST` | `/V1/orderChain/{orderId}/invoice` | 注文の請求書を作成し、注文チェーン全体で請求書に品目を解決します。 |
+| `POST` | `/V1/orderChain/{id}/cancel` | チェーン内の現在の注文をキャンセルします。 |
+| `POST` | `/V1/orderChain/{id}/hold` | 注文を保留にします。 |
+| `POST` | `/V1/orderChain/{id}/unhold` | 注文から保留を削除します。 |
+| `POST` | `/V1/orderChain/{id}/emails` | 注文のメール通知を送信する。 |
+| `POST` | `/V1/orderChain/{id}/comments` | 注文にコメントを追加します。 |
+| `GET` | `/V1/orderChain/{id}/comments` | 注文コメントを取得します。 |
+| `GET` | `/V1/orderChain/{id}/statuses` | 現在の注文ステータスを取得します。 |
+
+請求書、出荷、クレジットメモ、返品のフィルタリングをサポートする`GET` エンドポイントで、`order_original_id`によるフィルタリングがサポートされるようになりました。 `order_original_id`でフィルタリングすると、1つの注文だけでなく、注文チェーン全体に関する詳細が返されます。 この機能をサポートするエンドポイントの例は`GET /V1/invoices`です。<!-- ACCS-1004, ACCS-1005 -->
 
 ### 管理画面での注文変更履歴の表示
 
@@ -84,6 +105,10 @@ ht-degree: 0%
 * 大規模な共有カタログは、管理者での管理が容易になり、読み込み時間が短縮され、タイムアウトの可能性も減りました。<!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
 
 * 設定可能な製品を含む注文の出荷を作成する際に発生した出荷作成エラーを修正しました。<!-- ACCS-1095 -->
+
+* 左側のナビゲーションメニューが消える可能性がある[!DNL Commerce Admin]の問題を修正しました。<!-- ACCS-1035 -->
+
+* 共有カタログでの割り当てと割り当て解除のパフォーマンスが向上しました。<!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
 
 {{accs-release}}
 
