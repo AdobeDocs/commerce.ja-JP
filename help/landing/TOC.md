@@ -6,9 +6,9 @@ role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
-source-git-commit: 3624bb934c25e04ae2f08b0d78ed4602df89d3eb
+source-git-commit: 08581e17d291b1900ff8826a36edeaf97a9c0d3c
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '155'
 ht-degree: 12%
 
 ---
@@ -30,7 +30,6 @@ ht-degree: 12%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=ja)
    - [[!DNL App Management]](https://experienceleague.adobe.com/ja/docs/commerce/app-management/overview)
    - [サービスコネクタ](/help/landing/saas.md)
-   - [&#x200B; [!DNL Adobe Commerce] と [!DNL Adobe LLM Optimizer]の統合](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html?lang=ja)
 - データツール {#data-services}
    - [SaaS データの書き出し](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=ja)
    - [SaaS価格インデックス](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=ja)
