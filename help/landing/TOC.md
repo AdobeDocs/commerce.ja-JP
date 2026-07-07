@@ -18,7 +18,7 @@ ht-degree: 12%
 - [概要](home.md)
 - リリース情報 {#release-information}
    - [リリースノート](/help/landing/release-notes-all.md)
-- {hide-from-toc}[製品ソリューション ](product-solutions.md)
+- {hide-from-toc}[製品ソリューション &#x200B;](product-solutions.md)
 - Commerce services {#commerce-services}
    - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview)
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
