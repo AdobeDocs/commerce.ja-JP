@@ -2,7 +2,7 @@
 title: AEM Assets統合用のIMS ユーザー権限の設定
 description: IMS IDとAdmin Console プロファイルで、AEM Assets配信アクセス、アセットセレクター、自動入力されたCommerce設定フィールドを有効にする方法について説明します。
 feature: CMS, Media, Configuration
-source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%
@@ -82,3 +82,4 @@ IMSを使用しない場合でも、Commerce管理者にプログラム IDと環
 * [&#x200B; アセットの手動選択](../synchronize/asset-selector-integration.md) - カテゴリ画像とページビルダーにアセットセレクターを使用します。
 * [AEM AssetsまたはProduct Visuals](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}にユーザーを追加する – [!DNL Adobe Commerce as a Cloud Service]には、まずCommerceとAEM Cloud Manager（Business Owner, Deployment Manager）にユーザーを追加します。 **AEM Assets DM OpenAPI Users - delivery** プロファイル（またはフォールバックとして&#x200B;**author** プロファイル）は、アセットセレクターと自動入力機能の追加要件です。
 * [AEM配信レイヤーにチームメンバーを割り当てる](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}。 配信アクセスのAEM ドキュメント。
+
