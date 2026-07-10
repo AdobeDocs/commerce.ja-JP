@@ -714,7 +714,7 @@ _2021年11月29日_
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-2473 -->拡張機能のインストール中に[不正なComposer キー](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=ja)を使用すると、ユーザーは[正しい`MAGEID`を使用して](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)認証できません。
 
-![既知の問題](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services]件のレポート [はすぐに同期できません](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)。
+![既知の問題](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services]件のレポート [はすぐに同期できません](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=ja)。
 
-![既知の問題](../assets/bug.svg)<!-- Issue PAY-2475 --> [!DNL Payment Services]の[PayPal サンドボックスアカウント &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)は、オンボーディング中にそのアカウントを作成した場合、確認できません。
+![既知の問題](../assets/bug.svg)<!-- Issue PAY-2475 --> [!DNL Payment Services]の[PayPal サンドボックスアカウント &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=ja)は、オンボーディング中にそのアカウントを作成した場合、確認できません。
 
