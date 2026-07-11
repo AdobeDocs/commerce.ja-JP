@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 4eb33526927e1c5a81612aab0de0ce4bc7746368
 workflow-type: tm+mt
-source-wordcount: 353
+source-wordcount: 366
 ht-degree: 0%
 
 ---
@@ -39,6 +39,12 @@ ht-degree: 0%
 ![既知の問題](../assets/bug.svg)既知の問題
 
 ## 2026 リリース
+
+### 1.0.15 リリース
+
+_2026年7月10日_
+
+![修正](../assets/fix.svg) カテゴリーのフィードに並べ替えサポートを追加しました。<!--MDEE-1409-->
 
 ### 1.0.14 リリース
 
@@ -57,7 +63,7 @@ _2026年6月11日_
 _2026年5月6日_
 
 ![修正](../assets/fix.svg) **構成手順[!DNL Adobe Commerce Optimizer Connector]を改善** - Commerce管理者の[!DNL Adobe Commerce Optimizer]設定ページを&#x200B;_[!DNL Adobe Commerce Optimizer Connector]統合ガイド_にリンクするように更新しました。
-<!--COMOPT-1922-->
+
 
 ![修正](../assets/fix.svg) **[!DNL Adobe Commerce Optimizer Connector]メタデータの機能強化** - [!DNL Adobe Commerce Optimizer Connector]には、インストール済みのバージョンがメタデータヘッダーに含まれるようになりました。 この改善により、トラブルシューティングまたはサポートの取り組み中に使用されているコネクタバージョンをすばやく特定できるようになります。<!--MDEE-1323-->
 

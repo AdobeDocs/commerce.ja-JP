@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff5d3ee7f421c8fee9a40a71ea1de366fd5e6d47
+source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
 workflow-type: tm+mt
-source-wordcount: 2946
+source-wordcount: 3024
 ht-degree: 0%
 
 ---
@@ -593,6 +593,16 @@ API MeshとCore GraphQL APIを使用して、次のことを行います。
 - Adobe Commerce as a Cloud Serviceのお客様の場合、最新バージョンが環境にインストールされます。
 
 - クラウド上またはオンプレミスのAdobe Commerceの場合、Adobeでは、最新リリースのカタログサービスメタパッケージをクラウド環境でアップグレードするためにComposerを使用することをお勧めします。
+
+### v3.5.0 リリース
+
+**リリース日**: 2026年7月10日
+
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+
+![新規](../assets/new.svg) **ステージング済みカテゴリ URL キー同期** - カタログサービス メタパッケージの依存関係を更新して、カタログステージング データ エクスポーターモジュール （`magento/module-catalog-staging-data-exporter`）を含めました。 このモジュールは、ステージングされたカテゴリ `url_key`の変更が適用されたときに製品フィードを再書き出しするので、ステージングされたカタログの変更はSaaS カタログ （カタログサービス、ライブサーチ、製品レコメンデーション）に正しく反映されます。
+
+![新規](../assets/new.svg) カタログサービスとCommerce スタックの互換性を維持するために、依存関係を更新しました。
 
 ### v3.4.0 リリース
 
