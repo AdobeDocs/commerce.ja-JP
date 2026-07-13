@@ -6,10 +6,22 @@ feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
 workflow-type: tm+mt
 source-wordcount: 3256
@@ -25,7 +37,7 @@ ht-degree: 0%
 
 ![新機能](../assets/new.svg)
 ![修正](../assets/fix.svg)修正と機能強化
-![ バグ ](../assets/bug.svg)既知の問題
+![&#x200B; バグ &#x200B;](../assets/bug.svg)既知の問題
 
 >[!NOTE]
 >
@@ -77,7 +89,7 @@ _2026年5月19日_
 
 _2026年5月5日_
 
-![修正](../assets/fix.svg) **書き出しログのトラブルシューティングが簡単** – 多くの書き出し関連のエラーと警告に、一貫したログコードが含まれるようになりました。 これらのコードは、サポートやドキュメントを利用する際の問題を迅速に追跡するのに役立ちます。 詳しくは、[ ログコード参照](troubleshooting/log-codes-reference.md)を参照してください。
+![修正](../assets/fix.svg) **書き出しログのトラブルシューティングが簡単** – 多くの書き出し関連のエラーと警告に、一貫したログコードが含まれるようになりました。 これらのコードは、サポートやドキュメントを利用する際の問題を迅速に追跡するのに役立ちます。 詳しくは、[&#x200B; ログコード参照](troubleshooting/log-codes-reference.md)を参照してください。
 
 ![修正](../assets/fix.svg) **属性オプションラベルが変更された場合の自動再同期** – ストアビューの製品属性オプションラベルを変更すると（複数選択属性を含む）、影響を受ける製品が再び書き出しにキューに入れられるようになり、ライブサーチ、商品レコメンデーション、カタログサービスおよびその他の接続されたCommerce サービスで、更新されたファセットとフィルターラベルが買い物客ビューに表示されるようになりました。 以前は、ラベルのみの編集では、より広範な製品変更で同期がトリガーされるまで、SaaS カタログに古い文言が表示される可能性がありました。
 
@@ -134,7 +146,7 @@ _2026年2月6日_
 
 _2026年2月2日_
 
-![修正](../assets/fix.svg)更新中にアイテムバッチが許可された上限を超える可能性がある問題を修正しました。これにより、[Commerce サービス ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)または[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)にデータを同期する際に`items_limit_exceeded`個のエラーが発生します。<!--MDEE-1264-->
+![修正](../assets/fix.svg)更新中にアイテムバッチが許可された上限を超える可能性がある問題を修正しました。これにより、[Commerce サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)または[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)にデータを同期する際に`items_limit_exceeded`個のエラーが発生します。<!--MDEE-1264-->
 
 ![修正](../assets/fix.svg) バンドル製品オプションの収集時に、失敗した項目を登録するロジックを追加することで、製品データの書き出しの信頼性を向上しました。<!--CCSAAS-4458-->
 
