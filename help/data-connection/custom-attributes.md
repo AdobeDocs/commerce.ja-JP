@@ -5,10 +5,18 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
 TQID: https://experienceleague.adobe.com/L0LoTkKV0LCiO3mj8W1cKyK-A0HO0z32zu1ZSNC9GR4
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: 616
@@ -22,7 +30,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->プロファイルにカスタム ID](custom-identities.md)を[追加する方法について説明します。
+>プロファイルにカスタム ID[&#128279;](custom-identities.md)を追加する方法について説明します。
 
 カスタム属性は、次の2つのレベルでサポートされています。
 
@@ -354,7 +362,7 @@ ComponentRegistrar::register(
 
 新しいカスタム注文属性をExperience Platformの[!DNL Commerce] スキーマで取り込むことができるようにするには、スキーマを拡張してこれらのカスタムフィールドを含める必要があります。
 
-既存のXDM スキーマを拡張してこれらのカスタムフィールドを含める方法については、Experience Platform ドキュメントの「[UIでのスキーマの作成と編集」を参照してください。 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)テナント ID フィールドは動的に生成されますが、フィールド構造はExperience Platform ドキュメントに記載されている例に似ている必要があります。
+既存のXDM スキーマを拡張してこれらのカスタムフィールドを含める方法については、Experience Platform ドキュメントの「[UIでのスキーマの作成と編集」を参照してください。 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)テナント ID フィールドは動的に生成されますが、フィールド構造はExperience Platform ドキュメントに記載されている例に似ている必要があります。
 
 >[!IMPORTANT]
 >
@@ -362,11 +370,11 @@ ComponentRegistrar::register(
 
 `commerce.order`に、注文レベルのフィールドを追加します。
 
-![注文レベル ](assets/order-level.png)
+![注文レベル &#x200B;](assets/order-level.png)
 
 `productListItems`に、注文項目レベルのフィールドを追加します：
 
-![注文品目レベル ](assets/order-item-level.png)
+![注文品目レベル &#x200B;](assets/order-item-level.png)
 
 ## 手順12：データがキャプチャされていることを確認する
 
@@ -377,5 +385,5 @@ ComponentRegistrar::register(
 「**[!UICONTROL Data Customization]**」タブに「`No custom order attributes found.`」というメッセージが表示された場合は、次の点を確認してください。
 
 1. [!DNL Data Connection]拡張機能を有効にするための前提条件が完了しました。 [前提条件](overview.md#prerequisites)を参照してください。
-1. [ カスタム注文属性](#add-custom-attributes-to-orders)を設定しました。
+1. [&#x200B; カスタム注文属性](#add-custom-attributes-to-orders)を設定しました。
 1. 少なくとも1つの注文イベントが生成されました。

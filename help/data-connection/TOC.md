@@ -18,7 +18,7 @@ ht-degree: 1%
 
 - [[!DNL Data Connection]の概要](overview.md)
 - 基本 {#fundamentals}
-   - [ [!DNL Data Connection] 拡張機能のインストール](install.md)
+   - [&#x200B; [!DNL Data Connection] 拡張機能のインストール](install.md)
    - [Commerceデータの種類](data-ingestion.md)
    - [時系列イベントスキーマの更新](update-xdm.md)
    - [プロファイルレコードスキーマの更新](profile-data.md)
