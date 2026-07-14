@@ -89,7 +89,7 @@ ht-degree: 0%
 
 #### オンクラウドのインフラ
 
-Adobe Commerce on Cloud インフラストラクチャで、`.magento.env.yaml`で`ENABLE_EVENTING` グローバル変数を有効にします。 [学習を増やす](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing)。
+Adobe Commerce on Cloud インフラストラクチャで、`.magento.env.yaml`で`ENABLE_EVENTING` グローバル変数を有効にします。 [学習を増やす](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=ja#enable_eventing)。
 
 ```bash
 stage:
@@ -177,4 +177,4 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 ## [!DNL Data Connection]拡張機能のアンインストール {#uninstall}
 
-[!DNL Data Connection]拡張機能をアンインストールするには、[&#x200B; モジュールのアンインストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html)を参照してください。
+[!DNL Data Connection]拡張機能をアンインストールするには、[&#x200B; モジュールのアンインストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=ja)を参照してください。
