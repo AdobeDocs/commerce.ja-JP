@@ -4,24 +4,13 @@ description: Adobe Commerceからの [!DNL Live Search] の最新のリリース
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
 TQID: https://experienceleague.adobe.com/yqNae8Xsc51q4Zn-WXJ3y48cNnzUDTkDncv-RppkIlI
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4377f9dc2b7e4c8f358d00b50187c8cbf091e19e
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 1f5246b6f5853f8b53a356ae2d6d58077b07a9a5
 workflow-type: tm+mt
-source-wordcount: 2168
+source-wordcount: 3314
 ht-degree: 1%
 
 ---
@@ -30,12 +19,11 @@ ht-degree: 1%
 
 これらのリリースノートには、[!DNL Live Search]の最新バージョンが記載されています。
 
-最新リリースのライブサーチ版のサポートが提供されます。古いバージョンのリリースノートは、参照用に提供されています。
-アップデートには以下が含まれます。
+最新リリースのライブサーチ版のサポートが提供されます。 古いバージョンのリリースノートは、参照用に提供されています。アップデートには以下が含まれます。
 
 ![新機能](../assets/new.svg)
 ![修正](../assets/fix.svg)修正と機能強化
-![&#x200B; バグ &#x200B;](../assets/bug.svg)既知の問題
+![ バグ ](../assets/bug.svg)既知の問題
 
 ## ホスト型サービスの更新
 
@@ -43,18 +31,18 @@ ht-degree: 1%
 
 _2026年6月8日_
 
-![新規](../assets/new.svg) [!DNL Live Search]は、[**設定**](./settings.md#semantic-search) ワークスペースから設定可能なセマンティック検索をサポートするようになりました。 キーワード検索とは異なり、セマンティック検索では、AIを利用して意味やコンテキストをもとに商品を照合するため、「冬のハイキングに最適な暖かいもの」などの自然言語のクエリで検索結果がゼロの検索を減らすことができます。 [学習を増やす](./semantic-search.md)。
+![新規](../assets/new.svg) Adobe Commerce バージョン 2.4.4以降を使用しているマーチャントの場合、[!DNL Live Search]は&#x200B;[**Settings**](./settings.md#semantic-search) ワークスペースから設定可能なセマンティック検索をサポートするようになりました。 キーワード検索とは異なり、セマンティック検索では、AIを利用して意味やコンテキストをもとに商品を照合するため、「冬のハイキングに最適な暖かいもの」などの自然言語のクエリで検索結果がゼロの検索を減らすことができます。 [学習を増やす](./semantic-search.md)。
 
 **セットアップ**:1つの切り替えで有効にします。 属性設定やストアフロントの変更は必要ありません。
 
 **ご利用いただけます** （英語のカタログのみ）:
 
 - [!DNL Adobe Commerce as a Cloud Service] — デフォルトで有効になっています。
-- Adobe Commerce オンクラウドおよびオンプレミス – 手動で有効にする必要があります。
+- Adobe Commerce オンクラウドおよびオンプレミス（バージョン 2.4.4以降） – 手動で有効にする必要があります。
 
 _2026年5月22日_
 
-![新規](../assets/new.svg)検索マーチャンダイジングルール、デフォルトルール、および[&#x200B; カテゴリマーチャンダイジングルール &#x200B;](./category-merch.md)が&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;を含むようになりました。これにより、インテリジェントなランキング戦略がテキストの関連性に対して結果にどの程度影響を与えるかを調整できます。 ルールプレビューは、設定されたブーストと一致します。 [学習を増やす](./rules-add.md#intelligent-ranking-boost)。
+![新規](../assets/new.svg)検索マーチャンダイジングルール、デフォルトルール、および[ カテゴリマーチャンダイジングルール ](./category-merch.md)が&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;を含むようになりました。これにより、インテリジェントなランキング戦略がテキストの関連性に対して結果にどの程度影響を与えるかを調整できます。 ルールプレビューは、設定されたブーストと一致します。 [学習を増やす](./rules-add.md#intelligent-ranking-boost)。
 
 _2025年10月1日_
 
@@ -62,9 +50,7 @@ _2025年10月1日_
 
 _2025年4月29日_
 
-![修正](../assets/fix.svg) 「[**パフォーマンス**](./performance.md)」タブの&#x200B;**CSV**&#x200B;への書き出しレポートに、日付範囲で指定されたすべてのデータが含まれていない問題を修正しました。
-![修正](../assets/fix.svg)検索クエリフィルターを使用した場合、[&#x200B; マーチャンダイジングルール &#x200B;](./rules.md)を保存できない問題を修正しました。
-![修正](../assets/fix.svg)結果ページの上部に[&#x200B; ピン留め製品](./facets-manage.md#pinunpin-facet)が表示されない問題を修正しました。
+![修正](../assets/fix.svg) 「[**パフォーマンス**](./performance.md)」タブの&#x200B;**CSV**&#x200B;への書き出しレポートに、日付範囲で指定されたすべてのデータが含まれていない問題を修正しました。![修正](../assets/fix.svg)検索クエリフィルターを使用した場合、[ マーチャンダイジングルール ](./rules.md)を保存できない問題を修正しました。![修正](../assets/fix.svg)結果ページの上部に[ ピン留めされた製品](./facets-manage.md#pinunpin-facet)が表示されない問題を修正しました。
 
 _2025年4月21日_
 
@@ -72,11 +58,11 @@ _2025年4月21日_
 
 _2025年4月3日_
 
-![修正](../assets/fix.svg) SaaS データ書き出し拡張機能を更新して、B2B マーチャントの「製品をルートカテゴリに割り当てる必要があります」を削除しました[制限](boundaries-limits.md#b2b-and-category-permissions)。 SaaS データ書き出し拡張機能をバージョン 103.4.0以降に更新する方法については、[&#x200B; データ書き出し拡張機能の管理](../data-export/manage-extension.md)を参照してください。
+![修正](../assets/fix.svg) SaaS データ書き出し拡張機能を更新して、B2B マーチャントの「製品をルートカテゴリに割り当てる必要があります」を削除しました[制限](boundaries-limits.md#b2b-and-category-permissions)。 SaaS データ書き出し拡張機能をバージョン 103.4.0以降に更新する方法については、[ データ書き出し拡張機能の管理](../data-export/manage-extension.md)を参照してください。
 
 _2025年2月20日_
 
-![新規](../assets/new.svg) Commerceは、複数の単語の類義語をサポートしています。 [学習を増やす](synonyms-type.md#multi-word-synonym-behavior)。 マルチワードの類義語のサポートは、この2月20日のリリース日以降のみ利用可能です。 既存のマルチワードの類義語を使用する場合は、完全なインデックス再作成が必要です。このインデックスを作成するには、[&#x200B; サポートチケットの作成](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)を依頼してください。
+![新規](../assets/new.svg) Commerceは、複数の単語の類義語をサポートしています。 [学習を増やす](synonyms-type.md#multi-word-synonym-behavior)。 マルチワードの類義語のサポートは、この2月20日のリリース日以降のみ利用可能です。 既存のマルチワードの類義語を使用する場合は、完全なインデックス再作成が必要です。このインデックスを作成するには、[ サポートチケットの作成](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)を依頼してください。
 
 _2025年1月31日_
 
@@ -92,16 +78,15 @@ _2024年9月4日_
 
 _2024年8月7日_
 
-![修正](../assets/fix.svg) [価格ファセット &#x200B;](settings.md#price-faceting)の最大区間値または価格範囲を10,000から40,000,000に増加しました。
+![修正](../assets/fix.svg) [価格ファセット ](settings.md#price-faceting)の最大区間値または価格範囲を10,000から40,000,000に増加しました。
 
 _2024年2月13日_
 
-![新規](../assets/new.svg) [!DNL Live Search]では、[検索マーチャンダイジング &#x200B;](rules.md)のデフォルトルールの設定がサポートされるようになりました。
+![新規](../assets/new.svg) [!DNL Live Search]では、[検索マーチャンダイジング ](rules.md)のデフォルトルールの設定がサポートされるようになりました。
 
 _2023年10月12日_
 
-![新規](../assets/new.svg) Commerce管理者は、[!DNL Live Search]のインデックスの言語を指定できるようになりました。[設定](settings.md)を参照してください。
-![修正](../assets/fix.svg) 「検索ルール」タブの名前が「マーチャンダイジングを検索」に変更されました。
+![新規](../assets/new.svg) Commerce管理者は、[!DNL Live Search]のインデックスの言語を指定できるようになりました。 [設定](settings.md)を参照してください。![修正](../assets/fix.svg) 「検索ルール」タブの名前が「マーチャンダイジングを検索」に変更されました。
 
 _2023年6月13日_
 
@@ -109,7 +94,7 @@ _2023年6月13日_
 
 _2023年4月25日_
 
-![新規](../assets/new.svg) [!DNL Live Search]のお客様は、新しい[SaaS価格インデックス &#x200B;](../price-index/price-indexing.md)を利用できるようになりました。
+![新規](../assets/new.svg) [!DNL Live Search]のお客様は、新しい[SaaS価格インデックス ](../price-index/price-indexing.md)を利用できるようになりました。
 
 ### PLP ウィジェット
 
@@ -119,8 +104,7 @@ _2026年2月2日_
 
 _2025年5月22日_
 
-![修正](../assets/fix.svg) ロケールがフランス語、ドイツ語、イタリア語またはスペイン語に変更された場合に「買い物かごに追加」ボタンが英語のままになる問題を修正しました。
-![修正](../assets/fix.svg)在庫切れ商品の「カートに追加」ボタンが表示される問題を修正しました。
+![修正](../assets/fix.svg) ロケールがフランス語、ドイツ語、イタリア語またはスペイン語に変更された場合に「買い物かごに追加」ボタンが英語のままになる問題を修正しました。![修正](../assets/fix.svg)在庫切れ商品の「カートに追加」ボタンが表示される問題を修正しました。
 
 _2024年5月31日_
 
@@ -137,7 +121,7 @@ _2023年10月27日_
 
 _2026年5月18日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![修正](../assets/fix.svg) データ同期ダッシュボードへの依存関係を更新しました。
 
@@ -145,7 +129,7 @@ _2026年5月18日_
 
 _2026年5月12日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![修正](../assets/fix.svg)CSPが制限モードで設定され、インラインスクリプトが無効になっている場合に、[!DNL Live Search] ストアフロントポップオーバースクリプトがコンテンツセキュリティポリシー（CSP）エラーを引き起こす問題を修正しました。 拡張機能では、これらのスクリプトに対してセキュアレンダリングが使用されるようになったため、ページはCSP script-src違反なしで読み込まれます。
 
@@ -153,7 +137,7 @@ _2026年5月12日_
 
 _2026年3月17日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg) PHP 8.5のサポートを追加しました。
 
@@ -161,7 +145,7 @@ _2026年3月17日_
 
 _2026年2月19日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![修正](../assets/fix.svg) Visual Merchandiser拡張機能の機能に関連する特定の条件で発生する可能性のあるエラーを修正しました。
 
@@ -169,24 +153,23 @@ _2026年2月19日_
 
 _2025年10月9日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-`startsWith`および`contains`を使用した階層検索：次の高度な検索機能の![新規](../assets/new.svg)一般公開リリース。[詳細情報](workspace.md#layered-search-and-expansion-of-search-types)。
-![修正](../assets/fix.svg) [&#x200B; ライブサーチ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) サービスの`ProductInterface` オブジェクトは非推奨（廃止予定）になりました。代わりに、カタログサービスで`ProductView` オブジェクトを使用してください。
+次の高度な検索機能に関する![新規](../assets/new.svg)のGA リリース：`startsWith`と`contains`を使用した階層検索。 [学習を増やす](workspace.md#layered-search-and-expansion-of-search-types)。![修正](../assets/fix.svg) [ ライブサーチ ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) サービスの`ProductInterface` オブジェクトは非推奨（廃止予定）になりました。 代わりに、カタログサービスで`ProductView` オブジェクトを使用してください。
 
 ## [!DNL Live Search] 4.5.0
 
 _2025年9月5日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![新規](../assets/new.svg) ライブサーチでは、制限が有効になっている場合、Cookie/ローカルストレージでのデータ収集と保存を防ぐことにより、[Cookie制限モード &#x200B;](install.md#cookies)を完全に尊重するようになりました。
+![新規](../assets/new.svg) ライブサーチでは、制限が有効になっている場合、Cookie/ローカルストレージでのデータ収集と保存を防ぐことにより、[Cookie制限モード ](install.md#cookies)を完全に尊重するようになりました。
 
 ## [!DNL Live Search] 4.4.1
 
 _2025年8月11日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![修正](../assets/fix.svg) サンドボックス環境の固定カタログサービスエンドポイント。
 
@@ -194,7 +177,7 @@ _2025年8月11日_
 
 _2025年7月14日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg) [価格グループ化](./settings.md#price-faceting)の上限を50から100に増加しました。
 
@@ -202,16 +185,15 @@ _2025年7月14日_
 
 _2025年3月11日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![修正](../assets/fix.svg) [!DNL Live Search]は、Adobe Commerce 2.4.8-beta2を実行するインストールでPHP 8.4をサポートするようになりました。
-![修正](../assets/fix.svg)検索アダプタが`psr/http-message:2.0`と互換性がない問題を修正しました。
+![修正](../assets/fix.svg) [!DNL Live Search]は、Adobe Commerce 2.4.8-beta2を実行するインストールでPHP 8.4をサポートするようになりました。![修正](../assets/fix.svg)検索アダプタが`psr/http-message:2.0`と互換性がない問題を修正しました。
 
 ## [!DNL Live Search] 4.2.3
 
 _2025年2月13日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![修正](../assets/fix.svg)注文詳細ページに注文番号、日付、**[!UICONTROL Reorder]** ボタンが表示されない問題を修正しました。
 
@@ -219,7 +201,7 @@ _2025年2月13日_
 
 _2025年1月6日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![修正](../assets/fix.svg) Adobe Commerce バージョン 2.4.5以前の`categoryList` GraphqL クエリでエラーが発生していた問題を修正しました。
 
@@ -227,16 +209,15 @@ _2025年1月6日_
 
 _2024年7月31日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![修正](../assets/fix.svg)特定のスクリプトがチェックアウトページに読み込まれない問題を修正しました。
-![修正](../assets/fix.svg) `composer.json` ファイルの依存関係のバージョンを修正しました。
+![修正](../assets/fix.svg)特定のスクリプトがチェックアウトページに読み込まれない問題を修正しました。![修正](../assets/fix.svg) `composer.json` ファイルの依存関係のバージョンを修正しました。
 
 ## [!DNL Live Search] 4.2.0
 
 _2024年5月31日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg) PLP ウィジェット バージョン 2.0.0を使用するようにライブ検索拡張機能を更新しました。
 
@@ -244,7 +225,7 @@ _2024年5月31日_
 
 _2024年5月16日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ### 更新
 
@@ -254,49 +235,40 @@ _2024年5月16日_
 
 _2024年3月19日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ### 新機能
 
-![新規](../assets/new.svg) ポーランド語の言語サポートを追加しました。
-![新規](../assets/new.svg) [!DNL Live Search]は、Adobe Commerce 2.4.4を実行するインストールでPHP 8.3をサポートするようになりました。
+![新規](../assets/new.svg) ポーランド語の言語サポートを追加しました。![新規](../assets/new.svg) [!DNL Live Search]は、Adobe Commerce 2.4.4を実行するインストールでPHP 8.3をサポートするようになりました。
 
 ## [!DNL Live Search] 4.1.0
 
 _2024年2月22日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ### 新機能
 
-![新規](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)が利用可能になりました。 この刷新されたダッシュボードは、[!DNL Product Recommendations]、[!DNL Live Search]および[!DNL Catalog Service]のデータストリームに関するインサイトを提供します。
+![新規](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)が利用可能になりました。 この刷新されたダッシュボードは、[!DNL Product Recommendations]、[!DNL Live Search]および[!DNL Catalog Service]のデータストリームに関するインサイトを提供します。
 
 ### 更新
 
-![修正](../assets/fix.svg) ゲストユーザーがデフォルト以外のストアビューで商品をカートに追加したときにエラーが発生する問題を修正しました。
-![修正](../assets/fix.svg)検索ポップオーバーで、ロケール設定に関係なく、価格の値の前に通貨記号が常に表示される問題を修正しました。
-![修正](../assets/fix.svg)無効なコアプラグインの不要な型定義を削除して、インストール時の互換性の問題を修正しました。
+![修正](../assets/fix.svg) ゲストユーザーがデフォルト以外のストアビューで商品をカートに追加したときにエラーが発生する問題を修正しました。![修正](../assets/fix.svg)検索ポップオーバーで、ロケール設定に関係なく、価格の値の前に通貨記号が常に表示される問題を修正しました。![修正](../assets/fix.svg)無効なコアプラグインの不要な型定義を削除して、インストール時の互換性の問題を修正しました。
 
 ## [!DNL Live Search] 4.0.0
 
 _2023年11月13日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ### 新機能
 
-![新規](../assets/new.svg) [!DNL Live Search]は、PLP ウィジェットでカラースウォッチをサポートするようになりました。
-![新規](../assets/new.svg) [!DNL Live Search]には、カテゴリ IDではなくカテゴリ名が表示されるようになりました。
-![新規](../assets/new.svg) [!DNL Live Search]は、PLP ウィジェットで取り消し価格をサポートするようになりました。
-![新規](../assets/new.svg) フィルターパネルを非表示にする「フィルターを非表示」ボタンが導入されました。
+![新規](../assets/new.svg) [!DNL Live Search]は、PLP ウィジェットでカラースウォッチをサポートするようになりました。![新規](../assets/new.svg) [!DNL Live Search]には、カテゴリ IDではなくカテゴリ名が表示されるようになりました。![新規](../assets/new.svg) [!DNL Live Search]は、PLP ウィジェットで取り消し価格をサポートするようになりました。![新規](../assets/new.svg) フィルターパネルを非表示にする「フィルターを非表示」ボタンが導入されました。
 
 
 ### 更新
 
-![修正](../assets/fix.svg) [!DNL Live Search] PLP ウィジェットが、新規インストールに対してデフォルトで有効になりました。
-![修正](../assets/fix.svg)検索アダプタは非推奨（廃止予定）です。
-![修正](../assets/fix.svg)CSS スタイルを再構成して、ウィジェットクラスをより適切に分離しました。
-![軽微なバグの修正](../assets/fix.svg)
+![修正](../assets/fix.svg) [!DNL Live Search] PLP ウィジェットが、新規インストールに対してデフォルトで有効になりました。![修正](../assets/fix.svg)検索アダプタは非推奨（廃止予定）です。![修正](../assets/fix.svg)CSS スタイルを再構成して、ウィジェットクラスをより適切に分離しました。![軽微なバグ修正](../assets/fix.svg)件
 
 バージョン 3.1.1以降をインストールした後、新しいインデクサーを有効にします。
 
@@ -312,46 +284,43 @@ _2023年11月13日_
 
 _2023年9月15日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![新規](../assets/new.svg)新しいカテゴリ マーチャンダイジングタブが追加されました。ユーザーは、カテゴリごとにインテリジェントなランキングと手動ランキング（ピン、ブースト、埋め込み、非表示）を追加できるようになりました
-![新規](../assets/new.svg) ユーザーは、インテリジェントまたは手動のランキングを使用して、単一のカテゴリ ルールを追加できます
+![新規](../assets/new.svg)新しいカテゴリ マーチャンダイジングタブが追加されました。 ユーザーは、カテゴリごとにインテリジェントなランキングと手動ランキング（ピン、ブースト、埋め込み、非表示）を追加できるようになりました
+![新規](../assets/new.svg) ユーザーは、インテリジェントまたは手動のランキングで1つのカテゴリ ルールを追加できます
 ![新規](../assets/new.svg) ユーザーがインテリジェントなランキングルールをサブカテゴリに追加できるようになりました
-![新規](../assets/new.svg) インテリジェントなランキングを使用してサブカテゴリを削除すると、詳細な情報が提供されます
+![新](../assets/new.svg) インテリジェントなランキングを使用してサブカテゴリを削除すると、詳細な情報が提供されます
 ![新規](../assets/new.svg)継承されたランキング戦略のルールを削除する機能を追加しました
 ![新規](../assets/new.svg)単一カテゴリのルールを削除する機能を追加しました
-![新規](../assets/new.svg) ユーザーがルールを追加するときに、カテゴリ名で検索できるようになりました
-![新規](../assets/new.svg) カテゴリツリー表示で、ユーザーはルールが適用されているカテゴリを表示できるようになりました。
-![新規](../assets/new.svg) カテゴリのプレビューには、選択したカテゴリのみが表示されます。
-![新規](../assets/new.svg) AEM CIF [&#x200B; ポップオーバーウィジェット &#x200B;](https://github.com/adobe/aem-cif-guides-venia/pull/319)および[PLP ウィジェット &#x200B;](https://github.com/adobe/aem-cif-guides-venia/pull/320) コンポーネントを使用すると、AEM サイトで[!DNL Live Search]を利用できます。
+![新規](../assets/new.svg) ユーザーがルールを追加する際に、カテゴリ名で検索できるようになりました
+![新規](../assets/new.svg) カテゴリーツリー表示では、適用されたルールを持つカテゴリを表示できるようになりました。![新規](../assets/new.svg) カテゴリのプレビューには、選択したカテゴリのみが表示されます。![新規](../assets/new.svg) AEM CIF [ ポップオーバーウィジェット ](https://github.com/adobe/aem-cif-guides-venia/pull/319)および[PLP ウィジェット ](https://github.com/adobe/aem-cif-guides-venia/pull/320) コンポーネントを使用すると、AEM サイトで[!DNL Live Search]を利用できます。
 
 #### 更新
 
-![修正](../assets/fix.svg)製品と価格フィードのテーブルサイズが大幅に削減されました。テーブル `catalog_data_exporter_products`と`catalog_data_exporter_product_prices`のサイズを大幅に縮小する必要があります。
-![修正](../assets/fix.svg) 「ルール」タブの名前が「ルールを検索」に変更されました
+![修正](../assets/fix.svg)製品と価格フィードのテーブルサイズが大幅に削減されました。 テーブル `catalog_data_exporter_products`と`catalog_data_exporter_product_prices`のサイズを大幅に縮小する必要があります。![修正](../assets/fix.svg) 「ルール」タブの名前が「ルールを検索」に変更されました
 ![修正](../assets/fix.svg) 「トレンド」でランキングする際に、次のいずれかを選択できるようになりました。
 - 3日間（デフォルト）
 - 14日間
 - 30日間
 ![修正](../assets/fix.svg) &#39;イベント&#39; （Boost/Pin/Bury/Hide）の名前が「手動ランキング」に変更されました
-![修正](../assets/fix.svg) 「ランキングタイプ」が「インテリジェントランキング」に名前変更されました
-![軽微なバグの修正](../assets/fix.svg)
+![修正](../assets/fix.svg) 「ランキングタイプ」の名前が「インテリジェントランキング」に変更されました
+![軽微なバグ修正](../assets/fix.svg)件
 
 ### [!DNL Live Search] 3.1.0
 
 _2023年9月1日_
 
-[!BADGE &#x200B; サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 #### 更新
 
-![修正](../assets/fix.svg)製品リストウィジェットが更新され、[&#x200B; カタログサービス API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)が使用されるようになりました。
+![修正](../assets/fix.svg)製品リストウィジェットが更新され、[ カタログサービス API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)が使用されるようになりました。
 
 ### [!DNL Live Search] 3.0.2
 
 _2023年8月7日_
 
-[!BADGE &#x200B; サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 #### 新機能
 
@@ -365,8 +334,7 @@ _2023年8月7日_
 
 #### 更新
 
-高度なデータ取得をサポートするために、![修正](../assets/fix.svg) カタログ サービス モジュールがメタパッケージに追加されました。
-![修正](../assets/fix.svg)製品リストページ ウィジェットを使用すると、**マイアカウント** ページナビゲーションが消えなくなりました。
+高度なデータ取得をサポートするために、![修正](../assets/fix.svg) カタログ サービス モジュールがメタパッケージに追加されました。![修正](../assets/fix.svg)製品リストページ ウィジェットを使用すると、**マイアカウント** ページナビゲーションが消えなくなりました。
 
 これらの機能にアクセスするには、[!DNL Live Search]拡張機能バージョン >= 3.0.2をアップグレードする必要があります。
 
@@ -380,21 +348,21 @@ _2023年8月7日_
 
 _2023年3月14日_
 
-[!BADGE &#x200B; サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 #### 新機能
 
 ルールプレビューの![新規](../assets/new.svg)製品項目カード
-![新規](../assets/new.svg) [製品リストページ ウィジェット](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-storefront/plp-styling)
-![新規](../assets/new.svg) [&#x200B; カテゴリのフィルターオプション](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![新規](../assets/new.svg) [製品リストページ ウィジェット](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
+![新規](../assets/new.svg) [ カテゴリのフィルターオプション](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
 ![新規](../assets/new.svg) ピンイベントを作成するためにドラッグ&amp;ドロップ機能を追加しました
 ![新規](../assets/new.svg)件の新しいピン操作：
 - Pin to spot - Pin ボタンをクリックするだけでPin イベントを作成
 - Pin to top – 製品を最初の位置に配置します
 - Pin to bottom – 結果の一番下に製品を配置します
 - ワンクリックでイベントのピン留めを解除
-ルールの![新規](../assets/new.svg) [&#x200B; インテリジェントなランキング](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/rules/rules-add)
-![新規](../assets/new.svg) [!DNL Live Search]では、Commerceの[Inventory management](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/introduction)機能が完全にサポートされるようになりました（以前はマルチSource インベントリ（MSI）と呼ばれていました）。 完全なサポートを有効にするには、依存関係モジュール `commerce-data-export`をバージョン 102.2.0以降に[更新](install.md#updating-live-search)する必要があります。
+ルールの![新規](../assets/new.svg) [ インテリジェントなランキング](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add)
+![新規](../assets/new.svg) [!DNL Live Search]では、Commerceの[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)機能が完全にサポートされるようになりました（以前はマルチSource インベントリ（MSI）と呼ばれていました）。 完全なサポートを有効にするには、依存関係モジュール `commerce-data-export`をバージョン 102.2.0以降に[更新](install.md#updating-live-search)する必要があります。
 
 #### 更新
 
@@ -409,11 +377,10 @@ _2023年3月14日_
 ![修正](../assets/fix.svg)保存中に未完成のイベントがある場合の固定サーバーエラー
 ![修正](../assets/fix.svg)複数のイベントがある場合に特定のイベントを正しく削除する問題を修正しました
 ![修正](../assets/fix.svg)新しいイベントが追加されたときに、既存のルールイベントが更新されない問題を修正しました
-![修正](../assets/fix.svg) 2回目の「編集」クリックで修正されました。詳細、[!DNL Live Search] ページで再読み込みが必要です
-![修正](../assets/fix.svg)類義語：ユーザーが入力からクリックアウトした際に、フィールドにフォーカスを返すことができなかった問題を修正しました
+![修正](../assets/fix.svg)詳細から2回目の「編集」クリック時に修正されました。[!DNL Live Search] ページでリロードが必要です
+![修正](../assets/fix.svg)類義語：ユーザーが入力からクリックアウトした際に、フォーカスをフィールドに戻すことができなかった問題を修正しました
 ![修正](../assets/fix.svg)その他のマイナーなバグ修正とパフォーマンスの更新
-![&#x200B; バグ &#x200B;](../assets/bug.svg) - 「おすすめ」によるランキングは、ライブサーチウィジェット内でのみサポートされています。デフォルトのLumaおよびPWA検索機能ではサポートされていません。
-![&#x200B; バグ &#x200B;](../assets/bug.svg) - カスタム価格属性ファセットがLumaで正しくレンダリングされませんが、APIは正しくフィルタリングします。
+![ バグ ](../assets/bug.svg) - 「おすすめ」によるランキングは、ライブサーチ ウィジェット内でのみサポートされています。 デフォルトのLumaおよびPWA検索機能ではサポートされていません。![ バグ ](../assets/bug.svg) - カスタム価格属性ファセットがLumaで正しくレンダリングされませんが、APIは正しくフィルタリングします。
 
 これらの機能にアクセスするには、[!DNL Live Search]拡張機能バージョン >= 3.0.1をアップグレードする必要があります。
 
@@ -421,7 +388,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0.5
 
-[!BADGE &#x200B; サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![修正](../assets/fix.svg) - ネットワークの問題によりSDK リソースが使用できない場合、ライブ検索でエラーがスローされます。 このバグは修正されています。
 
@@ -431,13 +398,9 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0.4
 
-[!BADGE &#x200B; サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![新規](../assets/new.svg) ライブ検索で、管理者の「在庫切れ商品を表示」設定によるフィルタリングがサポートされるようになりました。「在庫切れ商品を表示」がfalseに設定されている場合、`inStock = true`がフィルターに追加されます。
-![修正](../assets/fix.svg) パフォーマンスを向上させるために、ライブ検索ポップアップから「提案」ブロックが削除されました。この機能を置き換えたい場合でも、データはGraphQLを通じて渡されます。
-![修正](../assets/fix.svg) `categories`と`categoryPath`が、カテゴリフィルタリング用に`categoryIds`を置き換えました。詳しくは、[productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) トピックを参照してください。
-![修正](../assets/fix.svg)以前は、B2B企業に関連付けられたユーザーが検索を行うと、誤った顧客グループコードを受け取っていました。ライブサーチが正しい値を返すようになりました。
-![修正](../assets/fix.svg)以前は、存在しない用語を検索すると、ライブサーチでエラーが返されていました。そのバグは現在修正されています。
+![新規](../assets/new.svg) ライブ検索で、管理者の「在庫切れ商品を表示」設定によるフィルタリングがサポートされるようになりました。 「在庫切れ商品を表示」がfalseに設定されている場合、`inStock = true`がフィルターに追加されます。![修正](../assets/fix.svg) パフォーマンスを向上させるために、ライブ検索ポップアップから「提案」ブロックが削除されました。 この機能を置き換えたい場合でも、データはGraphQLを通じて渡されます。![修正](../assets/fix.svg) `categories`と`categoryPath`が、カテゴリーフィルタリング用に`categoryIds`を置き換えました。 詳しくは、[productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) トピックを参照してください。![修正](../assets/fix.svg)以前は、B2B企業に関連付けられたユーザーが検索を行うと、誤った顧客グループコードを受け取っていました。 ライブサーチが正しい値を返すようになりました。![修正](../assets/fix.svg)以前は、存在しない用語を検索すると、ライブサーチでエラーが返されていました。 そのバグは現在修正されています。
 
 これらの機能にアクセスするには、[!DNL Live Search]拡張機能バージョン >= 2.0.4をアップグレードする必要があります。
 
@@ -445,7 +408,7 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0.3
 
-[!BADGE &#x200B; サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 ![新規](../assets/new.svg) ライブサーチでは、カテゴリ権限、共有カタログ、顧客グループ固有の価格設定を尊重することで、B2B機能をサポートするようになりました。
 
@@ -455,59 +418,42 @@ _2023年3月14日_
 
 ### [!DNL Live Search] 2.0
 
-[!BADGE &#x200B; サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE  サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
 次の新機能、修正、および機能強化を活用するには、既存の[!DNL Live Search] インストールを[!DNL Live Search] 2.0.0にアップグレードする必要があります。
 
-![新規](../assets/new.svg) [!DNL Live Search]は、Adobe Commerce 2.4.4を実行するインストールでPHP 8.1をサポートするようになりました。
-![新規](../assets/new.svg) `Magento_ElasticsearchCatalogPermissionsGraphQl` モジュールが、インストール中に無効化されたモジュールのリストに追加されます。
-![新規](../assets/new.svg) [[!DNL storefront popover]](overview.md)の使用可能な行数は、*管理者*から設定できます。
-[!DNL Live Search]では![新規](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/)がサポートされています。
-![新規](../assets/new.svg) [!DNL Live Search]のインストールプロセスが更新され、高度なプロセスが変更されます。
-![修正](../assets/fix.svg) [詳細検索](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search) リンクがストアフロントフッターから削除されました。
-![&#x200B; バグ &#x200B;](../assets/bug.svg)次の製品属性は、[Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)で、PWAのベータ版リリースに関連して使用される場合はサポートされていません：`description`、`name`、`short_description`
-![&#x200B; バグ &#x200B;](../assets/bug.svg) [!DNL Live Search]向けPWAのベータ版リリースは、[&#x200B; イベント処理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)をサポートしていません。
+![新規](../assets/new.svg) [!DNL Live Search]は、Adobe Commerce 2.4.4を実行するインストールでPHP 8.1をサポートするようになりました。![新規](../assets/new.svg) `Magento_ElasticsearchCatalogPermissionsGraphQl` モジュールが、インストール中に無効化されたモジュールのリストに追加されます。![新規](../assets/new.svg) [[!DNL storefront popover]](overview.md)の使用可能な行数は、*管理者*&#x200B;から設定できます。![新規](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/)は[!DNL Live Search]でサポートされています。![新規](../assets/new.svg) [!DNL Live Search]のインストールプロセスが更新され、高度なプロセスが変更されます。![修正](../assets/fix.svg) [詳細検索](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) リンクがストアフロント フッターから削除されました。![ バグ ](../assets/bug.svg)次の製品属性は、[Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)で、PWAのベータ版リリースに関連して使用される場合はサポートされていません：`description`、`name`、 `short_description`
+![ バグ ](../assets/bug.svg) [!DNL Live Search]向けPWAのベータ版リリースは、[ イベント処理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)をサポートしていません。
 
 ### [!DNL Live Search] 1.3.1
 
-[!BADGE &#x200B; サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
+[!BADGE  サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
-![修正](../assets/fix.svg) [&#x200B; カスタム価格属性](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/attributes-input-types)は、[&#x200B; ファセット &#x200B;](facets-add.md)として設定した際にエラーを返さなくなりました。
-![修正](../assets/fix.svg)使用可能な[通貨シンボル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) （`data-currency-symbol`）がない場合にエラーが発生する問題を修正しました。
-![修正](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)には、利用可能な場合に[特別価格](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/pricing/product-price-special) （最低最終価格）が表示されるようになりました。
+![修正](../assets/fix.svg) [ カスタム価格属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)は、[ ファセット ](facets-add.md)として設定した際にエラーを返さなくなりました。![修正](../assets/fix.svg)使用可能な[通貨シンボル ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) （`data-currency-symbol`）がない場合にエラーが発生する問題を修正しました。![修正](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)には、利用可能な場合に[特別価格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) （最低最終価格）が表示されるようになりました。
 
 ### [!DNL Live Search] 1.3.0
 
-[!BADGE &#x200B; サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
+[!BADGE  サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
-![新規](../assets/new.svg) [&#x200B; パフォーマンス &#x200B;](performance.md) レポート ダッシュボードでは、買い物客が使用する検索語にinsightが使用されます。
-![新規](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)では、イベントの公開とサブスクリプションサービス、および指標を使用して、共通のデータレイヤーにアクセスできます。
-![修正](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)には、表示を制御する`.search-autocomplete` コンテナ用の新しい`active` クラスがあります。
-![修正](../assets/fix.svg) ストアフロントでは、[検索語](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-terms) フッターリンクが削除され、[!DNL Live Search]回のインストールでキャッシュが無効になります。
-![Bug](../assets/bug.svg) Patch for Search Adapterは、重複する製品を処理します。
-![&#x200B; バグ &#x200B;](../assets/bug.svg) [!DNL Live Search]は、複数の（仮想） [在庫](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/stocks/stocks-manage)を持つ[&#x200B; シングルソース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/sources/sources-manage) （物理的）在庫場所をサポートしています。現在、複数の在庫ソースはサポートされていません。
+![新規](../assets/new.svg) [ パフォーマンス ](performance.md) レポート ダッシュボードでは、買い物客が使用する検索語にinsightが使用されます。![新規](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)では、イベントの公開とサブスクリプションサービス、および指標を使用して、共通のデータレイヤーにアクセスできます。![修正](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)には、表示を制御する`.search-autocomplete` コンテナ用の新しい`active` クラスがあります。![修正](../assets/fix.svg) ストアフロントでは、[検索語](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) フッターリンクが削除され、[!DNL Live Search]回のインストールでキャッシュが無効になります。検索アダプタの![ バグ ](../assets/bug.svg) パッチは、重複する製品を処理します。![ バグ ](../assets/bug.svg) [!DNL Live Search]は、複数の（仮想） [在庫](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)を持つ[ シングルソース ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) （物理）在庫場所をサポートしています。 現在、複数の在庫ソースはサポートされていません。
 
 ### [!DNL Live Search] 1.2.0
 
-[!BADGE &#x200B; サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
+[!BADGE  サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
-![新規](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md)は、買い物客が検索ボックスにクエリを入力すると、上位の検索結果の推奨商品とサムネール画像を表示します。
-キーボードが非アクティブな状態が長期間続くと、![新規](../assets/new.svg) Commerce *管理者* セッションが開いたままになる
+![新規](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md)は、買い物客が検索ボックスにクエリを入力すると、上位の検索結果の推奨商品とサムネール画像を表示します。キーボードが非アクティブな状態が長期間続くと、![新規](../assets/new.svg) Commerce *管理者* セッションが開いたままになる
 ![新規](../assets/new.svg) [!DNL Live Search]は、オンボーディング後に自動的に有効になります
-![修正](../assets/fix.svg)最初のインデックス作成時間が1時間未満
-![修正](../assets/fix.svg)製品の増分更新をほぼリアルタイムで実行（インストールおよびセットアップ後）
-![類義語エディターで](../assets/fix.svg)並べ替え可能な列を修正
-検索条件に空のソート順序値が含まれている場合、![修正](../assets/fix.svg) [!DNL Live Search]でエラーがスローされなくなりました
+![修正](../assets/fix.svg)最初のインデックス作成時間が1時間未満です
+![修正](../assets/fix.svg)製品の増分更新をほぼリアルタイムで実行します（インストールおよびセットアップ後）
+同義語エディターの![修正](../assets/fix.svg)並べ替え可能な列
+検索条件に空の並べ替え順序値が含まれている場合、![修正](../assets/fix.svg) [!DNL Live Search]でエラーがスローされなくなりました
 ![属性コードに「から」または「から」の文字列が含まれている場合、範囲フィルタリングが壊れなくなりました](../assets/fix.svg)
 
 ### [!DNL Live Search] 1.1.0
 
-[!BADGE &#x200B; サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
+[!BADGE  サポートされている]{type="Informative" tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
-![&#x200B; バグ &#x200B;](../assets/bug.svg) [!DNL Live Search] サービスは、Adobe Commerce インストールの[基本通貨](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration)のみをサポートしています。
-![&#x200B; バグ &#x200B;](../assets/bug.svg) ファセットを追加する際、`Update on Save`に設定すると、製品属性フィードが正しく更新されません。この問題を回避するには、[&#x200B; インデックス管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management)に移動し、製品属性フィードを`Update by Schedule`に設定します。
-![&#x200B; バグ &#x200B;](../assets/bug.svg) [!DNL Live Search]の類義語はストアビューごとに定義されますが、現在はweb サイトごとに保存され、`environmentId`と`storeViewCode`の組み合わせで識別されます。その結果、Adobe Commerceのインストール内のすべてのweb サイトとストアビューで同義語が共有されます。ストアビュー用に最近作成された同義語のセットが優先されます。
-![&#x200B; バグ &#x200B;](../assets/bug.svg)同義語の用語に複数の単語が含まれる場合、各単語は個別の同義語として扱われます。例えば、「タイムピース」を「ウォッチ」の同義語として定義すると、「タイム」と「ピース」の両方がウォッチの同義語として扱われます。
+![ バグ ](../assets/bug.svg) [!DNL Live Search] サービスは、Adobe Commerce インストールの[基本通貨](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration)のみをサポートしています。![ バグ ](../assets/bug.svg) ファセットを追加する際、`Update on Save`に設定すると、製品属性フィードが正しく更新されません。 この問題を回避するには、[ インデックス管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)に移動し、製品属性フィードを`Update by Schedule`に設定します。![ バグ ](../assets/bug.svg) [!DNL Live Search]の類義語はストアビューごとに定義されますが、現在はweb サイトごとに保存され、`environmentId`と`storeViewCode`の組み合わせで識別されます。 その結果、Adobe Commerceのインストール内のすべてのweb サイトとストアビューで同義語が共有されます。 ストアビュー用に最近作成された同義語のセットが優先されます。![ バグ ](../assets/bug.svg)同義語の用語に複数の単語が含まれる場合、各単語は個別の同義語として扱われます。 例えば、「タイムピース」を「ウォッチ」の同義語として定義すると、「タイム」と「ピース」の両方がウォッチの同義語として扱われます。
 
 +++
 
@@ -516,5 +462,5 @@ _2023年3月14日_
 詳細については、こちらをご覧ください：
 
 - [Adobe Commerce開発者向けドキュメント](https://developer.adobe.com/commerce/docs)
-- [Adobe Commerce ユーザーガイド](https://experienceleague.adobe.com/ja/docs/commerce)
+- [Adobe Commerce ユーザーガイド](https://experienceleague.adobe.com/en/docs/commerce)
 - [Marketplace上の[!DNL Live Search]](https://commercemarketplace.adobe.com/magento-live-search.html)
