@@ -56,7 +56,7 @@ ht-degree: 0%
 
 統合を設定する前に、次のことを確認してください。
 
-* **Product Visuals**&#x200B;の使用権限を持つアクティブな[!DNL Adobe Commerce Optimizer] インスタンス （OpenAPI機能を備えたDynamic Media + [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)）または、Dynamic Mediaを有効にした顧客提供のAEM Assets ライセンス （例：**AEM Assets Ultimate**）をバンドルします。
+* **Product Visuals**&#x200B;の使用権限を持つアクティブな[!DNL Adobe Commerce Optimizer] インスタンス （OpenAPI機能を備えたDynamic Media + [AEM Assets Prime](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-prime)）または、Dynamic Mediaを有効にした顧客提供のAEM Assets ライセンス （例：**AEM Assets Ultimate**）をバンドルします。
 * AEM Assets as a Cloud Serviceへのアクセス。
 * [!DNL Commerce Optimizer]とAEM Assetsの両方が同じAdobe IMS組織内にあります。
 * AEM Assets環境でOpenAPIが有効になっているDynamic Media （イネーブルメント手順については、[AEM Assets プロジェクトの設定](configure-aem.md#prerequisites)を参照）。
@@ -85,7 +85,7 @@ AEM Assets Integrationを[!DNL Commerce Optimizer]にオンボーディングす
 * AEM Assets イベント（アセット承認済み、更新、削除）
 * [!DNL Commerce Optimizer]個のカタログイベント（製品が作成、更新されました）
 
-このプロセスを開始するには、次の情報を含むサポートチケット [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を作成します。
+このプロセスを開始するには、次の情報を含むサポートチケット [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を作成します。
 
 * **[!DNL Adobe Commerce Optimizer]テナント ID** （インスタンス ID）が[!DNL Commerce Optimizer] URLまたはCommerce Cloud Manager UIに見つかりました。
 * **AEM プログラム IDとEnvironment ID**&#x200B;は、[統合にAEM Assets](#configure-aem-assets-first)を設定したときに設定します。
