@@ -2,12 +2,12 @@
 title: Adobe Commerce Optimizer限界
 description: Adobe Commerce Optimizerのライセンス制限とシステムの制限について説明します。 キャパシティを計画し、使用状況を追跡し、制限を超えた場合の待ち時間とスロットリングを回避します。
 role: Admin, Developer
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
-source-git-commit: 6ae571dd77206859e69e57100e80bb01416a36cd
+source-git-commit: 172fcbd659f4fe8868059d29ed335a5136af8d33
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 ## 追加能力を求める
 
-ライセンス制限は、[&#x200B; ライセンス制限とシステム境界](#license-limits-and-system-boundaries) セクションに記載されているライセンスパッケージを購入するか、独自のユースケースに対するカスタムライセンスを交渉することで増やすことができます。 お客様の要件については、Adobeの担当者にお問い合わせください。
+ライセンス制限は、[ ライセンス制限とシステム境界](#license-limits-and-system-boundaries) セクションに記載されているライセンスパッケージを購入するか、独自のユースケースに対するカスタムライセンスを交渉することで増やすことができます。 お客様の要件については、Adobeの担当者にお問い合わせください。
 
-システムの境界について質問がある場合は、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support)にお問い合わせください。
+システムの境界について質問がある場合は、[Adobe サポート ](https://experienceleague.adobe.com/home?lang=en#support)にお問い合わせください。
 
 ## パフォーマンスの問題を防止
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** |
 | --- | --- | --- | --- |
-| プライスブック | インスタンスごとに許可される価格台帳の数 | [&#x200B; カタログのバリエーション数](#catalog)に基づく | はい<br> カタログのバリエーションを増やす |
+| プライスブック | インスタンスごとに許可される価格台帳の数 | [ カタログのバリエーション数](#catalog)に基づく | はい<br> カタログのバリエーションを増やす |
 | 価格記録ごとの割引 | 1つの価格表に適用できる割引数 | 10 | いいえ |
 
 {style="table-layout:auto"}
@@ -100,12 +100,15 @@ Dynamic Mediaの使用状況は、[!DNL Adobe Commerce Optimizer]内の製品ビ
 
 >[!ENDSHADEBOX]
 
+>[!NOTE]
+>
+>上記の制限は、容量と使用割り当てをカバーします。 製品ビジュアル機能の概要と機能的な制約については、[製品ビジュアルとAEM Assets](setup/product-visuals.md)を参照してください。
 
 ### カタログビューとポリシー
 
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** |
 | --- | --- | --- | --- |
-| カタログビュー | マスターカタログの設定可能なサブセットの数 | [&#x200B; カタログのバリエーション数](#catalog)に基づく | はい<br> カタログのバリエーションを増やす |
+| カタログビュー | マスターカタログの設定可能なサブセットの数 | [ カタログのバリエーション数](#catalog)に基づく | はい<br> カタログのバリエーションを増やす |
 | カタログビューごとのポリシー | 許可されるデータフィルターの数 | 10 | いいえ |
 | ポリシーの属性値 | フィルタリング用に設定できる製品特性の数 | 100 | いいえ |
 
@@ -159,7 +162,7 @@ Dynamic Mediaの使用状況は、[!DNL Adobe Commerce Optimizer]内の製品ビ
 
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** | **メモ** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | クラウドネイティブな拡張機能や統合機能の構築能力 | GMV層に基づく<p>最小配分：1 パック/年</p> | はい<p>追加パックを追加</p> | パックごとに定義される制限については、次を参照してください。<ul><li>パックごとに定義された制限の[App Builder製品説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder Runtime Guides*&#x200B;の[&#x200B; システム設定と制限](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder ストレージの要件](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | クラウドネイティブな拡張機能や統合機能の構築能力 | GMV層に基づく<p>最小配分：1 パック/年</p> | はい<p>追加パックを追加</p> | パックごとに定義される制限については、次を参照してください。<ul><li>パックごとに定義された制限の[App Builder製品説明](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder Runtime Guides*&#x200B;の[ システム設定と制限](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder ストレージの要件](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
