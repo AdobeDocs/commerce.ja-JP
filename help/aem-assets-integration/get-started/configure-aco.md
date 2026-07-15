@@ -22,7 +22,7 @@ ht-degree: 0%
 
 この統合には、2つの独立したイベントフローがあります。 どちらも[Adobe I/O Events](https://developer.adobe.com/events/docs/)を使用してAssets Integration Serviceにイベントを転送しますが、各方向で独自のイベントプロバイダーが使用されます。
 
-* **AEM AssetsからAssets Integration Serviceへ**: アセットが承認、拒否、または削除されると、そのイベントはAssets Integration Serviceに配信されます。 このサービスは、`match-by-SKU` （メタデータ駆動型）または[ カスタムマッチャー（App Builder） ](../synchronize/custom-match.md){target=_blank}を使用してアセットを製品と照合し、次に`product-asset` マッピングを[!DNL Commerce Optimizer]に送信し、そこで商品レイヤーとして保存します。
+* **AEM AssetsからAssets Integration Serviceへ**: アセットが承認、拒否、または削除されると、そのイベントはAssets Integration Serviceに配信されます。 このサービスは、`match-by-SKU` （メタデータ駆動型）または[&#x200B; カスタムマッチャー（App Builder） &#x200B;](../synchronize/custom-match.md){target=_blank}を使用してアセットを製品と照合し、次に`product-asset` マッピングを[!DNL Commerce Optimizer]に送信し、そこで商品レイヤーとして保存します。
 
   >[!NOTE]
   >
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 統合をサポートするには、AEM Assets統合を[!DNL Commerce Optimizer]にオンボーディングするプロセスを開始する前に、AEM Assets プロジェクトと環境を設定します。 これには、OpenAPI機能を備えたDynamic Mediaを有効にすることや、Commerce メタデータスキーマ、イベント、UIをAEM プロジェクトで利用できるようにすることなどが含まれます。
 
-* [!BADGE おすすめ]{type=Positive} AEM リリース `2026.5.26309`以降では、コードをデプロイせずにCloud Managerからの統合を有効にします。 [Commerceとの連携を有効にする（セルフサービス） ](configure-aem.md#enable-aem-commerce-self-service)に従います。
+* [!BADGE おすすめ]{type=Positive} AEM リリース `2026.5.26309`以降では、コードをデプロイせずにCloud Managerからの統合を有効にします。 [Commerceとの連携を有効にする（セルフサービス） &#x200B;](configure-aem.md#enable-aem-commerce-self-service)に従います。
 
 * 以前のAEM リリースでは、`assets-commerce` パッケージを手動でデプロイします。
 [Assets-commerce パッケージを手動でインストールします](configure-aem.md#install-the-assets-commerce-package-manually)。
@@ -85,11 +85,11 @@ AEM Assets Integrationを[!DNL Commerce Optimizer]にオンボーディングす
 * AEM Assets イベント（アセット承認済み、更新、削除）
 * [!DNL Commerce Optimizer]個のカタログイベント（製品が作成、更新されました）
 
-このプロセスを開始するには、次の情報を含むサポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を[作成します。
+このプロセスを開始するには、次の情報を含むサポートチケット [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を作成します。
 
 * **[!DNL Adobe Commerce Optimizer]テナント ID** （インスタンス ID）が[!DNL Commerce Optimizer] URLまたはCommerce Cloud Manager UIに見つかりました。
 * **AEM プログラム IDとEnvironment ID**&#x200B;は、[統合にAEM Assets](#configure-aem-assets-first)を設定したときに設定します。
-* **一致するルール**: SKUまたは[外部マッチャー（App Builder） ](../synchronize/custom-match.md){target=_blank}によって一致します。
+* **一致するルール**: SKUまたは[外部マッチャー（App Builder） &#x200B;](../synchronize/custom-match.md){target=_blank}によって一致します。
 * **レイヤー**: テナントを登録するカタログレイヤー名（**レイヤー関連の制約**&#x200B;を参照）。 意図的な場合にのみカスタム名を指定します。それ以外の場合は、デフォルトの&#x200B;**`AEM-Assets`**&#x200B;が使用されます。
 * **ロケール**: テナントを登録するカタログ ソース ロケール （例：`en-US`）。 このロケールは、カタログビューと製品カタログデータで使用するロケールと一致している必要があります。
 
@@ -106,7 +106,7 @@ AEM Assets Integrationを[!DNL Commerce Optimizer]にオンボーディングす
 
 設定が完了すると、統合によって`product-asset` マッピングが自動的に同期されます。
 
-詳しくは、[ カスタム自動一致](../synchronize/custom-match.md)を参照してください。
+詳しくは、[&#x200B; カスタム自動一致](../synchronize/custom-match.md)を参照してください。
 
 ### SKU ワークフローによる一致の例
 
