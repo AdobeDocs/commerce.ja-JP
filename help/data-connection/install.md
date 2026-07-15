@@ -12,9 +12,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 476
+source-wordcount: 491
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 [!DNL Data Connection]拡張機能は、[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)から入手できます。 この拡張機能をサーバーのコマンドラインからインストールすると、Adobe Commerce インストールに[&#x200B; サービス &#x200B;](../landing/saas.md)として接続されます。 プロセスが完了すると、Commerce _管理者_&#x200B;の&#x200B;**サービス**&#x200B;の&#x200B;**システム** メニューに&#x200B;**[!DNL Data Connection]**&#x200B;と&#x200B;**Commerce サービス コネクタ**&#x200B;が表示されます。
 
 ![[!DNL Data Connection]拡張機能の管理者ビュー](assets/epc-adminui.png)
+
+>[!NOTE]
+>
+>インストール後、Adminで[!DNL Data Connection]を設定します。 グローバル設定とweb サイト範囲の設定については、[設定スコープ &#x200B;](connect-data.md#configuration-scope)を参照してください。
 
 >[!IMPORTANT]
 >
@@ -162,7 +166,7 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 1. **保存** `composer.json`。 次に、コマンドラインから次のコマンドを実行します。
 
    ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
+   composer update magento/experience-platform-connector --with-dependencies
    ```
 
    B2B マーチャントの場合：

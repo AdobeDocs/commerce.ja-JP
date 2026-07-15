@@ -21,16 +21,16 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 595
+source-wordcount: 598
 ht-degree: 1%
 
 ---
 
-# プライバシーリクエスト
+# [!DNL Commerce] サービスでのプライバシー要求の処理方法
 
-Adobe Experience Platform Privacy Serviceには、顧客データリクエストの管理に役立つRESTful APIとユーザーインターフェイスが用意されています。 Privacy Serviceなら、Adobe Experience Cloudアプリケーションから顧客データにアクセスして削除するためのリクエストを送信し、法的および組織のプライバシー規制を自動的に遵守できます。
+Adobe Experience Platform Privacy Serviceには、顧客データリクエストの管理に役立つRESTful APIとユーザーインターフェイスが用意されています。 Privacy Serviceなら、Adobe Experience Cloud アプリケーションから顧客の個人データにアクセスして削除するリクエストを送信でき、法的および組織のプライバシー規制への自動コンプライアンスを促進できます。
 
 Privacy Serviceとプライバシーリクエストの作成および管理方法について詳しくは、Adobe Experience Platformのドキュメントを参照してください。
 

@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 1132
+source-wordcount: 1107
 ht-degree: 0%
 
 ---
@@ -37,16 +37,7 @@ ht-degree: 0%
 
 ## 他の顧客は何を達成しましたか？
 
-Adobe [!DNL Commerce]のお客様は、Real-Time CDPで構築されたオーディエンスをアクティブ化し、[!DNL Commerce] インスタンスにデプロイすることで、大きなビジネス効果を得ました。
-
-グローバルなマルチブランドアパレルのretailerは、次のことを実現しました。
-
-- 数百万の統合顧客プロファイルを活用して、信頼できる唯一の情報源を構築
-- 「購買意欲の高い顧客」の40以上の独自のオーディエンスを作成し、チャネルをまたいでエンゲージ
-
-世界的な飲料会社のデータを収集：
-
-- 100 ヶ国以上で9,800万人分の顧客プロファイル
+Adobe [!DNL Commerce]のお客様は、Real-Time CDPで構築されたオーディエンスをアクティブ化し、[!DNL Commerce] インスタンスにデプロイすることで、大きなビジネス効果を得ました。 関連するCommerce イベントデータの結果については、[Adobe Journey Optimizerを使用してカート放棄メールを送信する](using-ajo.md#what-have-other-customers-achieved)を参照してください。
 
 ## では始めましょう
 

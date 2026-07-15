@@ -3,14 +3,18 @@ title: セマンティック検索
 description: 設定から [!DNL Live Search] のAI セマンティック検索を有効にします。 属性の設定やストアフロントの変更は必要ありません。
 role: Admin
 recommendations: noCatalog
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 33d9172b2d0455a061c00781128a9f2fe804af7b
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
 
 # セマンティック検索
+
+>[!AVAILABILITY]
+>
+>セマンティック検索は、Adobe Commerce バージョン 2.4.4以降を使用しているマーチャントに対して使用できます。
 
 セマンティック検索では、入力した単語だけでなく、AIを利用して顧客の意味を把握できます。 「ビーチの結婚式のためのドレス」や「一日中立っているための快適な靴」などのクエリは、カタログがそれらの正確なフレーズを使用していない場合でも、関連する商品を返すことができます。
 

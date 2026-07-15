@@ -14,21 +14,23 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1028
 ht-degree: 0%
 
 ---
 
 # Commerce Data Ingestionの時系列イベントスキーマの更新
 
-[!DNL Data Connection]拡張機能を使用するための[&#x200B; オンボーディング手順](overview.md#onboarding-steps)の1つは、データストリームワークスペースにアクセスし、[Adobe Commerce固有のデータストリーム &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ja)を作成することです。 そのデータストリームを作成する場合は、取り込むデータを説明するスキーマも選択する必要があります。 このスキーマには、コマース固有のフィールドグループを含める必要があります。
+拡張機能[を有効にする [!DNL Data Connection]](overview.md#enable-extension)手順の1つは、データストリームワークスペースにアクセスし、[Adobe Commerce固有のデータストリーム &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ja)を作成することです。 そのデータストリームを作成する場合は、取り込むデータを説明するスキーマも選択する必要があります。 このスキーマには、コマース固有のフィールドグループを含める必要があります。
 
 この記事では、Adobe Commerce イベントによって提供される次の時系列データを正常に収集するために、スキーマに含める必要があるフィールドグループについて説明します。
 
-- [行動](events.md) - ストアフロント、プロファイル、検索、B2B イベントが含まれます。
-- [&#x200B; バックオフィス &#x200B;](events-backoffice.md) – 注文状況とプロファイルイベントが含まれます。
+- [行動](events.md) - ストアフロント、検索、B2B イベントが含まれます。
+- [&#x200B; バックオフィス &#x200B;](events-backoffice.md) – 注文状況と時系列[&#x200B; プロファイルイベント &#x200B;](events-backoffice.md#customer-profile-events)が含まれます。
+
+プロファイル *レコード*&#x200B;については、[&#x200B; プロファイルレコードスキーマの更新](profile-data.md)を参照してください。
 
 [時系列データ &#x200B;](data-ingestion.md)について詳しく見る。
 
