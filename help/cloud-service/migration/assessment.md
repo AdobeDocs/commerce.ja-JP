@@ -320,13 +320,13 @@ Manages custom shipping rate calculations based on customer account tier and ord
       - [スキルとプロンプト](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
       - [ユースケース](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
    - [App Builderの概要](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
-   - [App Builder for Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
+   - [App Builder for Adobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
    - スターターキット
       - [バックエンド統合スターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
       - [チェックアウトスターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - ストアフロント開発
-   - [概要](https://experienceleague.adobe.com/developer/commerce/storefront/)
-   - [ストアフロント AI スキル](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
+   - [概要](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
+   - [ストアフロント AI スキル](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=ja)
 
 >[!TIP]
 >
