@@ -26,9 +26,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 4cd054b64c3b95fd50ab9bb682469ace7cc871a3
 workflow-type: tm+mt
-source-wordcount: 2505
+source-wordcount: 2497
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 Commerceの移行評価は、既存のAdobe Commerceの導入を自動的に分析するものです。 Adobeのツールは、Commerceのコードベースをスキャンし、構築、カスタマイズ、変更されたあらゆる要素を一覧表示する構造化レポートを生成します。 次に、コードベースに対して行われたカスタマイズが、[!DNL Adobe Commerce as a Cloud Service]への移行にどのような影響を与えるかを示します。
 
-レポートは、任意のブラウザーで開くことができるHTML ファイルとして配信されます。 本番環境へのアクセスは必要ありません。ただし、最初にプロジェクトコードベースを共有する必要があります。
+処理済みの移行評価レポートは、`https://experience.adobe.com/@<ims-org-name>/commerce-migration-assessment/shared-assessments`からアクセスできます。 本番環境へのアクセスは必要ありません。ただし、最初にプロジェクトコードベースを共有する必要があります。
 
 **評価で提供される：**
 

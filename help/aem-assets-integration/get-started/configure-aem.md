@@ -1,5 +1,5 @@
 ---
-title: Commerce メタデータをサポートするようにAEM Assets プロジェクトを設定する
+title: AEM Assets プロジェクトの設定
 description: assets-commerce パッケージをデプロイし、AEM プロジェクトでAdobe Commerce メタデータを設定することで、CommerceとAEM Assets間でアセットを同期する方法について説明します。
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
@@ -14,81 +14,107 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: de02e13e169ab336bac09ebff90c44b3b707efce
+source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
-source-wordcount: 1775
+source-wordcount: 1741
 ht-degree: 1%
 
 ---
 
-# Commerce メタデータをサポートするようにAEM Assets プロジェクトを設定する
+# AEM Assets プロジェクトの設定
 
-AEM AssetsをCommerceのデジタルアセット管理システム （DAM）として使用する場合、`assets-commerce` パッケージをインストールすると、AEM オーサリング環境からCommerce製品の画像とビデオを管理できます。
+ここでは、「AEM Assetsの名前空間」、「メタデータスキーマ」、「[!UICONTROL Commerce]」タブをAEM オーサリング環境で使用できるように、Commerce プロジェクトを設定する方法について説明します。 これらのリソースの背景については、[AEM AssetsのCommerce メタデータ &#x200B;](../metadata.md)を参照してください。
 
-AEM オーサリング環境からAEM Assets アセットを管理するために必要なパッケージコードとメタデータを使用してCommerce プロジェクトを設定するには、次の手順を実行します。
+AEM Assets プロジェクトを設定するには、次の2つのオプションがあります。
 
-1. [`assets-commerce` パッケージの内容について説明します](#aem-commerce-assets-commerce-package-contents)
+* [!BADGE 推奨]{type=Positive} **セルフサービス オンボーディング** — AEM リリース `2026.5.26309`以降では、環境変数を設定し、OpenAPI機能を使用してDynamic Mediaをアクティブ化することで、Cloud Managerでの統合を有効にします。 カスタムコードのデプロイメントは必要ありません。 [Commerce統合（セルフサービス）を有効にする](#enable-aem-commerce-self-service)を参照してください。
 
-1. [Commerce メタデータをサポートするようにAEM Assets プロジェクトを設定するには、インストール手順を実行します](#step-1-install-the-assets-commerce-package)
+* **手動設定** — Cloud Manager パイプラインを使用して`assets-commerce` パッケージをデプロイします。 カスタムパッケージコードをデプロイする必要がある場合、または`2026.5.26309`より前のAEM リリースを使用している場合は、これらの手動ステップを使用します。 [Assets-commerce パッケージを手動でインストールする](#install-the-assets-commerce-package-manually)を参照してください。
 
-## AEM Commerce assets-commerce パッケージの内容
+>[!TIP]
+>
+>現在のAEM バージョンは、右上のメニュー（**[!UICONTROL Help]** > **[!UICONTROL About AEM]**）から確認できます。
 
-Adobeは、Experience Manager Assets as a Cloud Service環境設定にCommerce名前空間およびメタデータスキーマリソースを追加するためのAEM Commerce パッケージコード `assets-commerce`を提供します。
+## Commerce統合（セルフサービス）を有効にする {#enable-aem-commerce-self-service}
 
-このパッケージコードは、次のリソースをAEM Assets オーサリング環境に追加します。
+[!BADGE &#x200B; サポート対象]{type=Informative tooltip="サポート対象"} AEM リリース `2026.5.26309`以降。
 
-* Commerce関連のプロパティを識別するための[&#x200B; カスタム名前空間](https://github.com/ankumalh/assets-commerce/blob/main/ui.config/jcr_root/apps/commerce/config/org.apache.sling.jcr.repoinit.RepositoryInitializer~commerce-namespaces.cfg.json)、`Commerce`。
+サポートされているAEM リリースでは、カスタムコードをデプロイせずに、Cloud ManagerからのCommerce統合を有効にします。 Commerceの名前空間、メタデータスキーマ、および&#x200B;**[!UICONTROL Commerce]** タブは、オーサーサービスでの統合を有効にすると自動的にプロビジョニングされます。
 
-   * Adobe Commerce プロジェクトに関連付けられたCommerce アセットにタグ付けするためのラベル `Eligible for Commerce`を持つカスタムメタデータタイプ `commerce:isCommerce`。
+### セルフサービスの前提条件
 
-   * カスタムメタデータタイプ `commerce:skus`と、対応するUI コンポーネントを使用して&#x200B;**[!UICONTROL Product Data]** プロパティを追加します。 商品データには、Commerce アセットを商品SKUに関連付けるためのメタデータプロパティが含まれています。
+* プログラムおよびデプロイメント マネージャーの役割を持つ[AEM Cloud Manager プログラムおよび環境](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)へのアクセス。
 
-     ![&#x200B; カスタム製品データ UI コントロール &#x200B;](../assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
+* リリース `2026.5.26309`以降のAEM プログラム。
 
-   * Commerceでのアセットのビジュアライゼーション方法を示すカスタムメタデータタイプ `commerce:roles`と`commerce:positions`属性。
+* Commerce インスタンスの&#x200B;**IMS組織ID**。
 
-   * 代替テキストマルチフィールド （_[!UICONTROL Alt texts]_） メタデータ。エディターは、Commerce ストアビューコードでキー付きの代替テキストを入力できます。 これは、カタログ内での製品画像の割り当てやスコープ設定は変更されません。 AEM Assets メタデータの[代替テキスト &#x200B;](#localized-alt-text-in-aem-assets-metadata)を参照してください。
+  Commerce インスタンスとAEM Assets オーサリング環境の両方が同じIMS組織にある必要があります。
 
-* Commerce アセットのタグ付け用の`Eligible for Commerce`および`Product Data` フィールドを含むCommerce タブを持つメタデータスキーマフォーム。 このフォームには、AEM Assets UIから`roles`および`position` フィールドを表示または非表示にするオプションも用意されています。
+### 手順1：プログラムと環境の作成
 
-  ![AEM Assets メタデータスキーマフォームの「Commerce」タブ &#x200B;](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
+Cloud Managerでのプログラムの作成は、1つのウィザードプロセスです。プログラムとその環境は、複数の手順で設定され、最後にまとめて保存されます。
 
-* 最初のアセットの同期をサポートするために、[&#x200B; サンプルにタグ付けして承認されたCommerce アセット &#x200B;](https://github.com/ankumalh/assets-commerce/blob/main/ui.content/src/main/content/jcr_root/content/dam/wknd/en/activities/hiking/equipment_6.jpg/.content.xml) `equipment_6.jpg`が含まれています。 AEM AssetsからAdobe Commerceに同期できるのは、承認済みのCommerce アセットのみです。
+1. Cloud Managerで、**[!UICONTROL Add Program]**&#x200B;を選択します。
+
+1. **[!UICONTROL Set up for production]**&#x200B;を選択し、プログラム名を入力してから、**[!UICONTROL Continue]**&#x200B;を選択します。
+
+1. **[!UICONTROL Solutions & Add-ons]** ステップで、**[!UICONTROL Dynamic Media]**&#x200B;を含め、プロジェクトに必要なソリューションとアドオンを選択し、**[!UICONTROL Continue]**&#x200B;を選択します。
+
+   ![Dynamic Mediaを選択したCloud Manager ソリューションとアドオンの手順](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
+
+1. **[!UICONTROL Add Environment]** ステップで、**実稼動**&#x200B;および&#x200B;**ステージング**&#x200B;環境の名前を入力し、地域を選択します。
+
+   ![実稼動環境とステージの詳細を含むCloud Manager Add environment ダイアログ &#x200B;](../assets/aem-cloud-manager-add-environment.png){width="600" zoomable="yes"}
+
+1. 環境を使用してプログラムを作成するには、**[!UICONTROL Save]**&#x200B;を選択します。
+
+### 手順2:Commerce統合変数を有効にする
+
+Cloud Managerで、手順1で作成した環境を開き、次の操作を行います。
+
+1. 「**[!UICONTROL Configuration]**」タブを選択します。
+
+1. 次の値を持つ環境変数を追加し、**[!UICONTROL Add]**&#x200B;と&#x200B;**[!UICONTROL Save]**&#x200B;を選択します。
+
+   | フィールド | 値 |
+   |---|---|
+   | 名前 | `COMMERCE_INTEGRATION_ENABLED` |
+   | 値 | `true` |
+   | 適用されたサービス | オーサー |
+   | タイプ | 変数 |
+
+   ![COMMERCE_INTEGRATION_ENABLED変数がオーサーサービスに適用されたCloud Manager環境設定](../assets/aem-cloud-manager-commerce-integration-variable.png){width="600" zoomable="yes"}
+
+   環境が更新され、設定が適用されます。 環境ステータスが&#x200B;**[!UICONTROL Running]**&#x200B;に戻るまで待ちます。
+
+### 手順3:OpenAPI機能を使用したDynamic Mediaのアクティベーション
+
+1. 環境&#x200B;**[!UICONTROL General]** タブで、**[!UICONTROL Dynamic Media]**&#x200B;を見つけます。
+
+1. *OpenAPI機能の横にある*&#x200B;を選択します。**[!UICONTROL Click to activate]**
+
+   ![Dynamic Media OpenAPI アクティベーションリンクを表示する「環境一般」タブ &#x200B;](../assets/aem-cloud-manager-dynamic-media-activate.png){width="600" zoomable="yes"}
+
+   アクティベーションはバックグラウンドで実行されます。 完了すると、Commerceとの連携の準備が整います。
+
+   >[!NOTE]
+   >
+   > **[!UICONTROL Click to activate]**&#x200B;が利用できない場合は、サポートチケットを開いて、OpenAPI機能を備えたDynamic Mediaを有効にします。
+
+### 手順4：設定の検証
+
+**AEM Assets オーサー環境**&#x200B;に切り替えて、任意のアセットを開きます。 プロパティを編集し、デフォルトのメタデータスキーマに「**[!UICONTROL Commerce]**」タブが含まれており、**[!UICONTROL Product Data]**&#x200B;および&#x200B;**[!UICONTROL Eligible for Commerce]** フィールドが表示されていることを確認します。
+
+## assets-commerce パッケージの手動インストール
 
 >[!NOTE]
 >
-> **AEM Commerce パッケージコード**&#x200B;について詳しくは、GitHubの[readme](https://github.com/ankumalh/assets-commerce) ページを参照してください。
+> カスタムパッケージコードをデプロイする場合や、`2026.5.26309`より前のAEM リリースを使用している場合は、この手動メソッドを使用します。 サポートされているリリースでは、代わりに[Commerce統合を有効にする（セルフサービス） &#x200B;](#enable-aem-commerce-self-service)を使用してください。
 
-## AEM Assets メタデータの代替テキスト
+### 前提条件
 
-_[!UICONTROL Alt texts]_&#x200B;マルチフィールドは、対象となる画像を編集するときに、**[!UICONTROL Commerce]**&#x200B;タブのAEM Assets アセットメタデータエディターで使用できます。
-
->[!IMPORTANT]
->
-> ストアごとのビューの動作は、代替テキストにのみ適用されます。 AEM Assetsとの連携では、Adobe Commerceのストアビューごとに異なる商品画像が同期されません。 AEMの製品画像は、このリリース以前と同じギャラリー割り当て動作で引き続きCommerceに同期されます。
-
-マルチフィールドには、Commerce ストアビューごとに1行が含まれます。 各行には2つの入力があります。
-
-* **[!UICONTROL Store View Code]** — ストアビュー識別子（`default`または`en_US`など）。
-
-* **[!UICONTROL Alt Text]** – そのストアビューの代替テキスト（255文字に制限）。
-
-追加のストアビュー用に行を追加するには、**[!UICONTROL Add]**&#x200B;を選択します。 行を削除するには、その行の&#x200B;**[!UICONTROL Delete]** アイコンを選択して削除します。
-
-![&#x200B; ストアビューコードと代替テキスト入力を含む代替テキストマルチフィールド &#x200B;](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
-
-保存すると、クライアント側の検証により、任意の行に空の&#x200B;_[!UICONTROL Store View Code]_&#x200B;がある場合、または2つの行で同じストアビューコードが使用されている場合は、送信がブロックされます（大文字と小文字は区別されません）。
-
-代替テキストエントリは、次の2つのインデックス整列`String[]` プロパティとしてJCR アセットメタデータに保持されます。
-
-* `commerce:altTextStoreViews`：各行のビューコードを格納します。
-* `commerce:altTextValues`: `commerce:altTextStoreViews`の各エントリと同じインデックスにあるalt テキストに一致します。
-
-これらのアセットがAdobe Commerceに同期すると、一致するストアビューコードのストアごとのビュー代替テキストが商品メディアギャラリーに書き込まれます。 基になる画像マッピングは変更されません。
-
-## 前提条件
-
-`assets-commerce` パッケージコードをAEM Assets as a Cloud Service AEM環境にデプロイするには、次のリソースと権限が必要です。
+`assets-commerce` パッケージ コードをAEM Assets as a Cloud Service AEM環境にデプロイするには、次のリソースと権限が必要です。
 
 * プログラムおよびデプロイメント マネージャーの役割を持つ[AEM Assets Cloud Manager プログラムおよび環境](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)へのアクセス。
 
@@ -118,7 +144,7 @@ OpenAPI機能を備えた[!BADGE SaaSのみ]{type=Positive url="https://experien
 
 [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} AEM as a Cloud Serviceで、次の情報を記載したAdobe サポートチケットを送信します。
 
-* タイトル：Dynamic Media OpenAPIを有効にして、Adobe CommerceとAEM Assetsを完全に統合する
+* タイトル：Dynamic Media OpenAPIを有効にして、Adobe CommerceをAEM Assetsと完全に統合する
 
    * サポートチケットの内容：
 
@@ -127,11 +153,11 @@ OpenAPI機能を備えた[!BADGE SaaSのみ]{type=Positive url="https://experien
       * **[!UICONTROL AEM Environment ID]**
       * **[!UICONTROL IMS Org ID]**
 
-サポートチケットを送信すると、AdobeはCloud Services環境でOpenAPI機能を備えたDynamic Mediaを有効にし、IMS クライアント IDなどの詳細を共有して、統合を進めることができます。
+サポートチケットを送信すると、AdobeはCloud Services環境でOpenAPI機能を備えたDynamic Mediaを有効にし、統合を進めるためにIMS Client IDなどの詳細を共有します。
 
 >[!ENDTABS]
 
-## 手順1:assets-commerce パッケージのインストール
+### インストール手順
 
 1. AEM Cloud Managerに移動し、プログラムを選択し、Adobe Commerceと統合する実稼動環境とステージング環境を[作成します](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)。
 
@@ -183,11 +209,11 @@ OpenAPI機能を備えた[!BADGE SaaSのみ]{type=Positive url="https://experien
 
 1. **checkbox** コンポーネントを&#x200B;**Commerce** タブにドラッグ&amp;ドロップし、プロパティ `commerce:isCommerce`にマッピングします。 オプションとして&#x200B;**Yes**&#x200B;と&#x200B;**No**&#x200B;を定義します。
 
-その他の問題が発生した場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を作成するか、AEM Assets Integrationの営業担当者にお問い合わせください。
+その他の問題が発生した場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を作成するか、AEM Assets Integrationの営業担当者にお問い合わせください。
 
-## 手順2：オプション。 メタデータプロファイルの設定
+## メタデータプロファイルの設定（オプション）
 
-AEM Assets オーサー環境で、メタデータプロファイルを作成して、Commerce アセットメタデータのデフォルト値を設定します。 次に、新しいプロファイルをAEM Asset フォルダーに適用して、これらのデフォルトを自動的に使用します。 この設定により、手作業を削減してアセット処理が合理化されます。
+AEM Assets オーサー環境で、メタデータプロファイルを作成して、Commerce アセットメタデータのデフォルト値を設定します。 これらのデフォルトを自動的に使用するには、新しいプロファイルをAEM Asset フォルダーに適用します。 この設定により、手作業を削減してアセット処理が合理化されます。
 
 メタデータプロファイルを設定する場合、次のコンポーネントのみを設定する必要があります。
 
@@ -241,7 +267,7 @@ AEM Assets オーサー環境で、メタデータプロファイルを作成し
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. オプション。 承認済みのCommerce アセットをAEM Assets環境にアップロードするときに自動的に同期させるには、`Basic` タブの&#x200B;_[!UICONTROL Review Status]_&#x200B;フィールドのデフォルト値を`approved`に設定します。
+1. オプション。 承認済みのCommerce アセットがAEM Assets環境にアップロードされるときに自動的に同期するには、`Basic` タブの&#x200B;_[!UICONTROL Review Status]_&#x200B;フィールドのデフォルト値を`approved`に設定します。
 
 1. アップデートを保存します。
 

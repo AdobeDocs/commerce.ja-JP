@@ -3,9 +3,9 @@ title: AEM Assets統合のリリースノート
 description: すべてのAEM Assets統合リリースについて詳しくは、リリースノートを参照してください。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e055a3d44eda7e7f082a884c316ad437ea9ac15e
+source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ _2026年5月14日_
 
 [!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
 
-![新しい問題](../assets/new.svg)<!-- Issue ACAP-1268 -->画像またはアセットがAEMからCommerceの商品メディアギャラリーに読み込まれると、代替テキストが同期の一部として引き継がれます。 AEM Assetsでは、ストアビューごとに代替テキストを設定できます。 AEM Assets メタデータの[代替テキスト &#x200B;](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}を参照してください。
+![新しい問題](../assets/new.svg)<!-- Issue ACAP-1268 -->画像またはアセットがAEMからCommerceの商品メディアギャラリーに読み込まれると、代替テキストが同期の一部として引き継がれます。 AEM Assetsでは、ストアビューごとに代替テキストを設定できます。 AEM Assets メタデータの[&#x200B; ローカライズされたalt テキスト &#x200B;](metadata.md#localized-alt-text-in-aem-assets-metadata){target=_blank}を参照してください。
 
 ## v1.3.5
 

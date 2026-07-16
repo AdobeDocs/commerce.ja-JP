@@ -5,9 +5,9 @@ role: Admin, Developer
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
-source-git-commit: 6ae571dd77206859e69e57100e80bb01416a36cd
+source-git-commit: 172fcbd659f4fe8868059d29ed335a5136af8d33
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,9 @@ Dynamic Mediaの使用状況は、[!DNL Adobe Commerce Optimizer]内の製品ビ
 
 >[!ENDSHADEBOX]
 
+>[!NOTE]
+>
+>上記の制限は、容量と使用割り当てをカバーします。 製品ビジュアル機能の概要と機能的な制約については、[製品ビジュアルとAEM Assets](setup/product-visuals.md)を参照してください。
 
 ### カタログビューとポリシー
 
