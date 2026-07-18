@@ -1,7 +1,7 @@
 ---
-source-git-commit: c99194b2eb7111a593cfe7c4ba1b4917e38589d2
+source-git-commit: 26e80644cd94f01e0cd310ff2197dc01de6c6819
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1892'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年7月15日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>AEM リリース <code>2026.5.26309</code>以降のAEM Assets統合用に<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/configure-aem#enable-aem-commerce-self-service"> セルフサービスオンボーディング </a>を文書化し、AEM Assets</a> トピックに新しい<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/metadata">Commerce メタデータを追加し、Da.liveを介して<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/configure-storefront#connect-aem-assets-authoring">AEM Assetsをストアフロントに接続</a>するためのガイドを追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/21d305eaa87cd70d82c530e4ee5a4ea34574d400">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年7月7日（PT）
 
