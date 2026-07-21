@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
 workflow-type: tm+mt
-source-wordcount: 1404
+source-wordcount: 1365
 ht-degree: 0%
 
 ---
@@ -32,6 +32,19 @@ ht-degree: 0%
 
   {{aco-api-updates-and-dropins}}
 
+## 2026年7月
+
+>[!BEGINSHADEBOX]
+
+_2026年7月20日_
+
+![修正](../assets/fix.svg) **カテゴリーナビゲーションのパフォーマンス** - カテゴリーサービスにパフォーマンスの最適化を適用しました。その結果、`CategoryNavigation` クエリのスループットが向上し、P99待ち時間が短縮され、サービスの応答性が向上し、高負荷での全体的なユーザーエクスペリエンスが向上しました。
+<!--DATA-7131 DATA-7250-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## 2026年6月
 
 >[!BEGINSHADEBOX]
@@ -40,7 +53,8 @@ _2026年6月24日_
 
 <!-- v1.3 -->
 
-![新規](../assets/new.svg) **新規`canEditQuantity` フィールド** - カタログサービス GraphQLで`canEditQuantity`を`ProductViewOptionValueProduct`に追加しました。 Commerce管理者からバンドル選択のオプションの&#x200B;**User Defined**&#x200B;数量設定を公開するので、ストアフロントコンシューマーはバンドル選択の数量が編集可能かどうかを判断できます。
+![新規](../assets/new.svg) **新規`canEditQuantity` フィールド** - カタログサービス GraphQLで`canEditQuantity`を`ProductViewOptionValueProduct`に追加しました。Commerce管理者からバンドル選択のオプションの&#x200B;**User Defined**&#x200B;数量設定を公開するので、ストアフロントコンシューマーはバンドル選択の数量が編集可能かどうかを判断できます。
+<!--COMOPT-2050-->
 
 ### セマンティック検索
 
@@ -68,11 +82,14 @@ _2026年5月28日_
 
 <!-- v1.2 -->
 
-![修正](../assets/fix.svg) **完全なナビゲーションツリー** - タグ付けされていない中間ノードがパスに存在する場合、タグ付けされた下位カテゴリが、ファミリーフィルター処理された`navigation` ツリーに正しく含まれるようになりました。 この修正により、買い物客はナビゲーション内のすべての関連カテゴリーを表示できるようになり、商品の閲覧と発見が簡単になりました。
+![修正](../assets/fix.svg) **完全なナビゲーションツリー** - タグ付けされていない中間ノードがパスに存在する場合、タグ付けされた下位カテゴリが、ファミリーフィルター処理された`navigation` ツリーに正しく含まれるようになりました。この修正により、買い物客はナビゲーション内のすべての関連カテゴリーを表示できるようになり、商品の閲覧と発見が簡単になりました。
+<!--DATA-7183-->
 
-![修正](../assets/fix.svg) **空のスラグ処理を`categoryTree`要求**&#x200B;で修正 – `slugs`引数に空の文字列が含まれていると、[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) クエリが内部サーバーエラーを返す問題を修正しました。 空のスラグ値は無視されるようになったため、ストアフロントと統合では、リクエストに失敗することなくカテゴリーデータを引き続き解決できます。
+![修正](../assets/fix.svg) **空のスラグ処理を`categoryTree`要求**&#x200B;で修正 – `slugs`引数に空の文字列が含まれていると、[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) クエリが内部サーバーエラーを返す問題を修正しました。空のスラグ値は無視されるようになったため、ストアフロントと統合では、リクエストに失敗することなくカテゴリーデータを引き続き解決できます。
+<!--DATA-7184-->
 
-![修正](../assets/fix.svg) **`searchCategory`要求は、大文字と小文字を区別しないアルファベット順の結果を返します** - `searchCategory` クエリは、大文字と小文字を区別せずに検索結果をアルファベット順に並べ替えるようになり、一貫性のある予測可能な順序を確保します。 接頭辞が短いカテゴリは、名前が同じ場合に最初に表示されます。
+![修正](../assets/fix.svg) **`searchCategory`要求は、大文字と小文字を区別しないアルファベット順の結果を返します** - `searchCategory` クエリは、大文字と小文字を区別せずに検索結果をアルファベット順に並べ替えるようになり、一貫性のある予測可能な順序を確保します。接頭辞が短いカテゴリは、名前が同じ場合に最初に表示されます。
+<!--COMOPT-2142-->
 
 _2026年5月4日_
 
