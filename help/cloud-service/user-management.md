@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 09692e5e2630568a48d14f727930d324c6932ca6
 workflow-type: tm+mt
-source-wordcount: 1822
+source-wordcount: 1816
 ht-degree: 0%
 
 ---
@@ -58,10 +58,10 @@ ht-degree: 0%
 * [**Developers**](https://helpx.adobe.com/jp/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}：開発者にはユーザー権限があり、開発者ユーザーとしてCommerce インスタンスに追加されます。 [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[&#x200B; イベントの設定](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}、[webhookの作成](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}を使用できます。
 
 * 管理者 – 管理者の役割にはさまざまな種類があります。
-   * [&#x200B; システム管理者](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Admin Consoleを通じて、組織内のすべての製品および製品プロファイルにアクセスできます。
-   * [製品管理者](#add-a-product-admin) – 製品管理者は、[!DNL Adobe Admin Console]の製品[&#128279;](#add-users)のユーザー、ロール、権限を管理し、[Commerce管理者](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}のユーザーを管理できます。
-   * [製品プロファイル管理者](#add-developers-and-product-profile-admins) – 製品プロファイル管理者はAdobe Commerce管理者にアクセスできませんが、[!DNL Adobe Admin Console]で製品のユーザーを管理できます。
-   * サポート管理者 – サポート管理者は、サポートチケットを作成および管理できます。
+  * [&#x200B; システム管理者](https://helpx.adobe.com/jp/enterprise/using/admin-roles.html){target="_blank"} - システム管理者は、Admin Consoleを通じて、組織内のすべての製品および製品プロファイルにアクセスできます。
+  * [製品管理者](#add-a-product-admin) – 製品管理者は、[!DNL Adobe Admin Console]の製品[&#128279;](#add-users)のユーザー、ロール、権限を管理し、[Commerce管理者](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}のユーザーを管理できます。
+  * [製品プロファイル管理者](#add-developers-and-product-profile-admins) – 製品プロファイル管理者はAdobe Commerce管理者にアクセスできませんが、[!DNL Adobe Admin Console]で製品のユーザーを管理できます。
+  * サポート管理者 – サポート管理者は、サポートチケットを作成および管理できます。
 
 >[!NOTE]
 >
@@ -194,49 +194,49 @@ Admin Consoleの「![開発者と管理者」タブのオプション &#x200B;](
 **ユーザー**
 
 * カタログ
-   * 在庫
-      * 特定可能
-         * 商品の価格を読む
+  * 在庫
+    * 特定可能
+      * 商品の価格を読む
 
 **開発者**
 
 * カタログ
-   * 在庫
-      * 特定可能
-         * 商品の価格を読む
+  * 在庫
+    * 特定可能
+      * 商品の価格を読む
 * システム
-   * データ転送
-      * 履歴を読み込み
+  * データ転送
+    * 履歴を読み込み
 * Adobe IO イベント設定
-   * 設定の確認
-   * イベントプロバイダーの作成
-   * 設定の更新
-   * イベントの同期
-   * イベントプロバイダーリストの取得
+  * 設定の確認
+  * イベントプロバイダーの作成
+  * 設定の更新
+  * イベントの同期
+  * イベントプロバイダーリストの取得
 * イベントフレームワーク
-   * イベントリスト
-   * イベント接続のテスト
-   * イベントの購読
-   * イベントから購読を解除
-   * イベントステータス
-   * イベントサブスクリプションを取得するAPI
-   * イベント購読の表示の管理者UI
-   * イベント購読の作成の管理UI
-   * 新しいイベント管理UIのリクエスト
+  * イベントリスト
+  * イベント接続のテスト
+  * イベントの購読
+  * イベントから購読を解除
+  * イベントステータス
+  * イベントサブスクリプションを取得するAPI
+  * イベント購読の表示の管理者UI
+  * イベント購読の作成の管理UI
+  * 新しいイベント管理UIのリクエスト
 * Webhook
-   * Webhook デジタル署名
-      * Webhook デジタル署名設定
-      * Webhook デジタル署名キーの生成
-   * Webhook管理
-      * Webhook グリッド
-      * Webhook Edit
-      * Webhookのテスト
-      * WebhookのAPI登録
-      * WebhookからのAPIの登録解除
-      * Webhook リスト
-      * 新しいWebhookをリクエスト
-      * Webhook ログ
-      * Webhookのリストを取得
+  * Webhook デジタル署名
+    * Webhook デジタル署名設定
+    * Webhook デジタル署名キーの生成
+  * Webhook管理
+    * Webhook グリッド
+    * Webhook Edit
+    * Webhookのテスト
+    * WebhookのAPI登録
+    * WebhookからのAPIの登録解除
+    * Webhook リスト
+    * 新しいWebhookをリクエスト
+    * Webhook ログ
+    * Webhookのリストを取得
 
 **管理者**
 
@@ -256,13 +256,13 @@ Admin Consoleの「![開発者と管理者」タブのオプション &#x200B;](
 >
 >複数のユーザーを同時に追加するには、[一括CSV アップロード &#x200B;](https://helpx.adobe.com/jp/enterprise/using/bulk-upload-users.html){target="_blank"}を実行できます。
 >
->[&#x200B; ユーザーグループ &#x200B;](https://helpx.adobe.com/jp/enterprise/using/user-groups.html){target="_blank"}を作成して、役割に複数のユーザーを追加することもできます。 次に、[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;商品をユーザーグループに追加できます。
+>[&#x200B; ユーザーグループ &#x200B;](https://helpx.adobe.com/jp/enterprise/using/user-groups.html){target="_blank"}を作成して、役割に複数のユーザーを追加することもできます。 次に、[!DNL **Adobe Experience Manager as a Cloud Service**]&#x200B;商品をユーザーグループに追加できます。
 
 1. <https://adminconsole.adobe.com>に移動し、Adobe IDでログインします。
 
 1. 組織の選択。
 
-1. [!UICONTROL **製品**] タブの&#x200B;[!UICONTROL **製品とサービス**]&#x200B;で、[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;製品を選択します。
+1. 「[!UICONTROL **製品**]」タブの「[!UICONTROL **製品とサービス**]」で、[!UICONTROL **Adobe Experience Manager as a Cloud Service**]&#x200B;製品を選択します。
 
    ![Admin ConsoleでのAEM Cloud Managerの商品セレクション &#x200B;](./assets/backend-aem.png){width="600" zoomable="yes"}
 
@@ -291,7 +291,7 @@ Admin Consoleの「![開発者と管理者」タブのオプション &#x200B;](
 
 1. [!UICONTROL **保存**]&#x200B;をクリックします。
 
-ユーザーにアクセス権があることを確認するには、ユーザーの名前をクリックしてプロファイルページを開きます。 [!UICONTROL **製品**] セクションでは、[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;製品の下の&#x200B;[!UICONTROL **完了済み**]&#x200B;と表示する必要があります。 ユーザーを追加してプロファイルでステータスが更新されるのを確認するには、数秒かかる場合があります。 ページを更新して、更新されたステータスを確認します。
+ユーザーにアクセス権があることを確認するには、ユーザーの名前をクリックしてプロファイルページを開きます。 「[!UICONTROL **製品**]」セクションでは、[!UICONTROL **Adobe Experience Manager as a Cloud Service**]&#x200B;製品の下の「[!UICONTROL **完了**]」と表示する必要があります。 ユーザーを追加してプロファイルでステータスが更新されるのを確認するには、数秒かかる場合があります。 ページを更新して、更新されたステータスを確認します。
 
 完了製品のアクセス状態を表示する![&#x200B; ユーザープロファイル &#x200B;](./assets/product-access.png){width="600" zoomable="yes"}
 
