@@ -1,7 +1,7 @@
 ---
-source-git-commit: 26e80644cd94f01e0cd310ff2197dc01de6c6819
+source-git-commit: 64d5e1d1ee41241bce36faa31db7c436e018037c
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1665'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年7月23日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を更新しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年7月15日（PT）
 
@@ -399,66 +421,6 @@ ht-degree: 1%
         メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月22日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>2026年5月20日（PT）リリースの<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a>およびCommerce <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/release-notes"> カタログサービス </a>に対するAPI アップデートのリリースノートが追加されました。これにより、商品データを取得する際に、リクエストごとに文書化された100 SKU制限が適用されるようになりました。</p>
-</td>
-      <td>
-        テクニカル
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/342a3015f743e12b7089e4d430a517804a7cd40c">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost"> ルールを追加</a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/best-practice"> ベストプラクティス </a>の[!DNL Live Search]のインテリジェントなランキング向上（ルールごとに設定可能な行動の重み付け、デフォルトは5.0）を、<a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/category-merch"> カテゴリーマーチャンダイジング </a>から相互参照して文書化しました。 <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">作成と管理</a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/best-practice"> マーチャンダイジングルールのベストプラクティス </a>で、[!DNL Adobe Commerce Optimizer]に対して同じガイダンスを追加しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/40b4528d417a4df09ac9ae9fb0d97b0f678b55ac">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月19日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>AEM Assets統合ガイドでは、エディターが<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/release-notes">AEM Assets統合v1.3.6 </a>で<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata">代替テキスト </a>をどのように設定するかを説明します。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d3dfbc59e72c00c3552af5805b57c69e60b38b4">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">コミット</a></td>
     </tr>
   </tbody>
 </table>
