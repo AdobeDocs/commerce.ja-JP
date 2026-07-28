@@ -8,12 +8,33 @@ role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
 TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f56d26ed-050b-4fb7-b29b-8e6e994e80a2id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: eb30f47f-d87a-400f-8f78-63ce7979ff56id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 2e43a6abbca117cef5dc559a9f6881980d2d934c
 workflow-type: tm+mt
 source-wordcount: 3153
@@ -27,13 +48,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->移行ツールについて詳しくは、[一括データ移行ツール ](./bulk-data/migration-tool.md)を参照してください。
+>移行ツールについて詳しくは、[一括データ移行ツール &#x200B;](./bulk-data/migration-tool.md)を参照してください。
 
 ## 移行の概要 – PaaSとSaaSの比較
 
 **主な違い**
 
-* [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"} **PaaS （現在）**：マーチャントは、Adobeのホスト環境でアプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。 サービス（MySQL、Elasticsearchなど）の[共有責任モデル ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)。
+* [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"} **PaaS （現在）**：マーチャントは、Adobeのホスト環境でアプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。 サービス（MySQL、Elasticsearchなど）の[共有責任モデル &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)。
 * [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} **SaaS （新規 – [!DNL Adobe Commerce as a Cloud Service]）**: Adobeは、コアアプリケーション、インフラストラクチャ、およびアップデートを完全に管理します。 開発者は、拡張性ポイント（API、App Builder、UI SDK）によるカスタマイズに重点を置きます。 コアアプリケーションコードはロックされています。
 
 **アーキテクチャへの影響**
@@ -45,7 +66,7 @@ ht-degree: 0%
 
 **新しいツールと概念**
 
-* Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)の[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)および[API メッシュ
+* Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway)の[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)およびAPI メッシュ
 * [Commerce Optimizer](../../optimizer/overview.md)
 * [Edge 配信サービス](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * [Commerce Cloud Manager](../getting-started.md#create-an-instance)を使用したセルフサービス プロビジョニング
@@ -80,10 +101,10 @@ ht-degree: 0%
 
 表に示されているように、各移行の緩和策は次のもので構成されます。
 
-* **データ移行** – 提供された[移行ツール ](./bulk-data/migration-tool.md)を使用して、既存のインスタンスから[!DNL Adobe Commerce as a Cloud Service]にデータを移行します。
+* **データ移行** – 提供された[移行ツール &#x200B;](./bulk-data/migration-tool.md)を使用して、既存のインスタンスから[!DNL Adobe Commerce as a Cloud Service]にデータを移行します。
 * **Storefront** - Edge Deliveryによって提供される既存のCommerce ストアフロントとヘッドレスストアフロントは緩和を必要としませんが、Luma ストアフロントでは、Edge Deliveryによって提供されるCommerce ストアフロントに移行する必要があります。 PWA Studio ストアフロントは、Edge Deliveryを搭載したCommerce ストアフロントに移行することも、現在の状態で維持することもできます。 Adobeは、ストアフロントの移行を支援するアクセラレータを提供します。
-* **[API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway)** – 新しいメッシュを作成するか、既存のメッシュを変更します。 Adobeでは、このプロセスを支援するために、事前に設定されたメッシュを提供します。
-* **統合** – すべての統合では、[統合スターターキット ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)または[[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/)のいずれかを活用する必要があります。
+* **[API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway)** – 新しいメッシュを作成するか、既存のメッシュを変更します。 Adobeでは、このプロセスを支援するために、事前に設定されたメッシュを提供します。
+* **統合** – すべての統合では、[統合スターターキット &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)または[[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/)のいずれかを活用する必要があります。
 * **カスタマイズ** – すべてのカスタマイズはApp BuilderとAPI Meshに移行する必要があります。
 * **Assets Management** – すべてのアセット管理には移行が必要です。 既に[!DNL AEM Assets]を使用している場合、移行する必要はありません。
 * **拡張機能**：処理中の拡張機能はすべて、処理外の拡張機能として再作成する必要があります。 2025年末までに、Adobeは最も人気のある拡張機能にアクセスし、ビルド時間を最小限に抑えます。
@@ -173,11 +194,11 @@ ht-degree: 0%
 
 **PaaS バックエンドと統合された既存のカタログ SaaS サービスを活用**
 
-このオプションは移行手順として機能し、PaaS バックエンドが[ カタログサービス ](../../catalog-service/guide-overview.md)、[ ライブ検索](../../live-search/overview.md)、[商品レコメンデーション ](../../product-recommendations/overview.md)のデータをAdobe Commerce SaaS サービスの既存のインスタンスに入力する既存の統合上に構築されます。
+このオプションは移行手順として機能し、PaaS バックエンドが[&#x200B; カタログサービス &#x200B;](../../catalog-service/guide-overview.md)、[&#x200B; ライブ検索](../../live-search/overview.md)、[商品レコメンデーション &#x200B;](../../product-recommendations/overview.md)のデータをAdobe Commerce SaaS サービスの既存のインスタンスに入力する既存の統合上に構築されます。
 
 * **カタログデータの同期**: Adobe Commerce PaaS インスタンスが既存のAdobe Commerce Catalog SaaS サービスに商品データとカタログデータを引き続き同期することを確認します。 これは通常、PaaS インスタンス内の確立されたコネクタまたはモジュールに依存します。 カタログ SaaS サービスは、引き続き検索およびマーチャンダイジング機能の信頼できるソースであり、PaaS バックエンドからデータを取得します。
 * **最適化のためのAPI Mesh**:（Edge Delivery Services上の）ヘッドレスストアフロントおよびその他のサービスは、カタログ SaaS サービスからデータを直接使用できますが、Adobeでは、（App Builder内で） API Meshを使用することを強くお勧めします。 API Meshは、カタログ SaaS サービスのAPIを、PaaS バックエンドの他の必要なAPI （トランザクションデータベースからのリアルタイムの在庫チェックや、カタログ SaaS サービスに完全にレプリケートされていないカスタム製品属性など）と統合して、パフォーマンスの高い単一のGraphQL エンドポイントにすることができます。 これにより、キャッシュ、認証、応答の一元変換も可能になります。
-* **ライブサーチと商品レコメンデーションを統合**: ライブサーチと商品レコメンデーションのSaaS サービスを設定して、既存のAdobe Commerce Catalog SaaS サービスから[ カタログデータを直接取り込みます](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data)。これは、PaaS バックエンドによって入力されます。
+* **ライブサーチと商品レコメンデーションを統合**: ライブサーチと商品レコメンデーションのSaaS サービスを設定して、既存のAdobe Commerce Catalog SaaS サービスから[&#x200B; カタログデータを直接取り込みます](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data)。これは、PaaS バックエンドによって入力されます。
 
 **メリット**：これにより、既存および運用中のカタログ SaaS サービスとそのPaaS バックエンドとの統合パイプラインを活用することで、ヘッドレスストアフロントと高度なSaaS マーチャンダイジング機能を迅速に実現できます。 ただし、プライマリカタログデータソースのPaaS バックエンドへの依存は保持され、新しいコンポーザブルカタログデータモデルに固有のマルチソース集計機能は提供されません。 このオプションは、より包括的なコンポーザブルアーキテクチャに向けた有効な足がかりとなります。
 
@@ -228,7 +249,7 @@ Adobe Adobe Commerce Optimizerなら、戦略的かつ将来を見据えた方�
 
 一括データ移行では、Adobe Commerce PaaS インスタンスから完全なデータダンプを取得し、データセット全体を変換して、Adobe Commerce as a Cloud Serviceに一度にインポートします。 この方法は通常、データの初期母集団に使用されます。
 
-* **ツールの可用性**：ファーストパーティ Commerceのバルクデータ移行のお客様用の専用[ バルクデータ移行ツール ](./bulk-data/migration-tool.md)は、早期アクセス中です。 GA予定日は2027年第1四半期です。 お客様が事前に一括データ移行のサポートを必要とする場合は、Adobeがリクエストによりデータ転送を促進します。
+* **ツールの可用性**：ファーストパーティ Commerceのバルクデータ移行のお客様用の専用[&#x200B; バルクデータ移行ツール &#x200B;](./bulk-data/migration-tool.md)は、早期アクセス中です。 GA予定日は2027年第1四半期です。 お客様が事前に一括データ移行のサポートを必要とする場合は、Adobeがリクエストによりデータ転送を促進します。
 
 * **プロセス**:
   * **完全なデータ書き出し**:Adobe Commerce PaaS インスタンスから完全なデータセットを抽出します（例：製品、カテゴリ、顧客アカウント、過去の注文データ、静的ブロック、ページコンテンツ）。

@@ -7,12 +7,23 @@ role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:18.443Z'
 TQID: 'https://experienceleague.adobe.com/728hkK-dzIPzyuBhuNyOqEE9FxlVGdVc9R2wIRcXobk'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 670b6214b28be93a16130552a226a8cadb487324
 workflow-type: tm+mt
 source-wordcount: 1171
@@ -28,7 +39,7 @@ ht-degree: 0%
 
 移行ツールは、Commerce Deployed Engineering （CDE）のエンゲージメントプロセスの一部として配布されます。 ツールへのアクセスは、署名済みのCDE契約書に基づいて行われ、公開されません。
 
-このチェックリストでは、ツールを共有する前に必要なもの（[ ステージ 1](#stage-1-before-tool-access)）と、ツールを入手した後に設定と実行を開始する準備ができているものについて説明します（[ ステージ 2](#stage-2-before-running-the-migration)）。 一部の項目をAdobeと連携する必要があるため、このチェックリストをAdobe部門と早い段階で確認しましょう。
+このチェックリストでは、ツールを共有する前に必要なもの（[&#x200B; ステージ 1](#stage-1-before-tool-access)）と、ツールを入手した後に設定と実行を開始する準備ができているものについて説明します（[&#x200B; ステージ 2](#stage-2-before-running-the-migration)）。 一部の項目をAdobeと連携する必要があるため、このチェックリストをAdobe部門と早い段階で確認しましょう。
 
 ## ステージ 1：ツールにアクセスする前
 
@@ -53,7 +64,7 @@ ht-degree: 0%
 - **書き込み可能な作業ディレクトリ** – 移行ツールが抽出されるディレクトリは、移行ユーザーによって完全に書き込み可能である必要があります。 このツールは、実行中にログ、キャッシュ、[!DNL Composer]の依存関係、生成ファイルを書き込みます。
 - **十分なディスク領域** – 抽出されたデータ、[!DNL Docker]画像、およびログ出力に十分な空きディスク領域を確保します。 必要な領域は、ソースデータベースのサイズによって異なります。
 - **オンプレミス ソース：移行マシンからの直接データベース接続** — オンプレミス ソース インスタンスの場合、移行マシンはソース データベースへの直接ネットワーク アクセスを持っている必要があります。 このツールは、オンプレミスのデータベース接続を自動的に確立しません。 移行コマンドを実行する前に、移行マシンからホスト、ポート、資格情報にアクセスできることを確認します。
-- **Cloud CLIがインストールされ、SSH キーが登録されました** — [!DNL Adobe Commerce on Cloud]個のソースインスタンスの場合、[Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)を移行マシンにインストールする必要があります。 SSH公開鍵もアカウントに登録する必要があります。 手順については、[ セキュア接続ガイド ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)を参照してください。
+- **Cloud CLIがインストールされ、SSH キーが登録されました** — [!DNL Adobe Commerce on Cloud]個のソースインスタンスの場合、[Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)を移行マシンにインストールする必要があります。 SSH公開鍵もアカウントに登録する必要があります。 手順については、[&#x200B; セキュア接続ガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)を参照してください。
 
 ### Source インスタンス
 
@@ -71,7 +82,7 @@ ht-degree: 0%
 - **IMS OAuth サーバー間の資格情報** – 移行ツールがターゲットと認証するために必要です。 [Adobe Developer Console](https://developer.adobe.com/console/)を通じて生成されました。 Adobe組織には[!UICONTROL Developer]または[!UICONTROL Admin]のアクセス権が必要です。基本的なユーザーアクセス権だけでは資格情報を作成できません。 選択する正しい製品プロファイルをAdobe チームと調整し、クライアント ID （`ADOBE_IMS_CLIENT_ID`）とクライアント シークレット （`ADOBE_IMS_CLIENT_SECRET`）の準備を整えます。
 - **CDMS エンドポイント URL** — Adobe チームによって提供されます。 この値を推測しようとしない。 サンドボックスおよびテスト移行のプリプロダクションエンドポイントと、ライブカットオーバー移行の実稼動エンドポイントの両方が必要です。
 - ソースとターゲット間で調整された&#x200B;**コア設定** — ストア設定やシステム設定などのコア設定データは、ツールによって移行されません。 移行前にソースと一致するように、ターゲットで手動で設定します。
-- **B2B ストア：B2B機能が一貫して構成されています** — ソースがB2B対応ストアの場合は、移行前に、ソースとターゲットの両方で関連するB2B [!UICONTROL Admin]設定が一貫して構成されていることを確認してください。 必要な特定の設定については、[移行ガイド ](migration-guide.md)を参照してください。
+- **B2B ストア：B2B機能が一貫して構成されています** — ソースがB2B対応ストアの場合は、移行前に、ソースとターゲットの両方で関連するB2B [!UICONTROL Admin]設定が一貫して構成されていることを確認してください。 必要な特定の設定については、[移行ガイド &#x200B;](migration-guide.md)を参照してください。
 
 ### 移行計画
 
@@ -81,4 +92,4 @@ ht-degree: 0%
 - **メンテナンスウィンドウが計画されました** – 複数段階の移行にのみ適用されます。 メンテナンス期間を事前に計画し、連絡します。 ソースインスタンスは、抽出フェーズと読み込みフェーズの間、エンドユーザーは利用できません。
 - **ストアビューコードが確認されました** — ソースインスタンス上のストアビューコード （`STORE_CODE`）を特定します。 デフォルトは`default`ですが、[!UICONTROL Admin] > [!UICONTROL Stores] > [!UICONTROL All Stores]の実際のコードと一致する必要があります。 誤ったストアコードは、移行中のデータ操作に影響を与える可能性があります。
 
-すべての項目を確認したら、[移行サービスアクセスガイド ](cdms-access.md)でサービスアクセスを検証し、[移行ガイド ](migration-guide.md)で設定と実行の手順を開始する準備が整います。
+すべての項目を確認したら、[移行サービスアクセスガイド &#x200B;](cdms-access.md)でサービスアクセスを検証し、[移行ガイド &#x200B;](migration-guide.md)で設定と実行の手順を開始する準備が整います。
