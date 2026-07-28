@@ -1,7 +1,7 @@
 ---
-source-git-commit: bdde436394667a2d5477fbc44eac5b90bd865c68
+source-git-commit: 9de8e747353a9042d5b6d7c150688e705c21d2c6
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,11 @@ Adobe Experience Cloud ソリューションの製品チームのテクニカル
 
 ### フックの機能
 
-- ステージングされた画像ファイルを自動検出（PNG、JPEG、GIF、SVG）
-- `image_optim`を実行してラスター画像（PNG、JPEG、GIF）を圧縮および最適化
+- ステージングされた画像ファイルを自動的に検出（`.png`、`.jpeg`、`.jpg`、`.gif`、`.svg`）
+- `image_optim`を実行してラスター画像（`.png`、`.jpeg`、`.jpg`、`.gif`）を圧縮および最適化します
 - 最適化された画像を自動的にリステージ
 - コミットされたすべてのラスター画像が適切に最適化されていることを確認します
-- ステージングされたSVGをサイズ制限に照らし合わせてチェックし、SVGが制限を超えた場合にコミットを中止します
+- ステージングされたSVGをサイズ制限に照らし合わせてチェックし、サイズが大きすぎるSVGが`help/`から参照されている場合はコミットを中止します（そうでない場合は警告するだけです）
 
 ### Adobe Workfrontの利点
 
