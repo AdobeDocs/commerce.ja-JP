@@ -54,7 +54,7 @@ ht-degree: 0%
 
 一括データ移行用の環境を設定します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3496121)
+>[!VIDEO](https://video.tv.adobe.com/v/3496123?captions=jpn)
 
 1. `ccsaas-migration-tools.tar.gz`の内容を抽出します。
 
@@ -97,7 +97,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### ソース OAuth資格情報の設定
 
->[!VIDEO](https://video.tv.adobe.com/v/3496142)
+>[!VIDEO](https://video.tv.adobe.com/v/3496143?captions=jpn)
 
 これらの4つの値は、移行ツールからソースストア APIにリクエストを署名します。 それらを取得するには、ソース [!UICONTROL Admin]を開き、[!UICONTROL **システム**] > [!UICONTROL **拡張機能**] > [!UICONTROL **統合**]&#x200B;に移動します。 統合を作成するか開いて、値を`.env`にコピーします。
 
@@ -142,7 +142,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### ターゲット SaaSおよびIMS資格情報の設定
 
->[!VIDEO](https://video.tv.adobe.com/v/3496167)
+>[!VIDEO](https://video.tv.adobe.com/v/3496168?captions=jpn)
 
 ターゲットの[!DNL Adobe Commerce as a Cloud Service] IMSおよびAPI設定です。 テナント ID、組織ID、IMS OAuth サーバー間の資格情報、および環境に適したIMS ホストが必要です。 Adobeチームと連携して、整理、テナント、プロファイルアクセスを行います。 機密値を推測または推定しようとしない。
 
@@ -247,7 +247,7 @@ CDMS_PORT=443
 
 ## データベース接続ファイルの設定
 
->[!VIDEO](https://video.tv.adobe.com/v/3496152)
+>[!VIDEO](https://video.tv.adobe.com/v/3496158?captions=jpn)
 
 `.my.cnf` ファイルには、移行ツールの抽出側の[!DNL MySQL]接続設定が用意されています。 プロジェクト ルートの`.my.cnf.example`を`.my.cnf`にコピーして作成します。 セクション名は`.env`の`SOURCE_CONNECTION_NAME`と一致する必要があります。
 
