@@ -2,7 +2,7 @@
 title: 顧客対応チェックリスト
 description: エンゲージメント、マシンラーニング、ソース、ターゲットを網羅したチェックリストを利用して、Adobe Commerce as a Cloud Serviceへのデータの一括移行に備える方法をご確認ください。
 feature: Cloud
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:18.443Z'
@@ -64,7 +64,7 @@ ht-degree: 0%
 - **書き込み可能な作業ディレクトリ** – 移行ツールが抽出されるディレクトリは、移行ユーザーによって完全に書き込み可能である必要があります。 このツールは、実行中にログ、キャッシュ、[!DNL Composer]の依存関係、生成ファイルを書き込みます。
 - **十分なディスク領域** – 抽出されたデータ、[!DNL Docker]画像、およびログ出力に十分な空きディスク領域を確保します。 必要な領域は、ソースデータベースのサイズによって異なります。
 - **オンプレミス ソース：移行マシンからの直接データベース接続** — オンプレミス ソース インスタンスの場合、移行マシンはソース データベースへの直接ネットワーク アクセスを持っている必要があります。 このツールは、オンプレミスのデータベース接続を自動的に確立しません。 移行コマンドを実行する前に、移行マシンからホスト、ポート、資格情報にアクセスできることを確認します。
-- **Cloud CLIがインストールされ、SSH キーが登録されました** — [!DNL Adobe Commerce on Cloud]個のソースインスタンスの場合、[Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)を移行マシンにインストールする必要があります。 SSH公開鍵もアカウントに登録する必要があります。 手順については、[&#x200B; セキュア接続ガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)を参照してください。
+- **Cloud CLIがインストールされ、SSH キーが登録されました** — [!DNL Adobe Commerce on Cloud]個のソースインスタンスの場合、[Cloud CLI](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)を移行マシンにインストールする必要があります。 SSH公開鍵もアカウントに登録する必要があります。 手順については、[&#x200B; セキュア接続ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/secure-connections)を参照してください。
 
 ### Source インスタンス
 

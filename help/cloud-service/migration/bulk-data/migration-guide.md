@@ -2,7 +2,7 @@
 title: 一括データ移行の実行
 description: CLIを使用して、Adobe Commerce PaaSまたはオンプレミスのインスタンスからAdobe Commerce as a Cloud Serviceへの一括データ移行を設定して実行する方法について説明します。
 feature: Cloud
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:07.600Z'
@@ -130,7 +130,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->Cloud CLIを初めて使用する場合は、SSH公開鍵をアカウントにも追加する必要があります。 手順については、[&#x200B; セキュア接続ガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)を参照してください。
+>Cloud CLIを初めて使用する場合は、SSH公開鍵をアカウントにも追加する必要があります。 手順については、[&#x200B; セキュア接続ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/secure-connections)を参照してください。
 
 ### Commerce管理者設定の調整
 
