@@ -6,10 +6,15 @@ seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: d1bf3879-3e86-4665-a55c-494963c87f90
 TQID: https://experienceleague.adobe.com/dfZjgp5wR6H4c7WkNNhjLYUgKNTPIqPWxKiShlTU1yA
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
 workflow-type: tm+mt
 source-wordcount: 491
@@ -21,7 +26,7 @@ ht-degree: 0%
 
 SaaS価格インデックス機能は、インデックス作成や価格計算など、リソースを必要とする作業をCommerceアプリケーションからAdobe Cloud インフラストラクチャにオフロードすることで、サイトパフォーマンスを最適化します。 このアプローチにより、リソースを迅速に拡張して、価格インデックス時間を短縮し、ストアフロントやコネクテッドCommerceサービスの価格アップデートをより迅速に提供できるようになります。
 
-次の図は、CommerceがCommerce アプリケーションに含まれる[価格インデックス ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) プロセスを使用している場合のSaaS サービスへのデータフローを示しています。
+次の図は、CommerceがCommerce アプリケーションに含まれる[価格インデックス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) プロセスを使用している場合のSaaS サービスへのデータフローを示しています。
 
 ![既定のデータ フロー](assets/old_way.png)
 
@@ -53,7 +58,7 @@ Adobe Commerce サービスをインストールすると、SaaS価格インデ�
 
 >[!NOTE]
 >
->必要に応じて、[ カタログ アダプタ ](catalog-adapter.md)を使用して、Commerce アプリケーションのデフォルトの価格インデクサーを無効にすることができます。
+>必要に応じて、[&#x200B; カタログ アダプタ &#x200B;](catalog-adapter.md)を使用して、Commerce アプリケーションのデフォルトの価格インデクサーを無効にすることができます。
 
 ## SaaS価格インデックスによる価格の同期
 

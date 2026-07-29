@@ -5,10 +5,15 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
 badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 TQID: https://experienceleague.adobe.com/qVI-zFFljrUZzjSMmBxs5jRCsKbxfivQV1xzzpBS2uw
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: df9b8455e52b2721ba92971b1d0fddb92da8159a
 workflow-type: tm+mt
 source-wordcount: 971
@@ -20,13 +25,13 @@ ht-degree: 0%
 
 {{aco-merchandising-services}}
 
-[ カタログサービス GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)を使用してCommerce インスタンスから製品データをリクエストおよび受信するには、カタログサービスをインストールします。 カタログサービスは、repo.magento.com リポジトリからコンポーザーPHP メタパッケージとして配信されます。
+[&#x200B; カタログサービス GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)を使用してCommerce インスタンスから製品データをリクエストおよび受信するには、カタログサービスをインストールします。 カタログサービスは、repo.magento.com リポジトリからコンポーザーPHP メタパッケージとして配信されます。
 
 >[!NOTE]
 >
->Commerce インスタンスでライブサーチまたは商品レコメンデーションを使用している場合、カタログサービスは、これらのサービスのオンボーディングまたはアップグレード時に自動的にインストールまたは更新されます。 詳しくは、[Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install)および[製品レコメンデーション ](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure)のインストール手順を参照してください。
+>Commerce インスタンスでライブサーチまたは商品レコメンデーションを使用している場合、カタログサービスは、これらのサービスのオンボーディングまたはアップグレード時に自動的にインストールまたは更新されます。 詳しくは、[Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install)および[製品レコメンデーション &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure)のインストール手順を参照してください。
 >
->Adobe Commerce as a Cloud Serviceを使用している場合は、ご使用の環境で最新バージョンのメタパッケージを利用できます。 サービスの使用を開始するには、[ カタログサービスの概要](get-started.md)を参照してください。
+>Adobe Commerce as a Cloud Serviceを使用している場合は、ご使用の環境で最新バージョンのメタパッケージを利用できます。 サービスの使用を開始するには、[&#x200B; カタログサービスの概要](get-started.md)を参照してください。
 >
 >Adobe Commerce Optimizerを使用したCommerce ストアフロントの実装については、「[Merchandising Services Developer Guide for Adobe Commerce Optimizer](https://developer-stage.adobe.com/commerce/services/optimizer/)」を参照してください。
 
@@ -51,7 +56,7 @@ ht-degree: 0%
 
 すべてのCommerce テストインスタンスは、サンドボックスエンドポイントを使用します。
 
-サンドボックスエンドポイントですべての読み込みテストを実行します。 読み込みテストを開始する前に、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#create-a-support-ticket-with-experience-league)を送信して、サービスチームが追加のサーバートラフィックを予測できるようにします。
+サンドボックスエンドポイントですべての読み込みテストを実行します。 読み込みテストを開始する前に、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#create-a-support-ticket-with-experience-league)を送信して、サービスチームが追加のサーバートラフィックを予測できるようにします。
 
 ## インストールと設定
 
@@ -113,7 +118,7 @@ Commerce Cloud インスタンスの[!DNL Catalog Service]をインストール�
    git push origin <branch-name>
    ```
 
-   更新をクラウド環境にプッシュすると、[Commerce クラウド デプロイメント プロセス ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process)が開始され、変更が適用されます。 [ デプロイ ログ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)のデプロイメント ステータスを確認します。
+   更新をクラウド環境にプッシュすると、[Commerce クラウド デプロイメント プロセス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process)が開始され、変更が適用されます。 [&#x200B; デプロイ ログ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)のデプロイメント ステータスを確認します。
 
 >[!TAB  オンプレミス ]
 
@@ -153,11 +158,11 @@ Commerce Cloud インスタンスの[!DNL Catalog Service]をインストール�
 
 [!DNL Catalog Service]をインストールした後にカタログサービスをAdobe Commerce インスタンスと統合するには、次のタスクを実行します。 この統合により、Commerce インスタンス、カタログサービス、およびその他のサポートサービス間のデータ同期と通信が可能になります。 [SaaS データ書き出し拡張機能](../data-export/overview.md)は、データ同期を処理します。
 
-1. API キーを指定し、SaaS データスペースを選択して、[Commerce サービスコネクタ ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)を設定します。
+1. API キーを指定し、SaaS データスペースを選択して、[Commerce サービスコネクタ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)を設定します。
 
    Commerce Services Connectorの設定は、カタログサービス、ライブサーチ、商品レコメンデーションなどのAdobe Commerce サービスを使用するために必要な1回限りのプロセスです。 別のサービス用にコネクタを既に設定している場合は、この手順をスキップしてください。
 
-1. [ データ管理ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)から最初のデータ同期を実行します。
+1. [&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)から最初のデータ同期を実行します。
 
    カタログのサイズによっては、最初の同期に数分から数時間かかる場合があります。 同期ステータスは、データ管理ダッシュボードから監視できます。 最初の同期後、カタログは継続的に製品データを書き出して、サービスを最新の状態に保ちます。
 
