@@ -1,7 +1,7 @@
 ---
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -104,3 +104,9 @@ Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Ado
 | サービス | ストアフロント |
 | --- | --- |
 | [AEM Assetsとの統合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer コネクタ &#x200B;](../aco-connector/release-notes.md) | [&#x200B; ストアフロントのリリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=ja)<br>[&#x200B; ストアフロントの変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja) |
+
+## バルクデータ移行ツールの早期アクセス {#bulk-data-early-access}
+
+>[!IMPORTANT]
+>
+>一括データ移行ツールは現在、早期アクセス中です。 アクセスは、Commerce デプロイドエンジニアリング（CDE）のエンゲージメントプロセスを通じてのみ提供されます。 ツールとその適格要件の概要については、[一括データ移行ツール &#x200B;](../cloud-service/migration/bulk-data/migration-tool.md)を参照してください。

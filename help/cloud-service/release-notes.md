@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: b05e2183cc0e4b8352a150df9dabfc9dfdb31750
+source-git-commit: 155703001fc049470266874e0f519ab060248b31
 workflow-type: tm+mt
-source-wordcount: 5265
+source-wordcount: 5259
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ ht-degree: 0%
 
 ## 2026年7月 – リリース #1 {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 
-[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-以下の項目は現在、サンドボックス環境でのみ使用でき、2026年7月28日に実稼動環境に移行する予定です。
+2026年7月28日現在、実稼動環境では次の項目を利用できます。
 
 >[!BEGINSHADEBOX]
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 >
 >この機能はデフォルトで無効になっています。 有効にするには、Adobe Commerce カスタマーサクセスマネージャーにお問い合わせいただくか、サポートチケットを作成してください。
 
-新しいREST API エンドポイントは、[!DNL Commerce Admin] [!UICONTROL **注文を編集**]&#x200B;機能をレプリケートし、統合がプログラムで注文を編集できるようにします。
+新しい[REST API エンドポイント &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)は、[!DNL Commerce Admin] [!UICONTROL **注文を編集**]&#x200B;機能をレプリケートし、統合がプログラムで注文を編集できるようにします。
 
 | メソッド | エンドポイント | 説明 |
 | --- | --- | --- |
@@ -100,7 +100,7 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 >
 >この機能は実験的な機能であり、Adobe Commerce カスタマーサクセスマネージャーに連絡するか、サポートチケットを作成して有効にする必要があります。
 
-新しい`orderChain`REST API エンドポイントを使用すると、統合はIDを使用して注文を変更し、編集された注文のチェーン全体を自動的に解決できます。
+新しい[`orderChain` REST API エンドポイント &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)を使用すると、統合はIDを使用して注文を変更し、編集された注文のチェーン全体を自動的に解決できます。
 
 | メソッド | エンドポイント | 説明 |
 | --- | --- | --- |
@@ -133,7 +133,7 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 
 ### 領域またはテンプレート別にトランザクションメールを抑制
 
-新しい&#x200B;[!UICONTROL **電子メール抑制**]&#x200B;設定（[!UICONTROL **店舗**] > [!UICONTROL **設定**] > [!UICONTROL **Adobe サービス**] > [!UICONTROL **電子メール抑制**]）を使用すると、管理者はトランザクション電子メールの送信を選択的に停止できます。 [!DNL Commerce]機能領域（カスタマーアカウント、Order Management、返品、チェックアウト、マーケティング、B2Bなど）またはテンプレート IDの正確なリストでメールを抑制できます。<!-- ACCS-1025 -->
+新しい[電子メール抑制](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression)設定（[!UICONTROL **店舗**] > [!UICONTROL **設定**] > [!UICONTROL **Adobe サービス**] > [!UICONTROL **電子メール抑制**]）を使用すると、管理者はトランザクション電子メールの送信を選択的に停止できます。 [!DNL Commerce]機能領域（カスタマーアカウント、Order Management、返品、チェックアウト、マーケティング、B2Bなど）またはテンプレート IDの正確なリストでメールを抑制できます。<!-- ACCS-1025 -->
 
 ### 管理画面での注文変更履歴の表示
 
