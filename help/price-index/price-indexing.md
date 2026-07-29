@@ -26,7 +26,7 @@ ht-degree: 0%
 
 SaaS価格インデックス機能は、インデックス作成や価格計算など、リソースを必要とする作業をCommerceアプリケーションからAdobe Cloud インフラストラクチャにオフロードすることで、サイトパフォーマンスを最適化します。 このアプローチにより、リソースを迅速に拡張して、価格インデックス時間を短縮し、ストアフロントやコネクテッドCommerceサービスの価格アップデートをより迅速に提供できるようになります。
 
-次の図は、CommerceがCommerce アプリケーションに含まれる[価格インデックス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) プロセスを使用している場合のSaaS サービスへのデータフローを示しています。
+次の図は、CommerceがCommerce アプリケーションに含まれる[価格インデックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers) プロセスを使用している場合のSaaS サービスへのデータフローを示しています。
 
 ![既定のデータ フロー](assets/old_way.png)
 
@@ -46,7 +46,7 @@ Adobe Commerce サービスをインストールすると、SaaS価格インデ�
 
 ### 要件定義
 
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}を参照してください。
+* [Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) 2.4.4以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}を参照してください。
 
 ### 前提条件
 
@@ -78,7 +78,7 @@ bin/magento saas:resync --feed=prices
 
 >[!NOTE]
 >
->Commerce Admin for Commerce on Cloudまたはオンプレミスのデプロイメントで使用できない場合にデータフィードの同期ステータス ページを有効にするには、[拡張機能のインストール手順](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)に従います。
+>Commerce Admin for Commerce on Cloudまたはオンプレミスのデプロイメントで使用できない場合にデータフィードの同期ステータス ページを有効にするには、[拡張機能のインストール手順](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)に従います。
 
 ## カスタム商品タイプの価格
 
