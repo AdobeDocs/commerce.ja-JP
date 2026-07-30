@@ -23,7 +23,7 @@ ht-degree: 0%
 
 チェックアウト中に![&#x200B; エラー](assets/user-checkout-error.png " チェックアウト中にエラー"){width="600" zoomable="yes"}が発生しました
 
-キャンセルされた注文に関するコメントは、特定の[注文](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en)の管理画面にも表示されます。
+キャンセルされた注文に関するコメントは、特定の[注文](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=ja)の管理画面にも表示されます。
 
 ![注文の管理者の注文コメントをキャンセルしました](assets/admin-checkout-error.png "注文の管理者の注文コメントをキャンセルしました"){width="600" zoomable="yes"}
 
