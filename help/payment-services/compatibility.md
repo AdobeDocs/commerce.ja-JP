@@ -6,17 +6,13 @@ level: Intermediate
 feature: Payments, Checkout, Paas, Saas
 exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
 TQID: https://experienceleague.adobe.com/UUD0IiEiwh0sZKMkclOJtoC2bKYcmDN3WAWD16mfad4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 88c74f789dc398afa8f40ee2258450e83f134d87
 workflow-type: tm+mt
-source-wordcount: 454
+source-wordcount: 506
 ht-degree: 0%
 
 ---
@@ -35,9 +31,9 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   > 詳しくは、[Adobe Commerce Services Connector](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)のチュートリアルビデオを参照してください。
+   > 詳しくは、[Adobe Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)のチュートリアルビデオを参照してください。
 
-1. 既にインスタンスを接続している場合は、次の手順を実行するために[&#x200B; オンボーディング &#x200B;](onboard.md) ページに移動します。
+1. 既にインスタンスを接続している場合は、次の手順を実行するために[ オンボーディング ](onboard.md) ページに移動します。
 
 >[!IMPORTANT]
 >
@@ -49,11 +45,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> [!DNL Payment Services]様は、オンボーディング中に他の[&#128279;](../payment-services/production.md#complete-merchant-onboarding)利用可能な国の[Express チェックアウト機能](../payment-services/payments-options.md) （支払いオプションのサブセット）を提供しています。
+> [!DNL Payment Services]様は、オンボーディング中に他の[利用可能な国の[Express チェックアウト機能](../payment-services/payments-options.md) （支払いオプションのサブセット）を提供しています](../payment-services/production.md#complete-merchant-onboarding)。
 
 ### どの[!DNL Payment Services] オプションが適していますか？
 
->[!VIDEO](https://video.tv.adobe.com/v/3447919?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
 
 [!DNL Payment Services]拡張機能の設定について詳しくは、[Connect](connect.md)を参照してください。
 
@@ -69,7 +65,7 @@ ht-degree: 0%
 
 ![check](assets/icon-check.png)標準価格
 
-![check](assets/icon-check.png) **XXか国で利用可能**
+![check](assets/icon-check.png) **200以上の国で利用可能**
 
 [![詳細情報](assets/learn-more-button.svg)](onboard.md)
 
@@ -99,22 +95,22 @@ ht-degree: 0%
 
 ![check](assets/icon-check.png) （L2/L3の価格設定機能 – 米国のみ）
 
-![check](assets/icon-check.png) **米国（米国）、カナダ（CA）、オーストラリア（AUS）でのみ利用可能です。 フランス （FR）、イギリス （UK）**
+![check](assets/icon-check.png) 37か国で利用可能。 オーストラリア、オーストリア、ベルギー、ブルガリア、カナダ、中国、キプロス、チェコ共和国、デンマーク、エストニア、フィンランド、フランス、ドイツ、ギリシャ、香港、ハンガリー、アイルランド、イタリア、日本、ラトビア、リトアニア、ルクセンブルグ、マルタ、メキシコ、オランダ、ノルウェー、ポーランド、ポルトガル、ルーマニア、シンガポール、スロバキア、スロベニア、スペイン、スウェーデン、英国、米国。 **米国（米国）、カナダ（CA）、オーストラリア（AU）、フランス（FR）、英国（GB）、イタリア（IT）、オランダ（NL）、ドイツ（DE）で利用可能な交渉済み料金**
 
 [![詳細情報](assets/learn-more-button.svg)](onboard.md)
 
 >[!ENDTABS]
 
-詳しいリリースおよびバージョン固有の情報については、[&#x200B; ライフサイクルポリシー](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=ja)および[[!DNL Payment Services]  リリースノート &#x200B;](release-notes.md)のページを参照してください。
+詳しいリリースおよびバージョン固有の情報については、[ ライフサイクルポリシー](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)および[[!DNL Payment Services]  リリースノート ](release-notes.md)のページを参照してください。
 
 完全な手順を入手し、オンボーディングプロセスを開始するには、[入門 [!DNL Payment Services]](onboard.md)を参照してください。
 
 ### 利用可能なクレジットカードと通貨
 
-[!DNL Payment Services]は、使用可能な国の通貨を受け入れます。 通貨レートの設定について詳しくは、[通貨設定](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=ja)を参照してください。
+[!DNL Payment Services]は、使用可能な国の通貨を受け入れます。 通貨レートの設定について詳しくは、[通貨設定](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html)を参照してください。
 
 PayPalの商品やサービスで利用可能な通貨や支払い方法について詳しくは、次のページを参照してください。
 
-* [&#x200B; サポートされている通貨ドキュメント &#x200B;](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/)。
+* [ サポートされている通貨ドキュメント ](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/)。
 
-* [支払い方法に関するドキュメント &#x200B;](https://developer.paypal.com/docs/checkout/payment-methods/)。
+* [支払い方法に関するドキュメント ](https://developer.paypal.com/docs/checkout/payment-methods/)。
