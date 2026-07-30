@@ -24,7 +24,7 @@ Signifyd/[!DNL Payment Services]との統合により、クレジットカード
 >
 > [Fastlane](payments-options.md#fastlane-button)はSignifydと互換性がありません。
 
-拡張機能のインストールと設定について詳しくは、[Signifyd ドキュメント ](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension)を参照してください。
+拡張機能のインストールと設定について詳しくは、[Signifyd ドキュメント &#x200B;](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension)を参照してください。
 
 ## オンボーディング
 
@@ -45,12 +45,12 @@ Signifydは注文に対して何らかのアクションを実行するため、
 
 これらの設定オプションは、決済サービスおよびSignifyd統合と互換性がありません。
 
-* [!DNL Payment Services]が`Authorize`支払いアクション _と_&#x200B;で設定されている場合、Signifydは`PostAuth` モードで、_[!UICONTROL Decline Guarantees]_オプションが&#x200B;**クレジットメモを作成**に設定されています。
+* [!DNL Payment Services]が`Authorize`支払いアクション _と_&#x200B;で設定されている場合、Signifydは`PostAuth` モードで、_[!UICONTROL Decline Guarantees]_&#x200B;オプションが&#x200B;**クレジットメモを作成**&#x200B;に設定されています。
 
   理由：[!DNL Payment Services]は、Signifyが返金を試みる認証トランザクションを作成します。
 
 
-* [!DNL Payment Services]は`Authorize and Capture`支払いアクション _で設定されており、_ Signifydは`PostAuth` モードで、_[!UICONTROL Decline Guarantees]_オプションが&#x200B;**注文をキャンセル**に設定されています。
+* [!DNL Payment Services]は`Authorize and Capture`支払いアクション _で設定されており、_ Signifydは`PostAuth` モードで、_[!UICONTROL Decline Guarantees]_&#x200B;オプションが&#x200B;**注文をキャンセル**&#x200B;に設定されています。
 
   理由：[!DNL Payment Services]は、Signifydが無効化しようとするキャプチャ トランザクションを作成します。
 

@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # コマンドライン設定
 
-[!DNL Payment Services]をインストールした後、ホーム ](payments-home.md)内またはコマンドラインインターフェイス（CLI）経由で[から簡単に設定できます。
+[!DNL Payment Services]をインストールした後、ホーム [&#128279;](payments-home.md)内またはコマンドラインインターフェイス（CLI）経由でから簡単に設定できます。
 
 ## データ書き出しの設定
 
 [!DNL Payment Services]は、[!DNL Magento Open Source]および[!DNL Adobe Commerce]からエクスポートされた注文データと、支払いプロバイダーからの集約された支払いデータを組み合わせて、有用なレポートを作成します。 [!DNL Payment Services]拡張機能は、レポートに必要なすべてのデータを効率的に収集するためにインデクサーを使用します。
 
-[!DNL Payment Services]のレポートで使用されるデータについて詳しくは、[注文支払い状況レポート ](order-payment-status.md#data-used-in-the-report)を参照してください。
+[!DNL Payment Services]のレポートで使用されるデータについて詳しくは、[注文支払い状況レポート &#x200B;](order-payment-status.md#data-used-in-the-report)を参照してください。
 
 ### [!DNL Magento Open Source]でcronを設定
 
@@ -49,13 +49,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >コマンドでインデクサーを指定しない場合、すべてのインデクサーが同じ値に更新されます。 特定のインデクサーを変更する場合は、そのインデクサーをコマンドにリストする必要があります。
 
-インデクサーのモードを手動で変更する方法について詳しくは、開発者ドキュメントの「[ インデクサーの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"}」を参照してください。 管理画面で変更する方法については、コアユーザーガイドの[ インデックス管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"}を参照してください。
+インデクサーのモードを手動で変更する方法について詳しくは、開発者ドキュメントの「[&#x200B; インデクサーの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"}」を参照してください。 管理画面で変更する方法については、コアユーザーガイドの[&#x200B; インデックス管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"}を参照してください。
 
 ### データを手動で再インデックス付け
 
-データが自動的に処理されるのを待つのではなく、手動でデータのインデックスを再作成できます。 詳しくは、[ インデクサーの管理](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}の[ インデックス再作成](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"}を参照してください。
+データが自動的に処理されるのを待つのではなく、手動でデータのインデックスを再作成できます。 詳しくは、[&#x200B; インデクサーの管理](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}の[&#x200B; インデックス再作成](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"}を参照してください。
 
-`BY SCHEDULE` モードが設定されると、システムは変更されたエンティティを追跡し、cron ジョブは設定されたスケジュールに基づいてエンティティのインデックスを更新します。 cron ジョブを使用してインデックス作成を手動でトリガーする方法については、[Configure and run cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)）の「[ コマンドラインからcronを実行](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run)」を参照してください。
+`BY SCHEDULE` モードが設定されると、システムは変更されたエンティティを追跡し、cron ジョブは設定されたスケジュールに基づいてエンティティのインデックスを更新します。 cron ジョブを使用してインデックス作成を手動でトリガーする方法については、[Configure and run cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)）の「[&#x200B; コマンドラインからcronを実行](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run)」を参照してください。
 
 ### インデックス再作成されたデータを支払いサービスに送信する
 
@@ -89,11 +89,11 @@ cronを設定してインストールすると、レポートに必要なすべ�
 bin/magento cron:run --group payment_services_data_export
 ```
 
-インデックス再作成とインデックス作成について詳しくは、開発者ドキュメントの「[ インデックスの管理](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)」トピックを参照してください。
+インデックス再作成とインデックス作成について詳しくは、開発者ドキュメントの「[&#x200B; インデックスの管理](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)」トピックを参照してください。
 
 ## CLIによるスコープの設定
 
-[!DNL Payment Services]では、販売者が[複数のPayPal アカウント ](configure-admin.md#use-multiple-paypal-accounts)を使用できます。 次に、CLIを使用してこれらのアカウントのスコープを変更できます。
+[!DNL Payment Services]では、販売者が[複数のPayPal アカウント &#x200B;](configure-admin.md#use-multiple-paypal-accounts)を使用できます。 次に、CLIを使用してこれらのアカウントのスコープを変更できます。
 
 スコープを`website` レベルに設定するには、次を実行します。
 
@@ -127,4 +127,4 @@ bin/magento cache:clean:payment_services_merchant_scopes
 
 [!DNL Payment Services]のL2/L3処理データを使用する場合、または質問がある場合は、[!DNL Payment Services]のアカウントマネージャーにお問い合わせください。
 
-[!DNL Payment Services]で使用されるL2およびL3処理について詳しくは、[ レベル 2およびレベル 3処理](levels-card-payment-transactions.md)を参照してください。
+[!DNL Payment Services]で使用されるL2およびL3処理について詳しくは、[&#x200B; レベル 2およびレベル 3処理](levels-card-payment-transactions.md)を参照してください。

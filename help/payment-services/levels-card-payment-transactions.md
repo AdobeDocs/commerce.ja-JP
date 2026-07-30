@@ -21,13 +21,13 @@ ht-degree: 0%
 
 ## 処理レベルごとのデータ要件
 
-![ トランザクションレポート ](assets/level-processing-details.png){width="500" zoomable="yes"}
+![&#x200B; トランザクションレポート &#x200B;](assets/level-processing-details.png){width="500" zoomable="yes"}
 
 [!DNL Payment Services]はこのデータを収集し、支払いトランザクションの詳細レポートを提供します。
 
 ## 利用可能な処理レベル （カードネットワーク別）
 
-![ カードの詳細](assets/cards-details-level-processing.png){width="500" zoomable="yes"}
+![&#x200B; カードの詳細](assets/cards-details-level-processing.png){width="500" zoomable="yes"}
 
 詳しくは、PayPal デベロッパーのドキュメントの[決済処理](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank}を参照してください。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 レベル 2およびレベル 3の処理は、店舗レベルの[!DNL Payment Services]人のマーチャントに対して、デフォルトで無効になっています。
 
-IC++の価格を既に使用している場合は、レベル 2およびレベル 3の処理を利用できます。 この機能を有効にするには、[ コマンドラインインターフェイス（CLI](configure-cli.md)を使用します。
+IC++の価格を既に使用している場合は、レベル 2およびレベル 3の処理を利用できます。 この機能を有効にするには、[&#x200B; コマンドラインインターフェイス（CLI](configure-cli.md)を使用します。
 
 >[!IMPORTANT]
 >
