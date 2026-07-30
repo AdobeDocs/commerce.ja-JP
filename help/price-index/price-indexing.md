@@ -15,16 +15,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 029d78d5c87bf75ccc26b8af462081f8e08d1176
+source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
 workflow-type: tm+mt
-source-wordcount: 475
+source-wordcount: 491
 ht-degree: 0%
 
 ---
 
 # SaaS価格インデックス
 
-SaaS価格インデックス機能は、インデックス作成や価格計算など、リソースを必要とする作業をCommerceアプリケーションからAdobe Cloud インフラストラクチャにオフロードすることで、サイトパフォーマンスを最適化します。 このアプローチにより、マーチャントはリソースを迅速に拡張して価格インデックス時間を短縮し、ストアフロントと接続されたCommerceサービスの価格アップデートをより迅速に提供できるようになります。
+SaaS価格インデックス機能は、インデックス作成や価格計算など、リソースを必要とする作業をCommerceアプリケーションからAdobe Cloud インフラストラクチャにオフロードすることで、サイトパフォーマンスを最適化します。 このアプローチにより、リソースを迅速に拡張して、価格インデックス時間を短縮し、ストアフロントやコネクテッドCommerceサービスの価格アップデートをより迅速に提供できるようになります。
 
 次の図は、CommerceがCommerce アプリケーションに含まれる[価格インデックス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers) プロセスを使用している場合のSaaS サービスへのデータフローを示しています。
 
@@ -37,8 +37,8 @@ SaaS価格インデックスを有効にすると、データフローが変更�
 SaaS価格インデックスを利用すれば、あらゆる販売者がメリットを得られます。次の特徴を持つプロジェクトを運営する販売者は、最大のメリットを享受できます。
 
 * **一定の価格変更** – 頻繁なプロモーション、季節割引、在庫値下げなどの戦略目標を達成するために、繰り返し価格の変更を必要とする販売者。
-* **複数のweb サイトや顧客グループ**&#x200B;のマーチャントが、複数のweb サイト（ドメインやブランド）や顧客グループ間で商品カタログを共有しています。
-* **Web サイトまたは顧客グループ全体で多くの一意の価格**&#x200B;販売者が、Web サイトまたは顧客グループ全体で一意の価格を含む広範な共有製品カタログを使用しています。 たとえば、価格交渉をおこなうB2B企業や、価格戦略が異なる企業などがあります。
+* **複数のweb サイトまたは顧客グループ** – 複数のweb サイト（ドメイン/ブランド）または顧客グループ間で商品カタログを共有しているマーチャント。
+* **Web サイトまたは顧客グループ全体で多くの一意の価格** - Web サイトまたは顧客グループ全体で一意の価格を含む広範な共有製品カタログを持つマーチャント。 たとえば、価格交渉をおこなうB2B企業や、価格戦略が異なる企業などがあります。
 
 ## SaaS価格インデックスの利用
 
@@ -46,16 +46,15 @@ Adobe Commerce サービスをインストールすると、SaaS価格インデ�
 
 ### 要件定義
 
-* Adobe Commerce 2.4.4以降
+* [Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) 2.4.4以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}を参照してください。
 
 ### 前提条件
 
 * 次のいずれかのCommerce サービスを、最新バージョンのCommerce拡張機能と共にインストールする必要があります。
 
-   * [カタログサービス](../catalog-service/overview.md)
-   * [ライブサーチ](../live-search/overview.md)
-   * [商品レコメンデーション](../product-recommendations/guide-overview.md)
-
+  * [カタログサービス](../catalog-service/overview.md)
+  * [ライブサーチ](../live-search/overview.md)
+  * [商品レコメンデーション](../product-recommendations/guide-overview.md)
 
 >[!NOTE]
 >
@@ -79,11 +78,11 @@ bin/magento saas:resync --feed=prices
 
 >[!NOTE]
 >
->Data Feed Sync Status ページがCommerce Admin for Commerce on Cloudまたはオンプレミスのデプロイメントで使用できない場合は、[拡張機能のインストール手順](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)に従って有効にします。
+>Commerce Admin for Commerce on Cloudまたはオンプレミスのデプロイメントで使用できない場合にデータフィードの同期ステータス ページを有効にするには、[拡張機能のインストール手順](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)に従います。
 
 ## カスタム商品タイプの価格
 
-価格計算は、基本価格、特別価格、グループ価格、カタログルール価格などのカスタム製品タイプでサポートされています。
+価格計算は、基本、特殊、グループ、カタログ ルールの価格などのカスタム製品タイプでサポートされています。
 
 特定の数式を使用して最終価格を計算するカスタム製品タイプがある場合は、製品価格フィードの動作を拡張できます。
 

@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: df9b8455e52b2721ba92971b1d0fddb92da8159a
 workflow-type: tm+mt
-source-wordcount: 958
+source-wordcount: 971
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 {{aco-merchandising-services}}
 
-カタログサービスをインストールして、[&#x200B; カタログサービス GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)を使用してCommerce インスタンスから製品データをリクエストおよび受信します。 カタログサービスは、repo.magento.com リポジトリからコンポーザーPHP メタパッケージとして配信されます。
+[&#x200B; カタログサービス GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)を使用してCommerce インスタンスから製品データをリクエストおよび受信するには、カタログサービスをインストールします。 カタログサービスは、repo.magento.com リポジトリからコンポーザーPHP メタパッケージとして配信されます。
 
 >[!NOTE]
 >
@@ -33,16 +33,14 @@ ht-degree: 0%
 >
 >Adobe Commerce as a Cloud Serviceを使用している場合は、ご使用の環境で最新バージョンのメタパッケージを利用できます。 サービスの使用を開始するには、[&#x200B; カタログサービスの概要](get-started.md)を参照してください。
 >
->Adobe Commerce Optimizerを使用したCommerce ストアフロントの実装については、[&#x200B; マーチャンダイジングサービス開発者ガイド &#x200B;](https://developer-stage.adobe.com/commerce/services/optimizer/)を参照してください。
+>Adobe Commerce Optimizerを使用したCommerce ストアフロントの実装については、「[Merchandising Services Developer Guide for Adobe Commerce Optimizer](https://developer-stage.adobe.com/commerce/services/optimizer/)」を参照してください。
 
 
 ## 必要システム構成
 
 **必要ソフトウェア構成**
 
-- Adobe Commerce 2.4.4以降
-- PHP 8.1、8.2、8.3、8.4
-- コンポーザー：2.x
+[Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) 2.4.4以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}を参照してください。
 
 **サポートされているプラットフォーム**
 
@@ -58,7 +56,7 @@ ht-degree: 0%
 
 すべてのCommerce テストインスタンスは、サンドボックスエンドポイントを使用します。
 
-サンドボックスエンドポイントですべての読み込みテストを実行します。 読み込みテストを開始する前に、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket)を送信して、サービスチームが追加のサーバートラフィックを予測できるようにします。
+サンドボックスエンドポイントですべての読み込みテストを実行します。 読み込みテストを開始する前に、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#create-a-support-ticket-with-experience-league)を送信して、サービスチームが追加のサーバートラフィックを予測できるようにします。
 
 ## インストールと設定
 
@@ -74,7 +72,7 @@ Adobe Commerceの[!DNL Catalog Service]を使い始めるには、次の手順�
 
 **前提条件**
 
-- [repo.magento.com](https://repo.magento.com)にアクセスして、拡張機能をインストールします。 キーの生成と必要な権限の取得については、[認証キーの取得](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)を参照してください。 クラウドインストールについては、[Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/authentication-keys)を参照してください
+- [repo.magento.com](https://repo.magento.com)にアクセスして、拡張機能をインストールします。 キーの生成と必要な権限の取得については、[認証キーの取得](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)を参照してください。 クラウドインストールについては、[Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/authentication-keys)を参照してください
 
 - Adobe Commerce アプリケーションサーバーのコマンドラインにアクセスします。
 
@@ -100,7 +98,7 @@ Commerce Cloud インスタンスの[!DNL Catalog Service]をインストール�
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. カタログサービスモジュールを追加します。
+1. Composerを使用して`magento/catalog-service` モジュールを追加します。
 
    ```bash
    composer require magento/catalog-service --no-update
@@ -120,13 +118,13 @@ Commerce Cloud インスタンスの[!DNL Catalog Service]をインストール�
    git push origin <branch-name>
    ```
 
-   更新をクラウド環境にプッシュすると、[Commerce クラウド デプロイメント プロセス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/deploy/process)が開始され、変更が適用されます。 [&#x200B; デプロイ ログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log)のデプロイメント ステータスを確認します。
+   更新をクラウド環境にプッシュすると、[Commerce クラウド デプロイメント プロセス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/deploy/process)が開始され、変更が適用されます。 [&#x200B; デプロイ ログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)のデプロイメント ステータスを確認します。
 
 >[!TAB  オンプレミス ]
 
 オンプレミス インスタンスの[!DNL Catalog Service]をインストールするには、この方法を使用します。
 
-1. Composerを使用して、カタログサービスモジュールをプロジェクトに追加します。
+1. Composerを使用して`magento/catalog-service` パッケージを追加します。
 
    ```bash
    composer require magento/catalog-service --no-update
@@ -158,7 +156,7 @@ Commerce Cloud インスタンスの[!DNL Catalog Service]をインストール�
 
 ### サービスとデータ書き出しの設定
 
-[!DNL Catalog Service]をインストールしたら、次のタスクを実行して、カタログサービスをAdobe Commerce インスタンスと統合します。 この統合により、Commerce インスタンス、カタログサービス、およびその他のサポートサービス間のデータ同期と通信が可能になります。 データの同期は、[SaaS データ書き出し拡張機能](../data-export/overview.md)によって処理されます。
+[!DNL Catalog Service]をインストールした後にカタログサービスをAdobe Commerce インスタンスと統合するには、次のタスクを実行します。 この統合により、Commerce インスタンス、カタログサービス、およびその他のサポートサービス間のデータ同期と通信が可能になります。 [SaaS データ書き出し拡張機能](../data-export/overview.md)は、データ同期を処理します。
 
 1. API キーを指定し、SaaS データスペースを選択して、[Commerce サービスコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/integration-services/saas)を設定します。
 

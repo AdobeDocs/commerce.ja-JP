@@ -25,9 +25,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 7c592b78454fdfafb377b101e366c8213ce43a0a
 workflow-type: tm+mt
-source-wordcount: 822
+source-wordcount: 835
 ht-degree: 0%
 
 ---
@@ -40,24 +40,24 @@ Adobe Commerce Extra Product Attributes モジュールは、商品データフ�
 * [属性セット](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
 * [在庫](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
-インストールすると、モジュールは自動的に動作します。 製品の同期中に、追加の属性をキャプチャし、書き出します。 追加の設定は必要ありません。
+インストールすると、モジュールは自動的に機能します。 製品の同期中に、追加の属性をキャプチャし、書き出します。 追加の設定は必要ありません。
 
 ## 主な特長
 
 * **自動拡張**：税区分、属性セットおよび在庫属性を使用して製品フィードを強化します
 * **シームレスな統合**：外部システムとサービスに必要なコンテキストを提供します
-* **設定なし**: インストール直後に動作します
+* **設定なし**：インストール直後の関数
 * **リアルタイム更新**：製品の変更と自動的に同期
 
 ## 機能と書き出された属性
 
 このモジュールは、既存の製品データフィードに3つの追加属性を追加します。
 
-* `ac_tax_class`
-* `ac_attribute_set`
-* `ac_inventory`
+* `[ac_tax_class](#tax-class-information-ac_tax_class)`
+* `[ac_attribute_set](attribute-set-information-ac_attribute_set)`
+* `[ac_inventory](advanced-inventory-data-ac_inventory)`
 
-### &#x200B;1. 税区分の情報（`ac_tax_class`）
+### 税区分の情報（`ac_tax_class`） {#tax-class-information-ac_tax_class}
 
 **目的**：各製品の税分類情報を提供します
 
@@ -84,7 +84,7 @@ Adobe Commerce Extra Product Attributes モジュールは、商品データフ�
 * 外部税計算サービスとの統合
 * 会計システム向け製品カテゴリ
 
-### &#x200B;2. 属性セット情報（`ac_attribute_set`）
+### 属性セット情報（`ac_attribute_set`） {#attribute-set-information-ac_attribute_set}
 
 **目的**：各製品に割り当てられている属性セットを特定します
 
@@ -113,7 +113,7 @@ Adobe Commerce Extra Product Attributes モジュールは、商品データフ�
 * カタログの管理と整理
 * 属性セットコンテキストを必要とするサードパーティシステム統合
 
-### &#x200B;3. 高度な在庫データ （`ac_inventory`）
+### 高度な在庫データ （`ac_inventory`） {#advanced-inventory-data-ac_inventory}
 
 **目的**：各製品の在庫管理設定を提供します
 
@@ -125,9 +125,9 @@ Adobe Commerce Extra Product Attributes モジュールは、商品データフ�
 * `cartMinQty` （浮動小数）: ショッピングカートで許可される最小数量
 * `cartMaxQty` （浮動小数）: ショッピングカートで許可される最大数量
 * `backorders` （文字列）: バックオーダーポリシー。 値は次のいずれかです。
-   * `"no"`：取り寄せ注文は許可されていません
-   * `"allow"`：数量が0未満の場合
-   * `"allow_notify"`:0未満の数量を許可し、お客様に通知
+  * `"no"`：取り寄せ注文は許可されていません
+  * `"allow"`：数量が0未満の場合
+  * `"allow_notify"`:0未満の数量を許可し、お客様に通知
 * `enableQtyIncrements` （ブール値）：数量の増分が有効かどうか
 * `qtyIncrements` （浮動小数）：必要な数量の増分値
 
@@ -161,22 +161,21 @@ Adobe Commerce Extra Product Attributes モジュールは、商品データフ�
 
 * **製品フィード** （`products`）: 3つの追加属性で強化されました
 
-   * 各製品レコードに`ac_tax_class`、`ac_attribute_set`および`ac_inventory`属性を追加します
-   * 元の商品データを保持
-   * 既存のフィード コンシューマーとの下位互換性を維持
+  * 各製品レコードに`ac_tax_class`、`ac_attribute_set`および`ac_inventory`属性を追加します
+  * 元の商品データを保持
+  * 既存のフィード コンシューマーとの下位互換性を維持
 
 * **製品属性フィード** （`productAttributes`）：新しい属性の属性メタデータで強化
 
-   * `productAttributes` フィードに3つの新しい属性のメタデータを自動的に登録します
-   * 属性設定の詳細（データタイプ、表示設定など）を提供します。
-   * 外部システムが新しい属性スキーマを理解するのに役立つ
+  * `productAttributes` フィードに3つの新しい属性のメタデータを自動的に登録します
+  * 属性設定の詳細（データタイプ、表示設定など）を提供します。
+  * 外部システムが新しい属性スキーマを理解するのに役立つ
 
 ## 拡張機能のインストール
 
 **要件**
 
-* PHP 8.1、8.2、8.3、または8.4
-* Adobe Commerce 2.4.4以降
+* [Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) 2.4.4以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements)を参照してください。
 * [Adobe Commerce Data Export拡張機能](manage-extension.md#update-a-module-to-a-specific-version)、バージョン 103.4.11以降
 * [repo.magento.com](https://repo.magento.com)へのアクセス
 
@@ -193,8 +192,8 @@ composer require adobe-commerce/module-extra-product-attributes
 
 インストール手順の詳細については、次のガイドを参照してください。
 
-* [Adobe Commerce on Cloud Infrastructureへの拡張機能のインストール](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [拡張機能Adobe Commerce オンプレミスのインストール](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/extensions)
+* [Adobe Commerce on Cloud Infrastructureの拡張機能のインストール](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [Adobe Commerce オンプレミスへの拡張機能のインストール](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## 製品データの同期
 
@@ -215,7 +214,7 @@ bin/magento saas:resync --feed=productAttributes
 **追加属性が見つからない製品：**
 
 * モジュールが適切にインストールされ、有効になっていることを確認します
-* 再同期コマンドを実行して製品データを更新する
+* 製品データを更新するには、再同期コマンドを実行します
 * 製品に有効な税区分と属性セットの割り当てがあることを確認します
 
 **在庫データが正しくありません：**

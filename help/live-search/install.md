@@ -25,16 +25,16 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: df9b8455e52b2721ba92971b1d0fddb92da8159a
 workflow-type: tm+mt
-source-wordcount: 2842
+source-wordcount: 2803
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search]で成功するように設定
 
-Adobe Commerce [!DNL Live Search]と[[!DNL Catalog Service]](../catalog-service/guide-overview.md)は連携して、パフォーマンスが高く、適切で、直観的な検索ソリューションを提供し、お客様が必要なものをすばやく正確に見つけられるようにします。 具体的には、[!DNL Catalog Service]は、使用する[!DNL Live Search]などのSaaS サービス用にカタログデータを表示します。
+Adobe Commerce [!DNL Live Search]と[[!DNL Catalog Service]](../catalog-service/guide-overview.md)は連携して、パフォーマンスが高く、適切で、直観的な検索ソリューションを提供します。 このソリューションにより、顧客は必要な商品をすばやく見つけることができます。 具体的には、[!DNL Catalog Service]は、使用する[!DNL Live Search]などのSaaS サービス用にカタログデータを表示します。
 
 この記事では、[!DNL Catalog Service]を使用して[!DNL Live Search]を実装するための手順を説明します。
 
@@ -44,9 +44,7 @@ Adobe Commerce [!DNL Live Search]と[[!DNL Catalog Service]](../catalog-service/
 
 ## 要件定義
 
-- [Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) 2.4.4以降
-- PHP 8.1、8.2、8.3、または8.4
-- [!DNL Composer]
+- [Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) 2.4.4以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}を参照してください。
 - cron ジョブとインデクサーの実行
 
 >[!IMPORTANT]
@@ -68,13 +66,13 @@ Adobe Commerce [!DNL Live Search]と[[!DNL Catalog Service]](../catalog-service/
 >
 > **HIPAA対応**
 >
->HIPAA対応の拡張機能とヘルスケアアドオンでAdobe Commerceを使用している場合は、LiveSearch> Live Searchを通じて保護された健康情報（PHI）を処理しないでください。HIPAA対応サービスではありません。
+>HIPAA対応の拡張機能とヘルスケアアドオンでAdobe Commerceを使用している場合は、ライブサーチを通じて保護された健康情報（PHI）を処理しないでください>  ライブサーチはHIPAA対応サービスではありません。
 >
 >詳しくは、[HIPAA対応Adobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)および[操作](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/hipaa-ready-service/operations) ガイダンスを参照してください。このガイダンスでは、HIPAA対応ではないCommerce サービスの中からライブサーチをリストしています。
 
 ## ワークフローの概要
 
-[!DNL Live Search]をオンボーディングするには、次の操作が必要です。
+[!DNL Live Search]をオンボーディングするには、次の操作が必要です：
 
 1. [!DNL Live Search]拡張機能を[&#x200B; インストール &#x200B;](#install)
 1. [API キーを](#configure)設定
@@ -245,12 +243,12 @@ bin/magento saas:resync --feed categoryPermissions
 
 ## &#x200B;4. データがエクスポートされたことを確認します {#verify}
 
-データフィードの同期ステータス ページとData Management ダッシュボードを使用するだけでなく、データベース内で直接Adobe Commerceから書き出されたカタログデータを確認し、[!DNL Live Search] GraphQL ワークスペースを使用してデータが[!DNL Live Search]に正常に同期されたことを確認できます。
+データベース内のAdobe Commerceから書き出されたカタログデータを検証し、[!DNL Live Search] GraphQL ワークスペースを使用してデータが[!DNL Live Search]に正常に同期されたことを確認できます。
 
 - データベースから、SQL クエリを使用して次のテーブルのエントリを検索します。
 
-   - `cde_products_feed`
-   - `cde_product_attributes_feed`
+  - `cde_products_feed`
+  - `cde_product_attributes_feed`
 
   >[!NOTE]
   >
@@ -258,8 +256,8 @@ bin/magento saas:resync --feed categoryPermissions
 
 - デフォルトクエリで[GraphQL playground](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/graphql)を使用して（詳細は[GraphQL reference](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)を参照）、次の点を確認します。
 
-   - 返品商品数は、ストアビューに期待した数に近いです。
-   - ファセットが返されます。
+  - 返品商品数は、ストアビューに期待した数に近いです。
+  - ファセットが返されます。
 
 追加のヘルプについては、サポート サポート サポート技術情報の「[[!DNL Live Search]  カタログが同期されていません](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)」を参照してください。
 
@@ -269,7 +267,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 製品リストウィジェットの有効化
 
-[!DNL Live Search] 4.0.0以降をインストールすると、製品リストウィジェットはデフォルトで有効になります。 ウィジェットが有効になっている場合、検索結果には別のUI コンポーネントが使用され、カテゴリでは製品リストページを参照します。 このUI コンポーネントは、[Catalog Service API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)への直接呼び出しを行い、応答時間が短縮されます。
+[!DNL Live Search] 4.0.0以降をインストールすると、製品リストウィジェットがデフォルトで有効になります。 ウィジェットが有効になっている場合、検索結果には別のUI コンポーネントが使用され、カテゴリでは製品リストページを参照します。 このUI コンポーネントは、[Catalog Service API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search)への直接呼び出しを行い、応答時間が短縮されます。
 
 4.0.0以降より古い[!DNL Live Search] バージョンを使用している場合は、製品リストウィジェットを手動で有効にする必要があります。
 
@@ -313,8 +311,8 @@ SaaSにカタログデータを取り込んだ状態で、テストして次の�
 サイトにデプロイされたストアフロントイベントが機能していることを確認します。 このチェックは、ヘッドレス実装では特に重要です。
 
 - [!DNL Live Search]に必要な[&#x200B; イベント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)を確認してください。
-- [&#x200B; ライブ検索ダッシュボード &#x200B;](performance.md)が、実稼動以外の環境のデータを表示していることを確認します。
-- [&#x200B; イベントコレクションを確認](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)。
+- [&#x200B; ライブ検索ダッシュボード &#x200B;](performance.md)に、実稼動以外の環境のデータが表示されていることを確認します。
+- [&#x200B; イベントコレクションを確認](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify)。
 
 ## &#x200B;8. ストアフロントに合わせたカスタマイズ {#customize}
 
@@ -425,7 +423,7 @@ Adobeでは、SaaS API、特にカタログサービスエンドポイントを�
 - Commerce データベース/Graphql プロセスをバイパスして、パフォーマンスを向上させ、プロセッサの負荷を軽減します
 - [!DNL Catalog Service] フェデレーションを利用して、単一のエンドポイントから[!DNL Live Search]、[!DNL Catalog Service]、[!DNL Product Recommendations]を呼び出します。
 
-一部のユースケースでは、製品の詳細や同様のケースについては、[!DNL Catalog Service]に電話することをお勧めします。 詳しくは、[refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)を参照してください。
+一部のユースケースでは、製品の詳細や同様のケースについては、[!DNL Catalog Service]に電話することをお勧めします。 詳しくは、[refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product)を参照してください。
 
 カスタムヘッドレス実装がある場合は、[!DNL Live Search]の参照実装を確認してください。
 
@@ -498,7 +496,7 @@ Adobeでは、SaaS API、特にカタログサービスエンドポイントを�
 
 ### Inventory management
 
-[!DNL Live Search]は、Commerceの[Inventory management](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/introduction)機能をサポートしています（以前はマルチSource インベントリ（MSI）と呼ばれていました）。 完全なサポートを有効にするには、依存関係モジュール `commerce-data-export`をバージョン 102.2.0以降に[更新](install.md#updating-live-search)する必要があります。
+[!DNL Live Search]は、Commerceの[Inventory management](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/introduction)機能をサポートしています。 完全なサポートを有効にするには、依存関係モジュール `commerce-data-export`をバージョン 102.2.0以降に[更新](install.md#updating-live-search)する必要があります。
 
 [!DNL Live Search]は、商品がInventory management内で利用できるかどうかを示すブール値を返しますが、在庫を持つソースに関する情報は含まれません。
 
@@ -521,7 +519,7 @@ Adobeでは、SaaS API、特にカタログサービスエンドポイントを�
 
 ### ヘッドレスストアフロントのサポート
 
-オプションとして、ストアフロントの行動データ収集に必要なフィールドを含めるように、アプリケーションの既存のGraphQL カバレッジを拡張する`module-data-services-graphql` モジュールをインストールする必要がある場合があります。
+オプションで、アプリケーションの既存のGraphQL カバレッジを拡張する`module-data-services-graphql` モジュールをインストールして、ストアフロントの行動データ収集に必要なフィールドを含めます。
 
 ```bash
 composer require magento/module-data-services-graphql
@@ -539,7 +537,7 @@ composer require magento/module-data-services-graphql
 
 ### PWAサポート
 
-[!DNL Live Search]はPWA Studioで動作しますが、他のCommerceの実装と比較すると、若干の違いが見られる場合があります。 Veniaでは検索や製品リストページなどの基本的な機能は機能しますが、Graphqlの一部の順序付けが正しく機能しない場合があります。 パフォーマンスの違いもあります。
+[!DNL Live Search]はPWA Studioで機能しますが、特に特定のGraphQL駆動型シナリオと全体的な応答特性において、ストアフロント開発者は他のCommerce実装と比較して若干の違いを見る可能性があります。
 
 - 現在の[!DNL Live Search]のPWAの実装では、ネイティブのCommerce ストアフロントを使用して[!DNL Live Search]よりも多くの検索結果を返すには、より多くの処理時間が必要です。
 - PWAの[!DNL Live Search]は[&#x200B; イベント処理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)をサポートしていません。 そのため、検索レポートやインテリジェントなマーチャンダイジングは、PWAのストアフロントでは機能しません。
@@ -567,4 +565,4 @@ PWA Studioで[!DNL Live Search]を使用するには、インテグレーター�
 
 ### Cookie
 
-[!DNL Live Search]は、検索機能を向上させるためにユーザーインタラクションデータを収集し、この情報をブラウザーのCookieに保存します。 Cookie制限が有効になっている場合、このデータ収集にはユーザーの同意が必要です。 [!DNL Live Search]と[!DNL Product Recommendations]は、同じデータ収集メカニズムとCookie処理を共有しています。 Cookieの制限とプライバシーコンプライアンスについて詳しくは、[Cookieの制限を処理](../product-recommendations/setting-cookie.md)を参照してください。
+検索機能を向上させるために、[!DNL Live Search]はユーザーインタラクションデータを収集し、この情報をブラウザーのCookieに保存します。 Cookie制限が有効になっている場合、このデータ収集にはユーザーの同意が必要です。 [!DNL Live Search]と[!DNL Product Recommendations]は、同じデータ収集メカニズムとCookie処理を共有しています。 Cookieの制限とプライバシーコンプライアンスについて詳しくは、[Cookieの制限を処理](../product-recommendations/setting-cookie.md)を参照してください。

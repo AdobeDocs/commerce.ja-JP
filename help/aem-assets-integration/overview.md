@@ -20,9 +20,9 @@ topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
 workflow-type: tm+mt
-source-wordcount: 1081
+source-wordcount: 1090
 ht-degree: 1%
 
 ---
@@ -59,9 +59,7 @@ AEM Assetsとの連携により、アセット管理ワークフローを自動�
 
 [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} Adobe Commerce 2.4.5以降
 
-* PHP 8.1、8.2、8.3、および8.4
-
-* Composer 2.x
+* Adobe Commerce 2.4.5以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}を参照してください。
 
 [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} Adobe Experience Managerは[Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/overview)でプロビジョニングされています
 

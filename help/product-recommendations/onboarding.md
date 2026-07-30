@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: f35d602bd25d2b5192a289c444c1bc0a93a91945
 workflow-type: tm+mt
-source-wordcount: 418
+source-wordcount: 447
 ht-degree: 0%
 
 ---
@@ -26,24 +26,24 @@ ht-degree: 0%
 >
 >どのAdobe Commerce機能がHIPAAに対応しているか、どのサービスをPHIで使用してはならないかについて詳しくは、[Adobe CommerceでのHIPAA対応](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)および[操作](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)を参照してください。
 
-[!DNL Product Recommendations]のオンボーディングプロセスでは、サーバーのコマンドラインへのアクセスが必要で、次の手順で構成されています。 コマンドラインでの作業に慣れていない場合は、開発者またはシステムインテグレータに助けを求めてください。
+[!DNL Product Recommendations]のオンボーディングプロセスでは、サーバーのコマンドラインへのアクセスが必要で、次の手順で構成されています。 コマンドラインでの作業に慣れていない場合は、開発者またはシステムインテグレーターにヘルプを依頼してください。
 
 - [導入ワークフロー](implementation-workflow.md)
 - [インストールと設定](install-configure.md)
 - [設定](settings.md)
-- [検証](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)
+- [検証](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify)
 - [ステージング環境](staging-environment.md)
 
 ## 要件定義
 
-- Adobe Commerce 2.4.4以降
-- PHP 8.1、8.2、8.3、または8.4
-- コンポーザー2
+[Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) 2.4.4以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}を参照してください。
 
 ### サポートされているプラットフォーム
 
 - Adobe Commerce オンプレミス（EE） : 2.4.4以降
 - Adobe Commerce クラウド版（ECE） : 2.4.4以降
+
+要件の詳細については、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements)を参照してください。
 
 ## エンドポイント
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ### B2B サポート {#b2bsupport}
 
-B2Bのストアフロントでは、買い物客や顧客グループごとに商品の可視性や価格を決定する複雑なロジックが必要になることがよくあります。 [!DNL Product Recommendations]様は、[&#x200B; カテゴリの権限](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=ja)、[共有カタログ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=ja)、[顧客グループ固有の価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja)を尊重することで、この機能を[&#x200B; サポート &#x200B;](release-notes.md)するようになりました。 たとえば、特定のカテゴリーを小売顧客セグメントから隠している場合、そのセグメントの買い物客には、それらのカテゴリーの商品に関するレコメンデーションは表示されません。 また、特定の顧客グループや企業向けに共有カタログを定義すると、それらの買い物客は、アクセス可能な商品に関してのみレコメンデーションを見ることができます。 あらゆる推奨商品には、各買い物客の顧客グループに基づいた、正しい顧客グループ固有の価格が反映されています。
+B2Bのストアフロントでは、買い物客や顧客グループごとに商品の可視性や価格を決定する複雑なロジックが必要になることがよくあります。 [!DNL Product Recommendations]様は、[&#x200B; カテゴリの権限](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/category-permissions)、[共有カタログ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=ja)、[顧客グループ固有の価格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=ja)を尊重することで、この機能を[&#x200B; サポート &#x200B;](release-notes.md)するようになりました。 たとえば、特定のカテゴリーを小売顧客セグメントから隠している場合、そのセグメントの買い物客には、そのカテゴリーの商品のレコメンデーションは表示されません。 また、特定の顧客グループや企業向けに共有カタログを定義すると、それらの買い物客は、アクセス可能な商品に関してのみレコメンデーションを見ることができます。 あらゆる推奨商品には、各買い物客の顧客グループに基づいた、適切な顧客グループ固有の価格が反映されています。
 
 >[!NOTE]
 >
