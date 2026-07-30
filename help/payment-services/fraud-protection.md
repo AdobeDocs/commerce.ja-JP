@@ -1,60 +1,60 @@
 ---
-title: 重大な不正保護
-description: Signifyd を使用した  [!DNL Payment Services]  の自動不正保護を有効にします。
+title: Signifyd Fraud Protection
+description: Signifydで [!DNL Payment Services] の自動不正防止を有効にします。
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security, Paas, Saas
 exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
 source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
-# 重大な不正保護
+# 重要な不正利用防止
 
-[!DNL Payment Services]Signifyd 拡張機能 [&#x200B; を使用して、](https://commercemarketplace.adobe.com/signifyd-module-connect.html) の自動不正保護を有効にできます。
+[Signifyd拡張機能](https://commercemarketplace.adobe.com/signifyd-module-connect.html)を使用して、[!DNL Payment Services]の自動不正防止を有効にできます。
 
-Adobe Commerceは、Signifyd バージョン 5.4.0 以降をサポートしています。 [!DNL Payment Services] では、認証前および認証後の Signifyd フローをサポートしています。
+Adobe Commerceは、Signifyd バージョン 5.4.0以降をサポートしています。 [!DNL Payment Services]は、事前認証および事後認証のSignifyd フローをサポートしています。
 
-Signifyd と [!DNL Payment Services] の統合により、クレジットカード、デビットカード、ボールトカード、管理者によるチェックアウト、PayPal およびApple Pay の支払い方法がサポートされます。 取引の詳細は Payment Services と Signifyd の間で共有されていませんが、Signifyd はすべての支払い方法に包括的なリスクカバレッジを提供し、最大限の保護を確保しています。
+Signifyd/[!DNL Payment Services]との統合により、クレジットカード、デビットカード、アークトカード、Admin経由でのチェックアウト、PayPalおよびApple Payの支払い方法に対応しています。 決済サービスとSignifydの間で取引の詳細の一部は共有されていませんが、Signifydはすべての支払い方法に包括的なリスクカバレッジを提供し、最大限の保護を確保しています。
 
 >[!CAUTION]
 >
-> [Fastlane](payments-options.md#fastlane-button) は Signifyd と互換性がありません。
+> [Fastlane](payments-options.md#fastlane-button)はSignifydと互換性がありません。
 
-拡張機能のインストールと設定について詳しくは、[Signifyd のドキュメント &#x200B;](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) を参照してください。
+拡張機能のインストールと設定について詳しくは、[Signifyd ドキュメント &#x200B;](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension)を参照してください。
 
 ## オンボーディング
 
-[!DNL Payment Services] で使用する拡張機能をオンボーディングするには、Signifyd と直接通信する必要があります。[!DNL Payment Services] の設定は必要ありません。 インストールが完了したら、管理者で Signifyd 拡張機能を設定できます。 この拡張機能に関連するすべてのサポートは、Signifyd によって管理されます。
+[!DNL Payment Services]で使用するために拡張機能をオンボーディングするには、Signifydと直接通信する必要があります。[!DNL Payment Services]の設定は必要ありません。 インストールが完了したら、AdminでSignifyd拡張機能を設定できます。 この拡張機能に関連するすべてのサポートは、Signifydによって管理されます。
 
-Signifyd でオンボーディングする場合、次の操作が必要です。
+Signifydでオンボーディングを行う場合は、以下を行う必要があります。
 
-1. 新しいアカウントを設定する場合は、Signifyd にお問い合わせください。
-1. Signifyd は現在サポートしていない他のお支払い方法をトリガーしないように [&#x200B; デフォルトで &#x200B;](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md)許可リストに加えるされています。 特定の支払い方法を禁止する場合は、変更を加える必要があります。
-1. PayPal が承認できる Paypal のマーチャントの不正防止の設定を介して、PayPal が注文を拒否しないことを Signifyd に確認します。
-1. [!DNL Payment Services] と互換性を持たせるために Signifyd 拡張機能を有効にします。
-   * [!DNL Payment Services] を _ライブ_ モードで使用する場合、Signifyd は実稼動モードになっている必要があります。
-   * [!DNL Payment Services] を _サンドボックス_ モードで使用する場合、Signifyd はテストモードになっている必要があります。
+1. 新しいアカウントを設定するには、Signifydにお問い合わせください。
+1. デフォルトでは、Signifydは現在サポートしていない他の支払い方法をトリガーしないように[許可リストに加える](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md)されています。 特定の決済方法を禁止する場合は、変更する必要があります。
+1. PayPalは、Signifydが承認できるPaypalの加盟店の不正利用防止オプションにより、注文を拒否しないことをSignifydに確認します。
+1. Signifyd拡張機能を有効にして[!DNL Payment Services]と互換性を持たせます：
+   * _Live_ モードで[!DNL Payment Services]を使用する場合、Signifydは実稼動モードである必要があります。
+   * _サンドボックス_ モードで[!DNL Payment Services]を使用する場合、Signifydはテストモードである必要があります。
 
 ## 設定
 
-Signifyd は注文に対して何らかのアクションを実行するので、[!DNL Payment Services] に設定した支払いアクションに基づいて適切に動作するように拡張機能を設定する必要があります。
+Signifydは注文に対して何らかのアクションを実行するため、[!DNL Payment Services]に設定した支払いアクションに基づいて適切に動作するように拡張機能を設定する必要があります。
 
-以下の設定オプションは、支払いサービスおよび Signifyd の統合と互換性がありません。
+これらの設定オプションは、決済サービスおよびSignifyd統合と互換性がありません。
 
-* [!DNL Payment Services] 支払アクション `Authorize` および _で_ が設定されている場合、Signifyd は `PostAuth` オプションが _[!UICONTROL Decline Guarantees]_&#x200B;クレジットメモを作成&#x200B;**に設定された**&#x200B;モードです。
+* [!DNL Payment Services]が`Authorize`支払いアクション _と_&#x200B;で設定されている場合、Signifydは`PostAuth` モードで、_[!UICONTROL Decline Guarantees]_&#x200B;オプションが&#x200B;**クレジットメモを作成**&#x200B;に設定されています。
 
-  理由：[!DNL Payment Services] によって認証取引が作成され、Signify によって払戻が試行されます。
-
-
-* [!DNL Payment Services] は `Authorize and Capture` 支払いアクション _で構成され_ Signifyd は `PostAuth` オプションが _[!UICONTROL Decline Guarantees]_&#x200B;注文のキャンセル&#x200B;**に設定された**&#x200B;モードです。
-
-  理由：[!DNL Payment Services] は、Signifyd が無効化を試行する取得トランザクションを作成します。
+  理由：[!DNL Payment Services]は、Signifyが返金を試みる認証トランザクションを作成します。
 
 
-[&#x200B; 拡張機能の設定 &#x200B;](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#configuringmagento2extension) については、Signifyd のドキュメントを参照してください。
+* [!DNL Payment Services]は`Authorize and Capture`支払いアクション _で設定されており、_ Signifydは`PostAuth` モードで、_[!UICONTROL Decline Guarantees]_&#x200B;オプションが&#x200B;**注文をキャンセル**&#x200B;に設定されています。
 
-詳しくは、Signifyd のドキュメント [&#x200B; 注文ワークフローの詳細 &#x200B;](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#howmagento2works) を参照してください。
+  理由：[!DNL Payment Services]は、Signifydが無効化しようとするキャプチャ トランザクションを作成します。
+
+
+拡張機能の設定[について詳しくは、Signifydのドキュメントを参照してください](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#configuringmagento2extension)。
+
+注文ワークフローについて詳しくは、[に関するSignifydのドキュメントを参照してください](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#howmagento2works)。

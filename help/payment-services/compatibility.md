@@ -14,9 +14,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88c74f789dc398afa8f40ee2258450e83f134d87
 workflow-type: tm+mt
-source-wordcount: 454
+source-wordcount: 506
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 ![check](assets/icon-check.png)標準価格
 
-![check](assets/icon-check.png) **XXか国で利用可能**
+![check](assets/icon-check.png) **200以上の国で利用可能**
 
 [![詳細情報](assets/learn-more-button.svg)](onboard.md)
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 ![check](assets/icon-check.png) （L2/L3の価格設定機能 – 米国のみ）
 
-![check](assets/icon-check.png) **米国（米国）、カナダ（CA）、オーストラリア（AUS）でのみ利用可能です。 フランス （FR）、イギリス （UK）**
+![check](assets/icon-check.png) 37か国で利用可能。 オーストラリア、オーストリア、ベルギー、ブルガリア、カナダ、中国、キプロス、チェコ共和国、デンマーク、エストニア、フィンランド、フランス、ドイツ、ギリシャ、香港、ハンガリー、アイルランド、イタリア、日本、ラトビア、リトアニア、ルクセンブルグ、マルタ、メキシコ、オランダ、ノルウェー、ポーランド、ポルトガル、ルーマニア、シンガポール、スロバキア、スロベニア、スペイン、スウェーデン、英国、米国。 **米国（米国）、カナダ（CA）、オーストラリア（AU）、フランス（FR）、英国（GB）、イタリア（IT）、オランダ（NL）、ドイツ（DE）で利用可能な交渉済み料金**
 
 [![詳細情報](assets/learn-more-button.svg)](onboard.md)
 
