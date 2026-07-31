@@ -207,11 +207,11 @@ Commerce サービスコネクタが設定されている場合、次の機能�
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="データ同期の監視" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong> データ管理ダッシュボード </strong>
          </a>
       </div>
@@ -237,7 +237,7 @@ Adobe Commerceサービスは、ビジネスの拡大、顧客体験の向上、
 | オムニチャネルでパーソナライズされた体験を構築 | コマースデータが分断されているため、チャネルをまたいでパーソナライズされたエクスペリエンスを提供できません。 | [Data Connection](../data-connection/overview.md)を使用して、行動データ、トランザクションデータ、プロファイルデータをAdobe Experience Platformに送信します。 高度な顧客セグメントの構築、放棄されたカートに対する施策の実施、類似オーディエンスのターゲティング、カスタマージャーニー全体の季節的なトレンドの分析を実現できます。 |
 | デジタルアセット管理を合理化 | 複数のシステムをまたいで製品画像およびリッチメディアを管理すると、時間がかかり、ミスが発生しやすくなります。 | [AEM Assets統合](../aem-assets-integration/overview.md)は、Adobe CommerceをAdobe Experience Manager Assets プロジェクトに接続し、ワークフローを簡素化し、あらゆる顧客接点で一貫性のあるブランドエクスペリエンスを実現することで、一元化されたアセット管理を提供します。 |
 | 決済処理を最適化 | 支払い方法が限定され、支払い体験が不十分なことで、顧客満足度とコンバージョンが損なわれています。 | [決済サービス &#x200B;](../payment-services/guide-overview.md)では、支払い、注文、請求書を管理するための統合ダッシュボードを使用して、無利息の分割払いを含む複数の支払い方法を提供しています。 |
-| データ同期の大規模な管理 | リソースを多用するインデックス作成によってサイトの動作が遅くなり、データ同期の問題を簡単に追跡できません。 | [SaaS Data Export](../data-export/overview.md)、[SaaS Price Indexer](../price-index/price-indexing.md)、および[Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)は、カタログ、注文、在庫データを自動的に同期し、価格計算をAdobe クラウドインフラストラクチャにオフロードし、同期ステータスをリアルタイムで可視化します。 |
+| データ同期の大規模な管理 | リソースを多用するインデックス作成によってサイトの動作が遅くなり、データ同期の問題を簡単に追跡できません。 | [SaaS Data Export](../data-export/overview.md)、[SaaS Price Indexer](../price-index/price-indexing.md)、および[Data Management Dashboard](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)は、カタログ、注文、在庫データを自動的に同期し、価格計算をAdobe クラウドインフラストラクチャにオフロードし、同期ステータスをリアルタイムで可視化します。 |
 | 失った顧客を取り戻し、返品を減らしたい | 高い顧客離れと返品率は、収益性に影響を与えています。 | [Data Connection](../data-connection/overview.md)をAdobe Journey OptimizerおよびReal-Time CDPと組み合わせて、返品パターンを特定し、ウィンバック施策を構築し、行動ごとに顧客をセグメンテーションし、電子メールやSMSをまたいでパーソナライズされたリエンゲージメントキャンペーンを送信します。 |
 | データドリブン型マーチャンダイジング | どの商品をどのタイミングでプロモーションすべきか、把握できていません。 | [&#x200B; ライブサーチ &#x200B;](../live-search/overview.md)は、検索パフォーマンスに関するインサイトとマーチャンダイジングツールを提供します。主な指標にアクセスしたり、検索キーワードを分析したり、インテリジェントなマーチャンダイジングルールを使用して、実際の顧客行動やビジネス目標に基づいて商品を強化または埋め込んだりすることができます。 |
 | 機密データのコンプライアンスを維持 | HIPAAを遵守しながら、機密性の高い顧客データを扱う必要があります。 | [Data Connection](../data-connection/overview.md)はHIPAA対応のため、コンプライアンスを維持し、プライバシーリクエストを体系的に処理しながら、Experience Platformとバックオフィスデータを共有できます。 |
