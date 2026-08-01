@@ -133,7 +133,7 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 
 ### 領域またはテンプレート別にトランザクションメールを抑制
 
-新しい[電子メール抑制](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression)設定（[!UICONTROL **店舗**] > [!UICONTROL **設定**] > [!UICONTROL **Adobe サービス**] > [!UICONTROL **電子メール抑制**]）を使用すると、管理者はトランザクション電子メールの送信を選択的に停止できます。 [!DNL Commerce]機能領域（カスタマーアカウント、Order Management、返品、チェックアウト、マーケティング、B2Bなど）またはテンプレート IDの正確なリストでメールを抑制できます。<!-- ACCS-1025 -->
+新しい[電子メール抑制](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/services/email-suppression)設定（[!UICONTROL **店舗**] > [!UICONTROL **設定**] > [!UICONTROL **Adobe サービス**] > [!UICONTROL **電子メール抑制**]）を使用すると、管理者はトランザクション電子メールの送信を選択的に停止できます。 [!DNL Commerce]機能領域（カスタマーアカウント、Order Management、返品、チェックアウト、マーケティング、B2Bなど）またはテンプレート IDの正確なリストでメールを抑制できます。<!-- ACCS-1025 -->
 
 ### 管理画面での注文変更履歴の表示
 
