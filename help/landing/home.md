@@ -30,9 +30,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: ee8113dcf4e6d4d91fdf6cc69078d6104315a33f
+last-update: 2026-07-24
+source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
 workflow-type: tm+mt
-source-wordcount: 1314
+source-wordcount: 1221
 ht-degree: 0%
 
 ---
@@ -77,7 +78,7 @@ Commerce サービスコネクタが設定されている場合、次の機能�
       <div>
          <a href="../catalog-service/overview.md">
          <strong> カタログ サービス </strong>
-         
+         </a>
       </div>
       <p>
          <em> パフォーマンスの向上、拡張性の向上、コンバージョンの増加を実現しながら、最適化された製品体験を顧客に提供します。</em>
@@ -103,7 +104,7 @@ Commerce サービスコネクタが設定されている場合、次の機能�
       <div>
          <a href="../product-recommendations/overview.md">
          <strong>商品レコメンデーション </strong>
-         
+         </a>
       </div>
       <p>
          <em>買い物客の行動、人気のレンド、商品の類似性などに基づいて、AIを活用したレコメンデーションを追加します。</em>
@@ -116,7 +117,7 @@ Commerce サービスコネクタが設定されている場合、次の機能�
       <div>
          <a href="../payment-services/guide-overview.md">
          <strong>決済サービス </strong>
-         
+         </a>
       </div>
       <p>
          <em>無利息の分割や、決済処理、注文、請求書の表示の効率化など、様々な決済方法を通じて顧客満足度を向上させます。</em>
@@ -151,7 +152,7 @@ Commerce サービスコネクタが設定されている場合、次の機能�
       <div>
           <a href="../aem-assets-integration/overview.md">
          <strong>AEM Assetsとの連携</strong>
-         
+         </a>
       </div>
       <p>
          <em>Adobe Experience Managerと統合してリッチメディアコンテンツを管理するシステムを使用して、DAMを簡素化します。</em>
@@ -164,7 +165,7 @@ Commerce サービスコネクタが設定されている場合、次の機能�
       <div>
          <a href="../app-management/overview.md">
          <strong> アプリ管理</strong>
-         
+         </a>
       </div>
       <p>
          <em>管理者UIを使用して、Commerce インスタンスとApp Builder アプリケーションを関連付け、設定、管理します。</em>
@@ -189,7 +190,8 @@ Commerce サービスコネクタが設定されている場合、次の機能�
          </a>
       </div>
       <p>
-         <em>Adobe Adobe Commerceのカタログ、注文、在庫データを、接続されたサービスに自動的に同期します。 Commerce CLI コマンドまたは<strong>Data Management ダッシュボード </strong>を使用して、同期処理を管理します。</em></p>
+         <em>Adobe Adobe Commerceのカタログ、注文、在庫データを、接続されたサービスに自動的に同期します。Commerce CLI コマンドまたは<strong>Data Management ダッシュボード </strong>を使用して、同期処理を管理します。</em>
+      </p>
    </td>
    <td valign="top">
       <a href="../price-index/price-indexing.md">
@@ -198,7 +200,7 @@ Commerce サービスコネクタが設定されている場合、次の機能�
       <div>
           <a href="../price-index/price-indexing.md">
          <strong>SaaS価格インデクサー</strong>
-         
+         </a>
       </div>
       <p>
          <em>Commerce アプリケーションからAdobe Cloud インフラストラクチャに、インデックス作成や価格計算など、リソースを多用するタスクをオフロードして、サイトパフォーマンスを最適化します。</em>
@@ -211,10 +213,11 @@ Commerce サービスコネクタが設定されている場合、次の機能�
       <div>
           <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong> データ管理ダッシュボード </strong>
-         
+         </a>
       </div>
       <p>
-         <em>Commerce管理画面の統合ダッシュボードから、Commerce データの同期とトリガーの再同期を簡単に追跡できます。 データの可用性に関する貴重なインサイトを取得して、買い物客にタイムリーに表示できます。</em></p>
+         <em>Commerce管理画面の統合ダッシュボードから、Commerce データの同期とトリガーの再同期を簡単に追跡できます。データの可用性に関する貴重なインサイトを取得して、買い物客にタイムリーに表示できます。</em>
+      </p>
    </td>
 </table>
 
