@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
@@ -96,13 +96,13 @@ ht-degree: 0%
 
 ## Commerce ストアフロント
 
-[!DNL Storefront Builder]を使用したシンプルなドキュメントベースのオーサリングまたはビジュアル編集を使用して、リッチなエクスペリエンスを数分で作成するには、[!DNL Edge Delivery Services]を利用したAdobeの[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/)を使用します。
+[!DNL Storefront Builder]を使用したシンプルなドキュメントベースのオーサリングまたはビジュアル編集を使用して、リッチなエクスペリエンスを数分で作成するには、[!DNL Edge Delivery Services]を利用したAdobeの[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)を使用します。
 
 [!DNL Commerce Storefront]は、GraphQL API レイヤーを介してすべてのマーチャンダイジングサービスとデータを提供する分離型アーキテクチャを備えた完全ヘッドレスです。 このアーキテクチャにより、Commerce Foundationから独立してフロントエンドを開発することができ、新しいテクノロジーを使用して新しいタッチポイントを迅速に構築し、テストすることができます。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 クラウドまたはオンプレミスのAdobe Commerceから移行する場合は、移行ガイダンスについては、[既存のストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts)を参照してください。
+>[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 クラウドまたはオンプレミスのAdobe Commerceから移行する場合は、移行ガイダンスについては、[既存のストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=ja#existing-storefronts)を参照してください。
 
 ## マーチャンダイジングサービスと決済サービス
 
@@ -233,7 +233,7 @@ Adobe Commerce on Cloudの一般的なアップグレードプロセスでは、
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->
