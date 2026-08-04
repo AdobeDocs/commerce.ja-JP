@@ -157,7 +157,7 @@ ht-degree: 0%
 >* [Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/configure-commerce)用に [!DNL Adobe I/O] 接続が構成されています。
 >* Commerce環境がプロビジョニングされている同じIMS組織内の[!DNL Adobe Developer Console]へのアクセス。
 >* Commerce SaaS サービスへの同期を確認するには、管理者で&#x200B;**[!UICONTROL Data Management Dashboard]**&#x200B;を使用します。
->* ダッシュボードの検証には、製品レコメンデーション v6.0、[!DNL Live Search] v4.1.0以降、または[!DNL Catalog Service] v1.17以降が必要です。 Adobeでは、Commerce プロジェクトを、サポートされている最新バージョンのサービスにアップデートすることをお勧めします。 以前のバージョンのサービスの場合は、[&#x200B; カタログ同期](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)を使用して同期検証を行います。
+>* ダッシュボードの検証には、製品レコメンデーション v6.0、[!DNL Live Search] v4.1.0以降、または[!DNL Catalog Service] v1.17以降が必要です。 Adobeでは、Commerce プロジェクトを、サポートされている最新バージョンのサービスにアップデートすることをお勧めします。 以前のバージョンのサービスの場合は、[&#x200B; カタログ同期](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/data-services/catalog-sync)を使用して同期検証を行います。
 
 
 >[!NOTE]
@@ -172,11 +172,11 @@ ht-degree: 0%
 
 1. Commerce **からの** フィードの書き出しが正常に完了したことを確認します。
 
-   [!DNL Adobe Commerce]管理者から、[&#x200B; データフィード同期ステータス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページ （**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**）を開き、[!DNL Catalog Service]個のフィードごとに最後の書き出しステータスが成功したことを確認します。
+   [!DNL Adobe Commerce]管理者から、[&#x200B; データフィード同期ステータス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページ （**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**）を開き、[!DNL Catalog Service]個のフィードごとに最後の書き出しステータスが成功したことを確認します。
 
 1. [!DNL Adobe Commerce]管理者から接続されたCommerce サービス **への**&#x200B;同期が正常に完了したことを確認します。
 
-   [!DNL Adobe Commerce]管理者から、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) （**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**）を開き、同期された製品データに必要な製品が含まれていることを確認します。
+   [!DNL Adobe Commerce]管理者から、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) （**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**）を開き、同期された製品データに必要な製品が含まれていることを確認します。
 
 ### [!DNL Adobe I/O Events]に登録して購読 {#register-events}
 
@@ -295,9 +295,9 @@ ht-degree: 0%
 
    カタログイベントには[!DNL Catalog Service]の現在のデータが必要です。 エクスポートパスの両方のステージを確認します。
 
-   * **Commerce**&#x200B;からのフィードの書き出し – [&#x200B; データフィードの同期ステータス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページまたは`var/log/saas-export.log`で、[!DNL Catalog Service] フィードが[!DNL Commerce]から正常に書き出されたことを確認します。
+   * **Commerce**&#x200B;からのフィードの書き出し – [&#x200B; データフィードの同期ステータス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページまたは`var/log/saas-export.log`で、[!DNL Catalog Service] フィードが[!DNL Commerce]から正常に書き出されたことを確認します。
 
-   * **接続済みのCommerce SaaS サービスへの同期** — [Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)、[&#x200B; カタログ同期](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)または書き出しログで、データが[!DNL Catalog Service]に正常に同期されたことを確認します。
+   * **接続済みのCommerce SaaS サービスへの同期** — [Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)、[&#x200B; カタログ同期](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/data-services/catalog-sync)または書き出しログで、データが[!DNL Catalog Service]に正常に同期されたことを確認します。
 
    書き出しと同期のジョブのトラブルシューティングについては、[&#x200B; データとSaaS データの書き出しの同期](../data-export/data-sync-manage.md)および[&#x200B; ログとトラブルシューティング &#x200B;](../data-export/troubleshooting/logging.md)を参照してください。
 
@@ -319,7 +319,7 @@ ht-degree: 0%
    * [!DNL Adobe I/O Events] サブスクリプションの詳細。
    * 欠落しているイベントの概算の時間と説明。
 
-   詳細なヘルプについては、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を参照してください。
+   詳細なヘルプについては、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を参照してください。
 
 >[!MORELIKETHIS]
 >
