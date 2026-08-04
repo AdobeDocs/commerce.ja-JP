@@ -1,20 +1,15 @@
 ---
 title: レコメンデーションフィルター
 description: 'フィルターを使用して、レコメンデーションに表示される製品を制御する方法を説明します。 [!DNL Adobe Commerce Optimizer] '
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 116d8bd804df364ddc9cb1175525f08fd32c01bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
 workflow-type: tm+mt
-source-wordcount: 1919
+source-wordcount: 1932
 ht-degree: 0%
 
 ---
@@ -73,7 +68,7 @@ ht-degree: 0%
 
 価格規則&#x200B;**フィルター**&#x200B;は、推奨候補セットをフィルタリングします。商品のランク付けは&#x200B;**not**&#x200B;です。 エンジンはランク付けリストを生成し、価格含めるルールと除外ルールはそのリストから製品を削除し、残りの製品の相対的な順序は同じままになります。 対象となる製品がユニットリクエストよりも少ない場合は、有効な品目のみが表示されます。 条件が満たされない場合、ユニットはレンダリングされません（空のプレースホルダーはありません）。
 
-レコメンデーションユニット内の商品に表示される価格は、そのストアフロントの価格表と同じ&#x200B;**最終価格**&#x200B;であるため、買い物客が表示する価格は、フィルタリングに使用される値と一致します。 管理者プレビューでは、バリエーションの価格が異なる場合、設定可能な製品の価格帯が表示される場合があります。詳しくは、[&#x200B; プレビューの設定可能な製品](#configurable-products-in-preview)を参照してください。
+レコメンデーションユニット内の商品に表示される価格は、そのストアフロントの価格表と同じ&#x200B;**最終価格**&#x200B;であるため、買い物客が表示する価格は、フィルタリングに使用される値と一致します。 管理者プレビューでは、バリエーションの価格が異なる場合、設定可能な製品の価格帯が表示される場合があります。詳しくは、[ プレビューの設定可能な製品](#configurable-products-in-preview)を参照してください。
 
 #### 固定価格帯
 
@@ -98,7 +93,7 @@ ht-degree: 0%
 
 商品の詳細ページ （PDP）で&#x200B;**現在表示されている商品**&#x200B;に対してレコメンデーションを制限する必要がある場合は、**動的**&#x200B;価格フィルターを使用します。 フィルターは、その製品の最終価格を&#x200B;**アンカー**&#x200B;として使用し、定義した境界と推奨される製品を比較します。
 
-動的演算子は、次のような製品コンテキストで実行される[SKU関連のレコメンデーションタイプ &#x200B;](types.md)に対してのみ使用できます。
+動的演算子は、製品コンテキストで実行される[SKU関連のレコメンデーションタイプ ](types.md)に対してのみ使用できます。
 
 - 閲覧したページ
 - 閲覧、購入
@@ -106,7 +101,16 @@ ht-degree: 0%
 - その他
 - 視覚的な類似性
 
-人気ベースの種類（例：**最も閲覧された**&#x200B;または&#x200B;**最も購入された**）では、フィルターを固定する現在の製品が1つないため、これらのユニットは&#x200B;**利用できません**。
+フィルターを固定する現在の製品が1つないため、人気ベースのタイプでは&#x200B;**not**&#x200B;が利用できます。
+
+- 閲覧数
+- 最も購入された
+- 買い物かごに追加された回数
+- トレンド
+- あなたにおすすめ
+- 最近表示した項目
+- カートへのコンバージョンを表示
+- 閲覧から購入へのコンバージョン
 
 ストアフロントでは、レコメンデーションドロップインはPDPのコンテキストから現在の製品の価格を読み取り、レコメンデーションリクエストとともに送信します。 [!DNL Adobe Commerce Optimizer]は、動的価格ルールを評価する際に、その値をアンカーとして使用します。 設定可能な製品の場合、アンカーは&#x200B;**最低のバリアント**&#x200B;の最終価格（`priceRange.minimum`）になります。
 
