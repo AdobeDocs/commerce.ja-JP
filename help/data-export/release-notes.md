@@ -22,14 +22,14 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
+source-git-commit: 06cf519b8588e19f870e851558fa7fe7f0602b17
 workflow-type: tm+mt
-source-wordcount: 3256
+source-wordcount: 3237
 ht-degree: 0%
 
 ---
 
-# [!DNL SaaS Data Export]拡張機能リリースノート
+# [!DNL SaaS Data Export Extension] リリースノート
 
 これらのリリースノートでは、[!DNL SaaS data export]拡張機能の最新バージョンについて説明しています。 現在のメジャーリリース版のサポートが提供されています。 古いバージョンのリリースノートは、参照用に提供されています。
 
@@ -41,9 +41,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->SaaS データ書き出し拡張機能は、ライブサーチ、商品レコメンデーション、カタログサービスと共に自動的にインストールされるモジュールのコレクションです。 Composerを使用して、システムにインストールされているバージョンを確認できます。 場合によっては、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップするために、システムのデータエクスポート拡張機能をアップグレードすることをお勧めします。
+>[!DNL SaaS data export]拡張機能は、[!DNL Live Search]、[!DNL Product Recommendations]、[!DNL Catalog Service]と共に自動的にインストールされるモジュールのコレクションです。 システムにインストールされているバージョンは、[!DNL Composer]を使用して確認できます。 場合によっては、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップするために、システムのデータエクスポート拡張機能をアップグレードすることをお勧めします。
 
-## 2026 リリース
+## 2026 リリース {#release-notes-2026}
 
 ### 103.4.30 リリース
 
@@ -70,6 +70,7 @@ _2026年6月11日_
 _2026年6月4日_
 
 ![修正](../assets/fix.svg) **バンドル製品がカタログの同時更新後も表示されたままになる** – 構成可能な製品とバンドル製品が同時に更新されたときに、バンドル製品がストアフロントに表示されない問題を修正しました。 `magento/module-data-exporter`をバージョン 103.4.27にアップグレードすると、製品フィードが自動的に再同期するようにスケジュールされ、[!DNL Catalog Service]、[!DNL Live Search]、およびその他の接続されたCommerce サービスの既存のバンドルデータの不整合が修正されます。
+<!--MDEE-1379-->
 
 ### 103.4.26 リリース
 
@@ -90,8 +91,10 @@ _2026年5月19日_
 _2026年5月5日_
 
 ![修正](../assets/fix.svg) **書き出しログのトラブルシューティングが簡単** – 多くの書き出し関連のエラーと警告に、一貫したログコードが含まれるようになりました。 これらのコードは、サポートやドキュメントを利用する際の問題を迅速に追跡するのに役立ちます。 詳しくは、[&#x200B; ログコード参照](troubleshooting/log-codes-reference.md)を参照してください。
+<!--MDEE-1276-->
 
 ![修正](../assets/fix.svg) **属性オプションラベルが変更された場合の自動再同期** – ストアビューの製品属性オプションラベルを変更すると（複数選択属性を含む）、影響を受ける製品が再び書き出しにキューに入れられるようになり、ライブサーチ、商品レコメンデーション、カタログサービスおよびその他の接続されたCommerce サービスで、更新されたファセットとフィルターラベルが買い物客ビューに表示されるようになりました。 以前は、ラベルのみの編集では、より広範な製品変更で同期がトリガーされるまで、SaaS カタログに古い文言が表示される可能性がありました。
+<!--MDEE-1337-->
 
 ![修正](../assets/fix.svg) **デフォルトのスコープデータが見つからない場合の信頼性の高いステータスと可視性** – 製品の書き出しは、デフォルトの管理スコープのギャップを処理するため、接続されたサービスが正しく有効、無効、可視性の動作になります。 設定したストア固有の値は、引き続き優先されます。
 
@@ -109,7 +112,9 @@ _2026年5月5日_
 _2026年4月20日_
 
 ![修正](../assets/fix.svg) **静的EAV属性を削除する際のSQL エラーを解決**-ProductAttributeDelete プラグインで、静的EAV属性を削除する際にSQL エラーが生成されなくなりました。これにより、属性管理がスムーズになり、システムの信頼性が向上しました。 <!--MDEE-1336-->
-![修正](../assets/fix.svg) **カテゴリの移動後のカテゴリパスの書き出しを修正**- カテゴリが別の親に移動されたときに、カテゴリフィードが`url_path`を正しく更新し、接続されたCommerce サービスでカテゴリパスが見つからないか古くなるのを防ぎます。![修正](../assets/fix.svg) **関連製品の予定されたカテゴリ更新の改善** – 予定されたカテゴリ URLの更新は、意図されたカテゴリのみに影響し、データの整合性を維持し、関連製品の意図しない変更を防ぐことができます。 これにより、スケジュールされたカテゴリ URLの変更が書き出されたデータに正しく反映され、ストアフロントのナビゲーションとリンクされたサービスが現在のカタログに合わせて維持されるようになりました。
+![修正](../assets/fix.svg) **カテゴリの移動後のカテゴリパスの書き出しを修正**- カテゴリが別の親に移動されたときに、カテゴリフィードが`url_path`を正しく更新し、接続されたCommerce サービスでカテゴリパスが見つからないか古くなるのを防ぎます。<!--MDEE-1331-->
+![修正](../assets/fix.svg) **関連製品の予定されたカテゴリ更新の改善** – 予定されたカテゴリ URLの更新は、意図されたカテゴリのみに影響し、データの整合性を維持し、関連製品の意図しない変更を防ぐことができます。 これにより、スケジュールされたカテゴリ URLの変更が書き出されたデータに正しく反映され、ストアフロントのナビゲーションとリンクされたサービスが現在のカタログに合わせて維持されるようになりました。
+<!--MDEE-1321-->
 
 ### 103.4.22 リリース
 
@@ -174,7 +179,7 @@ _2025年11月24日_
 
 _2025年10月22日_
 
-![新規](../assets/new.svg) Adobe Commerceから接続されたサービス（カタログサービス、ライブサーチ、商品レコメンデーション）へのデータ転送を監視およびトラブルシューティングするためのData Feed Sync Status拡張機能のサポートを追加しました。 この拡張機能のインストールと使用について詳しくは、*Commerce管理ガイド*&#x200B;の[Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=ja)を参照してください。<!--MDEE-954-->
+![新規](../assets/new.svg)接続サービス （[!DNL Catalog Service]、[!DNL Live Search]、および[!DNL Product Recommendations]）へのデータ転送を監視およびトラブルシューティングするためのデータフィード同期ステータス拡張機能のサポートを追加しました。 [!DNL Adobe Commerce]この拡張機能のインストールと使用について詳しくは、*Commerce管理ガイド*&#x200B;の[Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=ja)を参照してください。<!--MDEE-954-->
 
 ### 103.4.14 リリース
 
@@ -300,7 +305,7 @@ _2025年3月11日_
 ![新規](../assets/new.svg)指定された製品SKUのリストに基づいて、`products`、`productOverrides`、`productAttributes`のフィードを部分的に同期する機能を追加しました。 再同期CLI コマンド <!--MDEE-606-->に`--by-ids` オプションを追加して、新しい機能を使用します
 
 ```shell
-bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
+bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>'
 ```
 
 ![修正](../assets/fix.svg)非推奨の機能に対処することで、PHP 8.4との互換性に関する潜在的な問題を軽減しました。<!--MDEE-1002-->
@@ -468,12 +473,12 @@ _2024年4月30日_
 
 - フィード テーブル（およびインデクサービューID）:
 
-   - `catalog_data_exporter_products` -> `cde_products_feed`
-   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
-   - `catalog_data_exporter_categories` -> `cde_categories_feed`
-   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
-   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
-   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+  - `catalog_data_exporter_products` -> `cde_products_feed`
+  - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+  - `catalog_data_exporter_categories` -> `cde_categories_feed`
+  - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+  - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+  - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
 
 - ログテーブル名の変更 – フィードテーブルと同じ命名パターンに従いますが、ログテーブル名を変更すると`_cl`接尾辞が追加されます。 例：`catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
 
