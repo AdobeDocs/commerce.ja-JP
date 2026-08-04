@@ -36,9 +36,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 55eeb27812ce67a1b26705864ec969b826580452
+source-git-commit: c5b10a715f64a220fc965328a7c913951d44dedc
 workflow-type: tm+mt
-source-wordcount: 1444
+source-wordcount: 1461
 ht-degree: 0%
 
 ---
@@ -96,22 +96,27 @@ ht-degree: 0%
 
 ## Commerce ストアフロント
 
-[!DNL Edge Delivery Services]によって強化されたAdobeの[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=ja)を使用して、シンプルなドキュメントベースのオーサリングまたは[!DNL Storefront Builder]によるビジュアル編集で、リッチなエクスペリエンスを数分で作成できます。
+[!DNL Storefront Builder]を使用したシンプルなドキュメントベースのオーサリングまたはビジュアル編集を使用して、リッチなエクスペリエンスを数分で作成するには、[!DNL Edge Delivery Services]を利用したAdobeの[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)を使用します。
 
 [!DNL Commerce Storefront]は、GraphQL API レイヤーを介してすべてのマーチャンダイジングサービスとデータを提供する分離型アーキテクチャを備えた完全ヘッドレスです。 このアーキテクチャにより、Commerce Foundationから独立してフロントエンドを開発することができ、新しいテクノロジーを使用して新しいタッチポイントを迅速に構築し、テストすることができます。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 クラウドまたはオンプレミスのAdobe Commerceから移行する場合は、移行に関するガイダンスについては、[既存のストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=ja#existing-storefronts)を参照してください。
+>[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 クラウドまたはオンプレミスのAdobe Commerceから移行する場合は、移行ガイダンスについては、[既存のストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=ja#existing-storefronts)を参照してください。
 
 ## マーチャンダイジングサービスと決済サービス
 
 Adobeでは、主要なビジネス目標をサポートする、インテリジェントで構成可能なマーチャンダイジングサービスを豊富に提供しています。 これらのサービスは、大規模なパフォーマンスの最適化に不可欠なAPIも提供します。
 
-- [&#x200B; ライブサーチ &#x200B;](../live-search/overview.md) – このAIを活用した検索ツールを使用して、買い物客によりスマートで迅速かつ適切な検索結果を提供します。
-- [商品レコメンデーション &#x200B;](../optimizer/merchandising/recommendations/overview.md)：買い物客の行動、人気のレンド、商品の類似性などに基づいて、AIを活用したレコメンデーションを追加します。
+- [[!DNL Live Search]](../live-search/overview.md) – このAIを活用した検索ツールを使用して、よりスマートで迅速な、適切な検索結果を買い物客に提供します。 設定手順については、[設定 [!DNL Live Search]](../live-search/workspace.md)を参照してください。
+- [[!DNL Product Recommendations]](../product-recommendations/overview.md) – 買い物客の行動、人気のレンド、商品の類似性などに基づいて、AIを活用したレコメンデーションを追加します。 設定手順については、[[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md)を参照してください。
 - [&#x200B; カタログサービス &#x200B;](../catalog-service/guide-overview.md) - パフォーマンスの向上、拡張性の向上、コンバージョンの増加を実現しながら、顧客に最適化された製品体験を提供します。
-- [支払いサービス &#x200B;](../payment-services/guide-overview.md) – 無利息の支払い分割払い、支払い処理、注文、請求書に関する単一のビューなど、さまざまな支払い方法を提供することで、顧客満足度を向上させます。
+
+  >[!NOTE]
+  >
+  >カタログサービスは、[!DNL Live Search]および[!DNL Product Recommendations]に自動的に含まれます。
+
+- [支払いサービス &#x200B;](../payment-services/guide-overview.md) – 無利息の支払い分割払い、支払い処理、注文、請求書に関する単一のビューなど、さまざまな支払い方法を提供することで、顧客満足度を向上させます。 設定手順については、[支払いサービスホーム &#x200B;](../payment-services/payments-home.md)を参照してください。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -119,7 +124,7 @@ Product Visualsは、Adobe Experience Managerと統合され、リッチメデ�
 
 この統合により、商品画像やマーケティングコンテンツなどのデジタルアセットが、SKUやその他の主要属性にもとづいて、Adobe Commerceの商品やカテゴリーなどの適切なマーチャンダイジングエンティティに動的にリンクできるようになります。
 
-[!DNL Product Visuals]は[!DNL Adobe Commerce as a Cloud Service]ですぐに利用でき、[!DNL AEM Assets]の機能の一部を提供します。
+[!DNL Product Visuals]は[!DNL Adobe Commerce as a Cloud Service]とネイティブに利用でき、[!DNL AEM Assets]の機能の一部が提供されます。
 
 または、[!DNL Adobe Commerce as a Cloud Service]内のネイティブ機能は、デジタルアセットを保存および管理するための基本的なアセット管理ツールを提供します。
 
@@ -189,7 +194,7 @@ Adobeは、Commerce Foundationの機能を拡張し、サードパーティシ�
 Adobeには、統合とカスタマイズを構築するための次の開発者向けツールが用意されています。
 
 - [**Adobe Developer App Builder用API メッシュ**](https://developer.adobe.com/graphql-mesh-gateway/)：複数のAPI、GraphQL、REST、その他のソースを調整して、クエリ可能な1つのGraphQL エンドポイントに結合します。
-- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/):Commerceの機能を拡張し、サードパーティのソリューションと統合する、安全でスケーラブルなweb アプリケーションを構築してデプロイします。
+- [**App Builder**](https://developer.adobe.com/app-builder/docs/intro_and_overview/):Commerceの機能を拡張し、サードパーティのソリューションと統合する、安全でスケーラブルなweb アプリケーションを構築してデプロイします。
 - [**Events**](https://developer.adobe.com/commerce/extensibility/events/)：カスタムイベントトリガーを使用して、他の拡張可能な開発ツールと対話します。
 - [**Webhook**](https://developer.adobe.com/commerce/extensibility/webhooks/) - Webhookを使用して、Commerceとサードパーティシステム間のインタラクションを自動的にトリガーします。
 - [**管理者UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)：マーチャント向けの新しいページと機能を使用して、Commerce管理者をカスタマイズおよび強化します。
@@ -207,7 +212,7 @@ Adobeには、統合とカスタマイズを構築するための次の開発者
 
 ### 申し込み手続きの簡素化
 
-[!UICONTROL Commerce Cloud Manager] セルフサービスプロビジョニングポータルを使用して、サンドボックスおよび実稼動インスタンスを数分で起動できます。 マーチャンダイジングサービス、ヘッドレス Commerce インスタンス、および[!DNL App Builder]など、必要なすべての機能が自動的に設定され、インスタンスと統合されます。
+[!UICONTROL Commerce Cloud Manager] セルフサービスプロビジョニングポータルを使用して、サンドボックスおよび実稼動インスタンスを数分で起動できます。 マーチャンダイジングサービス、ヘッドレス Commerce インスタンス、[!DNL App Builder]など、必要なすべてのものが自動的に設定され、インスタンスと統合されます。
 
 Commerce インスタンスを作成および管理する方法については、[はじめに](getting-started.md)を参照してください。
 

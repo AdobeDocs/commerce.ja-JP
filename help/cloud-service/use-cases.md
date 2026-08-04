@@ -26,9 +26,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 04f966aca4d7ce85990b42ad958938a186629af1
 workflow-type: tm+mt
-source-wordcount: 1464
+source-wordcount: 1452
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 1. Commerce管理者で、[!UICONTROL **Stores**] > [!UICONTROL Settings] > [!UICONTROL **Configuration**] > [!UICONTROL **Payment Methods**]&#x200B;に移動します。
 
-1. 「[!UICONTROL **一般設定**]」セクションに、`Payment Services Sandbox ID`と`Payment Services Sandbox Key`を入力します。 これらのIDは、[&#x200B; サンドボックスオンボーディング &#x200B;](../payment-services/sandbox.md#sandbox-onboarding)で説明されている手順に従って取得できます
+1. 「[!UICONTROL **一般設定**]」セクションに、`Payment Services Sandbox ID`と`Payment Services Sandbox Key`を入力します。 これらのIDは、[&#x200B; サンドボックスオンボーディング &#x200B;](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}で説明されている手順に従って取得できます
 
 1. [!UICONTROL **有効**] ドロップダウンを&#x200B;[!UICONTROL **はい**]&#x200B;に設定します。
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 1. 必要な連絡先情報と配送情報を入力します。 この注文には架空の情報を使用できます。
 
-1. チェックアウトするには、[!UICONTROL **チェックアウト/マネーオーダー**]&#x200B;を選択します。 クレジットカードを使用する場合は、Paypal[&#128279;](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)が提供する テストカードのいずれかを使用します。 これらは、今後の有効期限やCVCで使用できます。
+1. チェックアウトするには、[!UICONTROL **チェックアウト/マネーオーダー**]&#x200B;を選択します。 クレジットカードを使用する場合は、PayPal[&#128279;](https://developer.paypal.com/credit-card-number-generator#link-teststaticcardnumbers)が提供する テストカードのいずれかを使用します。 これらは、今後の有効期限やCVCで使用できます。
 
    ![問い合わせ先フィールドと配送情報フィールドを含むチェックアウトフォーム &#x200B;](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 ## コンテクストの検証
 
-[!DNL Adobe Commerce]のコンテクスト実験機能を使用すると、ストアフロントで実験を作成および管理して、様々なコンテンツと設定をテストできます。
+Adobeのコンテクスト型テスト機能を使用すると、ストアフロントでテストを作成および管理し、様々なコンテンツと設定をテストできます。
 
 ### 前提条件
 
@@ -139,9 +139,9 @@ ht-degree: 0%
 
 1. インデックスページの2つのコピーを&#x200B;**1234** フォルダーに貼り付けます。
 
-1. 各ページを開き、「homev1」と「homev2」の名前を変更します。 これらはあなたの[&#x200B; チャレンジャー](https://www.aem.live/docs/experimentation#create-your-challenger-page)です。
+1. 各ページを開き、「homev1」と「homev2」の名前を変更します。 これらのページは[&#x200B; チャレンジャー](https://www.aem.live/docs/experimentation#create-your-challenger-page)です。
 
-1. 各ページに異なるコンテンツを含めるように変更します。 例えば、ヒーロー画像やテキストを変更します。 各ページの違いを特定する必要があります。
+1. 異なるコンテンツを含めるには、各ページを変更します。 例えば、ヒーロー画像やテキストを変更します。 各ページの違いを特定する必要があります。
 
 1. それぞれのチャレンジャーページを公開します。
 
@@ -155,8 +155,8 @@ ht-degree: 0%
    * 説明 – web ストア
    * 実験 – 1234
    * 実験のバリエーション
-      * `https://<your-site>.aem.live/experiments/1234/indexv1`
-      * `https://<your-site>.aem.live/experiments/1234/indexv2`
+     * `https://<your-site>.aem.live/experiments/1234/indexv1`
+     * `https://<your-site>.aem.live/experiments/1234/indexv2`
 
    ![&#x200B; コンテキスト実験のためのメタデータブロック設定](./assets/metadata-block.png){width="600" zoomable="yes"}
 
@@ -174,9 +174,9 @@ ht-degree: 0%
 
 ### 画像の背景のカスタマイズ
 
-製品画像の背景をすばやく修正するシナリオを考えてみましょう。 [!DNL Adobe Commerce]、[!DNL AEM Assets]および[!DNL Adobe Express]を組み合わせると、この変更を簡単な手順で完了できます。
+製品画像の背景をすばやく修正するシナリオを考えてみましょう。 [!DNL Adobe Commerce]、[!DNL AEM Assets]および[!DNL Adobe Express]を組み合わせると、この変更を数手順で完了できます。
 
-1. 前提条件で作成した[&#x200B; ストアフロント &#x200B;](./storefront.md)を開き、変更する項目に移動します。 商品のSKUまたは製品コードを書き留めます。
+1. 前提条件で作成した[&#x200B; ストアフロント &#x200B;](./storefront.md)を開き、変更する項目に移動します。 アイテムのSKUまたは製品コードをメモします。
 
 1. [!DNL AEM Assets]を開くには、[Adobe Experience Cloud](https://experience.adobe.com/#/home)で選択します。
 
@@ -200,7 +200,7 @@ ht-degree: 0%
 
    ![AIで生成する画像を記述するテキストボックス &#x200B;](./assets/insert-object-edit.png){width="600" zoomable="yes"}
 
-1. [!UICONTROL Brush size]を調整し、生成された画像を追加する場所に描画します。 この例では、既存のオブジェクトの周りを描画して、背景を選択します。
+1. [!UICONTROL Brush size]を調整し、生成された画像を追加する場所に描画します。 この例の背景を選択するには、既存のオブジェクトの周りを描画します。
 
 1. 「[!UICONTROL **Generate**]」をクリックして結果を表示します。
 
@@ -284,7 +284,7 @@ ht-degree: 0%
 
 ### コンテンツと画像の生成
 
-1. [[!DNL Generate Variations]](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)を開く
+1. [[!DNL Generate Variations]](/en/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations)を開
 
 1. 「[!UICONTROL **ヒーローバナー**]」テンプレートを選択します。
 
@@ -300,11 +300,11 @@ ht-degree: 0%
 
 1. [!UICONTROL **コンテンツの種類**] ドロップダウンから、[!UICONTROL **写真**]&#x200B;を選択します。
 
-1. [!UICONTROL **スタイル**]&#x200B;の参照画像で、既存のAdobe ストアバナーを選択します。
+1. [!UICONTROL **スタイル**]&#x200B;の参照画像で、既存のAdobe Store バナーを選択します。
 
 1. 使用する生成された画像を選択し、[!UICONTROL **保存**]&#x200B;をクリックします。
 
-1. このプロセスを他の参照画像でも繰り返すことで、より多くのバリエーションを生成できます。
+1. より多くのバリエーションを生成するには、このプロセスを他の参照画像と繰り返します。
 
 
 ## トラブルシューティング
@@ -313,35 +313,35 @@ ht-degree: 0%
 
 * コマンドまたはフラグに関するガイダンスが必要な場合：
 
-   1. `aio --help`を実行して、使用可能なすべてのコマンドとフラグを表示します。
-   1. 特定のコマンドの場合は、`--help` フラグを使用します。 例：
-      * `aio console --help`
-      * `aio commerce --help`
+  1. `aio --help`を実行して、使用可能なすべてのコマンドとフラグを表示します。
+  1. 特定のコマンドの場合は、`--help` フラグを使用します。 例：
+     * `aio console --help`
+     * `aio commerce --help`
 
 * 無効なログインの問題が発生した場合：
 
-   1. `aio config clear`を実行します。
-   1. `aio auth login --force`を実行します。
-   1. ブラウザーにログインします。
-   1. プロファイルを選択します。
-   1. ターミナルに切り替えて続行します。
+  1. `aio config clear`を実行します。
+  1. `aio auth login --force`を実行します。
+  1. ブラウザーにログインします。
+  1. プロファイルを選択します。
+  1. ターミナルに切り替えて続行します。
 
 * `init` コマンドが失敗した場合：
 
-   1. `aio api-mesh delete`を実行します。
-   1. `aio commerce init`を再実行します。
+  1. `aio api-mesh delete`を実行します。
+  1. `aio commerce init`を再実行します。
 
 * `init` コマンドを実行する前に、間違った組織、プロジェクト、またはワークスペースを選択した場合：
 
-   1. `aio console org select`を実行します。
-   1. `aio console project select`を実行します。
-   1. `aio console workspace select`を実行します。
+  1. `aio console org select`を実行します。
+  1. `aio console project select`を実行します。
+  1. `aio console workspace select`を実行します。
 
 * 無効なテナント選択がある場合：
 
-   1. **Ctrl-C**&#x200B;を押して、現在のCLI実行をキャンセルします。
-   1. `aio commerce init`を実行します。
+  1. **Ctrl-C**&#x200B;を押して、現在のCLI実行をキャンセルします。
+  1. `aio commerce init`を実行します。
 
 * 無効なAPI Mesh インストールが発生した場合：
 
-   * `aio api-mesh update mesh-config.json`を実行します。
+  * `aio api-mesh update mesh-config.json`を実行します。
