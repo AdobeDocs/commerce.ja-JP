@@ -5,10 +5,17 @@ level: Intermediate
 recommendations: noCatalog
 role: Admin, Developer
 feature: Services, Catalog Service
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 15aaeadde61b9d70ec107db2ed4c118d1f8ee731
 workflow-type: tm+mt
 source-wordcount: 1567
@@ -24,7 +31,7 @@ ht-degree: 0%
 * 製品、バリエーション、価格、カテゴリーが変更されたときに下流プロセスをトリガーします。
 * ほぼリアルタイムのカタログ更新を必要とする、Experience Edgeと[!DNL Edge Delivery Services]のユースケースを強化しています。
 
-[!DNL Adobe Commerce]からイベントコンシューマーへのエンドツーエンドのパスについては、[ イベント配信から [!DNL Adobe I/O Events]](#event-delivery-through-adobe-io-events)を参照してください。
+[!DNL Adobe Commerce]からイベントコンシューマーへのエンドツーエンドのパスについては、[&#x200B; イベント配信から [!DNL Adobe I/O Events]](#event-delivery-through-adobe-io-events)を参照してください。
 
 ## サポートされているイベントタイプ {#supported-event-types}
 
@@ -150,7 +157,7 @@ ht-degree: 0%
 >* [Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/configure-commerce)用に [!DNL Adobe I/O] 接続が構成されています。
 >* Commerce環境がプロビジョニングされている同じIMS組織内の[!DNL Adobe Developer Console]へのアクセス。
 >* Commerce SaaS サービスへの同期を確認するには、管理者で&#x200B;**[!UICONTROL Data Management Dashboard]**&#x200B;を使用します。
->* ダッシュボードの検証には、製品レコメンデーション v6.0、[!DNL Live Search] v4.1.0以降、または[!DNL Catalog Service] v1.17以降が必要です。 Adobeでは、Commerce プロジェクトを、サポートされている最新バージョンのサービスにアップデートすることをお勧めします。 以前のバージョンのサービスの場合は、[ カタログ同期](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)を使用して同期検証を行います。
+>* ダッシュボードの検証には、製品レコメンデーション v6.0、[!DNL Live Search] v4.1.0以降、または[!DNL Catalog Service] v1.17以降が必要です。 Adobeでは、Commerce プロジェクトを、サポートされている最新バージョンのサービスにアップデートすることをお勧めします。 以前のバージョンのサービスの場合は、[&#x200B; カタログ同期](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)を使用して同期検証を行います。
 
 
 >[!NOTE]
@@ -165,11 +172,11 @@ ht-degree: 0%
 
 1. Commerce **からの** フィードの書き出しが正常に完了したことを確認します。
 
-   [!DNL Adobe Commerce]管理者から、[ データフィード同期ステータス ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページ （**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**）を開き、[!DNL Catalog Service]個のフィードごとに最後の書き出しステータスが成功したことを確認します。
+   [!DNL Adobe Commerce]管理者から、[&#x200B; データフィード同期ステータス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページ （**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**）を開き、[!DNL Catalog Service]個のフィードごとに最後の書き出しステータスが成功したことを確認します。
 
 1. [!DNL Adobe Commerce]管理者から接続されたCommerce サービス **への**&#x200B;同期が正常に完了したことを確認します。
 
-   [!DNL Adobe Commerce]管理者から、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) （**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**）を開き、同期された製品データに必要な製品が含まれていることを確認します。
+   [!DNL Adobe Commerce]管理者から、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) （**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**）を開き、同期された製品データに必要な製品が含まれていることを確認します。
 
 ### [!DNL Adobe I/O Events]に登録して購読 {#register-events}
 
@@ -201,7 +208,7 @@ ht-degree: 0%
 
    受信するサポートされているイベント サブスクリプション（**[!UICONTROL Product Update]**&#x200B;または&#x200B;**[!UICONTROL Price Update]**&#x200B;など）を選択します。 次に、**[!UICONTROL Next]**&#x200B;を選択します。
 
-   登録画面で![ サブスクリプション用に選択されたイベントカテゴリ ](assets/catalog-event-subscription.png){width="600" zoomable="yes"}
+   登録画面で![&#x200B; サブスクリプション用に選択されたイベントカテゴリ &#x200B;](assets/catalog-event-subscription.png){width="600" zoomable="yes"}
 
 1. OAuth サーバー間資格情報を追加します。
 
@@ -237,7 +244,7 @@ ht-degree: 0%
 
 ### イベントフローの検証 {#validate-event-flow}
 
-カタログイベントは、環境に対して有効になっています。 [!DNL Commerce]でカタログデータが変更されると、更新は[!DNL Catalog Service]から[!DNL Adobe I/O Events]に流れ、購読者の消費者は対応するカタログイベントを受け取ります。 実稼動統合を構築する前に、[制限とベストプラクティス ](#limits-and-best-practices)を確認してください。
+カタログイベントは、環境に対して有効になっています。 [!DNL Commerce]でカタログデータが変更されると、更新は[!DNL Catalog Service]から[!DNL Adobe I/O Events]に流れ、購読者の消費者は対応するカタログイベントを受け取ります。 実稼動統合を構築する前に、[制限とベストプラクティス &#x200B;](#limits-and-best-practices)を確認してください。
 1. 商品名の更新や価格の変更など、サポートされている単純なカタログを変更します。
 
 1. 次の結果を確認します。
@@ -282,17 +289,17 @@ ht-degree: 0%
 
 1. **カタログサービスデータを確認**
 
-   [ [!DNL Catalog Service] API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/)を使用して、カタログの変更が正常に保存されていることを確認します。
+   [&#x200B; [!DNL Catalog Service] API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/)を使用して、カタログの変更が正常に保存されていることを確認します。
 
 1. **確認[!DNL SaaS Data Export]**
 
    カタログイベントには[!DNL Catalog Service]の現在のデータが必要です。 エクスポートパスの両方のステージを確認します。
 
-   * **Commerce**&#x200B;からのフィードの書き出し – [ データフィードの同期ステータス ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページまたは`var/log/saas-export.log`で、[!DNL Catalog Service] フィードが[!DNL Commerce]から正常に書き出されたことを確認します。
+   * **Commerce**&#x200B;からのフィードの書き出し – [&#x200B; データフィードの同期ステータス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページまたは`var/log/saas-export.log`で、[!DNL Catalog Service] フィードが[!DNL Commerce]から正常に書き出されたことを確認します。
 
-   * **接続済みのCommerce SaaS サービスへの同期** — [Data Management ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)、[ カタログ同期](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)または書き出しログで、データが[!DNL Catalog Service]に正常に同期されたことを確認します。
+   * **接続済みのCommerce SaaS サービスへの同期** — [Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)、[&#x200B; カタログ同期](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)または書き出しログで、データが[!DNL Catalog Service]に正常に同期されたことを確認します。
 
-   書き出しと同期のジョブのトラブルシューティングについては、[ データとSaaS データの書き出しの同期](../data-export/data-sync-manage.md)および[ ログとトラブルシューティング ](../data-export/troubleshooting/logging.md)を参照してください。
+   書き出しと同期のジョブのトラブルシューティングについては、[&#x200B; データとSaaS データの書き出しの同期](../data-export/data-sync-manage.md)および[&#x200B; ログとトラブルシューティング &#x200B;](../data-export/troubleshooting/logging.md)を参照してください。
 
 1. **設定[!DNL Adobe I/O Events]を検証**
 
@@ -312,15 +319,15 @@ ht-degree: 0%
    * [!DNL Adobe I/O Events] サブスクリプションの詳細。
    * 欠落しているイベントの概算の時間と説明。
 
-   詳細なヘルプについては、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を参照してください。
+   詳細なヘルプについては、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を参照してください。
 
 >[!MORELIKETHIS]
 >
 >
->* [ オンボーディングとインストール ](installation.md)
->* [ カタログサービスの基本を学ぶ](get-started.md)
+>* [&#x200B; オンボーディングとインストール &#x200B;](installation.md)
+>* [&#x200B; カタログサービスの基本を学ぶ](get-started.md)
 >* [SaaS データ書き出しとデータの同期](../data-export/data-sync-manage.md)
 >* [GraphQL APIを使用したカタログデータの取得](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/){target="_blank"}
->* [[!DNL Catalog Service] およびAPI メッシュ ](mesh.md)
+>* [[!DNL Catalog Service] およびAPI メッシュ &#x200B;](mesh.md)
 >* [接続 [!DNL Adobe I/O] を設定](https://developer.adobe.com/commerce/extensibility/events/configure-commerce#configure-the-adobe-io-connection){target="_blank"}
 >* [[!DNL Adobe I/O Events]](https://developer.adobe.com/events/docs/guides/){target="_blank"}
