@@ -1,10 +1,9 @@
 ---
-title: 移行評価
+title: 移行評価ツール
 description: Adobe Commerce PaaS移行評価レポートを読み、ストアフロントとバックエンドの複雑さのシグナルを解釈し、Adobe AI開発者ツールを使用してAdobe Commerce as a Cloud Serviceの拡張機能を構築する方法を説明します。
 feature: Cloud, Migration
 role: Developer, Admin
 level: Intermediate
-nudge: true1
 autotag-review: '2026-06-18T16:09:41.112Z'
 TQID: 'https://experienceleague.adobe.com/-OrsBVtHRcEV5EzgHzzP0JVf0aQWfSO2Fu1R5F5jtAw'
 product_v2:
@@ -26,15 +25,15 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4cd054b64c3b95fd50ab9bb682469ace7cc871a3
+source-git-commit: 43d5571c6a1a3c5152d3b389b73887fd4739fa7f
 workflow-type: tm+mt
-source-wordcount: 2497
+source-wordcount: 2499
 ht-degree: 0%
 
 ---
 
 
-# 移行評価
+# 移行評価ツール
 
 >[!IMPORTANT]
 >
@@ -308,25 +307,25 @@ Manages custom shipping rate calculations based on customer account tier and ord
 ## リソース
 
 - [!DNL Adobe Commerce as a Cloud Service]
-   - [概要](../overview.md)
-   - [移行について](./overview.md)
-   - [評価拡張機能のチュートリアル](../tutorials/ratings-extension.md)
-   - [配送方法のチュートリアル](../tutorials/shipping-method-extension.md)
+  - [概要](../overview.md)
+  - [移行について](./overview.md)
+  - [評価拡張機能のチュートリアル](../tutorials/ratings-extension.md)
+  - [配送方法のチュートリアル](../tutorials/shipping-method-extension.md)
 - 拡張機能
-   - [概要](https://developer.adobe.com/commerce/extensibility/)
-   - [AI開発者向けツール](https://developer.adobe.com/commerce/extensibility/developer-agent/)
-      - [ベストプラクティス](https://developer.adobe.com/commerce/extensibility/developer-agent/best-practices)
-      - [設定](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)
-      - [スキルとプロンプト](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
-      - [ユースケース](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
-   - [App Builderの概要](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
-   - [App Builder for Adobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
-   - スターターキット
-      - [バックエンド統合スターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
-      - [チェックアウトスターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
+  - [概要](https://developer.adobe.com/commerce/extensibility/)
+  - [AI開発者向けツール](https://developer.adobe.com/commerce/extensibility/developer-agent/)
+    - [ベストプラクティス](https://developer.adobe.com/commerce/extensibility/developer-agent/best-practices)
+    - [設定](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)
+    - [スキルとプロンプト](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
+    - [ユースケース](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
+  - [App Builderの概要](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
+  - [App Builder for Adobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
+  - スターターキット
+    - [バックエンド統合スターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
+    - [チェックアウトスターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - ストアフロント開発
-   - [概要](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
-   - [ストアフロント AI スキル](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=ja)
+  - [概要](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
+  - [ストアフロント AI スキル](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=ja)
 
 >[!TIP]
 >

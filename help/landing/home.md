@@ -30,11 +30,11 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-last-update: 2026-07-24
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+last-update: 2026-08-03
+source-git-commit: aeb1e656f77b974baf7044ae80fdd9d6bcc64cbb
 workflow-type: tm+mt
-source-wordcount: 1221
-ht-degree: 0%
+source-wordcount: 1335
+ht-degree: 1%
 
 ---
 
@@ -190,7 +190,7 @@ Commerce サービスコネクタが設定されている場合、次の機能�
          </a>
       </div>
       <p>
-         <em>Adobe Adobe Commerceのカタログ、注文、在庫データを、接続されたサービスに自動的に同期します。Commerce CLI コマンドまたは<strong>Data Management ダッシュボード </strong>を使用して、同期処理を管理します。</em>
+         <em>Adobe Adobe Commerceのカタログ、注文、在庫データを、接続されたサービスに自動的に同期します。 Commerce CLI コマンドまたは<strong>Data Management ダッシュボード </strong>を使用して、同期処理を管理します。</em>
       </p>
    </td>
    <td valign="top">
@@ -216,7 +216,7 @@ Commerce サービスコネクタが設定されている場合、次の機能�
          </a>
       </div>
       <p>
-         <em>Commerce管理画面の統合ダッシュボードから、Commerce データの同期とトリガーの再同期を簡単に追跡できます。データの可用性に関する貴重なインサイトを取得して、買い物客にタイムリーに表示できます。</em>
+         <em>Commerce管理画面の統合ダッシュボードから、Commerce データの同期とトリガーの再同期を簡単に追跡できます。 データの可用性に関する貴重なインサイトを取得して、買い物客にタイムリーに表示できます。</em>
       </p>
    </td>
 </table>
