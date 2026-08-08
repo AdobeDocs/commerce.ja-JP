@@ -32,10 +32,10 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-last-update: 2026-08-06
-source-git-commit: 1dd79f88f97d2f6a2f6314434f11049871dcdb6e
+last-update: 2026-08-07
+source-git-commit: 477802467d8f60f05137d60e0d703c0302de5144
 workflow-type: tm+mt
-source-wordcount: 5259
+source-wordcount: 5371
 ht-degree: 0%
 
 ---
@@ -48,7 +48,31 @@ ht-degree: 0%
 >
 >Adobe Commerce オンプレミスまたはAdobe Commerce オンクラウドインフラストラクチャを使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview)を参照してください。
 
-## 2026年7月 – リリース #1 {#latest}
+## 2026年8月 – リリース #1 {#latest}
+
+[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下の項目は、2026年8月11日にプロダクションに公開されます。
+
+>[!BEGINSHADEBOX]
+
+### 請求書支払いのイベントの購読
+
+請求書支払いが記録されると、新しい`observer.sales_order_invoice_pay` イベントが発行されるので、統合は請求書のステータス変更をポーリングする代わりにイベントを購読できます。<!-- CEXT-5983 -->
+
+### 機能強化とバグ修正
+
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
+
+* GraphQLを介して顧客の割り当てられた会社を取得する際に時間がかかる場合がある問題を修正しました。<!-- ACCS-1425 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年7月
 
 [!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 

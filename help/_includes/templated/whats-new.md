@@ -1,7 +1,7 @@
 ---
-source-git-commit: 16a200892f2d116a38ebde370a79d333f65e4c8a
+source-git-commit: 06d8280f848fa6fc390194ebdd05a5dba1bfac94
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1539'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年8月7日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c88ec8730e24220b6dfd32da406d1ba3fd3a2ef2">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年8月5日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Migration Assessment Tool、Commerce Developer MCP、およびCommerce Data Migration Serviceを使用して、移行フローを更新し、<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/overview">移行の概要</a>を更新しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2a0d741c141a4d122b0a068f3a1e7c435d86fd75">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年8月4日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新しい<a href="https://experienceleague.adobe.com/ja/docs/commerce/catalog-service/integration/catalog-events-guide"> カタログイベントとAdobe I/O統合ガイド </a>では、カタログイベントの有効化、SaaS データ書き出しフィードのエクスポートと同期の検証、Adobe I/O Eventsとの統合の方法について説明しています。</p>
+</td>
+      <td>
+        メジャーアップデート、新しいトピック
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/719b6661370f1e639fafb2a89bc1a906a20df37b">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年7月30日（PT）
 
@@ -357,38 +423,6 @@ ht-degree: 1%
         フィードバック、メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bccb739bbbfcc7e3bfa645c2a0245933014b934f">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月8日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adobe Commerce Optimizer <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-sources"> カタログソース </a>とその作成方法について詳しく説明する新しい参照ページを追加しました。</p>
-</td>
-      <td>
-        フィードバック、新しいトピック、技術的
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8b4d08af43cbff9aaf9fc8f417ddab12185f5565">コミット</a></td>
-    </tr>
-    <tr>
-      <td><ul>
-  <li>[!DNL Live Search]の<a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/semantic-search"> セマンティック検索</a>が追加され、有効な手順、ベストプラクティス、および英語カタログの制限が追加されました。<br />- [!DNL Adobe Commerce Optimizer]の<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/semantic-search"> セマンティック検索</a>が追加され、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/settings">設定が更新されました。簡単な有効化とオプションのチューニング制御を備えた高度な検索</a>。</li>
-</ul>
-</td>
-      <td>
-        メジャーアップデート、新しいトピック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/475c99e18380c961e400a75de1c06cd8cdb929d1">コミット</a></td>
     </tr>
   </tbody>
 </table>
