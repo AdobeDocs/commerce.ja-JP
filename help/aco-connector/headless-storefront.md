@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]個のヘッドレスストアフロント統合'
 description: ' [!DNL Adobe Commerce Optimizer Connector] GraphQL API、価格表ID、バンドルのカートへの追加エンコーディングを使用して、ヘッドレスストアフロントを統合する方法について説明します。'
 feature: Storefront, Integration, GraphQL
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-09T16:27:30.102Z'
 TQID: 'https://experienceleague.adobe.com/Orif1rROglTQ-3ZkRj5LMF90Y-AdpfTnOgPmJXQjYgc'
 product_v2:
