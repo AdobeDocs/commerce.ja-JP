@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Adobe Commerce Optimizer Connector {#aco-connector}
 
-Adobe Commerce Optimizer コネクタは、Adobe Commerce（クラウドまたはオンプレミス）と[!DNL Adobe Commerce Optimizer]の間でカタログと価格データを同期するブリッジです。 コネクタを有効にすると、Commerceは商品データの記録システムのままになり、[!DNL Adobe Commerce Optimizer]は商品の検索、レコメンデーション、マーチャンダイジングルール、分析、ヘッドレスストアフロント体験を強化します。 同期されたカタログビューのクエリを実行できるユーザーを制限するには、[ プライベートカタログビュー](../setup/private-catalog-view.md)を参照してください。
+Adobe Commerce Optimizer コネクタは、Adobe Commerce（クラウドまたはオンプレミス）と[!DNL Adobe Commerce Optimizer]の間でカタログと価格データを同期するブリッジです。 コネクタを有効にすると、Commerceは商品データの記録システムのままになり、[!DNL Adobe Commerce Optimizer]は商品の検索、レコメンデーション、マーチャンダイジングルール、分析、ヘッドレスストアフロント体験を強化します。 同期されたカタログビューのクエリを実行できるユーザーを制限するには、[&#x200B; プライベートカタログビュー](../setup/private-catalog-view.md)を参照してください。
 
 - [Adobe Commerce Optimizer コネクタの概要](../../aco-connector/overview.md){target="_blank"}
 - [コネクタの基本を学ぶ](../../aco-connector/get-started.md){target="_blank"}
@@ -53,5 +53,5 @@ Commerce Salesforce Connector （Adobe App Builder上に構築）は、Salesforc
 
 >[!MORELIKETHIS]
 >
->- [Adobe Commerce Optimizer テクニカルドキュメント ](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+>- [Adobe Commerce Optimizer テクニカルドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 >- [Adobe Commerce Optimizerの基本を学ぶ](../get-started.md)

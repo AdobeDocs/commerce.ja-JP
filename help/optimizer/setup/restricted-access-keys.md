@@ -6,10 +6,19 @@ role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 nudge: true
 source-git-commit: 688bc6e28a4c5a94b1fe55c84f7c05401dd651bc
 workflow-type: tm+mt
@@ -20,7 +29,7 @@ ht-degree: 0%
 
 # 制限付きアクセスキー
 
-制限付きアクセスキーを使用すると、許可されたクライアントアプリケーションは[ プライベートカタログビュー](catalog-view.md)にアクセスできます。割り当てられたキーから有効な署名済みトークンを含むリクエストのみが、カタログデータを取得できます。 匿名の買い物客、このカタログビューへのアクセスが明示的に許可されていない買い物客、APIを調査するスクリプトなど、その他のすべてのリクエストは拒否されます。
+制限付きアクセスキーを使用すると、許可されたクライアントアプリケーションは[&#x200B; プライベートカタログビュー](catalog-view.md)にアクセスできます。割り当てられたキーから有効な署名済みトークンを含むリクエストのみが、カタログデータを取得できます。 匿名の買い物客、このカタログビューへのアクセスが明示的に許可されていない買い物客、APIを調査するスクリプトなど、その他のすべてのリクエストは拒否されます。
 
 ## 制限付きアクセスキーのユースケース
 
@@ -62,13 +71,13 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 1. [!DNL Adobe Commerce Optimizer Studio]の左側のメニューから、**[!UICONTROL Store setup]**&#x200B;に移動し、**[!UICONTROL Restricted access keys]**&#x200B;をクリックします。
 
-   ![制限付きアクセスキーのリスト、制限付きアクセスキーを追加ボタン ](../assets/restricted-access-keys.png){width="70%" zoomable="yes"}
+   ![制限付きアクセスキーのリスト、制限付きアクセスキーを追加ボタン &#x200B;](../assets/restricted-access-keys.png){width="70%" zoomable="yes"}
 
 1. **[!UICONTROL Add Restricted Access Key]**&#x200B;をクリックします。
 
 1. キーの詳細を入力します。
 
-   ![ タイトル、有効期限、および公開鍵フィールドを含む制限付きアクセスキー形式を追加](../assets/restricted-access-keys-add.png){width="70%" zoomable="yes"}
+   ![&#x200B; タイトル、有効期限、および公開鍵フィールドを含む制限付きアクセスキー形式を追加](../assets/restricted-access-keys-add.png){width="70%" zoomable="yes"}
 
    - **[!UICONTROL Title]** - キーを識別するためのラベル。キーリストおよびカタログ表示のキーピッカー（例：`ACME Corp wholesale portal — Tier 1 pricing`）に表示されます。
    - **[!UICONTROL Expiration date]** – 有効期限がまだ切れていないトークンの場合でも、キーの処理が停止する日時（UTC）。
@@ -76,11 +85,11 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 1. **[!UICONTROL Save]**&#x200B;をクリックします。
 
-キーは作成後に不変になります。 値を変更するには、キーを削除して新しいキーを作成します。 アクセスの中断なしでキー](#rotate-a-key)を回転する方法については、[を参照してください。
+キーは作成後に不変になります。 値を変更するには、キーを削除して新しいキーを作成します。 アクセスの中断なしでキー[&#128279;](#rotate-a-key)を回転する方法については、を参照してください。
 
 ## カタログビューへのキーの割り当て
 
-制限付きアクセスキーは、**[!UICONTROL Catalog Protection]**&#x200B;が有効になっているカタログビューに割り当てられた後にのみアクセスを制限します。 設定手順については、[ カタログビューの保護](private-catalog-view.md#protect-a-catalog-view)を参照してください。
+制限付きアクセスキーは、**[!UICONTROL Catalog Protection]**&#x200B;が有効になっているカタログビューに割り当てられた後にのみアクセスを制限します。 設定手順については、[&#x200B; カタログビューの保護](private-catalog-view.md#protect-a-catalog-view)を参照してください。
 
 ## キーの削除
 
@@ -101,9 +110,9 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 ## 制限
 
-[ カタログビューとポリシー制限](../boundaries-limits.md#catalog-views-and-policies)を参照してください。
+[&#x200B; カタログビューとポリシー制限](../boundaries-limits.md#catalog-views-and-policies)を参照してください。
 
 ## その他
 
-- [ プライベートカタログビュー](private-catalog-view.md) – アクセスキーが制限されたカタログビューを保護する方法について説明します。
+- [&#x200B; プライベートカタログビュー](private-catalog-view.md) – アクセスキーが制限されたカタログビューを保護する方法について説明します。
 
