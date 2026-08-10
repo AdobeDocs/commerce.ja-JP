@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 医療業界のユーザー事例
 
-ヘルスケアのお客様で、[Data Connection](../data-connection/overview.md)拡張機能の一部である[Data Services HIPAA拡張機能](../data-connection/hipaa-readiness.md#installation)をインストールした場合、[!DNL Product Recommendations]によって使用されるストアフロントイベントデータはキャプチャされなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるためです。 ストアフロントイベントデータの取得と送信を続行するには、[!DNL Product Recommendations]のイベント収集を再度有効にします。 詳しくは、[一般設定](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)を参照してください。
+ヘルスケアのお客様で、[Data Connection](../data-connection/overview.md)拡張機能の一部である[Data Services HIPAA拡張機能](../data-connection/hipaa-readiness.md#installation)をインストールした場合、[!DNL Product Recommendations]によって使用されるストアフロントイベントデータはキャプチャされなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるためです。 ストアフロントイベントデータの取得と送信を続行するには、[!DNL Product Recommendations]のイベント収集を再度有効にします。 詳しくは、[一般設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/general/general#data-services)を参照してください。
 
 ## データの種類とイベント
 
@@ -102,4 +102,4 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 
 >[!NOTE]
 >
->[Cookie制限モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)が有効になっている場合、Adobe Commerceは、買い物客がCookieの使用に同意するまで行動データを収集しません。 Cookie制限モードが無効な場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[Cookie制限モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja)が有効になっている場合、Adobe Commerceは、買い物客がCookieの使用に同意するまで行動データを収集しません。 Cookie制限モードが無効な場合、Adobe Commerceはデフォルトで行動データを収集します。
