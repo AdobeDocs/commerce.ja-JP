@@ -16,9 +16,9 @@ ht-degree: 8%
 # Adobe Commerce用[!DNL Catalog Service] {#catalog-service}
 
 - [ガイドの概要](guide-overview.md)
-- [ [!DNL Catalog Service]の概要](overview.md)
+- [&#x200B; [!DNL Catalog Service]の概要](overview.md)
 - [インストール](installation.md)
-- [ [!DNL Catalog Service]の基本を学ぶ](get-started.md)
+- [&#x200B; [!DNL Catalog Service]の基本を学ぶ](get-started.md)
 - [カタログデータの取得](graphql-queries.md)
 - 他のアプリケーションとの統合 {#integration}
   - [カタログイベントの設定と統合ガイド](catalog-events-guide.md)
