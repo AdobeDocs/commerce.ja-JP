@@ -6,69 +6,71 @@ role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
 nudge: true
-source-git-commit: de2af14a02ba21bfedd4fa6841f0f8b544b013cc
+source-git-commit: de75e0c9be95ff421af438dd6dc491732e2effb5
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 11%
+source-wordcount: '128'
+ht-degree: 10%
 
 ---
 
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [&#x200B; [!DNL Adobe Commerce Optimizer]とは](overview.md)
+- [ [!DNL Adobe Commerce Optimizer]とは](overview.md)
 - [基本を学ぶ](get-started.md)
 - [連携](./integrations/integrations-overview.md)
 - [ユーザーとIDの管理](user-management.md)
 - [共通の責任](shared-responsibility.md)
 - [制限と境界](boundaries-limits.md)
 - 結果の管理 {#manage-results}
-   - [機会](./manage-results/opportunities.md)
-   - [成功指標](./manage-results/success-metrics.md)
-   - [検索パフォーマンス](./manage-results/search-performance.md)
-   - {hide-from-toc}[一致とランキングを検索](./manage-results/search-relevance-matching.md)
-   - [推奨事項のパフォーマンス](./manage-results/recommendation-performance.md)
+  - [機会](./manage-results/opportunities.md)
+  - [成功指標](./manage-results/success-metrics.md)
+  - [検索パフォーマンス](./manage-results/search-performance.md)
+  - {hide-from-toc}[一致とランキングを検索](./manage-results/search-relevance-matching.md)
+  - [推奨事項のパフォーマンス](./manage-results/recommendation-performance.md)
 - マーチャンダイジング {#merchandising}
-   - [概要](./merchandising/overview.md)
-   - 推奨事項 {#recommendations}
-      - [概要](./merchandising/recommendations/overview.md)
-      - [作成と管理](./merchandising/recommendations/create.md)
-      - [フィルター](./merchandising/recommendations/filters.md)
-      - [タイプ](./merchandising/recommendations/types.md)
-      - [ベストプラクティス](./merchandising/recommendations/best-practice.md)
-   - マーチャンダイジングルール {#rules}
-      - [概要](./merchandising/rules/overview.md)
-      - [Workspace](./merchandising/rules/workspace.md)
-      - [作成と管理](./merchandising/rules/add.md)
-      - [ベストプラクティス](./merchandising/rules/best-practice.md)
-   - ファセット {#facets}
-      - [概要](./merchandising/facets/overview.md)
-      - [Workspace](./merchandising/facets/workspace.md)
-      - [作成と管理](./merchandising/facets/add.md)
-      - [タイプ](./merchandising/facets/type.md)
-      - [ベストプラクティス](./merchandising/facets/best-practice.md)
-   - 同義語 {#synonyms}
-      - [概要](./merchandising/synonyms/overview.md)
-      - [作成と管理](./merchandising/synonyms/add.md)
-      - [タイプ](./merchandising/synonyms/type.md)
-      - [ベストプラクティス](./merchandising/synonyms/best-practice.md)
+  - [概要](./merchandising/overview.md)
+  - 推奨事項 {#recommendations}
+    - [概要](./merchandising/recommendations/overview.md)
+    - [作成と管理](./merchandising/recommendations/create.md)
+    - [フィルター](./merchandising/recommendations/filters.md)
+    - [タイプ](./merchandising/recommendations/types.md)
+    - [ベストプラクティス](./merchandising/recommendations/best-practice.md)
+  - マーチャンダイジングルール {#rules}
+    - [概要](./merchandising/rules/overview.md)
+    - [Workspace](./merchandising/rules/workspace.md)
+    - [作成と管理](./merchandising/rules/add.md)
+    - [ベストプラクティス](./merchandising/rules/best-practice.md)
+  - ファセット {#facets}
+    - [概要](./merchandising/facets/overview.md)
+    - [Workspace](./merchandising/facets/workspace.md)
+    - [作成と管理](./merchandising/facets/add.md)
+    - [タイプ](./merchandising/facets/type.md)
+    - [ベストプラクティス](./merchandising/facets/best-practice.md)
+  - 同義語 {#synonyms}
+    - [概要](./merchandising/synonyms/overview.md)
+    - [作成と管理](./merchandising/synonyms/add.md)
+    - [タイプ](./merchandising/synonyms/type.md)
+    - [ベストプラクティス](./merchandising/synonyms/best-practice.md)
 - 店舗の設定 {#setup}
-   - [カタログソース](./setup/catalog-sources.md)
-   - [カタログビュー](./setup/catalog-view.md)
-   - [カタログレイヤー](./setup/catalog-layer.md)
-   - [ポリシー](./setup/policies.md)
-   - [プライスブック](./setup/pricebooks.md)
-   - [製品ビジュアル](./setup/product-visuals.md)
-   - [データの同期](./setup/data-sync.md)
-   - [セマンティック検索](./setup/semantic-search.md)
-   - イベント {#events}
-      - [概要](./setup/events/overview.md)
+  - [カタログソース](./setup/catalog-sources.md)
+  - [カタログビュー](./setup/catalog-view.md)
+  - [プライベートカタログビュー](./setup/private-catalog-view.md)
+  - [制限付きアクセスキー](./setup/restricted-access-keys.md)
+  - [カタログレイヤー](./setup/catalog-layer.md)
+  - [ポリシー](./setup/policies.md)
+  - [プライスブック](./setup/pricebooks.md)
+  - [製品ビジュアル](./setup/product-visuals.md)
+  - [データの同期](./setup/data-sync.md)
+  - [セマンティック検索](./setup/semantic-search.md)
+  - イベント {#events}
+    - [概要](./setup/events/overview.md)
 - [ストアフロント](storefront.md)
 - [設定](settings.md)
 - ユースケース {#use-case}
-   - [ストアフロントとカタログ管理者のエンドツーエンドのユースケース](./use-case/admin-use-case.md)
+  - [ストアフロントとカタログ管理者のエンドツーエンドのユースケース](./use-case/admin-use-case.md)
 - ローンチサイト {#launch}
-   - [チェックリストを起動](./launch/launch-checklist.md)
+  - [チェックリストを起動](./launch/launch-checklist.md)
 - 開発者向けリソース {#developer}
-   - [開発者ガイドとAPI参照](https://developer.adobe.com/commerce/services/optimizer/)
-   - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
+  - [開発者ガイドとAPI参照](https://developer.adobe.com/commerce/services/optimizer/)
+  - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
 - [リリースノート](release-notes.md)
