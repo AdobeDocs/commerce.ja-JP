@@ -1,5 +1,5 @@
 ---
-title: 基本を学ぶ
+title: 詳細を見る
 description: ' [!DNL Adobe Commerce Optimizer]の使い方を学びましょう。'
 role: Admin, Developer
 recommendations: noCatalog
@@ -22,14 +22,14 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 1349
+source-wordcount: 1368
 ht-degree: 0%
 
 ---
 
-# 詳細を見る
+# 基本を学ぶ
 
 このガイドでは、[!DNL Adobe Commerce Optimizer]を最初から最後まで設定する方法について説明します。 このガイドでは、すべての役割について説明しますが、開発者固有の詳細なコンテンツについては、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)を参照してください。
 
@@ -60,8 +60,8 @@ Adobe Commerce as a Cloud Service、サードパーティのコマースプラ�
 ### 手順1: インスタンスの作成
 
 1. [Adobe Experience Cloud](https://experience.adobe.com/)にログインします。
-1. **Commerce** > **Commerce Cloud Manager**&#x200B;に移動します。
-1. **Add Instance** > **Commerce Optimizer**&#x200B;をクリックします。
+1. **[!UICONTROL Commerce]** > **[!UICONTROL Commerce Cloud Manager]**&#x200B;に移動します。
+1. **[!UICONTROL Add Instance]** > **[!UICONTROL Commerce Optimizer]**&#x200B;をクリックします。
 
    ![Commerce Optimizer環境を作成するためのAdobe Commerce Cloud Manager Add Instance画面](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
@@ -71,7 +71,7 @@ Adobe Commerce as a Cloud Service、サードパーティのコマースプラ�
    - **環境タイプ**: テスト用に&#x200B;**サンドボックス**&#x200B;環境から開始します
    - **地域**：お好みの地域を選択してください
 
-1. 「**インスタンスを追加**」をクリックします。
+1. **[!UICONTROL Add Instance]**&#x200B;をクリックします。
 
    Cloud Managerが更新され、新しいインスタンスが含まれます。 アクセスと管理の詳細については、[&#x200B; インスタンスの管理](#manage-instances)を参照してください。
 
@@ -105,7 +105,7 @@ Adobe Commerce as a Cloud Service、サードパーティのコマースプラ�
 | **ユーザーの管理** | ユーザー、開発者、管理者の追加 | [&#x200B; ユーザー管理](./user-management.md) |
 | **インスタンスの作成** | サンドボックス環境と本番環境の設定 | [Create Instance](#step-1-create-an-instance) |
 | **インスタンスの管理** | ステータスを確認し、インスタンス名と説明を更新し、アプリケーションおよびAPI アクセス用のキーURLを取得します | [&#x200B; インスタンスの管理](#manage-instances) |
-| **アクセスの設定** | カタログビューとポリシーの設定 | [&#x200B; カタログ ビュー](./setup/catalog-view.md) |
+| **アクセスの設定** | カタログ ビューとポリシーを設定し、オプションで[&#x200B; プライベート カタログ ビュー](./setup/private-catalog-view.md)を作成してアクセスを制限します | [&#x200B; カタログ ビュー](./setup/catalog-view.md) |
 
 ### 開発者タスク
 
@@ -140,7 +140,7 @@ Commerce Cloud Managerからインスタンスを管理します。
 
 1. Commerce Cloud Managerを開きます。
 
-   - **クイックアクセス**&#x200B;で、**Commerce**&#x200B;をクリックします。
+   - **[!UICONTROL Quick access]**&#x200B;で、**[!UICONTROL Commerce]**&#x200B;をクリックします。
    - 利用可能なインスタンスを表示します。
 
 ### インスタンスの検索とフィルター
@@ -178,7 +178,7 @@ Adobe Commerce Cloud製品インスタンスの検索およびフィルターオ
 
 次の重要な情報に注意してください。
 
-- **GraphQL エンドポイント** ストアフロントが[&#x200B; マーチャンダイジングサービス API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=_blank}を使用して、このインスタンスからカタログおよびマーチャンダイジングデータをクエリするために使用するGraphQL エンドポイント
+- **GraphQL エンドポイント** ストアフロントが[&#x200B; マーチャンダイジングサービス API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target="_blank"}を使用して、このインスタンスからカタログとマーチャンダイジングデータをクエリするために使用するGraphQL エンドポイント
 - **カタログエンドポイント** REST API エンドポイントを使用して、コマースまたはPIM システムからAdobe Commerce Optimizerに商品と価格を取り込みます。 [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)を参照してください
 - **Commerce Optimizer URL** [Adobe Commerce Optimizer Studio](overview.md)の管理UIを開いて、カタログビュー、ポリシー、マーチャンダイジングを設定および管理します。
 - **インスタンス ID**：このAdobe Commerce Optimizer インスタンスの一意のID （テナント ID）。ストアフロント、API、およびツールが正しい環境に接続するために使用します。
@@ -193,9 +193,9 @@ Adobe Commerce Cloud製品インスタンスの検索およびフィルターオ
 
 必要に応じて、インスタンス名と説明を更新します。
 
-1. インスタンス名の横にある&#x200B;**編集** アイコンをクリックします。
-1. 必要に応じて、**インスタンス名**&#x200B;と&#x200B;**説明**&#x200B;を更新します。
-1. **保存**&#x200B;をクリックします。
+1. インスタンス名の横にある&#x200B;**[!UICONTROL Edit]** アイコンをクリックします。
+1. 必要に応じて&#x200B;**[!UICONTROL Instance name]**&#x200B;と&#x200B;**[!UICONTROL Description]**&#x200B;を更新します。
+1. **[!UICONTROL Save]**&#x200B;をクリックします。
 
 ## サンプルデータを追加
 

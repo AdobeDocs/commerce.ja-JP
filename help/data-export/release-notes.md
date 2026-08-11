@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 06cf519b8588e19f870e851558fa7fe7f0602b17
+source-git-commit: 0c38384dc0b8c9c964402cd3d363ff784d7a0cf5
 workflow-type: tm+mt
-source-wordcount: 3237
+source-wordcount: 3270
 ht-degree: 0%
 
 ---
@@ -44,6 +44,13 @@ ht-degree: 0%
 >[!DNL SaaS data export]拡張機能は、[!DNL Live Search]、[!DNL Product Recommendations]、[!DNL Catalog Service]と共に自動的にインストールされるモジュールのコレクションです。 システムにインストールされているバージョンは、[!DNL Composer]を使用して確認できます。 場合によっては、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップするために、システムのデータエクスポート拡張機能をアップグレードすることをお勧めします。
 
 ## 2026 リリース {#release-notes-2026}
+
+### 103.4.31 リリース
+
+_2026年8月7日_
+
+![修正](../assets/fix.svg) **不要な処理を減らす**- SaaS データ書き出し拡張機能で、Commerce Services Connectorが設定されていない場合、インデックス作成がスキップされ、不要な処理が削減されるようになりました。 <!--MDEE-1413-->
+![修正](../assets/fix.svg)row_idを使用しないでください。<!--MDEE-830-->
 
 ### 103.4.30 リリース
 

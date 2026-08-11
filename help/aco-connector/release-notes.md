@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4eb33526927e1c5a81612aab0de0ce4bc7746368
+source-git-commit: 1d14f7827de3274564941765fd2943ecefac5fad
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: 460
 ht-degree: 0%
 
 ---
@@ -39,6 +39,14 @@ ht-degree: 0%
 ![既知の問題](../assets/bug.svg)既知の問題
 
 ## 2026 リリース
+
+### 1.0.16 リリース
+
+_2026年8月7日_
+
+![修正](../assets/fix.svg) **カタログの同期が無効な設定で停止しなくなりました**- [!DNL Adobe Commerce Optimizer Connector]設定が見つからないか無効な場合に、カタログの同期が無期限に実行される問題を修正しました。 Syncは実行を続行する代わりに警告を完了してログに記録するようになりました。 <!--MDEE-1413-->
+![修正](../assets/fix.svg) **信頼性の高い[!DNL Adobe Commerce Optimizer]管理者要求** – 管理者要求[!DNL Adobe Commerce Optimizer Connector]が[!DNL Adobe Commerce Optimizer]件の管理者要求に対して不正なURLを使用し、それらの要求が失敗する可能性がある問題を修正しました。 <!--COMOPT-2288-->
+![修正](../assets/fix.svg) **信頼性の高い更新およびパッチ操作**&#x200B;更新およびパッチ操作が間違った環境をターゲットにする可能性がある問題を修正しました。これにより、リクエストが失敗する可能性があります。<!--COMOPT-2288-->
 
 ### 1.0.15 リリース
 
@@ -63,7 +71,7 @@ _2026年6月11日_
 _2026年5月6日_
 
 ![修正](../assets/fix.svg) **構成手順[!DNL Adobe Commerce Optimizer Connector]を改善** - Commerce管理者の[!DNL Adobe Commerce Optimizer]設定ページを&#x200B;_[!DNL Adobe Commerce Optimizer Connector]統合ガイド_にリンクするように更新しました。
-
+<!--COMOPT-1922-->
 
 ![修正](../assets/fix.svg) **[!DNL Adobe Commerce Optimizer Connector]メタデータの機能強化** - [!DNL Adobe Commerce Optimizer Connector]には、インストール済みのバージョンがメタデータヘッダーに含まれるようになりました。 この改善により、トラブルシューティングまたはサポートの取り組み中に使用されているコネクタバージョンをすばやく特定できるようになります。<!--MDEE-1323-->
 

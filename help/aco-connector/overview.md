@@ -26,9 +26,10 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+nudge: true
+source-git-commit: 83120d472ea7838a255c7767cd0bbe9085dff013
 workflow-type: tm+mt
-source-wordcount: 1075
+source-wordcount: 1087
 ht-degree: 0%
 
 ---
@@ -127,7 +128,7 @@ _はじめに_ ガイドの[設定手順](/help/aco-connector/get-started.md#con
 
 [!DNL Adobe Commerce]個のデータを[!DNL Adobe Commerce Optimizer]で利用できるようになったら、[[!DNL Adobe Commerce Optimizer] Studio](/help/optimizer/overview.md#quick-tour)を使用して、マーチャンダイジングとストアフロントのエクスペリエンスを同期カタログに接続します。 一般的な次のステップは次のとおりです。
 
-- **カタログビューとポリシー** – 地域、ブランド、または顧客固有のサブセットを定義し、[!UICONTROL Store setup] メニューからルールにアクセスします
+- **カタログビューとポリシー** – 地域、ブランド、または顧客固有のサブセットを定義し、[!UICONTROL Store setup] メニューからルールにアクセスします。 カタログビューのクエリを制限するには、[&#x200B; プライベートカタログビュー](/help/optimizer/setup/private-catalog-view.md)を参照してください
 - **製品の発見とレコメンデーション** — [!UICONTROL Merchandising] メニューで検索、ファセット、マーチャンダイジングルール、類義語、レコメンデーションユニットを設定します。 検索とレコメンデーションの動作は[!DNL Adobe Commerce Optimizer]で管理されています。管理者権限[!DNL Adobe Commerce]の[!DNL Live Search]および[!DNL Product Recommendations]の設定は、これらのフローには適用されなくなりました
 - **ストアフロント接続** – 正しい[!DNL Adobe Commerce Optimizer] テナント、カタログビュー、マーチャンダイジング API エンドポイントで、[!DNL Edge Delivery Services]またはサードパーティのヘッドレスビルドにCommerce ストアフロントをポイントします。 カスタムヘッドレス統合については、[&#x200B; ヘッドレスストアフロント統合](/help/aco-connector/headless-storefront.md)を参照してください。 サードパーティ統合の例については、 [!DNL Adobe Commerce Optimizer][&#128279;](/help/optimizer/developer/salesforce-connector.md)のSalesforce Commerce コネクタを参照してください
 - **チェックアウト** — カート、チェックアウト、注文管理、顧客アカウントを[!DNL Adobe Commerce]または接続されたサードパーティのプラットフォームに保存します。 必要に応じて、[!DNL App Builder]と[!DNL API Mesh]をカートのハンドオフに使用します

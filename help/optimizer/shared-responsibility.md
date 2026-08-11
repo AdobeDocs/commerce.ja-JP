@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 278
+source-wordcount: 290
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 0%
 | PCI ASV スキャンの実行 | RA | I |
 | [!DNL Adobe Commerce Optimizer] インフラストラクチャのPCI スキャンを修復しています | R | |
 | OSとプラットフォームのシークレットの管理 | RA | |
+| [制限付きアクセスキー](setup/restricted-access-keys.md)と[!UICONTROL Catalog Protection]のトークンの生成、回転、取り消し | | RA |
 | バックエンドのセキュリティログの監視 | RA | |
 | カスタマーサポートとアクセスの制御 | A | R |
 | Adobe DRの計画とバックアップおよび復元に関する年間テストとドキュメント | RA | |

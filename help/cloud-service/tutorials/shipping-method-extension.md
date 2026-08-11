@@ -266,10 +266,10 @@ Proceed with Phase 5 cleanup.
 
    - **Stores**/Settings > **Configuration** > **Adobe サービス** > **Commerce Webhook**&#x200B;に移動します。
    - Webhookを追加します。
-      - **Webhook メソッド：** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
-      - **Webhook タイプ：** **後**
-      - **URL:**&#x200B;は、デプロイされた&#x200B;**shipping-methods** web アクション URL （デプロイ出力または[!DNL Adobe Developer Console]から）です。
-      - **必須：** **オプション** – これにより、外部APIが料金を返さない場合でも、チェックアウトを引き続き機能させることができます。
+     - **Webhook メソッド：** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
+     - **Webhook タイプ：** **後**
+     - **URL:**&#x200B;は、デプロイされた&#x200B;**shipping-methods** web アクション URL （デプロイ出力または[!DNL Adobe Developer Console]から）です。
+     - **必須：** **オプション** – これにより、外部APIが料金を返さない場合でも、チェックアウトを引き続き機能させることができます。
 
    ![&#x200B; モック発送率のCommerce管理者Webhook設定](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
 
@@ -287,9 +287,9 @@ Proceed with Phase 5 cleanup.
    - **アプリ**&#x200B;を開き、アプリを選択します。
    - 「**Mock Shipping**」タブ（または同等のタブ）を開きます。
    - 次の詳細を入力します。
-      - **サービス URL:**&#x200B;さんがコピーしたPipedream ワークフローURL （例：`https://123456.m.pipedream.net`）。
-      - **API キー：** モックの空でない値（例：`tutorial-key`）。
-      - **倉庫（出荷元）住所：**&#x200B;名、電話、通り、都市、州、郵便番号、国。
+     - **サービス URL:**&#x200B;さんがコピーしたPipedream ワークフローURL （例：`https://123456.m.pipedream.net`）。
+     - **API キー：** モックの空でない値（例：`tutorial-key`）。
+     - **倉庫（出荷元）住所：**&#x200B;名、電話、通り、都市、州、郵便番号、国。
    - **保存**&#x200B;をクリックします。 設定はランタイム状態に保存され、shipping-methods アクションで使用されます。
 
    ![&#x200B; サービス URL、API キー、倉庫アドレスを含むモック出荷設定フォーム &#x200B;](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}

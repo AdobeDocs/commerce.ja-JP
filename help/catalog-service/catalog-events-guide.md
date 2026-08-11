@@ -1,5 +1,5 @@
 ---
-title: カタログとAdobe I/O Events統合ガイド
+title: カタログイベントの設定と統合ガイド
 description: カタログデータの検証、Adobe Commerceの [!DNL Adobe I/O Events] の設定、カタログイベントタイプの購読、消費者への配信の検証の方法について説明します。
 level: Intermediate
 recommendations: noCatalog
@@ -16,14 +16,14 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d8e9d612392967d19d0da56e81337362f9006c2c
+source-git-commit: 818efacb8dbf63e48cdc83506d228c665d7a8b22
 workflow-type: tm+mt
-source-wordcount: 1566
+source-wordcount: 1568
 ht-degree: 0%
 
 ---
 
-# カタログイベントおよび[!DNL Adobe I/O Events]統合ガイド
+# Adobe I/Oでのカタログイベントの有効化と設定
 
 カタログイベントは、[!DNL Catalog Service]を通じて使用可能になった、サポートされているカタログの変更を説明する機械生成の通知です。 これらのツールは、次のようなイベント駆動型ワークフローを実現します。
 

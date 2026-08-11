@@ -5,9 +5,10 @@ user-guide-description: このガイドでは、Adobe Commerceの [!DNL Catalog 
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 9ddf8f7eab84df90972f2d540e8607f52d3adf4e
+nudge: true
+source-git-commit: 29133334b0491ed2d3f72253834546287a57dcf1
 workflow-type: tm+mt
-source-wordcount: '61'
+source-wordcount: '60'
 ht-degree: 8%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 8%
 - [&#x200B; [!DNL Catalog Service]の基本を学ぶ](get-started.md)
 - [カタログデータの取得](graphql-queries.md)
 - 他のアプリケーションとの統合 {#integration}
-  - [カタログとAdobe I/O Eventsの統合](catalog-events-guide.md)
+  - [カタログイベントの設定と統合ガイド](catalog-events-guide.md)
   - [カタログサービスとAPI メッシュ](mesh.md)
   - [ユースケース：課税価格の表示](taxes.md)
 - [リリースノート](release-notes.md)

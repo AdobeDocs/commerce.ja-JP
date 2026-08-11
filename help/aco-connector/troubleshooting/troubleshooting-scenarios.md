@@ -23,9 +23,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -69,6 +69,17 @@ ht-degree: 0%
 
 - コネクタの書き出し設定で、web サイトが同期用に設定されていることを確認します。 [&#x200B; データ書き出し設定のカスタマイズ &#x200B;](../get-started.md#customize-the-commerce-scopes-export-configuration)を参照してください。
 - [!DNL Commerce Optimizer]で使用されている価格表IDが、製品クエリの実行に使用された[&#x200B; カタログ ビュー](../../optimizer/setup/catalog-view.md){target="_blank"}設定に存在することを確認します。
+
+## Storefront リクエストがアクセス拒否エラーを返すか、カタログデータが完全に消えます
+
+**問題：**&#x200B;以前にデータを返したカタログビューに対するマーチャンダイジング APIへのリクエストが、`access-key-invalid` エラーで失敗するか、作業中のストアフロントでカタログデータが表示されなくなりました。
+
+**原因：** カタログビューで[&#x200B; カタログ保護](../../optimizer/setup/private-catalog-view.md)が有効になっており、リクエストに必要な`AC-Catalog-View-Access-Token` ヘッダーが欠落しているか、ビューに割り当てられているすべての制限付きアクセスキーが期限切れになっています。 [!DNL Adobe Commerce Optimizer Connector]は、制限付きアクセス キーを自動的に作成、割り当て、または回転しません。キー管理は、完全にクライアント アプリケーションによって処理されます。
+
+**解決策：**
+
+- カタログ ビューに少なくとも1つの期限切れでない[&#x200B; アクセス制限キー](../../optimizer/setup/restricted-access-keys.md)が割り当てられていることを確認し、必要に応じてキーを回転または追加します。
+- ストアフロントまたはクライアントが、各リクエストに有効な署名済み`AC-Catalog-View-Access-Token` ヘッダーを送信することを確認します。 [&#x200B; プライベートカタログビュー](../../optimizer/setup/private-catalog-view.md)を参照してください。
 
 ## [!DNL Adobe Commerce Optimizer]のデータが上書きされるか、同期後に予期せず変更されます
 

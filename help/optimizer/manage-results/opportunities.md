@@ -23,7 +23,7 @@ topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
 source-wordcount: 1445
 ht-degree: 0%
@@ -167,7 +167,7 @@ AIが提案した最適化を実装するには、次の手順に従います。
 
 ### カタログレイヤーの自動修正の仕組み
 
-Adobe Sites Optimizer レイヤーがカタログビューに存在しない場合、自動修正によって自動的にレイヤーが作成され、最優先度（最上位）として割り当てられます。 このレイヤーを削除すると、次に自動修正が実行されるときに再作成され、既存のレイヤーが下位の番号にシフトされます。 Adobe Sites Optimizer レイヤーが別の注文番号に既に存在する場合、自動修正は優先度を変えません。 自動修正レイヤーを保持したいが、すぐに使用しない場合は、レイヤーを無効にすることができます。 [&#x200B; カタログレイヤー](../setup/catalog-layer.md#activate-deactivate-or-delete-layers)の管理方法について詳しくは、こちらを参照してください。
+Adobe Sites Optimizer レイヤーがカタログビューに存在しない場合、自動修正によって自動的にレイヤーが作成され、最優先度（最上位）として割り当てられます。 このレイヤーを削除すると、次に自動修正が実行されるときに再作成され、既存のレイヤーが下位の番号にシフトされます。 Adobe Sites Optimizer レイヤーが別の注文番号に既に存在する場合、自動修正は優先度を変えません。 自動修正レイヤーを保持したいが、すぐに使用しない場合は、レイヤーを無効にすることができます。 [&#x200B; カタログレイヤー](../setup/catalog-layer.md#manage-layer-activation-and-deletion)の管理方法について詳しくは、こちらを参照してください。
 
 ![&#x200B; カタログレイヤー](../assets/catalog-layers.png)
 

@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 1562
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -37,20 +37,20 @@ ht-degree: 0%
 
 * リポジトリを作成でき、ローカル開発用に設定されている&#x200B;**GitHub アカウント** （github.com）
 * サンプルデータと設定されたカタログビューとポリシーを含む&#x200B;**[!DNL Adobe Commerce Optimizer]インスタンス**
-   * 設定手順については、[&#x200B; サンプルデータの追加](get-started.md#add-sample-data)を参照してください。
+  * 設定手順については、[&#x200B; サンプルデータの追加](get-started.md#add-sample-data)を参照してください。
 
 ### 必要なインスタンスデータ
 
 開始する前に、[!DNL Adobe Commerce Optimizer] インスタンスから次の情報を収集します。
 
 * **テナント ID** （インスタンス IDとも呼ばれます）
-   * [&#x200B; インスタンスの詳細ページ &#x200B;](get-started.md#manage-instances)から入手できます
+  * [&#x200B; インスタンスの詳細ページ &#x200B;](get-started.md#manage-instances)から入手できます
 * インスタンスの&#x200B;**GraphQL エンドポイント**
-   * [&#x200B; インスタンスの詳細ページ &#x200B;](get-started.md#manage-instances)から入手できます
+  * [&#x200B; インスタンスの詳細ページ &#x200B;](get-started.md#manage-instances)から入手できます
 * グローバル カタログ ビューの&#x200B;**カタログ ビューID**
-   * [&#x200B; カタログの詳細ページ &#x200B;](./setup/catalog-view.md#manage-catalog-view)から入手できます
+  * [&#x200B; カタログの詳細ページ &#x200B;](./setup/catalog-view.md#manage-catalog-views)から入手できます
 * カタログ ビューの&#x200B;**Source ロケール**
-   * サンプルデータのデフォルトは`en-US`です
+  * サンプルデータのデフォルトは`en-US`です
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ ht-degree: 0%
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-1. **新しいサイトを作成（コードとコンテンツ）**&#x200B;を選択します。
+1. **[!UICONTROL Create New Site (Code & Content)]**&#x200B;を選択します。
 
 1. サイト設定を完了します。
 
@@ -89,7 +89,7 @@ ht-degree: 0%
    * **サイト名**: ストアフロントにわかりやすい名前を選択します
    * **Commerce GraphQL エンドポイント （オプション）**: [!DNL Adobe Commerce Optimizer] インスタンスのGraphQL エンドポイントを入力します
 
-1. 「**サイトを作成**」をクリックして、ストアフロントのボイラープレートコードを使用してGitHub リポジトリを作成します。
+1. **[!UICONTROL Create Site]**&#x200B;をクリックして、ストアフロントの定型文コードを使用してGitHub リポジトリを作成します。
 
    リポジトリが作成されると、サイト作成者が更新され、Code Sync アプリのインストールを求めるメッセージが表示されます。
 
@@ -103,7 +103,7 @@ ht-degree: 0%
    * **[!UICONTROL Select repositories]** メニューをクリックし、作成したストアフロントコードリポジトリを選択します。
    * **[!UICONTROL Save]**&#x200B;をクリックしてリポジトリを登録します。
 
-1. サイト作成者が開いているブラウザーウィンドウに戻り、**サイトを作成**&#x200B;をクリックします。
+1. サイト作成者が開いているブラウザーウィンドウに戻り、**[!UICONTROL Create Site]**&#x200B;をクリックします。
 
    サイト作成者は、ストアフロントのボイラープレートコンテンツをDocument Author環境にコピーします。 このプロセスには1～2分かかります。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
    これらのリンクを使用して、ストアフロントコード、コンテンツ、設定を管理します。
 
-1. 将来の参照のために、これらのリンクをコピーして保存します：**[!UICONTROL Copy]をクリックします。
+1. 将来の参照用にこれらのリンクをコピーして保存します。「**[!UICONTROL Copy]**」をクリックします。
 
 ## ストアフロントの設定
 
@@ -140,6 +140,10 @@ ht-degree: 0%
    >[!NOTE]
    >
    >価格表IDを見つけるには、[!DNL Adobe Commerce Optimizer]の[&#x200B; カタログ表示設定の詳細](./setup/catalog-view.md)を確認して、割り当てられた価格表を確認します。 価格表が割り当てられていない場合は、このヘッダーを設定ファイルから削除できます。 価格表がカタログ ビューに割り当てられたときに再度追加します。
+
+   >[!NOTE]
+   >
+   >カタログビューで[!UICONTROL Catalog Protection]が有効になっている場合、有効な署名済みトークンを含む`AC-Catalog-View-Access-Token` ヘッダーを追加するか、そのカタログビューにストアフロント要求を送信できません。 [&#x200B; プライベートカタログビュー](./setup/private-catalog-view.md)を参照してください。
 
 1. 設定ファイルを保存します。
 
@@ -228,7 +232,7 @@ ht-degree: 0%
 ![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)少なくとも1つの製品詳細ページに完全な情報が表示される<br>
 ![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)検索機能が関連する結果を返します<br>
 ![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)製品画像が正しく読み込まれています<br>
-![&#x200B; チェックリスト &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)設定値がインスタンス設定と一致しています<br>
+<br>
 
 ### ヘルプを表示
 

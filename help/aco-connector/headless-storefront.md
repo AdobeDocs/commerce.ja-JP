@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 237
+source-wordcount: 263
 ht-degree: 0%
 
 ---
@@ -65,6 +65,10 @@ ht-degree: 0%
 | ログインしたお客様 | `websiteCode::sha1(customerGroupId)` |
 
 `Store` リクエストヘッダーは、web サイトのスコープと`websiteCode` コンポーネントを決定します。 `sha1(customerGroupId)` コンポーネントは、データの同期中に使用された価格表ID式と一致します。 [価格表](reference/field-mapping.md#price-books)を参照してください。
+
+>[!NOTE]
+>
+>ターゲットカタログビューで[!UICONTROL Catalog Protection]が有効になっている場合は、署名された`AC-Catalog-View-Access-Token` ヘッダーを`AC-View-ID`および`AC-Price-Book-ID`と共にマーチャンダイジング API リクエストに含めます。または、リクエストが拒否されます。 [&#x200B; プライベートカタログビュー](../optimizer/setup/private-catalog-view.md)を参照してください。
 
 ## バンドル製品：カートに追加する形式 {#bundle-products-add-to-cart-format}
 

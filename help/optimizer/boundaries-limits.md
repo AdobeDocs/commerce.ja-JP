@@ -1,13 +1,13 @@
 ---
-title: Adobe Commerce Optimizer限界
+title: Adobe Commerce Optimizerの限界と限界
 description: Adobe Commerce Optimizerのライセンス制限とシステムの制限について説明します。 キャパシティを計画し、使用状況を追跡し、制限を超えた場合の待ち時間とスロットリングを回避します。
 role: Admin, Developer
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
-source-git-commit: 172fcbd659f4fe8868059d29ed335a5136af8d33
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1494'
 ht-degree: 0%
 
 ---
@@ -93,8 +93,8 @@ ht-degree: 0%
 Dynamic Mediaの使用状況は、[!DNL Adobe Commerce Optimizer]内の製品ビジュアルコンポーネントに入ってくるAPI リクエストを追跡して、次のいずれかのアクションを容易にします。
 
 - **画像配信では、次の項目が発生するたびに1つの動的メディア操作**&#x200B;が使用されます。
-   - デジタルアセットの&#x200B;**基本的な画像変換** （サイズ変更、スケール、フォーマット変換、圧縮、切り抜き操作など）。
-   - デジタルアセットまたはデジタルアセットのレンディション（ビデオ以外）の&#x200B;**静的画像配信またはダウンロード**
+  - デジタルアセットの&#x200B;**基本的な画像変換** （サイズ変更、スケール、フォーマット変換、圧縮、切り抜き操作など）。
+  - デジタルアセットまたはデジタルアセットのレンディション（ビデオ以外）の&#x200B;**静的画像配信またはダウンロード**
 - **スマート画像配信では、エンドユーザーのデバイスとブラウザーに最適な画像レンディションを自動的に生成することで、単一のデジタルアセットの最適化された配信ごとに20のDynamic Media操作**&#x200B;を使用します。
 - **ビデオ配信は、ビデオの1回の配信またはダウンロード、またはビデオの変換されたバリエーションに対して、20のDynamic Media操作**&#x200B;を使用します。
 
@@ -111,6 +111,10 @@ Dynamic Mediaの使用状況は、[!DNL Adobe Commerce Optimizer]内の製品ビ
 | カタログビュー | マスターカタログの設定可能なサブセットの数 | [&#x200B; カタログのバリエーション数](#catalog)に基づく | はい<br> カタログのバリエーションを増やす |
 | カタログビューごとのポリシー | 許可されるデータフィルターの数 | 10 | いいえ |
 | ポリシーの属性値 | フィルタリング用に設定できる製品特性の数 | 100 | いいえ |
+| [制限付きアクセスキー割り当て](setup/private-catalog-view.md) | 単一のカタログ ビューに割り当てることができる制限付きアクセス キーの数 | 3 | いいえ |
+| [制限付きアクセスキー](setup/restricted-access-keys.md) | 環境ごとのキーの数 | 最大100 | いいえ |
+| RSA キーのサイズ（制限付きアクセスキー） | 制限付きアクセスキーに対して受け入れられる最小および最大キー強度 | 最小2048 ビット、最大8192 ビット | いいえ |
+| 制限付きアクセスキー | キー失効の伝播遅延 | キャッシュにより、最大5分。 削除されたキーによって署名されたトークンは、遅延が経過すると拒否されます。 | 影響しない |
 
 {style="table-layout:auto"}
 
