@@ -30,7 +30,7 @@ ht-degree: 0%
 
 web サイトレベルのオンボーディングは、ストアが以下の要件を満たしている場合にのみ利用可能です。
 
-- [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)のセットアップが完了しました。
+- [Commerce Services Connector](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/integration-services/saas)のセットアップが完了しました。
 - PayPal アカウントは、グローバル（デフォルト設定）スコープで接続されます。
 
 これは、次のフィールドがデフォルトのスコープに入力されていることを確認することで確認できます。
