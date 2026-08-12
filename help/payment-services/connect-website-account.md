@@ -5,8 +5,12 @@ role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Paas, Saas
 TQID: 'https://experienceleague.adobe.com/U1zGAU6vYKjk2tc2KXnvyqnYdbA2HKTCNZSKhHdS0Vw'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 source-git-commit: d754c71e287d7d9ff297dd7d95efbaaae7ffc2fc
 workflow-type: tm+mt
 source-wordcount: 393
@@ -35,11 +39,11 @@ web サイトレベルのオンボーディングは、ストアが以下の要�
 - [!UICONTROL Payment Services Production ID]
 - [!UICONTROL PayPal Merchant ID]
 
-これらのフィールドが空の場合は、最初に[ グローバルオンボーディングを完了](configure-admin.md)する必要があります。 前提条件を完了するまで、**[!UICONTROL Connect different account]** ボタンは無効になります。
+これらのフィールドが空の場合は、最初に[&#x200B; グローバルオンボーディングを完了](configure-admin.md)する必要があります。 前提条件を完了するまで、**[!UICONTROL Connect different account]** ボタンは無効になります。
 
 ## web サイトレベルの接続を開始
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Sales]**に移動し、**[!UICONTROL Payment Methods]**を選択します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Sales]**&#x200B;に移動し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
 1. 左上隅の範囲セレクターで、オンボーディングする&#x200B;**[!UICONTROL Default Config]**&#x200B;から&#x200B;**[!UICONTROL Website]**&#x200B;に切り替えます。
 1. **[!UICONTROL Connect different account]**&#x200B;をクリックします。
 
