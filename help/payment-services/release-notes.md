@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
 workflow-type: tm+mt
-source-wordcount: '5400'
+source-wordcount: '5483'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,19 @@ _2021年6月28日_
 >[!NOTE]
 >
 > リリースは、必要に応じて新しい機能や修正を提供するために頻繁に発生します。 リリーススケジュールは固定されていません。
+
+
+## v2.16.1
+
+_2026年8月10日_
+
+![修正済みの問題](../assets/fix.svg)<!-- PAY-6769 --> PayPal スマートボタンを使用し、一部の支払い方法がチェックアウトページで利用できなくなるEDS ストアフロントの断続的な問題を修正しました。
+
+## v2.16.0
+
+_2026年7月27日_
+
+![新しい問題](../assets/new.svg)<!-- Issue PAY-6510 -->販売者は、[!DNL Commerce Admin]から直接web サイトの範囲で、別のPayPal アカウントのオンボーディングをセルフサービスで利用できるようになりました。[!DNL Payment Services] ホームには、支払い方法の管理者設定ページにリダイレクトする&#x200B;**[!UICONTROL Connect a different PayPal account for a website]** ボタンが含まれるようになりました。 詳しくは、[Web サイトの別のPayPal アカウントを接続する](connect-website-account.md)を参照してください。
 
 ## v2.15.0
 

@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
+source-git-commit: 882a39a5b0eeb616c7ca1d9e64c3fae76760afad
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3778'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 管理者の便利な設定オプションを使用して、[!DNL Payment Services]をニーズに合わせてカスタマイズできます。
 
 管理者で[!DNL Adobe Commerce]および[!DNL Magento Open Source]の[!DNL Payment Services]を設定する場合、これらの設定は&#x200B;_[!UICONTROL General Configuration]_&#x200B;の_[!UICONTROL Method]_ フィールドで設定されている環境にのみ適用されます。 設定フィールドで行った変更は、_[!UICONTROL Method]_&#x200B;の選択を切り替えることとは関係ありません。メソッドを切り替えた場合、選択はリセットされません。
+
+**複数のweb サイト** （およびストアビュー）で1つのCommerce インスタンスを実行する場合、一部のweb サイトに&#x200B;**異なるPayPal マーチャント アカウント**&#x200B;が必要になる場合があります。 [!DNL Payment Services]では、**グローバル** （デフォルト）スコープでインスタンスを設定してオンボーディングした後、管理画面で&#x200B;**web サイト範囲**&#x200B;のPayPal オンボーディングを完了できます。 Web サイトに対応するPayPal アカウントをオンボーディングするための前提条件と完全な手順については、[Web サイトに対応する別のPayPal アカウントを接続する](connect-website-account.md)を参照してください。
 
 ## 一般設定
 
@@ -56,11 +58,11 @@ ht-degree: 0%
 
 **複数のweb サイト** （およびストアビュー）で1つのCommerce インスタンスを実行する場合、一部のweb サイトに&#x200B;**異なるPayPal マーチャント アカウント**&#x200B;が必要になる場合があります。 [!DNL Payment Services]では、**グローバル** （デフォルト）スコープでインスタンスを設定してオンボーディングした後、管理画面で&#x200B;**web サイト範囲**&#x200B;のPayPal オンボーディングを完了できます。
 
-以前のリリースでは、web サイト レベルのPayPal アカウントマッピングでは、通常、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#Solution)またはAdobe担当者にお問い合わせください。 以下の前提条件を満たす場合は、**[!UICONTROL Connect different account for website]** アクションを使用します。
+以前のリリースでは、web サイト レベルのPayPal アカウントマッピングでは、通常、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#Solution)またはAdobe担当者にお問い合わせください。 以下の前提条件を満たす場合は、**[!UICONTROL Connect different account]** アクションを使用します。
 
 ### 前提条件（グローバルスコープ）
 
-**[!UICONTROL Connect different account for website]** コントロールは、**デフォルト/グローバル**&#x200B;設定のインスタンスに対して次の&#x200B;**すべて**&#x200B;が既にtrueである場合、**web サイト** スコープでのみ使用でき、有効になります。
+**[!UICONTROL Connect different account]** コントロールは、**デフォルト/グローバル**&#x200B;設定のインスタンスに対して次の&#x200B;**すべて**&#x200B;が既にtrueである場合、**web サイト** スコープでのみ使用でき、有効になります。
 
 1. [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas)のセットアップが完了しました。
 
@@ -70,7 +72,7 @@ ht-degree: 0%
 
 1. **グローバル**&#x200B;のPayPal マーチャント アカウントは&#x200B;**接続**&#x200B;であり、そのデフォルトスコープに対して&#x200B;**完了したPayPal オンボーディング**&#x200B;があります（**[!UICONTROL PayPal Merchant ID]**&#x200B;と関連フィールドは、[一般設定](#general-configuration)で説明されているように、グローバル スコープに入力されます）。
 
-   グローバルオンボーディングが完了していない場合は、設定範囲を&#x200B;**[!UICONTROL Website]**&#x200B;に切り替え、**[!UICONTROL Payment Methods]**&#x200B;で&#x200B;**[!UICONTROL Payment Services]**&#x200B;を開き、**[!UICONTROL Connect different account for website]** ボタンは&#x200B;**無効**&#x200B;です。コネクタの設定を完了し、最初に&#x200B;**グローバル**&#x200B;のPayPal オンボーディングを行います。
+   グローバルオンボーディングが完了していない場合は、設定範囲を&#x200B;**[!UICONTROL Website]**&#x200B;に切り替え、**[!UICONTROL Payment Methods]**&#x200B;で&#x200B;**[!UICONTROL Payment Services]**&#x200B;を開き、**[!UICONTROL Connect different account]** ボタンは&#x200B;**無効**&#x200B;です。コネクタの設定を完了し、最初に&#x200B;**グローバル**&#x200B;のPayPal オンボーディングを行います。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -444,6 +446,6 @@ Apple Pay、Venmo、PayPal PayLater ボタンの切り替えなど、_Settings_&
 
 Web サイト、ストア、ストアビューの階層について詳しくは、[&#x200B; サイト、ストア、およびビューの範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja)を参照してください。
 
-**グローバル**&#x200B;のCommerce サービスとPayPal オンボーディングが完了した後、管理者から&#x200B;**異なるPayPal アカウントを個々のweb サイト**&#x200B;に接続するには、**[!UICONTROL Website]**&#x200B;の範囲で&#x200B;**[!UICONTROL Connect different account for website]**&#x200B;を使用します。 「[Web サイトの別のPayPal アカウントを接続する](#connect-a-different-paypal-account-for-a-website)」を参照してください。
+**グローバル**&#x200B;のCommerce サービスとPayPal オンボーディングが完了した後、管理者から&#x200B;**異なるPayPal アカウントを個々のweb サイト**&#x200B;に接続するには、**[!UICONTROL Website]**&#x200B;の範囲で&#x200B;**[!UICONTROL Connect different account]**&#x200B;を使用します。 「[Web サイトの別のPayPal アカウントを接続する](#connect-a-different-paypal-account-for-a-website)」を参照してください。
 
 CLIを使用した複数のPayPal アカウントのスコープの設定について詳しくは、[&#x200B; コマンドライン設定](configure-cli.md#configure-scope-via-cli)を参照してください。
