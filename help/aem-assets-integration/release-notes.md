@@ -3,9 +3,9 @@ title: AEM Assets統合のリリースノート
 description: すべてのAEM Assets統合リリースについて詳しくは、リリースノートを参照してください。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
+source-git-commit: afef108e512c69047a0420566a498dab164c207e
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1491'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,29 @@ _2025年2月11日_
 
 +++
 
+## v1.4.4
+
+_2026年7月30日_
+
+[!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
+
+![新しい問題](../assets/new.svg)これで、AEM アセットの特定のストアビューを非表示にできるようになりました。 AEM Assetsが1つ以上のストアビューに対して画像を非表示としてマークすると、Commerceはその画像をそれらのストアビューのストアフロントから除外します。 管理者製品メディアギャラリーに、画像を非表示にするストアビューを示す&#x200B;**[!UICONTROL Store View Visibility]** フィールドが含まれるようになりました。<!-- Issue ACAP-1308 -->
+
+## v1.4.2
+
+_2026年7月10日_
+
+[!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
+
+![修正済みの問題](../assets/fix.svg) アセットの役割の属性（画像、小さな画像、サムネール、スウォッチ画像）が空のストアビューレベルの値を蓄積し、デフォルト以外のストアビューで画像が見つからなくなる問題を修正しました。 これで、これらの属性はスコープ内でグローバルになり、既存の空のストアビュー行が削除され、画像がデフォルトのストアビューから正しく継承されるようになりました。<!-- Issue ACCS-1401 -->
+
 ## v1.4.1
 
 _2026年6月15日_
 
 [!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
 
-![修正済みの問題](../assets/fix.svg) AEM Assets統合が有効になっている際に、管理者&#x200B;**[!UICONTROL System]** メニューに&#x200B;**[!UICONTROL OBSERVABILITY]** セクション ヘッダーが表示されず、**[!UICONTROL Subscription List]** リンクが見出しなしで表示される問題を修正しました。<!--ACAP-1302 -->
+![修正済みの問題](../assets/fix.svg) AEM Assets統合が有効になっている際に、管理者&#x200B;**[!UICONTROL System]** メニューに&#x200B;**[!UICONTROL OBSERVABILITY]** セクション ヘッダーが表示されず、**[!UICONTROL Subscription List]** リンクが見出しなしで表示される問題を修正しました。<!-- Issue ACAP-1302 -->
 
 ![修正済みの問題](../assets/fix.svg) Dynamic Media Open APIが有効になっていないインスタンスで、AEM Assets統合設定を保存すると、明確なメッセージではなく生のPHP警告が表示される問題を修正しました。 明確で一般的なエラーメッセージが表示されるようになりました。<!-- ACAP-1298 -->
 
