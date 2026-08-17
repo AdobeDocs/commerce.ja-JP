@@ -85,3 +85,4 @@ gem.使用可能なすべてのタスクを表示するには、次を実行し�
 cd _jekyll
 bundle exec rake --tasks
 ```
+
