@@ -4,7 +4,7 @@ description: データ取り込みREST APIおよびストアフロントカタ�
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
 product_v2:
@@ -139,7 +139,7 @@ _2026年4月29日_
 
 <!--v1.52 release-->
 
-**リクエストのバッチ処理が必要** — カタログデータを取得する場合、GraphQL APIは、リクエストごとに最大100個のSKUを適用するようになりました。 [文書化された制限と境界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery)を参照してください。
+**リクエストのバッチ処理が必要** — カタログデータを取得する場合、GraphQL APIは、リクエストごとに最大100個のSKUを適用するようになりました。 [文書化された制限と境界](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits#product-discovery)を参照してください。
 
 <!--DATA-7156-->
 
