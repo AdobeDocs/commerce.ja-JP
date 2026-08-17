@@ -6,11 +6,30 @@ seo-description: Access the product documentation for hosted services that help 
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 TQID: https://experienceleague.adobe.com/zKL5fNTECsNOKZfEl7OUSYHTo-wrh81z3-C7wB1SoWM
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: da3860b0-d637-47df-bef0-273751180266id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: da3860b0-d637-47df-bef0-273751180266
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 last-update: 2026-08-14
 source-git-commit: 3d3ce30e7013a46b933401ae3357b862efe04730
 workflow-type: tm+mt
@@ -25,7 +44,7 @@ Adobe Commerceサービスは、ストアフロントの拡張、統合の合理
 
 ## Commerceはどのようにサービスに接続するのですか？
 
-すべてのCommerce サービスは、[Commerce サービスコネクタ ](saas.md)を介してCommerce インスタンスに接続されます。
+すべてのCommerce サービスは、[Commerce サービスコネクタ &#x200B;](saas.md)を介してCommerce インスタンスに接続されます。
 
 Commerce サービスコネクタが設定されている場合、次の機能にアクセスできます。
 
@@ -34,11 +53,11 @@ Commerce サービスコネクタが設定されている場合、次の機能�
 
 これらのサービスは、Adobeのエコシステム全体でコンバージョンを向上させ、パーソナライズされた体験を提供し、コマースデータをより有効に活用するのに役立ちます。
 
-![ サービスレイヤー](./assets/services-layer.png)
+![&#x200B; サービスレイヤー](./assets/services-layer.png)
 
 >[!NOTE]
 >
->Adobeでは、サポートされているすべてのCommerce サービスの最新バージョンにアップグレードすることをお勧めします。 [ リリースノート ](release-notes-all.md)を参照してください。
+>Adobeでは、サポートされているすべてのCommerce サービスの最新バージョンにアップグレードすることをお勧めします。 [&#x200B; リリースノート &#x200B;](release-notes-all.md)を参照してください。
 
 これらの機能に加えて、Commerce インスタンスからSaaS プラットフォームへのデータのフローを監視できるツールがあります。 これらのデータツールは、データを自動的に同期し、パフォーマンスの最適化に役立ちます。
 
@@ -204,7 +223,7 @@ Commerce サービスコネクタが設定されている場合、次の機能�
 
 >[!NOTE]
 >
->Data Management Dashboardは、Product Recommendations v6.0.0、Live Search v4.1.0、またはアクティブなライセンスを持つCatalog Service v1.17を使用して、Commerceのマーチャントに追加費用なしで利用できます。 以前のバージョンのサービスを利用しているマーチャントは、[ カタログ同期](../landing/catalog-sync.md)を使用して、データ同期を管理および追跡できます。
+>Data Management Dashboardは、Product Recommendations v6.0.0、Live Search v4.1.0、またはアクティブなライセンスを持つCatalog Service v1.17を使用して、Commerceのマーチャントに追加費用なしで利用できます。 以前のバージョンのサービスを利用しているマーチャントは、[&#x200B; カタログ同期](../landing/catalog-sync.md)を使用して、データ同期を管理および追跡できます。
 
 >[!ENDTABS]
 
@@ -214,13 +233,13 @@ Adobe Commerceサービスは、ビジネスの拡大、顧客体験の向上、
 
 | 問題 | 課題 | Solution |
 |---------|-----------|----------|
-| 製品の発見とコンバージョンの向上 | 顧客は求めているものを見つけられず、直帰率が高まり、売上の損失を招きます。 | [ ライブサーチ ](../live-search/overview.md)と[商品レコメンデーション ](../product-recommendations/overview.md)を使用すると、タイプミスに対する許容値を持つAIを活用した検索、瞬時に「入力中に検索」結果、動的なファセット、リアルタイムの買い物客の行動に基づくパーソナライズされた商品レコメンデーションを提供できます。 |
+| 製品の発見とコンバージョンの向上 | 顧客は求めているものを見つけられず、直帰率が高まり、売上の損失を招きます。 | [&#x200B; ライブサーチ &#x200B;](../live-search/overview.md)と[商品レコメンデーション &#x200B;](../product-recommendations/overview.md)を使用すると、タイプミスに対する許容値を持つAIを活用した検索、瞬時に「入力中に検索」結果、動的なファセット、リアルタイムの買い物客の行動に基づくパーソナライズされた商品レコメンデーションを提供できます。 |
 | オムニチャネルでパーソナライズされた体験を構築 | コマースデータが分断されているため、チャネルをまたいでパーソナライズされたエクスペリエンスを提供できません。 | [Data Connection](../data-connection/overview.md)を使用して、行動データ、トランザクションデータ、プロファイルデータをAdobe Experience Platformに送信します。 高度な顧客セグメントの構築、放棄されたカートに対する施策の実施、類似オーディエンスのターゲティング、カスタマージャーニー全体の季節的なトレンドの分析を実現できます。 |
 | デジタルアセット管理を合理化 | 複数のシステムをまたいで製品画像およびリッチメディアを管理すると、時間がかかり、ミスが発生しやすくなります。 | [AEM Assets統合](../aem-assets-integration/overview.md)は、Adobe CommerceをAdobe Experience Manager Assets プロジェクトに接続し、ワークフローを簡素化し、あらゆる顧客接点で一貫性のあるブランドエクスペリエンスを実現することで、一元化されたアセット管理を提供します。 |
-| 決済処理を最適化 | 支払い方法が限定され、支払い体験が不十分なことで、顧客満足度とコンバージョンが損なわれています。 | [決済サービス ](../payment-services/guide-overview.md)では、支払い、注文、請求書を管理するための統合ダッシュボードを使用して、無利息の分割払いを含む複数の支払い方法を提供しています。 |
+| 決済処理を最適化 | 支払い方法が限定され、支払い体験が不十分なことで、顧客満足度とコンバージョンが損なわれています。 | [決済サービス &#x200B;](../payment-services/guide-overview.md)では、支払い、注文、請求書を管理するための統合ダッシュボードを使用して、無利息の分割払いを含む複数の支払い方法を提供しています。 |
 | データ同期の大規模な管理 | リソースを多用するインデックス作成によってサイトの動作が遅くなり、データ同期の問題を簡単に追跡できません。 | [SaaS Data Export](../data-export/overview.md)、[SaaS Price Indexer](../price-index/price-indexing.md)、および[Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)は、カタログ、注文、在庫データを自動的に同期し、価格計算をAdobe クラウドインフラストラクチャにオフロードし、同期ステータスをリアルタイムで可視化します。 |
 | 失った顧客を取り戻し、返品を減らしたい | 高い顧客離れと返品率は、収益性に影響を与えています。 | [Data Connection](../data-connection/overview.md)をAdobe Journey OptimizerおよびReal-Time CDPと組み合わせて、返品パターンを特定し、ウィンバック施策を構築し、行動ごとに顧客をセグメンテーションし、電子メールやSMSをまたいでパーソナライズされたリエンゲージメントキャンペーンを送信します。 |
-| データドリブン型マーチャンダイジング | どの商品をどのタイミングでプロモーションすべきか、把握できていません。 | [ ライブサーチ ](../live-search/overview.md)は、検索パフォーマンスに関するインサイトとマーチャンダイジングツールを提供します。主な指標にアクセスしたり、検索キーワードを分析したり、インテリジェントなマーチャンダイジングルールを使用して、実際の顧客行動やビジネス目標に基づいて商品を強化または埋め込んだりすることができます。 |
+| データドリブン型マーチャンダイジング | どの商品をどのタイミングでプロモーションすべきか、把握できていません。 | [&#x200B; ライブサーチ &#x200B;](../live-search/overview.md)は、検索パフォーマンスに関するインサイトとマーチャンダイジングツールを提供します。主な指標にアクセスしたり、検索キーワードを分析したり、インテリジェントなマーチャンダイジングルールを使用して、実際の顧客行動やビジネス目標に基づいて商品を強化または埋め込んだりすることができます。 |
 | 機密データのコンプライアンスを維持 | HIPAAを遵守しながら、機密性の高い顧客データを扱う必要があります。 | [Data Connection](../data-connection/overview.md)はHIPAA対応のため、コンプライアンスを維持し、プライバシーリクエストを体系的に処理しながら、Experience Platformとバックオフィスデータを共有できます。 |
 
 ## Commerceのサービス連携
