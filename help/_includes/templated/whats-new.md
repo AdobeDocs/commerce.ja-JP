@@ -1,7 +1,7 @@
 ---
-source-git-commit: 06d8280f848fa6fc390194ebdd05a5dba1bfac94
+source-git-commit: 4ecab54255029c3e9e84ba9f6de96888157d8fea
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1355'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年8月12日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce as a Cloud Serviceの実稼動<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>加盟店は、Commerce管理者から直接web サイトの範囲で、別のPayPal アカウントのオンボーディングをセルフサービスで行えるようになりました。 詳しくは、<a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/configure/connect-website-account">Web サイトの別のPayPal アカウントを接続する</a>を参照してください。</p>
+</td>
+      <td>
+        新しいトピック
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年8月10日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>カタログ保護を有効にする方法を説明する<br /> – 有効な署名トークンを持つリクエストのみがカタログ保護のデータを取得できるようにする<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/private-catalog-view"> プライベートカタログビュー</a>が追加されました。<br />- カタログ保護のトークンに使用されるキーを作成、割り当て、回転する方法を説明する<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/restricted-access-keys">制限付きアクセスキー</a>が追加されました。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-view"> カタログビュー</a>の更新<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/overview">は何ですか？</a>, <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/get-started">開始</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits">制限と境界</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/launch/launch-checklist"> チェックリストを起動</a>、および<a href="https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer コネクタガイド </a>を使用して、新しいプライベートカタログビューと制限付きアクセスキーのトピックを参照してください。</p>
+</td>
+      <td>
+        メジャーアップデート、新しいトピック
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de0de805f8ecd4f329ce3afc90e28197186856c2">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年8月7日（PT）
 
@@ -309,120 +361,6 @@ ht-degree: 1%
         メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7be26764bc3f3878c3c78a881ad8912038c7f07f">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月15日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>v2.15.0の<a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/release-notes">Payment Services リリースノート </a>を更新しました（Google PayおよびApple Pay Expressの更新、レビューのスキップ）。<a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/payments-checkout/payments-options">支払いオプション </a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/configure/configure-admin">支払いサービスの設定</a>を新しい動作に合わせました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b0eb472bfcb3fb568d4e8a70e63356d60873b641">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月12日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>検索一致の優先順位付け（正確/ほぼフレーズ、同一フィールド、クロスフィールド）とランキングのトレードオフが、<a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching">検索マッチングとランキング（ライブ検索） </a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/manage-results/search-relevance-matching">検索マッチングとランキング（Adobe Commerce Optimizer） </a>に記載され、概要、索引付け、ベストプラクティス、検索パフォーマンスのトピックからのリンクが記載されています。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6f9744e6a0b3390b9e29a1d973fa44456db1612c">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>v1.3.8で<a href="https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/release-notes">AEM Assets統合リリースノート </a>を更新しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8937c04dcb4da5f19bce017ef0da8a48bd61c3a6">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月10日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新しい技術的および運用上のトピックを含むAdobe Commerce Optimizer Connector統合ガイドを拡張しました：<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/connector-sync-pipeline">Connector sync pipeline</a> — cron ジョブ、初期化、フィード送信、エラー処理<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/headless-storefront"> ヘッドレスストアフロント統合</a> — GraphQL <code>commerceOptimizer</code> クエリおよびバンドル製品エンコーディング <br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/troubleshooting/troubleshooting"> トラブルシューティング </a> – 資格情報、同期、スコープ設定の問題<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/reference/connector-reference">Connector reference</a> — モジュール、フィードエンドポイント、バッチ制限、およびパス <a href="https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/reference/field-mapping"> フィールド マッピング </a> – すべてのフィードのCommerceとOptimizerのフィールドマッピング<br /></p>
-</td>
-      <td>
-        メジャーアップデート、新しいトピック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2973937a78f4ea425da7876ac006eb2023a35bb3">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>[!DNL Adobe Commerce as a Cloud Service]に移行するユーザーの<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview">移行評価</a>にページを追加しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8f260d114983890872281115f74b1f98b32e524d">コミット</a></td>
-    </tr>
-    <tr>
-      <td><ul>
-  <li>Adobe Commerce as a Cloud Serviceのデフォルトオン動作、PaaSの手動イネーブルメント、英語カタログのサポートなど、<a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/release-notes#hosted-service-updates"> ライブ検索リリースノート </a>にセマンティック検索の2026年6月8日にホストされたサービス更新プログラムを追加しました。<br />- セマンティック検索とレコメンデーション価格フィルター（ベータ版）の<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/release-notes#june-2026">Adobe Commerce Optimizer リリースノート </a>に2026年6月の節を追加しました。</li>
-</ul>
-</td>
-      <td>
-        メジャーアップデート、新しいトピック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4c5b282a83b75c07d82dc34b5500916f22e08a44">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月9日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>PDP関連の演算子、オフセットセマンティクス、SKU関連のレコメンデーションタイプの設定ガイダンスなど、[!DNL Adobe Commerce Optimizer]件のレコメンデーションに関する動的および静的な<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/recommendations/filters#price">価格フィルター</a>を文書化しました。</p>
-</td>
-      <td>
-        フィードバック、メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bccb739bbbfcc7e3bfa645c2a0245933014b934f">コミット</a></td>
     </tr>
   </tbody>
 </table>
