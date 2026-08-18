@@ -4,26 +4,17 @@ description: カタログビューの概要と、ビジネス構造、ポリシ�
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
 nudge: true
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 1276
+source-wordcount: 1317
 ht-degree: 0%
 
 ---
@@ -39,8 +30,8 @@ ht-degree: 0%
 - **ビジネス構造（ブランド、地域、ディーラー）に基づいて表示される製品**
 - **リンクされた価格表を通じて表示される価格**
 - ポリシー（ブランド、モデル、カテゴリなどの属性）を使用して製品をフィルタリングする&#x200B;**方法**
-- **ロケールなどの属性に基づいて使用される[&#x200B; カタログ ソース &#x200B;](catalog-sources.md)の種類**
-- **ビューのデータにアクセスできるユーザー** ～ [&#x200B; カタログ保護](private-catalog-view.md)および[&#x200B; アクセス制限キー](restricted-access-keys.md)
+- **ロケールなどの属性に基づいて使用される[ カタログ ソース ](catalog-sources.md)の種類**
+- **ビューのデータにアクセスできるユーザー** ～ [ カタログ保護](private-catalog-view.md)および[ アクセス制限キー](restricted-access-keys.md)
 
 例えば、次のような個別のカタログビューを作成できます。
 
@@ -53,15 +44,15 @@ ht-degree: 0%
 
 カタログビューを作成する前に、必要に応じて次の項目を準備します。
 
-- [&#x200B; カタログソース &#x200B;](catalog-sources.md)
-- 製品フィルターを定義する[&#x200B; ポリシー](policies.md)
-- 製品属性を上書きする必要がある場合は、[&#x200B; カタログレイヤー](catalog-layer.md)
+- [ カタログソース ](catalog-sources.md)
+- 製品フィルターを定義する[ ポリシー](policies.md)
+- 製品属性を上書きする必要がある場合は、[ カタログレイヤー](catalog-layer.md)
 - ビューに表示される価格に関する[価格表](pricebooks.md)
-- プライベート カタログ ビューを作成する場合は、[&#x200B; アクセス キー](restricted-access-keys.md)が制限されています
+- プライベート カタログ ビューを作成する場合は、[ アクセス キー](restricted-access-keys.md)が制限されています
 
 ### 設定
 
-このセクションでは、カタログ ビューを作成し、[&#x200B; ポリシー](policies.md)と[価格表](pricebooks.md)を選択します。
+このセクションでは、カタログ ビューを作成し、[ ポリシー](policies.md)と[価格表](pricebooks.md)を選択します。
 
 1. 左側のメニューから、**[!UICONTROL Store setup]**&#x200B;に移動し、**[!UICONTROL Catalog views]**&#x200B;をクリックします。
 
@@ -70,21 +61,22 @@ ht-degree: 0%
 1. カタログビューの詳細を設定します。
 
    - **名前** - カタログ ビューの名前（例：`Celport`）を入力します。 &#x200B;
-   - **カタログソース** - [&#x200B; カタログソース &#x200B;](catalog-sources.md)を選択（例：`en-US`）。
+   - **カタログソース** - [ カタログソース ](catalog-sources.md)を選択（例：`en-US`）。
    - **カタログレイヤー** – 取り込んだレイヤーと優先度を確認します。
-   - **ポリシー** - ドロップダウンを使用して、関連するポリシーを選択します。 例えば、「ブランド」、「モデル」などです。 &#x200B;既に[&#x200B; ポリシーを作成していることを確認してください](policies.md)。
+   - **ポリシー** - ドロップダウンを使用して、関連するポリシーを選択します。 例えば、「ブランド」、「モデル」などです。 &#x200B;既に[ ポリシーを作成していることを確認してください](policies.md)。
 
 1. カタログ ビューにリンクする価格表を選択します。
 
    - **利用可能なすべての価格表を使用** – このオプションは、利用可能なすべての価格表から価格データを引き出します。
    - **選択した価格表のみを許可** – このオプションには、**許可された価格表を追加** ダイアログが表示されます。 このダイアログを使用して、カタログビューに使用する特定の価格表を選択します。
+   - **単品価格表のみ** - 1つの価格表のみが適用される場合は、このオプションを選択します。 プライベートカタログビューを設定する場合は、このオプションが必要です。このオプションは、1つの価格表のみを参照できます。 プライベートカタログビューの[価格表の制限](private-catalog-view.md#price-book-restriction-on-private-catalog-views)を参照してください。
    - **価格設定を無効にする** – 現在、このオプションは利用できません。
 
    >[!NOTE]
    >
-   >価格表IDは、どの価格設定を要求するかを制御します。 カタログビューへのアクセスは制限されません。 アクセスを制限するには、カタログ保護を有効にして[&#x200B; プライベートカタログビュー](private-catalog-view.md)を作成します。
+   >価格表IDは、どの価格設定を要求するかを制御します。 カタログビューへのアクセスは制限されません。 アクセスを制限するには、カタログ保護を有効にして[ プライベートカタログビュー](private-catalog-view.md)を作成します。
 
-1. （オプション） **[!UICONTROL Catalog Protection]**&#x200B;を&#x200B;**[!UICONTROL Enabled]**&#x200B;に切り替えて、このカタログビューのデータを有効な署名済みトークンを持つクライアントに制限します。 設定手順については、[&#x200B; カタログビューの保護](private-catalog-view.md#protect-a-catalog-view)を参照してください。
+1. （オプション） **[!UICONTROL Catalog Protection]**&#x200B;を&#x200B;**[!UICONTROL Enabled]**&#x200B;に切り替えて、このカタログビューのデータを有効な署名済みトークンを持つクライアントに制限します。 設定手順については、[ カタログビューの保護](private-catalog-view.md#protect-a-catalog-view)を参照してください。
 
 1. リンクされた価格表とポリシーを含むカタログ ビューを作成するには、**[!UICONTROL Add]**&#x200B;をクリックします。
 
@@ -94,19 +86,19 @@ ht-degree: 0%
 
 ### レコメンデーションと製品発見ルールのカタログビューの指定
 
-[&#x200B; レコメンデーションユニット &#x200B;](../merchandising/recommendations/create.md)または[&#x200B; マーチャンダイジングルール &#x200B;](../merchandising/rules/add.md)を作成するときに、カタログビューを指定できます。
+[ レコメンデーションユニット ](../merchandising/recommendations/create.md)または[ マーチャンダイジングルール ](../merchandising/rules/add.md)を作成するときに、カタログビューを指定できます。
 
 ## カタログレイヤー
 
 カタログレイヤーを使用すると、ソースカタログデータを変更せずに、選択した製品属性を上書きできます。 レイヤーを使用して、カタログビューの名前、説明、画像、リンク、メタデータをカスタマイズします。
 
-[&#x200B; カタログレイヤー](catalog-layer.md)を参照してください。
+[ カタログレイヤー](catalog-layer.md)を参照してください。
 
 ## カタログビューを非公開にする
 
 デフォルトでは、カタログビューは、GraphQL Merchandising APIにアクセスできるクライアントアプリケーションに対して公開されます。 アクセスを制限するには、**[!UICONTROL Catalog Protection]**&#x200B;を有効にしてプライベートカタログビューを設定します。
 
-カタログビューを保護し、アクセスが強制されていることを確認する方法については、[&#x200B; プライベートカタログビュー](private-catalog-view.md)を参照してください。
+カタログビューを保護し、アクセスが強制されていることを確認する方法については、[ プライベートカタログビュー](private-catalog-view.md)を参照してください。
 
 ## カタログビューの管理
 
@@ -133,9 +125,9 @@ ht-degree: 0%
 
 このオプションを使用すると、**[!UICONTROL Catalog views]** テーブルを維持しながら、すべてのカタログ表示パラメーターを簡単に表示できます。
 
-**[!UICONTROL Catalog views]** ワークスペースで、カタログビューの![情報アイコン &#x200B;](../assets/info-icon.png)を選択して、その設定の詳細を表示します。
+**[!UICONTROL Catalog views]** ワークスペースで、カタログビューの![情報アイコン ](../assets/info-icon.png)を選択して、その設定の詳細を表示します。
 
-![&#x200B; カタログ表示の詳細](../assets/catalog-view-details.png)
+![ カタログ表示の詳細](../assets/catalog-view-details.png)
 
 ここから、次のようなカタログビュー設定の詳細を確認できます。
 
@@ -152,12 +144,12 @@ ht-degree: 0%
 
 カタログビューは、マーチャンダイジングサービスフレームワークの一部であり、Adobe Commerce Foundationsで使用されているweb サイト、ストア、ストアビューフレームワークをより柔軟なモデルに置き換えます。
 
-![[!DNL Merchandising Services] アーキテクチャ &#x200B;](../assets/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] アーキテクチャ ](../assets/merchandising-svcs-architecture.png)
 
 ### 仕組み
 
 **1. データ収集**
-PIMやERPなどのシステムからのカタログデータは、マーチャンダイジングサービスフレームワークに取り込まれます。 各SKUには、カタログビュー、ポリシー、ロケールにマッピングされるロケール情報と製品属性が含まれます。 データ収集について詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)を参照してください。
+PIMやERPなどのシステムからのカタログデータは、マーチャンダイジングサービスフレームワークに取り込まれます。 各SKUには、カタログビュー、ポリシー、ロケールにマッピングされるロケール情報と製品属性が含まれます。 データ収集について詳しくは、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/optimizer/)を参照してください。
 
 **2. 統合基本カタログ**
 取り込まれたデータは、カタログサービスデータパイプラインに統合されたベースカタログを作成します。 この単一のソースは、事業部門をまたいでデータの重複を排除します。
@@ -166,7 +158,7 @@ PIMやERPなどのシステムからのカタログデータは、マーチャ�
 複数のカタログビューは、異なる事業部を表します（例えば、「テキサス州小売業」、「テキサス州小売季節業」）。 ロケール、ポリシー、価格表をカタログビュー間で共有し、柔軟性を高めることができます。
 
 **4. マルチチャネル配信**
-フィルタリングされたカタログデータは、Edge Delivery Services、マーケットプレイス、広告プラットフォーム、カスタムのマイクロストアフロントなどの配信先に配信されます。 カタログデータ配信について詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)を参照してください。
+フィルタリングされたカタログデータは、Edge Delivery Services、マーケットプレイス、広告プラットフォーム、カスタムのマイクロストアフロントなどの配信先に配信されます。 カタログデータ配信について詳しくは、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/optimizer/)を参照してください。
 
 カタログビューで&#x200B;**[!UICONTROL Catalog Protection]**&#x200B;が有効になっている場合、その宛先への配信には、割り当てられた[制限アクセスキー](restricted-access-keys.md)からの有効な署名済みトークンが必要です。カタログデータを受信する代わりに、権限のない要求が拒否されます。
 
@@ -216,13 +208,13 @@ PIMやERPなどのシステムからのカタログデータは、マーチャ�
 
 >[!NOTE]
 >
->カタログデータの取り込みと配信について詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)を参照してください。
+>カタログデータの取り込みと配信について詳しくは、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/optimizer/)を参照してください。
 
 ## その他
 
-- [&#x200B; カタログ ソース &#x200B;](catalog-sources.md)：検索、フィルター、並べ替え動作の製品、属性、およびカテゴリの権限範囲を定義します
-- [&#x200B; カタログレイヤー](catalog-layer.md) – 元のソースを変更せずに製品データを変更する方法を説明します
-- [&#x200B; プライベートカタログビュー](private-catalog-view.md)：承認済みクライアントへのアクセスを制限するプライベートカタログビューを作成します
+- [ カタログ ソース ](catalog-sources.md)：検索、フィルター、並べ替え動作の製品、属性、およびカテゴリの権限範囲を定義します
+- [ カタログレイヤー](catalog-layer.md) – 元のソースを変更せずに製品データを変更する方法を説明します
+- [ プライベートカタログビュー](private-catalog-view.md)：承認済みクライアントへのアクセスを制限するプライベートカタログビューを作成します
 - [制限付きアクセス キー](restricted-access-keys.md) - カタログ保護のトークンの署名に使用するキーを作成、割り当て、回転します
-- [&#x200B; ポリシー](policies.md) - カタログ ビューで製品をフィルタリングするポリシーを作成します
+- [ ポリシー](policies.md) - カタログ ビューで製品をフィルタリングするポリシーを作成します
 - [価格表](pricebooks.md) – 様々な顧客セグメントの価格構成を管理
