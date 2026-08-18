@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
+source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
 workflow-type: tm+mt
-source-wordcount: 1365
+source-wordcount: 1522
 ht-degree: 0%
 
 ---
@@ -31,6 +31,22 @@ ht-degree: 0%
 * ストアフロントカタログデータ取得[&#128279;](https://developer.adobe.com/commerce/services/reference/graphql/)用の[&#x200B; データ取り込みREST API](https://developer.adobe.com/commerce/services/reference/rest/)およびGraphQL APIを更新しました。
 
   {{aco-api-updates-and-dropins}}
+
+## 2026年8月
+
+>[!BEGINSHADEBOX]
+
+_2026年8月7日_
+
+![新規](../assets/new.svg) **新規`externalIds` フィールド** - カタログサービス GraphQLに`externalIds`を追加し、商品に関連付けられている外部データソースを公開して、ストアフロントと統合コンシューマーが元のデータソースを識別できるようにしました。 製品の[Return externalIdを参照してください](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
+<!--DATA-7307-->
+
+![修正](../assets/fix.svg) **設定可能な製品に対する`refineProduct`の応答を修正** – 特定の設定可能な製品に対して`refineProduct` クエリが`priceRange: null`と`roles: ["hidden"]`を返す問題を修正し、ストアフロント消費者に対する正確な価格と可視性の情報を確保しました。
+<!--COMOPT-2367-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## 2026年7月
 
@@ -53,7 +69,7 @@ _2026年6月24日_
 
 <!-- v1.3 -->
 
-![新規](../assets/new.svg) **新規`canEditQuantity` フィールド** - カタログサービス GraphQLで`canEditQuantity`を`ProductViewOptionValueProduct`に追加しました。Commerce管理者からバンドル選択のオプションの&#x200B;**User Defined**&#x200B;数量設定を公開するので、ストアフロントコンシューマーはバンドル選択の数量が編集可能かどうかを判断できます。
+![新規](../assets/new.svg) **新規`canEditQuantity` フィールド** - カタログサービス GraphQLで`canEditQuantity`を`ProductViewOptionValueProduct`に追加しました。 Commerce管理者からバンドル選択のオプションの&#x200B;**User Defined**&#x200B;数量設定を公開するので、ストアフロントコンシューマーはバンドル選択の数量が編集可能かどうかを判断できます。
 <!--COMOPT-2050-->
 
 ### セマンティック検索
@@ -82,20 +98,20 @@ _2026年5月28日_
 
 <!-- v1.2 -->
 
-![修正](../assets/fix.svg) **完全なナビゲーションツリー** - タグ付けされていない中間ノードがパスに存在する場合、タグ付けされた下位カテゴリが、ファミリーフィルター処理された`navigation` ツリーに正しく含まれるようになりました。この修正により、買い物客はナビゲーション内のすべての関連カテゴリーを表示できるようになり、商品の閲覧と発見が簡単になりました。
+![修正](../assets/fix.svg) **完全なナビゲーションツリー** - タグ付けされていない中間ノードがパスに存在する場合、タグ付けされた下位カテゴリが、ファミリーフィルター処理された`navigation` ツリーに正しく含まれるようになりました。 この修正により、買い物客はナビゲーション内のすべての関連カテゴリーを表示できるようになり、商品の閲覧と発見が簡単になりました。
 <!--DATA-7183-->
 
-![修正](../assets/fix.svg) **空のスラグ処理を`categoryTree`要求**&#x200B;で修正 – `slugs`引数に空の文字列が含まれていると、[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) クエリが内部サーバーエラーを返す問題を修正しました。空のスラグ値は無視されるようになったため、ストアフロントと統合では、リクエストに失敗することなくカテゴリーデータを引き続き解決できます。
+![修正](../assets/fix.svg) **空のスラグ処理を`categoryTree`要求**&#x200B;で修正 – `slugs`引数に空の文字列が含まれていると、[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) クエリが内部サーバーエラーを返す問題を修正しました。 空のスラグ値は無視されるようになったため、ストアフロントと統合では、リクエストに失敗することなくカテゴリーデータを引き続き解決できます。
 <!--DATA-7184-->
 
-![修正](../assets/fix.svg) **`searchCategory`要求は、大文字と小文字を区別しないアルファベット順の結果を返します** - `searchCategory` クエリは、大文字と小文字を区別せずに検索結果をアルファベット順に並べ替えるようになり、一貫性のある予測可能な順序を確保します。接頭辞が短いカテゴリは、名前が同じ場合に最初に表示されます。
+![修正](../assets/fix.svg) **`searchCategory`要求は、大文字と小文字を区別しないアルファベット順の結果を返します** - `searchCategory` クエリは、大文字と小文字を区別せずに検索結果をアルファベット順に並べ替えるようになり、一貫性のある予測可能な順序を確保します。 接頭辞が短いカテゴリは、名前が同じ場合に最初に表示されます。
 <!--COMOPT-2142-->
 
 _2026年5月4日_
 
 <!--v1.53-->
 
-**正しい通貨表示** – すべての製品タイプに対して、ストアフロントの製品価格に正しい通貨コード（USDなど）が表示されるようになりました。 以前は、一部の製品で予想される通貨の代わりに`NONE`が表示され、価格が欠落していました。
+**正しい通貨表示** – すべての商品タイプに対して、ストアフロントの商品価格に正しい通貨コード（USDなど）が表示されるようになりました。 以前は、一部の製品で予想される通貨の代わりに`NONE`が表示され、価格が欠落していました。
 
 <!--DATA-7115-->
 
