@@ -6,38 +6,34 @@ level: Intermediate
 feature: Payments, Checkout, Paas, Saas
 exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
 TQID: https://experienceleague.adobe.com/UUD0IiEiwh0sZKMkclOJtoC2bKYcmDN3WAWD16mfad4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 88c74f789dc398afa8f40ee2258450e83f134d87
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 4235bf48bb5f24a076621ee5985e9e7316fcb1cc
 workflow-type: tm+mt
-source-wordcount: 506
+source-wordcount: 498
 ht-degree: 0%
 
 ---
 
 # [!DNL Payment Services]の互換性
 
-[!DNL Payment Services]は、Adobe CommerceとMagento Open Sourceで利用できます。 [!DNL Payment Services]は、Adobe Commerce バージョン 2.4.xと互換性があります。
+[!DNL Payment Services]は、[!DNL Adobe Commerce as a Cloud Service]、サポートされているすべてのバージョンの[!DNL Adobe Commerce on Cloud]、オンプレミス、およびMagento Open Sourceで利用できます。 バージョン固有の情報については、[ ライフサイクルポリシー](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) ページを参照してください。
 
 ## 前提条件
 
-[!DNL Payment Services]を使用するには、まずCommerce インスタンスを接続する必要があります。 **この接続は1回だけ設定しました**。
+[!DNL Payment Services]を使用するには、まずCommerce インスタンスを接続する必要があります。 **この接続は1回のみ実行できます**。
 
-1. インスタンスが接続されているかどうかわからない場合は、**System** > Services > **Commerce Services Connector**&#x200B;に移動し、「サンドボックスキー」セクションと「実稼動キー」セクション、および「SaaS識別子」セクションの「プロジェクトとデータスペース」フィールドで公開および非公開のAPI キー値を確認します。 これらの値が存在する場合は、インスタンスが接続されます。
+1. インスタンスが接続されているかどうかわからない場合は、**System** > Services > **Commerce Services Connector**&#x200B;に移動して、API キーとSaaS IDの詳細を確認します。 これらの値が存在する場合は、インスタンスが接続されます。
 
 1. 引き続きインスタンスを接続する必要がある場合は、[Commerce Services Connector](../landing/saas.md) ページの手順を参照してください。
 
    >[!TIP]
    >
-   > 詳しくは、[Adobe Commerce Services Connector](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)のチュートリアルビデオを参照してください。
+   > 詳しくは、[Adobe Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)のチュートリアルビデオを参照してください。
 
-1. 既にインスタンスを接続している場合は、次の手順を実行するために[&#x200B; オンボーディング &#x200B;](onboard.md) ページに移動します。
+1. 既にインスタンスを接続している場合は、次の手順を実行するために[ オンボーディング ](onboard.md) ページに移動します。
 
 >[!IMPORTANT]
 >
@@ -49,11 +45,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> [!DNL Payment Services]様は、オンボーディング中に他の[&#128279;](../payment-services/production.md#complete-merchant-onboarding)利用可能な国の[Express チェックアウト機能](../payment-services/payments-options.md) （支払いオプションのサブセット）を提供しています。
+> [!DNL Payment Services]様は、オンボーディング中に他の[利用可能な国の[Express チェックアウト機能](../payment-services/payments-options.md) （支払いオプションのサブセット）を提供しています](../payment-services/production.md#complete-merchant-onboarding)。
 
 ### どの[!DNL Payment Services] オプションが適していますか？
 
->[!VIDEO](https://video.tv.adobe.com/v/3447919?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
 
 [!DNL Payment Services]拡張機能の設定について詳しくは、[Connect](connect.md)を参照してください。
 
@@ -105,16 +101,16 @@ ht-degree: 0%
 
 >[!ENDTABS]
 
-詳しいリリースおよびバージョン固有の情報については、[&#x200B; ライフサイクルポリシー](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=ja)および[[!DNL Payment Services]  リリースノート &#x200B;](release-notes.md)のページを参照してください。
+詳しいリリースおよびバージョン固有の情報については、[ ライフサイクルポリシー](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)および[[!DNL Payment Services]  リリースノート ](release-notes.md)のページを参照してください。
 
 完全な手順を入手し、オンボーディングプロセスを開始するには、[入門 [!DNL Payment Services]](onboard.md)を参照してください。
 
 ### 利用可能なクレジットカードと通貨
 
-[!DNL Payment Services]は、使用可能な国の通貨を受け入れます。 通貨レートの設定について詳しくは、[通貨設定](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=ja)を参照してください。
+[!DNL Payment Services]は、使用可能な国の通貨を受け入れます。 通貨レートの設定について詳しくは、[通貨設定](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration)を参照してください。
 
 PayPalの商品やサービスで利用可能な通貨や支払い方法について詳しくは、次のページを参照してください。
 
-* [&#x200B; サポートされている通貨ドキュメント &#x200B;](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/)。
+* [ サポートされている通貨ドキュメント ](https://developer.paypal.com/reports/reference/supported-currencies)。
 
-* [支払い方法に関するドキュメント &#x200B;](https://developer.paypal.com/docs/checkout/payment-methods/)。
+* [支払い方法に関するドキュメント ](https://developer.paypal.com/payment-methods)。
