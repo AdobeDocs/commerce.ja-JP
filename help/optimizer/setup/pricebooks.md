@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 384
+source-wordcount: 405
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ ht-degree: 0%
 ## [!DNL Adobe Commerce Optimizer]の価格表を表示
 
 価格表を[!DNL Adobe Commerce Optimizer]に取り込むと、**カタログ ビュー** ページに価格表のリストと対応するIDが表示されます。
+
+>[!NOTE]
+>
+>プライベートカタログビュー（[!UICONTROL Catalog Protection]が有効なビュー）は、1つの価格表のみを参照できます。 プライベートカタログビューの[価格表の制限](private-catalog-view.md#price-book-restriction-on-private-catalog-views)を参照してください。
 
 1. _ストア設定_&#x200B;に移動し、**[!UICONTROL Catalog views]**&#x200B;をクリックします。
 
