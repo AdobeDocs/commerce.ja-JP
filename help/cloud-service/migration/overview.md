@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Commerce as a Cloud Service]に移行'
 description: ' [!DNL Adobe Commerce as a Cloud Service]への移行方法について説明します。'
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
@@ -73,15 +73,15 @@ ht-degree: 0%
 
 **主な違い**
 
-- [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
+- [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
 - **[!DNL Adobe Commerce on Cloud Infrastructure]**：マーチャントは、アプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。
 - **[!DNL Adobe Commerce]オンプレミス**：マーチャントは、Adobeのホスト環境で、アプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。
 
   >[!NOTE]
   >
-  >サービス（MySQL、Elasticsearchなど）の[共有責任モデル &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)。
+  >サービス（MySQL、Elasticsearchなど）の[共有責任モデル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/shared-responsibility)。
 
-- [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} **SaaS （新規 – [!DNL Adobe Commerce as a Cloud Service]）**: Adobeは、コアアプリケーション、インフラストラクチャ、およびアップデートを完全に管理します。 開発者は、拡張性ポイント（API、App Builder、UI SDK）によるカスタマイズに重点を置きます。 コアアプリケーションコードはロックされています。
+- [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} **SaaS （新規 – [!DNL Adobe Commerce as a Cloud Service]）**: Adobeは、コアアプリケーション、インフラストラクチャ、およびアップデートを完全に管理します。 開発者は、拡張性ポイント（API、App Builder、UI SDK）によるカスタマイズに重点を置きます。 コアアプリケーションコードはロックされています。
 
 **アーキテクチャへの影響**
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 - Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/)の[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)およびAPI メッシュ
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Edge 配信サービス](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- [Edge 配信サービス](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
 - [Commerce Cloud Manager](../getting-started.md#create-an-instance)を使用したセルフサービス プロビジョニング
 
 ### 移行のジャーニー
@@ -216,7 +216,7 @@ Commerce Developer MCPは、[移行評価](#migration-assessment-tool)の結果�
 
 ### ストアフロントの近代化
 
-フロントエンドでは、Commerce Developer MCPが、Adobe Commerce ボイラープレート、ドロップインコンポーネント、EDS ブロックを使用して、Commerce用Edge Delivery Services（EDS）の[&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/)を最新化します。
+フロントエンドでは、Commerce Developer MCPが、Adobe Commerce ボイラープレート、ドロップインコンポーネント、EDS ブロックを使用して、Commerce用Edge Delivery Services（EDS）の[&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)を最新化します。
 
 Commerce Developer MCPは、Commerceのボイラープレートに基づいて、既存のストアフロントプロジェクトを読み込みます。 次のような方法でストアフロントを近代化できます。
 
@@ -315,4 +315,4 @@ Commerce Data Migration Serviceは世界中の本番環境で稼働しており�
 
 ワークフロー、サポートされているデータ、検証について詳しくは、[一括データ移行ツール ガイド &#x200B;](bulk-data/migration-tool.md)のドキュメントを参照してください。
 
-ソース環境を準備するシステムインテグレーターは、標準の[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)と[Adobe Developer Console](https://developer.adobe.com)をIMS資格情報に使用することもできます。
+ソース環境を準備するシステムインテグレーターは、標準の[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)と[Adobe Developer Console](https://developer.adobe.com)をIMS資格情報に使用することもできます。

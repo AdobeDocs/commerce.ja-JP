@@ -2,7 +2,7 @@
 title: ADOBE COMMERCE App BuilderのAI コーディング開発者向けツール
 description: Commerce App Builder アプリケーションを作成するためのAI ツールの使用方法について説明します。
 feature: App Builder, Cloud
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:11:12.988Z'
@@ -349,7 +349,7 @@ AI コーディングツールを使用して開発する場合は、サンプ�
 * [統合スターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [チェックアウトスターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce starter kit テンプレート](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events スターターテンプレート](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events スターターテンプレート](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder サンプルアプリケーション](https://developer.adobe.com/app-builder/docs/resources/sample_apps/)
 
 #### なぜこれらのリソースを使うのか

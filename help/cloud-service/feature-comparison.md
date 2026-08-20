@@ -37,9 +37,9 @@ ht-degree: 0%
 
 Adobe Commerceには、次の3つのデプロイメントモデルがあります。
 
-- [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} [Adobe Commerce as a Cloud Service](overview.md) （SaaS）
-- [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"} [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) （PaaS）
-- [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) （オンプレミス）
+- [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} [Adobe Commerce as a Cloud Service](overview.md) （SaaS）
+- [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"} [Adobe Commerce on Cloud](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview) （PaaS）
+- [Adobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/overview) （オンプレミス）
 
 この比較では、SaaS （Software-as-a-Service）モデルとPaaS （Platform-as-a-Service）モデルの違いに焦点を当てています。 これらのモデルは、Commerceの導入に対してさまざまなレベルのカスタマイズ、拡張性、制御を提供します。
 
@@ -49,7 +49,7 @@ Adobe Commerceには、次の3つのデプロイメントモデルがありま�
 
 ## ストア管理機能
 
-[Commerce管理UI](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview)は、バックエンド ストアの操作、在庫、価格設定、プロモーション、顧客とのやり取りを管理する機能にアクセスするための主要なインターフェイスです。 ただし、[!DNL Adobe Commerce as a Cloud Service]では、[!DNL Adobe Commerce on Cloud]およびオンプレミス プロジェクトで利用できる既知の機能の一部を置き換える独自のソリューションを提供しています。
+[Commerce管理UI](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/guide-overview)は、バックエンド ストアの操作、在庫、価格設定、プロモーション、顧客とのやり取りを管理する機能にアクセスするための主要なインターフェイスです。 ただし、[!DNL Adobe Commerce as a Cloud Service]では、[!DNL Adobe Commerce on Cloud]およびオンプレミス プロジェクトで利用できる既知の機能の一部を置き換える独自のソリューションを提供しています。
 
 次の表は、[!DNL Adobe Commerce as a Cloud Service]で使用可能な機能と代替ソリューションを示しています。
 
@@ -57,29 +57,29 @@ Adobe Commerceには、次の3つのデプロイメントモデルがありま�
     <thead>
         <tr>
             <th>機能</th>
-            <th>PaaS モデル [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）およびオンプレミス プロジェクトにのみ適用されます。"}</th>
-            <th>SaaS モデル [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用（Adobeで管理されるSaaS インフラストラクチャ）"}</th>
+            <th>PaaS モデル [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）およびオンプレミス プロジェクトにのみ適用されます。"}</th>
+            <th>SaaS モデル [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用（Adobeで管理されるSaaS インフラストラクチャ）"}</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>デジタルアセット管理</td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">メディアギャラリー</a></td>
+            <td><a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">メディアギャラリー</a></td>
             <td><a href="../aem-assets-integration/overview.md">製品ビジュアル</a></td>
         </tr>
         <tr>
             <td>コンテンツ管理</td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview">Content Management System （CMS） </a>、<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview">Page Builder</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URLの書き換え</a></td>
-            <td><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/">ストアフロントビルダー</a></td>
+            <td><a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/guide-overview">Content Management System （CMS） </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/guide-overview">Page Builder</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URLの書き換え</a></td>
+            <td><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/?lang=ja">ストアフロントビルダー</a></td>
         </tr>
         <tr>
             <td>カタログマーチャンダイジング</td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging"> コンテンツのステージング </a>、<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser"> ビジュアルマーチャンダイザー</a></td>
+            <td><a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/staging/content-staging"> コンテンツのステージング </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser"> ビジュアルマーチャンダイザー</a></td>
             <td><a href="../catalog-service/overview.md">カタログサービス</a></td>
         </tr>
         <tr>
             <td>支払い</td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments">決済ソリューション</a></td>
+            <td><a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/payments/payments">決済ソリューション</a></td>
             <td><a href="../payment-services/guide-overview.md">決済サービス</a></td>
         </tr>
         <tr>
@@ -96,7 +96,7 @@ Adobe Commerceには、次の3つのデプロイメントモデルがありま�
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup>企業管理や見積もりなど、<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">B2Bのコア機能</a>は、SaaSですぐに利用できます。 ただし、業界固有のカスタマイズには、追加の実装に関する考慮事項が必要な場合があります。
+                <sup>1</sup>企業管理や見積もりなど、<a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/guide-overview">B2Bのコア機能</a>は、SaaSですぐに利用できます。 ただし、業界固有のカスタマイズには、追加の実装に関する考慮事項が必要な場合があります。
             </td>
         </tr>
     </tfoot>
@@ -110,8 +110,8 @@ Adobe Commerceには、次の3つのデプロイメントモデルがありま�
     <thead>
         <tr>
             <th>機能</th>
-            <th>PaaS モデル [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）およびオンプレミス プロジェクトにのみ適用されます。"}</th>
-            <th>SaaS モデル [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用（Adobeで管理されるSaaS インフラストラクチャ）"}</th>
+            <th>PaaS モデル [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）およびオンプレミス プロジェクトにのみ適用されます。"}</th>
+            <th>SaaS モデル [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクトにのみ適用（Adobeで管理されるSaaS インフラストラクチャ）"}</th>
         </tr>
     </thead>
     <tbody>
