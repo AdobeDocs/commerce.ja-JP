@@ -1,31 +1,15 @@
 ---
 title: 機会
 description: Adobe Sites Optimizerと統合することで、データにもとづいたスマートなサイト改善を実現し、トラフィック、エンゲージメント、コンバージョンを向上させる機会を特定できます。
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip=" [!DNL Adobe Commerce Optimizer] 件のプロジェクトにのみ適用されます（Adobeが管理するSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip=" [!DNL Adobe Commerce Optimizer] 件のプロジェクトにのみ適用されます（Adobeが管理するSaaS インフラストラクチャ）。"
 TQID: https://experienceleague.adobe.com/KQb7XtqY-4Qrt4B9fwn9w6u8yBjwsj4owArk53v6VHo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: 1445
+source-wordcount: 1448
 ht-degree: 0%
 
 ---
@@ -38,7 +22,7 @@ ht-degree: 0%
 
 ## オポチュニティとは？
 
-[商談](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)は、マーチャンダイザーがコマースサイトのパフォーマンスに影響を与える問題を特定して対処するのに役立つ、AIを活用したレコメンデーションです。 これらのレコメンデーションは、web サイトのパフォーマンスを分析および改善するクラウドベースのサービスである[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/home)によって提供されます。
+[商談](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)は、マーチャンダイザーがコマースサイトのパフォーマンスに影響を与える問題を特定して対処するのに役立つ、AIを活用したレコメンデーションです。 これらのレコメンデーションは、web サイトのパフォーマンスを分析および改善するクラウドベースのサービスである[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)によって提供されます。
 
 ## 主な能力
 
@@ -83,13 +67,13 @@ ht-degree: 0%
 自動検出によって最適化の機会を特定すると、次のことが可能になります。
 
 - 「**現在（アクティブ）**」タブで、提案された最適化を確認します。
-- [自動修正ワークフロー](#auto-fix-workflow) （サポート対象[商談タイプ &#x200B;](#supported-opportunity-types)の場合）を使用して、自動的に修正をデプロイします。
+- [自動修正ワークフロー](#auto-fix-workflow) （サポート対象[商談タイプ ](#supported-opportunity-types)の場合）を使用して、自動的に修正をデプロイします。
 - Commerce管理者で変更を手動で実装します。
 - ビジネス目標と合致しない機会は無視しましょう。
 
 ## ワークフローの自動修正
 
-この自動修正ワークフローにより、AI生成の最適化をワンクリックですばやくデプロイできます。 自動修正を適用すると、元の製品データを変更せずに特定の製品属性を上書きするカタログ最適化レイヤーが作成されます。 元の製品データは維持され、いつでも安全に最適化を適用して変更を元に戻すことができます。 詳しくは、[&#x200B; カタログレイヤーと自動修正](#how-catalog-layers-work-with-auto-fix)の連携の仕組みを参照してください。
+この自動修正ワークフローにより、AI生成の最適化をワンクリックですばやくデプロイできます。 自動修正を適用すると、元の製品データを変更せずに特定の製品属性を上書きするカタログ最適化レイヤーが作成されます。 元の製品データは維持され、いつでも安全に最適化を適用して変更を元に戻すことができます。 詳しくは、[ カタログレイヤーと自動修正](#how-catalog-layers-work-with-auto-fix)の連携の仕組みを参照してください。
 
 ### サポートされている機会タイプ
 
@@ -139,11 +123,11 @@ AIが提案した最適化を実装するには、次の手順に従います。
 
    >[!NOTE]
    >
-   >「**最適化をデプロイ**」ボタンは、[&#x200B; サポートされている提案タイプ &#x200B;](#supported-opportunity-types)でのみ使用できます。 サポートされていないタイプの場合、チェックボックスは無効になっており、カタログで手動で修正を適用する必要があります。
+   >「**最適化をデプロイ**」ボタンは、[ サポートされている提案タイプ ](#supported-opportunity-types)でのみ使用できます。 サポートされていないタイプの場合、チェックボックスは無効になっており、カタログで手動で修正を適用する必要があります。
 
 1. 「**Deploy optimization**」をクリックし、「**Deploy**」をクリックして、自動修正プロセスをトリガーします。
 
-   ![最適化のデプロイ &#x200B;](../assets/deploy-autofix.png)
+   ![最適化のデプロイ ](../assets/deploy-autofix.png)
 
    システムはバックグラウンドで次のアクションを実行します。
 
@@ -167,9 +151,9 @@ AIが提案した最適化を実装するには、次の手順に従います。
 
 ### カタログレイヤーの自動修正の仕組み
 
-Adobe Sites Optimizer レイヤーがカタログビューに存在しない場合、自動修正によって自動的にレイヤーが作成され、最優先度（最上位）として割り当てられます。 このレイヤーを削除すると、次に自動修正が実行されるときに再作成され、既存のレイヤーが下位の番号にシフトされます。 Adobe Sites Optimizer レイヤーが別の注文番号に既に存在する場合、自動修正は優先度を変えません。 自動修正レイヤーを保持したいが、すぐに使用しない場合は、レイヤーを無効にすることができます。 [&#x200B; カタログレイヤー](../setup/catalog-layer.md#manage-layer-activation-and-deletion)の管理方法について詳しくは、こちらを参照してください。
+Adobe Sites Optimizer レイヤーがカタログビューに存在しない場合、自動修正によって自動的にレイヤーが作成され、最優先度（最上位）として割り当てられます。 このレイヤーを削除すると、次に自動修正が実行されるときに再作成され、既存のレイヤーが下位の番号にシフトされます。 Adobe Sites Optimizer レイヤーが別の注文番号に既に存在する場合、自動修正は優先度を変えません。 自動修正レイヤーを保持したいが、すぐに使用しない場合は、レイヤーを無効にすることができます。 [ カタログレイヤー](../setup/catalog-layer.md#manage-layer-activation-and-deletion)の管理方法について詳しくは、こちらを参照してください。
 
-![&#x200B; カタログレイヤー](../assets/catalog-layers.png)
+![ カタログレイヤー](../assets/catalog-layers.png)
 
 この図は、**ASO Optimization**&#x200B;という1行を示しています。 このエントリは、自動修正を選択したすべての商談を表します。 1つの商談または複数の商談を自動修正するかどうかにかかわらず、それらはすべて、この1つの&#x200B;**ASO最適化**&#x200B;行に表示されます。 レイヤーは各カタログビューに固有であるため、ここに示す&#x200B;**ロサンゼルス** カタログビューは、そのビューがアクティブな場合にのみ&#x200B;**ASO最適化** レイヤーを適用します。
 
@@ -197,15 +181,15 @@ Adobe Sites Optimizer レイヤーがカタログビューに存在しない場�
 
 ## Sites Optimizerについて詳しく見る
 
-Sites Optimizerの機能と機能について詳しくは、[Adobe Experience Manager Sites Optimizer ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/home)を参照してください。
+Sites Optimizerの機能と機能について詳しくは、[Adobe Experience Manager Sites Optimizer ドキュメント ](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)を参照してください。
 
 関連トピックス：
 
-- [商談タイプ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/opportunities) – 使用可能な最適化商談について説明します。
-- [Sites Optimizerの機能](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/capabilities) - Sites Optimizerの機能について説明します。
+- [商談タイプ ](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) – 使用可能な最適化商談について説明します。
+- [Sites Optimizerの機能](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/basics) - Sites Optimizerの機能について説明します。
 
 ## その他
 
 - [成功指標](success-metrics.md) – 主要業績評価指標を監視します。
-- [検索パフォーマンス &#x200B;](search-performance.md) – 検索語を分析し、関連性を最適化します。
-- [&#x200B; レコメンデーション パフォーマンス &#x200B;](recommendation-performance.md) - レコメンデーションの有効性を監視します。
+- [検索パフォーマンス ](search-performance.md) – 検索語を分析し、関連性を最適化します。
+- [ レコメンデーション パフォーマンス ](recommendation-performance.md) - レコメンデーションの有効性を監視します。

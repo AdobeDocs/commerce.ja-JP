@@ -4,26 +4,20 @@ description: assets-commerce パッケージをデプロイし、AEM プロジ�
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: da3860b0-d637-47df-bef0-273751180266
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1741
+source-wordcount: 1744
 ht-degree: 1%
 
 ---
 
 # AEM Assets プロジェクトの設定
 
-ここでは、「AEM Assetsの名前空間」、「メタデータスキーマ」、「[!UICONTROL Commerce]」タブをAEM オーサリング環境で使用できるように、Commerce プロジェクトを設定する方法について説明します。 これらのリソースの背景については、[AEM AssetsのCommerce メタデータ &#x200B;](../metadata.md)を参照してください。
+ここでは、「AEM Assetsの名前空間」、「メタデータスキーマ」、「[!UICONTROL Commerce]」タブをAEM オーサリング環境で使用できるように、Commerce プロジェクトを設定する方法について説明します。 これらのリソースの背景については、[AEM AssetsのCommerce メタデータ ](../metadata.md)を参照してください。
 
 AEM Assets プロジェクトを設定するには、次の2つのオプションがあります。
 
@@ -37,13 +31,13 @@ AEM Assets プロジェクトを設定するには、次の2つのオプショ�
 
 ## Commerce統合（セルフサービス）を有効にする {#enable-aem-commerce-self-service}
 
-[!BADGE &#x200B; サポート対象]{type=Informative tooltip="サポート対象"} AEM リリース `2026.5.26309`以降。
+[!BADGE  サポート対象]{type=Informative tooltip="サポート対象"} AEM リリース `2026.5.26309`以降。
 
 サポートされているAEM リリースでは、カスタムコードをデプロイせずに、Cloud ManagerからのCommerce統合を有効にします。 Commerceの名前空間、メタデータスキーマ、および&#x200B;**[!UICONTROL Commerce]** タブは、オーサーサービスでの統合を有効にすると自動的にプロビジョニングされます。
 
 ### セルフサービスの前提条件
 
-* プログラムおよびデプロイメント マネージャーの役割を持つ[AEM Cloud Manager プログラムおよび環境](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)へのアクセス。
+* プログラムおよびデプロイメント マネージャーの役割を持つ[AEM Cloud Manager プログラムおよび環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)へのアクセス。
 
 * リリース `2026.5.26309`以降のAEM プログラム。
 
@@ -65,7 +59,7 @@ Cloud Managerでのプログラムの作成は、1つのウィザードプロセ
 
 1. **[!UICONTROL Add Environment]** ステップで、**実稼動**&#x200B;および&#x200B;**ステージング**&#x200B;環境の名前を入力し、地域を選択します。
 
-   ![実稼動環境とステージの詳細を含むCloud Manager Add environment ダイアログ &#x200B;](../assets/aem-cloud-manager-add-environment.png){width="600" zoomable="yes"}
+   ![実稼動環境とステージの詳細を含むCloud Manager Add environment ダイアログ ](../assets/aem-cloud-manager-add-environment.png){width="600" zoomable="yes"}
 
 1. 環境を使用してプログラムを作成するには、**[!UICONTROL Save]**&#x200B;を選択します。
 
@@ -94,7 +88,7 @@ Cloud Managerで、手順1で作成した環境を開き、次の操作を行い
 
 1. *OpenAPI機能の横にある*&#x200B;を選択します。**[!UICONTROL Click to activate]**
 
-   ![Dynamic Media OpenAPI アクティベーションリンクを表示する「環境一般」タブ &#x200B;](../assets/aem-cloud-manager-dynamic-media-activate.png){width="600" zoomable="yes"}
+   ![Dynamic Media OpenAPI アクティベーションリンクを表示する「環境一般」タブ ](../assets/aem-cloud-manager-dynamic-media-activate.png){width="600" zoomable="yes"}
 
    アクティベーションはバックグラウンドで実行されます。 完了すると、Commerceとの連携の準備が整います。
 
@@ -110,27 +104,27 @@ Cloud Managerで、手順1で作成した環境を開き、次の操作を行い
 
 >[!NOTE]
 >
-> カスタムパッケージコードをデプロイする場合や、`2026.5.26309`より前のAEM リリースを使用している場合は、この手動メソッドを使用します。 サポートされているリリースでは、代わりに[Commerce統合を有効にする（セルフサービス） &#x200B;](#enable-aem-commerce-self-service)を使用してください。
+> カスタムパッケージコードをデプロイする場合や、`2026.5.26309`より前のAEM リリースを使用している場合は、この手動メソッドを使用します。 サポートされているリリースでは、代わりに[Commerce統合を有効にする（セルフサービス） ](#enable-aem-commerce-self-service)を使用してください。
 
 ### 前提条件
 
 `assets-commerce` パッケージ コードをAEM Assets as a Cloud Service AEM環境にデプロイするには、次のリソースと権限が必要です。
 
-* プログラムおよびデプロイメント マネージャーの役割を持つ[AEM Assets Cloud Manager プログラムおよび環境](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)へのアクセス。
+* プログラムおよびデプロイメント マネージャーの役割を持つ[AEM Assets Cloud Manager プログラムおよび環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)へのアクセス。
 
-* [&#x200B; ローカル ローカル開発環境](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)と、AEM開発プロセスに関する知識。
+* [ ローカル ローカル開発環境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)と、AEM開発プロセスに関する知識。
 
 * [AEM プロジェクト構造](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)と、Cloud Managerを使用してカスタムコンテンツパッケージをデプロイする方法について説明します。
 
 * Commerce インスタンスの&#x200B;**IMS組織ID**。 Commerce インスタンスとAEM Assets オーサリング環境の両方が同じIMS組織にある必要があります。
 
-* OpenAPI機能を使用して[Dynamic Mediaを有効にするには](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis):
+* OpenAPI機能を使用して[Dynamic Mediaを有効にするには](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis):
 
 >[!BEGINTABS]
 
 >[!TAB 製品ビジュアル ]
 
-OpenAPI機能を備えた[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}のDynamic Mediaは、AEM Assetsを活用した商品ビジュアルのセルフサービスです。
+OpenAPI機能を備えた[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}のDynamic Mediaは、AEM Assetsを活用した商品ビジュアルのセルフサービスです。
 
 1. Cloud Managerに移動します。
 
@@ -146,12 +140,12 @@ OpenAPI機能を備えた[!BADGE SaaSのみ]{type=Positive url="https://experien
 
 * タイトル：Dynamic Media OpenAPIを有効にして、Adobe CommerceをAEM Assetsと完全に統合する
 
-   * サポートチケットの内容：
+  * サポートチケットの内容：
 
-      * **[!UICONTROL AEM Program ID]**
-      * **[!UICONTROL Adobe Commerce URL]**
-      * **[!UICONTROL AEM Environment ID]**
-      * **[!UICONTROL IMS Org ID]**
+    * **[!UICONTROL AEM Program ID]**
+    * **[!UICONTROL Adobe Commerce URL]**
+    * **[!UICONTROL AEM Environment ID]**
+    * **[!UICONTROL IMS Org ID]**
 
 サポートチケットを送信すると、AdobeはCloud Services環境でOpenAPI機能を備えたDynamic Mediaを有効にし、統合を進めるためにIMS Client IDなどの詳細を共有します。
 
@@ -159,17 +153,17 @@ OpenAPI機能を備えた[!BADGE SaaSのみ]{type=Positive url="https://experien
 
 ### インストール手順
 
-1. AEM Cloud Managerに移動し、プログラムを選択し、Adobe Commerceと統合する実稼動環境とステージング環境を[作成します](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)。
+1. AEM Cloud Managerに移動し、プログラムを選択し、Adobe Commerceと統合する実稼動環境とステージング環境を[作成します](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)。
 
-1. [選択したプログラムのAdobe管理Git リポジトリ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access)を複製します。
+1. [選択したプログラムのAdobe管理Git リポジトリ ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access)を複製します。
 
-   ![Cloud Manager リポジトリの資格情報とコピーコマンド &#x200B;](../assets/cloud-manager-repository-info.png){width="600" zoomable="yes"}
+   ![Cloud Manager リポジトリの資格情報とコピーコマンド ](../assets/cloud-manager-repository-info.png){width="600" zoomable="yes"}
 
    Cloud Manager **パイプライン**&#x200B;で、**[!UICONTROL Access Repo Info]**&#x200B;を選択して&#x200B;**[!UICONTROL Repository Info]**&#x200B;を開きます。 **[!UICONTROL URL]**&#x200B;または&#x200B;**[!UICONTROL Git command line]**&#x200B;の値をコピーし、必要に応じてアクセス パスワードを生成してから、Git クライアントとローカルにクローンを作成します。
 
-1. GitHubから、[AEM Assets Commerce リポジトリ &#x200B;](https://github.com/ankumalh/assets-commerce)からパッケージコードをダウンロードします。
+1. GitHubから、[AEM Assets Commerce リポジトリ ](https://github.com/ankumalh/assets-commerce)からパッケージコードをダウンロードします。
 
-1. [&#x200B; ローカルのAEM開発環境](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)から、ダウンロードしたコードを既存のAdobe管理リポジトリに手動でコピーします。
+1. [ ローカルのAEM開発環境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)から、ダウンロードしたコードを既存のAdobe管理リポジトリに手動でコピーします。
 
 1. プロジェクトのすべての`filter.xml`および`pom.xml` ファイルで、&lt;my-app>のすべての出現箇所をアプリ名に置き換えます。
 
@@ -179,13 +173,13 @@ OpenAPI機能を備えた[!BADGE SaaSのみ]{type=Positive url="https://experien
 
 1. 変更を確定し、ローカル開発ブランチをCloud Manager Git リポジトリにプッシュします。
 
-1. [&#x200B; デプロイメントパイプライン &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline)を設定するか、パイプラインが選択した環境に変更をデプロイできることを確認します。
+1. [ デプロイメントパイプライン ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline)を設定するか、パイプラインが選択した環境に変更をデプロイできることを確認します。
 
-   ![Cloud Manager パイプライン &#x200B;](../assets/cloud-manager-pipelines.png){width="600" zoomable="yes"}
+   ![Cloud Manager パイプライン ](../assets/cloud-manager-pipelines.png){width="600" zoomable="yes"}
 
    パイプラインが存在する場合、アクションメニュー（**...**）を開きます **[!UICONTROL Run]**、**[!UICONTROL Edit]**、**[!UICONTROL View/Edit variables]**&#x200B;またはその他のアクションへ – 上記のリンクされたCloud Manager パイプラインのドキュメントを参照してください。
 
-1. AEM Cloud Managerから、[&#x200B; パイプラインを使用してコードをデプロイし、AEM環境を更新します](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager)。
+1. AEM Cloud Managerから、[ パイプラインを使用してコードをデプロイし、AEM環境を更新します](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager)。
 
 1. 任意のアセットに移動し、そのプロパティを編集して変更を検証します。
 
@@ -209,7 +203,7 @@ OpenAPI機能を備えた[!BADGE SaaSのみ]{type=Positive url="https://experien
 
 1. **checkbox** コンポーネントを&#x200B;**Commerce** タブにドラッグ&amp;ドロップし、プロパティ `commerce:isCommerce`にマッピングします。 オプションとして&#x200B;**Yes**&#x200B;と&#x200B;**No**&#x200B;を定義します。
 
-その他の問題が発生した場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を作成するか、AEM Assets Integrationの営業担当者にお問い合わせください。
+その他の問題が発生した場合は、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を作成するか、AEM Assets Integrationの営業担当者にお問い合わせください。
 
 ## メタデータプロファイルの設定（オプション）
 
@@ -229,11 +223,11 @@ AEM Assets オーサー環境で、メタデータプロファイルを作成し
 
 1. Adobe Experience Manager ワークスペースから、「Adobe Experience Manager」アイコンをクリックして、AEM Assetsのコンテンツ管理ワークスペースを作成します。
 
-   ![AEM Assets オーサリング &#x200B;](../assets/aem-assets-authoring.png){width="600" zoomable="yes"}
+   ![AEM Assets オーサリング ](../assets/aem-assets-authoring.png){width="600" zoomable="yes"}
 
 1. ハンマーアイコンを選択して、管理者ツールを開きます。
 
-   ![AEM オーサー管理者管理メタデータプロファイル &#x200B;](../assets/aem-manage-metadata-profiles.png){width="600" zoomable="yes"}
+   ![AEM オーサー管理者管理メタデータプロファイル ](../assets/aem-manage-metadata-profiles.png){width="600" zoomable="yes"}
 
 1. **[!UICONTROL Metadata Profiles]**&#x200B;をクリックして、プロファイル設定ページを開きます。
 
@@ -267,7 +261,7 @@ AEM Assets オーサー環境で、メタデータプロファイルを作成し
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. オプション。 承認済みのCommerce アセットがAEM Assets環境にアップロードされるときに自動的に同期するには、`Basic` タブの&#x200B;_[!UICONTROL Review Status]_&#x200B;フィールドのデフォルト値を`approved`に設定します。
+1. オプション。 承認済みのCommerce アセットがAEM Assets環境にアップロードされるときに自動的に同期するには、`Basic` タブの&#x200B;_[!UICONTROL Review Status]_フィールドのデフォルト値を`approved`に設定します。
 
 1. アップデートを保存します。
 
@@ -285,6 +279,6 @@ AEM Assets オーサー環境で、メタデータプロファイルを作成し
 
 ## 次のステップ
 
-* [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} [Adobe Commerce パッケージをインストール &#x200B;](configure-commerce.md)。
+* [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} [Adobe Commerce パッケージをインストール ](configure-commerce.md)。
 
-* [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} [管理者](setup-synchronization.md)から統合を設定します。
+* [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} [管理者](setup-synchronization.md)から統合を設定します。

@@ -4,21 +4,15 @@ description: データ取り込みREST APIおよびストアフロントカタ�
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1522
+source-wordcount: 1506
 ht-degree: 0%
 
 ---
@@ -28,7 +22,7 @@ ht-degree: 0%
 次のリリースノートには、[!DNL Adobe Commerce Optimizer]の更新内容が記載されています。次の内容を含みます。
 
 * [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour)の新機能と機能強化。
-* ストアフロントカタログデータ取得[&#128279;](https://developer.adobe.com/commerce/services/reference/graphql/)用の[&#x200B; データ取り込みREST API](https://developer.adobe.com/commerce/services/reference/rest/)およびGraphQL APIを更新しました。
+* ストアフロントカタログデータ取得](https://developer.adobe.com/commerce/services/reference/graphql/)用の[ データ取り込みREST API](https://developer.adobe.com/commerce/services/reference/rest/)および[GraphQL APIを更新しました。
 
   {{aco-api-updates-and-dropins}}
 
@@ -69,7 +63,7 @@ _2026年6月24日_
 
 <!-- v1.3 -->
 
-![新規](../assets/new.svg) **新規`canEditQuantity` フィールド** - カタログサービス GraphQLで`canEditQuantity`を`ProductViewOptionValueProduct`に追加しました。 Commerce管理者からバンドル選択のオプションの&#x200B;**User Defined**&#x200B;数量設定を公開するので、ストアフロントコンシューマーはバンドル選択の数量が編集可能かどうかを判断できます。
+![新規](../assets/new.svg) **新規`canEditQuantity` フィールド** - カタログサービス GraphQLで`canEditQuantity`を`ProductViewOptionValueProduct`に追加しました。 Commerce管理者からバンドル選択のオプションの&#x200B;**User Defined**数量設定を公開するので、ストアフロントコンシューマーはバンドル選択の数量が編集可能かどうかを判断できます。
 <!--COMOPT-2050-->
 
 ### セマンティック検索
@@ -90,7 +84,7 @@ _2026年6月24日_
 
 ### インテリジェントなランキング向上
 
-検索の[&#x200B; マーチャンダイジングルール &#x200B;](./merchandising/rules/add.md#intelligent-ranking-boost)、デフォルトの製品リスト、および[&#x200B; カテゴリーページ &#x200B;](./merchandising/rules/add.md#rule-types)に&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;が含まれるようになりました。 **最も閲覧された**&#x200B;や&#x200B;**トレンド**&#x200B;などの戦略が、カテゴリーリストの検索や行動シグナルに対するテキストの関連性に関連して、商品の順序にどの程度影響を与えているかを調整できます。 ルールのプレビューに設定が反映されます。 ブーストはクエリ時に適用されるため、変更するときにカタログの再同期は必要ありません。
+検索の[ マーチャンダイジングルール ](./merchandising/rules/add.md#intelligent-ranking-boost)、デフォルトの製品リスト、および[ カテゴリーページ ](./merchandising/rules/add.md#rule-types)に&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;が含まれるようになりました。 **最も閲覧された**&#x200B;や&#x200B;**トレンド**&#x200B;などの戦略が、カテゴリーリストの検索や行動シグナルに対するテキストの関連性に関連して、商品の順序にどの程度影響を与えているかを調整できます。 ルールのプレビューに設定が反映されます。 ブーストはクエリ時に適用されるため、変更するときにカタログの再同期は必要ありません。
 
 ### APIの更新
 
@@ -101,7 +95,7 @@ _2026年5月28日_
 ![修正](../assets/fix.svg) **完全なナビゲーションツリー** - タグ付けされていない中間ノードがパスに存在する場合、タグ付けされた下位カテゴリが、ファミリーフィルター処理された`navigation` ツリーに正しく含まれるようになりました。 この修正により、買い物客はナビゲーション内のすべての関連カテゴリーを表示できるようになり、商品の閲覧と発見が簡単になりました。
 <!--DATA-7183-->
 
-![修正](../assets/fix.svg) **空のスラグ処理を`categoryTree`要求**&#x200B;で修正 – `slugs`引数に空の文字列が含まれていると、[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) クエリが内部サーバーエラーを返す問題を修正しました。 空のスラグ値は無視されるようになったため、ストアフロントと統合では、リクエストに失敗することなくカテゴリーデータを引き続き解決できます。
+![修正](../assets/fix.svg) **空のスラグ処理を`categoryTree`要求**&#x200B;で修正 – `slugs`引数に空の文字列が含まれていると、[`categoryTree`](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) クエリが内部サーバーエラーを返す問題を修正しました。 空のスラグ値は無視されるようになったため、ストアフロントと統合では、リクエストに失敗することなくカテゴリーデータを引き続き解決できます。
 <!--DATA-7184-->
 
 ![修正](../assets/fix.svg) **`searchCategory`要求は、大文字と小文字を区別しないアルファベット順の結果を返します** - `searchCategory` クエリは、大文字と小文字を区別せずに検索結果をアルファベット順に並べ替えるようになり、一貫性のある予測可能な順序を確保します。 接頭辞が短いカテゴリは、名前が同じ場合に最初に表示されます。
@@ -127,7 +121,7 @@ _2026年5月4日_
 
 ### カタログルール
 
-[&#x200B; カテゴリルール &#x200B;](./merchandising/rules/add.md)は、マーチャンダイジングルールを拡張して、検索と同じランキングとアクション（ピン、ブースト、埋め込み）を持つカテゴリページで、カテゴリをターゲットにして商品の順序を制御できるようにします。
+[ カテゴリルール ](./merchandising/rules/add.md)は、マーチャンダイジングルールを拡張して、検索と同じランキングとアクション（ピン、ブースト、埋め込み）を持つカテゴリページで、カテゴリをターゲットにして商品の順序を制御できるようにします。
 
 ### 価格フィルター（ベータ版）
 
@@ -139,7 +133,7 @@ _2026年4月29日_
 
 <!--v1.52 release-->
 
-**リクエストのバッチ処理が必要** — カタログデータを取得する場合、GraphQL APIは、リクエストごとに最大100個のSKUを適用するようになりました。 [文書化された制限と境界](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits#product-discovery)を参照してください。
+**リクエストのバッチ処理が必要** — カタログデータを取得する場合、GraphQL APIは、リクエストごとに最大100個のSKUを適用するようになりました。 [文書化された制限と境界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery)を参照してください。
 
 <!--DATA-7156-->
 
@@ -153,7 +147,7 @@ _2026年4月7日_
 
 <!--v1.50 release-->
 
-**より簡単なカテゴリ検索** — [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) クエリは`family`をオプションとして扱うため、ファミリーを指定せずにスラグでカテゴリを解決できます。
+**より簡単なカテゴリ検索** — [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) クエリは`family`をオプションとして扱うため、ファミリーを指定せずにスラグでカテゴリを解決できます。
 
 {{aco-release}}
 
@@ -183,7 +177,7 @@ _2026年3月24日_
 
 ### マーチャンダイジングルールとレコメンデーションのカタログビュー
 
-レコメンデーションユニットを[作成](./merchandising/recommendations/create.md)または[&#x200B; マーチャンダイジングルール &#x200B;](./merchandising/rules/add.md)するときに、カタログビューを指定できるようになりました。
+レコメンデーションユニットを[作成](./merchandising/recommendations/create.md)または[ マーチャンダイジングルール ](./merchandising/rules/add.md)するときに、カタログビューを指定できるようになりました。
 
 ### APIの更新
 
@@ -191,13 +185,13 @@ _2026年2月19日_
 
 <!--v1.48-->
 
-**ストアフロント用のカテゴリ コンテンツが充実** — [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) クエリで、ストアフロントがより充実したカテゴリ ページをレンダリングできるように、説明、画像、SEO メタタグが返されるようになりました。<!--DATA-6933-->
+**ストアフロント用のカテゴリ コンテンツが充実** — [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) クエリで、ストアフロントがより充実したカテゴリ ページをレンダリングできるように、説明、画像、SEO メタタグが返されるようになりました。<!--DATA-6933-->
 
 _2026年2月12日_
 
 <!--v1.49-->
 
-**カテゴリー別に商品データを強化** — GraphQL APIは[`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"} タイプを追加し、ラウンドトリップが少ないカテゴリー別に商品をクエリおよびフィルタリングできるようにします。
+**カテゴリー別に商品データを強化** — GraphQL APIは[`CategoryProductView`](https://developer.adobe.com/commerce/services/reference/graphql/#categoryproductview){target="blank"} タイプを追加し、ラウンドトリップが少ないカテゴリー別に商品をクエリおよびフィルタリングできるようにします。
 
 {{aco-release}}
 
@@ -213,7 +207,7 @@ _2026年2月12日_
 
 _2026年1月19日_
 
-* **より豊富なカテゴリがREST API**&#x200B;でサポートされるようになりました – [&#x200B; カテゴリ API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories)操作では、`families`に加えて`metaTags`、`images`、`description`のオプション値を受け入れることができるようになりました。これにより、カテゴリに対してより豊富なマーチャンダイジングとSEOの詳細を提供できます。
+* **より豊富なカテゴリがREST API**&#x200B;でサポートされるようになりました – [ カテゴリ API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories)操作では、`families`に加えて`metaTags`、`images`、`description`のオプション値を受け入れることができるようになりました。これにより、カテゴリに対してより豊富なマーチャンダイジングとSEOの詳細を提供できます。
 
 {{aco-release}}
 
@@ -231,7 +225,7 @@ _2026年1月19日_
 
 ### カタログレイヤー
 
-マーチャンダイザーは、[&#x200B; カタログレイヤー](./setup/catalog-layer.md)を使用して、ソースカタログを編集せずに商品データをオーバーレイし、レイヤーの優先度を管理し、Adobe Sites Optimizerの自動修正を使用できるようになりました。
+マーチャンダイザーは、[ カタログレイヤー](./setup/catalog-layer.md)を使用して、ソースカタログを編集せずに商品データをオーバーレイし、レイヤーの優先度を管理し、Adobe Sites Optimizerの自動修正を使用できるようになりました。
 
 {{aco-release}}
 
@@ -260,7 +254,7 @@ _2025年11月3日_
 * レイヤーマスクを使用したフィールドレベルのオーバーライドの制御
 * プレミアムなコンテンツレイヤー、季節ごとのコンテンツレイヤー、モバイルに最適化されたコンテンツレイヤーの使用
 
-GraphQL API スキーマが変更されていません。レイヤーは、既存の`products` クエリおよびリクエストヘッダーを通じて適用されます。 [&#x200B; カタログレイヤー](./setup/catalog-layer.md)を参照してください。
+GraphQL API スキーマが変更されていません。レイヤーは、既存の`products` クエリおよびリクエストヘッダーを通じて適用されます。 [ カタログレイヤー](./setup/catalog-layer.md)を参照してください。
 
 {{aco-release}}
 
@@ -289,17 +283,17 @@ GraphQL API スキーマが変更されていません。レイヤーは、既�
 
 ### 階層検索
 
-* **階層検索（GA）** – 商品検索で`startsWith`と`contains`の一致がサポートされるようになりました。 [階層検索と拡張検索タイプ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#layered-search-and-expansion-of-search-types)を参照してください。
+* **階層検索（GA）** – 商品検索で`startsWith`と`contains`の一致がサポートされるようになりました。 [階層検索と拡張検索タイプ ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#layered-search-and-expansion-of-search-types)を参照してください。
 
 ### APIの更新
 
 * _2025年10月17日_
 
-  **製品レイヤーの取り込みにREST API サポートを追加** — [&#x200B; カタログレイヤーAPI](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers)を使用して、特定のコンテキスト、ロケール、またはビジネス要件に対するベース製品データをカスタマイズおよび上書きします。 レイヤーを作成したら、[Adobe Commerce Optimizer Studio](./setup/catalog-layer.md).<!--DATA-6632-->から適用して管理できます
+  **製品レイヤーの取り込みにREST API サポートを追加** — [ カタログレイヤーAPI](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers)を使用して、特定のコンテキスト、ロケール、またはビジネス要件に対するベース製品データをカスタマイズおよび上書きします。 レイヤーを作成したら、[Adobe Commerce Optimizer Studio](./setup/catalog-layer.md).<!--DATA-6632-->から適用して管理できます
 
 * _2025年10月14日_
 
-  **プログラマティック カテゴリ ツリー** — REST （グローバルまたはチャネル固有）を介したナビゲーションとグループ化のためのカテゴリ ツリーを大規模に作成、更新、管理します。1つのツリーにつき最大10,000本のツリーと500個のカテゴリを含みます。 _カタログデータ取り込みREST API リファレンス_&#x200B;の[&#x200B; カテゴリ &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="blank"}を参照してください。<!--DCAT-2649-->
+  **プログラマティック カテゴリ ツリー** — REST （グローバルまたはチャネル固有）を介したナビゲーションとグループ化のためのカテゴリ ツリーを大規模に作成、更新、管理します。1つのツリーにつき最大10,000本のツリーと500個のカテゴリを含みます。 _カタログデータ取り込みREST API リファレンス_&#x200B;の[ カテゴリ ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="blank"}を参照してください。<!--DCAT-2649-->
 
 * _2025年10月8日_
 
@@ -319,7 +313,7 @@ GraphQL API スキーマが変更されていません。レイヤーは、既�
 
 _2025年9月23日_
 
-* **REST API**&#x200B;を使用してカテゴリを管理 – [&#x200B; カテゴリ API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories)を使用してカテゴリを作成および管理します。 カテゴリー製品を論理グループに整理し、スラグベースのパスを通じてネストされた階層をサポートします。 商品にカテゴリを割り当てたら、GraphQL `[navigation](https://developer.adobe.com/commerce/services/reference/graphql/#navigation)`および`[categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)` クエリを使用して商品を取得し、ストアフロントメニューとカテゴリーツリーをレンダリングします。<!--DCAT-2626-->
+* **REST API**&#x200B;を使用してカテゴリを管理 – [ カテゴリ API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createCategories)を使用してカテゴリを作成および管理します。 カテゴリー製品を論理グループに整理し、スラグベースのパスを通じてネストされた階層をサポートします。 商品にカテゴリを割り当てたら、GraphQL `[navigation](https://developer.adobe.com/commerce/services/reference/graphql/#navigation)`および`[categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)` クエリを使用して商品を取得し、ストアフロントメニューとカテゴリーツリーをレンダリングします。<!--DCAT-2626-->
 
 {{aco-release}}
 
@@ -333,14 +327,14 @@ _2025年9月23日_
 
 ### EU地域が利用可能になりました
 
-EU実稼動地域（**eu1**）は、IMS組織で使用できます。 Cloud Managerで[a [!DNL Commerce Optimizer]  インスタンス &#x200B;](./get-started.md#step-1-create-an-instance)を追加する場合、**[!UICONTROL Region]**&#x200B;として&#x200B;**[!UICONTROL European Union]**&#x200B;を選択します（実稼動環境のみ）。
+EU実稼動地域（**eu1**）は、IMS組織で使用できます。 Cloud Managerで[a [!DNL Commerce Optimizer]  インスタンス ](./get-started.md#step-1-create-an-instance)を追加する場合、**[!UICONTROL Region]**&#x200B;として&#x200B;**[!UICONTROL European Union]**&#x200B;を選択します（実稼動環境のみ）。
 
 欧州連合リージョンのベースの本番URLは次のとおりです。
 
 * 管理者：`https://eu1.admin.commerce.adobe.com`
 * RESTとGraphQL: `https://eu1.api.commerce.adobe.com`
 
-![地域フィールドを持つCloud Managerのインスタンス作成ダイアログ &#x200B;](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
+![地域フィールドを持つCloud Managerのインスタンス作成ダイアログ ](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
 
 {{aco-release}}
 

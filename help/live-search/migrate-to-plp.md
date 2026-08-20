@@ -2,30 +2,20 @@
 title: 検索アダプタからPLP Widgetへの移行
 description: 非推奨の検索アダプターから [!DNL Live Search] 製品リストページ ウィジェットに移行する方法について説明します。
 TQID: https://experienceleague.adobe.com/YAwhAbTVeYpGYKh4dTe1umcfgoRUOg8QPZNIiGFjKVo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 2102
+source-wordcount: 2105
 ht-degree: 0%
 
 ---
 
 # 検索アダプタからPLP ウィジェットへの移行
 
-検索アダプターは、[!DNL Live Search] 4.0.0時点で[非推奨](release-notes.md#live-search-400)となっています。 [製品リストページ （PLP） ウィジェット &#x200B;](plp-styling.md)は、今後[!DNL Live Search]のすべての実装でサポートされるソリューションです。 このガイドでは、移行が簡単な場合と、追加作業が必要な場合について説明します。
+検索アダプターは、[!DNL Live Search] 4.0.0時点で[非推奨](release-notes.md#live-search-400)となっています。 [製品リストページ （PLP） ウィジェット ](plp-styling.md)は、今後[!DNL Live Search]のすべての実装でサポートされるソリューションです。 このガイドでは、移行が簡単な場合と、追加作業が必要な場合について説明します。
 
 ## 前提条件
 
@@ -123,7 +113,7 @@ ht-degree: 0%
 - 独自のCDNでウィジェットのカスタムバージョンをホスティングする。
 - 検索機能のためのカスタムJavaScript拡張機能。
 
-実装にこれらのシナリオがある場合は、[複雑な移行シナリオ &#x200B;](#complex-migration-scenarios)を参照してください。
+実装にこれらのシナリオがある場合は、[複雑な移行シナリオ ](#complex-migration-scenarios)を参照してください。
 
 ## 標準的な移行手順
 
@@ -264,7 +254,7 @@ PLP ウィジェットは、[!DNL Live Search] 4.0.0以降の新規インスト�
    - Adobe JavaScriptのカスタムインタラクションのドキュメント化。
 
 1. **CSS ベースのカスタマイズへの移行**:
-   - PLP ウィジェットは特定のCSS クラスを使用します（[PLP スタイルガイド &#x200B;](plp-styling.md)を参照）。
+   - PLP ウィジェットは特定のCSS クラスを使用します（[PLP スタイルガイド ](plp-styling.md)を参照）。
    - PLP ウィジェット CSS クラスを使用してビジュアルカスタマイズを再作成します。
    - カスタムスタイルが正しく適用されるかどうかをテストします。
 
@@ -333,7 +323,7 @@ PLP ウィジェットは、[!DNL Live Search] 4.0.0以降の新規インスト�
 
 **選択肢3:GTMをAdobe Analyticsに置き換える**
 
-- 該当する場合は、[Adobe Analytics](https://business.adobe.com/jp/products/adobe-analytics.html)への移行を検討してください。
+- 該当する場合は、[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html)への移行を検討してください。
 - ガイダンスについては、カスタマーエンジニアリングにお問い合わせください。
 
 **お問い合わせ先**: GTM互換性の更新またはカスタマーエンジニアリングのサポートに関するサポートチケットを送信します。
@@ -345,9 +335,9 @@ PLP ウィジェットは、[!DNL Live Search] 4.0.0以降の新規インスト�
 **役割**：開発者/パートナー
 
 1. **参照実装を確認**:
-   - [PLP ウィジェットのソースコード &#x200B;](https://github.com/adobe/storefront-product-listing-page)を調べます。
+   - [PLP ウィジェットのソースコード ](https://github.com/adobe/storefront-product-listing-page)を調べます。
    - [[!DNL Live Search] GraphQL](graphql.md)のAPI ドキュメントを確認してください。
-   - [&#x200B; カタログサービスクエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)について説明します。
+   - [ カタログサービスクエリ ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)について説明します。
 
 1. **カスタム UIを実装**:
    - クエリに[!DNL Live Search] GraphQL APIを使用します。
@@ -356,13 +346,13 @@ PLP ウィジェットは、[!DNL Live Search] 4.0.0以降の新規インスト�
    - ページ分割と並べ替えを処理します。
 
 1. **イベントコレクションを実装**:
-   - [&#x200B; ストアフロントイベントのドキュメント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)を確認します。
+   - [ ストアフロントイベントのドキュメント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)を確認します。
    - 必要なイベントを実装します。
-      - `search-request-sent`
-      - `search-response-received`
-      - `search-results-view`
-      - `product-page-view`
-      - `add-to-cart`
+     - `search-request-sent`
+     - `search-response-received`
+     - `search-results-view`
+     - `product-page-view`
+     - `add-to-cart`
    - Adobe Commerceへのイベントデータフローをテストします。
 
 1. **ファセットの並べ替えを設定**:
@@ -394,7 +384,7 @@ PLP ウィジェットは、[!DNL Live Search] 4.0.0以降の新規インスト�
    - デフォルトのPLP ウィジェットの動作をテストします。
 
 1. **カスタムコードがまだ必要な場合**:
-   - [PLP ウィジェット リポジトリ &#x200B;](https://github.com/adobe/storefront-product-listing-page)を複製します。
+   - [PLP ウィジェット リポジトリ ](https://github.com/adobe/storefront-product-listing-page)を複製します。
    - カスタマイズ機能の実装。
    - 自社のCDNでホストする。
    - カスタムウィジェットを使用するようにCommerce設定を更新します。
@@ -434,7 +424,7 @@ PLP ウィジェットは、[!DNL Live Search] 4.0.0以降の新規インスト�
 
 **互換性の問題**:
 
-- Google Tag Managerの互換性の問題（[GTM シナリオ &#x200B;](#google-tag-manager-gtm-integration)を参照）。
+- Google Tag Managerの互換性の問題（[GTM シナリオ ](#google-tag-manager-gtm-integration)を参照）。
 - 一部のサードパーティの拡張機能は、PLP ウィジェットと競合する可能性があります。
 - カスタムチェックアウト拡張機能には更新が必要な場合があります。
 
@@ -458,7 +448,7 @@ PLP ウィジェットは、[!DNL Live Search] 4.0.0以降の新規インスト�
 - ヘッドレスおよびPWAの導入
 - カスタムイベントトラッキング
 
-Adobe サポートにお問い合わせするには、[&#x200B; ヘルプセンターユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)を参照してください。
+Adobe サポートにお問い合わせするには、[ ヘルプセンターユーザーガイド ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を参照してください。
 
 ## FAQ
 

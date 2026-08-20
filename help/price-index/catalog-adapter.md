@@ -5,14 +5,10 @@ seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
 exl-id: e42101fa-9c30-482c-a649-44dc35376abb
 TQID: https://experienceleague.adobe.com/WnL4dJbZV0acHT5kpEAOyTVjhzW23RjHbQFVdDl4HDk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
 source-wordcount: 775
 ht-degree: 0%
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 # カタログアダプタ
 
-`[!DNL Catalog Adapter]`拡張機能は、Commerce アプリケーションに含まれるデフォルトの製品価格インデクサーを無効にし、代わりに[&#x200B; カタログサービス &#x200B;](../catalog-service/overview.md)が提供する価格を使用します。
+`[!DNL Catalog Adapter]`拡張機能は、Commerce アプリケーションに含まれるデフォルトの製品価格インデクサーを無効にし、代わりに[ カタログサービス ](../catalog-service/overview.md)が提供する価格を使用します。
 
 アダプターは、[SaaS データ書き出し](../data-export/overview.md)およびAdobe Commerce サービスと連携するように設計されています。 SaaS データ書き出しは価格の送信を担当し、[!DNL Catalog Adapter]はAdobe Commerce サービスからすべての価格を取得します。
 
@@ -37,7 +33,7 @@ ht-degree: 0%
 
 ## 要件定義
 
-- [Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) 2.4.4以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}を参照してください。
+- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}を参照してください。
 - Adobe Commerce環境では、次のいずれかのCommerce サービスを有効にして設定する必要があります。
 
   - [ライブサーチ](../live-search/install.md)
@@ -64,7 +60,7 @@ Commerce Cloud インスタンスの[!DNL Catalog Adapter]をインストール�
 
    >[!NOTE]
    >
-   >Commerce プロジェクト環境のローカル管理について詳しくは、_Adobe Commerce on Cloud Infrastructure ユーザーガイド_&#x200B;の「[CLIを使用した分岐の管理](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/cli-branches)」を参照してください。
+   >Commerce プロジェクト環境のローカル管理について詳しくは、_Adobe Commerce on Cloud Infrastructure ユーザーガイド_&#x200B;の「[CLIを使用した分岐の管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/cli-branches)」を参照してください。
 
 1. Adobe Commerce Cloud CLIを使用して更新する環境ブランチを確認します。
 
@@ -94,7 +90,7 @@ Commerce Cloud インスタンスの[!DNL Catalog Adapter]をインストール�
    git push origin <branch-name>
    ```
 
-   更新をクラウド環境にプッシュすると、[Commerce クラウド デプロイメント プロセス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/deploy/process)が開始され、変更が適用されます。 [&#x200B; デプロイ ログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)のデプロイメント ステータスを確認します。
+   更新をクラウド環境にプッシュすると、[Commerce クラウド デプロイメント プロセス ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process)が開始され、変更が適用されます。 [ デプロイ ログ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)のデプロイメント ステータスを確認します。
 
 >[!TAB  オンプレミス ]
 

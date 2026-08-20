@@ -2,11 +2,11 @@
 title: ログの表示と管理
 description: Commerce向けAEM Assets統合のログを検索および管理する場所について説明します。
 feature: CMS, Media, Integration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 exl-id: 9c6c8694-6ded-4cc8-a3ab-d1dfb50e3583
-source-git-commit: d425bad4d3314aa0e14b639ffb8d89dd8b6b0f74
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -22,5 +22,5 @@ AEM Assets統合では、Commerce インスタンスに次のログファイル�
 
 システム管理者に、これらのログのログファイルのローテーションスケジュールを確認して、サイズが大きすぎないようにしてください。 一部の環境では、ログが自動的に回転します。また、ログの回転を手動で設定する必要がある環境もあります。  詳しくは、次のトピックを参照してください。
 
-- Adobe Commerce オンプレミスのインストールの場合は、システム管理者に[&#x200B; ログローテーション &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=ja#server-settings)の設定を依頼します。
-- クラウドインフラストラクチャプロジェクト上のAdobe Commerceについては、[&#x200B; ログの表示と管理](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=ja)を参照してください。
+- Adobe Commerce オンプレミスのインストールの場合は、システム管理者に[ ログローテーション ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration#server-settings)の設定を依頼します。
+- クラウドインフラストラクチャプロジェクト上のAdobe Commerceについては、[ ログの表示と管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations)を参照してください。

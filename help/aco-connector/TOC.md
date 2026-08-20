@@ -5,9 +5,9 @@ user-guide-description: このガイドでは、 [!DNL Adobe Commerce Optimizer 
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
 nudge: true
-source-git-commit: 83120d472ea7838a255c7767cd0bbe9085dff013
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '69'
+source-wordcount: '70'
 ht-degree: 5%
 
 ---
@@ -29,4 +29,4 @@ ht-degree: 5%
   - [コネクタフィードのフィールドマッピング](reference/field-mapping.md)
   - [データ量と同期時間の推定](reference/estimate-data-volume-sync-time.md)
 - [リリースノート](release-notes.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

@@ -2,31 +2,18 @@
 title: セキュリティの概要
 description: Adobe Commerce as a Cloud Serviceのセキュリティ機能について説明します。
 role: Admin, Developer, Leader
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 autotag-review: '2026-06-18T16:18:52.695Z'
 TQID: 'https://experienceleague.adobe.com/AmkzZgLeOa9zJkPE8kWM6lFcFNtBAAOmJeULI-y4gOw'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 581
+source-wordcount: 577
 ht-degree: 0%
 
 ---
@@ -38,7 +25,7 @@ ht-degree: 0%
 
 従来のPaaS モデルとは異なり、SaaS モデルは、手作業によるパッチ適用、インフラのメンテナンス、アップグレードサイクルなどの負担を排除します。 Adobeで管理されているインフラストラクチャから、自動化されたデプロイメントパイプライン、ID管理、アクセス管理[!DNL Adobe IMS]に至るまで、プラットフォームのあらゆるレイヤーにセキュリティが組み込まれています。
 
-[!DNL Adobe Commerce as a Cloud Service]は、Adobeのグローバルなセキュリティおよびコンプライアンスフレームワークを活用し、ISO 27001、SOC 2、GDPRなどの業界標準との整合性を確保します。 お客様は、プラットフォームのセキュリティを確保する上でのAdobeの役割と、データとアクセスの管理における顧客の役割を明確に示す[共有責任モデル &#x200B;](./shared-responsibility.md)を利用できます。
+[!DNL Adobe Commerce as a Cloud Service]は、Adobeのグローバルなセキュリティおよびコンプライアンスフレームワークを活用し、ISO 27001、SOC 2、GDPRなどの業界標準との整合性を確保します。 お客様は、プラットフォームのセキュリティを確保する上でのAdobeの役割と、データとアクセスの管理における顧客の役割を明確に示す[共有責任モデル ](./shared-responsibility.md)を利用できます。
 
 Web Application Firewall （WAF）、DDoSの緩和策、セキュアなプロビジョニング、継続的な脆弱性スキャンなどの組み込みの保護機能により、[!DNL Adobe Commerce as a Cloud Service]はセキュリティを損なうことなく、より迅速にイノベーションを進めることができます。
 
@@ -58,7 +45,7 @@ Commerceを活用したストアフロントを保護するために、Adobeで�
 
 [!DNL API Mesh]のCDN レイヤーはTLSを終了し、GraphQL ゲートウェイをWorkerとして実行し、グローバル エッジ キャッシュと自動DDoS/WAFを提供し、パブリック メッシュ エンドポイントとして`edge‑graph.adobe.io`/`edge‑sandbox‑graph.adobe.io`を公開します。お客様は自分のCDNを前面に追加できますが、[!DNL API Mesh]のCDNはAdobeによって修正および管理され、お客様は自分のWAF ルールを設定できません。
 
-[!DNL API Mesh]のセキュリティ機能について詳しくは、[API Mesh ドキュメント &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/security/){target="_blank"}を参照してください。
+[!DNL API Mesh]のセキュリティ機能について詳しくは、[API Mesh ドキュメント ](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}を参照してください。
 
 ### バックエンド CDN
 
@@ -85,8 +72,8 @@ WAFとCDNは[!DNL Adobe Commerce as a Cloud Service] プラットフォームに
 
 ## データの保存と暗号化
 
-データが[!DNL App Builder]に保存されている場合、マーチャントは[!DNL App Builder] [&#x200B; ストレージオプション &#x200B;](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)を参照できます。 [!DNL App Builder]では、テナントの分離が適用され、これらのサービスに保存されているデータへのアクセスは、アクションが実行されるランタイム名前空間に制限されます。 ストレージ内のデータは暗号化されません。
+データが[!DNL App Builder]に保存されている場合、マーチャントは[!DNL App Builder] [ ストレージオプション ](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)を参照できます。 [!DNL App Builder]では、テナントの分離が適用され、これらのサービスに保存されているデータへのアクセスは、アクションが実行されるランタイム名前空間に制限されます。 ストレージ内のデータは暗号化されません。
 
-[!DNL API Mesh]を使用する場合、シークレットはメッシュ設定の`secrets.yaml` ファイルに保存する必要があります。 [!DNL API Mesh]は、AES-256暗号化（[https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/)）を使用してこれらのシークレットを暗号化します。
+[!DNL API Mesh]を使用する場合、シークレットはメッシュ設定の`secrets.yaml` ファイルに保存する必要があります。 [!DNL API Mesh]は、AES-256暗号化を使用してこれらのシークレットを暗号化します（[API Mesh ドキュメント ](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}を参照）。
 
 [!DNL Adobe Commerce as a Cloud Service]に保存されているデータはすべて、AES 256 ビットの暗号化を使用して保存中に暗号化され、すべてのデータは、転送中にTLS 1.2以降を使用してHTTPS経由で暗号化されます。

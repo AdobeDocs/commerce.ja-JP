@@ -3,9 +3,9 @@ title: ' [!DNL Payment Services]でのチェックアウト'
 description: 顧客のニーズに合わせて [!DNL Payment Services]  チェックアウトをカスタマイズします。
 feature: Payments, Checkout, Paas, Saas
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Payment Services]でのチェックアウト
 
-買い物客に最適なAdobe Commerce [!DNL Payment Services]のチェックアウトを設定できます。 [注文自動無効化](#order-auto-voided-if-error)や[&#x200B; クレジットカードの保管](#credit-card-vaulting)などの機能により、買い物客にスムーズなユーザーエクスペリエンスを提供できます。
+買い物客に最適なAdobe Commerce [!DNL Payment Services]のチェックアウトを設定できます。 [注文自動無効化](#order-auto-voided-if-error)や[ クレジットカードの保管](#credit-card-vaulting)などの機能により、買い物客にスムーズなユーザーエクスペリエンスを提供できます。
 
 ## エラーが発生した場合は自動的に無効化される注文
 
@@ -21,9 +21,9 @@ ht-degree: 0%
 
 買い物客のチェックアウトページにエラーメッセージが表示されます。 メッセージは異なる場合があります。
 
-チェックアウト中に![&#x200B; エラー](assets/user-checkout-error.png " チェックアウト中にエラー"){width="600" zoomable="yes"}が発生しました
+チェックアウト中に![ エラー](assets/user-checkout-error.png " チェックアウト中にエラー"){width="600" zoomable="yes"}が発生しました
 
-キャンセルされた注文に関するコメントは、特定の[注文](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=ja)の管理画面にも表示されます。
+キャンセルされた注文に関するコメントは、特定の[注文](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en)の管理画面にも表示されます。
 
 ![注文の管理者の注文コメントをキャンセルしました](assets/admin-checkout-error.png "注文の管理者の注文コメントをキャンセルしました"){width="600" zoomable="yes"}
 
@@ -46,4 +46,4 @@ ht-degree: 0%
 
 買い物客は、web サイトレベル（同じ加盟店アカウント内の任意の店舗）で今後の購入のためにクレジットカード情報を保管（または「保存」）できます。
 
-詳しくは、[&#x200B; クレジットカードの保管](vaulting.md)を参照してください
+詳しくは、[ クレジットカードの保管](vaulting.md)を参照してください

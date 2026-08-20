@@ -7,9 +7,9 @@ role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
 nudge: true
-source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '117'
 ht-degree: 2%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 2%
 # Commerce用[!DNL Payment Services] {#payment-services}
 
 - [ガイド概要](guide-overview.md)
-- [&#x200B; [!DNL Payment Services]の概要](introduction.md)
-- [&#x200B; [!DNL Payment Services]の互換性](compatibility.md)
+- [ [!DNL Payment Services]の概要](introduction.md)
+- [ [!DNL Payment Services]の互換性](compatibility.md)
 - [リリースノート](release-notes.md)
 - [!DNL Payment Services]のオンボード {#get-started}
   - [オンボーディングの概要](onboard.md)
-  - [&#x200B; [!DNL Payment Services] 拡張機能のインストール](install.md)
+  - [ [!DNL Payment Services] 拡張機能のインストール](install.md)
   - [インスタンスの接続](connect.md)
   - [テストサンドボックスの設定](sandbox.md)
   - [実稼動用に有効](production.md)
@@ -36,13 +36,13 @@ ht-degree: 2%
 - 支払いとチェックアウト {#payments-checkout}
   - [支払い方法](payments-options.md)
   - [クレジットカードの保管](vaulting.md)
-  - [&#x200B; [!DNL Payment Services]でのチェックアウト](checkout.md)
+  - [ [!DNL Payment Services]でのチェックアウト](checkout.md)
   - 決済を管理 {#manage}
-    - [&#x200B; [!DNL Payment Services]の行項目](line-items.md)
+    - [ [!DNL Payment Services]の行項目](line-items.md)
     - [返金](refunds.md)
     - [ボイド](voids.md)
   - [管理画面で注文を作成する](create-order.md)
-  - [&#x200B; [!DNL Payment Services]での配送を追跡しています](track-shipment.md)
+  - [ [!DNL Payment Services]での配送を追跡しています](track-shipment.md)
 - Financial Reporting {#financial-reports}
   - [レポート](reporting.md)
   - [注文支払い状況レポート](order-payment-status.md)
@@ -52,4 +52,4 @@ ht-degree: 2%
 - セキュリティとコンプライアンス {#security-compliance}
   - [セキュリティ](security.md)
   - [重要な不正利用防止](fraud-protection.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=ja)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
