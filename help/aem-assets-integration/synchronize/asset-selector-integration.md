@@ -4,10 +4,16 @@ description: Commerceに統合されたAEM Asset Selectorを利用して、マ�
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
 TQID: https://experienceleague.adobe.com/3fYabUvRiY8KTxQX1YiTBbLxABpQqfZLu0a6IBDsM3E
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: da3860b0-d637-47df-bef0-273751180266
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: da3860b0-d637-47df-bef0-273751180266
 source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
 source-wordcount: 397
@@ -29,7 +35,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> AEM Asset Selectorは、AEMとオーサリングアプリケーションを統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、*AEM as a Cloud Service ユーザーガイド*&#x200B;の[ マイクロフロントエンドアセットセレクター](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications){target=_blank}を参照してください。
+> AEM Asset Selectorは、AEMとオーサリングアプリケーションを統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、*AEM as a Cloud Service ユーザーガイド*&#x200B;の[&#x200B; マイクロフロントエンドアセットセレクター](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications){target=_blank}を参照してください。
 
 ## 主な特長
 
@@ -43,13 +49,13 @@ Adobe Commerce管理パネルにAEM Asset Selectorを組み込むと、次のよ
 
 * **コンテンツ品質の向上** – 製品ページ、カテゴリ、ページビルダー全体で、高解像度で最適化された画像を使用します。
 
-![ アセットセレクター](../assets/asset-selector.png){width="600" zoomable="yes"}
+![&#x200B; アセットセレクター](../assets/asset-selector.png){width="600" zoomable="yes"}
 
 ## Adobe CommerceでのAEM Asset Selectorの設定
 
 1. Commerce管理者から、**[!UICONTROL Store]** / 設定/ **[!UICONTROL ADOBE SERVICES]** / **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
 
-1. **[!UICONTROL IMS Client ID]** フィールドに入力します。 必要な権限と、このIDの取得方法については、[ ユーザー権限とIMS](../get-started/permissions.md)を参照してください。
+1. **[!UICONTROL IMS Client ID]** フィールドに入力します。 必要な権限と、このIDの取得方法については、[&#x200B; ユーザー権限とIMS](../get-started/permissions.md)を参照してください。
 
 1. **設定を保存**&#x200B;します。
 

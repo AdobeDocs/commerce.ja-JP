@@ -5,10 +5,16 @@ feature: CMS, Media
 badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
 TQID: https://experienceleague.adobe.com/z4WBMzUa6Jn8EjUH1e5oojV4I3bTDZJylwtQ7LZ4wPE
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 1675
@@ -42,9 +48,9 @@ AEM AssetsとのCommerce統合を有効にするには、次の役割と権限�
 
 Adobe Commerce パッケージをインストールし、次のタスクを実行してCommerce環境を準備します。
 
-1. [Commerce向けAEM Assets統合の拡張機能（`aem-assets-integration`） ](#install-the-aem-assets-integration-extension)をインストールします。
+1. [Commerce向けAEM Assets統合の拡張機能（`aem-assets-integration`） &#x200B;](#install-the-aem-assets-integration-extension)をインストールします。
 
-1. [Commerce サービス コネクタ ](#configure-the-commerce-services-connector)を設定して、Adobe Commerce インスタンスと、Adobe CommerceとAEM Assets間でデータを転送できるサービスを接続します。
+1. [Commerce サービス コネクタ &#x200B;](#configure-the-commerce-services-connector)を設定して、Adobe Commerce インスタンスと、Adobe CommerceとAEM Assets間でデータを転送できるサービスを接続します。
 
 1. [Commerce用Adobe I/O Eventsの設定](#configure-adobe-io-events-for-commerce)
 
@@ -94,7 +100,7 @@ Commerce Cloud インスタンスに[!DNL AEM Assets Integration]拡張機能を
    git push origin <branch-name>
    ```
 
-   更新をプッシュすると、[Commerce クラウド デプロイメント プロセス ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process)が開始され、変更が適用されます。 [ デプロイ ログ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)のデプロイメント ステータスを確認します。
+   更新をプッシュすると、[Commerce クラウド デプロイメント プロセス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process)が開始され、変更が適用されます。 [&#x200B; デプロイ ログ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)のデプロイメント ステータスを確認します。
 
 >[!TAB  オンプレミス ]
 
@@ -134,7 +140,7 @@ Commerce Cloud インスタンスに[!DNL AEM Assets Integration]拡張機能を
 
 >[!NOTE]
 >
-> Commerce Services Connectorのセットアップは、[Adobe Commerce SaaS サービス ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices)を使用するために必要な1回限りのプロセスです。 別のサービス用にコネクタを既に設定している場合は、**[!UICONTROL Systems]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**&#x200B;を選択して、Commerce管理者から既存の設定を表示できます。
+> Commerce Services Connectorのセットアップは、[Adobe Commerce SaaS サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices)を使用するために必要な1回限りのプロセスです。 別のサービス用にコネクタを既に設定している場合は、**[!UICONTROL Systems]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**&#x200B;を選択して、Commerce管理者から既存の設定を表示できます。
 
 Adobe Commerce インスタンスと、AEM Assets統合を有効にするサービスとの間でデータを転送するには、管理者（**[!UICONTROL System]** > [!UICONTROL Services] > **[!UICONTROL Commerce Services Connector]**）からCommerce Services Connectorを設定します。
 
@@ -146,7 +152,7 @@ AEM Assets統合用の![SaaS プロジェクトとデータスペース ID](../a
 - セキュアクラウドストレージのデータスペース名（SaaS識別子）
 - COMMERCEおよびAEM Assets環境がプロビジョニングされるIMS組織ID
 
-詳細な手順については、[Commerce Services Connector](../../landing/saas.md#organizationid) ドキュメントの[Commerce Services Connector設定ビデオ ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)を参照してください。
+詳細な手順については、[Commerce Services Connector](../../landing/saas.md#organizationid) ドキュメントの[Commerce Services Connector設定ビデオ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)を参照してください。
 
 設定を保存すると、システムは環境用のSaaS プロジェクトとデータベース IDを生成します。 これらの値は、Adobe CommerceとAEM Assets間のアセットの同期を有効にするために必要です。
 
@@ -210,15 +216,15 @@ Commerce管理者からイベントフレームワークを有効にします。
 
 - `name`: VCL スニペットの名前。 この例では、名前`blockbyuseragent`を使用しています。
 
-- `dynamic`: スニペットのバージョンを設定します。 この例では、`0`を使用しています。 データモデルの詳細については、[Fastly VCL スニペット ](https://www.fastly.com/documentation/reference/api/vcl-services/snippet/)を参照してください。
+- `dynamic`: スニペットのバージョンを設定します。 この例では、`0`を使用しています。 データモデルの詳細については、[Fastly VCL スニペット &#x200B;](https://www.fastly.com/documentation/reference/api/vcl-services/snippet/)を参照してください。
 
-- `type`：生成されたVCL コード内のスニペットの場所を決定するVCL スニペットのタイプを指定します。 この例では、`recv`を使用しています。 スニペットの種類のリストについては、[Fastly VCL スニペットのリファレンス ](https://www.fastly.com/documentation/reference/api/#api-section-snippet)を参照してください。
+- `type`：生成されたVCL コード内のスニペットの場所を決定するVCL スニペットのタイプを指定します。 この例では、`recv`を使用しています。 スニペットの種類のリストについては、[Fastly VCL スニペットのリファレンス &#x200B;](https://www.fastly.com/documentation/reference/api/#api-section-snippet)を参照してください。
 
 - `priority`: VCL スニペットが実行されるタイミングを決定します。 この例では、優先度`5`を使用して即座に実行し、管理者リクエストが許可されたIP アドレスから送信されているかどうかを確認します。
 
 - `content`：実行するVCL コードのスニペット。クライアント IP アドレスを確認します。 IPがEdge ACL内にある場合、web サイト全体に`405 Not allowed` エラーが発生してアクセスがブロックされます。 他のすべてのクライアント IP アドレスにアクセスが許可されます。
 
-VCL スニペットを使用して着信リクエストをブロックする方法について詳しくは、_Commerce on Cloud Infrastructure ガイド_&#x200B;の「[ リクエストをブロックするためのカスタム VCL](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)」を参照してください。
+VCL スニペットを使用して着信リクエストをブロックする方法について詳しくは、_Commerce on Cloud Infrastructure ガイド_&#x200B;の「[&#x200B; リクエストをブロックするためのカスタム VCL](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)」を参照してください。
 
 >[!ENDSHADEBOX]
 

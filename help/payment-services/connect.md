@@ -20,7 +20,7 @@ API キーと秘密鍵を使用してCommerce インスタンスを接続し、[
 
 >[!INFO]
 >
-> 詳しくは、[[!DNL Adobe Commerce]  サービスコネクタ ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)のビデオを参照してください。
+> 詳しくは、[[!DNL Adobe Commerce]  サービスコネクタ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)のビデオを参照してください。
 
 * *すでにインスタンスを接続している場合*、API資格情報を取得して使用し、Commerce サービスを設定することで、テストサンドボックスの設定[に進むことができます](sandbox.md)。
 * まだ&#x200B;*インスタンスを接続する必要がある場合*&#x200B;は、[API資格情報の取得](#obtain-api-credentials)および[Commerce サービスの設定](#configure-commerce-services)に関するこのトピックの情報を参照してください。
@@ -32,7 +32,7 @@ API キーと秘密鍵を使用してCommerce インスタンスを接続し、[
 
 ## API資格情報の取得
 
-Commerce SaaS サービスを利用するには、インスタンスのAPI キー（Commerceの公開API キーと秘密鍵）をサンドボックスと実稼動環境の両方に使用する必要があります。サンドボックスと実稼動環境は、[ マイアカウントダッシュボード ](https://account.magento.com/customer/account/login)で作成および管理されます。 [ キーペア ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)は、Commerce アカウント（サンドボックス用と実稼動用）に作成できますが、一度にアクティブに使用できるのは1つのペアのみです。
+Commerce SaaS サービスを利用するには、インスタンスのAPI キー（Commerceの公開API キーと秘密鍵）をサンドボックスと実稼動環境の両方に使用する必要があります。サンドボックスと実稼動環境は、[&#x200B; マイアカウントダッシュボード &#x200B;](https://account.magento.com/customer/account/login)で作成および管理されます。 [&#x200B; キーペア &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)は、Commerce アカウント（サンドボックス用と実稼動用）に作成できますが、一度にアクティブに使用できるのは1つのペアのみです。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Commerce SaaS サービスを利用するには、インスタンスのAPI キ�
 
 API キーが失われた場合は、新しいAPI キーペアを[生成](../landing/saas.md#genapikey)し、[適用](../landing/saas.md#createsaasenv)してAdminのCommerce Services Connector設定にする必要があります。 誤ったキーが設定されているか、設定に存在しない場合は、アカウントが確認されていないことを通知するアカウント確認エラーダイアログがPayment Servicesに表示されます。
 
-API](../landing/saas.md#availableservices)を使用する利用可能なCommerce サービスの[一覧を参照してください。
+API[&#128279;](../landing/saas.md#availableservices)を使用する利用可能なCommerce サービスの一覧を参照してください。
 
 サンドボックス環境または実稼動環境のAPI キーを生成する方法については、[資格情報](../landing/saas.md#apikey)を参照してください。
 
@@ -54,7 +54,7 @@ API](../landing/saas.md#availableservices)を使用する利用可能なCommerce
 
 ## Commerce サービスの設定
 
-同じAPI キーをインスタンス間で使用できますが、各インスタンスには独自の[SaaS データスペース ](../landing/saas.md#saasenv)が必要です。
+同じAPI キーをインスタンス間で使用できますが、各インスタンスには独自の[SaaS データスペース &#x200B;](../landing/saas.md#saasenv)が必要です。
 
 >[!NOTE]
 >
@@ -67,13 +67,13 @@ API](../landing/saas.md#availableservices)を使用する利用可能なCommerce
 
    このオプションは、アカウントにCommerce サービスをまだ設定していない場合に表示されます。
 
-   管理者の&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**の設定領域に移動して、Commerce Services Connectorを設定します。
+   管理者の&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**&#x200B;の設定領域に移動して、Commerce Services Connectorを設定します。
 
 1. Commerce サービスを設定するには、[SaaS設定](../landing/saas.md#saasenv)に記載されている手順に従います。
 
    >[!INFO]
    >
-   > 詳しくは、[[!DNL Adobe Commerce]  サービスコネクタ ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)のビデオを参照してください。
+   > 詳しくは、[[!DNL Adobe Commerce]  サービスコネクタ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)のビデオを参照してください。
 
 ## エンドポイント
 

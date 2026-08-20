@@ -4,10 +4,19 @@ description: Adobe Commerceの商品レコメンデーションの詳細。 AI�
 recommendations: noCatalog
 exl-id: 72850cfd-555c-4e0e-ac3e-097e6dac2030
 TQID: https://experienceleague.adobe.com/kRTCG6D5k17Ah-1Q-XNZq4o48xqIwlpI8vDQJDTEeoU
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bbbea26f-9621-49eb-9ab8-e06fb3bbce8cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
 source-wordcount: 744
@@ -29,19 +38,19 @@ ht-degree: 0%
 
 [!DNL Product Recommendations]のデータ収集には、個人を特定できる情報（PII）が含まれていません。 Cookie IDやIP アドレスなどのユーザーIDはすべて厳密に匿名化されます。 詳しくは、[Adobe プライバシーポリシー](https://www.adobe.com/privacy/policy.html)を参照してください。
 
-データの同期について詳しくは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)を参照してください。
+データの同期について詳しくは、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)を参照してください。
 
 ## レコメンデーションの表示場所
 
-「この商品を閲覧したお客様も閲覧した」などのラベルが付いたユニットとして、ストアフロントにレコメンデーションが表示されます。 Adobe Commerce管理者から、ストアビュー全体でレコメンデーションを作成、管理、デプロイできます。 Commerce プロジェクトで[Adobe Commerce Optimizer コネクタ ](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)を使用している場合、[Adobe Commerce Optimizer](../optimizer/overview.md)を通じてレコメンデーションを作成、管理、デプロイします。
+「この商品を閲覧したお客様も閲覧した」などのラベルが付いたユニットとして、ストアフロントにレコメンデーションが表示されます。 Adobe Commerce管理者から、ストアビュー全体でレコメンデーションを作成、管理、デプロイできます。 Commerce プロジェクトで[Adobe Commerce Optimizer コネクタ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)を使用している場合、[Adobe Commerce Optimizer](../optimizer/overview.md)を通じてレコメンデーションを作成、管理、デプロイします。
 
 ## ストアフロントの導入
 
 ストアフロントに一致するドキュメントを選択します。
 
-- **PWA Studio** — [PWA ドキュメント ](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
-- **カスタムフロントエンド（ReactまたはVue.jsなど）** — [ ヘッドレスストアフロントに [!DNL Product Recommendations]](headless.md)統合
-- **Commerce Edge Delivery Services （EDS）** — EDS](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)の[Adobe Commerce Storefront ドキュメント
+- **PWA Studio** — [PWA ドキュメント &#x200B;](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
+- **カスタムフロントエンド（ReactまたはVue.jsなど）** — [&#x200B; ヘッドレスストアフロントに [!DNL Product Recommendations]](headless.md)統合
+- **Commerce Edge Delivery Services （EDS）** — EDS[&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)のAdobe Commerce Storefront ドキュメント
 
 >[!NOTE]
 >
@@ -49,7 +58,7 @@ ht-degree: 0%
 
 ## 商品レコメンデーションと商品関係
 
-オンラインショッピングの複雑さが絶えず変化していることを考えると、ストアフロントで最も効果的なものは、複数の主要なテクノロジーの組み合わせであることが多いです。 [!DNL Product Recommendations]と[製品関係](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)の両方を使用すると、製品のプロモーションをより柔軟に行うことができます。 Adobe AIが提供する[!DNL Product Recommendations]を活用して、大規模なレコメンデーションをインテリジェントに自動化できます。 次に、手動で介入して、ターゲットの買い物客セグメントに対して特定のレコメンデーションが行われていることを確認する必要がある場合、または特定のビジネス目標を達成する必要がある場合は、[関連製品ルール ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)を活用できます。
+オンラインショッピングの複雑さが絶えず変化していることを考えると、ストアフロントで最も効果的なものは、複数の主要なテクノロジーの組み合わせであることが多いです。 [!DNL Product Recommendations]と[製品関係](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)の両方を使用すると、製品のプロモーションをより柔軟に行うことができます。 Adobe AIが提供する[!DNL Product Recommendations]を活用して、大規模なレコメンデーションをインテリジェントに自動化できます。 次に、手動で介入して、ターゲットの買い物客セグメントに対して特定のレコメンデーションが行われていることを確認する必要がある場合、または特定のビジネス目標を達成する必要がある場合は、[関連製品ルール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)を活用できます。
 
 商品レコメンデーションを活用すると、以下のことが可能になります。
 
@@ -73,4 +82,4 @@ ht-degree: 0%
 
 ### カタログデータの再アクティブ化
 
-休止後にカタログデータを復元するには、[ サポートリクエスト ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Product Recommendations]」というタイトルで送信し、環境IDを含めます。 カタログデータは数時間以内に復元する必要があります。
+休止後にカタログデータを復元するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Product Recommendations]」というタイトルで送信し、環境IDを含めます。 カタログデータは数時間以内に復元する必要があります。

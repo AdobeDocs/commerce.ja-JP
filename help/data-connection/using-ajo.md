@@ -5,10 +5,17 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 229fac48-1c7f-4b3a-8edf-6086b7361911
 TQID: https://experienceleague.adobe.com/p4p0Gde7aPp15kj1KJTiCAijRF7wBnKDqhJN-pHgFKU
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
 source-wordcount: 1404
@@ -75,7 +82,7 @@ Adobe [!DNL Commerce]のお客様は、Adobe [!DNL Commerce]、Adobe [!DNL Journ
 
 1. [!DNL Commerce] サンドボックス環境でログインするか、アカウントを作成します。
 
-   ![ テストアカウントにログイン ](assets/sign-in-account.png){width="700" zoomable="yes"}
+   ![&#x200B; テストアカウントにログイン &#x200B;](assets/sign-in-account.png){width="700" zoomable="yes"}
 
    [!DNL Data Connection]拡張機能をインストールして設定すると、このアカウント情報はプロファイルとしてExperience Platformに送信されます。
 
@@ -83,7 +90,7 @@ Adobe [!DNL Commerce]のお客様は、Adobe [!DNL Commerce]、Adobe [!DNL Journ
 
    Adobe Experience Platformの&#x200B;**[!UICONTROL Profiles]**&#x200B;に移動します。 プロファイルの「**[!UICONTROL Detail]**」をクリックして、作成したプロファイルを表示します。
 
-   ![ プロフィールの確認](assets/check-event-profile.png){width="700" zoomable="yes"}
+   ![&#x200B; プロフィールの確認](assets/check-event-profile.png){width="700" zoomable="yes"}
 
 ## ステップ 2: Journey Optimizerでのイベントの表示
 
@@ -95,7 +102,7 @@ Adobe [!DNL Commerce]のお客様は、Adobe [!DNL Commerce]、Adobe [!DNL Journ
 1. **[!UICONTROL Identity value]**&#x200B;を電子メールアドレスに設定します。
 1. プロファイルを選択し、「**[!UICONTROL Events]**」タブを選択します。
 
-   ![ イベントの詳細を確認](assets/check-event-details.png){width="700" zoomable="yes"}
+   ![&#x200B; イベントの詳細を確認](assets/check-event-details.png){width="700" zoomable="yes"}
 
    `commerce.checkouts` イベントを探し、イベントペイロードを調べます。
 
@@ -133,7 +140,7 @@ Journey Optimizerで2つのイベントを設定します。1つのイベント�
    1. **[!UICONTROL Name]**&#x200B;を`firstname_lastname_checkout`に設定します。
    1. **[!UICONTROL Type]**&#x200B;を&#x200B;**[!UICONTROL Unitary]**&#x200B;に設定します。
    1. **[!UICONTROL Event id typ]e**&#x200B;を&#x200B;**[!UICONTROL Rule based]**&#x200B;に設定します。
-   1. **[!UICONTROL Schema]**&#x200B;を[!DNL Commerce] [ スキーマ ](update-xdm.md)に設定します。
+   1. **[!UICONTROL Schema]**&#x200B;を[!DNL Commerce] [&#x200B; スキーマ &#x200B;](update-xdm.md)に設定します。
    1. 「**[!UICONTROL Fields]**」を選択して、**[!UICONTROL Fields]** ページを開きます。 次に、このイベントに役立つフィールドを選択します。 例えば、**[!UICONTROL Product list items]**、**[!UICONTROL Commerce]**、**[!UICONTROL eventType]**、**[!UICONTROL Web]**&#x200B;の下のすべてのフィールドを選択します。
    1. 選択したフィールドを保存するには、**[!UICONTROL OK]**&#x200B;をクリックします。
    1. **[!UICONTROL Event id condition]** フィールド内をクリックします。 次に、条件を作成します。`eventType`は`commerce.checkouts`に等しく、`personalEmail.address`は前の節でプロファイルを作成したときに使用したメールアドレスに等しくなります。
@@ -152,7 +159,7 @@ Journey Optimizerで2つのイベントを設定します。1つのイベント�
    1. **[!UICONTROL Name]**&#x200B;を`firstname_lastname_timeout`に設定します。
    1. **[!UICONTROL Type]**&#x200B;を&#x200B;**[!UICONTROL Unitary]**&#x200B;に設定します。
    1. **[!UICONTROL Event id type]**&#x200B;を&#x200B;**[!UICONTROL Rule based]**&#x200B;に設定します。
-   1. **[!UICONTROL Schema]**&#x200B;を[!DNL Commerce] [ スキーマ ](update-xdm.md)に設定します。
+   1. **[!UICONTROL Schema]**&#x200B;を[!DNL Commerce] [&#x200B; スキーマ &#x200B;](update-xdm.md)に設定します。
    1. **[!UICONTROL Schema]**、**[!UICONTROL Fields]**、**[!UICONTROL Event id condition]**&#x200B;を上記と同じに設定します。
    1. **[!UICONTROL Save]**&#x200B;をクリックしてイベントを保存します。
 
@@ -201,7 +208,7 @@ Journey Optimizerで2つのイベントを設定します。1つのイベント�
 
 1. Journey Optimizerで、テストモードをオンにします。
 
-   ![ テストモードを有効にする](assets/ajo-enable-test.png){width="700" zoomable="yes"}
+   ![&#x200B; テストモードを有効にする](assets/ajo-enable-test.png){width="700" zoomable="yes"}
 
 1. このジャーニーをリアルタイムでテストするには、別のブラウザータブを開き、サンドボックス環境の[!DNL Commerce] web サイトに移動します。
 

@@ -4,10 +4,23 @@ description: ' [!DNL Data Connection] 拡張機能を使用してAdobe Commerce 
 recommendations: noCatalog
 exl-id: 660f9337-cad8-47fb-a959-0770f0fd813c
 TQID: https://experienceleague.adobe.com/-wfkGM2isTVmAaJokndxVy0-UtZ4pM9msYXmh2IE-Hc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
 source-wordcount: 1399
@@ -51,21 +64,21 @@ CommerceとExperience Platform間およびExperience PlatformとCommerce間の�
 
 - **データタイプ** — [!DNL Data Connection]は、ブラウザーから&#x200B;**行動（ストアフロント）** データ、Commerce サーバーから&#x200B;**バックオフィス** データ、および&#x200B;**プロファイル** データを収集します。 管理者は、ストアフロントコレクション **ストアフロントイベント**&#x200B;にラベルを付けます。 完全な分類については、[Commerce データの種類](data-ingestion.md)を参照してください。
 
-- **行動（ストアフロント）データ** — `addToCart`、`pageView`、`startCheckout`、`completeCheckout`など、サイトでの買い物客とのやり取りから取得しました。 [ ストアフロントイベント ](events.md#storefront-events)を参照してください。
+- **行動（ストアフロント）データ** — `addToCart`、`pageView`、`startCheckout`、`completeCheckout`など、サイトでの買い物客とのやり取りから取得しました。 [&#x200B; ストアフロントイベント &#x200B;](events.md#storefront-events)を参照してください。
 
-- **バックオフィスデータ** — [注文状況](events-backoffice.md#order-status) イベント（[`orderPlaced`](events-backoffice.md#orderplaced)や[`orderShipped`](events-backoffice.md#ordershipmentcompleted)など）を含むCommerce サーバーでキャプチャされました。 [ バックオフィスイベント ](events-backoffice.md)を参照してください。
+- **バックオフィスデータ** — [注文状況](events-backoffice.md#order-status) イベント（[`orderPlaced`](events-backoffice.md#orderplaced)や[`orderShipped`](events-backoffice.md#ordershipmentcompleted)など）を含むCommerce サーバーでキャプチャされました。 [&#x200B; バックオフィスイベント &#x200B;](events-backoffice.md)を参照してください。
 
-- **プロファイルレコード** – 買い物客プロファイルがCommerceで作成されたときに送信されるスナップショットデータ。 [ プロファイルレコード ](events-profilerecord.md)および[ プロファイルレコードスキーマの更新](profile-data.md)を参照してください。
+- **プロファイルレコード** – 買い物客プロファイルがCommerceで作成されたときに送信されるスナップショットデータ。 [&#x200B; プロファイルレコード &#x200B;](events-profilerecord.md)および[&#x200B; プロファイルレコードスキーマの更新](profile-data.md)を参照してください。
 
-- **プロファイルイベント** — サーバー上のプロファイルライフサイクルの変更に関する時系列イベント。 [顧客プロファイルイベント ](events-backoffice.md#customer-profile-events)を参照してください。
+- **プロファイルイベント** — サーバー上のプロファイルライフサイクルの変更に関する時系列イベント。 [顧客プロファイルイベント &#x200B;](events-backoffice.md#customer-profile-events)を参照してください。
 
 - **Experience PlatformとEdge Network** – ほとんどのAdobe DX製品のデータウェアハウス。 Experience Platformに送信されたデータは、Experience Platform Edge Networkを通じてAdobe DX製品に反映されます。 たとえば、Journey Optimizerを起動し、エッジから特定のCommerceイベントデータを取得し、Journey Optimizerでカート放棄メールを作成することができます。 また、Commerceストアにカート放棄がある場合は、Journey Optimizerからその電子メールを送信できます。 [Experience PlatformとEdge Network](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)について詳しく説明します。
 
-- **スキーマ** - スキーマは、送信されるデータの構造を記述します。 Experience PlatformでCommerce データを取り込む前に、データの構造を説明するスキーマを作成し、各フィールドに含めることができるデータタイプの制約を指定する必要があります。 スキーマは、基本クラスと0個以上のスキーマフィールドグループで構成されます。 このスキーマでは、すべてのAdobe DX製品が読み取り可能なXDM構造を使用します。 このスキーマにより、Experience Platformに送信されたデータがあらゆるDX製品で理解されることが保証されます。 [ スキーマ ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)の詳細をご覧ください。
+- **スキーマ** - スキーマは、送信されるデータの構造を記述します。 Experience PlatformでCommerce データを取り込む前に、データの構造を説明するスキーマを作成し、各フィールドに含めることができるデータタイプの制約を指定する必要があります。 スキーマは、基本クラスと0個以上のスキーマフィールドグループで構成されます。 このスキーマでは、すべてのAdobe DX製品が読み取り可能なXDM構造を使用します。 このスキーマにより、Experience Platformに送信されたデータがあらゆるDX製品で理解されることが保証されます。 [&#x200B; スキーマ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)の詳細をご覧ください。
 
-- **データセット** - データのコレクション用のストレージおよび管理コンストラクト。通常、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータのさまざまな側面を説明するメタデータも含まれます。 Adobe Experience Platformに正常に取り込まれたすべてのデータは、データセット内に含まれます。 [ データセット ](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)の詳細をご覧ください。
+- **データセット** - データのコレクション用のストレージおよび管理コンストラクト。通常、スキーマ（列）とフィールド（行）を含むテーブルです。 データセットには、保存するデータのさまざまな側面を説明するメタデータも含まれます。 Adobe Experience Platformに正常に取り込まれたすべてのデータは、データセット内に含まれます。 [&#x200B; データセット &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)の詳細をご覧ください。
 
-- **Datastream** - Adobe Experience Platformから他のAdobe DX製品へのデータの流れを許可するID。 このIDは、特定のAdobe Commerce インスタンス内の特定のweb サイトに関連付ける必要があります。 このデータストリームを作成する場合は、上記で作成したXDM スキーマを指定します。 [ データストリーム ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)の詳細をご覧ください。
+- **Datastream** - Adobe Experience Platformから他のAdobe DX製品へのデータの流れを許可するID。 このIDは、特定のAdobe Commerce インスタンス内の特定のweb サイトに関連付ける必要があります。 このデータストリームを作成する場合は、上記で作成したXDM スキーマを指定します。 [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)の詳細をご覧ください。
 
 ## サポートされているアーキテクチャ
 
@@ -83,7 +96,7 @@ CommerceとExperience Platform間およびExperience PlatformとCommerce間の�
 
 - Adobe Commerce 2.4.4以降
 - Adobe IDと組織ID
-- [ ストアフロント イベント データの収集に必要なAdobe Client Data Layer （ACDL） ](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/client-data-layer/overview)
+- [&#x200B; ストアフロント イベント データの収集に必要なAdobe Client Data Layer （ACDL） &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/client-data-layer/overview)
 - 他のAdobe DX製品の使用権限。
 
 >[!ENDSHADEBOX]
@@ -92,13 +105,13 @@ CommerceとExperience Platform間およびExperience PlatformとCommerce間の�
 
 大まかに言えば、[!DNL Data Connection]拡張機能を有効にするには、次の手順を実行します。
 
-1. [!DNL Data Connection]拡張機能を[ インストール ](install.md)します。
+1. [!DNL Data Connection]拡張機能を[&#x200B; インストール &#x200B;](install.md)します。
 1. [Adobe アカウントに](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) ログインし、[表示して](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)組織IDを確認します。 組織IDは、プロビジョニングされたExperience Cloud会社に関連付けられたIDです。 このIDは24文字の英数字の文字列で、その後に`@AdobeOrg`が続きます（含める必要があります）。
-1. Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions)でのデータ収集に対して[権限があることを確認してください。
-1. 収集して送信できる[種類のデータ ](data-ingestion.md)を確認してください。
-1. Commerce固有のフィールドグループを使用して、[時系列イベントスキーマ ](update-xdm.md)または[ プロファイルレコードデータスキーマ ](profile-data.md)を作成または更新します。
-1. [作成または更新したスキーマに基づいてデータセット ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform#create-a-dataset)を作成します。 このデータセットには、Experience Platform Edgeに送信されたCommerce データが含まれます。
-1. [ データストリーム ](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)を作成し、Commerce固有のフィールドグループを含むXDM スキーマを選択します。
+1. Experience Platform[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions)でのデータ収集に対して権限があることを確認してください。
+1. 収集して送信できる[種類のデータ &#x200B;](data-ingestion.md)を確認してください。
+1. Commerce固有のフィールドグループを使用して、[時系列イベントスキーマ &#x200B;](update-xdm.md)または[&#x200B; プロファイルレコードデータスキーマ &#x200B;](profile-data.md)を作成または更新します。
+1. [作成または更新したスキーマに基づいてデータセット &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform#create-a-dataset)を作成します。 このデータセットには、Experience Platform Edgeに送信されたCommerce データが含まれます。
+1. [&#x200B; データストリーム &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)を作成し、Commerce固有のフィールドグループを含むXDM スキーマを選択します。
 1. [Commerce サービスに接続](../landing/saas.md)。
 1. [Adobe Experience Platformに接続](connect-data.md)。
 
@@ -121,4 +134,4 @@ CommerceとExperience Platform間およびExperience PlatformとCommerce間の�
 このガイドで説明されていない情報や質問が必要な場合は、次のリソースを使用してください。
 
 - [ヘルプセンター](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
-- [ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"} — チケットを送信して追加のヘルプを受け取ります。
+- [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"} — チケットを送信して追加のヘルプを受け取ります。
