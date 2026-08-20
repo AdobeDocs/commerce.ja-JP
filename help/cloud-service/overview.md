@@ -5,40 +5,18 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f236e2a1-90d4-477d-92e1-5996b5e92bff
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: c5b10a715f64a220fc965328a7c913951d44dedc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f236e2a1-90d4-477d-92e1-5996b5e92bffid: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12bid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: d095671a-1355-40aa-8b5f-06c33c68080bid: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1461
+source-wordcount: 1456
 ht-degree: 0%
 
 ---
@@ -88,35 +66,35 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service] アーキテクチャの概要については、次のビデオを参照してください。 アーキテクチャを示す図は、ビデオの下に示されています。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443268?captions=jpn&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 この図は、[!DNL Adobe Commerce as a Cloud Service]とすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
-[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![&#x200B; データフロー図](./assets/data-flow.png){zoomable="yes"}
+[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![ データフロー図](./assets/data-flow.png){zoomable="yes"}
 
 ## Commerce ストアフロント
 
-[!DNL Storefront Builder]を使用したシンプルなドキュメントベースのオーサリングまたはビジュアル編集を使用して、リッチなエクスペリエンスを数分で作成するには、[!DNL Edge Delivery Services]を利用したAdobeの[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)を使用します。
+[!DNL Storefront Builder]を使用したシンプルなドキュメントベースのオーサリングまたはビジュアル編集を使用して、リッチなエクスペリエンスを数分で作成するには、[!DNL Edge Delivery Services]を利用したAdobeの[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/)を使用します。
 
-[!DNL Commerce Storefront]は、GraphQL API レイヤーを介してすべてのマーチャンダイジングサービスとデータを提供する分離型アーキテクチャを備えた完全ヘッドレスです。 このアーキテクチャにより、Commerce Foundationから独立してフロントエンドを開発することができ、新しいテクノロジーを使用して新しいタッチポイントを迅速に構築し、テストすることができます。
+[!DNL Commerce Storefront]は、GraphQL API レイヤーを介してすべてのAdobe Merchandising サービスとデータを提供する分離型アーキテクチャを備えた完全ヘッドレスです。 このアーキテクチャにより、Commerce Foundationから独立してフロントエンドを開発することができ、新しいテクノロジーを使用して新しいタッチポイントを迅速に構築し、テストすることができます。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 クラウドまたはオンプレミスのAdobe Commerceから移行する場合は、移行ガイダンスについては、[既存のストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=ja#existing-storefronts)を参照してください。
+>[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 [!DNL Adobe Commerce on Cloud]またはオンプレミスから移行する場合は、移行ガイダンスについて[既存のストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts)を参照してください。
 
-## マーチャンダイジングサービスと決済サービス
+## Adobe Merchandisingのサービスおよび決済サービス
 
 Adobeでは、主要なビジネス目標をサポートする、インテリジェントで構成可能なマーチャンダイジングサービスを豊富に提供しています。 これらのサービスは、大規模なパフォーマンスの最適化に不可欠なAPIも提供します。
 
 - [[!DNL Live Search]](../live-search/overview.md) – このAIを活用した検索ツールを使用して、よりスマートで迅速な、適切な検索結果を買い物客に提供します。 設定手順については、[設定 [!DNL Live Search]](../live-search/workspace.md)を参照してください。
 - [[!DNL Product Recommendations]](../product-recommendations/overview.md) – 買い物客の行動、人気のレンド、商品の類似性などに基づいて、AIを活用したレコメンデーションを追加します。 設定手順については、[[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md)を参照してください。
-- [&#x200B; カタログサービス &#x200B;](../catalog-service/guide-overview.md) - パフォーマンスの向上、拡張性の向上、コンバージョンの増加を実現しながら、顧客に最適化された製品体験を提供します。
+- [ カタログサービス ](../catalog-service/guide-overview.md) - パフォーマンスの向上、拡張性の向上、コンバージョンの増加を実現しながら、顧客に最適化された製品体験を提供します。
 
   >[!NOTE]
   >
   >カタログサービスは、[!DNL Live Search]および[!DNL Product Recommendations]に自動的に含まれます。
 
-- [支払いサービス &#x200B;](../payment-services/guide-overview.md) – 無利息の支払い分割払い、支払い処理、注文、請求書に関する単一のビューなど、さまざまな支払い方法を提供することで、顧客満足度を向上させます。 設定手順については、[支払いサービスホーム &#x200B;](../payment-services/payments-home.md)を参照してください。
+- [決済サービス ](../payment-services/guide-overview.md) – 無利息の分割、処理、注文、請求書に関する単一のビューなど、さまざまな支払い方法を提供することで、顧客満足度を向上させます。 設定手順については、[支払いサービスホーム ](../payment-services/payments-home.md)を参照してください。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -224,7 +202,7 @@ Adobe Commerce on Cloudの一般的なアップグレードプロセスでは、
 
 >[!NOTE]
 >
->Adobeでは、すべてのアップデートに下位互換性が保証されます。 つまり、更新を適用しても、[API ファーストの拡張性](https://developer.adobe.com/commerce/extensibility/) モデルに準拠する既存の機能やカスタマイズが壊れることはありません。
+>Adobeでは、すべてのアップデートに下位互換性が保証されます。 つまり、更新が適用された場合、[API ファーストの拡張性](https://developer.adobe.com/commerce/extensibility/) モデルに準拠する既存の機能やカスタマイズが壊れることはありません。
 
 ### サードパーティ製アプリケーションとの統合
 
@@ -233,7 +211,7 @@ Adobe Commerce on Cloudの一般的なアップグレードプロセスでは、
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->
@@ -247,11 +225,11 @@ Adobe Commerce on Cloudの一般的なアップグレードプロセスでは、
 - **売上の増加**:SEOを向上させる高性能なストアフロントでオーガニックトラフィックを促進します。 詳細なデータを利用して、コンバージョンを促進するパーソナライズされた体験を構築。
 - **操作の拡張**：自動スケーリングサービスは、ビジネスのピーク時の需要に99.9%の可用性で対応します。 複数のブランドと地域を展開し、単一のインスタンスでB2BとB2Cをサポートします。 柔軟なデータモデリングにより、大規模かつ複雑な製品カタログをサポートします。
 - **マーチャンダイザーの生産性を向上**: AIを活用したマーチャンダイジングサービスを使用して、コンバージョンを改善します。 ストアフロントで直接、ネイティブに実験できます。 シンプルなドキュメントベースのオーサリングとビジュアルエディターにより、ストアフロント体験を管理し、数分でリッチなエクスペリエンスを作成できます。
-- **総所有コスト （TCO）の削減とイノベーションの促進**：常に最新のサービスを利用すると、新機能をすぐに利用できます。 マーケットプレイスからアプリを容易にインストールして、新しい機能を活用できます。 面倒なメンテナンスからリソースを解放し、新しい機能の構築に集中できます。
+- **総所有コスト （TCO）の削減とイノベーションの促進**：常に最新のサービスを利用すると、新機能をすぐに利用できます。 マーケットプレイスからアプリを容易にインストールして、新しい機能を活用できます。 日常的なメンテナンスからリソースを再配分し、新しい機能の構築に集中できます。
 
 ### IT （情報技術）リーダー
 
 - **高速プロビジョニング**: セルフサービス型プロビジョニングを数分で開始できます。 あらゆるサービスは、シームレスに連携するように事前設定されているため、より迅速に利用できます。 必要に応じて、開発者が利用できるサンドボックスを準備します。
 - **所有コストが低い**：常に最新のサービスでアップグレードする必要はありません。 自動的に適用される最新のセキュリティパッチで、安全かつコンプライアンスを維持できます。 自動的に拡張して、最も要求の厳しいワークロードに対応。
 - **高性能なストアフロント**：シンプルなドキュメントベースのオーサリングまたはビジュアルエディターで、リッチなエクスペリエンスを数分で作成できます。 AIを活用したマーチャンダイジングサービスを利用して、コンバージョンを向上させたい。 ストアフロントに組み込まれたネイティブ実験。
-- **より迅速なイノベーション**：面倒なメンテナンスからリソースを解放し、ビジネス価値をもたらす新しい機能の構築に注力します。 包括的な拡張性および標準ベースのテクノロジー（JavaScript、HTML、CSS、ローコードツール）を使用して、差別化されたエクスペリエンスを構築できます。 クリックするだけでサードパーティ製品をインストールし、コマースプラットフォームに新しい機能を追加できます。
+- **より迅速なイノベーション**：日常的なメンテナンスからリソースを再割り当てし、ビジネス価値をもたらす新しい機能の構築に注力します。 包括的な拡張性および標準ベースのテクノロジー（JavaScript、HTML、CSS、ローコードツール）を使用して、差別化されたエクスペリエンスを構築できます。 クリックするだけでサードパーティ製品をインストールし、コマースプラットフォームに新しい機能を追加できます。
