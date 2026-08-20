@@ -52,4 +52,4 @@ ht-degree: 2%
 - セキュリティとコンプライアンス {#security-compliance}
   - [セキュリティ](security.md)
   - [重要な不正利用防止](fraud-protection.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)

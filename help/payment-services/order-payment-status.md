@@ -120,7 +120,7 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL Payment 
    bin/magento config:set payment/payment_services/async_status_updates 1
    ```
 
-1. ステータス更新が自動的に取得されるように、`sync_order_payment_status` cron ジョブを有効にしてスケジュールします。 [cron ジョブの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)を参照してください。
+1. ステータス更新が自動的に取得されるように、`sync_order_payment_status` cron ジョブを有効にしてスケジュールします。 [cron ジョブの設定](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)を参照してください。
 
 設定とcron ジョブが有効になると、cron ジョブは10分ごとに実行され、`Payment Review` ステータスの注文の更新を取得します。 設定後、通常の操作中に追加の加盟店アクションは必要ありません。
 
@@ -131,11 +131,11 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL Payment 
 
 [!DNL Payment Services]は注文データを使用し、他の情報源（PayPalを含む）から集約された支払いデータと組み合わせて、有意義で非常に便利なレポートを提供します。
 
-注文データはエクスポートされ、支払いサービスに保持されます。 注文ステータス [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status)または[&#x200B; ストアビュー](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view)、[&#x200B; ストア &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information)、またはweb サイト名を変更または追加すると、そのデータが支払いデータと組み合わされ、注文支払い状況レポートに組み合わせ情報が入力されます。
+注文データはエクスポートされ、支払いサービスに保持されます。 注文ステータス [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status)または[&#x200B; ストアビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view)、[&#x200B; ストア &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/store-details#store-information)、またはweb サイト名を変更または追加すると、そのデータが支払いデータと組み合わされ、注文支払い状況レポートに組み合わせ情報が入力されます。
 
 このプロセスには2つのステップがあります。
 
-1. インデックスは、管理者の[&#x200B; インデックス管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)での設定方法に応じて、`ON SAVE` （注文情報またはストア情報が変更されるたびに）または`BY SCHEDULE` （事前設定済みのcron スケジュール上）のいずれかにデータが変更されます。
+1. インデックスは、管理者の[&#x200B; インデックス管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management)での設定方法に応じて、`ON SAVE` （注文情報またはストア情報が変更されるたびに）または`BY SCHEDULE` （事前設定済みのcron スケジュール上）のいずれかにデータが変更されます。
 
    デフォルトでは、データのインデックス作成が行われます`ON SAVE`。つまり、注文、注文ステータス、ストアビュー、ストア、またはweb サイトが変更されると、インデックス再作成プロセスが直ちに実行されます。
 
@@ -151,7 +151,7 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL Payment 
 
 デフォルトでは、インデックス再作成は`ON SAVE` モードで行われますが、`BY SCHEDULE` モードでインデックスを作成することをお勧めします。 `BY SCHEDULE` インデックスは1分のcron スケジュールで実行され、変更されたデータは、データ変更の2分以内に注文ステータス レポートに表示されます。 このスケジュールされたインデックス再作成は、特に大量の受注がある場合に、注文が発生するたびにスケジュールどおりに行われるため、ストアへの負担を軽減するのに役立ちます。
 
-Admin[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)で、インデックスモード（`ON SAVE`または`BY SCHEDULE`—）を変更できます。
+Admin[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)で、インデックスモード（`ON SAVE`または`BY SCHEDULE`—）を変更できます。
 
 データ書き出しの設定方法については、[&#x200B; コマンドライン設定](configure-cli.md#configure-data-export)を参照してください。
 
@@ -262,10 +262,10 @@ _[!UICONTROL Live]_&#x200B;が選択したデータソースである場合は�
 
 | 列 | 説明 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce注文ID<br> <br>関連する[注文情報](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}を表示するには、IDをクリックします。 |
+| [!UICONTROL Order ID] | Commerce注文ID<br> <br>関連する[注文情報](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}を表示するには、IDをクリックします。 |
 | [!UICONTROL Order Date] | 注文日のタイムスタンプ |
 | [!UICONTROL Authorized Date] | 支払い承認の日付タイムスタンプ |
-| [!UICONTROL Order Status] | 現在のCommerce [注文状況](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | 現在のCommerce [注文状況](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | 注文の請求書ステータス —*[!UICONTROL No]*、*[!UICONTROL Partial]*、または&#x200B;*[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | 注文の配送状況 – *[!UICONTROL No]*、*[!UICONTROL Partial]*、または&#x200B;*[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | 注文の合計金額 |

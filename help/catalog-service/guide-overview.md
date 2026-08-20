@@ -35,7 +35,7 @@ ht-degree: 9%
 
 | ガイド | 説明 |
 |------ | ----------- |
-| [Adobe Commerce 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Adobe CommerceとMagento Open Sourceの両方のマーチャントに焦点を当てたドキュメント |
+| [Adobe Commerce 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home) | Adobe CommerceとMagento Open Sourceの両方のマーチャントに焦点を当てたドキュメント |
 | [Adobe Commerce 2.4 デベロッパーガイド &#x200B;](https://developer.adobe.com/commerce/docs) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けのドキュメント |
 
 ## サポート
@@ -44,6 +44,6 @@ ht-degree: 9%
 
 このガイドで説明されていない情報や質問が必要な場合は、次のリソースを使用してください。
 
-* トラブルシューティング記事については、[&#x200B; ヘルプセンター](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)を参照してください。
-* [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) - チケットを送信して追加のヘルプを受け取ります。
+* トラブルシューティング記事については、[&#x200B; ヘルプセンター](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview)を参照してください。
+* [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) - チケットを送信して追加のヘルプを受け取ります。
 * Adobe Commerce エンジニアリングチームとSaaS ストアフロントサービスのユーザーが、[#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4)のパブリック Slack チャネルを最新の状態で利用できます。

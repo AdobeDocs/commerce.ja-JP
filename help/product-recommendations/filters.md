@@ -55,7 +55,7 @@ Adobe Commerceは、設定不可能なデフォルトフィルターをレコメ
 
 >[!NOTE]
 >
->B2B マーチャントの場合、カテゴリーフィルターは、設定した[顧客固有の製品カテゴリ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)に準拠します。
+>B2B マーチャントの場合、カテゴリーフィルターは、設定した[顧客固有の製品カテゴリ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/category-permissions)に準拠します。
 
 Adobe Commerceでは、ページタイプにレコメンデーションをデプロイする際に、次のカテゴリーフィルター設定を使用することをお勧めします。
 
@@ -85,11 +85,11 @@ _カタログ_、_検索_、またはその両方など、表示に基づいて�
 
 ### 価格
 
-商品価格に基づくフィルターは、最終価格を使用して比較を実行します。 最終価格には、匿名の買い物客が利用できる割引が含まれています。 B2B マーチャントの場合、表示される価格は、設定した[顧客固有のグループ価格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced)を反映しています。
+商品価格に基づくフィルターは、最終価格を使用して比較を実行します。 最終価格には、匿名の買い物客が利用できる割引が含まれています。 B2B マーチャントの場合、表示される価格は、設定した[顧客固有のグループ価格](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/pricing/pricing-advanced)を反映しています。
 
 ### ストックステータス
 
 在庫状況に基づいて商品を除外するには、次の除外フィルターを使用できます。
 
 - 在庫切れ – （除外のみ）在庫切れの商品を除外します。
-- 在庫が少ない – （除外のみ）在庫が少ない商品を除外します。 在庫状況が低い場合は、[在庫構成](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory)の&#x200B;_左しきい値_&#x200B;のみです。
+- 在庫が少ない – （除外のみ）在庫が少ない商品を除外します。 在庫状況が低い場合は、[在庫構成](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/catalog/inventory)の&#x200B;_左しきい値_&#x200B;のみです。

@@ -26,7 +26,7 @@ ht-degree: 0%
 
 # Adobe Experience Platformタグを使用したCommerceデータの収集
 
-[!DNL Data Connection]拡張機能を使用してストアフロントイベントを公開および購読することはできますが、一部のマーチャントは、既に[Adobe Experience Platform タグ &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/tags/create-a-property)などのデータ収集ソリューションを使用している場合があります。 これらの販売者に対して、Adobe Commerceでは、Adobe Commerce Event SDKを使用する[!DNL Data Connection]拡張機能でのみ公開オプションを提供しています。
+[!DNL Data Connection]拡張機能を使用してストアフロントイベントを公開および購読することはできますが、一部のマーチャントは、既に[Adobe Experience Platform タグ &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/tags/create-a-property)などのデータ収集ソリューションを使用している場合があります。 これらの販売者に対して、Adobe Commerceでは、Adobe Commerce Event SDKを使用する[!DNL Data Connection]拡張機能でのみ公開オプションを提供しています。
 
 ![[!DNL Data Connection]拡張機能データフロー](assets/tags-data-flow.png)
 タグ _を含む_[!DNL Data Connection]&#x200B;拡張データフロー
@@ -47,15 +47,15 @@ Commerce イベントデータを収集するには：
 
 Commerce ストアフロントデータをAdobe Experience Platformにマッピングするには、Adobe Experience Platform タグ内から以下を設定してインストールします。
 
-1. [Adobe Experience Platform Data Collectionでタグプロパティ &#x200B;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/configure-tags/create-a-property)を設定します。
+1. [Adobe Experience Platform Data Collectionでタグプロパティ &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-in-websites/configure-tags/create-a-property)を設定します。
 
 1. **オーサリング**&#x200B;で、**拡張機能**&#x200B;を選択し、次の拡張機能をインストールして設定します。
 
-   - [Adobe Client Data Layer](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/client-data-layer/overview)
+   - [Adobe Client Data Layer](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/extensions/client/client-data-layer/overview)
 
-   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)
+   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/js-overview)
 
-1. [&#x200B; タグ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)を開発環境に公開します。
+1. [&#x200B; タグ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/publish/overview)を開発環境に公開します。
 
 1. 以下の&#x200B;**イベントマッピング**&#x200B;の手順に従って、特定のイベントのデータ要素とルールを設定します。
 
@@ -71,7 +71,7 @@ Commerce ストアフロントデータをAdobe Experience Platformにマッピ�
 
 Adobe Experience Platform タグのデータ要素とルールをAdobe Commerce固有のイベントデータで更新する場合は、いくつかの一般的な手順を実行します。
 
-例えば、Adobe Commerce `signOut` イベントをAdobe Experience Platform タグに追加します。 以下に説明する手順は、設定した特定の値を除いて、[data elements](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements#create-a-data-element)と[rules](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules#create-a-rule)を追加する方法を説明します。この方法は、タグに追加するすべてのAdobe Commerce イベントに適用されます。
+例えば、Adobe Commerce `signOut` イベントをAdobe Experience Platform タグに追加します。 以下に説明する手順は、設定した特定の値を除いて、[data elements](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/ui/data-elements#create-a-data-element)と[rules](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/ui/rules#create-a-rule)を追加する方法を説明します。この方法は、タグに追加するすべてのAdobe Commerce イベントに適用されます。
 
 1. データ要素の作成：
 
@@ -1425,7 +1425,7 @@ return IdentityMap;
 
 ## 同意の設定
 
-Adobe Commerceに[!DNL Data Connection]拡張機能をインストールすると、データ収集の同意がデフォルトで有効になります。 オプトアウトは[`mg_dnt` Cookie](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law)を通じて管理されます。 `mg_dnt`を使用して同意を管理することを選択した場合は、ここに記載されている手順に従ってください。 [Adobe Experience Platform Web SDK ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)には、同意管理に関するオプションが追加されています。
+Adobe Commerceに[!DNL Data Connection]拡張機能をインストールすると、データ収集の同意がデフォルトで有効になります。 オプトアウトは[`mg_dnt` Cookie](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law)を通じて管理されます。 `mg_dnt`を使用して同意を管理することを選択した場合は、ここに記載されている手順に従ってください。 [Adobe Experience Platform Web SDK ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/js-overview)には、同意管理に関するオプションが追加されています。
 
 1. `mg_dnt` Cookieの&#x200B;**コアカスタムコード** データ要素（`%do not track cookie%`）を作成します。
 

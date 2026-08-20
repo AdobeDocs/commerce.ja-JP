@@ -113,11 +113,11 @@ Adobe CommerceとMagento Open Sourceの[!DNL Payment Services]は、完全に統
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) - [!DNL Adobe Commerce]と[!DNL Magento Open Source]の両方のマーチャントに焦点を当てたドキュメント
-> * [[!DNL Adobe Commerce] 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) - [!DNL Adobe Commerce]または[!DNL Magento Open Source]の構築とカスタマイズに使用する開発者向けドキュメント
+> * [[!DNL Adobe Commerce] 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home) - [!DNL Adobe Commerce]と[!DNL Magento Open Source]の両方のマーチャントに焦点を当てたドキュメント
+> * [[!DNL Adobe Commerce] 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home) - [!DNL Adobe Commerce]または[!DNL Magento Open Source]の構築とカスタマイズに使用する開発者向けドキュメント
 > * [&#x200B; リリースノート &#x200B;](release-notes.md)：今後のリリース、製品の詳細、および[!DNL Payment Services]拡張機能をサポートするAdobe Commerceのバージョンについて詳しく説明します
-> * [&#x200B; ヘルプセンター](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) - ナレッジベースで[!DNL Payment Services]関連のトラブルシューティング記事を検索します
-> * [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) - Commerceのお客様は、チケットを送信して追加のヘルプを受け取ることができます
+> * [&#x200B; ヘルプセンター](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview) - ナレッジベースで[!DNL Payment Services]関連のトラブルシューティング記事を検索します
+> * [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) - Commerceのお客様は、チケットを送信して追加のヘルプを受け取ることができます
 
 ## サポート
 

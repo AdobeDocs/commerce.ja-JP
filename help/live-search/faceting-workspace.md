@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## 範囲の設定
 
-Adobe Commerceのインストールに複数のストアビューが含まれる場合は、**Scope**&#x200B;をファセット設定が適用される[&#x200B; ストアビュー](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)に設定します。
+Adobe Commerceのインストールに複数のストアビューが含まれる場合は、**Scope**&#x200B;をファセット設定が適用される[&#x200B; ストアビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)に設定します。
 
 ## リストをフィルター
 

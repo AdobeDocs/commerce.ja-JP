@@ -1,7 +1,7 @@
 ---
 title: 機会
 description: Adobe Sites Optimizerと統合することで、データにもとづいたスマートなサイト改善を実現し、トラフィック、エンゲージメント、コンバージョンを向上させる機会を特定できます。
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip=" [!DNL Adobe Commerce Optimizer] 件のプロジェクトにのみ適用されます（Adobeが管理するSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip=" [!DNL Adobe Commerce Optimizer] 件のプロジェクトにのみ適用されます（Adobeが管理するSaaS インフラストラクチャ）。"
 TQID: https://experienceleague.adobe.com/KQb7XtqY-4Qrt4B9fwn9w6u8yBjwsj4owArk53v6VHo
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## オポチュニティとは？
 
-[商談](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)は、マーチャンダイザーがコマースサイトのパフォーマンスに影響を与える問題を特定して対処するのに役立つ、AIを活用したレコメンデーションです。 これらのレコメンデーションは、web サイトのパフォーマンスを分析および改善するクラウドベースのサービスである[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)によって提供されます。
+[商談](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)は、マーチャンダイザーがコマースサイトのパフォーマンスに影響を与える問題を特定して対処するのに役立つ、AIを活用したレコメンデーションです。 これらのレコメンデーションは、web サイトのパフォーマンスを分析および改善するクラウドベースのサービスである[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/home)によって提供されます。
 
 ## 主な能力
 
@@ -197,12 +197,12 @@ Adobe Sites Optimizer レイヤーがカタログビューに存在しない場�
 
 ## Sites Optimizerについて詳しく見る
 
-Sites Optimizerの機能と機能について詳しくは、[Adobe Experience Manager Sites Optimizer ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)を参照してください。
+Sites Optimizerの機能と機能について詳しくは、[Adobe Experience Manager Sites Optimizer ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/home)を参照してください。
 
 関連トピックス：
 
-- [商談タイプ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) – 使用可能な最適化商談について説明します。
-- [Sites Optimizerの機能](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/basics) - Sites Optimizerの機能について説明します。
+- [商談タイプ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) – 使用可能な最適化商談について説明します。
+- [Sites Optimizerの機能](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/documentation/basics) - Sites Optimizerの機能について説明します。
 
 ## その他
 

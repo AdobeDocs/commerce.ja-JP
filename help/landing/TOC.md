@@ -5,7 +5,7 @@ user-guide-description: Adobe Commerce および Magento Open Source に拡張�
 role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
 source-wordcount: '162'
@@ -20,17 +20,17 @@ ht-degree: 12%
   - [リリースノート](/help/landing/release-notes-all.md)
 - {hide-from-toc}[製品ソリューション &#x200B;](product-solutions.md)
 - Commerce services {#commerce-services}
-  - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview)
-  - [[!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview)
-  - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/guide-overview)
-  - [[!DNL Catalog Service]](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview)
-  - [[!DNL Payment Services]](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview)
+  - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/overview)
+  - [[!DNL Live Search]](https://experienceleague.adobe.com/ja/docs/commerce/live-search/overview)
+  - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/ja/docs/commerce/product-recommendations/guide-overview)
+  - [[!DNL Catalog Service]](https://experienceleague.adobe.com/ja/docs/commerce/catalog-service/guide-overview)
+  - [[!DNL Payment Services]](https://experienceleague.adobe.com/ja/docs/commerce/payment-services/guide-overview)
 - 統合サービス {#integration-services}
-  - [[!DNL Adobe Commerce Optimizer Connector]](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)
-  - [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce/data-connection/overview)
-  - [[!DNL App Management]](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview)
+  - [[!DNL Adobe Commerce Optimizer Connector]](https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/overview)
+  - [[!DNL Data Connection]](https://experienceleague.adobe.com/ja/docs/commerce/data-connection/overview)
+  - [[!DNL App Management]](https://experienceleague.adobe.com/ja/docs/commerce/app-management/overview)
   - [サービスコネクタ](/help/landing/saas.md)
 - データツール {#data-services}
-  - [SaaS データの書き出し](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview)
-  - [SaaS価格インデックス](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing)
+  - [SaaS データの書き出し](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/overview)
+  - [SaaS価格インデックス](https://experienceleague.adobe.com/ja/docs/commerce/price-indexer/price-indexing)
   - [カタログ同期](/help/landing/catalog-sync.md)

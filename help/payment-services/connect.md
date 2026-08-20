@@ -3,7 +3,7 @@ title: インスタンスの接続
 description: API キーと秘密鍵を使用してCommerce インスタンスを接続し、設定でデータスペースを指定します。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Paas
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
 source-wordcount: '698'
@@ -20,7 +20,7 @@ API キーと秘密鍵を使用してCommerce インスタンスを接続し、[
 
 >[!INFO]
 >
-> 詳しくは、[[!DNL Adobe Commerce]  サービスコネクタ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)のビデオを参照してください。
+> 詳しくは、[[!DNL Adobe Commerce]  サービスコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)のビデオを参照してください。
 
 * *すでにインスタンスを接続している場合*、API資格情報を取得して使用し、Commerce サービスを設定することで、テストサンドボックスの設定[に進むことができます](sandbox.md)。
 * まだ&#x200B;*インスタンスを接続する必要がある場合*&#x200B;は、[API資格情報の取得](#obtain-api-credentials)および[Commerce サービスの設定](#configure-commerce-services)に関するこのトピックの情報を参照してください。
@@ -32,11 +32,11 @@ API キーと秘密鍵を使用してCommerce インスタンスを接続し、[
 
 ## API資格情報の取得
 
-Commerce SaaS サービスを利用するには、インスタンスのAPI キー（Commerceの公開API キーと秘密鍵）をサンドボックスと実稼動環境の両方に使用する必要があります。サンドボックスと実稼動環境は、[&#x200B; マイアカウントダッシュボード &#x200B;](https://account.magento.com/customer/account/login)で作成および管理されます。 [&#x200B; キーペア &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)は、Commerce アカウント（サンドボックス用と実稼動用）に作成できますが、一度にアクティブに使用できるのは1つのペアのみです。
+Commerce SaaS サービスを利用するには、インスタンスのAPI キー（Commerceの公開API キーと秘密鍵）をサンドボックスと実稼動環境の両方に使用する必要があります。サンドボックスと実稼動環境は、[&#x200B; マイアカウントダッシュボード &#x200B;](https://account.magento.com/customer/account/login)で作成および管理されます。 [&#x200B; キーペア &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/services/saas)は、Commerce アカウント（サンドボックス用と実稼動用）に作成できますが、一度にアクティブに使用できるのは1つのペアのみです。
 
 >[!NOTE]
 >
->[!UICONTROL My Account] ダッシュボードへのアクセスに関するサポートが必要ですか？ [Commerce アカウントの作成](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create)を参照してください。
+>[!UICONTROL My Account] ダッシュボードへのアクセスに関するサポートが必要ですか？ [Commerce アカウントの作成](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/commerce-account/commerce-account-create)を参照してください。
 
 公開用API キーは、一度作成すれば、常にマイアカウントダッシュボードで使用できます。 必要に応じてコピーまたは削除できます。 プライベート API キーは、サンドボックスまたは実稼動用のパブリック API キーを作成すると表示されます。これは、コピーまたは保存のダイアログボックスでのみ使用でき、後からアクセスすることはできません。
 
@@ -73,7 +73,7 @@ API[&#128279;](../landing/saas.md#availableservices)を使用する利用可能�
 
    >[!INFO]
    >
-   > 詳しくは、[[!DNL Adobe Commerce]  サービスコネクタ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)のビデオを参照してください。
+   > 詳しくは、[[!DNL Adobe Commerce]  サービスコネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)のビデオを参照してください。
 
 ## エンドポイント
 

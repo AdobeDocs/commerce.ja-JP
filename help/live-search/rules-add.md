@@ -26,7 +26,7 @@ ht-degree: 0%
 ## ルールを追加
 
 1. 管理画面で、**マーケティング**/SEOと検索> **[!DNL Live Search]**&#x200B;に移動します。
-1. ルールが適用される[&#x200B; ストアビュー](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)を識別するために、**スコープ**&#x200B;を設定します。
+1. ルールが適用される[&#x200B; ストアビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)を識別するために、**スコープ**&#x200B;を設定します。
 1. 「**マーチャンダイジングを検索**」ワークスペースをクリックします。
 1. 「**ルールを追加**」をクリックして、ルールエディターを起動します。
 

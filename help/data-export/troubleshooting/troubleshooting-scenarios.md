@@ -4,7 +4,7 @@ description: 設定の誤り、インデクサー設定、または同期結果�
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -84,9 +84,9 @@ ht-degree: 0%
 1. Commerce ストアフロントから、検索結果を開きます。 次に、該当する製品を選択して、詳細ビューを開きます。
 1. JSON出力をコピーし、[!DNL Commerce] カタログにあるものと一致することを確認します。
 1. コンテンツが一致しない場合は、スペースやピリオドの追加など、カタログ内の製品を少し変更して、変更を強制的に検出します。
-1. 再同期を待つか、管理者のCLIまたは[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページから手動再同期をトリガーします。
+1. 再同期を待つか、管理者のCLIまたは[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページから手動再同期をトリガーします。
 
-[!DNL Product Recommendations]のカタログデータのトラブルシューティングについて詳しくは、[Commerce ナレッジベースの商品レコメンデーションモジュール &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-40095)のトラブルシューティングを参照してください。
+[!DNL Product Recommendations]のカタログデータのトラブルシューティングについて詳しくは、[Commerce ナレッジベースの商品レコメンデーションモジュール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-40095)のトラブルシューティングを参照してください。
 
 ## スケジュールでデータ同期が実行されていません {#sync-not-on-schedule}
 
@@ -96,8 +96,8 @@ ht-degree: 0%
 
 **解決策：**
 
-- [cron ジョブが実行中であることを確認します](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832)。
-- 次のフィードのインデックスが&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;に設定されていることを確認します。カタログ属性、製品、製品の上書き、製品バリアント。 Commerce管理者の[[!UICONTROL Index Management]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)またはCLI: `bin/magento indexer:show-mode | grep -i feed`を使用して確認します。
+- [cron ジョブが実行中であることを確認します](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-39832)。
+- 次のフィードのインデックスが&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;に設定されていることを確認します。カタログ属性、製品、製品の上書き、製品バリアント。 Commerce管理者の[[!UICONTROL Index Management]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management)またはCLI: `bin/magento indexer:show-mode | grep -i feed`を使用して確認します。
 
 ## カタログ同期のステータスが「失敗」です {#catalog-sync-failed}
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 1. エラーの詳細については、データ書き出しエラーログを参照してください。 ログ形式と拡張ログ オプションについては、[&#x200B; ログの確認とトラブルシューティング &#x200B;](logging.md)を参照してください。
    - データ収集中にエラーが発生した`var/log/commerce-data-export-errors.log`。
    - データ送信中にエラーが発生した`var/log/saas-export-errors.log`。
-1. エラーが設定またはサードパーティの拡張機能に関連しない場合は、[関連するログエントリを含むサポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を送信します。
+1. エラーが設定またはサードパーティの拡張機能に関連しない場合は、[関連するログエントリを含むサポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を送信します。
 
 ## ログに「操作がスキップされました – プロセスがロックされました」というメッセージが表示される {#process-locked}
 

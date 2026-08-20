@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 要件定義
 
-- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}を参照してください。
+- [Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) 2.4.4以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}を参照してください。
 - Adobe Commerce環境では、次のいずれかのCommerce サービスを有効にして設定する必要があります。
 
   - [ライブサーチ](../live-search/install.md)
@@ -64,7 +64,7 @@ Commerce Cloud インスタンスの[!DNL Catalog Adapter]をインストール�
 
    >[!NOTE]
    >
-   >Commerce プロジェクト環境のローカル管理について詳しくは、_Adobe Commerce on Cloud Infrastructure ユーザーガイド_&#x200B;の「[CLIを使用した分岐の管理](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/cli-branches)」を参照してください。
+   >Commerce プロジェクト環境のローカル管理について詳しくは、_Adobe Commerce on Cloud Infrastructure ユーザーガイド_&#x200B;の「[CLIを使用した分岐の管理](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/cli-branches)」を参照してください。
 
 1. Adobe Commerce Cloud CLIを使用して更新する環境ブランチを確認します。
 
@@ -94,7 +94,7 @@ Commerce Cloud インスタンスの[!DNL Catalog Adapter]をインストール�
    git push origin <branch-name>
    ```
 
-   更新をクラウド環境にプッシュすると、[Commerce クラウド デプロイメント プロセス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process)が開始され、変更が適用されます。 [&#x200B; デプロイ ログ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)のデプロイメント ステータスを確認します。
+   更新をクラウド環境にプッシュすると、[Commerce クラウド デプロイメント プロセス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/deploy/process)が開始され、変更が適用されます。 [&#x200B; デプロイ ログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)のデプロイメント ステータスを確認します。
 
 >[!TAB  オンプレミス ]
 

@@ -29,7 +29,7 @@ CommerceをAEM Assets インスタンスに接続し、アセットの同期に�
 
 AEM Assets プロジェクトを特定したら、Adobe CommerceとAEM Assets間でアセットを同期するための一致するルールを選択します。
 
-* **[!UICONTROL Match by product SKU]** - アセットが正しい商品に関連付けられていることを確認するために、アセットメタデータのSKUと[Commerce商品SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku)を一致させるデフォルトのルール。
+* **[!UICONTROL Match by product SKU]** - アセットが正しい商品に関連付けられていることを確認するために、アセットメタデータのSKUと[Commerce商品SKU](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/glossary#sku)を一致させるデフォルトのルール。
 
 * **[!UICONTROL Custom match]** – より複雑なシナリオまたはカスタム一致ロジックを必要とする特定のビジネス要件の一致ルール。 カスタムマッチングを実装するには、Adobe Developer App Builderでカスタムコードを開発して、アセットと商品のマッチング方法を定義する必要があります。 詳細については、近日公開予定です…
 
@@ -80,7 +80,7 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 1. **[!UICONTROL Asset matching rule]** ドロップダウンから、アセット同期用のアセット一致ルールのいずれかを選択します。
 
    * [&#x200B; デフォルトの自動一致](../synchronize/default-match.md)の&#x200B;**[!UICONTROL Match by SKU]**&#x200B;を選択します。
-   * [&#x200B; カスタム自動一致](../synchronize/custom-match.md)の&#x200B;**[!UICONTROL Custom match]**&#x200B;を選択します（[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)が必要です）。
+   * [&#x200B; カスタム自動一致](../synchronize/custom-match.md)の&#x200B;**[!UICONTROL Custom match]**&#x200B;を選択します（[Adobe Developer App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)が必要です）。
 
 1. **[!UICONTROL Match by product SKU attribute name]** フィールド `commerce:skus`に、Commerce製品SKU用に定義された[AEM Assets メタデータフィールド名](configure-aem.md#define-the-metadata-profile)をデフォルトで追加します。
 
@@ -108,7 +108,7 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 
 管理者はその所有者の利用可能な画像を表示し、残りの画像はグレー表示され、**非表示** ラベルが付いて表示されます。
 
-画像の表示動作について詳しくは、[画像の詳細を設定](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} トピックを参照してください。
+画像の表示動作について詳しくは、[画像の詳細を設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} トピックを参照してください。
 
 >[!TIP]
 >
@@ -136,7 +136,7 @@ AEM Assets as a Cloud Service プロジェクトに[&#x200B; カスタムドメ�
 
 ## 次のステップ
 
-* **Commerce Storefrontの設定**- Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用するには、*Adobe Commerce Storefront ドキュメント*&#x200B;の[AEM Assets統合](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) トピックで説明されているストアフロントの設定を完了します。
+* **Commerce Storefrontの設定**- Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用するには、*Adobe Commerce Storefront ドキュメント*&#x200B;の[AEM Assets統合](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=ja) トピックで説明されているストアフロントの設定を完了します。
 
 * Adobe CommerceとAEM Assets統合の間で[一致するルール &#x200B;](../synchronize/default-match.md)を設定します。
 

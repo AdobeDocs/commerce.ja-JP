@@ -34,21 +34,21 @@ Adobe Experience Platform Privacy Serviceには、顧客データリクエスト
 
 Privacy Serviceとプライバシーリクエストの作成および管理方法について詳しくは、Adobe Experience Platformのドキュメントを参照してください。
 
-* [Privacy Serviceの概要](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home)
-* [Privacy Service UIでのプライバシージョブの管理](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide)
+* [Privacy Serviceの概要](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/home)
+* [Privacy Service UIでのプライバシージョブの管理](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/ui/user-guide)
 
 ## 個々のデータプライバシー要求の管理
 
 [!DNL Commerce]から消費者データにアクセスして削除する個々のリクエストを送信するには、次の2つの方法があります。
 
-* **Privacy Service UI**&#x200B;を使用します。 ドキュメント [こちら](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide){target="_blank"}を参照してください。
+* **Privacy Service UI**&#x200B;を使用します。 ドキュメント [こちら](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/ui/user-guide){target="_blank"}を参照してください。
 * **Privacy Service API**&#x200B;を使用します。 ドキュメント [ここ](https://developer.adobe.com/experience-platform-apis/references/privacy-service){target="_blank"}およびAPI情報[ここ](https://developer.adobe.com/experience-platform-apis/){target="_blank"}を参照してください。
 
 Privacy Serviceでは、**データアクセス**&#x200B;と&#x200B;**データ削除**&#x200B;の2種類のリクエストをサポートしています。
 
 >[!NOTE]
 >
->この記事では、[!DNL Commerce]に対するプライバシーリクエストの作成に焦点を当てています。 [Platform データレイク &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy)、[&#x200B; リアルタイム顧客プロファイル &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy)または[ID サービス &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy)に対してプライバシー要求を行う予定がある場合は、それぞれのユーザーガイドを参照してください。 Commerceへのプライバシーリクエストは、これらのシステムのデータすべてを削除するものではないため、各システムに対して個別に削除およびアクセスのリクエストを行う必要があります。
+>この記事では、[!DNL Commerce]に対するプライバシーリクエストの作成に焦点を当てています。 [Platform データレイク &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/catalog/privacy)、[&#x200B; リアルタイム顧客プロファイル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/profile/privacy)または[ID サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/privacy)に対してプライバシー要求を行う予定がある場合は、それぞれのユーザーガイドを参照してください。 Commerceへのプライバシーリクエストは、これらのシステムのデータすべてを削除するものではないため、各システムに対して個別に削除およびアクセスのリクエストを行う必要があります。
 
 ## データアクセス
 
@@ -56,7 +56,7 @@ Privacy Serviceでは、**データアクセス**&#x200B;と&#x200B;**データ�
 
 ## データ削除
 
-削除要求の場合、Privacy Serviceはマーケティング目的でCommerce SaaS サービスに保存されている[!DNL Commerce]個のデータを削除します。つまり、データ主体のプロファイルと注文は、キャンペーンやカスタマージャーニーで使用するためにAdobe マーケティングアプリケーションに送信されなくなります。 ただし、Privacy Serviceは、マーチャントのトランザクションニーズに必要な場合があるため、[!DNL Commerce] アプリケーションのデータを削除しません。 加盟店は、[!DNL Commerce] アプリケーション内のデータ削除/アクセス要求に対して責任を負います。 詳しくは、[責任セキュリティと運用モデルの共有](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)を参照してください。
+削除要求の場合、Privacy Serviceはマーケティング目的でCommerce SaaS サービスに保存されている[!DNL Commerce]個のデータを削除します。つまり、データ主体のプロファイルと注文は、キャンペーンやカスタマージャーニーで使用するためにAdobe マーケティングアプリケーションに送信されなくなります。 ただし、Privacy Serviceは、マーチャントのトランザクションニーズに必要な場合があるため、[!DNL Commerce] アプリケーションのデータを削除しません。 加盟店は、[!DNL Commerce] アプリケーション内のデータ削除/アクセス要求に対して責任を負います。 詳しくは、[責任セキュリティと運用モデルの共有](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/shared-responsibility)を参照してください。
 
 [!DNL Commerce]は、特定のデータの削除を要求するデータ主体の情報を送信することで、削除リクエストについて販売者に通知します。
 
@@ -81,8 +81,8 @@ Adobe [!DNL Commerce]のデータへのアクセスと削除をリクエスト�
 
 Privacy APIを介してアクセス要求と削除要求を送信するには、Privacy Serviceの権限を認証および管理する必要があります。
 
-* [Privacy Service APIの認証とアクセス](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/getting-started)
-* [Privacy Serviceの権限の管理](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/permissions)
+* [Privacy Service APIの認証とアクセス](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/api/getting-started)
+* [Privacy Serviceの権限の管理](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/permissions)
 
 **必須ヘッダー**
 

@@ -86,7 +86,7 @@ Adobe Commerce インスタンスをCommerce サービスに接続した後、�
 部分的な同期により、SaaS データの書き出しは、Commerceアプリケーションから、製品名の変更や価格の更新などの更新情報を、接続されたコマースサービスに自動的に送信します。
 部分的な同期を機能させるには、Commerce アプリケーションで次の設定が必要です。
 
-- [タスクのスケジュール設定は、cron ジョブを介して有効になります](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration)
+- [タスクのスケジュール設定は、cron ジョブを介して有効になります](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/next-steps/configuration)
 - すべてのSaaS データ書き出しインデクサーは`Update by Schedule` モードで設定されます。
 
 ### 失敗した項目の同期を再試行 {#retry-failed-items-sync}
@@ -119,7 +119,7 @@ Adobe Commerce インスタンスをCommerce サービスに接続した後、�
 
 HTTP レベルのエラーに加えて、ローカル処理エラーやネットワーク障害などのアプリケーションレベルのエラーも、`*_resend_failed_items` cron ジョブによる自動再試行のためにスケジュールされます。
 
-Commerce Adminの[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページからフィードごとのステータスを監視します。
+Commerce Adminの[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページからフィードごとのステータスを監視します。
 
 >[!MORELIKETHIS]
 >

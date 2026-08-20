@@ -38,4 +38,4 @@ ht-degree: 10%
   - [Collect Data](events.md)
   - [カスタマイズ](customize.md)
   - [Cookie制限への対応](setting-cookie.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
