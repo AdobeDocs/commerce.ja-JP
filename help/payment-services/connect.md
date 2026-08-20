@@ -16,7 +16,7 @@ ht-degree: 0%
 
 API キーと秘密鍵を使用してCommerce インスタンスを接続し、[Commerce Services Connector](../landing/saas.md)を使用して設定のデータスペースを指定します。 **この接続は1回だけ設定されています。**
 
->[!VIDEO](https://video.tv.adobe.com/v/3447835)
+>[!VIDEO](https://video.tv.adobe.com/v/3448018?captions=jpn)
 
 >[!INFO]
 >

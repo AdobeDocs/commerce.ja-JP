@@ -123,6 +123,6 @@ Adobe CommerceとMagento Open Sourceの[!DNL Payment Services]は、完全に統
 
 [!DNL Payment Services]に関する情報が必要な場合や、このガイドに記載されていない質問がある場合は、[!DNL Payment Services]の営業担当者にお問い合わせいただくか、[!DNL Payment Services]のホームで利用可能なリソースをご利用ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447836)
+>[!VIDEO](https://video.tv.adobe.com/v/3448228?captions=jpn)
 
 [どの [!DNL Payment Services]  オプションが適していますか？](compatibility.md#which-payment-services-option-is-right-for-you)を参照してください どの[!DNL Payment Services] オプションが最も適しているかを確認するトピック。
