@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 662
+source-wordcount: 673
 ht-degree: 1%
 
 ---
@@ -64,13 +64,13 @@ ht-degree: 1%
 | `index` | `indexer_update_all_views` | エンティティの更新をリッスンし、フィード項目をアセンブリし、フィードのステータスを保持します | 1分ごと |
 | `index` | `indexer_reindex_all_invalid` | 「Reindex required」としてマークされたフィード インデックスに対して完全な再同期を実行します | 1分ごと |
 | `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | 失敗したフィード項目を確認し、[!DNL Commerce Optimizer]に再送信します | 5分ごとに |
-| `commerce_data_export` | `cleanup_deleted_feed_items` | 保存期間（7日間）を過ぎて同期された削除されたフィード項目をクリーンアップします | 毎日、午前2:00時 |
+| `commerce_data_export` | `cleanup_deleted_feed_items` | 保存期間（7日間）を過ぎて同期された削除されたフィード項目をクリーンアップします | 毎日2:00 AM |
 
 **[!DNL SaaS Data Export]**&#x200B;拡張機能は、フィードの収集とステータスの追跡を処理します。 コネクタレイヤーは、エンティティとスコープを[!DNL Commerce Optimizer] APIで必要な形式にマッピングし、`POST /v1/catalog/<feed name>`を介して送信します。
 
 #### 要件定義
 
-- [Commerce cronが実行中である必要があります](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}。
+- [Commerce cronが実行中である必要があります](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}。
 - フィードのインデクサーは&#x200B;**[!UICONTROL Update by Schedule]** モードを使用する必要があります。 [部分同期](../data-export/sync-overview.md#partial-sync){target="_blank"}を参照してください。
 
 ## スコープベースの同期制御

@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1195
+source-wordcount: 1201
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452570?captions=jpn&learn=on)
 
-ライブサーチの使用と設定に関する詳細なビデオについては、 [!DNL Live Search][&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)の完全デモを参照してください。
+ライブサーチの使用と設定に関する詳細なビデオについては、 [!DNL Live Search]&#x200B;[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)の完全デモを参照してください。
 
 ### 入力中に検索
 
@@ -121,10 +121,10 @@ ht-degree: 1%
 
 ### 非アクティブなテスト環境
 
-テスト環境でカタログデータを再アクティブ化するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Live Search]」というタイトルで送信し、環境IDを含めます。 テスト環境のカタログデータは、数時間以内に復元する必要があります。
+テスト環境でカタログデータを再アクティブ化するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Live Search]」というタイトルで送信し、環境IDを含めます。 テスト環境のカタログデータは、数時間以内に復元する必要があります。
 
 ### 空のカタログ
 
 環境に空のカタログが作成されてから45日後に存在する場合、カタログデータは休止モードに設定され、検索クエリに対してデータは返されません。 これには、実稼動環境とテスト環境の両方が含まれます。
 
-環境でカタログデータを再アクティブ化するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Live Search]」というタイトルで送信し、環境IDを含めます。 環境内のカタログデータは、数時間以内に復元する必要があります。
+環境でカタログデータを再アクティブ化するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Live Search]」というタイトルで送信し、環境IDを含めます。 環境内のカタログデータは、数時間以内に復元する必要があります。

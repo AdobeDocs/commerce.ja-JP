@@ -15,9 +15,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 971
+source-wordcount: 966
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 >
 >Adobe Commerce as a Cloud Serviceを使用している場合は、ご使用の環境で最新バージョンのメタパッケージを利用できます。 サービスの使用を開始するには、[&#x200B; カタログサービスの概要](get-started.md)を参照してください。
 >
->Adobe Commerce Optimizerを使用したCommerce ストアフロントの実装については、「[Merchandising Services Developer Guide for Adobe Commerce Optimizer](https://developer-stage.adobe.com/commerce/services/optimizer/)」を参照してください。
+>Adobe Commerce Optimizerを使用したCommerce ストアフロントの実装については、「[Merchandising Services Developer Guide for Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/)」を参照してください。
 
 
 ## 必要システム構成
@@ -91,7 +91,7 @@ Commerce Cloud インスタンスの[!DNL Catalog Service]をインストール�
 
    >[!NOTE]
    >
-   >Commerce プロジェクト環境のローカル管理について詳しくは、_Adobe Commerce on Cloud Infrastructure ユーザーガイド_&#x200B;の「[CLIを使用した分岐の管理](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/develop/cli-branches)」を参照してください。
+   >Commerce プロジェクト環境のローカル管理について詳しくは、_Adobe Commerce on Cloud Infrastructure ユーザーガイド_&#x200B;の「[CLIを使用した分岐の管理](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/cli-branches)」を参照してください。
 
 1. Adobe Commerce Cloud CLIを使用して更新する環境ブランチを確認します。
 
@@ -173,7 +173,7 @@ Commerce Cloud インスタンスの[!DNL Catalog Service]をインストール�
 
 カタログの書き出しが正しく実行されていることを確認するには：
 
-- [cron ジョブが実行中であることを確認します](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
+- [cron ジョブが実行中であることを確認します](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-39832)。
 - インデックスが[管理者](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management)から実行されているか、またはCommerce CLI コマンド `bin/magento indexer:info`を使用して実行されていることを確認します。
 - `Catalog Attributes Feed, Product Feed, Product Overrides Feed`および`Product Variant Feed`のインデクサーが`Update by Schedule`に設定されていることを確認します。
 

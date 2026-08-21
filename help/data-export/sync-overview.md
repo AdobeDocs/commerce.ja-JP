@@ -22,9 +22,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 907
+source-wordcount: 921
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Adobe Commerce インスタンスをCommerce サービスに接続した後、�
 部分的な同期により、SaaS データの書き出しは、Commerceアプリケーションから、製品名の変更や価格の更新などの更新情報を、接続されたコマースサービスに自動的に送信します。
 部分的な同期を機能させるには、Commerce アプリケーションで次の設定が必要です。
 
-- [タスクのスケジュール設定は、cron ジョブを介して有効になります](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=ja)
+- [タスクのスケジュール設定は、cron ジョブを介して有効になります](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/next-steps/configuration)
 - すべてのSaaS データ書き出しインデクサーは`Update by Schedule` モードで設定されます。
 
 ### 失敗した項目の同期を再試行 {#retry-failed-items-sync}
@@ -103,7 +103,7 @@ Adobe Commerce インスタンスをCommerce サービスに接続した後、�
 | `index` | `indexer_reindex_all_invalid` | 「Reindex required」としてマークされたフィード インデックスの完全な再同期を実行します | 1分ごと |
 | `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | 失敗したフィード項目を検出して再送信します | 5分ごとに |
 | `commerce_data_export` | `saas_data_exporter` | レガシーモードのフィード（注文、スコープ）のデータを送信します | 5分ごとに |
-| `commerce_data_export` | `cleanup_deleted_feed_items` | 保存期間（7日間）を過ぎて同期された削除されたフィード項目をクリーンアップします | 毎日、午前2:00時 |
+| `commerce_data_export` | `cleanup_deleted_feed_items` | 保存期間（7日間）を過ぎて同期された削除されたフィード項目をクリーンアップします | 毎日2:00 AM |
 
 ## フィード送信とHTTP エラー処理 {#feed-submission-and-http-error-handling}
 

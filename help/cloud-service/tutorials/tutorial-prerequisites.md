@@ -26,9 +26,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1289
 ht-degree: 0%
 
 ---
@@ -55,8 +55,8 @@ ht-degree: 0%
   ```
 
 * バッシュシェル
-   * macOS/Linux：インストールは不要
-   * Windows: [Git Bash](https://git-scm.com/install)または[Windows Subsystem for Linux （WSL） &#x200B;](https://learn.microsoft.com/en-us/windows/wsl/install)を使用
+  * macOS/Linux：インストールは不要
+  * Windows: [Git Bash](https://git-scm.com/install)または[Windows Subsystem for Linux （WSL） &#x200B;](https://learn.microsoft.com/en-us/windows/wsl/install)を使用
 
 * [&#x200B; カーソル &#x200B;](https://cursor.com/download)などのAI支援IDEのダウンロード（推奨）。 Claude Code、Gemini CLI、Copilotなどの他のIDEもサポートされていますが、チュートリアルのプロンプトやその他の手順の変更が必要になる場合があります。
 
@@ -74,7 +74,7 @@ ht-degree: 0%
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-[!DNL Adobe I/O CLI]と必要なプラグインをインストールしたら、拡張性ワークスペースを設定します。 Adobeでは、最速のエクスペリエンスを得るために自動セットアップを使用することをお勧めします。
+[!DNL Adobe I/O CLI]と必要なプラグインをインストールしたら、拡張性ワークスペースを設定します。 Adobeでは、最も効率的なエクスペリエンスを得るために自動セットアップを使用することをお勧めします。
 
 * **[自動セットアップ &#x200B;](#automated-setup) （推奨）** – 単一のコマンドを実行して、ワークスペースを自動的に設定します。
 * **[手動設定](#manual-setup)** – 各コンポーネントを個別に設定するには、手順に従います。
@@ -202,7 +202,7 @@ Next steps:
 
 #### 新しいプロジェクトの作成
 
-Adobe Developer ConsoleでApp Builder プロジェクトを作成し、拡張機能をホストします。
+拡張機能をホストするには、Adobe Developer Consoleで[!DNL App Builder] プロジェクトを作成します。
 
 1. [Adobe Developer Console](https://developer.adobe.com/)に移動します。
 1. **[!UICONTROL Create project from a template]**&#x200B;をクリックします。
@@ -227,10 +227,10 @@ Adobe Developer ConsoleでApp Builder プロジェクトを作成し、拡張機
 1. 次のいずれかのAPIを選択します。 以下に示す各APIについて、このプロセスを繰り返します。
 
    * **[!UICONTROL Adobe Services]** フィルター：
-      * **[!UICONTROL I/O Management API]**
-      * **[!UICONTROL I/O Events]** API
+     * **[!UICONTROL I/O Management API]**
+     * **[!UICONTROL I/O Events]** API
    * **[!UICONTROL Experience Cloud]** フィルター：
-      * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
+     * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
 
 1. **[!UICONTROL Next]**&#x200B;をクリックします。
 
@@ -342,7 +342,7 @@ EVENT_PREFIX=test
 
 ### ワークスペース設定のダウンロード
 
-次のコマンドを実行して、ワークスペース設定ファイルをダウンロードします。
+ワークスペース設定ファイルをダウンロードするには、次のコマンドを実行します。
 
 ```bash
 aio console workspace download workspace.json

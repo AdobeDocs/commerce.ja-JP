@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 882a39a5b0eeb616c7ca1d9e64c3fae76760afad
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: '3778'
+source-wordcount: '3766'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 1. _[!UICONTROL [!DNL Payment Services]]_&#x200B;セクションで、_[!UICONTROL General Configuration]_ セクションを展開します。
 1. **Enable**&#x200B;の場合は、ストアで[!DNL Payment Services]を有効にするために`Yes`に設定します。
 1. **メソッド**&#x200B;の場合、ストアの[!DNL Payment Services]をまだテストしている場合は`Sandbox`に、ライブ支払いを有効にする準備ができている場合は`Production`に設定します。
-1. **[!UICONTROL Payment Services Sandbox ID]**&#x200B;および&#x200B;**[!UICONTROL Payment Services Production ID]**&#x200B;の値は、[Commerce Services Connector](https://experienceleague.adobe.com/ja/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank}を設定し、初めて[!DNL Payment Services] ダッシュボードにアクセスすると、自動的に入力されます。 これは、サンドボックスや実稼動環境のオンボーディングを完了するために実行します。 これらの値は、SaaS IDを[!DNL Payment Services]に関連付けます。
+1. **[!UICONTROL Payment Services Sandbox ID]**&#x200B;および&#x200B;**[!UICONTROL Payment Services Production ID]**&#x200B;の値は、[Commerce Services Connector](../landing/saas.md){target=_blank}を設定し、初めて[!DNL Payment Services] ダッシュボードにアクセスすると、自動的に入力されます。 これは、サンドボックスや実稼動環境のオンボーディングを完了するために実行します。 これらの値は、SaaS IDを[!DNL Payment Services]に関連付けます。
 
    >[!WARNING]
    >
@@ -58,13 +58,13 @@ ht-degree: 0%
 
 **複数のweb サイト** （およびストアビュー）で1つのCommerce インスタンスを実行する場合、一部のweb サイトに&#x200B;**異なるPayPal マーチャント アカウント**&#x200B;が必要になる場合があります。 [!DNL Payment Services]では、**グローバル** （デフォルト）スコープでインスタンスを設定してオンボーディングした後、管理画面で&#x200B;**web サイト範囲**&#x200B;のPayPal オンボーディングを完了できます。
 
-以前のリリースでは、web サイト レベルのPayPal アカウントマッピングでは、通常、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#Solution)またはAdobe担当者にお問い合わせください。 以下の前提条件を満たす場合は、**[!UICONTROL Connect different account]** アクションを使用します。
+以前のリリースでは、web サイト レベルのPayPal アカウントマッピングでは、通常、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)またはAdobe担当者にお問い合わせください。 以下の前提条件を満たす場合は、**[!UICONTROL Connect different account]** アクションを使用します。
 
 ### 前提条件（グローバルスコープ）
 
 **[!UICONTROL Connect different account]** コントロールは、**デフォルト/グローバル**&#x200B;設定のインスタンスに対して次の&#x200B;**すべて**&#x200B;が既にtrueである場合、**web サイト** スコープでのみ使用でき、有効になります。
 
-1. [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas)のセットアップが完了しました。
+1. [Commerce Services Connector](../landing/saas.md)のセットアップが完了しました。
 
 1. [&#x200B; サンドボックスおよび実稼動](connect.md#configure-commerce-services)のAPI キー（公開および非公開）が管理者に保存されます。
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストアビュー | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：[!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=ja)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/payment-methods/payment-methods)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | ストアビュー | チェックアウトページで指定した支払い方法の並べ替え順序。 `Numeric Only`値 |
 | [!UICONTROL Show on checkout page] | web サイト | チェックアウトページでクレジットカード情報フィールドを有効または無効にします。 オプション：[!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | ストアビュー | [&#x200B; クレジットカードの資格情報の保管](vaulting.md)を有効または無効にします。 オプション：[!UICONTROL Yes] / [!UICONTROL No] |
@@ -141,7 +141,7 @@ ht-degree: 0%
 |---|---|---|
 | [!UICONTROL Enable Fastlane] | ストアビュー | チェックアウトページで[!DNL Fastlane]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Title] | ストアビュー | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 デフォルト値は`Credit Card (via Fastlane)`です。 オプション：[!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=ja)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/payment-methods/payment-methods)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3D Secure authentication] | ストアビュー | Fastlane[&#128279;](security.md#3ds)の3D セキュア認証を有効または無効にします。 オプション：[!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Sort order] | ストアビュー | チェックアウトページで指定した支払い方法の並べ替え順序。 `Numeric Only`値 |
 | [!UICONTROL Enable messaging] | ストアビュー | Adobe Commerceのチェックアウト時に[!UICONTROL Fastlane] ブランディングを有効にするかどうかを指定します。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -219,7 +219,7 @@ ht-degree: 0%
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストアビュー | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：[!UICONTROL text field] |
-| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=ja)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/payment-methods/payment-methods)。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show Apple Pay on checkout page] | web サイト | チェックアウトページで[!DNL Apple Pay]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Apple Pay at start of checkout] | ストアビュー | チェックアウトフローの開始時に[!DNL Apple Pay]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | ストアビュー | チェックアウトページで指定した支払い方法の並べ替え順序。 `Numeric Only`値 |
@@ -259,7 +259,7 @@ ht-degree: 0%
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Title] | ストアビュー | チェックアウト時に支払い方法ビューにこの支払いオプションに表示されるテキストラベルを指定します。 オプション：`[!UICONTROL text field]` |
-| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=ja)。 オプション：`[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
+| [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/payment-methods/payment-methods)。 オプション：`[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
 | [!UICONTROL Show Google Pay on checkout page] | web サイト | チェックアウトページで[!DNL Google Pay]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay at start of checkout] | ストアビュー | チェックアウトフローの開始時に[!DNL Google Pay]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | ストアビュー | チェックアウトページで指定した支払い方法の並べ替え順序。 `Numeric Only`値 |
@@ -411,7 +411,7 @@ Apple Pay、Venmo、PayPal PayLater ボタンの切り替えなど、_Settings_&
 
 管理者ユーザーがCommerce Adminで注文を作成および管理できるようにするには、[!DNL Payment Services]固有のリソースをユーザーロールに対して有効にします。
 
-役割の管理方法については、[&#x200B; ユーザーの役割](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html?lang=ja)を参照してください。
+役割の管理方法については、[&#x200B; ユーザーの役割](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-user-roles)を参照してください。
 
 役割にリソースを割り当てる場合は、次を選択する必要があります。
 
@@ -444,7 +444,7 @@ Apple Pay、Venmo、PayPal PayLater ボタンの切り替えなど、_Settings_&
 
 [!UICONTROL Payment Services]では、web サイト レベルで&#x200B;**1**&#x200B;個の加盟店アカウント内で複数のPayPal アカウントを使用できます。 例えば、複数の国（異なる[通貨](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/currency/currency)を使用する）でストアを運営している場合、またはビジネスの一部にAdobe Commerceを使用するが&#x200B;_all_&#x200B;を使用しない場合は、複数のPayPal アカウントを使用するように加盟店アカウントを設定できます。
 
-Web サイト、ストア、ストアビューの階層について詳しくは、[&#x200B; サイト、ストア、およびビューの範囲](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja)を参照してください。
+Web サイト、ストア、ストアビューの階層について詳しくは、[&#x200B; サイト、ストア、およびビューの範囲](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views)を参照してください。
 
 **グローバル**&#x200B;のCommerce サービスとPayPal オンボーディングが完了した後、管理者から&#x200B;**異なるPayPal アカウントを個々のweb サイト**&#x200B;に接続するには、**[!UICONTROL Website]**&#x200B;の範囲で&#x200B;**[!UICONTROL Connect different account]**&#x200B;を使用します。 「[Web サイトの別のPayPal アカウントを接続する](#connect-a-different-paypal-account-for-a-website)」を参照してください。
 

@@ -2,9 +2,9 @@
 title: 限界と限界
 description: ビジネスのニーズを満たすために [!DNL Product Recommendations] の境界と制限について説明します。
 role: Admin, Developer
-source-git-commit: 66830c9d950a27269aca1bda0dcc7d0d86f05647
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## B2B
 
-- 製品レコメンデーションでは、[&#x200B; カテゴリの権限](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions.html)、[共有カタログ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)、顧客グループ固有の価格が適用されます。 買い物客には、セグメントやカタログの割り当てに従って、アクセスできる商品のレコメンデーションのみが表示されます。 [&#x200B; オンボーディング &#x200B;](onboarding.md)を参照してください。
+- 製品レコメンデーションでは、[&#x200B; カテゴリの権限](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/category-permissions)、[共有カタログ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/shared-catalogs/catalog-shared)、顧客グループ固有の価格が適用されます。 買い物客には、セグメントやカタログの割り当てに従って、アクセスできる商品のレコメンデーションのみが表示されます。 [&#x200B; オンボーディング &#x200B;](onboarding.md)を参照してください。
 
 ## データと準備態勢
 
@@ -63,4 +63,4 @@ ht-degree: 0%
 
 ## トラブルシューティング
 
-カタログの同期、表示されない推奨事項、その他の一般的な問題については、[Commerce ナレッジベース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview)を検索するか、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)にお問い合わせください。
+カタログの同期、表示されない推奨事項、その他の一般的な問題については、[Commerce ナレッジベース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview)を検索するか、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)にお問い合わせください。

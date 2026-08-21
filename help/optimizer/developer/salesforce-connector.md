@@ -22,7 +22,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
 source-wordcount: 1183
 ht-degree: 0%
@@ -35,7 +35,7 @@ Adobe App Builder テクノロジに基づいて構築された[!DNL Commerce Op
 
 すぐに使用できるコネクタを使用すれば、信頼性の高いデータ同期機能を実現し、ビジネスニーズに合わせてワークフローを柔軟にカスタマイズできます。
 
-エンドツーエンドのビデオチュートリアルシリーズについては、[Salesforce Commerce Cloud スターターキットについて説明](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)を参照してください。
+エンドツーエンドのビデオチュートリアルシリーズについては、[Salesforce Commerce Cloud スターターキットについて説明](https://experienceleague.adobe.com/ja/docs/commerce-learn/adobe-commerce-optimizer/sfcc-starter-kit/overview)を参照してください。
 
 >[!NOTE]
 >
@@ -48,13 +48,13 @@ Adobe App Builder テクノロジに基づいて構築された[!DNL Commerce Op
 * **複数のデータ型をサポートしています：**&#x200B;複雑なマーチャンダイジング設定を反映するために、製品、価格設定、カタログ構造を同期します。
 
 * **柔軟な同期ワークフロー**
-   * **スケジュールされた同期：** cron ジョブのスケジュールを使用して更新を自動化します。手作業は必要ありません。
-   * **オンデマンドの更新：**&#x200B;緊急の変更、修正、または製品の発表に関するSKU レベルの更新を即座にトリガーします。
+  * **スケジュールされた同期：** cron ジョブのスケジュールを使用して更新を自動化します。手作業は必要ありません。
+  * **オンデマンドの更新：**&#x200B;緊急の変更、修正、または製品の発表に関するSKU レベルの更新を即座にトリガーします。
 
 * **拡張性を重視して構築**
-   * カスタム [Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) （SCAPI）エンドポイントを使用して、互換性を確保し、独自または高度なユースケースに簡単に適応できます。
-   * カタログと価格同期を利用してビジネスを開始してから、ワークフローを拡張して他の統合やビジネスロジックに対応させることができます。
-   * 中核的な統合を再構築することなく、ワークフローを設定、進化できます。
+  * カスタム [Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) （SCAPI）エンドポイントを使用して、互換性を確保し、独自または高度なユースケースに簡単に適応できます。
+  * カタログと価格同期を利用してビジネスを開始してから、ワークフローを拡張して他の統合やビジネスロジックに対応させることができます。
+  * 中核的な統合を再構築することなく、ワークフローを設定、進化できます。
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Adobe App Builder テクノロジに基づいて構築された[!DNL Commerce Op
 Salesforce Commerce B2C ローカライズ機能を活用する：
 
 * Salesforce Commerce B2Cの商品テキストフィールド（名前、説明）のローカライズ版を、異なるロケール向けに同期します。
-* Salesforce ロケールの概念1:1を[!DNL Commerce Optimizer] ロケールにマップします。
+* Salesforce ロケールの概念を1:1に[!DNL Commerce Optimizer] ロケールにマッピングします。
 * 様々なローカライゼーションで複数の製品取り込みサイクルをサポートします。
 * グローバル製品カタログ全体で一貫性を維持。
 

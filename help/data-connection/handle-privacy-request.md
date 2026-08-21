@@ -21,9 +21,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 598
+source-wordcount: 595
 ht-degree: 1%
 
 ---
@@ -41,8 +41,8 @@ Privacy Serviceとプライバシーリクエストの作成および管理方�
 
 [!DNL Commerce]から消費者データにアクセスして削除する個々のリクエストを送信するには、次の2つの方法があります。
 
-* **Privacy Service UI**&#x200B;を使用します。 ドキュメント [こちら](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/ui/user-guide#_blank)を参照してください。
-* **Privacy Service API**&#x200B;を使用します。 ドキュメント [ここ](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank)およびAPI情報[ここ](https://developer.adobe.com/experience-platform-apis/#_blank)を参照してください。
+* **Privacy Service UI**&#x200B;を使用します。 ドキュメント [こちら](https://experienceleague.adobe.com/ja/docs/experience-platform/privacy/ui/user-guide){target="_blank"}を参照してください。
+* **Privacy Service API**&#x200B;を使用します。 ドキュメント [ここ](https://developer.adobe.com/experience-platform-apis/references/privacy-service){target="_blank"}およびAPI情報[ここ](https://developer.adobe.com/experience-platform-apis/){target="_blank"}を参照してください。
 
 Privacy Serviceでは、**データアクセス**&#x200B;と&#x200B;**データ削除**&#x200B;の2種類のリクエストをサポートしています。
 

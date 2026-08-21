@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 334
+source-wordcount: 335
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Commerceの質の高い体験に対する需要は高く、それを実現する
 
 1. **カスタマイズされたチェックアウトフロー**- コマースジャーニーのさまざまな段階でチェックアウトオプションを提供し、購入プロセスにおけるフリクションを減らし、コンバージョン率を高めることができます。
 
-1. **[GraphQLとのヘッドレス互換性](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)**：マーチャントには、フロントエンド開発用のRESTおよびSOAP web APIの代替手段があります。
+1. **[GraphQLとのヘッドレス互換性](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/)**：マーチャントには、フロントエンド開発用のRESTおよびSOAP web APIの代替手段があります。
 
 1. **財務報告** - [支払いの詳細](order-payment-status.md)を注文と同期することで、処理済み数量、支払い残高、[支払い](payouts.md)、詳細な[&#x200B; トランザクションレベルのレポート &#x200B;](reporting.md)に対する完全な透明性を取得し、財務調整とトランザクションの可視性を最大限に高めます。
 

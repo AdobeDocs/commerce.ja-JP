@@ -12,9 +12,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 491
+source-wordcount: 493
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 #### オンクラウドのインフラ
 
-Adobe Commerce on Cloud インフラストラクチャで、`.magento.env.yaml`で`ENABLE_EVENTING` グローバル変数を有効にします。 [学習を増やす](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=ja#enable_eventing)。
+Adobe Commerce on Cloud インフラストラクチャで、`.magento.env.yaml`で`ENABLE_EVENTING` グローバル変数を有効にします。 [学習を増やす](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-global#enable_eventing)。
 
 ```bash
 stage:
@@ -177,4 +177,4 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 ## [!DNL Data Connection]拡張機能のアンインストール {#uninstall}
 
-[!DNL Data Connection]拡張機能をアンインストールするには、[&#x200B; モジュールのアンインストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=ja)を参照してください。
+[!DNL Data Connection]拡張機能をアンインストールするには、[&#x200B; モジュールのアンインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)を参照してください。

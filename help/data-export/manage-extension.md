@@ -19,7 +19,7 @@ topic_v2:
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
 source-wordcount: 312
 ht-degree: 0%
@@ -59,7 +59,7 @@ Composerを使用すると、インストールされているコマースデー
    composer require magento/module-data-exporter:103.0.4 --with-all-dependencies
    ```
 
-Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 _Adobe Commerce on Cloud Infrastructure ガイド_&#x200B;の[拡張機能のアップグレード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)を参照してください。
+Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 _Adobe Commerce on Cloud Infrastructure ガイド_&#x200B;の[拡張機能のアップグレード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/extensions#upgrade-an-extension)を参照してください。
 
 >[!MORELIKETHIS]
 >

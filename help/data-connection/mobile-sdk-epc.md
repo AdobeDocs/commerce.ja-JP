@@ -15,9 +15,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 616
+source-wordcount: 619
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 [Adobe Experience Platform モバイル SDK](https://developer.adobe.com/client-sdks/home/)をCommerce モバイルアプリと統合すると、マーチャントはCommerce [&#x200B; イベントデータ &#x200B;](events.md)をExperience Platform エッジに送信できます。
 
-Commerce イベントデータがエッジで利用可能な場合、他のAdobe Experience Cloud アプリケーションからアクセスできます。 例えば、データを使用してReal-Time CDPでオーディエンスを作成し、[それらのオーディエンス &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=ja)を使用してCommerce モバイルアプリをパーソナライズできます。
+エッジでCommerce イベントデータが利用可能になると、他のAdobe Experience Cloud アプリケーションからアクセスできるようになります。 例えば、データを使用してReal-Time CDPでオーディエンスを作成し、[それらのオーディエンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/audience-activation)を使用してCommerce モバイルアプリをパーソナライズできます。
 
 ## 設定
 
@@ -38,9 +38,9 @@ Adobe Experience Platform Mobile SDKとCommerceの使用を開始するには、
 
 ### Experience Platform
 
-1. モバイルアプリの機能について詳しくは、[&#x200B; モバイルアプリのAdobe Experience Cloud チュートリアル &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ja)を参照してください。
+1. モバイルアプリの機能について詳しくは、[&#x200B; モバイルアプリのAdobe Experience Cloud チュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/overview)を参照してください。
 
-1. [Experience PlatformにSDKをインストールして設定](https://developer.adobe.com/client-sdks/documentation/getting-started/)します。
+1. [Experience PlatformにSDKをインストールして設定](https://developer.adobe.com/client-sdks/home/getting-started/)します。
 
    >[!NOTE]
    >
@@ -174,4 +174,4 @@ Experience PlatformのSDK設定を完了したら、SDK設定をCommerceに追�
 
 ## 次のステップ
 
-モバイル Commerce アプリからReal-Time CDP オーディエンスを取得し、カートの価格ルール、動的ブロック、および関連する商品ルールを通知する方法については、[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=ja#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)を参照してください。
+モバイル Commerce アプリからReal-Time CDP オーディエンスを取得し、カートの価格ルール、動的ブロック、および関連する商品ルールを通知する方法については、[Audience Activation](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/audience-activation#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)を参照してください。

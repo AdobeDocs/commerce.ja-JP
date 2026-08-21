@@ -3,9 +3,9 @@ title: クレジットカードのヴォールティング
 description: 買い物客は、将来の購入のためにクレジットカードの詳細を保管（保存）することができます。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
    ![新しいカードを追加](assets/add-new-card.png){width="400" zoomable="yes"}
 
    お客様は、支払い方法を保管するために、カードや請求情報など、必要なすべての詳細を提供する必要があります。
-ヴォールトされたすべての支払い方法では、買い物客のPayPal アカウントにあるカードをヴォールトする際に、請求先住所セットを使用します。 Commerceに表示されている請求先住所とは異なる請求先住所が表示される場合があります。
+   ヴォールトされたすべての支払い方法では、買い物客のPayPal アカウントにあるカードをヴォールトする際に、請求先住所セットを使用します。 Commerceに表示されている請求先住所とは異なる請求先住所が表示される場合があります。
 
 1. **[!UICONTROL Save New Card]**&#x200B;をクリック
 
@@ -73,10 +73,10 @@ Adminでヴォールトカードを使用できるのは、お客様が既存の
 
 管理画面で、保管されているクレジットカードを使用して顧客の注文を作成するには：
 
-1. [注文を作成して商品を追加](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=ja)。
+1. [注文を作成して商品を追加](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
 1. _[!UICONTROL Payment & Shipping Information]_&#x200B;で、支払い方法として&#x200B;**[!UICONTROL Stored Cards]**&#x200B;を選択します。
 1. 希望するアーチ付きクレジットカードの支払い方法を選択します。
-1. 注文に必要なその他の手順を完了した後、[それを送信](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=ja#step-3%3A-submit-the-order)。
+1. 注文に必要なその他の手順を完了した後、[それを送信](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
 
    ![管理者で顧客に対して保管されているクレジットカードを使用](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

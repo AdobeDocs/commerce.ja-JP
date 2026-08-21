@@ -18,9 +18,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1415
+source-wordcount: 1421
 ht-degree: 0%
 
 ---
@@ -49,9 +49,9 @@ Adobe Commerceのサイト検索機能なら、複数のオプションが用意
 ## インデックス作成
 
 - [!DNL Live Search] [&#x200B; インデックス &#x200B;](indexing.md)は、ストアビューごとに最大450個の製品属性を提供します。 これらは次のように配布されます。
-   - 50個の並べ替え可能な属性
-   - 200のフィルター可能な属性
-   - 200の検索可能な属性
+  - 50個の並べ替え可能な属性
+  - 200のフィルター可能な属性
+  - 200の検索可能な属性
 - [!DNL Live Search]は、Adobe Commerce データベースの商品のみをインデックス作成します。
 - CMS ページにはインデックスが付いていません。
 - SKU、名前、カテゴリ属性はデフォルトで検索可能であり、検索から除外することはできません。 製品がカテゴリに含まれない場合は、必ずカテゴリから製品の割り当てを解除してください。
@@ -59,7 +59,7 @@ Adobe Commerceのサイト検索機能なら、複数のオプションが用意
 ## ファセット
 
 - 定義されたフィルター可能な属性のセットから、最大100個の属性をファセットとして設定できます。
-- ファセット内では、最大100個のバケットを返すことができます。 100個を超えるバケットを返す必要がある場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)を作成して、Adobeがパフォーマンスへの影響を分析し、お客様の環境でこの制限を増やすことができるかどうかを判断できるようにします。
+- ファセット内では、最大100個のバケットを返すことができます。 100個を超えるバケットを返す必要がある場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を作成して、Adobeがパフォーマンスへの影響を分析し、お客様の環境でこの制限を増やすことができるかどうかを判断できるようにします。
 - 動的なファセットは、大きなインデックスや高序数のインデックスでパフォーマンスの問題を引き起こす可能性があります。 ダイナミックファセットを作成し、パフォーマンスの低下やタイムアウトエラーを伴うページの読み込みがないことに気づいた場合は、ファセットをピン留めに変更して、パフォーマンスの問題が解決するかどうかを判断してください。
 - ストックステータス（`quantity_and_stock_status`）はファセットとしてサポートされていません。 管理者では、[!UICONTROL Display Out of Stock Products] = [!UICONTROL No]を設定して、在庫切れの商品をフィルタリングできます。 これは、`[PLP Widget](plp-styling.md)` モジュールで標準でサポートされています。 詳しくは、[在庫切れ商品の管理](manage-out-of-stock-products.md)を参照してください。
 - 日付タイプの属性は、ファセットとしてサポートされていません。
@@ -100,9 +100,9 @@ Adobe Commerceのサイト検索機能なら、複数のオプションが用意
 
 - デフォルトの共有カタログに製品が追加されていない場合、製品は表示されません。
 - [&#x200B; カテゴリ権限](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/category-permissions)を使用して顧客グループを制限するには：
-   - 製品はルートカテゴリに割り当てる必要があります。 （**注：** SaaS データ書き出し拡張機能をバージョン 103.4.0以降に更新することで、この制限を削除できます。 [&#x200B; データ書き出し拡張機能の管理](../data-export/manage-extension.md)を参照してください。
-   - 「ログインしていない」顧客グループには「許可」の閲覧権限を与える必要があります。
-   - 製品を「ログインしていない」顧客グループに制限するには、各カテゴリに移動し、各[顧客グループ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)に対して権限を設定します。
+  - 製品はルートカテゴリに割り当てる必要があります。 （**注：** SaaS データ書き出し拡張機能をバージョン 103.4.0以降に更新することで、この制限を削除できます。 [&#x200B; データ書き出し拡張機能の管理](../data-export/manage-extension.md)を参照してください。
+  - 「ログインしていない」顧客グループには「許可」の閲覧権限を与える必要があります。
+  - 製品を「ログインしていない」顧客グループに制限するには、各カテゴリに移動し、各[顧客グループ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)に対して権限を設定します。
 - 現時点では、PWA Studio上のPLP ウィジェットを使用したB2Bのすぐに使用できるサポートはサポートされていません。 ただし、この機能を実装するには、[API](install.md#pwa-support)を使用できます。
 - [!DNL Live Search]のカテゴリ ファセットには、特定の[顧客グループ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)に表示できないカテゴリが表示される場合があります。
 - [!DNL Live Search]は、最大1,000の顧客グループをサポートできます。
@@ -123,4 +123,4 @@ Adobe Commerceのサイト検索機能なら、複数のオプションが用意
 - [[!DNL Live Search]  ダッシュボードと検索結果のランキングが正しくありません](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) - ライブ検索ダッシュボードに表示される検索結果またはパフォーマンス指標が期待どおりに表示されない問題を解決します。 この記事では、ランキングの不整合とダッシュボードデータの不整合をトラブルシューティングする方法について説明します。
 - [[!DNL Live Search]  ファセットがアルファベット順に並べ替えられない](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) - ファセット値がアルファベット順ではなく予期しない順序で表示される問題を解決します。 この記事では、ストアフロントでファセットの並べ替え動作を設定および修正する手順を説明します。
 
-追加サポートが必要な場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)にお問い合わせください。
+追加サポートが必要な場合は、[&#x200B; サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)にお問い合わせください。

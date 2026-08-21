@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '2254'
+source-wordcount: '2255'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL Payment 
    bin/magento config:set payment/payment_services/async_status_updates 1
    ```
 
-1. ステータス更新が自動的に取得されるように、`sync_order_payment_status` cron ジョブを有効にしてスケジュールします。 [cron ジョブの設定](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=ja)を参照してください。
+1. ステータス更新が自動的に取得されるように、`sync_order_payment_status` cron ジョブを有効にしてスケジュールします。 [cron ジョブの設定](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)を参照してください。
 
 設定とcron ジョブが有効になると、cron ジョブは10分ごとに実行され、`Payment Review` ステータスの注文の更新を取得します。 設定後、通常の操作中に追加の加盟店アクションは必要ありません。
 

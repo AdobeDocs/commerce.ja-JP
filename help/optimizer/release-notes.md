@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1522
+source-wordcount: 1506
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ _2026年5月28日_
 ![修正](../assets/fix.svg) **完全なナビゲーションツリー** - タグ付けされていない中間ノードがパスに存在する場合、タグ付けされた下位カテゴリが、ファミリーフィルター処理された`navigation` ツリーに正しく含まれるようになりました。 この修正により、買い物客はナビゲーション内のすべての関連カテゴリーを表示できるようになり、商品の閲覧と発見が簡単になりました。
 <!--DATA-7183-->
 
-![修正](../assets/fix.svg) **空のスラグ処理を`categoryTree`要求**&#x200B;で修正 – `slugs`引数に空の文字列が含まれていると、[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) クエリが内部サーバーエラーを返す問題を修正しました。 空のスラグ値は無視されるようになったため、ストアフロントと統合では、リクエストに失敗することなくカテゴリーデータを引き続き解決できます。
+![修正](../assets/fix.svg) **空のスラグ処理を`categoryTree`要求**&#x200B;で修正 – `slugs`引数に空の文字列が含まれていると、[`categoryTree`](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) クエリが内部サーバーエラーを返す問題を修正しました。 空のスラグ値は無視されるようになったため、ストアフロントと統合では、リクエストに失敗することなくカテゴリーデータを引き続き解決できます。
 <!--DATA-7184-->
 
 ![修正](../assets/fix.svg) **`searchCategory`要求は、大文字と小文字を区別しないアルファベット順の結果を返します** - `searchCategory` クエリは、大文字と小文字を区別せずに検索結果をアルファベット順に並べ替えるようになり、一貫性のある予測可能な順序を確保します。 接頭辞が短いカテゴリは、名前が同じ場合に最初に表示されます。
@@ -153,7 +153,7 @@ _2026年4月7日_
 
 <!--v1.50 release-->
 
-**より簡単なカテゴリ検索** — [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) クエリは`family`をオプションとして扱うため、ファミリーを指定せずにスラグでカテゴリを解決できます。
+**より簡単なカテゴリ検索** — [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) クエリは`family`をオプションとして扱うため、ファミリーを指定せずにスラグでカテゴリを解決できます。
 
 {{aco-release}}
 
@@ -191,13 +191,13 @@ _2026年2月19日_
 
 <!--v1.48-->
 
-**ストアフロント用のカテゴリ コンテンツが充実** — [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) クエリで、ストアフロントがより充実したカテゴリ ページをレンダリングできるように、説明、画像、SEO メタタグが返されるようになりました。<!--DATA-6933-->
+**ストアフロント用のカテゴリ コンテンツが充実** — [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) クエリで、ストアフロントがより充実したカテゴリ ページをレンダリングできるように、説明、画像、SEO メタタグが返されるようになりました。<!--DATA-6933-->
 
 _2026年2月12日_
 
 <!--v1.49-->
 
-**カテゴリー別に商品データを強化** — GraphQL APIは[`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"} タイプを追加し、ラウンドトリップが少ないカテゴリー別に商品をクエリおよびフィルタリングできるようにします。
+**カテゴリー別に商品データを強化** — GraphQL APIは[`CategoryProductView`](https://developer.adobe.com/commerce/services/reference/graphql/#categoryproductview){target="blank"} タイプを追加し、ラウンドトリップが少ないカテゴリー別に商品をクエリおよびフィルタリングできるようにします。
 
 {{aco-release}}
 

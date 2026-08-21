@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d7623f5d42eaa50b95a2f36c244b8a3e78d4c7a9
 workflow-type: tm+mt
-source-wordcount: 1738
+source-wordcount: 1737
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ bash --version
 
 1. `requirements.md` ファイルを確認し、計画を確認します。
 
-   すべてが正しく見える場合は、エージェントに対して&#x200B;**フェーズ 2 - アーキテクチャ計画**&#x200B;に移動するよう指示します。
+   すべてが正しく見える場合は、担当者に&#x200B;**フェーズ 2 — アーキテクチャ計画**&#x200B;に移動するように指示します。
 
 1. アーキテクチャ計画の見直し：
 
@@ -233,7 +233,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
 
 1. 新しいカーソルウィンドウでストアフロントフォルダーを開きます。
 
-   または、[Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands)がインストールされている場合は、ターミナルで次のコマンドを使用してウィンドウを開きます。
+   または、[Cursor CLI](https://cursor.com/help/customization/keyboard-shortcuts#installing-cli-commands)がインストールされている場合は、ターミナルで次のコマンドを使用してウィンドウを開きます。
 
    ```bash
    cursor .
@@ -266,8 +266,8 @@ cp RATINGS_API_CONTRACT.md ../storefront
 1. 担当者は、タスクの複雑さを評価し、段階的なワークフローを呼び出します。 **フェーズ 1 （要件収集）**&#x200B;中、担当者は要件文書を作成し、次のような質問を明確にします。
 
    * PDPのどの部分に評価が表示されますか？
-   * 新しいスタンドアロンブロックにするか、既存のPDP ドロップインコンポーネント内でスロットをカスタマイズするか。
-   * APIが使用できない場合やデータが返されない場合、フォールバックはどうなりますか？
+   * これは新しいスタンドアロンブロックですか、既存のPDP ドロップインコンポーネント内のスロットカスタマイズですか？
+   * APIが使用できない場合やデータが返されない場合のフォールバックは何ですか？
    * 評価はPLP （製品リスト）にも表示されますか、それともPDPのみですか？
    * デザインスペックやモックアップはありますか？
 
@@ -318,7 +318,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
    開発環境とブラウザーに次の変更が表示されます。
 
    * 製品評価コンポーネントが自動的に作成されます。
-   * コンポーネントは、選択したアーキテクチャに応じて、[&#x200B; ドロップインスロット &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=ja)またはスタンドアロンブロックとしてPDPに統合されます。
+   * コンポーネントは、選択したアーキテクチャに応じて、[&#x200B; ドロップインスロット &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/?lang=ja)またはスタンドアロンブロックとしてPDPに統合されます。
    * 星は、APIの評定値に基づいて適切な塗りつぶしの縦横比で表示されます。
 
    ![製品タイトルの下に統合された星評価を表示する製品詳細ページ &#x200B;](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

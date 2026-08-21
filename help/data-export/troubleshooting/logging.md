@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1010
 ht-degree: 0%
 
 ---
@@ -98,8 +98,8 @@ Adobe Commerce サービスに期待されるデータが表示されない場�
 - **`"Progress 2/5"`**&#x200B;は、5回のイテレーションのうち2回が完了したことを示します。 反復の数は、書き出されたエンティティの数によって異なります。
 - **`"processed: 200"`**&#x200B;は、200件の項目が処理されたことを示します。
 - **`"synced: 100"`**&#x200B;は、100件の項目がSaaSに送信されたことを示します。 `"synced"`が`"processed"`と等しくないことが予想されます。 例を次に示します。
-   - **`"synced" < "processed"`**&#x200B;は、以前に同期されたバージョンと比較して、フィード テーブルがアイテムの変更を検出しなかったことを意味します。 このような項目は、同期操作中は無視されます。
-   - **`"synced" > "processed"`**&#x200B;同じエンティティ id （例：`Product ID`）で、異なるスコープに複数の値を持つことができます。 例えば、ひとつの商品を5つのweb サイトに割り当てることができます。 この場合、「1個の処理済み」項目と「5個の同期済み」項目がある可能性があります。
+  - **`"synced" < "processed"`**&#x200B;は、以前に同期されたバージョンと比較して、フィード テーブルがアイテムの変更を検出しなかったことを意味します。 このような項目は、同期操作中は無視されます。
+  - **`"synced" > "processed"`**&#x200B;同じエンティティ id （例：`Product ID`）で、異なるスコープに複数の値を持つことができます。 例えば、ひとつの商品を5つのweb サイトに割り当てることができます。 この場合、「1個の処理済み」項目と「5個の同期済み」項目がある可能性があります。
 
 +++ **例：価格フィードの完全な再同期ログ**
 
@@ -148,7 +148,7 @@ Commerce サービスでデータが欠落または正しくない場合は、Ad
 - データ書き出しエラーログ （`commerce-data-export-errors.log`）は、収集フェーズで発生したエラーをキャプチャします。
 - SaaS書き出しエラーログ （`saas-export-errors.log`）は、送信段階で発生したエラーをキャプチャします。
 
-設定またはサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を含む[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)を送信してください。
+設定またはサードパーティの拡張機能に関連しないエラーが表示された場合は、できるだけ多くの情報を含む[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を送信してください。
 
 ### カタログ同期の問題を解決する {#resolvesync}
 

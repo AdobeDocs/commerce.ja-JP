@@ -18,9 +18,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 1027
+source-wordcount: 1028
 ht-degree: 0%
 
 ---
@@ -102,4 +102,4 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 
 >[!NOTE]
 >
->[Cookie制限モード &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=ja)が有効になっている場合、Adobe Commerceは、買い物客がCookieの使用に同意するまで行動データを収集しません。 Cookie制限モードが無効な場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[Cookie制限モード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law)が有効になっている場合、Adobe Commerceは、買い物客がCookieの使用に同意するまで行動データを収集しません。 Cookie制限モードが無効な場合、Adobe Commerceはデフォルトで行動データを収集します。

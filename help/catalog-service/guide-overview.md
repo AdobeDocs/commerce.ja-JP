@@ -13,9 +13,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 253
+source-wordcount: 256
 ht-degree: 9%
 
 ---
@@ -35,15 +35,15 @@ ht-degree: 9%
 
 | ガイド | 説明 |
 |------ | ----------- |
-| [Adobe Commerce 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce.html?lang=ja) | Adobe CommerceとMagento Open Sourceの両方のマーチャントに焦点を当てたドキュメント |
+| [Adobe Commerce 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home) | Adobe CommerceとMagento Open Sourceの両方のマーチャントに焦点を当てたドキュメント |
 | [Adobe Commerce 2.4 デベロッパーガイド &#x200B;](https://developer.adobe.com/commerce/docs) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けのドキュメント |
 
 ## サポート
 
-[&#x200B; オンボーディングプロセス &#x200B;](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html?lang=ja)は、[!DNL Catalog Service]機能の設定と有効化に必要な手順をガイドするように設計されています。
+[&#x200B; オンボーディングプロセス &#x200B;](installation.md)は、[!DNL Catalog Service]機能の設定と有効化に必要な手順をガイドするように設計されています。
 
 このガイドで説明されていない情報や質問が必要な場合は、次のリソースを使用してください。
 
-* トラブルシューティング記事については、[&#x200B; ヘルプセンター](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=ja)を参照してください。
-* [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket) - チケットを送信して追加のヘルプを受け取ります。
+* トラブルシューティング記事については、[&#x200B; ヘルプセンター](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview)を参照してください。
+* [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) - チケットを送信して追加のヘルプを受け取ります。
 * Adobe Commerce エンジニアリングチームとSaaS ストアフロントサービスのユーザーが、[#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4)のパブリック Slack チャネルを最新の状態で利用できます。

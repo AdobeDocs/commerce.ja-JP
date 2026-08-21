@@ -29,16 +29,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1343
+source-wordcount: 1337
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Managerの導入方法
 
-[!DNL Adobe Commerce as a Cloud Service]は、ほとんどの設定を標準で提供します。 いくつかの基本的な設定プロセスを完了すると、ストアをすぐに立ち上げて実行できます。 このガイドでは、インスタンスの作成と操作について説明し、組織を成功に導くための設定に役立ちます。 これにより、チームは[!DNL Adobe Commerce as a Cloud Service]と開始に必要なツールに適切にアクセスできるようになります。
+[!DNL Adobe Commerce as a Cloud Service]は、デフォルトでほとんどの設定を提供します。 いくつかの基本的な設定プロセスを完了すると、ストアをすぐに立ち上げて実行できます。 このガイドでは、インスタンスの作成と操作について説明し、組織を成功に導くための設定に役立ちます。 これにより、チームは[!DNL Adobe Commerce as a Cloud Service]と開始に必要なツールに適切にアクセスできるようになります。
 
 [!DNL Adobe Commerce as a Cloud Service]は、デジタルコマース体験を提供するための柔軟性、拡張性、効率性を提供するクラウドネイティブのコマースプラットフォームです。 このSaaS製品は、フルマネージド型のバージョン不要のプラットフォームで、手作業なしでシームレスなアップグレードエクスペリエンスを提供します。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 [!DNL Adobe Commerce as a Cloud Service]は次のコンポーネントで構成されています：
 
 * **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)** - [experience.adobe.com](https://experience.adobe.com/)のすべての[!DNL Adobe Commerce]製品への中心的なエントリポイント
-   * [!UICONTROL **クイックアクセス**]&#x200B;の下の&#x200B;[!UICONTROL **Commerce**]&#x200B;をクリックして、Commerce Cloud Managerを開きます
+  * [!UICONTROL **クイックアクセス**]&#x200B;の下の&#x200B;[!UICONTROL **Commerce**]&#x200B;をクリックして、Commerce Cloud Managerを開きます
 * **[[!DNL Commerce Cloud Manager]](https://experience.adobe.com/#/commerce/cloud-service)** - インスタンスの作成と管理、API URLへのアクセス、Commerce管理者
 * **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** - ユーザーと役割の管理
 * **Commerce管理者** – 製品、注文、お客様、およびストアの設定を管理します
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 >[!TAB  システム管理者とマーチャントのワークフロー]
 
-この図では、システム管理者とマーチャントが[!DNL Adobe Commerce as a Cloud Service] インスタンスにアクセスして管理する方法の概要を示します。 管理者ワークフローについて詳しくは、[Adobe Admin Console ガイド &#x200B;](https://helpx.adobe.com/jp/enterprise/admin-guide.html)を参照してください。
+この図では、システム管理者とマーチャントが[!DNL Adobe Commerce as a Cloud Service] インスタンスにアクセスして管理する方法の概要を示します。 管理者ワークフローについて詳しくは、[Adobe Admin Console ガイド &#x200B;](https://helpx.adobe.com/jp/business/enterprise.html)を参照してください。
 
 Adobe Commerce as a Cloud Serviceの![&#x200B; システム管理者とマーチャントのワークフロー図](./assets/merchant-flow.png){zoomable="yes"}
 
@@ -143,7 +143,7 @@ Adobe Commerce as a Cloud Serviceの![&#x200B; システム管理者とマーチ
 
 * **システム管理者**: [共有責任](./security/shared-responsibility.md)のガイドラインを確認します
 * **マーチャント**：一般的なビジネス シナリオの[&#x200B; ユースケース &#x200B;](use-cases.md)を探る
-* **Developers**: [Adobe Commerce開発者向けドキュメント &#x200B;](https://developer.adobe.com/commerce/docs)をご覧ください
+* **Developers**: [Adobe Commerce開発者向けドキュメント &#x200B;](https://developer.adobe.com/commerce/docs/)をご覧ください
 
 ## Adobe Commerce as a Cloud Serviceの基本
 
@@ -173,7 +173,7 @@ Adobe Commerce as a Cloud Serviceの![&#x200B; システム管理者とマーチ
 
 1. インスタンスの&#x200B;[!UICONTROL **環境タイプ**]&#x200B;を選択します。 次のオプションから選択できます。
 
-   * [!UICONTROL **サンドボックス**] - デザインおよびテストのみを目的としています。 サンドボックス環境を使用して、[!DNL Adobe Commerce as a Cloud Service] ジャーニーを開始する必要があります。
+   * [!UICONTROL **サンドボックス**] - デザインおよびテストのみを目的としています。 Adobeでは、サンドボックス環境を使用して[!DNL Adobe Commerce as a Cloud Service] ジャーニーを開始することをお勧めします。
 
    >[!NOTE]
    >
@@ -215,18 +215,18 @@ Adobe Commerce as a Cloud Serviceの![&#x200B; システム管理者とマーチ
 
 >[!TIP]
 >
->REST エンドポイントとGraphQL エンドポイントおよび管理者URLなど、インスタンスに関する情報を表示するには、インスタンス名の横にある情報アイコンをクリックします。
+>RESTおよびGraphQL エンドポイントと管理者URLなどのインスタンス情報を確認するには、インスタンス名の横にある情報アイコンをクリックします。
 
 管理者とエンドポイントのベース URLは、地域と環境によって異なり、次のパターンを使用します。
 
 * 管理者
-   * 北米の実稼動管理者：`https://na1.admin.commerce.adobe.com`
-   * 北米サンドボックス管理者：`https://na1-sandbox.admin.commerce.adobe.com`
-   * ヨーロッパ実稼動管理者：`https://eu1.admin.commerce.adobe.com`
+  * 北米の実稼動管理者：`https://na1.admin.commerce.adobe.com`
+  * 北米サンドボックス管理者：`https://na1-sandbox.admin.commerce.adobe.com`
+  * ヨーロッパ実稼動管理者：`https://eu1.admin.commerce.adobe.com`
 * RESTとGraphQL
-   * 北米の本番GraphQL: `https://na1.api.commerce.adobe.com`
-   * 北米サンドボックス GraphQL: `https://na1-sandbox.api.commerce.adobe.com`
-   * Europe production GraphQL: `https://eu1.api.commerce.adobe.com`
+  * 北米の本番GraphQL: `https://na1.api.commerce.adobe.com`
+  * 北米サンドボックス GraphQL: `https://na1-sandbox.api.commerce.adobe.com`
+  * Europe production GraphQL: `https://eu1.api.commerce.adobe.com`
 
 ### カタログをインポートします
 

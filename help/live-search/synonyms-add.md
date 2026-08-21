@@ -9,9 +9,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 410
+source-wordcount: 434
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 ## 手順1：同義語の追加
 
 1. 管理画面で、**マーケティング**/SEOと検索> **[!DNL Live Search]**&#x200B;に移動します。
-1. 複数のストアの場合は、**スコープ**&#x200B;を[&#x200B; ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings)に設定し、同義語の設定を適用します。
+1. 複数のストアの場合は、**スコープ**&#x200B;を[&#x200B; ストアビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)に設定し、同義語の設定を適用します。
 1. 「**類義語**」タブをクリックします。
 1. 「**類義語を追加**」ボタンをクリックします。
 

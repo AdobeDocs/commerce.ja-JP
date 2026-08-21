@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 965
+source-wordcount: 966
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 1. **[!UICONTROL Asset matching rule]** ドロップダウンから、アセット同期用のアセット一致ルールのいずれかを選択します。
 
    * [&#x200B; デフォルトの自動一致](../synchronize/default-match.md)の&#x200B;**[!UICONTROL Match by SKU]**&#x200B;を選択します。
-   * [&#x200B; カスタム自動一致](../synchronize/custom-match.md)の&#x200B;**[!UICONTROL Custom match]**&#x200B;を選択します（[Adobe Developer App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)が必要です）。
+   * [&#x200B; カスタム自動一致](../synchronize/custom-match.md)の&#x200B;**[!UICONTROL Custom match]**&#x200B;を選択します（[Adobe Developer App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)が必要です）。
 
 1. **[!UICONTROL Match by product SKU attribute name]** フィールド `commerce:skus`に、Commerce製品SKU用に定義された[AEM Assets メタデータフィールド名](configure-aem.md#define-the-metadata-profile)をデフォルトで追加します。
 

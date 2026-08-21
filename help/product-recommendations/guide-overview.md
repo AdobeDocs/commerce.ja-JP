@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 236
+source-wordcount: 249
 ht-degree: 0%
 
 ---
@@ -43,12 +43,12 @@ ht-degree: 0%
 
 | ガイド | 説明 |
 |------ | ----------- |
-| [Adobe Commerce 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/docs/commerce.html?lang=ja) | Adobe CommerceとMagento Open Sourceの両方のマーチャントに焦点を当てたドキュメント |
+| [Adobe Commerce 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home) | Adobe CommerceとMagento Open Sourceの両方のマーチャントに焦点を当てたドキュメント |
 | [Adobe Commerce 2.4 デベロッパーガイド &#x200B;](https://developer.adobe.com/commerce/docs) | Adobe CommerceまたはMagento Open Sourceの構築とカスタマイズに使用する開発者向けのドキュメント |
 
 ## サポート
 
 このガイドで説明されていない情報や質問が必要な場合は、次のリソースを使用してください。
 
-* [&#x200B; ヘルプセンター](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-tickets){target="_blank"}-[!DNL Product Recommendations]関連のトラブルシューティング記事を参照してください。
-* [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=ja#submit-ticket){target="_blank"}：チケットを送信して追加のヘルプを受け取ります。
+* [&#x200B; ヘルプセンター](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-cases){target="_blank"}-[!DNL Product Recommendations]関連のトラブルシューティング記事を参照してください。
+* [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"}：チケットを送信して追加のヘルプを受け取ります。

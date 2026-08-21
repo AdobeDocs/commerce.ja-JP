@@ -18,7 +18,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 815
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 製品フィードには、製品処理に必要な、または消費者が一般的に使用するデフォルトのシステム属性が含まれています。 製品フィードに追加することで、製品フィードに追加のシステム属性を含めることができます。
 
-このタスクを完了するには、`magento/catalog-data-exporter` モジュールを更新して、[依存関係インジェクション設定ファイル &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）に追加のシステム属性を追加します。
+このタスクを完了するには、`magento/catalog-data-exporter` モジュールを更新して、[依存関係インジェクション設定ファイル &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) （`di.xml`）に追加のシステム属性を追加します。
 
 製品属性クエリ（`Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery`）に属性を追加します。
 
@@ -85,7 +85,7 @@ Commerce Adminからproduct属性を追加するか、カスタム PHP モジュ
 - **`user_defined`=`1`** - データ同期中にストアフロントサービスに属性をエクスポートします
 - **`used_in_product_listing`=`1`** – 製品リスト データベース クエリ内で属性にアクセスできるようにします
 
-データパッチの作成について詳しくは、*PHP開発者ガイド*&#x200B;の[&#x200B; データおよびスキーマパッチの開発](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/)を参照してください。
+データパッチの作成について詳しくは、*PHP開発者ガイド*&#x200B;の[&#x200B; データおよびスキーマパッチの開発](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches)を参照してください。
 
 ### product属性を動的に追加します
 
@@ -163,7 +163,7 @@ class DataSentOutsideObserver implements ObserverInterface
 </event>
 ```
 
-イベントとオブザーバーの一般的な情報については、Adobe Commerce Developer ドキュメントの[&#x200B; イベントとオブザーバー](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"}を参照してください。
+イベントとオブザーバーの一般的な情報については、Adobe Commerce Developer ドキュメントの[&#x200B; イベントとオブザーバー](https://developer.adobe.com/commerce/php/development/components/events-and-observers/){target="_blank"}を参照してください。
 
 ## 送信前にデータをフィルタリング
 

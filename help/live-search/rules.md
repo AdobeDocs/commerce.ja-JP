@@ -9,9 +9,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 695
+source-wordcount: 697
 ht-degree: 0%
 
 ---
@@ -82,4 +82,4 @@ ht-degree: 0%
 ## カテゴリマーチャンダイジングとカテゴリ製品の割り当て
 
 [!DNL Live Search]では、カテゴリ別にフィルタリングできます。 詳しくは、[&#x200B; カテゴリーマーチャンダイジング &#x200B;](category-merch.md)を参照してください。
-ただし、Adobe Commerceでは、[&#x200B; カテゴリー商品の割り当て](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html?lang=ja)を含むバーチャルカテゴリーを作成できます。 この種類のカテゴリは実行時に構築され、カテゴリデータベースには存在しません。 したがって、[!DNL Live Search]はこのカテゴリの種類を読み取ったり使用したりすることはできません。
+ただし、Adobe Commerceでは、[&#x200B; カテゴリー商品の割り当て](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments)を含むバーチャルカテゴリーを作成できます。 この種類のカテゴリは実行時に構築され、カテゴリデータベースには存在しません。 したがって、[!DNL Live Search]はこのカテゴリの種類を読み取ったり使用したりすることはできません。

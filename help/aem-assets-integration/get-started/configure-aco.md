@@ -2,9 +2,9 @@
 title: Commerce Optimizer用AEM Assetsの設定
 description: ' [!DNL Adobe Commerce Optimizer]のAEM Assets統合を設定する方法について説明します。'
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1247'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ AEM Assets Integrationを[!DNL Commerce Optimizer]にオンボーディングす
 * AEM Assets イベント（アセット承認済み、更新、削除）
 * [!DNL Commerce Optimizer]個のカタログイベント（製品が作成、更新されました）
 
-このプロセスを開始するには、次の情報を含むサポートチケット [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)を作成します。
+このプロセスを開始するには、次の情報を含むサポートチケット [&#128279;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を作成します。
 
 * **[!DNL Adobe Commerce Optimizer]テナント ID** （インスタンス ID）が[!DNL Commerce Optimizer] URLまたはCommerce Cloud Manager UIに見つかりました。
 * **AEM プログラム IDとEnvironment ID**&#x200B;は、[統合にAEM Assets](#configure-aem-assets-first)を設定したときに設定します。

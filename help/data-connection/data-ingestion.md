@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 339
-ht-degree: 2%
+source-wordcount: 342
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 [Data Connection拡張機能](overview.md)は、Commerce データをExperience Platformに接続します。 Experience Platformで使用するデータは、**Experience Event** クラスに属する時系列データと、**Individual Profile** クラスに属するレコードデータの2つのビヘイビアータイプにグループ化されます。
 
-Experience Platformの[data behavior](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja#data-behaviors)および[classes](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ja#class)の詳細をご覧ください。
+Experience Platformの[data behavior](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#data-behaviors)および[classes](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/schema/composition#class)の詳細をご覧ください。
 
 ## 時系列データ
 
@@ -39,7 +39,7 @@ Experience Platformの[data behavior](https://experienceleague.adobe.com/docs/ex
 
 ## レコードデータ
 
-レコードデータは、被写体の属性に関する情報を提供します。 テーマには、組織や個人が含まれます。 例えば、サイトの買い物客がアカウントを作成し、そのアカウントがレコードデータを生成するとします。 このデータは、クラスが&#x200B;**個人プロファイル**&#x200B;に設定されたスキーマを使用してExperience Platformに取り込まれます。 そのレコードデータをAdobeのプロファイル管理およびセグメント化サービス [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=ja)に送信できます。
+レコードデータは、被写体の属性に関する情報を提供します。 テーマには、組織や個人が含まれます。 例えば、サイトの買い物客がアカウントを作成し、そのアカウントがレコードデータを生成するとします。 このデータは、クラスが&#x200B;**個人プロファイル**&#x200B;に設定されたスキーマを使用してExperience Platformに取り込まれます。 そのレコードデータをAdobeのプロファイル管理およびセグメント化サービス [Real-Time CDP](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview)に送信できます。
 
 ### 取得したプロファイルレコードデータ
 

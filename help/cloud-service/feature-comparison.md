@@ -26,9 +26,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1076
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Adobe Commerceには、次の3つのデプロイメントモデルがありま�
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup>企業管理や見積もりなど、<a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/guide-overview">B2Bのコア機能</a>は、SaaSですぐに利用できます。ただし、業界固有のカスタマイズには、追加の実装に関する考慮事項が必要な場合があります。
+                <sup>1</sup>企業管理や見積もりなど、<a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/guide-overview">B2Bのコア機能</a>は、SaaSですぐに利用できます。 ただし、業界固有のカスタマイズには、追加の実装に関する考慮事項が必要な場合があります。
             </td>
         </tr>
     </tfoot>
@@ -216,9 +216,9 @@ Adobe Commerceには、次の3つのデプロイメントモデルがありま�
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup> SaaSのデータモデル拡張性は、B2B エンティティを含め、製品と顧客を超えた<a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/"> コアエンティティ </a>の拡張をサポートしています。ただし、業界固有のデータモデル（たとえば、ディーラー固有の属性）には、追加のアーキテクチャに関する考慮事項が必要になる場合があります。
+                <sup>1</sup> SaaSのデータモデル拡張性は、B2B エンティティを含め、製品と顧客を超えた<a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/"> コアエンティティ </a>の拡張をサポートしています。 ただし、業界固有のデータモデル（たとえば、ディーラー固有の属性）には、追加のアーキテクチャに関する考慮事項が必要になる場合があります。
                 <br><br>
-                <sup>2</sup> Adobeは、SaaSの永続的なストレージのニーズに対応するために、Document DB統合をアクティブに動作しています。現在、長期的なデータ保存を必要とする実装では、追加のインフラストラクチャのプロビジョニングと保守が必要になる場合があります。
+                <sup>2</sup> Adobeは、SaaSの永続的なストレージのニーズに対応するために、Document DB統合をアクティブに動作しています。 現在、長期的なデータ保存を必要とする実装では、追加のインフラストラクチャのプロビジョニングと保守が必要になる場合があります。
             </td>
         </tr>
     </tfoot>
@@ -229,7 +229,7 @@ Adobe Commerceには、次の3つのデプロイメントモデルがありま�
 >SaaSへの移行を検討する際には、Adobeで次のことをお勧めします。
 >
 >- 可能な限り、適切な機能をプロセス外の拡張性に移行します。
->- トランジションが必要なサーフェス領域を小さくします。
+>- 移行が必要な範囲を削減します。
 >- API機能を拡張する場合は[!DNL API Mesh]を検討してください。
 >- 継続的なプラットフォームの進化と新機能リリースをモニタリングするAdobe。
 >- 利用可能な拡張性オプションに対して、業界固有のデータモデル要件を評価します。

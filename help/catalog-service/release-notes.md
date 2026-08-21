@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: 3063
+source-wordcount: 3064
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
 **リリース日**: 2026年5月4日
 <!-- v1.53 -->
 
-![修正](../assets/fix.svg) ストアフロントの商品価格には、すべての商品タイプに対して正しい通貨コード（USDなど）が表示されるようになりました。 以前は、一部の製品で予想される通貨の代わりに`NONE`が表示され、価格が欠落していました。 この更新により、ストアフロント全体で一貫性のある正確な価格レンダリングが保証されます。<!--DATA-7115-->
+![修正](../assets/fix.svg) ストアフロントの製品価格には、すべての製品タイプに対して正しい通貨コード（USDなど）が表示されるようになりました。 以前は、一部の製品で予想される通貨の代わりに`NONE`が表示され、価格が欠落していました。 この更新により、ストアフロント全体で一貫性のある正確な価格レンダリングが保証されます。<!--DATA-7115-->
 
 ### 2026年4月
 
@@ -449,7 +449,7 @@ API MeshとCore GraphQL APIを使用して、次のことを行います。
 
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![新規](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=ja)は、データストリーム（商品レコメンデーション、ライブサーチ、カタログサービス）で利用できるようになりました。 `catalog-service` メタパッケージ v3.1.0以降が必要です。
+![新規](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)は、データストリーム（商品レコメンデーション、ライブサーチ、カタログサービス）で利用できるようになりました。 `catalog-service` メタパッケージ v3.1.0以降が必要です。
 
 **リリース日**: 2024年2月13日
 <!-- v1.16 -->
@@ -694,9 +694,9 @@ Composerを使用して`magento/catalog-service`をアップグレードする�
 
   - [カタログサービスガイド](overview.md)
   - [カタログサービス GraphQL API リファレンス](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
-  - [Adobe Commerce管理ガイド](https://experienceleague.adobe.com/en/docs/commerce-admin/)
-  - [Adobe Commerce as a Cloud Service ガイド](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
-  - [Adobe Commerce Cloud版ガイド](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
+  - [Adobe Commerce管理ガイド](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home)
+  - [Adobe Commerce as a Cloud Service ガイド](../cloud-service/overview.md)
+  - [Adobe Commerce Cloud版ガイド](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview)
 
 - **Adobe Commerce Optimizer**&#x200B;または&#x200B;**Adobe Commerce Optimizer Connector**&#x200B;を使用しているプロジェクトについては、次のドキュメントを参照してください。
 

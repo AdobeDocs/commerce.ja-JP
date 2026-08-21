@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 1. ライブオンボーディングを有効にするには、[支払い資格](production.md#request-payments-entitlement-from-adobe)をリクエストします。
 1. Commerce Web サイトのライブ決済を有効にするには、[&#x200B; マーチャントのオンボーディング &#x200B;](production.md#complete-merchant-onboarding)を完了してください。
 1. [加盟店ID [!DNL Payment Services] を取得し、セールス部門に渡して、適切な価格帯を設定します。](production.md#configure-pricing-tier)
-1. [&#x200B; ライブモード  [!DNL Payment Services] で](production.md#enable-live-payments)を有効にして、ライブ決済の処理を開始します。
+1. [&#x200B; ライブモード &#x200B;](production.md#enable-live-payments)で [!DNL Payment Services] を有効にして、ライブ決済の処理を開始します。
 1. [&#x200B; サンドボックス &#x200B;](sandbox.md#test-in-sandbox-environment)環境と[実稼動環境](production.md#test-in-production)環境の両方で支払いをテストします。
 
 [![詳細情報](assets/learn-more-button.svg)](production.md)
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ### Adobe CommerceまたはMagento Open Source | v2.4.0-2.4.6 [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}
 
-これらのフロー図は、Adobe CommerceまたはMagento Open Source バージョン 2.4.0から2.4.6への[!DNL Payment Services]のオンボーディングの一般的なプロセスを示しています。オンボーディングを開始するには、[!DNL Payment Services]をダウンロードしてインストールする必要があります。
+これらのフロー図は、Adobe CommerceまたはMagento Open Source バージョン 2.4.0から2.4.6への[!DNL Payment Services]のオンボーディングの一般的なプロセスを示しています。 オンボーディングを開始するには、[!DNL Payment Services]をダウンロードしてインストールする必要があります。
 
 >[!BEGINTABS]
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 1. ライブオンボーディングを有効にするには、[支払い資格](production.md#request-payments-entitlement-from-adobe)をリクエストします。
 1. Commerce Web サイトのライブ決済を有効にするには、[&#x200B; マーチャントのオンボーディング &#x200B;](production.md#complete-merchant-onboarding)を完了してください。
 1. [加盟店ID [!DNL Payment Services] を取得し、セールス部門に渡して、適切な価格帯を設定します。](production.md#configure-pricing-tier)
-1. [&#x200B; ライブモード  [!DNL Payment Services] で](production.md#enable-live-payments)を有効にして、ライブ決済の処理を開始します。
+1. [&#x200B; ライブモード &#x200B;](production.md#enable-live-payments)で [!DNL Payment Services] を有効にして、ライブ決済の処理を開始します。
 1. [&#x200B; サンドボックス &#x200B;](sandbox.md#test-in-sandbox-environment)環境と[実稼動環境](production.md#test-in-production)環境の両方で支払いをテストします。
 
 [![詳細情報](assets/learn-more-button.svg)](onboard.md)
@@ -110,8 +110,8 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> * [&#x200B; トラブルシューティング  [!DNL Payment Services]  インストール &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=ja)
-> * [PayPal サンドボックスアカウントが確認されていません](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=ja)
-> * [遅延 [!DNL Payment Services]  レポートデータ &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=ja)
-> * [&#x200B; サンドボックス環境で支払いを処理する際に、PayPalでクレジットカードのテストが失敗する](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=ja)
+> * [&#x200B; トラブルシューティング  [!DNL Payment Services]  インストール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26826)
+> * [PayPal サンドボックスアカウントが確認されていません](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26836)
+> * [遅延 [!DNL Payment Services]  レポートデータ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26837)
+> * [&#x200B; サンドボックス環境で支払いを処理する際に、PayPalでクレジットカードのテストが失敗する](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26825)
 > * [拡張機能 [!DNL Payment Services] を無効にする](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)

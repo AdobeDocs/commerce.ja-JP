@@ -20,9 +20,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 2634
+source-wordcount: 2611
 ht-degree: 0%
 
 ---
@@ -52,22 +52,22 @@ AI コーディング開発者ツールを[&#x200B; インストールした後]
 aio commerce extensibility tools-setup
 ```
 
-これにより、ツールが最新バージョンに更新されます。
+このコマンドは、ツールを最新バージョンに更新します。
 
 ## 前提条件
 
 * [&#x200B; エージェントのスキル &#x200B;](https://agentskills.io/home#adoption)をサポートするすべてのコーディングエージェント （例：）
 
-   * [カーソル](https://cursor.com/download)
-   * [クロード・コード](https://www.claude.com/product/claude-code)
-   * [GitHub Copilot](https://github.com/features/copilot)
-   * [ウィンドサーフ](https://windsurf.com)
-   * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
-   * [OpenAI Codex](https://openai.com/index/introducing-codex/)
-   * [Cline](https://cline.bot)
+  * [カーソル](https://cursor.com/download)
+  * [クロード・コード](https://claude.com/product/claude-code)
+  * [GitHub Copilot](https://github.com/features/copilot)
+  * [Devin デスクトップ](https://devin.ai/desktop)
+  * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
+  * [OpenAI Codex](https://openai.com/index/introducing-codex/)
+  * [Cline](https://cline.bot)
 
 * [Node.js](https://nodejs.org/en/download): LTS バージョン
-* パッケージマネージャー：[npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)または[yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
+* パッケージマネージャー：[npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)または[yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git): リポジトリの複製とバージョン管理
 
 ## インストール
@@ -114,7 +114,7 @@ aio commerce extensibility tools-setup
    aio commerce extensibility tools-setup
    ```
 
-   設定プロセスでは、設定オプションの入力を求められます。 プロンプトに従ってインストールを完了します。 ツールは、選択したディレクトリにインストールされます。
+   設定プロセスでは、設定オプションの入力を求められます。 インストールを完了するには、プロンプトに従います。 ツールは、選択したディレクトリにインストールされます。
 
    * プロジェクトに使用するスターターキットを選択します。
 
@@ -138,7 +138,7 @@ aio commerce extensibility tools-setup
         ...
      ```
 
-   * インストーラーは、NPMまたはYarnがインストールされているかどうかを検出し、適切な選択を自動的に行います。 ただし、インストールしていない場合は、パッケージマネージャーを選択するように求めるメッセージが表示されます。Adobeでは、次の一貫性を保つために`npm`を使用することをお勧めします。
+   * インストーラーは、NPMまたはYarnがインストールされているかどうかを検出し、適切な選択を自動的に行います。 ただし、インストールしていない場合は、パッケージマネージャーを選択するように求められます。Adobeでは、次のように`npm`を使用して一貫性を保つことをお勧めします。
 
      ```shell-session
      ? Which package manager would you like to use?
@@ -156,13 +156,13 @@ aio commerce extensibility tools-setup
 
 >[!NOTE]
 >
->プロジェクトをデプロイする前に、次の設定タスクを完了する必要があります。
+>プロジェクトをデプロイする前に、次の設定タスクを完了します。
 >
 >* Adobe I/O CLIを使用して[Adobe Developer Console](https://developer.adobe.com/console)にログインします。
 >* App Builder プロジェクトを作成します（[&#x200B; プロジェクト設定](https://developer.adobe.com/commerce/extensibility/events/project-setup)を参照）。
 >* `.env` ファイルで環境変数を設定します。
 >
->これらの設定手順を手動で完了することも、AI コーディングツールを活用してプロセスを導くこともできます。 設定手順の詳細については、[統合の作成](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/)を参照してください。
+>これらの設定タスクを手動で完了することも、AI コーディングツールを活用してプロセスを導くこともできます。 設定手順の詳細については、[統合の作成](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)を参照してください。
 
 ## インストール後の設定
 
@@ -226,12 +226,12 @@ aio auth login
 
 1. MCP サーバーを有効にします。
 
-   * 左側のサイドバーのアクティビティバーにある&#x200B;**Extensions** アイコンをクリックするか、**Cmd+Shift+X** （macOs）または&#x200B;**Ctrl+Shift+X** （WindowsおよびLinux）を使用して、拡張機能パネルを開きます。
+   * 左側のサイドバーのアクティビティバーにある&#x200B;**Extensions** アイコンをクリックするか、**Cmd+Shift+X** （macOS）または&#x200B;**Ctrl+Shift+X** （WindowsおよびLinux）を使用して、拡張機能パネルを開きます。
    * 「[!UICONTROL **MCP SERVERS - INSTALLED**]」をクリックします。
    * [!UICONTROL **commerce-extensibility MCP Server**]&#x200B;の横にある歯車アイコンをクリックし、サーバーが停止している場合は&#x200B;[!UICONTROL **Start Server**]&#x200B;を選択します。
    * 歯車アイコンをもう一度クリックし、[!UICONTROL **出力を表示**]&#x200B;を選択します。
 
-1. サーバーのステータスを確認します。 `MCP:commerce-extensibility`出力は次の値と一致する必要があります。
+1. サーバーのステータスを確認します。 `MCP:commerce-extensibility`出力は次と一致します。
 
    ```shell-session
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
@@ -299,15 +299,15 @@ The extension should:
 
 ## ベストプラクティス
 
-Adobeでは、AI コーディングツールを使用する場合、次のベストプラクティスに従うことをお勧めします。
+Adobeでは、AI コーディングツールを使用する際に、次のベストプラクティスをお勧めします。
 
 ### プランモード
 
-コーディングエージェントとチャットする場合は、**プラン** モードを選択して、プロジェクトの詳細な実装計画を作成する必要があります。
+コーディングエージェントとチャットする場合、**プラン** モードを選択して、プロジェクトの詳細な実装計画を作成します。
 
 **プラン** モードの選択方法は、使用しているエージェントによって異なります。 手順については、担当者のドキュメントを参照してください。 例：
 
-* [カーソル](https://cursor.com/docs/agent/modes)
+* [カーソル](https://cursor.com/docs/agent/plan-mode)
 * [クロード・コード](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
 * [Gemini CLI](https://geminicli.com/docs/cli/plan-mode/)
 
@@ -340,7 +340,7 @@ Adobeでは、AI コーディングツールを使用する場合、次のベス
 
 ### ワークフロー
 
-AI コーディングツールを使用して開発する場合は、サンプルコードまたは基礎プロジェクトから始めます。 このアプローチにより、AI開発ワークフローを最適化しながら、ゼロから始めるのではなく、強固な基盤の上に構築することができます。
+AI コーディングツールを使用して開発する場合は、サンプルコードまたは基礎プロジェクトから始めます。 このアプローチにより、AI開発ワークフローを最適化しながら、ゼロから始めるのではなく、確立された基盤の上に構築することができます。
 
 これにより、確立されたディレクトリ構造と規則を維持しながら、Adobeのテンプレートを活用し、実績のあるパターンとアーキテクチャに基づいて構築することも可能です。
 
@@ -349,10 +349,10 @@ AI コーディングツールを使用して開発する場合は、サンプ�
 * [統合スターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [チェックアウトスターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce starter kit テンプレート](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events スターターテンプレート](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
-* [App Builder サンプルアプリケーション](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
+* [Adobe I/O Events スターターテンプレート](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [App Builder サンプルアプリケーション](https://developer.adobe.com/app-builder/docs/resources/sample_apps/)
 
-#### なぜこれらのリソースを使うべきか
+#### なぜこれらのリソースを使うのか
 
 * **実証済みのパターン**: スターターキットは、Adobeのベストプラクティスとアーキテクチャに関する意思決定を体現しています
 * **開発を高速化**：定型文と設定に費やす時間を削減します
@@ -365,12 +365,12 @@ AI コーディングツールを使用して開発する場合は、サンプ�
 
 ### プロトコル
 
-次の4段階のプロトコルは、インストールされたスキルによって自動的に適用されます。 アプリケーションを開発する場合、ツールは自動的にこのプロトコルに従う必要があります。
+インストールされたスキルは、次の4段階のプロトコルを自動的に適用します。 ツールは、アプリケーションを開発する際に、このプロトコルに自動的に従います。
 
 * フェーズ 1：要件分析と明確化
-   * 質問を明確にするときは、完全な答えを提供してください。
+  * 質問を明確にするときは、完全な答えを提供してください。
 * フェーズ 2：建築プランニングとユーザーの承認
-   * 計画を提示したら、承認する前に慎重に確認します。
+  * 計画を提示したら、承認する前に慎重に確認します。
 * フェーズ 3: コードの生成と実装
 * フェーズ 4：文書化と検証
 
@@ -435,7 +435,7 @@ Verify if simpler solutions exist
 実装計画で機能の開発を完了したら、すぐにテストします。 早期テストは、複合的な問題を防ぎ、デバッグを容易にします。
 
 * すべての機能が完了するまで待ってはいけません
-* 問題を早期に発見するために、段階的にテストする
+* 問題を早期に発見するには、段階的にテストします。
 * 次の機能に移行する前に、機能を検証する
 
 #### 最初にローカルでテスト
@@ -522,7 +522,7 @@ Help me debug why this action is returning 500 errors
 
 ### デバッグ
 
-問題が発生したときに停止して評価します。 問題が発生した場合：
+エラーが発生したときに停止して評価します。 問題が発生した場合：
 
 * 停止して評価 – 壊れた状態で続けないでください
 * ログの確認 – アクティベーションログを使用して問題を特定します
@@ -602,7 +602,7 @@ AI コーディングツールを使用する際には、次のアンチパタ�
 
 AI コーディング ツールに関するフィードバックを提供することに関心のある開発者は、`/feedback` コマンドを使用できます。
 
-このコマンドを使用すると、テキストフィードバックを提供し、ログをAdobeに送信できます。 送信したログは、個人情報や個人情報を削除するために消毒されます。
+このコマンドを使用すると、テキストフィードバックを提供し、ログをAdobeに送信できます。 送信したログはすべて消毒され、個人情報や個人情報が削除されます。
 
 >[!TIP]
 >
@@ -624,4 +624,4 @@ AI コーディング ツールに関するフィードバックを提供する�
 
 >[!NOTE]
 >
->`/feedback` コマンドが表示されない場合は、[最新バージョン &#x200B;](#updating-to-the-latest-version)に更新する必要がある可能性があります。
+>`/feedback` コマンドが表示されない場合は、[最新バージョン &#x200B;](#updating-to-the-latest-version)に更新してください。

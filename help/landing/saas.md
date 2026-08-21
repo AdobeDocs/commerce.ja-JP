@@ -21,9 +21,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 1662
+source-wordcount: 1665
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Adobe CommerceとMagento Open Sourceの一部の機能は[!DNL Commerce Services
 
 ## 資格情報 {#apikey}
 
-実稼動用およびサンドボックス API キーは、[&#x200B; ライセンス所有者](https://experienceleague.adobe.com/ja/docs/commerce-cloud-service/start/onboarding)の[!DNL Commerce] アカウントから生成されます。 Commerce アカウントは、一意の[!DNL Commerce] ID （MageID）によって識別されます。 加盟店の組織のライセンス所有者は、アカウントが良好な状態であれば、商品レコメンデーションやライブサーチなどのサービス用のAPI キーを生成できます。
+実稼動用およびサンドボックス API キーは、[&#x200B; ライセンス所有者](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/start/onboarding)の[!DNL Commerce] アカウントから生成されます。 Commerce アカウントは、一意の[!DNL Commerce] ID （MageID）によって識別されます。 加盟店の組織のライセンス所有者は、アカウントが良好な状態であれば、商品レコメンデーションやライブサーチなどのサービス用のAPI キーを生成できます。
 
 キーは、ライセンス所有者に代わってプロジェクトや環境を管理するシステムインテグレーターまたは開発チームと「知っておく必要がある」方法で共有できます。 ライセンス所有者から[!DNL Shared Access]を付与された開発者は、アカウントの[!DNL Switch Accounts] ドロップダウンに加盟店の組織が存在する場合でも、ライセンス所有者に代わってキーを生成することはできません。
 
@@ -153,7 +153,7 @@ SaaS プロジェクトを選択または作成するには、ストアの[!DNL 
 
 1. [!DNL Commerce] ストアの現在の設定に使用する&#x200B;**データ領域**&#x200B;を選択します。
 
-   Commerce サービスと統合する個別のインスタンスがある場合、[&#x200B; サポートチケットを送信](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)して、追加のインスタンスごとに新しいSaaS プロジェクトをリクエストします。 サポートがSaaS プロジェクトを作成したら、同じAPI キー&#x200B;**を使用してインスタンス**&#x200B;のCommerce Services Connectorを設定し、新しいSaaS プロジェクトとデータスペースを選択します。
+   Commerce サービスと統合する個別のインスタンスがある場合、[&#x200B; サポートチケットを送信](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)して、追加のインスタンスごとに新しいSaaS プロジェクトをリクエストします。 サポートがSaaS プロジェクトを作成したら、同じAPI キー&#x200B;**を使用してインスタンス**&#x200B;のCommerce Services Connectorを設定し、新しいSaaS プロジェクトとデータスペースを選択します。
 
 >[!WARNING]
 >

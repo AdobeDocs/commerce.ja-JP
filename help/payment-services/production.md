@@ -3,9 +3,9 @@ title: 実稼動用に [!DNL Payment Services] を有効にする
 description: 実稼動用に [!DNL Payment Services] を有効にして、オンボーディングプロセスを完了します。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1081'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Save]**&#x200B;をクリックします。
 1. **[!UICONTROL Go to Payment Services]**&#x200B;をクリックして、[!DNL Payment Services] ホームに戻ります。
-1. [&#x200B; キャッシュをクリア &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=ja)。
+1. [&#x200B; キャッシュをクリア &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cache-management)。
 
    設定を変更するたびに消去を実行する必要があります。
 

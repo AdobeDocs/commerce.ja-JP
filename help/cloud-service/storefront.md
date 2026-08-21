@@ -22,9 +22,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 28102ad0dba698e37a69bbae90e3e9cec364ca81
 workflow-type: tm+mt
-source-wordcount: 300
+source-wordcount: 332
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL Commerce GraphQL Endpoint (optional)]** フィールドに[!DNL Adobe Commerce as a Cloud Service] （SaaS） GraphQL エンドポイントを入力します。このエンドポイントには、[&#x200B; インスタンスを作成した後にCommerce Cloud Managerでアクセスできます](./getting-started.md#create-an-instance)。
 
-   または、[[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic)を使用している場合は、[!DNL API Mesh] GraphQL エンドポイントを&#x200B;**[!UICONTROL Commerce GraphQL Endpoint (optional)]** フィールドに入力します。 詳しくは、[&#x200B; メッシュの作成](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh)を参照してください。
+   または、[[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)を使用している場合は、[!DNL API Mesh] GraphQL エンドポイントを&#x200B;**[!UICONTROL Commerce GraphQL Endpoint (optional)]** フィールドに入力します。 詳しくは、[&#x200B; メッシュの作成](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh)を参照してください。
 
 1. **[!UICONTROL Create Site]**&#x200B;をクリックします。 画面の指示に従って、GitHub リポジトリへのアクセスを承認します。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 * コードをカスタマイズ：`https://github.com/<username or org>/<repo name>`
 * コンテンツを編集：`https://da.live/#/<username or org>/<repo name>`
-* 設定を管理：`https://da.live/sheet#/<username or org>/<repo name>/configs-stage`
+* 設定の管理：`https://da.live/sheet#/<username or org>/<repo name>/configs-stage`
 * ストアフロントのプレビュー：`https://main--<repo name>--<username or org>.aem.page/`
 
 ## 次のステップ
@@ -65,3 +65,4 @@ ht-degree: 0%
 * [&#x200B; バリエーションの生成](./use-cases.md#generate-variations) – 生成AIを使用して、高品質なコンテンツ生成を自動化します。
 * [Adobe Commerce Storefront ドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) - サイトコンテンツの更新と、Commerce フロントエンドコンポーネントおよびバックエンドデータとの統合について詳しく説明します。
 * [設定サービス &#x200B;](https://www.aem.live/docs/config-service-setup) - ストアフロント設定を`config.json`から移行して、再帰設定やオーバーレイなどの高度なユースケースをサポートする設定サービスを使用する方法について説明します。
+* [&#x200B; ストアフロント B2B機能](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/?lang=ja#major-features) – すべての[!DNL Adobe Commerce as a Cloud Service] インスタンスに対して自動的にインストールされるストアフロント互換性パッケージで利用可能なB2B機能について説明します。

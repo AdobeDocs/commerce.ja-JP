@@ -33,7 +33,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: ecaeba0d36376bf7f9ac864135cbf225c7fd8634
+source-git-commit: 8f993feaea79eaca19f6ebd3dc5195e287fc4a36
 workflow-type: tm+mt
 source-wordcount: 5345
 ht-degree: 0%
@@ -88,7 +88,7 @@ ht-degree: 0%
 >
 >この機能はデフォルトで無効になっています。 有効にするには、Adobe Commerce カスタマーサクセスマネージャーにお問い合わせいただくか、サポートチケットを作成してください。
 
-新しい[REST API エンドポイント &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)は、[!DNL Commerce Admin] [!UICONTROL **注文を編集**]&#x200B;機能をレプリケートし、統合がプログラムで注文を編集できるようにします。
+新しい[REST API エンドポイント &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/)は、[!DNL Commerce Admin] [!UICONTROL **注文を編集**]&#x200B;機能をレプリケートし、統合がプログラムで注文を編集できるようにします。
 
 | メソッド | エンドポイント | 説明 |
 | --- | --- | --- |
@@ -119,13 +119,13 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 
 すべての`custom-email` エンドポイントには、`Marketing > Communications > Email template` [役割リソース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources)へのアクセスが必要です。<!-- CCSAAS-5089, CCSAAS-5090 -->
 
-### REST APIを使用したフルオーダーチェーンの管理
+### REST APIを使用してフルオーダー順序を管理します
 
 >[!IMPORTANT]
 >
 >この機能は実験的な機能であり、Adobe Commerce カスタマーサクセスマネージャーに連絡するか、サポートチケットを作成して有効にする必要があります。
 
-新しい[`orderChain` REST API エンドポイント &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)を使用すると、統合はIDを使用して注文を変更し、編集された注文のチェーン全体を自動的に解決できます。
+新しい[`orderChain` REST API エンドポイント &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/)を使用すると、統合はIDを使用して注文を変更し、編集された注文のチェーン全体を自動的に解決できます。
 
 | メソッド | エンドポイント | 説明 |
 | --- | --- | --- |
@@ -158,11 +158,11 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 
 ### 領域またはテンプレート別にトランザクションメールを抑制
 
-新しい[電子メール抑制](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/services/email-suppression)設定（[!UICONTROL **店舗**] > [!UICONTROL **設定**] > [!UICONTROL **Adobe サービス**] > [!UICONTROL **電子メール抑制**]）を使用すると、管理者はトランザクション電子メールの送信を選択的に停止できます。 [!DNL Commerce]機能領域（カスタマーアカウント、Order Management、返品、チェックアウト、マーケティング、B2Bなど）またはテンプレート IDの正確なリストでメールを抑制できます。<!-- ACCS-1025 -->
+新しい[電子メール抑制](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/services/email-suppression)設定（[!UICONTROL **店舗**] > [!UICONTROL **設定**] > [!UICONTROL **Adobe サービス**] > [!UICONTROL **電子メール抑制**]）を使用すると、管理者はトランザクション電子メールの送信を選択的に停止できます。 [!DNL Commerce]機能領域（カスタマーアカウント、Order Management、返品、チェックアウト、マーケティング、B2B）またはテンプレート IDの正確なリストでメールを抑制できます。<!-- ACCS-1025 -->
 
 ### 管理画面での注文変更履歴の表示
 
-[!DNL Commerce Admin]の注文詳細ページに、元の注文と、その後の編集で作成されたすべての子注文を含む注文の完全な変更チェーンが表示されるようになりました。 加盟店は、注文間を移動したり、キャンセルされた注文の表示を切り替えたり、関連するすべての請求書、出荷、クレジットメモ、注文コメントにチェーンビュー内からアクセスしたりできます。<!-- ACCS-968 -->
+[!DNL Commerce Admin]の注文詳細ページに、元の注文と、その後の編集を通じて作成されたすべての子注文を含む注文の完全な変更シーケンスが表示されるようになりました。 加盟店は、注文間を移動したり、キャンセルされた注文の表示を切り替えたり、関連するすべての請求書、出荷、クレジットメモ、注文コメントにシーケンス ビュー内からアクセスしたりできます。<!-- ACCS-968 -->
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 
 ### デフォルトキャリアとカスタムキャリアを使用して出荷を追跡
 
-[!DNL Commerce Admin]のデフォルトおよびカスタムの配送業者に対して注文追跡が信頼性が向上し、加盟店が一貫した購入後の追跡体験を提供できるようになりました。 以前は、UPSやFedExなどの通信事業者を選択し、トラッキング IDを適用すると、トラッキングリンクが表示されない可能性がありました。この動作を復元するために加盟店の操作は必要ありません。 トラッキングリンクのサポートは、[!DNL App Builder Integration Starter Kit]で作成された[&#x200B; カスタムキャリア &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference/)でも利用できます。<!-- ACCS-891 -->
+[!DNL Commerce Admin]のデフォルトおよびカスタムの配送業者に対して注文追跡が信頼性が向上し、加盟店が一貫した購入後の追跡体験を提供できるようになりました。 以前は、UPSやFedExなどの通信事業者を選択し、トラッキング IDを適用すると、トラッキングリンクが表示されない可能性がありました。この動作を復元するために加盟店の操作は必要ありません。 トラッキングリンクのサポートは、[!DNL App Builder Integration Starter Kit]で作成された[&#x200B; カスタムキャリア &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference)でも利用できます。<!-- ACCS-891 -->
 
 ### 製品属性グリッドでの属性入力タイプの表示
 
@@ -268,7 +268,7 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 
 >[!ENDSHADEBOX]
 
-## 2026年5月 – リリース #1
+## 2026年5月リリース #1
 
 [!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 
@@ -278,7 +278,7 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 
 ### プログラマティック OTP認証用のreCAPTCHAをスキップする
 
-新しいコンフィギュレーションオプションを使用すると、[`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) GraphQLの変異に対するreCAPTCHA検証をスキップできます。 これにより、フォーム入力なしでワンタイムパスワード（OTP）交換がプログラムによって開始されるB2B パンチアウトワークフローが可能になり、reCAPTCHA検証が不要になります。 この機能は、2026年3月リリースで導入された[1回限りのコードログイン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}機能に基づいて構築されています。 reCAPTCHAが顧客ログインに対して有効になっている場合、`exchangeOtpForCustomerToken`の突然変異では、デフォルトでreCAPTCHAが引き続き必要になります。 このオプションを有効にするには、Adobe Commerce カスタマーサクセスマネージャーにお問い合わせください。<!-- ACCS-850 -->
+新しいコンフィギュレーションオプションを使用すると、[`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token) GraphQLの変異に対するreCAPTCHA検証をスキップできます。 これにより、B2Bのパンチアウトワークフローが可能になります。 1回限りのパスワード（OTP）交換は、フォーム入力なしでプログラムで開始され、reCAPTCHA検証は不要になります。 この機能は、2026年3月リリースで導入された[1回限りのコードログイン &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}機能に基づいて構築されています。 reCAPTCHAが顧客ログインに対して有効になっている場合、`exchangeOtpForCustomerToken`の突然変異では、デフォルトでreCAPTCHAが引き続き必要になります。 このオプションを有効にするには、Adobe Commerce カスタマーサクセスマネージャーにお問い合わせください。<!-- ACCS-850 -->
 
 ### 部分的に請求された注文の編集
 
@@ -392,7 +392,7 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 
 ### GraphQLで価格と在庫アラートのサブスクリプション状況を確認する
 
-新しいGraphQLのクエリ [`isSubscribedProductAlertStock`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-stock/){target="_blank"}と[`isSubscribedProductAlertPrice`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-price/){target="_blank"}により、ストアフロントで、買い物客が既に商品の在庫情報や価格情報を購読しているかどうかを判断できます。<!-- ACCS-334 -->
+新しいGraphQLのクエリ [`isSubscribedProductAlertStock`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-stock){target="_blank"}と[`isSubscribedProductAlertPrice`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-price){target="_blank"}により、ストアフロントで、買い物客が既に商品の在庫情報や価格情報を購読しているかどうかを判断できます。<!-- ACCS-334 -->
 
 ### 負の値をサポートする数値製品属性を作成します
 
@@ -400,11 +400,11 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 
 ### 1つのGraphQL リクエストで複数のフォームのreCAPTCHA設定をクエリする
 
-[`recaptchaFormConfigs` クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/)は、1回のリクエストで複数のフォーム タイプの設定の詳細を返すことができます。<!-- ACCS-628 -->
+[`recaptchaFormConfigs` クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs)は、1回のリクエストで複数のフォーム タイプの設定の詳細を返すことができます。<!-- ACCS-628 -->
 
 ### 新しいB2B権限ですべての会社の注文を表示する
 
-新しい`view_all_company_orders` [会社の役割](https://developer.adobe.com/commerce/webapi/rest/b2b/roles/)により、B2B会社のお客様は、管理者ユーザーが作成した過去の注文を含め、社内のすべての注文を表示できます。<!-- ACCS-675 -->
+新しい`view_all_company_orders` [会社の役割](https://developer.adobe.com/commerce/webapi/rest/b2b/roles)により、B2B会社のお客様は、管理者ユーザーが作成した過去の注文を含め、社内のすべての注文を表示できます。<!-- ACCS-675 -->
 
 ### 機能強化とバグ修正
 
@@ -432,7 +432,7 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 
 管理者は、[!DNL Commerce Admin]およびREST APIを通じて、顧客の偽装のために[1回限りのコード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer)を生成できるようになりました。 1回限りのコードは、`generateCustomerToken`または`exchangeOtpForCustomerToken`個のGraphQLの変異を介して顧客アクセストークンと交換でき、出品者が支援するショッピング シナリオのパスワードなし「顧客としてログイン」フローを有効にします。<!-- ACCS-404 -->
 
-APIを使用してこの機能を実装する方法については、[REST API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/)および[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/)のドキュメントを参照してください。
+APIを使用してこの機能を実装する方法については、[REST API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/)および[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token)のドキュメントを参照してください。
 
 ### REST APIによるギフトカードアカウントの管理
 
@@ -444,7 +444,7 @@ APIを使用してこの機能を実装する方法については、[REST API](
 
 ### すぐに使用できる送料無料のget-rates webhookを購入する
 
-`plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` Webhookは、[!DNL Adobe Commerce as a Cloud Service]のAdmin Webhook リストで利用できるようになりました。 [&#x200B; カスタム配送方法](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#shipping-methods)の実装に使用します。<!-- ACCS-478 -->
+`plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` Webhookは、[!DNL Adobe Commerce as a Cloud Service]のAdmin Webhook リストで利用できるようになりました。 [&#x200B; カスタム配送方法](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#shipping-methods)の実装に使用します。<!-- ACCS-478 -->
 
 ### 製品属性を使用したPDFやその他のファイルのアップロード
 
@@ -580,11 +580,11 @@ web サイト、実店舗、実店舗の閲覧数は、以前は50に制限さ�
 
 ### 構造化されたエラーコードを使用して、ストアフロント認証メッセージをカスタマイズする
 
-[`generateCustomerToken` GraphQLの突然変異](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"}は、入力されたエラーコードをエラーメッセージとともに返すようになり、ストアフロントでエラーの理由ごとに特定のUI メッセージを表示できるようになりました。 使用可能なエラーコードは、`CUSTOMER_MISSING_EMAIL`、`CUSTOMER_MISSING_PASSWORD`、`CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`、`CUSTOMER_ACCOUNT_NOT_CONFIRMED`および`CUSTOMER_GENERIC_ERROR`です。<!-- ACCS-301 -->
+[`generateCustomerToken` GraphQLの突然変異](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token){target="_blank"}は、入力されたエラーコードをエラーメッセージとともに返すようになり、ストアフロントでエラーの理由ごとに特定のUI メッセージを表示できるようになりました。 使用可能なエラーコードは、`CUSTOMER_MISSING_EMAIL`、`CUSTOMER_MISSING_PASSWORD`、`CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`、`CUSTOMER_ACCOUNT_NOT_CONFIRMED`および`CUSTOMER_GENERIC_ERROR`です。<!-- ACCS-301 -->
 
 ### カートやウィッシュリストが非アクティブな場合の自動メールリマインダーの送信
 
-[電子メールリマインダーモジュール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) （`Magento_Reminder`）が[!DNL Adobe Commerce as a Cloud Service]でアクティブになりました。これにより、加盟店は、カートとウィッシュリストの非アクティブな状態に基づいて顧客に電子メールをトリガーする、自動リマインダールールを作成できます。<!-- CCSAAS-4597 -->
+[電子メールリマインダーモジュール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) （`Magento_Reminder`）が[!DNL Adobe Commerce as a Cloud Service]でアクティブになりました。 これにより、自動リマインダールールを作成し、カートやウィッシュリストの非アクティブな状態にもとづいてメールをトリガーすることができます。<!-- CCSAAS-4597 -->
 
 ### カテゴリ削除イベント webhookの購読
 
@@ -592,7 +592,7 @@ web サイト、実店舗、実店舗の閲覧数は、以前は50に制限さ�
 
 ### 登録済みの電子メールによるゲスト注文の追跡
 
-新しいオプションのストアレベル設定では、登録済みの顧客アカウントと一致するメールアドレスを使用して注文が行われた場合、顧客は[&#x200B; ゲスト注文を追跡できます](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails)。<!-- ACCS-289 -->
+新しいオプションのストアレベル設定では、顧客は[&#x200B; ゲスト注文を追跡](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails)できます。 これは、登録済みの顧客アカウントと一致するメールアドレスを使用して注文された場合に適用されます。<!-- ACCS-289 -->
 
 ### 機能強化とバグ修正
 
@@ -616,7 +616,7 @@ web サイト、実店舗、実店舗の閲覧数は、以前は50に制限さ�
 
 ### コマースイベントを使用したコンテキストフィールドの送信
 
-[!DNL Adobe Commerce as a Cloud Service]では、イベントペイロードで[&#x200B; コンテキストフィールド &#x200B;](https://developer.adobe.com/commerce/extensibility/events/context-fields/)がサポートされるようになりました。これにより、デフォルトでイベントに含まれていないデータを含めることができます。<!-- CEXT-5713 -->
+[!DNL Adobe Commerce as a Cloud Service]では、イベントペイロードで[&#x200B; コンテキストフィールド &#x200B;](https://developer.adobe.com/commerce/extensibility/events/context-fields)がサポートされるようになりました。これにより、デフォルトでイベントに含まれていないデータを含めることができます。<!-- CEXT-5713 -->
 
 ### 新しいWebhookを使用して見積もり項目の保存イベントを購読する
 
@@ -644,7 +644,7 @@ web サイト、実店舗、実店舗の閲覧数は、以前は50に制限さ�
 
 [!DNL Commerce Admin]に対して次の機能強化が行われました：
 
-* 発送先住所のカスタム属性を含めるように、[shipping webhook ペイロード &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload)のプロセスを強化しました。 この変更により、販売者はカスタム配送方法を実装できるようになります。<!-- ACCS-235 -->
+* 発送先住所のカスタム属性を含めるように、[shipping webhook ペイロード &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#payload)のプロセスを強化しました。 この変更により、販売者はカスタム配送方法を実装できるようになります。<!-- ACCS-235 -->
 
 * [顧客](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/customer-reports)、[&#x200B; マーケティング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/marketing-reports)、[製品](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/product-reports)、および[販売](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/reporting/sales-reports)のレポートを含む管理者レポートへのアクセスを追加しました。<!-- CCSAAS-3085 -->
 
@@ -735,7 +735,7 @@ Admin Consoleの個々の[!DNL Adobe Commerce as a Cloud Service] インスタ�
 
 ### 機能強化とバグ修正
 
-このリリースに含まれる以下の選択された機能強化、最適化、およびバグ修正：
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
 
 * S3にファイルをアップロードする際に発生する可能性があるエラーを解決しました。<!-- CCSAAS-4189 -->
 
@@ -745,7 +745,7 @@ Admin Consoleの個々の[!DNL Adobe Commerce as a Cloud Service] インスタ�
 
 * 管理者ダッシュボードの「[!UICONTROL **データを再読み込み**]」ボタンをクリックしたときに発生した`404` エラーを修正しました。<!-- CCSAAS-4468 -->
 
-* [!DNL AEM Assets integration]が有効になっていて、製品に画像がある場合に、REST APIを介して製品カスタム属性を更新できない問題を解決しました。<!-- ACAP-1178 -->
+* [!DNL AEM Assets integration]が有効になっていて、製品に画像がある場合に、REST APIを通じて製品カスタム属性が更新されない問題を解決しました。<!-- ACAP-1178 -->
 
 * さまざまなパフォーマンスと最適化の改善。
 <!-- CCSAAS-4255 -->
@@ -764,13 +764,13 @@ Admin Consoleの個々の[!DNL Adobe Commerce as a Cloud Service] インスタ�
 
 ### 機能強化
 
-* [User management](./user-management.md) - Commerce管理者へのユーザーアクセス権を自動的に更新するように、Admin Consoleの&#x200B;**Product Admin**&#x200B;の役割を変更しました。<!-- CCSAAS-3012 -->
+* [&#x200B; ユーザー管理](./user-management.md) — Commerce管理者へのユーザーアクセス権を自動的に更新するように、Admin Consoleの&#x200B;**製品管理者**&#x200B;の役割を変更しました。<!-- CCSAAS-3012 -->
 
-* [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads)および[REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads)で、事前に署名されたURLを使用して、交渉可能な見積もり添付ファイルおよびお客様とお客様のアドレスに関連付けられたファイルと画像をAmazon S3にアップロードして取得する機能を追加しました。 RESTでは、カテゴリ画像をアップロードすることもできます。<!-- CCSAAS-3250 -->
+* [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/)および[REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads/)で、事前に署名されたURLを使用して、交渉可能な見積もり添付ファイルおよびお客様とお客様のアドレスに関連付けられたファイルと画像をAmazon S3にアップロードして取得する機能を追加しました。 RESTでは、カテゴリ画像をアップロードすることもできます。<!-- CCSAAS-3250 -->
 
 * `POST /V1/customers`および`PUT /V1/customers/{customerId}` エンドポイントを[REST API](https://developer.adobe.com/commerce/webapi/rest/reference/)に追加して、顧客を作成および更新しました。 これらのエンドポイントにはIMS認証が必要です。<!-- CCSAAS-3112 -->
 
-* 買い物客の電子メールアドレスとワンタイムパスワード（OTP）が必要で、引き換えに顧客トークンを受け取る[`exchangeOtpForCustomerToken`の変異](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/)を追加しました。 この突然変異は、通常、顧客が電子メールまたは電話に送信されたOTPを使用して認証する必要があるシナリオで使用されます。
+* 買い物客の電子メールアドレスとワンタイムパスワード（OTP）が必要で、引き換えに顧客トークンを受け取る[`exchangeOtpForCustomerToken`の変異](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token)を追加しました。 この突然変異は、通常、顧客が電子メールまたは電話に送信されたOTPを使用して認証する必要があるシナリオで使用されます。
 
 * 管理画面の&#x200B;[!UICONTROL **メールアドレスの保存**]&#x200B;設定画面で定義されたアドレスに`example.com`で終わる値が含まれている場合、Commerceはこのアドレスにメールを送信しません。 代わりに、電子メールが送信されなかったことがログに記録されます。 <!-- CCSAAS-3533 -->
 

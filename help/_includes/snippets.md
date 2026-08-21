@@ -1,5 +1,5 @@
 ---
-source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Ado
 
 | サービス | 拡張機能 | ストアフロント |
 | --- | --- | --- |
-| <ul><li>[&#x200B; カタログ サービス &#x200B;](../catalog-service/release-notes.md)</li><li>[&#x200B; ライブサーチ &#x200B;](../live-search/release-notes.md)</li><li>[決済サービス &#x200B;](../payment-services/release-notes.md)</li><li>[商品レコメンデーション &#x200B;](../product-recommendations/release-notes.md)</li><li>[SaaS データ書き出し](../data-export/release-notes.md)</li></ul> | <ul><li>[管理者UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[&#x200B; イベント &#x200B;](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[&#x200B; リリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=ja)</li><li>[変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja)</li></ul> |
+| <ul><li>[&#x200B; カタログ サービス &#x200B;](../catalog-service/release-notes.md)</li><li>[&#x200B; ライブサーチ &#x200B;](../live-search/release-notes.md)</li><li>[決済サービス &#x200B;](../payment-services/release-notes.md)</li><li>[商品レコメンデーション &#x200B;](../product-recommendations/release-notes.md)</li><li>[SaaS データ書き出し](../data-export/release-notes.md)</li></ul> | <ul><li>[管理者UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/)</li><li>[&#x200B; イベント &#x200B;](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[&#x200B; リリース情報](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=ja)</li><li>[変更履歴](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja)</li></ul> |
 
 ## Adobe Commerce Optimizer サービスのリリースノート {#aco-release}
 

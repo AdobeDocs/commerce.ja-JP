@@ -2,9 +2,9 @@
 title: インストールして [!DNL App Management]にアクセス
 description: Adobe Commerce [!DNL App Management]を使用するための前提条件とアクセス要件。
 feature: App Builder, Extensibility, Integration
-source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## App Builder アプリのインストール
 
-Adobe ExchangeからApp Builder アプリをインストールする必要がある場合（事前定義済みの統合アプリやマーケットプレイスアプリなど）、ステップバイステップの手順については、[Adobe ExchangeからApp Builder アプリをインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"}を参照してください。
+Adobe ExchangeからApp Builder アプリをインストールする必要がある場合（事前定義済みの統合アプリやマーケットプレイスアプリなど）、ステップバイステップの手順については、[Adobe ExchangeからApp Builder アプリをインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"}を参照してください。
 
 アプリをインストールしてデプロイしたら、[!DNL App Management]を使用して[Commerce インスタンスに関連付け](manage-app.md#associate-an-app)し、設定を行います。
 

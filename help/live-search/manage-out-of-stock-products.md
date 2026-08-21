@@ -4,9 +4,9 @@ description: Adobe Commerceで [!DNL Live Search] 在庫切れ商品を管理す
 feature: Services, Search
 role: Admin, Developer
 level: Intermediate
-source-git-commit: bc8f35434c9f01f1a920745fe42617df2003ca60
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ query productSearchInStockOnly {
 関連度でソートする際に、結果セットで在庫切れの商品を常に在庫切れの商品の後に残しておくために、Adobeでは環境用の内部機能フラグを有効にすることができます。
 
 - この機能フラグは[!DNL Live Search]管理UIでは公開されません。
-- リクエストするには、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}に連絡し、在庫切れの商品を検索結果の最後に移動する機能を参照してください。
+- リクエストするには、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}に連絡し、在庫切れの商品を検索結果の最後に移動する機能を参照してください。
 
 >[!NOTE]
 >

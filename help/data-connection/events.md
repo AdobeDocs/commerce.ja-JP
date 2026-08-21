@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 467
+source-wordcount: 469
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 0%
 
 次に、[!DNL Data Connection]拡張機能のインストール時に使用できるCommerce行動イベントを示します。 これらのイベントで収集されたデータは、Adobe Experience Platformに送信されます。 [&#x200B; カスタムイベント &#x200B;](custom-events.md)を作成して、標準提供されていない追加データを収集することもできます。
 
-次のイベントが収集するデータに加えて、Adobe Experience Platform Web SDKが提供する[その他のデータ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=ja)も取得できます。
+次のイベントが収集するデータに加えて、Adobe Experience Platform Web SDKが提供する[その他のデータ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/js-overview)も取得できます。
 
 行動イベントは、サイトを閲覧する顧客から、匿名化された行動データを収集します。 イベントで収集したデータを活用して、特定の買い物客をターゲットにしたプロモーションや施策を構築できます。
 
 >[!NOTE]
 >
->すべての行動イベントには、買い物客の電子メールアドレス（使用可能な場合）、およびECIDを含む[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=ja) フィールドが含まれます。
+>すべての行動イベントには、買い物客の電子メールアドレス（使用可能な場合）、およびECIDを含む[`identityMap`](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/field-groups/profile/identitymap) フィールドが含まれます。
 
 ## ストアフロントイベント
 
@@ -58,6 +58,6 @@ ht-degree: 0%
 
 Adobe Commerceの![B2B](../assets/b2b.svg) B2B マーチャントの場合、これらのイベントにアクセスするには、`experience-platform-connector-b2b`拡張機能を[&#x200B; インストール &#x200B;](install.md#install-the-b2b-extension)する必要があります。
 
-B2B イベントには、購買リストが作成されたか、に追加されたか、または購買リストから削除されたかなどの[購買リスト &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=ja)情報が含まれています。 購買リストに特化したイベントを追跡することで、顧客が頻繁に購入する商品を把握し、そのデータにもとづいた施策を構築できます。
+B2B イベントには、購買リストが作成されたか、に追加されたか、または購買リストから削除されたかなどの[購買リスト &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/requisition-lists/requisition-lists)情報が含まれています。 購買リストに特化したイベントを追跡することで、顧客が頻繁に購入する商品を把握し、そのデータにもとづいた施策を構築できます。
 
 B2B イベントについて詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection)を参照してください。

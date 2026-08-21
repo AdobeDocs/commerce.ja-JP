@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 500
+source-wordcount: 501
 ht-degree: 0%
 
 ---
@@ -68,4 +68,4 @@ _検索結果の上位のレコメンデーション_
 | 商品詳細 | メインコンテンツの下部（デフォルト） | 最も閲覧された<br>最も購入された商品<br>最も購入された商品<br>これを閲覧した商品、<br>閲覧した商品、<br>購入した商品、<br>購入した商品など<br> トレンド <br>視覚的な類似性 |
 | 買い物かご | メインコンテンツの下部（デフォルト） | 最も閲覧された<br>最も購入された商品<br>最も購入された商品<br>これを閲覧した商品、<br>これを閲覧した商品、<br>これを購入した商品、<br>追加商品<br> トレンド |
 | 確認 | メインコンテンツの下部（デフォルト） | 最も閲覧された<br>最も購入された商品<br>最も購入された商品<br>これを閲覧した商品、<br>これを閲覧した商品、<br>これを購入した商品、<br>追加商品<br> トレンド |
-| ページビルダー | [&#x200B; ドラッグ&amp;ドロップ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=ja)でコンテンツの種類を配置 | 最も閲覧された商品<br>最も購入された商品<br>最もカートに追加された商品<br>あなたにおすすめ<br> トレンド |
+| ページビルダー | [&#x200B; ドラッグ&amp;ドロップ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/add-content/recommendations)でコンテンツの種類を配置 | 最も閲覧された商品<br>最も購入された商品<br>最もカートに追加された商品<br>あなたにおすすめ<br> トレンド |

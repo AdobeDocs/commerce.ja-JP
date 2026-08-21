@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 1010
+source-wordcount: 994
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Adobe CommerceとAdobe Experience Manager（AEM）の両方には、Commerceか�
 | **必要なアクセスと権限** | <ul><li>AEM Assets as a Cloud Serviceへの管理者アクセス</li><li>メディアファイルが保存されているソースシステム（Adobe Commerceまたは外部システム）へのアクセス</li><li>クラウドストレージサービスにアクセスするための適切な権限</li></ul> |
 | **クラウドストレージアカウント** | <ul><li>AWS S3またはAzure Blob Storage アカウント</li><li>プライベートコンテナ/バケット設定</li><li>認証情報</li></ul> |
 | **Source コンテンツ** | <ul><li>移行用に整理されたメディアファイル</li><li>AEM Assets</a>でサポートされている<a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">形式の画像およびビデオファイル。</li><li>重複したアセットの整理</li></li> |
-| **メタデータの準備** | <ul><li><a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-aem">Commerce assets用に設定されたAEM Assets メタデータプロファイル </a></li><li>各アセットのマッピングされたメタデータ値</li><li>CSV ファイルエディター（例：Microsoft Excel）</li></ul> |
+| **メタデータの準備** | <ul><li><a href="configure-aem.md">Commerce assets用に設定されたAEM Assets メタデータプロファイル </a></li><li>各アセットのマッピングされたメタデータ値</li><li>CSV ファイルエディター（例：Microsoft Excel）</li></ul> |
 
 ## 移行のベストプラクティス
 

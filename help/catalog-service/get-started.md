@@ -19,9 +19,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 437
+source-wordcount: 436
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Edge Delivery ServicesでAdobe Commerce ストアフロントを使用してい�
 
 ## カタログサービスとAPI メッシュ
 
-Adobe Developer App Builder向け[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)を使用すると、開発者は、Adobe IOを使用して、プライベートまたはサードパーティのAPIやその他のインターフェイスをAdobe製品と統合できます。
+Adobe Developer App Builder向け[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/)を使用すると、開発者は、Adobe IOを使用して、プライベートまたはサードパーティのAPIやその他のインターフェイスをAdobe製品と統合できます。
 
 インストールと設定の詳細については、[[!DNL Catalog Service] およびAPI Mesh](mesh.md)のトピックを参照してください。
 

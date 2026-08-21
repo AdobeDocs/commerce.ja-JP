@@ -12,9 +12,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 175
+source-wordcount: 174
 ht-degree: 0%
 
 ---
@@ -29,24 +29,24 @@ ht-degree: 0%
       <td><strong>Commerce サービス </strong>
         <p>拡張機能として利用できる革新的なCommerce サービスの最新の改善点について説明します。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=ja">[!DNL Catalog Service]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=ja">[!DNL Live Search]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=ja">[!DNL Payment Services]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=ja">商品レコメンデーション</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/catalog-service/release-notes">[!DNL Catalog Service]</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/release-notes">[!DNL Live Search]</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/release-notes">[!DNL Payment Services]</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/product-recommendations/release-notes">商品レコメンデーション</a></li>
           </ul>
         </td>
       <td><strong>統合サービス </strong>
         <p>Commerce サービスが他のサービスやAdobeの拡張機能や製品と連携できるようにする統合サービスの最新の改善点について説明します。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/data-connection/release-notes.html?lang=ja">[!DNL Data Connection]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html?lang=ja">[!DNL Services Connector]</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/data-connection/release-notes">[!DNL Data Connection]</a></li>
+            <li><a href="../landing/saas.md">[!DNL Services Connector]</a></li>
           </ul>
       </td>
       <td><strong> データサービス </strong>
         <p>Commerce サービスで商品データを管理できるようにするデータサービスの最新の改善点について説明します。</p>
           <ul>
            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/release-notes">SaaS データ書き出し拡張機能</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/data-services/catalog-sync.html?lang=ja">カタログ同期</a></li>
+            <li><a href="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/data-services/catalog-sync">カタログ同期</a></li>
           </ul>
       </td>
     </tr>

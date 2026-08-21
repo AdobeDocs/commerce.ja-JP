@@ -12,16 +12,16 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 292
+source-wordcount: 289
 ht-degree: 0%
 
 ---
 
 # Adobe Developer App BuilderのAPI Meshによる税金価格の表示
 
-[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)を使用すると、開発者はAdobe I/O Runtimeを使用して、プライベートまたはサードパーティのAPIやその他のインターフェイスをAdobe製品と統合できます。
+[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/)を使用すると、開発者はAdobe I/O Runtimeを使用して、プライベートまたはサードパーティのAPIやその他のインターフェイスをAdobe製品と統合できます。
 
 このトピックでは、API Meshを使用して、製品の詳細ページに製品価格を表示し、税金を表示します。
 
@@ -29,8 +29,8 @@ ht-degree: 0%
 
 商品詳細ページに表示するには、税金を設定する必要があります。
 
-1. [税率を設定](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=ja)。
-1. 税金を有効にして[&#x200B; カタログに表示](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=ja#step-1%3A-configure-catalog-prices-display-settings)し、`Including and Excluding Tax`または`Including Tax`のいずれかに設定します。
+1. [税率を設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules)。
+1. 税金を有効にして[&#x200B; カタログに表示](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings)し、`Including and Excluding Tax`または`Including Tax`のいずれかに設定します。
 
 カタログサービスが機能していることを確認するには、製品詳細ページを確認します。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## API メッシュの設定
 
-まだ完了していない場合は、API Mesh with Catalog Serviceをインスタンスに接続します。 API Mesh開発者ガイドの「[はじめに](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/)」トピックの詳細な手順を参照してください。
+まだ完了していない場合は、API Mesh with Catalog Serviceをインスタンスに接続します。 API Mesh開発者ガイドの「[はじめに](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)」トピックの詳細な手順を参照してください。
 
 `mesh.json` ファイルで、`name`、`endpoint`、`x-api-key`の値を置き換えます。
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 * `ComplexProductView`型と`SimpleProductView`型を`priceWithTaxes`という新しいフィールドで拡張します。
 * 新しいフィールドにカスタムリゾルバーを追加します。
 
-[create コマンド &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1)でメッシュを`mesh.json` ファイルで作成します。
+[create コマンド &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh)でメッシュを`mesh.json` ファイルで作成します。
 
 ### GraphQL クエリ
 

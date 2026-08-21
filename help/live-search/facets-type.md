@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: 429
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ ht-degree: 0%
 
 [!DNL Commerce] ストアフロント用にレンダリングされたファセットは、検索アダプターによって処理され、リクエストがルーティングされ、ストアフロントに結果がレンダリングされます。 対応する属性に割り当てられた入力タイプに関係なく、すべての[!DNL Commerce] ストアフロントファセットが単一選択オプションでアルファベット順に並べ替えられます。 ストアフロントで使用可能なファセットは、現在のテーマに従ってレンダリングされ、レイヤーナビゲーションのプレゼンテーションに加えられたカスタマイズが反映されます。
 
-対照的に、[&#x200B; ヘッドレス &#x200B;](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/)実装はAPIによって処理され、追加のオプションをサポートします。 ヘッドレスファセットは、アルファベット順またはカウント順に並べ替えることができ、シングル選択またはマルチセレクトのオプションを使用できます。
+対照的に、[&#x200B; ヘッドレス &#x200B;](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api)実装はAPIによって処理され、追加のオプションをサポートします。 ヘッドレスファセットは、アルファベット順またはカウント順に並べ替えることができ、シングル選択またはマルチセレクトのオプションを使用できます。
 
 ### ファセットラベル
 
-[!DNL Commerce]個のストアフロントの場合、ファセットラベルは&#x200B;[*属性プロパティ*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=ja)によって決定されます。 複数のビューを持つストアの場合、*ラベルの管理*&#x200B;で追加のラベルを定義できます。 ヘッドレス実装の場合、ラベルは[&#x200B; ファセットワークスペース &#x200B;](faceting-workspace.md)から編集されます。
+[!DNL Commerce]個のストアフロントの場合、ファセットラベルは&#x200B;[*属性プロパティ*](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)によって決定されます。 複数のビューを持つストアの場合、*ラベルの管理*&#x200B;で追加のラベルを定義できます。 ヘッドレス実装の場合、ラベルは[&#x200B; ファセットワークスペース &#x200B;](faceting-workspace.md)から編集されます。
 
 ### 並べ替えタイプ
 

@@ -7,9 +7,9 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: 583
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 範囲の設定
 
-Adobe Commerceのインストールに複数のストアビューが含まれる場合は、**Scope**&#x200B;をルールが適用される[&#x200B; ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings)に設定します。
+Adobe Commerceのインストールに複数のストアビューが含まれる場合は、**Scope**&#x200B;をルールが適用される[&#x200B; ストアビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)に設定します。
 
 ## 列の表示/非表示
 

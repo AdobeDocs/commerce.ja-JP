@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 2318
+source-wordcount: 2323
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## 範囲の設定
 
-最初に、すべての[!DNL Live Search]設定の[&#x200B; スコープ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja#scope-settings)が`Default Store View`に設定されます。 [!DNL Commerce]のインストールに複数のストアビューが含まれる場合は、**スコープ**&#x200B;をファセット設定が適用される[&#x200B; ストアビュー](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=ja)に設定します。
+最初に、すべての[!DNL Live Search]設定の[&#x200B; スコープ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)が`Default Store View`に設定されます。 [!DNL Commerce]のインストールに複数のストアビューが含まれる場合は、**スコープ**&#x200B;をファセット設定が適用される[&#x200B; ストアビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views)に設定します。
 
 ## メニューオプション
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 属性を検索可能に設定する
 
-高度にターゲットを絞った結果を生成するには、[検索可能](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=ja) （`searchable=true`）製品属性のセットを確認します。 関連性を確保するために、属性に明確で簡潔な意味を持つコンテンツが含まれている場合にのみ、属性を検索できるようにします。 デフォルトでは検索機能が有効になっていますが、検索結果の精度を低下させる可能性がある`description`のように、精度の低い長いテキストを含む属性を使用しないでください。 例えば、「ショートパンツ」と検索した際に、「半袖」という言葉が入った説明のシャツがある場合、そのシャツは検索結果に表示されます。
+高度にターゲットを絞った結果を生成するには、[検索可能](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes) （`searchable=true`）製品属性のセットを確認します。 関連性を確保するために、属性に明確で簡潔な意味を持つコンテンツが含まれている場合にのみ、属性を検索できるようにします。 デフォルトでは検索機能が有効になっていますが、検索結果の精度を低下させる可能性がある`description`のように、精度の低い長いテキストを含む属性を使用しないでください。 例えば、「ショートパンツ」と検索した際に、「半袖」という言葉が入った説明のシャツがある場合、そのシャツは検索結果に表示されます。
 
 属性を検索可能にするには、次の手順を実行します。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 1. 検索可能にする属性（`color`など）を選択します。
 1. **ストアフロントのプロパティ**&#x200B;を選択し、**検索での使用**&#x200B;を`yes`に設定します。
 
-[!DNL Live Search]は、Adobe Commerce内で設定されたproduct属性の[weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=ja#weighted-search)も尊重します。 重みが大きい属性は、検索結果で高く表示されます。
+[!DNL Live Search]は、Adobe Commerce内で設定されたproduct属性の[weight](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)も尊重します。 重みが大きい属性は、検索結果で高く表示されます。
 
 次の属性は常に検索可能です。
 
@@ -104,21 +104,21 @@ ht-degree: 0%
 
 - **階層検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリに対して最大2つの検索レイヤーを実行できます。 例：
 
-   - **レイヤー1検索** - `product_attribute_1`で「motor」を検索します。
-   - **レイヤー2検索** - `product_attribute_2`で「パーツ番号123」を検索します。 次の使用例は、&quot;motor&quot;の検索結果から&quot;part number 123&quot;を検索します。
+  - **レイヤー1検索** - `product_attribute_1`で「motor」を検索します。
+  - **レイヤー2検索** - `product_attribute_2`で「パーツ番号123」を検索します。 次の使用例は、&quot;motor&quot;の検索結果から&quot;part number 123&quot;を検索します。
 
   階層検索は、次の説明に従って、階層検索の2番目のレイヤーの`startsWith`検索インデックスと`contains`検索インデックスの両方で使用できます。
 
 - **startsWith検索インデックス** - `startsWith`個のインデックスを使用して検索します。 この新しい機能により、次のことが可能になります。
 
-   - 属性値が指定された文字列で始まる製品を検索します。
-   - 「で終わる」検索を設定して、買い物客が属性値が特定の文字列で終わる商品を検索できるようにします。 「end with」検索を有効にするには、product属性を逆に取り込む必要があり、API呼び出しも逆の文字列にする必要があります。 例えば、「パンツ」で終わる商品名を検索する場合は、これを「スタンプ」として送信する必要があります。
+  - 属性値が指定された文字列で始まる製品を検索します。
+  - 「で終わる」検索を設定して、買い物客が属性値が特定の文字列で終わる商品を検索できるようにします。 「end with」検索を有効にするには、product属性を逆に取り込む必要があり、API呼び出しも逆の文字列にする必要があります。 例えば、「パンツ」で終わる商品名を検索する場合は、これを「スタンプ」として送信する必要があります。
 
 - **には検索インデックスが含まれています** - 「含まれている」インデックスを使用して属性を検索します。 この新しい機能により、次のことが可能になります。
 
-   - 大きな文字列内のクエリを検索しています。 例えば、買い物客が「HAPE-123」という文字列で「PE-123」という商品番号を検索した場合です。
+  - 大きな文字列内のクエリを検索しています。 例えば、買い物客が「HAPE-123」という文字列で「PE-123」という商品番号を検索した場合です。
 
-      - 注意：この検索タイプは、オートコンプリート検索を実行する既存の[語句検索](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase)とは異なります。 たとえば、product属性値が「outdoor pants」の場合、語句検索は「out pan」の応答を返しますが、「or ants」の応答は返しません。 Aは検索を含んでいますが、「or ants」に対する応答を返しません。
+    - 注意：この検索タイプは、オートコンプリート検索を実行する既存の[語句検索](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase)とは異なります。 たとえば、product属性値が「outdoor pants」の場合、語句検索は「out pan」の応答を返しますが、「or ants」の応答は返しません。 Aは検索を含んでいますが、「or ants」に対する応答を返しません。
 
 これらの新しい条件は、検索クエリフィルタリングメカニズムを強化して、検索結果を絞り込みます。 これらの新しい条件は、メインの検索クエリには影響しません。
 
@@ -203,7 +203,7 @@ ht-degree: 0%
 
 ## デフォルトの属性値
 
-次の製品属性には、[!DNL Live Search]によって使用され、デフォルトで有効になっている[&#x200B; ストアフロントプロパティ &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=ja)があります。
+次の製品属性には、[!DNL Live Search]によって使用され、デフォルトで有効になっている[&#x200B; ストアフロントプロパティ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes)があります。
 
 | プロパティ | Storefront プロパティ | 属性 |
 |---|---|---|

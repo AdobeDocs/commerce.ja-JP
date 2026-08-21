@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 3511
+source-wordcount: 3527
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Commerce サービス コネクタを構成したら、次に[!DNL Data Connecti
 
 ### サービスアカウントと資格情報の詳細の追加
 
-[過去の注文データ &#x200B;](#send-historical-order-data)または[顧客プロファイルデータ &#x200B;](#send-customer-profile-data)を収集して送信する場合は、サービスアカウントと資格情報の詳細を追加する必要があります。 また、[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=ja)拡張機能を設定する場合は、次の手順を実行する必要があります。
+[過去の注文データ &#x200B;](#send-historical-order-data)または[顧客プロファイルデータ &#x200B;](#send-customer-profile-data)を収集して送信する場合は、サービスアカウントと資格情報の詳細を追加する必要があります。 また、[Audience Activation](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/audience-activation)拡張機能を設定する場合は、次の手順を実行する必要があります。
 
 サービス アカウントの資格情報は、**Default Config** スコープで設定され、グローバルに適用されます。 サンドボックス名など、web サイトのスコープ設定については、[設定スコープ &#x200B;](#configuration-scope)を参照してください。
 
@@ -91,12 +91,12 @@ Commerce サービス コネクタを構成したら、次に[!DNL Data Connecti
 
 Commerceを認証するプロジェクトをAdobe Developer Consoleで作成し、Experience Platform API呼び出しを行えるようにします。
 
-プロジェクトを作成するには、[認証してExperience Platform APIにアクセス &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=ja) チュートリアルで説明されている手順に従います。
+プロジェクトを作成するには、[認証してExperience Platform APIにアクセス &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-apis/api-authentication) チュートリアルで説明されている手順に従います。
 
 チュートリアルを進める際には、プロジェクトに次の要素が含まれていることを確認します。
 
-- 次の[製品プロファイル &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=ja#select-product-profiles)へのアクセス：**既定の実稼動環境のすべてのアクセス**&#x200B;および&#x200B;**AEP既定のすべてのアクセス**。
-- 正しい[役割と権限が設定されています](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=ja#assign-api-to-a-role)。
+- 次の[製品プロファイル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-apis/api-authentication#select-product-profiles)へのアクセス：**既定の実稼動環境のすべてのアクセス**&#x200B;および&#x200B;**AEP既定のすべてのアクセス**。
+- 正しい[役割と権限が設定されています](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/platform-apis/api-authentication#assign-api-to-a-role)。
 - サーバー間の認証方法としてJSON Web Tokens （JWT）を使用することを決定した場合は、秘密鍵もアップロードする必要があります。
 
 この手順の結果、次の手順で使用する設定ファイルが作成されます。
@@ -131,7 +131,7 @@ Commerceを認証するプロジェクトをAdobe Developer Consoleで作成し�
 
 1. 「**[!UICONTROL Test connection]**」をクリックして、現在&#x200B;**[!UICONTROL Scope]**&#x200B;で選択されているweb サイトのサービスアカウントの資格情報とサンドボックスを検証します。 同じ手順を、異なるサンドボックスを使用するweb サイトごとに繰り返します。
 
-1. （オプション）既に[AEP Web SDK （alloy） &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ja)がサイトにデプロイされている場合は、チェックボックスを有効にし、AEP Web SDKの名前を追加します。 それ以外の場合は、これらのフィールドを空白のままにして、[!DNL Data Connection]拡張機能が1つをデプロイします。
+1. （オプション）既に[AEP Web SDK （alloy） &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/collection/js/js-overview)がサイトにデプロイされている場合は、チェックボックスを有効にし、AEP Web SDKの名前を追加します。 それ以外の場合は、これらのフィールドを空白のままにして、[!DNL Data Connection]拡張機能が1つをデプロイします。
 
    >[!NOTE]
    >
@@ -161,9 +161,9 @@ Adobe Commerce インスタンスでデータ収集を開始できるように�
 
    >[!NOTE]
    >
-   >**バックオフィスイベント**&#x200B;を選択すると、すべてのバックオフィスデータがExperience Platform エッジに送信されます。 買い物客がデータ収集をオプトアウトする場合は、Experience Platformで買い物客のプライバシー設定を明示的に設定する必要があります。 これは、コレクターが買い物客の好みにもとづいて同意を既に処理しているストアフロントイベントとは異なります。 Experience Platformでの買い物客のプライバシー設定について[詳細](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=ja)を説明します。
+   >**バックオフィスイベント**&#x200B;を選択すると、すべてのバックオフィスデータがExperience Platform エッジに送信されます。 買い物客がデータ収集をオプトアウトする場合は、Experience Platformで買い物客のプライバシー設定を明示的に設定する必要があります。 これは、コレクターが買い物客の好みにもとづいて同意を既に処理しているストアフロントイベントとは異なります。 Experience Platformでの買い物客のプライバシー設定について[詳細](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset)を説明します。
 
-1. （独自のAEP Web SDKを使用している場合は、この手順をスキップしてください）。 [Adobe Experience Platformでデータストリームを作成](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ja#create)するか、収集に使用する既存のデータストリームを選択します。 「**データストリーム ID**」フィールドにそのデータストリーム IDを入力します。
+1. （独自のAEP Web SDKを使用している場合は、この手順をスキップしてください）。 [Adobe Experience Platformでデータストリームを作成](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/configure#create)するか、収集に使用する既存のデータストリームを選択します。 「**データストリーム ID**」フィールドにそのデータストリーム IDを入力します。
 
 1. Commerce データを含める&#x200B;**データセット ID**&#x200B;を入力します。 データセット IDを検索するには：
 
@@ -171,7 +171,7 @@ Adobe Commerce インスタンスでデータ収集を開始できるように�
    1. データストリームに関連付けられているデータセットを開きます。
    1. 右側のペインで、データセットの詳細を表示します。 データセット IDをコピーします。
 
-1. [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=ja) ジョブに従ったスケジュールに基づいてバックオフィスイベントデータを更新するには、`Sales Orders Feed` インデックスを`Update by Schedule`に変更する必要があります。
+1. [cron](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cron) ジョブに従ったスケジュールに基づいてバックオフィスイベントデータを更新するには、`Sales Orders Feed` インデックスを`Update by Schedule`に変更する必要があります。
 
    1. _管理者_ サイドバーで、**[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**&#x200B;に移動します。
 
@@ -179,7 +179,7 @@ Adobe Commerce インスタンスでデータ収集を開始できるように�
 
    1. **[!UICONTROL Actions]**&#x200B;を`Update by Schedule`に設定します。
 
-   1. バックオフィスデータを初めて有効にする場合は、次のコマンドを実行して再インデックスを作成し、再同期をトリガーします。 後続の再同期は、[cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=ja) ジョブが正しく設定されている限り、自動的に行われます。
+   1. バックオフィスデータを初めて有効にする場合は、次のコマンドを実行して再インデックスを作成し、再同期をトリガーします。 後続の再同期は、[cron](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/cron) ジョブが正しく設定されている限り、自動的に行われます。
 
       ```bash
       bin/magento index:reindex sales_order_data_exporter_v2
@@ -210,7 +210,7 @@ Adobe Commerce インスタンスでデータ収集を開始できるように�
 
 Experience Platformに送信できるプロファイルデータには、プロファイルレコードと時系列プロファイルイベントの2種類があります。
 
-プロファイルレコードには、買い物客がCommerce インスタンスでプロファイル（買い物客の名前など）を作成したときに保存されるデータが含まれます。 スキーマとデータセットが[適切に設定されている](profile-data.md)場合、プロファイルレコードがExperience Platformに送信され、Adobeのプロファイル管理およびセグメント化サービス [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=ja)に転送されます。
+プロファイルレコードには、買い物客がCommerce インスタンスでプロファイル（買い物客の名前など）を作成したときに保存されるデータが含まれます。 スキーマとデータセットが[適切に設定されている](profile-data.md)場合、プロファイルレコードがExperience Platformに送信され、Adobeのプロファイル管理およびセグメント化サービス [Real-Time CDP](https://experienceleague.adobe.com/ja/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview)に転送されます。
 
 時系列プロファイルイベントには、顧客のプロファイル情報に関するデータが含まれます。たとえば、顧客がサイトでアカウントを作成、編集、削除するかどうかも含まれます。 プロファイルイベントデータがExperience Platformに送信されると、他のDX製品で使用できるデータセットに格納されます。
 
@@ -257,7 +257,7 @@ Commerceは既に過去の注文データを収集していますが、そのデ
 
 1. [提供された](#add-service-account-and-credential-details) サービス アカウントと資格情報の詳細があることを確認してください。
 
-1. [RabbitMQを](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html?lang=ja)有効にします。
+1. [RabbitMQを](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq)有効にします。
 
    >[!NOTE]
    >
@@ -274,7 +274,7 @@ Commerceは既に過去の注文データを収集していますが、そのデ
 
    >[!NOTE]
    >
-   >使用可能なすべての設定オプションについて詳しくは、[変数のデプロイに関するドキュメント &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=ja#cron_consumers_runner)を参照してください。
+   >使用可能なすべての設定オプションについて詳しくは、[変数のデプロイに関するドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner)を参照してください。
 
 注文同期サービスが有効になっている場合は、**[!UICONTROL [!DNL Data Connection]]** ページで過去の注文日付範囲を指定できます。
 
@@ -336,7 +336,7 @@ Experience Platformに送信する履歴オーダーの日付範囲を指定し�
 
 ## イベントデータが収集されていることを確認する {#confirm-that-event-data-is-collected}
 
-Commerce ストアからデータが収集されていることを確認するには、[Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=ja)を使用してCommerce サイトを調べます。 データが収集されていることを確認したら、設定[&#128279;](overview.md#enable-extension)中に作成した データセットからデータを返すクエリを実行して、ストアフロントとバックオフィスのイベントデータがエッジに表示されることを確認できます。
+Commerce ストアからデータが収集されていることを確認するには、[Adobe Experience Platform debugger](https://experienceleague.adobe.com/ja/docs/experience-platform/debugger/home)を使用してCommerce サイトを調べます。 データが収集されていることを確認したら、設定[&#128279;](overview.md#enable-extension)中に作成した データセットからデータを返すクエリを実行して、ストアフロントとバックオフィスのイベントデータがエッジに表示されることを確認できます。
 
 1. Experience Platformの左側のナビゲーションで「**クエリ**」を選択し、[!UICONTROL Create Query]をクリックします。
 
@@ -358,7 +358,7 @@ Commerce ストアからデータが収集されていることを確認する�
 
 この例では、`commerce.productListAdds`、`commerce.productViews`、`web.webpagedetails.pageViews`などのイベントデータが表示されています。 このビューでは、Commerce データがエッジに届いたことを確認できます。
 
-期待した結果と異なる場合は、データセットを開き、失敗したバッチインポートを探します。 [&#x200B; バッチ インポートのトラブルシューティング &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html?lang=ja)の詳細をご覧ください。
+期待した結果と異なる場合は、データセットを開き、失敗したバッチインポートを探します。 [&#x200B; バッチ インポートのトラブルシューティング &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/ingestion/batch/troubleshooting)の詳細をご覧ください。
 
 ### Experience Platformにプロファイルデータが表示されることを確認する
 

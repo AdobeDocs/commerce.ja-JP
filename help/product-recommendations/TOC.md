@@ -5,9 +5,9 @@ user-guide-description: このガイドでは、Adobe Commerceから [!DNL Produ
 role: Admin
 feature: Services, Recommendations
 nudge: true
-source-git-commit: 22c2fa72c3603e28b5ab55a34a908c10c02457fe
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '64'
+source-wordcount: '65'
 ht-degree: 10%
 
 ---
@@ -19,23 +19,23 @@ ht-degree: 10%
 - [リリースノート](release-notes.md)
 - [限界と限界](boundaries-limits.md)
 - 詳細を見る {#getting-started}
-   - [オンボーディング](onboarding.md)
-   - [導入ワークフロー](implementation-workflow.md)
-   - [ヘッドレス](headless.md)
-   - [インストール](install-configure.md)
-   - [設定](settings.md)
-   - [ステージング環境](staging-environment.md)
-   - [ページビルダーの統合](page-builder.md)
+  - [オンボーディング](onboarding.md)
+  - [導入ワークフロー](implementation-workflow.md)
+  - [ヘッドレス](headless.md)
+  - [インストール](install-configure.md)
+  - [設定](settings.md)
+  - [ステージング環境](staging-environment.md)
+  - [ページビルダーの統合](page-builder.md)
 - [!DNL Product Recommendations]管理者 {#admin}
-   - [Workspace](workspace.md)
-   - [制作](create.md)
-   - [Edit](edit.md)
-   - [レコメンデーションタイプ](type.md)
-   - [フィルター](filters.md)
-   - [配置とラベル](placement.md)
+  - [Workspace](workspace.md)
+  - [制作](create.md)
+  - [Edit](edit.md)
+  - [レコメンデーションタイプ](type.md)
+  - [フィルター](filters.md)
+  - [配置とラベル](placement.md)
 - [!DNL Product Recommendations]人の開発者 {#developer}
-   - [概要](development-overview.md)
-   - [Collect Data](events.md)
-   - [カスタマイズ](customize.md)
-   - [Cookie制限への対応](setting-cookie.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=ja)
+  - [概要](development-overview.md)
+  - [Collect Data](events.md)
+  - [カスタマイズ](customize.md)
+  - [Cookie制限への対応](setting-cookie.md)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)

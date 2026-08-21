@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: e03840ea9e0e43a005f385914e8599804383e79d
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 3305
+source-wordcount: 3302
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ Migration Assessment ToolとCommerce Developer MCPは、AIを利用して、検�
 
 ### 評価範囲
 
-移行評価ツールは、移行の全体像を把握することに重点を置いています。 カスタムモジュール、プラグイン、イベント、API、cron ジョブ、キュー、外部システムとの統合、ストアフロントの特性、およびそれらのカスタマイズが依存するデータベーススキーマを分析します。 この評価では、利用可能な[!DNL Adobe Commerce as a Cloud Service]機能に対して検出される内容をマッピングし、[!DNL App Builder]を使用して機能を近代化するか、SaaS アーキテクチャ用に再設計する場所を特定します。
+移行評価ツールは、移行の全体像を把握することに重点を置いています。 カスタムモジュール、プラグイン、イベント、API、cron ジョブ、キュー、外部システムとの統合、ストアフロントの特性、およびそれらのカスタマイズが依存するデータベーススキーマを分析します。 この評価では、検出した内容を使用可能な[!DNL Adobe Commerce as a Cloud Service]機能にマッピングし、[!DNL App Builder]を使用してSaaS アーキテクチャの再設計や機能の近代化を行う場所を特定します。
 
 評価は、実行ツールというよりも計画ツールです。 近代化する必要があるものを特定し、実装の複雑さを推定し、推奨事項を提供します。 導入に関する意思決定とアーキテクチャの検証は、引き続きAdobe、パートナー、カスタマーエンジニアリング部門の間で共同で行われます。
 
@@ -184,7 +184,7 @@ Migration Assessment ToolとCommerce Developer MCPは、AIを利用して、検�
 
 ### 次のステップ
 
-すべての[!DNL Adobe Commerce as a Cloud Service]移行は、評価から始める必要があります。 低コストでスコープを設定し、不確実性を低減しながら、導入を開始する前に移行の設計図を共有できます。
+すべての[!DNL Adobe Commerce as a Cloud Service]移行は評価から始まります。 これは、スコープを設定し、不確実性を減らし、実装を開始する前に共有された移行ブループリントを作成するための費用対効果の高い方法です。
 
 評価ツールとダウンストリーム開発者ワークフローについて詳しくは、[Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/)を参照してください。
 
@@ -263,7 +263,7 @@ MCPのインストールと使用方法について詳しくは、[Commerce Deve
 
 ## データ移行（Commerce Data Migration Service）
 
-[!DNL Adobe Commerce as a Cloud Service]に移行するには、カタログ、注文、顧客、設定など、何年ものデータを移行する必要があります。
+[!DNL Adobe Commerce as a Cloud Service]に移行するには、カタログ、注文、顧客、設定など、長年のデータを移行する必要があります。
 
 Commerce Data Migration Serviceは、手作業による移行を、繰り返し可能な自動化された単一のプロセスに置き換えます。 複雑なデータベースの移行を、より予測可能かつ効率的におこなうことができます。
 

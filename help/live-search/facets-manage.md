@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 481
+source-wordcount: 482
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. ファセットラベルを編集するには、次のいずれかの操作を行います。
 
-   * [!DNL Commerce] ストアフロントの場合、[属性ラベル &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=ja)を編集します。
+   * [!DNL Commerce] ストアフロントの場合、[属性ラベル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes)を編集します。
    * ヘッドレス実装の場合は、最初の列の値をクリックし、必要に応じてテキストを編集します。
 
    ![&#x200B; ラベルを編集](assets/facet-edit-label.png)

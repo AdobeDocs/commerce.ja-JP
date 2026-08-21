@@ -23,9 +23,9 @@ topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: 1445
+source-wordcount: 1448
 ht-degree: 0%
 
 ---
@@ -201,8 +201,8 @@ Sites Optimizerの機能と機能について詳しくは、[Adobe Experience Ma
 
 関連トピックス：
 
-- [商談タイプ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/opportunities) – 使用可能な最適化商談について説明します。
-- [Sites Optimizerの機能](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/capabilities) - Sites Optimizerの機能について説明します。
+- [商談タイプ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) – 使用可能な最適化商談について説明します。
+- [Sites Optimizerの機能](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/documentation/basics) - Sites Optimizerの機能について説明します。
 
 ## その他
 

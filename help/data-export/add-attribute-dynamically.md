@@ -18,7 +18,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->製品属性を拡張する最適な方法は、[!DNL Catalog Service] [!DNL GraphQL] スキーマを拡張するために [!DNL Catalog Service][&#128279;](../catalog-service/mesh.md)で [!DNL Adobe Commerce][&#128279;](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) where you can configure and manage them from the Commerce Admin. Only add them dynamically if you need them solely for Commerce storefront services and do not want to register them in [!DNL Adobe Commerce]. You also have the option to manage custom attributes using [!DNL API Mesh] に追加することです。
+>製品属性を拡張する最適な方法は、[!DNL Catalog Service] [!DNL GraphQL] スキーマを拡張するために [!DNL Catalog Service]&#x200B;[&#128279;](../catalog-service/mesh.md)で [!DNL Adobe Commerce]&#x200B;[&#128279;](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) where you can configure and manage them from the Commerce Admin. Only add them dynamically if you need them solely for Commerce storefront services and do not want to register them in [!DNL Adobe Commerce]. You also have the option to manage custom attributes using [!DNL API Mesh] に追加することです。
 
 ## 製品属性の追加
 
 `customer_attribute`を`Magento\CatalogDataExporter\Model\Provider\Product\Attributes` クラスに追加するプラグインを作成します。
 
-1. [依存関係インジェクション設定ファイル &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）を更新して、プラグインを定義します。
+1. [依存関係インジェクション設定ファイル &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) （`di.xml`）を更新して、プラグインを定義します。
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
@@ -110,7 +110,7 @@ ht-degree: 0%
 
 カスタム製品属性を動的に作成し、ストアフロントサービスでの表示、検索、フィルタリングに使用する場合は、製品属性メタデータを追加してストアフロントの動作を設定します。
 
-1. [依存関係インジェクション設定ファイル &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) （`di.xml`）を更新して、製品属性メタデータのプラグインを定義します。
+1. [依存関係インジェクション設定ファイル &#x200B;](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) （`di.xml`）を更新して、製品属性メタデータのプラグインを定義します。
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\ProductMetadata">
