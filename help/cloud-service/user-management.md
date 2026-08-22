@@ -37,7 +37,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->複数のユーザーを同時に追加するには、[一括CSV アップロード &#x200B;](https://helpx.adobe.com/business/enterprise/users/users-and-groups/bulk-upload-users.html){target="_blank"}を実行できます。
+>複数のユーザーを同時に追加するには、[一括CSV アップロード &#x200B;](https://helpx.adobe.com/jp/business/enterprise/users/users-and-groups/bulk-upload-users.html){target="_blank"}を実行できます。
 >
 > [&#x200B; ユーザーグループ &#x200B;](https://helpx.adobe.com/jp/business/enterprise/users/users-and-groups/user-groups.html){target="_blank"}を作成して、役割に複数のユーザーを追加することもできます。 次に、適切な商品をユーザーグループに追加します。
 
@@ -254,7 +254,7 @@ Admin Consoleの「![開発者と管理者」タブのオプション &#x200B;](
 
 >[!TIP]
 >
->複数のユーザーを同時に追加するには、[一括CSV アップロード &#x200B;](https://helpx.adobe.com/business/enterprise/users/users-and-groups/bulk-upload-users.html){target="_blank"}を実行できます。
+>複数のユーザーを同時に追加するには、[一括CSV アップロード &#x200B;](https://helpx.adobe.com/jp/business/enterprise/users/users-and-groups/bulk-upload-users.html){target="_blank"}を実行できます。
 >
 >[&#x200B; ユーザーグループ &#x200B;](https://helpx.adobe.com/jp/business/enterprise/users/users-and-groups/user-groups.html){target="_blank"}を作成して、役割に複数のユーザーを追加することもできます。 次に、[!DNL **Adobe Experience Manager as a Cloud Service**]&#x200B;商品をユーザーグループに追加できます。
 
