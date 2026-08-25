@@ -3,10 +3,10 @@ title: AEM Assetsを使用した製品ビジュアル
 description: ' [!DNL Adobe Commerce Optimizer]の商品画像にAEM Assetsを使用する方法について説明します。'
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
-source-git-commit: 264658bee09a22cfd55828c6960153cc1239d3fb
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+source-git-commit: bf87cbdc38a17ea3f5ad339cb7b4f4f030317450
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Product Visualsを使用すると、[!DNL Adobe Commerce Optimizer]人の販売�
 
 >[!NOTE]
 >
->**製品ビジュアル**&#x200B;は、[!DNL Adobe Commerce as a Cloud Service]および[!DNL Adobe Commerce Optimizer]で提供されるバンドルの名前です。 [Dynamic MediaとOpenAPI機能](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)および[AEM Assets Prime](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-prime)を組み合わせています。
+>**製品ビジュアル**&#x200B;は、[!DNL Adobe Commerce as a Cloud Service]および[!DNL Adobe Commerce Optimizer]で提供されるバンドルの名前です。 [Dynamic MediaとOpenAPI機能](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)および[AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)を組み合わせています。
 >
 >別のAEM Assets ライセンス（例：**AEM Assets Ultimate**）を持つお客様は、同じ統合を使用できます。AEM リリースのみが、ライセンスの種類ではなく、オンボーディング手順に影響します。
 
@@ -58,11 +58,11 @@ AEM Assetsの画像は、次のソース設定を持つカタログレイヤー�
 
 ## 前提条件
 
-製品ビジュアルを有効にする前に、Commerce Optimizer[&#128279;](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)の前提条件を満たしていることを確認してください。
+製品ビジュアルを有効にする前に、Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)の[前提条件を満たしていることを確認してください。
 
 ## 設定
 
-統合を有効にするには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)を[!DNL Commerce Optimizer]とAEM Assetsの詳細とともに作成します。 Adobe サポートは、統合を設定し、Assets Integration Serviceにテナントを登録します。
+統合を有効にするには、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)を[!DNL Commerce Optimizer]とAEM Assetsの詳細とともに作成します。 Adobe サポートは、統合を設定し、Assets Integration Serviceにテナントを登録します。
 
 オンボーディングについて詳しくは、[Commerce Optimizer用AEM Assetsの設定](../../aem-assets-integration/get-started/configure-aco.md)を参照してください。
 
@@ -88,7 +88,7 @@ AEM Assetsの画像は、次のソース設定を持つカタログレイヤー�
 
 1. Commerce メタデータをアセットに追加します。
 
-   [既定の自動一致](../../aem-assets-integration/synchronize/default-match.md)および[&#x200B; カスタム自動一致](../../aem-assets-integration/synchronize/custom-match.md)を参照してください。
+   [既定の自動一致](../../aem-assets-integration/synchronize/default-match.md)および[ カスタム自動一致](../../aem-assets-integration/synchronize/custom-match.md)を参照してください。
 
 1. アセットの配信を承認します。 トリガーを同期するには、アセットが&#x200B;**approved** ステータスである必要があります。
 
@@ -96,10 +96,11 @@ AEM Assetsの画像は、次のソース設定を持つカタログレイヤー�
 
 ### AEMとAssetsのレイヤーの適用
 
-ストアフロントにAEM Assets画像を表示するには、[&#x200B; カタログビューに`AEM-Assets` レイヤーを割り当てます](catalog-layer.md#assign-the-aem-assets-layer-to-a-catalog-view)。
+ストアフロントにAEM Assets画像を表示するには、[ カタログビューに`AEM-Assets` レイヤーを割り当てます](catalog-layer.md#assign-the-aem-assets-layer-to-a-catalog-view)。
 
 ## その他
 
 * [カタログレイヤー](catalog-layer.md)
 * [カタログビュー](catalog-view.md)
 * [AEM Assets統合ガイド](../../aem-assets-integration/overview.md)
+* [製品ビジュアルの制限と境界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
