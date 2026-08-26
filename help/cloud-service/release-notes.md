@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 8f993feaea79eaca19f6ebd3dc5195e287fc4a36
+source-git-commit: 9d128fd11c1b83276f8a2158f1f2fb98a49bf6c5
 workflow-type: tm+mt
-source-wordcount: 5345
+source-wordcount: 6100
 ht-degree: 0%
 
 ---
@@ -48,7 +48,127 @@ ht-degree: 0%
 >
 >Adobe Commerce オンプレミスまたはAdobe Commerce オンクラウドインフラストラクチャを使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview)を参照してください。
 
-## 2026年8月 – リリース #1 {#latest}
+## 2026年9月 – リリース #1 {#latest}
+
+[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下の項目は、2026年9月1日にプロダクションに公開されます。
+
+>[!BEGINSHADEBOX]
+
+### Adobe Commerce as a Cloud Serviceを2.4.9に更新
+
+[!DNL Adobe Commerce as a Cloud Service]には、[!DNL Adobe Commerce] バージョン 2.4.9からのすべての変更が含まれるようになりました。
+
+詳しくは、[Adobe Commerce 2.4.9 リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/adobe-commerce/2-4-9)を参照してください。
+
+### REST APIを使用してサンドボックスと実稼動設定を同期する
+
+新しい`GET`および`PUT /V1/system/config`のREST API エンドポイントを使用すると、次のようなCommerce システム設定値を読み取り、更新できます。
+
+* 店舗情報
+* 送料と税金の設定
+* お支払い方法の設定
+* B2Bと企業の設定
+
+これらのエンドポイントを使用すると、管理者は[!DNL Commerce Admin]を手動で再設定するのではなく、プログラムによって環境間で設定を同期できます。 サンドボックス環境で`GET /V1/system/config`を実行してから、以前に取得したサンドボックス設定で`PUT /V1/system/config`を実行すると、サンドボックスから実稼動環境に設定変更を同期できます。<!-- ACCS-607, CCSAAS-5346 -->
+
+### GraphQLを通じて、在庫状況を照会します
+
+新しい`sourceAvailability` GraphQL クエリでは、1つ以上のSKUについてソースごとの在庫状況が返されるため、商品ページやカテゴリーページなどのストアフロントでは、各在庫ソースの正確な在庫情報を表示できます。<!-- ACCS-933 -->
+
+### GraphQLによる永続的なウィッシュリストおよびアカウント共有設定の読み取り
+
+`storeConfig` GraphQL クエリで`persistent_enabled`、`persistent_shopping_cart`、`persistent_options_wishlist`、`share_customer_accounts_scope`の設定値が返されるようになったため、ストアフロントはサポートに連絡しなくてもマーチャントの永続的なショッピングカートとウィッシュリストの設定にアクセスできます。<!-- USF-4051 -->
+
+### 商品、SKU、注文IDで顧客の注文を検索する
+
+`CustomerOrdersFilterInput` GraphQL入力で、注文番号、商品SKU、または商品名に一致するオプションの`search` フィールドが、指定した他のフィルターと組み合わせてサポートされるようになりました。<!-- USF-4290 -->
+
+### APIを介してカスタムメールテンプレートを更新および削除する
+
+新しい`PUT`および`DELETE` [&#x200B; カスタムメール &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) テンプレートエンドポイントを使用すると、統合でカスタムメールテンプレートを更新および削除できます。<!-- CCSAAS-5091 -->
+
+### REST APIを使用した製品オプショングループと識別子の表示
+
+`GET /V1/products/:sku/options` REST呼び出しでは、各オプションの`group`および`option_uids` フィールドが返され、GraphQLを通じて既に使用できる識別子と一致するようになりました。<!-- ACCS-1370 -->
+
+### 新しい共有カタログイベント
+
+次の共有カタログイベントが、[!DNL Adobe I/O Events]を使用して購読できるようになりました：<!-- ACCS-1532 -->
+
+* カテゴリ割り当て（`observer.shared_catalog_assign_categories`）
+* カテゴリの割り当て解除（`observer.shared_catalog_unassign_categories`）
+* 会社の割り当て（`plugin.magento.shared_catalog.api.company_management.assign_companies`）
+* 会社の割り当て解除（`plugin.magento.shared_catalog.api.company_management.unassign_companies`）
+* 会社unassign-all （`plugin.magento.shared_catalog.api.company_management.unassign_all_companies`）
+* 共有カタログの保存（`plugin.magento.shared_catalog.api.shared_catalog_repository.save`）
+* 共有カタログの削除（`plugin.magento.shared_catalog.api.shared_catalog_repository.delete`）
+
+### 発注、見積、返品に関して自社の住所を使用する
+
+会社のアドレス帳は、追加のB2B ワークフローと統合されるようになりました。 共有アドレス帳を使用する企業は、次の場所で企業範囲の一貫したアドレスを確認できます。
+
+* 発注
+* 今すぐ購入
+* ギフトレジストリ
+* 並べ替え
+* 返品/RMA
+* 請求書
+* 発送数
+* クレジットメモ
+* 交渉可能な引用符
+* 見積もりテンプレート
+
+GraphQLの変異やREST エンドポイントなどの詳細については、[Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja)を参照し、**Storefront Compatibility B2B Package v1.0.24** セクションを参照してください。
+
+<!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
+
+### [!DNL AEM Assets]でストアビューから画像を非表示にする
+
+[!DNL AEM Assets]統合で`hiddenStoreViews` パラメーターがサポートされるようになったため、インポートされた画像を特定のストアビューで非表示としてスコープできます。 これにより、異なる地域やデモグラフィックのストアフロントに、異なる製品イメージを表示することができます。<!-- ACAP-1308 -->
+
+### web サイトの範囲でPayPal アカウントをオンボーディングする
+
+販売者は、Web サイトの範囲で別のPayPal アカウントのオンボーディングを[!DNL Commerce Admin]から直接セルフサービスで行えるようになりました。 支払いサービスホームに、支払い方法の管理者設定ページにリダイレクトするweb サイト **ボタンの別のPayPal アカウントを**&#x200B;接続できるようになりました。 詳しくは、[Web サイトの別のPayPal アカウントを接続する](https://experienceleague.adobe.com/ja/docs/commerce/payment-services/configure/connect-website-account)を参照してください。<!-- PAY-6961 -->
+
+### 無料のギフトカート価格ルール
+
+**無料ギフト** カート価格ルールが、ストアフロントの[!DNL Commerce Admin]で利用できるようになりました。<!-- AC-17678 -->
+
+このルールを使用すると、ルール条件が満たされたときに、無料のギフト商品をカートに追加できます。
+
+<!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+
+### 機能強化とバグ修正
+
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
+
+* 登録済みのお客様の電子メールを使用してゲスト注文を行った場合に発生する可能性がある問題を修正しました。<!-- CCSAAS-5313 -->
+
+* データの書き出しが繰り返し実行され、リソースの問題が発生する可能性がある問題を修正しました。<!-- CCSAAS-5275 -->
+
+* [!DNL AEM Assets]統合でのGraphQL media gallery ラベルのフォールバックの問題を修正しました。<!-- ACAP-1308 -->
+
+* チェックアウトのレンダリングに影響を与える可能性のある[!DNL PayPal]個のSDK パラメーターに関する問題を修正しました。<!-- PAY-6961 -->
+
+* サポートされていない[!DNL Payment Services]支払い方法がチェックアウト時に表示される問題を修正しました。<!-- PAY-6976 -->
+
+* 共有カタログカテゴリや会社割り当てイベントなど、配列値のフィールドを持つイベントペイロードに、想定されるデータではなく空のオブジェクトが含まれる場合がある問題を修正しました。<!-- CEXT-6554 -->
+
+* 複数の検索可能な顧客または顧客アドレス属性を設定すると、表示エラーが発生する可能性がある問題を修正しました。 上限に達すると、顧客グリッドに通知が表示されます。<!-- CCSAAS-5303 -->
+
+* カテゴリーデータ書き出しフィードでカテゴリ画像URLが破損する問題を修正しました。<!-- ACCS-1571 -->
+
+* 異なる共有カタログ間で製品を同時に割り当てまたは割り当て解除すると、断続的に失敗する可能性がある問題を修正しました。<!-- CCSAAS-5287 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年8月 – リリース #1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -67,8 +187,6 @@ ht-degree: 0%
 このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
 
 * GraphQLを介して顧客の割り当てられた会社を取得する際に時間がかかる場合がある問題を修正しました。<!-- ACCS-1425 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
@@ -206,8 +324,6 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 
 * 条件付きWebhookを保存すると、Webhook正規表現ルールパターンが検証されるようになりました。<!-- CEXT-6287 -->
 
-{{accs-release}}
-
 >[!ENDSHADEBOX]
 
 ## 2026年6月 – リリース #1
@@ -264,8 +380,6 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 
 * GET `V1/customers/{customerId}` REST エンドポイントが`assistance_allowed`設定フィールドを返すようになりました。<!-- USF-4132 -->
 
-{{accs-release}}
-
 >[!ENDSHADEBOX]
 
 ## 2026年5月リリース #1
@@ -301,8 +415,6 @@ IDを手動で検索する代わりに、`POST /V1/custom-email/send` エンド�
 * [!DNL Commerce Admin]で注文を送信した後に発生する可能性があるページ読み込みの問題を修正しました。<!-- CCSAAS-4413 -->
 
 * 同じタイムスタンプを持つ注文で、受注グリッドに古い注文ステータス情報が表示される場合がある問題を修正しました。<!-- CCSAAS-4890 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 

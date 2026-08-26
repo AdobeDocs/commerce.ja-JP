@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 5964358bb4370fa4fb0c2f4c447bacb3603d0f5e
 workflow-type: tm+mt
-source-wordcount: 3271
+source-wordcount: 3356
 ht-degree: 0%
 
 ---
@@ -44,6 +44,14 @@ ht-degree: 0%
 >[!DNL SaaS data export]拡張機能は、[!DNL Live Search]、[!DNL Product Recommendations]、[!DNL Catalog Service]と共に自動的にインストールされるモジュールのコレクションです。 システムにインストールされているバージョンは、[!DNL Composer]を使用して確認できます。 場合によっては、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップするために、システムのデータエクスポート拡張機能をアップグレードすることをお勧めします。
 
 ## 2026 リリース {#release-notes-2026}
+
+### 103.4.32 リリース
+
+_2026年8月25日_
+
+![新規](../assets/new.svg) **製品フィードに含まれるカスタマイズ可能なオプション** – 製品カスタマイズ可能なオプション（色見本、サイズ選択、パーソナライゼーションフィールドなど）が、`customizable_options`製品属性として書き出されるようになりました。 属性には、各オプションのタイトル（必要かどうか）と利用可能な値が含まれているため、connected Commerce servicesはストアフロントに正確でカスタマイズ可能なオプションデータを表示できます。<!--MDEE-1029-->
+
+![修正](../assets/fix.svg) **信頼性の高いカテゴリ権限の同期** – カテゴリ権限のフィードで、web サイト IDが見つからない設定の完全な再同期に失敗し、同期エラーが発生する問題を修正しました。<!--MDEE-1411-->
 
 ### 103.4.31 リリース
 

@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Commerce Optimizer]の商品画像にAEM Assetsを使
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
-source-git-commit: 264658bee09a22cfd55828c6960153cc1239d3fb
+source-git-commit: bf87cbdc38a17ea3f5ad339cb7b4f4f030317450
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -103,3 +103,4 @@ AEM Assetsの画像は、次のソース設定を持つカタログレイヤー�
 * [カタログレイヤー](catalog-layer.md)
 * [カタログビュー](catalog-view.md)
 * [AEM Assets統合ガイド](../../aem-assets-integration/overview.md)
+* [製品ビジュアルの制限と境界](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
