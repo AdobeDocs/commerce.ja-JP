@@ -1,7 +1,7 @@
 ---
 title: 成功指標
 description: 成功指標は、insightに [!DNL Adobe Commerce Optimizer]  ストアの主要なパフォーマンス指標を提供します。
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
 TQID: https://experienceleague.adobe.com/Z1Ntq9O5Pde8B2N8UCarCf-V5NZw-YiCx78ortu5PwY
 product_v2:
@@ -89,7 +89,7 @@ C2PA メタデータは、[C2PA オープンスタンダード &#x200B;](https:/
 
 ![&#x200B; サンプルの調査](../assets/inspect-sample.png)
 
-[生成AI コンテンツの透明性](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)について詳しく見る。
+[生成AI コンテンツの透明性](https://experienceleague.adobe.com/ja/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)について詳しく見る。
 
 ## 成功指標とSites Optimizerの連携
 
