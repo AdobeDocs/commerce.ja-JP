@@ -1,32 +1,16 @@
 ---
 title: 成功指標
 description: 成功指標は、insightに [!DNL Adobe Commerce Optimizer]  ストアの主要なパフォーマンス指標を提供します。
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
 TQID: https://experienceleague.adobe.com/Z1Ntq9O5Pde8B2N8UCarCf-V5NZw-YiCx78ortu5PwY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 2cb4bac8e36ce8b945eabf31e562a5e7fd097c2a
 workflow-type: tm+mt
-source-wordcount: 2627
+source-wordcount: 2835
 ht-degree: 0%
 
 ---
@@ -35,7 +19,7 @@ ht-degree: 0%
 
 このページでは、[!DNL Adobe Commerce Optimizer] ストアの主要パフォーマンス指標の概要を説明します。 目標は、[!DNL Adobe Commerce Optimizer]を実装した結果をすばやく把握し、成長の機会を特定し、最適化すべき領域を強調することにあります。
 
-![成功指標レポート &#x200B;](../assets/success-metrics.png)
+![成功指標レポート ](../assets/success-metrics.png)
 
 レポート内の指標は、ストアフロントイベントデータから取得されます。 収集されたイベントデータについて[詳細情報](../setup/events/overview.md)を表示します。
 
@@ -59,7 +43,7 @@ ht-degree: 0%
 
 **指標を確認するタイミング：**&#x200B;最も正確なトレンド分析を行うには、有意義なデータを収集するのに十分な時間が経過した後で指標を確認します。 日々の変動は正常です。戦略的意思決定では、週単位または月単位のトレンドに焦点を当てます。
 
-**データの正確性：**&#x200B;指標は、ストアフロントイベントを通じて獲得した実際の顧客インタラクションから計算されます。 正確なレポートを行うために、ストアに適切な[&#x200B; イベントトラッキングが設定されていることを確認します](../setup/events/overview.md)。
+**データの正確性：**&#x200B;指標は、ストアフロントイベントを通じて獲得した実際の顧客インタラクションから計算されます。 正確なレポートを行うために、ストアに適切な[ イベントトラッキングが設定されていることを確認します](../setup/events/overview.md)。
 
 ## レポートの生成
 
@@ -71,9 +55,29 @@ ht-degree: 0%
 
 1. レポートをPDFとして保存するには、**[!UICONTROL Export]**&#x200B;をクリックします。
 
+## 書き出されたレポートのC2PA メタデータ {#c2pa-metadata-on-exported-reports}
+
+成功指標レポートには、生成AIを使用したハイライトと概要が含まれています。 レポートをPDFに書き出すと、Adobeは書き出されたファイルに自動的にC2PA メタデータを添付します。
+
+C2PA メタデータは、[C2PA オープンスタンダード ](https://c2pa.org/)に基づいた、改ざん防止の機械読み取り可能なメタデータです。 メタデータには、生成AIがレポート内のコンテンツを生成するために使用されたことを記録し、使用されたAI システム、生成AIを使用してコンテンツが生成または編集されたかどうか、タイムスタンプなどの情報が含まれます。
+
+>[!NOTE]
+>
+>C2PA メタデータが自動的に添付されます。 追加のアクションは必要ありません。この動作をオフにすることはできません。 C2PA メタデータは、レポートの表示方法を変更しません。 PDF内に保持される目に見えないメタデータです。
+
+**書き出したレポートの意味**
+
+- 成功指標レポートをPDFに書き出すと、書き出されたファイルにはC2PA メタデータが含まれます。
+- C2PA メタデータは、共有またはダウンロード時にPDFと一緒に移動します。 C2PA メタデータをサポートするサードパーティプラットフォームは、このメタデータを読み取り、透明性情報を視聴者に表示できます。
+- 任意のファイルに添付されたC2PA メタデータを確認するには、[Inspect](https://contentauthenticity.adobe.com/inspect)にアップロードします。
+
+![ サンプルの調査](../assets/inspect-sample.png)
+
+[生成AI コンテンツの透明性](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)について詳しく見る。
+
 ## 成功指標とSites Optimizerの連携
 
-成功指標とSites Optimizer （[Opportunities](opportunities.md)）は、コマースサイトのパフォーマンスを向上させるために設計された補完的なツールです。 これらの機能の違いを理解することで、より優れた意思決定をおこない、測定可能な結果を達成することができます。
+成功指標とSites Optimizer （[商談](opportunities.md)）は、コマースサイトのパフォーマンスを向上させるために設計された補完的なツールです。 これらの機能の違いを理解することで、より優れた意思決定をおこない、測定可能な結果を達成することができます。
 
 ### 主な違い
 
@@ -182,9 +186,9 @@ Total Revenue = Sum of (Product Base Price × Quantity) for all completed orders
 
 - **AIを活用したレコメンデーションの実装**：オプティマイザーのレコメンデーションエンジンを使用して、コンバージョン率の向上につながる関連製品を表示します。 *これを閲覧したお客様が*&#x200B;および&#x200B;*これを購入し、それを購入した*&#x200B;件のレコメンデーションタイプをデプロイして、クロスセルの機会を増やします。
 
-- **マーチャンダイジングルールを作成**: [&#x200B; マーチャンダイジングルール &#x200B;](../merchandising/rules/overview.md)を使用して、検索結果で利益率の高い商品を増やします。 トラフィックの多いクエリのために、売れ筋商品を検索結果の上位にピン留めします。
+- **マーチャンダイジングルールを作成**: [ マーチャンダイジングルール ](../merchandising/rules/overview.md)を使用して、検索結果で利益率の高い商品を増やします。 トラフィックの多いクエリのために、売れ筋商品を検索結果の上位にピン留めします。
 
-- **商品の発見を最適化**: [&#x200B; インテリジェントファセット &#x200B;](../merchandising/facets/overview.md)を使用して、顧客がより効率的に商品を見つけられるようにすることで、コンバージョン率の向上と売上の増加につながります。
+- **商品の発見を最適化**: [ インテリジェントファセット ](../merchandising/facets/overview.md)を使用して、顧客がより効率的に商品を見つけられるようにすることで、コンバージョン率の向上と売上の増加につながります。
 
 - **季節ごとの機会を活用**：時間ベースのマーチャンダイジングルールを作成して、繁忙期に季節ごとの商品やプロモーション商品をプロモーションします。
 
@@ -234,7 +238,7 @@ Conversion Rate = (Total Number of Orders ÷ Total Unique Visitors) × 100
 
 エンゲージメントを高めるには、顧客とのインタラクションを増やし、サイト滞在時間を増やすことが目標となります。
 
-![成功指標エンゲージメント &#x200B;](../assets/engagement.png)
+![成功指標エンゲージメント ](../assets/engagement.png)
 
 ### エンゲージメント指標の理解
 
@@ -315,9 +319,9 @@ Conversion Rate = (Total Number of Orders ÷ Total Unique Visitors) × 100
 
 ### 策定
 
-- **検索パフォーマンスデータを活用**: [検索パフォーマンス &#x200B;](../manage-results/search-performance.md) レポートを使用して、トレンド商品や人気の検索語を特定します。 マーチャンダイジングルールを作成して、これらのアイテムを強調する：
+- **検索パフォーマンスデータを活用**: [検索パフォーマンス ](../manage-results/search-performance.md) レポートを使用して、トレンド商品や人気の検索語を特定します。 マーチャンダイジングルールを作成して、これらのアイテムを強調する：
 
-- **レコメンデーションパフォーマンスを最適化**: [&#x200B; レコメンデーションパフォーマンス &#x200B;](../manage-results/recommendation-performance.md)指標を監視して、どのレコメンデーションタイプが最もトラフィックとコンバージョンを促進しているかを特定します。
+- **レコメンデーションパフォーマンスを最適化**: [ レコメンデーションパフォーマンス ](../manage-results/recommendation-performance.md)指標を監視して、どのレコメンデーションタイプが最もトラフィックとコンバージョンを促進しているかを特定します。
 
 - **新しい商品とプロモーション商品をハイライト表示**: マーチャンダイジングルールを使用して、検索結果で新商品やプロモーション商品を宣伝し、新規訪問者の注目を集めます。
 
@@ -416,16 +420,16 @@ Bounce Rate = (Number of Bounced Sessions ÷ Total Sessions) × 100
 | フィールド | 説明 |
 |---|---|
 | 日付範囲 | オプションには、**過去3か月**、**過去7日間**、**過去30日間**、**過去6か月**、**過去12か月**、**年から日付**&#x200B;が含まれます。 短期的な最適化インサイトには短期的な範囲を使用し、トレンド分析には長期的な範囲を使用します。 |
-| 国 | [&#x200B; カタログ ビュー](../setup/catalog-view.md)に指定されたカタログ ソースに基づきます。 正確なパフォーマンス分析のために適切な市場を選択します。 |
+| 国 | [ カタログ ビュー](../setup/catalog-view.md)に指定されたカタログ ソースに基づきます。 正確なパフォーマンス分析のために適切な市場を選択します。 |
 | 通貨 | カタログビューに指定された通貨。 正確な売上レポートのために、これがターゲット市場と一致することを確認します。 |
 | 書き出し | レポートをPDFとして保存し、関係者と共有したり、オフライン分析を行ったりできます。 |
 
 ## その他
 
-- [検索パフォーマンス &#x200B;](../manage-results/search-performance.md) – 検索語を分析し、検索関連性を最適化します。
-- [&#x200B; レコメンデーション パフォーマンス &#x200B;](../manage-results/recommendation-performance.md) - レコメンデーションの有効性を監視して最適化します。
-- [&#x200B; レコメンデーションの概要](../merchandising/recommendations/overview.md) - AIを活用した商品レコメンデーションについて説明します。
-- [&#x200B; マーチャンダイジングルール &#x200B;](../merchandising/rules/overview.md) – 検索結果で商品をブースト、埋め込み、ピン留め、非表示にする。
-- [&#x200B; ファセット &#x200B;](../merchandising/facets/overview.md) - インテリジェントフィルタリングで検索を強化します。
+- [検索パフォーマンス ](../manage-results/search-performance.md) – 検索語を分析し、検索関連性を最適化します。
+- [ レコメンデーション パフォーマンス ](../manage-results/recommendation-performance.md) - レコメンデーションの有効性を監視して最適化します。
+- [ レコメンデーションの概要](../merchandising/recommendations/overview.md) - AIを活用した商品レコメンデーションについて説明します。
+- [ マーチャンダイジングルール ](../merchandising/rules/overview.md) – 検索結果で商品をブースト、埋め込み、ピン留め、非表示にする。
+- [ ファセット ](../merchandising/facets/overview.md) - インテリジェントフィルタリングで検索を強化します。
 - [類義語](../merchandising/synonyms/overview.md) – 検索の関連性と顧客体験を向上させます。
-- [&#x200B; イベントの概要](../setup/events/overview.md) – 指標を強化するデータについて理解します。
+- [ イベントの概要](../setup/events/overview.md) – 指標を強化するデータについて理解します。
