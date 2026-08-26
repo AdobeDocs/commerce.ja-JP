@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2cb4bac8e36ce8b945eabf31e562a5e7fd097c2a
 workflow-type: tm+mt
-source-wordcount: 2627
+source-wordcount: 2835
 ht-degree: 0%
 
 ---
@@ -71,9 +71,29 @@ ht-degree: 0%
 
 1. レポートをPDFとして保存するには、**[!UICONTROL Export]**&#x200B;をクリックします。
 
+## 書き出されたレポートのC2PA メタデータ {#c2pa-metadata-on-exported-reports}
+
+成功指標レポートには、生成AIを使用したハイライトと概要が含まれています。 レポートをPDFに書き出すと、Adobeは書き出されたファイルに自動的にC2PA メタデータを添付します。
+
+C2PA メタデータは、[C2PA オープンスタンダード &#x200B;](https://c2pa.org/)に基づいた、改ざん防止の機械読み取り可能なメタデータです。 メタデータには、生成AIがレポート内のコンテンツを生成するために使用されたことを記録し、使用されたAI システム、生成AIを使用してコンテンツが生成または編集されたかどうか、タイムスタンプなどの情報が含まれます。
+
+>[!NOTE]
+>
+>C2PA メタデータが自動的に添付されます。 追加のアクションは必要ありません。この動作をオフにすることはできません。 C2PA メタデータは、レポートの表示方法を変更しません。 PDF内に保持される目に見えないメタデータです。
+
+**書き出したレポートの意味**
+
+- 成功指標レポートをPDFに書き出すと、書き出されたファイルにはC2PA メタデータが含まれます。
+- C2PA メタデータは、共有またはダウンロード時にPDFと一緒に移動します。 C2PA メタデータをサポートするサードパーティプラットフォームは、このメタデータを読み取り、透明性情報を視聴者に表示できます。
+- 任意のファイルに添付されたC2PA メタデータを確認するには、[Inspect](https://contentauthenticity.adobe.com/inspect)にアップロードします。
+
+![&#x200B; サンプルの調査](../assets/inspect-sample.png)
+
+[生成AI コンテンツの透明性](https://experienceleague.adobe.com/ja/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)について詳しく見る。
+
 ## 成功指標とSites Optimizerの連携
 
-成功指標とSites Optimizer （[Opportunities](opportunities.md)）は、コマースサイトのパフォーマンスを向上させるために設計された補完的なツールです。 これらの機能の違いを理解することで、より優れた意思決定をおこない、測定可能な結果を達成することができます。
+成功指標とSites Optimizer （[商談](opportunities.md)）は、コマースサイトのパフォーマンスを向上させるために設計された補完的なツールです。 これらの機能の違いを理解することで、より優れた意思決定をおこない、測定可能な結果を達成することができます。
 
 ### 主な違い
 
