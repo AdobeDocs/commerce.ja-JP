@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: b540716da753f26cea4ec0198f2d176224ee5dbb
 workflow-type: tm+mt
-source-wordcount: 3317
+source-wordcount: 3355
 ht-degree: 1%
 
 ---
@@ -132,6 +132,14 @@ _2024年5月31日_
 _2023年10月27日_
 
 ![新規](../assets/new.svg) [!DNL Live Search] PLP ウィジェットでカラースウォッチがサポートされるようになりました。
+
+## [!DNL Live Search] 4.7.3
+
+_2026年8月28日_
+
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.5以降
+
+![修正](../assets/fix.svg)特定の独立したケースで、製品リストページのカートに追加機能がPLP ウィジェットで機能しない問題を修正しました。
 
 ## [!DNL Live Search] 4.7.2
 
