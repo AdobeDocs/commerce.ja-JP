@@ -1,7 +1,7 @@
 ---
-source-git-commit: a2126f6cc24cc3a17c31e0d8dd095f7d7df26354
+source-git-commit: 73cfc898b25e731238b049419fe0e964e29e92b6
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年8月28日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>製品リストページのカートに追加機能がPLP ウィジェットと連携しない問題に対処するために、<a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/release-notes"> ライブサーチ拡張機能</a>を4.7.3に更新しました（一部の独立したケースで）。</p>
+</td>
+      <td>
+        フィードバック
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/01028c8645f0d8ef868aacbaf14e34595bc5ccc1">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年8月26日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>最新の<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md"> ソースログコード.md</a>から<a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference"> データ書き出しログコード参照</a>を更新しました。</p>
+</td>
+      <td>
+        テクニカル
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e91727732882ce6a990068bf2bd3c4dc9fc69370">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年8月25日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/452a47d6769d90449ece9fe171a01a36df45324d">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年8月18日（PT）
 
