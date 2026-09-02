@@ -3,37 +3,34 @@ title: 製品リストページウィジェット
 description: ' [!DNL Live Search Product Listing Page Widget]の有効化とスタイル設定'
 exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
 TQID: https://experienceleague.adobe.com/rEQBfgR9CqVBTFtBtq21QFZ6L5ZvoWJ02VI2xiWqAcw
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 539
+source-wordcount: 524
 ht-degree: 0%
 
 ---
 
 # 製品リストページウィジェット
 
-[!DNL Live Search Product Listing Page Widget] （PLP）は、Commerce サービス プラットフォームを使用して、パフォーマンスが高く、検索可能で、ファセット可能な製品リスト ページを提供します。 このトピックでは、PLP ウィジェットを有効にしてスタイル設定する方法について説明します。
+[!DNL Live Search Product Listing Page Widget] （PLP）は、Commerce Services Platformを使用して、パフォーマンスが高く、検索可能で、ファセット可能な製品リストページを提供します。 このトピックでは、PLP ウィジェットを有効にしてスタイル設定する方法について説明します。
 
 ## PLP ウィジェットの有効化
 
 [!DNL Live Search] サービスがインストールされると、デフォルトの検索機能が自動的に[!DNL Live Search]に変換されます。
 
-[!DNL Live Search] PLP ウィジェットは、新規インストールに対してデフォルトで有効になっています。
+新しいインストールでは、デフォルトで[!DNL Live Search] PLP ウィジェットが有効になります。
 
-[!DNL Live Search]をアップグレードする場合、PLP ウィジェットが既にオフになっている場合は、そのまま残ります。
+PLP ウィジェットが無効になっている間に[!DNL Live Search]をアップグレードすると、アップグレード後も無効のままになります。
+
+
 
 >[!NOTE]
 >
->非推奨の検索アダプタから移行する場合は、[移行ガイド &#x200B;](migrate-to-plp.md)で、シナリオ、前提条件、および手順ごとの手順に関する詳細なガイダンスを参照してください。
+>非推奨の検索アダプタから移行する場合は、[移行ガイド ](migrate-to-plp.md)で、シナリオ、前提条件、および手順ごとの手順に関する詳細なガイダンスを参照してください。
 
 PLP ウィジェットをオンにするには：
 
@@ -50,7 +47,7 @@ PLP ウィジェットをオンにするには：
 
 ## ウィジェットの機能
 
-PLP ウィジェットには、次のすぐに使える機能が用意されています。
+PLP ウィジェットには、次の標準機能が用意されています。
 
 - 「カートに追加」ボタン – シンプルな商品でのみ利用可能。
 - 製品ごとに複数の画像 – 設定可能な製品に異なる色を選択すると、画像が変更される場合があります。
@@ -58,13 +55,13 @@ PLP ウィジェットには、次のすぐに使える機能が用意されて�
 
 ### ウィジェットのカスタマイズ
 
-PLP ウィジェットのすぐに使える機能に加えて、ウィジェットをさらにカスタマイズして次の機能を含めることができます。
+PLP ウィジェットの標準機能に加えて、次の機能を含めるようにウィジェットをさらにカスタマイズできます。
 
 - 属性によるフィルタリング
 - 多言語サポート
 - 価格スライダー
 
-上記の機能を処理するようにPLP ウィジェットをカスタマイズする方法について詳しくは、次の[&#x200B; リポジトリ &#x200B;](https://github.com/adobe/storefront-product-listing-page/)の`storefront-product-listing-page`のreadmeを参照してください。 このリポジトリのreadmeでは、PLP ウィジェットをカスタマイズしてサイトにデプロイする方法の例を示します。
+上記の機能を処理するようにPLP ウィジェットをカスタマイズする方法について詳しくは、次の[ リポジトリ ](https://github.com/adobe/storefront-product-listing-page/)の`storefront-product-listing-page`のreadmeを参照してください。 このリポジトリのreadmeでは、PLP ウィジェットをカスタマイズしてサイトにデプロイする方法の例を示します。
 
 >[!WARNING]
 >
@@ -76,7 +73,7 @@ PLP ウィジェットのすぐに使える機能に加えて、ウィジェッ�
 
 >[!NOTE]
 >
->Adobe Commerce テーマ内のカスタムクラスを持つエレメントは継承されません。 これらの要素は、カスタムクラスに一致するように、特定のクラスでターゲットにする必要があります。プライマリアクションクラスは、ウィジェットボタンでは動作しません。 CSS内の汎用ターゲット要素は継承されます。`button`はウィジェットボタンに適用されます。
+>Adobe Commerce テーマ内のカスタムクラスを持つエレメントは継承されません。 カスタムクラスに一致するように、これらの要素を特定のクラスでターゲティングします。プライマリアクションクラスは、ウィジェットボタンには効果的ではありません。 CSS内の汎用ターゲット要素は継承されます。`button`はウィジェットボタンに適用されます。
 
 ハイライト表示されたdivには、ターゲットクラス `ds-sdk-product-item__product-name`が含まれています。
 
@@ -109,7 +106,7 @@ PLP ウィジェットのすぐに使える機能に加えて、ウィジェッ�
 
 - `.ds-plp-pagination_item`
 
-![&#x200B; ページネーション項目](assets/plp-css-pagination-item.png)
+![ ページネーション項目](assets/plp-css-pagination-item.png)
 
 - `.ds-plp-pagination_item--current`
 
@@ -121,33 +118,33 @@ PLP ウィジェットのすぐに使える機能に加えて、ウィジェッ�
 - `.ds-widgets__actions`：左側の内側div
 - `.ds-widgets__results`：右側の内側div
 
-![&#x200B; ウィジェット結果](assets/plp-css-widgets.png)
+![ ウィジェット結果](assets/plp-css-widgets.png)
 
 ### 並べ替えドロップダウン
 
 - `.ds-sdk-sort-dropdown`
 
-![並べ替えドロップダウン &#x200B;](assets/plp-css-dropdown.png)
+![並べ替えドロップダウン ](assets/plp-css-dropdown.png)
 
 - `.ds-sdk-sort-dropdown__button`
 
-![&#x200B; ドロップダウンボタン &#x200B;](assets/plp-css-dropdown-button.png)
+![ ドロップダウンボタン ](assets/plp-css-dropdown-button.png)
 
 - `.ds-sdk-sort-dropdown__items`
 
-![&#x200B; ドロップダウンアイテム &#x200B;](assets/plp-css-dropdown-items.png)
+![ ドロップダウンアイテム ](assets/plp-css-dropdown-items.png)
 
 - `.ds-sdk-sort-dropdown__items--item`
 
-![&#x200B; ドロップダウンアイテム &#x200B;](assets/plp-css-dropdown-item.png)
+![ ドロップダウンアイテム ](assets/plp-css-dropdown-item.png)
 
 - `.ds-sdk-sort-dropdown__items--item-selected`
 
-![選択した項目をドロップダウン &#x200B;](assets/plp-css-dropdown-selected.png)
+![選択した項目をドロップダウン ](assets/plp-css-dropdown-selected.png)
 
 - `.ds-sdk-sort-dropdown__items--item-active`
 
-![&#x200B; アクティブな選択範囲をドロップダウン &#x200B;](assets/plp-css-dropdown-active.png)
+![ アクティブな選択範囲をドロップダウン ](assets/plp-css-dropdown-active.png)
 
 ### ファセット
 
@@ -156,21 +153,21 @@ PLP ウィジェットのすぐに使える機能に加えて、ウィジェッ�
 - `.ds-plp-facets__header_title`
 - `.ds-plp-facets__header__clear-all`
 
-![&#x200B; ファセット ヘッダーのタイトル &#x200B;](assets/plp-css-facets-title-clear.png){width="350"}
+![ ファセット ヘッダーのタイトル ](assets/plp-css-facets-title-clear.png){width="350"}
 
 - `.ds-plp-facets__pills`
 - `.ds-sdk-pill`
 
-![&#x200B; ファセット ピル &#x200B;](assets/plp-css-facets-pill.png){width="350"}
+![ ファセット ピル ](assets/plp-css-facets-pill.png){width="350"}
 
 - `.ds-sdk-pill__label`
 - `.ds-sdk-pill__cta`
 
-![&#x200B; ファセットラベル &#x200B;](assets/plp-css-pill-label-cta.png){width="350"}
+![ ファセットラベル ](assets/plp-css-pill-label-cta.png){width="350"}
 
 - `.ds-plp-facets__list`
 
-![&#x200B; ファセットリスト &#x200B;](assets/plp-css-facets-list.png){width="350"}
+![ ファセットリスト ](assets/plp-css-facets-list.png){width="350"}
 
 - `.ds-sdk-input`
 - `.ds-sdk-input__label`
@@ -182,12 +179,12 @@ PLP ウィジェットのすぐに使える機能に加えて、ウィジェッ�
 
 - `.ds-sdk-labelled-input`
 
-![&#x200B; ラベル付き入力](assets/plp-css-labelled-input.png)
+![ ラベル付き入力](assets/plp-css-labelled-input.png)
 
 - `.ds-sdk-labelled-input__input`
 - `.ds-sdk-labelled-input__label`
 
-![入力ラベル &#x200B;](assets/plp-css-labelled-input-label.png)
+![入力ラベル ](assets/plp-css-labelled-input-label.png)
 
 ### 製品項目
 
@@ -196,10 +193,10 @@ PLP ウィジェットのすぐに使える機能に加えて、ウィジェッ�
 - `.ds-sdk-product-item__product-name`
 - `.ds-sdk-product-item__product-options`
 - `.ds-sdk-product-price`
-   - `.ds-sdk-product-price--no-discount`
-   - `.ds-sdk-product-price--grouped`
-   - `.ds-sdk-product-price--bundle`
-   - `.ds-sdk-product-price--discount`
+  - `.ds-sdk-product-price--no-discount`
+  - `.ds-sdk-product-price--grouped`
+  - `.ds-sdk-product-price--bundle`
+  - `.ds-sdk-product-price--discount`
 
 ![製品](assets/plp-css-product.png)
 
@@ -209,11 +206,11 @@ PLP ウィジェットのすぐに使える機能に加えて、ウィジェッ�
 - `.ds-sdk-loading__spinner`
 - `.ds-sdk-loading__spinner-label`
 
-![&#x200B; インジケーターを読み込んでいます](assets/plp-css-loading.png)
+![ インジケーターを読み込んでいます](assets/plp-css-loading.png)
 
 ## PLP ウィジェットの無効化
 
 PLP ウィジェットを無効にするには：
 
-1. **Stores** / 設定/**設定** / **[!DNL Live Search]** / **Storefront機能**&#x200B;に移動し、**製品リストウィジェットを有効にする**&#x200B;を「いいえ」に設定します。
+1. **Stores** / 設定/ **設定** / **[!DNL Live Search]** / **Storefront機能**&#x200B;に移動し、**製品リストウィジェットを有効にする**&#x200B;を「いいえ」に設定します。
 1. 設定を保存するには、**設定を保存**&#x200B;を選択します。

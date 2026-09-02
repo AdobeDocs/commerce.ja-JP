@@ -4,23 +4,13 @@ description: イベントが [!DNL Product Recommendations]のデータを収集
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
 TQID: https://experienceleague.adobe.com/efHRMj3u3w-xvUgMnEYDpX0D-BDCUyjhhrkMaa3n-xg
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1028
+source-wordcount: 937
 ht-degree: 0%
 
 ---
@@ -29,7 +19,7 @@ ht-degree: 0%
 
 [[!DNL Product Recommendations]](install-configure.md)をインストールして設定すると、モジュールは行動データ収集をストアフロントにデプロイします。 このメカニズムは、買い物客から匿名化された行動データを収集し、[!DNL Product Recommendations]を強化します。 例えば、`view` イベントは`Viewed this, viewed that`のレコメンデーションタイプの計算に使用され、`place-order` イベントは`Bought this, bought that`のレコメンデーションタイプの計算に使用されます。
 
-[!DNL Product Recommendations] イベントが収集する行動データについて詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を参照してください。
+[!DNL Product Recommendations] イベントが収集する行動データについて詳しくは、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を参照してください。
 
 >[!NOTE]
 >
@@ -37,7 +27,9 @@ ht-degree: 0%
 
 ## 医療業界のユーザー事例
 
-ヘルスケアのお客様で、[Data Connection](../data-connection/overview.md)拡張機能の一部である[Data Services HIPAA拡張機能](../data-connection/hipaa-readiness.md#installation)をインストールした場合、[!DNL Product Recommendations]によって使用されるストアフロントイベントデータはキャプチャされなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるためです。 ストアフロントイベントデータの取得と送信を続行するには、[!DNL Product Recommendations]のイベント収集を再度有効にします。 詳しくは、[一般設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/general/general#data-services)を参照してください。
+ヘルスケアのお客様で、[Data Connection](../data-connection/overview.md)拡張機能に含まれる[Data Services HIPAA拡張機能](../data-connection/hipaa-readiness.md#installation)をインストールしている場合、[!DNL Product Recommendations]はクライアント側で生成されるため、ストアフロントイベントデータの収集を停止します。
+
+ストアフロントイベントデータの収集と送信を再開するには、[!DNL Product Recommendations]のイベント収集を再度有効にします。 詳しくは、[一般設定](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)を参照してください。
 
 ## データの種類とイベント
 
@@ -48,16 +40,16 @@ ht-degree: 0%
 
 `magento/product-recommendations` モジュールをインストールすると、Adobe AIは行動データとカタログデータを集計し、レコメンデーションタイプごとに商品レコメンデーションを作成します。 商品レコメンデーションサービスは、推奨された商品&#x200B;_個のアイテム_&#x200B;を含むウィジェットの形式で、これらのレコメンデーションをストアフロントにデプロイします。
 
-レコメンデーションタイプによっては、買い物客の行動データを活用してマシンラーニングモデルをトレーニングし、パーソナライズされたレコメンデーションを作成するものもあります。 その他のレコメンデーションタイプでは、カタログデータのみを使用し、行動データは使用しません。 サイトで商品レコメンデーションをすばやく使用する場合は、次のカタログのみのレコメンデーションタイプを使用できます。
+レコメンデーションタイプの中には、買い物客の行動データを利用してマシンラーニングモデルをトレーニングし、パーソナライズされたレコメンデーションを生成するものもあります。 カタログデータのみに依存している場合もあります。 商品レコメンデーションをすばやく使用するには、次のカタログのみのレコメンデーションタイプから選択します。
 
 - `More like this`
 - `Visual similarity`
 
 ### コールドスタート
 
-行動データを活用したレコメンデーションタイプを、いつ頃から使うことができますか？ それは企業によって異なります。 これは&#x200B;_コールドスタート_&#x200B;問題と呼ばれます。
+行動データを活用したレコメンデーションタイプを、いつ頃から使うことができますか？ それは企業によって異なります。 この状況は&#x200B;_コールドスタート_&#x200B;問題と呼ばれます。
 
-_Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実現にかかる時間を指します。 商品レコメンデーションの場合、Adobe AIがマシンラーニングモデルのトレーニングに十分なデータを収集するのを待ってから、レコメンデーションユニットをサイトに展開します。 モデルに含まれるデータが多ければ多いほど、レコメンデーションはより正確で有用になります。 データ収集はライブサイトで行われるので、`magento/production-recommendations` モジュールをインストールして設定することで、早い段階でこのプロセスを開始することをお勧めします。
+_Cold Start_&#x200B;の問題は、マシンラーニングモデルが効果的な推奨事項を生成するためにトレーニングに必要な時間です。 商品レコメンデーションの場合、Adobe AIは、レコメンデーションユニットをデプロイする前に、モデルをトレーニングするのに十分なデータを収集する必要があります。 一般的に、データが多いほど、レコメンデーションの正確性と有用性が向上します。 データ収集はライブサイトで行われるので、`magento/product-recommendations` モジュールをインストールして設定することで、このプロセスを早い段階で開始します。
 
 次の表に、各レコメンデーションタイプに十分なデータを収集するのにかかる時間に関する一般的なガイダンスを示します。
 
@@ -74,15 +66,15 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 - レコメンデーションタイプによっては、他のタイプよりも学習が速いものもあります
 - Adobe Commerceは、行動データを4時間ごとに再計算します。 レコメンデーションは、サイトで長く使用するにつれて精度が向上します。
 
-各レコメンデーションタイプのトレーニングの進捗状況を視覚化するために、[&#x200B; レコメンデーションの作成](create.md#readiness-indicators) ページには準備状況インジケーターが表示されます。
+各レコメンデーションタイプのトレーニングの進捗状況を視覚化するために、[ レコメンデーションの作成](create.md#readiness-indicators) ページには準備状況インジケーターが表示されます。
 
-ライブサイトでデータを収集し、マシンラーニングモデルをトレーニングしている間に、レコメンデーションの設定に必要なその他のテストや設定タスクを完了できます。 この作業が完了する頃には、モデルには有用なレコメンデーションを作成するのに十分なデータが揃っており、ストアフロントに展開することができます。
+ライブサイトでデータを収集し、マシンラーニングモデルをトレーニングしながら、残りのテストと設定のタスクを完了します。 モデルに十分なデータが揃って有益なレコメンデーションが生成されたら、レコメンデーションユニットをストアフロントにデプロイします。
 
-多くの商品SKUで十分なトラフィック（閲覧数、購入数、トレンド）をサイトで獲得できなければ、学習プロセスを完了するのに十分なデータがない可能性があります。 これにより、管理者の準備状況インジケーターが停止しているように見える場合があります。 準備状況インジケーターは、店舗に適したレコメンデーションタイプを選択するためのデータポイントを加盟店に提供することを目的としています。 数字はガイドであり、100%に達することはありません。 準備状況インジケーターについて[詳細情報](create.md#readiness-indicators)を表示します。
+ほとんどの製品SKUに対して十分なトラフィック（ビュー、購入、トレンド）がサイトに流入しない場合、学習プロセスが完了せず、管理画面の準備状況インジケーターが停止しているように見える可能性があります。 準備状況の指標は、マーチャントがストアに最適なレコメンデーションタイプを選択するのに役立ちますが、それはガイドに過ぎず、100%に達することはありません。 準備状況インジケーターについて詳しく見る。 準備状況インジケーターについて[詳細情報](create.md#readiness-indicators)を表示します。
 
 ### バックアップの推奨事項 {#backuprecs}
 
-入力データがユニット内のすべてのリクエスト済みレコメンデーション項目を提供するのに不十分な場合、Adobe Commerceはレコメンデーション単位を設定するためのバックアップ レコメンデーションを提供します。 例えば、`Recommended for you`のレコメンデーションタイプをホームページにデプロイした場合、サイトで初めて購入する顧客は、パーソナライズされた商品を正確にレコメンデーションするのに十分な行動データを生成できていません。 この場合、Adobe Commerceは、この買い物客に`Most viewed`のレコメンデーションタイプに基づいて商品を表示します。
+入力データが不十分な場合、レコメンデーションユニットがリクエストされたアイテムをすべて返さないようにすると、Adobe Commerceはバックアップレコメンデーションを入力します。 例えば、ホームページに`Recommended for you`のレコメンデーションタイプをデプロイした後、初めての買い物客は、パーソナライズされたレコメンデーションに十分な行動データを生成できない可能性があります。 この場合、Adobe Commerceは`Most viewed ` レコメンデーションタイプに基づいてアイテムを表示します。
 
 入力データ収集が不十分な場合、次のレコメンデーションタイプは`Most viewed`個のレコメンデーションタイプにフォールバックします。
 
@@ -96,10 +88,10 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 
 #### 注意事項
 
-- 広告ブロッカーとプライバシー設定により、イベントのキャプチャが妨げられ、エンゲージメントと収益[指標](workspace.md#column-descriptions)が過小報告される可能性があります。 さらに、買い物客がページを離れたり、ネットワーク上の問題が原因で、イベントが送信されない場合もあります。
-- 商品レコメンデーションダッシュボードを強化するには、[&#x200B; ヘッドレス実装](headless.md)でイベントを実装する必要があります。
-- 設定可能な製品の場合、製品レコメンデーションでは、レコメンデーションユニット内の親製品の画像を使用します。 設定可能な製品に画像が指定されていない場合、その製品のレコメンデーションユニットは空になります。
+- 広告ブロッカーとプライバシー設定により、イベントのキャプチャが妨げられ、エンゲージメントと収益[指標](workspace.md#column-descriptions)が過小報告される可能性があります。 さらに、買い物客がページを離れたり、ネットワーク上の問題が原因でイベントが送信されない場合もあります。
+- 商品レコメンデーションダッシュボードを強化するには、[ ヘッドレス実装](headless.md)でイベントを実装する必要があります。
+- 設定可能な製品の場合、製品レコメンデーションは親製品の画像を使用します。 親製品に画像がない場合、その製品はレコメンデーションユニットに表示されません。
 
 >[!NOTE]
 >
->[Cookie制限モード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law)が有効になっている場合、Adobe Commerceは、買い物客がCookieの使用に同意するまで行動データを収集しません。 Cookie制限モードが無効な場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[Cookie制限モード ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law)が有効になっている場合、Adobe Commerceは、買い物客がCookieの使用に同意するまで行動データを収集しません。 Cookie制限モードが無効な場合、Adobe Commerceはデフォルトで行動データを収集します。
