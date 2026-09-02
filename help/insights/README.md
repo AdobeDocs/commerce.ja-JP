@@ -31,7 +31,7 @@ Commerce Insightsの記事は、記事の正確性と最新性を維持する責
 
 - **新しいトップレベルのセクション** （インサイト/カタログ管理など）では、ガイドのナビゲーション形状が変更されるため、追加する前にIA レビューが必要です。 Commerce AIを所有している人が誰で、ストーリーやタスクをレビューするかを調べます。
 
-- **目次に追加** – 公開前に目次に新しいトピックを追加します。 必要に応じて、メタデータを非表示を使用して、リンクを持つユーザーのみがアクセスできる非表示の記事を公開します。 ExL作成者ガイドの「[ コンテンツを非表示](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/hiding-files)」を参照してください。
+- **目次に追加** – 公開前に目次に新しいトピックを追加します。 必要に応じて、メタデータを非表示を使用して、リンクを持つユーザーのみがアクセスできる非表示の記事を公開します。 ExL作成者ガイドの「[&#x200B; コンテンツを非表示](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/hiding-files)」を参照してください。
 
 ## レビュー頻度
 
