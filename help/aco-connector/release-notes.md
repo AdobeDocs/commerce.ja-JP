@@ -4,28 +4,15 @@ description: カタログの同期と書き出しに関する新機能、バグ�
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/6NeLAfThvIWIyV4Y6OWtL8V9mC7lPy7UH-Zli8E-WEk'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-subfeature_v2:
-  - id: dad884f1-e840-49a1-970e-2f965bdbc410
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 1d14f7827de3274564941765fd2943ecefac5fad
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: f08fa0de-a550-4acd-b570-f81cf1d03aafid: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+subfeature_v2: id: dad884f1-e840-49a1-970e-2f965bdbc410id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 355b319def41c3763bc0dddbe6b32707891bb811
 workflow-type: tm+mt
-source-wordcount: 460
+source-wordcount: 514
 ht-degree: 0%
 
 ---
@@ -40,12 +27,20 @@ ht-degree: 0%
 
 ## 2026 リリース
 
+### 1.0.17 リリース
+
+_2026年9月1日_
+
+![修正](../assets/fix.svg) **複数のストアビューを持つストアのカタログ同期を高速化**-[!DNL Adobe Commerce Optimizer Connector]では、すべてのストアビューを抽出して後で無関係な結果を破棄するのではなく、フィード データを抽出する前に、ストアビューで商品とカテゴリをフィルタリングできるようになりました。 このアップデートにより、多くのストアビューを持つカタログの同期と再同期時間が大幅に短縮されます。<!--MDEE-1441-->
+
 ### 1.0.16 リリース
 
 _2026年8月7日_
 
-![修正](../assets/fix.svg) **カタログの同期が無効な設定で停止しなくなりました**- [!DNL Adobe Commerce Optimizer Connector]設定が見つからないか無効な場合に、カタログの同期が無期限に実行される問題を修正しました。 Syncは実行を続行する代わりに警告を完了してログに記録するようになりました。 <!--MDEE-1413-->
-![修正](../assets/fix.svg) **信頼性の高い[!DNL Adobe Commerce Optimizer]管理者要求** – 管理者要求[!DNL Adobe Commerce Optimizer Connector]が[!DNL Adobe Commerce Optimizer]件の管理者要求に対して不正なURLを使用し、それらの要求が失敗する可能性がある問題を修正しました。 <!--COMOPT-2288-->
+![修正](../assets/fix.svg) **カタログの同期が無効な設定で停止しなくなりました**- [!DNL Adobe Commerce Optimizer Connector]設定が見つからないか無効な場合に、カタログの同期が無期限に実行される問題を修正しました。 Syncは実行を続行する代わりに警告を完了してログに記録するようになりました。<!--MDEE-1413-->
+
+![修正](../assets/fix.svg) **信頼性の高い[!DNL Adobe Commerce Optimizer]管理者要求** – 管理者要求[!DNL Adobe Commerce Optimizer]に対して[!DNL Adobe Commerce Optimizer Connector]が誤ったURLを使用する可能性があり、それらの要求が失敗する可能性がある問題を修正しました。<!--COMOPT-2288-->
+
 ![修正](../assets/fix.svg) **信頼性の高い更新およびパッチ操作**&#x200B;更新およびパッチ操作が間違った環境をターゲットにする可能性がある問題を修正しました。これにより、リクエストが失敗する可能性があります。<!--COMOPT-2288-->
 
 ### 1.0.15 リリース
