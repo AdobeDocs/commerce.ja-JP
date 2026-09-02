@@ -3,10 +3,16 @@ title: レコメンデーションタイプ
 description: サイトの様々なページにデプロイできるレコメンデーションについて説明します。
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
 TQID: https://experienceleague.adobe.com/d2V9aHGQO8jnPXAIlae-GklfACARMrVEttryLOY3Zr8
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: beb7a3c1-66ab-4786-b879-7621375b3c40id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
 source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
 source-wordcount: 2001
@@ -35,7 +41,7 @@ Adobe Commerceには、サイトの様々なページにデプロイできるレ
 
 >[!NOTE]
 >
->この記事で説明されているイベントについて詳しくは、開発者ドキュメントの[ ストアフロントイベント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を参照してください。
+>この記事で説明されているイベントについて詳しくは、開発者ドキュメントの[&#x200B; ストアフロントイベント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を参照してください。
 
 ## データ要件と行動
 
@@ -50,7 +56,7 @@ Adobe Commerceには、サイトの様々なページにデプロイできるレ
 レコメンデーションを生成するのに十分なイベントデータがない場合、システムは次のことが可能になります。
 
 - レコメンデーション単位の空の結果を返します。
-- パーソナライズされたレコメンデーションがまだ利用できない場合に`Most viewed`商品を表示するなど、[ バックアップのレコメンデーション ](events.md#backup-recommendations)をトリガーします。
+- パーソナライズされたレコメンデーションがまだ利用できない場合に`Most viewed`商品を表示するなど、[&#x200B; バックアップのレコメンデーション &#x200B;](events.md#backup-recommendations)をトリガーします。
 - レコメンデーション単位に[設定](create.md)より少ない製品を表示します。
 
 ## Personalized {#personalized}
@@ -59,7 +65,7 @@ Adobe Commerceには、サイトの様々なページにデプロイできるレ
 
 >[!NOTE]
 >
->パーソナライズされたレコメンデーションを提供するには、買い物客の行動履歴を把握する必要があります。 十分なインタラクション履歴を持たない新規訪問者や買い物客には、「最も閲覧された商品がサイトで十分な行動シグナルを生成するまで」など、[ バックアップの推奨事項](events.md#backup-recommendations)が表示されます。
+>パーソナライズされたレコメンデーションを提供するには、買い物客の行動履歴を把握する必要があります。 十分なインタラクション履歴を持たない新規訪問者や買い物客には、「最も閲覧された商品がサイトで十分な行動シグナルを生成するまで」など、[&#x200B; バックアップの推奨事項](events.md#backup-recommendations)が表示されます。
 
 | タイプ | 説明 |
 |---|---|
@@ -100,7 +106,7 @@ Adobe Commerceには、サイトの様々なページにデプロイできるレ
 
 >[!NOTE]
 >
->人気にもとづくレコメンデーションには、ストアフロントからの十分なイベントデータが必要です。 ストアが新しい場合やトラフィックが少ない場合は、適切な行動データが収集されるまで、これらのレコメンデーションタイプは限られた結果しか返しません。 最適なパフォーマンスを確保するには、[ データ準備状況インジケーター](workspace.md)を監視してください。
+>人気にもとづくレコメンデーションには、ストアフロントからの十分なイベントデータが必要です。 ストアが新しい場合やトラフィックが少ない場合は、適切な行動データが収集されるまで、これらのレコメンデーションタイプは限られた結果しか返しません。 最適なパフォーマンスを確保するには、[&#x200B; データ準備状況インジケーター](workspace.md)を監視してください。
 
 | タイプ | 説明 |
 |---|---|
@@ -153,7 +159,7 @@ Adobe AIは、AIを活用してカタログ内の画像を処理および分析�
 
 >[!NOTE]
 >
-> _視覚的な類似性_&#x200B;のレコメンデーションタイプは、オプションのモジュールとして[ インストール ](install-configure.md)すると使用できます。
+> _視覚的な類似性_&#x200B;のレコメンデーションタイプは、オプションのモジュールとして[&#x200B; インストール &#x200B;](install-configure.md)すると使用できます。
 
 1. _管理者_ サイドバーで、**マーケティング** > _プロモーション_ > **製品レコメンデーション**&#x200B;に移動して、_製品レコメンデーション_ ダッシュボードを表示します。
 
@@ -181,8 +187,8 @@ Adobe AIは、AIを活用してカタログ内の画像を処理および分析�
 
 次の画像は、_Clamber Watch_&#x200B;の製品詳細ページを示しています。
 
-![ クランバーウォッチ ](assets/visual-sim-pdp.png)
+![&#x200B; クランバーウォッチ &#x200B;](assets/visual-sim-pdp.png)
 
 次に、_Clamber Watch_&#x200B;の&#x200B;_視覚的類似性_&#x200B;推奨単位を示します。
 
-![視覚的類似度ユニット ](assets/visual-sim-unit.png)
+![視覚的類似度ユニット &#x200B;](assets/visual-sim-unit.png)

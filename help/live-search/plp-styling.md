@@ -3,10 +3,15 @@ title: 製品リストページウィジェット
 description: ' [!DNL Live Search Product Listing Page Widget]の有効化とスタイル設定'
 exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
 TQID: https://experienceleague.adobe.com/rEQBfgR9CqVBTFtBtq21QFZ6L5ZvoWJ02VI2xiWqAcw
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
 source-wordcount: 524
@@ -30,7 +35,7 @@ PLP ウィジェットが無効になっている間に[!DNL Live Search]をア�
 
 >[!NOTE]
 >
->非推奨の検索アダプタから移行する場合は、[移行ガイド ](migrate-to-plp.md)で、シナリオ、前提条件、および手順ごとの手順に関する詳細なガイダンスを参照してください。
+>非推奨の検索アダプタから移行する場合は、[移行ガイド &#x200B;](migrate-to-plp.md)で、シナリオ、前提条件、および手順ごとの手順に関する詳細なガイダンスを参照してください。
 
 PLP ウィジェットをオンにするには：
 
@@ -61,7 +66,7 @@ PLP ウィジェットの標準機能に加えて、次の機能を含めるよ�
 - 多言語サポート
 - 価格スライダー
 
-上記の機能を処理するようにPLP ウィジェットをカスタマイズする方法について詳しくは、次の[ リポジトリ ](https://github.com/adobe/storefront-product-listing-page/)の`storefront-product-listing-page`のreadmeを参照してください。 このリポジトリのreadmeでは、PLP ウィジェットをカスタマイズしてサイトにデプロイする方法の例を示します。
+上記の機能を処理するようにPLP ウィジェットをカスタマイズする方法について詳しくは、次の[&#x200B; リポジトリ &#x200B;](https://github.com/adobe/storefront-product-listing-page/)の`storefront-product-listing-page`のreadmeを参照してください。 このリポジトリのreadmeでは、PLP ウィジェットをカスタマイズしてサイトにデプロイする方法の例を示します。
 
 >[!WARNING]
 >
@@ -106,7 +111,7 @@ PLP ウィジェットの標準機能に加えて、次の機能を含めるよ�
 
 - `.ds-plp-pagination_item`
 
-![ ページネーション項目](assets/plp-css-pagination-item.png)
+![&#x200B; ページネーション項目](assets/plp-css-pagination-item.png)
 
 - `.ds-plp-pagination_item--current`
 
@@ -118,33 +123,33 @@ PLP ウィジェットの標準機能に加えて、次の機能を含めるよ�
 - `.ds-widgets__actions`：左側の内側div
 - `.ds-widgets__results`：右側の内側div
 
-![ ウィジェット結果](assets/plp-css-widgets.png)
+![&#x200B; ウィジェット結果](assets/plp-css-widgets.png)
 
 ### 並べ替えドロップダウン
 
 - `.ds-sdk-sort-dropdown`
 
-![並べ替えドロップダウン ](assets/plp-css-dropdown.png)
+![並べ替えドロップダウン &#x200B;](assets/plp-css-dropdown.png)
 
 - `.ds-sdk-sort-dropdown__button`
 
-![ ドロップダウンボタン ](assets/plp-css-dropdown-button.png)
+![&#x200B; ドロップダウンボタン &#x200B;](assets/plp-css-dropdown-button.png)
 
 - `.ds-sdk-sort-dropdown__items`
 
-![ ドロップダウンアイテム ](assets/plp-css-dropdown-items.png)
+![&#x200B; ドロップダウンアイテム &#x200B;](assets/plp-css-dropdown-items.png)
 
 - `.ds-sdk-sort-dropdown__items--item`
 
-![ ドロップダウンアイテム ](assets/plp-css-dropdown-item.png)
+![&#x200B; ドロップダウンアイテム &#x200B;](assets/plp-css-dropdown-item.png)
 
 - `.ds-sdk-sort-dropdown__items--item-selected`
 
-![選択した項目をドロップダウン ](assets/plp-css-dropdown-selected.png)
+![選択した項目をドロップダウン &#x200B;](assets/plp-css-dropdown-selected.png)
 
 - `.ds-sdk-sort-dropdown__items--item-active`
 
-![ アクティブな選択範囲をドロップダウン ](assets/plp-css-dropdown-active.png)
+![&#x200B; アクティブな選択範囲をドロップダウン &#x200B;](assets/plp-css-dropdown-active.png)
 
 ### ファセット
 
@@ -153,21 +158,21 @@ PLP ウィジェットの標準機能に加えて、次の機能を含めるよ�
 - `.ds-plp-facets__header_title`
 - `.ds-plp-facets__header__clear-all`
 
-![ ファセット ヘッダーのタイトル ](assets/plp-css-facets-title-clear.png){width="350"}
+![&#x200B; ファセット ヘッダーのタイトル &#x200B;](assets/plp-css-facets-title-clear.png){width="350"}
 
 - `.ds-plp-facets__pills`
 - `.ds-sdk-pill`
 
-![ ファセット ピル ](assets/plp-css-facets-pill.png){width="350"}
+![&#x200B; ファセット ピル &#x200B;](assets/plp-css-facets-pill.png){width="350"}
 
 - `.ds-sdk-pill__label`
 - `.ds-sdk-pill__cta`
 
-![ ファセットラベル ](assets/plp-css-pill-label-cta.png){width="350"}
+![&#x200B; ファセットラベル &#x200B;](assets/plp-css-pill-label-cta.png){width="350"}
 
 - `.ds-plp-facets__list`
 
-![ ファセットリスト ](assets/plp-css-facets-list.png){width="350"}
+![&#x200B; ファセットリスト &#x200B;](assets/plp-css-facets-list.png){width="350"}
 
 - `.ds-sdk-input`
 - `.ds-sdk-input__label`
@@ -179,12 +184,12 @@ PLP ウィジェットの標準機能に加えて、次の機能を含めるよ�
 
 - `.ds-sdk-labelled-input`
 
-![ ラベル付き入力](assets/plp-css-labelled-input.png)
+![&#x200B; ラベル付き入力](assets/plp-css-labelled-input.png)
 
 - `.ds-sdk-labelled-input__input`
 - `.ds-sdk-labelled-input__label`
 
-![入力ラベル ](assets/plp-css-labelled-input-label.png)
+![入力ラベル &#x200B;](assets/plp-css-labelled-input-label.png)
 
 ### 製品項目
 
@@ -206,7 +211,7 @@ PLP ウィジェットの標準機能に加えて、次の機能を含めるよ�
 - `.ds-sdk-loading__spinner`
 - `.ds-sdk-loading__spinner-label`
 
-![ インジケーターを読み込んでいます](assets/plp-css-loading.png)
+![&#x200B; インジケーターを読み込んでいます](assets/plp-css-loading.png)
 
 ## PLP ウィジェットの無効化
 
