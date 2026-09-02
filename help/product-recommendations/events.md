@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ヘルスケアのお客様で、[Data Connection](../data-connection/overview.md)拡張機能に含まれる[Data Services HIPAA拡張機能](../data-connection/hipaa-readiness.md#installation)をインストールしている場合、[!DNL Product Recommendations]はクライアント側で生成されるため、ストアフロントイベントデータの収集を停止します。
 
-ストアフロントイベントデータの収集と送信を再開するには、[!DNL Product Recommendations]のイベント収集を再度有効にします。 詳しくは、[一般設定](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)を参照してください。
+ストアフロントイベントデータの収集と送信を再開するには、[!DNL Product Recommendations]のイベント収集を再度有効にします。 詳しくは、[一般設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/general/general#data-services)を参照してください。
 
 ## データの種類とイベント
 
@@ -104,4 +104,4 @@ _Cold Start_&#x200B;の問題は、マシンラーニングモデルが効果的
 
 >[!NOTE]
 >
->[Cookie制限モード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law)が有効になっている場合、Adobe Commerceは、買い物客がCookieの使用に同意するまで行動データを収集しません。 Cookie制限モードが無効な場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[Cookie制限モード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law)が有効になっている場合、Adobe Commerceは、買い物客がCookieの使用に同意するまで行動データを収集しません。 Cookie制限モードが無効な場合、Adobe Commerceはデフォルトで行動データを収集します。

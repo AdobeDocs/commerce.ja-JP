@@ -333,7 +333,7 @@ Commerce AdminでPLP ウィジェットを設定します。
 
 **選択肢3:GTMをAdobe Analyticsに置き換える**
 
-- 該当する場合は、[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html)への移行を検討してください。
+- 該当する場合は、[Adobe Analytics](https://business.adobe.com/jp/products/adobe-analytics.html)への移行を検討してください。
 - ガイダンスについては、カスタマーエンジニアリングにお問い合わせください。
 
 **お問い合わせ先**: GTM互換性の更新またはカスタマーエンジニアリングのサポートに関するサポートチケットを送信します。
@@ -458,7 +458,7 @@ Commerce AdminでPLP ウィジェットを設定します。
 - ヘッドレスおよびPWAの導入
 - カスタムイベントトラッキング
 
-Adobe サポートにお問い合わせするには、[&#x200B; アドビヘルプセンターユーザーガイド &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を参照してください。
+Adobe サポートにお問い合わせするには、[&#x200B; アドビヘルプセンターユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を参照してください。
 
 ## FAQ
 

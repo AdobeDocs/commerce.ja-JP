@@ -41,11 +41,11 @@ ht-degree: 0%
 
 ### 医療業界のユーザー事例
 
-ヘルスケアのお客様で、[Data Connection](../data-connection/overview.md)拡張機能の一部である[Data Services HIPAA拡張機能](../data-connection/hipaa-readiness.md#installation)をインストールした場合、[!DNL Live Search]はストアフロントイベントデータをキャプチャしなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるためです。 ストアフロントイベントデータの取得と送信を続行するには、[!DNL Live Search]のイベント収集を再度有効にします。 詳しくは、[一般設定](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)を参照してください。
+ヘルスケアのお客様で、[Data Connection](../data-connection/overview.md)拡張機能の一部である[Data Services HIPAA拡張機能](../data-connection/hipaa-readiness.md#installation)をインストールした場合、[!DNL Live Search]はストアフロントイベントデータをキャプチャしなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるためです。 ストアフロントイベントデータの取得と送信を続行するには、[!DNL Live Search]のイベント収集を再度有効にします。 詳しくは、[一般設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/general/general#data-services)を参照してください。
 
 ## 範囲の設定
 
-最初に、すべての[!DNL Live Search]設定の[&#x200B; スコープ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)が`Default Store View`に設定されます。 [!DNL Commerce]のインストールに複数のストアビューが含まれる場合は、**スコープ**&#x200B;をファセット設定が適用される[&#x200B; ストアビュー](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)に設定します。
+最初に、すべての[!DNL Live Search]設定の[&#x200B; スコープ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)が`Default Store View`に設定されます。 [!DNL Commerce]のインストールに複数のストアビューが含まれる場合は、**スコープ**&#x200B;をファセット設定が適用される[&#x200B; ストアビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views)に設定します。
 
 ## メニューオプション
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 属性を検索可能に設定する
 
-高度にターゲットを絞った結果を生成するには、[検索可能](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) （`searchable=true`）製品属性のセットを確認します。 関連性を確保するために、属性に明確で簡潔な意味を持つコンテンツが含まれている場合にのみ、属性を検索できるようにします。 デフォルトでは検索機能が有効になっていますが、検索結果の精度を低下させる可能性がある`description`のように、精度の低い長いテキストを含む属性を使用しないでください。 例えば、「ショートパンツ」と検索した際に、「半袖」という語句が付いたシャツが表示された場合、そのシャツは検索結果に表示されます。
+高度にターゲットを絞った結果を生成するには、[検索可能](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes) （`searchable=true`）製品属性のセットを確認します。 関連性を確保するために、属性に明確で簡潔な意味を持つコンテンツが含まれている場合にのみ、属性を検索できるようにします。 デフォルトでは検索機能が有効になっていますが、検索結果の精度を低下させる可能性がある`description`のように、精度の低い長いテキストを含む属性を使用しないでください。 例えば、「ショートパンツ」と検索した際に、「半袖」という語句が付いたシャツが表示された場合、そのシャツは検索結果に表示されます。
 
 属性を検索可能にするには、次の手順を実行します。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 1. 検索可能にする属性（`color`など）を選択します。
 1. **ストアフロントのプロパティ**&#x200B;を選択し、**検索での使用**&#x200B;を`yes`に設定します。
 
-[!DNL Live Search]は、Adobe Commerce内で設定されたproduct属性の[weight](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)も尊重します。 重みが大きい属性は、検索結果で高く表示されます。
+[!DNL Live Search]は、Adobe Commerce内で設定されたproduct属性の[weight](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)も尊重します。 重みが大きい属性は、検索結果で高く表示されます。
 
 次の属性は常に検索可能です。
 
@@ -128,9 +128,9 @@ ht-degree: 0%
 
 #### 導入
 
-1. 製品属性を検索可能にするには、管理者に移動し、[製品属性を設定します](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)。
+1. 製品属性を検索可能にするには、管理者に移動し、[製品属性を設定します](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)。
 
-   検索可能な[属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)の一覧を参照してください。
+   検索可能な[属性](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/attributes-input-types)の一覧を参照してください。
 
 1. その属性の検索機能を指定します（**Contains** （デフォルト）または&#x200B;**Starts with**&#x200B;など）。 **Contains**&#x200B;に対して有効にする属性を最大6つ、および&#x200B;**に対して有効にする属性を最大6つ指定できます。最初は**&#x200B;です。 さらに、**Contains**&#x200B;の索引の場合、文字列の長さは50文字以下に制限されます。
 
@@ -207,7 +207,7 @@ ht-degree: 0%
 
 ## デフォルトの属性値
 
-次の製品属性には、[!DNL Live Search]がデフォルトで使用し、有効にする[&#x200B; ストアフロントプロパティ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)があります。
+次の製品属性には、[!DNL Live Search]がデフォルトで使用し、有効にする[&#x200B; ストアフロントプロパティ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes)があります。
 
 | プロパティ | Storefront プロパティ | 属性 |
 |---|---|---|

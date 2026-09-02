@@ -48,7 +48,7 @@ _推奨事項Workspace_
 
 ## 範囲の設定
 
-最初は、すべてのレコメンデーション設定の[&#x200B; スコープ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)が`Default Store View`に設定されます。 Commerceのインストールに複数のストアビューが含まれる場合は、推奨事項が適用される&#x200B;**Scope**&#x200B;を[&#x200B; ストアビュー](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)に設定します。
+最初は、すべてのレコメンデーション設定の[&#x200B; スコープ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views)が`Default Store View`に設定されます。 Commerceのインストールに複数のストアビューが含まれる場合は、推奨事項が適用される&#x200B;**Scope**&#x200B;を[&#x200B; ストアビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)に設定します。
 
 ## 指標の日付範囲の設定
 
