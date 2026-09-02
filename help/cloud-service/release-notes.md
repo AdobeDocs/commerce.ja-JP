@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 9d128fd11c1b83276f8a2158f1f2fb98a49bf6c5
+source-git-commit: 49a235a3a545b422b0371b53163d7de770df6a38
 workflow-type: tm+mt
-source-wordcount: 6100
+source-wordcount: 6271
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-以下の項目は、2026年9月1日にプロダクションに公開されます。
+以下の項目は、2026年9月8日にプロダクションに公開されます。
 
 >[!BEGINSHADEBOX]
 
@@ -122,7 +122,7 @@ ht-degree: 0%
 * 交渉可能な引用符
 * 見積もりテンプレート
 
-GraphQLの変異やREST エンドポイントなどの詳細については、[Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja)を参照し、**Storefront Compatibility B2B Package v1.0.24** セクションを参照してください。
+GraphQLの変異やREST エンドポイントなどの詳細については、[Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja#storefront-compatibility-b2b-package-v1-0-24-2026-07-20)を参照してください。
 
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
@@ -141,6 +141,24 @@ GraphQLの変異やREST エンドポイントなどの詳細については、[S
 このルールを使用すると、ルール条件が満たされたときに、無料のギフト商品をカートに追加できます。
 
 <!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+
+### 日時ごとにカート価格ルールをスケジュール
+
+[&#x200B; カート価格ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)を[!DNL Commerce Admin]で開始または終了する時刻を設定できるようになりました。 「カート価格ルール」グリッドにはスケジュールされた時間が表示され、REST APIはルールを午前0時に設定するのではなく、`from_date`と`to_date`に送信された時間を尊重します。<!-- ACCS-970 -->
+
+<!-- commenting this out until the B2B compatibility package version is live. -->
+
+<!-- ### Use a temporary shipping address at B2B checkout -->
+
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+
+### 注文履歴に注文編集を記録する
+
+>[!IMPORTANT]
+>
+>この機能はデフォルトで無効になっています。 有効にするには、Adobe Commerce カスタマーサクセスマネージャーにお問い合わせいただくか、サポートチケットを作成してください。
+
+注文が編集されると、Commerceは、新しい注文の履歴に人間が読み取れるコメントを追加して、置き換えられた注文に対して変更された内容を要約できるようになりました。<!-- ACCS-1157 -->
 
 ### 機能強化とバグ修正
 
@@ -163,6 +181,12 @@ GraphQLの変異やREST エンドポイントなどの詳細については、[S
 * カテゴリーデータ書き出しフィードでカテゴリ画像URLが破損する問題を修正しました。<!-- ACCS-1571 -->
 
 * 異なる共有カタログ間で製品を同時に割り当てまたは割り当て解除すると、断続的に失敗する可能性がある問題を修正しました。<!-- CCSAAS-5287 -->
+
+* 検索オプションで&#x200B;**使用**&#x200B;を「いいえ」に設定すると、属性はグリッド列として表示されますが、16列の制限にはカウントされません。<!-- CCSAAS-5370 -->
+
+* 管理者のナビゲーションに影響を与える可能性がある問題を解決しました。<!-- CCSAAS-5232 -->
+
+* 空のカートがゼロ以外の合計を報告する場合がある問題を修正しました。<!-- ACCS-1730 -->
 
 {{accs-release}}
 
@@ -676,7 +700,7 @@ mutation {
 
 ### App BuilderのAI コーディングツールとチュートリアル
 
-[AI コーディング開発者ツール &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}を使用して、新しい[!DNL App Builder] アプリケーションを作成し、既存の[!DNL Adobe Commerce]のPHP拡張機能を[!DNL App Builder] アプリケーションに変換できるようになりました。 ツールの使用方法を示すために、次のチュートリアルを利用できます。
+[AI コーディング開発者ツール &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"}を使用して、新しい[!DNL App Builder] アプリケーションを作成し、既存の[!DNL Adobe Commerce]のPHP拡張機能を[!DNL App Builder] アプリケーションに変換できるようになりました。 ツールの使用方法を示すために、次のチュートリアルを利用できます。
 
 * [チュートリアルの前提条件](./tutorials/tutorial-prerequisites.md)
 * [評価拡張機能のチュートリアル](./tutorials/ratings-extension.md)

@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4b3bf2c28d4570141497bf6aa514152311fa4a37
+source-git-commit: 695f349ce38a3127beccab83f63f4157cc05e549
 workflow-type: tm+mt
-source-wordcount: 3099
+source-wordcount: 3190
 ht-degree: 0%
 
 ---
@@ -624,6 +624,16 @@ API MeshとCore GraphQL APIを使用して、次のことを行います。
 - Adobe Commerce as a Cloud Serviceのお客様の場合、最新バージョンが環境にインストールされます。
 
 - クラウド上またはオンプレミスのAdobe Commerceの場合、Adobeでは、最新リリースのカタログサービスメタパッケージをクラウド環境でアップグレードするためにComposerを使用することをお勧めします。
+
+### v3.6.0 リリース
+
+**リリース日**: 2026年8月31日
+
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+
+![新規](../assets/new.svg) **カスタマイズ可能なオプションの書き出し** - カスタマイズ可能なオプションデータエクスポーターモジュール （`magento/module-customizable-options-data-exporter`）を含めるように、カタログサービスのメタパッケージ依存関係を更新しました。 このモジュールは、Adobe Commerceのカスタマイズ可能なオプション（ドロップダウン、ラジオボタン、チェックボックス、複数選択）と買い物客の入力オプション（テキストフィールド、テキストエリア、ファイル、日付、日付、時刻、時間）の両方）を書き出し、カタログサービスで使用されるSaaS カタログに反映します。<!--DATA-7366-->
+
+![新規](../assets/new.svg) カタログサービスとCommerce スタックの互換性を維持するために、依存関係を更新しました。
 
 ### v3.5.0 リリース
 
