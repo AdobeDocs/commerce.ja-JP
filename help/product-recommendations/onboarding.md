@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 0802d0e53a1ed6701318647b7bf78435082ad5f3
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: 477
 ht-degree: 0%
 
 ---
@@ -54,6 +54,10 @@ ht-degree: 0%
 [!DNL Product Recommendations]は、ページビルダーのコンテンツタイプとしてページに追加できます。 ページビルダーのサポートを製品レコメンデーションに追加するには、[&#x200B; インストールと設定](install-configure.md)を参照してください。
 
 [!DNL Product Recommendations]を[!DNL Page Builder] コンテンツに追加する方法については、[[!DNL Page Builder] 統合](page-builder.md)を参照してください。
+
+### Fastlyの画像の最適化
+
+[!DNL Product Recommendations]は、Fastly画像最適化パラメーターを[!DNL Product Recommendations]画像URLに適用するオプションの[Fastly画像最適化](install-configure.md#fastlysupport) モジュールをサポートしています。 このサポートを追加するには、[&#x200B; インストールと設定](install-configure.md#fastlysupport)を参照してください。
 
 ### SaaS価格インデックス
 

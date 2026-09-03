@@ -25,9 +25,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 43d5571c6a1a3c5152d3b389b73887fd4739fa7f
+source-git-commit: dba0c9e79458f516dd36da886423c7a5657a2ad2
 workflow-type: tm+mt
-source-wordcount: 2499
+source-wordcount: 2705
 ht-degree: 0%
 
 ---
@@ -41,7 +41,13 @@ ht-degree: 0%
 
 Commerceの移行評価は、既存のAdobe Commerceの導入を自動的に分析するものです。 Adobeのツールは、Commerceのコードベースをスキャンし、構築、カスタマイズ、変更されたあらゆる要素を一覧表示する構造化レポートを生成します。 次に、コードベースに対して行われたカスタマイズが、[!DNL Adobe Commerce as a Cloud Service]への移行にどのような影響を与えるかを示します。
 
-処理済みの移行評価レポートは、`https://experience.adobe.com/@<ims-org-name>/commerce-migration-assessment/shared-assessments`からアクセスできます。 本番環境へのアクセスは必要ありません。ただし、最初にプロジェクトコードベースを共有する必要があります。
+コードベースが処理されると、評価レポートはIMS組織IDにリンクされ、[!DNL Adobe Experience Cloud]に共有されます。 本番環境へのアクセスは必要ありません。ただし、最初にプロジェクトコードベースを共有する必要があります。
+
+IMS組織のすべてのメンバーは、次の場所で共有された評価を表示できます。https://experience.adobe.com/commerce-migration-assessment/shared-assessments
+
+>[!NOTE]
+>
+> 共有レポートを表示するには、移行評価に使用するのと同じIMS組織にリンクされたユーザープロファイルを使用してAdobe Experience Cloudにログインする必要があります。
 
 **評価で提供される：**
 
@@ -49,6 +55,10 @@ Commerceの移行評価は、既存のAdobe Commerceの導入を自動的に分�
 - リスク予測指標から計算された移行の複雑さの評価（高、Medium、低）
 - 移行計画が必要なバックエンドとストアフロントの領域で、最も効果の高いビューを優先的に表示
 - AdobeのAI開発ツールの直接入力として使用できる各カスタムモジュールの説明
+
+## 移行評価へのアクセス
+
+Adobeは、完了した移行評価を組織のAdobe IMS組織に接続します。 評価が接続されると、その組織内のすべてのユーザーがhttps://experience.adobe.com/commerce-migration-assessment/shared-assessmentsでレポートにアクセスできます。
 
 ## 移行評価レポートについて
 
@@ -232,6 +242,8 @@ Layout XML ファイルの数とその合計操作数。 Layout XMLは、表示�
 | 移行の推奨 | **再構築**、**リファクタリング**、**ネイティブ機能で**&#x200B;を置き換えるか、**削除**&#x200B;します |
 | 依存関係 | このモジュールが操作する他のモジュール。移行シーケンスに情報を提供できます |
 
+モジュールの分類を開いて、その詳細を表示します。 **リビルド**&#x200B;移行の推奨事項が記載されたモジュールには、**[!UICONTROL Open in Developer Agent]** ボタンが含まれており、モジュールの説明が[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)に直接コピーされるので、置き換え拡張機能の設計図をすぐに作成できます。
+
 **ワークフロー**
 
 1. 最初に&#x200B;**影響の大きい**&#x200B;個のモジュールにフィルタリングします。 移行に要する労力とコストを最も多く削減できます。
@@ -240,7 +252,9 @@ Layout XML ファイルの数とその合計操作数。 Layout XMLは、表示�
    - モジュールをネイティブ [!DNL Adobe Commerce as a Cloud Service]機能に置き換えることはできますか？
    - モジュールを再構築する必要がある場合、その代わりにどのような機能が必要ですか？
 1. 廃止または置き換え可能なカスタムモジュールを特定します。 コードを記述する前に、移行の範囲を削減します。
-1. 各カスタムモジュールの説明を、**再構築**&#x200B;移行の推奨事項と共にコピーします。 これらの説明は、AdobeのAI デベロッパーツールに直接与えることができます。詳しくは、[Commerce拡張性のAI デベロッパーツール &#x200B;](#ai-developer-tools-for-commerce-extensibility)を参照してください。
+1. **再構築**&#x200B;移行レコメンデーションを含む各カスタムモジュールについて、次のいずれかを実行できます。
+   - **[!UICONTROL Open in Developer Agent]**&#x200B;をクリックしてブループリントを生成するか、Commerce Developer Agentを使用してモジュールの説明をコピーします。
+   - 各カスタムモジュールの説明を、**再構築**&#x200B;移行の推奨事項と共にコピーします。 これらの説明は、AdobeのAI デベロッパーツールに直接与えることができます。詳しくは、[Commerce拡張性のAI デベロッパーツール &#x200B;](#ai-developer-tools-for-commerce-extensibility)を参照してください。
 
 ## 参考：主な用語
 
@@ -265,7 +279,7 @@ AdobeのAI デベロッパーツールのプロンプトとして、**[!UICONTRO
 
 ### ツールの機能
 
-Adobeの[Commerce拡張機能向けAI開発ツール &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/)には、主にふたつの機能が含まれています。
+Adobeの[Commerce拡張機能向けAI開発ツール &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)には、主にふたつの機能が含まれています。
 
 - [!DNL Adobe Commerce] [!DNL App Builder] MCP サーバー – AI コーディング アシスタントを[!DNL Adobe Commerce]のドキュメント、API、およびApp Builder開発パターンに直接接続するモデル コンテキスト プロトコル （MCP）統合。 開発者は何を構築したいのかを記述でき、MCP サーバーはCommerce対応のコード生成、アーキテクチャガイダンス、デプロイメントオートメーションをIDE内で提供します。
 - エージェントのスキル - REST API、チェックアウト拡張機能、ストアフロントコンポーネント、イベント駆動型の統合など、Adobe Commerceの一般的な拡張性パターンをカバーする事前定義済みのAI スキル。 スキルは、[!DNL Adobe Commerce as a Cloud Service]および[!DNL App Builder]に固有のアーキテクチャ、実装、テスト、デプロイメントの手順を通じてAIを導きます。
@@ -293,15 +307,17 @@ aio commerce extensibility tools-setup
 Manages custom shipping rate calculations based on customer account tier and order    weight thresholds.
 ```
 
-1. GitHub Copilot、Cursor、ClaudeなどのIDEを開き、Commerce拡張機能MCP サーバーを有効にします。
-1. モジュールの説明を使用して、AI エージェントにプロンプトを表示します。
+1. **[!UICONTROL Open in Developer Agent]**&#x200B;をクリックして説明を[!DNL Commerce Developer Agent]にコピーし、すぐにブループリントを生成します。
+
+   または、GitHub Copilot、Cursor、ClaudeなどのIDEを開き、Commerce拡張機能MCP サーバーを有効にして、モジュールの説明を使用してAI エージェントに手動でプロンプトを表示します。
+
 1. スキャフォールドされた[!DNL App Builder] アプリケーションを確認し、エージェントで繰り返し実行して、実装を調整します。
 
 ## 次のステップ
 
 1. 「**[!UICONTROL Summary]**」タブを開きます。 移行の複雑さと最も影響の大きいモジュールを確認し、「カスタマイズの分類」サブセクションを確認します。 ストアにカスタムテーマ、高リスクのブロック、チェックアウトドロップインがリストされている場合は、バックエンドの移行と並行して、フロントエンドのワークストリームを計画します。
 1. 技術チームまたは開発パートナーと&#x200B;**[!UICONTROL Module Reports]** タブを共有します。 アクティブに使用されなくなったカスタムモジュールや、[!DNL Adobe Commerce as a Cloud Service]機能に置き換えられる可能性があるカスタムモジュールにフラグを付けるように依頼します。
-1. カスタマイズの作成を開始します。 モジュールの説明をAI ツール入力として使用して、互換性のある拡張機能の基礎モードを開始します。
+1. カスタマイズの作成を開始します。 「**モジュールレポート**」タブで、任意のモジュールの分類を開き、「**開発者エージェントで開く**」を選択して、そのモジュールの評価データから直接互換性のある拡張機能の基礎モードを開始します。
 1. Adobe アカウントチームとのウォークスルー電話を予約する。 Adobeで調査結果を確認し、特定のモジュールやストアフロントシグナルに関する質問に回答します。また、複雑なプロファイルのために移行アプローチをマッピングするのにも役立ちます。
 
 ## リソース
@@ -313,7 +329,7 @@ Manages custom shipping rate calculations based on customer account tier and ord
   - [配送方法のチュートリアル](../tutorials/shipping-method-extension.md)
 - 拡張機能
   - [概要](https://developer.adobe.com/commerce/extensibility/)
-  - [AI開発者向けツール](https://developer.adobe.com/commerce/extensibility/developer-agent/)
+  - [AI開発者向けツール](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)
     - [ベストプラクティス](https://developer.adobe.com/commerce/extensibility/developer-agent/best-practices)
     - [設定](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)
     - [スキルとプロンプト](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)

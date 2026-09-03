@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
+source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
 workflow-type: tm+mt
-source-wordcount: 3302
+source-wordcount: 3372
 ht-degree: 0%
 
 ---
@@ -67,21 +67,17 @@ ht-degree: 0%
 
 ![移行フロー図](../assets/migration-flow.png)
 
-### PaaSとSaaSの比較
+### SaaSとPaaSの比較
 
-[!DNL Adobe Commerce on Cloud]またはオンプレミス（PaaS）と[!DNL Adobe Commerce as a Cloud Service] （SaaS）では、それらの管理方法とマーチャントがプラットフォームとどのように関わっているかが異なります。
+Adobe Commerceは、さまざまなデプロイメントモデルで利用できます。 主な違いは、インフラストラクチャの管理、アプリケーション制御、カスタマイズ、アップグレード責任のレベルです。
 
-**主な違い**
+[!DNL Adobe Commerce as a Cloud Service]、[!DNL Adobe Commerce on Cloud]および[!DNL Adobe Commerce on-premises]は、それらの管理方法と、マーチャントがプラットフォームとどのように操作するかについて異なります。
 
-- [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
-- **[!DNL Adobe Commerce on Cloud Infrastructure]**：マーチャントは、アプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。
-- **[!DNL Adobe Commerce]オンプレミス**：マーチャントは、Adobeのホスト環境で、アプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。
-
-  >[!NOTE]
-  >
-  >サービス（MySQL、Elasticsearchなど）の[共有責任モデル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/shared-responsibility)。
-
-- [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} **SaaS （新規 – [!DNL Adobe Commerce as a Cloud Service]）**: Adobeは、コアアプリケーション、インフラストラクチャ、およびアップデートを完全に管理します。 開発者は、拡張性ポイント（API、App Builder、UI SDK）によるカスタマイズに重点を置きます。 コアアプリケーションコードはロックされています。
+| Adobe Commerce製品 | ホスティングモデル | サービスとアップデートの責任 |
+|---|---|---|
+| **[!DNL Adobe Commerce as a Cloud Service]** | SaaS — Adobeホスティング | Adobeは、Commerceの主要なアプリケーション、インフラストラクチャ、アップデートを管理します。 マーチャントは、サポートされているAPIと拡張性サービス（API、[!DNL Adobe Developer App Builder]、UI SDK）を通じてプラットフォームを拡張します。 マーチャントはコアアプリケーションコードを変更できません。 |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — Adobe管理 | [共有責任](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobeがホストされているプラットフォームを管理します。 マーチャントは、アプリケーションレベルのパッチ、カスタムコード、設定を管理し、データベース、キャッシュ、検索、PHP ランタイム、web サーバー、メッセージキューなど、サポートされているバージョンの拡張機能やプラットフォームサービスを更新します。 |
+| **[!DNL Adobe Commerce on-premises]** | 加盟店またはホスティングプロバイダーが主催 | [&#x200B; マーチャントの責任](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/overview#merchant-responsibilities)：マーチャントまたはそのホスティングプロバイダーが、インフラストラクチャとすべてのプラットフォームサービスを管理します。 |
 
 **アーキテクチャへの影響**
 
@@ -186,7 +182,9 @@ Migration Assessment ToolとCommerce Developer MCPは、AIを利用して、検�
 
 すべての[!DNL Adobe Commerce as a Cloud Service]移行は評価から始まります。 これは、スコープを設定し、不確実性を減らし、実装を開始する前に共有された移行ブループリントを作成するための費用対効果の高い方法です。
 
-評価ツールとダウンストリーム開発者ワークフローについて詳しくは、[Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/)を参照してください。
+評価ツールとダウンストリーム開発者ワークフローについて詳しくは、[Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)を参照してください。
+
+Migration Assessment Toolと統合されたCommerce Developer Agentについて詳しくは、[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)を参照してください
 
 ## コードとストアフロントの移行（Commerce Developer MCP）
 
@@ -259,7 +257,9 @@ MCPはデータ移行を処理しません。 ビジネス データは、[Comme
 
 コードとストアフロントの近代化は、移行評価ツールのロードマップで移行範囲と優先順位が確立された後に開始されます。
 
-MCPのインストールと使用方法について詳しくは、[Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/)のドキュメントを参照してください。
+MCPのインストールと使用方法について詳しくは、[Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)のドキュメントを参照してください。
+
+Migration Assessment Toolと統合されたCommerce Developer Agentについて詳しくは、[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)を参照してください
 
 ## データ移行（Commerce Data Migration Service）
 
