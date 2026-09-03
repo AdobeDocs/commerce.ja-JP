@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 355b319def41c3763bc0dddbe6b32707891bb811
+source-git-commit: 4a3bb899f05e489cbd5b5c46909085e204751dc5
 workflow-type: tm+mt
-source-wordcount: 514
+source-wordcount: 544
 ht-degree: 0%
 
 ---
@@ -39,6 +39,12 @@ ht-degree: 0%
 ![既知の問題](../assets/bug.svg)既知の問題
 
 ## 2026 リリース
+
+### 1.1.0 リリース
+
+_2026年9月2日_
+
+![新規](../assets/new.svg) **カテゴリ属性がカタログ同期に含まれるようになりました**-[!DNL Adobe Commerce Optimizer Connector]では、カテゴリ属性とそのメタデータが[!DNL Adobe Commerce Optimizer]に同期されるようになりました。これにより、カスタムカテゴリ属性をマーチャンダイジングに使用できるようになります。<!--MDEE-1373-->
 
 ### 1.0.17 リリース
 
