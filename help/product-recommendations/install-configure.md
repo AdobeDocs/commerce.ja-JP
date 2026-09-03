@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 578
+source-wordcount: 554
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ composer require magento/module-page-builder-product-recommendations
 
 ### 視覚的な類似性のレコメンデーションタイプを追加 {#vissimsupport}
 
-_視覚的な類似性_&#x200B;のレコメンデーションタイプを使用すると、表示中の製品と[視覚的に類似した](type.md#visualsim)製品を表示する製品詳細ページにレコメンデーションユニットをデプロイできます。 このレコメンデーションタイプは、商品の画像や視覚的な側面がショッピング体験の重要な部分である場合に最も役立ちます。 次のコマンドを実行して、_視覚的な類似性_&#x200B;のレコメンデーションタイプをインストールします。
+_視覚的な類似性_&#x200B;のレコメンデーションタイプには、製品詳細ページで表示される製品と[視覚的に類似](type.md#visualsim)する製品が表示されます。 これは、商品画像と外観がショッピング体験にとって重要な場合に最も有用です。 インストールするには、次のコマンドを実行します。
 
 ```bash
 composer require magento/module-visual-product-recommendations
@@ -73,11 +73,11 @@ composer require magento/module-visual-product-recommendations
 
 1. `magento/product-recommendations` モジュールをインストールした後、API キーを指定してSaaS データスペースを選択し、[Commerce Services Connector](../landing/saas.md)を設定します。
 
-   この接続を設定すると、Commerce インスタンス、カタログサービス、およびその他のサポートサービス間のデータ同期と通信が可能になります。 データの同期は、[SaaS データ書き出し拡張機能](../data-export/overview.md)によって処理されます。
+   この接続を設定すると、Commerce インスタンス、カタログサービス、およびその他のサポートサービス間のデータ同期と通信が可能になります。 [SaaS データ書き出し拡張機能](../data-export/overview.md)は、データ同期を処理します。
 
 1. カタログの書き出しを正しく実行できるようにするには、[cron](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) ジョブと[&#x200B; インデクサー](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/manage-indexers)が実行されており、`Product Feed` インデクサーが`Update by Schedule`に設定されていることを確認します。
 
-Commerce アプリケーションをCommerce サービスに正常にリンクし、[SaaS データスペース &#x200B;](../landing/saas.md#saas-configuration)を指定すると、カタログの同期が開始されます。 その後、[&#x200B; ストアフロントに行動データが送信されていることを](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)確認できます。
+Commerce アプリケーションをCommerce サービスに正常にリンクし、[SaaS データスペース &#x200B;](../landing/saas.md#saas-configuration)を指定すると、カタログの同期が開始されます。 その後、[&#x200B; ストアフロントに行動データが送信されていることを](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify)確認できます。
 
 ## データ同期の監視とトラブルシューティング
 
@@ -103,7 +103,7 @@ composer update magento/product-recommendations --with-dependencies
 }
 ```
 
-メジャーバージョンを`5.0`から`6.0`にバンプしましょう：
+メジャーバージョンを`5.0`から`6.0`に更新します。
 
 ```json
 "require": {

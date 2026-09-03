@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 08c4badb4cae27a2cefb9fcb8eb5589bc8264467
 workflow-type: tm+mt
-source-wordcount: 1201
+source-wordcount: 1170
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe Commerceのサイト検索機能なら、複数のオプションが用意されています。 実装する前に、[の境界と制限](boundaries-limits.md)情報を確認して、[!DNL Live Search]がビジネスニーズに適していることを確認してください。
+>[!DNL Live Search]がビジネス上のニーズに適していることを確認するには、実装する前に[境界と制限](boundaries-limits.md)情報を確認してください。
 
 ## デザイン
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ## クイックツアー
 
-[!DNL Live Search]は、スピード、関連性、使いやすさに重点を置いており、買い物客とマーチャントの両方にとって画期的な機能です。 次のビデオを見て、ストアフロントから[!DNL Live Search]の簡単なツアーを見てください。
+[!DNL Live Search]は、スピード、関連性、使いやすさに重点を置いており、買い物客とマーチャントの両方にとって大きな改善をもたらします。 次のビデオを見て、ストアフロントから[!DNL Live Search]の簡単なツアーを見てください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452570?captions=jpn&learn=on)
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 ### フィルターとファセット
 
-[!DNL Live Search]は、フィルター可能としてインデックス付けされている任意の属性によって結果をフィルタリングできます。 ファセットは、ストアフロントで買い物客に対応するフィルターとして表示するように設定されているフィルター可能な属性（ブランド、カラー、価格など）です。
+[!DNL Live Search]は、フィルター可能としてインデックス付けされている任意の属性によって結果をフィルタリングできます。 ファセットは、ストアフロントで買い物客に対応するフィルターとして表示するように設定されたフィルター可能な属性です（例：ブランド、カラー、価格）。
 
 `inStock`などの一部の内部フィールドはフィルタリング可能ですが、ファセット可能ではありません。
 
@@ -89,13 +89,13 @@ ht-degree: 1%
 
 ### ファセットを使用したフィルター検索
 
-フィルター検索では、検索条件として、属性値の複数のディメンション、つまり[&#x200B; ファセット &#x200B;](facets.md)を使用します。 フィルターの選択はマーチャントが定義し、返される商品に応じて変更します。最も一般的なファセットはリストの上部にピン留めされています。
+フィルター検索では、検索条件として、属性値の複数のディメンション、つまり[&#x200B; ファセット &#x200B;](facets.md)を使用します。 加盟店はフィルターの選択を定義します。フィルターは、返された商品に応じて変更され、最も一般的なファセットがリストの上部にピン留めされます。
 
-ファセットをURL パラメーター`http://yourwebsite.com?color=red`として使用し、ライブ検索はこれらの属性値に基づいて結果をフィルタリングします。
+ファセットをURL パラメーターとして使用：`https://www.mywebsite.com/?color=red`、ライブ検索はこれらの属性値に基づいて結果をフィルタリングします。
 
 ### 同義語
 
-[類義語](synonyms.md)買い物客がカタログ内で使用する単語と異なる単語を含めることで、リーチを拡大し、クエリの焦点をシャープにします。 類義語ディクショナリを微調整することで、買い物客の関心を維持し、購入に至るまでの経路を把握できます。
+[類義語](synonyms.md)買い物客が使用する単語とカタログ内の単語が異なる単語を含めることで、リーチを拡大し、クエリの焦点をシャープにします。 顧客の関心を惹き、購入に至るまでの経路を維持するために、類義語の辞書を調整します。
 
 ### マーチャンダイジングルール
 
@@ -117,14 +117,14 @@ ht-degree: 1%
 
 ## カタログデータ保持ポリシー
 
-テスト環境でカタログデータの検索クエリを90日間連続して送信しない場合、カタログデータは休止モードに設定され、検索クエリに対してデータは返されません。 実稼動環境内のカタログデータは、このポリシーの影響を受けません。
+90日間テスト環境の検索クエリを送信しない場合、カタログデータは休止モードになり、結果は返されません。 このポリシーは、実稼動環境のカタログデータには影響しません。
 
 ### 非アクティブなテスト環境
 
-テスト環境でカタログデータを再アクティブ化するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Live Search]」というタイトルで送信し、環境IDを含めます。 テスト環境のカタログデータは、数時間以内に復元する必要があります。
+テスト環境でカタログデータを再アクティブ化するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Live Search]」というタイトルで送信し、環境IDを含めます。 テスト環境のカタログデータは、2時間以内に復元する必要があります。
 
 ### 空のカタログ
 
 環境に空のカタログが作成されてから45日後に存在する場合、カタログデータは休止モードに設定され、検索クエリに対してデータは返されません。 これには、実稼動環境とテスト環境の両方が含まれます。
 
-環境でカタログデータを再アクティブ化するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Live Search]」というタイトルで送信し、環境IDを含めます。 環境内のカタログデータは、数時間以内に復元する必要があります。
+環境でカタログデータを再アクティブ化するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Live Search]」というタイトルで送信し、環境IDを含めます。 環境内のカタログデータは、2時間以内に復元する必要があります。

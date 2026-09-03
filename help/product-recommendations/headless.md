@@ -15,9 +15,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 363
+source-wordcount: 365
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ヘッドレスインスタンスは、商品レコメンデーションダッシュボードを強化するために、イベントを実装する必要があります。
+>ヘッドレスインスタンスは、商品レコメンデーションダッシュボードをサポートするためにイベントを実装する必要があります。
 
 [!DNL Product Recommendations]をヘッドレスストアフロントに統合するには、次の手順を実行する必要があります。
 
-1. 行動データをAdobe AIに送信し、商品レコメンデーションの結果を分析して計算します。 追加データを送信して、商品レコメンデーション [指標レポート &#x200B;](workspace.md)を有効にすることもできます。
+1. 行動データをAdobe AIに送信し、商品レコメンデーションの結果を分析して計算します。 製品レコメンデーション [指標レポート &#x200B;](workspace.md)を有効にするには、追加データを送信することもできます。
 
 1. 商品レコメンデーションの結果を取得し、その結果をページに表示できます。
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 1. [!DNL Product Recommendations] モジュールを[&#x200B; インストール &#x200B;](install-configure.md)。
 
-1. [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)をインストールして使用し、[行動イベント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を実行します。
+1. [行動イベント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を実行するには、[Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)をインストールして使用します。
 
    [!DNL Product Recommendations]件の結果を返すために必要な最小イベント：
 
@@ -63,10 +63,10 @@ ht-degree: 0%
    | `rec-click` | recommendation-unit |
    | `rec-add-to-cart-click` | recommendation-unit （レコメンデーションテンプレートに「カートに追加」ボタンがある場合） |
 
-1. イベントが発生したら、[Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)を使用してイベントを処理し、Adobe AIに送信します。
+1. イベントが発生したら、[Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)を使用してイベントを処理し、Adobe AIに送信します。
 
 1. 行動データを収集した後、管理者で[create](create.md) [!DNL Product Recommendations]できます。
 
 1. [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/)を使用して、ストアフロントのレコメンデーションユニットを取得します。 SDKは、ページ上にレコメンデーションユニットをレンダリングするために必要な商品データを返します。
 
-1. [`recommendations` GraphQL クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/)を使用して、特定のSKUの商品レコメンデーションブロックに関する情報を返す方法を説明します。
+1. [`recommendations` GraphQL クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations)を使用して、特定のSKUの商品レコメンデーションブロックに関する情報を返す方法を説明します。

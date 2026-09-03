@@ -17,16 +17,16 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 744
+source-wordcount: 737
 ht-degree: 0%
 
 ---
 
 # [!DNL Product Recommendations]とは
 
-[!DNL Product Recommendations]は、[Adobe AI](https://business.adobe.com/jp/ai.html)とマシンラーニングを使用して、Adobe Commerce ストアフロントでパーソナライズされた商品レコメンデーションを表示する際に、集約された買い物客の行動とカタログに関して役立ちます。 この概要では、サービスの制約（HIPAAを含む）、データおよびプライバシー、レコメンデーション単位の表示場所、ストアフロントの実装パス、レコメンデーションが製品関係をどのように補完するか、カタログデータの保持について説明します。
+[!DNL Product Recommendations]では、[Adobe AI](https://business.adobe.com/jp/ai.html)とマシンラーニングを使用して、集約された買い物客の行動とカタログデータでトレーニングを受けて、Adobe Commerce ストアフロントでパーソナライズされたレコメンデーションを提供しています。 この概要では、サービスの制約（HIPAAを含む）、データプライバシー、レコメンデーションユニットの配置、ストアフロントの実装オプション、製品関係の統合、カタログデータの保持について説明します。
 
 >[!IMPORTANT]
 >
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ## 商品レコメンデーションと商品関係
 
-オンラインショッピングの複雑さが絶えず変化していることを考えると、ストアフロントで最も効果的なものは、複数の主要なテクノロジーの組み合わせであることが多いです。 [!DNL Product Recommendations]と[製品関係](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)の両方を使用すると、製品のプロモーションをより柔軟に行うことができます。 Adobe AIが提供する[!DNL Product Recommendations]を活用して、大規模なレコメンデーションをインテリジェントに自動化できます。 次に、手動で介入して、ターゲットの買い物客セグメントに対して特定のレコメンデーションが行われていることを確認する必要がある場合、または特定のビジネス目標を達成する必要がある場合は、[関連製品ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)を活用できます。
+オンラインショッピングの複雑さが絶えず変化していることを考えると、ストアフロントで最も効果的なものは、複数の主要なテクノロジーの組み合わせであることが多いです。 [!DNL Product Recommendations]と[製品関係](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)の両方を使用すると、製品のプロモーションをより柔軟に行うことができます。 レコメンデーションを大規模に自動化するには、Adobe AIを活用した[!DNL Product Recommendations]を活用します。 次に、手動で介入して、ターゲットの買い物客セグメントに対して特定のレコメンデーションが行われていることを確認する必要がある場合、または特定のビジネス目標を達成する必要がある場合は、[関連製品ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)を活用できます。
 
 商品レコメンデーションを活用すると、以下のことが可能になります。
 
@@ -68,18 +68,18 @@ ht-degree: 0%
 
 ## 商品レコメンデーション
 
-[!DNL Product Recommendations]について詳しくは、このビデオをご覧ください。
+[!DNL Product Recommendations]について詳しくは、次のビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3449926?captions=jpn&quality=12)
 
 ## カタログデータ保持ポリシー
 
-[!DNL Product Recommendations] サービスは、お使いのAdobe Commerce環境と常に同期しているカタログデータに依存します。 非アクティブなカタログまたはデータのクエリを停止する環境では、休止状態に入る可能性があります。これは、再アクティブ化するまでサービスが返す内容に影響します。
+[!DNL Product Recommendations] サービスは、お使いのAdobe Commerce環境と常に同期しているカタログデータに依存します。 そのデータのクエリを停止する非アクティブなカタログまたは環境は、非アクティブになる可能性があり、再アクティブ化するまでサービスが返される内容に影響します。
 
-**testing**&#x200B;環境のカタログデータに対して90日間連続でクエリを送信しない場合、カタログデータは休止状態モードに設定され、どのクエリにもデータは返されません。 **実稼動**&#x200B;環境内のカタログデータは、90日ルールの影響を受けません。
+**testing**&#x200B;環境のカタログデータに対して90日間連続でクエリを送信しない場合、カタログデータは非アクティブモードに設定され、クエリに対してデータは返されません。 90日間のルールは、**実稼動**&#x200B;環境のカタログデータには影響しません。
 
-環境の作成後45日後に&#x200B;**空のカタログ**&#x200B;がある場合、カタログデータは休止状態モードに設定され、クエリに対してデータは返されません。 これは実稼動環境とテスト環境の両方に適用されます。
+環境の作成後45日後に&#x200B;**空のカタログ**&#x200B;がある場合、カタログデータは非アクティブモードに設定され、クエリに対してデータは返されません。 これは実稼動環境とテスト環境の両方に適用されます。
 
 ### カタログデータの再アクティブ化
 
-休止後にカタログデータを復元するには、[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)を「再アクティブ化[!DNL Product Recommendations]」というタイトルで送信し、環境IDを含めます。 カタログデータは数時間以内に復元する必要があります。
+非アクティブになった後にカタログデータを復元するには、「[!DNL Product Recommendations]を再アクティブ化」というタイトルで[&#x200B; サポートリクエスト &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)を送信し、環境IDを含めます。 カタログデータは2時間以内に復元する必要があります。

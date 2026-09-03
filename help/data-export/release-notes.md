@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5964358bb4370fa4fb0c2f4c447bacb3603d0f5e
+source-git-commit: c08c9248b26b6e3a0271032e869753bece96a8bd
 workflow-type: tm+mt
-source-wordcount: 3356
+source-wordcount: 3412
 ht-degree: 0%
 
 ---
@@ -44,6 +44,12 @@ ht-degree: 0%
 >[!DNL SaaS data export]拡張機能は、[!DNL Live Search]、[!DNL Product Recommendations]、[!DNL Catalog Service]と共に自動的にインストールされるモジュールのコレクションです。 システムにインストールされているバージョンは、[!DNL Composer]を使用して確認できます。 場合によっては、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップするために、システムのデータエクスポート拡張機能をアップグレードすることをお勧めします。
 
 ## 2026 リリース {#release-notes-2026}
+
+### 103.4.33 リリース
+
+_2026年9月1日_
+
+![修正](../assets/fix.svg) **マルチストアビューのカタログの再同期が高速化** – 商品とカテゴリのフィードは、データを抽出する前に、すべてのストアビューを抽出し、後で無関係な結果を破棄する代わりに、ストアビューでフィルタリングされるようになりました。 このアップデートにより、特にAdobe Commerce Optimizerを使用している場合、多くのストアビューを持つカタログの再同期パフォーマンスが大幅に向上します。<!--MDEE-1441-->
 
 ### 103.4.32 リリース
 

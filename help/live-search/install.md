@@ -26,9 +26,9 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2803
+source-wordcount: 2856
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Adobe Commerce [!DNL Live Search]と[[!DNL Catalog Service]](../catalog-service/
 >
 > **HIPAA対応**
 >
->HIPAA対応の拡張機能とヘルスケアアドオンでAdobe Commerceを使用している場合は、ライブサーチを通じて保護された健康情報（PHI）を処理しないでください>  ライブサーチはHIPAA対応サービスではありません。
+>HIPAA対応の拡張機能とヘルスケアアドオンでAdobe Commerceを使用している場合は、ライブサーチを通じて保護された健康情報（PHI）を処理しないでください。 ライブサーチはHIPAA対応サービスではありません。
 >
 >詳しくは、[HIPAA対応Adobe Commerce](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)および[操作](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/hipaa-ready-service/operations) ガイダンスを参照してください。このガイダンスでは、HIPAA対応ではないCommerce サービスの中からライブサーチをリストしています。
 
@@ -291,7 +291,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### カテゴリの割り当て
 
-[!DNL Live Search]に返される製品は、[&#x200B; カテゴリ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/categories)に割り当てる必要があります。 例えば、Lumaでは、製品は「男性」、「女性」、「ギア」などのカテゴリに分類されます。 「トップス」、「ボトムス」、「ウォッチ」には、サブカテゴリーも設定されます。 これらのカテゴリの割り当てにより、フィルタリング時の精度が向上します。
+[!DNL Live Search]に返される製品は、[&#x200B; カテゴリ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/categories)に割り当てる必要があります。 たとえば、Lumaでは、製品は「男性」、「女性」、「ギア」などのカテゴリに分類されます。 「トップス」「ボトムス」「ウォッチ」にはサブカテゴリーも設定されています。 これらのカテゴリの割り当てにより、フィルタリング時の精度が向上します。
 
 ## &#x200B;6. 接続をテストする {#test}
 
@@ -322,7 +322,7 @@ SaaSにカタログデータを取り込んだ状態で、テストして次の�
 必要に応じてカスタム CSS ルールを定義することで、ポップオーバーおよびPLP ウィジェットのスタイルを設定できます。 [&#x200B; ポップオーバー要素のスタイル設定](storefront-popover.md#styling-popover-example)および[製品リストページウィジェット &#x200B;](plp-styling.md#styling-example)を参照してください。
 
 ウィジェットの機能を拡張する場合は、各ウィジェットのソースコードを公開リポジトリで利用できます。
-この場合、JavaScriptを独自のニーズに合わせてカスタマイズし、CDNでカスタムコードをホストできます。このカスタムスクリプトは[!DNL Live Search] サービスと通信し、通常と同じように結果を返します。これにより、ウィジェットの機能を制御できます。
+この場合、JavaScriptを独自のニーズに合わせてカスタマイズし、CDNでカスタムコードをホストできます。 このカスタムスクリプトは[!DNL Live Search] サービスと通信し、通常と同じように結果を返します。これにより、ウィジェットの機能を制御できます。
 
 - [PLP ウィジェットのリポジトリ](https://github.com/adobe/storefront-product-listing-page)
 - [検索バーのリポジトリ](https://github.com/adobe/storefront-search-as-you-type)
@@ -422,9 +422,9 @@ composer update magento/live-search --with-dependencies
 Adobeでは、SaaS API、特にカタログサービスエンドポイントを直接呼び出すことをお勧めします。
 
 - Commerce データベース/Graphql プロセスをバイパスして、パフォーマンスを向上させ、プロセッサの負荷を軽減します
-- [!DNL Catalog Service] フェデレーションを利用して、単一のエンドポイントから[!DNL Live Search]、[!DNL Catalog Service]、[!DNL Product Recommendations]を呼び出します。
+- パフォーマンスを向上させ、プロセッサの負荷を軽減するには、[!DNL Catalog Service] フェデレーションを使用して、単一のエンドポイントから[!DNL Live Search]、[!DNL Catalog Service]および[!DNL Product Recommendations]を呼び出します。
 
-一部のユースケースでは、製品の詳細や同様のケースについては、[!DNL Catalog Service]に電話することをお勧めします。 詳しくは、[refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product)を参照してください。
+ユースケースによっては、製品の詳細や同様のシナリオについては、[!DNL Catalog Service]を呼び出すことをお勧めします。 詳しくは、[refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product) GraphQL クエリを参照してください。
 
 カスタムヘッドレス実装がある場合は、[!DNL Live Search]の参照実装を確認してください。
 
@@ -486,7 +486,7 @@ Adobeでは、SaaS API、特にカタログサービスエンドポイントを�
 
 製品リストページウィジェットと[!DNL Live Search] フィールドウィジェットのコードは、GitHubからダウンロードできます。
 
-このコードにアクセスできる開発者は、その仕組みや見た目を完全にカスタマイズすることができます。 独自のサーバーでコードをホストしますが、[!DNL Live Search] サービスを使用します。
+コードにアクセスできる開発者は、その仕組みと見た目をカスタマイズできます。 独自のサーバーでコードをホストしますが、[!DNL Live Search] サービスを使用します。
 
 - [PLP ウィジェット](https://github.com/adobe/storefront-product-listing-page)
 - [検索バー](https://github.com/adobe/storefront-search-as-you-type)
@@ -538,7 +538,7 @@ composer require magento/module-data-services-graphql
 
 ### PWAサポート
 
-[!DNL Live Search]はPWA Studioで機能しますが、特に特定のGraphQL駆動型シナリオと全体的な応答特性において、ストアフロント開発者は他のCommerce実装と比較して若干の違いを見る可能性があります。
+[!DNL Live Search]はPWA Studioで機能しますが、ストアフロント開発者は、特に特定のGraphQL駆動型シナリオと応答特性において、他のCommerce実装と比較して違いを見ます。
 
 - 現在の[!DNL Live Search]のPWAの実装では、ネイティブのCommerce ストアフロントを使用して[!DNL Live Search]よりも多くの検索結果を返すには、より多くの処理時間が必要です。
 - PWAの[!DNL Live Search]は[&#x200B; イベント処理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)をサポートしていません。 そのため、検索レポートやインテリジェントなマーチャンダイジングは、PWAのストアフロントでは機能しません。

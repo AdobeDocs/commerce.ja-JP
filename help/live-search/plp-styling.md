@@ -12,24 +12,26 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 539
+source-wordcount: 524
 ht-degree: 0%
 
 ---
 
 # 製品リストページウィジェット
 
-[!DNL Live Search Product Listing Page Widget] （PLP）は、Commerce サービス プラットフォームを使用して、パフォーマンスが高く、検索可能で、ファセット可能な製品リスト ページを提供します。 このトピックでは、PLP ウィジェットを有効にしてスタイル設定する方法について説明します。
+[!DNL Live Search Product Listing Page Widget] （PLP）は、Commerce Services Platformを使用して、パフォーマンスが高く、検索可能で、ファセット可能な製品リストページを提供します。 このトピックでは、PLP ウィジェットを有効にしてスタイル設定する方法について説明します。
 
 ## PLP ウィジェットの有効化
 
 [!DNL Live Search] サービスがインストールされると、デフォルトの検索機能が自動的に[!DNL Live Search]に変換されます。
 
-[!DNL Live Search] PLP ウィジェットは、新規インストールに対してデフォルトで有効になっています。
+新しいインストールでは、デフォルトで[!DNL Live Search] PLP ウィジェットが有効になります。
 
-[!DNL Live Search]をアップグレードする場合、PLP ウィジェットが既にオフになっている場合は、そのまま残ります。
+PLP ウィジェットが無効になっている間に[!DNL Live Search]をアップグレードすると、アップグレード後も無効のままになります。
+
+
 
 >[!NOTE]
 >
@@ -50,7 +52,7 @@ PLP ウィジェットをオンにするには：
 
 ## ウィジェットの機能
 
-PLP ウィジェットには、次のすぐに使える機能が用意されています。
+PLP ウィジェットには、次の標準機能が用意されています。
 
 - 「カートに追加」ボタン – シンプルな商品でのみ利用可能。
 - 製品ごとに複数の画像 – 設定可能な製品に異なる色を選択すると、画像が変更される場合があります。
@@ -58,7 +60,7 @@ PLP ウィジェットには、次のすぐに使える機能が用意されて�
 
 ### ウィジェットのカスタマイズ
 
-PLP ウィジェットのすぐに使える機能に加えて、ウィジェットをさらにカスタマイズして次の機能を含めることができます。
+PLP ウィジェットの標準機能に加えて、次の機能を含めるようにウィジェットをさらにカスタマイズできます。
 
 - 属性によるフィルタリング
 - 多言語サポート
@@ -76,7 +78,7 @@ PLP ウィジェットのすぐに使える機能に加えて、ウィジェッ�
 
 >[!NOTE]
 >
->Adobe Commerce テーマ内のカスタムクラスを持つエレメントは継承されません。 これらの要素は、カスタムクラスに一致するように、特定のクラスでターゲットにする必要があります。プライマリアクションクラスは、ウィジェットボタンでは動作しません。 CSS内の汎用ターゲット要素は継承されます。`button`はウィジェットボタンに適用されます。
+>Adobe Commerce テーマ内のカスタムクラスを持つエレメントは継承されません。 カスタムクラスに一致するように、これらの要素を特定のクラスでターゲティングします。プライマリアクションクラスは、ウィジェットボタンには効果的ではありません。 CSS内の汎用ターゲット要素は継承されます。`button`はウィジェットボタンに適用されます。
 
 ハイライト表示されたdivには、ターゲットクラス `ds-sdk-product-item__product-name`が含まれています。
 
@@ -196,10 +198,10 @@ PLP ウィジェットのすぐに使える機能に加えて、ウィジェッ�
 - `.ds-sdk-product-item__product-name`
 - `.ds-sdk-product-item__product-options`
 - `.ds-sdk-product-price`
-   - `.ds-sdk-product-price--no-discount`
-   - `.ds-sdk-product-price--grouped`
-   - `.ds-sdk-product-price--bundle`
-   - `.ds-sdk-product-price--discount`
+  - `.ds-sdk-product-price--no-discount`
+  - `.ds-sdk-product-price--grouped`
+  - `.ds-sdk-product-price--bundle`
+  - `.ds-sdk-product-price--discount`
 
 ![製品](assets/plp-css-product.png)
 
@@ -215,5 +217,5 @@ PLP ウィジェットのすぐに使える機能に加えて、ウィジェッ�
 
 PLP ウィジェットを無効にするには：
 
-1. **Stores** / 設定/**設定** / **[!DNL Live Search]** / **Storefront機能**&#x200B;に移動し、**製品リストウィジェットを有効にする**&#x200B;を「いいえ」に設定します。
+1. **Stores** / 設定/ **設定** / **[!DNL Live Search]** / **Storefront機能**&#x200B;に移動し、**製品リストウィジェットを有効にする**&#x200B;を「いいえ」に設定します。
 1. 設定を保存するには、**設定を保存**&#x200B;を選択します。

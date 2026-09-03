@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 2233
+source-wordcount: 2260
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Adobeは、最新リリースの商品レコメンデーションバージョン
 ![修正](../assets/fix.svg)修正と機能強化
 ![&#x200B; バグ &#x200B;](../assets/bug.svg)既知の問題
 
-製品サポートについて詳しくは、[開発者向けドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability)を参照してください。
+[製品サポートについて詳しく見る](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/product-availability)。
 
 ## ホスト型サービスの更新
 
@@ -52,7 +52,7 @@ _2026年4月28日_
 
 _2026年2月19日_
 
-![修正](../assets/fix.svg) レコメンデーション単位の製品制限に達した場合、_最近閲覧した_ レコメンデーションタイプに表示された製品が予期しない順序で削除される問題を修正しました。 製品は、製品が閲覧された順に先入れ先出し（FIFO）で削除されるようになりました。
+![修正](../assets/fix.svg) レコメンデーション単位の製品制限に達した場合、_最近閲覧した_ レコメンデーションタイプに表示された製品が予期しない順序で削除される問題を修正しました。 製品は、製品が閲覧された先入れ先出し（FIFO）順に削除されるようになりました。
 
 _2025年11月19日_
 
@@ -73,11 +73,11 @@ _2024年6月28日_
 
 _2023年7月18日_
 
-![新規](../assets/new.svg) [!DNL Product Recommendations]には、GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) クエリが含まれています。
+![新規](../assets/new.svg) [!DNL Product Recommendations]には、GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations) クエリが含まれています。
 
 _2023年4月25日_
 
-![新規](../assets/new.svg) [!DNL Product Recommendations]のお客様は、[SaaS価格インデックス &#x200B;](../price-index/price-indexing.md)を利用できるようになりました。
+![新規](../assets/new.svg) [!DNL Product Recommendations]のお客様は、[SaaS価格インデックス &#x200B;](../price-index/price-indexing.md)を使用できるようになりました。
 
 ## 現在のメジャーバージョン
 
@@ -113,7 +113,7 @@ _2025年9月17日_
 
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![修正](../assets/fix.svg) ローカルストレージデータが利用できない場合にJavaScript エラーが発生すると、商品レコメンデーションユニットが消える断続的な問題を解決しました。 この修正により、`ds-view-history-time-decay`がローカルストレージに見つからない場合に、PREXがエラーをスローしなくなります。
+![修正](../assets/fix.svg) ローカルストレージデータが利用できない場合にJavaScript エラーが発生して商品レコメンデーションユニットが消える断続的な問題を解決しました。 この修正により、`ds-view-history-time-decay`がローカルストレージに見つからない場合に、PREXがエラーをスローしなくなります。
 ![新規](../assets/new.svg) `recommendations-sdk`のCDN URLを`adobe.io` ドメインに更新しました。
 
 ### magento/product-recommendationsの6.3.0
@@ -194,7 +194,7 @@ _2023年9月15日_
 
 ![新規](../assets/new.svg) [Saas価格インデクサー](../price-index/price-indexing.md)をサポートする新しいモジュールを追加しました。
 ![新規](../assets/new.svg)新しいデータ書き出しモジュールを追加し、バンドル商品やギフトカードなど、より多くの商品タイプの書き出しをサポートするようになりました。
-![修正](../assets/fix.svg)製品と価格フィードのテーブルサイズが大幅に削減されました。 テーブル `catalog_data_exporter_products`と`catalog_data_exporter_product_prices`のサイズを大幅に縮小する必要があります。
+![修正](../assets/fix.svg)製品と価格フィードのテーブルサイズが大幅に削減されました。 テーブル `catalog_data_exporter_products`と`catalog_data_exporter_product_prices`のサイズが大幅に縮小されます。
 
 #### 既知の制限事項
 
@@ -208,13 +208,13 @@ _2023年3月20日_
 
 ![新規](../assets/new.svg) Adobe Commerce 2.4.6をサポートするために[!DNL Product Recommendations]を更新しました。
 ![新規](../assets/new.svg)これはメジャーバージョンのリリースです。 プロジェクトのルート `composer.json` ファイルを[編集](install-configure.md#update)します。
-![新規](../assets/new.svg) [!DNL Product Recommendations]は、Commerceで[Inventory management](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/introduction)の機能をすべてサポートするようになりました（以前はマルチSource インベントリ（MSI）と呼ばれていました）。 完全なサポートを有効にするには、依存関係モジュール `commerce-data-export`をバージョン 102.2.0以降に[更新](install-configure.md#update)する必要があります。
+![新規](../assets/new.svg) [!DNL Product Recommendations]は、Commerce （旧称マルチSource インベントリ、またはMSI）で[Inventory management](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/introduction)の完全な機能をサポートするようになりました。 完全なサポートを有効にするには、依存関係モジュール `commerce-data-export`をバージョン 102.2.0以降に[更新](install-configure.md#update)する必要があります。
 
 ### 4.0.1 of magento/product-recommendations
 
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![修正](../assets/fix.svg)以前は、[!DNL Product Recommendations]は、表示通貨がデフォルト以外の通貨に切り替えられたときにエラーを表示していました。 通貨の切り替えが正常に機能するようになりました。
+![修正](../assets/fix.svg)以前、[!DNL Product Recommendations]は、表示通貨がデフォルト以外の通貨に切り替えられたときにエラーを示しました。 通貨の切り替えが正常に機能するようになりました。
 
 ### magento/product-recommendationsの4.0.0
 
@@ -252,9 +252,9 @@ _2023年3月20日_
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
 ![新規](../assets/new.svg)新しい[&#x200B; レコメンデーションタイプ &#x200B;](type.md)を追加しました：コンバージョン（カートに表示）、コンバージョン（購入に表示）、最近表示。 これらの新しいレコメンデーションタイプは、`magento/product-recommendations` モジュール 3.2.2以降で使用できます。
-![修正](../assets/fix.svg) FastlyのWeb Application Firewall （WAF）が誤ってCookieをブロックしていた問題を修正しました
-![修正](../assets/fix.svg)特定のストアビューのレコメンデーションを作成する際に、デフォルト以外のストアビューに割り当てられた製品が&#x200B;_レコメンデーション製品プレビュー_ パネルに表示されない問題を修正しました
-![修正](../assets/fix.svg) ページビルダーの特定のレコメンデーションユニット名によって、ストアフロントにレコメンデーションユニットを表示できない問題を修正しました
+![修正](../assets/fix.svg) FastlyのWeb Application Firewall （WAF）でCookieが誤ってブロックされる問題を修正しました。
+![修正](../assets/fix.svg)特定のストアビューのレコメンデーションを作成する際に、デフォルト以外のストアビューに割り当てられた製品が&#x200B;_レコメンデーション製品プレビュー_ パネルに表示されない問題を修正しました。
+![修正](../assets/fix.svg) ページビルダーの特定のレコメンデーションユニット名によって、レコメンデーションユニットがストアフロントに表示されない問題を修正しました。
 
 ### 3.3.2 of magento/product-recommendations
 
@@ -297,15 +297,15 @@ _2023年3月20日_
 
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
-![修正](../assets/fix.svg) カタログ同期中に「設定可能な製品オプションデータを取得できません」エラーが発生する問題を修正しました
-![修正](../assets/fix.svg) 「URLにストアコードを追加」設定を有効にしたときに、ストアコードが正しく設定されない問題を修正しました
-![修正](../assets/fix.svg)管理者パネル設定の変更の検出を改善して、これらの変更がカタログ同期データに反映されるようにしました
+![修正](../assets/fix.svg) カタログの同期中に「設定可能な製品オプションデータを取得できません」エラーが発生する問題を修正しました。
+![修正](../assets/fix.svg) 「URLにストアコードを追加」設定を有効にしたときに、ストアコードが正しく設定されない問題を修正しました。
+![修正](../assets/fix.svg)管理者パネル設定の変更の検出を改善して、これらの変更がカタログ同期データに反映されるようにしました。
 
 ### 3.2.2 of magento/product-recommendations
 
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
-![新規](../assets/new.svg)作成時に[推奨結果をプレビュー](create.md)する機能を追加しました。 これには、モジュールを最新バージョンに更新する必要がある場合があります。
+![新規](../assets/new.svg)作成時に[推奨結果をプレビュー](create.md)する機能を追加しました。 このアップデートでは、モジュールを最新バージョンにアップデートする必要があります。
 ![新規](../assets/new.svg)管理者からカタログ同期プロセスを[監視および管理](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/data-services/catalog-sync)する機能を追加しました。
 ![新規](../assets/new.svg) [&#x200B; フィルター](filters.md)を追加して、どの製品をレコメンデーションに表示するかを制御しました。
 ![新規](../assets/new.svg)さんが[視覚的な類似性](type.md#visualsim)のレコメンデーションタイプを追加しました。
@@ -346,7 +346,7 @@ _2023年3月20日_
 
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.x以降
 
-![修正](../assets/fix.svg) カタログの書き出し中に発生する可能性のある「製品オプションデータを取得できません」エラーを修正しました。
+![修正](../assets/fix.svg) カタログの書き出し中に発生した「製品オプションデータを取得できません」エラーを修正しました。
 ![修正](../assets/fix.svg) _[!DNL Product Recommendations]_&#x200B;ダッシュボードの_&#x200B;収益&#x200B;_列の通貨記号に、設定された基本通貨が正しく反映されるようになりました。
 
 ### 3.0.4 of magento/product-recommendations

@@ -15,7 +15,7 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
 source-wordcount: 921
 ht-degree: 0%
@@ -37,13 +37,13 @@ _推奨事項Workspace_
 
 ワークスペースの各機能領域に正しいデータが含まれていることを確認するには、選択したストアフロント実装に基づいてデータ収集を設定する必要があります。
 
-1. Luma - データ収集は標準で利用可能です。
+1. Luma - データ収集はデフォルトで使用できます。
 1. ヘッドレス – データ収集は、ストアフロントの実装に応じて手動で設定する必要があります。
 
-ヘッドレスストアフロントを使用している場合は、追加する必要がある必須イベントについて詳しくは、次のドキュメントを参照してください。
+ヘッドレスストアフロントを使用している場合に追加する必要がある必須イベントについて詳しくは、次のドキュメントを参照してください。
 
 - 商品レコメンデーションダッシュボードの[必要なイベント &#x200B;](events.md)。
-- 前提条件として追加する必要がある[&#x200B; ストアフロントイベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)です。
+- 前提条件として追加する必要がある[&#x200B; ストアフロントイベントコレクター](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework)です。
 - イベント構造の[例](https://github.com/adobe/commerce-events/tree/main/examples)。
 
 ## 範囲の設定
