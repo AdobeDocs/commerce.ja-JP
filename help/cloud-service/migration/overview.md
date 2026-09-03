@@ -3,41 +3,20 @@ title: ' [!DNL Adobe Commerce as a Cloud Service]に移行'
 description: ' [!DNL Adobe Commerce as a Cloud Service]への移行方法について説明します。'
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
 TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f56d26ed-050b-4fb7-b29b-8e6e994e80a2id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: eb30f47f-d87a-400f-8f78-63ce7979ff56id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
 workflow-type: tm+mt
-source-wordcount: 3302
+source-wordcount: 3372
 ht-degree: 0%
 
 ---
@@ -48,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->移行ツールについて詳しくは、[一括データ移行ツール &#x200B;](./bulk-data/migration-tool.md)を参照してください。
+>移行ツールについて詳しくは、[一括データ移行ツール ](./bulk-data/migration-tool.md)を参照してください。
 
 ## 概要
 
@@ -61,27 +40,23 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service]はバージョンのないSaaS プラットフォームです。つまり、これらの領域を適応させずに移行することはできません。 カスタマイズは[!DNL App Builder] アプリケーションに近代化され、ストアフロントはEdge Delivery Services （EDS）で再構築され、データは新しい[!DNL Adobe Commerce as a Cloud Service] テナントに移行され、統合はSaaS パターンを使用して再確立されます。
 
-移行を1つのモノリシックプロジェクトとして検討する代わりに、Adobeでは、[3つの移行ツール &#x200B;](#migration-tools-workflow)を中心に構築された統合された移行ワークフローを提供します。
+移行を1つのモノリシックプロジェクトとして検討する代わりに、Adobeでは、[3つの移行ツール ](#migration-tools-workflow)を中心に構築された統合された移行ワークフローを提供します。
 
 この共有ワークフローは、発見を統合し、エンジニアリングと配信チームを調整し、一貫した移行計画を提供します。
 
 ![移行フロー図](../assets/migration-flow.png)
 
-### PaaSとSaaSの比較
+### SaaSとPaaSの比較
 
-[!DNL Adobe Commerce on Cloud]またはオンプレミス（PaaS）と[!DNL Adobe Commerce as a Cloud Service] （SaaS）では、それらの管理方法とマーチャントがプラットフォームとどのように関わっているかが異なります。
+Adobe Commerceは、さまざまなデプロイメントモデルで利用できます。 主な違いは、インフラストラクチャの管理、アプリケーション制御、カスタマイズ、アップグレード責任のレベルです。
 
-**主な違い**
+[!DNL Adobe Commerce as a Cloud Service]、[!DNL Adobe Commerce on Cloud]および[!DNL Adobe Commerce on-premises]は、それらの管理方法と、マーチャントがプラットフォームとどのように操作するかについて異なります。
 
-- [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
-- **[!DNL Adobe Commerce on Cloud Infrastructure]**：マーチャントは、アプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。
-- **[!DNL Adobe Commerce]オンプレミス**：マーチャントは、Adobeのホスト環境で、アプリケーションコード、アップグレード、パッチ適用、インフラストラクチャ設定を管理します。
-
-  >[!NOTE]
-  >
-  >サービス（MySQL、Elasticsearchなど）の[共有責任モデル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/shared-responsibility)。
-
-- [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} **SaaS （新規 – [!DNL Adobe Commerce as a Cloud Service]）**: Adobeは、コアアプリケーション、インフラストラクチャ、およびアップデートを完全に管理します。 開発者は、拡張性ポイント（API、App Builder、UI SDK）によるカスタマイズに重点を置きます。 コアアプリケーションコードはロックされています。
+| Adobe Commerce製品 | ホスティングモデル | サービスとアップデートの責任 |
+|---|---|---|
+| **[!DNL Adobe Commerce as a Cloud Service]** | SaaS — Adobeホスティング | Adobeは、Commerceの主要なアプリケーション、インフラストラクチャ、アップデートを管理します。 マーチャントは、サポートされているAPIと拡張性サービス（API、[!DNL Adobe Developer App Builder]、UI SDK）を通じてプラットフォームを拡張します。 マーチャントはコアアプリケーションコードを変更できません。 |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — Adobe管理 | [共有責任](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobeがホストされているプラットフォームを管理します。 マーチャントは、アプリケーションレベルのパッチ、カスタムコード、設定を管理し、データベース、キャッシュ、検索、PHP ランタイム、web サーバー、メッセージキューなど、サポートされているバージョンの拡張機能やプラットフォームサービスを更新します。 |
+| **[!DNL Adobe Commerce on-premises]** | 加盟店またはホスティングプロバイダーが主催 | [ マーチャントの責任](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview#merchant-responsibilities)：マーチャントまたはそのホスティングプロバイダーが、インフラストラクチャとすべてのプラットフォームサービスを管理します。 |
 
 **アーキテクチャへの影響**
 
@@ -92,9 +67,9 @@ ht-degree: 0%
 
 **新しいツールと概念**
 
-- Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/)の[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)およびAPI メッシュ
+- Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)の[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)および[API メッシュ
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Edge 配信サービス](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
+- [Edge 配信サービス](https://experienceleague.adobe.com/developer/commerce/storefront/)
 - [Commerce Cloud Manager](../getting-started.md#create-an-instance)を使用したセルフサービス プロビジョニング
 
 ### 移行のジャーニー
@@ -115,8 +90,8 @@ ht-degree: 0%
 | ワークフロー | ツール | 説明 |
 | --- | --- | --- |
 | [評価](#migration-assessment-tool) | **移行評価ツール** | カスタムモジュール、サードパーティの拡張機能、統合、ストアフロントの観察、データベーススキーマ、カスタムテーブル、移行の推奨事項、複雑さのスコアリング、近代化の労力の見積もりをインベントリする、AIを活用した既存の実装の評価。 |
-| [&#x200B; アプリケーションとストアフロントの近代化](#code-and-storefront-migration-commerce-developer-mcp) | **Commerce Developer MCP** | COMMERCEアプリケーションのAIを活用した近代化、カスタマイズの[!DNL App Builder]への移行の高速化、Edge Delivery Services（EDS）へのストアフロント変換のサポート、実装のレビューと検証による広範なアプリケーション近代化ジャーニーのガイドをエンジニアリングチームが提供します。 |
-| [&#x200B; データ移行](#data-migration-commerce-data-migration-service) | **Commerce Data Migration Service** | カタログ、顧客、注文データの抽出、読み込み、完全性の検証を[!DNL Adobe Commerce as a Cloud Service]に行います。 |
+| [ アプリケーションとストアフロントの近代化](#code-and-storefront-migration-commerce-developer-mcp) | **Commerce Developer MCP** | COMMERCEアプリケーションのAIを活用した近代化、カスタマイズの[!DNL App Builder]への移行の高速化、Edge Delivery Services（EDS）へのストアフロント変換のサポート、実装のレビューと検証による広範なアプリケーション近代化ジャーニーのガイドをエンジニアリングチームが提供します。 |
+| [ データ移行](#data-migration-commerce-data-migration-service) | **Commerce Data Migration Service** | カタログ、顧客、注文データの抽出、読み込み、完全性の検証を[!DNL Adobe Commerce as a Cloud Service]に行います。 |
 
 これらのトラックはスタンドアロンではありません。 適切な順序でまとめて使用することで、手戻りを最小限に抑えることができます。
 
@@ -173,7 +148,7 @@ Migration Assessment ToolとCommerce Developer MCPは、AIを利用して、検�
 
 評価は、実行ツールというよりも計画ツールです。 近代化する必要があるものを特定し、実装の複雑さを推定し、推奨事項を提供します。 導入に関する意思決定とアーキテクチャの検証は、引き続きAdobe、パートナー、カスタマーエンジニアリング部門の間で共同で行われます。
 
-サードパーティの拡張機能によってカスタムテーブルに保存されたデータは、移行の検討として表示されます。 標準データ移行では、このデータは自動的に移行されません。 これらのシナリオをサポートするには、カスタム [!DNL App Builder] アプリケーションが必要になる場合があります。 詳しくは、[&#x200B; データ移行ガイド &#x200B;](#data-migration-commerce-data-migration-service)を参照してください。
+サードパーティの拡張機能によってカスタムテーブルに保存されたデータは、移行の検討として表示されます。 標準データ移行では、このデータは自動的に移行されません。 これらのシナリオをサポートするには、カスタム [!DNL App Builder] アプリケーションが必要になる場合があります。 詳しくは、[ データ移行ガイド ](#data-migration-commerce-data-migration-service)を参照してください。
 
 この評価では、ストアフロントのカスタマイズとデータ移行ワークフローに対して次の分析を行います。
 
@@ -186,7 +161,9 @@ Migration Assessment ToolとCommerce Developer MCPは、AIを利用して、検�
 
 すべての[!DNL Adobe Commerce as a Cloud Service]移行は評価から始まります。 これは、スコープを設定し、不確実性を減らし、実装を開始する前に共有された移行ブループリントを作成するための費用対効果の高い方法です。
 
-評価ツールとダウンストリーム開発者ワークフローについて詳しくは、[Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/)を参照してください。
+評価ツールとダウンストリーム開発者ワークフローについて詳しくは、[Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)を参照してください。
+
+Migration Assessment Toolと統合されたCommerce Developer Agentについて詳しくは、[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)を参照してください
 
 ## コードとストアフロントの移行（Commerce Developer MCP）
 
@@ -216,7 +193,7 @@ Commerce Developer MCPは、[移行評価](#migration-assessment-tool)の結果�
 
 ### ストアフロントの近代化
 
-フロントエンドでは、Commerce Developer MCPが、Adobe Commerce ボイラープレート、ドロップインコンポーネント、EDS ブロックを使用して、Commerce用Edge Delivery Services（EDS）の[&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)を最新化します。
+フロントエンドでは、Commerce Developer MCPが、Adobe Commerce ボイラープレート、ドロップインコンポーネント、EDS ブロックを使用して、Commerce用Edge Delivery Services（EDS）の[ ストアフロント ](https://experienceleague.adobe.com/developer/commerce/storefront/)を最新化します。
 
 Commerce Developer MCPは、Commerceのボイラープレートに基づいて、既存のストアフロントプロジェクトを読み込みます。 次のような方法でストアフロントを近代化できます。
 
@@ -251,7 +228,7 @@ Commerce開発者MCPは、移行評価を直接利用するため、あらゆる
 
 バックエンドでは、Commerce Developer MCPが、PHP モジュール、プラグイン、イベントオブザーバーを[!DNL App Builder]個のアプリケーションに変換し、それらをAdobe Commerceに接続するための統合パターンを確立することで、カスタマイズと統合レイヤーを最新化します。 また、チェックアウト、決済、管理UIをまたいで、開発を迅速化できます。
 
-フロントエンドでは、Commerce Developer MCP [がEdge Delivery Services上のCommerce ストアフロント &#x200B;](#storefront-modernization)を最新化します。
+フロントエンドでは、Commerce Developer MCP [がEdge Delivery Services上のCommerce ストアフロント ](#storefront-modernization)を最新化します。
 
 MCPはデータ移行を処理しません。 ビジネス データは、[Commerce Data Migration Service](#data-migration-commerce-data-migration-service)を通じて移行されます。 MCPは、ビジネスロジックまたはカスタムテーブルがアプリケーションの近代化を必要とする場合に必要な[!DNL App Builder] アプリケーションをサポートします。
 
@@ -259,7 +236,9 @@ MCPはデータ移行を処理しません。 ビジネス データは、[Comme
 
 コードとストアフロントの近代化は、移行評価ツールのロードマップで移行範囲と優先順位が確立された後に開始されます。
 
-MCPのインストールと使用方法について詳しくは、[Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/)のドキュメントを参照してください。
+MCPのインストールと使用方法について詳しくは、[Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)のドキュメントを参照してください。
+
+Migration Assessment Toolと統合されたCommerce Developer Agentについて詳しくは、[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)を参照してください
 
 ## データ移行（Commerce Data Migration Service）
 
@@ -311,8 +290,8 @@ Commerce Data Migration Serviceは世界中の本番環境で稼働しており�
 
 ### 次のステップ
 
-移行の準備ができたら、[&#x200B; データ移行スコープに関するアンケート &#x200B;](../assets/data-migration-scoping-questionnaire.xlsx)を完了します。このアンケートには、ソーストポロジ、エンティティの範囲、ボリューム、コンプライアンスの制約、カットオーバーの仕組み、移行の計画に必要な[&#x200B; カスタムテーブル &#x200B;](#custom-and-third-party-data)が必要です。 このアンケートを完了すると、Adobeで環境を評価し、移行ウィンドウを計画できるようになります。
+移行の準備ができたら、[ データ移行スコープに関するアンケート ](../assets/data-migration-scoping-questionnaire.xlsx)を完了します。このアンケートには、ソーストポロジ、エンティティの範囲、ボリューム、コンプライアンスの制約、カットオーバーの仕組み、移行の計画に必要な[ カスタムテーブル ](#custom-and-third-party-data)が必要です。 このアンケートを完了すると、Adobeで環境を評価し、移行ウィンドウを計画できるようになります。
 
-ワークフロー、サポートされているデータ、検証について詳しくは、[一括データ移行ツール ガイド &#x200B;](bulk-data/migration-tool.md)のドキュメントを参照してください。
+ワークフロー、サポートされているデータ、検証について詳しくは、[一括データ移行ツール ガイド ](bulk-data/migration-tool.md)のドキュメントを参照してください。
 
-ソース環境を準備するシステムインテグレーターは、標準の[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)と[Adobe Developer Console](https://developer.adobe.com)をIMS資格情報に使用することもできます。
+ソース環境を準備するシステムインテグレーターは、標準の[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)と[Adobe Developer Console](https://developer.adobe.com)をIMS資格情報に使用することもできます。
