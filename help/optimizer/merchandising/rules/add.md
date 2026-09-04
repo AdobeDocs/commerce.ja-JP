@@ -1,7 +1,7 @@
 ---
 title: ルールの作成と管理
 description: 検索、デフォルトの商品リスト、カテゴリーページのマーチャンダイジングルールを作成および管理する方法について説明します。
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
@@ -265,7 +265,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->この機能は[&#x200B; ベータ版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta)です。
+>この機能は[&#x200B; ベータ版](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/beta#attribute-ranking-public-beta)です。
 
 **属性ランキング**&#x200B;は、個々のSKUを選択することなく、1つ以上の属性条件に一致するすべての製品に&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**、または&#x200B;**[!UICONTROL Hide]** アクションを自動的に適用します。 属性ランキングは、[&#x200B; インテリジェントランキング &#x200B;](#intelligent-ranking)および[手動ランキング &#x200B;](#manual-ranking)と共にルールエディターに表示され、**すべての製品ルール**、**検索ルール**、および&#x200B;**カテゴリルール**&#x200B;で使用できます。 たとえば、大規模なカタログ全体でマーチャンダイジングを拡大したり、特定のブランドからすべての商品を宣伝したり、すべての商品を廃盤の色に埋め込んだりするのに使用します。
 
