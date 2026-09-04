@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
 workflow-type: tm+mt
-source-wordcount: 1506
+source-wordcount: 1561
 ht-degree: 0%
 
 ---
@@ -31,6 +31,20 @@ ht-degree: 0%
 * ストアフロントカタログデータ取得[&#128279;](https://developer.adobe.com/commerce/services/reference/graphql/)用の[&#x200B; データ取り込みREST API](https://developer.adobe.com/commerce/services/reference/rest/)およびGraphQL APIを更新しました。
 
   {{aco-api-updates-and-dropins}}
+
+## 2026年9月
+
+>[!BEGINSHADEBOX]
+
+_2026年9月3日_
+
+### 属性ランキング （ベータ版）
+
+[!DNL Adobe Commerce Optimizer] マーチャンダイジングルールで、**すべての製品リスト**、**カテゴリルール**、**検索ルール**&#x200B;の&#x200B;[**属性ランキング**](./merchandising/rules/add.md#attribute-ranking)&#x200B;がサポートされるようになりました。 ブランドやカテゴリなど、1つ以上の属性条件に一致する製品ごとに、個々のSKUを選択することなく、**[!UICONTROL Boost]**、**[!UICONTROL Bury]**、**[!UICONTROL Hide]** アクションを自動的に適用します。 属性ランキングはベータ版です。 [学習を増やす](./merchandising/rules/add.md#attribute-ranking)。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## 2026年8月
 
