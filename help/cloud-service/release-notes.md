@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 49a235a3a545b422b0371b53163d7de770df6a38
+source-git-commit: 8fdfd3ebfa088fd219c65c86ce99cae838ff5d54
 workflow-type: tm+mt
-source-wordcount: 6271
+source-wordcount: 6358
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ ht-degree: 0%
 
 ## 2026年9月 – リリース #1 {#latest}
 
-[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 
-以下の項目は、2026年9月8日にプロダクションに公開されます。
+2026年9月8日にプロダクションに公開されたアイテムは次のとおりです。
 
 >[!BEGINSHADEBOX]
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ### REST APIを使用してサンドボックスと実稼動設定を同期する
 
-新しい`GET`および`PUT /V1/system/config`のREST API エンドポイントを使用すると、次のようなCommerce システム設定値を読み取り、更新できます。
+新しい[`GET`および`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config)のREST API エンドポイントを使用すると、次のようなCommerce システム設定値を読み取り、更新できます。
 
 * 店舗情報
 * 送料と税金の設定
@@ -77,15 +77,17 @@ ht-degree: 0%
 
 ### GraphQLを通じて、在庫状況を照会します
 
-新しい`sourceAvailability` GraphQL クエリでは、1つ以上のSKUについてソースごとの在庫状況が返されるため、商品ページやカテゴリーページなどのストアフロントでは、各在庫ソースの正確な在庫情報を表示できます。<!-- ACCS-933 -->
+新しい[`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL クエリでは、1つ以上のSKUについてソースごとの在庫状況が返されるため、商品ページやカテゴリーページなどのストアフロントでは、各在庫ソースの正確な在庫情報を表示できます。
+
+[Sourceごとの&#x200B;**可用性**](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/configuration/global-options)を有効にします。<!-- ACCS-933 -->
 
 ### GraphQLによる永続的なウィッシュリストおよびアカウント共有設定の読み取り
 
-`storeConfig` GraphQL クエリで`persistent_enabled`、`persistent_shopping_cart`、`persistent_options_wishlist`、`share_customer_accounts_scope`の設定値が返されるようになったため、ストアフロントはサポートに連絡しなくてもマーチャントの永続的なショッピングカートとウィッシュリストの設定にアクセスできます。<!-- USF-4051 -->
+[`storeConfig`](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/store-config/#query-a-stores-persistent-cart-and-account-sharing-configuration) GraphQL クエリで`persistent_enabled`、`persistent_shopping_cart`、`persistent_options_wishlist`、`share_customer_accounts_scope`の設定値が返されるようになったため、ストアフロントはサポートに連絡しなくてもマーチャントの永続的なショッピングカートとウィッシュリストの設定にアクセスできます。<!-- USF-4051 -->
 
 ### 商品、SKU、注文IDで顧客の注文を検索する
 
-`CustomerOrdersFilterInput` GraphQL入力で、注文番号、商品SKU、または商品名に一致するオプションの`search` フィールドが、指定した他のフィルターと組み合わせてサポートされるようになりました。<!-- USF-4290 -->
+[`CustomerOrdersFilterInput`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer) GraphQL入力で、注文番号、商品SKU、または商品名に一致するオプションの`search` フィールドが、指定した他のフィルターと組み合わせてサポートされるようになりました。<!-- USF-4290 -->
 
 ### APIを介してカスタムメールテンプレートを更新および削除する
 
@@ -136,15 +138,14 @@ GraphQLの変異やREST エンドポイントなどの詳細については、[S
 
 ### 無料のギフトカート価格ルール
 
-**無料ギフト** カート価格ルールが、ストアフロントの[!DNL Commerce Admin]で利用できるようになりました。<!-- AC-17678 -->
+[**無料ギフト** カート価格ルール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift)が、ストアフロントの[!DNL Commerce Admin]で利用できるようになりました。
+<!-- AC-17678 -->
 
-このルールを使用すると、ルール条件が満たされたときに、無料のギフト商品をカートに追加できます。
-
-<!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+このルールを使用すると、ルール条件が満たされたときに、無料のギフト商品をカートに追加できます。 ルールで選択が必要な場合、買い物客は、新しい[`selectFreeGiftForCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/select-free-gift) GraphQLの突然変異を使用してギフト SKUを選択できます。この機能では、設定可能なギフト商品とバンドル ギフト商品をサポートしています。
 
 ### 日時ごとにカート価格ルールをスケジュール
 
-[&#x200B; カート価格ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)を[!DNL Commerce Admin]で開始または終了する時刻を設定できるようになりました。 「カート価格ルール」グリッドにはスケジュールされた時間が表示され、REST APIはルールを午前0時に設定するのではなく、`from_date`と`to_date`に送信された時間を尊重します。<!-- ACCS-970 -->
+[&#x200B; カート価格ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#rule-information)を[!DNL Commerce Admin]で開始または終了する時刻を設定できるようになりました。 「カート価格ルール」グリッドにはスケジュールされた時間が表示され、REST APIはルールを午前0時に設定するのではなく、`from_date`と`to_date`に送信された時間を尊重します。<!-- ACCS-970 -->
 
 <!-- commenting this out until the B2B compatibility package version is live. -->
 
