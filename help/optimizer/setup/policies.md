@@ -2,20 +2,15 @@
 title: ポリシー
 description: ' [!DNL Adobe Commerce Optimizer]でポリシーを作成および管理する方法について説明します。'
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
 TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4a9bb6c6473680ee7059d1844be5fee718a9ed68
 workflow-type: tm+mt
-source-wordcount: 917
+source-wordcount: 1054
 ht-degree: 0%
 
 ---
@@ -53,7 +48,7 @@ ht-degree: 0%
 
 **ポリシー**&#x200B;のうち&#x200B;**バリューソース**&#x200B;を持つトリガーは、排他的なポリシーと呼ばれます。 つまり、カタログビューは、API呼び出しのヘッダーでトリガーが指定された場合にのみ、そのポリシーを実行します。 ストアフロントでは、買い物客の選択内容に応じて情報が表示されます。 例えば、次の画像では、2つのドロップダウンメニューがあります：**ブランド**&#x200B;と&#x200B;**モデル**。
 
-![&#x200B; ストアフロントのトリガー値ソース &#x200B;](../assets/policy-trigger.png)
+![ ストアフロントのトリガー値ソース ](../assets/policy-trigger.png)
 
 **ブランド**&#x200B;と&#x200B;**モデル**&#x200B;は定義されたトリガーです：
 
@@ -61,6 +56,28 @@ ht-degree: 0%
 - `AC-Policy-Model`
 
 買い物客が&#x200B;**ブランド** ドロップダウンをクリックすると、API呼び出しのヘッダーに`AC-Policy-Brand`が含まれ、`AC-Policy-Brand` ポリシーに固有の製品のみを表示するように設定されます。
+
+### 複数値のHTTP ヘッダートリガー {#multi-value-http-header-triggers}
+
+`HTTP_HEADER` トランスポートタイプを使用するトリガーポリシーは、1つのヘッダーで複数の値を受け取ることができます。 値はコンマで区切る必要があり、フィルター演算子は`IN`である必要があります。 各値は許容可能な一致として扱われます。 値は`OR`のセマンティクスで評価されます。
+
+例えば、次のヘッダーの`IN`を使用したポリシーフィルターがあります。
+
+```
+AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
+```
+
+`vehicle`属性が`UNIVERSAL`または`veh-bolt-mammoth-limited-2025`の製品と一致します。
+
+一方、`EQUALS`、`GREATER_THAN_EQUAL`または`LESS_THAN_EQUAL`のフィルター演算子は、検証エラーで拒否されます。
+
+#### 構文メモ
+
+- ヘッダー名は、設定したトリガー名（例：`AC-Policy-Vehicle`）と一致します。
+- カンマは、ヘッダー内で個々の値を区切ります。 同じ`AC-Policy-_Name_` ヘッダーが複数回表示されると、その値は1つのコンマ区切りのヘッダー値に結合されます
+- フィルター演算子は`IN`です。
+- **値ソース**&#x200B;が`TRIGGER`に設定されたポリシーフィルター。
+- **トランスポートの種類**&#x200B;が`HTTP_HEADER`のトリガー。
 
 ## ポリシーの作成
 
