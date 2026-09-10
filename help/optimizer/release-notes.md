@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+source-git-commit: 631126cc8d9b69c41aed19e30bf1503dd950d7e9
 workflow-type: tm+mt
-source-wordcount: 1561
+source-wordcount: 1626
 ht-degree: 0%
 
 ---
@@ -49,6 +49,11 @@ _2026年9月3日_
 ## 2026年8月
 
 >[!BEGINSHADEBOX]
+
+_2026年9月9日_
+
+![新規](../assets/new.svg) **多値HTTP ヘッダートリガーポリシー** - `HTTP_HEADER` トランスポートタイプを使用するトリガーポリシーは、1つのヘッダーで複数のコンマ区切り値を受け取ることができるようになりました（例：`AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`）。 `IN`を使用するポリシーフィルターは、`OR`のセマンティクスで値を評価します。 `EQUALS`、`GREATER_THAN_EQUAL`または`LESS_THAN_EQUAL`を使用するフィルターは、ヘッダーに複数の値が含まれている場合、検証エラーでリクエストを拒否します。 この動作は、`HTTP_HEADER` トランスポートを使用するトリガーポリシーにのみ適用されます。 [学習を増やす](./setup/policies.md#multi-value-http-header-triggers)。
+<!--COMOPT-2439-->
 
 _2026年8月7日_
 

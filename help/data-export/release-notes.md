@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: c08c9248b26b6e3a0271032e869753bece96a8bd
+source-git-commit: 1c8d6d2d0460df4aa18de4d7d9750b9dda4f6bc5
 workflow-type: tm+mt
-source-wordcount: 3412
+source-wordcount: 3429
 ht-degree: 0%
 
 ---
@@ -44,6 +44,12 @@ ht-degree: 0%
 >[!DNL SaaS data export]拡張機能は、[!DNL Live Search]、[!DNL Product Recommendations]、[!DNL Catalog Service]と共に自動的にインストールされるモジュールのコレクションです。 システムにインストールされているバージョンは、[!DNL Composer]を使用して確認できます。 場合によっては、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップするために、システムのデータエクスポート拡張機能をアップグレードすることをお勧めします。
 
 ## 2026 リリース {#release-notes-2026}
+
+### 103.4.34 リリース
+
+_2026年9月2日_
+
+![Adobe CommerceとのAdobe Commerce Optimizer統合をサポートするための](../assets/fix.svg)の更新を修正しました。<!--MDEE-1417-->
 
 ### 103.4.33 リリース
 

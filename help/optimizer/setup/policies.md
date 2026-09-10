@@ -13,9 +13,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 4a9bb6c6473680ee7059d1844be5fee718a9ed68
 workflow-type: tm+mt
-source-wordcount: 917
+source-wordcount: 1054
 ht-degree: 0%
 
 ---
@@ -61,6 +61,28 @@ ht-degree: 0%
 - `AC-Policy-Model`
 
 買い物客が&#x200B;**ブランド** ドロップダウンをクリックすると、API呼び出しのヘッダーに`AC-Policy-Brand`が含まれ、`AC-Policy-Brand` ポリシーに固有の製品のみを表示するように設定されます。
+
+### 複数値のHTTP ヘッダートリガー {#multi-value-http-header-triggers}
+
+`HTTP_HEADER` トランスポートタイプを使用するトリガーポリシーは、1つのヘッダーで複数の値を受け取ることができます。 値はコンマで区切る必要があり、フィルター演算子は`IN`である必要があります。 各値は許容可能な一致として扱われます。 値は`OR`のセマンティクスで評価されます。
+
+例えば、次のヘッダーの`IN`を使用したポリシーフィルターがあります。
+
+```
+AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
+```
+
+`vehicle`属性が`UNIVERSAL`または`veh-bolt-mammoth-limited-2025`の製品と一致します。
+
+一方、`EQUALS`、`GREATER_THAN_EQUAL`または`LESS_THAN_EQUAL`のフィルター演算子は、検証エラーで拒否されます。
+
+#### 構文メモ
+
+- ヘッダー名は、設定したトリガー名（例：`AC-Policy-Vehicle`）と一致します。
+- カンマは、ヘッダー内で個々の値を区切ります。 同じ`AC-Policy-_Name_` ヘッダーが複数回表示されると、その値は1つのコンマ区切りのヘッダー値に結合されます
+- フィルター演算子は`IN`です。
+- **値ソース**&#x200B;が`TRIGGER`に設定されたポリシーフィルター。
+- **トランスポートの種類**&#x200B;が`HTTP_HEADER`のトリガー。
 
 ## ポリシーの作成
 
