@@ -3,29 +3,18 @@ title: ストアフロントとカタログ管理者のエンドツーエンド�
 description: カタログ ビューとポリシーを使用してカタログを管理する [!DNL Adobe Commerce Optimizer] 方法と、カタログ設定に基づいてストアフロントを設定する方法について説明します。
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 TQID: https://experienceleague.adobe.com/sqz0syCSh3ls8F-WIbuzPyqeRguyXdsPw-7OerOnDes
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: e91a50b1-0b31-436e-9033-00e4776e94cb
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 2205
-ht-degree: 0%
+source-wordcount: 2232
+ht-degree: 1%
 
 ---
 
@@ -44,23 +33,23 @@ ht-degree: 0%
 このチュートリアルを開始する前に、次の前提条件を満たしていることを確認してください。
 
 - **[!DNL Adobe Commerce Optimizer]インスタンス**
-   - Cloud Managerのテストインスタンスへのアクセス
-   - セットアップ手順については、[基本を学ぶ](../get-started.md)を参照してください
+  - Cloud Managerのテストインスタンスへのアクセス
+  - セットアップ手順については、[基本を学ぶ](../get-started.md)を参照してください
 
 - **ユーザー権限**
-   - Adobe Admin Consoleへの管理者アクセス
-   - アカウント設定については、[&#x200B; ユーザー管理](../user-management.md)を参照してください
-   - アクセス権をお持ちでない場合は、Adobeの担当者にお問い合わせください。
+  - Adobe Admin Consoleへの管理者アクセス
+  - アカウント設定については、[ ユーザー管理](../user-management.md)を参照してください
+  - アクセス権をお持ちでない場合は、Adobeの担当者にお問い合わせください。
 
 - **サンプルデータ**
-   - インスタンスに読み込まれたCarvelo Automobile カタログデータ
-   - [&#x200B; サンプルカタログデータ取り込みリポジトリ &#x200B;](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)の手順に従います
-   - 含まれている`reset.js` スクリプトを使用して、完了後にサンプルデータを削除できます
+  - インスタンスに読み込まれたCarvelo Automobile カタログデータ
+  - [ サンプルカタログデータ取り込みリポジトリ ](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)の手順に従います
+  - 含まれている`reset.js` スクリプトを使用して、完了後にサンプルデータを削除できます
 
 - **ストアフロント環境**
-   - Node.jsによるローカル開発環境
-   - 複製および設定されたストアフロントボイラープレートプロジェクト
-   - 詳しい手順については、[Storefront setup](../storefront.md)を参照してください
+  - Node.jsによるローカル開発環境
+  - 複製および設定されたストアフロントボイラープレートプロジェクト
+  - 詳しい手順については、[Storefront setup](../storefront.md)を参照してください
 
 ## では始めましょう
 
@@ -72,7 +61,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe Commerce Storefront ドキュメントの「[&#x200B; ボイラープレートの検索](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=ja)」トピックを確認して、ストアフロント設定ファイルについて説明します。
+> Adobe Commerce Storefront ドキュメントの「[ ボイラープレートの検索](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/boilerplate-project/)」トピックを確認して、ストアフロント設定ファイルについて説明します。
 
 ### 重要なポイント
 
@@ -127,7 +116,7 @@ Carveloは、3つのブランド（Aurora、Bolt、Cruz）の部品を、異な�
 
 ## &#x200B;1. [!DNL Adobe Commerce Optimizer] インスタンスへのアクセス
 
-サンプルデータで事前設定されたCommerce Optimizer アプリケーションのURLに移動します。 Commerce Optimizer プロジェクトのインスタンスの詳細からCommerce Cloud ManagerのURLを見つけるか、システム管理者から取得できます。 （[&#x200B; インスタンスへのアクセス &#x200B;](../get-started.md#access-the-adobe-commerce-optimizer-application)を参照）。
+サンプルデータで事前設定されたCommerce Optimizer アプリケーションのURLに移動します。 Commerce Optimizer プロジェクトのインスタンスの詳細からCommerce Cloud ManagerのURLを見つけるか、システム管理者から取得できます。 （[ インスタンスへのアクセス ](../get-started.md#access-the-adobe-commerce-optimizer-application)を参照）。
 
 [!DNL Adobe Commerce Optimizer]を起動すると、次の表示が表示されます。
 
@@ -139,7 +128,7 @@ Carveloは、3つのブランド（Aurora、Bolt、Cruz）の部品を、異な�
 
 左側のナビゲーションで、_ストア設定_ セクションを展開し、**[!UICONTROL Catalog views]**&#x200B;をクリックします。 ArkbridgeおよびKingsbluff ディーラーには、既にカタログ ビューが作成されていることに注意してください。
 
-![&#x200B; サンプルデータ用に設定された既存のカタログビュー](../assets/existing-channels-list.png)
+![ サンプルデータ用に設定された既存のカタログビュー](../assets/existing-channels-list.png)
 
 >[!NOTE]
 >
@@ -167,7 +156,7 @@ Kingsbluffには次のポリシーがあります。
 
 Carveloのコマースマネージャーは、*イーストコースト社*&#x200B;に属する&#x200B;*Celport*&#x200B;というディーラーの新しいストアフロントを設定する必要があります。 セルポートは、BoltとCruz ブランドのブレーキとサスペンションを販売する予定です。
 
-![&#x200B; セルポート ディーラー](../assets/celport-dealer.png)
+![ セルポート ディーラー](../assets/celport-dealer.png)
 
 [!DNL Adobe Commerce Optimizer]を使用すると、コマースマネージャーは次の操作を行います。
 
@@ -240,7 +229,7 @@ Carveloのコマースマネージャーは、*イーストコースト社*&#x20
 
    既存のカタログビューに注意してください：*Arkbridge*、*Kingsbluff*、*すべてのビュー*。
 
-   ![既存のカタログ ビューページ &#x200B;](../assets/existing-channels-list.png)
+   ![既存のカタログ ビューページ ](../assets/existing-channels-list.png)
 
 1. **[!UICONTROL Add catalog view]**&#x200B;をクリックします。
 
@@ -249,12 +238,12 @@ Carveloのコマースマネージャーは、*イーストコースト社*&#x20
    - **名前** = *Celport*
    - **カタログソース** = *en-US*
    - **ポリシー** （使用ドロップダウン） = *East Coast Inc Brands*; *部品カテゴリをチェック*; *ブランド*; *モデル*
-                         
+                              
 1. **[!UICONTROL Add]**&#x200B;をクリックしてカタログ ビューを作成します。
 
    カタログビューページが更新され、新しいカタログビューが表示されます。
 
-   ![&#x200B; カタログビューリストを更新](../assets/updated-catalog-view-list.png)
+   ![ カタログビューリストを更新](../assets/updated-catalog-view-list.png)
 
 1. Celport カタログビューIDを取得します。
 
@@ -387,7 +376,7 @@ Celport カタログビューを使用するようにストアフロント設定
 
    ストアフロントが更新され、ブレーキ部品が表示された製品リストページが表示されます。
 
-   ![&#x200B; ブレーキ製品リスト ページ &#x200B;](../assets/brakes-listing-page.png)
+   ![ ブレーキ製品リスト ページ ](../assets/brakes-listing-page.png)
 
    ブレーキ部品画像をクリックして、価格情報を含む製品の詳細を表示し、製品価格情報を記録します。
 
@@ -447,7 +436,7 @@ Celport カタログビューを使用するようにストアフロント設定
 
 - **解決策：** カタログ表示ポリシーで、検索された製品カテゴリが許可されていることを確認します
 
-その他のヘルプについては、[[!DNL Adobe Commerce Optimizer]  ドキュメント &#x200B;](../overview.md)を参照するか、Adobe サポートにお問い合わせください。
+その他のヘルプについては、[[!DNL Adobe Commerce Optimizer]  ドキュメント ](../overview.md)を参照するか、Adobe サポートにお問い合わせください。
 
 ## 概要
 
@@ -462,8 +451,8 @@ Celport カタログビューを使用するようにストアフロント設定
 
 [!DNL Adobe Commerce Optimizer]について学び続けるには：
 
-- ショッピング体験をパーソナライズするために、[&#x200B; マーチャンダイジング機能](../merchandising/overview.md)を確認してください
+- ショッピング体験をパーソナライズするために、[ マーチャンダイジング機能](../merchandising/overview.md)を確認してください
 - [詳細ポリシー設定](../setup/policies.md)について説明します
 - 他のディーラー向けに[追加のカタログビュー](../setup/catalog-view.md)を設定
-- プログラマティック カタログ管理については、[API ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)を参照してください
-- Edge Delivery Services ストアフロントのドロップインコンポーネントを設定して、商品の検索やレコメンデーションなどのストアフロント機能のためにカスタムストアフロントエクスペリエンスを作成する方法を説明します。 [Storefront ドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=ja)を参照してください
+- プログラマティック カタログ管理については、[API ドキュメント ](https://developer.adobe.com/commerce/services/optimizer/)を参照してください
+- Edge Delivery Services ストアフロントのドロップインコンポーネントを設定して、商品の検索やレコメンデーションなどのストアフロント機能のためにカスタムストアフロントエクスペリエンスを作成する方法を説明します。 [Storefront ドキュメント ](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/)を参照してください
