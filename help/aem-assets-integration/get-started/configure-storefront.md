@@ -57,7 +57,7 @@ Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用�
 
 >[!NOTE]
 >
->設定の手順について詳しくは、Da.live ドキュメントの[AEM Assetsの設定](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}を参照し、[AEM Assets ドキュメントのEdge Delivery Servicesのコンテンツのオーサリング中にAEM Assetsを統合する](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}を参照してください。
+>設定の手順について詳しくは、Da.live ドキュメントの[AEM Assetsの設定](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}を参照し、[AEM Assets ドキュメントのEdge Delivery Servicesのコンテンツのオーサリング中にAEM Assetsを統合する](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}を参照してください。
 
 ### 手順1:Da.liveでサイト設定を開く
 
@@ -106,6 +106,6 @@ Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用�
 
 * *AEM Assets Storefront* ドキュメントの[Adobe Commerce統合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} - ストアフロントの設定とイメージ処理の動作。
 
-* [AEM Assetsを統合して、Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}のコンテンツをオーサリングします（*AEM Assets* ドキュメント）。
+* [AEM Assetsを統合して、Edge Delivery Services](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}のコンテンツをオーサリングします（*AEM Assets* ドキュメント）。
 
 * Da.live ドキュメントの[AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}と[&#x200B; メディアの操作](https://docs.da.live/authors/guides/adding-media){target=_blank}を設定します。

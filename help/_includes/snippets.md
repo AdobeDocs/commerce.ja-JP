@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Data Feed Sync Status ページがCommerce Admin for Commerce on Cloudまたはオンプレミスのデプロイメントで使用できない場合は、[拡張機能のインストール手順](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"}に従って有効にします。
+>Data Feed Sync Status ページがCommerce Admin for Commerce on Cloudまたはオンプレミスのデプロイメントで使用できない場合は、[拡張機能のインストール手順](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"}に従って有効にします。
 
 
 ## Adobe Commerce Optimizerとの連携 {#aco-integration-environment-alignment}
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md)を使用してカタログデータを[!DNL Adobe Commerce Optimizer]に書き出すデプロイメントの場合、[Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)ではなく、Commerce管理者の[&#x200B; データフィード同期ステータス ページ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)と[!DNL Adobe Commerce Optimizer Studio]の[&#x200B; データ同期ページ &#x200B;](../optimizer/setup/data-sync.md)を使用して、カタログデータの同期を確認します。
+>[[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md)を使用してカタログデータを[!DNL Adobe Commerce Optimizer]に書き出すデプロイメントの場合、[Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)ではなく、Commerce管理者の[&#x200B; データフィード同期ステータス ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)と[!DNL Adobe Commerce Optimizer Studio]の[&#x200B; データ同期ページ &#x200B;](../optimizer/setup/data-sync.md)を使用して、カタログデータの同期を確認します。
 
 ## API更新のためのAdobe Commerce Optimizer ドロップインノート {#aco-api-updates-and-dropins}
 
@@ -55,7 +55,7 @@ ht-degree: 0%
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 Adobe Commerce IDの管理と認証は、Adobe Identity Management System （IMS）によってAdobe Admin Consoleを通じて管理されます。
 
-Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Adobe アプリへの安全なアクセス用にシングルサインオン（SSO）を設定する手順について詳しくは、*Enterprise Admin Console* ドキュメントの[IDとシングルサインオンの設定](https://helpx.adobe.com/enterprise/using/set-up-identity.html)を参照してください。
+Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Adobe アプリへの安全なアクセス用にシングルサインオン（SSO）を設定する手順について詳しくは、*Enterprise Admin Console* ドキュメントの[IDとシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。
 
 ## ACCS サービスと拡張性のリリースノート {#accs-release}
 

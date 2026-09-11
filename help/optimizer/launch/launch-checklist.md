@@ -9,7 +9,7 @@ role: Admin, Developer
 level: Intermediate
 topic: Administration
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
@@ -55,11 +55,11 @@ ht-degree: 0%
 
 Adobe Commerce on Cloud環境が本番環境に対応していることを確認します。
 
-▢ クラウドインスタンスは[&#x200B; プロビジョニングされています](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/new-project)。
+▢ クラウドインスタンスは[&#x200B; プロビジョニングされています](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/start/new-project)。
 ▢ テスト データとダミーデータがインスタンスから削除されます。
 ▢実稼動データがインスタンスに読み込まれます。
 ▢ [GraphQL エンドポイント &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/)をご存知でしょう。
-▢ インスタンスは[配信準備完了](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist)の要件を満たしています。
+▢ インスタンスは[配信準備完了](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/launch/checklist)の要件を満たしています。
 
 ## Commerce Optimizer インスタンスの検証 {#verify-optimizer}
 
@@ -156,7 +156,7 @@ Cloud プロジェクトでこれらのチェックを完了します。
 
 ▢実稼動ワークスペースには、必要なすべての設定とサービスが含まれています。
 ▢実稼動アプリは、ビルド シナリオ間でテストに合格します。
-▢製品の制限と制限は、[Adobe Developer App Builder製品の説明](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}および[App Builder システムの設定と制限](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}に基づいて確認されました。
+▢製品の制限と制限は、[Adobe Developer App Builder製品の説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}および[App Builder システムの設定と制限](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}に基づいて確認されました。
 ▢実稼動アプリはApp Builder実稼動エンドポイントを使用します。
 ▢ カスタム *管理者* パネル拡張機能が実稼動ワークスペースにデプロイされます。
 
@@ -225,7 +225,7 @@ Cloud プロジェクトでこれらのチェックを完了します。
 権限とシークレットを確認する。
 
 ▢適切な権限がDA コンテンツおよびEDS サイト用に設定されています。 オーサリング用の[DA.live権限](https://da.live/docs/administration/permissions)と[認証の設定](https://www.aem.live/docs/authentication-setup-authoring)を参照してください。
-▢製品ビジュアル統合がプロビジョニングされます。 [AEM Cloud Service アクセスの概要](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#)を参照してください。
+▢製品ビジュアル統合がプロビジョニングされます。 [AEM Cloud Service アクセスの概要](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/overview#)を参照してください。
 電子メールテンプレートの▢ パスワードリセットリンクが、Edge Delivery Services設定と一致しています。 ストアフロントに関するFAQを参照してください。[Edge Delivery ServicesまたはHelixへの移行後にメールテンプレートのリンクが壊れた場合はどうすればよいですか？](https://experienceleague.adobe.com/en/tools/commerce-storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}
 ▢統合と支払いプロバイダーの実稼動キーが配置されています。
 ▢ ドメインが許可リストに加えるされ、バックエンドのWebhookが機能します。

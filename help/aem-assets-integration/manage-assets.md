@@ -177,7 +177,7 @@ Adobe Commerceを活用すると、画像を商品カテゴリーに関連付け
 
 1. **[!UICONTROL Save]**&#x200B;をクリックして続行します。
 
-   カテゴリの作成について詳しくは、**Commerce カタログ管理ガイド**&#x200B;の「[&#x200B; カテゴリの内容](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)を完了する」を参照してください。
+   カテゴリの作成について詳しくは、**Commerce カタログ管理ガイド**&#x200B;の「[&#x200B; カテゴリの内容](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)を完了する」を参照してください。
 
 ## アセットの更新
 
@@ -187,6 +187,6 @@ AEM Assetsでアセットを更新および承認すると、自動一致を使�
 
 AEM Assetsの手順については、次のドキュメントを参照してください。
 
-* [デジタルアセットの再処理](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [デジタルアセットの再処理](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [アセットの承認](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [アセットの承認](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

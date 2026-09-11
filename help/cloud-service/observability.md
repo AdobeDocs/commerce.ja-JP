@@ -4,7 +4,7 @@ description: 指標、ログ、トレースなど、 [!DNL Adobe Commerce as a C
 feature: Cloud, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 autotag-review: '2026-06-09T15:41:54.613Z'
 TQID: 'https://experienceleague.adobe.com/jTPNVSy6cP8v-pV-3pyqgJX-PAzFFhOUf9SjQIMeBns'
 product_v2:
@@ -95,5 +95,5 @@ CDN オリジンを介した[&#x200B; プロキシのリアルユーザーモニ
 
 次のビデオでは、[!DNL Adobe Commerce as a Cloud Service]のオブザーバビリティ機能の概要を説明しています。
 
-* [App Builderの観測性ビデオ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
-* [API Mesh ビデオ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}
+* [App Builderの観測性ビデオ](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
+* [API Mesh ビデオ](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}

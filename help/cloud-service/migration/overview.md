@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Commerce as a Cloud Service]に移行'
 description: ' [!DNL Adobe Commerce as a Cloud Service]への移行方法について説明します。'
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
@@ -76,8 +76,8 @@ Adobe Commerceは、さまざまなデプロイメントモデルで利用でき
 | Adobe Commerce製品 | ホスティングモデル | サービスとアップデートの責任 |
 |---|---|---|
 | **[!DNL Adobe Commerce as a Cloud Service]** | SaaS — Adobeホスティング | Adobeは、Commerceの主要なアプリケーション、インフラストラクチャ、アップデートを管理します。 マーチャントは、サポートされているAPIと拡張性サービス（API、[!DNL Adobe Developer App Builder]、UI SDK）を通じてプラットフォームを拡張します。 マーチャントはコアアプリケーションコードを変更できません。 |
-| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — Adobe管理 | [共有責任](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobeがホストされているプラットフォームを管理します。 マーチャントは、アプリケーションレベルのパッチ、カスタムコード、設定を管理し、データベース、キャッシュ、検索、PHP ランタイム、web サーバー、メッセージキューなど、サポートされているバージョンの拡張機能やプラットフォームサービスを更新します。 |
-| **[!DNL Adobe Commerce on-premises]** | 加盟店またはホスティングプロバイダーが主催 | [&#x200B; マーチャントの責任](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview#merchant-responsibilities)：マーチャントまたはそのホスティングプロバイダーが、インフラストラクチャとすべてのプラットフォームサービスを管理します。 |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — Adobe管理 | [共有責任](https://experienceleague.adobe.com/ja/docs/commerce-operations/security-and-compliance/shared-responsibility): Adobeがホストされているプラットフォームを管理します。 マーチャントは、アプリケーションレベルのパッチ、カスタムコード、設定を管理し、データベース、キャッシュ、検索、PHP ランタイム、web サーバー、メッセージキューなど、サポートされているバージョンの拡張機能やプラットフォームサービスを更新します。 |
+| **[!DNL Adobe Commerce on-premises]** | 加盟店またはホスティングプロバイダーが主催 | [&#x200B; マーチャントの責任](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/overview#merchant-responsibilities)：マーチャントまたはそのホスティングプロバイダーが、インフラストラクチャとすべてのプラットフォームサービスを管理します。 |
 
 **アーキテクチャへの影響**
 
@@ -315,4 +315,4 @@ Commerce Data Migration Serviceは世界中の本番環境で稼働しており�
 
 ワークフロー、サポートされているデータ、検証について詳しくは、[一括データ移行ツール ガイド &#x200B;](bulk-data/migration-tool.md)のドキュメントを参照してください。
 
-ソース環境を準備するシステムインテグレーターは、標準の[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)と[Adobe Developer Console](https://developer.adobe.com)をIMS資格情報に使用することもできます。
+ソース環境を準備するシステムインテグレーターは、標準の[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)と[Adobe Developer Console](https://developer.adobe.com)をIMS資格情報に使用することもできます。

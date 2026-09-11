@@ -2,7 +2,7 @@
 title: ストアフロントの設定
 description: ' [!DNL Adobe Commerce Optimizer]  ストアフロントの設定方法について説明します。'
 role: Developer
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 TQID: https://experienceleague.adobe.com/Jcj-3qVJPXr-t0X8-Y9GVziGj57ksUdWDhCO6pt-94A
 product_v2:
@@ -240,7 +240,7 @@ ht-degree: 0%
 
 * [Adobe Commerce Storefront ドキュメントを確認](https://experienceleague.adobe.com/en/tools/commerce-storefront/){target="_blank"}
 * [Adobe Commerce Optimizer開発者向けガイド &#x200B;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}を確認する
-* [Adobe Commerce サポートリソース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}にアクセス
+* [Adobe Commerce サポートリソース &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview){target="_blank"}にアクセス
 
 ## 次のステップ
 
