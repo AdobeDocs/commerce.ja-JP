@@ -20,9 +20,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 607
+source-wordcount: 608
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Adobe Commerceは、OpenTelemetryを通じて次のオブザーバビリティ �
 
 ### CDNとリアルユーザーモニタリング
 
-CDN オリジンを介した[&#x200B; プロキシのリアルユーザーモニタリング（RUM） &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=ja#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) データ収集により、追加のTLS ハンドシェイクを排除し、フロントエンドのパフォーマンス測定を改善します。
+CDN オリジンを介した[&#x200B; プロキシのリアルユーザーモニタリング（RUM） &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/content-delivery-network/#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) データ収集により、追加のTLS ハンドシェイクを排除し、フロントエンドのパフォーマンス測定を改善します。
 
 ## 観察性ビデオ
 

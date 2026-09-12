@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1556
+source-wordcount: 1574
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ _おすすめ商品プレビュー_ パネルは、ストアフロントにデ�
 
 1. **Recommendation ID** セクションで、IDをコピーします。
 
-1. このIDを使用して、Edge Delivery Services ストアフロントで[&#x200B; レコメンデーションドロップイン &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=ja)を設定します。
+1. このIDを使用して、Edge Delivery Services ストアフロントで[&#x200B; レコメンデーションドロップイン &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/)を設定します。
 
 ## 既存のレコメンデーションの管理
 
@@ -212,6 +212,6 @@ _レコメンデーションタイプ_
 - **静的ベース** – これらの指標の低い割合は、表示可能な製品のカタログデータが見つからないことが原因で発生する可能性があります。 想定よりも低い場合は、完全同期によってこの問題を修正できます。
 - **動的ベース** – 動的ベースの指標に対する低い割合は、次の原因で発生する可能性があります。
 
-   - それぞれのレコメンデーションタイプ（requestId、製品コンテキストなど）の必須[&#x200B; ストアフロントイベント &#x200B;](../../setup/events/overview.md)にフィールドがありません。
-   - ストアへのトラフィックが少ないため、受信する行動イベントの量が少ない。
-   - ストア内のさまざまな商品をまたいで、ストアフロントの行動イベントの種類が少ない。 例えば、製品の10%しか頻繁に閲覧または購入されていない場合、それぞれの準備状況インジケーターは低くなります。
+  - それぞれのレコメンデーションタイプ（requestId、製品コンテキストなど）の必須[&#x200B; ストアフロントイベント &#x200B;](../../setup/events/overview.md)にフィールドがありません。
+  - ストアへのトラフィックが少ないため、受信する行動イベントの量が少ない。
+  - ストア内のさまざまな商品をまたいで、ストアフロントの行動イベントの種類が少ない。 例えば、製品の10%しか頻繁に閲覧または購入されていない場合、それぞれの準備状況インジケーターは低くなります。

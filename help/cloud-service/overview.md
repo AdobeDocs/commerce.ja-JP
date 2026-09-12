@@ -36,9 +36,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1456
+source-wordcount: 1458
 ht-degree: 0%
 
 ---
@@ -96,13 +96,13 @@ ht-degree: 0%
 
 ## Commerce ストアフロント
 
-[!DNL Storefront Builder]を使用したシンプルなドキュメントベースのオーサリングまたはビジュアル編集を使用して、リッチなエクスペリエンスを数分で作成するには、[!DNL Edge Delivery Services]を利用したAdobeの[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)を使用します。
+[!DNL Storefront Builder]を使用したシンプルなドキュメントベースのオーサリングまたはビジュアル編集を使用して、リッチなエクスペリエンスを数分で作成するには、[!DNL Edge Delivery Services]を利用したAdobeの[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/en/tools/commerce-storefront/)を使用します。
 
 [!DNL Commerce Storefront]は、GraphQL API レイヤーを介してすべてのAdobe Merchandising サービスとデータを提供する分離型アーキテクチャを備えた完全ヘッドレスです。 このアーキテクチャにより、Commerce Foundationから独立してフロントエンドを開発することができ、新しいテクノロジーを使用して新しいタッチポイントを迅速に構築し、テストすることができます。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 [!DNL Adobe Commerce on Cloud]またはオンプレミスから移行する場合は、移行ガイダンスについて[既存のストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=ja#existing-storefronts)を参照してください。
+>[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 [!DNL Adobe Commerce on Cloud]またはオンプレミスから移行する場合は、移行ガイダンスについて[既存のストアフロント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts)を参照してください。
 
 ## Adobe Merchandisingのサービスおよび決済サービス
 

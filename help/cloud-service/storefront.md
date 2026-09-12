@@ -22,9 +22,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 28102ad0dba698e37a69bbae90e3e9cec364ca81
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 332
+source-wordcount: 335
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service] （SaaS）用に[!DNL Edge Delivery Services]を利用した[!DNL Adobe Commerce Storefront]を設定するには、次の手順を実行します。
 
-よりカスタマイズ可能で詳細なチュートリアルについては、[&#x200B; ストアフロントのドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=ja)を参照してください。
+よりカスタマイズ可能で詳細なチュートリアルについては、[&#x200B; ストアフロントのドキュメント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/)を参照してください。
 
 1. [&#x200B; サイト作成ツール &#x200B;](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)を開きます。
 
@@ -63,6 +63,6 @@ ht-degree: 0%
 * [&#x200B; ストアフロントコンテンツの更新](./use-cases.md#update-storefront-content) - ストアフロントでコンテンツとデータを管理および表示します。
 * [&#x200B; コンテクスト実験](./use-cases.md#contextual-experimentation) - ストアフロントで実験を作成および管理します。
 * [&#x200B; バリエーションの生成](./use-cases.md#generate-variations) – 生成AIを使用して、高品質なコンテンツ生成を自動化します。
-* [Adobe Commerce Storefront ドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) - サイトコンテンツの更新と、Commerce フロントエンドコンポーネントおよびバックエンドデータとの統合について詳しく説明します。
+* [Adobe Commerce Storefront ドキュメント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/) - サイトコンテンツの更新と、Commerce フロントエンドコンポーネントおよびバックエンドデータとの統合について詳しく説明します。
 * [設定サービス &#x200B;](https://www.aem.live/docs/config-service-setup) - ストアフロント設定を`config.json`から移行して、再帰設定やオーバーレイなどの高度なユースケースをサポートする設定サービスを使用する方法について説明します。
-* [&#x200B; ストアフロント B2B機能](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/?lang=ja#major-features) – すべての[!DNL Adobe Commerce as a Cloud Service] インスタンスに対して自動的にインストールされるストアフロント互換性パッケージで利用可能なB2B機能について説明します。
+* [&#x200B; ストアフロント B2B機能](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/storefront-compatibility/b2b/#major-features) – すべての[!DNL Adobe Commerce as a Cloud Service] インスタンスに対して自動的にインストールされるストアフロント互換性パッケージで利用可能なB2B機能について説明します。

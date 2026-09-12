@@ -14,9 +14,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7f901cec90291e264376e3f93e6ebaaccf7c15f0
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: 612
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Edge Delivery Servicesを利用したCommerce ストアフロントでの統合�
 
 Commerce ドロップインは、`commerce-assets-enabled`設定を自動的に検出し、それに応じて画像の処理を調整します。
 
-Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用する方法について詳しくは、*AEM Assets Storefront* ドキュメントの[Adobe Commerce統合](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=ja) トピックを参照してください。
+Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用する方法について詳しくは、*AEM Assets Storefront* ドキュメントの[Adobe Commerce統合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) トピックを参照してください。
 
 >[!TIP]
 >
@@ -104,7 +104,7 @@ Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用�
 
 ## 関連ドキュメント
 
-* *AEM Assets Storefront* ドキュメントの[Adobe Commerce統合](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=ja){target=_blank} - ストアフロントの設定とイメージ処理の動作。
+* *AEM Assets Storefront* ドキュメントの[Adobe Commerce統合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} - ストアフロントの設定とイメージ処理の動作。
 
 * [AEM Assetsを統合して、Edge Delivery Services](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}のコンテンツをオーサリングします（*AEM Assets* ドキュメント）。
 

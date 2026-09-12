@@ -25,9 +25,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: dba0c9e79458f516dd36da886423c7a5657a2ad2
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 2705
+source-wordcount: 2707
 ht-degree: 0%
 
 ---
@@ -340,8 +340,8 @@ Manages custom shipping rate calculations based on customer account tier and ord
     - [バックエンド統合スターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
     - [チェックアウトスターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - ストアフロント開発
-  - [概要](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
-  - [ストアフロント AI スキル](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=ja)
+  - [概要](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
+  - [ストアフロント AI スキル](https://experienceleague.adobe.com/en/tools/commerce-storefront/boilerplate/ai-agent-skills/)
 
 >[!TIP]
 >

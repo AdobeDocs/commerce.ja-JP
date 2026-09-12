@@ -22,10 +22,10 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 2205
-ht-degree: 0%
+source-wordcount: 2232
+ht-degree: 1%
 
 ---
 
@@ -44,23 +44,23 @@ ht-degree: 0%
 このチュートリアルを開始する前に、次の前提条件を満たしていることを確認してください。
 
 - **[!DNL Adobe Commerce Optimizer]インスタンス**
-   - Cloud Managerのテストインスタンスへのアクセス
-   - セットアップ手順については、[基本を学ぶ](../get-started.md)を参照してください
+  - Cloud Managerのテストインスタンスへのアクセス
+  - セットアップ手順については、[基本を学ぶ](../get-started.md)を参照してください
 
 - **ユーザー権限**
-   - Adobe Admin Consoleへの管理者アクセス
-   - アカウント設定については、[&#x200B; ユーザー管理](../user-management.md)を参照してください
-   - アクセス権をお持ちでない場合は、Adobeの担当者にお問い合わせください。
+  - Adobe Admin Consoleへの管理者アクセス
+  - アカウント設定については、[&#x200B; ユーザー管理](../user-management.md)を参照してください
+  - アクセス権をお持ちでない場合は、Adobeの担当者にお問い合わせください。
 
 - **サンプルデータ**
-   - インスタンスに読み込まれたCarvelo Automobile カタログデータ
-   - [&#x200B; サンプルカタログデータ取り込みリポジトリ &#x200B;](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)の手順に従います
-   - 含まれている`reset.js` スクリプトを使用して、完了後にサンプルデータを削除できます
+  - インスタンスに読み込まれたCarvelo Automobile カタログデータ
+  - [&#x200B; サンプルカタログデータ取り込みリポジトリ &#x200B;](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)の手順に従います
+  - 含まれている`reset.js` スクリプトを使用して、完了後にサンプルデータを削除できます
 
 - **ストアフロント環境**
-   - Node.jsによるローカル開発環境
-   - 複製および設定されたストアフロントボイラープレートプロジェクト
-   - 詳しい手順については、[Storefront setup](../storefront.md)を参照してください
+  - Node.jsによるローカル開発環境
+  - 複製および設定されたストアフロントボイラープレートプロジェクト
+  - 詳しい手順については、[Storefront setup](../storefront.md)を参照してください
 
 ## では始めましょう
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe Commerce Storefront ドキュメントの「[&#x200B; ボイラープレートの検索](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=ja)」トピックを確認して、ストアフロント設定ファイルについて説明します。
+> Adobe Commerce Storefront ドキュメントの「[&#x200B; ボイラープレートの検索](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/boilerplate-project/)」トピックを確認して、ストアフロント設定ファイルについて説明します。
 
 ### 重要なポイント
 
@@ -249,7 +249,7 @@ Carveloのコマースマネージャーは、*イーストコースト社*&#x20
    - **名前** = *Celport*
    - **カタログソース** = *en-US*
    - **ポリシー** （使用ドロップダウン） = *East Coast Inc Brands*; *部品カテゴリをチェック*; *ブランド*; *モデル*
-                         
+                              
 1. **[!UICONTROL Add]**&#x200B;をクリックしてカタログ ビューを作成します。
 
    カタログビューページが更新され、新しいカタログビューが表示されます。
@@ -466,4 +466,4 @@ Celport カタログビューを使用するようにストアフロント設定
 - [詳細ポリシー設定](../setup/policies.md)について説明します
 - 他のディーラー向けに[追加のカタログビュー](../setup/catalog-view.md)を設定
 - プログラマティック カタログ管理については、[API ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)を参照してください
-- Edge Delivery Services ストアフロントのドロップインコンポーネントを設定して、商品の検索やレコメンデーションなどのストアフロント機能のためにカスタムストアフロントエクスペリエンスを作成する方法を説明します。 [Storefront ドキュメント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=ja)を参照してください
+- Edge Delivery Services ストアフロントのドロップインコンポーネントを設定して、商品の検索やレコメンデーションなどのストアフロント機能のためにカスタムストアフロントエクスペリエンスを作成する方法を説明します。 [Storefront ドキュメント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/)を参照してください

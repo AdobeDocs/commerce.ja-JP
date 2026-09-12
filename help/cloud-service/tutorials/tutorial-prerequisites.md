@@ -26,9 +26,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
-source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1289
+source-wordcount: 1291
 ht-degree: 0%
 
 ---
@@ -417,7 +417,7 @@ aio app use --merge
 
 * [Google Chrome](https://www.google.com/chrome/) - ストアフロントのテストに必要
 
-* [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクト。 ストアフロントプロジェクトがない場合は、[&#x200B; ストアフロントを作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=ja){target="_blank"}の手順に従います。これには、[&#x200B; コマースデータへのリポジトリのリンク &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=ja#link-repo-to-commerce-data){target="_blank"}の節が含まれます。
+* [!DNL Commerce] インスタンスに接続されたストアフロントプロジェクト。 ストアフロントプロジェクトがない場合は、[&#x200B; ストアフロントを作成](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/){target="_blank"}の手順に従います。これには、[&#x200B; コマースデータへのリポジトリのリンク &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}の節が含まれます。
 
 ### ストアフロントリポジトリの複製
 

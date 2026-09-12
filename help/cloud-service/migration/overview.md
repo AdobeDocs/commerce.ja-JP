@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 3372
+source-wordcount: 3374
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Adobe Commerceは、さまざまなデプロイメントモデルで利用でき
 
 - Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/)の[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)およびAPI メッシュ
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Edge 配信サービス](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)
+- [Edge 配信サービス](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
 - [Commerce Cloud Manager](../getting-started.md#create-an-instance)を使用したセルフサービス プロビジョニング
 
 ### 移行のジャーニー
@@ -214,7 +214,7 @@ Commerce Developer MCPは、[移行評価](#migration-assessment-tool)の結果�
 
 ### ストアフロントの近代化
 
-フロントエンドでは、Commerce Developer MCPが、Adobe Commerce ボイラープレート、ドロップインコンポーネント、EDS ブロックを使用して、Commerce用Edge Delivery Services（EDS）の[&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja)を最新化します。
+フロントエンドでは、Commerce Developer MCPが、Adobe Commerce ボイラープレート、ドロップインコンポーネント、EDS ブロックを使用して、Commerce用Edge Delivery Services（EDS）の[&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/)を最新化します。
 
 Commerce Developer MCPは、Commerceのボイラープレートに基づいて、既存のストアフロントプロジェクトを読み込みます。 次のような方法でストアフロントを近代化できます。
 

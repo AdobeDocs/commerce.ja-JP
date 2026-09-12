@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: f37892b9a2de995dbc4b631ae1008e09cda68207
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1029
+source-wordcount: 1030
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ RAG サービスは、[Commerce拡張ツール &#x200B;](https://developer.adobe
 
 | カテゴリ | Index | 含まれるコンテンツ | キーワード |
 |-------|---------|---------|------------------------|
-| [&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=ja) | commerce-storefront-docs | Edge Delivery Services、ドロップイン、ストアフロントコンポーネント | ストアフロント、ドロップイン、EDS、製品リスト、チェックアウト |
+| [&#x200B; ストアフロント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/) | commerce-storefront-docs | Edge Delivery Services、ドロップイン、ストアフロントコンポーネント | ストアフロント、ドロップイン、EDS、製品リスト、チェックアウト |
 | [拡張性](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhook、イベント、拡張機能、統合 | webhook, イベント，拡張機能，API メッシュ，GraphQL |
 | [Commerce](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview) | commerce-core-docs | Core Commerce（カタログ、顧客、注文） | カタログ，製品，顧客，注文，在庫 |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, ランタイムアクション，UI拡張機能 | アプリビルダー、ランタイムアクション、React Spectrum |

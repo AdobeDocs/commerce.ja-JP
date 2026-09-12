@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d7623f5d42eaa50b95a2f36c244b8a3e78d4c7a9
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1737
+source-wordcount: 1738
 ht-degree: 0%
 
 ---
@@ -318,7 +318,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
    開発環境とブラウザーに次の変更が表示されます。
 
    * 製品評価コンポーネントが自動的に作成されます。
-   * コンポーネントは、選択したアーキテクチャに応じて、[&#x200B; ドロップインスロット &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/?lang=ja)またはスタンドアロンブロックとしてPDPに統合されます。
+   * コンポーネントは、選択したアーキテクチャに応じて、[&#x200B; ドロップインスロット &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/customize/slots/)またはスタンドアロンブロックとしてPDPに統合されます。
    * 星は、APIの評定値に基づいて適切な塗りつぶしの縦横比で表示されます。
 
    ![製品タイトルの下に統合された星評価を表示する製品詳細ページ &#x200B;](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

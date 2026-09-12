@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ee42a1e02e4057ff324808133a533a198d390980
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 2296
+source-wordcount: 2309
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Adobe Commerce on Cloud環境が本番環境に対応していることを確認
 
 Edge Delivery Services ストアフロントサイトが存在し、アクセスが制限されていることを確認します。
 
-▢ ストアフロントサイトが存在します。 [&#x200B; ストアフロントの作成](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=ja)を参照してください。
+▢ ストアフロントサイトが存在します。 [&#x200B; ストアフロントの作成](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/)を参照してください。
 ▢ サイト名を知っています。
 ▢承認済みのユーザーのみが[&#128279;](https://tools.aem.live/tools/user-admin/index.html)を公開する権限を持っています。
 ▢承認済みのユーザーのみが[作成権限](https://docs.da.live/administrators/guides/permissions)を持っています。
@@ -117,18 +117,18 @@ Cloud プロジェクトでこれらのチェックを完了します。
 
 ### Adobe Commerceの
 
-▢個のストアフロント互換性パッケージが[&#x200B; インストールされています](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/?lang=ja)。
+▢個のストアフロント互換性パッケージが[&#x200B; インストールされています](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/storefront-compatibility/install/)。
 
 ### ストアフロントでは
 
-▢ ストアフロント `commerce-core-endpoint`の設定は、[Cloud GraphQL エンドポイント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=ja)を指しています。
+▢ ストアフロント `commerce-core-endpoint`の設定は、[Cloud GraphQL エンドポイント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/)を指しています。
 ▢ Cloud GraphQLのプロキシとしてAPI Meshを使用する場合、`commerce-core-endpoint`はCloud GraphQL エンドポイントではなくAPI Mesh エンドポイントを指します。
 
 ## ストアフロントとOptimizerの統合の検証 {#storefront-optimizer-integration}
 
 ストアフロント設定でCommerce Optimizerの設定を確認します。
 
-▢お客様のストアフロントでは、正しい[Commerce Optimizer設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=ja)が使用されています。
+▢お客様のストアフロントでは、正しい[Commerce Optimizer設定](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/)が使用されています。
 ▢ `adobe-commerce-optimizer`は`true`です。
 ▢ `commerce-endpoint`は、実稼動のCommerce Optimizer GraphQL エンドポイント、またはAPI Meshを使用する場合はAPI Mesh エンドポイントを指します。
 ▢ `headers.cs.AC-view-ID`には、実稼動Commerce Optimizer インスタンスのカタログ ビューIDが保持されています。
@@ -189,8 +189,8 @@ Cloud プロジェクトでこれらのチェックを完了します。
 
 メタデータ、URLを確認し、ビヘイビアーをクロールします。
 
-▢主要ページ（特にPDPおよびPLP）に対して、ドキュメント タイトルのメタデータが存在します。 _Adobe Commerce Storefront_ ドキュメントの[SEO メタデータ &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/?lang=ja){target="_blank"}を参照してください。
-▢個のPDPには、[&#x200B; メタデータと構造化データ &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/?lang=ja){target="_blank"} （JSON-LDなど）が含まれます。
+▢主要ページ（特にPDPおよびPLP）に対して、ドキュメント タイトルのメタデータが存在します。 _Adobe Commerce Storefront_ ドキュメントの[SEO メタデータ &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/seo/metadata/){target="_blank"}を参照してください。
+▢個のPDPには、[&#x200B; メタデータと構造化データ &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/seo/metadata/){target="_blank"} （JSON-LDなど）が含まれます。
 ▢製品URL形式が一貫しています（例：`domain/product-name`）。
 ▢個のバニティ URLが正規URLにリダイレクトされます。
 ▢ プロジェクトには`robots.txt`が含まれており、適切な場所でインデックスを作成したり、サイトマップを参照したり、インデックスを作成しないパスをブロックしたりできます（例：`/drafts`）。
@@ -204,7 +204,7 @@ Cloud プロジェクトでこれらのチェックを完了します。
 
 有効にする場所でサーバーサイドレンダリングを確認します。
 
-▢のプリレンダリングは、主要なページに対して有効です。 _AEM Storefront_ ドキュメントの[Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-prerender/?lang=ja){target="_blank"}の事前レンダリングを参照してください。
+▢のプリレンダリングは、主要なページに対して有効です。 _AEM Storefront_ ドキュメントの[Adobe Commerce](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-prerender/){target="_blank"}の事前レンダリングを参照してください。
 ▢個のURLは小文字を使用するため、事前レンダリングでリンクが壊れることはありません。
 ▢ HTML ソースには、事前レンダリングの動作を確認するメタデータと本文コンテンツが含まれています。
 ▢ ロケールは、該当する場合は正しい翻訳済みページを表示します。
@@ -214,10 +214,10 @@ Cloud プロジェクトでこれらのチェックを完了します。
 
 パフォーマンスのベースラインと分析の配線を確認します。
 
-▢お客様のストアフロントは、_Adobe Commerce ストアフロント_ ドキュメントの[&#x200B; パフォーマンスのベストプラクティス &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/?lang=ja){target="_blank"}に従っています。
+▢お客様のストアフロントは、_Adobe Commerce ストアフロント_ ドキュメントの[&#x200B; パフォーマンスのベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/performance/){target="_blank"}に従っています。
 ▢ （オプション）Google AnalyticsとGoogle Tag Managerが設定されています。
 ▢ [Storefront events](https://github.com/adobe/commerce-events/tree/main/examples/events/snowplow-debugger)の実装は有効で、データは[!DNL Live Search]および[!DNL Product Recommendations]のダッシュボードにAdobe Commerce *管理者*に表示されます。
-▢ [Commerce configuration](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=ja){target="_blank"}の`environment`分析パラメーターは、開発中は`"Testing"`で、公開時は`"Production"`です。 [Analytics インストルメンテーション &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=ja){target="_blank"}を参照してください。
+▢ [Commerce configuration](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/){target="_blank"}の`environment`分析パラメーターは、開発中は`"Testing"`で、公開時は`"Production"`です。 [Analytics インストルメンテーション &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/analytics/instrumentation/){target="_blank"}を参照してください。
 このトピックのガイダンスに従って、▢個のLighthouse スコアが目標（主要ページの`100`など）を満たしています。
 
 ### セキュリティとアクセス
@@ -226,7 +226,7 @@ Cloud プロジェクトでこれらのチェックを完了します。
 
 ▢適切な権限がDA コンテンツおよびEDS サイト用に設定されています。 オーサリング用の[DA.live権限](https://da.live/docs/administration/permissions)と[認証の設定](https://www.aem.live/docs/authentication-setup-authoring)を参照してください。
 ▢製品ビジュアル統合がプロビジョニングされます。 [AEM Cloud Service アクセスの概要](https://experienceleague.adobe.com/ja/docs/experience-manager-learn/cloud-service/accessing/overview#)を参照してください。
-電子メールテンプレートの▢ パスワードリセットリンクが、Edge Delivery Services設定と一致しています。 ストアフロントに関するFAQを参照してください。[Edge Delivery ServicesまたはHelixへの移行後にメールテンプレートのリンクが壊れた場合はどうすればよいですか？](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/?lang=ja#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}
+電子メールテンプレートの▢ パスワードリセットリンクが、Edge Delivery Services設定と一致しています。 ストアフロントに関するFAQを参照してください。[Edge Delivery ServicesまたはHelixへの移行後にメールテンプレートのリンクが壊れた場合はどうすればよいですか？](https://experienceleague.adobe.com/en/tools/commerce-storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}
 ▢統合と支払いプロバイダーの実稼動キーが配置されています。
 ▢ ドメインが許可リストに加えるされ、バックエンドのWebhookが機能します。
 
@@ -236,8 +236,8 @@ CDN、DNS、およびキャッシュの動作を確認します。
 
 ▢ CDN設定では、Sidekickの拡張機能とスクリプト （サイトマップ生成や画像インポーターなど）に実稼動のGraphQL エンドポイント （`yourproject.com/graphql`）が使用されます。
 ▢ Adobe Commerce Fastlyを使用する場合、CDN パージトークンが使用でき、[&#x200B; サイト設定](https://tools.aem.live/tools/cdn-setup/index.html)には`authToken`と`serviceId`が含まれます。
-▢ [CDN設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=ja){target="_blank"}は、キャッシュと無効化を検証します。
-▢ [&#x200B; マルチストア設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/?lang=ja#multi-store-setups){target="_blank"}の場合、カタログサービスと[!DNL Live Search]要求には、ストア固有のキャッシュバスター（クエリパラメーターやCDN ルールなど）が含まれます。
+▢ [CDN設定](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/content-delivery-network/){target="_blank"}は、キャッシュと無効化を検証します。
+▢ [&#x200B; マルチストア設定](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/seo/indexing/#multi-store-setups){target="_blank"}の場合、カタログサービスと[!DNL Live Search]要求には、ストア固有のキャッシュバスター（クエリパラメーターやCDN ルールなど）が含まれます。
 ▢ プッシュ無効化はエンドツーエンドで機能します（変更を公開してから、実稼動ドメインで検証します）。
 ▢ DNS TTLは、カットオーバー前に十分に低くなっています。
 すべてのドメインとホスト名に対して、▢個のDNS AとCNAME レコードが正しいです。

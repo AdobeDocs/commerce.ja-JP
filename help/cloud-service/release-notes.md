@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 8fdfd3ebfa088fd219c65c86ce99cae838ff5d54
+source-git-commit: d8c738212373283ccf45b16cf91dbafc7a7bd0f8
 workflow-type: tm+mt
-source-wordcount: 6358
+source-wordcount: 6365
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 0%
 * 交渉可能な引用符
 * 見積もりテンプレート
 
-GraphQLの変異やREST エンドポイントなどの詳細については、[Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja#storefront-compatibility-b2b-package-v1-0-24-2026-07-20)を参照してください。
+GraphQLの変異やREST エンドポイントなどの詳細については、[Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/#storefront-compatibility-b2b-package-v1-0-24-2026-07-20)を参照してください。
 
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
@@ -138,7 +138,7 @@ GraphQLの変異やREST エンドポイントなどの詳細については、[S
 
 ### 無料のギフトカート価格ルール
 
-[**無料ギフト** カート価格ルール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift)が、ストアフロントの[!DNL Commerce Admin]で利用できるようになりました。
+[**無料ギフト** カート価格ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift)が、ストアフロントの[!DNL Commerce Admin]で利用できるようになりました。
 <!-- AC-17678 -->
 
 このルールを使用すると、ルール条件が満たされたときに、無料のギフト商品をカートに追加できます。 ルールで選択が必要な場合、買い物客は、新しい[`selectFreeGiftForCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/select-free-gift) GraphQLの突然変異を使用してギフト SKUを選択できます。この機能では、設定可能なギフト商品とバンドル ギフト商品をサポートしています。
@@ -151,7 +151,7 @@ GraphQLの変異やREST エンドポイントなどの詳細については、[S
 
 <!-- ### Use a temporary shipping address at B2B checkout -->
 
-<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=ja) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
 
 ### 注文履歴に注文編集を記録する
 
@@ -829,20 +829,20 @@ web サイト、実店舗、実店舗の閲覧数は、以前は50に制限さ�
 
 B2B ドロップインコンポーネントに次の変更が加えられました。
 
-* [!DNL Commerce Storefront on Edge Delivery Services]には、[B2B ドロップインコンポーネント &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=ja)が含まれています。 次のB2B ドロップインを使用できるようになりました。
+* [!DNL Commerce Storefront on Edge Delivery Services]には、[B2B ドロップインコンポーネント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/)が含まれています。 次のB2B ドロップインを使用できるようになりました。
 
-  * **[会社管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=ja)** - Adobe Commerce ストアフロントの会社プロファイル管理とロールベースの権限を有効にします。
-  * **[会社スイッチャー](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=ja)** - ユーザーが関連付けられている複数の会社を切り替えるためのUI コンポーネントを提供します。
-  * **[発注](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=ja)** - B2B トランザクションの発注ワークフロー、承認ルール、発注履歴を管理します。
-  * **[見積もり管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=ja)** – 見積もり要求、交渉、承認ワークフローを使用して、B2B顧客に対して交渉可能な見積もりを有効にします。
-  * **[購買リスト &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=ja)** - リピート購入と一括注文の購買リストを作成および管理するためのツールを提供します。
+  * **[会社管理](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/company-management/)** - Adobe Commerce ストアフロントの会社プロファイル管理とロールベースの権限を有効にします。
+  * **[会社スイッチャー](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/company-switcher/)** - ユーザーが関連付けられている複数の会社を切り替えるためのUI コンポーネントを提供します。
+  * **[発注](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/purchase-order/)** - B2B トランザクションの発注ワークフロー、承認ルール、発注履歴を管理します。
+  * **[見積もり管理](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/quote-management/)** – 見積もり要求、交渉、承認ワークフローを使用して、B2B顧客に対して交渉可能な見積もりを有効にします。
+  * **[購買リスト &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/requisition-list/)** - リピート購入と一括注文の購買リストを作成および管理するためのツールを提供します。
 
 * B2B Storefront互換性パッケージをリリース。 このパッケージは、[!DNL Adobe Commerce] B2B GraphQL スキーマを強化して、B2B システムの開発を改善するのに役立ちます。
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=ja). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/?lang=ja). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
 -->
 
 ### クリック可能な外部シッピングトラッカーへのリンク
