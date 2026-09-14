@@ -67,13 +67,13 @@ https://<region>-<environment>.api.commerce.adobe.com/<tenantId>/graphql
 - `<environment>`は、`sandbox`などの環境タイプです。 環境が実稼動環境の場合、この値は省略されます。
 - `<tenantId>`は、Adobe Experience Cloud内の組織の特定のインスタンスの一意のIDです。
 
-カタログサービス GraphQL APIの使用について詳しくは、*Adobe Commerce Developer* ドキュメントの[Adobe Commerce向けカタログサービス ガイド ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)を参照してください。
+カタログサービス GraphQL APIの使用について詳しくは、*Adobe Commerce Developer* ドキュメントの[Adobe Commerce向けカタログサービス ガイド &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)を参照してください。
 
 ## ヘッドレスストアフロントやサードパーティサービスとの統合
 
 ヘッドレスストアフロントと統合するには、ストアフロントと[!DNL Catalog Service]間の通信を有効にして製品およびカテゴリーデータを取得できるように、ストアフロント設定を更新する必要があります。
 
-Edge Delivery ServicesでAdobe Commerce ストアフロントを使用している場合は、カタログサービスエンドポイントをストアフロント設定に追加します。 詳しくは、[Edge Delivery Services ドキュメント ](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#storefront-configuration)を参照してください。
+Edge Delivery ServicesでAdobe Commerce ストアフロントを使用している場合は、カタログサービスエンドポイントをストアフロント設定に追加します。 詳しくは、[Edge Delivery Services ドキュメント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#storefront-configuration)を参照してください。
 
 その他の統合については、サービスとバックエンドのデータソース間の統合を設定する方法について詳しくは、プロジェクト設定ドキュメントを参照してください。
 
