@@ -1,6 +1,6 @@
 ---
-title: ' [!DNL Live Search]の基本を学ぶ'
-description: Adobe Commerceから [!DNL Live Search] の必要システム構成とインストール手順について説明します。
+title: '[!DNL Live Search]の基本を学ぶ'
+description: Adobe Commerceから[!DNL Live Search]の必要システム構成とインストール手順について説明します。
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
@@ -8,31 +8,44 @@ badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.a
 TQID: https://experienceleague.adobe.com/63Lia0NKyJV2ngoXLlcGkciK3xZWYsmtwzfkyOg5Bfw
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 last-update: 2026-09-02
-source-git-commit: 299da83bd0a9b776ad6b13482b65af61bffe15fa
+source-git-commit: c40236ec3dfbbb0f393e5d1fc4743ffc7626b11e
 workflow-type: tm+mt
-source-wordcount: 2856
+source-wordcount: '2978'
 ht-degree: 0%
-
 ---
-
 # [!DNL Live Search]で成功するように設定
 
 Adobe Commerce [!DNL Live Search]と[[!DNL Catalog Service]](../catalog-service/guide-overview.md)は連携して、パフォーマンスが高く、適切で、直観的な検索ソリューションを提供します。 このソリューションにより、顧客は必要な商品をすばやく見つけることができます。 具体的には、[!DNL Catalog Service]は、使用する[!DNL Live Search]などのSaaS サービス用にカタログデータを表示します。
@@ -133,11 +146,15 @@ Adobe Commerce [!DNL Live Search]と[[!DNL Catalog Service]](../catalog-service/
    - カテゴリフィード
    - カテゴリ権限フィード
 
-インデクサーを検証したら、次の手順は[API キーの設定](#2-configure-api-keys)です。
+インデクサーを検証したら、次の手順は[API キーの設定](#configure)です。
 
 >[!TAB 既存のCommerce インスタンス ]
 
 既存のCommerce インスタンスに[!DNL Live Search]をインストールする場合は、次の手順に従います。
+
+>[!NOTE]
+>
+>*管理者* > _[!UICONTROL Stores]_> [!UICONTROL Settings] >_[!UICONTROL Configuration]_ > **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]** > **[!UICONTROL Enable Product Listing Widgets]**&#x200B;の設定では、製品リストウィジェットのみが制御されます。 完全な[!DNL Live Search] ストアフロントエクスペリエンス （検索ポップオーバーなど）を無効にする&#x200B;*管理者*&#x200B;設定はありません。 この手順のCLI モジュールコマンドを使用して、[!DNL Live Search]の設定中に既存のストアフロント検索をアクティブに保ちます。
 
 1. [cron ジョブ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)および[&#x200B; インデクサー](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management)が実行中であることを確認します。
 
@@ -153,13 +170,17 @@ Adobe Commerce [!DNL Live Search]と[[!DNL Catalog Service]](../catalog-service/
    composer update magento/live-search --with-dependencies
    ```
 
-1. ストアフロントの検索結果を提供する[!DNL Live Search] モジュールを無効にします。
+1. `Magento_LiveSearchAdapter`を有効にしたまま、[!DNL Live Search] ストアフロントモジュールを無効にします。
 
    ```bash
-   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
+   bin/magento module:disable Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
    ```
 
-   [!DNL Elasticsearch]は、ストアフロントからの検索要求を引き続き管理しますが、[!DNL Live Search] サービスはカタログデータを同期し、バックグラウンドで製品をインデックス化します。
+   [!DNL Elasticsearch]は、ストアフロントからの検索要求を引き続き管理しますが、[!DNL Live Search] サービスはカタログデータを同期し、バックグラウンドで製品をインデックス化します。 `Magento_LiveSearchAdapter`を有効のままにすると、ストアフロント検索が[!DNL Live Search]に切り替わりません。Commerceの検索エンジンの依存関係が引き続き正しく解決されるように、モジュールを有効のままにしておく必要があるだけです。
+
+   >[!IMPORTANT]
+   >
+   >[!DNL Live Search] 4.0.0時点で[非推奨](release-notes.md#live-search-400)であったにもかかわらず、このフェーズで`Magento_LiveSearchAdapter`を有効のままにしておきます。 `Magento\Search\Model\EngineResolver`は、このモジュールが有効になっているかどうかによって異なるため、無効にすると、既存のストアフロント検索が`500` エラーで中断されます。 `Magento_LiveSearchMetrics` モジュールの`composer.json`が`Magento_LiveSearchAdapter`への依存を宣言しているため、`Magento_LiveSearchMetrics`が有効になっている間、`Magento_LiveSearchAdapter`も無効にできません。 このワークフローで`Magento_LiveSearchMetrics`を無効にする必要はありません。
 
 1. アップデートのインストール。
 
@@ -181,10 +202,10 @@ Adobe Commerce [!DNL Live Search]と[[!DNL Catalog Service]](../catalog-service/
 1. [!DNL Live Search]拡張機能を有効にし、[!DNL OpenSearch] （Magento ElasticsearchおよびOpenSearch モジュール）を無効にします。
 
    ```bash
-   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
    ```
 
-   ```
+   ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_Elasticsearch8 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
@@ -198,7 +219,7 @@ Adobe Commerce [!DNL Live Search]と[[!DNL Catalog Service]](../catalog-service/
    bin/magento setup:upgrade
    ```
 
-インデクサーを検証したら、次の手順は[API キーの設定](#2-configure-api-keys)です。
+インデクサーを検証したら、次の手順は[API キーの設定](#configure)です。
 
 >[!ENDTABS]
 
