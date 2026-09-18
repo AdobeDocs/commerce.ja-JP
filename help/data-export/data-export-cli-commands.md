@@ -1,40 +1,46 @@
 ---
 title: Commerce CLIを使用したフィードの同期
-description: Commerce CLI コマンドを使用して、Adobe Commerce SaaS サービスの [!DNL data export extension] のフィードと同期プロセスを管理する方法を説明します。
+description: Commerce CLI コマンドを使用して、Adobe Commerce SaaS サービスの[!DNL data export extension]のフィードと同期プロセスを管理する方法を説明します。
 autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
 TQID: 'https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
+    internal-label: Data management
+source-git-commit: 658401a83acf5bab669f0734100eef99af98c908
 workflow-type: tm+mt
-source-wordcount: 728
+source-wordcount: '756'
 ht-degree: 0%
-
 ---
-
 # Commerce CLIを使用したフィードの同期
 
 `magento/saas-export` パッケージの`saas:resync` コマンドを使用すると、[!DNL Adobe Commerce] SaaS サービスのデータ同期を管理できます。
 
 >[!NOTE]
 >
->`saas:resync` コマンドは、`products`、`categories`、`priceBooks`などの[!DNL Adobe Commerce Optimizer Connector] フィードにも適用されます。 コネクタフィードとインデクサー名の完全なリストについては、[&#x200B; サポートされているフィード &#x200B;](../aco-connector/reference/connector-reference.md#supported-feeds)を参照してください。
+>`saas:resync` コマンドは、`products`、`categories`、`priceBooks`などの[!DNL Adobe Commerce Optimizer Connector] フィードにも適用されます。 コネクタフィードとインデクサー名の完全なリストについては、[ サポートされているフィード ](../aco-connector/reference/connector-reference.md#supported-feeds)を参照してください。
 
 Adobeでは、`saas:resync` コマンドを定期的に使用することはお勧めしません。 コマンドを使用するための一般的なシナリオは次のとおりです。
 
 - 初期同期
-- [SaaS データスペース ID](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/services/saas)を変更した後、データを新しいデータスペースに同期する
+- [SaaS データスペース ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)を変更した後、データを新しいデータスペースに同期する
 - トラブルシューティング
 
 `var/log/saas-export.log` ファイルの同期操作を監視します。
@@ -64,7 +70,7 @@ bin/magento saas:resync --feed productoverrides
 
 >[!NOTE]
 >
->環境では、このシーケンスにすべてのフィードが含まれない場合があります。 完全なフィード リスト、CLI フィード名、およびモジュール要件については、[&#x200B; サポートされているフィード &#x200B;](reference/feed-table-reference.md#supported-feeds)を参照してください。
+>環境では、このシーケンスにすべてのフィードが含まれない場合があります。 完全なフィード リスト、CLI フィード名、およびモジュール要件については、[ サポートされているフィード ](reference/feed-table-reference.md#supported-feeds)を参照してください。
 
 ## コマンドオプション
 
@@ -84,13 +90,13 @@ bin/magento saas:resync --help
 
 >[!NOTE]
 >
->書き出し処理を管理するための詳細なオプションについては、[書き出し処理のカスタマイズ &#x200B;](customize-export-processing.md)を参照してください。
+>書き出し処理を管理するための詳細なオプションについては、[書き出し処理のカスタマイズ ](customize-export-processing.md)を参照してください。
 
 ## `--feed`
 
 必須。 再同期するフィード エンティティを指定します。
 
-`bin/magento saas:resync --help`件のドキュメントのコマンド オプションとフラグ。 環境内で使用可能なすべてのフィードが一覧表示されるわけではありません。 CLI フィード名、インデクサーID、フィード テーブルを含む完全なフィード リストについては、[&#x200B; サポートされているフィード &#x200B;](reference/feed-table-reference.md#supported-feeds)を参照してください。
+`bin/magento saas:resync --help`件のドキュメントのコマンド オプションとフラグ。 環境内で使用可能なすべてのフィードが一覧表示されるわけではありません。 CLI フィード名、インデクサーID、フィード テーブルを含む完全なフィード リストについては、[ サポートされているフィード ](reference/feed-table-reference.md#supported-feeds)を参照してください。
 
 >[!NOTE]
 >
@@ -182,11 +188,25 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-i
 bin/magento saas:resync --feed products --dry-run --cleanup-feed
 ```
 
+## `--force`
+
+フィードの書き出し状態を消去せずに、データが変更されたかどうかにかかわらず、フィード項目の再同期を強制します。
+
+>[!NOTE]
+>
+>[ データ書き出し拡張機能](manage-extension.md#update-a-module-to-a-specific-version)のバージョン 103.4.30以降が必要です。
+
+**例：**
+
+```shell
+bin/magento saas:resync --feed products --force
+```
+
 ## `--no-reindex`
 
 インデックス再作成せずに既存のカタログ データを[!DNL Commerce Services]に再送信します。 製品関連のフィードではサポートされていません。
 
-動作は[書き出しモード &#x200B;](sync-overview.md#synchronization-modes)によって異なります。
+動作は[書き出しモード ](sync-overview.md#synchronization-modes)によって異なります。
 
 - レガシーモード：すべてのデータを切り捨てずに再送信します。
 - 即時モード：オプションは無視され、更新/失敗のみを同期します。
@@ -199,6 +219,6 @@ bin/magento saas:resync --feed productAttributes --no-reindex
 
 >[!MORELIKETHIS]
 >
-> - [&#x200B; ログを確認し、トラブルシューティング &#x200B;](troubleshooting/logging.md) — データ書き出しとSaaS書き出しのエラーを診断します。
-> - [&#x200B; トラブルシューティング シナリオ &#x200B;](troubleshooting/troubleshooting-scenarios.md) – 設定ミスと予期しない同期結果を解決します。
+> - [ ログを確認し、トラブルシューティング ](troubleshooting/logging.md) — データ書き出しとSaaS書き出しのエラーを診断します。
+> - [ トラブルシューティング シナリオ ](troubleshooting/troubleshooting-scenarios.md) – 設定ミスと予期しない同期結果を解決します。
 > - [同期の仕組み](sync-overview.md) – 同期モードと再試行動作について説明します。
