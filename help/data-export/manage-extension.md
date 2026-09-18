@@ -39,7 +39,7 @@ ht-degree: 0%
 SaaS サービスの[[!DNL data export] extension](https://github.com/magento/commerce-data-export)は、Adobe Commerceと接続されたCommerce サービス間のデータの収集と同期を可能にするモジュールのコレクションです。
 
 Adobe Commerce サービス拡張機能のメタパッケージには、次のような特定のモジュールが含まれています
-[ ライブサーチ ](/help/live-search/overview.md)、[商品レコメンデーション ](/help/product-recommendations/overview.md)、[ カタログサービス ](/help/catalog-service/overview.md)、および[[!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/overview.md)として使用できます。 これらのサービスを使用している場合、Data Export拡張機能を有効にするために個別のインストールは必要ありません。
+[&#x200B; ライブサーチ &#x200B;](/help/live-search/overview.md)、[商品レコメンデーション &#x200B;](/help/product-recommendations/overview.md)、[&#x200B; カタログサービス &#x200B;](/help/catalog-service/overview.md)、および[[!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/overview.md)として使用できます。 これらのサービスを使用している場合、Data Export拡張機能を有効にするために個別のインストールは必要ありません。
 
 ## Commerce データ書き出し機能の削除または無効化
 
@@ -53,11 +53,11 @@ bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCa
 
 ### モジュールを特定のバージョンに更新する
 
-Composerを使用すると、インストールされているコマースデータ書き出しモジュールのいずれかを更新できます。 [ リリースノート ](release-notes.md)を確認して、必要な修正が利用可能かどうかを判断し、その特定のバージョンと必要な依存関係にアップグレードします。
+Composerを使用すると、インストールされているコマースデータ書き出しモジュールのいずれかを更新できます。 [&#x200B; リリースノート &#x200B;](release-notes.md)を確認して、必要な修正が利用可能かどうかを判断し、その特定のバージョンと必要な依存関係にアップグレードします。
 
 >[!NOTE]
 >
->最新バージョンの[ ライブサーチ ](/help/live-search/overview.md)、[ カタログサービス ](/help/catalog-service/overview.md)、[製品レコメンデーション ](/help/product-recommendations/overview.md)、または[[!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/overview.md)に更新すると、最新バージョンのデータ書き出し拡張機能も取得できます。 データ書き出しメタパッケージは、これらのサービスのComposer パッケージの依存関係です。
+>最新バージョンの[&#x200B; ライブサーチ &#x200B;](/help/live-search/overview.md)、[&#x200B; カタログサービス &#x200B;](/help/catalog-service/overview.md)、[製品レコメンデーション &#x200B;](/help/product-recommendations/overview.md)、または[[!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/overview.md)に更新すると、最新バージョンのデータ書き出し拡張機能も取得できます。 データ書き出しメタパッケージは、これらのサービスのComposer パッケージの依存関係です。
 
 1. Commerce アプリケーションサーバーにログインします。
 
@@ -67,10 +67,10 @@ Composerを使用すると、インストールされているコマースデー
    composer require magento/module-data-exporter:103.0.4 --with-all-dependencies
    ```
 
-Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 _Adobe Commerce on Cloud Infrastructure ガイド_&#x200B;の[拡張機能のアップグレード ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#upgrade-an-extension)を参照してください。
+Commerce インスタンスがクラウドインフラストラクチャにデプロイされている場合は、クラウドプロジェクトディレクトリから拡張機能を更新します。 _Adobe Commerce on Cloud Infrastructure ガイド_&#x200B;の[拡張機能のアップグレード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#upgrade-an-extension)を参照してください。
 
 >[!MORELIKETHIS]
 >
-> - [ リリースノート ](release-notes.md)
-> - [SaaS データ書き出しモジュール ](reference/data-export-modules.md)
-> - [ ガイドの概要](overview.md)
+> - [&#x200B; リリースノート &#x200B;](release-notes.md)
+> - [SaaS データ書き出しモジュール &#x200B;](reference/data-export-modules.md)
+> - [&#x200B; ガイドの概要](overview.md)
