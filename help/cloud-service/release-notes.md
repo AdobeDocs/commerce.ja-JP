@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce as a Cloud Service] リリースノート'
-description: ' [!DNL Adobe Commerce as a Cloud Service]の最新の機能と改善点について説明します。'
+description: '[!DNL Adobe Commerce as a Cloud Service]の最新の機能と改善点について説明します。'
 feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
@@ -12,34 +12,48 @@ autotag-review: '2026-06-18T16:04:15.842Z'
 TQID: 'https://experienceleague.adobe.com/MmwdYWe5Et9m0BvtrVYNK2jiJ3fZBnUe2K6xMdIbMUk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: d8c738212373283ccf45b16cf91dbafc7a7bd0f8
+source-git-commit: 04f2eddef8abc6843ced0d00368ea19f3626adce
 workflow-type: tm+mt
-source-wordcount: 6365
+source-wordcount: '6842'
 ht-degree: 0%
-
 ---
-
 # リリースノート
 
 次のリリースノートには、[!DNL Adobe Commerce as a Cloud Service]の更新が含まれています。
@@ -48,7 +62,77 @@ ht-degree: 0%
 >
 >Adobe Commerce オンプレミスまたはAdobe Commerce オンクラウドインフラストラクチャを使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview)を参照してください。
 
-## 2026年9月 – リリース #1 {#latest}
+## 2026年9月 – リリース #2 {#latest}
+
+[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下の項目は、2026年9月22日に実稼動環境で利用できるようになります。
+
+>[!BEGINSHADEBOX]
+
+### リターンリクエストにファイルと画像を添付
+
+ストアフロント `requestReturn` GraphQLの変更を通じて返品リクエストを送信する際に、ファイルと画像をアップロードできるようになりました。<!-- CCSAAS-5410 -->
+
+### 在庫ソースの外観の管理
+
+各インベントリソースには、[!DNL Commerce Admin] （[!UICONTROL **ストア**] > [!UICONTROL **インベントリ**] > [!UICONTROL **ソース**]）のソース編集ページに&#x200B;[!UICONTROL **ストアフロントで表示できる**] トグルが含まれるようになりました。 [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL クエリは、表示されているようにフラグを設定したソースに対してのみ在庫情報を返します。 ソースはデフォルトで非表示になっています。<!-- ACCS-1645 -->
+
+### マルチソースの配送をガイド
+
+注文に異なる在庫ソースにノミネートされた商品が含まれている場合、[!DNL Commerce Admin] [!UICONTROL **Sourceの選択範囲**] ページで、各商品に適切なソースを選択する方法が自動的にガイドされるようになりました。<!-- ACCS-1832 -->
+
+### ストアフロントのソースの可用性の詳細をクエリします
+
+[`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL クエリで、ストアフロントの追加情報が返されるようになりました。
+
+* 各ソースには`name`と`is_pickup_location_active` フラグが含まれているため、ストアフロントではソース名を表示し、アクティブな実店舗の受け取り場所を特定できます。<!-- ACCS-1614 -->
+
+* `SourceAvailability` タイプには`is_saleable`と`backorder_message` フィールドが含まれるようになりました。そのため、ストアフロントでは、物理的な在庫ではなく、真の販売可能性に関する[!UICONTROL Add to Cart]をゲートできます。<!-- ACCS-1858 -->
+
+### 顧客の権限の取得
+
+新しい[!DNL Commerce] REST エンドポイント （`GET /V1/customers/:customerId/companyRoles`）は、顧客に割り当てられたすべての会社の役割と権限を返します。 GraphQL `CompanyBasicInfo` タイプには、`role_id`、`role_name`、および権限データも含まれるようになりました。これにより、統合は、1回のリクエストで、関連するすべてのアカウントでユーザーの会社ロールの割り当てを取得できます。<!-- ACCS-1617 -->
+
+### 請求書を購読するwebhookを保存
+
+`observer.sales_order_invoice_save_after` Webhookでは、請求書を保存した後にロジックを実行できます。<!-- CEXT-6706 -->
+
+### 候補のソース情報を表示
+
+注文に在庫ソースが指定された品目が含まれている場合、注文ビューページおよび出荷ソース選択画面でそれらの品目にラベルが付けられるようになりました。これにより、加盟店は正しいソースから注文を処理できます。<!-- ACCS-941 -->[!DNL Commerce Admin]
+
+### 機能強化とバグ修正
+
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
+
+* 多数の共有カタログに関する問題を防ぐために、カートとチェックアウト層の価格読み込みを最適化しました。<!-- ACCS-1150 -->
+
+* ファイル属性の変更が尊重されない問題を修正しました。<!-- CCSAAS-5395 -->
+
+* 製品の上書きデータに一貫性がない場合がある問題を修正しました。<!-- ACCS-1844 -->
+
+* 同時REST API要求が断続的に401 エラーを引き起こす可能性がある問題を修正しました。<!-- CCSAAS-5417 -->
+
+* カート価格ルールの開始日または終了日が、明示的な時間が設定されていないときに予期せず機能する問題を修正しました。<!-- ACCS-1856 -->
+
+* カート価格ルールが存在しない開始日または終了日を受け入れた問題を修正しました。<!-- ACCS-1902 -->
+
+* [!UICONTROL Catalog]設定を保存できない問題を修正しました。<!-- CCSAAS-5436 -->
+
+* インポート API （`POST /V1/import/json`）に対して同時リクエストを行う際に発生する可能性がある問題を修正しました。<!-- ACCS-1053 -->
+
+* 指定された在庫ソースを持つ製品について、販売可能な数量が在庫状況を過剰に報告する可能性がある問題を修正しました。<!-- ACCS-1103 -->
+
+* 注文コメント API （`POST /V1/orders/{id}/comments`）で大文字と小文字が区別されない問題を修正しました。<!-- ACCS-1752 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年9月 – リリース #1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -188,8 +272,6 @@ GraphQLの変異やREST エンドポイントなどの詳細については、[S
 * 管理者のナビゲーションに影響を与える可能性がある問題を解決しました。<!-- CCSAAS-5232 -->
 
 * 空のカートがゼロ以外の合計を報告する場合がある問題を修正しました。<!-- ACCS-1730 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
