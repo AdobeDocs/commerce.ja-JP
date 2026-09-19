@@ -1,28 +1,34 @@
 ---
 title: Commerce CLIを使用したフィードの同期
-description: Commerce CLI コマンドを使用して、Adobe Commerce SaaS サービスの [!DNL data export extension] のフィードと同期プロセスを管理する方法を説明します。
+description: Commerce CLI コマンドを使用して、Adobe Commerce SaaS サービスの[!DNL data export extension]のフィードと同期プロセスを管理する方法を説明します。
 autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
 TQID: 'https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
+    internal-label: Data management
+source-git-commit: 658401a83acf5bab669f0734100eef99af98c908
 workflow-type: tm+mt
-source-wordcount: 728
+source-wordcount: '756'
 ht-degree: 0%
-
 ---
-
 # Commerce CLIを使用したフィードの同期
 
 `magento/saas-export` パッケージの`saas:resync` コマンドを使用すると、[!DNL Adobe Commerce] SaaS サービスのデータ同期を管理できます。
@@ -180,6 +186,20 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-i
 
 ```shell
 bin/magento saas:resync --feed products --dry-run --cleanup-feed
+```
+
+## `--force`
+
+フィードの書き出し状態を消去せずに、データが変更されたかどうかにかかわらず、フィード項目の再同期を強制します。
+
+>[!NOTE]
+>
+>[&#x200B; データ書き出し拡張機能](manage-extension.md#update-a-module-to-a-specific-version)のバージョン 103.4.30以降が必要です。
+
+**例：**
+
+```shell
+bin/magento saas:resync --feed products --force
 ```
 
 ## `--no-reindex`
