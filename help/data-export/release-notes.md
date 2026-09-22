@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: c878b0f46e20fbdcd9771dae36430a814371e0c2
+source-git-commit: 42e7ecca6c058ebc4e80b601c6d46b84f601e454
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3447'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension] リリースノート
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 _2026年9月17日_
 
-![修正](../assets/fix.svg) **属性オプションラベル同期エラー** – 無効な属性バックエンドテーブルがラベル再同期中にフィード書き出しエラーを引き起こす可能性があり、属性ラベルの更新が確実に同期する問題を修正しました。<!--MDEE-1464-->
+![Adobe CommerceとのAdobe Commerce Optimizer統合をサポートするための](../assets/fix.svg)の更新を修正しました。<!--MDEE-1464-->
 
 ### 103.4.34 リリース
 
