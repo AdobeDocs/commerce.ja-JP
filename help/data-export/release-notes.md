@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ![新機能](../assets/new.svg)
 ![修正](../assets/fix.svg)修正と機能強化
-![ バグ ](../assets/bug.svg)既知の問題
+![&#x200B; バグ &#x200B;](../assets/bug.svg)既知の問題
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ _2026年5月19日_
 
 _2026年5月5日_
 
-![修正](../assets/fix.svg) **書き出しログのトラブルシューティングが簡単** – 多くの書き出し関連のエラーと警告に、一貫したログコードが含まれるようになりました。 これらのコードは、サポートやドキュメントを利用する際の問題を迅速に追跡するのに役立ちます。 詳しくは、[ ログコード参照](troubleshooting/log-codes-reference.md)を参照してください。
+![修正](../assets/fix.svg) **書き出しログのトラブルシューティングが簡単** – 多くの書き出し関連のエラーと警告に、一貫したログコードが含まれるようになりました。 これらのコードは、サポートやドキュメントを利用する際の問題を迅速に追跡するのに役立ちます。 詳しくは、[&#x200B; ログコード参照](troubleshooting/log-codes-reference.md)を参照してください。
 <!--MDEE-1276-->
 
 ![修正](../assets/fix.svg) **属性オプションラベルが変更された場合の自動再同期** – ストアビューの製品属性オプションラベルを変更すると（複数選択属性を含む）、影響を受ける製品が再び書き出しにキューに入れられるようになり、ライブサーチ、商品レコメンデーション、カタログサービスおよびその他の接続されたCommerce サービスで、更新されたファセットとフィルターラベルが買い物客ビューに表示されるようになりました。 以前は、ラベルのみの編集では、より広範な製品変更で同期がトリガーされるまで、SaaS カタログに古い文言が表示される可能性がありました。
@@ -194,7 +194,7 @@ _2026年2月6日_
 
 _2026年2月2日_
 
-![修正](../assets/fix.svg)更新中にアイテムバッチが許可された上限を超える可能性がある問題を修正しました。これにより、[Commerce サービス ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)または[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)にデータを同期する際に`items_limit_exceeded`個のエラーが発生します。<!--MDEE-1264-->
+![修正](../assets/fix.svg)更新中にアイテムバッチが許可された上限を超える可能性がある問題を修正しました。これにより、[Commerce サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)または[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)にデータを同期する際に`items_limit_exceeded`個のエラーが発生します。<!--MDEE-1264-->
 
 ![修正](../assets/fix.svg) バンドル製品オプションの収集時に、失敗した項目を登録するロジックを追加することで、製品データの書き出しの信頼性を向上しました。<!--CCSAAS-4458-->
 
