@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 04f2eddef8abc6843ced0d00368ea19f3626adce
+source-git-commit: 9cc9b3270d808102f293609a606ff32a781d084c
 workflow-type: tm+mt
-source-wordcount: '6842'
+source-wordcount: '6869'
 ht-degree: 0%
 ---
 # リリースノート
@@ -64,21 +64,21 @@ ht-degree: 0%
 
 ## 2026年9月 – リリース #2 {#latest}
 
-[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 
-以下の項目は、2026年9月22日に実稼動環境で利用できるようになります。
+2026年9月22日に実稼動環境に追加された項目は次のとおりです。
 
 >[!BEGINSHADEBOX]
 
 ### リターンリクエストにファイルと画像を添付
 
-ストアフロント `requestReturn` GraphQLの変更を通じて返品リクエストを送信する際に、ファイルと画像をアップロードできるようになりました。<!-- CCSAAS-5410 -->
+ストアフロント [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQLのミューテーションを通じて返品リクエストを送信する際に、ファイルと画像をアップロードできるようになりました。 [`initiateUpload`と`finishUpload`の変異](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/)を使用してファイルをアップロードし、返されたキーを返品項目のカスタム属性に割り当てます。<!-- CCSAAS-5410 -->
 
 ### 在庫ソースの外観の管理
 
-各インベントリソースには、[!DNL Commerce Admin] （[!UICONTROL **ストア**] > [!UICONTROL **インベントリ**] > [!UICONTROL **ソース**]）のソース編集ページに&#x200B;[!UICONTROL **ストアフロントで表示できる**] トグルが含まれるようになりました。 [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL クエリは、表示されているようにフラグを設定したソースに対してのみ在庫情報を返します。 ソースはデフォルトで非表示になっています。<!-- ACCS-1645 -->
+各インベントリソースには、[!DNL Commerce Admin] （[!UICONTROL **ストア**] > [!UICONTROL **インベントリ**] > [!UICONTROL **ソース**]）の[&#x200B; ソース編集ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/inventory/sources/sources-add)で&#x200B;[!UICONTROL **ストアフロントで表示できる**] トグルが含まれるようになりました。 [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL クエリは、表示されているようにフラグを設定したソースに対してのみ在庫情報を返します。 ソースはデフォルトで非表示になっています。<!-- ACCS-1645 -->
 
 ### マルチソースの配送をガイド
 
