@@ -1,6 +1,6 @@
 ---
-title: ' [!DNL Adobe Commerce as a Cloud Service]に移行'
-description: ' [!DNL Adobe Commerce as a Cloud Service]への移行方法について説明します。'
+title: '[!DNL Adobe Commerce as a Cloud Service]に移行'
+description: '[!DNL Adobe Commerce as a Cloud Service]への移行方法について説明します。'
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
 badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
@@ -10,38 +10,57 @@ autotag-review: '2026-06-18T16:12:28.840Z'
 TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
   - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
+    internal-label: Data pipelines
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Data management
+source-git-commit: 464b0d7298bd2a5569b12d0956a84667709e4c3a
 workflow-type: tm+mt
-source-wordcount: 3374
+source-wordcount: '3682'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Commerce as a Cloud Service]に移行
 
 このガイドは、開発者が[!DNL Adobe Commerce on Cloud]またはオンプレミスから[!DNL Adobe Commerce as a Cloud Service] （SaaS）に移行するのに役立ちます。 このSaaS モデルは、パフォーマンスの向上、拡張性、および[!DNL Adobe Experience Cloud]との統合を提供します。
@@ -111,13 +130,13 @@ Adobe Commerceは、さまざまなデプロイメントモデルで利用でき
 | ワークフロー | ツール | 説明 |
 | --- | --- | --- |
 | [評価](#migration-assessment-tool) | **移行評価ツール** | カスタムモジュール、サードパーティの拡張機能、統合、ストアフロントの観察、データベーススキーマ、カスタムテーブル、移行の推奨事項、複雑さのスコアリング、近代化の労力の見積もりをインベントリする、AIを活用した既存の実装の評価。 |
-| [&#x200B; アプリケーションとストアフロントの近代化](#code-and-storefront-migration-commerce-developer-mcp) | **Commerce Developer MCP** | COMMERCEアプリケーションのAIを活用した近代化、カスタマイズの[!DNL App Builder]への移行の高速化、Edge Delivery Services（EDS）へのストアフロント変換のサポート、実装のレビューと検証による広範なアプリケーション近代化ジャーニーのガイドをエンジニアリングチームが提供します。 |
+| [&#x200B; アプリケーションとストアフロントの近代化](#code-and-storefront-migration-commerce-developer-agent) | **Commerce Developer AgentとCommerce Developer MCP** | COMMERCEアプリケーションのAIを活用した近代化、カスタマイズの[!DNL App Builder]への移行の高速化、Edge Delivery Services（EDS）へのストアフロント変換のサポート、実装のレビューと検証による広範なアプリケーション近代化ジャーニーのガイドをエンジニアリングチームが提供します。 |
 | [&#x200B; データ移行](#data-migration-commerce-data-migration-service) | **Commerce Data Migration Service** | カタログ、顧客、注文データの抽出、読み込み、完全性の検証を[!DNL Adobe Commerce as a Cloud Service]に行います。 |
 
 これらのトラックはスタンドアロンではありません。 適切な順序でまとめて使用することで、手戻りを最小限に抑えることができます。
 
 - **最初に評価を実行** – 評価を実行すると、最初にサポートされていないカスタマイズを特定し、移行労力を推定し、データ移行の考慮事項を公開し、実装を開始する前に統合依存関係を強調表示します。 評価は、アプリケーションの近代化ワークフローとデータ移行ワークフローの両方で使用される移行の設計図になります。
-- **アプリケーションの近代化** - Commerce Developer MCPは、移行評価を使用して、近代化するカスタマイズとその方法を決定します。 次に、MCPは、対応する[!DNL App Builder]個のアプリケーションとストアフロントコンポーネントを生成します。
+- **アプリケーションの近代化** - Commerce Developer AgentとCommerce Developer MCPは、移行評価を使用して、近代化するカスタマイズとその方法を決定します。 次に、Commerce Developer AgentまたはCommerce Developer MCPが、対応する[!DNL App Builder]個のアプリケーションとストアフロントコンポーネントを生成します。
 - **データ移行** - データ移行スコープに関するアンケートでは、評価で表示されたスコープ、ボリューム、カスタムテーブルをキャプチャします。
 - **カスタムおよびサードパーティのデータ** - サードパーティの拡張機能によってカスタムテーブルに保持されているデータは、評価中に識別されますが、標準データ移行では処理されず、[!DNL App Builder]のカスタマイズが必要です。
 
@@ -182,23 +201,54 @@ Migration Assessment ToolとCommerce Developer MCPは、AIを利用して、検�
 
 すべての[!DNL Adobe Commerce as a Cloud Service]移行は評価から始まります。 これは、スコープを設定し、不確実性を減らし、実装を開始する前に共有された移行ブループリントを作成するための費用対効果の高い方法です。
 
-評価ツールとダウンストリーム開発者ワークフローについて詳しくは、[Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)を参照してください。
+評価ツールとダウンストリーム開発者ワークフローについて詳しくは、[Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)を参照してください。
 
 Migration Assessment Toolと統合されたCommerce Developer Agentについて詳しくは、[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)を参照してください
 
-## コードとストアフロントの移行（Commerce Developer MCP）
+## コードとストアフロントの移行（Commerce Developer Agent）
 
 [!DNL Adobe Commerce on Cloud]またはオンプレミスのカスタマイズでは、アプリケーション内で実行されるインプロセス PHP （モジュール、プラグイン、イベントオブザーバー）を使用できます。 [!DNL Adobe Commerce as a Cloud Service]はバージョンのないSaaS プラットフォームであり、そのモデルは適用されなくなります。 カスタマイズは、イベントとAPIを通じてCommerceと統合される、プロセス外の[!DNL Adobe Developer App Builder] アプリケーションとして実行されます。 このアーキテクチャのストアのカスタマイズを最新化することは、通常、[!DNL Adobe Commerce as a Cloud Service]移行で最も重要なエンジニアリング作業です。
 
+Adobeでは、この作業にAIを活用した2つのパスを提供しています。
+
+- **Commerce Developer Agent** – ほとんどの移行で、ガイド付きのブラウザーベースのエクスペリエンスと推奨される出発点。
+- **Commerce Developer MCP** – 既存の開発環境で作業する場合や、Edge Delivery Services（EDS）でストアフロントの最新化を必要とする場合に使用する会話型IDE エクスペリエンス。
+
 ### コード移行の概要
 
-Commerce Developer MCPは、移行評価から始まり、従来のPHP カスタマイズを[!DNL App Builder]個のアプリケーションに近代化するための会話型IDE エクスペリエンスを提供します。 また、Edge Delivery Services（EDS）上のストアフロントの再構築についても支援します。 Commerce開発者MCPは、Migration Assessment Toolの調査結果を直接利用することで、手作業による解釈を減らし、トレーサビリティを維持し、プロセス全体の一貫性を確保することで、承認された移行ロードマップに沿った実装を維持します。
+Commerce Developer Agentは、移行評価から始まり、従来のPHP カスタマイズを[!DNL App Builder]個のアプリケーションに近代化するための会話型エージェント体験を提供します。 Migration Assessment Toolの調査結果を直接利用することで、Commerce Developer Agentは、手作業による解釈を減らし、トレーサビリティを維持し、プロセス全体の一貫性を確保することで、承認された移行ロードマップに沿った実装を維持します。
 
-移行が主なユースケースですが、Commerce Developer MCPは、[!DNL Adobe Commerce]の包括的なAI開発エージェントとして設計されています。 MCPは、近代化、新しい開発、運用ワークフロー、およびすべての[!DNL Adobe Commerce as a Cloud Service]の更新をサポートしています。 このレベルの柔軟性により、移行後もCommerce アプリケーションの構築と拡張を継続することができます。
+移行が主なユースケースですが、Commerce Developer Agentは、[!DNL Adobe Commerce]の包括的なAI開発エージェントとして設計されています。 Commerce Developer Agentは、近代化、新しい開発、運用上のワークフロー、およびすべての[!DNL App Builder]の更新をサポートしています。 このレベルの柔軟性により、移行後もCommerce アプリケーションの構築と拡張を継続することができます。
 
-### Commerce Developer MCP
+### Commerce Developer Agent
 
-Commerce Developer MCPは、[移行評価](#migration-assessment-tool)の結果を使用して、識別されたカスタマイズを、反復的な開発ワークフローを通じて[!DNL App Builder]個のアプリケーションに変換します。 これらのツールを使用して開発する場合は、次のガイドラインを考慮してください。
+Commerce Developer Agentは、[移行評価](#migration-assessment-tool)の結果を使用して、識別されたカスタマイズを、反復的な開発ワークフローを通じて[!DNL App Builder]個のアプリケーションに変換します。 これらのツールを使用して開発する場合は、次のガイドラインを考慮してください。
+
+- **ブループリントから開始：** Commerce Developer Agentは、移行評価を使用し、構造化ブループリントを生成します。 これは段階的な移行計画であり、リスクを特定し、依存関係をマップ化して確認します。
+
+- **レビューと承認：**&#x200B;何も自動的に生成されません。 ブループリントを作成するには、コード生成を開始する前に明示的な承認が必要です。また、複数のバージョンで対話的に調整することもできます。
+
+- **Generate App Builder scaffolding:**&#x200B;承認されると、エージェントは次のようなCommerce拡張機能を含む[!DNL App Builder]のscaffoldedを生成します。
+
+  - イベントおよびWebhook インフラストラクチャ
+  - マーチャントが設定できる設定
+  - 永続性パターン
+
+  基礎モードを生成した後、エージェントは出力に対して検証チェックを実行します。
+
+- **調整して[!DNL App Builder]に直接エクスポートまたはデプロイ：**&#x200B;開発段階でフォローアップの変更をリクエストし、生成された拡張機能コードのZIPをダウンロードするか、Commerce Developer Agentから[!DNL App Builder]に直接デプロイできます。 プロジェクトのコンテキストと決定は、セッションをまたいで保持されます。
+
+詳しくは、[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)および[はじめに](https://developer.adobe.com/commerce/extensibility/developer-agent/getting-started)を参照してください。
+
+### Commerce Developer MCP （ローカル開発）
+
+>[!NOTE]
+>
+>Commerce Developer MCPは、IDE内で動作するように設計されています。
+
+既存のIDEで作業する場合や、Edge Delivery Services（EDS）でストアフロントを最新化する必要がある場合は、Commerce Developer MCPを使用できます。 Commerce Developer Agentと同様に、マイグレーション評価を直接利用するため、承認されたマイグレーションロードマップに沿った実装を行うことができ、手作業による解釈を減らすことができます。
+
+これらのツールを使用して開発する場合は、次のガイドラインを考慮してください。
 
 - **設計図から始める** - Commerce Developer MCPは、特定されたカスタマイズ、レコメンデーション、移行優先度を実装計画の基盤として使用して、移行評価を利用します。
 
@@ -231,19 +281,19 @@ MCPは、次のような機能も支援します。
 - 顧客体験の最適化
 - Edge Delivery Servicesの現在のベストプラクティスとの整合性
 
-### 開発者のMCP値
+### Commerce Developer AgentとDeveloper MCPの値
 
-処理中のPHPのカスタマイズから構成可能な[!DNL App Builder] アプリケーションに移行することは、大幅なアーキテクチャシフトを表します。 Commerce Developer MCPは、[!DNL Adobe Commerce]の知識、[!DNL App Builder]の実装パターン、および製品のベストプラクティスを開発ワークフローに直接埋め込むことで、そのギャップを埋めます。
+処理中のPHPのカスタマイズから構成可能な[!DNL App Builder] アプリケーションに移行することは、大幅なアーキテクチャシフトを表します。 Commerce Developer AgentとDeveloper MCPは、[!DNL Adobe Commerce]の知識、[!DNL App Builder]の実装パターン、製品のベストプラクティスを開発ワークフローに直接埋め込むことで、そのギャップを埋めます。
 
 このコンテキストを含めることで、配信速度とエンジニアリング品質の両方の一貫性が向上します。 チームは、一貫したアーキテクチャのガイダンスに従った実装を作成しながら、アプリケーションをより迅速に近代化できます。
 
-Commerceの開発者MCPは、推奨される実装パターンを組み込むことで、個々の専門知識に対する依存度を減らし、プロジェクトをまたいで一貫性のある方法で近代化の取り組みを拡大するのに役立ちます。
+推奨される実装パターンを組み込むことで、Commerce Developer AgentとDeveloper MCPは、個々の専門知識に依存することを減らし、プロジェクト全体で一貫性のある近代化の取り組みを拡大するのに役立ちます。
 
 移行プロセスは、既存の実装を改善する機会でもあります。 これにより、従来の技術的負債を回避して、従来のカスタマイズを簡素化し、古い機能を廃止し、SaaS機能を導入して、アプリケーションアーキテクチャを最新化できます。
 
-Commerce開発者MCPは、移行評価を直接利用するため、あらゆる近代化の取り組みは、トレーサビリティを元の評価に戻し、実装が承認済みの移行ロードマップに沿ったものとなるようにします。
+Commerce Developer Agentは移行アセスメントを直接使用するため、すべての近代化の取り組みは、トレーサビリティを元のアセスメントに戻し、実装が承認済みの移行ロードマップに沿ったものとなるようにします。
 
-また、Commerce Developer MCPでは、ビジネス要件の変更に応じて個別に進化できるモジュール [!DNL App Builder] アプリケーションを奨励することで、コンポーザブルアプリケーションの設計を促進しています。
+Commerce Developer AgentとDeveloper MCPは、ビジネス要件の変更に応じて個別に進化できるモジュール [!DNL App Builder] アプリケーションを奨励することで、コンポーザブルアプリケーションの設計も促進します。
 
 ### 開発者MCP スコープ
 
@@ -257,9 +307,9 @@ MCPはデータ移行を処理しません。 ビジネス データは、[Comme
 
 コードとストアフロントの近代化は、移行評価ツールのロードマップで移行範囲と優先順位が確立された後に開始されます。
 
-MCPのインストールと使用方法について詳しくは、[Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)のドキュメントを参照してください。
-
 Migration Assessment Toolと統合されたCommerce Developer Agentについて詳しくは、[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)を参照してください
+
+MCPのインストールと使用方法について詳しくは、[Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)のドキュメントを参照してください。
 
 ## データ移行（Commerce Data Migration Service）
 
