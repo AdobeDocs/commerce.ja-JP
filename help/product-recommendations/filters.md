@@ -5,17 +5,18 @@ exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
 TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Admin
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 778
+source-wordcount: '759'
 ht-degree: 0%
-
 ---
-
 # 商品を絞り込む
 
 Adobe Commerceは、設定不可能なデフォルトフィルターをレコメンデーション単位に自動的に適用します。 1つのページに複数のレコメンデーションユニットがデプロイされている場合、Adobe Commerceは、ユニット内で繰り返される商品をフィルタリングします。 繰り返し使用される製品に対する最初の参照のみが使用され、他の製品を推奨する余地が生まれます。 また、Adobe Commerceでは、以前に購入した商品やカートに入っている商品もフィルタリングします。
@@ -41,11 +42,11 @@ Adobe Commerceは、設定不可能なデフォルトフィルターをレコメ
 
 >[!NOTE]
 >
-> 包含フィルターと除外フィルターは、バージョン 3.2.2以降の`magento/product-recommendations` モジュールの従来のカテゴリの除外に置き換わります。 Adobe Commerce リリースについて詳しくは、[&#x200B; リリースノート &#x200B;](release-notes.md)を参照してください。
+> 包含フィルターと除外フィルターは、バージョン 3.2.2以降の`magento/product-recommendations` モジュールの従来のカテゴリの除外に置き換わります。 Adobe Commerce リリースについて詳しくは、[ リリースノート ](release-notes.md)を参照してください。
 
 ## フィルターの種類 {#filtertypes}
 
-![&#x200B; フィルター](assets/rec-conditions.png)
+![ フィルター](assets/rec-conditions.png)
 
 ### カテゴリ
 
@@ -55,7 +56,7 @@ Adobe Commerceは、設定不可能なデフォルトフィルターをレコメ
 
 >[!NOTE]
 >
->B2B マーチャントの場合、カテゴリーフィルターは、設定した[顧客固有の製品カテゴリ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/category-permissions)に準拠します。
+>B2B マーチャントの場合、カテゴリーフィルターは、設定した[顧客固有の製品カテゴリ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)に準拠します。
 
 Adobe Commerceでは、ページタイプにレコメンデーションをデプロイする際に、次のカテゴリーフィルター設定を使用することをお勧めします。
 
@@ -77,7 +78,7 @@ Adobe Commerceでは、ページタイプにレコメンデーションをデプ
 
 ### タイプ
 
-製品タイプに基づくフィルターには、特定のタイプのすべての製品が含まれるか、除外されます。 サポートされているタイプは、_simple_、_configurable_、_virtual_、_downloadable_、または&#x200B;_ギフトカード_&#x200B;です。 _バンドル_、_グループ化_、カスタム製品タイプはサポートされていません。
+製品タイプに基づくフィルターには、特定のタイプのすべての製品が含まれるか、除外されます。
 
 ### 表示
 
@@ -85,11 +86,11 @@ _カタログ_、_検索_、またはその両方など、表示に基づいて�
 
 ### 価格
 
-商品価格に基づくフィルターは、最終価格を使用して比較を実行します。 最終価格には、匿名の買い物客が利用できる割引が含まれています。 B2B マーチャントの場合、表示される価格は、設定した[顧客固有のグループ価格](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/pricing/pricing-advanced)を反映しています。
+商品価格に基づくフィルターは、最終価格を使用して比較を実行します。 最終価格には、匿名の買い物客が利用できる割引が含まれています。 B2B マーチャントの場合、表示される価格は、設定した[顧客固有のグループ価格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced)を反映しています。
 
 ### ストックステータス
 
 在庫状況に基づいて商品を除外するには、次の除外フィルターを使用できます。
 
 - 在庫切れ – （除外のみ）在庫切れの商品を除外します。
-- 在庫が少ない – （除外のみ）在庫が少ない商品を除外します。 在庫状況が低い場合は、[在庫構成](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/catalog/inventory)の&#x200B;_左しきい値_&#x200B;のみです。
+- 在庫が少ない – （除外のみ）在庫が少ない商品を除外します。 在庫状況が低い場合は、[在庫構成](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory)の&#x200B;_左しきい値_&#x200B;のみです。
