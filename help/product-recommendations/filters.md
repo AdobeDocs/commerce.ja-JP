@@ -42,11 +42,11 @@ Adobe Commerceは、設定不可能なデフォルトフィルターをレコメ
 
 >[!NOTE]
 >
-> 包含フィルターと除外フィルターは、バージョン 3.2.2以降の`magento/product-recommendations` モジュールの従来のカテゴリの除外に置き換わります。 Adobe Commerce リリースについて詳しくは、[ リリースノート ](release-notes.md)を参照してください。
+> 包含フィルターと除外フィルターは、バージョン 3.2.2以降の`magento/product-recommendations` モジュールの従来のカテゴリの除外に置き換わります。 Adobe Commerce リリースについて詳しくは、[&#x200B; リリースノート &#x200B;](release-notes.md)を参照してください。
 
 ## フィルターの種類 {#filtertypes}
 
-![ フィルター](assets/rec-conditions.png)
+![&#x200B; フィルター](assets/rec-conditions.png)
 
 ### カテゴリ
 
@@ -56,7 +56,7 @@ Adobe Commerceは、設定不可能なデフォルトフィルターをレコメ
 
 >[!NOTE]
 >
->B2B マーチャントの場合、カテゴリーフィルターは、設定した[顧客固有の製品カテゴリ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)に準拠します。
+>B2B マーチャントの場合、カテゴリーフィルターは、設定した[顧客固有の製品カテゴリ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)に準拠します。
 
 Adobe Commerceでは、ページタイプにレコメンデーションをデプロイする際に、次のカテゴリーフィルター設定を使用することをお勧めします。
 
