@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4b9ab9e256edced9a508d08dfcae3589bd27f304
+source-git-commit: b4bbb596143bdcbb8c55a26386db7a36e2961db9
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1093'
 ht-degree: 1%
 ---
 # 新しいテンプレート
@@ -9,6 +9,72 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年9月25日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits">PaaS</a>と<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create">Commerce Optimizer</a>の両方について、バンドルされた商品とグループ化された商品がサポートされていないと誤って記載されていた商品レコメンデーションのドキュメントを修正しました。</p>
+</td>
+      <td>
+        フィードバック
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/55b17947196acfa459934e4ee373469b84e16ea1">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年9月24日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Commerce Developer Agentが移行プロセスをどのように支援できるかを説明するため、<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview">移行の概要</a>を更新しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/739eabe6f43412610862ab00516687ad5aeeac53">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年9月23日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce as a Cloud Serviceの実稼動<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d879d372a199c24d266abdfb79d1ff0af164d75b">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年9月17日（PT）
 
@@ -22,7 +88,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -44,7 +110,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceの実稼動<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+      <td><p>Adobe Commerce as a Cloud Serviceの実稼動<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -66,7 +132,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce Product Management and Engineeringの戦略的実装とセキュリティガイダンスの新しいホームである<a href="https://experienceleague.adobe.com/ja/docs/commerce/insights/overview">Commerce Insights</a> ガイドを追加しました。</p>
+      <td><p>Adobe Commerce Product Management and Engineeringの戦略的実装とセキュリティガイダンスの新しいホームである<a href="https://experienceleague.adobe.com/en/docs/commerce/insights/overview">Commerce Insights</a> ガイドを追加しました。</p>
 </td>
       <td>
         新しいトピック
@@ -88,7 +154,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>製品リストページのカートに追加機能がPLP ウィジェットと連携しない問題に対処するために、<a href="https://experienceleague.adobe.com/ja/docs/commerce/live-search/release-notes"> ライブサーチ拡張機能</a>を4.7.3に更新しました（一部の独立したケースで）。</p>
+      <td><p>製品リストページのカートに追加機能がPLP ウィジェットと連携しない問題に対処するために、<a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes"> ライブサーチ拡張機能</a>を4.7.3に更新しました（一部の独立したケースで）。</p>
 </td>
       <td>
         フィードバック
@@ -110,7 +176,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>最新の<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md"> ソースログコード.md</a>から<a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference"> データ書き出しログコード参照</a>を更新しました。</p>
+      <td><p>最新の<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md"> ソースログコード.md</a>から<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference"> データ書き出しログコード参照</a>を更新しました。</p>
 </td>
       <td>
         テクニカル
@@ -132,7 +198,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -154,7 +220,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>最新の<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md"> ソースログコード.md</a>から<a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/troubleshooting/log-codes-reference"> データ書き出しログコード参照</a>を更新しました。</p>
+      <td><p>最新の<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md"> ソースログコード.md</a>から<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/log-codes-reference"> データ書き出しログコード参照</a>を更新しました。</p>
 </td>
       <td>
         テクニカル
@@ -162,7 +228,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1291cadbeca63d454eabab31c415b2d037d280ba">コミット</a></td>
     </tr>
     <tr>
-      <td><p>Adobe Commerce Optimizerでは、プライベートカタログの表示を1つの価格表に制限するようになりました。 詳しくは、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views"> プライベートカタログビュー</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-view"> カタログビュー</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/pricebooks">価格表</a>を参照してください。</p>
+      <td><p>Adobe Commerce Optimizerでは、プライベートカタログの表示を1つの価格表に制限するようになりました。 詳しくは、<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views"> プライベートカタログビュー</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view"> カタログビュー</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks">価格表</a>を参照してください。</p>
 </td>
       <td>
         メジャーアップデート
@@ -184,7 +250,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceの実稼動<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+      <td><p>Adobe Commerce as a Cloud Serviceの実稼動<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -192,7 +258,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">コミット</a></td>
     </tr>
     <tr>
-      <td><p>加盟店は、Commerce管理者から直接web サイトの範囲で、別のPayPal アカウントのオンボーディングをセルフサービスで行えるようになりました。 詳しくは、<a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/configure/connect-website-account">Web サイトの別のPayPal アカウントを接続する</a>を参照してください。</p>
+      <td><p>加盟店は、Commerce管理者から直接web サイトの範囲で、別のPayPal アカウントのオンボーディングをセルフサービスで行えるようになりました。 詳しくは、<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/connect-website-account">Web サイトの別のPayPal アカウントを接続する</a>を参照してください。</p>
 </td>
       <td>
         新しいトピック
@@ -214,7 +280,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>カタログ保護を有効にする方法を説明する<br /> – 有効な署名トークンを持つリクエストのみがカタログ保護のデータを取得できるようにする<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/private-catalog-view"> プライベートカタログビュー</a>が追加されました。<br />- カタログ保護のトークンに使用されるキーを作成、割り当て、回転する方法を説明する<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/restricted-access-keys">制限付きアクセスキー</a>が追加されました。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-view"> カタログビュー</a>の更新<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/overview">は何ですか？</a>, <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/get-started">開始</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits">制限と境界</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/launch/launch-checklist"> チェックリストを起動</a>、および<a href="https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer コネクタガイド </a>を使用して、新しいプライベートカタログビューと制限付きアクセスキーのトピックを参照してください。</p>
+      <td><p>カタログ保護を有効にする方法を説明する<br /> – 有効な署名トークンを持つリクエストのみがカタログ保護のデータを取得できるようにする<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view"> プライベートカタログビュー</a>が追加されました。<br />- カタログ保護のトークンに使用されるキーを作成、割り当て、回転する方法を説明する<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/restricted-access-keys">制限付きアクセスキー</a>が追加されました。<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view"> カタログビュー</a>の更新<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview">は何ですか？</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started">開始</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">制限と境界</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist"> チェックリストを起動</a>、および<a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer コネクタガイド </a>を使用して、新しいプライベートカタログビューと制限付きアクセスキーのトピックを参照してください。</p>
 </td>
       <td>
         メジャーアップデート、新しいトピック
@@ -236,7 +302,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -258,7 +324,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Migration Assessment Tool、Commerce Developer MCP、およびCommerce Data Migration Serviceを使用して、移行フローを更新し、<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/overview">移行の概要</a>を更新しました。</p>
+      <td><p>Migration Assessment Tool、Commerce Developer MCP、およびCommerce Data Migration Serviceを使用して、移行フローを更新し、<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview">移行の概要</a>を更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -280,7 +346,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新しい<a href="https://experienceleague.adobe.com/ja/docs/commerce/catalog-service/integration/catalog-events-guide"> カタログイベントとAdobe I/O統合ガイド </a>では、カタログイベントの有効化、SaaS データ書き出しフィードのエクスポートと同期の検証、Adobe I/O Eventsとの統合の方法について説明しています。</p>
+      <td><p>新しい<a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/integration/catalog-events-guide"> カタログイベントとAdobe I/O統合ガイド </a>では、カタログイベントの有効化、SaaS データ書き出しフィードのエクスポートと同期の検証、Adobe I/O Eventsとの統合の方法について説明しています。</p>
 </td>
       <td>
         メジャーアップデート、新しいトピック
@@ -302,7 +368,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>標準サービス </a>の<a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/compatibility#standard-vs-advanced-payment-services-experience">支払いサービス互換性テーブルを更新して、より広範な地理的な可用性を反映し、高度なオファーのサポートされている国の詳細を拡張しました。</p>
+      <td><p>標準サービス </a>の<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility#standard-vs-advanced-payment-services-experience">支払いサービス互換性テーブルを更新して、より広範な地理的な可用性を反映し、高度なオファーのサポートされている国の詳細を拡張しました。</p>
 </td>
       <td>
         フィードバック
@@ -324,7 +390,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を実稼動環境に更新しました。</p>
+      <td><p>Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes"> リリースノート </a>を実稼動環境に更新しました。</p>
 </td>
       <td>
         メジャーアップデート
@@ -346,34 +412,12 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>移行プロセスに関する詳細を記載した<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool">一括データ移行ツール </a>のドキュメントを更新しました。</p>
+      <td><p>移行プロセスに関する詳細を記載した<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool">一括データ移行ツール </a>のドキュメントを更新しました。</p>
 </td>
       <td>
         メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c8cab2404d47a6cb4a0418a59b533bf11e082b0b">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月23日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を更新しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">コミット</a></td>
     </tr>
   </tbody>
 </table>
