@@ -1,28 +1,34 @@
 ---
 title: ルールの作成と管理
 description: 検索、デフォルトの商品リスト、カテゴリーページのマーチャンダイジングルールを作成および管理する方法について説明します。
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+    internal-label: Personalization
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 4183
+source-wordcount: '4182'
 ht-degree: 0%
-
 ---
-
 # ルールの作成と管理
 
 ルールを作成して公開するには、次の手順に従います。
@@ -47,7 +53,7 @@ ht-degree: 0%
 | ルールタイプ | 目的 |
 | --- | --- |
 | **すべての製品リスト** | より具体的な検索やカテゴリルールが適用されない場合の、商品リストをまたいだデフォルトのランキングとマーチャンダイジング。 そのようなルールは1つしか作成できません。条件を含めることはできません。 |
-| **カテゴリルール** | 選択した1つ以上のカテゴリにマーチャンダイジングとランキングを適用し、それらのカテゴリーページの商品の順序を制御します。 |
+| **カテゴリルール** | 単一のカテゴリにマーチャンダイジングとランキングを適用し、そのカテゴリーページの商品の順序を制御します。 |
 | **検索ルール** | 買い物客がルールのクエリ条件に一致する検索を実行すると、マーチャンダイジングとランキングが適用されます。 |
 
 **ルールの作成** セクションでは、ルール名、スケジュール、すべてのリストまたは特定の検索条件、およびランキングタイプにルールが適用されるかどうかを定義します。

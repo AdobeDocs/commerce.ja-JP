@@ -5,17 +5,18 @@ exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
 TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Admin
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 778
+source-wordcount: '759'
 ht-degree: 0%
-
 ---
-
 # 商品を絞り込む
 
 Adobe Commerceは、設定不可能なデフォルトフィルターをレコメンデーション単位に自動的に適用します。 1つのページに複数のレコメンデーションユニットがデプロイされている場合、Adobe Commerceは、ユニット内で繰り返される商品をフィルタリングします。 繰り返し使用される製品に対する最初の参照のみが使用され、他の製品を推奨する余地が生まれます。 また、Adobe Commerceでは、以前に購入した商品やカートに入っている商品もフィルタリングします。
@@ -77,7 +78,7 @@ Adobe Commerceでは、ページタイプにレコメンデーションをデプ
 
 ### タイプ
 
-製品タイプに基づくフィルターには、特定のタイプのすべての製品が含まれるか、除外されます。 サポートされているタイプは、_simple_、_configurable_、_virtual_、_downloadable_、または&#x200B;_ギフトカード_&#x200B;です。 _バンドル_、_グループ化_、カスタム製品タイプはサポートされていません。
+製品タイプに基づくフィルターには、特定のタイプのすべての製品が含まれるか、除外されます。
 
 ### 表示
 

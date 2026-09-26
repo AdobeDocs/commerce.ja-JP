@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4b9ab9e256edced9a508d08dfcae3589bd27f304
+source-git-commit: b4bbb596143bdcbb8c55a26386db7a36e2961db9
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1093'
 ht-degree: 1%
 ---
 # 新しいテンプレート
@@ -9,6 +9,72 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年9月25日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/product-recommendations/boundaries-limits">PaaS</a>と<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/recommendations/create">Commerce Optimizer</a>の両方について、バンドルされた商品とグループ化された商品がサポートされていないと誤って記載されていた商品レコメンデーションのドキュメントを修正しました。</p>
+</td>
+      <td>
+        フィードバック
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/55b17947196acfa459934e4ee373469b84e16ea1">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年9月24日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Commerce Developer Agentが移行プロセスをどのように支援できるかを説明するため、<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/overview">移行の概要</a>を更新しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/739eabe6f43412610862ab00516687ad5aeeac53">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年9月23日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce as a Cloud Serviceの実稼動<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d879d372a199c24d266abdfb79d1ff0af164d75b">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年9月17日（PT）
 
@@ -352,28 +418,6 @@ ht-degree: 1%
         メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c8cab2404d47a6cb4a0418a59b533bf11e082b0b">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年7月23日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を更新しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">コミット</a></td>
     </tr>
   </tbody>
 </table>

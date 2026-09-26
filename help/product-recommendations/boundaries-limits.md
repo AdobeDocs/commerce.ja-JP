@@ -1,21 +1,18 @@
 ---
 title: 限界と限界
-description: ビジネスのニーズを満たすために [!DNL Product Recommendations] の境界と制限について説明します。
+description: ビジネスのニーズを満たすために、[!DNL Product Recommendations]の境界と制限について説明します。
 role: Admin, Developer
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '893'
 ht-degree: 0%
-
 ---
-
 # 限界と限界
 
 次の制限と制限を確認して、[!DNL Product Recommendations]がビジネスのニーズを満たしていることを確認します。 これらの制約を理解することで、実装の計画、フィルターの設定、一般的な問題の回避が可能になります。
 
 ## 一般
 
-- **製品タイプ** - サポートされている製品タイプには、_シンプル_、_設定可能_、_バーチャル_、_ダウンロード可能_、_ギフトカード_&#x200B;などがあります。 _バンドル_、_グループ化_、カスタム製品タイプはサポートされていません。 カタログにサポートされていない製品タイプが多数含まれている場合は、[準備状況スコア &#x200B;](create.md#readiness-indicators)が低くなる可能性があります。 製品タイプ別[&#x200B; フィルター](filters.md#type)を参照してください。
 - スペースを含む&#x200B;**SKU** - スペースを含むSKUは、推奨事項の関連性を減らすことができ、可能な場合は避ける必要があります。
 - **買い物かごページ** - ストアが[買い物かごページを買い物かごに商品を追加した直後に表示するように設定されている場合、商品レコメンデーションは買い物かごページでサポートされません](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。 [推奨事項の作成](create.md)を参照してください。
 - **子製品** – 設定可能な製品の子製品（表示&#x200B;_個別に表示されない_）は、レコメンデーションユニットに表示されません。 設定可能（親）製品のみが表示されます。 [商品のフィルター](filters.md#product)を参照してください。
