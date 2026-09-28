@@ -45,8 +45,8 @@ CommerceのAEM Assets統合が有効になると、次のメディアタイプ�
 
 製品画像は、一致するルールを介してリンクされます。
 
-* AEM Assetsで商品アセットを追加または更新する方法（メタデータ、SKU リンク、承認）については、[ デフォルトの自動一致](synchronize/default-match.md)を参照してください。
-* カテゴリ画像またはページビルダーのコンテンツについては、[ アセットの手動選択](synchronize/asset-selector-integration.md)を参照してください。
+* AEM Assetsで商品アセットを追加または更新する方法（メタデータ、SKU リンク、承認）については、[&#x200B; デフォルトの自動一致](synchronize/default-match.md)を参照してください。
+* カテゴリ画像またはページビルダーのコンテンツについては、[&#x200B; アセットの手動選択](synchronize/asset-selector-integration.md)を参照してください。
 
 ## 製品画像
 
@@ -68,7 +68,7 @@ CommerceのAEM Assets統合が有効になると、次のメディアタイプ�
    >
    > 画像の管理がDAMに一元化されているため、統合が有効であることを示すメッセージが&#x200B;**読み取り専用** セクションになります。
 
-   商品アセット（画像をSKUにリンク）を設定するには、AEM Assets オーサーインスタンスを開き、メインビューから「**Assets**」をクリックします。 メタデータ設定手順については、[ デフォルトの自動一致](synchronize/default-match.md)を参照してください。
+   商品アセット（画像をSKUにリンク）を設定するには、AEM Assets オーサーインスタンスを開き、メインビューから「**Assets**」をクリックします。 メタデータ設定手順については、[&#x200B; デフォルトの自動一致](synchronize/default-match.md)を参照してください。
 
 ### AEM Assetsでの商品画像の管理
 
@@ -77,7 +77,7 @@ CommerceのAEM Assets統合が有効になると、次のメディアタイプ�
 AEM Assetsでアセットを製品にリンクする方法（メタデータの設定と承認を含む）については、次のトピックを参照してください。
 
 * [デフォルトの自動一致](synchronize/default-match.md)
-* [ カスタム自動一致](synchronize/custom-match.md)。
+* [&#x200B; カスタム自動一致](synchronize/custom-match.md)。
 
 ### ローカライズされたalt テキストの管理
 
@@ -85,7 +85,7 @@ AEM Assetsでアセットを製品にリンクする方法（メタデータの�
 
 Commerceは、各同期値を標準画像&#x200B;**[!UICONTROL Label]** フィールドに格納します。 代替テキストのローカライズでは、アセットの割り当て、画像の役割、ギャラリーの位置は変更されません。 `alt_text`など、お客様が作成したデータベース フィールドは、標準統合範囲外です。
 
-![Adobe Experience Manager代替テキスト ](./assets/aem-alt-texts.png){width="600" zoomable="yes"}
+![Adobe Experience Manager代替テキスト &#x200B;](./assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
 ### 同期SLA
 
@@ -101,7 +101,7 @@ Adobe Commerceでは、Adobe Experience Manager（AEM）ツールセットを使
 
 1. **ページビルダー**&#x200B;を使用して`content enrichment`をサポートしている&#x200B;**Adobe Commerce管理者**&#x200B;の任意のセクションに移動します。
 
-1. [ ページビルダー](https://developer.adobe.com/commerce/frontend-core/page-builder/){target=_blank}を開きます。
+1. [&#x200B; ページビルダー](https://developer.adobe.com/commerce/frontend-core/page-builder/){target=_blank}を開きます。
 
    **AEM Asset**&#x200B;という新しいメディアタイプが使用可能になります。
 
@@ -121,7 +121,7 @@ Adobe Commerceでは、Adobe Experience Manager（AEM）ツールセットを使
 
 >[!TIP]
 >
-> [DA.live （ドキュメントオーサリング） ](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank}には、データを強化するためのアセットセレクターも用意されています。
+> [DA.live （ドキュメントオーサリング） &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank}には、データを強化するためのアセットセレクターも用意されています。
 
 ## 製品ビデオ
 
@@ -179,19 +179,19 @@ Adobe Commerceを活用すると、画像を商品カテゴリーに関連付け
 
 1. **[!UICONTROL Content]** セクションで、カテゴリに関連付けられている&#x200B;*画像フィールド*&#x200B;を見つけます。
 
-   ![ カテゴリーコンテンツ ](assets/category-asset.png){width="600" zoomable="yes"}
+   ![&#x200B; カテゴリーコンテンツ &#x200B;](assets/category-asset.png){width="600" zoomable="yes"}
 
 1. 「**[!UICONTROL Select from Assets]**」をクリックして、カテゴリ画像を変更します。
 
-   ![ カテゴリーコンテンツ ](assets/asset-view.png){width="600" zoomable="yes"}
+   ![&#x200B; カテゴリーコンテンツ &#x200B;](assets/asset-view.png){width="600" zoomable="yes"}
 
 1. AEM アセットセレクターから画像を選択します。
 
-   ![ カテゴリーコンテンツ ](assets/select-image.png){width="600" zoomable="yes"}
+   ![&#x200B; カテゴリーコンテンツ &#x200B;](assets/select-image.png){width="600" zoomable="yes"}
 
 1. **[!UICONTROL Save]**&#x200B;をクリックして続行します。
 
-   カテゴリの作成について詳しくは、**Commerce カタログ管理ガイド**&#x200B;の「[ カテゴリの内容](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)を完了する」を参照してください。
+   カテゴリの作成について詳しくは、**Commerce カタログ管理ガイド**&#x200B;の「[&#x200B; カテゴリの内容](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)を完了する」を参照してください。
 
 ## アセットの更新
 
@@ -199,7 +199,7 @@ AEM Assetsでアセットを更新および承認すると、自動一致を使�
 
 既に同期されているアセットのロールまたはポジションの値を変更すると、Commerceは重複するアセットを追加するのではなく、既存のロールの割り当てを更新します。 同期が失敗した場合は、再試行する前にCommerce ログでエラーを確認してください。 更新が完了したら、製品の&#x200B;**画像とビデオ** セクションで変更を確認し、アセットがメディアギャラリーで期待される役割と位置に表示されることを確認します。
 
-メタデータを介してアセットを製品にリンクするCommerce側のワークフローについては、[ デフォルトの自動一致](synchronize/default-match.md)のトピックを参照してください。
+メタデータを介してアセットを製品にリンクするCommerce側のワークフローについては、[&#x200B; デフォルトの自動一致](synchronize/default-match.md)のトピックを参照してください。
 
 AEM Assetsの手順については、次のドキュメントを参照してください。
 

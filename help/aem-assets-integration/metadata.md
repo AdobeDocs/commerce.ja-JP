@@ -31,7 +31,7 @@ Commerce メタデータを使用すると、次の機能が有効になりま�
 * **アセットを`commerce:skus` フィールドを使用して1つ以上の製品SKU**&#x200B;に関連付けます。
 * **Commerce**&#x200B;でのアセットの表示方法を、`commerce:roles`および`commerce:positions` フィールドを使用して定義します。
 * **ストアビュー**&#x200B;でキーを設定したCommerce固有のalt テキストを、`commerce:altTextStoreViews`および`commerce:altTextValues` フィールドを介して追加します。
-* **これらのフィールドを&#x200B;**[!UICONTROL Commerce]**タブとスキーマフォームを使用してAEM Assets プロパティ UI**&#x200B;で公開します。
+* **これらのフィールドを&#x200B;**&#x200B;[!UICONTROL Commerce]&#x200B;**タブとスキーマフォームを使用してAEM Assets プロパティ UI**&#x200B;で公開します。
 
 AEM プロジェクトでこれらのリソースを設定するには、[AEM Assets プロジェクトの設定](get-started/configure-aem.md)を参照してください。 このトピックの残りの部分では、メタデータの提供方法について説明します。
 
@@ -41,15 +41,15 @@ Adobeには、Experience Manager Assets as a Cloud Service設定にCommerce名�
 
 このパッケージコードは、次のリソースをAEM Assets オーサリング環境に追加します。
 
-* Commerce関連のプロパティを識別するための[ カスタム名前空間](https://github.com/ankumalh/assets-commerce/blob/main/ui.config/jcr_root/apps/commerce/config/org.apache.sling.jcr.repoinit.RepositoryInitializer~commerce-namespaces.cfg.json)、`Commerce`。
+* Commerce関連のプロパティを識別するための[&#x200B; カスタム名前空間](https://github.com/ankumalh/assets-commerce/blob/main/ui.config/jcr_root/apps/commerce/config/org.apache.sling.jcr.repoinit.RepositoryInitializer~commerce-namespaces.cfg.json)、`Commerce`。
 
   * Adobe Commerce プロジェクトに関連付けられたCommerce アセットにタグ付けするためのラベル `Eligible for Commerce`を持つカスタムメタデータタイプ `commerce:isCommerce`。
 
   * カスタムメタデータタイプ `commerce:skus`と、対応するUI コンポーネントを使用して&#x200B;**[!UICONTROL Product Data]** プロパティを追加します。 商品データには、Commerce アセットを商品SKUに関連付けるためのメタデータプロパティが含まれています。
 
-    ![ カスタム製品データ UI コントロール ](assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
+    ![&#x200B; カスタム製品データ UI コントロール &#x200B;](assets/aem-commerce-sku-metadata-fields-from-template.png){width="600" zoomable="yes"}
 
-  * Commerceでのアセットの視覚化方法を示すカスタムメタデータタイプ `commerce:roles`および`commerce:positions`属性。 4つの標準ロール （`image`、`small_image`、`thumbnail`、および`swatch_image`）は引き続きサポートされています。 AEM Assets Integration拡張機能バージョン 1.4.6では、`hero`や`custom_role_1`など、`commerce:roles`でカスタム画像ロールを設定して、Commerceがデフォルトで定義していないロールを同期することもできます。 カスタム画像の役割の取り込み方法については、[ カスタム自動一致](synchronize/custom-match.md)を参照してください。
+  * Commerceでのアセットの視覚化方法を示すカスタムメタデータタイプ `commerce:roles`および`commerce:positions`属性。 4つの標準ロール （`image`、`small_image`、`thumbnail`、および`swatch_image`）は引き続きサポートされています。 AEM Assets Integration拡張機能バージョン 1.4.6では、`hero`や`custom_role_1`など、`commerce:roles`でカスタム画像ロールを設定して、Commerceがデフォルトで定義していないロールを同期することもできます。 カスタム画像の役割の取り込み方法については、[&#x200B; カスタム自動一致](synchronize/custom-match.md)を参照してください。
 
     >[!NOTE]
     >
@@ -60,13 +60,13 @@ Adobeには、Experience Manager Assets as a Cloud Service設定にCommerce名�
     * `commerce:altTextStoreViews` – 各行のビューコードを格納します。
     * `commerce:altTextValues` — `commerce:altTextStoreViews`の各エントリと同じインデックスにあるalt テキストに一致します。
 
-    [外部マッチャー](synchronize/custom-match.md){target=_blank}を使用するApp Builderの実装では、アセットペイロードの変換時にこれらのプロパティをインターセプトできます。 これは、カタログ内での製品画像の割り当てやスコープ設定は変更されません。 AEM Assets メタデータの[ ローカライズされたalt テキスト ](#localized-alt-text-in-aem-assets-metadata)を参照してください。
+    [外部マッチャー](synchronize/custom-match.md){target=_blank}を使用するApp Builderの実装では、アセットペイロードの変換時にこれらのプロパティをインターセプトできます。 これは、カタログ内での製品画像の割り当てやスコープ設定は変更されません。 AEM Assets メタデータの[&#x200B; ローカライズされたalt テキスト &#x200B;](#localized-alt-text-in-aem-assets-metadata)を参照してください。
 
 * Commerce アセットのタグ付け用の`Eligible for Commerce`および`Product Data` フィールドを含むCommerce タブを持つメタデータスキーマフォーム。 このフォームには、AEM Assets UIから`roles`および`position` フィールドを表示または非表示にするオプションも用意されています。
 
-  ![AEM Assets メタデータスキーマフォームの「Commerce」タブ ](assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
+  ![AEM Assets メタデータスキーマフォームの「Commerce」タブ &#x200B;](assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
 
-* 最初のアセットの同期をサポートするために、[ サンプルにタグ付けして承認されたCommerce アセット ](https://github.com/ankumalh/assets-commerce/blob/main/ui.content/src/main/content/jcr_root/content/dam/wknd/en/activities/hiking/equipment_6.jpg/.content.xml) `equipment_6.jpg`が含まれています。 AEM AssetsからAdobe Commerceに同期できるのは、承認済みのCommerce アセットのみです。
+* 最初のアセットの同期をサポートするために、[&#x200B; サンプルにタグ付けして承認されたCommerce アセット &#x200B;](https://github.com/ankumalh/assets-commerce/blob/main/ui.content/src/main/content/jcr_root/content/dam/wknd/en/activities/hiking/equipment_6.jpg/.content.xml) `equipment_6.jpg`が含まれています。 AEM AssetsからAdobe Commerceに同期できるのは、承認済みのCommerce アセットのみです。
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Adobeには、Experience Manager Assets as a Cloud Service設定にCommerce名�
 
 ## AEM Assets メタデータのローカライズされたalt テキスト
 
-_[!UICONTROL Alt texts]_マルチフィールドは、対象となる画像を編集するときに、**[!UICONTROL Commerce]**タブのAEM Assets アセットメタデータエディターで使用できます。
+_[!UICONTROL Alt texts]_&#x200B;マルチフィールドは、対象となる画像を編集するときに、**[!UICONTROL Commerce]**&#x200B;タブのAEM Assets アセットメタデータエディターで使用できます。
 
 >[!IMPORTANT]
 >
@@ -88,9 +88,9 @@ _[!UICONTROL Alt texts]_マルチフィールドは、対象となる画像を�
 
 追加のストアビュー用に行を追加するには、**[!UICONTROL Add]**&#x200B;を選択します。 行を削除するには、その行の&#x200B;**[!UICONTROL Delete]** アイコンを選択して削除します。
 
-![ ストアビューコードと代替テキスト入力を含む代替テキストマルチフィールド ](assets/aem-alt-texts.png){width="600" zoomable="yes"}
+![&#x200B; ストアビューコードと代替テキスト入力を含む代替テキストマルチフィールド &#x200B;](assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
-保存すると、クライアント側の検証により、任意の行に空の&#x200B;_[!UICONTROL Store View Code]_がある場合、または2つの行で同じストアビューコードが使用されている場合は、送信がブロックされます（大文字と小文字は区別されません）。
+保存すると、クライアント側の検証により、任意の行に空の&#x200B;_[!UICONTROL Store View Code]_&#x200B;がある場合、または2つの行で同じストアビューコードが使用されている場合は、送信がブロックされます（大文字と小文字は区別されません）。
 
 代替テキストエントリは、次の2つのインデックス整列`String[]` プロパティとしてJCR アセットメタデータに保持されます。
 
