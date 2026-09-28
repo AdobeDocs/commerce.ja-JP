@@ -6,24 +6,30 @@ exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
 TQID: https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Digital asset management
+source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
 workflow-type: tm+mt
-source-wordcount: 1073
+source-wordcount: '1236'
 ht-degree: 0%
-
 ---
-
 # Commerce メディアアセットの管理
 
 <!--In ACAP-844, this topic was linked to from the Commerce Admin products images and videos when the Assets integration is enabled. If the URL to the topic changes, be sure to add a redirect.-->
@@ -39,8 +45,8 @@ CommerceのAEM Assets統合が有効になると、次のメディアタイプ�
 
 製品画像は、一致するルールを介してリンクされます。
 
-* AEM Assetsで商品アセットを追加または更新する方法（メタデータ、SKU リンク、承認）については、[&#x200B; デフォルトの自動一致](synchronize/default-match.md)を参照してください。
-* カテゴリ画像またはページビルダーのコンテンツについては、[&#x200B; アセットの手動選択](synchronize/asset-selector-integration.md)を参照してください。
+* AEM Assetsで商品アセットを追加または更新する方法（メタデータ、SKU リンク、承認）については、[ デフォルトの自動一致](synchronize/default-match.md)を参照してください。
+* カテゴリ画像またはページビルダーのコンテンツについては、[ アセットの手動選択](synchronize/asset-selector-integration.md)を参照してください。
 
 ## 製品画像
 
@@ -62,7 +68,7 @@ CommerceのAEM Assets統合が有効になると、次のメディアタイプ�
    >
    > 画像の管理がDAMに一元化されているため、統合が有効であることを示すメッセージが&#x200B;**読み取り専用** セクションになります。
 
-   商品アセット（画像をSKUにリンク）を設定するには、AEM Assets オーサーインスタンスを開き、メインビューから「**Assets**」をクリックします。 メタデータ設定手順については、[&#x200B; デフォルトの自動一致](synchronize/default-match.md)を参照してください。
+   商品アセット（画像をSKUにリンク）を設定するには、AEM Assets オーサーインスタンスを開き、メインビューから「**Assets**」をクリックします。 メタデータ設定手順については、[ デフォルトの自動一致](synchronize/default-match.md)を参照してください。
 
 ### AEM Assetsでの商品画像の管理
 
@@ -71,7 +77,15 @@ CommerceのAEM Assets統合が有効になると、次のメディアタイプ�
 AEM Assetsでアセットを製品にリンクする方法（メタデータの設定と承認を含む）については、次のトピックを参照してください。
 
 * [デフォルトの自動一致](synchronize/default-match.md)
-* [&#x200B; カスタム自動一致](synchronize/custom-match.md)。
+* [ カスタム自動一致](synchronize/custom-match.md)。
+
+### ローカライズされたalt テキストの管理
+
+ローカライズされた代替テキストは、Commerceの商品メディアギャラリーではなく、AEM Assetsで作成します。 **[!UICONTROL Alt Texts]** フィールドにCommerce ストアビューごとに行を追加します。 「白いT シャツ」など、この画像の代替テキスト値を含め、次に&#x200B;**[!UICONTROL Save & Close]**&#x200B;をクリックして、既存の同期プロセスが値をCommerceに転送します。
+
+Commerceは、各同期値を標準画像&#x200B;**[!UICONTROL Label]** フィールドに格納します。 代替テキストのローカライズでは、アセットの割り当て、画像の役割、ギャラリーの位置は変更されません。 `alt_text`など、お客様が作成したデータベース フィールドは、標準統合範囲外です。
+
+![Adobe Experience Manager代替テキスト ](./assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
 ### 同期SLA
 
@@ -87,7 +101,7 @@ Adobe Commerceでは、Adobe Experience Manager（AEM）ツールセットを使
 
 1. **ページビルダー**&#x200B;を使用して`content enrichment`をサポートしている&#x200B;**Adobe Commerce管理者**&#x200B;の任意のセクションに移動します。
 
-1. [&#x200B; ページビルダー](https://developer.adobe.com/commerce/frontend-core/page-builder/){target=_blank}を開きます。
+1. [ ページビルダー](https://developer.adobe.com/commerce/frontend-core/page-builder/){target=_blank}を開きます。
 
    **AEM Asset**&#x200B;という新しいメディアタイプが使用可能になります。
 
@@ -107,7 +121,7 @@ Adobe Commerceでは、Adobe Experience Manager（AEM）ツールセットを使
 
 >[!TIP]
 >
-> [DA.live （ドキュメントオーサリング） &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank}には、データを強化するためのアセットセレクターも用意されています。
+> [DA.live （ドキュメントオーサリング） ](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank}には、データを強化するためのアセットセレクターも用意されています。
 
 ## 製品ビデオ
 
@@ -165,28 +179,30 @@ Adobe Commerceを活用すると、画像を商品カテゴリーに関連付け
 
 1. **[!UICONTROL Content]** セクションで、カテゴリに関連付けられている&#x200B;*画像フィールド*&#x200B;を見つけます。
 
-   ![&#x200B; カテゴリーコンテンツ &#x200B;](assets/category-asset.png){width="600" zoomable="yes"}
+   ![ カテゴリーコンテンツ ](assets/category-asset.png){width="600" zoomable="yes"}
 
 1. 「**[!UICONTROL Select from Assets]**」をクリックして、カテゴリ画像を変更します。
 
-   ![&#x200B; カテゴリーコンテンツ &#x200B;](assets/asset-view.png){width="600" zoomable="yes"}
+   ![ カテゴリーコンテンツ ](assets/asset-view.png){width="600" zoomable="yes"}
 
 1. AEM アセットセレクターから画像を選択します。
 
-   ![&#x200B; カテゴリーコンテンツ &#x200B;](assets/select-image.png){width="600" zoomable="yes"}
+   ![ カテゴリーコンテンツ ](assets/select-image.png){width="600" zoomable="yes"}
 
 1. **[!UICONTROL Save]**&#x200B;をクリックして続行します。
 
-   カテゴリの作成について詳しくは、**Commerce カタログ管理ガイド**&#x200B;の「[&#x200B; カテゴリの内容](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)を完了する」を参照してください。
+   カテゴリの作成について詳しくは、**Commerce カタログ管理ガイド**&#x200B;の「[ カテゴリの内容](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)を完了する」を参照してください。
 
 ## アセットの更新
 
 AEM Assetsでアセットを更新および承認すると、自動一致を使用して更新がAdobe Commerceに自動的に送信されます。 このプロセスは、アセットの承認時にトリガーされます。 最終的な変更とメタデータの更新がすべて含まれていることを確認するには、承認する前にアセットを再処理する必要があります。
 
-メタデータを介してアセットを製品にリンクするCommerce側のワークフローについては、[&#x200B; デフォルトの自動一致](synchronize/default-match.md)のトピックを参照してください。
+既に同期されているアセットのロールまたはポジションの値を変更すると、Commerceは重複するアセットを追加するのではなく、既存のロールの割り当てを更新します。 同期が失敗した場合は、再試行する前にCommerce ログでエラーを確認してください。 更新が完了したら、製品の&#x200B;**画像とビデオ** セクションで変更を確認し、アセットがメディアギャラリーで期待される役割と位置に表示されることを確認します。
+
+メタデータを介してアセットを製品にリンクするCommerce側のワークフローについては、[ デフォルトの自動一致](synchronize/default-match.md)のトピックを参照してください。
 
 AEM Assetsの手順については、次のドキュメントを参照してください。
 
-* [デジタルアセットの再処理](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [デジタルアセットの再処理](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [アセットの承認](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [アセットの承認](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

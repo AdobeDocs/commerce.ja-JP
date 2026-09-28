@@ -1,32 +1,41 @@
 ---
 title: Commerce向けAEM Assets統合
-description: Adobe Experience Manager Assetsを [!DNL Commerce]  インスタンスと統合して、Commerce ストアフロントのメディアファイルを作成および管理する方法について説明します。
+description: Adobe Experience Manager Assetsを[!DNL Commerce] インスタンスと統合して、Commerce ストアフロントのメディアファイルを作成および管理する方法について説明します。
 feature: CMS, Media, Configuration, Integration
 exl-id: f450752a-bef1-419e-ad14-ff8879ab204b
 TQID: https://experienceleague.adobe.com/CTDmM7Ox2rQ-55F1BVTg-C8DPBEuEpzFxXGtWpnjXKs
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: da3860b0-d637-47df-bef0-273751180266
+    internal-label: Digital asset management
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Administration
+source-git-commit: 9ac4dbfe281f683adce98fc3693295e0f5364fca
 workflow-type: tm+mt
-source-wordcount: 1091
+source-wordcount: '1236'
 ht-degree: 1%
-
 ---
-
 # Commerce向けAEM Assets統合
 
 マーケティング予算がプレッシャーにさらされる中、パーソナライズされたコンテンツに対する需要が急速に高まっています。 小売企業やブランドは、地域や季節限定、セグメント固有の要件などに後押しされ、製品画像のバリエーションに対するニーズの高まりに対応することに苦慮しています。
@@ -43,29 +52,37 @@ AEM Assetsとの連携により、アセット管理ワークフローを自動�
 
 * **合理化されたカタログ管理** - アセットの更新とクリーンアップを自動化して、手作業を最小限に抑え、一貫性のある適切に管理された製品カタログを確保します。
 
+* **ローカライズされた画像の代替テキスト** - マーチャンダイザーは、Commerce ストアビューごとに代替テキストを作成できます。 統合により、値がCommerceの標準的な画像&#x200B;**[!UICONTROL Label]** フィールドに同期されます。
+
+* **カスタム画像ロール** - AEM Assets Integration拡張機能バージョン 1.4.6以降では、AEM Assetsで設定されたカスタム画像ロールは、4つの標準ロールに加えて、同期中も保持されます。 [自動マッチングのカスタム ](synchronize/custom-match.md)を参照してください。
+
+* **拡張機能の更新通知** - AEM Assets Integration拡張機能バージョン 1.4.6以降では、Commerceは新しい拡張機能のバージョンを確認し、管理者に通知します。 [拡張機能の更新を確認する](get-started/check-for-updates.md)を参照してください。
+
+代替テキストのローカライズでは、製品画像の割り当てやギャラリーのマッピングは変更されません。 ストアビューのアセットの可用性は個別の機能であり、代替テキストワークフローではカバーされません。
+
 ## 統合の使用要件
 
-この統合を[製品ビジュアルまたはAEM Assets](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets)のいずれかで活用するには、次の要件を満たす必要があります。
+この統合を[製品ビジュアルまたはAEM Assets](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets)のいずれかで活用するには、次の要件を満たす必要があります。
 
 >[!BEGINTABS]
 
 >[!TAB 製品ビジュアル ]
 
-[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} Adobe Commerceのアクティブライセンス、AEM Assetsを利用した製品ビジュアル、および[AEM Dynamic Media](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) （これらのライセンスは、[!DNL Adobe Commerce as a Cloud Service]および[!DNL Adobe Commerce Optimizer]ですぐに利用できます）。
+[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} Adobe Commerceのアクティブライセンス、AEM Assetsを利用した製品ビジュアル、および[AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) （これらのライセンスは、[!DNL Adobe Commerce as a Cloud Service]および[!DNL Adobe Commerce Optimizer]ですぐに利用できます）。
 
 >[!TAB AEM Assets]
 
-[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}Adobe Commerce、Adobe Experience Manager Assets、および[AEM Dynamic Media](https://experienceleague.adobe.com/ja/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)のアクティブライセンス。
+[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"}Adobe Commerce、Adobe Experience Manager Assets、および[AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)のアクティブライセンス。
 
 [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} Adobe Commerce 2.4.5以降
 
-* Adobe Commerce 2.4.5以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}を参照してください。
+* Adobe Commerce 2.4.5以降。 詳しくは、[必要システム構成](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}を参照してください。
 
-[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} Adobe Experience Managerは[Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/overview)でプロビジョニングされています
+[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} Adobe Experience Managerは[Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/overview)でプロビジョニングされています
 
 >[!ENDTABS]
 
-統合を設定するAdobe Commerce ユーザーは、AEM Assets プロジェクトがプロビジョニングされている[IMS Organization](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)にアクセスできる必要があります。
+統合を設定するAdobe Commerce ユーザーは、AEM Assets プロジェクトがプロビジョニングされている[IMS Organization](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)にアクセスできる必要があります。
 
 >[!BEGINSHADEBOX]
 
@@ -91,7 +108,7 @@ AEM AssetsとAdobe Commerceの統合機能を設定および使用する方法�
 
 Adobe CommerceとAEM Assetsが連携し、コンテンツワークフローを効率化する方法をご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3447884?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3447837)
 
 >[!TAB Adobe Commerce as a Cloud Service チュートリアル ]
 
@@ -107,6 +124,8 @@ AEM Assets統合をインストールして設定するプロセスは、Adobe C
 
 統合がAEM Assets環境に追加する名前空間、メタデータスキーマ、および&#x200B;**[!UICONTROL Commerce]** タブについて理解するには、開始する前に、[AEM AssetsのCommerce メタデータを確認してください。](metadata.md)
 
+ローカライズされた画像の代替テキストについては、[AEM Assets メタデータのローカライズされた代替テキスト ](metadata.md#localized-alt-text-in-aem-assets-metadata)を参照してください。 設定と同期の手順については、[AEM Assets プロジェクトの設定](get-started/configure-aem.md)および[統合の設定](get-started/setup-synchronization.md)を参照してください。
+
 デプロイメントを選択し、必要な手順に従って順番に実行します。
 
 >[!BEGINTABS]
@@ -115,7 +134,7 @@ AEM Assets統合をインストールして設定するプロセスは、Adobe C
 
 [!BADGE SaaSのみ]{type=Positive tooltip="Adobe Commerce as a Cloud Service プロジェクト（Adobeで管理されるSaaS インフラストラクチャ）にのみ適用されます。"}
 
-1. Commerce メタデータをサポートするには、[AEM Assets プロジェクトを設定](get-started/configure-aem.md)します。 AEM リリース `2026.5.26309`以降では、[&#x200B; セルフサービスオンボーディング &#x200B;](get-started/configure-aem.md#enable-aem-commerce-self-service)を使用します。以前のリリースでは、`assets-commerce` パッケージを手動でインストールします。
+1. Commerce メタデータをサポートするには、[AEM Assets プロジェクトを設定](get-started/configure-aem.md)します。 AEM リリース `2026.5.26309`以降では、[ セルフサービスオンボーディング ](get-started/configure-aem.md#enable-aem-commerce-self-service)を使用します。以前のリリースでは、`assets-commerce` パッケージを手動でインストールします。
 
 1. [IMS ユーザー権限](get-started/permissions.md)を設定して、アセットセレクターと、自動入力された&#x200B;**[!UICONTROL Program ID]**&#x200B;および&#x200B;**[!UICONTROL Environment ID]** フィールドを使用できるようにします。
 
@@ -127,9 +146,9 @@ AEM Assets統合をインストールして設定するプロセスは、Adobe C
 
 [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}
 
-1. Commerce メタデータをサポートするには、[AEM Assets プロジェクトを設定](get-started/configure-aem.md)します。 AEM リリース `2026.5.26309`以降では、[&#x200B; セルフサービスオンボーディング &#x200B;](get-started/configure-aem.md#enable-aem-commerce-self-service)を使用します。以前のリリースでは、`assets-commerce` パッケージを手動でインストールします。
+1. Commerce メタデータをサポートするには、[AEM Assets プロジェクトを設定](get-started/configure-aem.md)します。 AEM リリース `2026.5.26309`以降では、[ セルフサービスオンボーディング ](get-started/configure-aem.md#enable-aem-commerce-self-service)を使用します。以前のリリースでは、`assets-commerce` パッケージを手動でインストールします。
 
-1. [Adobe Commerce パッケージ &#x200B;](get-started/configure-commerce.md)をインストールして、拡張機能を追加し、必要な資格情報と接続を生成します。
+1. [Adobe Commerce パッケージ ](get-started/configure-commerce.md)をインストールして、拡張機能を追加し、必要な資格情報と接続を生成します。
 
 1. [IMS ユーザー権限](get-started/permissions.md)を設定して、アセットセレクターと、自動入力された&#x200B;**[!UICONTROL Program ID]**&#x200B;および&#x200B;**[!UICONTROL Environment ID]** フィールドを使用できるようにします。
 
@@ -143,11 +162,11 @@ AEM Assets統合をインストールして設定するプロセスは、Adobe C
 
 [!DNL Adobe Commerce Optimizer]管理者設定UIがありません。 Adobe サポートは、オンボーディングチケットからの統合を設定するので、まずAEM Assetsを準備してください。
 
-1. Commerce メタデータをサポートするには、[AEM Assets プロジェクトを設定](get-started/configure-aem.md)します。 AEM リリース `2026.5.26309`以降では、[&#x200B; セルフサービスオンボーディング &#x200B;](get-started/configure-aem.md#enable-aem-commerce-self-service)を使用します。以前のリリースでは、`assets-commerce` パッケージを手動でインストールします。
+1. Commerce メタデータをサポートするには、[AEM Assets プロジェクトを設定](get-started/configure-aem.md)します。 AEM リリース `2026.5.26309`以降では、[ セルフサービスオンボーディング ](get-started/configure-aem.md#enable-aem-commerce-self-service)を使用します。以前のリリースでは、`assets-commerce` パッケージを手動でインストールします。
 
-1. [&#x200B; オンボーディングサポートチケット &#x200B;](get-started/configure-aco.md#onboarding)を、テナント ID、AEM プログラム ID、AEM Environment ID、一致するルール、レイヤー、ロケールを使用して送信します。
+1. [ オンボーディングサポートチケット ](get-started/configure-aco.md#onboarding)を、テナント ID、AEM プログラム ID、AEM Environment ID、一致するルール、レイヤー、ロケールを使用して送信します。
 
-1. [&#x200B; チケットに登録したのと同じロケールとレイヤーを使用して、カタログビュー](get-started/configure-aco.md#onboarding)を設定します。
+1. [ チケットに登録したのと同じロケールとレイヤーを使用して、カタログビュー](get-started/configure-aco.md#onboarding)を設定します。
 
 1. オプション。 [商品画像の表示](get-started/configure-storefront.md#enable-product-images)を有効にして、Edge Delivery Servicesを搭載したストアフロントでAEMが管理する商品画像をレンダリングします。
 
@@ -157,4 +176,4 @@ AEM Assets統合をインストールして設定するプロセスは、Adobe C
 
 ## サポート
 
-このガイドに記載されていない情報や質問がある場合は、AEM Assets統合の営業担当者にお問い合わせいただくか、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を作成して追加のヘルプを受け取ってください。
+このガイドに記載されていない情報や質問がある場合は、AEM Assets統合の営業担当者にお問い合わせいただくか、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を作成して追加のヘルプを受け取ってください。
