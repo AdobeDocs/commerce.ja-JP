@@ -7,21 +7,25 @@ exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
 TQID: https://experienceleague.adobe.com/z4WBMzUa6Jn8EjUH1e5oojV4I3bTDZJylwtQ7LZ4wPE
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+    internal-label: Metadata
+source-git-commit: 555a9c9aff3f4d5f60f13374a9f23a70e2111b3b
 workflow-type: tm+mt
-source-wordcount: 1675
+source-wordcount: '1824'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce パッケージのインストール
 
 Commerceとの連携により、Adobe CommerceとAdobe Experience Manager Assets（AEM Assets）の間でアセットを同期できるようになります。 この拡張機能は、両方のプラットフォームで製品画像、ビデオ、その他のメディアアセットを管理するための一連のツールとサービスを提供します。
@@ -60,6 +64,12 @@ Adobe Commerce パッケージをインストールし、次のタスクを実�
 
 AEM Assets Integration拡張機能（`aem-assets-integration`）の最新バージョンを、Adobe Commerce 2.4.5以降のAdobe Commerce インスタンスにインストールします。 拡張機能は、[repo.magento.com](https://repo.magento.com/admin/dashboard) リポジトリからコンポーザーのメタパッケージとして配信されます。
 
+既定では、`composer require magento/aem-assets-integration`は使用可能な最新バージョンをインストールします。 代わりに正確なバージョンを固定するには（例えば、複数の環境を同じ検証済みリリースに保持するには）、`"magento/aem-assets-integration": "1.4.7"`などの厳密な制約を使用します。互換性のある1.xの範囲が意図されている場合にのみ`^1.4.7`を使用します。
+
+>[!NOTE]
+>
+>1.4.6より前のバージョンからアップグレードする場合は、Adobeで1.4.7以降に直接アップグレードすることをお勧めします。 バージョン 1.4.6では、カスタム画像の役割と拡張機能の更新チェッカーが導入されました。 バージョン 1.4.7では、[&#x200B; カスタム自動一致](../synchronize/custom-match.md)に使用される`workspace.json` ファイルが、Commerce Async Config Saveが有効になっている場合に正しく保持されない問題を修正しました。 非同期設定の保存が有効になっているカスタムマッチャーを使用する場合は、アップグレード後に`workspace.json` ファイルを再アップロードします。 [非同期設定の保存](../synchronize/custom-match.md#async-config-save)を参照してください。
+
 >[!BEGINTABS]
 
 >[!TAB  クラウド インフラストラクチャ ]
@@ -78,10 +88,10 @@ Commerce Cloud インスタンスに[!DNL AEM Assets Integration]拡張機能を
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. AEM Assets Integration for Commerce拡張機能を追加します。
+1. AEM Assets Integration for Commerce拡張機能を追加します。 使用可能な最新バージョンをインストールするには、バージョン制約を省略するか、ここに示すように特定のバージョンを固定します。
 
    ```shell
-   composer require "magento/aem-assets-integration" "<version-tbd>" --no-update
+   composer require "magento/aem-assets-integration" "^1.4.7" --no-update
    ```
 
 1. パッケージの依存関係を更新します。
@@ -106,7 +116,7 @@ Commerce Cloud インスタンスに[!DNL AEM Assets Integration]拡張機能を
 
 オンプレミス インスタンスの[!DNL AEM Assets Integration]拡張機能をインストールするには、この方法を使用します。
 
-1. Composerを使用して、AEM Assets Integration for Commerce拡張機能をプロジェクトに追加します。
+1. Composerを使用して、AEM Assets Integration for Commerce拡張機能をプロジェクトに追加します。 バージョン制約を省略して、使用可能な最新バージョンをインストールするか、特定のバージョン（`"^1.4.7"`など）を固定します。
 
    ```shell
    composer require "magento/aem-assets-integration" --no-update

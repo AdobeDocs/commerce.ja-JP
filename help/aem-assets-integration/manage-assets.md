@@ -6,24 +6,30 @@ exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
 TQID: https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Digital asset management
+source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
 workflow-type: tm+mt
-source-wordcount: 1073
+source-wordcount: '1236'
 ht-degree: 0%
-
 ---
-
 # Commerce メディアアセットの管理
 
 <!--In ACAP-844, this topic was linked to from the Commerce Admin products images and videos when the Assets integration is enabled. If the URL to the topic changes, be sure to add a redirect.-->
@@ -72,6 +78,14 @@ AEM Assetsでアセットを製品にリンクする方法（メタデータの�
 
 * [デフォルトの自動一致](synchronize/default-match.md)
 * [&#x200B; カスタム自動一致](synchronize/custom-match.md)。
+
+### ローカライズされたalt テキストの管理
+
+ローカライズされた代替テキストは、Commerceの商品メディアギャラリーではなく、AEM Assetsで作成します。 **[!UICONTROL Alt Texts]** フィールドにCommerce ストアビューごとに行を追加します。 「白いT シャツ」など、この画像の代替テキスト値を含め、次に&#x200B;**[!UICONTROL Save & Close]**&#x200B;をクリックして、既存の同期プロセスが値をCommerceに転送します。
+
+Commerceは、各同期値を標準画像&#x200B;**[!UICONTROL Label]** フィールドに格納します。 代替テキストのローカライズでは、アセットの割り当て、画像の役割、ギャラリーの位置は変更されません。 `alt_text`など、お客様が作成したデータベース フィールドは、標準統合範囲外です。
+
+![Adobe Experience Manager代替テキスト &#x200B;](./assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
 ### 同期SLA
 
@@ -182,6 +196,8 @@ Adobe Commerceを活用すると、画像を商品カテゴリーに関連付け
 ## アセットの更新
 
 AEM Assetsでアセットを更新および承認すると、自動一致を使用して更新がAdobe Commerceに自動的に送信されます。 このプロセスは、アセットの承認時にトリガーされます。 最終的な変更とメタデータの更新がすべて含まれていることを確認するには、承認する前にアセットを再処理する必要があります。
+
+既に同期されているアセットのロールまたはポジションの値を変更すると、Commerceは重複するアセットを追加するのではなく、既存のロールの割り当てを更新します。 同期が失敗した場合は、再試行する前にCommerce ログでエラーを確認してください。 更新が完了したら、製品の&#x200B;**画像とビデオ** セクションで変更を確認し、アセットがメディアギャラリーで期待される役割と位置に表示されることを確認します。
 
 メタデータを介してアセットを製品にリンクするCommerce側のワークフローについては、[&#x200B; デフォルトの自動一致](synchronize/default-match.md)のトピックを参照してください。
 

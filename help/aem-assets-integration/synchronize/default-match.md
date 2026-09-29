@@ -6,19 +6,21 @@ exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
 TQID: https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+    internal-label: Metadata
+source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
 workflow-type: tm+mt
-source-wordcount: 317
+source-wordcount: '349'
 ht-degree: 0%
-
 ---
-
 # デフォルトの自動一致
 
 CommerceのAEM Assets統合では、**AEM Assets** メタデータ設定に基づいて、デフォルトの自動一致メカニズム（**[!UICONTROL Match by product SKU]**）が提供されます。 このルールにより、**Adobe Commerce**&#x200B;と&#x200B;**AEM Assets**&#x200B;の間でシームレスに同期が可能になり、アセットが正しいマーチャンダイジングエンティティに自動的にリンクされるようになります。
@@ -50,6 +52,8 @@ Commerce Adminで&#x200B;**[!UICONTROL Match by product SKU]**&#x200B;一致ル�
    ![例のメタデータ &#x200B;](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
 
 1. アセットを関連付けられた製品SKUにリンクするメタデータ （[!UICONTROL SKU]、[!UICONTROL position]、および[!UICONTROL role]）を設定します。
+
+   4つの標準ロールは`image`、`small_image`、`thumbnail`、`swatch_image`です。 AEM Assets Integration拡張機能バージョン 1.4.6以降では、`hero`や`custom_role_1`などのカスタム画像ロールを入力することもできます。 詳しくは、[&#x200B; カスタム自動一致](custom-match.md)を参照してください。
 
    >[!NOTE]
    >

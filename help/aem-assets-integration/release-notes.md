@@ -3,13 +3,11 @@ title: AEM Assets統合のリリースノート
 description: すべてのAEM Assets統合リリースについて詳しくは、リリースノートを参照してください。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: afef108e512c69047a0420566a498dab164c207e
+source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1784'
 ht-degree: 0%
-
 ---
-
 # AEM Assets統合のリリースノート
 
 このリリースノートでは、AEM Assets統合のすべてのリリースについて説明します。次の内容が含まれます。
@@ -38,6 +36,36 @@ _2025年2月11日_
 
 +++
 
+## v1.4.7
+
+_2026年9月18日_
+
+[!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
+
+![修正済みの問題](../assets/fix.svg)<!-- Issue ACAP-1317 --> Commerce非同期設定の保存が有効になっている場合、[&#x200B; カスタム自動一致](synchronize/custom-match.md)用にアップロードされた`workspace.json` ファイルが正しく保持されない問題を修正しました。 以前は、管理者リクエストはファイルの内容ではなくアップロードメタデータのみをキューに入れていたため、非同期設定コンシューマーが保存を処理するまでに、一時的なアップロードファイルを読み取ることができなくなりました。 その結果、App Builder OAuth値は変更されずに、設定は正常に保存されたように見えました。 アップロードされたApp Builder資格情報は、キュー境界を維持し、非同期コンシューマーによって正しく処理されるようになりました。
+
+>[!IMPORTANT]
+>
+>非同期設定の保存オプションが有効になっているカスタムマッチャーを使用する場合は、このバージョンにアップグレードした後で`workspace.json` ファイルを再アップロードします。 アップロード手順については、[非同期設定の保存](synchronize/custom-match.md#async-config-save)を参照してください。
+
+## v1.4.6
+
+_2026年9月8日_
+
+[!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
+
+![新しい問題](../assets/new.svg)<!-- Issue ACAP-1272 --> カスタム AEM イメージ ロールが同期中に保持されるようになりました。 4つの標準ロール （`image`、`small_image`、`thumbnail`、および`swatch_image`）に加えて、AEM `commerce:roles` メタデータフィールドのカスタム値が取り込まれ、Commerce product media-gallery dataにマッピングされます。 詳しくは、[&#x200B; カスタム自動一致](synchronize/custom-match.md)を参照してください。
+
+![新しい問題](../assets/new.svg)<!-- Issue ACAP-1272 --> Adobe Commerceでは、AEM Assets Integration拡張機能の更新を非同期で確認し、新しいバージョンが利用可能になったときに管理者に通知できるようになりました。 管理者は、`bin/magento aem:assets:check-update`を使用して手動チェックを実行することもできます。 詳しくは、[拡張機能の更新を確認する](get-started/check-for-updates.md)を参照してください。
+
+## v1.4.5
+
+_2026年8月3日_
+
+[!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
+
+![修正済みの問題](../assets/fix.svg)<!-- Issue ACAP-1321 --> ストアビューのアセットの表示に関する後方互換性の問題を修正しました。 非表示のストアビューを指定しない既存のアセット同期リクエストは、変更なしで引き続き機能します。
+
 ## v1.4.4
 
 _2026年7月30日_
@@ -45,6 +73,8 @@ _2026年7月30日_
 [!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
 
 ![新しい問題](../assets/new.svg)これで、AEM アセットの特定のストアビューを非表示にできるようになりました。 AEM Assetsが1つ以上のストアビューに対して画像を非表示としてマークすると、Commerceはその画像をそれらのストアビューのストアフロントから除外します。 管理者製品メディアギャラリーに、画像を非表示にするストアビューを示す&#x200B;**[!UICONTROL Store View Visibility]** フィールドが含まれるようになりました。<!-- Issue ACAP-1308 -->
+
+![修正済みの問題](../assets/fix.svg) Page Builder統合パッケージが`magento/module-page-builder` パッケージを誤って必要とし、パッケージが個別にインストールされない問題を修正しました。
 
 ## v1.4.2
 

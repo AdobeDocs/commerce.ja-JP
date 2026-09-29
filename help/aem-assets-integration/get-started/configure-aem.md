@@ -20,9 +20,9 @@ topic_v2:
     internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 4c27d94eca656c48dd50ba8dc69a905ea141c6fd
+source-git-commit: fda6fa7c9ae80a594f0eb05624030cd6b13f0da2
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1861'
 ht-degree: 1%
 ---
 # AEM Assets プロジェクトの設定
@@ -205,6 +205,8 @@ OpenAPI機能を備えた[!BADGE SaaSのみ]{type=Positive url="https://experien
 
    * 製品SKUと`Eligible for Commerce` フィールドが表示されます。
 
+   * **[!UICONTROL Alt texts]** マルチフィールドは、**[!UICONTROL Store View Code]**&#x200B;および&#x200B;**[!UICONTROL Alt Text]**&#x200B;の入力で使用できます。
+
 ### 「Commerce」タブがプロパティに表示されない
 
 「**Commerce**」タブがプロパティに表示されない場合は、メタデータスキーマエディターで次の手順を手動で実行する必要があります。
@@ -220,6 +222,8 @@ OpenAPI機能を備えた[!BADGE SaaSのみ]{type=Positive url="https://experien
 1. **役割を表示**&#x200B;および&#x200B;**順序を表示**&#x200B;のチェックボックスを選択します。
 
 1. **checkbox** コンポーネントを&#x200B;**Commerce** タブにドラッグ&amp;ドロップし、プロパティ `commerce:isCommerce`にマッピングします。 オプションとして&#x200B;**Yes**&#x200B;と&#x200B;**No**&#x200B;を定義します。
+
+1. 「**[!UICONTROL Alt texts]**」マルチフィールドを「**Commerce**」タブに追加します。 2つのインデックス整列プロパティを`commerce:altTextStoreViews`および`commerce:altTextValues`として設定します。
 
 その他の問題が発生した場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を作成するか、AEM Assets Integrationの営業担当者にお問い合わせください。
 
