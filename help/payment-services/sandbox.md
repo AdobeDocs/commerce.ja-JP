@@ -1,17 +1,15 @@
 ---
 title: テストサンドボックスの設定
-description: PayPal サンドボックスアカウントと管理者オンボーディングを使用して、ライブ支払い前に [!DNL Payment Services]  テストモードで実行します（Adobe Commerce オンプレミス、オンプレミス、SaaS）。
+description: PayPal サンドボックスアカウントと管理者オンボーディングを使用して、ライブ支払い前に[!DNL Payment Services]をテストモードで実行します（Adobe Commerce オンプレミス、オンプレミス、SaaS）。
 role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 5312d23f050d9007132f7f14b17caf13ab52c7df
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '778'
 ht-degree: 0%
-
 ---
-
 # テストサンドボックスの設定
 
 サンドボックスオンボーディングを開始する前に、無料のPayPal開発者アカウントにサインアップし、（オンボーディングに使用する）マーチャントと（チェックアウトのテストに使用する）買い物客アカウントの両方を作成する必要があります。 必要に応じて、複数の開発者アカウントを作成できます。
@@ -22,16 +20,16 @@ PayPal サンドボックスアカウントでは、テストモードで[!DNL P
 
 サンドボックスのオンボーディングを完了するには：
 
-1. [PayPal開発者アカウントページ &#x200B;](https://developer.paypal.com/developer/accounts/)に移動します。
+1. [PayPal開発者アカウントページ ](https://developer.paypal.com/developer/accounts/)に移動します。
 1. **[!UICONTROL Log in to Dashboard]**&#x200B;をクリックし、既存のPayPal Developer Portalが生成したBusiness サンドボックステストアカウントでログインするか、**新規登録**&#x200B;をクリックしてアカウントを作成します。
 1. PayPal サンドボックスアカウントを作成します。
-   1. _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**&#x200B;に移動します。
+   1. _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**に移動します。
    1. **[!UICONTROL Create account]**&#x200B;をクリックします。
 
-      サンドボックス PayPal オンボーディングプロセス中にPayPal サンドボックスアカウントを作成した場合、メールを確認できないため、[&#x200B; オンボーディングサンドボックスをリセット &#x200B;](#reset-your-sandbox-account)する必要があります。
+      サンドボックス PayPal オンボーディングプロセス中にPayPal サンドボックスアカウントを作成した場合、メールを確認できないため、[ オンボーディングサンドボックスをリセット ](#reset-your-sandbox-account)する必要があります。
 
    1. アカウントタイプとして「**[!UICONTROL Business]**」を選択し、**[!UICONTROL Create]**&#x200B;をクリックします。
-   1. _[!UICONTROL Sandbox Accounts]_&#x200B;セクションで、作成したサンドボックスアカウントの&#x200B;_[!UICONTROL Manage accounts]_&#x200B;列にある3つのドットをクリックします。
+   1. _[!UICONTROL Sandbox Accounts]_セクションで、作成したサンドボックスアカウントの_[!UICONTROL Manage accounts]_&#x200B;列にある3つのドットをクリックします。
    1. **[!UICONTROL View/edit account]**&#x200B;をクリックします。
 
       ![PayPal - サンドボックスアカウントの表示/編集](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -57,11 +55,11 @@ PayPal サンドボックスアカウントでは、テストモードで[!DNL P
 
    **[!UICONTROL Sandbox onboarding]** ボタンが表示されなくなり、「サンドボックス支払い保留中」というテキストが表示されます。
 
-PayPal サンドボックスオンボーディングが承認されると、お支払いシステムが現在サンドボックスモードであり、ライブ決済を処理していないことを示す通知が表示されます。
+   PayPal サンドボックスオンボーディングが承認されると、お支払いシステムが現在サンドボックスモードであり、ライブ決済を処理していないことを示す通知が表示されます。
 
->[!IMPORTANT]
->
->支払いを処理するための[!DNL Adobe Commerce]および[!DNL Magento Open Source]の[!DNL Payment Services]への同意を（PayPal アカウント設定で）取り消した場合、ストア内の注文は[!DNL Payment Services]によって処理できません。 支払いサービスのホームに、失効した同意に関するアラートが表示されます。 アラートを閉じるには、**[!UICONTROL Do not show again]**&#x200B;をクリックします。
+   >[!IMPORTANT]
+   >
+   >支払いを処理するための[!DNL Adobe Commerce]および[!DNL Magento Open Source]の[!DNL Payment Services]への同意を（PayPal アカウント設定で）取り消した場合、ストア内の注文は[!DNL Payment Services]によって処理できません。 支払いサービスのホームに、失効した同意に関するアラートが表示されます。 アラートを閉じるには、**[!UICONTROL Do not show again]**&#x200B;をクリックします。
 
 ### サンドボックスアカウントをリセット
 
@@ -90,13 +88,13 @@ PayPal サンドボックスオンボーディングが承認されると、お�
 
 購入者の国を設定するには：
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**に移動します。
 
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
 
-1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
+1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_セクションを展開します。
 
-1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL General Configuration]_ セクションを展開します。
+1. _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL General Configuration]_ セクションを展開します。
 
 1. **[!UICONTROL Method]**&#x200B;を`Sandbox`に設定します。
 
@@ -112,4 +110,4 @@ PayPal サンドボックスオンボーディングが承認されると、お�
 
 この機能を買い物客に公開する前に、統合およびステージング環境にデータスペースをテストし、実稼動環境で支払いをテストすることを強くお勧めします。
 
-詳しくは、[&#x200B; テストと検証](test-validate.md)を参照してください。
+詳しくは、[ テストと検証](test-validate.md)を参照してください。
