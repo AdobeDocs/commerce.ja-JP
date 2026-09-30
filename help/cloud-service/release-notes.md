@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 9cc9b3270d808102f293609a606ff32a781d084c
+source-git-commit: 1e03d399d191875186f5839458c3036179cf1b17
 workflow-type: tm+mt
-source-wordcount: '6869'
+source-wordcount: '7503'
 ht-degree: 0%
 ---
 # リリースノート
@@ -62,7 +62,93 @@ ht-degree: 0%
 >
 >Adobe Commerce オンプレミスまたはAdobe Commerce オンクラウドインフラストラクチャを使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview)を参照してください。
 
-## 2026年9月 – リリース #2 {#latest}
+## 2026年10月 – リリース #1 {#latest}
+
+[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+2026年10月6日（PT）に本番環境に以下の項目が追加されます。
+
+>[!BEGINSHADEBOX]
+
+### 配送料Webhookで会社の詳細にアクセスする
+
+`plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` Webhook ペイロードには、カートの`company_id`と会社のカスタム属性が含まれるようになりました。そのため、[!DNL App Builder]の出荷統合では、[!DNL Commerce]に電話しなくても、送料無料などの実施要件を判断できます。 Webhookの[!UICONTROL Hook Fields]設定の`rateRequest.company` フィールドをマッピングします。<!-- CCSAAS-5485 -->
+
+### RESTでのカタログ価格ルールの管理
+
+新しいREST API エンドポイントを使用すると、統合で[&#x200B; カタログ価格ルール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog)をプログラムで管理および検索できます。<!-- ACCS-1621 -->
+
+### reCAPTCHAで事前署名済みアップロードを保護する
+
+事前署名済みファイルのアップロードを保護するために、[`initiateUpload` GraphQLの突然変異](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload)に[!DNL Google reCAPTCHA]の検証を必要とできるようになりました。 [!DNL Admin]でこの設定を有効にするには、[!UICONTROL **Stores**] > [!UICONTROL **Configuration**] > [!UICONTROL **Security**] > [!UICONTROL **Google reCAPTCHA Storefront**]&#x200B;で&#x200B;[!UICONTROL **Enable for Presigned Upload**]&#x200B;に移動します。<!-- CCSAAS-5490 -->
+
+### RESTを使用した返品用のカスタム属性の作成
+
+`/V1/returns`のREST API エンドポイントは、返品時（RMA）のカスタム属性を受け入れるので、注文管理システムなどのバックエンド統合では、ストアフロント GraphQL APIを使用せずに返品フィールドを同期できます。
+
+`/V1/media/initiate-upload`および`finish-upload` フローのキーを使用して、ファイルと画像の属性値を設定します。<!-- CCSAAS-5502 -->
+
+### ゲスト会社登録の制限
+
+新しい設定オプションを使用すると、未認証のゲストユーザーが`createCompany` GraphQLの変更を通じてストアフロントから会社を登録することを防ぐことができます。
+
+このオプションは[!DNL Commerce Admin]では利用できません。 これを有効にするには、[`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API エンドポイントを使用して`btob/company/restrict_guest_company_registration`設定フラグを`1`に設定します。
+
+```json
+{
+  "config": {
+    "btob/company/restrict_guest_company_registration": "1"
+  }
+}
+```
+
+有効にすると、[!DNL Commerce]は`createCompany`の突然変異と`isCompanyEmailAvailable` クエリの両方からゲスト呼び出しをブロックします。<!-- ACCS-1823 -->
+
+### GraphQLを使用した注文の監査
+
+`CustomerOrdersFilterInput` GraphQL入力オブジェクトは、order-edit チェーン内の任意の注文番号でフィルタリングできる`original_number` フィールドをサポートするようになりました。 応答は、元の注文と、その後の編集から作成されたすべての注文を単一のチェーンとして返し、RESTの`order_original_id` フィルターと一致します。<!-- ACCS-1442 -->
+
+### カタログ価格ルールを日時ごとにスケジュール
+
+[&#x200B; カタログ価格ルール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog)が[!DNL Commerce Admin]で開始または終了する時間帯を設定できるようになりました。<!-- ACCS-1762 -->
+
+### Adobe REST APIを使用したカスタム配送割引の適用
+
+カートの価格ルールに適合しない場合は、管理者REST APIを介して任意の配送割引をカートに適用できるようになりました。
+
+`POST /V1/carts/:cartId/shipping-discount`を使用して割引を設定します。 このエンドポイントを使用するには、管理者または統合レベルのアクセス権が必要です。<!-- ACCS-1156 -->
+
+### 機能強化とバグ修正
+
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
+
+* Adobe I/O Runtime `X-OW-EXTRA-LOGGING` ヘッダーを`on`に設定したWebhookを作成または編集すると、[!DNL Commerce Admin]に警告が表示されるようになりました。 ヘッダーはデバッグ用に作成されており、実稼動環境では推奨されません。<!-- CCSAAS-5486 -->
+
+* 事前署名済みのS3 アップロード URLを介してアップロードされたファイルに、マルウェアのスキャンが追加されるようになりました。<!-- ACCS-1463 -->
+
+* Bulk APIは、リクエストごとに最大エンティティ数を適用するようになりました。 制限を超えるリクエストはエラーを返します。<!-- ACCS-703 -->
+
+* 商品の販売可能数量が過小報告される可能性があり、買い物かごへの追加、REST、GraphQLの在庫確認が誤ってブロックされる可能性がある問題を修正しました。<!-- ACCS-1908 -->
+
+* [!DNL Commerce Admin]顧客グリッドに、会社に属するB2B顧客の重複した行が表示される問題を修正しました。<!-- ACCS-1143 -->
+
+* [!DNL AEM Assets]統合設定を保存してもテナントが登録されない問題を修正しました。<!-- ACAP-1317 -->
+
+* 特別価格が有効期限を超える可能性がある問題を修正しました。<!-- CCSAAS-5499 -->
+
+* 保留中のリターンで[!UICONTROL Return Items] グリッドの読み込みに失敗する問題を修正しました。<!-- CCSAAS-5514 -->
+
+* カートに在庫切れの商品が含まれている場合に、カートの価格または合計を要求するとエラーが返される問題を修正しました。<!-- CEXT-6776 -->
+
+* 見つからないSKUを見つけようとすると、在庫消費者がメッセージキューを圧倒する可能性がある問題を解決しました。<!-- ACCS-1976 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年9月 – リリース #2
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 

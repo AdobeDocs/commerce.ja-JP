@@ -1,17 +1,15 @@
 ---
 title: テストサンドボックスの設定
-description: PayPal サンドボックスアカウントと管理者オンボーディングを使用して、ライブ支払い前に [!DNL Payment Services]  テストモードで実行します（Adobe Commerce オンプレミス、オンプレミス、SaaS）。
+description: PayPal サンドボックスアカウントと管理者オンボーディングを使用して、ライブ支払い前に[!DNL Payment Services]をテストモードで実行します（Adobe Commerce オンプレミス、オンプレミス、SaaS）。
 role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 5312d23f050d9007132f7f14b17caf13ab52c7df
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '778'
 ht-degree: 0%
-
 ---
-
 # テストサンドボックスの設定
 
 サンドボックスオンボーディングを開始する前に、無料のPayPal開発者アカウントにサインアップし、（オンボーディングに使用する）マーチャントと（チェックアウトのテストに使用する）買い物客アカウントの両方を作成する必要があります。 必要に応じて、複数の開発者アカウントを作成できます。
@@ -57,11 +55,11 @@ PayPal サンドボックスアカウントでは、テストモードで[!DNL P
 
    **[!UICONTROL Sandbox onboarding]** ボタンが表示されなくなり、「サンドボックス支払い保留中」というテキストが表示されます。
 
-PayPal サンドボックスオンボーディングが承認されると、お支払いシステムが現在サンドボックスモードであり、ライブ決済を処理していないことを示す通知が表示されます。
+   PayPal サンドボックスオンボーディングが承認されると、お支払いシステムが現在サンドボックスモードであり、ライブ決済を処理していないことを示す通知が表示されます。
 
->[!IMPORTANT]
->
->支払いを処理するための[!DNL Adobe Commerce]および[!DNL Magento Open Source]の[!DNL Payment Services]への同意を（PayPal アカウント設定で）取り消した場合、ストア内の注文は[!DNL Payment Services]によって処理できません。 支払いサービスのホームに、失効した同意に関するアラートが表示されます。 アラートを閉じるには、**[!UICONTROL Do not show again]**&#x200B;をクリックします。
+   >[!IMPORTANT]
+   >
+   >支払いを処理するための[!DNL Adobe Commerce]および[!DNL Magento Open Source]の[!DNL Payment Services]への同意を（PayPal アカウント設定で）取り消した場合、ストア内の注文は[!DNL Payment Services]によって処理できません。 支払いサービスのホームに、失効した同意に関するアラートが表示されます。 アラートを閉じるには、**[!UICONTROL Do not show again]**&#x200B;をクリックします。
 
 ### サンドボックスアカウントをリセット
 
