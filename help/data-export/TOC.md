@@ -16,7 +16,7 @@ ht-degree: 2%
   - [同期の仕組み](sync-overview.md)
   - [同期の管理](data-sync-manage.md)
   - [フィードロック機構](feed-lock-mechanism.md)
-  - {hide-from-toc}[ カスタム製品タイプのサポート（早期アクセス） ](custom-product-types.md)
+  - {hide-from-toc}[&#x200B; カスタム製品タイプのサポート（早期アクセス） &#x200B;](custom-product-types.md)
 - 書き出しのスケジュールとパフォーマンス {#performance}
   - [データ量と送信時間の推定](estimate-data-volume-sync-time.md)
   - [書き出しのパフォーマンスの向上](customize-export-processing.md)

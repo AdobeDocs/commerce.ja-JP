@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 概要
 
-[!DNL SaaS Data Export]は、[ ライブサーチ ](../live-search/overview.md)や[ カタログサービス ](../catalog-service/overview.md)など、接続されたAdobe Commerce サービスのカタログデータを準備する際に、標準のCommerce製品タイプ（シンプル、設定可能、バンドルなど）を認識します。 サードパーティの拡張機能により、[!DNL SaaS Data Export]がネイティブに認識しない&#x200B;**カスタム製品タイプ**&#x200B;を導入できます。
+[!DNL SaaS Data Export]は、[&#x200B; ライブサーチ &#x200B;](../live-search/overview.md)や[&#x200B; カタログサービス &#x200B;](../catalog-service/overview.md)など、接続されたAdobe Commerce サービスのカタログデータを準備する際に、標準のCommerce製品タイプ（シンプル、設定可能、バンドルなど）を認識します。 サードパーティの拡張機能により、[!DNL SaaS Data Export]がネイティブに認識しない&#x200B;**カスタム製品タイプ**&#x200B;を導入できます。
 
 Commerce Storefront MCP カタログイネーブルメントモジュールを使用すると、[!DNL SaaS Data Export]は、アウトバウンドカタログペイロードで&#x200B;**シンプルな商品**&#x200B;として認識されないカスタム商品タイプを表すことができるため、[!DNL Commerce Storefront MCP]を使用する買い物客は、カタログベースのサービスを通じてそれらを発見できます。
 
@@ -60,4 +60,4 @@ bin/magento setup:upgrade
 
 ## カタログデータの再同期
 
-このモジュールをインストールしても、Adobe Commerceの基になる商品データは変更されないため、既存のカスタム商品タイプの商品が自動的に再書き出しされることはありません。 モジュールをインストールする前に既に同期されているカタログデータに新しいシンプルな製品表現を適用するには、カタログデータを手動で再同期します。 [ データを手動で再同期する](data-sync-manage.md#manually-resync-data)を参照してください。
+このモジュールをインストールしても、Adobe Commerceの基になる商品データは変更されないため、既存のカスタム商品タイプの商品が自動的に再書き出しされることはありません。 モジュールをインストールする前に既に同期されているカタログデータに新しいシンプルな製品表現を適用するには、カタログデータを手動で再同期します。 [&#x200B; データを手動で再同期する](data-sync-manage.md#manually-resync-data)を参照してください。
