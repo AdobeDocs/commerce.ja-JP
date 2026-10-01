@@ -14,7 +14,7 @@ ht-degree: 27%
 * [!DNL Adobe Commerce Catalog Service] (`magento/catalog-service`, `magento/catalog-service-installer`)
 * **[!UICONTROL Data Management Dashboard]** (`magento-catalog-sync-admin`)
 
-これらの拡張機能に関連付けられたデータは、引き続きCommerce データベースで使用できます。 ただし、コネクタが有効になっている場合は、[!DNL Commerce Optimizer]に書き出されません。 コネクタを有効にした後、これらの拡張機能によって提供されるAdobe Commerce検索およびマーチャンダイジング機能を実装するには、[[!DNL Commerce Optimizer] 管理UI](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour)から設定します。
+これらの拡張機能に関連付けられたデータは、引き続きCommerce データベースで使用できます。 ただし、コネクタが有効になっている場合は、[!DNL Commerce Optimizer]に書き出されません。 コネクタを有効にした後、これらの拡張機能によって提供されるAdobe Commerce検索およびマーチャンダイジング機能を実装するには、[[!DNL Commerce Optimizer] 管理UI](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/overview#quick-tour)から設定します。
 
 >[!IMPORTANT]
 >

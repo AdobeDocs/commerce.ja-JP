@@ -12,7 +12,7 @@ _テナント ID_&#x200B;を、[!DNL Commerce Optimizer] インスタンス [[!D
 
    ![[!DNL Commerce Optimizer]設定ページ &#x200B;](/help/aco-connector/assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
-1. コマンドラインから、[SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)を使用して[!DNL Adobe Commerce] ステージング環境に接続します。
+1. コマンドラインから、[SSH](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/secure-connections)を使用して[!DNL Adobe Commerce] ステージング環境に接続します。
 
 1. 統合を設定するには、次の[!DNL Adobe Commerce] CLI コマンドを実行し、プレースホルダー値を[!DNL Commerce Optimizer] プロジェクトの値に置き換えます。
 

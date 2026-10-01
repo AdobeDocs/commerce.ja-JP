@@ -2,7 +2,7 @@
 title: B2B Commerce用コネクタの設定
 description: B2B コネクタのインストール、Commerce スコープの選択、共有カタログデータの同期、カタログビューの検証、プロジェクションの正常性の監視の方法について説明します。
 feature: Integration, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -52,11 +52,11 @@ ht-degree: 0%
 
 ## 統合の使用要件 {#requirements-to-use-the-integration}
 
-* Adobe Commerce 2.4.8以降（[Commerce B2B バージョン 1.5.3+](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install)がインストールされ、有効）
+* Adobe Commerce 2.4.8以降（[Commerce B2B バージョン 1.5.3+](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/install)がインストールされ、有効）
 
 * プロビジョニングされたサンドボックスインスタンスを使用する[!DNL Commerce Optimizer] ライセンス。
 
-* Composerを使用してコネクタメタパッケージをダウンロードするための[認証キー](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
+* Composerを使用してコネクタメタパッケージをダウンロードするための[認証キー](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
 
 * [[!DNL Commerce Optimizer]  サンドボックスインスタンス &#x200B;](../optimizer/get-started.md)への管理者アクセス。
 
@@ -64,9 +64,9 @@ ht-degree: 0%
 
 * Commerce管理者への管理者アクセス。
 
-* [&#x200B; アプリケーションサーバー [!DNL Adobe Commerce] へのコマンドラインアクセス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)。
+* [&#x200B; アプリケーションサーバー [!DNL Adobe Commerce] へのコマンドラインアクセス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/user-access)。
 
-* [!DNL Commerce Optimizer] プロジェクトがプロビジョニングされている[IMS組織](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?)への開発者アクセス。
+* [!DNL Commerce Optimizer] プロジェクトがプロビジョニングされている[IMS組織](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/organizations?)への開発者アクセス。
 
 ### アプリケーション要件
 
