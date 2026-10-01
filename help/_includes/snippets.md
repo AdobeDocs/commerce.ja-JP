@@ -1,9 +1,8 @@
 ---
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '708'
 ht-degree: 0%
-
 ---
 # Commerce スニペット
 
@@ -20,6 +19,11 @@ ht-degree: 0%
 >
 >サンドボックス Optimizer インスタンスは必ず実稼動以外の環境に、実稼動インスタンスは実稼動環境に接続してください。 環境が一致していないと、カタログデータ、検索結果、レコメンデーションに一貫性がなくなります。
 
+## Adobe Commerce Optimizer data sync処理に関するメモ {#aco-data-sync-processing-note}
+
+>[!IMPORTANT]
+>
+>データ同期処理は、設定が完了するとすぐにバックグラウンドで開始されます。 カタログのサイズによっては、データ同期プロセスに数分から数時間かかる場合があります。
 
 ## Merchandising Services for Optimizer {#aco-merchandising-services}
 
@@ -110,3 +114,13 @@ Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Ado
 >[!IMPORTANT]
 >
 >一括データ移行ツールは現在、早期アクセス中です。 アクセスは、Commerce デプロイドエンジニアリング（CDE）のエンゲージメントプロセスを通じてのみ提供されます。 ツールとその適格要件の概要については、[一括データ移行ツール &#x200B;](../cloud-service/migration/bulk-data/migration-tool.md)を参照してください。
+
+## 拡張機能リンクをインストール {#install-extension-links}
+
+>[!NOTE]
+>
+>拡張機能のインストール手順について詳しくは、次のガイドを参照してください。
+>
+>[&#x200B; クラウドインフラストラクチャ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/extensions)の [!DNL Adobe Commerce] に拡張機能をインストールする
+>
+>[&#x200B; オンプレミス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/tutorials/extensions)に拡張機能をインストールする [!DNL Adobe Commerce] 

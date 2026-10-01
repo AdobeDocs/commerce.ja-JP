@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: fc9fb7a63e4e7c3dd862ed710acdfa8561c91ec5
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -57,9 +57,9 @@ PayPal サンドボックスアカウントでは、テストモードで[!DNL P
 
    PayPal サンドボックスオンボーディングが承認されると、お支払いシステムが現在サンドボックスモードであり、ライブ決済を処理していないことを示す通知が表示されます。
 
-   >[!IMPORTANT]
-   >
-   >支払いを処理するための[!DNL Adobe Commerce]および[!DNL Magento Open Source]の[!DNL Payment Services]への同意を（PayPal アカウント設定で）取り消した場合、ストア内の注文は[!DNL Payment Services]によって処理できません。 支払いサービスのホームに、失効した同意に関するアラートが表示されます。 アラートを閉じるには、**[!UICONTROL Do not show again]**&#x200B;をクリックします。
+>[!IMPORTANT]
+>
+>支払いを処理するための[!DNL Adobe Commerce]および[!DNL Magento Open Source]の[!DNL Payment Services]への同意を（PayPal アカウント設定で）取り消した場合、ストア内の注文は[!DNL Payment Services]によって処理できません。 支払いサービスのホームに、失効した同意に関するアラートが表示されます。 アラートを閉じるには、**[!UICONTROL Do not show again]**&#x200B;をクリックします。
 
 ### サンドボックスアカウントをリセット
 
@@ -102,9 +102,9 @@ PayPal サンドボックスアカウントでは、テストモードで[!DNL P
 
 1. **[!UICONTROL Save Config]**&#x200B;をクリックして変更を保存します。
 
->[!NOTE]
->
->**[!UICONTROL Buyer's country]**&#x200B;設定は、メソッドが`Sandbox`に設定されている場合にのみ表示されます。 これは実稼動環境には影響しません。
+   >[!NOTE]
+   >
+   >**[!UICONTROL Buyer's country]**&#x200B;設定は、メソッドが`Sandbox`に設定されている場合にのみ表示されます。 これは実稼動環境には影響しません。
 
 ## サンドボックス環境でのテスト
 

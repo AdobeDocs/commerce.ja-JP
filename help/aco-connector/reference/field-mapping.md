@@ -1,6 +1,6 @@
 ---
-title: ' [!DNL Adobe Commerce Optimizer Connector]  フィードのフィールドマッピング'
-description: すべてのフィードの [!DNL Adobe Commerce]  カタログデータから [!DNL Adobe Commerce Optimizer] 取り込みAPI形式への [!DNL Adobe Commerce Optimizer Connector]  フィールドマッピングについて説明します。
+title: '[!DNL Adobe Commerce Optimizer Connector] フィードのフィールドマッピング'
+description: すべてのフィードの[!DNL Adobe Commerce] カタログデータから[!DNL Adobe Commerce Optimizer]取り込みAPI形式への[!DNL Adobe Commerce Optimizer Connector] フィールドマッピングについて説明します。
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
@@ -8,29 +8,40 @@ autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+    internal-label: Data modeling
+source-git-commit: 9c2d0f1c3342d87b1e95a789b905f4a383bc8f5f
 workflow-type: tm+mt
-source-wordcount: 665
-ht-degree: 0%
-
+source-wordcount: '731'
+ht-degree: 3%
 ---
-
 
 # コネクタフィードのフィールドマッピング
 
@@ -56,6 +67,7 @@ ht-degree: 0%
 | `metaKeyword` | `metaTags/keywords` | 配列に分割された改行区切り文字列 |
 | `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | JSON エンコードされたオブジェクト `{inStock, lowStock, weight, weightType}`。常に最初の属性エントリとして存在します |
 | `attributes[]` | `attributes[]` | `{code, values[], variantReferenceId}`、`inStock`、`lowStock`、`weight`、`weightType`にマッピングされた各エントリは除外されます（`aco_ac_attributes`に入ります） |
+| `(synthesized)` | `attributes[].code = "ac_assortments"` | 製品が属するカスタム共有カタログの数値IDの配列。重複排除および並べ替え。 パブリックカタログ内の製品には、この属性がありません。 プライベート カタログ ビューの品揃えを適用するには、この属性に[!DNL Commerce Optimizer] ポリシーのフィルターを適用します。 |
 | `images[]` | `images[]` | `url`, `label`；マッピングされた標準ロール：`image`→`BASE`, `small_image`→`SMALL`, `thumbnail`→`THUMBNAIL`, `swatch_image`→`SWATCH`；非標準ロールは`customRoles[]`に移動します |
 | `categoryData[].categoryPath` | `routes[].path` | |
 | `categoryData[].productPosition` | `routes[].position` | |

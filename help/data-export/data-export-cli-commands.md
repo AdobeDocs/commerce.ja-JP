@@ -24,7 +24,7 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 658401a83acf5bab669f0734100eef99af98c908
+source-git-commit: 1009ae28286a8503511c85726bf44922c7c2575e
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Adobeでは、`saas:resync` コマンドを定期的に使用することはお�
 >
 >ライブサーチまたは商品レコメンデーションが有効になっている場合、初期同期が自動的に実行されます。 手動コマンドは必要ありません。
 >
->[!DNL Adobe Commerce Optimizer Connector]回のデプロイメントの場合、`aco:config:init` コマンドは、すべてのコネクタフィードのインデクサーを無効にすることで、最初の完全な同期をスケジュールします。 [同期を有効にする [!DNL Commerce Optimizer] 統合](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration)および[同期を [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md)に管理するを参照してください。
+>[!DNL Adobe Commerce Optimizer Connector]回のデプロイメントの場合、`aco:config:init` コマンドは、すべてのコネクタフィードのインデクサーを無効にすることで、最初の完全な同期をスケジュールします。 [同期を有効にする [!DNL Commerce Optimizer] 統合](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration)および[同期を [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md)に管理するを参照してください。
 
 コマンドラインから`saas:resync`をトリガーする場合、カタログのサイズに応じて、データを更新するのに数分から数時間かかる場合があります。
 

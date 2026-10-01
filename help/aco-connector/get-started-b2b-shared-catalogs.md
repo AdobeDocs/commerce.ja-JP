@@ -1,10 +1,8 @@
 ---
-title: '[!DNL Adobe Commerce Optimizer Connector]の基本を学ぶ'
-description: '[!DNL Adobe Commerce Optimizer Connector]のインストール、スコープ書き出し設定の設定、IMS認証の有効化、カタログ同期の検証方法について説明します。'
+title: B2B Commerce用コネクタの設定
+description: B2B コネクタのインストール、Commerce スコープの選択、共有カタログデータの同期、カタログビューの検証、プロジェクションの正常性の監視の方法について説明します。
 feature: Integration, Configuration
 badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
-autotag-review: '2026-06-09T16:55:50.934Z'
-TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -42,23 +40,19 @@ topic_v2:
 last-update: 2026-09-11
 source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '843'
 ht-degree: 0%
 ---
 
-# 基本を学ぶ
+# B2B Commerce用コネクタの設定
 
-[!DNL Adobe Commerce Optimizer Connector]をインストールして設定し、[!DNL Adobe Commerce] カタログデータを[!DNL Adobe Commerce Optimizer]と同期してから、データ同期ステータスを監視して、ストアフロントが最新であることを確認します。
+[!DNL Adobe Commerce]個のB2B共有カタログを使用しているマーチャントは、[!DNL Adobe Commerce Optimizer Connector for B2B]を使用して、カスタム共有カタログデータと設定を[!DNL Adobe Commerce Optimizer]に同期できます。
 
 {{aco-integration-environment-alignment}}
 
->[!NOTE]
->
->このトピックでは、[!DNL Adobe Commerce Optimizer Connector]について説明します。 [!DNL Adobe Commerce]個のB2B共有カタログを使用する場合は、[手順 [!DNL Adobe Commerce Optimizer Connector for B2B]](get-started-b2b-shared-catalogs.md)に従ってください。 B2B コネクタは、ベースカタログデータ同期を拡張して、カスタム共有カタログの同期をサポートします。
-
 ## 統合の使用要件 {#requirements-to-use-the-integration}
 
-* [Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) 2.4.7以降。 要件の詳細については、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements)を参照してください。
+* Adobe Commerce 2.4.8以降（[Commerce B2B バージョン 1.5.3+](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/install)がインストールされ、有効）
 
 * プロビジョニングされたサンドボックスインスタンスを使用する[!DNL Commerce Optimizer] ライセンス。
 
@@ -74,9 +68,15 @@ ht-degree: 0%
 
 * [!DNL Commerce Optimizer] プロジェクトがプロビジョニングされている[IMS組織](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/organizations?)への開発者アクセス。
 
+### アプリケーション要件
+
+* Commerce cronとインデクサーは正常に動作しています。
+* 書き出し用に特定された必要なweb サイトとストアビュー。
+* Adobe Commerceで設定または設定可能な共有カタログ、企業の割り当て、品揃え、B2B価格設定。
+
 >[!BEGINSHADEBOX]
 
-## 競合する拡張機能の削除
+## 競合する拡張機能の削除 {#remove-conflicting-extensions}
 
 {{$include /help/_includes/aco-connector/remove-conflicting-extensions.md}}
 
@@ -84,26 +84,26 @@ ht-degree: 0%
 
 ## 設定手順 {#configuration-steps}
 
-[!DNL Adobe Commerce Optimizer Connector]を有効にし、[!DNL Adobe Commerce]から[!DNL Commerce Optimizer] インスタンスへのデータの同期を開始するには、次の手順に従います。
+[!DNL Adobe Commerce Optimizer Connector for B2B]を有効にし、[!DNL Adobe Commerce]から[!DNL Commerce Optimizer] インスタンスへのカスタム共有カタログ設定の同期を開始するには、次の手順に従います。
 
-1. **[Composerを使用して [!DNL Adobe Commerce Optimizer Connector]  パッケージ](#install-the-adobe-commerce-optimizer-connector-package)**&#x200B;をインストールし、[!DNL Adobe Commerce] インスタンスを[!DNL Commerce Optimizer]に接続します。
+1. **[Composerを使用して [!DNL Adobe Commerce Optimizer Connector for B2B]  パッケージ](#install-the-adobe-commerce-optimizer-connector-for-B2B-package)**&#x200B;をインストールし、[!DNL Adobe Commerce] インスタンスを[!DNL Commerce Optimizer]に接続します。
 
-1. **[管理者からCommerce スコープの書き出し設定](#customize-the-commerce-scopes-export-configuration)**&#x200B;をカスタマイズします。
+1. **[管理者からCommerce スコープの書き出し設定](#data-export-and-scope-mapping)**&#x200B;をカスタマイズします。
 
 1. **[&#x200B; [!DNL Commerce Optimizer] 統合](#enable-the-adobe-commerce-optimizer-integration)**&#x200B;を有効にします。
 
 1. **[データ同期が機能していることを確認します](#verify-that-the-data-sync-is-working)**。
 
-## [!DNL Adobe Commerce Optimizer Connector] パッケージのインストール {#install-the-adobe-commerce-optimizer-connector-package}
+## [!DNL Adobe Commerce Optimizer Connector for B2B] パッケージのインストール {#install-the-adobe-commerce-optimizer-connector-for-B2B-package}
 
-[!DNL Adobe Commerce Optimizer Connector]は、[!DNL Commerce Optimizer]のアクティブなライセンスを持つすべてのCommerce マーチャントが利用できるComposer メタパッケージとして配信されます。
+[!DNL Adobe Commerce Optimizer Connector for B2B]は、[!DNL Commerce Optimizer]のアクティブなライセンスを持つすべてのCommerce マーチャントが利用できるComposer メタパッケージとして配信されます。
 
 ### インストール手順
 
-1. Composerを使用して`adobe-commerce/commerce-data-export-aco-adapter` モジュールを追加します。
+1. Composerを使用して`adobe-commerce/commerce-data-export-aco-adapter-b2b` モジュールを追加します。
 
    ```shell
-   composer require adobe-commerce/commerce-data-export-aco-adapter
+   composer require adobe-commerce/commerce-data-export-aco-adapter-b2b
    ```
 
 1. [!DNL Adobe Commerce] ステージング環境に変更をデプロイします。
@@ -112,22 +112,21 @@ ht-degree: 0%
 
 {{install-extension-links}}
 
-## Commerce スコープ書き出し設定のカスタマイズ {#customize-the-commerce-scopes-export-configuration}
+### データ書き出しとスコープのマッピング
 
-デフォルトでは、すべてのCommerce スコープ（web サイト、カスタマーグループ、ストアビュー）でカタログデータの同期が有効になっています。 ビジネスニーズに基づいて、特定の範囲のデータのみを同期するように書き出し設定をカスタマイズできます。 例えば、複数のストアビューが同じ言語を共有する場合、1つのストアビューのデータを書き出し、[!DNL Commerce Optimizer]の複数のカタログビューの[&#x200B; カタログソース &#x200B;](../optimizer/setup/catalog-sources.md)として使用できます。
+同期するweb サイトとストアビューを選択してから、最初のフィードを検証します。 B2Bの場合、コネクターは、共有カタログデータを[!DNL Commerce Optimizer]にプロジェクトする際に、有効なスコープを使用します。
+
+* **製品のローカライズされたコンテンツを含むカタログ ソース→ストア ビュー**
+* **web サイトと顧客グループ**→ web サイトと顧客グループの価格表
+* **共有カタログ**→保護されたプライベート カタログ ビューと適用されたポリシー
+
+共有カタログは商品の品揃えを定義し、有効になっている各ストアビューにはローカライズされたカタログソースが提供されます。 Web サイトと顧客グループが該当する価格表を決定します。 コネクターは、有効化されたストアビューごとに各カスタム共有カタログをプロジェクトするので、B2B投影に対して個別のスコープ設定は必要ありません。
+
+カスタム共有カタログでは、有効なストアビューごとに、複数の保護されたプライベートカタログビューを生成できます。 デフォルトの公開共有カタログは、B2B プライベートカタログビューとして表示されません。 詳しいオブジェクトマッピングとランタイム認証フローについては、[B2B共有カタログ投影](b2b-shared-catalog-projection.md)を参照してください。
 
 >[!IMPORTANT]
 >
->書き出し設定を変更すると、カタログのサイズに応じて大幅な時間がかかる場合がある、完全なインデックス再作成がトリガーされます。 Adobeでは、統合を有効にして最初のデータ同期を開始する前に、Commerce スコープを[!DNL Commerce Optimizer]に同期するように設定することをお勧めします。
-
-次の表に、各範囲レベルで書き出されるデータを示します。
-
-| 範囲 | 書き出されたデータ | メモ |
-| ----- | ------------- | ----- |
-| web サイトと顧客グループ | 価格と価格表 | 各価格セットは、命名規則`&lt;website&gt;::&lt;SHA1 of customer group ID&gt;`を使用して[価格表](../optimizer/setup/pricebooks.md)として書き出されます。 Web サイトのすべての顧客グループが含まれます。 |
-| ストアビュー | 製品と製品属性 | 各ストアビューは、[!DNL Commerce Optimizer]に個別の[&#x200B; カタログソース &#x200B;](../optimizer/setup/catalog-sources.md)を作成します。 |
-
-![Commerce Optimizerの同期設定を使用したストアグリッド &#x200B;](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
+>書き出し設定を変更すると、カタログのサイズに応じて大幅な時間がかかる場合がある、完全なインデックス再作成がトリガーされます。 統合を有効にして最初のデータ同期を開始する前に、Commerce スコープを設定します。
 
 ### 範囲の書き出し設定を変更するには
 
@@ -137,7 +136,7 @@ ht-degree: 0%
 
 1. **[!DNL Commerce Optimizer]エクスポーター設定**&#x200B;で、チェックボックスを使用して、必要に応じてデータ同期を有効または無効にします。
 
-   ![&#x200B; データ同期設定の更新](./assets/aco-connector-storeview-export-settings.png){width="500" zoomable="yes"}
+   ![&#x200B; データ同期設定の更新](./assets/aco-connector-b2b-storeview-list.png){width="500" zoomable="yes"}
 
 1. 変更を保存します。
 
@@ -145,8 +144,16 @@ ht-degree: 0%
 
 | アクション | 結果 |
 | -------- | -------- |
-| ストアビューを無効にする | **同期を無効にすると、ストアフロントからカタログデータが削除されます。** カタログ ソースは[!DNL Commerce Optimizer]に残りますが、次回のcron実行時にすべての同期データが削除されます。 |
+| ストアビューを無効にする | **同期を無効にすると、B2B ストアフロントからカタログデータが削除されます。** カタログ ソースは[!DNL Adobe Commerce Optimizer]に残りますが、次回のcron実行時にすべての同期データが削除されます。 |
 | ストアビューを無効にして再度有効にする | 同じカタログソースに、完全なデータ再同期が再入力されます。 |
+
+### B2B共有カタログの変更を監視する
+
+コネクターは、共有カタログと会社の割り当ての変更を監視します。 Commerce Adminで共有カタログを削除すると、コネクタは、設定可能な猶予期間の後に、そのプライベートカタログビューへのアクセスを削除します。
+
+>[!NOTE]
+>
+>削除猶予期間は、デフォルトで7日間です。 カタログビューの同期設定の設定を更新して変更できます。 [&#x200B; カタログ ビューの同期ステータス設定](catalog-view-sync-status.md#configure-aco-catalog-view-sync-settings)を参照してください。
 
 ## [!DNL Commerce Optimizer]統合を有効にする {#enable-the-adobe-commerce-optimizer-integration}
 
@@ -156,7 +163,6 @@ ht-degree: 0%
 1. `https://ccm.api.commerce.adobe.com/api/v1/tenants/{tenantId}/owner/{orgId}`のCommerce Cloud Manager （CCM） サービスを呼び出して、テナントを検証し、取り込みURLと[!DNL Commerce Optimizer] Studio URLを抽出します。
 1. すべての設定（クライアントシークレットが暗号化）を`core_config_data`に保存します。
 1. すべての[!DNL Commerce Optimizer] フィードのインデクサーを無効にすることで、最初の完全同期をスケジュールします。
-
 
 {{aco-data-sync-processing-note}}
 
@@ -174,9 +180,9 @@ ht-degree: 0%
 
 ## 次のステップ
 
-1. **カタログ ビューとポリシー[!DNL Commerce Optimizer]を設定**
+1. **B2B カタログ ビューの投影を監視**
 
-   [!DNL Commerce Optimizer] UIでカタログ ビューとポリシーを作成します。 価格表は、[!DNL Adobe Commerce]個の顧客グループから自動的に作成されます。 手順については、*[!DNL Commerce Optimizer]ユーザーガイド*&#x200B;の[&#x200B; カタログビュー](../optimizer/setup/catalog-view.md)および[&#x200B; ポリシー](../optimizer/setup/policies.md)のドキュメントを参照してください。 カタログビューへのアクセスを制限するには、[&#x200B; プライベートカタログビュー](../optimizer/setup/private-catalog-view.md)を参照してください。
+最初のフィード同期の後、[&#x200B; カタログ ビュー同期ステータス &#x200B;](catalog-view-sync-status.md)を使用して、予測されるプライベート カタログ ビュー、ポリシー、価格表の参照、およびアクセス キーの制限付き設定を確認します。 投影モデルとランタイム認証フローについては、[B2B共有カタログ投影](b2b-shared-catalog-projection.md)を参照してください。
 
 1. **[!DNL Edge Delivery Services]**&#x200B;にCommerce ストアフロントを設定
 
