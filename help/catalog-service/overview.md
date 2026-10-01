@@ -1,29 +1,35 @@
 ---
 title: '[!DNL Catalog Service]'
-description: 高性能なGraphQL APIである [!DNL Catalog Service] を使用して、Adobe Commerce ストアフロントを高速化し、商品ページ、カテゴリーページ、検索結果のページ読み込み時間を短縮できます。
+description: '[!DNL Catalog Service] – 商品ページ、カテゴリーページ、検索結果のページ読み込み時間を短縮する高性能なGraphQL APIを使用して、Adobe Commerce ストアフロントを高速化します。'
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
 TQID: https://experienceleague.adobe.com/CEbJ8-hkc0AGQ4RnRNMDXA6mMijvhPGAfsxyC4eT39Y
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bb09ff54afbba3d0a0e48bfd1a0392cba435ea9a
+    internal-label: Data management
+source-git-commit: fd87417a494987f33009d386019d870b306dcf73
 workflow-type: tm+mt
-source-wordcount: 1493
+source-wordcount: '1493'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce用[!DNL Catalog Service]
 
 Adobe Commerce拡張機能の[!DNL Catalog Service]は、専用のGraphQL APIを通じて、最適化された読み取り専用のカタログデータを提供することで、ストアフロントの読み込み時間を短縮します。 このサービスは、製品関連のページエクスペリエンスを強化するために設計されており、その結果、ページの読み込み速度とコンバージョン率が向上します。
@@ -118,6 +124,12 @@ Adobe Commerceには、異なる目的に対応する2つのGraphQL システム
   * 各コンポーネントのシンプルな製品は独自の価格を持つことができます。
   * 買い物客は、個々のコンポーネント製品の数量を指定できます。
   * 商品オプション（サイズ、色、素材など）は統一され、商品タイプに関係なく同じように機能します。 各オプションの選択は、独自の属性と価格を持つ特定のシンプルな製品を指します。 最終的な商品は、買い物客が必要なオプションをすべて選択するまで未定義のままです。
+
+<!--
+>[!NOTE]
+>
+>Custom product types introduced by third-party extensions are not covered by this mapping. For [!DNL Commerce Storefront MCP] deployments (Early Access), a catalog enablement module can represent these custom types as simple products in the catalog data sent to [!DNL Catalog Service]. See [Support for custom product types in SaaS catalog data export](../data-export/custom-product-types.md).
+-->
 
 #### 製品ビューの属性
 

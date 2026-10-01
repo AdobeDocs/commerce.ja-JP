@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce as a Cloud Service] リリースノート'
-description: '[!DNL Adobe Commerce as a Cloud Service]の最新の機能と改善点について説明します。'
+description: '[!DNL Adobe Commerce as a Cloud Service]の最新の機能と機能強化について説明します。'
 feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 1e03d399d191875186f5839458c3036179cf1b17
+source-git-commit: 6a2300d65c9c77d18813c2eb491bfd02d1fca8ba
 workflow-type: tm+mt
-source-wordcount: '7503'
+source-wordcount: '7581'
 ht-degree: 0%
 ---
 # リリースノート
@@ -78,7 +78,16 @@ ht-degree: 0%
 
 ### RESTでのカタログ価格ルールの管理
 
-新しいREST API エンドポイントを使用すると、統合で[&#x200B; カタログ価格ルール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog)をプログラムで管理および検索できます。<!-- ACCS-1621 -->
+新しいREST API エンドポイントを使用すると、統合で[&#x200B; カタログ価格ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog)をプログラムで管理および検索できます。<!-- ACCS-1621 -->
+
+次のエンドポイントは`Magento_CatalogRule::promo_catalog`権限によって保護され、管理カタログの価格ルール画面も保護されます。 このエンドポイントを使用するには、管理者または統合レベルのアクセス権が必要です。
+
+* `GET /V1/catalogPriceRules/metadata` – 許可されている割引アクションと条件属性を、その演算子と値ソースとともに検索します。
+* `GET /V1/catalogPriceRules/search` – 標準の検索条件（フィルター、並べ替え、ページング）を使用してルールを一覧表示および検索します。
+* `GET /V1/catalogPriceRules/:ruleId` – 完全な条件ツリーを含む1つのルールを取得します。
+* `POST /V1/catalogPriceRules` - ルールを作成します。
+* `PUT /V1/catalogPriceRules/:ruleId` - ルールを更新します。 変更するフィールドのみを送信します。
+* `DELETE /V1/catalogPriceRules/:ruleId` - ルールを削除します。
 
 ### reCAPTCHAで事前署名済みアップロードを保護する
 
@@ -112,7 +121,7 @@ ht-degree: 0%
 
 ### カタログ価格ルールを日時ごとにスケジュール
 
-[&#x200B; カタログ価格ルール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog)が[!DNL Commerce Admin]で開始または終了する時間帯を設定できるようになりました。<!-- ACCS-1762 -->
+[&#x200B; カタログ価格ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog)が[!DNL Commerce Admin]で開始または終了する時間帯を設定できるようになりました。<!-- ACCS-1762 -->
 
 ### Adobe REST APIを使用したカスタム配送割引の適用
 
