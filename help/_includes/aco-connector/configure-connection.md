@@ -6,11 +6,11 @@ ht-degree: 0%
 ---
 # [!DNL Commerce Optimizer] インスタンスの詳細を取得
 
-_テナント ID_&#x200B;を、[!DNL Commerce Optimizer] インスタンス [[!DNL Instance details]  ページ ](/help/optimizer/get-started.md#manage-instances)の&#x200B;_[!DNL Instance Id]_フィールドまたはインスタンスへのアクセスに使用したURLから取得します。 例：`https://experience.adobe.com/#/@<your organization>/in:<tenant>/commerce-optimizer-studio/home`。
+_テナント ID_&#x200B;を、[!DNL Commerce Optimizer] インスタンス [[!DNL Instance details]  ページ &#x200B;](/help/optimizer/get-started.md#manage-instances)の&#x200B;_[!DNL Instance Id]_&#x200B;フィールドまたはインスタンスへのアクセスに使用したURLから取得します。 例：`https://experience.adobe.com/#/@<your organization>/in:<tenant>/commerce-optimizer-studio/home`。
 
 1. Commerce管理者から「**[!UICONTROL Adobe Commerce Optimizer]**」を選択し、手順を含む設定ページを表示します。
 
-   ![[!DNL Commerce Optimizer]設定ページ ](/help/aco-connector/assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
+   ![[!DNL Commerce Optimizer]設定ページ &#x200B;](/help/aco-connector/assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
 1. コマンドラインから、[SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)を使用して[!DNL Adobe Commerce] ステージング環境に接続します。
 

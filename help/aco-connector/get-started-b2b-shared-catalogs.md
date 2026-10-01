@@ -58,13 +58,13 @@ ht-degree: 0%
 
 * Composerを使用してコネクタメタパッケージをダウンロードするための[認証キー](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
 
-* [[!DNL Commerce Optimizer]  サンドボックスインスタンス ](../optimizer/get-started.md)への管理者アクセス。
+* [[!DNL Commerce Optimizer]  サンドボックスインスタンス &#x200B;](../optimizer/get-started.md)への管理者アクセス。
 
 統合を構成する[!DNL Adobe Commerce] ユーザーには、次の要件が必要です。
 
 * Commerce管理者への管理者アクセス。
 
-* [ アプリケーションサーバー [!DNL Adobe Commerce] へのコマンドラインアクセス ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)。
+* [&#x200B; アプリケーションサーバー [!DNL Adobe Commerce] へのコマンドラインアクセス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)。
 
 * [!DNL Commerce Optimizer] プロジェクトがプロビジョニングされている[IMS組織](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?)への開発者アクセス。
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 1. **[管理者からCommerce スコープの書き出し設定](#data-export-and-scope-mapping)**&#x200B;をカスタマイズします。
 
-1. **[ [!DNL Commerce Optimizer] 統合](#enable-the-adobe-commerce-optimizer-integration)**&#x200B;を有効にします。
+1. **[&#x200B; [!DNL Commerce Optimizer] 統合](#enable-the-adobe-commerce-optimizer-integration)**&#x200B;を有効にします。
 
 1. **[データ同期が機能していることを確認します](#verify-that-the-data-sync-is-working)**。
 
@@ -136,7 +136,7 @@ ht-degree: 0%
 
 1. **[!DNL Commerce Optimizer]エクスポーター設定**&#x200B;で、チェックボックスを使用して、必要に応じてデータ同期を有効または無効にします。
 
-   ![ データ同期設定の更新](./assets/aco-connector-b2b-storeview-list.png){width="500" zoomable="yes"}
+   ![&#x200B; データ同期設定の更新](./assets/aco-connector-b2b-storeview-list.png){width="500" zoomable="yes"}
 
 1. 変更を保存します。
 
@@ -153,7 +153,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->削除猶予期間は、デフォルトで7日間です。 カタログビューの同期設定の設定を更新して変更できます。 [ カタログ ビューの同期ステータス設定](catalog-view-sync-status.md#configure-aco-catalog-view-sync-settings)を参照してください。
+>削除猶予期間は、デフォルトで7日間です。 カタログビューの同期設定の設定を更新して変更できます。 [&#x200B; カタログ ビューの同期ステータス設定](catalog-view-sync-status.md#configure-aco-catalog-view-sync-settings)を参照してください。
 
 ## [!DNL Commerce Optimizer]統合を有効にする {#enable-the-adobe-commerce-optimizer-integration}
 
@@ -182,8 +182,8 @@ ht-degree: 0%
 
 1. **B2B カタログ ビューの投影を監視**
 
-最初のフィード同期の後、[ カタログ ビュー同期ステータス ](catalog-view-sync-status.md)を使用して、予測されるプライベート カタログ ビュー、ポリシー、価格表の参照、およびアクセス キーの制限付き設定を確認します。 投影モデルとランタイム認証フローについては、[B2B共有カタログ投影](b2b-shared-catalog-projection.md)を参照してください。
+最初のフィード同期の後、[&#x200B; カタログ ビュー同期ステータス &#x200B;](catalog-view-sync-status.md)を使用して、予測されるプライベート カタログ ビュー、ポリシー、価格表の参照、およびアクセス キーの制限付き設定を確認します。 投影モデルとランタイム認証フローについては、[B2B共有カタログ投影](b2b-shared-catalog-projection.md)を参照してください。
 
 1. **[!DNL Edge Delivery Services]**&#x200B;にCommerce ストアフロントを設定
 
-   ストアフロントを[!DNL Commerce Optimizer] インスタンスに接続し、パーソナライズされたコマースエクスペリエンスの提供を開始するには、[ ストアフロント設定ドキュメント ](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/){target="_blank"}に従います。
+   ストアフロントを[!DNL Commerce Optimizer] インスタンスに接続し、パーソナライズされたコマースエクスペリエンスの提供を開始するには、[&#x200B; ストアフロント設定ドキュメント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/){target="_blank"}に従います。

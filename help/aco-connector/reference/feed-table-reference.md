@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## サポートされているフィード
 
-API エンドポイント、バッチ制限、インデクサー名、フィード テーブル名でサポートされているフィードの完全なリストについては、[ コネクタ モジュールとフィード エンドポイント ](connector-reference.md#supported-feeds)を参照してください。
+API エンドポイント、バッチ制限、インデクサー名、フィード テーブル名でサポートされているフィードの完全なリストについては、[&#x200B; コネクタ モジュールとフィード エンドポイント &#x200B;](connector-reference.md#supported-feeds)を参照してください。
 
 ## スキーマ
 
@@ -57,7 +57,7 @@ API エンドポイント、バッチ制限、インデクサー名、フィー�
 | `feed_hash` | VARCHAR | 変更検出に使用されるコンテンツハッシュ。 タイムスタンプ （`modifiedAt`、`updatedAt`）を除いて、ペイロードから計算されます。 ハッシュが以前の書き出しと一致する場合、アイテムは再送信されません。 |
 | `is_deleted` | TINYINT | ソフト削除マーカー。 Commerceでエンティティが削除された場合は、`1`に設定します。 |
 | `modified_at` | TIMESTAMP | このフィード項目が最後に変更された日時 |
-| `status` | INT | 前回の書き出し試行からの送信ステータスコード。 [ フィード送信とエラー処理](../connector-sync-pipeline.md#feed-submission-and-error-handling)を参照してください。 |
+| `status` | INT | 前回の書き出し試行からの送信ステータスコード。 [&#x200B; フィード送信とエラー処理](../connector-sync-pipeline.md#feed-submission-and-error-handling)を参照してください。 |
 | `errors` | テキスト | この項目の[!DNL Commerce Optimizer] APIによって返されたJSON エンコード済みエラーの詳細 |
 | `metadata` | JSON | 書き出しフレームワークで使用される内部同期フラグとロック メタデータ情報 |
 
@@ -119,7 +119,7 @@ WHERE JSON_UNQUOTE(JSON_EXTRACT(f.feed_data, '$.priceBookId'))  IN ('<PRICE_BOOK
 
 >[!MORELIKETHIS]
 >
->- [ コネクタ モジュールとフィード エンドポイント ](connector-reference.md)
->- [ コネクタ同期パイプライン ](../connector-sync-pipeline.md)
+>- [&#x200B; コネクタ モジュールとフィード エンドポイント &#x200B;](connector-reference.md)
+>- [&#x200B; コネクタ同期パイプライン &#x200B;](../connector-sync-pipeline.md)
 >- [同期の管理](../data-sync-status.md)
->- コネクタフィードの[ フィールドマッピング ](field-mapping.md)
+>- コネクタフィードの[&#x200B; フィールドマッピング &#x200B;](field-mapping.md)

@@ -67,7 +67,7 @@ Commerce管理者から、**[!UICONTROL System]** > **[!UICONTROL Data Transfer]
 [!DNL Adobe Commerce Optimizer Connector B2B extension]によって生成された自動キーは、ユーザーの操作を必要とせずに、ほとんどのB2B共有カタログをカバーします。 以下の場合は、自分でキーを管理します。
 
 - **キーの回転** – 新しいキーを作成し、既存のキーと並行してカタログビューに割り当て、機能していることを確認してから、古いキーを削除します。 自動回転はまだ利用できません。
-- **キーがリンクに失敗しました**- [ カタログ ビュー同期ステータス ](catalog-view-sync-status.md)にキー関連のドリフトが表示される場合は、カタログ ビューの割り当てを再度保存して、失敗したリンクを再試行してください。 それでもキーが失敗する場合は、[!UICONTROL Reconcile & Repair]を実行してキーまたはステータスを回復してから、置換を作成します。 キーの有効期限が切れているか、障害が永続的に回復不能な場合にのみ、置換キーを作成します。
+- **キーがリンクに失敗しました**- [&#x200B; カタログ ビュー同期ステータス &#x200B;](catalog-view-sync-status.md)にキー関連のドリフトが表示される場合は、カタログ ビューの割り当てを再度保存して、失敗したリンクを再試行してください。 それでもキーが失敗する場合は、[!UICONTROL Reconcile & Repair]を実行してキーまたはステータスを回復してから、置換を作成します。 キーの有効期限が切れているか、障害が永続的に回復不能な場合にのみ、置換キーを作成します。
 - **公開鍵を検索** – 制限付きアクセスキーのページで、**[!UICONTROL View Public Key]**&#x200B;を選択して、キーの公開鍵を表示およびコピーします。
 
 カタログビューには、一度に最大3つのキーを割り当てることができます。 キーのローテーション中、[!DNL Adobe Commerce Optimizer]は、割り当てられた、期限切れでないキーによって署名されたトークンを受け入れます。「アクティブ」キーを設定する手作業はありません。
@@ -99,7 +99,7 @@ Commerceは新しいキーペアを生成し、秘密鍵を保持します。 �
 
 1. 会社の[!UICONTROL Action]列で、[!UICONTROL Edit]を選択します。
 
-1. 会社に割り当てられた共有カタログから予測されるカタログビューのリストを表示するには、_[!UICONTROL Catalog Views]_セクションを展開します。
+1. 会社に割り当てられた共有カタログから予測されるカタログビューのリストを表示するには、_[!UICONTROL Catalog Views]_&#x200B;セクションを展開します。
 
 このタブには、割り当てられたキーを含め、共有カタログから投影されたカタログビューが一覧表示されます。
 
@@ -160,6 +160,6 @@ Commerceは新しいキーペアを生成し、秘密鍵を保持します。 �
 >[!MORELIKETHIS]
 >
 > - [制限付きアクセスキーを管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} – このページの完全なフィールド参照（*Commerce管理ガイド*） – >
-> - [ カタログ ビュー同期の監視](catalog-view-sync-status.md) – これらのキーで保護されるカタログ ビューの監視
-> - [ プライベートカタログビュー](/help/optimizer/setup/private-catalog-view.md) — コネクター管理のプライベートカタログビューについて説明します
+> - [&#x200B; カタログ ビュー同期の監視](catalog-view-sync-status.md) – これらのキーで保護されるカタログ ビューの監視
+> - [&#x200B; プライベートカタログビュー](/help/optimizer/setup/private-catalog-view.md) — コネクター管理のプライベートカタログビューについて説明します
 > - [制限付きアクセスキー](/help/optimizer/setup/restricted-access-keys.md) — ACO Studio ベースの手動キーフローがB2B以外のユースケースでどのように機能するかを説明します

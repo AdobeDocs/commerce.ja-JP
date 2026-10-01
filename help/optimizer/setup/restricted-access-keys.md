@@ -36,11 +36,11 @@ ht-degree: 0%
 ---
 # 制限付きアクセスキー
 
-制限付きアクセスキーを使用すると、許可されたクライアントアプリケーションは[ プライベートカタログビュー](catalog-view.md)にアクセスできます。割り当てられたキーから有効な署名済みトークンを含むリクエストのみが、カタログデータを取得できます。 このカタログビューへのアクセスが明示的に許可されていない買い物客や、APIをプローブするスクリプトなど、その他のすべてのリクエストは拒否されます。
+制限付きアクセスキーを使用すると、許可されたクライアントアプリケーションは[&#x200B; プライベートカタログビュー](catalog-view.md)にアクセスできます。割り当てられたキーから有効な署名済みトークンを含むリクエストのみが、カタログデータを取得できます。 このカタログビューへのアクセスが明示的に許可されていない買い物客や、APIをプローブするスクリプトなど、その他のすべてのリクエストは拒否されます。
 
 制限付きアクセスキーは、次の2つの方法のいずれかでプロビジョニングされます。
 
-- [!BADGE Private Beta]{type=Caution tooltip="現在プライベートベータ版のAdobe Commerce Optimizer Connector B2B拡張機能が必要です。"} **自動的に、B2B共有カタログ**&#x200B;の場合 – [!DNL Adobe Commerce Optimizer Connector for B2B]と統合されたデプロイメントの場合、コネクタは最初のキーをプロビジョニングして割り当てます。 次に、Commerce管理者からキーとキーの割り当てを管理します。 *Commerce管理ガイド**の「[ カタログビュー認証](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)」を参照してください。
+- [!BADGE Private Beta]{type=Caution tooltip="現在プライベートベータ版のAdobe Commerce Optimizer Connector B2B拡張機能が必要です。"} **自動的に、B2B共有カタログ**&#x200B;の場合 – [!DNL Adobe Commerce Optimizer Connector for B2B]と統合されたデプロイメントの場合、コネクタは最初のキーをプロビジョニングして割り当てます。 次に、Commerce管理者からキーとキーの割り当てを管理します。 *Commerce管理ガイド**の「[&#x200B; カタログビュー認証](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)」を参照してください。
 
 - **任意のカタログビューに対して手動で** – 自分でカタログビューを保護するには（パートナーポータルやプレリリースプレビューなど）、[制限付きアクセスキーの作成](#create-a-restricted-access-key)から始まるこのトピックの手順に従います。
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 制限付きアクセスキーは、一般的に次の目的で使用されます。
 
-- **契約ベースのB2B価格設定** – 交渉済み価格表にリンクされたカタログ ビューを制限して、適用される購入者のみがクエリを実行できるようにします。 その他の購買組織や一般の人は利用できません。 B2B共有カタログの場合は、これが自動的に設定されます。 [ キーの管理とローテーション ](#key-management-and-rotation)を参照してください。
+- **契約ベースのB2B価格設定** – 交渉済み価格表にリンクされたカタログ ビューを制限して、適用される購入者のみがクエリを実行できるようにします。 その他の購買組織や一般の人は利用できません。 B2B共有カタログの場合は、これが自動的に設定されます。 [&#x200B; キーの管理とローテーション &#x200B;](#key-management-and-rotation)を参照してください。
 - **パートナーおよびリセラーポータル**：カタログのサブセットを、マーチャンダイジング APIと直接統合する承認済みパートナーに制限します。
 - **プレリリースプレビュー**：信頼できる内部またはパートナーのシステムが公開される前に、今後の製品をプレビューします。
 
@@ -84,13 +84,13 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 1. [!DNL Adobe Commerce Optimizer Studio]の左側のメニューから、**[!UICONTROL Store setup]**&#x200B;に移動し、**[!UICONTROL Restricted access keys]**&#x200B;をクリックします。
 
-   ![制限付きアクセスキーのリスト、制限付きアクセスキーを追加ボタン ](../assets/restricted-access-keys.png){width="70%" zoomable="yes"}
+   ![制限付きアクセスキーのリスト、制限付きアクセスキーを追加ボタン &#x200B;](../assets/restricted-access-keys.png){width="70%" zoomable="yes"}
 
 1. **[!UICONTROL Add Restricted Access Key]**&#x200B;をクリックします。
 
 1. キーの詳細を入力します。
 
-   ![ タイトル、有効期限、および公開鍵フィールドを含む制限付きアクセスキー形式を追加](../assets/restricted-access-keys-add.png){width="70%" zoomable="yes"}
+   ![&#x200B; タイトル、有効期限、および公開鍵フィールドを含む制限付きアクセスキー形式を追加](../assets/restricted-access-keys-add.png){width="70%" zoomable="yes"}
 
    - **[!UICONTROL Title]** - キーを識別するためのラベル。キーリストおよびカタログ表示のキーピッカー（例：`ACME Corp wholesale portal — Tier 1 pricing`）に表示されます。
    - **[!UICONTROL Expiration date]** – 有効期限がまだ切れていないトークンの場合でも、キーの処理が停止する日時（UTC）。
@@ -98,11 +98,11 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 1. **[!UICONTROL Save]**&#x200B;をクリックします。
 
-キーは作成後に不変になります。 値を変更するには、キーを削除して新しいキーを作成します。 アクセスの中断なしでキー](#rotate-a-key)を回転する方法については、[を参照してください。
+キーは作成後に不変になります。 値を変更するには、キーを削除して新しいキーを作成します。 アクセスの中断なしでキー[&#128279;](#rotate-a-key)を回転する方法については、を参照してください。
 
 ## カタログビューへのキーの割り当て
 
-アクセス制限キーは、**[!UICONTROL Catalog Protection]**&#x200B;が有効になっているカタログビューに割り当てられた後にのみアクセスを認証します。 設定手順については、[ カタログビューの保護](private-catalog-view.md#protect-a-catalog-view)を参照してください。
+アクセス制限キーは、**[!UICONTROL Catalog Protection]**&#x200B;が有効になっているカタログビューに割り当てられた後にのみアクセスを認証します。 設定手順については、[&#x200B; カタログビューの保護](private-catalog-view.md#protect-a-catalog-view)を参照してください。
 
 ## キーの削除
 
@@ -116,13 +116,13 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 制限付きアクセスキーは、カタログ保護の使用方法に応じて、次の2つの方法のいずれかで管理されます。
 
-- **自動的に、B2B共有カタログの場合**—[!BADGE Private Beta]{type=Caution tooltip="現在プライベートベータ版のAdobe Commerce Optimizer Connector B2B拡張機能が必要です。"} [!DNL Adobe Commerce Optimizer Connector for B2B]と統合されたデプロイメントの場合、カタログビューの作成時に、サービスは自動的に最初の制限付きアクセスキーを生成して割り当てます。 各カタログビューには、独自のキーが割り当てられます。 その後、共有カタログまたは会社アカウントページから各キーを管理できます。 また、Commerce管理者&#x200B;**制限付きアクセスキー** ページ（**システム** > **データ転送**）からキーを表示および管理することもできます。 [ カタログビュー設定の管理](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)を参照してください。
+- **自動的に、B2B共有カタログの場合**—[!BADGE Private Beta]{type=Caution tooltip="現在プライベートベータ版のAdobe Commerce Optimizer Connector B2B拡張機能が必要です。"} [!DNL Adobe Commerce Optimizer Connector for B2B]と統合されたデプロイメントの場合、カタログビューの作成時に、サービスは自動的に最初の制限付きアクセスキーを生成して割り当てます。 各カタログビューには、独自のキーが割り当てられます。 その後、共有カタログまたは会社アカウントページから各キーを管理できます。 また、Commerce管理者&#x200B;**制限付きアクセスキー** ページ（**システム** > **データ転送**）からキーを表示および管理することもできます。 [&#x200B; カタログビュー設定の管理](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)を参照してください。
 
   共有カタログと割り当てられたストアビューの各組み合わせは、個別のカタログビューとして表示されます。 プロジェクションとは、コネクタがその組み合わせに対して[!DNL Adobe Commerce Optimizer]に書き出すカタログ ビュー、ポリシー、価格表参照、およびアクセス制限キー設定データです。 複数のストアビューに割り当てられた共有カタログは、それぞれ独自のキーを持つ複数のカタログビューを生成します。 他のカタログに影響を与えることなく、1つのカタログ ビューのキーを編集または回転します。
 
   キーのデフォルトは長い有効期限です。 キーを回転させる必要がある場合は、管理画面に置き換えを追加し、古いキーを削除するまで両方をアクティブのままにします。 [B2B共有カタログの変更](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes)を参照してください。
 
-- **手動で、任意のカタログ ビュー**—Adobe Commerce バックエンドのB2B共有カタログに関連付けられていないカタログ ビューの場合、キー生成、トークン署名、およびローテーションは、買い物客を認証するバックエンド クライアント アプリケーションによって完全に管理されます。 [!DNL Adobe Commerce Optimizer]は、ユーザーに代わって、これらのキーを生成または回転しません。 このトピックの前の手順を使用して、キーを作成、追加、削除します。 キーを回転するには、[ キーの回転](#rotate-a-key)を参照してください。
+- **手動で、任意のカタログ ビュー**—Adobe Commerce バックエンドのB2B共有カタログに関連付けられていないカタログ ビューの場合、キー生成、トークン署名、およびローテーションは、買い物客を認証するバックエンド クライアント アプリケーションによって完全に管理されます。 [!DNL Adobe Commerce Optimizer]は、ユーザーに代わって、これらのキーを生成または回転しません。 このトピックの前の手順を使用して、キーを作成、追加、削除します。 キーを回転するには、[&#x200B; キーの回転](#rotate-a-key)を参照してください。
 
 ### キーの回転
 
@@ -135,10 +135,10 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 ## 制限
 
-[ カタログビューとポリシー制限](../boundaries-limits.md#catalog-views-and-policies)を参照してください。
+[&#x200B; カタログビューとポリシー制限](../boundaries-limits.md#catalog-views-and-policies)を参照してください。
 
 ## その他
 
-- [ プライベートカタログビュー](private-catalog-view.md) – アクセスキーが制限されたカタログビューを保護する方法について説明します。
+- [&#x200B; プライベートカタログビュー](private-catalog-view.md) – アクセスキーが制限されたカタログビューを保護する方法について説明します。
 - [B2B共有カタログの変更](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes) - [!DNL Adobe Commerce Optimizer Connector]がB2B共有カタログのキー管理を自動化する方法について説明します。
 

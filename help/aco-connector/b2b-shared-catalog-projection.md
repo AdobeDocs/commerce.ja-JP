@@ -77,7 +77,7 @@ B2B プロジェクトでは、カタログの同期内容と価格設定を、�
 
 ストアフロントは、各Merchandising API リクエストでカタログビューID、価格表ID、および署名済みトークンを送信します。 [!DNL Adobe Commerce Optimizer]は、カタログ ビューに割り当てられた制限付きアクセス キーに対して、JWTのRS256署名を検証します。 トークンとキーが有効で期限切れでない場合にのみ、カタログデータを返します。
 
-ストアフロントとCommerce バックエンドから[!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-runtime-authorization.svg){width="700"}への買い物客からのB2B カタログリクエストに対する![実行時の承認フロー
+ストアフロントとCommerce バックエンドから[!DNL Adobe Commerce Optimizer]![&#128279;](./assets/b2b-catalog-runtime-authorization.svg){width="700"}への買い物客からのB2B カタログリクエストに対する実行時の承認フロー
 
 プライベートカタログのリクエストの場合は、次のヘッダーを送信します。
 
@@ -87,7 +87,7 @@ B2B プロジェクトでは、カタログの同期内容と価格設定を、�
 | `AC-Price-Book-ID` | 使用する価格表を識別します。 |
 | `AC-Catalog-View-Access-Token` | 保護されたカタログビューへのアクセスを許可する署名済みJWTを運びます。 |
 
-完全なリクエストとトークンの要件については、[ マーチャンダイジング API認証](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api#authentication)および[ プライベートカタログビューへのアクセスの確認](/help/optimizer/setup/private-catalog-view.md#verify-access-is-enforced)を参照してください。
+完全なリクエストとトークンの要件については、[&#x200B; マーチャンダイジング API認証](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api#authentication)および[&#x200B; プライベートカタログビューへのアクセスの確認](/help/optimizer/setup/private-catalog-view.md#verify-access-is-enforced)を参照してください。
 
 ## 保護境界
 
@@ -97,4 +97,4 @@ B2B プロジェクトでは、カタログの同期内容と価格設定を、�
 
 B2B コネクタは、プライベート カタログ ビュー、ポリシー、価格表の参照、およびアクセス制限キー設定を[!DNL Adobe Commerce]からプロジェクトします。 コネクタで管理される投影オブジェクトを手動で作成する必要はありません。 セットアップ手順については、[B2B コネクタの基本を学ぶ](get-started-b2b-shared-catalogs.md)を参照してください。
 
-予測されたカタログ ビューを監視し、設定ドリフトを調整するには、[ カタログ ビューの同期の監視](catalog-view-sync-status.md)を参照してください。 割り当てられたキーを管理するには、[B2B共有カタログの制限付きアクセスキーの管理](restricted-access-keys.md)を参照してください。
+予測されたカタログ ビューを監視し、設定ドリフトを調整するには、[&#x200B; カタログ ビューの同期の監視](catalog-view-sync-status.md)を参照してください。 割り当てられたキーを管理するには、[B2B共有カタログの制限付きアクセスキーの管理](restricted-access-keys.md)を参照してください。

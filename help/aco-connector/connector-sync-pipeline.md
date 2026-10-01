@@ -51,7 +51,7 @@ ht-degree: 1%
 
 - 統合のビジネス価値、主な機能、アーキテクチャについては、[[!DNL Commerce Optimizer Connector] 概要](overview.md) トピックを参照してください。
 
-- モジュールパッケージ名、フィード API エンドポイント、設定キーパスについては、[ コネクタリファレンス ](reference/connector-reference.md)を参照してください
+- モジュールパッケージ名、フィード API エンドポイント、設定キーパスについては、[&#x200B; コネクタリファレンス &#x200B;](reference/connector-reference.md)を参照してください
 
 ## 同期の仕組み
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 1. **Entity Change Detection** — （1分ごと） cron ジョブ （`indexer_reindex_all_invalid`）は、[!DNL Adobe Commerce]個のエンティティの変更を検出し、フィード項目を組み立てる[!DNL SaaS Data Export]をトリガーします。
 1. **変換** — [!DNL Commerce Optimizer Connector]は、組み立てられたフィードをピックアップし、[!DNL Adobe Commerce]個のエンティティとスコープを[!DNL Commerce Optimizer] APIで必要な形式にマッピングし、送信のためのペイロードを準備します。
 1. **送信** – 変換されたデータはHTTP POST （`/v1/catalog/<feed name>`）を介して[!DNL Adobe I/O Gateway]から[!DNL Commerce Optimizer]まで送信され、受信フィードを検証して保持します。
-1. **結果を永続化** — API応答ステータスを[ フィード テーブル ](reference/connector-reference.md#supported-feeds)に永続化します。
+1. **結果を永続化** — API応答ステータスを[&#x200B; フィード テーブル &#x200B;](reference/connector-reference.md#supported-feeds)に永続化します。
 1. **失敗の再試行** （5分ごと） – 別のcron ジョブ （`*_resend_failed_items`）が失敗したフィード項目を検出し、同じパイプラインを通じて再送信します。
 
 ### スケジュール済みcron ジョブ
@@ -90,12 +90,12 @@ ht-degree: 1%
 `CommerceOptimizerScopeMapper` モジュールは、web サイトごとの書き出し設定およびストア ビューごとの書き出し設定を読み取り、フィードの収集および送信中にそれらを適用します。
 
 - **有効なスコープ**&#x200B;は、通常の差分スケジュールでデータを書き出します。
-- **無効なスコープ**はパイプラインから除外されます。
+- **無効なスコープ**&#x200B;はパイプラインから除外されます。
 以前に同期されたエンティティは、次回のcron実行時に[!DNL Commerce Optimizer]から削除されます。
 
-同期の問題が1つのカタログ ソースまたは価格表のみに影響する場合は、[ データが同期されていません](troubleshooting.md#data-not-syncing)を参照してください。
+同期の問題が1つのカタログ ソースまたは価格表のみに影響する場合は、[&#x200B; データが同期されていません](troubleshooting.md#data-not-syncing)を参照してください。
 
-同期スコープのカスタマイズについて詳しくは、[Commerce スコープの書き出し設定のカスタマイズ ](get-started.md#customize-the-commerce-scopes-export-configuration)を参照してください。
+同期スコープのカスタマイズについて詳しくは、[Commerce スコープの書き出し設定のカスタマイズ &#x200B;](get-started.md#customize-the-commerce-scopes-export-configuration)を参照してください。
 
 ## タイミングとモニタリング
 
@@ -105,7 +105,7 @@ ht-degree: 1%
 | 一時的なエラー | 5分ごとに再試行 |
 | フルシンクまたは大きなカタログ | 分から時間 |
 
-Commerce Adminの[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページからフィードごとのステータスを監視します。 [ データ同期が機能していることを確認してください](./data-sync-status.md#verify-that-the-data-sync-is-working)。
+Commerce Adminの[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページからフィードごとのステータスを監視します。 [&#x200B; データ同期が機能していることを確認してください](./data-sync-status.md#verify-that-the-data-sync-is-working)。
 
 ## フィードの送信とエラー処理
 
@@ -133,7 +133,7 @@ Commerce Adminの[[!UICONTROL Data Feed Sync Status]](https://experienceleague.a
 
 >[!MORELIKETHIS]
 >
-> - [ コネクタの概要](overview.md) — ビジネスのコンテキストとスコープのマッピングについて説明します
-> - [ コネクタ参照](reference/connector-reference.md) — モジュール、API エンドポイント、設定キーの確認
-> - [Commerce スコープの書き出し設定をカスタマイズ ](./get-started.md#customize-the-commerce-scopes-export-configuration) — スコープレベルごとにフィードを設定し、ビヘイビアーを有効または無効にし、管理手順を実行します
-> - [ トラブルシューティング ](troubleshooting.md) – 同期エラーの診断
+> - [&#x200B; コネクタの概要](overview.md) — ビジネスのコンテキストとスコープのマッピングについて説明します
+> - [&#x200B; コネクタ参照](reference/connector-reference.md) — モジュール、API エンドポイント、設定キーの確認
+> - [Commerce スコープの書き出し設定をカスタマイズ &#x200B;](./get-started.md#customize-the-commerce-scopes-export-configuration) — スコープレベルごとにフィードを設定し、ビヘイビアーを有効または無効にし、管理手順を実行します
+> - [&#x200B; トラブルシューティング &#x200B;](troubleshooting.md) – 同期エラーの診断

@@ -33,15 +33,15 @@ ht-degree: 0%
 ---
 # プライベートカタログビュー
 
-デフォルトでは、[ カタログビュー](catalog-view.md)はパブリックです。 カタログビューへのアクセスを制限して、有効な署名済みトークンを持つリクエストのみがデータを取得できるようにします。
+デフォルトでは、[&#x200B; カタログビュー](catalog-view.md)はパブリックです。 カタログビューへのアクセスを制限して、有効な署名済みトークンを持つリクエストのみがデータを取得できるようにします。
 
 カタログビューは、次の2つの方法のいずれかで非公開になります。
 
 - [!BADGE Private Beta]{type=Caution tooltip="現在プライベートベータ版のAdobe Commerce Optimizer Connector B2B拡張機能が必要です。"} **自動的に、B2B共有カタログ**&#x200B;の場合 – [!DNL Adobe Commerce Optimizer Connector]統合とB2B拡張機能を使用するCommerce デプロイメントの場合、[!DNL Adobe Commerce]の共有カタログ設定に基づいて、プライベートカタログビューが自動的に作成および設定されます。 B2B共有カタログの[自動プライベートカタログビュー](#automatic-private-catalog-views-for-b2b-shared-catalogs)を参照してください。
 
-- **手動で、任意のカタログ ビュー**—B2C カタログ ビューを含め、パブリックになるカタログ ビューへのアクセスを制限するには、[ カタログ ビューを保護](#protect-a-catalog-view)の手順に従います。 パートナーポータルやプレリリースプレビューなどの例については、[ アクセス制限キーのユースケース ](restricted-access-keys.md#restricted-access-key-use-cases)を参照してください。
+- **手動で、任意のカタログ ビュー**—B2C カタログ ビューを含め、パブリックになるカタログ ビューへのアクセスを制限するには、[&#x200B; カタログ ビューを保護](#protect-a-catalog-view)の手順に従います。 パートナーポータルやプレリリースプレビューなどの例については、[&#x200B; アクセス制限キーのユースケース &#x200B;](restricted-access-keys.md#restricted-access-key-use-cases)を参照してください。
 
-カタログ保護は、選択したカタログビューにのみ適用されます。 ビューのポリシーやレイヤーは変更されません。 ビューを単一の価格表に制限します。[ プライベートカタログビューの価格表制限](#price-book-restriction-on-private-catalog-views)を参照してください。
+カタログ保護は、選択したカタログビューにのみ適用されます。 ビューのポリシーやレイヤーは変更されません。 ビューを単一の価格表に制限します。[&#x200B; プライベートカタログビューの価格表制限](#price-book-restriction-on-private-catalog-views)を参照してください。
 
 ## 保護範囲の理解
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 [!UICONTROL Catalog Protection]が有効になっている場合、カタログビューフォームの価格表セレクターは、複数選択コントロールから単一選択（ラジオボタン）コントロールに切り替わります。
 
-![ プライベートカタログビューの価格表制限](../assets/catalog-view-private-pricebook-restrictions.png)
+![&#x200B; プライベートカタログビューの価格表制限](../assets/catalog-view-private-pricebook-restrictions.png)
 
 - 複数の価格表が割り当てられているカタログ ビューで[!UICONTROL Catalog Protection]を有効にする場合、1つの価格表を除くすべての価格表を削除するまで、ビューを保存できません。
 - この制限が存在する前に、複数の価格表の割り当てがあるプライベートカタログビューを以前に保存した場合、カタログビューの設定は自動的には変更されません。 ただし、次回ビューを編集する際は、更新を保存する前に、1つを除くすべての価格表を削除する必要があります。
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 共有カタログをサポートするために[!DNL Adobe Commerce Optimizer Connector for B2B]と統合されたデプロイメントの場合、拡張機能は、[!DNL Adobe Commerce]の共有カタログ設定に基づいて、プライベートカタログビューを自動的に作成および設定します。 この設定には、カタログビュー、ポリシー、初期アクセス制限キー、価格表の参照が含まれます。 この設定では、制限付きアクセスキーをCommerce管理者&#x200B;**制限付きアクセスキー** ページ （**システム** > **データ転送**）から管理します。 詳しくは、*[!DNL Adobe Commerce Optimizer Connector]統合ガイド*&#x200B;の[B2B共有カタログの変更](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes)を参照してください。
 
-B2B共有カタログを使用していない場合（例えば、パートナーポータルやプレリリースプレビューのカタログビューを保護する場合など）、[ カタログビューを保護](#protect-a-catalog-view)の手順を使用して手動で設定します。
+B2B共有カタログを使用していない場合（例えば、パートナーポータルやプレリリースプレビューのカタログビューを保護する場合など）、[&#x200B; カタログビューを保護](#protect-a-catalog-view)の手順を使用して手動で設定します。
 
 ## カタログビューの保護
 
@@ -82,9 +82,9 @@ B2B共有カタログを使用していない場合（例えば、パートナ�
 
 1. カタログビューのフォームの作成または編集で、**[!UICONTROL Catalog Protection]**&#x200B;を&#x200B;**[!UICONTROL Enabled]**&#x200B;に切り替えます。
 
-1. **[!UICONTROL Restricted Access Keys]**&#x200B;で、このカタログ ビューに割り当てるアクセス キー](restricted-access-keys.md)を3つまで選択してください。[
+1. **[!UICONTROL Restricted Access Keys]**&#x200B;で、このカタログ ビューに割り当てるアクセス キー[&#128279;](restricted-access-keys.md)を3つまで選択してください。
 
-   ![ カタログ保護がカタログビュー編集フォームで有効になっており、アクセス制限キーが割り当てられている](../assets/catalog-view-protected.png){width="70%" zoomable="yes"}
+   ![&#x200B; カタログ保護がカタログビュー編集フォームで有効になっており、アクセス制限キーが割り当てられている](../assets/catalog-view-protected.png){width="70%" zoomable="yes"}
 
 1. **[!UICONTROL Save catalog view]**&#x200B;をクリックします。
 
@@ -96,7 +96,7 @@ B2B共有カタログを使用していない場合（例えば、パートナ�
 
 ## アクセスが強制されていることを確認する
 
-プライベートカタログビューが不正なリクエストを拒否することを確認するには、次のヘッダーを使用して、署名されたトークンの有無にかかわらず[GraphQL エンドポイント ](../get-started.md#get-instance-details)を呼び出します。
+プライベートカタログビューが不正なリクエストを拒否することを確認するには、次のヘッダーを使用して、署名されたトークンの有無にかかわらず[GraphQL エンドポイント &#x200B;](../get-started.md#get-instance-details)を呼び出します。
 
 | ヘッダー | 目的 |
 | --- | --- |
@@ -117,11 +117,11 @@ B2B共有カタログを使用していない場合（例えば、パートナ�
 }
 ```
 
-割り当てられた、期限切れでないキーによって署名されたトークンを含むリクエストは、期待どおりにカタログデータを返します。 JWTへの署名とマーチャンダイジング APIの呼び出しについて詳しくは、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api#authentication)を参照してください。
+割り当てられた、期限切れでないキーによって署名されたトークンを含むリクエストは、期待どおりにカタログデータを返します。 JWTへの署名とマーチャンダイジング APIの呼び出しについて詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api#authentication)を参照してください。
 
 ## 制限付きアクセスキーの管理
 
-[!UICONTROL Catalog Protection]が有効になっていて、割り当てられたすべてのキーの有効期限が切れると、カタログ ビューにアクセスできなくなります。 このカタログビューに依存するストアフロントは、このカタログビューからのデータを提供できません。 新しい期限切れでないキーを割り当てて、アクセスを復元します。 手順については、[ キーの回転](restricted-access-keys.md#rotate-a-key)を参照してください。
+[!UICONTROL Catalog Protection]が有効になっていて、割り当てられたすべてのキーの有効期限が切れると、カタログ ビューにアクセスできなくなります。 このカタログビューに依存するストアフロントは、このカタログビューからのデータを提供できません。 新しい期限切れでないキーを割り当てて、アクセスを復元します。 手順については、[&#x200B; キーの回転](restricted-access-keys.md#rotate-a-key)を参照してください。
 
 >[!NOTE]
 >
@@ -129,5 +129,5 @@ B2B共有カタログを使用していない場合（例えば、パートナ�
 
 ## その他
 
-- [ カタログビュー](catalog-view.md) - カタログビューが、ビジネス構造、ポリシー、価格によって商品カタログをどのように整理するかを説明します。
+- [&#x200B; カタログビュー](catalog-view.md) - カタログビューが、ビジネス構造、ポリシー、価格によって商品カタログをどのように整理するかを説明します。
 - [制限付きアクセス キー](restricted-access-keys.md) - カタログ保護のトークンの署名に使用するキーを作成、割り当て、回転します。
