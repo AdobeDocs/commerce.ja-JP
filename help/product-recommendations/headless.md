@@ -23,7 +23,7 @@ topic_v2:
     internal-label: Behavioral data
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: 7ab078f4780c25e3bb43479eec1fe18e31faf96c
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 カスタムインテグレーターおよびヘッドレスインテグレーターは、これらのLumaおよびPWAの手順を推奨される実装として参照する必要があります。 ヘッドレスソリューションに製品レコメンデーションを実装する方法はたくさんあり、このドキュメントではすべてのシナリオを説明しません。 インテグレーターは、実装のイベント、設計、テストをカバーする必要があります。
 
-[!DNL Product Recommendations]を操作するには[行動データとカタログデータ &#x200B;](development-overview.md)が必要です。 カタログデータの同期プロセスはヘッドレス実装でも変更されませんが、行動データの収集には変更が必要です。
+[!DNL Product Recommendations]を操作するには[行動データとカタログデータ ](development-overview.md)が必要です。 カタログデータの同期プロセスはヘッドレス実装でも変更されませんが、行動データの収集には変更が必要です。
 
 >[!NOTE]
 >
@@ -42,15 +42,15 @@ ht-degree: 0%
 
 [!DNL Product Recommendations]をヘッドレスストアフロントに統合するには、次の手順を実行する必要があります。
 
-1. 行動データをAdobe AIに送信し、商品レコメンデーションの結果を分析して計算します。 製品レコメンデーション [指標レポート &#x200B;](workspace.md)を有効にするには、追加データを送信することもできます。
+1. 行動データをAdobe AIに送信し、商品レコメンデーションの結果を分析して計算します。 製品レコメンデーション [指標レポート ](workspace.md)を有効にするには、追加データを送信することもできます。
 
 1. 商品レコメンデーションの結果を取得し、その結果をページに表示できます。
 
 次のワークフローの説明に従って、使用可能なSDKを使用して、これらのアクションの両方を実行できます。
 
-1. [!DNL Product Recommendations] モジュールを[&#x200B; インストール &#x200B;](install-configure.md)。
+1. [!DNL Product Recommendations] モジュールを[ インストール ](install-configure.md)。
 
-1. [行動イベント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を実行するには、[Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)をインストールして使用します。
+1. [行動イベント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を実行するには、[Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)をインストールして使用します。
 
    [!DNL Product Recommendations]件の結果を返すために必要な最小イベント：
 
@@ -60,7 +60,7 @@ ht-degree: 0%
    | `add-to-cart` | product |
    | `place-order` | チェックアウト |
 
-   [指標レポート &#x200B;](workspace.md)を有効にするには、次の追加イベントが必要です。
+   [指標レポート ](workspace.md)を有効にするには、次の追加イベントが必要です。
 
    | イベント | カテゴリ |
    |--- | ---|
@@ -75,4 +75,4 @@ ht-degree: 0%
 
 1. [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/)を使用して、ストアフロントのレコメンデーションユニットを取得します。 SDKは、ページ上にレコメンデーションユニットをレンダリングするために必要な商品データを返します。
 
-1. [`recommendations` GraphQL クエリ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations)を使用して、特定のSKUの商品レコメンデーションブロックに関する情報を返す方法を説明します。
+1. [`recommendations` GraphQL クエリ ](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations)を使用して、特定のSKUの商品レコメンデーションブロックに関する情報を返す方法を説明します。

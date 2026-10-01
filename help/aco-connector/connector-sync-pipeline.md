@@ -1,45 +1,57 @@
 ---
 title: カタログ同期パイプライン
-description: フィード変換、cron スケジュール、スコープ管理、エラー処理など、 [!DNL Adobe Commerce Optimizer Connector] 同期パイプラインの仕組みについて説明します。
+description: フィード変換、cron スケジュール、スコープ管理、エラー処理など、[!DNL Adobe Commerce Optimizer Connector]同期パイプラインの仕組みについて説明します。
 feature: Integration, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
+    internal-label: Data pipelines
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+    internal-label: Data integration
+source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
 workflow-type: tm+mt
-source-wordcount: 673
+source-wordcount: '674'
 ht-degree: 1%
-
 ---
-
 # コネクタ同期パイプライン
 
-[[!DNL SaaS Data Export]](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/overview)に基づいて構築された&#x200B;**[!DNL Adobe Commerce Optimizer Connector]**&#x200B;は、[!DNL SaaS Data Export]個のインデクサーによって収集されたデータを[!DNL Adobe Commerce Optimizer]個の[!DNL Catalog Data Ingestion API]で必要な形式にマッピングし、認証、一括送信、およびスコープベースの同期制御を処理します。 以下の節では、その同期の仕組みについて説明します。
+[[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview)に基づいて構築された&#x200B;**[!DNL Adobe Commerce Optimizer Connector]**&#x200B;は、[!DNL SaaS Data Export]個のインデクサーによって収集されたデータを[!DNL Adobe Commerce Optimizer]個の[!DNL Catalog Data Ingestion API]で必要な形式にマッピングし、認証、一括送信、およびスコープベースの同期制御を処理します。 以下の節では、その同期の仕組みについて説明します。
 
 関連トピック：
 
 - 統合のビジネス価値、主な機能、アーキテクチャについては、[[!DNL Commerce Optimizer Connector] 概要](overview.md) トピックを参照してください。
 
-- モジュールパッケージ名、フィード API エンドポイント、設定キーパスについては、[&#x200B; コネクタリファレンス &#x200B;](reference/connector-reference.md)を参照してください
+- モジュールパッケージ名、フィード API エンドポイント、設定キーパスについては、[ コネクタリファレンス ](reference/connector-reference.md)を参照してください
 
 ## 同期の仕組み
 
@@ -52,7 +64,7 @@ ht-degree: 1%
 1. **Entity Change Detection** — （1分ごと） cron ジョブ （`indexer_reindex_all_invalid`）は、[!DNL Adobe Commerce]個のエンティティの変更を検出し、フィード項目を組み立てる[!DNL SaaS Data Export]をトリガーします。
 1. **変換** — [!DNL Commerce Optimizer Connector]は、組み立てられたフィードをピックアップし、[!DNL Adobe Commerce]個のエンティティとスコープを[!DNL Commerce Optimizer] APIで必要な形式にマッピングし、送信のためのペイロードを準備します。
 1. **送信** – 変換されたデータはHTTP POST （`/v1/catalog/<feed name>`）を介して[!DNL Adobe I/O Gateway]から[!DNL Commerce Optimizer]まで送信され、受信フィードを検証して保持します。
-1. **結果を永続化** — API応答ステータスを[&#x200B; フィード テーブル &#x200B;](reference/connector-reference.md#supported-feeds)に永続化します。
+1. **結果を永続化** — API応答ステータスを[ フィード テーブル ](reference/connector-reference.md#supported-feeds)に永続化します。
 1. **失敗の再試行** （5分ごと） – 別のcron ジョブ （`*_resend_failed_items`）が失敗したフィード項目を検出し、同じパイプラインを通じて再送信します。
 
 ### スケジュール済みcron ジョブ
@@ -70,7 +82,7 @@ ht-degree: 1%
 
 #### 要件定義
 
-- [Commerce cronが実行中である必要があります](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}。
+- [Commerce cronが実行中である必要があります](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}。
 - フィードのインデクサーは&#x200B;**[!UICONTROL Update by Schedule]** モードを使用する必要があります。 [部分同期](../data-export/sync-overview.md#partial-sync){target="_blank"}を参照してください。
 
 ## スコープベースの同期制御
@@ -78,12 +90,12 @@ ht-degree: 1%
 `CommerceOptimizerScopeMapper` モジュールは、web サイトごとの書き出し設定およびストア ビューごとの書き出し設定を読み取り、フィードの収集および送信中にそれらを適用します。
 
 - **有効なスコープ**&#x200B;は、通常の差分スケジュールでデータを書き出します。
-- **無効なスコープ**&#x200B;はパイプラインから除外されます。
+- **無効なスコープ**はパイプラインから除外されます。
 以前に同期されたエンティティは、次回のcron実行時に[!DNL Commerce Optimizer]から削除されます。
 
-同期の問題が1つのカタログ ソースまたは価格表のみに影響する場合は、[&#x200B; データが同期されていません](troubleshooting.md#data-not-syncing)を参照してください。
+同期の問題が1つのカタログ ソースまたは価格表のみに影響する場合は、[ データが同期されていません](troubleshooting.md#data-not-syncing)を参照してください。
 
-同期スコープのカスタマイズについて詳しくは、[Commerce スコープの書き出し設定のカスタマイズ &#x200B;](get-started.md#customize-the-commerce-scopes-export-configuration)を参照してください。
+同期スコープのカスタマイズについて詳しくは、[Commerce スコープの書き出し設定のカスタマイズ ](get-started.md#customize-the-commerce-scopes-export-configuration)を参照してください。
 
 ## タイミングとモニタリング
 
@@ -93,7 +105,7 @@ ht-degree: 1%
 | 一時的なエラー | 5分ごとに再試行 |
 | フルシンクまたは大きなカタログ | 分から時間 |
 
-Commerce Adminの[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページからフィードごとのステータスを監視します。 [&#x200B; データ同期が機能していることを確認してください](./data-sync-manage.md#verify-that-the-data-sync-is-working)。
+Commerce Adminの[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページからフィードごとのステータスを監視します。 [ データ同期が機能していることを確認してください](./data-sync-status.md#verify-that-the-data-sync-is-working)。
 
 ## フィードの送信とエラー処理
 
@@ -121,7 +133,7 @@ Commerce Adminの[[!UICONTROL Data Feed Sync Status]](https://experienceleague.a
 
 >[!MORELIKETHIS]
 >
-> - [&#x200B; コネクタの概要](overview.md) — ビジネスのコンテキストとスコープのマッピングについて説明します
-> - [&#x200B; コネクタ参照](reference/connector-reference.md) — モジュール、API エンドポイント、設定キーの確認
-> - [Commerce スコープの書き出し設定をカスタマイズ &#x200B;](./get-started.md#customize-the-commerce-scopes-export-configuration) — スコープレベルごとにフィードを設定し、ビヘイビアーを有効または無効にし、管理手順を実行します
-> - [&#x200B; トラブルシューティング &#x200B;](troubleshooting.md) – 同期エラーの診断
+> - [ コネクタの概要](overview.md) — ビジネスのコンテキストとスコープのマッピングについて説明します
+> - [ コネクタ参照](reference/connector-reference.md) — モジュール、API エンドポイント、設定キーの確認
+> - [Commerce スコープの書き出し設定をカスタマイズ ](./get-started.md#customize-the-commerce-scopes-export-configuration) — スコープレベルごとにフィードを設定し、ビヘイビアーを有効または無効にし、管理手順を実行します
+> - [ トラブルシューティング ](troubleshooting.md) – 同期エラーの診断

@@ -1,9 +1,8 @@
 ---
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '708'
 ht-degree: 0%
-
 ---
 # Commerce スニペット
 
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Data Feed Sync Status ページがCommerce Admin for Commerce on Cloudまたはオンプレミスのデプロイメントで使用できない場合は、[拡張機能のインストール手順](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"}に従って有効にします。
+>Data Feed Sync Status ページがCommerce Admin for Commerce on Cloudまたはオンプレミスのデプロイメントで使用できない場合は、[拡張機能のインストール手順](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"}に従って有効にします。
 
 
 ## Adobe Commerce Optimizerとの連携 {#aco-integration-environment-alignment}
@@ -20,6 +19,11 @@ ht-degree: 0%
 >
 >サンドボックス Optimizer インスタンスは必ず実稼動以外の環境に、実稼動インスタンスは実稼動環境に接続してください。 環境が一致していないと、カタログデータ、検索結果、レコメンデーションに一貫性がなくなります。
 
+## Adobe Commerce Optimizer data sync処理に関するメモ {#aco-data-sync-processing-note}
+
+>[!IMPORTANT]
+>
+>データ同期処理は、設定が完了するとすぐにバックグラウンドで開始されます。 カタログのサイズによっては、データ同期プロセスに数分から数時間かかる場合があります。
 
 ## Merchandising Services for Optimizer {#aco-merchandising-services}
 
@@ -31,13 +35,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md)を使用してカタログデータを[!DNL Adobe Commerce Optimizer]に書き出すデプロイメントの場合、[Data Management ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)ではなく、Commerce管理者の[&#x200B; データフィード同期ステータス ページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)と[!DNL Adobe Commerce Optimizer Studio]の[&#x200B; データ同期ページ &#x200B;](../optimizer/setup/data-sync.md)を使用して、カタログデータの同期を確認します。
+>[[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md)を使用してカタログデータを[!DNL Adobe Commerce Optimizer]に書き出すデプロイメントの場合、[Data Management ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)ではなく、Commerce管理者の[ データフィード同期ステータス ページ ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)と[!DNL Adobe Commerce Optimizer Studio]の[ データ同期ページ ](../optimizer/setup/data-sync.md)を使用して、カタログデータの同期を確認します。
 
 ## API更新のためのAdobe Commerce Optimizer ドロップインノート {#aco-api-updates-and-dropins}
 
 >[!NOTE]
 >
->[!DNL Commerce Storefront on Edge Delivery Services]の[&#x200B; ドロップインコンポーネント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/)は、最新のGraphQLの変更内容（新しいフィールド、制限、クエリ動作）を自動的にピックアップします。
+>[!DNL Commerce Storefront on Edge Delivery Services]の[ ドロップインコンポーネント ](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/)は、最新のGraphQLの変更内容（新しいフィールド、制限、クエリ動作）を自動的にピックアップします。
 
 ## ACCS早期アクセス {#accs-early-access}
 
@@ -55,7 +59,7 @@ ht-degree: 0%
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
@@ -71,7 +75,7 @@ ht-degree: 0%
 >
 >この機能は予告なく変更される場合があります。
 
-[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+[!BADGE  サンドボックス ]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
 
 ## AEM Assets インスタンスのマッピング {#aem-assets-instance-mapping}
 
@@ -83,7 +87,7 @@ ht-degree: 0%
 
 Adobe Commerce IDの管理と認証は、Adobe Identity Management System （IMS）によってAdobe Admin Consoleを通じて管理されます。
 
-Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Adobe アプリへの安全なアクセス用にシングルサインオン（SSO）を設定する手順について詳しくは、*Enterprise Admin Console* ドキュメントの[IDとシングルサインオンの設定](https://helpx.adobe.com/jp/enterprise/using/set-up-identity.html)を参照してください。
+Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Adobe アプリへの安全なアクセス用にシングルサインオン（SSO）を設定する手順について詳しくは、*Enterprise Admin Console* ドキュメントの[IDとシングルサインオンの設定](https://helpx.adobe.com/enterprise/using/set-up-identity.html)を参照してください。
 
 ## ACCS サービスと拡張性のリリースノート {#accs-release}
 
@@ -93,7 +97,7 @@ Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Ado
 
 | サービス | 拡張機能 | ストアフロント |
 | --- | --- | --- |
-| <ul><li>[&#x200B; カタログ サービス &#x200B;](../catalog-service/release-notes.md)</li><li>[&#x200B; ライブサーチ &#x200B;](../live-search/release-notes.md)</li><li>[決済サービス &#x200B;](../payment-services/release-notes.md)</li><li>[商品レコメンデーション &#x200B;](../product-recommendations/release-notes.md)</li><li>[SaaS データ書き出し](../data-export/release-notes.md)</li></ul> | <ul><li>[管理者UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API メッシュ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/)</li><li>[&#x200B; イベント &#x200B;](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[&#x200B; リリース情報](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/)</li><li>[変更履歴](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/)</li></ul> |
+| <ul><li>[ カタログ サービス ](../catalog-service/release-notes.md)</li><li>[ ライブサーチ ](../live-search/release-notes.md)</li><li>[決済サービス ](../payment-services/release-notes.md)</li><li>[商品レコメンデーション ](../product-recommendations/release-notes.md)</li><li>[SaaS データ書き出し](../data-export/release-notes.md)</li></ul> | <ul><li>[管理者UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API メッシュ ](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/)</li><li>[ イベント ](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[ リリース情報](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/)</li><li>[変更履歴](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/)</li></ul> |
 
 ## Adobe Commerce Optimizer サービスのリリースノート {#aco-release}
 
@@ -103,10 +107,20 @@ Adobe ID、Enterprise ID、Federated IDなどのID設定オプションと、Ado
 
 | サービス | ストアフロント |
 | --- | --- |
-| [AEM Assetsとの統合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer コネクタ &#x200B;](../aco-connector/release-notes.md) | [&#x200B; ストアフロントのリリース情報](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/)<br>[&#x200B; ストアフロントの変更履歴](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/) |
+| [AEM Assetsとの統合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer コネクタ ](../aco-connector/release-notes.md) | [ ストアフロントのリリース情報](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/)<br>[ ストアフロントの変更履歴](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/) |
 
 ## バルクデータ移行ツールの早期アクセス {#bulk-data-early-access}
 
 >[!IMPORTANT]
 >
->一括データ移行ツールは現在、早期アクセス中です。 アクセスは、Commerce デプロイドエンジニアリング（CDE）のエンゲージメントプロセスを通じてのみ提供されます。 ツールとその適格要件の概要については、[一括データ移行ツール &#x200B;](../cloud-service/migration/bulk-data/migration-tool.md)を参照してください。
+>一括データ移行ツールは現在、早期アクセス中です。 アクセスは、Commerce デプロイドエンジニアリング（CDE）のエンゲージメントプロセスを通じてのみ提供されます。 ツールとその適格要件の概要については、[一括データ移行ツール ](../cloud-service/migration/bulk-data/migration-tool.md)を参照してください。
+
+## 拡張機能リンクをインストール {#install-extension-links}
+
+>[!NOTE]
+>
+>拡張機能のインストール手順について詳しくは、次のガイドを参照してください。
+>
+>[ クラウドインフラストラクチャ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)の [!DNL Adobe Commerce] に拡張機能をインストールする
+>
+>[ オンプレミス ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)に拡張機能をインストールする [!DNL Adobe Commerce] 
