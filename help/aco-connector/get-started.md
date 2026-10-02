@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]の基本を学ぶ'
 description: '[!DNL Adobe Commerce Optimizer Connector]のインストール、スコープ書き出し設定の設定、IMS認証の有効化、カタログ同期の検証方法について説明します。'
 feature: Integration, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-09T16:55:50.934Z'
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
 product_v2:
@@ -39,8 +39,8 @@ topic_v2:
     internal-label: Data integration
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-last-update: 2026-09-11
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+last-update: 2026-10-01
+source-git-commit: 9ed3a09bc4e26e2ef787909700f51e25de0a18fa
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -58,21 +58,21 @@ ht-degree: 0%
 
 ## 統合の使用要件 {#requirements-to-use-the-integration}
 
-* [Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) 2.4.7以降。 要件の詳細については、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements)を参照してください。
+* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7以降。 要件の詳細については、[必要システム構成](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)を参照してください。
 
 * プロビジョニングされたサンドボックスインスタンスを使用する[!DNL Commerce Optimizer] ライセンス。
 
-* Composerを使用してコネクタメタパッケージをダウンロードするための[認証キー](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
+* Composerを使用してコネクタメタパッケージをダウンロードするための[認証キー](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
 
-* [[!DNL Commerce Optimizer]  サンドボックスインスタンス &#x200B;](../optimizer/get-started.md)への管理者アクセス。
+* [[!DNL Commerce Optimizer]  サンドボックスインスタンス ](../optimizer/get-started.md)への管理者アクセス。
 
 統合を構成する[!DNL Adobe Commerce] ユーザーには、次の要件が必要です。
 
 * Commerce管理者への管理者アクセス。
 
-* [&#x200B; アプリケーションサーバー [!DNL Adobe Commerce] へのコマンドラインアクセス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/user-access)。
+* [ アプリケーションサーバー [!DNL Adobe Commerce] へのコマンドラインアクセス ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)。
 
-* [!DNL Commerce Optimizer] プロジェクトがプロビジョニングされている[IMS組織](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/organizations?)への開発者アクセス。
+* [!DNL Commerce Optimizer] プロジェクトがプロビジョニングされている[IMS組織](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?)への開発者アクセス。
 
 >[!BEGINSHADEBOX]
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 1. **[管理者からCommerce スコープの書き出し設定](#customize-the-commerce-scopes-export-configuration)**&#x200B;をカスタマイズします。
 
-1. **[&#x200B; [!DNL Commerce Optimizer] 統合](#enable-the-adobe-commerce-optimizer-integration)**&#x200B;を有効にします。
+1. **[ [!DNL Commerce Optimizer] 統合](#enable-the-adobe-commerce-optimizer-integration)**&#x200B;を有効にします。
 
 1. **[データ同期が機能していることを確認します](#verify-that-the-data-sync-is-working)**。
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 
 ## Commerce スコープ書き出し設定のカスタマイズ {#customize-the-commerce-scopes-export-configuration}
 
-デフォルトでは、すべてのCommerce スコープ（web サイト、カスタマーグループ、ストアビュー）でカタログデータの同期が有効になっています。 ビジネスニーズに基づいて、特定の範囲のデータのみを同期するように書き出し設定をカスタマイズできます。 例えば、複数のストアビューが同じ言語を共有する場合、1つのストアビューのデータを書き出し、[!DNL Commerce Optimizer]の複数のカタログビューの[&#x200B; カタログソース &#x200B;](../optimizer/setup/catalog-sources.md)として使用できます。
+デフォルトでは、すべてのCommerce スコープ（web サイト、カスタマーグループ、ストアビュー）でカタログデータの同期が有効になっています。 ビジネスニーズに基づいて、特定の範囲のデータのみを同期するように書き出し設定をカスタマイズできます。 例えば、複数のストアビューが同じ言語を共有する場合、1つのストアビューのデータを書き出し、[!DNL Commerce Optimizer]の複数のカタログビューの[ カタログソース ](../optimizer/setup/catalog-sources.md)として使用できます。
 
 >[!IMPORTANT]
 >
@@ -125,9 +125,9 @@ ht-degree: 0%
 | 範囲 | 書き出されたデータ | メモ |
 | ----- | ------------- | ----- |
 | web サイトと顧客グループ | 価格と価格表 | 各価格セットは、命名規則`&lt;website&gt;::&lt;SHA1 of customer group ID&gt;`を使用して[価格表](../optimizer/setup/pricebooks.md)として書き出されます。 Web サイトのすべての顧客グループが含まれます。 |
-| ストアビュー | 製品と製品属性 | 各ストアビューは、[!DNL Commerce Optimizer]に個別の[&#x200B; カタログソース &#x200B;](../optimizer/setup/catalog-sources.md)を作成します。 |
+| ストアビュー | 製品と製品属性 | 各ストアビューは、[!DNL Commerce Optimizer]に個別の[ カタログソース ](../optimizer/setup/catalog-sources.md)を作成します。 |
 
-![Commerce Optimizerの同期設定を使用したストアグリッド &#x200B;](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
+![Commerce Optimizerの同期設定を使用したストアグリッド ](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
 
 ### 範囲の書き出し設定を変更するには
 
@@ -137,7 +137,7 @@ ht-degree: 0%
 
 1. **[!DNL Commerce Optimizer]エクスポーター設定**&#x200B;で、チェックボックスを使用して、必要に応じてデータ同期を有効または無効にします。
 
-   ![&#x200B; データ同期設定の更新](./assets/aco-connector-storeview-export-settings.png){width="500" zoomable="yes"}
+   ![ データ同期設定の更新](./assets/aco-connector-storeview-export-settings.png){width="500" zoomable="yes"}
 
 1. 変更を保存します。
 
@@ -176,8 +176,8 @@ ht-degree: 0%
 
 1. **カタログ ビューとポリシー[!DNL Commerce Optimizer]を設定**
 
-   [!DNL Commerce Optimizer] UIでカタログ ビューとポリシーを作成します。 価格表は、[!DNL Adobe Commerce]個の顧客グループから自動的に作成されます。 手順については、*[!DNL Commerce Optimizer]ユーザーガイド*&#x200B;の[&#x200B; カタログビュー](../optimizer/setup/catalog-view.md)および[&#x200B; ポリシー](../optimizer/setup/policies.md)のドキュメントを参照してください。 カタログビューへのアクセスを制限するには、[&#x200B; プライベートカタログビュー](../optimizer/setup/private-catalog-view.md)を参照してください。
+   [!DNL Commerce Optimizer] UIでカタログ ビューとポリシーを作成します。 価格表は、[!DNL Adobe Commerce]個の顧客グループから自動的に作成されます。 手順については、*[!DNL Commerce Optimizer]ユーザーガイド*&#x200B;の[ カタログビュー](../optimizer/setup/catalog-view.md)および[ ポリシー](../optimizer/setup/policies.md)のドキュメントを参照してください。 カタログビューへのアクセスを制限するには、[ プライベートカタログビュー](../optimizer/setup/private-catalog-view.md)を参照してください。
 
 1. **[!DNL Edge Delivery Services]**&#x200B;にCommerce ストアフロントを設定
 
-   ストアフロントを[!DNL Commerce Optimizer] インスタンスに接続し、パーソナライズされたコマースエクスペリエンスの提供を開始するには、[&#x200B; ストアフロント設定ドキュメント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/){target="_blank"}に従います。
+   ストアフロントを[!DNL Commerce Optimizer] インスタンスに接続し、パーソナライズされたコマースエクスペリエンスの提供を開始するには、[ ストアフロント設定ドキュメント ](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/){target="_blank"}に従います。
