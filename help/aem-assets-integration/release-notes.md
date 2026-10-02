@@ -3,9 +3,9 @@ title: AEM Assets統合のリリースノート
 description: すべてのAEM Assets統合リリースについて詳しくは、リリースノートを参照してください。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
+source-git-commit: e8b87b4622bf41f6340bf7ddd0f208512e9b09c7
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1738'
 ht-degree: 0%
 ---
 # AEM Assets統合のリリースノート
@@ -42,11 +42,11 @@ _2026年9月18日_
 
 [!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
 
-![修正済みの問題](../assets/fix.svg)<!-- Issue ACAP-1317 --> Commerce非同期設定の保存が有効になっている場合、[&#x200B; カスタム自動一致](synchronize/custom-match.md)用にアップロードされた`workspace.json` ファイルが正しく保持されない問題を修正しました。 以前は、管理者リクエストはファイルの内容ではなくアップロードメタデータのみをキューに入れていたため、非同期設定コンシューマーが保存を処理するまでに、一時的なアップロードファイルを読み取ることができなくなりました。 その結果、App Builder OAuth値は変更されずに、設定は正常に保存されたように見えました。 アップロードされたApp Builder資格情報は、キュー境界を維持し、非同期コンシューマーによって正しく処理されるようになりました。
+![修正済みの問題](../assets/fix.svg)<!-- Issue ACAP-1317 --> `workspace.json`のアップロードを含む&#x200B;**[!UICONTROL AEM Assets Integration]**&#x200B;設定を保存し、`Commerce Async Config Save` （Adobe Commerce 2.4.7で導入）を有効にして、テナントをARESに登録または更新できなかった問題を修正しました。 設定は正常に保存されたように見えましたが、App Builder OAuth値は変更されませんでした。 アップロードされた資格情報は、非同期コンシューマーによって正しく処理されるようになりました。
 
 >[!IMPORTANT]
 >
->非同期設定の保存オプションが有効になっているカスタムマッチャーを使用する場合は、このバージョンにアップグレードした後で`workspace.json` ファイルを再アップロードします。 アップロード手順については、[非同期設定の保存](synchronize/custom-match.md#async-config-save)を参照してください。
+>非同期設定の保存が有効になっているカスタムマッチャーを使用する場合は、アップグレード後に`workspace.json` ファイルを再アップロードします。 手順については、[非同期設定の保存](synchronize/custom-match.md#async-config-save)を参照してください。
 
 ## v1.4.6
 
