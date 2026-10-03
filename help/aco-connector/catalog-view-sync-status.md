@@ -66,7 +66,7 @@ Commerce管理者から、**[!UICONTROL System]** > **[!UICONTROL Data Transfer]
 | **期限切れ** | 共有カタログを[!DNL Adobe Commerce]で削除しました。 カタログビューには、削除猶予期間が終了するまで引き続きアクセスできます。 デフォルトの猶予期間は7日間です。 [&#x200B; カタログ ビューの同期設定](#configure-aco-catalog-view-sync-settings)を更新することで、デフォルトを変更できます。 |
 | **孤立** | カタログ ビューまたはキーは、コネクタではなく、[!DNL Adobe Commerce Optimizer] Studioで直接作成されました。 [孤立したエントリと削除されたエントリの確認](#review-orphaned-and-deleted-entries)を参照してください。 |
 
-[!UICONTROL Healthy]、[!UICONTROL Pending]および[!UICONTROL Deleted]は、アクションを必要としない情報状態です。 完全なリストについては、*Commerce管理ガイド*&#x200B;の[Sync ステータス値](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"}を参照してください。
+[!UICONTROL Healthy]、[!UICONTROL Pending]および[!UICONTROL Deleted]は、アクションを必要としない情報状態です。 完全なリストについては、*Commerce管理ガイド*&#x200B;の[Sync ステータス値](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"}を参照してください。
 
 ### ACO カタログビューの同期設定 {#configure-aco-catalog-view-sync-settings}
 
