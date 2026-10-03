@@ -60,7 +60,7 @@ Commerce管理者から、**[!UICONTROL System]** > **[!UICONTROL Data Transfer]
 
 >[!NOTE]
 >
->このページのフィールドの参照については、*Commerce管理者ガイド*&#x200B;の[制限付きアクセスキー管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"}を参照してください。—>
+>このページのフィールドの参照については、*Commerce管理者ガイド*&#x200B;の[制限付きアクセスキー管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"}を参照してください。—>
 
 ## 自動キー以上のものが必要な場合 {#when-you-need-more-than-the-automatic-key}
 
@@ -159,7 +159,7 @@ Commerceは新しいキーペアを生成し、秘密鍵を保持します。 �
 
 >[!MORELIKETHIS]
 >
-> - [制限付きアクセスキーを管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} – このページの完全なフィールド参照（*Commerce管理ガイド*） – >
+> - [制限付きアクセスキーを管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} – このページの完全なフィールド参照（*Commerce管理ガイド*） – >
 > - [&#x200B; カタログ ビュー同期の監視](catalog-view-sync-status.md) – これらのキーで保護されるカタログ ビューの監視
 > - [&#x200B; プライベートカタログビュー](/help/optimizer/setup/private-catalog-view.md) — コネクター管理のプライベートカタログビューについて説明します
 > - [制限付きアクセスキー](/help/optimizer/setup/restricted-access-keys.md) — ACO Studio ベースの手動キーフローがB2B以外のユースケースでどのように機能するかを説明します

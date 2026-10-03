@@ -40,7 +40,7 @@ ht-degree: 0%
 
 制限付きアクセスキーは、次の2つの方法のいずれかでプロビジョニングされます。
 
-- [!BADGE Private Beta]{type=Caution tooltip="現在プライベートベータ版のAdobe Commerce Optimizer Connector B2B拡張機能が必要です。"} **自動的に、B2B共有カタログ**&#x200B;の場合 – [!DNL Adobe Commerce Optimizer Connector for B2B]と統合されたデプロイメントの場合、コネクタは最初のキーをプロビジョニングして割り当てます。 次に、Commerce管理者からキーとキーの割り当てを管理します。 *Commerce管理ガイド**の「[&#x200B; カタログビュー認証](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)」を参照してください。
+- [!BADGE Private Beta]{type=Caution tooltip="現在プライベートベータ版のAdobe Commerce Optimizer Connector B2B拡張機能が必要です。"} **自動的に、B2B共有カタログ**&#x200B;の場合 – [!DNL Adobe Commerce Optimizer Connector for B2B]と統合されたデプロイメントの場合、コネクタは最初のキーをプロビジョニングして割り当てます。 次に、Commerce管理者からキーとキーの割り当てを管理します。 *Commerce管理ガイド**の「[&#x200B; カタログビュー認証](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)」を参照してください。
 
 - **任意のカタログビューに対して手動で** – 自分でカタログビューを保護するには（パートナーポータルやプレリリースプレビューなど）、[制限付きアクセスキーの作成](#create-a-restricted-access-key)から始まるこのトピックの手順に従います。
 
@@ -116,7 +116,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 制限付きアクセスキーは、カタログ保護の使用方法に応じて、次の2つの方法のいずれかで管理されます。
 
-- **自動的に、B2B共有カタログの場合**—[!BADGE Private Beta]{type=Caution tooltip="現在プライベートベータ版のAdobe Commerce Optimizer Connector B2B拡張機能が必要です。"} [!DNL Adobe Commerce Optimizer Connector for B2B]と統合されたデプロイメントの場合、カタログビューの作成時に、サービスは自動的に最初の制限付きアクセスキーを生成して割り当てます。 各カタログビューには、独自のキーが割り当てられます。 その後、共有カタログまたは会社アカウントページから各キーを管理できます。 また、Commerce管理者&#x200B;**制限付きアクセスキー** ページ（**システム** > **データ転送**）からキーを表示および管理することもできます。 [&#x200B; カタログビュー設定の管理](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)を参照してください。
+- **自動的に、B2B共有カタログの場合**—[!BADGE Private Beta]{type=Caution tooltip="現在プライベートベータ版のAdobe Commerce Optimizer Connector B2B拡張機能が必要です。"} [!DNL Adobe Commerce Optimizer Connector for B2B]と統合されたデプロイメントの場合、カタログビューの作成時に、サービスは自動的に最初の制限付きアクセスキーを生成して割り当てます。 各カタログビューには、独自のキーが割り当てられます。 その後、共有カタログまたは会社アカウントページから各キーを管理できます。 また、Commerce管理者&#x200B;**制限付きアクセスキー** ページ（**システム** > **データ転送**）からキーを表示および管理することもできます。 [&#x200B; カタログビュー設定の管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)を参照してください。
 
   共有カタログと割り当てられたストアビューの各組み合わせは、個別のカタログビューとして表示されます。 プロジェクションとは、コネクタがその組み合わせに対して[!DNL Adobe Commerce Optimizer]に書き出すカタログ ビュー、ポリシー、価格表参照、およびアクセス制限キー設定データです。 複数のストアビューに割り当てられた共有カタログは、それぞれ独自のキーを持つ複数のカタログビューを生成します。 他のカタログに影響を与えることなく、1つのカタログ ビューのキーを編集または回転します。
 
