@@ -1,24 +1,27 @@
 ---
 title: レコメンデーションフィルター
-description: 'フィルターを使用して、レコメンデーションに表示される製品を制御する方法を説明します。 [!DNL Adobe Commerce Optimizer] '
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+description: フィルターを使用して、[!DNL Adobe Commerce Optimizer]件のレコメンデーションに表示される製品を制御する方法を説明します。
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
+    internal-label: Personalization
+source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
 workflow-type: tm+mt
-source-wordcount: 1932
+source-wordcount: '2334'
 ht-degree: 0%
-
 ---
-
 # 商品を絞り込む
 
 [!DNL Adobe Commerce Optimizer]は、設定不可能な既定のフィルターをレコメンデーション単位に自動的に適用します。 1つのページに複数のレコメンデーションユニットがデプロイされている場合、[!DNL Adobe Commerce Optimizer]は、ユニット内で繰り返される製品をフィルタリングします。 繰り返し使用される製品に対する最初の参照のみが使用され、他の製品を推奨する余地が生まれます。 [!DNL Adobe Commerce Optimizer]では、以前に購入した製品とカート内の製品もフィルタリングされます。
@@ -73,7 +76,7 @@ ht-degree: 0%
 
 価格規則&#x200B;**フィルター**&#x200B;は、推奨候補セットをフィルタリングします。商品のランク付けは&#x200B;**not**&#x200B;です。 エンジンはランク付けリストを生成し、価格含めるルールと除外ルールはそのリストから製品を削除し、残りの製品の相対的な順序は同じままになります。 対象となる製品がユニットリクエストよりも少ない場合は、有効な品目のみが表示されます。 条件が満たされない場合、ユニットはレンダリングされません（空のプレースホルダーはありません）。
 
-レコメンデーションユニット内の商品に表示される価格は、そのストアフロントの価格表と同じ&#x200B;**最終価格**&#x200B;であるため、買い物客が表示する価格は、フィルタリングに使用される値と一致します。 管理者プレビューでは、バリエーションの価格が異なる場合、設定可能な製品の価格帯が表示される場合があります。詳しくは、[&#x200B; プレビューの設定可能な製品](#configurable-products-in-preview)を参照してください。
+レコメンデーションユニット内の商品に表示される価格は、そのストアフロントの価格表と同じ&#x200B;**最終価格**&#x200B;であるため、買い物客が表示する価格は、フィルタリングに使用される値と一致します。 管理者プレビューでは、バリエーションの価格が異なる場合、設定可能な製品の価格帯が表示される場合があります。詳しくは、[ プレビューの設定可能な製品](#configurable-products-in-preview)を参照してください。
 
 #### 固定価格帯
 
@@ -98,7 +101,7 @@ ht-degree: 0%
 
 商品の詳細ページ （PDP）で&#x200B;**現在表示されている商品**&#x200B;に対してレコメンデーションを制限する必要がある場合は、**動的**&#x200B;価格フィルターを使用します。 フィルターは、その製品の最終価格を&#x200B;**アンカー**&#x200B;として使用し、定義した境界と推奨される製品を比較します。
 
-動的演算子は、製品コンテキストで実行される[SKU関連のレコメンデーションタイプ &#x200B;](types.md)に対してのみ使用できます。
+動的演算子は、製品コンテキストで実行される[SKU関連のレコメンデーションタイプ ](types.md)に対してのみ使用できます。
 
 - 閲覧したページ
 - 閲覧、購入
@@ -207,8 +210,73 @@ ht-degree: 0%
 >
 >設定可能な製品の子製品は、推奨単位に表示されません。これらの子製品には、_個別に表示されない_&#x200B;という表示があります。
 
-<!--
-### Attribute
+### 属性 {#attributes}
 
-You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.
+>[!NOTE]
+>
+>属性フィルタリングはベータ版です。
+
+属性フィルターを使用すると、[price](#price)および[product](#product) フィルターと同じ&#x200B;**[!UICONTROL Filter products]** ページを使用して、製品属性値に基づいて製品を含めたり除外したりできます。
+
+#### 属性フィルターについて
+
+属性フィルターは、[製品フィルター](#product)とは異なり、個々のSKUではなく、共有の属性値で製品をターゲットにします。 例えば、カテゴリに割り当てられたすべてのSKUを一覧表示する代わりに、そのカテゴリに割り当てられたすべての製品に一致する単一の属性フィルターを作成できます。
+
+#### 属性フィルターの設定
+
+次の手順を使用して、レコメンデーションユニットに属性の包含ルールまたは除外ルールを追加します。
+
+1. レコメンデーションユニットの[作成または編集中](create.md)に、**[!UICONTROL Filter products]**&#x200B;に移動します。
+1. 「**[!UICONTROL Inclusions]**」または「**[!UICONTROL Exclusions]**」タブを選択します。 各タブのバッジには、そのタイプのフィルターが有効になっている数が表示されます。
+1. 左側のリストで、**[!UICONTROL Attributes]**&#x200B;を選択します。
+1. セレクターから属性を選択します（例：**カテゴリ**）。
+1. **[!UICONTROL Value]**&#x200B;に、**パンツ**&#x200B;など、属性の値を入力します。
+1. **Enter**&#x200B;を押すか、**[!UICONTROL Add inclusion filter]** （または同等の除外コントロール）をクリックして、属性フィルターを追加します。
+1. レコメンデーションユニットの設定を完了し、通常と同じように保存または公開して、フィルターを有効にします。
+
+![属性フィルター](../../assets/filter-attribute.png)
+
+>[!NOTE]
+>
+>メタデータが`number` ～ `true`に設定されている属性（**サイズ**&#x200B;など）を選択すると、**値** フィールドには、単一のテキスト値ではなく範囲入力が表示されます。
+
+#### 包含条件と除外条件の使用
+
+インクルージョンフィルターに一致する製品のみを推奨できます。 除外フィルターに一致する製品は推奨されません。
+
+#### 条件を結合
+
+属性フィルターに複数の値が含まれているか、他の条件と組み合わされている場合は、次のロジックが適用されます。
+
+- 同じ属性に複数の値が選択されている場合、値は`OR`と組み合わされます。
+- 異なる属性（色やサイズなど）に関する条件は`AND`と組み合わされます。商品は、すべての属性に一致する必要があります。 1つの条件に複数の値を入力する代わりに、同じ属性を別々の条件として追加すると、それらの条件も`OR`ではなく`AND`と組み合わされます。
+- 複数の除外条件がある場合は、いずれかの除外条件に一致する製品が削除されます。
+- 包含フィルターと除外フィルターの両方を使用する場合は、[論理演算子](#logical-operators)を参照してください。
+
+<!--
+#### Availability by recommendation type
+
+Hiding this for now as we need better clarification on what "limited" means.
+
+Attribute filter support varies by recommendation type.
+
+| Recommendation type | Inclusion support | Exclusion support |
+| --- | --- | --- |
+| Most viewed | Yes | Yes |
+| Most purchased | Yes | Yes |
+| Trending | Yes | Yes |
+| Recommended for you | Limited | Yes |
+| Viewed this, viewed that | Limited | Yes |
+| Viewed this, bought that | Limited | Yes |
+| Bought this, bought that | Limited | Yes |
+| More like this | Limited | Yes |
+| Visual similarity | No | Yes |
+| Recently viewed | No | Limited |
+| Recently purchased | No | Limited |
 -->
+
+#### 可用性、検証、およびトラブルシューティング
+
+- 空の属性値または無効な条件がある場合、推奨事項はストアフロントまたはプレビューパネルでレンダリングされません。
+- 属性値は、スペースや大文字と小文字を含め、カタログ内の値と完全に一致する必要があります。
+- どの製品もフィルター条件を満たさない場合、推奨事項はストアフロントまたはプレビューパネルでレンダリングされません。
