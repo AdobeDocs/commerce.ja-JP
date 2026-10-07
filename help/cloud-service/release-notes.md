@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 6a2300d65c9c77d18813c2eb491bfd02d1fca8ba
+source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
 workflow-type: tm+mt
-source-wordcount: '7581'
+source-wordcount: '8005'
 ht-degree: 0%
 ---
 # リリースノート
@@ -129,6 +129,38 @@ ht-degree: 0%
 
 `POST /V1/carts/:cartId/shipping-discount`を使用して割引を設定します。 このエンドポイントを使用するには、管理者または統合レベルのアクセス権が必要です。<!-- ACCS-1156 -->
 
+### カート商品をカスタム価格で追加
+
+標準のカート項目REST エンドポイント （`POST /V1/carts/:cartId/items`および`PUT /V1/carts/:cartId/items/:itemId`）に`custom_price`拡張機能の属性を追加して、カート項目にカスタム価格を設定できるようになりました。 カスタム価格を設定するには、管理者または統合トークンを指定する必要があります。 価格がマイナスのリクエスト、または動的価格設定のバンドル製品など、サポートされていない製品タイプのリクエストは拒否されます。<!-- ACCS-1155 -->
+
+```json
+{
+  "cartItem": {
+    "sku": "t-shirt",
+    "qty": 1,
+    "quote_id": 17,
+    "extension_attributes": { "custom_price": 15.00 }
+  }
+}
+```
+
+`GET /V1/carts/:cartId`および`GET /V1/carts/:cartId/items` エンドポイントも`custom_price`値を返します。
+
+### 管理者作成のカートをストアフロントカートから分離する
+
+デフォルトで無効になっているオプトイン機能は、管理者と統合機能がREST APIを通じて作成できるカートを、顧客のアクティブなストアフロントカートから分離します。 有効にすると、`POST /V1/customers/:customerId/carts`は常に、管理者と統合呼び出し担当者が買い物客のストアフロントカートを変更することなく、カート REST エンドポイントを通じて管理できる新しい非アクティブなカートを作成します。<!-- ACCS-1153 -->
+
+有効にするには、Adobe Commerce カスタマーサクセスマネージャーにお問い合わせいただくか、サポートチケットを作成してください。
+
+### サードパーティプラットフォームを通じてトランザクションメールを送信する
+
+新しいイベントを使用すると、[!DNL Salesforce Marketing Cloud]などのサードパーティのメールプラットフォームから[!DNL App Builder]を通じてトランザクションメールを送信できます。 [!DNL Adobe I/O Events]を通じて次のイベントを購読します：<!-- ACCS-1929 -->
+
+* `observer.customer_balance_save_after` – 店舗のクレジット残高が保存されます。 `notify_by_email`が`1`に等しい購読ルールを追加して、店舗ごとに1つのイベントのクレジット通知メールを受信します。
+* `observer.giftcard_item_email_send_after` – 注文商品のギフトカードの電子メールが送信されます。 ペイロードには、商品のすべてのギフトカードコードが含まれています。
+* `plugin.customer.api.account_management.activate` – 顧客がアカウントを確認します。
+* `plugin.negotiable_quote.api.negotiable_quote_management.decline` – 交渉可能な見積もりが拒否されました。
+
 ### 機能強化とバグ修正
 
 このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
@@ -152,6 +184,22 @@ ht-degree: 0%
 * カートに在庫切れの商品が含まれている場合に、カートの価格または合計を要求するとエラーが返される問題を修正しました。<!-- CEXT-6776 -->
 
 * 見つからないSKUを見つけようとすると、在庫消費者がメッセージキューを圧倒する可能性がある問題を解決しました。<!-- ACCS-1976 -->
+
+* `customerDownloadableProducts` GraphQL クエリは、外部URLで設定されたダウンロード可能な製品のファイルメタデータを返すようになりました。そのため、ストアフロントでは、ファイルの種類と、アセットを開くかダウンロードするかを判断できます。<!-- ACCS-1735 -->
+
+* `sourceAvailability` GraphQL クエリで、B2B共有カタログとカテゴリの権限が適用されるようになりました。買い物客は、表示が許可されている商品に対してのみ、ソースごとの在庫を受け取ることができます。<!-- ACCS-1888 -->
+
+* ウェルカムメール リンクからパスワードを設定できず、新しく作成された顧客が[!DNL Commerce Admin]顧客グリッドに表示されない問題を修正しました。<!-- ACCS-1979 -->
+
+* 注文編集REST APIで編集された注文が、誤った価格の商品を保存する可能性がある問題を修正しました。<!-- ACCS-1982 -->
+
+* 会社の共有カタログから削除された製品がストアフロントに表示されたままになり、カートからサイレントにドロップされる問題を修正しました。<!-- CCSAAS-5544 -->
+
+* 顧客グループに対して拒否されたカテゴリ内の共有カタログ製品がストアフロントに表示されたが、カートに追加できなかった問題を修正しました。 カテゴリ拒否の権限が、共有カタログのメンバーシップよりも優先されるようになりました。<!-- CCSAAS-5549 -->
+
+* GraphQLを通じて注文を行うと、送料の税金項目にタイトルがない場合にエラーが返される問題を修正しました。<!-- CCSAAS-5552 -->
+
+* `GET /V1/customers/:customerId/companyRoles` REST エンドポイントが会社管理者に対して空の権限を返す問題を修正しました。<!-- ACCS-1998 -->
 
 {{accs-release}}
 

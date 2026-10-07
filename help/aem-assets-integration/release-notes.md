@@ -3,9 +3,9 @@ title: AEM Assets統合のリリースノート
 description: すべてのAEM Assets統合リリースについて詳しくは、リリースノートを参照してください。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e8b87b4622bf41f6340bf7ddd0f208512e9b09c7
+source-git-commit: 36e6db0c76b0946c28d1a76d5649757c7f244058
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1847'
 ht-degree: 0%
 ---
 # AEM Assets統合のリリースノート
@@ -35,6 +35,22 @@ _2025年2月11日_
 ![新しい問題](../assets/new.svg)これで、マーチャントは商品とカテゴリの画像を同期できます。
 
 +++
+
+## v1.4.9
+
+_2026年10月7日_
+
+[!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
+
+![修正済みの問題](../assets/fix.svg)<!-- Issue CCSAAS-5562 --> `null`が配列オフセットとして使用されたため、管理画面でカテゴリを作成すると`Deprecated Functionality` エラーが表示される断続的な問題を修正しました。 これで、**新しいカテゴリ** フォームが非推奨（廃止予定）通知なしで読み込まれ、カテゴリを正常に作成できるようになりました。
+
+## v1.4.8
+
+_2026年10月5日_
+
+[!BADGE Adobe Commerce バージョン 2.4.5以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
+
+![修正済みの問題](../assets/fix.svg)<!-- Issue ACAP-1339 --> AEM Assetsのカテゴリ画像がカタログに書き出されず、AEM Assetsがビジュアライゼーションオーナーであった場合にGraphQLの応答で返されない問題を修正しました。 画像を書き出すには、修正を適用した後で、AEM アセットをカテゴリに再割り当てします。
 
 ## v1.4.7
 
