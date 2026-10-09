@@ -1,25 +1,42 @@
 ---
 title: 検証
-description: テストと検証により、 [!DNL Payment Services] 関数が期待どおりに機能し、顧客に最適な支払いオプションを提供できるようになります
+description: テストと検証により、[!DNL Payment Services]機能が期待どおりに機能し、顧客に最適な支払いオプションを提供できるようになります
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '806'
 ht-degree: 0%
-
 ---
-
 # 検証
 
-[!DNL Payment Services]と[!DNL Adobe Commerce]の[!DNL Magento Open Source]を買い物客に公開する前に、実稼動環境のサンドボックス環境&#x200B;_と_&#x200B;でテストすることをお勧めします。 テストと検証は、[!DNL Payment Services]機能が期待どおりに機能し、ストアと顧客に最適な支払いオプションを提供するのに役立ちます。
+[!DNL Adobe Commerce]と[!DNL Magento Open Source]の[!DNL Payment Services]を買い物客に公開する前に、実稼動環境のサンドボックス環境&#x200B;_と_&#x200B;でテストすることをお勧めします。 テストと検証は、[!DNL Payment Services]機能が期待どおりに機能し、ストアと顧客に最適な支払いオプションを提供するのに役立ちます。
 
 ## サンドボックス環境でのテスト
 
 サンドボックス環境で[!DNL Payment Services]をテストすることは、実際の銀行やマーチャントではなく、PayPal サンドボックスにのみ接続されたシミュレート環境であるにもかかわらず、重要な検証ステップです。
 
 1. [&#x200B; クレジットカードのフィールド &#x200B;](payments-options.md#credit-card-fields)または[PayPal支払いボタン &#x200B;](payments-options.md#paypal-payment-buttons)のいずれかを使用して、ストアから正常にチェックアウトを完了します。 偽造クレジットカードをテストに使用する方法について詳しくは、[資格情報のテスト &#x200B;](#testing-credentials)を参照してください。
-1. 決済アクションが[に`Authorize and Capture`](production.md#set-payment-services-as-payment-method)に設定されている場合、注文が完了したばかりの注文を[払い戻し](refunds.md)または[void](voids.md)取り込みます。 支払いアクションが[ではなく](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}に設定されている場合、注文の請求書`Authorize`を`Authorize and Capture`作成することもできます。
+1. 決済アクションが[に`Authorize and Capture`](production.md#set-payment-services-as-payment-method)に設定されている場合、注文が完了したばかりの注文を[払い戻し](refunds.md)または[void](voids.md)取り込みます。 支払いアクションが`Authorize and Capture`ではなく`Authorize`に設定されている場合、注文の請求書[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}を作成することもできます。
 1. 24 ～ 48時間以内に、[支払いレポート &#x200B;](payouts.md)でトランザクションおよびその他の情報を表示します。
 1. 注文の詳細については、[注文支払い状況レポート &#x200B;](order-payment-status.md)を参照してください。
 

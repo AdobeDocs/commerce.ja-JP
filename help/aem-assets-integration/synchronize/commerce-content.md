@@ -3,24 +3,34 @@ title: 正確かつ適切なコンテンツを維持したい
 description: e コマースプラットフォームは、最も重要なエンゲージメントチャネルのひとつです。 アセット管理システムをシームレスに更新することで、コマースのストアフロントで常に最新の商品情報を表示できるようになります。
 feature: CMS, Media, Integration
 exl-id: 2c749e84-fcc4-4bf9-90b2-87438329889e
-TQID: https://experienceleague.adobe.com/cTeAl0vABSDcqSR9S7pGkV2yGnFHz11VmXtPoE0C86M
+TQID: 'https://experienceleague.adobe.com/cTeAl0vABSDcqSR9S7pGkV2yGnFHz11VmXtPoE0C86M'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+    internal-label: Digital asset management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 416
+source-wordcount: '416'
 ht-degree: 0%
-
 ---
-
 # 正確かつ適切なコンテンツを維持したい
 
 真のコンテンツ供給には、**作成と実稼動**、**ワークフローと計画**、**配信とアクティベーション**&#x200B;の主要な柱の組み合わせが含まれます。 これらの柱は、それぞれ独自に価値があり、企業に大きな価値をもたらします。

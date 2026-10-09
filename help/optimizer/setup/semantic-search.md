@@ -1,16 +1,22 @@
 ---
 title: セマンティック検索
-description: 設定から [!DNL Adobe Commerce Optimizer] でAI セマンティック検索を有効にします。 属性の設定やストアフロントの変更は必要ありません。
+description: 設定から[!DNL Adobe Commerce Optimizer]でAI セマンティック検索を有効にします。 属性の設定やストアフロントの変更は必要ありません。
 role: Admin, User
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '794'
 ht-degree: 0%
-
 ---
-
 # セマンティック検索
 
 セマンティック検索では、入力した単語だけでなく、AIを利用して顧客の意味を把握できます。 「ビーチの結婚式のためのドレス」や「一日中立っているための快適な靴」などのクエリは、カタログがそれらの正確なフレーズを使用していない場合でも、関連する商品を返すことができます。

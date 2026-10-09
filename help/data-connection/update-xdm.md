@@ -4,23 +4,32 @@ description: Commerce データ取り込み用に時系列イベントデータ�
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: c933a1bc-3d6f-4f80-944f-8c3e212aaeb6
-TQID: https://experienceleague.adobe.com/8u3lSBPoreIZuu107QbR7FNvVx6Lw3TJsKUU6LCQ1Gs
+TQID: 'https://experienceleague.adobe.com/8u3lSBPoreIZuu107QbR7FNvVx6Lw3TJsKUU6LCQ1Gs'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 1040
+source-wordcount: '1040'
 ht-degree: 0%
-
 ---
-
 # Commerce Data Ingestionの時系列イベントスキーマの更新
 
 拡張機能[を有効にする [!DNL Data Connection]](overview.md#enable-extension)手順の1つは、データストリームワークスペースにアクセスし、[Adobe Commerce固有のデータストリーム &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/datastreams/overview)を作成することです。 そのデータストリームを作成する場合は、取り込むデータを説明するスキーマも選択する必要があります。 このスキーマには、コマース固有のフィールドグループを含める必要があります。

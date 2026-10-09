@@ -2,13 +2,24 @@
 title: AEM Assets統合用のIMS ユーザー権限の設定
 description: IMS IDとAdmin Console プロファイルで、AEM Assets配信アクセス、アセットセレクター、自動入力されたCommerce設定フィールドを有効にする方法について説明します。
 feature: CMS, Media, Configuration
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
-
 ---
-
 # ユーザー権限とIMS
 
 **IMS** （Adobe Identity Management System）は認証レイヤーです。

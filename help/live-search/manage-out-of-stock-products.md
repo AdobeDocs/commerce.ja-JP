@@ -1,16 +1,33 @@
 ---
-title: ' [!DNL Live Search]の在庫切れ商品の管理'
-description: Adobe Commerceで [!DNL Live Search] 在庫切れ商品を管理する方法について説明します。 在庫表示、inStock フィルター、GraphQL API フィルタリングを設定します。
+title: '[!DNL Live Search]の在庫切れ商品の管理'
+description: Adobe Commerceの[!DNL Live Search]の在庫切れ商品を管理する方法について説明します。 在庫表示、inStock フィルター、GraphQL API フィルタリングを設定します。
 feature: Services, Search
 role: Admin, Developer
 level: Intermediate
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '451'
 ht-degree: 0%
-
 ---
-
 # 在庫切れ商品の管理
 
 在庫設定、クエリ時間フィルター、オプションのバックエンド機能フラグを使用して、在庫切れ商品を[!DNL Live Search]の検索およびカテゴリの結果でどのように表示するかを制御できます。 これらのオプションには重要な制限があり、このトピックで説明します。

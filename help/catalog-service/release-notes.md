@@ -1,25 +1,34 @@
 ---
 title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
-description: Adobe Commerceの [!DNL Catalog Service] の最新リリース情報。
+description: Adobe Commerceの[!DNL Catalog Service]の最新リリース情報。
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-TQID: https://experienceleague.adobe.com/-yxW4sTuk7LPjGy5YsQ65phtkBLiByg8SmBaQPHMevM
+TQID: 'https://experienceleague.adobe.com/-yxW4sTuk7LPjGy5YsQ65phtkBLiByg8SmBaQPHMevM'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: 4273989f-0bf2-5361-a17a-6909488d18ab
+    internal-label: Catalog Service
+  - id: adedf70c-c1e1-5734-acdc-c5c43b114964
+    internal-label: Release Notes
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 695f349ce38a3127beccab83f63f4157cc05e549
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 3190
+source-wordcount: '3191'
 ht-degree: 0%
-
 ---
-
 # [!DNL Commerce Storefront Catalog Service] リリースノート
 
 このリリースノートでは、次のような最新のCommerce カタログサービスのアップデートについて説明します。
@@ -87,7 +96,7 @@ ht-degree: 0%
 **リリース日**: 2026年5月4日
 <!-- v1.53 -->
 
-![修正](../assets/fix.svg) ストアフロントの製品価格には、すべての製品タイプに対して正しい通貨コード（USDなど）が表示されるようになりました。 以前は、一部の製品で予想される通貨の代わりに`NONE`が表示され、価格が欠落していました。 この更新により、ストアフロント全体で一貫性のある正確な価格レンダリングが保証されます。<!--DATA-7115-->
+![修正](../assets/fix.svg) ストアフロントの商品価格には、すべての商品タイプに対して正しい通貨コード（USDなど）が表示されるようになりました。 以前は、一部の製品で予想される通貨の代わりに`NONE`が表示され、価格が欠落していました。 この更新により、ストアフロント全体で一貫性のある正確な価格レンダリングが保証されます。<!--DATA-7115-->
 
 ### 2026年4月
 

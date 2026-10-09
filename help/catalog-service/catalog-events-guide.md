@@ -1,28 +1,40 @@
 ---
 title: カタログイベントの設定と統合ガイド
-description: カタログデータの検証、Adobe Commerceの [!DNL Adobe I/O Events] の設定、カタログイベントタイプの購読、消費者への配信の検証の方法について説明します。
+description: カタログデータの検証方法、Adobe Commerce用に[!DNL Adobe I/O Events]を設定する方法、カタログイベントタイプのサブスクライブ方法、コンシューマー向けの配信を検証する方法について説明します。
 level: Intermediate
 recommendations: noCatalog
 role: Admin, Developer
 feature: Services, Catalog Service
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: 4273989f-0bf2-5361-a17a-6909488d18ab
+    internal-label: Catalog Service
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 818efacb8dbf63e48cdc83506d228c665d7a8b22
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 1568
+source-wordcount: '1569'
 ht-degree: 0%
-
 ---
-
 # Adobe I/Oでのカタログイベントの有効化と設定
 
 カタログイベントは、[!DNL Catalog Service]を通じて使用可能になった、サポートされているカタログの変更を説明する機械生成の通知です。 これらのツールは、次のようなイベント駆動型ワークフローを実現します。
