@@ -7,17 +7,35 @@ feature: Payments, Checkout, Configuration, Paas, Saas
 TQID: 'https://experienceleague.adobe.com/U1zGAU6vYKjk2tc2KXnvyqnYdbA2HKTCNZSKhHdS0Vw'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-source-git-commit: d754c71e287d7d9ff297dd7d95efbaaae7ffc2fc
+    internal-label: Configuration
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 393
+source-wordcount: '393'
 ht-degree: 0%
-
 ---
-
 # Web サイトの別のPayPal アカウントを接続する
 
 **複数のweb サイト**&#x200B;を持つCommerce インスタンスの場合、**異なるPayPal マーチャント アカウント**&#x200B;が必要になる場合があります。 [!DNL Payment Services]では、**グローバル**&#x200B;のオンボーディング後、**web サイト範囲**&#x200B;のPayPal オンボーディングを有効にします。
@@ -30,7 +48,7 @@ ht-degree: 0%
 
 web サイトレベルのオンボーディングは、ストアが以下の要件を満たしている場合にのみ利用可能です。
 
-- [Commerce Services Connector](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/integration-services/saas)のセットアップが完了しました。
+- [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)のセットアップが完了しました。
 - PayPal アカウントは、グローバル（デフォルト設定）スコープで接続されます。
 
 これは、次のフィールドがデフォルトのスコープに入力されていることを確認することで確認できます。
@@ -39,11 +57,11 @@ web サイトレベルのオンボーディングは、ストアが以下の要�
 - [!UICONTROL Payment Services Production ID]
 - [!UICONTROL PayPal Merchant ID]
 
-これらのフィールドが空の場合は、最初に[&#x200B; グローバルオンボーディングを完了](configure-admin.md)する必要があります。 前提条件を完了するまで、**[!UICONTROL Connect different account]** ボタンは無効になります。
+これらのフィールドが空の場合は、最初に[ グローバルオンボーディングを完了](configure-admin.md)する必要があります。 前提条件を完了するまで、**[!UICONTROL Connect different account]** ボタンは無効になります。
 
 ## web サイトレベルの接続を開始
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Sales]**&#x200B;に移動し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Sales]**に移動し、**[!UICONTROL Payment Methods]**を選択します。
 1. 左上隅の範囲セレクターで、オンボーディングする&#x200B;**[!UICONTROL Default Config]**&#x200B;から&#x200B;**[!UICONTROL Website]**&#x200B;に切り替えます。
 1. **[!UICONTROL Connect different account]**&#x200B;をクリックします。
 

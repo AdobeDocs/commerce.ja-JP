@@ -3,7 +3,7 @@ title: '[!DNL Adobe Commerce Optimizer Connector] フィードのフィールド
 description: すべてのフィードの[!DNL Adobe Commerce] カタログデータから[!DNL Adobe Commerce Optimizer]取り込みAPI形式への[!DNL Adobe Commerce Optimizer Connector] フィールドマッピングについて説明します。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
@@ -22,6 +22,8 @@ feature_v2:
     internal-label: Admin tools and workspace
   - id: c32adafa-ed01-4b31-997e-2413013911b0
     internal-label: Integrations
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -37,7 +39,7 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 1e34df4f07f9043675104fce55c58e0617463b33
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 2%
@@ -45,11 +47,11 @@ ht-degree: 2%
 
 # コネクタフィードのフィールドマッピング
 
-このページでは、[!DNL Adobe Commerce Optimizer Connector]が[!DNL Adobe Commerce] カタログフィールドを[!DNL Commerce Optimizer] [!DNL Catalog Data Ingestion API]で必要な形式に変換する方法について説明します。 サポートされているフィードとそのAPI エンドポイントの一覧については、[&#x200B; コネクタ リファレンス &#x200B;](connector-reference.md#supported-feeds)を参照してください。
+このページでは、[!DNL Adobe Commerce Optimizer Connector]が[!DNL Adobe Commerce] カタログフィールドを[!DNL Commerce Optimizer] [!DNL Catalog Data Ingestion API]で必要な形式に変換する方法について説明します。 サポートされているフィードとそのAPI エンドポイントの一覧については、[ コネクタ リファレンス ](connector-reference.md#supported-feeds)を参照してください。
 
 ## 特定可能
 
-`products` フィードは、[製品エンドポイント &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Products){target="_blank"}にデータを送信します。
+`products` フィードは、[製品エンドポイント ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Products){target="_blank"}にデータを送信します。
 
 | [!DNL Adobe Commerce] フィールド | [!DNL Commerce Optimizer] API フィールド | マッピングの詳細 |
 | ----------------------------------------------- | -------------- | ------- |
@@ -77,7 +79,7 @@ ht-degree: 2%
 
 ## 製品属性メタデータ
 
-`productAttributes` フィードは、[&#x200B; メタデータエンドポイント &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"}にデータを送信します。
+`productAttributes` フィードは、[ メタデータエンドポイント ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"}にデータを送信します。
 
 | [!DNL Adobe Commerce] フィールド | [!DNL Commerce Optimizer] API フィールド | マッピングの詳細 |
 | --------------- | -------------- | ------- |
@@ -113,7 +115,7 @@ ht-degree: 2%
 
 ## プライスブック
 
-`priceBooks` フィードは、[価格表エンドポイント &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Price-Books){target="_blank"}にデータを送信します。
+`priceBooks` フィードは、[価格表エンドポイント ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Price-Books){target="_blank"}にデータを送信します。
 
 他のコネクタフィードとは異なり、`priceBooks` フィードは[!DNL Adobe Commerce]の[!DNL SaaS Data Export] インデクサーによって収集されません。 コネクターは、管理者のweb サイトと顧客グループ設定からこのフィードを生成します。
 
@@ -124,7 +126,7 @@ ht-degree: 2%
 - 通常価格の基本価格帳：`priceBookId = websiteCode`。
 - 顧客グループの子価格表：`priceBookId = websiteCode::sha1(customerGroupId)`。`sha1(customerGroupId)`は、顧客グループの整数IDのSHA-1 1 16進ダイジェストです。
 
-価格フィードでは、同じ数式を使用して、各価格入力を価格表に割り当てます。 ストアフロントが顧客セッションの`priceBookId`を解決する方法について詳しくは、[&#x200B; ヘッドレスストアフロント統合](../headless-storefront.md#graphql-commerceoptimizer-query)を参照してください。
+価格フィードでは、同じ数式を使用して、各価格入力を価格表に割り当てます。 ストアフロントが顧客セッションの`priceBookId`を解決する方法について詳しくは、[ ヘッドレスストアフロント統合](../headless-storefront.md#graphql-commerceoptimizer-query)を参照してください。
 
 
 | Source フィールドまたは値 | [!DNL Commerce Optimizer] API フィールド | マッピングの詳細 |
@@ -136,7 +138,7 @@ ht-degree: 2%
 
 ## 価格
 
-`prices` フィードは[!DNL Adobe Commerce] データを[価格エンドポイント &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}に送信します。
+`prices` フィードは[!DNL Adobe Commerce] データを[価格エンドポイント ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}に送信します。
 
 | フィード入力フィールド | [!DNL Commerce Optimizer] API フィールド | マッピングの詳細 |
 | --------------- | -------------- | ------------------------------------------------------------------------------- |
@@ -148,7 +150,7 @@ ht-degree: 2%
 
 ## カテゴリ
 
-`categories` フィードは[!DNL Adobe Commerce] データを[&#x200B; カテゴリーエンドポイント &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}に送信します。
+`categories` フィードは[!DNL Adobe Commerce] データを[ カテゴリーエンドポイント ](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}に送信します。
 
 空の`urlPath` （論理ルートカテゴリ）を持つ項目はスキップされ、送信されません。
 
@@ -173,7 +175,7 @@ ht-degree: 2%
 >[!MORELIKETHIS]
 >
 > - [Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}を使用して製品と価格データを取り込む – メタデータ、製品、カテゴリ、価格表、価格のカタログデータモデルを学習します
-> - [&#x200B; カタログデータ取り込みREST API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/){target="_blank"} – 各フィードエンドポイントのリクエストと応答スキーマを確認します
+> - [ カタログデータ取り込みREST API リファレンス ](https://developer.adobe.com/commerce/services/reference/rest/){target="_blank"} – 各フィードエンドポイントのリクエストと応答スキーマを確認します
 > - [The [!DNL Commerce Optimizer Connector] と [!DNL Adobe Commerce]](../overview.md#how-the-connector-works-with-adobe-commerce)の連携の仕組み – ストア ビュー、web サイト、顧客グループがカタログ ソースと価格表にどのようにマッピングされるかを説明します
 > - [の価格表 [!DNL Commerce Optimizer]](/help/optimizer/setup/pricebooks.md) — コネクタの書き出しによって作成された価格表を管理します
-> - [&#x200B; ヘッドレスストアフロント統合](../headless-storefront.md#graphql-commerceoptimizer-query) – 顧客セッション用に`priceBookId`を解決
+> - [ ヘッドレスストアフロント統合](../headless-storefront.md#graphql-commerceoptimizer-query) – 顧客セッション用に`priceBookId`を解決

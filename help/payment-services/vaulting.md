@@ -3,13 +3,30 @@ title: クレジットカードのヴォールティング
 description: 買い物客は、将来の購入のためにクレジットカードの詳細を保管（保存）することができます。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
-
 ---
-
 # クレジットカードのヴォールティング
 
 クレジットカードのヴォールティングで、1回限りの買い物客をロイヤル顧客に変える。 ログインした顧客は、クレジットカードの資格情報を保存して、後で同じアカウントまたは別のアカウントで購入する際に、同じアカウント内に保存できます（または「保管」）。
@@ -32,7 +49,7 @@ ht-degree: 0%
 
 1. 左側のナビゲーションの&#x200B;**[!UICONTROL Stored Payment Methods]**&#x200B;に移動して、保存されているすべての支払い方法を表示します。
 
-   詳しくは、[&#x200B; ストアド支払い方法](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/payments/stored-payment-methods)を参照してください。
+   詳しくは、[ ストアド支払い方法](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods)を参照してください。
 
 1. お客様は&#x200B;**[!UICONTROL Add New Card]**&#x200B;をクリックして新しいカードを保存します。
 
@@ -73,10 +90,10 @@ Adminでヴォールトカードを使用できるのは、お客様が既存の
 
 管理画面で、保管されているクレジットカードを使用して顧客の注文を作成するには：
 
-1. [注文を作成して商品を追加](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
-1. _[!UICONTROL Payment & Shipping Information]_&#x200B;で、支払い方法として&#x200B;**[!UICONTROL Stored Cards]**&#x200B;を選択します。
+1. [注文を作成して商品を追加](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
+1. _[!UICONTROL Payment & Shipping Information]_で、支払い方法として&#x200B;**[!UICONTROL Stored Cards]**を選択します。
 1. 希望するアーチ付きクレジットカードの支払い方法を選択します。
-1. 注文に必要なその他の手順を完了した後、[それを送信](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
+1. 注文に必要なその他の手順を完了した後、[それを送信](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
 
    ![管理者で顧客に対して保管されているクレジットカードを使用](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

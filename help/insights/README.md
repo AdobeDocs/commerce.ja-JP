@@ -1,13 +1,17 @@
 ---
 title: Commerce Documentation Governance
 description: Commerce Insightsの内部ガバナンスモデルについて説明します。 Experience Leagueには公開されません。意図的にTOC.mdから除外されます。
-source-git-commit: 1da6d9753acbeadf3a0df5fae86a9386643c6d6d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
-
 ---
-
 
 # Commerce Documentation governance
 
@@ -31,7 +35,7 @@ Commerce Insightsの記事は、記事の正確性と最新性を維持する責
 
 - **新しいトップレベルのセクション** （インサイト/カタログ管理など）では、ガイドのナビゲーション形状が変更されるため、追加する前にIA レビューが必要です。 Commerce AIを所有している人が誰で、ストーリーやタスクをレビューするかを調べます。
 
-- **目次に追加** – 公開前に目次に新しいトピックを追加します。 必要に応じて、メタデータを非表示を使用して、リンクを持つユーザーのみがアクセスできる非表示の記事を公開します。 ExL作成者ガイドの「[&#x200B; コンテンツを非表示](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/hiding-files)」を参照してください。
+- **目次に追加** – 公開前に目次に新しいトピックを追加します。 必要に応じて、メタデータを非表示を使用して、リンクを持つユーザーのみがアクセスできる非表示の記事を公開します。 ExL作成者ガイドの「[ コンテンツを非表示](https://experienceleague.adobe.com/en/docs/authoring-guide/using/authoring/hiding-files)」を参照してください。
 
 ## レビュー頻度
 

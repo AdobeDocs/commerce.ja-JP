@@ -2,31 +2,42 @@
 title: ADOBE COMMERCE App BuilderのAI コーディング開発者向けツール
 description: Commerce App Builder アプリケーションを作成するためのAI ツールの使用方法について説明します。
 feature: App Builder, Cloud
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:11:12.988Z'
 TQID: 'https://experienceleague.adobe.com/ZbqP1MO-QrqAtocvmgFStqaluqQdzMm4LXlY3o4o3xY'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
 subfeature_v2:
   - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
+    internal-label: Implementation
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 2611
+source-wordcount: '2611'
 ht-degree: 0%
-
 ---
-
 # ADOBE COMMERCE App BuilderのAI コーディング開発者向けツール
 
 [!DNL Adobe Commerce as a Cloud Service]に移行する場合、AI コーディングツールを使用して、既存の[!DNL Adobe Commerce]個のPHP拡張機能を[!DNL Adobe Developer App Builder]個のアプリケーションに変換できます。 これらのツールを使用して、新しい[!DNL App Builder] アプリケーションを作成することもできます。
@@ -46,7 +57,7 @@ AI コーディングツールをインストールすると、次の機能に�
 
 ## 最新バージョンへの更新
 
-AI コーディング開発者ツールを[&#x200B; インストールした後](#installation)、次のコマンドを実行して最新バージョンに更新できます。
+AI コーディング開発者ツールを[ インストールした後](#installation)、次のコマンドを実行して最新バージョンに更新できます。
 
 ```bash
 aio commerce extensibility tools-setup
@@ -56,7 +67,7 @@ aio commerce extensibility tools-setup
 
 ## 前提条件
 
-* [&#x200B; エージェントのスキル &#x200B;](https://agentskills.io/home#adoption)をサポートするすべてのコーディングエージェント （例：）
+* [ エージェントのスキル ](https://agentskills.io/home#adoption)をサポートするすべてのコーディングエージェント （例：）
 
   * [カーソル](https://cursor.com/download)
   * [クロード・コード](https://claude.com/product/claude-code)
@@ -90,13 +101,13 @@ aio commerce extensibility tools-setup
 
 1. 次のいずれかを複製します。
 
-   * Commerce [統合スターターキット &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) - バックオフィス統合を構築します。
+   * Commerce [統合スターターキット ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) - バックオフィス統合を構築します。
 
      ```bash
      git clone git@github.com:adobe/commerce-integration-starter-kit.git
      ```
 
-   * 支払い、送料、税金など、チェックアウト体験を構築または拡張するためのCommerce [&#x200B; チェックアウトスターターキット &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)。
+   * 支払い、送料、税金など、チェックアウト体験を構築または拡張するためのCommerce [ チェックアウトスターターキット ](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)。
 
      ```bash
      git clone git@github.com:adobe/commerce-checkout-starter-kit.git
@@ -149,7 +160,7 @@ aio commerce extensibility tools-setup
 1. コーディングツールを正常にインストールすると、インストールプロセスで次の設定が行われます。
 
    * Adobe Commerce開発向けMCP サーバー統合
-   * 強化された開発エクスペリエンス用の[&#x200B; エージェントスキル &#x200B;](#skills)
+   * 強化された開発エクスペリエンス用の[ エージェントスキル ](#skills)
    * Commerce専用の開発ツールとワークフロー
 
    スキルとMCP ツールがインストールされました。 スキルとMCP ツールが表示されない場合は、コーディングエージェントを再起動します。
@@ -159,7 +170,7 @@ aio commerce extensibility tools-setup
 >プロジェクトをデプロイする前に、次の設定タスクを完了します。
 >
 >* Adobe I/O CLIを使用して[Adobe Developer Console](https://developer.adobe.com/console)にログインします。
->* App Builder プロジェクトを作成します（[&#x200B; プロジェクト設定](https://developer.adobe.com/commerce/extensibility/events/project-setup)を参照）。
+>* App Builder プロジェクトを作成します（[ プロジェクト設定](https://developer.adobe.com/commerce/extensibility/events/project-setup)を参照）。
 >* `.env` ファイルで環境変数を設定します。
 >
 >これらの設定タスクを手動で完了することも、AI コーディングツールを活用してプロセスを導くこともできます。 設定手順の詳細については、[統合の作成](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)を参照してください。
@@ -322,7 +333,7 @@ Adobeでは、AI コーディングツールを使用する際に、次のベス
 
 開発中：
 
-* 4段階の[&#x200B; プロトコル &#x200B;](#protocol)を信頼する
+* 4段階の[ プロトコル ](#protocol)を信頼する
 * 複雑な開発の実装計画を依頼する
 * 利用可能な場合はMCP ツールを使用する
 * 実装後に各機能をテストし
@@ -349,7 +360,7 @@ AI コーディングツールを使用して開発する場合は、サンプ�
 * [統合スターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [チェックアウトスターターキット](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce starter kit テンプレート](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events スターターテンプレート](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events スターターテンプレート](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder サンプルアプリケーション](https://developer.adobe.com/app-builder/docs/resources/sample_apps/)
 
 #### なぜこれらのリソースを使うのか
@@ -376,7 +387,7 @@ AI コーディングツールを使用して開発する場合は、サンプ�
 
 ### 複雑な開発の実装計画を依頼する
 
-複数のランタイムアクション、タッチポイント、または統合を含む複雑な開発の場合は、AI ツールに詳細な実装計画を作成することを明示的に依頼します。 複数のコンポーネントを含む[&#x200B; フェーズ 2](#protocol)の上位レベルの計画が表示された場合は、詳細な実行計画を求めて、管理可能なタスクに分割します。
+複数のランタイムアクション、タッチポイント、または統合を含む複雑な開発の場合は、AI ツールに詳細な実装計画を作成することを明示的に依頼します。 複数のコンポーネントを含む[ フェーズ 2](#protocol)の上位レベルの計画が表示された場合は、詳細な実行計画を求めて、管理可能なタスクに分割します。
 
 ```shell-session
 Create a detailed implementation plan for this complex development.
@@ -394,7 +405,7 @@ Adobe Commerceの複雑なアプリケーションには、次のようなもの
 
 >[!NOTE]
 >
->MCP ツールを使用する前に、Adobe I/O CLI[&#128279;](#log-in-to-the-adobe-io-cli)に ログインしていることを確認してください。
+>MCP ツールを使用する前に、Adobe I/O CLI](#log-in-to-the-adobe-io-cli)に[ ログインしていることを確認してください。
 
 このツールはデフォルトではMCP ツールですが、特定の状況では代わりにCLI コマンドを使用できます。 MCP ツールの使用状況を確認するには、プロンプトで明示的にリクエストします。
 
@@ -612,11 +623,11 @@ AI コーディング ツールに関するフィードバックを提供する�
 
 1. IDEの上部に表示される「**フィードバック**」フィールドにツールのフィードバックを入力し、**Enter** キーを押します。
 
-   ![&#x200B; カーソル フィードバック コマンド入力フィールド &#x200B;](../assets/feedback-response.png){width="600" zoomable="yes"}
+   ![ カーソル フィードバック コマンド入力フィールド ](../assets/feedback-response.png){width="600" zoomable="yes"}
 
 1. 「**ローカルに保存**」フィールドに「`yes`」または「`no`」を入力し、**Enter**」を押して、ログのローカルコピーを保存するかどうかを指定します。
 
-   ![&#x200B; カーソル フィードバック コマンド ローカル フィールドを保存](../assets/feedback-save.png){width="600" zoomable="yes"}
+   ![ カーソル フィードバック コマンド ローカル フィールドを保存](../assets/feedback-save.png){width="600" zoomable="yes"}
 
    **はい**&#x200B;を選択した場合は、フィードバックを送信した後、`chats` フォルダー内のログを確認できます。
 
@@ -624,4 +635,4 @@ AI コーディング ツールに関するフィードバックを提供する�
 
 >[!NOTE]
 >
->`/feedback` コマンドが表示されない場合は、[最新バージョン &#x200B;](#updating-to-the-latest-version)に更新してください。
+>`/feedback` コマンドが表示されない場合は、[最新バージョン ](#updating-to-the-latest-version)に更新してください。

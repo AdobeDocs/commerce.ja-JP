@@ -1,24 +1,42 @@
 ---
-title: オンボーディング  [!DNL Payment Services]  フロー
-description: PaaS、オンプレミス、SaaSのサンドボックスと実稼動手順を使用して、Adobe Commerce デプロイメントのオンボーディングを完了して、インスタンスを [!DNL Payment Services] に接続します。
+title: '[!DNL Payment Services] フローのオンボーディング'
+description: PaaS、オンプレミス、SaaSのサンドボックスと実稼動手順を使用して、Adobe Commerce デプロイメントのオンボーディングを完了して、インスタンスを[!DNL Payment Services]に接続します。
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration, Paas, Saas
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '633'
 ht-degree: 0%
-
 ---
-
 # [!DNL Payment Services] フローのオンボーディング
 
 [!DNL Payment Services]の使用を開始するには、いくつかのオンボーディング手順を完了する必要があります。 正確なガイダンスについては、組織のインスタンスとバージョンに最も適した以下のAdobe Commerce オプションを選択してください。
 
 このフロー図は、すべてのバージョンで[!DNL Payment Services]をオンボーディングするための一般的なプロセスを示しています。
 
-![&#x200B; オンボーディングフロー](assets/flow-payment-services.png){width="700" zoomable="yes"}
+![ オンボーディングフロー](assets/flow-payment-services.png){width="700" zoomable="yes"}
 
 [!DNL Payment Services]のオンボーディングに使用するAdobe Commerceのバージョンについては、以下を参照してください。
 
@@ -34,30 +52,30 @@ ht-degree: 0%
 
 このフロー図は、v2.4.7より新しいAdobe CommerceまたはMagento Open Sourceを使用したオンボーディングサンドボックスプロセスを示しています。ここでは、[!DNL Payment Services]はAdobe Commerceですぐに使用できます。
 
-![&#x200B; オンボーディングフロー](assets/flow-sandbox-configuration-onboarding-2.4.7.png){width="700" zoomable="yes"}
+![ オンボーディングフロー](assets/flow-sandbox-configuration-onboarding-2.4.7.png){width="700" zoomable="yes"}
 
 バージョン v2.4.7以降の&#x200B;**オンボーディング手順パート 1: サンドボックス**
 
-1. [&#x200B; インスタンスを](connect.md#configure-commerce-services)Commerce サービスに接続します。 この接続は、Commerce インスタンスごとに1回のみ完了する必要があります。 [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}
+1. [ インスタンスを](connect.md#configure-commerce-services)Commerce サービスに接続します。 この接続は、Commerce インスタンスごとに1回のみ完了する必要があります。 [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}
 1. [サンドボックスサービスの設定](sandbox.md#sandbox-onboarding)
-1. [&#x200B; サンドボックス &#x200B;](sandbox.md#test-in-sandbox-environment)環境で支払いをテストします。
+1. [ サンドボックス ](sandbox.md#test-in-sandbox-environment)環境で支払いをテストします。
 
-[![詳細情報](assets/learn-more-button.svg)](https://helpx.adobe.com/jp/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![詳細情報](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB 本番]
 
 このフロー図は、[!DNL Payment Services]を有効にするために必要な実稼動ステップを示しています。
 
-![&#x200B; オンボーディングフロー](assets/flow-production-payment-services.png){width="700" zoomable="yes"}
+![ オンボーディングフロー](assets/flow-production-payment-services.png){width="700" zoomable="yes"}
 
 バージョン v2.4.7以降の&#x200B;**オンボーディング手順パート 2：実稼動**
 
-1. [&#x200B; サンドボックスモードで [!DNL Payment Services] をお支払い方法](production.md#set-payment-services-as-payment-method)として設定し、テスト決済の処理を開始します。
+1. [ サンドボックスモードで [!DNL Payment Services] をお支払い方法](production.md#set-payment-services-as-payment-method)として設定し、テスト決済の処理を開始します。
 1. ライブオンボーディングを有効にするには、[支払い資格](production.md#request-payments-entitlement-from-adobe)をリクエストします。
-1. Commerce Web サイトのライブ決済を有効にするには、[&#x200B; マーチャントのオンボーディング &#x200B;](production.md#complete-merchant-onboarding)を完了してください。
+1. Commerce Web サイトのライブ決済を有効にするには、[ マーチャントのオンボーディング ](production.md#complete-merchant-onboarding)を完了してください。
 1. [加盟店ID [!DNL Payment Services] を取得し、セールス部門に渡して、適切な価格帯を設定します。](production.md#configure-pricing-tier)
-1. [&#x200B; ライブモード &#x200B;](production.md#enable-live-payments)で [!DNL Payment Services] を有効にして、ライブ決済の処理を開始します。
-1. [&#x200B; サンドボックス &#x200B;](sandbox.md#test-in-sandbox-environment)環境と[実稼動環境](production.md#test-in-production)環境の両方で支払いをテストします。
+1. [ ライブモード ](production.md#enable-live-payments)で [!DNL Payment Services] を有効にして、ライブ決済の処理を開始します。
+1. [ サンドボックス ](sandbox.md#test-in-sandbox-environment)環境と[実稼動環境](production.md#test-in-production)環境の両方で支払いをテストします。
 
 [![詳細情報](assets/learn-more-button.svg)](production.md)
 
@@ -73,32 +91,32 @@ ht-degree: 0%
 
 このフロー図は、Adobe CommerceまたはMagento Open Source バージョン 2.4.0から2.4.6への[!DNL Payment Services]のオンボーディングに必要なサンドボックス手順を示しています。
 
-![&#x200B; オンボーディングフロー](assets/flow-sandbox-installation-configuration-onboarding-2.4.0.png){width="700" zoomable="yes"}
+![ オンボーディングフロー](assets/flow-sandbox-installation-configuration-onboarding-2.4.0.png){width="700" zoomable="yes"}
 
 **バージョン v2.4.0-2.4.6 パート 1：サンドボックス**&#x200B;のオンボーディング手順
 
 1. [必要に応じて [!DNL Payment Services] 拡張機能](install.md#get-payment-services)をインストールします。
 1. [API資格情報を取得](connect.md#obtain-api-credentials)。
-1. [&#x200B; インスタンスを](connect.md#configure-commerce-services)Commerce サービスに接続します。 この接続は、Commerce インスタンスごとに1回のみ完了する必要があります。
+1. [ インスタンスを](connect.md#configure-commerce-services)Commerce サービスに接続します。 この接続は、Commerce インスタンスごとに1回のみ完了する必要があります。
 1. [サンドボックスサービスの設定](sandbox.md#sandbox-onboarding)
-1. [&#x200B; サンドボックス &#x200B;](sandbox.md#test-in-sandbox-environment)環境で支払いをテストします。
+1. [ サンドボックス ](sandbox.md#test-in-sandbox-environment)環境で支払いをテストします。
 
-[![詳細情報](assets/learn-more-button.svg)](https://helpx.adobe.com/jp/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![詳細情報](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB 本番]
 
 このフロー図は、Adobe CommerceまたはMagento Open Source バージョン 2.4.0 ～ 2.4.6を使用して実稼動環境で[!DNL Payment Services]を有効にする一般的なプロセスを示しています。
 
-![&#x200B; オンボーディングフロー](assets/flow-production-payment-services.png){width="700" zoomable="yes"}
+![ オンボーディングフロー](assets/flow-production-payment-services.png){width="700" zoomable="yes"}
 
 **バージョン v2.4.0-2.4.6 パート 2：実稼動**&#x200B;のオンボーディング手順
 
-1. [&#x200B; サンドボックスモードで [!DNL Payment Services] をお支払い方法](production.md#set-payment-services-as-payment-method)として設定し、テスト決済の処理を開始します。
+1. [ サンドボックスモードで [!DNL Payment Services] をお支払い方法](production.md#set-payment-services-as-payment-method)として設定し、テスト決済の処理を開始します。
 1. ライブオンボーディングを有効にするには、[支払い資格](production.md#request-payments-entitlement-from-adobe)をリクエストします。
-1. Commerce Web サイトのライブ決済を有効にするには、[&#x200B; マーチャントのオンボーディング &#x200B;](production.md#complete-merchant-onboarding)を完了してください。
+1. Commerce Web サイトのライブ決済を有効にするには、[ マーチャントのオンボーディング ](production.md#complete-merchant-onboarding)を完了してください。
 1. [加盟店ID [!DNL Payment Services] を取得し、セールス部門に渡して、適切な価格帯を設定します。](production.md#configure-pricing-tier)
-1. [&#x200B; ライブモード &#x200B;](production.md#enable-live-payments)で [!DNL Payment Services] を有効にして、ライブ決済の処理を開始します。
-1. [&#x200B; サンドボックス &#x200B;](sandbox.md#test-in-sandbox-environment)環境と[実稼動環境](production.md#test-in-production)環境の両方で支払いをテストします。
+1. [ ライブモード ](production.md#enable-live-payments)で [!DNL Payment Services] を有効にして、ライブ決済の処理を開始します。
+1. [ サンドボックス ](sandbox.md#test-in-sandbox-environment)環境と[実稼動環境](production.md#test-in-production)環境の両方で支払いをテストします。
 
 [![詳細情報](assets/learn-more-button.svg)](onboard.md)
 
@@ -110,8 +128,8 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> * [&#x200B; トラブルシューティング  [!DNL Payment Services]  インストール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26826)
-> * [PayPal サンドボックスアカウントが確認されていません](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26836)
-> * [遅延 [!DNL Payment Services]  レポートデータ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26837)
-> * [&#x200B; サンドボックス環境で支払いを処理する際に、PayPalでクレジットカードのテストが失敗する](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26825)
-> * [拡張機能 [!DNL Payment Services] を無効にする](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)
+> * [ トラブルシューティング  [!DNL Payment Services]  インストール ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26826)
+> * [PayPal サンドボックスアカウントが確認されていません](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26836)
+> * [遅延 [!DNL Payment Services]  レポートデータ ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26837)
+> * [ サンドボックス環境で支払いを処理する際に、PayPalでクレジットカードのテストが失敗する](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26825)
+> * [拡張機能 [!DNL Payment Services] を無効にする](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)

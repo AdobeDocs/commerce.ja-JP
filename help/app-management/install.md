@@ -1,14 +1,28 @@
 ---
-title: インストールして [!DNL App Management]にアクセス
+title: '[!DNL App Management]をインストールしてアクセス'
 description: Adobe Commerce [!DNL App Management]を使用するための前提条件とアクセス要件。
 feature: App Builder, Extensibility, Integration
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 72863f3c-9d27-5dda-afe1-d9f934b1fba0
+    internal-label: Extensibility
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
-
 ---
-
 # [!DNL App Management]をインストールしてアクセス
 
 [!DNL App Management]は、適格なCommerce インスタンスのCommerce Adminで利用できます。 ご利用いただけるかどうかは、デプロイメントタイプによって異なります。
@@ -62,11 +76,11 @@ ht-degree: 0%
 
 1. **[!UICONTROL Apps]** > **[!UICONTROL App Management]**&#x200B;に移動します。
 
-[!DNL App Management] ビューが表示されます。 ここでは、App Builder アプリケーションを関連付け、設定および管理できます。 その画面の検索、フィルター、および&#x200B;**[!UICONTROL Acquire App]** アクションについては、[&#x200B; アプリの管理](manage-app.md)の「[管理者](manage-app.md#find-an-application-in-the-admin) アプリケーションを検索する」を参照してください。
+[!DNL App Management] ビューが表示されます。 ここでは、App Builder アプリケーションを関連付け、設定および管理できます。 その画面の検索、フィルター、および&#x200B;**[!UICONTROL Acquire App]** アクションについては、[ アプリの管理](manage-app.md)の「[管理者](manage-app.md#find-an-application-in-the-admin) アプリケーションを検索する」を参照してください。
 
 ## App Builder アプリのインストール
 
-Adobe ExchangeからApp Builder アプリをインストールする必要がある場合（事前定義済みの統合アプリやマーケットプレイスアプリなど）、ステップバイステップの手順については、[Adobe ExchangeからApp Builder アプリをインストール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"}を参照してください。
+Adobe ExchangeからApp Builder アプリをインストールする必要がある場合（事前定義済みの統合アプリやマーケットプレイスアプリなど）、ステップバイステップの手順については、[Adobe ExchangeからApp Builder アプリをインストール ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"}を参照してください。
 
 アプリをインストールしてデプロイしたら、[!DNL App Management]を使用して[Commerce インスタンスに関連付け](manage-app.md#associate-an-app)し、設定を行います。
 
@@ -74,7 +88,7 @@ Adobe ExchangeからApp Builder アプリをインストールする必要があ
 
 一部のApp Builder アプリケーションでは、[Adobe Commerce Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)を使用して、特定のイベントが発生した場合（商品が保存された後など）にCommerceからHTTP経由でアプリを呼び出すことができます。 Webhook エンドポイントとサブスクリプション ロジックは、アプリケーションのビルドおよびデプロイ時に&#x200B;**アプリ開発者**&#x200B;によって定義されます。ストア管理者は、アプリ管理でWebhookを個別に設定しません。
 
-アプリを[Commerce インスタンスに関連付け](https://experienceleague.adobe.com/ja/docs/commerce/app-management/manage-app/manage-app)し、アプリの設定手順を完了すると、Webhookの動作はアプリの実装に従います。
+アプリを[Commerce インスタンスに関連付け](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app)し、アプリの設定手順を完了すると、Webhookの動作はアプリの実装に従います。
 
 [!DNL App Management]がアプリの検証エンドポイントをトリガーできない場合（例えば、URLに到達できない、または回答が要件を満たさない）、[!DNL App Management] ダッシュボードに次のようなエラーが表示される可能性があります。
 

@@ -1,16 +1,22 @@
 ---
 title: セマンティック検索
-description: 設定から [!DNL Adobe Commerce Optimizer] でAI セマンティック検索を有効にします。 属性の設定やストアフロントの変更は必要ありません。
+description: 設定から[!DNL Adobe Commerce Optimizer]でAI セマンティック検索を有効にします。 属性の設定やストアフロントの変更は必要ありません。
 role: Admin, User
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '794'
 ht-degree: 0%
-
 ---
-
 # セマンティック検索
 
 セマンティック検索では、入力した単語だけでなく、AIを利用して顧客の意味を把握できます。 「ビーチの結婚式のためのドレス」や「一日中立っているための快適な靴」などのクエリは、カタログがそれらの正確なフレーズを使用していない場合でも、関連する商品を返すことができます。
@@ -40,7 +46,7 @@ ht-degree: 0%
 
 セマンティック検索がアクティブな場合：
 
-- 既存の[&#x200B; マーチャンダイジングルール &#x200B;](../merchandising/rules/overview.md)、[類義語](../merchandising/synonyms/overview.md)、[&#x200B; ファセット &#x200B;](../merchandising/facets/overview.md)、ブースト、フィルターは引き続き適用されます。
+- 既存の[ マーチャンダイジングルール ](../merchandising/rules/overview.md)、[類義語](../merchandising/synonyms/overview.md)、[ ファセット ](../merchandising/facets/overview.md)、ブースト、フィルターは引き続き適用されます。
 - セマンティック検索を活用すれば、買い物客の意図をAIが理解し、キーワードマッチングと並行して検索結果の関連性を向上できます。
 - 定義済みのカタログ属性には、自動的にインデックスが作成されます。 属性を選択したり、別の設定を公開したりすることはありません。
 
@@ -65,7 +71,7 @@ ht-degree: 0%
 
 ## イネーブルメント後の検証
 
-セマンティック検索がアクティブになり、インデックス作成が完了したら、Adobeで検索パフォーマンスを検証することをお勧めします。 [検索パフォーマンス &#x200B;](../manage-results/search-performance.md) ページを使用して、ビジネスにとって重要な指標を確認し、クエリをテストします。
+セマンティック検索がアクティブになり、インデックス作成が完了したら、Adobeで検索パフォーマンスを検証することをお勧めします。 [検索パフォーマンス ](../manage-results/search-performance.md) ページを使用して、ビジネスにとって重要な指標を確認し、クエリをテストします。
 
 1. **ユニーク検索** レポートで上位の検索語を確認します。
 1. ストアフロントの&#x200B;**Zero results** レポートから、過去のゼロ結果クエリをテストします。

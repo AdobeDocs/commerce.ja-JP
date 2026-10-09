@@ -4,33 +4,43 @@ description: Adobe Experience Platform Mobile SDKをヘッドレスまたはカ�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 02d07abb-8d7f-4f0a-9f96-f42654cd79d3
-TQID: https://experienceleague.adobe.com/iBxx54enSjy-vWbhCSSM-5QSjut6TjcRpWT5wWpeU2Y
+TQID: 'https://experienceleague.adobe.com/iBxx54enSjy-vWbhCSSM-5QSjut6TjcRpWT5wWpeU2Y'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 619
+source-wordcount: '619'
 ht-degree: 0%
-
 ---
-
 # Adobe Experience Platform Mobile SDKとCommerceの統合
 
 >[!IMPORTANT]
 >
 >Adobe Experience Platform Mobile SDK iOS版は、iOS 11以降をサポートしています。
 
-[Adobe Experience Platform モバイル SDK](https://developer.adobe.com/client-sdks/home/)をCommerce モバイルアプリと統合すると、マーチャントはCommerce [&#x200B; イベントデータ &#x200B;](events.md)をExperience Platform エッジに送信できます。
+[Adobe Experience Platform モバイル SDK](https://developer.adobe.com/client-sdks/home/)をCommerce モバイルアプリと統合すると、マーチャントはCommerce [ イベントデータ ](events.md)をExperience Platform エッジに送信できます。
 
-エッジでCommerce イベントデータが利用可能になると、他のAdobe Experience Cloud アプリケーションからアクセスできるようになります。 例えば、データを使用してReal-Time CDPでオーディエンスを作成し、[それらのオーディエンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/audience-activation)を使用してCommerce モバイルアプリをパーソナライズできます。
+エッジでCommerce イベントデータが利用可能になると、他のAdobe Experience Cloud アプリケーションからアクセスできるようになります。 例えば、データを使用してReal-Time CDPでオーディエンスを作成し、[それらのオーディエンス ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation)を使用してCommerce モバイルアプリをパーソナライズできます。
 
 ## 設定
 
@@ -38,7 +48,7 @@ Adobe Experience Platform Mobile SDKとCommerceの使用を開始するには、
 
 ### Experience Platform
 
-1. モバイルアプリの機能について詳しくは、[&#x200B; モバイルアプリのAdobe Experience Cloud チュートリアル &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/implement-mobile-sdk/overview)を参照してください。
+1. モバイルアプリの機能について詳しくは、[ モバイルアプリのAdobe Experience Cloud チュートリアル ](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview)を参照してください。
 
 1. [Experience PlatformにSDKをインストールして設定](https://developer.adobe.com/client-sdks/home/getting-started/)します。
 
@@ -147,7 +157,7 @@ Experience PlatformのSDK設定を完了したら、SDK設定をCommerceに追�
 
       Commerce GraphQL スキーマへの参照を含む`./apollo-codegen-config.json` ファイルへのパスであることを確認します。
 
-   1. [&#x200B; ソースコードを](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#generate)生成します。
+   1. [ ソースコードを](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#generate)生成します。
 
       必要なファイルとディレクトリを生成するための構成情報を含む`./apollo-codegen-config.json` ファイルへのパスであることを確認します。
 
@@ -170,8 +180,8 @@ Experience PlatformのSDK設定を完了したら、SDK設定をCommerceに追�
 
 ## モバイルアプリケーションから生成されたCommerce イベントの識別方法
 
-すべての[&#x200B; イベント &#x200B;](events.md)には、`channel`というフィールドが含まれています。 `channel` フィールドには、`channel._id`と`channel._type`が含まれており、Luma ストアフロントの名前空間値はそれぞれ`"https://ns.adobe.com/xdm/channels/web"`と`"https://ns.adobe.com/xdm/channel-types/web"`です。 ただし、モバイルストアフロントの場合、名前空間の値はそれぞれ`"https://ns.adobe.com/xdm/channels/mobile-app"`と`"https://ns.adobe.com/xdm/channel-types/mobile"`です。
+すべての[ イベント ](events.md)には、`channel`というフィールドが含まれています。 `channel` フィールドには、`channel._id`と`channel._type`が含まれており、Luma ストアフロントの名前空間値はそれぞれ`"https://ns.adobe.com/xdm/channels/web"`と`"https://ns.adobe.com/xdm/channel-types/web"`です。 ただし、モバイルストアフロントの場合、名前空間の値はそれぞれ`"https://ns.adobe.com/xdm/channels/mobile-app"`と`"https://ns.adobe.com/xdm/channel-types/mobile"`です。
 
 ## 次のステップ
 
-モバイル Commerce アプリからReal-Time CDP オーディエンスを取得し、カートの価格ルール、動的ブロック、および関連する商品ルールを通知する方法については、[Audience Activation](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/audience-activation#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)を参照してください。
+モバイル Commerce アプリからReal-Time CDP オーディエンスを取得し、カートの価格ルール、動的ブロック、および関連する商品ルールを通知する方法については、[Audience Activation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)を参照してください。

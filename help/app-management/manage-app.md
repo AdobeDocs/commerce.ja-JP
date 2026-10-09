@@ -2,19 +2,33 @@
 title: アプリを管理
 description: App Builder アプリケーションをCommerce インスタンスに関連付け、設定、関連付けを解除します。
 feature: App Builder, Extensibility, Integration
-source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 72863f3c-9d27-5dda-afe1-d9f934b1fba0
+    internal-label: Extensibility
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
-
 ---
-
 
 # アプリを管理
 
 App Managerは、App Builder アプリケーションをCommerce インスタンスに関連付けます。 設定フォームはアプリのスキーマに基づいて動的にレンダリングされるため、カスタムの管理UI開発は必要ありません。 App managerは、Commerceが自動生成するフォームを通じて設定を行います。
 
-![&#x200B; アプリ管理](assets/app-management-view.png){width="500" zoomable="yes"}
+![ アプリ管理](assets/app-management-view.png){width="500" zoomable="yes"}
 
 ## 管理画面でアプリケーションを検索
 
@@ -30,7 +44,7 @@ App Managerは、App Builder アプリケーションをCommerce インスタン
 
 ## アプリを入手
 
-**[!UICONTROL Acquire App]**&#x200B;さんが新しいブラウザータブ （または別のブラウザビュー）を[Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}に開き、Commerce関連のマーケットプレイスのリストを見つけて、Adobe IMS組織にアプリケーションを追加できます。 アプリを取得、承認およびデプロイすると、アプリは[!DNL App Management]に[関連付けおよびインストール &#x200B;](#associate-an-app)用に表示されます。
+**[!UICONTROL Acquire App]**&#x200B;さんが新しいブラウザータブ （または別のブラウザビュー）を[Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}に開き、Commerce関連のマーケットプレイスのリストを見つけて、Adobe IMS組織にアプリケーションを追加できます。 アプリを取得、承認およびデプロイすると、アプリは[!DNL App Management]に[関連付けおよびインストール ](#associate-an-app)用に表示されます。
 
 ## 前提条件
 
@@ -46,7 +60,7 @@ App Managerは、App Builder アプリケーションをCommerce インスタン
 
 このビデオでは、アプリをCommerce インスタンスに関連付けて設定する方法を説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478956?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## アプリの関連付け
 
@@ -58,7 +72,7 @@ App Builder アプリケーションをCommerce インスタンスにリンク�
 
 1. **[!UICONTROL Associate App]**&#x200B;をクリックします。
 
-   ![&#x200B; アプリの関連付け](assets/associate-app.png){width="500" zoomable="yes"}
+   ![ アプリの関連付け](assets/associate-app.png){width="500" zoomable="yes"}
 
 1. リストから&#x200B;**[!UICONTROL Project]**&#x200B;を選択します。
 
@@ -66,7 +80,7 @@ App Builder アプリケーションをCommerce インスタンスにリンク�
 
 1. **[!UICONTROL Associate]**&#x200B;をクリックします。
 
-   ![&#x200B; アプリの詳細](assets/app-details.png){width="500" zoomable="yes"}
+   ![ アプリの詳細](assets/app-details.png){width="500" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -102,7 +116,7 @@ App Builder アプリケーションをCommerce インスタンスにリンク�
 
 アプリの詳細画面から&#x200B;**[!UICONTROL Manage Scopes]**&#x200B;にアクセスして、アプリのスコープ階層を管理します。
 
-![&#x200B; スコープの管理](assets/manage-scopes.png){width="500" zoomable="yes"}
+![ スコープの管理](assets/manage-scopes.png){width="500" zoomable="yes"}
 
 | アクション | 説明 |
 |--------|-------------|
@@ -128,4 +142,4 @@ Commerce インスタンスからアプリを削除するには：
 
 ## 関連ドキュメント
 
-* [&#x200B; トラブルシューティング  [!DNL App Management]](troubleshooting.md) - アプリの関連付けと設定に関する一般的な問題を解決します。
+* [ トラブルシューティング  [!DNL App Management]](troubleshooting.md) - アプリの関連付けと設定に関する一般的な問題を解決します。

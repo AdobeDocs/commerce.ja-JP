@@ -3,24 +3,34 @@ title: アセットの手動選択
 description: Commerceに統合されたAEM Asset Selectorを利用して、マーケターやマーチャンダイジング担当者がAEM Assetsの画像をAdobe Commerceに簡単に追加し、アセット管理を効率化する方法をご確認ください。
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
-TQID: https://experienceleague.adobe.com/3fYabUvRiY8KTxQX1YiTBbLxABpQqfZLu0a6IBDsM3E
+TQID: 'https://experienceleague.adobe.com/3fYabUvRiY8KTxQX1YiTBbLxABpQqfZLu0a6IBDsM3E'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Digital asset management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 397
+source-wordcount: '397'
 ht-degree: 0%
-
 ---
-
 # アセットの手動選択
 
 **AEM Asset Selector**&#x200B;を使用すると、マーケターやマーチャンダイザーは、AEM AssetsからAdobe Commerceに画像を簡単に追加できるので、アセット管理プロセスが効率化されます。 この方法は、アセットの選択を[!DNL DAM (Digital Asset Management system)]でレビューおよび承認されたアセットに制限することで、ブランドの一貫性とコンプライアンスを確保します。
@@ -31,11 +41,11 @@ ht-degree: 0%
 
 * カテゴリー画像を容易に管理し、ブランドとキャンペーンのガイドラインに沿ったものにできます。
 * [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} ページビルダーで直接アセットを割り当てて、視覚的に充実したコンテンツを提供します。
-* [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} Edge Delivery Servicesを活用したCommerce Storefrontで直接Assetsを割り当てて、視覚的に充実したコンテンツを提供します。
+* [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"} Edge Delivery Servicesを活用したCommerce Storefrontで直接Assetsを割り当てて、視覚的に充実したコンテンツを提供します。
 
 >[!NOTE]
 >
-> AEM Asset Selectorは、AEMとオーサリングアプリケーションを統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、*AEM as a Cloud Service ユーザーガイド*&#x200B;の[&#x200B; マイクロフロントエンドアセットセレクター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications){target=_blank}を参照してください。
+> AEM Asset Selectorは、AEMとオーサリングアプリケーションを統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、*AEM as a Cloud Service ユーザーガイド*&#x200B;の[ マイクロフロントエンドアセットセレクター](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications){target=_blank}を参照してください。
 
 ## 主な特長
 
@@ -49,13 +59,13 @@ Adobe Commerce管理パネルにAEM Asset Selectorを組み込むと、次のよ
 
 * **コンテンツ品質の向上** – 製品ページ、カテゴリ、ページビルダー全体で、高解像度で最適化された画像を使用します。
 
-![&#x200B; アセットセレクター](../assets/asset-selector.png){width="600" zoomable="yes"}
+![ アセットセレクター](../assets/asset-selector.png){width="600" zoomable="yes"}
 
 ## Adobe CommerceでのAEM Asset Selectorの設定
 
 1. Commerce管理者から、**[!UICONTROL Store]** / 設定/ **[!UICONTROL ADOBE SERVICES]** / **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
 
-1. **[!UICONTROL IMS Client ID]** フィールドに入力します。 必要な権限と、このIDの取得方法については、[&#x200B; ユーザー権限とIMS](../get-started/permissions.md)を参照してください。
+1. **[!UICONTROL IMS Client ID]** フィールドに入力します。 必要な権限と、このIDの取得方法については、[ ユーザー権限とIMS](../get-started/permissions.md)を参照してください。
 
 1. **設定を保存**&#x200B;します。
 

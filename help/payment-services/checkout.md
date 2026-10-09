@@ -3,7 +3,26 @@ title: '[!DNL Payment Services]でのチェックアウト'
 description: 顧客のニーズに合わせて[!DNL Payment Services] チェックアウトをカスタマイズします。
 feature: Payments, Checkout, Paas, Saas
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -11,7 +30,7 @@ ht-degree: 0%
 
 # [!DNL Payment Services]でのチェックアウト
 
-買い物客に最適なAdobe Commerce [!DNL Payment Services]のチェックアウトを設定できます。 [注文自動無効化](#order-auto-voided-if-error)や[&#x200B; クレジットカードの保管](#credit-card-vaulting)などの機能により、買い物客にスムーズなユーザーエクスペリエンスを提供できます。
+買い物客に最適なAdobe Commerce [!DNL Payment Services]のチェックアウトを設定できます。 [注文自動無効化](#order-auto-voided-if-error)や[ クレジットカードの保管](#credit-card-vaulting)などの機能により、買い物客にスムーズなユーザーエクスペリエンスを提供できます。
 
 ## エラーが発生した場合は自動的に無効化される注文
 
@@ -19,9 +38,9 @@ ht-degree: 0%
 
 買い物客のチェックアウトページにエラーメッセージが表示されます。 メッセージは異なる場合があります。
 
-チェックアウト中に![&#x200B; エラー](assets/user-checkout-error.png " チェックアウト中にエラー"){width="600" zoomable="yes"}が発生しました
+チェックアウト中に![ エラー](assets/user-checkout-error.png " チェックアウト中にエラー"){width="600" zoomable="yes"}が発生しました
 
-キャンセルされた注文に関するコメントは、特定の[注文](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en)の管理画面にも表示されます。
+キャンセルされた注文に関するコメントは、特定の[注文](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en)の管理画面にも表示されます。
 
 ![注文の管理者の注文コメントをキャンセルしました](assets/admin-checkout-error.png "注文の管理者の注文コメントをキャンセルしました"){width="600" zoomable="yes"}
 
@@ -44,4 +63,4 @@ ht-degree: 0%
 
 買い物客は、web サイトレベル（同じ加盟店アカウント内の任意の店舗）で今後の購入のためにクレジットカード情報を保管（または「保存」）できます。
 
-詳しくは、[&#x200B; クレジットカードの保管](vaulting.md)を参照してください
+詳しくは、[ クレジットカードの保管](vaulting.md)を参照してください

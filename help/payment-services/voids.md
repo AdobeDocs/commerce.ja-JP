@@ -1,27 +1,44 @@
 ---
 title: ボイド
-description: Void を使用すると、購入金額の承認によってブロックまたは保留されているクレジットまたはデビットカードのアカウントで資金を解放できます。
+description: ボイドを使用すると、購入金額の承認によってブロックまたは保持されているクレジットカードまたはデビットカードのアカウントの資金を解放できます。
 exl-id: 029a7038-2812-46ce-b188-929a7a758d89
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '244'
 ht-degree: 0%
-
 ---
-
 # ボイド
 
-[!DNL Payment Services] は、トランザクションの無効化に関するCommerceの既存の機能をサポートしています。 無効は、購買金額の承認によって保有されているクレジット・カードまたはデビット・カード勘定科目の資金をリリースします。 トランザクションは、支払がまだキャプチャされていない場合にのみ無効にできます。
+[!DNL Payment Services]は、トランザクションを無効にするためのCommerceの既存の機能をサポートしています。 ボイドは、購入金額の承認によって保有されているクレジットカードまたはデビットカード口座の資金をリリースします。 トランザクションは、支払いがまだキャプチャされていない場合にのみ無効化できます。
 
-* 店舗が POS の資金のみを許可 [&#x200B; る &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} 設定）されている場合、店舗からの購入は、Commerce管理者のステータスが `Processing` い注文となります。
+* 販売時点付きの資金のみを承認するようにストアが[設定](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}されている場合、ストアからの購入は、Commerce管理画面で`Processing` ステータスの注文になります。
 
-* 請求されていない [&#x200B; 注文をキャンセル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} することもできます。 取得されていない認証も、そのキャンセルプロセスの一環として無効になります。
+* 請求書を発行していない注文](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}を[解約することもできます。 キャプチャされていない認証も、その解約プロセスの一部として無効になります。
 
 >[!NOTE]
 >
->注文をキャンセルした場合も無効になりますが、注文を無効にしてもキャンセルはトリガーになりません。
+>注文をキャンセルしても無効になりますが、注文をキャンセルしてもキャンセルはトリガーされません。
 
-注文の基本的な手順について詳しくは、『コアユーザーガイド』の [&#x200B; 注文ワークフロー &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-processing){target="_blank"} に関するトピックを参照してください。
+注文の基本的な手順について詳しくは、コアユーザーガイドの[注文ワークフロー](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing){target="_blank"}のトピックを参照してください。
 
-ボイド機能と注文トランザクションのボイド方法について詳しくは、『コアユーザガイド』の [&#x200B; 注文の処理 &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-processing#process-an-order){target="_blank"} を参照してください。
+無効な機能と注文トランザクションを無効にする方法について詳しくは、コアユーザーガイドの「[注文を処理する](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#process-an-order){target="_blank"}」を参照してください。

@@ -1,36 +1,49 @@
 ---
-title: ' [!DNL SaaS Data Export]のシナリオのトラブルシューティング'
-description: 設定の誤り、インデクサー設定、または同期結果の誤った解釈によって発生する予期しない [!DNL SaaS Data Export] 同期動作を診断して解決する方法について説明します。
+title: '[!DNL SaaS Data Export]のシナリオのトラブルシューティング'
+description: 設定の誤り、インデクサー設定、または同期結果の誤った解釈によって発生する予期しない[!DNL SaaS Data Export]同期動作を診断して解決する方法について説明します。
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
+    internal-label: Data Transfer
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+    internal-label: Troubleshooting
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 983
+source-wordcount: '984'
 ht-degree: 0%
-
 ---
-
 
 # [!DNL SaaS Data Export]のシナリオのトラブルシューティング
 
@@ -84,9 +97,9 @@ ht-degree: 0%
 1. Commerce ストアフロントから、検索結果を開きます。 次に、該当する製品を選択して、詳細ビューを開きます。
 1. JSON出力をコピーし、[!DNL Commerce] カタログにあるものと一致することを確認します。
 1. コンテンツが一致しない場合は、スペースやピリオドの追加など、カタログ内の製品を少し変更して、変更を強制的に検出します。
-1. 再同期を待つか、管理者のCLIまたは[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページから手動再同期をトリガーします。
+1. 再同期を待つか、管理者のCLIまたは[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページから手動再同期をトリガーします。
 
-[!DNL Product Recommendations]のカタログデータのトラブルシューティングについて詳しくは、[Commerce ナレッジベースの商品レコメンデーションモジュール &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-40095)のトラブルシューティングを参照してください。
+[!DNL Product Recommendations]のカタログデータのトラブルシューティングについて詳しくは、[Commerce ナレッジベースの商品レコメンデーションモジュール ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-40095)のトラブルシューティングを参照してください。
 
 ## スケジュールでデータ同期が実行されていません {#sync-not-on-schedule}
 
@@ -96,8 +109,8 @@ ht-degree: 0%
 
 **解決策：**
 
-- [cron ジョブが実行中であることを確認します](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-39832)。
-- 次のフィードのインデックスが&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;に設定されていることを確認します。カタログ属性、製品、製品の上書き、製品バリアント。 Commerce管理者の[[!UICONTROL Index Management]](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/tools/index-management)またはCLI: `bin/magento indexer:show-mode | grep -i feed`を使用して確認します。
+- [cron ジョブが実行中であることを確認します](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832)。
+- 次のフィードのインデックスが&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;に設定されていることを確認します。カタログ属性、製品、製品の上書き、製品バリアント。 Commerce管理者の[[!UICONTROL Index Management]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)またはCLI: `bin/magento indexer:show-mode | grep -i feed`を使用して確認します。
 
 ## カタログ同期のステータスが「失敗」です {#catalog-sync-failed}
 
@@ -107,10 +120,10 @@ ht-degree: 0%
 
 **解決策：**
 
-1. エラーの詳細については、データ書き出しエラーログを参照してください。 ログ形式と拡張ログ オプションについては、[&#x200B; ログの確認とトラブルシューティング &#x200B;](logging.md)を参照してください。
+1. エラーの詳細については、データ書き出しエラーログを参照してください。 ログ形式と拡張ログ オプションについては、[ ログの確認とトラブルシューティング ](logging.md)を参照してください。
    - データ収集中にエラーが発生した`var/log/commerce-data-export-errors.log`。
    - データ送信中にエラーが発生した`var/log/saas-export-errors.log`。
-1. エラーが設定またはサードパーティの拡張機能に関連しない場合は、[関連するログエントリを含むサポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を送信します。
+1. エラーが設定またはサードパーティの拡張機能に関連しない場合は、[関連するログエントリを含むサポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を送信します。
 
 ## ログに「操作がスキップされました – プロセスがロックされました」というメッセージが表示される {#process-locked}
 
@@ -124,10 +137,10 @@ ht-degree: 0%
 
 **解決策：**
 
-アクションは必要ありません。 実行中のプロセスが完了してロックを解除すると、次のcron実行が取得され、保留中の変更が同期されます。 ロックメカニズムの仕組みについて詳しくは、[SaaS データ書き出し用のフィードロックメカニズム &#x200B;](../feed-lock-mechanism.md)を参照してください。
+アクションは必要ありません。 実行中のプロセスが完了してロックを解除すると、次のcron実行が取得され、保留中の変更が同期されます。 ロックメカニズムの仕組みについて詳しくは、[SaaS データ書き出し用のフィードロックメカニズム ](../feed-lock-mechanism.md)を参照してください。
 
 >[!MORELIKETHIS]
 >
-> - [&#x200B; ログの確認とトラブルシューティング &#x200B;](logging.md)
-> - [&#x200B; ログコード参照](log-codes-reference.md)
-> - [SaaS データ書き出し用のフィードロックメカニズム &#x200B;](../feed-lock-mechanism.md)
+> - [ ログの確認とトラブルシューティング ](logging.md)
+> - [ ログコード参照](log-codes-reference.md)
+> - [SaaS データ書き出し用のフィードロックメカニズム ](../feed-lock-mechanism.md)

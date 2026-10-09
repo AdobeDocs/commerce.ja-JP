@@ -1,16 +1,27 @@
 ---
 title: レベル 2およびレベル 3の処理
-description: カード決済処理レベルが [!DNL Payment Services]  トランザクション以内です。
+description: '[!DNL Payment Services]件のトランザクション内のカード決済処理レベル。'
 role: Admin
 feature: Payments, Paas, Saas
 exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '363'
 ht-degree: 0%
-
 ---
-
 # レベル 2およびレベル 3の処理
 
 [!DNL Payment Services]は、加盟店が支払い取引を最適化し、交換手数料を下げるのを支援する高度なカード処理機能を提供しています。 利用可能なカード処理には3つのレベルがあり、それぞれに異なるトランザクションデータ要件があります。
@@ -21,13 +32,13 @@ ht-degree: 0%
 
 ## 処理レベルごとのデータ要件
 
-![&#x200B; トランザクションレポート &#x200B;](assets/level-processing-details.png){width="500" zoomable="yes"}
+![ トランザクションレポート ](assets/level-processing-details.png){width="500" zoomable="yes"}
 
 [!DNL Payment Services]はこのデータを収集し、支払いトランザクションの詳細レポートを提供します。
 
 ## 利用可能な処理レベル （カードネットワーク別）
 
-![&#x200B; カードの詳細](assets/cards-details-level-processing.png){width="500" zoomable="yes"}
+![ カードの詳細](assets/cards-details-level-processing.png){width="500" zoomable="yes"}
 
 詳しくは、PayPal デベロッパーのドキュメントの[決済処理](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank}を参照してください。
 
@@ -53,7 +64,7 @@ ht-degree: 0%
 
 レベル 2およびレベル 3の処理は、店舗レベルの[!DNL Payment Services]人のマーチャントに対して、デフォルトで無効になっています。
 
-IC++の価格を既に使用している場合は、レベル 2およびレベル 3の処理を利用できます。 この機能を有効にするには、[&#x200B; コマンドラインインターフェイス（CLI](configure-cli.md)を使用します。
+IC++の価格を既に使用している場合は、レベル 2およびレベル 3の処理を利用できます。 この機能を有効にするには、[ コマンドラインインターフェイス（CLI](configure-cli.md)を使用します。
 
 >[!IMPORTANT]
 >

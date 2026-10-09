@@ -1,22 +1,27 @@
 ---
 title: '[!DNL Catalog Adapter] リリースノート'
-description: Adobe Commerceの [!DNL Catalog Adapter] の最新リリース情報。
+description: Adobe Commerceの[!DNL Catalog Adapter]の最新リリース情報。
 feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
 exl-id: d4dd0288-8853-43fe-9103-1aead8d3b56e
-TQID: https://experienceleague.adobe.com/btPlBYpdRdf-gMfqSv2px6iMfiI3FfXJSN40j61HXOU
+TQID: 'https://experienceleague.adobe.com/btPlBYpdRdf-gMfqSv2px6iMfiI3FfXJSN40j61HXOU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: adedf70c-c1e1-5734-acdc-c5c43b114964
+    internal-label: Release Notes
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: d5e10c1b3014d2b74c323d6a34e5f73a97d494ce
+    internal-label: Admin
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 218
+source-wordcount: '219'
 ht-degree: 0%
-
 ---
-
 # [!DNL Catalog Adapter]拡張機能リリースノート
 
 これらのリリースノートでは、[!DNL Catalog Adapter]拡張機能の最新バージョンについて説明しています。 現在のメジャーリリース版のサポートが提供されています。 古いバージョンのリリースノートは、参照用に提供されています。
@@ -25,7 +30,7 @@ ht-degree: 0%
 
 ![新機能](../assets/new.svg)
 ![修正](../assets/fix.svg)修正と機能強化
-![&#x200B; バグ &#x200B;](../assets/bug.svg)既知の問題
+![ バグ ](../assets/bug.svg)既知の問題
 
 
 >[!NOTE]

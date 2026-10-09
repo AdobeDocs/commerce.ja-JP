@@ -1,18 +1,35 @@
 ---
 title: '[!DNL Payment Services] ガイド'
-description: これらの [!DNL Payment Services] for [!DNL Adobe Commerce]  ドキュメントの対象オーディエンス。
+description: これらの [!DNL Payment Services] for [!DNL Adobe Commerce] ドキュメントの対象オーディエンス。
 seo-title: Adobe Commerce Payments Services Audience
 seo-description: Describes contents of the [!DNL Payment Services] for Adobe Commerce documentation
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
 feature: Payments, Checkout, Paas, Saas
 recommendations: noCatalog
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 0%
-
+source-wordcount: '539'
+ht-degree: 1%
 ---
-
 
 # [!DNL Payment Services] ガイド
 
@@ -38,7 +55,7 @@ Adobe CommerceとMagento Open Sourceの[!DNL Payment Services]は、完全に統
 
 このガイドでは、[!DNL Payment Services]がどのようにコマース業務を変革できるのか関心がある場合や、[!DNL Payment Services]に関する詳細な技術的ガイダンスが必要な場合に、Adobe CommerceとMagento Open Sourceについて説明します。
 
-機能や利点など、すぐに利用できる決済ソリューションの概要については、[主な利点](introduction.md)から始めてください。 実装に関する手順ごとの手順については、[&#x200B; オンボーディング &#x200B;](onboard.md)にスキップしてください。
+機能や利点など、すぐに利用できる決済ソリューションの概要については、[主な利点](introduction.md)から始めてください。 実装に関する手順ごとの手順については、[ オンボーディング ](onboard.md)にスキップしてください。
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -113,16 +130,16 @@ Adobe CommerceとMagento Open Sourceの[!DNL Payment Services]は、完全に統
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home) - [!DNL Adobe Commerce]と[!DNL Magento Open Source]の両方のマーチャントに焦点を当てたドキュメント
-> * [[!DNL Adobe Commerce] 2.4 ユーザーガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/user-guides/home) - [!DNL Adobe Commerce]または[!DNL Magento Open Source]の構築とカスタマイズに使用する開発者向けドキュメント
-> * [&#x200B; リリースノート &#x200B;](release-notes.md)：今後のリリース、製品の詳細、および[!DNL Payment Services]拡張機能をサポートするAdobe Commerceのバージョンについて詳しく説明します
-> * [&#x200B; ヘルプセンター](https://experienceleague.adobe.com/ja/docs/commerce-knowledge-base/kb/overview) - ナレッジベースで[!DNL Payment Services]関連のトラブルシューティング記事を検索します
-> * [&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) - Commerceのお客様は、チケットを送信して追加のヘルプを受け取ることができます
+> * [[!DNL Adobe Commerce] 2.4 ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) - [!DNL Adobe Commerce]と[!DNL Magento Open Source]の両方のマーチャントに焦点を当てたドキュメント
+> * [[!DNL Adobe Commerce] 2.4 ユーザーガイド ](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) - [!DNL Adobe Commerce]または[!DNL Magento Open Source]の構築とカスタマイズに使用する開発者向けドキュメント
+> * [ リリースノート ](release-notes.md)：今後のリリース、製品の詳細、および[!DNL Payment Services]拡張機能をサポートするAdobe Commerceのバージョンについて詳しく説明します
+> * [ ヘルプセンター](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) - ナレッジベースで[!DNL Payment Services]関連のトラブルシューティング記事を検索します
+> * [ サポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) - Commerceのお客様は、チケットを送信して追加のヘルプを受け取ることができます
 
 ## サポート
 
 [!DNL Payment Services]に関する情報が必要な場合や、このガイドに記載されていない質問がある場合は、[!DNL Payment Services]の営業担当者にお問い合わせいただくか、[!DNL Payment Services]のホームで利用可能なリソースをご利用ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448228?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3447836)
 
 [どの [!DNL Payment Services]  オプションが適していますか？](compatibility.md#which-payment-services-option-is-right-for-you)を参照してください どの[!DNL Payment Services] オプションが最も適しているかを確認するトピック。

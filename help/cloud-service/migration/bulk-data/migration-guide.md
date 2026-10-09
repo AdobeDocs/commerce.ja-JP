@@ -2,43 +2,55 @@
 title: 一括データ移行の実行
 description: CLIを使用して、Adobe Commerce PaaSまたはオンプレミスのインスタンスからAdobe Commerce as a Cloud Serviceへの一括データ移行を設定して実行する方法について説明します。
 feature: Cloud
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:07.600Z'
 TQID: 'https://experienceleague.adobe.com/z9659Vnf2JLxJ4U5p3tEEjurj5Mg3bfKj68Gheq2AXY'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 670b6214b28be93a16130552a226a8cadb487324
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 2802
+source-wordcount: '2802'
 ht-degree: 0%
-
 ---
-
 # 一括データ移行の実行
 
 {{bulk-data-early-access}}
 
 このガイドは、一括データ移行ツールを使用して、[!DNL Adobe Commerce] PaaSまたはオンプレミスのインストールから[!DNL Adobe Commerce as a Cloud Service]へのデータ移行を実行するための手順ごとの運用上のリファレンスです。 実際の設定値と環境固有の詳細は、設定によって異なります。
 
-開始する前に、[顧客準備チェックリスト &#x200B;](readiness-checklist.md)のすべての項目を完了し、[移行サービスアクセスガイド &#x200B;](cdms-access.md)でAPI アクセスを確認したことを確認してください。
+開始する前に、[顧客準備チェックリスト ](readiness-checklist.md)のすべての項目を完了し、[移行サービスアクセスガイド ](cdms-access.md)でAPI アクセスを確認したことを確認してください。
 
 >[!NOTE]
 >
@@ -54,7 +66,7 @@ ht-degree: 0%
 
 一括データ移行用の環境を設定します。
 
->[!VIDEO](https://video.tv.adobe.com/v/3496123?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3496121)
 
 1. `ccsaas-migration-tools.tar.gz`の内容を抽出します。
 
@@ -97,7 +109,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### ソース OAuth資格情報の設定
 
->[!VIDEO](https://video.tv.adobe.com/v/3496143?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3496142)
 
 これらの4つの値は、移行ツールからソースストア APIにリクエストを署名します。 それらを取得するには、ソース [!UICONTROL Admin]を開き、[!UICONTROL **システム**] > [!UICONTROL **拡張機能**] > [!UICONTROL **統合**]&#x200B;に移動します。 統合を作成するか開いて、値を`.env`にコピーします。
 
@@ -130,7 +142,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->Cloud CLIを初めて使用する場合は、SSH公開鍵をアカウントにも追加する必要があります。 手順については、[&#x200B; セキュア接続ガイド &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/develop/secure-connections)を参照してください。
+>Cloud CLIを初めて使用する場合は、SSH公開鍵をアカウントにも追加する必要があります。 手順については、[ セキュア接続ガイド ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)を参照してください。
 
 ### Commerce管理者設定の調整
 
@@ -142,7 +154,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### ターゲット SaaSおよびIMS資格情報の設定
 
->[!VIDEO](https://video.tv.adobe.com/v/3496168?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3496167)
 
 ターゲットの[!DNL Adobe Commerce as a Cloud Service] IMSおよびAPI設定です。 テナント ID、組織ID、IMS OAuth サーバー間の資格情報、および環境に適したIMS ホストが必要です。 Adobeチームと連携して、整理、テナント、プロファイルアクセスを行います。 機密値を推測または推定しようとしない。
 
@@ -247,7 +259,7 @@ CDMS_PORT=443
 
 ## データベース接続ファイルの設定
 
->[!VIDEO](https://video.tv.adobe.com/v/3496158?captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/3496152)
 
 `.my.cnf` ファイルには、移行ツールの抽出側の[!DNL MySQL]接続設定が用意されています。 プロジェクト ルートの`.my.cnf.example`を`.my.cnf`にコピーして作成します。 セクション名は`.env`の`SOURCE_CONNECTION_NAME`と一致する必要があります。
 

@@ -1,29 +1,41 @@
 ---
-title: ' [!DNL Payment Services]の概要'
-description: ' [!DNL Adobe Commerce] および [!DNL Magento Open Source] のweb サイトのターンキーで堅牢かつ安全な決済処理ソリューションとして [!DNL Payment Services] をインストールして使用する方法について説明します。'
+title: '[!DNL Payment Services]の概要'
+description: '[!DNL Adobe Commerce]および[!DNL Magento Open Source]のweb サイトのターンキーで堅牢かつ安全な決済処理ソリューションとして[!DNL Payment Services]をインストールして使用する方法について説明します。'
 role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
 exl-id: 191467ab-4c5e-4df1-b423-7a470a4910ea
-TQID: https://experienceleague.adobe.com/0jiNXLUWzekxm4ajhgs0VLUCmVDMdn6OE1m07TO-rLo
+TQID: 'https://experienceleague.adobe.com/0jiNXLUWzekxm4ajhgs0VLUCmVDMdn6OE1m07TO-rLo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+    internal-label: Reporting
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 335
+source-wordcount: '338'
 ht-degree: 0%
-
 ---
-
 # [!DNL Payment Services]の概要
 
 Adobe CommerceおよびMagento Open Sourceの[!DNL Payment Services]は、Commerce web サイトに堅牢で安全な決済処理を提供するための、サンドボックステストやシンプルなセットアップなど、すぐに使えるセルフサービスソリューションです。
@@ -54,13 +66,13 @@ Commerceの質の高い体験に対する需要は高く、それを実現する
 
 1. **[支払いオプション](payments-options.md)** - デビットカードやクレジットカードのフィールド、デジタルウォレット、PayPalの製品やサービスなど、複数の支払いオプションを使用して、ストア（またはマルチストア）のお客様が利用できる方法をカスタマイズします。
 
-1. **効率的なチェックアウトエクスペリエンス**：迅速でシンプルなチェックアウトの妨げになるものを取り除き、[&#x200B; カードヴォールティング &#x200B;](vaulting.md)でロイヤルティの高い顧客を作成します。
+1. **効率的なチェックアウトエクスペリエンス**：迅速でシンプルなチェックアウトの妨げになるものを取り除き、[ カードヴォールティング ](vaulting.md)でロイヤルティの高い顧客を作成します。
 
 1. **カスタマイズされたチェックアウトフロー**- コマースジャーニーのさまざまな段階でチェックアウトオプションを提供し、購入プロセスにおけるフリクションを減らし、コンバージョン率を高めることができます。
 
 1. **[GraphQLとのヘッドレス互換性](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/)**：マーチャントには、フロントエンド開発用のRESTおよびSOAP web APIの代替手段があります。
 
-1. **財務報告** - [支払いの詳細](order-payment-status.md)を注文と同期することで、処理済み数量、支払い残高、[支払い](payouts.md)、詳細な[&#x200B; トランザクションレベルのレポート &#x200B;](reporting.md)に対する完全な透明性を取得し、財務調整とトランザクションの可視性を最大限に高めます。
+1. **財務報告** - [支払いの詳細](order-payment-status.md)を注文と同期することで、処理済み数量、支払い残高、[支払い](payouts.md)、詳細な[ トランザクションレベルのレポート ](reporting.md)に対する完全な透明性を取得し、財務調整とトランザクションの可視性を最大限に高めます。
 
 >[!NOTE]
 >

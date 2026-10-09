@@ -4,7 +4,7 @@ description: フィード項目の状態、書き出しステータス、エラ�
 autotag-review: '2026-06-23T00:00:00.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Integrations
   - id: cc250cf1-34eb-4863-80d0-d170d45ea067
     internal-label: Developer tools
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -32,7 +34,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
@@ -44,7 +46,7 @@ ht-degree: 0%
 
 ## サポートされているフィード
 
-API エンドポイント、バッチ制限、インデクサー名、フィード テーブル名でサポートされているフィードの完全なリストについては、[&#x200B; コネクタ モジュールとフィード エンドポイント &#x200B;](connector-reference.md#supported-feeds)を参照してください。
+API エンドポイント、バッチ制限、インデクサー名、フィード テーブル名でサポートされているフィードの完全なリストについては、[ コネクタ モジュールとフィード エンドポイント ](connector-reference.md#supported-feeds)を参照してください。
 
 ## スキーマ
 
@@ -57,7 +59,7 @@ API エンドポイント、バッチ制限、インデクサー名、フィー�
 | `feed_hash` | VARCHAR | 変更検出に使用されるコンテンツハッシュ。 タイムスタンプ （`modifiedAt`、`updatedAt`）を除いて、ペイロードから計算されます。 ハッシュが以前の書き出しと一致する場合、アイテムは再送信されません。 |
 | `is_deleted` | TINYINT | ソフト削除マーカー。 Commerceでエンティティが削除された場合は、`1`に設定します。 |
 | `modified_at` | TIMESTAMP | このフィード項目が最後に変更された日時 |
-| `status` | INT | 前回の書き出し試行からの送信ステータスコード。 [&#x200B; フィード送信とエラー処理](../connector-sync-pipeline.md#feed-submission-and-error-handling)を参照してください。 |
+| `status` | INT | 前回の書き出し試行からの送信ステータスコード。 [ フィード送信とエラー処理](../connector-sync-pipeline.md#feed-submission-and-error-handling)を参照してください。 |
 | `errors` | テキスト | この項目の[!DNL Commerce Optimizer] APIによって返されたJSON エンコード済みエラーの詳細 |
 | `metadata` | JSON | 書き出しフレームワークで使用される内部同期フラグとロック メタデータ情報 |
 
@@ -119,7 +121,7 @@ WHERE JSON_UNQUOTE(JSON_EXTRACT(f.feed_data, '$.priceBookId'))  IN ('<PRICE_BOOK
 
 >[!MORELIKETHIS]
 >
->- [&#x200B; コネクタ モジュールとフィード エンドポイント &#x200B;](connector-reference.md)
->- [&#x200B; コネクタ同期パイプライン &#x200B;](../connector-sync-pipeline.md)
+>- [ コネクタ モジュールとフィード エンドポイント ](connector-reference.md)
+>- [ コネクタ同期パイプライン ](../connector-sync-pipeline.md)
 >- [同期の管理](../data-sync-status.md)
->- コネクタフィードの[&#x200B; フィールドマッピング &#x200B;](field-mapping.md)
+>- コネクタフィードの[ フィールドマッピング ](field-mapping.md)

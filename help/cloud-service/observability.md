@@ -1,32 +1,52 @@
 ---
-title: ' [!DNL Adobe Commerce as a Cloud Service]の観測可能性'
-description: 指標、ログ、トレースなど、 [!DNL Adobe Commerce as a Cloud Service]で使用できる識別可能性ツールとテレメトリ機能について説明します。
+title: '[!DNL Adobe Commerce as a Cloud Service]の観測可能性'
+description: 指標、ログ、トレースなど、[!DNL Adobe Commerce as a Cloud Service]で使用できる識別可能性ツールとテレメトリ機能について説明します。
 feature: Cloud, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 autotag-review: '2026-06-09T15:41:54.613Z'
 TQID: 'https://experienceleague.adobe.com/jTPNVSy6cP8v-pV-3pyqgJX-PAzFFhOUf9SjQIMeBns'
 product_v2:
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Data collection
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 608
+source-wordcount: '608'
 ht-degree: 0%
-
 ---
-
 # 可観測性
 
 オブザーバビリティは、[!DNL Adobe Commerce as a Cloud Service]の操作の重要な側面です。 これには、指標、ロギング、トレースなど、テレメトリデータの収集、処理、可視化が含まれます。これにより、アプリケーションの健全性を監視し、パフォーマンスの問題を診断し、コマースプラットフォームとその統合の信頼性を最適化できます。
@@ -41,9 +61,9 @@ ht-degree: 0%
 * アプリケーション、インフラストラクチャ、CDN、および統合のログを&#x200B;**一元化して単一のビューに表示し、トラブルシューティングを迅速化します。**
 * **リクエストを追跡** エンドツーエンドで、フロントエンドからCommerceと接続されたアプリを経由してリクエストを処理します。これにより、顧客に影響を与える前に、ボトルネックや障害を特定できます。
 
-これらの機能を組み合わせることで、問題を迅速に特定して解決し、パフォーマンスを最適化し、顧客に信頼できるエクスペリエンスを提供することができます。 [&#x200B; オブザーバビリティの概要](https://developer.adobe.com/commerce/extensibility/observability/)では、[!DNL Adobe Commerce as a Cloud Service]がOpenTelemetryを使用して、イベント、Webhook、App Builder アプリケーションをまたいでこのテレメトリコレクションを統合する方法について説明しています。
+これらの機能を組み合わせることで、問題を迅速に特定して解決し、パフォーマンスを最適化し、顧客に信頼できるエクスペリエンスを提供することができます。 [ オブザーバビリティの概要](https://developer.adobe.com/commerce/extensibility/observability/)では、[!DNL Adobe Commerce as a Cloud Service]がOpenTelemetryを使用して、イベント、Webhook、App Builder アプリケーションをまたいでこのテレメトリコレクションを統合する方法について説明しています。
 
-![可観測性アーキテクチャ &#x200B;](./assets/observability.png){width="600" zoomable="yes"}
+![可観測性アーキテクチャ ](./assets/observability.png){width="600" zoomable="yes"}
 
 Adobe Commerceは、OpenTelemetryを通じて次のオブザーバビリティ ツールをサポートしています。
 
@@ -57,19 +77,19 @@ Adobe Commerceは、OpenTelemetryを通じて次のオブザーバビリティ �
 
 ### 購読の設定
 
-[&#x200B; オブザーバビリティのサブスクリプション &#x200B;](https://developer.adobe.com/commerce/extensibility/observability/configuration/)を[!UICONTROL Admin]またはREST APIを介して設定し、ログ、指標、またはトレースをOpenTelemetryと互換性のある任意のエンドポイントにルーティングします。 各サブスクリプションは、特定のコンポーネント（webhook、イベント、または[!UICONTROL Admin UI SDK]）をターゲットにしています。
+[ オブザーバビリティのサブスクリプション ](https://developer.adobe.com/commerce/extensibility/observability/configuration/)を[!UICONTROL Admin]またはREST APIを介して設定し、ログ、指標、またはトレースをOpenTelemetryと互換性のある任意のエンドポイントにルーティングします。 各サブスクリプションは、特定のコンポーネント（webhook、イベント、または[!UICONTROL Admin UI SDK]）をターゲットにしています。
 
 ### Observability REST API
 
-[&#x200B; オブザーバビリティ REST API](https://developer.adobe.com/commerce/extensibility/observability/api/)は、オブザーバビリティ サブスクリプションをプログラムで作成、取得、更新、削除するエンドポイントを提供します。 これらのエンドポイントを使用して、インスタンス間の設定を自動化します。
+[ オブザーバビリティ REST API](https://developer.adobe.com/commerce/extensibility/observability/api/)は、オブザーバビリティ サブスクリプションをプログラムで作成、取得、更新、削除するエンドポイントを提供します。 これらのエンドポイントを使用して、インスタンス間の設定を自動化します。
 
 ## Adobe Developer App Builder
 
 ### App Builder計装
 
-[&#x200B; オブザーバビリティを [!DNL App Builder]](https://developer.adobe.com/commerce/extensibility/observability/app-builder/)に実装して、Commerceのトレース コンテキストを[!DNL App Builder]のアクションに反映させ、両方のシステムのログとトレースがオブザーバビリティ プラットフォームで相関するようにします。 Webhook ベースとイベントベースの統合のインストルメンテーションについて説明します。
+[ オブザーバビリティを [!DNL App Builder]](https://developer.adobe.com/commerce/extensibility/observability/app-builder/)に実装して、Commerceのトレース コンテキストを[!DNL App Builder]のアクションに反映させ、両方のシステムのログとトレースがオブザーバビリティ プラットフォームで相関するようにします。 Webhook ベースとイベントベースの統合のインストルメンテーションについて説明します。
 
-[!DNL App Builder]には、CLIやDeveloper Consoleへのアクセス、Splunk、Azure、New Relicなどの外部ソリューションへのログ転送など、[&#x200B; アプリケーションログの管理](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/application_logging/logging)用のビルトインツールも用意されています。
+[!DNL App Builder]には、CLIやDeveloper Consoleへのアクセス、Splunk、Azure、New Relicなどの外部ソリューションへのログ転送など、[ アプリケーションログの管理](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/application_logging/logging)用のビルトインツールも用意されています。
 
 ### 遠隔測定ライブラリ
 
@@ -77,23 +97,23 @@ Adobe Commerceは、OpenTelemetryを通じて次のオブザーバビリティ �
 
 ### ローカル開発とテスト
 
-[&#x200B; デプロイする前に、観測可能性の設定をローカルで](https://developer.adobe.com/commerce/extensibility/observability/local-development/) テストします。 ビジュアライゼーションとトンネル転送に[!DNL Grafana]を使用すると（例：[!DNL Ngrok]）、開発用マシン上のリモート Commerce インスタンスからテレメトリを受け取ることができます。
+[ デプロイする前に、観測可能性の設定をローカルで](https://developer.adobe.com/commerce/extensibility/observability/local-development/) テストします。 ビジュアライゼーションとトンネル転送に[!DNL Grafana]を使用すると（例：[!DNL Ngrok]）、開発用マシン上のリモート Commerce インスタンスからテレメトリを受け取ることができます。
 
 ## [!DNL API Mesh]
 
 ### API メッシュログ
 
-[API メッシュ ログ &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging)を使用すると、レイ IDを使用してメッシュを流れるリクエストを監視およびデバッグできます。 ログを一括で書き出すか、[!DNL New Relic]などのプラットフォームに転送して一元分析します。
+[API メッシュ ログ ](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging)を使用すると、レイ IDを使用してメッシュを流れるリクエストを監視およびデバッグできます。 ログを一括で書き出すか、[!DNL New Relic]などのプラットフォームに転送して一元分析します。
 
 ## ストアフロント
 
 ### CDNとリアルユーザーモニタリング
 
-CDN オリジンを介した[&#x200B; プロキシのリアルユーザーモニタリング（RUM） &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/content-delivery-network/#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) データ収集により、追加のTLS ハンドシェイクを排除し、フロントエンドのパフォーマンス測定を改善します。
+CDN オリジンを介した[ プロキシのリアルユーザーモニタリング（RUM） ](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/content-delivery-network/#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) データ収集により、追加のTLS ハンドシェイクを排除し、フロントエンドのパフォーマンス測定を改善します。
 
 ## 観察性ビデオ
 
 次のビデオでは、[!DNL Adobe Commerce as a Cloud Service]のオブザーバビリティ機能の概要を説明しています。
 
-* [App Builderの観測性ビデオ](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
-* [API Mesh ビデオ](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}
+* [App Builderの観測性ビデオ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
+* [API Mesh ビデオ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}

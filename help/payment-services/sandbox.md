@@ -5,7 +5,31 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: fc9fb7a63e4e7c3dd862ed710acdfa8561c91ec5
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -20,16 +44,16 @@ PayPal サンドボックスアカウントでは、テストモードで[!DNL P
 
 サンドボックスのオンボーディングを完了するには：
 
-1. [PayPal開発者アカウントページ &#x200B;](https://developer.paypal.com/developer/accounts/)に移動します。
+1. [PayPal開発者アカウントページ ](https://developer.paypal.com/developer/accounts/)に移動します。
 1. **[!UICONTROL Log in to Dashboard]**&#x200B;をクリックし、既存のPayPal Developer Portalが生成したBusiness サンドボックステストアカウントでログインするか、**新規登録**&#x200B;をクリックしてアカウントを作成します。
 1. PayPal サンドボックスアカウントを作成します。
-   1. _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**&#x200B;に移動します。
+   1. _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**に移動します。
    1. **[!UICONTROL Create account]**&#x200B;をクリックします。
 
-      サンドボックス PayPal オンボーディングプロセス中にPayPal サンドボックスアカウントを作成した場合、メールを確認できないため、[&#x200B; オンボーディングサンドボックスをリセット &#x200B;](#reset-your-sandbox-account)する必要があります。
+      サンドボックス PayPal オンボーディングプロセス中にPayPal サンドボックスアカウントを作成した場合、メールを確認できないため、[ オンボーディングサンドボックスをリセット ](#reset-your-sandbox-account)する必要があります。
 
    1. アカウントタイプとして「**[!UICONTROL Business]**」を選択し、**[!UICONTROL Create]**&#x200B;をクリックします。
-   1. _[!UICONTROL Sandbox Accounts]_&#x200B;セクションで、作成したサンドボックスアカウントの&#x200B;_[!UICONTROL Manage accounts]_&#x200B;列にある3つのドットをクリックします。
+   1. _[!UICONTROL Sandbox Accounts]_セクションで、作成したサンドボックスアカウントの_[!UICONTROL Manage accounts]_&#x200B;列にある3つのドットをクリックします。
    1. **[!UICONTROL View/edit account]**&#x200B;をクリックします。
 
       ![PayPal - サンドボックスアカウントの表示/編集](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -88,13 +112,13 @@ PayPal サンドボックスアカウントでは、テストモードで[!DNL P
 
 購入者の国を設定するには：
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**に移動します。
 
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
 
-1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
+1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_セクションを展開します。
 
-1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL General Configuration]_ セクションを展開します。
+1. _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL General Configuration]_ セクションを展開します。
 
 1. **[!UICONTROL Method]**&#x200B;を`Sandbox`に設定します。
 
@@ -110,4 +134,4 @@ PayPal サンドボックスアカウントでは、テストモードで[!DNL P
 
 この機能を買い物客に公開する前に、統合およびステージング環境にデータスペースをテストし、実稼動環境で支払いをテストすることを強くお勧めします。
 
-詳しくは、[&#x200B; テストと検証](test-validate.md)を参照してください。
+詳しくは、[ テストと検証](test-validate.md)を参照してください。

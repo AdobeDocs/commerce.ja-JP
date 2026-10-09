@@ -1,37 +1,46 @@
 ---
 title: 検索マッチングとランキング
-description: ' [!DNL Adobe Commerce Optimizer] が完全一致と近似一致、同一フィールド一致、クロスフィールド一致を優先する方法、および検索の重み付け、インテリジェントなランキング、マーチャンダイジングルールを使用してランキングを操作する方法について説明します。'
+description: '[!DNL Adobe Commerce Optimizer]が完全一致と近似一致、同一フィールド一致、クロスフィールド一致を優先する方法、および検索の重み付け、インテリジェントなランキング、マーチャンダイジングルールを使用してランキングを操作する方法について説明します。'
 role: Admin, Leader, User
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 hide: true
 autotag-review: '2026-06-12T19:49:25.241Z'
 TQID: 'https://experienceleague.adobe.com/GBfssL1pTVx4FKjsi45mDsTx2XyCr0aViexH3OpPjVo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 subfeature_v2:
   - id: faf75e43-5608-48b8-8169-3f8a9b8a5caf
+    internal-label: Storefront optimizations
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
+    internal-label: Optimization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 946
+source-wordcount: '948'
 ht-degree: 0%
-
 ---
-
 # 検索マッチングとランキング
 
 >[!IMPORTANT]
 >
->次の機能は[&#x200B; プライベートベータ版](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/beta)です。
+>次の機能は[ プライベートベータ版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)です。
 
 [!DNL Adobe Commerce Optimizer]が検索結果をランク付けして、買い物客が最初に最も関連性の高い商品を見られるようにします。 このサービスは、カタログのテキスト **が買い物客のタイプと密接に一致し**&#x200B;した商品に最も強力なブーストを与え、クエリ用語が意味のある方法で一緒に表示されるマッチを優先し、最終的により幅広いマッチを含みます（オートコンプリート形式のマッチングをサポートする動作を含む）。
 
@@ -43,7 +52,7 @@ ht-degree: 0%
 
 1. **同じフィールド内のすべての単語** — クエリ内のすべての単語が1つの検索可能な属性に表示されます（例：製品&#x200B;**name**&#x200B;の`red`と`pants`の両方）。 このレイヤーは次に高いブーストを受け取ります。
 
-1. **異なるフィールドにまたがる単語** — クエリ用語が異なる検索可能な属性に表示されます（例：**color**&#x200B;では`red`、**name**&#x200B;では`pants`）。 これは最も広いマッチレイヤーで、関連性が最も低いブーストを受け取ります。 また、買い物客が`pants`を終了する前に`red pan`と入力した場合など、オートコンプリートで使用される部分的なクエリと一致させることもできます。 ドイツ語のカタログについては、[解読（ドイツ語） &#x200B;](#decompounding-german)を参照してください。
+1. **異なるフィールドにまたがる単語** — クエリ用語が異なる検索可能な属性に表示されます（例：**color**&#x200B;では`red`、**name**&#x200B;では`pants`）。 これは最も広いマッチレイヤーで、関連性が最も低いブーストを受け取ります。 また、買い物客が`pants`を終了する前に`red pan`と入力した場合など、オートコンプリートで使用される部分的なクエリと一致させることもできます。 ドイツ語のカタログについては、[解読（ドイツ語） ](#decompounding-german)を参照してください。
 
 ### 例
 
@@ -81,8 +90,8 @@ ht-degree: 0%
 
 - **完全一致/ほぼ**&#x200B;語一致からのブースト
 - **すべてのクエリ用語**&#x200B;が&#x200B;**same** フィールドに表示されるときにブーストします
-- テキストの関連性と行動シグナルをブレンドする&#x200B;**インテリジェントランキング** （有効な場合）、[&#x200B; インテリジェントランキングスコアリングの仕組み](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)を参照
-- 各属性およびその他のテキストに関する関連要因について&#x200B;**[重み](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;を検索します（例えば、用語が発生する頻度、名前または説明の長さ）。 *設定*&#x200B;で、キーワード検索に使用する属性と相対&#x200B;**[キーワード検索の重み](../settings.md)**&#x200B;を設定します。
+- テキストの関連性と行動シグナルをブレンドする&#x200B;**インテリジェントランキング** （有効な場合）、[ インテリジェントランキングスコアリングの仕組み](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)を参照
+- 各属性およびその他のテキストに関する関連要因について&#x200B;**[重み](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;を検索します（例えば、用語が発生する頻度、名前または説明の長さ）。 *設定*&#x200B;で、キーワード検索に使用する属性と相対&#x200B;**[キーワード検索の重み](../settings.md)**&#x200B;を設定します。
 - ピン、ブースト、埋め込みなどの&#x200B;**[マーチャンダイジングルール](../merchandising/rules/overview.md)**
 
 これらのシグナルは相互作用するので、最も広いレベルでのみ一致する商品は、よりタイトなフレイズマッチの上にランク付けされることがあります。例えば、**検索の重み**&#x200B;や、高重フィールド内の用語の頻度が、他の場所でより弱いフレイズマッチを上回っている場合などです。

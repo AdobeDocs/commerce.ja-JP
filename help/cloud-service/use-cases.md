@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 autotag-review: '2026-06-18T16:06:00.993Z'
 TQID: 'https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ'
 product_v2:
@@ -20,6 +20,10 @@ feature_v2:
     internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
     internal-label: Storefront configuration
@@ -38,7 +42,7 @@ topic_v2:
     internal-label: Experimentation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 3834c95713e05a24f31c2f9c4d82ae8f56526c90
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 0%
@@ -47,16 +51,16 @@ ht-degree: 0%
 
 次のユースケースは、[!DNL Adobe Commerce as a Cloud Service]がサポートするコア機能とビジネス シナリオを示しています。 開発を加速させ、インパクトのあるエクスペリエンスをローンチできます。
 
-問題が発生した場合は、[&#x200B; トラブルシューティング &#x200B;](#troubleshooting) セクションでガイダンスを確認してください。
+問題が発生した場合は、[ トラブルシューティング ](#troubleshooting) セクションでガイダンスを確認してください。
 
 ## 前提条件
 
 これらのユースケースを試みる前に、次の前提条件を満たす必要があります。
 
-1. [次のオプションを使用してCloud Service インスタンス &#x200B;](./getting-started.md#create-an-instance)を作成します。
+1. [次のオプションを使用してCloud Service インスタンス ](./getting-started.md#create-an-instance)を作成します。
    1. [!UICONTROL **環境**] ドロップダウンで「[!UICONTROL **サンドボックス**]」を選択します。
    1. 「[!UICONTROL **データをテスト**]」ドロップダウンで「[!UICONTROL **Adobe Store**]」を選択します。
-1. [&#x200B; [!DNL Adobe Experience Cloud]  アカウントにログイン](https://experience.adobe.com)
+1. [ [!DNL Adobe Experience Cloud]  アカウントにログイン](https://experience.adobe.com)
 1. [次のオプションを使用してCloud Service ストアフロントを設定します](./storefront.md)。
    1. テンプレートの[!UICONTROL `adobe-commerce/adobe-demo-store`]を選択します。
    1. 接続方法として&#x200B;[!UICONTROL **利用可能なインスタンス（メッシュ/SaaS）**]&#x200B;を選択します。
@@ -69,7 +73,7 @@ ht-degree: 0%
 
 1. Commerce管理者で、[!UICONTROL **Stores**] > [!UICONTROL Settings] > [!UICONTROL **Configuration**] > [!UICONTROL **Payment Methods**]&#x200B;に移動します。
 
-1. 「[!UICONTROL **一般設定**]」セクションに、`Payment Services Sandbox ID`と`Payment Services Sandbox Key`を入力します。 これらのIDは、[&#x200B; サンドボックスオンボーディング &#x200B;](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}で説明されている手順に従って取得できます
+1. 「[!UICONTROL **一般設定**]」セクションに、`Payment Services Sandbox ID`と`Payment Services Sandbox Key`を入力します。 これらのIDは、[ サンドボックスオンボーディング ](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}で説明されている手順に従って取得できます
 
 1. [!UICONTROL **有効**] ドロップダウンを&#x200B;[!UICONTROL **はい**]&#x200B;に設定します。
 
@@ -77,27 +81,27 @@ ht-degree: 0%
 
 ### 製品の購入
 
-1. 前提条件で作成した[&#x200B; ストアフロント &#x200B;](./storefront.md)に移動します。
+1. 前提条件で作成した[ ストアフロント ](./storefront.md)に移動します。
 
 1. 商品を探して選択する： 必要に応じてカスタマイズを選択します。 次に、[!UICONTROL **買い物かごに追加**]&#x200B;をクリックします。
 
-   ![&#x200B; ストアフロントの商品検索と選択インターフェイス &#x200B;](./assets/store-search.png){width="600" zoomable="yes"}
+   ![ ストアフロントの商品検索と選択インターフェイス ](./assets/store-search.png){width="600" zoomable="yes"}
 
 1. カートアイコンを選択して、カートを表示します。
 
-   ![商品が追加され、チェックアウトオプションが追加されたショッピングカート &#x200B;](./assets/add-to-cart-and-checkout.png){width="600" zoomable="yes"}
+   ![商品が追加され、チェックアウトオプションが追加されたショッピングカート ](./assets/add-to-cart-and-checkout.png){width="600" zoomable="yes"}
 
 1. 「[!UICONTROL **チェックアウト**]」をクリックします。
 
-   ![買い物かごページのチェックアウトボタン &#x200B;](./assets/click-checkout.png){width="600" zoomable="yes"}
+   ![買い物かごページのチェックアウトボタン ](./assets/click-checkout.png){width="600" zoomable="yes"}
 
 1. 必要な連絡先情報と配送情報を入力します。 この注文には架空の情報を使用できます。
 
-1. チェックアウトするには、[!UICONTROL **チェックアウト/マネーオーダー**]&#x200B;を選択します。 クレジットカードを使用する場合は、PayPal[&#128279;](https://developer.paypal.com/credit-card-number-generator#link-teststaticcardnumbers)が提供する テストカードのいずれかを使用します。 これらは、今後の有効期限やCVCで使用できます。
+1. チェックアウトするには、[!UICONTROL **チェックアウト/マネーオーダー**]&#x200B;を選択します。 クレジットカードを使用する場合は、PayPal](https://developer.paypal.com/credit-card-number-generator#link-teststaticcardnumbers)が提供する[ テストカードのいずれかを使用します。 これらは、今後の有効期限やCVCで使用できます。
 
-   ![問い合わせ先フィールドと配送情報フィールドを含むチェックアウトフォーム &#x200B;](./assets/enter-details.png){width="600" zoomable="yes"}
+   ![問い合わせ先フィールドと配送情報フィールドを含むチェックアウトフォーム ](./assets/enter-details.png){width="600" zoomable="yes"}
 
-   ![&#x200B; チェックアウト時のクレジットカード支払いフォーム &#x200B;](./assets/credit-card.png){width="600" zoomable="yes"}
+   ![ チェックアウト時のクレジットカード支払いフォーム ](./assets/credit-card.png){width="600" zoomable="yes"}
 
 1. 「[!UICONTROL **注文を配置**]」をクリックします。
 
@@ -109,17 +113,17 @@ ht-degree: 0%
 
 1. [!UICONTROL **Sales**] > [!UICONTROL **Orders**]&#x200B;に移動します。
 
-   最近の注文を表示するCommerce管理画面の![注文グリッド &#x200B;](./assets/confirm-order.png){width="600" zoomable="yes"}
+   最近の注文を表示するCommerce管理画面の![注文グリッド ](./assets/confirm-order.png){width="600" zoomable="yes"}
 
 1. 注文した商品を探し、詳細を確認します。
 
-   ![お客様と製品情報を含む注文の詳細ページ &#x200B;](./assets/order-details.png){width="600" zoomable="yes"}
+   ![お客様と製品情報を含む注文の詳細ページ ](./assets/order-details.png){width="600" zoomable="yes"}
 
 ## ストアフロントコンテンツの更新
 
 ストアフロントで直接コンテンツを制作、編集、公開できます。
 
-1. 前提条件で作成した[&#x200B; ストアフロント &#x200B;](./storefront.md)を開きます。
+1. 前提条件で作成した[ ストアフロント ](./storefront.md)を開きます。
 
 1. ストアフロントビルダーを開きます。 `https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md`に移動します。
 
@@ -149,7 +153,7 @@ Adobeのコンテクスト型テスト機能を使用すると、ストアフロ
 
 1. インデックスページの2つのコピーを&#x200B;**1234** フォルダーに貼り付けます。
 
-1. 各ページを開き、「homev1」と「homev2」の名前を変更します。 これらのページは[&#x200B; チャレンジャー](https://www.aem.live/docs/experimentation#create-your-challenger-page)です。
+1. 各ページを開き、「homev1」と「homev2」の名前を変更します。 これらのページは[ チャレンジャー](https://www.aem.live/docs/experimentation#create-your-challenger-page)です。
 
 1. 異なるコンテンツを含めるには、各ページを変更します。 例えば、ヒーロー画像やテキストを変更します。 各ページの違いを特定する必要があります。
 
@@ -168,7 +172,7 @@ Adobeのコンテクスト型テスト機能を使用すると、ストアフロ
      * `https://<your-site>.aem.live/experiments/1234/indexv1`
      * `https://<your-site>.aem.live/experiments/1234/indexv2`
 
-   ![&#x200B; コンテキスト実験のためのメタデータブロック設定](./assets/metadata-block.png){width="600" zoomable="yes"}
+   ![ コンテキスト実験のためのメタデータブロック設定](./assets/metadata-block.png){width="600" zoomable="yes"}
 
 1. シークレットウィンドウまたはプライベートブラウジングウィンドウを開き、メインページへ移動します。
 
@@ -186,29 +190,29 @@ Adobeのコンテクスト型テスト機能を使用すると、ストアフロ
 
 製品画像の背景をすばやく修正するシナリオを考えてみましょう。 [!DNL Adobe Commerce]、[!DNL AEM Assets]および[!DNL Adobe Express]を組み合わせると、この変更を数手順で完了できます。
 
-1. 前提条件で作成した[&#x200B; ストアフロント &#x200B;](./storefront.md)を開き、変更する項目に移動します。 アイテムのSKUまたは製品コードをメモします。
+1. 前提条件で作成した[ ストアフロント ](./storefront.md)を開き、変更する項目に移動します。 アイテムのSKUまたは製品コードをメモします。
 
 1. [!DNL AEM Assets]を開くには、[Adobe Experience Cloud](https://experience.adobe.com/#/home)で選択します。
 
-   [!DNL Adobe Experience Cloud] インターフェイス ![&#128279;](./assets/select-aem-assets.png){width="600" zoomable="yes"}を示す[!DNL AEM Assets] セレクター
+   [!DNL Adobe Experience Cloud] インターフェイス ](./assets/select-aem-assets.png){width="600" zoomable="yes"}を示す![[!DNL AEM Assets] セレクター
 
 1. [!UICONTROL **Assets**]&#x200B;をクリックします。
 
-   [!DNL AEM Assets] インターフェイス ![&#128279;](./assets/click-assets.png){width="600" zoomable="yes"}のAssets ナビゲーション オプション
+   [!DNL AEM Assets] インターフェイス ](./assets/click-assets.png){width="600" zoomable="yes"}の![Assets ナビゲーション オプション
 
 1. **SKU**&#x200B;または&#x200B;**製品コード**&#x200B;で項目を検索します。
 
 1. 編集する項目を選択し、[!UICONTROL **Adobe Expressで開く**]&#x200B;をクリックします。
 
-   ![&#x200B; アセットを編集するための「Adobe Expressで開く」オプション &#x200B;](./assets/open-in-adobe-express.png){width="600" zoomable="yes"}
+   ![ アセットを編集するための「Adobe Expressで開く」オプション ](./assets/open-in-adobe-express.png){width="600" zoomable="yes"}
 
 1. [!UICONTROL **画像**] パネルで、[!UICONTROL **オブジェクトを挿入**]&#x200B;を選択します。
 
-   ![Adobe Express画像パネルの「オブジェクトを挿入」オプション &#x200B;](./assets/insert-object.png){width="600" zoomable="yes"}
+   ![Adobe Express画像パネルの「オブジェクトを挿入」オプション ](./assets/insert-object.png){width="600" zoomable="yes"}
 
 1. テキストボックスに、追加する画像を記述します。 例えば、「スノーマツの木」です。
 
-   ![AIで生成する画像を記述するテキストボックス &#x200B;](./assets/insert-object-edit.png){width="600" zoomable="yes"}
+   ![AIで生成する画像を記述するテキストボックス ](./assets/insert-object-edit.png){width="600" zoomable="yes"}
 
 1. [!UICONTROL Brush size]を調整し、生成された画像を追加する場所に描画します。 この例の背景を選択するには、既存のオブジェクトの周りを描画します。
 
@@ -224,29 +228,29 @@ Adobeのコンテクスト型テスト機能を使用すると、ストアフロ
 
 1. [!UICONTROL **アセットを保存**] ダイアログで、Commerce [!UICONTROL **Destination フォルダー**]&#x200B;を選択します。
 
-   ![Commerceの保存先フォルダーを選択した状態でアセットを保存ダイアログ &#x200B;](./assets/save-as-new-asset.png){width="600" zoomable="yes"}
+   ![Commerceの保存先フォルダーを選択した状態でアセットを保存ダイアログ ](./assets/save-as-new-asset.png){width="600" zoomable="yes"}
 
 1. 「[!UICONTROL **新しいアセットとして保存**]」をクリックして、画像を保存します。
 
 #### 画像を[!DNL Commerce AEM Assets]に追加
 
-1. [!DNL AEM as a Cloud Service]の[&#x200B; ナビゲーションパネル &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)から、[!UICONTROL **Assets**] > [!UICONTROL **ファイル**] > [!UICONTROL **Commerce**]&#x200B;を選択し、前のセクションで作成したアセットをクリックします。
+1. [!DNL AEM as a Cloud Service]の[ ナビゲーションパネル ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)から、[!UICONTROL **Assets**] > [!UICONTROL **ファイル**] > [!UICONTROL **Commerce**]&#x200B;を選択し、前のセクションで作成したアセットをクリックします。
 
    ![商品画像](./assets/commerce-folder.png){width="600" zoomable="yes"}を含む[!DNL AEM Assets]のCommerce フォルダー
 
 1. [!UICONTROL **プロパティ**]&#x200B;をクリックします。
 
-   [!DNL AEM Assets] ツールバー![&#128279;](./assets/properties.png){width="600" zoomable="yes"}の プロパティ ボタン
+   [!DNL AEM Assets] ツールバー](./assets/properties.png){width="600" zoomable="yes"}の![ プロパティ ボタン
 
 1. 「[!UICONTROL **Commerce**]」タブを選択します。
 
-   アセットのプロパティパネルの「![Commerce」タブ &#x200B;](./assets/commerce-tab.png){width="600" zoomable="yes"}
+   アセットのプロパティパネルの「![Commerce」タブ ](./assets/commerce-tab.png){width="600" zoomable="yes"}
 
 1. [!UICONTROL **がAdobe Commerceに存在することを確認しますか？**] フィールドは&#x200B;[!UICONTROL **はい**]&#x200B;に設定されています。
 
 1. 「[!UICONTROL **追加**]」をクリックし、アセットを追加する製品SKUを入力します。
 
-   ![&#x200B; アセットを製品にリンクするためのSKUを追加](./assets/add-to-sku.png){width="600" zoomable="yes"}
+   ![ アセットを製品にリンクするためのSKUを追加](./assets/add-to-sku.png){width="600" zoomable="yes"}
 
 1. アセットの位置とアセットタイプを選択します。
 
@@ -272,7 +276,7 @@ Adobeのコンテクスト型テスト機能を使用すると、ストアフロ
 
 1. 新しい画像が表示されることを確認します。
 
-   新しく生成された画像を表示する![&#x200B; ストアフロントの製品ページ &#x200B;](./assets/image-confirm.png){width="600" zoomable="yes"}
+   新しく生成された画像を表示する![ ストアフロントの製品ページ ](./assets/image-confirm.png){width="600" zoomable="yes"}
 
 ## バリエーションの生成
 
@@ -280,7 +284,7 @@ Adobeのコンテクスト型テスト機能を使用すると、ストアフロ
 
 ### テキストを生成
 
-1. [&#x200B; ユニバーサルエディター](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)を使用してストアフロントサイトを開きます。
+1. [ ユニバーサルエディター](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)を使用してストアフロントサイトを開きます。
 
 1. 編集するテキストブロックを選択します。
 
@@ -294,13 +298,13 @@ Adobeのコンテクスト型テスト機能を使用すると、ストアフロ
 
 ### コンテンツと画像の生成
 
-1. [[!DNL Generate Variations]](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations)を開きます。
+1. [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations)を開きます。
 
 1. 「[!UICONTROL **ヒーローバナー**]」テンプレートを選択します。
 
 1. [!UICONTROL **ユーザーインタラクションの説明**] テキストボックスに、「Adobeの従業員およびパートナーがAdobe ブランドの製品を購入するためのエクスペリエンス」と入力します。
 
-1. ドメイン知識&#x200B;**の** URLに、**www.adobestore.com**&#x200B;と入力します。
+1. ドメイン知識&#x200B;**]の[!UICONTROL ** URLに、**www.adobestore.com**&#x200B;と入力します。
 
 1. 「[!UICONTROL **Generate**]」をクリックします。
 
