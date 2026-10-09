@@ -38,11 +38,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> カタログ同期ダッシュボードがデータ管理ダッシュボードになりました。 この刷新されたダッシュボードでは、[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0以降、[[!DNL Live Search]](../live-search/overview.md) v4.1.0以降、[[!DNL Catalog Service]](../catalog-service/overview.md) v1.17以降がサポートされるようになりました。 お客様は、これらのサービスの最新バージョンに更新することで、データ管理ダッシュボードを入手できます。 詳しくは、[ データ管理ダッシュボード ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)のドキュメントを参照してください。 この現在のトピックは、まだアップグレードしておらず、カタログ同期ダッシュボードを持っているユーザーに残ります。
+> カタログ同期ダッシュボードがデータ管理ダッシュボードになりました。 この刷新されたダッシュボードでは、[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0以降、[[!DNL Live Search]](../live-search/overview.md) v4.1.0以降、[[!DNL Catalog Service]](../catalog-service/overview.md) v1.17以降がサポートされるようになりました。 お客様は、これらのサービスの最新バージョンに更新することで、データ管理ダッシュボードを入手できます。 詳しくは、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)のドキュメントを参照してください。 この現在のトピックは、まだアップグレードしておらず、カタログ同期ダッシュボードを持っているユーザーに残ります。
 
-Adobe Commerceでは、インデックスを使用してカタログデータをテーブルにコンパイルします。 このプロセスは、製品価格や在庫レベルの変更など、[ イベント ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#events-that-trigger-full-reindexing)によって自動的にトリガーされます。
+Adobe Commerceでは、インデックスを使用してカタログデータをテーブルにコンパイルします。 このプロセスは、製品価格や在庫レベルの変更など、[&#x200B; イベント &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#events-that-trigger-full-reindexing)によって自動的にトリガーされます。
 
-カタログ同期サービスは、製品データを継続的に[!DNL Adobe Commerce] インスタンスから[!DNL Commerce Services] プラットフォームに移動し、データを最新の状態に保ちます。 例えば、[[!DNL Product Recommendations]](/help/product-recommendations/overview.md)では、現在のカタログ情報を使用して、正しい名前、価格、および空き状況のレコメンデーションを正確に返す必要があります。 _カタログ同期_ ダッシュボードを使用して、同期プロセスまたはコマンドラインインターフェイスを監視および管理し、カタログ同期をトリガーして、[!DNL Commerce Services]までに商品データを再インデックス化します。 _SaaS データ書き出し_ ガイドの[ コマンドラインインターフェイスのリファレンス ](../data-export/data-export-cli-commands.md)を参照してください。
+カタログ同期サービスは、製品データを継続的に[!DNL Adobe Commerce] インスタンスから[!DNL Commerce Services] プラットフォームに移動し、データを最新の状態に保ちます。 例えば、[[!DNL Product Recommendations]](/help/product-recommendations/overview.md)では、現在のカタログ情報を使用して、正しい名前、価格、および空き状況のレコメンデーションを正確に返す必要があります。 _カタログ同期_ ダッシュボードを使用して、同期プロセスまたはコマンドラインインターフェイスを監視および管理し、カタログ同期をトリガーして、[!DNL Commerce Services]までに商品データを再インデックス化します。 _SaaS データ書き出し_ ガイドの[&#x200B; コマンドラインインターフェイスのリファレンス &#x200B;](../data-export/data-export-cli-commands.md)を参照してください。
 
 ## カタログ同期ダッシュボードにアクセスする
 
@@ -65,7 +65,7 @@ Adobe Commerceでは、インデックスを使用してカタログデータを
 - **失敗** – 同期が試行された日時を表示します
 - **処理中** – 前回の同期が成功した日時を表示します
 
-カタログ同期プロセスは、1時間ごとに自動的に実行されます。 ストアフロントに予想される製品が表示されない場合、または製品が最近の変更を反映しない場合は、[ カタログ同期の問題](#resolvesync)を解決できます。
+カタログ同期プロセスは、1時間ごとに自動的に実行されます。 ストアフロントに予想される製品が表示されない場合、または製品が最近の変更を反映しない場合は、[&#x200B; カタログ同期の問題](#resolvesync)を解決できます。
 
 ### 製品の同期
 
@@ -104,4 +104,4 @@ Adobe Commerceでは、インデックスを使用してカタログデータを
 
 ## カタログ同期の問題を解決する {#resolvesync}
 
-_SaaS データ書き出しガイド_&#x200B;の「[ トラブルシューティング ](../data-export/troubleshooting/logging.md#troubleshooting)」を参照してください。
+_SaaS データ書き出しガイド_&#x200B;の「[&#x200B; トラブルシューティング &#x200B;](../data-export/troubleshooting/logging.md#troubleshooting)」を参照してください。

@@ -61,7 +61,7 @@ ht-degree: 0%
 - **即時モードフィード** — データを収集し、コンテンツハッシュ（ハッシュ重複排除）を使用して変更されていない項目をスキップし、同じインデクサー実行で更新を送信します。
 - **レガシーモードフィード** （`scopesWebsite`、`scopesCustomerGroup`、`orders`） – 最初にフィード テーブルにアセンブリされたデータを保存し、別のcron ジョブを介して送信します。
 
-[同期モード ](../sync-overview.md#synchronization-modes)を参照してください。
+[同期モード &#x200B;](../sync-overview.md#synchronization-modes)を参照してください。
 
 ## スキーマ
 
@@ -74,13 +74,13 @@ ht-degree: 0%
 | `feed_hash` | VARCHAR | 変更検出に使用されるコンテンツハッシュ。 タイムスタンプ （`modifiedAt`、`updatedAt`）を除いて、ペイロードから計算されます。 ハッシュが以前の書き出しと一致する場合、アイテムは再送信されません。 |
 | `is_deleted` | TINYINT | ソフト削除マーカー。 Commerceでエンティティが削除された場合は、`1`に設定します。 |
 | `modified_at` | TIMESTAMP | このフィード項目が最後に変更された日時 |
-| `status` | INT | 前回の書き出し試行からの送信ステータスコード。 [ フィード送信とHTTP エラー処理](../sync-overview.md#feed-submission-and-http-error-handling)を参照してください。 |
+| `status` | INT | 前回の書き出し試行からの送信ステータスコード。 [&#x200B; フィード送信とHTTP エラー処理](../sync-overview.md#feed-submission-and-http-error-handling)を参照してください。 |
 | `errors` | テキスト | この項目のSaaS サービスから返されるJSON エンコードされたエラーの詳細 |
 | `metadata` | JSON | 書き出しフレームワークで使用される内部同期フラグとロック メタデータ情報 |
 
 ## 一般的な診断クエリ
 
-次のSQL クエリを使用して、フィード テーブルの状態を直接検査します。 `<SKU>`、`<ATTRIBUTE_CODE>`、`<CATEGORY_ID>`などのプレースホルダー値を、お使いの環境の実際の値に置き換えます。 テーブル名の完全なリストについては、[ サポートされているフィード ](#supported-feeds)を参照してください。
+次のSQL クエリを使用して、フィード テーブルの状態を直接検査します。 `<SKU>`、`<ATTRIBUTE_CODE>`、`<CATEGORY_ID>`などのプレースホルダー値を、お使いの環境の実際の値に置き換えます。 テーブル名の完全なリストについては、[&#x200B; サポートされているフィード &#x200B;](#supported-feeds)を参照してください。
 
 **製品フィード — SKU:**
 

@@ -51,7 +51,7 @@ cron ジョブまたは手動の`saas:resync` CLI呼び出しによってトリ�
 1. ロックが&#x200B;**獲得**&#x200B;の場合、プロセスは診断目的でその名前とPIDを記録し、同期を実行します。
 1. 同期が完了または失敗すると、ロックが無条件で解除され、次にスケジュールされたcron ジョブが正常に処理されます。
 
-cronまたはCLIによって起動されたかどうかに関係なく、一度に1つの同期操作のみがフィードロックを保持できます。 フィードロックは[!DNL Adobe Commerce]の`LockManagerInterface`を通じて実装されます。 デフォルトのバックエンドはMySQLで、`GET_LOCK`関数と`RELEASE_LOCK`関数を使用します。 別のロックプロバイダーを設定するには、[ ロックプロバイダーの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}を参照してください。
+cronまたはCLIによって起動されたかどうかに関係なく、一度に1つの同期操作のみがフィードロックを保持できます。 フィードロックは[!DNL Adobe Commerce]の`LockManagerInterface`を通じて実装されます。 デフォルトのバックエンドはMySQLで、`GET_LOCK`関数と`RELEASE_LOCK`関数を使用します。 別のロックプロバイダーを設定するには、[&#x200B; ロックプロバイダーの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}を参照してください。
 
 ## 予想されるログメッセージ
 
@@ -65,11 +65,11 @@ cronまたはCLIによって起動されたかどうかに関係なく、一度�
 
 >[!NOTE]
 >
->`commerce-data-export.log`に記録されたログ形式と操作タイプの一般的な情報については、[ ログの確認とトラブルシューティング ](troubleshooting/logging.md)を参照してください。
+>`commerce-data-export.log`に記録されたログ形式と操作タイプの一般的な情報については、[&#x200B; ログの確認とトラブルシューティング &#x200B;](troubleshooting/logging.md)を参照してください。
 
 >[!MORELIKETHIS]
 >
 > - [SaaS データ書き出しとデータの同期](sync-overview.md)
 > - [Commerce CLIを使用してフィードを同期](data-export-cli-commands.md)
-> - [ コネクタ同期パイプライン ](../aco-connector/connector-sync-pipeline.md)
-> - [ ロックプロバイダーの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}
+> - [&#x200B; コネクタ同期パイプライン &#x200B;](../aco-connector/connector-sync-pipeline.md)
+> - [&#x200B; ロックプロバイダーの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}

@@ -32,11 +32,11 @@ ht-degree: 0%
 ---
 # [!DNL Data Connection] バックオフィスイベント
 
-次に、[!DNL Data Connection]拡張機能のインストール時に使用できるCommerce バックオフィスイベントを示します。 これらのイベントで収集されたデータは、Adobe Experience Platformに送信されます。 [ カスタムイベント ](custom-events.md)を作成して、標準提供されていない追加データを収集することもできます。
+次に、[!DNL Data Connection]拡張機能のインストール時に使用できるCommerce バックオフィスイベントを示します。 これらのイベントで収集されたデータは、Adobe Experience Platformに送信されます。 [&#x200B; カスタムイベント &#x200B;](custom-events.md)を作成して、標準提供されていない追加データを収集することもできます。
 
-次のイベントが収集するデータに加えて、Adobe Experience Platform Web SDKが提供する[その他のデータ ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)も取得できます。
+次のイベントが収集するデータに加えて、Adobe Experience Platform Web SDKが提供する[その他のデータ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)も取得できます。
 
-バックオフィスイベントには、サーバーサイドのデータが含まれます。 このデータには、注文が行われたか、キャンセルされたか、返金されたか、出荷されたか、完了したかなどの[注文状況](#order-status)情報が含まれます。 サーバーサイドのデータには、アカウントが作成、更新、削除されたかどうかなど、[顧客プロファイルイベント ](#customer-profile-events)の情報も含まれます。
+バックオフィスイベントには、サーバーサイドのデータが含まれます。 このデータには、注文が行われたか、キャンセルされたか、返金されたか、出荷されたか、完了したかなどの[注文状況](#order-status)情報が含まれます。 サーバーサイドのデータには、アカウントが作成、更新、削除されたかどうかなど、[顧客プロファイルイベント &#x200B;](#customer-profile-events)の情報も含まれます。
 
 >[!NOTE]
 >
@@ -423,7 +423,7 @@ ht-degree: 0%
 
 ## 顧客プロファイルイベント
 
-サーバーサイドからキャプチャされたプロファイルイベントには、`accountCreated`、`accountUpdated`、`accountDeleted`などのアカウント情報が含まれます。 これらのデータは、セグメントの定義やマーケティング施策の実行に必要な顧客の詳細情報（サインアップ割引オファーの送信やアカウント変更確認の送信など）を提供するのに役立ちます。 [ ストアフロント ](events.md#customer-profile-events)からキャプチャされた類似のプロファイルイベントがあります。
+サーバーサイドからキャプチャされたプロファイルイベントには、`accountCreated`、`accountUpdated`、`accountDeleted`などのアカウント情報が含まれます。 これらのデータは、セグメントの定義やマーケティング施策の実行に必要な顧客の詳細情報（サインアップ割引オファーの送信やアカウント変更確認の送信など）を提供するのに役立ちます。 [&#x200B; ストアフロント &#x200B;](events.md#customer-profile-events)からキャプチャされた類似のプロファイルイベントがあります。
 
 >[!NOTE]
 >

@@ -44,7 +44,7 @@ IDは、支払いの加盟店アクティビティの詳細とPayPalのWebhook�
 
 `invoice_id`と`custom_id`は、支払いの加盟店アクティビティの詳細の下部に表示されます。
 
-加盟店アクティビティの詳細](assets/merchant-activity-ids.png){width="600" zoomable="yes"}の![`custom_id`
+加盟店アクティビティの詳細![&#128279;](assets/merchant-activity-ids.png){width="600" zoomable="yes"}の`custom_id`
 
 PayPalのWebhookの詳細の`custom_id`と`invoice_id`:
 

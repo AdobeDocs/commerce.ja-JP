@@ -118,7 +118,7 @@ ht-degree: 0%
 
 この図は、[!DNL Adobe Commerce as a Cloud Service]とすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
-[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![ データフロー図](./assets/data-flow.png){zoomable="yes"}
+[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![&#x200B; データフロー図](./assets/data-flow.png){zoomable="yes"}
 
 ## Commerce ストアフロント
 
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 [!DNL Adobe Commerce on Cloud]またはオンプレミスから移行する場合は、移行ガイダンスについて[既存のストアフロント ](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts)を参照してください。
+>[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 [!DNL Adobe Commerce on Cloud]またはオンプレミスから移行する場合は、移行ガイダンスについて[既存のストアフロント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts)を参照してください。
 
 ## Adobe Merchandisingのサービスおよび決済サービス
 
@@ -136,13 +136,13 @@ Adobeでは、主要なビジネス目標をサポートする、インテリジ
 
 - [[!DNL Live Search]](../live-search/overview.md) – このAIを活用した検索ツールを使用して、よりスマートで迅速な、適切な検索結果を買い物客に提供します。 設定手順については、[設定 [!DNL Live Search]](../live-search/workspace.md)を参照してください。
 - [[!DNL Product Recommendations]](../product-recommendations/overview.md) – 買い物客の行動、人気のレンド、商品の類似性などに基づいて、AIを活用したレコメンデーションを追加します。 設定手順については、[[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md)を参照してください。
-- [ カタログサービス ](../catalog-service/guide-overview.md) - パフォーマンスの向上、拡張性の向上、コンバージョンの増加を実現しながら、顧客に最適化された製品体験を提供します。
+- [&#x200B; カタログサービス &#x200B;](../catalog-service/guide-overview.md) - パフォーマンスの向上、拡張性の向上、コンバージョンの増加を実現しながら、顧客に最適化された製品体験を提供します。
 
   >[!NOTE]
   >
   >カタログサービスは、[!DNL Live Search]および[!DNL Product Recommendations]に自動的に含まれます。
 
-- [決済サービス ](../payment-services/guide-overview.md) – 無利息の分割、処理、注文、請求書に関する単一のビューなど、さまざまな支払い方法を提供することで、顧客満足度を向上させます。 設定手順については、[支払いサービスホーム ](../payment-services/payments-home.md)を参照してください。
+- [決済サービス &#x200B;](../payment-services/guide-overview.md) – 無利息の分割、処理、注文、請求書に関する単一のビューなど、さまざまな支払い方法を提供することで、顧客満足度を向上させます。 設定手順については、[支払いサービスホーム &#x200B;](../payment-services/payments-home.md)を参照してください。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 

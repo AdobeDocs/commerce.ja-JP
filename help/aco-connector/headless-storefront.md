@@ -44,7 +44,7 @@ ht-degree: 0%
 
 `CommerceAdapter` モジュールは、[!DNL Adobe Commerce]を拡張して、ヘッドレスストアフロントと[!DNL Adobe Commerce Optimizer]のギャップを埋めます。 お客様の価格表のコンテキストを解決するためのGraphQL クエリを提供し、[!DNL Adobe Commerce Optimizer] GraphQL APIで想定されるバンドル製品エンコーディングを適用します。
 
-上位レベルのストアフロントの設定手順については、[!DNL Adobe Commerce Optimizer Connector]概要の[ マーチャンダイジングとストアフロントの設定](./overview.md#merchandising-storefronts)を参照してください。
+上位レベルのストアフロントの設定手順については、[!DNL Adobe Commerce Optimizer Connector]概要の[&#x200B; マーチャンダイジングとストアフロントの設定](./overview.md#merchandising-storefronts)を参照してください。
 
 ## GraphQL: `commerceOptimizer` クエリ {#graphql-commerceoptimizer-query}
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->ターゲットカタログビューで[!UICONTROL Catalog Protection]が有効になっている場合は、署名された`AC-Catalog-View-Access-Token` ヘッダーを`AC-View-ID`および`AC-Price-Book-ID`と共にマーチャンダイジング API リクエストに含めます。または、リクエストが拒否されます。 [ プライベートカタログビュー](../optimizer/setup/private-catalog-view.md)を参照してください。
+>ターゲットカタログビューで[!UICONTROL Catalog Protection]が有効になっている場合は、署名された`AC-Catalog-View-Access-Token` ヘッダーを`AC-View-ID`および`AC-Price-Book-ID`と共にマーチャンダイジング API リクエストに含めます。または、リクエストが拒否されます。 [&#x200B; プライベートカタログビュー](../optimizer/setup/private-catalog-view.md)を参照してください。
 
 ## バンドル製品：カートに追加する形式 {#bundle-products-add-to-cart-format}
 

@@ -28,7 +28,7 @@ ht-degree: 0%
 
 App Managerは、App Builder アプリケーションをCommerce インスタンスに関連付けます。 設定フォームはアプリのスキーマに基づいて動的にレンダリングされるため、カスタムの管理UI開発は必要ありません。 App managerは、Commerceが自動生成するフォームを通じて設定を行います。
 
-![ アプリ管理](assets/app-management-view.png){width="500" zoomable="yes"}
+![&#x200B; アプリ管理](assets/app-management-view.png){width="500" zoomable="yes"}
 
 ## 管理画面でアプリケーションを検索
 
@@ -44,7 +44,7 @@ App Managerは、App Builder アプリケーションをCommerce インスタン
 
 ## アプリを入手
 
-**[!UICONTROL Acquire App]**&#x200B;さんが新しいブラウザータブ （または別のブラウザビュー）を[Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}に開き、Commerce関連のマーケットプレイスのリストを見つけて、Adobe IMS組織にアプリケーションを追加できます。 アプリを取得、承認およびデプロイすると、アプリは[!DNL App Management]に[関連付けおよびインストール ](#associate-an-app)用に表示されます。
+**[!UICONTROL Acquire App]**&#x200B;さんが新しいブラウザータブ （または別のブラウザビュー）を[Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}に開き、Commerce関連のマーケットプレイスのリストを見つけて、Adobe IMS組織にアプリケーションを追加できます。 アプリを取得、承認およびデプロイすると、アプリは[!DNL App Management]に[関連付けおよびインストール &#x200B;](#associate-an-app)用に表示されます。
 
 ## 前提条件
 
@@ -72,7 +72,7 @@ App Builder アプリケーションをCommerce インスタンスにリンク�
 
 1. **[!UICONTROL Associate App]**&#x200B;をクリックします。
 
-   ![ アプリの関連付け](assets/associate-app.png){width="500" zoomable="yes"}
+   ![&#x200B; アプリの関連付け](assets/associate-app.png){width="500" zoomable="yes"}
 
 1. リストから&#x200B;**[!UICONTROL Project]**&#x200B;を選択します。
 
@@ -80,7 +80,7 @@ App Builder アプリケーションをCommerce インスタンスにリンク�
 
 1. **[!UICONTROL Associate]**&#x200B;をクリックします。
 
-   ![ アプリの詳細](assets/app-details.png){width="500" zoomable="yes"}
+   ![&#x200B; アプリの詳細](assets/app-details.png){width="500" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -116,7 +116,7 @@ App Builder アプリケーションをCommerce インスタンスにリンク�
 
 アプリの詳細画面から&#x200B;**[!UICONTROL Manage Scopes]**&#x200B;にアクセスして、アプリのスコープ階層を管理します。
 
-![ スコープの管理](assets/manage-scopes.png){width="500" zoomable="yes"}
+![&#x200B; スコープの管理](assets/manage-scopes.png){width="500" zoomable="yes"}
 
 | アクション | 説明 |
 |--------|-------------|
@@ -142,4 +142,4 @@ Commerce インスタンスからアプリを削除するには：
 
 ## 関連ドキュメント
 
-* [ トラブルシューティング  [!DNL App Management]](troubleshooting.md) - アプリの関連付けと設定に関する一般的な問題を解決します。
+* [&#x200B; トラブルシューティング  [!DNL App Management]](troubleshooting.md) - アプリの関連付けと設定に関する一般的な問題を解決します。

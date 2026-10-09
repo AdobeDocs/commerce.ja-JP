@@ -40,7 +40,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->プロファイルにカスタム ID](custom-identities.md)を[追加する方法について説明します。
+>プロファイルにカスタム ID[&#128279;](custom-identities.md)を追加する方法について説明します。
 
 カスタム属性は、次の2つのレベルでサポートされています。
 
@@ -372,7 +372,7 @@ ComponentRegistrar::register(
 
 新しいカスタム注文属性をExperience Platformの[!DNL Commerce] スキーマで取り込むことができるようにするには、スキーマを拡張してこれらのカスタムフィールドを含める必要があります。
 
-既存のXDM スキーマを拡張してこれらのカスタムフィールドを含める方法については、Experience Platform ドキュメントの「[UIでのスキーマの作成と編集」を参照してください。 ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)テナント ID フィールドは動的に生成されますが、フィールド構造はExperience Platform ドキュメントに記載されている例に似ている必要があります。
+既存のXDM スキーマを拡張してこれらのカスタムフィールドを含める方法については、Experience Platform ドキュメントの「[UIでのスキーマの作成と編集」を参照してください。 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)テナント ID フィールドは動的に生成されますが、フィールド構造はExperience Platform ドキュメントに記載されている例に似ている必要があります。
 
 >[!IMPORTANT]
 >
@@ -380,11 +380,11 @@ ComponentRegistrar::register(
 
 `commerce.order`に、注文レベルのフィールドを追加します。
 
-![注文レベル ](assets/order-level.png)
+![注文レベル &#x200B;](assets/order-level.png)
 
 `productListItems`に、注文項目レベルのフィールドを追加します：
 
-![注文品目レベル ](assets/order-item-level.png)
+![注文品目レベル &#x200B;](assets/order-item-level.png)
 
 ## 手順12：データがキャプチャされていることを確認する
 
@@ -395,5 +395,5 @@ ComponentRegistrar::register(
 「**[!UICONTROL Data Customization]**」タブに「`No custom order attributes found.`」というメッセージが表示された場合は、次の点を確認してください。
 
 1. [!DNL Data Connection]拡張機能を有効にするための前提条件が完了しました。 [前提条件](overview.md#prerequisites)を参照してください。
-1. [ カスタム注文属性](#add-custom-attributes-to-orders)を設定しました。
+1. [&#x200B; カスタム注文属性](#add-custom-attributes-to-orders)を設定しました。
 1. 少なくとも1つの注文イベントが生成されました。

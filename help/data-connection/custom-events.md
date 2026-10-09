@@ -32,7 +32,7 @@ ht-degree: 0%
 ---
 # カスタムイベントの作成
 
-独自のストアフロントイベントを作成して、業界固有のデータを収集することで、[ イベントプラットフォーム ](events.md)を拡張できます。 カスタムイベントを作成して設定すると、[Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector)に送信されます。
+独自のストアフロントイベントを作成して、業界固有のデータを収集することで、[&#x200B; イベントプラットフォーム &#x200B;](events.md)を拡張できます。 カスタムイベントを作成して設定すると、[Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector)に送信されます。
 
 ## カスタムイベントの処理
 

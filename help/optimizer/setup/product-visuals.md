@@ -73,11 +73,11 @@ AEM Assetsの画像は、次のソース設定を持つカタログレイヤー�
 
 ## 前提条件
 
-製品ビジュアルを有効にする前に、Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)の[前提条件を満たしていることを確認してください。
+製品ビジュアルを有効にする前に、Commerce Optimizer[&#128279;](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)の前提条件を満たしていることを確認してください。
 
 ## 設定
 
-統合を有効にするには、[ サポートチケット ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)を[!DNL Commerce Optimizer]とAEM Assetsの詳細とともに作成します。 Adobe サポートは、統合を設定し、Assets Integration Serviceにテナントを登録します。
+統合を有効にするには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)を[!DNL Commerce Optimizer]とAEM Assetsの詳細とともに作成します。 Adobe サポートは、統合を設定し、Assets Integration Serviceにテナントを登録します。
 
 オンボーディングについて詳しくは、[Commerce Optimizer用AEM Assetsの設定](../../aem-assets-integration/get-started/configure-aco.md)を参照してください。
 
@@ -103,7 +103,7 @@ AEM Assetsの画像は、次のソース設定を持つカタログレイヤー�
 
 1. Commerce メタデータをアセットに追加します。
 
-   [既定の自動一致](../../aem-assets-integration/synchronize/default-match.md)および[ カスタム自動一致](../../aem-assets-integration/synchronize/custom-match.md)を参照してください。
+   [既定の自動一致](../../aem-assets-integration/synchronize/default-match.md)および[&#x200B; カスタム自動一致](../../aem-assets-integration/synchronize/custom-match.md)を参照してください。
 
 1. アセットの配信を承認します。 トリガーを同期するには、アセットが&#x200B;**approved** ステータスである必要があります。
 
@@ -111,7 +111,7 @@ AEM Assetsの画像は、次のソース設定を持つカタログレイヤー�
 
 ### AEMとAssetsのレイヤーの適用
 
-ストアフロントにAEM Assets画像を表示するには、[ カタログビューに`AEM-Assets` レイヤーを割り当てます](catalog-layer.md#assign-the-aem-assets-layer-to-a-catalog-view)。
+ストアフロントにAEM Assets画像を表示するには、[&#x200B; カタログビューに`AEM-Assets` レイヤーを割り当てます](catalog-layer.md#assign-the-aem-assets-layer-to-a-catalog-view)。
 
 ## その他
 

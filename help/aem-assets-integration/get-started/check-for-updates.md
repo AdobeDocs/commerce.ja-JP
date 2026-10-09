@@ -65,7 +65,7 @@ AEM Assets Integration拡張機能バージョン 1.4.6以降では、Adobe Comm
 bin/magento aem:assets:check-update
 ```
 
-このコマンドは、使用可能な更新プログラムのみをチェックしてレポートします。 Composer ファイルを変更したり、アップデートをデプロイしたりすることはありません。 アップデートをインストールするには、[Adobe Commerce パッケージのインストール ](configure-commerce.md)のComposerの手順に従います。
+このコマンドは、使用可能な更新プログラムのみをチェックしてレポートします。 Composer ファイルを変更したり、アップデートをデプロイしたりすることはありません。 アップデートをインストールするには、[Adobe Commerce パッケージのインストール &#x200B;](configure-commerce.md)のComposerの手順に従います。
 
 ## 拡張機能パッケージのリリースメタデータ
 

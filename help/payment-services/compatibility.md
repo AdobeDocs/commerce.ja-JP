@@ -33,7 +33,7 @@ ht-degree: 0%
 ---
 # [!DNL Payment Services]の互換性
 
-[!DNL Payment Services]は、[!DNL Adobe Commerce as a Cloud Service]、サポートされているすべてのバージョンの[!DNL Adobe Commerce on Cloud]、オンプレミス、およびMagento Open Sourceで利用できます。 バージョン固有の情報については、[ ライフサイクルポリシー](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) ページを参照してください。
+[!DNL Payment Services]は、[!DNL Adobe Commerce as a Cloud Service]、サポートされているすべてのバージョンの[!DNL Adobe Commerce on Cloud]、オンプレミス、およびMagento Open Sourceで利用できます。 バージョン固有の情報については、[&#x200B; ライフサイクルポリシー](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) ページを参照してください。
 
 ## 前提条件
 
@@ -47,7 +47,7 @@ ht-degree: 0%
    >
    > 詳しくは、[Adobe Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)のチュートリアルビデオを参照してください。
 
-1. 既にインスタンスを接続している場合は、次の手順を実行するために[ オンボーディング ](onboard.md) ページに移動します。
+1. 既にインスタンスを接続している場合は、次の手順を実行するために[&#x200B; オンボーディング &#x200B;](onboard.md) ページに移動します。
 
 >[!IMPORTANT]
 >
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> [!DNL Payment Services]様は、オンボーディング中に他の[利用可能な国の[Express チェックアウト機能](../payment-services/payments-options.md) （支払いオプションのサブセット）を提供しています](../payment-services/production.md#complete-merchant-onboarding)。
+> [!DNL Payment Services]様は、オンボーディング中に他の[&#128279;](../payment-services/production.md#complete-merchant-onboarding)利用可能な国の[Express チェックアウト機能](../payment-services/payments-options.md) （支払いオプションのサブセット）を提供しています。
 
 ### どの[!DNL Payment Services] オプションが適していますか？
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 >[!ENDTABS]
 
-詳しいリリースおよびバージョン固有の情報については、[ ライフサイクルポリシー](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)および[[!DNL Payment Services]  リリースノート ](release-notes.md)のページを参照してください。
+詳しいリリースおよびバージョン固有の情報については、[&#x200B; ライフサイクルポリシー](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)および[[!DNL Payment Services]  リリースノート &#x200B;](release-notes.md)のページを参照してください。
 
 完全な手順を入手し、オンボーディングプロセスを開始するには、[入門 [!DNL Payment Services]](onboard.md)を参照してください。
 
@@ -125,6 +125,6 @@ ht-degree: 0%
 
 PayPalの商品やサービスで利用可能な通貨や支払い方法について詳しくは、次のページを参照してください。
 
-* [ サポートされている通貨ドキュメント ](https://developer.paypal.com/reports/reference/supported-currencies)。
+* [&#x200B; サポートされている通貨ドキュメント &#x200B;](https://developer.paypal.com/reports/reference/supported-currencies)。
 
-* [支払い方法に関するドキュメント ](https://developer.paypal.com/payment-methods)。
+* [支払い方法に関するドキュメント &#x200B;](https://developer.paypal.com/payment-methods)。

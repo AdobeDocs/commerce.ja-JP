@@ -36,7 +36,7 @@ ht-degree: 0%
 
 Adobe Developer App Builder向け[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/)を使用すると、開発者はAdobe I/O Runtimeを使用して、プライベートまたはサードパーティのAPIやその他のインターフェイスをAdobe製品と統合できます。
 
-![ カタログアーキテクチャ図](assets/catalog-service-architecture-mesh.png)
+![&#x200B; カタログアーキテクチャ図](assets/catalog-service-architecture-mesh.png)
 
 カタログサービスでAPI Meshを使用するには、API Meshをインスタンスに接続し、カタログサービスに接続するための設定を提供するAPI Mesh ソース [CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/)を追加する必要があります。
 
@@ -44,7 +44,7 @@ Adobe Developer App Builder向け[API Mesh](https://developer.adobe.com/graphql-
 
 1. Adobe Commerce インスタンスにAPI Meshを接続するには、_API Mesh開発者ガイド_&#x200B;の[Create a Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh)の手順に従います。
 
-   API Meshを初めて使用する場合は、メッシュを作成する前に、[はじめにプロセス ](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)を完了してください。
+   API Meshを初めて使用する場合は、メッシュを作成する前に、[はじめにプロセス &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)を完了してください。
 
 1. 次の形式を使用して、プロジェクトのカタログサービス API キーを含む`variables.json`などのJSON ファイルを作成します。
 

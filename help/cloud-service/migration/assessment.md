@@ -101,7 +101,7 @@ Adobeは、完了した移行評価を組織のAdobe IMS組織に接続します
 
 **移行の複雑さと複雑さのスコア**
 
-重み付けスコア、主なリスク要因、および主要指標を示す![移行の複雑さセクション ](../assets/assessment-migration-complexity.png){width="600" zoomable="yes"}
+重み付けスコア、主なリスク要因、および主要指標を示す![移行の複雑さセクション &#x200B;](../assets/assessment-migration-complexity.png){width="600" zoomable="yes"}
 
 複雑さスコアは、各入力を移行するのが難しいかどうかによって重み付けします。 スコアは、固定しきい値を使用して移行の複雑さの評価にマップされます。
 
@@ -113,7 +113,7 @@ Adobeは、完了した移行評価を組織のAdobe IMS組織に接続します
 
 **カスタムモジュール比率**
 
-![ カスタムモジュールの割合、サードパーティモジュール、カスタムテーマ数、クリティカルフック、合計ファイル、PHP コードベースサイズを示すカスタムモジュール比率の指標行](../assets/assessment-custom-module-ratio.png){width="600" zoomable="yes"}
+![&#x200B; カスタムモジュールの割合、サードパーティモジュール、カスタムテーマ数、クリティカルフック、合計ファイル、PHP コードベースサイズを示すカスタムモジュール比率の指標行](../assets/assessment-custom-module-ratio.png){width="600" zoomable="yes"}
 
 特に実装用に構築されたモジュールの割合。 比率が高いほど、より多くのカスタムコードを監査および移行する必要があります。 お客様のカスタムモジュールの平均比率は約62%です。
 
@@ -123,7 +123,7 @@ Adobeは、完了した移行評価を組織のAdobe IMS組織に接続します
 
 **ファイルタイプの分類**
 
-![ ファイル数とコード行を含むファイル拡張子を一覧表示するファイルの種類の分類テーブル ](../assets/assessment-file-type-breakdown.png){width="600" zoomable="yes"}
+![&#x200B; ファイル数とコード行を含むファイル拡張子を一覧表示するファイルの種類の分類テーブル &#x200B;](../assets/assessment-file-type-breakdown.png){width="600" zoomable="yes"}
 
 コードベース内のファイルの数をタイプ別に整理したリスト。
 
@@ -135,7 +135,7 @@ Adobeは、完了した移行評価を組織のAdobe IMS組織に接続します
 
 ### ストアフロントの複雑さ
 
-カスタムテーマ名前空間、合計ブロック数、レイアウト XML ファイル、コアハンドルの上書き、実用的なシグナルを示す![ ストアフロントの複雑さセクション ](../assets/assessment-storefront-complexity.png){width="600" zoomable="yes"}
+カスタムテーマ名前空間、合計ブロック数、レイアウト XML ファイル、コアハンドルの上書き、実用的なシグナルを示す![&#x200B; ストアフロントの複雑さセクション &#x200B;](../assets/assessment-storefront-complexity.png){width="600" zoomable="yes"}
 
 「ストアフロントの複雑さ」セクションでは、ストアのフロントエンドのプレゼンテーション層を移行するために必要な労力を表示します。 このワークストリームは、バックエンドのコード移行とは異なるワークストリームであり、フロントエンド開発者が対応し、通常は個別のプランニング会話が必要です。
 
@@ -155,7 +155,7 @@ Adobeは、完了した移行評価を組織のAdobe IMS組織に接続します
 
 ### 移行ドライバー
 
-![労力評価が付いたカスタマイズ フットプリント、プラグインとオブザーバー、およびクラス環境設定カードを示す「移行ドライバー」セクション ](../assets/assessment-migration-drivers.png){width="600" zoomable="yes"}
+![労力評価が付いたカスタマイズ フットプリント、プラグインとオブザーバー、およびクラス環境設定カードを示す「移行ドライバー」セクション &#x200B;](../assets/assessment-migration-drivers.png){width="600" zoomable="yes"}
 
 「移行ドライバー」セクションには、複雑さの評価の主な要因が表示されます。
 
@@ -171,7 +171,7 @@ Adobeは、完了した移行評価を組織のAdobe IMS組織に接続します
 
 ### データモデル
 
-カスタムテーブル、コアテーブルの変更、重要なEAV属性の数を示す![ データモデルセクション ](../assets/assessment-data-model.png){width="600" zoomable="yes"}
+カスタムテーブル、コアテーブルの変更、重要なEAV属性の数を示す![&#x200B; データモデルセクション &#x200B;](../assets/assessment-data-model.png){width="600" zoomable="yes"}
 
 「データモデル」セクションには、カスタムテーブルの数、コアデータベーステーブル [!DNL Adobe Commerce]への変更、およびクリティカルエンティティ属性値（EAV）属性が表示されます。
 
@@ -183,7 +183,7 @@ Adobeは、完了した移行評価を組織のAdobe IMS組織に接続します
 
 ## カスタマイズの分類
 
-![すべてのカスタマイズ カテゴリをカウントと影響指標と共に一覧表示するカスタマイズ分類セクション ](../assets/assessment-customization-breakdown.png){width="600" zoomable="yes"}
+![すべてのカスタマイズ カテゴリをカウントと影響指標と共に一覧表示するカスタマイズ分類セクション &#x200B;](../assets/assessment-customization-breakdown.png){width="600" zoomable="yes"}
 
 「カスタマイズの分類」セクションには、ストア内のカスタマイズのあらゆるカテゴリをまたいで詳細な指標が表示されます。
 
@@ -245,7 +245,7 @@ Layout XML ファイルの数とその合計操作数。 Layout XMLは、表示�
 
 ## 「モジュールレポート」タブ
 
-![影響フィルターと詳細なモジュール分析パネルを含む検索可能なモジュールリストを示す「モジュールレポート」タブ ](../assets/assessment-module-reports-tab.png){width="600" zoomable="yes"}
+![影響フィルターと詳細なモジュール分析パネルを含む検索可能なモジュールリストを示す「モジュールレポート」タブ &#x200B;](../assets/assessment-module-reports-tab.png){width="600" zoomable="yes"}
 
 「**[!UICONTROL Module Reports]**」タブには、ストア内のすべてのカスタムモジュールの専用エントリが含まれています。 この情報をテクニカルチームと共有します。
 
@@ -271,7 +271,7 @@ Layout XML ファイルの数とその合計操作数。 Layout XMLは、表示�
 1. 廃止または置き換え可能なカスタムモジュールを特定します。 コードを記述する前に、移行の範囲を削減します。
 1. **再構築**&#x200B;移行レコメンデーションを含む各カスタムモジュールについて、次のいずれかを実行できます。
    - **[!UICONTROL Open in Developer Agent]**&#x200B;をクリックしてブループリントを生成するか、Commerce Developer Agentを使用してモジュールの説明をコピーします。
-   - 各カスタムモジュールの説明を、**再構築**&#x200B;移行の推奨事項と共にコピーします。 これらの説明は、AdobeのAI デベロッパーツールに直接与えることができます。詳しくは、[Commerce拡張性のAI デベロッパーツール ](#ai-developer-tools-for-commerce-extensibility)を参照してください。
+   - 各カスタムモジュールの説明を、**再構築**&#x200B;移行の推奨事項と共にコピーします。 これらの説明は、AdobeのAI デベロッパーツールに直接与えることができます。詳しくは、[Commerce拡張性のAI デベロッパーツール &#x200B;](#ai-developer-tools-for-commerce-extensibility)を参照してください。
 
 ## 参考：主な用語
 
@@ -296,14 +296,14 @@ AdobeのAI デベロッパーツールのプロンプトとして、**[!UICONTRO
 
 ### ツールの機能
 
-Adobeの[Commerce拡張機能向けAI開発ツール ](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)には、主にふたつの機能が含まれています。
+Adobeの[Commerce拡張機能向けAI開発ツール &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)には、主にふたつの機能が含まれています。
 
 - [!DNL Adobe Commerce] [!DNL App Builder] MCP サーバー – AI コーディング アシスタントを[!DNL Adobe Commerce]のドキュメント、API、およびApp Builder開発パターンに直接接続するモデル コンテキスト プロトコル （MCP）統合。 開発者は何を構築したいのかを記述でき、MCP サーバーはCommerce対応のコード生成、アーキテクチャガイダンス、デプロイメントオートメーションをIDE内で提供します。
 - エージェントのスキル - REST API、チェックアウト拡張機能、ストアフロントコンポーネント、イベント駆動型の統合など、Adobe Commerceの一般的な拡張性パターンをカバーする事前定義済みのAI スキル。 スキルは、[!DNL Adobe Commerce as a Cloud Service]および[!DNL App Builder]に固有のアーキテクチャ、実装、テスト、デプロイメントの手順を通じてAIを導きます。
 
 #### AI ツールのインストール
 
-詳しい手順と特定のIDE設定については、[AI開発者ツールのインストール ](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)を参照してください。
+詳しい手順と特定のIDE設定については、[AI開発者ツールのインストール &#x200B;](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)を参照してください。
 
 **前提条件：** Node.js 22.x、npm 9.0.0以降、Adobe I/O CLI
 

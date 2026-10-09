@@ -79,4 +79,4 @@ ht-degree: 0%
 >
 >各プロファイルレコードには、[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) フィールドも含まれます。このフィールドには、プロファイルのプライマリ IDとして生成されたCommerce Customer IDと、セカンダリ IDとして使用される電子メール IDが含まれます。
 
-プロファイルレコードからデータを取り込むことができる、プロファイルレコード固有のスキーマ ](profile-data.md)を[作成する方法について説明します。
+プロファイルレコードからデータを取り込むことができる、プロファイルレコード固有のスキーマ [&#128279;](profile-data.md)を作成する方法について説明します。

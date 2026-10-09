@@ -59,16 +59,16 @@ ht-degree: 0%
 
 **アイテムレベルのエラーの詳細を確認：**
 
-Commerce Adminで&#x200B;**[!UICONTROL Data Feed Sync Status]**&#x200B;を開く手順については、[ データ同期が機能していることを確認する](./data-sync-status.md#verify-that-the-data-sync-is-working)を参照してください。 失敗したフィードを選択して、項目ごとのエラーの詳細を表示します。
+Commerce Adminで&#x200B;**[!UICONTROL Data Feed Sync Status]**&#x200B;を開く手順については、[&#x200B; データ同期が機能していることを確認する](./data-sync-status.md#verify-that-the-data-sync-is-working)を参照してください。 失敗したフィードを選択して、項目ごとのエラーの詳細を表示します。
 
 エラー処理に関する重要なポイント：
 
-- **400 エラー**&#x200B;は再試行されません。 ペイロードで、形式が正しくないか、必須フィールドが欠落していないかを調べます。 想定される形式については、[ コネクタフィードのフィールドマッピング ](reference/field-mapping.md)を参照してください。
+- **400 エラー**&#x200B;は再試行されません。 ペイロードで、形式が正しくないか、必須フィールドが欠落していないかを調べます。 想定される形式については、[&#x200B; コネクタフィードのフィールドマッピング &#x200B;](reference/field-mapping.md)を参照してください。
 - **5xx エラー**&#x200B;は、`*_resend_failed_items` cron ジョブによって自動的に再試行されます（5分ごとに実行）。
 
 **スコープ設定を確認：**
 
-問題が特定のカタログソース（ストアビューコード）または価格表のみに影響する場合は、対応するweb サイトまたはストアビューの同期が無効になっているかどうかを確認します。 [Commerce スコープの書き出し設定のカスタマイズ ](./get-started.md#customize-the-commerce-scopes-export-configuration)を参照してください。
+問題が特定のカタログソース（ストアビューコード）または価格表のみに影響する場合は、対応するweb サイトまたはストアビューの同期が無効になっているかどうかを確認します。 [Commerce スコープの書き出し設定のカスタマイズ &#x200B;](./get-started.md#customize-the-commerce-scopes-export-configuration)を参照してください。
 
 **解決時：**
 
@@ -76,8 +76,8 @@ Commerce Adminで&#x200B;**[!UICONTROL Data Feed Sync Status]**&#x200B;を開く
 
 ## 設定ミスと結果解釈
 
-製品の欠落、価格の誤り、スコープレベルのデータギャップなど、同期結果の誤設定または誤解釈によって引き起こされる特定の動作のカタログについては、[ シナリオのトラブルシューティング ](troubleshooting/troubleshooting-scenarios.md)を参照してください。
+製品の欠落、価格の誤り、スコープレベルのデータギャップなど、同期結果の誤設定または誤解釈によって引き起こされる特定の動作のカタログについては、[&#x200B; シナリオのトラブルシューティング &#x200B;](troubleshooting/troubleshooting-scenarios.md)を参照してください。
 
 ## [!DNL SaaS Data Export]診断
 
-ログの場所とフィード再同期コマンドを含む下位レベルの[!DNL SaaS Data Export]診断については、[[!DNL SaaS Data Export]  トラブルシューティングガイド ](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}を参照してください。
+ログの場所とフィード再同期コマンドを含む下位レベルの[!DNL SaaS Data Export]診断については、[[!DNL SaaS Data Export]  トラブルシューティングガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}を参照してください。

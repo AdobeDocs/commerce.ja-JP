@@ -50,7 +50,7 @@ ht-degree: 0%
 
 このガイドは、一括データ移行ツールを使用して、[!DNL Adobe Commerce] PaaSまたはオンプレミスのインストールから[!DNL Adobe Commerce as a Cloud Service]へのデータ移行を実行するための手順ごとの運用上のリファレンスです。 実際の設定値と環境固有の詳細は、設定によって異なります。
 
-開始する前に、[顧客準備チェックリスト ](readiness-checklist.md)のすべての項目を完了し、[移行サービスアクセスガイド ](cdms-access.md)でAPI アクセスを確認したことを確認してください。
+開始する前に、[顧客準備チェックリスト &#x200B;](readiness-checklist.md)のすべての項目を完了し、[移行サービスアクセスガイド &#x200B;](cdms-access.md)でAPI アクセスを確認したことを確認してください。
 
 >[!NOTE]
 >
@@ -142,7 +142,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->Cloud CLIを初めて使用する場合は、SSH公開鍵をアカウントにも追加する必要があります。 手順については、[ セキュア接続ガイド ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)を参照してください。
+>Cloud CLIを初めて使用する場合は、SSH公開鍵をアカウントにも追加する必要があります。 手順については、[&#x200B; セキュア接続ガイド &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)を参照してください。
 
 ### Commerce管理者設定の調整
 

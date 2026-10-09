@@ -33,7 +33,7 @@ ht-degree: 0%
 
 * 販売時点付きの資金のみを承認するようにストアが[設定](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}されている場合、ストアからの購入は、Commerce管理画面で`Processing` ステータスの注文になります。
 
-* 請求書を発行していない注文](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}を[解約することもできます。 キャプチャされていない認証も、その解約プロセスの一部として無効になります。
+* 請求書を発行していない注文[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}を解約することもできます。 キャプチャされていない認証も、その解約プロセスの一部として無効になります。
 
 >[!NOTE]
 >

@@ -118,4 +118,4 @@ Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用�
 
 * [AEM Assetsを統合して、Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}のコンテンツをオーサリングします（*AEM Assets* ドキュメント）。
 
-* Da.live ドキュメントの[AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}と[ メディアの操作](https://docs.da.live/authors/guides/adding-media){target=_blank}を設定します。
+* Da.live ドキュメントの[AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}と[&#x200B; メディアの操作](https://docs.da.live/authors/guides/adding-media){target=_blank}を設定します。

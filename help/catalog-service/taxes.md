@@ -41,7 +41,7 @@ ht-degree: 0%
 商品詳細ページに表示するには、税金を設定する必要があります。
 
 1. [税率を設定](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules)。
-1. 税金を有効にして[ カタログに表示](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings)し、`Including and Excluding Tax`または`Including Tax`のいずれかに設定します。
+1. 税金を有効にして[&#x200B; カタログに表示](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings)し、`Including and Excluding Tax`または`Including Tax`のいずれかに設定します。
 
 カタログサービスが機能していることを確認するには、製品詳細ページを確認します。
 
@@ -130,7 +130,7 @@ ht-degree: 0%
 * `ComplexProductView`型と`SimpleProductView`型を`priceWithTaxes`という新しいフィールドで拡張します。
 * 新しいフィールドにカスタムリゾルバーを追加します。
 
-[create コマンド ](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh)でメッシュを`mesh.json` ファイルで作成します。
+[create コマンド &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh)でメッシュを`mesh.json` ファイルで作成します。
 
 ### GraphQL クエリ
 

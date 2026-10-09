@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> AEM Asset Selectorは、AEMとオーサリングアプリケーションを統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、*AEM as a Cloud Service ユーザーガイド*&#x200B;の[ マイクロフロントエンドアセットセレクター](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications){target=_blank}を参照してください。
+> AEM Asset Selectorは、AEMとオーサリングアプリケーションを統合するためのAEM Assets Assets フロントエンドコンポーネントです。 このコンポーネントについて詳しくは、*AEM as a Cloud Service ユーザーガイド*&#x200B;の[&#x200B; マイクロフロントエンドアセットセレクター](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications){target=_blank}を参照してください。
 
 ## 主な特長
 
@@ -59,13 +59,13 @@ Adobe Commerce管理パネルにAEM Asset Selectorを組み込むと、次のよ
 
 * **コンテンツ品質の向上** – 製品ページ、カテゴリ、ページビルダー全体で、高解像度で最適化された画像を使用します。
 
-![ アセットセレクター](../assets/asset-selector.png){width="600" zoomable="yes"}
+![&#x200B; アセットセレクター](../assets/asset-selector.png){width="600" zoomable="yes"}
 
 ## Adobe CommerceでのAEM Asset Selectorの設定
 
 1. Commerce管理者から、**[!UICONTROL Store]** / 設定/ **[!UICONTROL ADOBE SERVICES]** / **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
 
-1. **[!UICONTROL IMS Client ID]** フィールドに入力します。 必要な権限と、このIDの取得方法については、[ ユーザー権限とIMS](../get-started/permissions.md)を参照してください。
+1. **[!UICONTROL IMS Client ID]** フィールドに入力します。 必要な権限と、このIDの取得方法については、[&#x200B; ユーザー権限とIMS](../get-started/permissions.md)を参照してください。
 
 1. **設定を保存**&#x200B;します。
 

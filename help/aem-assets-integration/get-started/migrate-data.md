@@ -63,9 +63,9 @@ Adobe CommerceとAdobe Experience Manager（AEM）の両方には、Commerceか�
 
 [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}
 
-Adobe Commerceのマーチャントの場合、**リモートストレージモジュール**&#x200B;を使用すると、メディアファイルの読み込みと書き出しが容易になります。 AWS S3などのリモートストレージサービスを使用して、メディアファイルを保存および管理できます。 Commerce インスタンスのリモートストレージを設定するには、**Commerce設定ガイド**&#x200B;の[ リモートストレージの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3)を参照してください。
+Adobe Commerceのマーチャントの場合、**リモートストレージモジュール**&#x200B;を使用すると、メディアファイルの読み込みと書き出しが容易になります。 AWS S3などのリモートストレージサービスを使用して、メディアファイルを保存および管理できます。 Commerce インスタンスのリモートストレージを設定するには、**Commerce設定ガイド**&#x200B;の[&#x200B; リモートストレージの設定](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3)を参照してください。
 
-Adobe Commerce以外にメディアファイルが保存されている場合は、AEM as a Cloud Serviceでサポートされている[ データソース ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites)のいずれかに直接アップロードします。
+Adobe Commerce以外にメディアファイルが保存されている場合は、AEM as a Cloud Serviceでサポートされている[&#x200B; データソース &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites)のいずれかに直接アップロードします。
 
 ### 手順2：メタデータマッピング用のCSV ファイルの作成
 
@@ -104,7 +104,7 @@ AEM Assets Integration CLI コマンドを使用すると、Commerce プロジ�
 
 #### CSVを手動で作成
 
-Adobe Commerce以外に保存されているメディアファイルの場合は、CSV ファイルを手動で作成します。 列ヘッダー&#x200B;**は、[AEM Assets メタデータプロファイル ](configure-aem.md)で設定されたフィールド名**&#x200B;と一致する必要があります。 ファイルを作成したら、各メディアファイルのメタデータ値を行に入力します。
+Adobe Commerce以外に保存されているメディアファイルの場合は、CSV ファイルを手動で作成します。 列ヘッダー&#x200B;**は、[AEM Assets メタデータプロファイル &#x200B;](configure-aem.md)で設定されたフィールド名**&#x200B;と一致する必要があります。 ファイルを作成したら、各メディアファイルのメタデータ値を行に入力します。
 
 | メタデータ | 説明 | 値 |
 |-------|-------------|--------|
@@ -136,11 +136,11 @@ assetPath,commerce:positions{{Number: multi}},commerce:isCommerce{{String}},comm
 
 1. Experience Manager ツール ビューから、**[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**&#x200B;を選択します。
 
-   ![AEM Assets オーサリング ](../assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
+   ![AEM Assets オーサリング &#x200B;](../assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
 
 1. 一括読み込み設定から、**[!UICONTROL Create]**&#x200B;を選択して設定フォームを開きます。
 
-   ![AEM Assets オーサリング ](../assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
+   ![AEM Assets オーサリング &#x200B;](../assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
 
 1. 設定を設定して保存します。
 

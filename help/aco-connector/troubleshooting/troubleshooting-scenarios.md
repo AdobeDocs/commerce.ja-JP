@@ -57,7 +57,7 @@ ht-degree: 0%
 
 - 数分待って、[!DNL Adobe Commerce Optimizer] ビューを更新します。
 - [!DNL Adobe Commerce]で設定されたテナント IDが、確認中の[!DNL Commerce Optimizer]環境と一致することを確認してください。
-- [!DNL Commerce Optimizer]で正しい[ カタログ ソース ](../../optimizer/setup/catalog-sources.md) （ストア ビューのコード）または価格表が選択されていることを確認します。
+- [!DNL Commerce Optimizer]で正しい[&#x200B; カタログ ソース &#x200B;](../../optimizer/setup/catalog-sources.md) （ストア ビューのコード）または価格表が選択されていることを確認します。
 
 ## 書き出されたカタログに製品が見つかりません
 
@@ -73,25 +73,25 @@ ht-degree: 0%
 
 ## [!DNL Adobe Commerce Optimizer]の価格が正しくないか、見つかりません
 
-**問題：**&#x200B;製品は[!DNL Adobe Commerce Optimizer]に表示されますが、[製品GraphQL クエリ ](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"}で返された価格が表示されないか、価格が[!DNL Adobe Commerce]で設定されているものと一致しません。
+**問題：**&#x200B;製品は[!DNL Adobe Commerce Optimizer]に表示されますが、[製品GraphQL クエリ &#x200B;](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"}で返された価格が表示されないか、価格が[!DNL Adobe Commerce]で設定されているものと一致しません。
 
-**原因：**&#x200B;価格表フィードでは、特定のweb サイトと顧客グループにマッピングするスコープが使用されています。 間違った[ カタログ ビュー](../../optimizer/setup/catalog-view.md)設定は、価格が欠落または誤っている可能性があります。
+**原因：**&#x200B;価格表フィードでは、特定のweb サイトと顧客グループにマッピングするスコープが使用されています。 間違った[&#x200B; カタログ ビュー](../../optimizer/setup/catalog-view.md)設定は、価格が欠落または誤っている可能性があります。
 
 **解決策：**
 
-- コネクタの書き出し設定で、web サイトが同期用に設定されていることを確認します。 [ データ書き出し設定のカスタマイズ ](../get-started.md#customize-the-commerce-scopes-export-configuration)を参照してください。
-- [!DNL Commerce Optimizer]で使用されている価格表IDが、製品クエリの実行に使用された[ カタログ ビュー](../../optimizer/setup/catalog-view.md){target="_blank"}設定に存在することを確認します。
+- コネクタの書き出し設定で、web サイトが同期用に設定されていることを確認します。 [&#x200B; データ書き出し設定のカスタマイズ &#x200B;](../get-started.md#customize-the-commerce-scopes-export-configuration)を参照してください。
+- [!DNL Commerce Optimizer]で使用されている価格表IDが、製品クエリの実行に使用された[&#x200B; カタログ ビュー](../../optimizer/setup/catalog-view.md){target="_blank"}設定に存在することを確認します。
 
 ## Storefront リクエストがアクセス拒否エラーを返すか、カタログデータが完全に消えます
 
 **問題：**&#x200B;以前にデータを返したカタログビューに対するマーチャンダイジング APIへのリクエストが、`access-key-invalid` エラーで失敗するか、作業中のストアフロントでカタログデータが表示されなくなりました。
 
-**原因：** カタログビューで[ カタログ保護](../../optimizer/setup/private-catalog-view.md)が有効になっており、リクエストに必要な`AC-Catalog-View-Access-Token` ヘッダーが欠落しているか、ビューに割り当てられているすべての制限付きアクセスキーが期限切れになっています。 [!DNL Adobe Commerce Optimizer Connector]は、制限付きアクセス キーを自動的に作成、割り当て、または回転しません。キー管理は、完全にクライアント アプリケーションによって処理されます。
+**原因：** カタログビューで[&#x200B; カタログ保護](../../optimizer/setup/private-catalog-view.md)が有効になっており、リクエストに必要な`AC-Catalog-View-Access-Token` ヘッダーが欠落しているか、ビューに割り当てられているすべての制限付きアクセスキーが期限切れになっています。 [!DNL Adobe Commerce Optimizer Connector]は、制限付きアクセス キーを自動的に作成、割り当て、または回転しません。キー管理は、完全にクライアント アプリケーションによって処理されます。
 
 **解決策：**
 
-- カタログ ビューに少なくとも1つの期限切れでない[ アクセス制限キー](../../optimizer/setup/restricted-access-keys.md)が割り当てられていることを確認し、必要に応じてキーを回転または追加します。
-- ストアフロントまたはクライアントが、各リクエストに有効な署名済み`AC-Catalog-View-Access-Token` ヘッダーを送信することを確認します。 [ プライベートカタログビュー](../../optimizer/setup/private-catalog-view.md)を参照してください。
+- カタログ ビューに少なくとも1つの期限切れでない[&#x200B; アクセス制限キー](../../optimizer/setup/restricted-access-keys.md)が割り当てられていることを確認し、必要に応じてキーを回転または追加します。
+- ストアフロントまたはクライアントが、各リクエストに有効な署名済み`AC-Catalog-View-Access-Token` ヘッダーを送信することを確認します。 [&#x200B; プライベートカタログビュー](../../optimizer/setup/private-catalog-view.md)を参照してください。
 
 ## [!DNL Adobe Commerce Optimizer]のデータが上書きされるか、同期後に予期せず変更されます
 
@@ -102,7 +102,7 @@ ht-degree: 0%
 
 **解決策：**
 
-カタログの変更を[!DNL Adobe Commerce Optimizer]に直接書き込む代わりに、[ カタログレイヤー](../../optimizer/setup/catalog-layer.md){target="_blank"}を使用して、[!DNL Adobe Commerce]以外の場所で変更を適用します。 カタログレイヤーを使用すると、外部システムはコネクタ同期と競合することなく、[!DNL Adobe Commerce Optimizer]内のカタログデータをエンリッチメントまたは上書きできます。
+カタログの変更を[!DNL Adobe Commerce Optimizer]に直接書き込む代わりに、[&#x200B; カタログレイヤー](../../optimizer/setup/catalog-layer.md){target="_blank"}を使用して、[!DNL Adobe Commerce]以外の場所で変更を適用します。 カタログレイヤーを使用すると、外部システムはコネクタ同期と競合することなく、[!DNL Adobe Commerce Optimizer]内のカタログデータをエンリッチメントまたは上書きできます。
 
 ## [!DNL SaaS Data Export]の一般的な問題のトラブルシューティング
 

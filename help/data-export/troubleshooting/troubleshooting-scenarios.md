@@ -99,7 +99,7 @@ ht-degree: 0%
 1. コンテンツが一致しない場合は、スペースやピリオドの追加など、カタログ内の製品を少し変更して、変更を強制的に検出します。
 1. 再同期を待つか、管理者のCLIまたは[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ページから手動再同期をトリガーします。
 
-[!DNL Product Recommendations]のカタログデータのトラブルシューティングについて詳しくは、[Commerce ナレッジベースの商品レコメンデーションモジュール ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-40095)のトラブルシューティングを参照してください。
+[!DNL Product Recommendations]のカタログデータのトラブルシューティングについて詳しくは、[Commerce ナレッジベースの商品レコメンデーションモジュール &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-40095)のトラブルシューティングを参照してください。
 
 ## スケジュールでデータ同期が実行されていません {#sync-not-on-schedule}
 
@@ -120,10 +120,10 @@ ht-degree: 0%
 
 **解決策：**
 
-1. エラーの詳細については、データ書き出しエラーログを参照してください。 ログ形式と拡張ログ オプションについては、[ ログの確認とトラブルシューティング ](logging.md)を参照してください。
+1. エラーの詳細については、データ書き出しエラーログを参照してください。 ログ形式と拡張ログ オプションについては、[&#x200B; ログの確認とトラブルシューティング &#x200B;](logging.md)を参照してください。
    - データ収集中にエラーが発生した`var/log/commerce-data-export-errors.log`。
    - データ送信中にエラーが発生した`var/log/saas-export-errors.log`。
-1. エラーが設定またはサードパーティの拡張機能に関連しない場合は、[関連するログエントリを含むサポートチケット ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を送信します。
+1. エラーが設定またはサードパーティの拡張機能に関連しない場合は、[関連するログエントリを含むサポートチケット &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)を送信します。
 
 ## ログに「操作がスキップされました – プロセスがロックされました」というメッセージが表示される {#process-locked}
 
@@ -137,10 +137,10 @@ ht-degree: 0%
 
 **解決策：**
 
-アクションは必要ありません。 実行中のプロセスが完了してロックを解除すると、次のcron実行が取得され、保留中の変更が同期されます。 ロックメカニズムの仕組みについて詳しくは、[SaaS データ書き出し用のフィードロックメカニズム ](../feed-lock-mechanism.md)を参照してください。
+アクションは必要ありません。 実行中のプロセスが完了してロックを解除すると、次のcron実行が取得され、保留中の変更が同期されます。 ロックメカニズムの仕組みについて詳しくは、[SaaS データ書き出し用のフィードロックメカニズム &#x200B;](../feed-lock-mechanism.md)を参照してください。
 
 >[!MORELIKETHIS]
 >
-> - [ ログの確認とトラブルシューティング ](logging.md)
-> - [ ログコード参照](log-codes-reference.md)
-> - [SaaS データ書き出し用のフィードロックメカニズム ](../feed-lock-mechanism.md)
+> - [&#x200B; ログの確認とトラブルシューティング &#x200B;](logging.md)
+> - [&#x200B; ログコード参照](log-codes-reference.md)
+> - [SaaS データ書き出し用のフィードロックメカニズム &#x200B;](../feed-lock-mechanism.md)

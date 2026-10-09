@@ -47,10 +47,10 @@ ht-degree: 8%
 | `QueryXml` | データ収集用のXML ベースのクエリ DSL | `QueryFactory`, `QueryProcessor`, `SelectBuilder` |
 | `SaaSCommon` | 共有HTTP トランスポート、再試行、CLI （`saas:resync`）、再同期オーケストレーション | `ExportFeed`, `SubmitFeed`, `ResyncManager`, `ResyncManagerPool`, `ProgressBarManager` |
 
-これらのモジュールが同期中にどのように連携するかを確認するには、[SaaS データ書き出しパイプライン ](../sync-overview.md)を参照してください。
+これらのモジュールが同期中にどのように連携するかを確認するには、[SaaS データ書き出しパイプライン &#x200B;](../sync-overview.md)を参照してください。
 
 >[!MORELIKETHIS]
 >
 >- [同期の仕組み](../sync-overview.md)
->- [ テーブル スキーマをフィード ](feed-table-reference.md)
+>- [&#x200B; テーブル スキーマをフィード &#x200B;](feed-table-reference.md)
 >- [SaaS データ書き出し拡張機能の管理](../manage-extension.md)

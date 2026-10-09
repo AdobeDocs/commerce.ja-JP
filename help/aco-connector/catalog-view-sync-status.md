@@ -47,13 +47,13 @@ ht-degree: 0%
 
 Commerce Adminの[!UICONTROL Catalog View Sync Status] ダッシュボードを使用して、[!DNL Adobe Commerce]から[!DNL Adobe Commerce Optimizer]までのB2B カタログビューの同期を追跡します。
 
-[!UICONTROL Catalog View Sync Status]は、各B2B共有カタログのカタログ ビュー、ポリシー、価格表参照、アクセス制限キー設定が[!DNL Adobe Commerce Optimizer]に存在し、[!DNL Adobe Commerce]設定と一致することを確認します。 代わりに、製品、価格、およびカテゴリーフィードの同期を追跡するには、[ データの同期の管理](data-sync-status.md#verify-that-the-data-sync-is-working)を参照してください。
+[!UICONTROL Catalog View Sync Status]は、各B2B共有カタログのカタログ ビュー、ポリシー、価格表参照、アクセス制限キー設定が[!DNL Adobe Commerce Optimizer]に存在し、[!DNL Adobe Commerce]設定と一致することを確認します。 代わりに、製品、価格、およびカテゴリーフィードの同期を追跡するには、[&#x200B; データの同期の管理](data-sync-status.md#verify-that-the-data-sync-is-working)を参照してください。
 
 ## 同期ステータスページへのアクセス {#access-the-sync-status-page}
 
 Commerce管理者から、**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Catalog View Sync Status]**&#x200B;に移動します。
 
-![ カタログ ビューの同期ステータス ページ。Adobe Commerce Optimizerのカタログ ビュー、ポリシー、価格表、およびアクセス キー設定の同期ステータスを監視します](assets/catalog-view-sync-status.png){width="600" zoomable="yes"}
+![&#x200B; カタログ ビューの同期ステータス ページ。Adobe Commerce Optimizerのカタログ ビュー、ポリシー、価格表、およびアクセス キー設定の同期ステータスを監視します](assets/catalog-view-sync-status.png){width="600" zoomable="yes"}
 
 このページには、[!UICONTROL Catalog Views]、[!UICONTROL Orphaned in ACO]、[!UICONTROL Deleted]の3つのタブがあります。
 
@@ -65,7 +65,7 @@ Commerce管理者から、**[!UICONTROL System]** > **[!UICONTROL Data Transfer]
 | --- | --- |
 | **デグレード済み** | ポリシーまたはリンクされた価格表など、[!DNL Adobe Commerce Optimizer]で直接変更されました。 問題が解決するまで、間違った品揃えや価格が会社に表示されることがあります。 これは、Commerce Optimizerでアクセスキー、ビュー名、またはソースが変更された場合にも発生する可能性があります。 |
 | **失敗** | カタログ ビューが[!DNL Adobe Commerce Optimizer]に存在しないか、最初の投影が行われる前に猶予期間が経過した場合。 （[ACO カタログビューの同期設定の設定](#configure-aco-catalog-view-sync-settings)を参照）。 カタログの同期ステータスが`Failed`の場合、会社はこの共有カタログのストアフロントエクスペリエンスにアクセスできません。 |
-| **期限切れ** | 共有カタログを[!DNL Adobe Commerce]で削除しました。 カタログビューには、削除猶予期間が終了するまで引き続きアクセスできます。 デフォルトの猶予期間は7日間です。 [ カタログ ビューの同期設定](#configure-aco-catalog-view-sync-settings)を更新することで、デフォルトを変更できます。 |
+| **期限切れ** | 共有カタログを[!DNL Adobe Commerce]で削除しました。 カタログビューには、削除猶予期間が終了するまで引き続きアクセスできます。 デフォルトの猶予期間は7日間です。 [&#x200B; カタログ ビューの同期設定](#configure-aco-catalog-view-sync-settings)を更新することで、デフォルトを変更できます。 |
 | **孤立** | カタログ ビューまたはキーは、コネクタではなく、[!DNL Adobe Commerce Optimizer] Studioで直接作成されました。 [孤立したエントリと削除されたエントリの確認](#review-orphaned-and-deleted-entries)を参照してください。 |
 
 [!UICONTROL Healthy]、[!UICONTROL Pending]および[!UICONTROL Deleted]は、アクションを必要としない情報状態です。 完全なリストについては、*Commerce管理ガイド*&#x200B;の[Sync ステータス値](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"}を参照してください。
@@ -74,7 +74,7 @@ Commerce管理者から、**[!UICONTROL System]** > **[!UICONTROL Data Transfer]
 
 [!DNL Adobe Commerce]管理者（[!DNL Adobe Commerce Optimizer] Studioではなく）から、**[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Services]** > **[!UICONTROL ACO Catalog View Sync]**&#x200B;に移動して、コネクタが削除と作成をどのように実行するか、および修復が自動的にドリフトするかどうかを制御します。
 
-![ACO カタログビュー同期設定ページに表示される削除、作成、およびドリフト再調整セクション ](assets/aco-catalog-view-sync-configuration.png){width="600" zoomable="yes"}
+![ACO カタログビュー同期設定ページに表示される削除、作成、およびドリフト再調整セクション &#x200B;](assets/aco-catalog-view-sync-configuration.png){width="600" zoomable="yes"}
 
 - **[!UICONTROL Deletion Grace Period (days)]** – 削除された共有カタログのカタログビュー、ポリシー、メタデータが、削除される前に[!DNL Adobe Commerce Optimizer]に保持される日数。 デフォルトは7日間です。 `0`に設定すると、猶予期間なしで、プロジェクションをすぐに削除できます。
 
@@ -113,8 +113,8 @@ Commerce管理者から、**[!UICONTROL System]** > **[!UICONTROL Data Transfer]
 
 >[!MORELIKETHIS]
 >
-> - [ カタログ ビュー同期ステータスの監視](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/catalog-view-sync-status.md){target="_blank"} — *Commerce管理ガイド*&#x200B;のカタログ ビュー同期ステータス ページの完全なドキュメント リファレンス —>
-> - [ データ同期の管理](data-sync-status.md) – 製品、価格、カテゴリ フィードの同期を確認します
-> - [ プライベートカタログビュー](/help/optimizer/setup/private-catalog-view.md) — コネクター管理のプライベートカタログビューについて説明します
+> - [&#x200B; カタログ ビュー同期ステータスの監視](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/catalog-view-sync-status.md){target="_blank"} — *Commerce管理ガイド*&#x200B;のカタログ ビュー同期ステータス ページの完全なドキュメント リファレンス —>
+> - [&#x200B; データ同期の管理](data-sync-status.md) – 製品、価格、カテゴリ フィードの同期を確認します
+> - [&#x200B; プライベートカタログビュー](/help/optimizer/setup/private-catalog-view.md) — コネクター管理のプライベートカタログビューについて説明します
 > - [制限付きアクセスキー](/help/optimizer/setup/restricted-access-keys.md) — コネクタで管理されるキーの仕組みを説明します
 > - [B2B共有カタログの変更を監視](get-started-b2b-shared-catalogs.md#monitor-b2b-shared-catalog-changes) — B2B共有カタログのコネクタによる自動処理について説明します

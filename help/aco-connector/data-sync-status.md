@@ -45,7 +45,7 @@ ht-degree: 0%
 ---
 # カタログデータの同期を監視する
 
-[!DNL Adobe Commerce Optimizer Connector]を設定すると、スケジュールされたcron ジョブを通じて、ほとんどのカタログ更新が自動的に同期されます。 自動同期の仕組みについて詳しくは、[ コネクタ同期パイプライン ](connector-sync-pipeline.md)を参照してください。 このトピックのツールを使用して、製品、価格、カテゴリのデータが[!DNL Adobe Commerce Optimizer]に達することを確認し、必要に応じてフィードを手動で再同期します。
+[!DNL Adobe Commerce Optimizer Connector]を設定すると、スケジュールされたcron ジョブを通じて、ほとんどのカタログ更新が自動的に同期されます。 自動同期の仕組みについて詳しくは、[&#x200B; コネクタ同期パイプライン &#x200B;](connector-sync-pipeline.md)を参照してください。 このトピックのツールを使用して、製品、価格、カテゴリのデータが[!DNL Adobe Commerce Optimizer]に達することを確認し、必要に応じてフィードを手動で再同期します。
 
 ## データ同期が機能していることを確認します {#verify-that-the-data-sync-is-working}
 
@@ -58,15 +58,15 @@ ht-degree: 0%
 | タスク | オプション | メモ |
 | --- | --- | --- |
 | 製品が見つからない場合に、同期ステータスを確認し、アップストリームシステムから再同期します | **アップストリームシステムの再同期** | [!DNL Commerce Optimizer]で、**[!UICONTROL Data Sync]**&#x200B;を選択し、予想されるカタログ ソース、製品、価格、属性が表示されることを確認します。 製品が見つからない場合は、**[!UICONTROL Data Feed Sync Status]** ページまたはCommerce CLIを使用して、アップストリーム [!DNL Adobe Commerce] インスタンスから再同期します（次の行を参照）。 |
-| 選択した失敗または問題のあるコネクタフィード項目の再同期 | Commerce Admin **の**[!UICONTROL Data Feed Sync Status] ページ | エクスポートのステータスを監視し、選択したコネクタフィード項目をCommerce管理者から再同期します。 [ データ同期が機能していることを確認してください](#verify-that-the-data-sync-is-working)。 |
-| 操作制御によるターゲットコネクタフィードの再同期 | **Commerce CLI** | コネクタフィードの[!DNL Adobe Commerce] インスタンスから`saas:resync`を実行します。 Commerce CLI](../data-export/data-export-cli-commands.md)と[ サポートされているフィード ](reference/connector-reference.md#supported-feeds)を使用して[ フィードを同期するを参照してください。 |
+| 選択した失敗または問題のあるコネクタフィード項目の再同期 | Commerce Admin **の**&#x200B;[!UICONTROL Data Feed Sync Status] ページ | エクスポートのステータスを監視し、選択したコネクタフィード項目をCommerce管理者から再同期します。 [&#x200B; データ同期が機能していることを確認してください](#verify-that-the-data-sync-is-working)。 |
+| 操作制御によるターゲットコネクタフィードの再同期 | **Commerce CLI** | コネクタフィードの[!DNL Adobe Commerce] インスタンスから`saas:resync`を実行します。 Commerce CLI[&#128279;](../data-export/data-export-cli-commands.md)と[&#x200B; サポートされているフィード &#x200B;](reference/connector-reference.md#supported-feeds)を使用して フィードを同期するを参照してください。 |
 
 >[!MORELIKETHIS]
 >
-> - [ コネクタ同期パイプライン ](connector-sync-pipeline.md) – 自動同期、cron スケジュール、エラー処理の仕組みについて説明します
-> - [ データ量と同期時間の見積もり](reference/estimate-data-volume-sync-time.md) – 予想される同期時間の計算
-> - [ トラブルシューティング ](troubleshooting.md) – 資格情報、同期、スコープ書き出しの問題を診断します
-> - [Commerce スコープの書き出し設定をカスタマイズ ](./get-started.md#customize-the-commerce-scopes-export-configuration) — スコープレベルごとにフィードを設定し、ビヘイビアーを有効または無効にし、管理手順を実行します
-> - [ コネクタ モジュールとフィード エンドポイント ](reference/connector-reference.md) — モジュール、API エンドポイント、サポートされているフィードの確認
-> - Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"}の[ データフィードの同期ステータス ページ – フィードのステータスをモニタリングするために使用できるフィールドと機能について詳しく説明します
-> - [ データ同期ダッシュボード in [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync){target="_blank"} — カタログデータ同期の監視に使用できるフィールドとアクションに関する参照ドキュメント
+> - [&#x200B; コネクタ同期パイプライン &#x200B;](connector-sync-pipeline.md) – 自動同期、cron スケジュール、エラー処理の仕組みについて説明します
+> - [&#x200B; データ量と同期時間の見積もり](reference/estimate-data-volume-sync-time.md) – 予想される同期時間の計算
+> - [&#x200B; トラブルシューティング &#x200B;](troubleshooting.md) – 資格情報、同期、スコープ書き出しの問題を診断します
+> - [Commerce スコープの書き出し設定をカスタマイズ &#x200B;](./get-started.md#customize-the-commerce-scopes-export-configuration) — スコープレベルごとにフィードを設定し、ビヘイビアーを有効または無効にし、管理手順を実行します
+> - [&#x200B; コネクタ モジュールとフィード エンドポイント &#x200B;](reference/connector-reference.md) — モジュール、API エンドポイント、サポートされているフィードの確認
+> - Commerce Admin[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"}の データフィードの同期ステータス ページ – フィードのステータスをモニタリングするために使用できるフィールドと機能について詳しく説明します
+> - [&#x200B; データ同期ダッシュボード in [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync){target="_blank"} — カタログデータ同期の監視に使用できるフィールドとアクションに関する参照ドキュメント

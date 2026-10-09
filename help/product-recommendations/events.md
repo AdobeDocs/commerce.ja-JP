@@ -43,7 +43,7 @@ ht-degree: 0%
 
 [[!DNL Product Recommendations]](install-configure.md)をインストールして設定すると、モジュールは行動データ収集をストアフロントにデプロイします。 このメカニズムは、買い物客から匿名化された行動データを収集し、[!DNL Product Recommendations]を強化します。 例えば、`view` イベントは`Viewed this, viewed that`のレコメンデーションタイプの計算に使用され、`place-order` イベントは`Bought this, bought that`のレコメンデーションタイプの計算に使用されます。
 
-[!DNL Product Recommendations] イベントが収集する行動データについて詳しくは、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を参照してください。
+[!DNL Product Recommendations] イベントが収集する行動データについて詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)を参照してください。
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ _Cold Start_&#x200B;の問題は、マシンラーニングモデルが効果的
 - レコメンデーションタイプによっては、他のタイプよりも学習が速いものもあります
 - Adobe Commerceは、行動データを4時間ごとに再計算します。 レコメンデーションは、サイトで長く使用するにつれて精度が向上します。
 
-各レコメンデーションタイプのトレーニングの進捗状況を視覚化するために、[ レコメンデーションの作成](create.md#readiness-indicators) ページには準備状況インジケーターが表示されます。
+各レコメンデーションタイプのトレーニングの進捗状況を視覚化するために、[&#x200B; レコメンデーションの作成](create.md#readiness-indicators) ページには準備状況インジケーターが表示されます。
 
 ライブサイトでデータを収集し、マシンラーニングモデルをトレーニングしながら、残りのテストと設定のタスクを完了します。 モデルに十分なデータが揃って有益なレコメンデーションが生成されたら、レコメンデーションユニットをストアフロントにデプロイします。
 
@@ -113,9 +113,9 @@ _Cold Start_&#x200B;の問題は、マシンラーニングモデルが効果的
 #### 注意事項
 
 - 広告ブロッカーとプライバシー設定により、イベントのキャプチャが妨げられ、エンゲージメントと収益[指標](workspace.md#column-descriptions)が過小報告される可能性があります。 さらに、買い物客がページを離れたり、ネットワーク上の問題が原因でイベントが送信されない場合もあります。
-- 商品レコメンデーションダッシュボードを強化するには、[ ヘッドレス実装](headless.md)でイベントを実装する必要があります。
+- 商品レコメンデーションダッシュボードを強化するには、[&#x200B; ヘッドレス実装](headless.md)でイベントを実装する必要があります。
 - 設定可能な製品の場合、製品レコメンデーションは親製品の画像を使用します。 親製品に画像がない場合、その製品はレコメンデーションユニットに表示されません。
 
 >[!NOTE]
 >
->[Cookie制限モード ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law)が有効になっている場合、Adobe Commerceは、買い物客がCookieの使用に同意するまで行動データを収集しません。 Cookie制限モードが無効な場合、Adobe Commerceはデフォルトで行動データを収集します。
+>[Cookie制限モード &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law)が有効になっている場合、Adobe Commerceは、買い物客がCookieの使用に同意するまで行動データを収集しません。 Cookie制限モードが無効な場合、Adobe Commerceはデフォルトで行動データを収集します。

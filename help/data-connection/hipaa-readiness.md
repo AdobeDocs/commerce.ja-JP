@@ -40,7 +40,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->ストアフロントイベントはクライアント側で生成されるため、Experience Platformにストアフロントイベントデータ ](connect-data.md#data-collection)を送信しないのは販売者の責任[です。
+>ストアフロントイベントはクライアント側で生成されるため、Experience Platformにストアフロントイベントデータ [&#128279;](connect-data.md#data-collection)を送信しないのは販売者の責任です。
 
 主な内容：
 
@@ -60,15 +60,15 @@ Adobe [!DNL Commerce]のヘルスケアアドオンを購入した場合は、[H
 
 [!DNL Data Connection]拡張機能がExperience Platformに送信するすべてのバックオフィスイベントデータは、[!DNL Commerce]内では機密性が高いと見なされます。 ただし、特定のデータを機密性の高いものとして明示的に識別するには、Experience Platformの[!DNL Commerce] スキーマにデータ使用ラベルを適用する必要があります。 データ使用ラベルをスキーマに直接適用すると、そのラベルは、そのスキーマに基づくすべての既存および将来のデータセットに反映されます。
 
-Data Governance フレームワーク内でのデータ使用ラベルとその役割の概要については、Experience Platform ドキュメントの[ データ使用ラベルの概要](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview)を参照してください。
+Data Governance フレームワーク内でのデータ使用ラベルとその役割の概要については、Experience Platform ドキュメントの[&#x200B; データ使用ラベルの概要](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/overview)を参照してください。
 
 ### データ使用ラベルを[!DNL Commerce] フィールドに適用する
 
-[!DNL Commerce] スキーマにラベルを適用する方法については、[ スキーマのデータ使用ラベルの管理](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels) チュートリアルの手順に従ってください。
+[!DNL Commerce] スキーマにラベルを適用する方法については、[&#x200B; スキーマのデータ使用ラベルの管理](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels) チュートリアルの手順に従ってください。
 
 [!DNL Commerce] スキーマのフィールドに適用できる使用可能なラベルについて詳しくは、[機密ラベルの用語集](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference#sensitive)を参照してください。 例えば、ラベル `RHD`は、保護された医療情報（PHI）またはAdobeによってアップロードが契約上許可されている患者に関する情報を識別します。
 
-[!DNL Commerce] データが機密としてラベル付けされている場合、ポリシーを適用して、ポリシー違反を構成するデータ操作を防止できます。 Experience Platformの[ ポリシーの適用](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)の詳細をご覧ください。
+[!DNL Commerce] データが機密としてラベル付けされている場合、ポリシーを適用して、ポリシー違反を構成するデータ操作を防止できます。 Experience Platformの[&#x200B; ポリシーの適用](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)の詳細をご覧ください。
 
 ## Commerceでのデータの暗号化
 

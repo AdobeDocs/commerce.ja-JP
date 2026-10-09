@@ -50,9 +50,9 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 
 * [AEM Assets プロジェクトの設定](configure-aem.md)
 
-* [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} [Adobe Commerce パッケージ ](configure-commerce.md)をインストールして拡張機能を追加し、拡張機能を使用するために必要な資格情報と接続を生成します。
+* [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} [Adobe Commerce パッケージ &#x200B;](configure-commerce.md)をインストールして拡張機能を追加し、拡張機能を使用するために必要な資格情報と接続を生成します。
 
-* [ ユーザー権限とIMS](permissions.md) - アセットセレクターと自動入力された設定フィールド（プログラム ID、環境ID、ドメインマッピング）に必要な権限を設定します。
+* [&#x200B; ユーザー権限とIMS](permissions.md) - アセットセレクターと自動入力された設定フィールド（プログラム ID、環境ID、ドメインマッピング）に必要な権限を設定します。
 
 ## 接続の設定
 
@@ -68,17 +68,17 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 
 1. [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} 「**[!UICONTROL Asset Selector IMS Client ID]**」を入力します。
 
-   このIDは、プログラム IDおよび環境ID フィールドのアセットセレクターおよび自動入力機能を有効にするために必要です。 このIDを取得するには、[ ユーザー権限とIMS](permissions.md)を参照してください。 アセットセレクターについて詳しくは、[ アセットの手動選択](../synchronize/asset-selector-integration.md)を参照してください。
+   このIDは、プログラム IDおよび環境ID フィールドのアセットセレクターおよび自動入力機能を有効にするために必要です。 このIDを取得するには、[&#x200B; ユーザー権限とIMS](permissions.md)を参照してください。 アセットセレクターについて詳しくは、[&#x200B; アセットの手動選択](../synchronize/asset-selector-integration.md)を参照してください。
 
 1. ドロップダウンメニューからAEM Assets環境&#x200B;**[!UICONTROL Program ID]**&#x200B;と&#x200B;**[!UICONTROL Environment ID]**&#x200B;を選択します。
 
-   セレクターは、Commerce管理者ユーザーがエクスペリエンスに必要な[ ユーザー権限](permissions.md#user-permissions-and-ims)を持っている場合に表示されます。**Adobe Commerce as a Cloud Service**、**Adobe Commerce Optimizer**、および&#x200B;**Adobe Commerce on Cloud Infrastructure**&#x200B;統合では、ペーストされたIDに依存するのではなく、IMSにリンクされたセッションからこれらのフィールドを自動的に入力できます。
+   セレクターは、Commerce管理者ユーザーがエクスペリエンスに必要な[&#x200B; ユーザー権限](permissions.md#user-permissions-and-ims)を持っている場合に表示されます。**Adobe Commerce as a Cloud Service**、**Adobe Commerce Optimizer**、および&#x200B;**Adobe Commerce on Cloud Infrastructure**&#x200B;統合では、ペーストされたIDに依存するのではなく、IMSにリンクされたセッションからこれらのフィールドを自動的に入力できます。
 
    セレクターが使用できない場合は、AEM Cloud Managerから&#x200B;**[!UICONTROL Program ID]**&#x200B;と&#x200B;**[!UICONTROL Environment ID]**&#x200B;をコピーするか、オーサーURL `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/`から派生させます（プレースホルダーを識別子に置き換えます）。
 
    両方のフィールドの&#x200B;**[!UICONTROL Use system value]**&#x200B;をクリアしてから、新しい値を手動でペーストまたは選択する必要があります。
 
-   ![ プログラム IDおよびEnvironment ID セレクターを含むAEM Assets統合フォーム ](../assets/aem-assets-view.png){width="600" zoomable="yes"}
+   ![&#x200B; プログラム IDおよびEnvironment ID セレクターを含むAEM Assets統合フォーム &#x200B;](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
 1. [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} Commerceとアセットマッチングサービス間のリクエストを認証する[[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment)を選択します。
 
@@ -88,8 +88,8 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 
 1. **[!UICONTROL Asset matching rule]** ドロップダウンから、アセット同期用のアセット一致ルールのいずれかを選択します。
 
-   * [ デフォルトの自動一致](../synchronize/default-match.md)の&#x200B;**[!UICONTROL Match by SKU]**&#x200B;を選択します。
-   * [ カスタム自動一致](../synchronize/custom-match.md)の&#x200B;**[!UICONTROL Custom match]**&#x200B;を選択します（[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)が必要です）。
+   * [&#x200B; デフォルトの自動一致](../synchronize/default-match.md)の&#x200B;**[!UICONTROL Match by SKU]**&#x200B;を選択します。
+   * [&#x200B; カスタム自動一致](../synchronize/custom-match.md)の&#x200B;**[!UICONTROL Custom match]**&#x200B;を選択します（[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)が必要です）。
 
 1. **[!UICONTROL Match by product SKU attribute name]** フィールド `commerce:skus`に、Commerce製品SKU用に定義された[AEM Assets メタデータフィールド名](configure-aem.md#define-the-metadata-profile)をデフォルトで追加します。
 
@@ -121,7 +121,7 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 
 1. Commerce管理者とストアフロントのレスポンスで、ローカライズされた値を確認します。
 
-フィールド名、検証ルールおよびCommerceの結果については、[AEM AssetsのCommerce メタデータ ](../metadata.md)を参照してください。
+フィールド名、検証ルールおよびCommerceの結果については、[AEM AssetsのCommerce メタデータ &#x200B;](../metadata.md)を参照してください。
 
 ### ビジュアライゼーション所有者の設定
 
@@ -149,7 +149,7 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 
 ### オプション。 カスタムドメイン URLの設定
 
-AEM Assets as a Cloud Service プロジェクトに[ カスタムドメイン名](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank}が設定されている場合は、Commerce用のAEM Assets統合で使用できるように、Commerce ストア設定にドメイン名を追加する必要があります。
+AEM Assets as a Cloud Service プロジェクトに[&#x200B; カスタムドメイン名](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank}が設定されている場合は、Commerce用のAEM Assets統合で使用できるように、Commerce ストア設定にドメイン名を追加する必要があります。
 
 1. **[!UICONTROL Store]** / 設定/ **[!UICONTROL ADOBE SERVICES]** / **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
 
@@ -163,6 +163,6 @@ AEM Assets as a Cloud Service プロジェクトに[ カスタムドメイン名
 
 * **Commerce Storefrontの設定**- Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用するには、*Adobe Commerce Storefront ドキュメント*&#x200B;の[AEM Assets統合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) トピックで説明されているストアフロントの設定を完了します。
 
-* Adobe CommerceとAEM Assets統合の間で[一致するルール ](../synchronize/default-match.md)を設定します。
+* Adobe CommerceとAEM Assets統合の間で[一致するルール &#x200B;](../synchronize/default-match.md)を設定します。
 
 * [Commerce アセットの管理](../manage-assets.md)。

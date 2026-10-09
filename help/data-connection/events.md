@@ -34,9 +34,9 @@ ht-degree: 0%
 ---
 # [!DNL Data Connection]行動イベント
 
-次に、[!DNL Data Connection]拡張機能のインストール時に使用できるCommerce行動イベントを示します。 これらのイベントで収集されたデータは、Adobe Experience Platformに送信されます。 [ カスタムイベント ](custom-events.md)を作成して、標準提供されていない追加データを収集することもできます。
+次に、[!DNL Data Connection]拡張機能のインストール時に使用できるCommerce行動イベントを示します。 これらのイベントで収集されたデータは、Adobe Experience Platformに送信されます。 [&#x200B; カスタムイベント &#x200B;](custom-events.md)を作成して、標準提供されていない追加データを収集することもできます。
 
-次のイベントが収集するデータに加えて、Adobe Experience Platform Web SDKが提供する[その他のデータ ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)も取得できます。
+次のイベントが収集するデータに加えて、Adobe Experience Platform Web SDKが提供する[その他のデータ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)も取得できます。
 
 行動イベントは、サイトを閲覧する顧客から、匿名化された行動データを収集します。 イベントで収集したデータを活用して、特定の買い物客をターゲットにしたプロモーションや施策を構築できます。
 
@@ -48,13 +48,13 @@ ht-degree: 0%
 
 ストアフロントイベントは、サイトでの買い物客のインタラクションからデータを取得し、`addToCart`、`pageView`、`createAccount`、`editAccount`、`startCheckout`、`completeCheckout`、`signIn`、`signOut`などのイベントを含めます。 ストアフロントイベントは、シンプルで設定可能な製品にのみ適用されます。
 
-ストアフロントイベントについて詳しくは、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection)を参照してください。
+ストアフロントイベントについて詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection)を参照してください。
 
 ## 顧客プロファイルイベント
 
 ストアフロントから取り込まれたプロファイルイベントには、`signIn`、`signOut`、`createAccount`、`editAccount`などのアカウント情報が含まれます。 これらのデータは、セグメントの定義やマーケティング施策の実行に必要な顧客の詳細情報（サインアップ割引オファーの送信やアカウント変更確認の送信など）を提供するのに役立ちます。
 
-顧客プロファイルイベントについて詳しくは、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection)を参照してください。
+顧客プロファイルイベントについて詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection)を参照してください。
 
 ## イベントを検索
 
@@ -62,12 +62,12 @@ ht-degree: 0%
 
 `searchRequestSent`および`searchResponseReceived` イベントの両方にある`searchRequest.id`および`searchResponse.id` フィールドを使用して、検索リクエストを対応する検索応答に相互参照します。
 
-検索イベントについて詳しくは、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection)を参照してください。
+検索イベントについて詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection)を参照してください。
 
 ## B2B イベント
 
-Adobe Commerceの![B2B](../assets/b2b.svg) B2B マーチャントの場合、これらのイベントにアクセスするには、`experience-platform-connector-b2b`拡張機能を[ インストール ](install.md#install-the-b2b-extension)する必要があります。
+Adobe Commerceの![B2B](../assets/b2b.svg) B2B マーチャントの場合、これらのイベントにアクセスするには、`experience-platform-connector-b2b`拡張機能を[&#x200B; インストール &#x200B;](install.md#install-the-b2b-extension)する必要があります。
 
-B2B イベントには、購買リストが作成されたか、に追加されたか、または購買リストから削除されたかなどの[購買リスト ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists)情報が含まれています。 購買リストに特化したイベントを追跡することで、顧客が頻繁に購入する商品を把握し、そのデータにもとづいた施策を構築できます。
+B2B イベントには、購買リストが作成されたか、に追加されたか、または購買リストから削除されたかなどの[購買リスト &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists)情報が含まれています。 購買リストに特化したイベントを追跡することで、顧客が頻繁に購入する商品を把握し、そのデータにもとづいた施策を構築できます。
 
-B2B イベントについて詳しくは、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection)を参照してください。
+B2B イベントについて詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection)を参照してください。

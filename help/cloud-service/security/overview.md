@@ -51,7 +51,7 @@ ht-degree: 0%
 
 従来のPaaS モデルとは異なり、SaaS モデルは、手作業によるパッチ適用、インフラのメンテナンス、アップグレードサイクルなどの負担を排除します。 Adobeで管理されているインフラストラクチャから、自動化されたデプロイメントパイプライン、ID管理、アクセス管理[!DNL Adobe IMS]に至るまで、プラットフォームのあらゆるレイヤーにセキュリティが組み込まれています。
 
-[!DNL Adobe Commerce as a Cloud Service]は、Adobeのグローバルなセキュリティおよびコンプライアンスフレームワークを活用し、ISO 27001、SOC 2、GDPRなどの業界標準との整合性を確保します。 お客様は、プラットフォームのセキュリティを確保する上でのAdobeの役割と、データとアクセスの管理における顧客の役割を明確に示す[共有責任モデル ](./shared-responsibility.md)を利用できます。
+[!DNL Adobe Commerce as a Cloud Service]は、Adobeのグローバルなセキュリティおよびコンプライアンスフレームワークを活用し、ISO 27001、SOC 2、GDPRなどの業界標準との整合性を確保します。 お客様は、プラットフォームのセキュリティを確保する上でのAdobeの役割と、データとアクセスの管理における顧客の役割を明確に示す[共有責任モデル &#x200B;](./shared-responsibility.md)を利用できます。
 
 Web Application Firewall （WAF）、DDoSの緩和策、セキュアなプロビジョニング、継続的な脆弱性スキャンなどの組み込みの保護機能により、[!DNL Adobe Commerce as a Cloud Service]はセキュリティを損なうことなく、より迅速にイノベーションを進めることができます。
 
@@ -71,7 +71,7 @@ Commerceを活用したストアフロントを保護するために、Adobeで�
 
 [!DNL API Mesh]のCDN レイヤーはTLSを終了し、GraphQL ゲートウェイをWorkerとして実行し、グローバル エッジ キャッシュと自動DDoS/WAFを提供し、パブリック メッシュ エンドポイントとして`edge‑graph.adobe.io`/`edge‑sandbox‑graph.adobe.io`を公開します。お客様は自分のCDNを前面に追加できますが、[!DNL API Mesh]のCDNはAdobeによって修正および管理され、お客様は自分のWAF ルールを設定できません。
 
-[!DNL API Mesh]のセキュリティ機能について詳しくは、[API Mesh ドキュメント ](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}を参照してください。
+[!DNL API Mesh]のセキュリティ機能について詳しくは、[API Mesh ドキュメント &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}を参照してください。
 
 ### バックエンド CDN
 
@@ -98,8 +98,8 @@ WAFとCDNは[!DNL Adobe Commerce as a Cloud Service] プラットフォームに
 
 ## データの保存と暗号化
 
-データが[!DNL App Builder]に保存されている場合、マーチャントは[!DNL App Builder] [ ストレージオプション ](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)を参照できます。 [!DNL App Builder]では、テナントの分離が適用され、これらのサービスに保存されているデータへのアクセスは、アクションが実行されるランタイム名前空間に制限されます。 ストレージ内のデータは暗号化されません。
+データが[!DNL App Builder]に保存されている場合、マーチャントは[!DNL App Builder] [&#x200B; ストレージオプション &#x200B;](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)を参照できます。 [!DNL App Builder]では、テナントの分離が適用され、これらのサービスに保存されているデータへのアクセスは、アクションが実行されるランタイム名前空間に制限されます。 ストレージ内のデータは暗号化されません。
 
-[!DNL API Mesh]を使用する場合、シークレットはメッシュ設定の`secrets.yaml` ファイルに保存する必要があります。 [!DNL API Mesh]は、AES-256暗号化を使用してこれらのシークレットを暗号化します（[API Mesh ドキュメント ](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}を参照）。
+[!DNL API Mesh]を使用する場合、シークレットはメッシュ設定の`secrets.yaml` ファイルに保存する必要があります。 [!DNL API Mesh]は、AES-256暗号化を使用してこれらのシークレットを暗号化します（[API Mesh ドキュメント &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}を参照）。
 
 [!DNL Adobe Commerce as a Cloud Service]に保存されているデータはすべて、AES 256 ビットの暗号化を使用して保存中に暗号化され、すべてのデータは、転送中にTLS 1.2以降を使用してHTTPS経由で暗号化されます。

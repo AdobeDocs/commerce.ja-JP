@@ -39,7 +39,7 @@ ht-degree: 1%
 ---
 # Adobe Commerce Optimizer Connectorのコネクタモジュールとフィードエンドポイント
 
-このリファレンスには、[!DNL Adobe Commerce Optimizer Connector] モジュールパッケージ、サポートされるフィード API エンドポイント、および`core_config_data`に保存されている設定キーパスが一覧表示されます。 これらのコンポーネントが同期中にどのように連携するかを確認するには、[ コネクタ同期パイプライン ](../connector-sync-pipeline.md)を参照してください。
+このリファレンスには、[!DNL Adobe Commerce Optimizer Connector] モジュールパッケージ、サポートされるフィード API エンドポイント、および`core_config_data`に保存されている設定キーパスが一覧表示されます。 これらのコンポーネントが同期中にどのように連携するかを確認するには、[&#x200B; コネクタ同期パイプライン &#x200B;](../connector-sync-pipeline.md)を参照してください。
 
 ## モジュール
 
@@ -69,8 +69,8 @@ ht-degree: 1%
 
 `products`、`productAttributes`、`categories`、`prices`のフィードは、[!DNL SaaS Data Export]個のインデクサーによって収集されたデータを再利用します。 コネクタは、web サイトと顧客グループの設定から`priceBooks` フィードを生成し、[!DNL SaaS Data Export] インデクサーに依存しません。
 
-各フィードのフィールドレベルのマッピングの詳細については、 [!DNL Commerce Optimizer Connector]  フィード ](field-mapping.md)の[ フィールドマッピングを参照してください。
-カタログサイズに基づいて同期にかかる時間を見積もるには、[ データ量と同期時間の見積もり](estimate-data-volume-sync-time.md)を参照してください。
+各フィードのフィールドレベルのマッピングの詳細については、 [!DNL Commerce Optimizer Connector]  フィード [&#128279;](field-mapping.md)の フィールドマッピングを参照してください。
+カタログサイズに基づいて同期にかかる時間を見積もるには、[&#x200B; データ量と同期時間の見積もり](estimate-data-volume-sync-time.md)を参照してください。
 
 ## 設定パス
 

@@ -36,13 +36,13 @@ ht-degree: 0%
 
 [!DNL Payment Services]の行項目は既定で有効になっています。 設定するには：
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
 
 1. **[!UICONTROL Sales]**&#x200B;に移動し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
 
-1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_セクションを展開します。
+1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
 
-1. _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL Line Items]_ セクションを展開します。
+1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL Line Items]_ セクションを展開します。
 
 1. **[!UICONTROL Line Items Enabled]**&#x200B;の場合、`Yes`を選択して有効（デフォルト）にするか、`No`を選択して行項目を無効にします。
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 行項目を表示するには：
 
-1. [PayPal マーチャントダッシュボード ](https://www.paypal.com/merchant/){target=_blank}に移動します。
+1. [PayPal マーチャントダッシュボード &#x200B;](https://www.paypal.com/merchant/){target=_blank}に移動します。
 
 1. **アクティビティ**/**すべてのトランザクション**&#x200B;をクリックします。
 
@@ -88,7 +88,7 @@ Adobe Commerceを通じて注文が行われ、情報がPayPalに送信される
 
 | 属性 | データタイプ | 説明 |
 | --- | --- | --- |
-| `currency_code` | ストリング！ | 通貨を識別する[3文字のISO-4217通貨コード ](https://developer.paypal.com/api/rest/reference/currency-codes/)。 |
+| `currency_code` | ストリング！ | 通貨を識別する[3文字のISO-4217通貨コード &#x200B;](https://developer.paypal.com/api/rest/reference/currency-codes/)。 |
 | `value` | ストリング！ | 項目の値を示します。 `currency_code`は、必要な小数点以下桁を指定します（必要な場合）。 |
 
 ### `tax`属性
@@ -97,7 +97,7 @@ Adobe Commerceを通じて注文が行われ、情報がPayPalに送信される
 
 | 属性 | データタイプ | 説明 |
 | --- | --- | --- |
-| `currency_code` | ストリング！ | 通貨を識別する[3文字のISO-4217通貨コード ](https://developer.paypal.com/api/rest/reference/currency-codes/)。 |
+| `currency_code` | ストリング！ | 通貨を識別する[3文字のISO-4217通貨コード &#x200B;](https://developer.paypal.com/api/rest/reference/currency-codes/)。 |
 | `value` | ストリング！ | 項目の値を示します。 必要な小数点以下桁の数は、各`currency_code`によって異なります。 |
 
 ### `upc`属性
@@ -156,7 +156,7 @@ Adobe Commerceを通じて注文が行われ、情報がPayPalに送信される
 
 +++
 
-これらのフィールドとその制限について詳しくは、[PayPal開発者ドキュメント ](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}を参照してください。
+これらのフィールドとその制限について詳しくは、[PayPal開発者ドキュメント &#x200B;](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}を参照してください。
 
 ## 行項目の管理
 
