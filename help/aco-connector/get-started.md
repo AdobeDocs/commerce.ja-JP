@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]の基本を学ぶ'
 description: '[!DNL Adobe Commerce Optimizer Connector]のインストール、スコープ書き出し設定の設定、IMS認証の有効化、カタログ同期の検証方法について説明します。'
 feature: Integration, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-09T16:55:50.934Z'
 last-update: 2026-10-01
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
@@ -60,11 +60,11 @@ ht-degree: 0%
 
 ## 統合の使用要件 {#requirements-to-use-the-integration}
 
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7以降。 要件の詳細については、[必要システム構成](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)を参照してください。
+* [Adobe Commerce](https://business.adobe.com/jp/products/magento/magento-commerce.html) 2.4.7以降。 要件の詳細については、[必要システム構成](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/system-requirements)を参照してください。
 
 * プロビジョニングされたサンドボックスインスタンスを使用する[!DNL Commerce Optimizer] ライセンス。
 
-* Composerを使用してコネクタメタパッケージをダウンロードするための[認証キー](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
+* Composerを使用してコネクタメタパッケージをダウンロードするための[認証キー](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
 
 * [[!DNL Commerce Optimizer]  サンドボックスインスタンス &#x200B;](../optimizer/get-started.md)への管理者アクセス。
 
@@ -72,9 +72,9 @@ ht-degree: 0%
 
 * Commerce管理者への管理者アクセス。
 
-* [&#x200B; アプリケーションサーバー [!DNL Adobe Commerce] へのコマンドラインアクセス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)。
+* [&#x200B; アプリケーションサーバー [!DNL Adobe Commerce] へのコマンドラインアクセス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/project/user-access)。
 
-* [!DNL Commerce Optimizer] プロジェクトがプロビジョニングされている[IMS組織](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?)への開発者アクセス。
+* [!DNL Commerce Optimizer] プロジェクトがプロビジョニングされている[IMS組織](https://experienceleague.adobe.com/ja/docs/core-services/interface/administration/organizations?)への開発者アクセス。
 
 >[!BEGINSHADEBOX]
 
