@@ -89,9 +89,9 @@ Adobe [!DNL Commerce]のお客様は、Real-Time CDPで構築されたオーデ�
 
    ![&#x200B; ルールの作成](assets/build-rule.png)
 
-   **セグメントビルダー** ワークスペースでは、オーディエンスのルールと条件を定義します。これらのルールと条件はCommerce ストアのイベントデータとプロファイルデータに基づいており、オーディエンスに適格かどうかを判断する条件を定義します。 たとえば、特定の商品を閲覧した利用者や、特定の期間内に購入した利用者を含むルールを作成することができます。 [&#x200B; セグメントビルダー](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)とルールと条件について詳しく説明します。
+   **セグメントビルダー** ワークスペースでは、オーディエンスのルールと条件を定義します。これらのルールと条件はCommerce ストアのイベントデータとプロファイルデータに基づいており、オーディエンスに適格かどうかを判断する条件を定義します。 たとえば、特定の商品を閲覧した利用者や、特定の期間内に購入した利用者を含むルールを作成することができます。 [&#x200B; セグメントビルダー](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder)とルールと条件について詳しく説明します。
 
-1. 「[&#x200B; イベント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events)」タブを選択します。
+1. 「[&#x200B; イベント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/segmentation/ui/segment-builder#events)」タブを選択します。
 
    ![&#x200B; イベント タブ &#x200B;](assets/audience-events-tab.png)
 
@@ -119,7 +119,7 @@ Adobe [!DNL Commerce]のお客様は、Real-Time CDPで構築されたオーデ�
 
 >[!IMPORTANT]
 >
->データを受け取る利用可能な宛先として[!DNL Commerce]をまだ設定していない場合は、[Adobe [!DNL Commerce] 接続](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-commerce)のトピックを参照してください。
+>データを受け取る利用可能な宛先として[!DNL Commerce]をまだ設定していない場合は、[Adobe [!DNL Commerce] 接続](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/catalog/personalization/adobe-commerce)のトピックを参照してください。
 
 1. オーディエンスの「**詳細**」タブで、「**宛先にアクティベート**」をクリックします。
 
@@ -129,7 +129,7 @@ Adobe [!DNL Commerce]のお客様は、Real-Time CDPで構築されたオーデ�
 
 ## &#x200B;3. オーディエンスダッシュボードでのオーディエンスの表示
 
-[!DNL Commerce]では、**Real-Time CDP Audiences** ダッシュボードを使用して、[!DNL Commerce] インスタンスに対してパーソナライズできるすべての[&#x200B; アクティブ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) オーディエンスを表示できます。
+[!DNL Commerce]では、**Real-Time CDP Audiences** ダッシュボードを使用して、[!DNL Commerce] インスタンスに対してパーソナライズできるすべての[&#x200B; アクティブ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) オーディエンスを表示できます。
 
 **Real-Time CDP Audiences** ダッシュボードにアクセスするには、_管理者_ サイドバーに移動し、**[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**&#x200B;に移動します。
 
@@ -142,9 +142,9 @@ Adobe [!DNL Commerce]のお客様は、Real-Time CDPで構築されたオーデ�
 このセクションでは、新しいオーディエンスに基づいてカート価格ルールを作成する方法について説明します。
 
 1. 新しいオーディエンスが&#x200B;**Real-Time CDP Audiences** ダッシュボードに表示されていることを確認します。
-1. [買い物かごの価格ルールを作成](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)。
-1. [新しいオーディエンスを使用して、カート価格ルールの条件](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition)を設定します。
-1. [商品がカートに追加されたときに実行するアクション &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions)を設定します。
+1. [買い物かごの価格ルールを作成](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)。
+1. [新しいオーディエンスを使用して、カート価格ルールの条件](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition)を設定します。
+1. [商品がカートに追加されたときに実行するアクション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions)を設定します。
 1. 引き続き、カート価格ルールを設定します。
 1. サンドボックスインスタンスの顧客ビューに移動します。
 1. オーディエンスを元にした商品をカートに追加します。 カート価格ルールが有効になっていることに注意してください。

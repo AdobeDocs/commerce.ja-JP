@@ -31,14 +31,14 @@ ht-degree: 0%
 
 [!DNL Payment Services]は、トランザクションを無効にするためのCommerceの既存の機能をサポートしています。 ボイドは、購入金額の承認によって保有されているクレジットカードまたはデビットカード口座の資金をリリースします。 トランザクションは、支払いがまだキャプチャされていない場合にのみ無効化できます。
 
-* 販売時点付きの資金のみを承認するようにストアが[設定](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}されている場合、ストアからの購入は、Commerce管理画面で`Processing` ステータスの注文になります。
+* 販売時点付きの資金のみを承認するようにストアが[設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}されている場合、ストアからの購入は、Commerce管理画面で`Processing` ステータスの注文になります。
 
-* 請求書を発行していない注文[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}を解約することもできます。 キャプチャされていない認証も、その解約プロセスの一部として無効になります。
+* 請求書を発行していない注文[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}を解約することもできます。 キャプチャされていない認証も、その解約プロセスの一部として無効になります。
 
 >[!NOTE]
 >
 >注文をキャンセルしても無効になりますが、注文をキャンセルしてもキャンセルはトリガーされません。
 
-注文の基本的な手順について詳しくは、コアユーザーガイドの[注文ワークフロー](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing){target="_blank"}のトピックを参照してください。
+注文の基本的な手順について詳しくは、コアユーザーガイドの[注文ワークフロー](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-processing){target="_blank"}のトピックを参照してください。
 
-無効な機能と注文トランザクションを無効にする方法について詳しくは、コアユーザーガイドの「[注文を処理する](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#process-an-order){target="_blank"}」を参照してください。
+無効な機能と注文トランザクションを無効にする方法について詳しくは、コアユーザーガイドの「[注文を処理する](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/orders/order-processing#process-an-order){target="_blank"}」を参照してください。

@@ -4,7 +4,7 @@ description: '[!DNL Adobe Commerce as a Cloud Service]のファイル形式の�
 feature: Catalog Management, Products, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 autotag-review: '2026-06-18T16:03:48.301Z'
 TQID: 'https://experienceleague.adobe.com/fFbsXGO54L1lSuQULqfP7A-BJKSYggdt7cy-GDvaSzU'
 product_v2:
@@ -48,7 +48,7 @@ ht-degree: 0%
 ---
 # 製品へのファイルの追加
 
-[!DNL Adobe Commerce as a Cloud Service]は、販売者がファイル（PDF、マニュアル、証明書、データシートなど）を製品に直接添付できる「ファイル」 [製品属性入力タイプ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"}をサポートしています。 ファイルはAmazon S3 メディアストレージに保存され、GraphQLを使用してストアフロントからアクセスすることも、REST APIを使用して統合を介してアクセスすることもできます。
+[!DNL Adobe Commerce as a Cloud Service]は、販売者がファイル（PDF、マニュアル、証明書、データシートなど）を製品に直接添付できる「ファイル」 [製品属性入力タイプ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"}をサポートしています。 ファイルはAmazon S3 メディアストレージに保存され、GraphQLを使用してストアフロントからアクセスすることも、REST APIを使用して統合を介してアクセスすることもできます。
 
 製品ファイル属性にファイルをアップロードするには、次の3つの方法があります。
 
@@ -60,15 +60,15 @@ ht-degree: 0%
 
 ファイルをアップロードする前に、ファイル属性を作成し、属性セットに割り当てる必要があります。
 
-* [&#x200B; ファイル属性を作成](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - **[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;を&#x200B;**[!UICONTROL File]**&#x200B;に設定します。
+* [&#x200B; ファイル属性を作成](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - **[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;を&#x200B;**[!UICONTROL File]**&#x200B;に設定します。
 
-* [属性を属性セットに割り当てる](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} – 新しいファイル属性を目的のグループにドラッグします。
+* [属性を属性セットに割り当てる](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} – 新しいファイル属性を目的のグループにドラッグします。
 
-* [製品ファイル属性](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes)設定で許可されるファイルタイプとサイズを設定します。
+* [製品ファイル属性](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/catalog/product-file-attributes)設定で許可されるファイルタイプとサイズを設定します。
 
 ## 管理者を介したファイルのアップロード
 
-[&#x200B; ファイル属性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"}を作成して属性セットに割り当てたら、製品編集ページから直接ファイルをアップロードできます。
+[&#x200B; ファイル属性](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"}を作成して属性セットに割り当てたら、製品編集ページから直接ファイルをアップロードできます。
 
 1. _管理者_ サイドバーで、**[!UICONTROL Catalog]** > **[!UICONTROL Products]**&#x200B;に移動します。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ## 製品の読み込みを通じてアップロード
 
-[import API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}または管理者インポート UIを使用して、製品にファイルを一括で添付できます。 製品ファイル属性では、外部URLからの読み込みのみがサポートされます。これは、製品画像の読み込み[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}の方法2と同じ方法です。 Commerceは、指定されたURLからファイルをダウンロードし、S3 メディアストレージに保存します。
+[import API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}または管理者インポート UIを使用して、製品にファイルを一括で添付できます。 製品ファイル属性では、外部URLからの読み込みのみがサポートされます。これは、製品画像の読み込み[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}の方法2と同じ方法です。 Commerceは、指定されたURLからファイルをダウンロードし、S3 メディアストレージに保存します。
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ sku,name,additional_attributes
 ADB112,"My Product",file_upload=https://example.com/files/manual.pdf
 ```
 
-いずれの場合も、URLは一般にアクセス可能である必要があり、ファイル拡張子とサイズは[設定された制限](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}に準拠している必要があります。
+いずれの場合も、URLは一般にアクセス可能である必要があり、ファイル拡張子とサイズは[設定された制限](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}に準拠している必要があります。
 
 ## GraphQLによるファイルの取得
 

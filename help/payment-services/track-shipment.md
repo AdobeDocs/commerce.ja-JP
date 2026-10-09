@@ -29,7 +29,7 @@ ht-degree: 0%
 
 [!DNL Payment Services]を使用すると、加盟店はPayPal加盟店ダッシュボードで配送の追跡情報を確認できます。
 
-Adobe Commerceの出荷グリッドについて詳しくは、[出荷](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}のトピックを参照してください。
+Adobe Commerceの出荷グリッドについて詳しくは、[出荷](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}のトピックを参照してください。
 
 ## 配送の追跡の仕組み
 

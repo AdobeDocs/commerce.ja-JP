@@ -50,11 +50,11 @@ ht-degree: 1%
 
 ## インストール
 
-Adobe [!DNL Commerce]のヘルスケアアドオンを購入した場合は、[HIPAA対応拡張機能](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation)が既にインストールされている可能性があります。 [!DNL Commerce] バックオフィスのイベントデータがHIPAA対応であることを確認するには、追加の&#x200B;**Data Services HIPAA**&#x200B;拡張機能を含む[!DNL Data Connection]拡張機能もインストールする必要があります。 **Data Services HIPAA**&#x200B;拡張機能を使用すると、Experience Platformに送信するすべてのバックオフィスデータがHIPAA対応になります。 拡張機能のインストール方法[について説明します](install.md#install-the-data-services-hipaa-extension)。
+Adobe [!DNL Commerce]のヘルスケアアドオンを購入した場合は、[HIPAA対応拡張機能](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation)が既にインストールされている可能性があります。 [!DNL Commerce] バックオフィスのイベントデータがHIPAA対応であることを確認するには、追加の&#x200B;**Data Services HIPAA**&#x200B;拡張機能を含む[!DNL Data Connection]拡張機能もインストールする必要があります。 **Data Services HIPAA**&#x200B;拡張機能を使用すると、Experience Platformに送信するすべてのバックオフィスデータがHIPAA対応になります。 拡張機能のインストール方法[について説明します](install.md#install-the-data-services-hipaa-extension)。
 
 >[!IMPORTANT]
 >
->**Data Services HIPAA**&#x200B;拡張機能をインストールすると、ライブサーチと製品レコメンデーションで使用されるストアフロントイベントデータがキャプチャされなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるためです。 ストアフロントイベントデータの取得と送信を続行するには、これらのサービスのイベント収集を再度有効にします。 詳しくは、[一般設定](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)を参照してください。
+>**Data Services HIPAA**&#x200B;拡張機能をインストールすると、ライブサーチと製品レコメンデーションで使用されるストアフロントイベントデータがキャプチャされなくなります。 これは、ストアフロントのイベントデータがクライアントサイドで生成されるためです。 ストアフロントイベントデータの取得と送信を続行するには、これらのサービスのイベント収集を再度有効にします。 詳しくは、[一般設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/general/general#data-services)を参照してください。
 
 ## Experience Platformに送信されたデータがHIPAAに対応していることを確認する方法
 
@@ -64,11 +64,11 @@ Data Governance フレームワーク内でのデータ使用ラベルとその�
 
 ### データ使用ラベルを[!DNL Commerce] フィールドに適用する
 
-[!DNL Commerce] スキーマにラベルを適用する方法については、[&#x200B; スキーマのデータ使用ラベルの管理](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels) チュートリアルの手順に従ってください。
+[!DNL Commerce] スキーマにラベルを適用する方法については、[&#x200B; スキーマのデータ使用ラベルの管理](https://experienceleague.adobe.com/ja/docs/experience-platform/xdm/tutorials/labels) チュートリアルの手順に従ってください。
 
-[!DNL Commerce] スキーマのフィールドに適用できる使用可能なラベルについて詳しくは、[機密ラベルの用語集](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference#sensitive)を参照してください。 例えば、ラベル `RHD`は、保護された医療情報（PHI）またはAdobeによってアップロードが契約上許可されている患者に関する情報を識別します。
+[!DNL Commerce] スキーマのフィールドに適用できる使用可能なラベルについて詳しくは、[機密ラベルの用語集](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/labels/reference#sensitive)を参照してください。 例えば、ラベル `RHD`は、保護された医療情報（PHI）またはAdobeによってアップロードが契約上許可されている患者に関する情報を識別します。
 
-[!DNL Commerce] データが機密としてラベル付けされている場合、ポリシーを適用して、ポリシー違反を構成するデータ操作を防止できます。 Experience Platformの[&#x200B; ポリシーの適用](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview)の詳細をご覧ください。
+[!DNL Commerce] データが機密としてラベル付けされている場合、ポリシーを適用して、ポリシー違反を構成するデータ操作を防止できます。 Experience Platformの[&#x200B; ポリシーの適用](https://experienceleague.adobe.com/ja/docs/experience-platform/data-governance/enforcement/overview)の詳細をご覧ください。
 
 ## Commerceでのデータの暗号化
 
@@ -80,7 +80,7 @@ Adobe [!DNL Commerce]では、ブロックレベルの暗号化が使用され�
 
 ### Experience Platformでのデータの暗号化
 
-販売者がExperience Platformにデータを送信する場合、そのデータはHTTPS TLS v1.2を使用して送信されます。 [Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption)がデータを暗号化する方法について詳しくは、こちらを参照してください。
+販売者がExperience Platformにデータを送信する場合、そのデータはHTTPS TLS v1.2を使用して送信されます。 [Experience Platform](https://experienceleague.adobe.com/ja/docs/experience-platform/landing/governance-privacy-security/encryption)がデータを暗号化する方法について詳しくは、こちらを参照してください。
 
 ## [!DNL Commerce]がプライバシー要求を処理する方法
 

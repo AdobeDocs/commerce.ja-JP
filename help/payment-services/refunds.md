@@ -29,9 +29,9 @@ ht-degree: 0%
 ---
 # 返金
 
-[!DNL Payment Services]件の注文の返金は、クレジットメモ処理の一環として管理画面で作成されます。 クレジットメモは、全額または一部払い戻しのために、お客様に起因する金額を示す文書です。これは、購入に適用されるか、お客様に直接払い戻されます。 クレジットメモは、[請求済み](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}の注文に対してのみ発行できます。
+[!DNL Payment Services]件の注文の返金は、クレジットメモ処理の一環として管理画面で作成されます。 クレジットメモは、全額または一部払い戻しのために、お客様に起因する金額を示す文書です。これは、購入に適用されるか、お客様に直接払い戻されます。 クレジットメモは、[請求済み](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}の注文に対してのみ発行できます。
 
-詳しくは、コアユーザーガイドの[&#x200B; クレジットメモ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos){target="_blank"}を参照し、クレジットメモの発行および印刷の方法を確認してください。
+詳しくは、コアユーザーガイドの[&#x200B; クレジットメモ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos){target="_blank"}を参照し、クレジットメモの発行および印刷の方法を確認してください。
 
 PayPalまたはクレジットカードで処理された注文の場合、次のことができます。
 
@@ -39,12 +39,12 @@ PayPalまたはクレジットカードで処理された注文の場合、次�
 * 注文の一部（または複数の一部）の返金
 * 特定の注文項目の値より少ない金額を返金します
 
-詳しくは、コアユーザーガイドの「[&#x200B; クレジットメモの発行](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memo-create){target="_blank"}」を参照してください。
+詳しくは、コアユーザーガイドの「[&#x200B; クレジットメモの発行](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memo-create){target="_blank"}」を参照してください。
 
 >[!NOTE]
 >
 >PayPalまたはクレジットカードで処理された注文で、残りの注文金額（元の金額から既存の返金の合計を差し引いた金額）を超える注文を部分的に返金しようとした場合、または全注文金額を超える金額の返金を行った場合にエラーが発生します。
 
-[!UICONTROL Payment Settings]設定の[!UICONTROL Payment Action]設定（`Authorize`または`Authorize and Capture`）により、注文の[基本払い戻しワークフロー](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos#refund-workflow){target="_blank"}が決定されます。
+[!UICONTROL Payment Settings]設定の[!UICONTROL Payment Action]設定（`Authorize`または`Authorize and Capture`）により、注文の[基本払い戻しワークフロー](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos#refund-workflow){target="_blank"}が決定されます。
 
-詳しくは、_クレジットメモの発行_&#x200B;の[支払いアクション設定セクション &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memo-create#payment-action-setting){target="_blank"}を参照してください。
+詳しくは、_クレジットメモの発行_&#x200B;の[支払いアクション設定セクション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memo-create#payment-action-setting){target="_blank"}を参照してください。
