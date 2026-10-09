@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
+source-git-commit: dee10a97e03a115bcd758171082061e95bb6adcc
 workflow-type: tm+mt
-source-wordcount: '8005'
+source-wordcount: '8064'
 ht-degree: 0%
 ---
 # リリースノート
@@ -64,11 +64,11 @@ ht-degree: 0%
 
 ## 2026年10月 – リリース #1 {#latest}
 
-[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 
-2026年10月6日（PT）に本番環境に以下の項目が追加されます。
+2026年10月7日（PT）に本番環境に公開されたアイテムは次のとおりです。
 
 >[!BEGINSHADEBOX]
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ### RESTでのカタログ価格ルールの管理
 
-新しいREST API エンドポイントを使用すると、統合で[&#x200B; カタログ価格ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog)をプログラムで管理および検索できます。<!-- ACCS-1621 -->
+新しい[REST API エンドポイント &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/catalog-price-rules)を使用すると、統合で[&#x200B; カタログ価格ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog)をプログラムで管理および検索できます。<!-- ACCS-1621 -->
 
 次のエンドポイントは`Magento_CatalogRule::promo_catalog`権限によって保護され、管理カタログの価格ルール画面も保護されます。 このエンドポイントを使用するには、管理者または統合レベルのアクセス権が必要です。
 
@@ -125,13 +125,13 @@ ht-degree: 0%
 
 ### Adobe REST APIを使用したカスタム配送割引の適用
 
-カートの価格ルールに適合しない場合は、管理者REST APIを介して任意の配送割引をカートに適用できるようになりました。
+カートの価格ルールに適合しない場合は、管理者REST APIを介して任意の[配送割引](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/shipping-discounts)をカートに適用できるようになりました。
 
 `POST /V1/carts/:cartId/shipping-discount`を使用して割引を設定します。 このエンドポイントを使用するには、管理者または統合レベルのアクセス権が必要です。<!-- ACCS-1156 -->
 
 ### カート商品をカスタム価格で追加
 
-標準のカート項目REST エンドポイント （`POST /V1/carts/:cartId/items`および`PUT /V1/carts/:cartId/items/:itemId`）に`custom_price`拡張機能の属性を追加して、カート項目にカスタム価格を設定できるようになりました。 カスタム価格を設定するには、管理者または統合トークンを指定する必要があります。 価格がマイナスのリクエスト、または動的価格設定のバンドル製品など、サポートされていない製品タイプのリクエストは拒否されます。<!-- ACCS-1155 -->
+標準のカート項目REST エンドポイント （`POST /V1/carts/:cartId/items`および`PUT /V1/carts/:cartId/items/:itemId`）に`custom_price`拡張機能の属性を追加して、カート項目[&#128279;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price)に カスタム価格を設定できるようになりました。 カスタム価格を設定するには、管理者または統合トークンを指定する必要があります。 価格がマイナスのリクエスト、または動的価格設定のバンドル製品など、サポートされていない製品タイプのリクエストは拒否されます。<!-- ACCS-1155 -->
 
 ```json
 {
@@ -161,6 +161,10 @@ ht-degree: 0%
 * `plugin.customer.api.account_management.activate` – 顧客がアカウントを確認します。
 * `plugin.negotiable_quote.api.negotiable_quote_management.decline` – 交渉可能な見積もりが拒否されました。
 
+### 一括API制限
+
+[Bulk API](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints)では、リクエストごとにエンティティの最大数が適用されるようになりました。 制限を超えるリクエストはエラーを返します。 [構成参照](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/bulk-api)の設定不可[!UICONTROL Maximum Entities Per Bulk Request] フィールドに制限が表示されます。 詳しくは、[API セキュリティ &#x200B;](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints)を参照してください。<!-- ACCS-703 -->
+
 ### 機能強化とバグ修正
 
 このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
@@ -168,8 +172,6 @@ ht-degree: 0%
 * Adobe I/O Runtime `X-OW-EXTRA-LOGGING` ヘッダーを`on`に設定したWebhookを作成または編集すると、[!DNL Commerce Admin]に警告が表示されるようになりました。 ヘッダーはデバッグ用に作成されており、実稼動環境では推奨されません。<!-- CCSAAS-5486 -->
 
 * 事前署名済みのS3 アップロード URLを介してアップロードされたファイルに、マルウェアのスキャンが追加されるようになりました。<!-- ACCS-1463 -->
-
-* Bulk APIは、リクエストごとに最大エンティティ数を適用するようになりました。 制限を超えるリクエストはエラーを返します。<!-- ACCS-703 -->
 
 * 商品の販売可能数量が過小報告される可能性があり、買い物かごへの追加、REST、GraphQLの在庫確認が誤ってブロックされる可能性がある問題を修正しました。<!-- ACCS-1908 -->
 
@@ -217,7 +219,7 @@ ht-degree: 0%
 
 ### リターンリクエストにファイルと画像を添付
 
-ストアフロント [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQLのミューテーションを通じて返品リクエストを送信する際に、ファイルと画像をアップロードできるようになりました。 [`initiateUpload`と`finishUpload`の変異](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/)を使用してファイルをアップロードし、返されたキーを返品項目のカスタム属性に割り当てます。<!-- CCSAAS-5410 -->
+ストアフロント [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQLのミューテーションを通じて返品リクエストを送信する際に、ファイルと画像をアップロードできるようになりました。 [`initiateUpload`の変異](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#recaptcha-validation)を使用してファイルをアップロードし、返されたキーを返品項目のカスタム属性に割り当てます。<!-- CCSAAS-5410 -->
 
 ### 在庫ソースの外観の管理
 
