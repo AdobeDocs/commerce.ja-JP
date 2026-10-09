@@ -1,10 +1,10 @@
 ---
-title: '[ !Data 書き出し] ログ コード リファレンス'
+title: '[!Data 書き出し] ログ コード リファレンス'
 description: データ書き出しのログコード、メッセージ、重大度レベルのリファレンスリストを使用して、同期の問題をトラブルシューティングし、部分的または完全な再同期が必要なタイミングを決定します。
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: c1341863-1ec4-4d67-8ff2-821ef0a61f33
-last-update: 2026-10-05T00:00:00.000Z
+last-update: 2026-10-05
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -31,7 +31,7 @@ topic_v2:
     internal-label: Data management
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: c76e776250d9f996daf61d3cf62e2070803e998c
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 このページでは、同期の問題をトラブルシューティングし、部分的または完全な再同期が必要なタイミングを判断するのに役立つデータ書き出しログメッセージのリファレンスを提供します。 これには、[!DNL Data Export]拡張機能によって発行されたエラー、警告、クリティカル ログ コードのみが含まれます。
 
-ログファイルとトラブルシューティングのガイダンスについては、[&#x200B; ログの確認とトラブルシューティング &#x200B;](logging.md)を参照してください。
+ログファイルとトラブルシューティングのガイダンスについては、[ ログの確認とトラブルシューティング ](logging.md)を参照してください。
 
 ## ログコードの詳細
 
@@ -50,6 +50,6 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> - [&#x200B; ログの確認とトラブルシューティング &#x200B;](logging.md)
-> - [&#x200B; シナリオのトラブルシューティング &#x200B;](troubleshooting-scenarios.md)
-> - [&#x200B; テーブル スキーマをフィード &#x200B;](../reference/feed-table-reference.md)
+> - [ ログの確認とトラブルシューティング ](logging.md)
+> - [ シナリオのトラブルシューティング ](troubleshooting-scenarios.md)
+> - [ テーブル スキーマをフィード ](../reference/feed-table-reference.md)
