@@ -1,7 +1,7 @@
 ---
-source-git-commit: c751dca1a7620b45068a7820054a842b50837bcd
+source-git-commit: b12fd59e97279b78017bee0403a7e7672adb1957
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1113'
 ht-degree: 1%
 ---
 # 新しいテンプレート
@@ -9,6 +9,50 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年10月8日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce as a Cloud Serviceの実稼動<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
+</td>
+      <td>
+        メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1aed1cc8a66473e936836aef6a2dee4085c8b3f">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月7日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/recommendations/filters#attributes">製品属性</a>に基づいてレコメンデーションをフィルタリングする方法に関する新しい節を追加しました。</p>
+</td>
+      <td>
+        フィードバック
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/16e5c6a7caf2e541bace72b3eb4898eabb13e24a">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年10月5日（PT）
 
@@ -374,50 +418,6 @@ ht-degree: 1%
         新しいトピック
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月10日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>カタログ保護を有効にする方法を説明する<br /> – 有効な署名トークンを持つリクエストのみがカタログ保護のデータを取得できるようにする<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/private-catalog-view"> プライベートカタログビュー</a>が追加されました。<br />- カタログ保護のトークンに使用されるキーを作成、割り当て、回転する方法を説明する<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/restricted-access-keys">制限付きアクセスキー</a>が追加されました。<br />- <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-view"> カタログビュー</a>の更新<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/overview">は何ですか？</a>, <a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/get-started">開始</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits">制限と境界</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/launch/launch-checklist"> チェックリストを起動</a>、および<a href="https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer コネクタガイド </a>を使用して、新しいプライベートカタログビューと制限付きアクセスキーのトピックを参照してください。</p>
-</td>
-      <td>
-        メジャーアップデート、新しいトピック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de0de805f8ecd4f329ce3afc90e28197186856c2">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月7日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceのサンドボックス <a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c88ec8730e24220b6dfd32da406d1ba3fd3a2ef2">コミット</a></td>
     </tr>
   </tbody>
 </table>

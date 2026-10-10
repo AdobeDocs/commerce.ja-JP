@@ -3,7 +3,7 @@ title: B2B Commerce用コネクタの設定
 description: B2B コネクタのインストール、Commerce スコープの選択、共有カタログデータの同期、カタログビューの検証、プロジェクションの正常性の監視の方法について説明します。
 feature: Integration, Configuration
 badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
-last-update: 2026-10-01T00:00:00.000Z
+last-update: 2026-10-01
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Data integration
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: c76e776250d9f996daf61d3cf62e2070803e998c
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 0%

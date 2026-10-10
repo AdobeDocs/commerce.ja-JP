@@ -4,7 +4,7 @@ description: '[!DNL Adobe Commerce Optimizer Connector]のインストール、�
 feature: Integration, Configuration
 badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-09T16:55:50.934Z'
-last-update: 2026-10-01T00:00:00.000Z
+last-update: 2026-10-01
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -42,7 +42,7 @@ topic_v2:
     internal-label: Data integration
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: c76e776250d9f996daf61d3cf62e2070803e998c
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%

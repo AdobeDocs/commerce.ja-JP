@@ -4,7 +4,7 @@ description: データ書き出しのログコード、メッセージ、重大�
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: c1341863-1ec4-4d67-8ff2-821ef0a61f33
-last-update: 2026-10-05T00:00:00.000Z
+last-update: 2026-10-05
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -31,7 +31,7 @@ topic_v2:
     internal-label: Data management
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: c76e776250d9f996daf61d3cf62e2070803e998c
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%

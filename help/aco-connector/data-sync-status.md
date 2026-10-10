@@ -5,7 +5,7 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
-last-update: 2026-10-01T00:00:00.000Z
+last-update: 2026-10-01
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: c76e776250d9f996daf61d3cf62e2070803e998c
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
