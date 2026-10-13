@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
+source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2364'
 ht-degree: 0%
 ---
 # 商品を絞り込む
@@ -280,3 +280,11 @@ Attribute filter support varies by recommendation type.
 - 空の属性値または無効な条件がある場合、推奨事項はストアフロントまたはプレビューパネルでレンダリングされません。
 - 属性値は、スペースや大文字と小文字を含め、カタログ内の値と完全に一致する必要があります。
 - どの製品もフィルター条件を満たさない場合、推奨事項はストアフロントまたはプレビューパネルでレンダリングされません。
+
+### 在庫切れ
+
+次の除外フィルターは、在庫状況に基づいて商品を除外できます。
+
+- 在庫切れ – （除外のみ）在庫切れの商品を除外します。
+
+![在庫状況フィルター](../../assets/filter-stock-status.png)
