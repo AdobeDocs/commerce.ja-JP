@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 559efed5340b7076f18a3efc0077f9afd5f8ca48
 workflow-type: tm+mt
-source-wordcount: '3447'
+source-wordcount: '3576'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension] リリースノート
@@ -60,6 +60,16 @@ ht-degree: 0%
 >[!DNL SaaS data export]拡張機能は、[!DNL Live Search]、[!DNL Product Recommendations]、[!DNL Catalog Service]と共に自動的にインストールされるモジュールのコレクションです。 システムにインストールされているバージョンは、[!DNL Composer]を使用して確認できます。 場合によっては、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップするために、システムのデータエクスポート拡張機能をアップグレードすることをお勧めします。
 
 ## 2026 リリース {#release-notes-2026}
+
+### 103.5.0 リリース
+
+_2026年10月13日_
+
+![修正](../assets/fix.svg) **書き出されたメタデータの属性の表示を正確に行う** – 属性の表示フィールドがストアフロントの表示設定ではなく、管理者表示設定を書き出す問題を修正しました。 接続されたCommerce サービスは、各属性に対して正しい表示を受け取るようになりました。<!--MDEE-932-->
+
+![新規](../assets/new.svg) **数値製品属性の範囲フィルター**&#x200B;**数値**&#x200B;入力タイプをサポートするように製品属性を更新しました。 この入力タイプは、通貨記号を表示せずに、負の数値を含む10進数値を格納する属性に適用されます。 [!DNL Live Search]が範囲ファセットを生成できるメタデータを使用して書き出されます。買い物客は、動作温度などの測定値でフィルタリングできます。<!--MDEE-1416-->
+
+![修正](../assets/fix.svg) **一貫したカスタム価格属性値** – カスタム価格属性値が、ストアのデフォルト通貨で小数点以下2桁で書き出されるようになりました。そのため、ストアフロントの価格書式は価格データ形式と一致します。<!--MDEE-1459-->
 
 ### 103.4.35 リリース
 
