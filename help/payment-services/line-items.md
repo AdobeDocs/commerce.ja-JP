@@ -160,7 +160,7 @@ Adobe Commerceを通じて注文が行われ、情報がPayPalに送信される
 
 ## 行項目の管理
 
-Adobe Commerce [では、各行の合計金額に基づいて税金が計算されます](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}。これは、同じ項目の複数の数量が注文された場合、または税込み価格がカタログに表示された場合に、丸め問題が発生する可能性があります。 この場合、合計数量は2行に分けることができますが、数量は注文された合計品目に等しくなります。
+Adobe Commerce [では、各行の合計金額に基づいて税金が計算されます](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}。これは、同じ項目の複数の数量が注文された場合、または税込み価格がカタログに表示された場合に、丸め問題が発生する可能性があります。 この場合、合計数量は2行に分けることができますが、数量は注文された合計品目に等しくなります。
 
 > マーチャントダッシュボードビューでの丸め問題を含む行項目の例
 
