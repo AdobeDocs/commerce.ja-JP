@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 559efed5340b7076f18a3efc0077f9afd5f8ca48
+source-git-commit: 9ea19181108118892e238ba2ffce4bb7b451ee94
 workflow-type: tm+mt
-source-wordcount: '3576'
+source-wordcount: '3608'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension] リリースノート
@@ -60,6 +60,12 @@ ht-degree: 0%
 >[!DNL SaaS data export]拡張機能は、[!DNL Live Search]、[!DNL Product Recommendations]、[!DNL Catalog Service]と共に自動的にインストールされるモジュールのコレクションです。 システムにインストールされているバージョンは、[!DNL Composer]を使用して確認できます。 場合によっては、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップするために、システムのデータエクスポート拡張機能をアップグレードすることをお勧めします。
 
 ## 2026 リリース {#release-notes-2026}
+
+### 103.5.1 リリース
+
+_2026年10月14日_
+
+![修正](../assets/fix.svg) **管理者UI**&#x200B;で製品属性を作成する際に、Number属性タイプを使用できるようになりました。 この属性により、ライブサーチでの数値の並べ替えと範囲のフィルタリングが可能になります。<!--MDEE-1416 -->
 
 ### 103.5.0 リリース
 
