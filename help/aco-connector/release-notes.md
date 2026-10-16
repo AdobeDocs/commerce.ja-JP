@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 1051405a754ac98534b8a27472dccbfb2fff19c7
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '602'
 ht-degree: 0%
 ---
 # Adobe Commerce Optimizer Connector リリースノート
@@ -52,6 +52,13 @@ ht-degree: 0%
 ![既知の問題](../assets/bug.svg)既知の問題
 
 ## 2026 リリース
+
+### 1.2.0 リリース
+
+_2026年10月13日_
+
+![修正](../assets/fix.svg)支払いサービスのストアフィードを有効にします。 <!--MDEE-1459-->
+![修正](../assets/fix.svg)製品ビデオが[!DNL Adobe Commerce Optimizer]に同期され、設定された並べ替え順序が維持されるようになりました。<!--DATA-7320-->
 
 ### 1.1.1 リリース
 
