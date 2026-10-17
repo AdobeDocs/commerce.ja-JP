@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 02108257eed58231854947feafc8c48e0a75a8bb
 workflow-type: tm+mt
-source-wordcount: '8064'
+source-wordcount: '8820'
 ht-degree: 0%
 ---
 # リリースノート
@@ -74,7 +74,106 @@ ht-degree: 0%
 >
 >Adobe Commerce オンプレミスまたはAdobe Commerce オンクラウドインフラストラクチャを使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview)を参照してください。
 
-## 2026年10月 – リリース #1 {#latest}
+## 2026年10月 – リリース #2 {#latest}
+
+[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下の項目は、2026年10月20日に実稼動環境で利用できるようになります。
+
+>[!BEGINSHADEBOX]
+
+<!-- CCSAAS-5510, ACCS-1756, ACCS-432, MDEE-1415, PAY-6085 not included due to pending epics and other dependencies -->
+
+### カスタム国別リージョンの管理
+
+新しいREST API エンドポイントを使用すると、統合で、デフォルトの地域データでカバーされていない国の状態や地域などのカスタム地域を管理できます。
+
+既定（システム）の地域は変更または削除できません。 これらのエンドポイントには[!UICONTROL Manage Country Regions]権限が必要です。<!-- ACCS-1937 -->
+
+* `GET /V1/directory/countries/:countryId/regions` – 国の地域を一覧表示して検索します。
+* `POST /V1/directory/countries/:countryId/regions` - 1回のリクエストで最大500個のカスタム領域を作成します。 いずれかのリージョンで検証に失敗した場合、リージョンは作成されません。
+* `PUT /V1/directory/countries/:countryId/regions/:regionId` - カスタム領域を更新します。
+* `DELETE /V1/directory/countries/:countryId/regions/:regionId` - カスタム領域を削除します。
+
+### 顧客アドレスイベントの購読
+
+統合機能は、[!DNL Adobe I/O Events]を通じて次のイベントを購読し、登録済みの顧客アドレス帳への変更を同期できるようになりました。 ゲストチェックアウトアドレスは、これらのイベントをトリガーしません。<!-- ACCS-2095 -->
+
+* `observer.customer_address_delete_commit_after` – 顧客アドレスが削除されました。
+* `observer.customer_address_save_commit_after` – 顧客アドレスが作成または更新されました。
+
+### アップロードされたファイルとインポートされたファイルの検証
+
+事前署名済みのアップロード URLをリクエストする際に、オプションのSHA-256 チェックサムを指定できるようになりました。 ファイルをアップロードするときに、`x-amz-checksum-sha256` ヘッダーに同じ値を送信します。<!-- ACCS-1464 -->
+
+* GraphQL - `checksum_sha256` フィールドを`initiateUpload`変異体の入力として指定します。
+* REST - `checksumSha256` フィールドで新しい`POST /V1/media/initiate-upload-with-checksum` エンドポイントを使用します。
+
+### 注文編集チェーン全体で注文合計を表示
+
+`Customer` GraphQL タイプに、注文編集チェーンのすべての注文の集計された合計を返す`chain_totals(filter: CustomerChainTotalsFilterInput)` フィールドが含まれるようになりました。 `original_number`を含むチェーン内の任意の注文番号でフィルタリングします。 `eq`条件のみがサポートされています。 このフィールドでは、デフォルトで無効になっている`original_number`注文フィルターと同じ機能フラグが使用されます。<!-- ACCS-1443 -->
+
+[!DNL Commerce Admin]は、[!UICONTROL Order Chains] グリッド （[!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Order Chains]）および受注チェーンの詳細ビューの[!UICONTROL Order Chain Totals]概要に、受注編集チェーン全体の統合合計を表示することもできます。
+
+これらのフィールドを有効にするには、Adobe Commerce カスタマーサクセスマネージャーにお問い合わせいただくか、サポートチケットを作成してください。
+
+### 在庫レベルの在庫状況の確認
+
+新しい`stockAvailability(skus: [String!]!)` GraphQL クエリでは、最大100 SKUの在庫レベルの空き状況が返されます。<!-- ACCS-2079 -->
+
+### 機能強化とバグ修正
+
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
+
+* 商品フィードは、在庫とカートの数量の設定を`ac_inventory` カスタム製品属性を通じて書き出し、税区分と属性を`ac_tax_class`および`ac_attribute_set` カスタム製品属性を通じて設定できるようになりました。<!-- ACCS-1981, MDEE-1129 -->
+
+* [!DNL AEM Assets]がビジュアライゼーションオーナーである場合に、GraphQLでカテゴリーイメージが返されない問題を修正しました。<!-- ACCS-1943 -->
+
+* [!DNL AEM Assets]の使用時にカテゴリを作成するとエラーが返される問題を修正しました。<!-- CCSAAS-5562 -->
+
+* ギフトレジストリの共有メールが送信できなかった問題を修正しました。<!-- CCSAAS-5312 -->
+
+* 消費税名をリクエストする際に`placeOrder` GraphQLの変更がエラーを返す場合がある問題を修正しました。<!-- CCSAAS-5569 -->
+
+* 属性オプションに削除されたストアのラベルがある場合やラベルがない場合に、製品フィードの同期が停止する問題を修正しました。<!-- ACCS-2097 -->
+
+* `PUT /V1/carts/:cartId/order`を通じて作成されたカートからの注文が、支払いの承認後に失敗する問題を修正しました。<!-- ACCS-2091, PAY-6857 -->
+
+* [!DNL Commerce Admin]で顧客のショッピングカートから注文を作成すると、支払い承認合計が変更され、顧客のストアフロントカートからアドレスが削除される問題を修正しました。<!-- ACCS-2100 -->
+
+* 同じカートから注文が行われている間に、REST APIを介して配送割引を適用または削除すると、再試行可能なエラーが返されるようになりました。<!-- ACCS-2077 -->
+
+* 製品の保存イベント （`observer.catalog_product_save_commit_after`および`observer.catalog_product_save_after`）に、製品リンクが追加、更新、または削除されたときに、現在の関連、アップセル、およびクロスセル製品が含まれるようになりました。<!-- ACCS-2049 -->
+
+* `/V1/returns`のREST エンドポイントは、カスタム属性を保存して返すようになりました。<!-- CCSAAS-5588 -->
+
+* `CartAddressInput` GraphQL入力で`telephone` フィールドが必要になる問題を修正しました。これにより、チェックアウト時に配送方法が表示されない可能性があります。<!-- ACCS-1944 -->
+
+* 日付範囲を持つ特別価格が、web サイトのタイムゾーンではなくデフォルトのタイムゾーンを使用して書き出される問題を修正しました。<!-- ACCS-2101 -->
+
+* GraphQLを通じて行われた注文について、送料と税金が正しく処理されない問題を修正しました。<!-- ACCS-1995 -->
+
+* Web サイト スコープで[!UICONTROL Company]と[!UICONTROL Shared Catalog]を有効にできない問題を修正しました。<!-- ACCS-1999 -->
+
+* 子製品が設定可能な属性に空の値を持つ場合に、一部の設定可能な製品がカタログへの同期を停止する問題を修正しました。<!-- ACCS-2107 -->
+
+* アイテムの状態、解決、または理由が設定されていない場合に、返されたアイテムがリストされていない状態で[!UICONTROL New Return]件のメールを送信できる問題を修正しました。<!-- CCSAAS-5585 -->
+
+* [!DNL Commerce Admin]の[!UICONTROL Catalog] > [!UICONTROL Categories] ページで、入力タイプのないカテゴリ属性を持つストアの読み込みに失敗する問題を修正しました。<!-- CCSAAS-5582 -->
+
+* [!UICONTROL Global] スコープを[!UICONTROL Content] > [!UICONTROL Design] > [!UICONTROL Configuration]で開くことができなかった問題を修正しました。<!-- CCSAAS-5583 -->
+
+* 製品価格またはステータスを編集する権限を持たない管理者ユーザーが[!UICONTROL Add Product] ページを開けない問題を修正しました。<!-- CCSAAS-5584 -->
+
+* マルチストアモードで税率フォームを開くことができなかった問題を修正しました。<!-- ACCS-2102 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年10月 – リリース #1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -130,6 +229,8 @@ ht-degree: 0%
 ### GraphQLを使用した注文の監査
 
 `CustomerOrdersFilterInput` GraphQL入力オブジェクトは、order-edit チェーン内の任意の注文番号でフィルタリングできる`original_number` フィールドをサポートするようになりました。 応答は、元の注文と、その後の編集から作成されたすべての注文を単一のチェーンとして返し、RESTの`order_original_id` フィルターと一致します。<!-- ACCS-1442 -->
+
+この機能を有効にするには、Adobe Commerce カスタマーサクセスマネージャーにお問い合わせいただくか、サポートチケットを作成してください。
 
 ### カタログ価格ルールを日時ごとにスケジュール
 

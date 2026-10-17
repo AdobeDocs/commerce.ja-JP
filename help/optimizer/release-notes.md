@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 0%
@@ -47,7 +47,7 @@ _2026年9月3日_
 
 ### 属性ランキング （ベータ版）
 
-[!DNL Adobe Commerce Optimizer] マーチャンダイジングルールで、**すべての製品リスト**、**カテゴリルール**、**検索ルール**&#x200B;の&#x200B;[**属性ランキング**](./merchandising/rules/add.md#attribute-ranking)&#x200B;がサポートされるようになりました。 ブランドやカテゴリなど、1つ以上の属性条件に一致する製品ごとに、個々のSKUを選択することなく、**[!UICONTROL Boost]**、**[!UICONTROL Bury]**、**[!UICONTROL Hide]** アクションを自動的に適用します。 属性ランキングはベータ版です。 [学習を増やす](./merchandising/rules/add.md#attribute-ranking)。
+[!DNL Adobe Commerce Optimizer] マーチャンダイジングルールで、**デフォルト検索ルール**、**カテゴリルール**、**検索ルール**&#x200B;の&#x200B;[**属性ランキング**](./merchandising/rules/add.md#attribute-ranking)&#x200B;がサポートされるようになりました。 ブランドやカテゴリなど、1つ以上の属性条件に一致する製品ごとに、個々のSKUを選択することなく、**[!UICONTROL Boost]**、**[!UICONTROL Bury]**、**[!UICONTROL Hide]** アクションを自動的に適用します。 属性ランキングはベータ版です。 [学習を増やす](./merchandising/rules/add.md#attribute-ranking)。
 
 {{aco-release}}
 

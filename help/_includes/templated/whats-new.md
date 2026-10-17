@@ -1,7 +1,7 @@
 ---
-source-git-commit: b12fd59e97279b78017bee0403a7e7672adb1957
+source-git-commit: f43710c77d063d923d136b9fda2d9283ede97788
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1250'
 ht-degree: 1%
 ---
 # 新しいテンプレート
@@ -9,6 +9,80 @@ ht-degree: 1%
 ## 最新情報
 
 このページには、過去60日間に行われた変更が含まれます。 コピー編集などのマイナーな更新は、このリストから除外されます。
+
+### 2026年10月16日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>マーチャンダイジングルールのドキュメントを更新して、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/overview"> マーチャンダイジングルールの概要</a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add"> ルールの作成と管理</a>および<a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/release-notes"> リリースノート </a>の「すべての製品リストのルールタイプ」の名前を「デフォルトの検索ルール」に変更し、「管理ルールのタイプ」メニューの「名前を変更」オプションと一致させました。</p>
+</td>
+      <td>
+        フィードバック
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b5c9b1b4ead9f355cd7438d3a8f1b90ac08b12d1">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月14日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost"> マーチャンダイジングルールの作成と管理</a>の[!UICONTROL Intelligent Ranking Boost]の文書化されたデフォルト値と範囲値を修正しました。デフォルトは<code>50</code> （以前は<code>5</code>として文書化）で、最大範囲は<code>1000</code> （以前は<code>100</code>として文書化）です。</p>
+</td>
+      <td>
+        テクニカル
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/07fb011b0303ebca11dd3e0948d264c72bd2422e">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月12日（PT）
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>説明</th>
+      <th>タイプ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><a href="https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/recommendations/filters"> フィルター</a>のレコメンデーションユニットの新しい在庫切れ除外フィルターに関するドキュメントを追加しました。このフィルターでは、在庫切れ商品をレコメンデーションから除外します。</p>
+</td>
+      <td>
+        フィードバック、メジャーアップデート
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/abba2327d9c678e374a94c5bc5ed091f401c8aff">コミット</a></td>
+    </tr>
+    <tr>
+      <td><p>最新の<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md"> ソースログコード.md</a>から<a href="https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference"> データ書き出しログコード参照</a>を更新しました。</p>
+</td>
+      <td>
+        テクニカル
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/83acf0b6474920141c0bcc354f7c49ea7d10d29c">コミット</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年10月8日（PT）
 
@@ -388,36 +462,6 @@ ht-degree: 1%
         メジャーアップデート
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">コミット</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月12日（PT）
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>説明</th>
-      <th>タイプ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adobe Commerce as a Cloud Serviceの実稼動<a href="https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes"> リリースノート </a>を追加しました。</p>
-</td>
-      <td>
-        メジャーアップデート
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">コミット</a></td>
-    </tr>
-    <tr>
-      <td><p>加盟店は、Commerce管理者から直接web サイトの範囲で、別のPayPal アカウントのオンボーディングをセルフサービスで行えるようになりました。 詳しくは、<a href="https://experienceleague.adobe.com/ja/docs/commerce/payment-services/configure/connect-website-account">Web サイトの別のPayPal アカウントを接続する</a>を参照してください。</p>
-</td>
-      <td>
-        新しいトピック
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">コミット</a></td>
     </tr>
   </tbody>
 </table>
