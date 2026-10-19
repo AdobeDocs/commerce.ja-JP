@@ -3,7 +3,7 @@ title: '[!DNL Adobe Commerce Optimizer Connector] フィードのフィールド
 description: すべてのフィードの[!DNL Adobe Commerce] カタログデータから[!DNL Adobe Commerce Optimizer]取り込みAPI形式への[!DNL Adobe Commerce Optimizer Connector] フィールドマッピングについて説明します。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
