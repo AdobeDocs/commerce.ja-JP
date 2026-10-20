@@ -63,7 +63,7 @@ Adobeは、[!DNL Adobe Commerce as a Cloud Service]を強化するインフラ�
 
 - **GDPRおよびCCPA**: Adobeには、データプライバシー規制に基づく義務を満たすためのツールとドキュメントが用意されています。
 
-Adobeの認定とコンプライアンスに関するドキュメントの一覧については、[Adobe Trust Center](https://www.adobe.com/trust/compliance/compliance-list.html){target="_blank"}を参照してください。
+Adobeの認定とコンプライアンスに関するドキュメントの一覧については、[Adobe Trust Center](https://www.adobe.com/jp/trust/compliance/compliance-list.html){target="_blank"}を参照してください。
 
 ## 実務担当者を対象とした認定
 

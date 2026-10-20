@@ -97,7 +97,7 @@ $.mage.cookies.clear(DNT_COOKIE);
 
 ## プライバシーコンプライアンス
 
-商品レコメンデーション データ収集には、個人を特定できる情報（PII）は含まれません。 Cookie IDやIP アドレスなど、あらゆるユーザーIDは匿名化されます。 詳しくは、[Adobe プライバシーポリシー](https://www.adobe.com/privacy/policy.html)を参照してください。
+商品レコメンデーション データ収集には、個人を特定できる情報（PII）は含まれません。 Cookie IDやIP アドレスなど、あらゆるユーザーIDは匿名化されます。 詳しくは、[Adobe プライバシーポリシー](https://www.adobe.com/jp/privacy/policy.html)を参照してください。
 
 >[!TIP]
 >
