@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9ea19181108118892e238ba2ffce4bb7b451ee94
+source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3719'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension] リリースノート
@@ -60,6 +60,16 @@ ht-degree: 0%
 >[!DNL SaaS data export]拡張機能は、[!DNL Live Search]、[!DNL Product Recommendations]、[!DNL Catalog Service]と共に自動的にインストールされるモジュールのコレクションです。 システムにインストールされているバージョンは、[!DNL Composer]を使用して確認できます。 場合によっては、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップするために、システムのデータエクスポート拡張機能をアップグレードすることをお勧めします。
 
 ## 2026 リリース {#release-notes-2026}
+
+### 103.5.2 リリース
+
+_2026年10月19日_
+
+![修正](../assets/fix.svg) **一貫したカテゴリ識別** - Adobe Commerce as a Cloud Service、Adobe Commerce on Cloudおよびオンプレミスでサポートされている[Catalog Service GraphQL API for Storefront Services](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/){page="_blank"}で、カテゴリ IDとストアビューコードを使用してカテゴリフィード識別を復元しました。 この更新により、カテゴリの移動でカテゴリが削除されたとして誤ってマークされるのを防ぐことができます。<!--MDEE-1473-->
+
+![修正](../assets/fix.svg) **PHP 8.5**&#x200B;での信頼性の高い属性オプションの処理 – オプションラベルが見つからないストアを参照する際に、製品フィードの書き出しエラーを防ぐための属性オプションの値の処理を修正しました。<!--MDEE-1472-->
+
+![修正](../assets/fix.svg) **PHP 8.5**&#x200B;での信頼性の高い設定可能な製品の同期 – null子属性値によって設定可能な製品が正しく同期されない問題を修正しました。<!--MDEE-1474-->
 
 ### 103.5.1 リリース
 

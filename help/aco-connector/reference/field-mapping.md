@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b62a0a272684daa2494017d290a711da8e1746b9
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1065'
 ht-degree: 2%
 ---
 
@@ -152,7 +152,10 @@ ht-degree: 2%
 
 `categories` フィードは[!DNL Adobe Commerce] データを[&#x200B; カテゴリーエンドポイント &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}に送信します。
 
-空の`urlPath` （論理ルートカテゴリ）を持つ項目はスキップされ、送信されません。
+コネクターは、カテゴリーフィードレコードをURL パスとストアビューコードで識別します。
+- &#x200B;
+  - カテゴリがカテゴリ ツリー内の別の親に移動すると、同期はそのカテゴリとその子孫に対して新しいパスを送信し、以前のパスを[!DNL Adobe Commerce Optimizer]から削除します。
+- 空の`urlPath` （論理ルートカテゴリ）を持つ項目はスキップされ、送信されません。
 
 | [!DNL Adobe Commerce] フィールド | [!DNL Commerce Optimizer] API フィールド | マッピングの詳細 |
 | --------------- | -------------- | ------- |
