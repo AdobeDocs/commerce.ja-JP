@@ -3,7 +3,7 @@ title: データ同期
 description: Commerce データソースから[!DNL Adobe Commerce Optimizer]に同期中のカタログデータを確認します。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
 TQID: https://experienceleague.adobe.com/ZTMFkch-YNS-CUgCdadmg1kemA8ORXQ7KGCEkI7d-Yw
 product_v2:
@@ -19,7 +19,7 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
+source-git-commit: 014ae9bbe0a9bb48e6a5d574af4fc47158ad33dc
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 **データ同期** ページは、*設定* > **データ同期**&#x200B;にあります。
 
-![&#x200B; データ同期](../assets/data-sync.png)
+![ データ同期](../assets/data-sync.png)
 
 **データ同期** ページには、次のフィールドが含まれています。
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 ## 同期済み製品のリスト
 
-同期済み製品の詳細をJSON形式で表示するには、同期済み製品テーブルの製品の行にあるコードアイコン ![&#x200B; コードリンク &#x200B;](../assets/data-sync-details.png)をクリックします。
+同期済み製品の詳細をJSON形式で表示するには、同期済み製品テーブルの製品の行にあるコードアイコン ![ コードリンク ](../assets/data-sync-details.png)をクリックします。
 
 ![製品の詳細を同期](../assets/synced-products.png)
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## データ同期が機能していることを確認します
 
-Adobe Commerce Optimizer コネクタを介してAdobe Commerceをアップストリームデータソースとして使用するプロジェクトの場合、データエクスポートプロセスを監視し、データフィード同期ステータス ページから再同期操作を開始できます。 詳しくは、_Adobe Commerce Optimizer Connector_ ドキュメントの[&#x200B; データ同期が機能していることを確認する](../../aco-connector/data-sync-status.md#verify-that-the-data-sync-is-working)を参照してください。
+Adobe Commerce Optimizer コネクタを介してAdobe Commerceをアップストリームデータソースとして使用するプロジェクトの場合、データエクスポートプロセスを監視し、データフィード同期ステータス ページから再同期操作を開始できます。 詳しくは、_Adobe Commerce Optimizer Connector_ ドキュメントの[ データ同期が機能していることを確認する](../../aco-connector/data-sync-status.md#verify-that-the-data-sync-is-working)を参照してください。
 
 ## 関連トピック
 
