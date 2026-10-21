@@ -53,7 +53,7 @@ AEM Assetsとの統合により、Adobe Commerceの商品ビジュアル機能�
 | --- | --- | --- |
 | クラウドまたはオンプレミスの[!DNL Adobe Commerce] | Commerceの[!DNL AEM Assets]統合。 Commerce統合パッケージを使用して、[!DNL Adobe Commerce]と[!DNL AEM Assets]の間で商品の画像、ビデオ、その他のメディアを同期および管理します。 | [Commerce用AEM Assets統合](/help/aem-assets-integration/overview.md) |
 | [!DNL Adobe Commerce as a Cloud Service] | [!DNL Product Visuals] powered by [!DNL AEM Assets] | [AEM Assets統合の設定](/help/aem-assets-integration/overview.md#next-steps) |
-| スタンドアロン [!DNL Adobe Commerce Optimizer] | [!DNL Product Visuals]は[!DNL AEM Assets]によって強化されています。 ベースカタログと価格データは、[Optimizer Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)を通じて取得されます。 | [AEM Assetsを使用した商品ビジュアル ](/help/optimizer/setup/product-visuals.md) |
+| スタンドアロン [!DNL Adobe Commerce Optimizer] | [!DNL Product Visuals]は[!DNL AEM Assets]によって強化されています。 ベースカタログと価格データは、[Optimizer Data Ingestion API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)を通じて取得されます。 | [AEM Assetsを使用した商品ビジュアル &#x200B;](/help/optimizer/setup/product-visuals.md) |
 | [!DNL Adobe Commerce]と[!DNL Adobe Commerce Optimizer Connector] | [!DNL Product Visuals]は[!DNL AEM Assets]によって強化されています。 カタログと価格データは、コネクタによって[!DNL Adobe Commerce]から同期されます。 | [Commerce Optimizerとの連携](/help/optimizer/integrations/integrations-overview.md) |
 
 [!DNL Product Visuals]は、Adobe Commerce as a Cloud ServiceとAdobe Commerce Optimizerの統合パスです。 Adobe AEMで管理している商品画像をCommerceのカタログレイヤーに同期し、ストアフロント APIを通じてストアフロント体験に提供します。

@@ -53,7 +53,7 @@ ht-degree: 0%
 
 1. [支払いサービスの互換性](https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility)で、製品のバージョンと国の空き状況を確認します。
 
-1. [ オンボーディング決済サービスのフロー](/help/payment-services/onboard.md)に従います。
+1. [&#x200B; オンボーディング決済サービスのフロー](/help/payment-services/onboard.md)に従います。
 
 1. Commerce オンクラウドまたはオンプレミス インスタンスがCommerce サービスに接続されていない場合は、まず[Commerce サービスの設定](set-up-commerce-services.md)に従ってください。
 

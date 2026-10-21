@@ -32,7 +32,7 @@ ht-degree: 0%
 
 **データ同期** ページは、*設定* > **データ同期**&#x200B;にあります。
 
-![ データ同期](../assets/data-sync.png)
+![&#x200B; データ同期](../assets/data-sync.png)
 
 **データ同期** ページには、次のフィールドが含まれています。
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 ## 同期済み製品のリスト
 
-同期済み製品の詳細をJSON形式で表示するには、同期済み製品テーブルの製品の行にあるコードアイコン ![ コードリンク ](../assets/data-sync-details.png)をクリックします。
+同期済み製品の詳細をJSON形式で表示するには、同期済み製品テーブルの製品の行にあるコードアイコン ![&#x200B; コードリンク &#x200B;](../assets/data-sync-details.png)をクリックします。
 
 ![製品の詳細を同期](../assets/synced-products.png)
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## データ同期が機能していることを確認します
 
-Adobe Commerce Optimizer コネクタを介してAdobe Commerceをアップストリームデータソースとして使用するプロジェクトの場合、データエクスポートプロセスを監視し、データフィード同期ステータス ページから再同期操作を開始できます。 詳しくは、_Adobe Commerce Optimizer Connector_ ドキュメントの[ データ同期が機能していることを確認する](../../aco-connector/data-sync-status.md#verify-that-the-data-sync-is-working)を参照してください。
+Adobe Commerce Optimizer コネクタを介してAdobe Commerceをアップストリームデータソースとして使用するプロジェクトの場合、データエクスポートプロセスを監視し、データフィード同期ステータス ページから再同期操作を開始できます。 詳しくは、_Adobe Commerce Optimizer Connector_ ドキュメントの[&#x200B; データ同期が機能していることを確認する](../../aco-connector/data-sync-status.md#verify-that-the-data-sync-is-working)を参照してください。
 
 ## 関連トピック
 

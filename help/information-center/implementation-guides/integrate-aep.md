@@ -60,7 +60,7 @@ ht-degree: 0%
 
 1. 前提条件と設定については、[[!DNL Data Connection] 概要](/help/data-connection/overview.md)を確認してください。
 
-1. ストアフロントイベントを有効にし、行動データ共有のデータストリームとデータセットを設定するには、[ データ接続データ収集手順](/help/data-connection/connect-data.md#data-collection)に従います。
+1. ストアフロントイベントを有効にし、行動データ共有のデータストリームとデータセットを設定するには、[&#x200B; データ接続データ収集手順](/help/data-connection/connect-data.md#data-collection)に従います。
 
 ## 関連するガイダンス
 

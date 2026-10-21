@@ -48,13 +48,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->このガイドは、Adobe Commerce as a Cloud Service、Adobe Commerce オンクラウドインフラストラクチャ、またはStorefront ServicesまたはAdobe Commerce Optimizer コネクタを使用したオンプレミスのデプロイメントに適用されます。 既存またはサードパーティのバックエンドを備えたスタンドアロンのAdobe Commerce Optimizerにも適用されます。 プロジェクトに適用されるオプションを確認するには、[実装アーキテクチャオプション ](../architecture-options/implementation-architectures.md)を参照してください。
+>このガイドは、Adobe Commerce as a Cloud Service、Adobe Commerce オンクラウドインフラストラクチャ、またはStorefront ServicesまたはAdobe Commerce Optimizer コネクタを使用したオンプレミスのデプロイメントに適用されます。 既存またはサードパーティのバックエンドを備えたスタンドアロンのAdobe Commerce Optimizerにも適用されます。 プロジェクトに適用されるオプションを確認するには、[実装アーキテクチャオプション &#x200B;](../architecture-options/implementation-architectures.md)を参照してください。
 
 ## Adobe Experience Managerの導入方法
 
 1. Edge Delivery Services上に構築されたストアフロントと現在の実装との比較を確認するには、[Adobe Commerce ストアフロントの概要](https://experienceleague.adobe.com/en/tools/commerce-storefront/)を参照してください。
 
-1. [ ストアフロント開発者ガイド ](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/)を使用して、最初に移行するページまたはフローを調べます。
+1. [&#x200B; ストアフロント開発者ガイド &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/)を使用して、最初に移行するページまたはフローを調べます。
 
 1. Adobe Commerce as a Cloud Serviceの場合は、既存のCommerce サービス接続（[!DNL Catalog Service]、[!DNL Live Search]、[!DNL Product Recommendations]、[!DNL Payment Services]）を維持します（[Commerce サービスの設定](set-up-commerce-services.md)を参照）。
 

@@ -54,16 +54,16 @@ Adobe Commerce ボイラープレートを使用すると、独自のAdobe Comme
 
 ## Adobe Experience Managerの導入方法
 
-1. アーキテクチャと使用可能なドロップインコンポーネントについては、[Adobe Commerce Storefrontの概要](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/)および[Storefront アーキテクチャ ](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/)のドキュメントを参照してください。
+1. アーキテクチャと使用可能なドロップインコンポーネントについては、[Adobe Commerce Storefrontの概要](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/)および[Storefront アーキテクチャ &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/)のドキュメントを参照してください。
 
 1. ストアフロントを設定するには、ストアフロントのドキュメントに従います。
 
    - [ストアフロントの構築](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/)
-   - [Storefront開発者ガイド ](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/)でプロジェクトのスコープ、設定、起動を行います。
+   - [Storefront開発者ガイド &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/)でプロジェクトのスコープ、設定、起動を行います。
 
 1. ストアフロントとCommerceバックエンドを連携。
 
-   デプロイメントモデルに応じて指示に従います。 詳しくは、_Storefront開発者ガイド_&#x200B;の[ バックエンドオプション ](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/backends/){target="_blank"}を参照してください。
+   デプロイメントモデルに応じて指示に従います。 詳しくは、_Storefront開発者ガイド_&#x200B;の[&#x200B; バックエンドオプション &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/backends/){target="_blank"}を参照してください。
 
 ## 関連するガイダンス
 

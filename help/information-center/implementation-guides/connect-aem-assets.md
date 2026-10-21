@@ -67,8 +67,8 @@ Adobe Commerce on cloud infrastructureの場合は、AEM Assets Integration for 
 
 - Commerce用[AEM Assets統合](/help/aem-assets-integration/overview.md) （Adobe Commerce オンクラウドインフラストラクチャまたはオンプレミス）。
 
-- [!DNL Adobe Commerce as a Cloud Service]と[AEM Assetsを活用した商品ビジュアル ](../../cloud-service/overview.md#product-visuals-powered-by-aem-assets)
+- [!DNL Adobe Commerce as a Cloud Service]と[AEM Assetsを活用した商品ビジュアル &#x200B;](../../cloud-service/overview.md#product-visuals-powered-by-aem-assets)
 
-- [!DNL Adobe Commerce Optimizer]と[AEM Assetsを活用した商品ビジュアル ](/help/optimizer/setup/product-visuals.md)
+- [!DNL Adobe Commerce Optimizer]と[AEM Assetsを活用した商品ビジュアル &#x200B;](/help/optimizer/setup/product-visuals.md)
 
 - [!DNL Adobe Commerce Storefront] （[AEM Assetsとの統合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)）

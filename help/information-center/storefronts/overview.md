@@ -38,11 +38,11 @@ ht-degree: 0%
 
 # ストアフロント
 
-ストアフロントは、Commerceのバックエンド層とAPI層から分離されています。 選択したアーキテクチャに応じて、ストアフロントは、Commerce Foundation API、Storefront Services API、[!DNL Adobe Commerce Optimizer] マーチャンダイジングサービス API、またはAPI Mesh、App Builder、その他の統合メカニズムを介して接続されたシステムからデータを取得できます。 各ストアフロントとCommerce バックエンドの組み合わせについては、[ アーキテクチャオプション ](../architecture-options/overview.md)を参照してください。
+ストアフロントは、Commerceのバックエンド層とAPI層から分離されています。 選択したアーキテクチャに応じて、ストアフロントは、Commerce Foundation API、Storefront Services API、[!DNL Adobe Commerce Optimizer] マーチャンダイジングサービス API、またはAPI Mesh、App Builder、その他の統合メカニズムを介して接続されたシステムからデータを取得できます。 各ストアフロントとCommerce バックエンドの組み合わせについては、[&#x200B; アーキテクチャオプション &#x200B;](../architecture-options/overview.md)を参照してください。
 
 ## Edge Delivery Servicesを活用したCommerce Storefront
 
-[!DNL Edge Delivery Services]を活用したCommerce ストアフロントは、Adobe Commerce ボイラープレート上に、ドロップインコンポーネントとコンテンツブロックを使用して構築された、顧客向けのストアフロントオプションです。 バックエンドに応じて、Commerce Foundation、Storefront Services、または[!DNL Adobe Commerce Optimizer] マーチャンダイジングサービスに接続する[ アーキテクチャの概要](../architecture-options/overview.md)のいずれかと互換性があります。 [Adobe Commerce Storefrontの概要](https://experienceleague.adobe.com/en/tools/commerce-storefront/)を参照してください。
+[!DNL Edge Delivery Services]を活用したCommerce ストアフロントは、Adobe Commerce ボイラープレート上に、ドロップインコンポーネントとコンテンツブロックを使用して構築された、顧客向けのストアフロントオプションです。 バックエンドに応じて、Commerce Foundation、Storefront Services、または[!DNL Adobe Commerce Optimizer] マーチャンダイジングサービスに接続する[&#x200B; アーキテクチャの概要](../architecture-options/overview.md)のいずれかと互換性があります。 [Adobe Commerce Storefrontの概要](https://experienceleague.adobe.com/en/tools/commerce-storefront/)を参照してください。
 
 ## Storefront Services
 
@@ -52,11 +52,11 @@ ht-degree: 0%
 - [!DNL Live Search]
 - [!DNL Product Recommendations]
 
-クラウドまたはオンプレミス（設定時）の[!DNL Adobe Commerce]と[!DNL Adobe Commerce as a Cloud Service]の両方でStorefront サービスを使用します。 これらは[!DNL Adobe Commerce as a Cloud Service]に限定されるものではなく、2つの[!DNL Adobe Commerce] プラットフォームオプションを区別するラベルとして使用しないでください。 [Storefront Services GraphQL スキーマ ](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/)を参照してください。
+クラウドまたはオンプレミス（設定時）の[!DNL Adobe Commerce]と[!DNL Adobe Commerce as a Cloud Service]の両方でStorefront サービスを使用します。 これらは[!DNL Adobe Commerce as a Cloud Service]に限定されるものではなく、2つの[!DNL Adobe Commerce] プラットフォームオプションを区別するラベルとして使用しないでください。 [Storefront Services GraphQL スキーマ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/)を参照してください。
 
 ## カスタムヘッドレスストアフロント
 
-[!DNL Edge Delivery Services]が提供するCommerce ストアフロント以外のストアフロントオプションには、[!DNL Luma]、[!DNL PWA Studio]、またはプラットフォームのサポートと実装要件に応じたカスタムヘッドレスストアフロントが含まれます。 カスタムヘッドレスストアフロントは、選択した[ アーキテクチャオプション ](../architecture-options/overview.md)に基づいて、他のストアフロントオプション（Commerce Foundation、Storefront Services、Commerce Optimizer Merchandising Services）と同じAPI ファミリーに接続されます。
+[!DNL Edge Delivery Services]が提供するCommerce ストアフロント以外のストアフロントオプションには、[!DNL Luma]、[!DNL PWA Studio]、またはプラットフォームのサポートと実装要件に応じたカスタムヘッドレスストアフロントが含まれます。 カスタムヘッドレスストアフロントは、選択した[&#x200B; アーキテクチャオプション &#x200B;](../architecture-options/overview.md)に基づいて、他のストアフロントオプション（Commerce Foundation、Storefront Services、Commerce Optimizer Merchandising Services）と同じAPI ファミリーに接続されます。
 
 ## カートとチェックアウトの統合
 

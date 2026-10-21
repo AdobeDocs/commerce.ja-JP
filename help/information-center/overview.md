@@ -32,14 +32,14 @@ Commerceインフォメーションセンターは、Adobe Commerceのドキュ�
 | セクション | 次の目的で使用します |
 | ------- | --------- |
 | [役割ごとに開始](get-started/get-started-by-role.md) | ビジネスの実務担当者、マーチャンダイザー、管理者、開発者、ソリューションアーキテクト、パートナーなど、役割にもとづいて出発点を見つけることができます。 |
-| [ プラットフォームとサービス ](portfolio/platform-and-services.md) | Adobe Commerceの各製品ポートフォリオを把握し、自社の要件に適合する製品やサービスを特定します。 |
+| [&#x200B; プラットフォームとサービス &#x200B;](portfolio/platform-and-services.md) | Adobe Commerceの各製品ポートフォリオを把握し、自社の要件に適合する製品やサービスを特定します。 |
 | [Commerce オプションを選択](portfolio/choose-commerce-option.md) | デプロイメントの好み、運用要件、求められるレベルのインフラストラクチャ管理などにもとづいて、適切なCommerce製品を選択するためのガイダンスを提供します。 |
-| [ ストアフロント ](storefronts/overview.md) | Adobe Commerceで利用可能なさまざまなストアフロントオプションについて説明します。 |
+| [&#x200B; ストアフロント &#x200B;](storefronts/overview.md) | Adobe Commerceで利用可能なさまざまなストアフロントオプションについて説明します。 |
 | [CommerceのAEM Assets統合](aem-assets/aem-assets-integration.md) | あらゆるCommerceまたはOptimizerのアーキテクチャに、一元化されたデジタルアセット管理システムを追加できます。 |
 | [API](apis/commerce-apis.md) | Commerce Foundation、Storefront Services、Commerce Optimizerをまたいで使用されるAPI ファミリーをご確認ください。 |
-| [実装ガイド ](implementation-guides/overview.md) | ストアフロントの構築やCommerceサービスの連携など、一般的な実装ジャーニーについては、製品をまたいだガイダンスに従ってください。 |
-| [ アーキテクチャオプション ](architecture-options/overview.md) | サポートされているCommerce アーキテクチャを比較し、複数のCommerce製品にまたがる参照パターンを確認します。 |
-| [ インサイトとガイダンス ](guidance-and-insights/overview.md) | ホワイトペーパー、セキュリティに関する推奨事項、ベストプラクティスなど、利用可能になった時点で戦略的ガイダンスを確認します。 |
+| [実装ガイド &#x200B;](implementation-guides/overview.md) | ストアフロントの構築やCommerceサービスの連携など、一般的な実装ジャーニーについては、製品をまたいだガイダンスに従ってください。 |
+| [&#x200B; アーキテクチャオプション &#x200B;](architecture-options/overview.md) | サポートされているCommerce アーキテクチャを比較し、複数のCommerce製品にまたがる参照パターンを確認します。 |
+| [&#x200B; インサイトとガイダンス &#x200B;](guidance-and-insights/overview.md) | ホワイトペーパー、セキュリティに関する推奨事項、ベストプラクティスなど、利用可能になった時点で戦略的ガイダンスを確認します。 |
 | [移行と導入](migration-adoption/overview.md) | Adobe Commerce Optimizerを段階的に導入しながら、アーキテクチャ間の移行を計画する。 |
 
 >[!NOTE]

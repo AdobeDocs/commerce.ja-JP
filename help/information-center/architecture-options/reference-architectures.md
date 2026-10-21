@@ -63,7 +63,7 @@ Adobe Commerceのボイラープレート上に構築され、ドロップイン
 
 ## カタログ同期パイプライン
 
-Adobe CommerceとAdobe Commerce サービス（Commerce Optimizer、ライブサーチ、カタログサービス、商品レコメンデーション、およびその他の接続された[Commerce サービス ](../../landing/home.md)）間でカタログ、価格、および在庫データを同期するためのデータフロー。
+Adobe CommerceとAdobe Commerce サービス（Commerce Optimizer、ライブサーチ、カタログサービス、商品レコメンデーション、およびその他の接続された[Commerce サービス &#x200B;](../../landing/home.md)）間でカタログ、価格、および在庫データを同期するためのデータフロー。
 
 - Adobe Commerce as a Cloud Service、クラウドインフラストラクチャ上、またはオンプレミスのデプロイメントについては、[SaaS Data Exportとのデータの同期](/help/data-export/sync-overview.md)を参照してください
 

@@ -74,11 +74,11 @@ ht-degree: 0%
 
 ## Storefront Services GraphQL API
 
-[!DNL Catalog Service]、[!DNL Live Search]、[!DNL Product Recommendations]を通じて、ストアフロント向けのカタログ、検索、レコメンデーションエクスペリエンスを提供します。 クラウド、オンプレミス、[!DNL Adobe Commerce as a Cloud Service]上の[!DNL Adobe Commerce]によって使用されます。 [Storefront Services GraphQL スキーマ ](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/)を参照してください。
+[!DNL Catalog Service]、[!DNL Live Search]、[!DNL Product Recommendations]を通じて、ストアフロント向けのカタログ、検索、レコメンデーションエクスペリエンスを提供します。 クラウド、オンプレミス、[!DNL Adobe Commerce as a Cloud Service]上の[!DNL Adobe Commerce]によって使用されます。 [Storefront Services GraphQL スキーマ &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/)を参照してください。
 
 ## Commerce Optimizer Merchandising Services GraphQL API
 
-Optimizerで管理されているカタログ、カタログビュー、価格コンテキスト、検索、レコメンデーション、マーチャンダイジングの結果を取得します。 [!DNL Adobe Commerce]様がクラウド上で、[!DNL Adobe Commerce Optimizer Connector]様とスタンドアロン [!DNL Adobe Commerce Optimizer]様とオンプレミスで使用しています。 [Commerce Optimizer マーチャンダイジングサービス ](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/)を参照してください。
+Optimizerで管理されているカタログ、カタログビュー、価格コンテキスト、検索、レコメンデーション、マーチャンダイジングの結果を取得します。 [!DNL Adobe Commerce]様がクラウド上で、[!DNL Adobe Commerce Optimizer Connector]様とスタンドアロン [!DNL Adobe Commerce Optimizer]様とオンプレミスで使用しています。 [Commerce Optimizer マーチャンダイジングサービス &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/)を参照してください。
 
 ## Commerce Optimizer Data Ingestion REST API
 
@@ -109,7 +109,7 @@ API Meshを使用して、プライベート APIまたはサードパーティ A
 
 ### AEM Assets
 
-AEM Assetsは、個別の統合パスではなく、任意のCommerceまたはOptimizer アーキテクチャに追加できる、オプションのクロスカットのDAM統合です。 Commerce](../aem-assets/aem-assets-integration.md)の[AEM Assetsとの連携を参照してください。
+AEM Assetsは、個別の統合パスではなく、任意のCommerceまたはOptimizer アーキテクチャに追加できる、オプションのクロスカットのDAM統合です。 Commerce[&#128279;](../aem-assets/aem-assets-integration.md)のAEM Assetsとの連携を参照してください。
 
 ## 関連するガイダンス
 

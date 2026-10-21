@@ -63,10 +63,10 @@ Adobe Commerceのアーキテクチャは、一般的に、コマースバック
 
 | セクション | 次の目的で使用します |
 | ------- | --------- |
-| [ プラットフォームとサービス ](../portfolio/platform-and-services.md) | Adobe Commerce、Commerce Foundation、Adobe Commerce Optimizer、Adobe Commerce as a Cloud Serviceの各Commerce製品について説明します。 |
+| [&#x200B; プラットフォームとサービス &#x200B;](../portfolio/platform-and-services.md) | Adobe Commerce、Commerce Foundation、Adobe Commerce Optimizer、Adobe Commerce as a Cloud Serviceの各Commerce製品について説明します。 |
 | [Commerce オプションを選択](../portfolio/choose-commerce-option.md) | トランザクションの所有権、デプロイメントモデル、マーチャンダイジングニーズにもとづいて、Commerceのオプションを比較できます。 |
-| [ アーキテクチャオプション ](../architecture-options/implementation-architectures.md) | システム図や参照リンクなど、サポートされている4つのアーキテクチャをすべて詳細に比較できます。 |
-| [ ストアフロント ](../storefronts/overview.md) | ストアフロントのオプションと、それらが各アーキテクチャとどのように連携しているかを把握します。 |
+| [&#x200B; アーキテクチャオプション &#x200B;](../architecture-options/implementation-architectures.md) | システム図や参照リンクなど、サポートされている4つのアーキテクチャをすべて詳細に比較できます。 |
+| [&#x200B; ストアフロント &#x200B;](../storefronts/overview.md) | ストアフロントのオプションと、それらが各アーキテクチャとどのように連携しているかを把握します。 |
 | [API](../apis/commerce-apis.md) | Commerce Foundation、Storefront Services、Commerce Optimizerで使用されるAPI ファミリーを比較します。 |
 | [CommerceのAEM Assets統合](../aem-assets/aem-assets-integration.md) | あらゆるCommerceまたはOptimizerのアーキテクチャに、一元化されたデジタルアセット管理システムを追加できます。 |
 | [移行と導入](../migration-adoption/overview.md) | Adobe Commerce Optimizerを段階的に導入しながら、アーキテクチャ間の移行を計画する。 |

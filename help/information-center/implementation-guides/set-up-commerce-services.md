@@ -54,7 +54,7 @@ Magento Open Sourceは、[!DNL Payment Services]にCommerce Services Connector�
 
 1. API キーを取得して設定するには、[Commerce Services Connector](/help/landing/saas.md)のドキュメントを参照してください。
 
-1. コネクタを通じて利用できる個々のサービスについては、[Adobe Commerce サービスガイド ](/help/landing/home.md)を参照してください。
+1. コネクタを通じて利用できる個々のサービスについては、[Adobe Commerce サービスガイド &#x200B;](/help/landing/home.md)を参照してください。
 
 ## 関連するガイダンス
 
