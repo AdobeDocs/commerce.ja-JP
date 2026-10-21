@@ -49,7 +49,7 @@ ht-degree: 0%
 
 - **[!DNL Adobe Commerce as a Cloud Service]** - Commerce Cloud Manager セルフサービス プロビジョニング ポータルを使用して、サンドボックスおよび実稼動インスタンスを起動します。 [Adobe Commerce as a Cloud Serviceの概要](/help/cloud-service/getting-started.md)を参照してください。
 
-- **Adobe Commerce クラウド版（パートナー）**:Adobe サポートを通じてサンドボックスリクエストを送信します。 [&#x200B; クラウド インフラストラクチャ サンドボックス リクエストに関するパートナーAdobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/partner-magento-commerce-cloud-sandbox-requests)を参照してください。
+- **Adobe Commerce クラウド版（パートナー）**:Adobe サポートを通じてサンドボックスリクエストを送信します。 [&#x200B; クラウド インフラストラクチャ サンドボックス リクエストに関するパートナーAdobe Commerce](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/partner-magento-commerce-cloud-sandbox-requests)を参照してください。
 
 - **Commerce サービス** - [Commerce サービスコネクタ &#x200B;](/help/landing/saas.md)でサンドボックス API キーを使用して、実稼動インスタンスを接続する前にサービス統合をテストします。
 

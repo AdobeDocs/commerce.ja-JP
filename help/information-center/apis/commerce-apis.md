@@ -100,7 +100,7 @@ Optimizerで管理されているカタログ、カタログビュー、価格�
 
 API Meshを使用して、プライベート APIまたはサードパーティ APIでAdobe Commerce APIをオーケストレーションします。 Adobe Developer App Builderを使用して、カスタムアプリケーションや統合機能を構築できます。 関連するCommerceの拡張性ガイダンスについては、[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)および[Adobe Commerceの拡張性](https://developer.adobe.com/commerce/extensibility/)を参照してください。
 
-イベント駆動型の統合については、[Adobe Commerce用Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)を参照してください。
+イベント駆動型の統合については、[Adobe Commerce用Adobe I/O Events](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)を参照してください。
 
 
 ### カートとチェックアウトの引き継ぎ

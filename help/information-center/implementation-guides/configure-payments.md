@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## Adobe Experience Managerの導入方法
 
-1. [支払いサービスの互換性](https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility)で、製品のバージョンと国の空き状況を確認します。
+1. [支払いサービスの互換性](https://experienceleague.adobe.com/ja/docs/commerce/payment-services/compatibility)で、製品のバージョンと国の空き状況を確認します。
 
 1. [&#x200B; オンボーディング決済サービスのフロー](/help/payment-services/onboard.md)に従います。
 

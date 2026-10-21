@@ -51,7 +51,7 @@ Commerceインフォメーションセンターは、Adobe Commerceのドキュ�
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>学習とリソース </strong><br/>
-<a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/overview" target="_blank"> チュートリアル </a> - <a href="https://experienceleague.adobe.com/en/playlists?solution=Commerce" target="_blank"> ビデオプレイリスト </a> - <a href="https://helpx.adobe.com/legal/product-descriptions.html" target="_blank">製品の説明</a> - <a href="https://certification.adobe.com/certifications#filters=Adobe%20Commerce" target="_blank">認定</a>
+<a href="https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/overview" target="_blank"> チュートリアル </a> - <a href="https://experienceleague.adobe.com/ja/playlists?solution=Commerce" target="_blank"> ビデオプレイリスト </a> - <a href="https://helpx.adobe.com/jp/legal/product-descriptions.html" target="_blank">製品の説明</a> - <a href="https://certification.adobe.com/certifications#filters=Adobe%20Commerce" target="_blank">認定</a>
 
 </td>
 <td><strong>開発者向けリソース </strong><br/>

@@ -2,7 +2,7 @@
 title: Adobe Commerce Optimizer Connector
 description: '[!DNL Adobe Commerce Optimizer Connector]が検索とストアフロントの配信のためにCommerceから[!DNL Adobe Commerce Optimizer]にカタログデータを同期する方法について説明します。'
 feature: Integration, Storefront, Configuration
-badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
+badgePaas: label="PaaSのみ" type="Informative" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"
 autotag-review: '2026-06-09T19:00:00.000Z'
 nudge: true
 TQID: 'https://experienceleague.adobe.com/v769V06jl-9YfovpL3HOB-FxovIMZyHxOlHXHvkQmbc'

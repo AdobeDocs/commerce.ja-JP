@@ -51,9 +51,9 @@ ht-degree: 0%
 次のドキュメントでは、様々なデプロイメントモデルとユースケースをまたいで、Adobe Commerce プラットフォームとサービスの参照アーキテクチャパターンを示します。
 
 - [Adobe Commerce as a Cloud Serviceのアーキテクチャ](/help/cloud-service/overview.md#architecture)
-- [Adobe Commerceの企業向けリファレンスアーキテクチャ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint){target="_blank"}
+- [Adobe Commerceの企業向けリファレンスアーキテクチャ](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint){target="_blank"}
 - [Adobe Commerce ストアフロントのアーキテクチャ](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/){target="_blank"}
-- [Adobe Commerce on cloud インフラストラクチャアーキテクチャ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture){target="_blank"}
+- [Adobe Commerce on cloud インフラストラクチャアーキテクチャ](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture){target="_blank"}
 
 ## Edge Delivery Servicesを活用したストアフロント
 
