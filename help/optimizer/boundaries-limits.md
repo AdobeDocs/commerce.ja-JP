@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1483'
 ht-degree: 0%
 ---
 # 制限と境界
@@ -118,7 +118,6 @@ Dynamic Mediaの使用状況は、[!DNL Adobe Commerce Optimizer]内の製品ビ
 | カタログビューごとのポリシー | 許可されるデータフィルターの数 | 10 | いいえ |
 | ポリシーの属性値 | フィルタリング用に設定できる製品特性の数 | 100 | いいえ |
 | [制限付きアクセスキー割り当て](setup/private-catalog-view.md) | 単一のカタログ ビューに割り当てることができる制限付きアクセス キーの数 | 3 | いいえ |
-| [制限付きアクセスキー](setup/restricted-access-keys.md) | 環境ごとのキーの数 | 最大100 | いいえ |
 | RSA キーのサイズ（制限付きアクセスキー） | 制限付きアクセスキーに対して受け入れられる最小および最大キー強度 | 最小2048 ビット、最大8192 ビット | いいえ |
 | 制限付きアクセスキー | キー失効の伝播遅延 | キャッシュにより、最大5分。 削除されたキーによって署名されたトークンは、遅延が経過すると拒否されます。 | 影響しない |
 

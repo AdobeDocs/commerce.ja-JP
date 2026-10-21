@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## データの取り扱いとプライバシー
 
-[!DNL Product Recommendations]のデータ収集には、個人を特定できる情報（PII）が含まれていません。 Cookie IDやIP アドレスなどのユーザーIDはすべて厳密に匿名化されます。 詳しくは、[Adobe プライバシーポリシー](https://www.adobe.com/privacy/policy.html)を参照してください。
+[!DNL Product Recommendations]のデータ収集には、個人を特定できる情報（PII）が含まれていません。 Cookie IDやIP アドレスなどのユーザーIDはすべて厳密に匿名化されます。 詳しくは、[Adobe プライバシーポリシー](https://www.adobe.com/jp/privacy/policy.html)を参照してください。
 
 データの同期について詳しくは、[&#x200B; データ管理ダッシュボード &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)を参照してください。
 

@@ -47,7 +47,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Product Recommendations]の目的でのデータ収集には、個人を特定できる情報（PII）は含まれません。 Cookie IDやIP アドレスなど、あらゆるユーザーIDは厳密に匿名化されます。 [詳細](https://www.adobe.com/privacy/experience-cloud.html)を学習します。
+>[!DNL Product Recommendations]の目的でのデータ収集には、個人を特定できる情報（PII）は含まれません。 Cookie IDやIP アドレスなど、あらゆるユーザーIDは厳密に匿名化されます。 [詳細](https://www.adobe.com/jp/privacy/experience-cloud.html)を学習します。
 
 ## 医療業界のユーザー事例
 
