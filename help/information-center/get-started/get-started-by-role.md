@@ -57,7 +57,7 @@ Adobe Commerceの概要と、管理者とストアフロントの連携の仕組
 
 - [[!DNL Adobe Commerce Optimizer role-based workflows]](/help/optimizer/get-started.md#role-based-workflows)
 
-- [Adobe Commerce入門ガイド](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview)
+- [Adobe Commerce入門ガイド](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/guide-overview)
 
 
 ## マーチャンダイジング担当者には
@@ -90,8 +90,8 @@ Adobe Commerceには、2つのマーチャンダイジングパスがありま�
 
 - Adobe Commerce on Cloudまたはオンプレミスのプラットフォーム管理については、以下を参照してください。
 
-- [Commerce on Cloud Infrastructure ガイド](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
-- オンプレミス用[Adobe Commerce Operational Guides](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home)。
+- [Commerce on Cloud Infrastructure ガイド](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview)
+- オンプレミス用[Adobe Commerce Operational Guides](https://experienceleague.adobe.com/ja/docs/commerce-operations/operational-guides/home)。
 
 ## 開発者向け
 

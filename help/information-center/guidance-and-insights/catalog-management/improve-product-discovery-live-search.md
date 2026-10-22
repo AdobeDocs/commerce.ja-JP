@@ -47,7 +47,7 @@ Adobe Commerceのライブサーチは、発見した問題を発見し、エク
 
 ## 検索パフォーマンスのシグナルを探す
 
-ライブサーチのパフォーマンスワークスペースで、ユニーク検索、ゼロ結果検索、人気の高い検索結果、クリックスルー率、コンバージョン率、平均クリック位置などの指標を確認します。 トレンドを特定し、注意が必要なクエリや製品を決定するために使用します。 [&#x200B; パフォーマンス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/performance)
+ライブサーチのパフォーマンスワークスペースで、ユニーク検索、ゼロ結果検索、人気の高い検索結果、クリックスルー率、コンバージョン率、平均クリック位置などの指標を確認します。 トレンドを特定し、注意が必要なクエリや製品を決定するために使用します。 [&#x200B; パフォーマンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/performance)
 
 ![&#x200B; ユニーク検索、平均クリック数、クリック率、コンバージョン率、検索結果ゼロ率を表示するライブサーチのパフォーマンスワークスペース。ユニーク検索、検索結果ゼロ、人気の検索結果のタブが表示される](../../assets/guidance-and-insights/live-search-performance-dashboard.png){width="800" zoomable="yes"}
 
@@ -65,7 +65,7 @@ Adobe Commerceのライブサーチは、発見した問題を発見し、エク
 
 買い物客は、必ずしもカタログ内の用語を使用して商品を説明するわけではありません。 例えば、「一日中立っていられる快適な靴」を探している人は、「クッション付きウォーキングスニーカー」と呼ばれる商品に興味を持つかもしれません。
 
-セマンティック検索では、意味とコンテキストをキーワードマッチングと併用することで、カタログの文言と一致しないクエリであっても、自然言語のクエリを関連商品に結び付けることができます。 ライブサーチは、キーワードとセマンティックマッチングを1つの検索エクスペリエンスに統合したものです。 [&#x200B; セマンティック検索](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search)
+セマンティック検索では、意味とコンテキストをキーワードマッチングと併用することで、カタログの文言と一致しないクエリであっても、自然言語のクエリを関連商品に結び付けることができます。 ライブサーチは、キーワードとセマンティックマッチングを1つの検索エクスペリエンスに統合したものです。 [&#x200B; セマンティック検索](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/semantic-search)
 
 セマンティックマッチングは、探索的検索に役立ちますが、関連性は、依然としてカタログで利用可能な商品や情報に依存します。 正確なモデル、仕様、または互換性の要件を含む検索の場合、結果が正確なままであることを確認します。
 
@@ -73,9 +73,9 @@ Adobe Commerceのライブサーチは、発見した問題を発見し、エク
 
 設定は、使用するAdobe Commerce製品によって異なります。
 
-- **Adobe Commerce on cloud infrastructureまたはオンプレミス：** Live Search セマンティック検索は、Adobe Commerce 2.4.4以降で使用できます。 管理画面で、マーケティング/SEOと検索/ライブ検索に移動し、設定を開き、セマンティック検索を有効にして保存します。 英語のカタログをサポートしています。 [設定 – セマンティック検索](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/settings)
-- **Adobe Commerce as a Cloud Service:**&#x200B;このシステムでは、セマンティック検索がデフォルトで有効になります。 英語のカタログをサポートしています。 [&#x200B; セマンティック検索](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search)
-- **Adobe Commerce Optimizer:** セマンティック検索がデフォルトで有効になります。 オプションで、セマンティックブーストや類似度しきい値などのコントロールを調整できます。 設定には、ファジー検索オプションも含まれます。 [&#x200B; セマンティック検索](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/semantic-search) ・ [設定 – オプションの調整](https://experienceleague.adobe.com/en/docs/commerce/optimizer/settings)
+- **Adobe Commerce on cloud infrastructureまたはオンプレミス：** Live Search セマンティック検索は、Adobe Commerce 2.4.4以降で使用できます。 管理画面で、マーケティング/SEOと検索/ライブ検索に移動し、設定を開き、セマンティック検索を有効にして保存します。 英語のカタログをサポートしています。 [設定 – セマンティック検索](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/settings)
+- **Adobe Commerce as a Cloud Service:**&#x200B;このシステムでは、セマンティック検索がデフォルトで有効になります。 英語のカタログをサポートしています。 [&#x200B; セマンティック検索](https://experienceleague.adobe.com/ja/docs/commerce/live-search/live-search-admin/semantic-search)
+- **Adobe Commerce Optimizer:** セマンティック検索がデフォルトで有効になります。 オプションで、セマンティックブーストや類似度しきい値などのコントロールを調整できます。 設定には、ファジー検索オプションも含まれます。 [&#x200B; セマンティック検索](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/semantic-search) ・ [設定 – オプションの調整](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/settings)
 
 ## 検索インサイトをアクションにつなげる
 
@@ -83,8 +83,8 @@ Adobe Commerceのライブサーチは、発見した問題を発見し、エク
 
 1. **調査するクエリを検索します。** 検索結果ゼロの検索、人気のクエリ、エンゲージメントの低い検索を確認できます。
 2. **買い物客が何を求めているかを確認します。** クエリが欠落している製品、文言の不一致、不明確な製品データを指しているかどうかを判断します。
-3. **製品情報を改善します。** 商品の属性と説明を、買い物客が使用する用語に合わせて正確かつ有益にします。 ライブサーチの場合、Adobeでは、検索可能な適切な属性と重みを設定し、属性データが適切であることを確認することをお勧めします。 [&#x200B; ライブ検索のベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice)
-4. **検索エクスペリエンスを調整します。** 必要に応じて、検索ルール、類義語、ファセットを使用して、買い物客が検索結果を見つけて絞り込めるようにします。 [&#x200B; ライブ検索のベストプラクティス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice)
+3. **製品情報を改善します。** 商品の属性と説明を、買い物客が使用する用語に合わせて正確かつ有益にします。 ライブサーチの場合、Adobeでは、検索可能な適切な属性と重みを設定し、属性データが適切であることを確認することをお勧めします。 [&#x200B; ライブ検索のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/live-search/best-practice)
+4. **検索エクスペリエンスを調整します。** 必要に応じて、検索ルール、類義語、ファセットを使用して、買い物客が検索結果を見つけて絞り込めるようにします。 [&#x200B; ライブ検索のベストプラクティス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/live-search/best-practice)
 5. **結果を確認して、繰り返します。** 変更後も同じクエリとパフォーマンスシグナルを監視し、買い物客の行動に応じて調整できます。
 
 ## あらゆる検索を大切にする

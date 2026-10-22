@@ -90,15 +90,15 @@ ht-degree: 0%
 
 ### B2C/B2B コマース
 
-Adobe Commerceは、単一のCommerceインスタンスの両方のモデルを含め、B2CとB2Bの両方のビジネスモデルをサポートしています。 [Adobe Commerce B2Bの概要](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/introduction)
+Adobe Commerceは、単一のCommerceインスタンスの両方のモデルを含め、B2CとB2Bの両方のビジネスモデルをサポートしています。 [Adobe Commerce B2Bの概要](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/introduction)
 
-B2B能力はサービスによって異なります。 Adobe Commerce クラウドインフラストラクチャおよびオンプレミスの場合、Adobe Commerce B2Bは別途ライセンスとインストールが必要な拡張機能です。 Adobe Commerce as a Cloud Serviceには、企業管理やデフォルトでの見積もりなど、B2Bの主要機能が搭載されています。 [Adobe Commerce B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/start/resources/extensions)を参照してください。
+B2B能力はサービスによって異なります。 Adobe Commerce クラウドインフラストラクチャおよびオンプレミスの場合、Adobe Commerce B2Bは別途ライセンスとインストールが必要な拡張機能です。 Adobe Commerce as a Cloud Serviceには、企業管理やデフォルトでの見積もりなど、B2Bの主要機能が搭載されています。 [Adobe Commerce B2B](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/resources/extensions)を参照してください。
 
 ### Adobe Commerce as a Cloud Service
 
 Adobe Commerce as a Cloud Serviceは、フルマネージド型のクラウドネイティブなSaaS （Software as a Service）製品です。 Adobeは、Commerceの主要なアプリケーション、インフラストラクチャ、アップデートを管理します。 コンポーネントには、Commerce基盤、Edge Delivery Servicesを活用したCommerce Storefront、マーチャンダイジングサービス、製品ビジュアル、開発ツールなどがあります。
 
-[Adobe Commerce as a Cloud Serviceの概要](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)を参照してください。
+[Adobe Commerce as a Cloud Serviceの概要](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/overview)を参照してください。
 
 ### Adobe Commerce Optimizer
 
@@ -106,7 +106,7 @@ Adobe Commerce Optimizerは、ストアフロント、カタログ、商品の�
 
 Adobe Commerce Optimizerは、サードパーティソースからカタログデータを取り込むことができます。 サードパーティシステムとのカートおよびチェックアウトの統合には、API MeshやApp Builderなどの統合ツールを使用します。
 
-[Adobe Commerce Optimizerとは何ですか？](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview)を参照してください。
+[Adobe Commerce Optimizerとは何ですか？](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/overview)を参照してください。
 
 >[!NOTE]
 >
@@ -116,13 +116,13 @@ Adobe Commerce Optimizerは、サードパーティソースからカタログ�
 
 Adobe Commerce オンプレミスは、マーチャントまたはそのホスティングプロバイダーによってホストされます。 マーチャントまたはプロバイダーが、ホスティング環境、インフラストラクチャ、プラットフォームサービスを管理します。
 
-[&#x200B; オンプレミス インストールの概要](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)を参照してください。
+[&#x200B; オンプレミス インストールの概要](https://experienceleague.adobe.com/ja/docs/commerce-operations/installation-guide/overview)を参照してください。
 
 ### Adobe Commerce on cloud infrastructure
 
 Adobe Commerce on cloud infrastructureは、PaaS （Platform as a Service）デプロイメントです。 Adobeがホストされるプラットフォームを管理する一方で、マーチャントはアプリケーションレベルのメンテナンス、カスタムコード、設定、その他の責任分担のタスクに対する責任を負います。
 
-[Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)および[Adobe Commerce as a Cloud Serviceへの移行](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview)を参照してください。
+[Commerce on Cloud Infrastructure](https://experienceleague.adobe.com/ja/docs/commerce-on-cloud/user-guide/overview)および[Adobe Commerce as a Cloud Serviceへの移行](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/overview)を参照してください。
 
 ## Commerceを拡張するサービス
 
@@ -142,7 +142,7 @@ Adobe Commerce on cloud infrastructureは、PaaS （Platform as a Service）デ�
 
 **決済サービス**&#x200B;は、決済方法と、決済処理、注文、請求書の表示を提供します。 ご利用いただけるかどうかは、Commerceの製品とデプロイメントによって異なります。
 
-[決済サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview)を参照してください。
+[決済サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/payment-services/guide-overview)を参照してください。
 
 ### データおよび統合サービス
 
@@ -162,7 +162,7 @@ Commerceには、プラットフォームを接続し、データを同期する
 
 ### サービスの可用性
 
-この比較から、Commerce製品のサービスパスを特定します。 サポートされているバージョン、ライセンス、設定の要件については、[Adobe Commerce機能の比較](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison)と各サービスガイドを参照してください。
+この比較から、Commerce製品のサービスパスを特定します。 サポートされているバージョン、ライセンス、設定の要件については、[Adobe Commerce機能の比較](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/feature-comparison)と各サービスガイドを参照してください。
 
 | サービスまたは機能 | 対象 |
 | --- | --- |

@@ -91,7 +91,7 @@ ht-degree: 0%
 | お客様の要件 | 出発点の推奨 | トランザクションを所有するシステム | マーチャンダイジングと発見 |
 | --- | --- | --- | --- |
 | Adobeは、CommerceプラットフォームをSaaSとして管理します。 | [Adobe Commerce as a Cloud Service](/help/cloud-service/overview.md) | as a Cloud Service財団 | Adobe Commerce as a Cloud Service用にプロビジョニングされたCommerce サービスを使用します。 Adobe Commerce Optimizerとの連携の可用性については、この表の下のメモを参照してください。 |
-| クラウドやオンプレミスのインフラストラクチャを引き続き制御するには、Adobe Commerceが必要です。 | [Adobe Commerce オンクラウドまたはオンプレミス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview) | Adobe Commerce財団 | 必要に応じて、サポートされているCommerceサービスを使用します。 |
+| クラウドやオンプレミスのインフラストラクチャを引き続き制御するには、Adobe Commerceが必要です。 | [Adobe Commerce オンクラウドまたはオンプレミス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/guide-overview) | Adobe Commerce財団 | 必要に応じて、サポートされているCommerceサービスを使用します。 |
 | オンプレミスでAdobe Commerceを使用しており、Adobe Commerce Optimizerを導入して発見とマーチャンダイジングを行いたい場合。 | Adobe Commerceと[Adobe Commerce Optimizer コネクタ &#x200B;](/help/aco-connector/overview.md) | Adobe Commerceは、引き続き取引の記録システムとして活用されています。 | このコネクタは、カタログと価格データをAdobe Commerce Optimizerに同期し、発見とマーチャンダイジングのエクスペリエンスを提供します。 |
 | サードパーティのコマースバックエンドを持っており、そのバックエンドを置き換えることなく、Adobe Commerce Optimizerの発見とマーチャンダイジングが必要です。 | スタンドアロン [Adobe Commerce Optimizer](/help/optimizer/overview.md) | サードパーティコマースのバックエンド | カタログと価格データをAdobe Commerce Optimizerに送信します。 API Mesh、App Builder、または直接統合を利用して、カートやチェックアウトなどのトランザクションオペレーションをバックエンドと統合できます。 |
 

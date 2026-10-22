@@ -136,4 +136,4 @@ Adobeなら、LLMにおいて商品がどのように表示されるかを可視
 * [ポリシー](/help/optimizer/setup/policies.md)
 * [ADOBE COMMERCE App BuilderのAI コーディング開発者向けツール](/help/cloud-service/migration/coding-tools.md)
 * [COMMERCE API](../../apis/commerce-apis.md)
-* [Commerce Developer Agent Playlist](https://experienceleague.adobe.com/en/playlists/commerce-developer-agent) - Commerce Developer Agentの設定と使用に関する技術ビデオを視聴します。
+* [Commerce Developer Agent Playlist](https://experienceleague.adobe.com/ja/playlists/commerce-developer-agent) - Commerce Developer Agentの設定と使用に関する技術ビデオを視聴します。
