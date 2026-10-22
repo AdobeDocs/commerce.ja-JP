@@ -63,7 +63,7 @@ ht-degree: 0%
 </tr>
 </table>
 
-![人間とAI エージェントが信頼できる唯一の情報源と対話するエージェンティック コマース プラットフォームのヒーローイラストレーション ](../../assets/guidance-and-insights/agentic-commerce-hero.png " エージェンティック コマース プラットフォームのアーキテクチャ基盤")
+![人間とAI エージェントが信頼できる唯一の情報源と対話するエージェンティック コマース プラットフォームのヒーローイラストレーション &#x200B;](../../assets/guidance-and-insights/agentic-commerce-hero.png " エージェンティック コマース プラットフォームのアーキテクチャ基盤")
 
 *人間とAI エージェントが信頼できる唯一の情報源と対話するコマース プラットフォームを設計する。*
 
@@ -91,7 +91,7 @@ Commerceでは、現在、構造的な変化が起こっています。 顧客�
 
 ## 機械推論で設計されたカタログ
 
-![ カタログレイヤーとポリシーによって形作られた構造化された製品エンティティ（SKU、属性、バリエーション、バンドル、価格、および可用性）を示す図。その後、カタログビューを通じてブランドストアフロント、マーケットプレイス、パートナーフィード、モバイルアプリ、およびAIまたはエージェントサーフェスに配信されます](../../assets/guidance-and-insights/agentic-commerce-agent-interaction.png){width="800" zoomable="yes"}
+![&#x200B; カタログレイヤーとポリシーによって形作られた構造化された製品エンティティ（SKU、属性、バリエーション、バンドル、価格、および可用性）を示す図。その後、カタログビューを通じてブランドストアフロント、マーケットプレイス、パートナーフィード、モバイルアプリ、およびAIまたはエージェントサーフェスに配信されます](../../assets/guidance-and-insights/agentic-commerce-agent-interaction.png){width="800" zoomable="yes"}
 
 *製品データをフォークすることなく、チャネルごとに1つの信頼できる情報源を構築します。*
 
@@ -101,7 +101,7 @@ Commerceでは、現在、構造的な変化が起こっています。 顧客�
 
 ## エージェントの共通言語としてのMCP
 
-![ ショッピングアシスタント、サポート担当者、および開発者ツールが、Commerce MCPおよびDeveloper MCPを含むモデルコンテキストプロトコルを通じて、カート作成、チェックアウト、支払い、在庫、プロモーションおよび返品などのAdobe Commerce機能にリクエストを送信する様子を示す図](../../assets/guidance-and-insights/agentic-commerce-reference-stack.png){width="800" zoomable="yes"}
+![&#x200B; ショッピングアシスタント、サポート担当者、および開発者ツールが、Commerce MCPおよびDeveloper MCPを含むモデルコンテキストプロトコルを通じて、カート作成、チェックアウト、支払い、在庫、プロモーションおよび返品などのAdobe Commerce機能にリクエストを送信する様子を示す図](../../assets/guidance-and-insights/agentic-commerce-reference-stack.png){width="800" zoomable="yes"}
 
 *MCPは、エージェントが自然な意図でアクションを要求する方法を標準化し、Adobe Commerceはそれを管理された決定論的アクションとして実行します。*
 

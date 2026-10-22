@@ -47,7 +47,7 @@ ht-degree: 0%
 
 # 役割ごとに始める
 
-Adobe Commerceのドキュメントは、複数のリポジトリやサイトをまたいで整理されています。 適切な出発点は、役割と、管理者やマーチャンダイザーがプロジェクトで使用するプラットフォームやマーチャンダイジングパスによって異なります。 どのプラットフォームが自分に適用されるかわからない場合は、[ プラットフォームとサービス ](../portfolio/platform-and-services.md)を参照してください。
+Adobe Commerceのドキュメントは、複数のリポジトリやサイトをまたいで整理されています。 適切な出発点は、役割と、管理者やマーチャンダイザーがプロジェクトで使用するプラットフォームやマーチャンダイジングパスによって異なります。 どのプラットフォームが自分に適用されるかわからない場合は、[&#x200B; プラットフォームとサービス &#x200B;](../portfolio/platform-and-services.md)を参照してください。
 
 ## ビジネスユーザーにとっても
 
@@ -68,9 +68,9 @@ Adobe Commerceには、2つのマーチャンダイジングパスがありま�
 
 - [ライブサーチとは？](/help/live-search/overview.md)
 - [商品レコメンデーションとは？](/help/product-recommendations/overview.md)
-- Adobe Commerce](/help/catalog-service/overview.md)の[ カタログサービス。
+- Adobe Commerce[&#128279;](/help/catalog-service/overview.md)の カタログサービス。
 
-- **ネイティブマーチャンダイジング （[!DNL Adobe Commerce Optimizer]**） - Adobe Commerce on Cloudまたはオンプレミスが[!DNL Adobe Commerce Optimizer Connector]を使用して[!DNL Adobe Commerce Optimizer]に接続する場合に使用します。 [ マーチャンダイジングの概要](/help/optimizer/merchandising/overview.md)を参照してください。
+- **ネイティブマーチャンダイジング （[!DNL Adobe Commerce Optimizer]**） - Adobe Commerce on Cloudまたはオンプレミスが[!DNL Adobe Commerce Optimizer Connector]を使用して[!DNL Adobe Commerce Optimizer]に接続する場合に使用します。 [&#x200B; マーチャンダイジングの概要](/help/optimizer/merchandising/overview.md)を参照してください。
 
 ## 管理者向け
 
@@ -86,7 +86,7 @@ Adobe Commerceには、2つのマーチャンダイジングパスがありま�
 
 - [ライブサーチを始める](/help/live-search/install.md)
 - [製品レコメンデーションのインストールと設定](/help/product-recommendations/install-configure.md)
-- [ カタログサービスのインストール ](/help/catalog-service/installation.md)。
+- [&#x200B; カタログサービスのインストール &#x200B;](/help/catalog-service/installation.md)。
 
 - Adobe Commerce on Cloudまたはオンプレミスのプラットフォーム管理については、以下を参照してください。
 

@@ -116,7 +116,7 @@ Adobe Commerce Optimizerは、サードパーティソースからカタログ�
 
 Adobe Commerce オンプレミスは、マーチャントまたはそのホスティングプロバイダーによってホストされます。 マーチャントまたはプロバイダーが、ホスティング環境、インフラストラクチャ、プラットフォームサービスを管理します。
 
-[ オンプレミス インストールの概要](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)を参照してください。
+[&#x200B; オンプレミス インストールの概要](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)を参照してください。
 
 ### Adobe Commerce on cloud infrastructure
 
@@ -130,7 +130,7 @@ Adobe Commerce on cloud infrastructureは、PaaS （Platform as a Service）デ�
 
 ストアフロントおよび商品体験のためのAdobe Commerceサービスには、次のようなものがあります。
 
-- **[Edge Delivery Servicesを活用したCommerce ストアフロント ](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/)** – 顧客向けのコマースエクスペリエンスを構築するためのストアフロントオプション。
+- **[Edge Delivery Servicesを活用したCommerce ストアフロント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/)** – 顧客向けのコマースエクスペリエンスを構築するためのストアフロントオプション。
 - **[ストアフロントサービス](/help/landing/home.md)**-[!DNL Adobe Commerce on cloud infrastructure]および[!DNL Adobe Commerce as a Cloud Service]を含む、Adobe Commerce向けのクラウド配信SaaS機能により、最適化されたカタログアクセス、AIを活用した検索と商品レコメンデーション、決済処理を実現して、ストアフロント APIとサービスを強化し、マーチャントがショッピング体験、パフォーマンス、コンバージョンを改善できるよう支援します
   - カタログサービス：最適化された製品カタログ体験とストアフロントのパフォーマンスをサポート
   - ライブサーチ - AIを利用した商品検索を提供します。
@@ -142,7 +142,7 @@ Adobe Commerce on cloud infrastructureは、PaaS （Platform as a Service）デ�
 
 **決済サービス**&#x200B;は、決済方法と、決済処理、注文、請求書の表示を提供します。 ご利用いただけるかどうかは、Commerceの製品とデプロイメントによって異なります。
 
-[決済サービス ](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview)を参照してください。
+[決済サービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview)を参照してください。
 
 ### データおよび統合サービス
 
@@ -158,7 +158,7 @@ Commerceには、プラットフォームを接続し、データを同期する
 
 開発者の機能には、**Adobe Developer App Builder**、**API Mesh**、**Events**、**Webhook**、および&#x200B;**管理UI SDK**&#x200B;が含まれます。 これらのツールは、カスタムアプリケーション、統合、拡張機能をサポートしています。 ご利用いただけるかどうかは、Commerceの製品によって異なります。
 
-[Adobe Commerce開発者ドキュメント ](https://developer.adobe.com/commerce/docs/)を参照してください。
+[Adobe Commerce開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/docs/)を参照してください。
 
 ### サービスの可用性
 
@@ -169,8 +169,8 @@ Commerceには、プラットフォームを接続し、データを同期する
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerceオンクラウドインフラストラクチャまたはオンプレミス、およびAdobe Commerce as a Cloud Service |
 | [[!DNL Live Search]](/help/live-search/overview.md) | Adobe Commerceオンクラウドインフラストラクチャまたはオンプレミス、およびAdobe Commerce as a Cloud Service |
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) | Adobe Commerceオンクラウドインフラストラクチャまたはオンプレミス、およびAdobe Commerce as a Cloud Service |
-| [ アセット管理](../aem-assets/aem-assets-integration.md) | Adobe Commerceは、AEM AssetsとCommerceの連携により、オンプレミスで利用できます。 AEM Assetsの製品ビジュアル機能を利用して、Adobe Commerce as a Cloud ServiceとAdobe Commerce Optimizerを連携できます。 |
-| [ ネイティブの発見とマーチャンダイジング ](/help/optimizer/merchandising/overview.md) | Adobe Commerce Optimizerは、スタンドアロンまたはOptimizer コネクタを介してAdobe Commerceに接続します。 これらの機能は、カタログサービス、ライブサーチ、商品レコメンデーションの個別の拡張機能に取って代わります。 |
+| [&#x200B; アセット管理](../aem-assets/aem-assets-integration.md) | Adobe Commerceは、AEM AssetsとCommerceの連携により、オンプレミスで利用できます。 AEM Assetsの製品ビジュアル機能を利用して、Adobe Commerce as a Cloud ServiceとAdobe Commerce Optimizerを連携できます。 |
+| [&#x200B; ネイティブの発見とマーチャンダイジング &#x200B;](/help/optimizer/merchandising/overview.md) | Adobe Commerce Optimizerは、スタンドアロンまたはOptimizer コネクタを介してAdobe Commerceに接続します。 これらの機能は、カタログサービス、ライブサーチ、商品レコメンデーションの個別の拡張機能に取って代わります。 |
 | [[!DNL Payment Services]](/help/payment-services/guide-overview.md) | Adobe Commerce as a Cloud Service、クラウドインフラストラクチャまたはオンプレミス上のAdobe Commerceのサポート対象バージョン、およびMagento Open Source |
 
 

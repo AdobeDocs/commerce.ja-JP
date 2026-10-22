@@ -75,9 +75,9 @@ Adobe Commerceの導入アーキテクチャは、コマースバックエンド
 | オプション | 記録システム | トランザクションパス | 最適なフィット |
 | --- | --- | --- | --- |
 | **[!DNL Adobe Commerce as a Cloud Service]（Commerce Foundation**） | AdobeのCommerce Foundation | Managed Commerce FoundationとコネクテッドCommerceサービス | Adobeを利用して、SaaS （Software as a Service）を実現し、インフラストラクチャの所有権を低減したいCommerce |
-| [!DNL Adobe Commerce Optimizer Connector]**を持つクラウドまたはオンプレミスの**[!DNL Adobe Commerce] | 既存のCommerce Foundation, for Commerce データとトランザクション | 既存のCommerce Foundation APIと接続されたトランザクションサービス | 既存の[!DNL Adobe Commerce]展開にOptimizerの検出およびマーチャンダイジング機能を追加したいお客様 |
+| [!DNL Adobe Commerce Optimizer Connector]&#x200B;**を持つクラウドまたはオンプレミスの**&#x200B;[!DNL Adobe Commerce] | 既存のCommerce Foundation, for Commerce データとトランザクション | 既存のCommerce Foundation APIと接続されたトランザクションサービス | 既存の[!DNL Adobe Commerce]展開にOptimizerの検出およびマーチャンダイジング機能を追加したいお客様 |
 | **外部コマースバックエンドを持つスタンドアロン [!DNL Adobe Commerce Optimizer]** | 既存またはサードパーティのコマースプラットフォーム： 外部ソースからOptimizerにカタログと価格データが追加される | API Mesh、App Builder、ダイレクト統合を利用して、ストアフロントとサードパーティのカート、チェックアウト、顧客、注文、支払い、税務、配送、フルフィルメントサービスを連携できます | 既存またはサードパーティのトランザクションコマースプラットフォームを維持しながら、Optimizerの機能を必要とするお客様 |
-| Commerce Foundation **を使用したクラウドまたはオンプレミスの**[!DNL Adobe Commerce] | Commerce財団 | Commerce Foundation APIと、支払い、税務、配送、在庫、フルフィルメントの統合機能を構成 | クラウドまたはオンプレミスのインフラストラクチャをデプロイメント制御できる完全な[!DNL Adobe Commerce] プラットフォームを必要とするお客様 |
+| Commerce Foundation **を使用したクラウドまたはオンプレミスの**&#x200B;[!DNL Adobe Commerce] | Commerce財団 | Commerce Foundation APIと、支払い、税務、配送、在庫、フルフィルメントの統合機能を構成 | クラウドまたはオンプレミスのインフラストラクチャをデプロイメント制御できる完全な[!DNL Adobe Commerce] プラットフォームを必要とするお客様 |
 
 ### ストアフロント体験
 
@@ -86,15 +86,15 @@ Adobe Commerceの導入アーキテクチャは、コマースバックエンド
 | オプション | ストアフロント体験 | ストアフロントのデータパス |
 | --- | --- | --- |
 | **[!DNL Adobe Commerce as a Cloud Service]（Commerce Foundation**） | Edge Delivery Servicesまたはその他のサポートされているヘッドレス体験を活用したCommerce Storefront | ストアフロントサービスに加えて、コアプラットフォームデータ用のCommerce Foundation API |
-| [!DNL Adobe Commerce Optimizer Connector]**を持つクラウドまたはオンプレミスの**[!DNL Adobe Commerce] | Edge Delivery ServicesまたはOptimizer エクスペリエンスを使用したカスタムヘッドレスストアフロント | Commerce Optimizer Merchandising Services GraphQL API （Optimizerで管理されるカタログとマーチャンダイジングデータ用） |
+| [!DNL Adobe Commerce Optimizer Connector]&#x200B;**を持つクラウドまたはオンプレミスの**&#x200B;[!DNL Adobe Commerce] | Edge Delivery ServicesまたはOptimizer エクスペリエンスを使用したカスタムヘッドレスストアフロント | Commerce Optimizer Merchandising Services GraphQL API （Optimizerで管理されるカタログとマーチャンダイジングデータ用） |
 | **外部コマースバックエンドを持つスタンドアロン [!DNL Adobe Commerce Optimizer]** | Edge Delivery Servicesまたはカスタムのヘッドレスストアフロントを活用したCommerce Storefront | Commerce Optimizer Merchandising Services カタログおよびマーチャンダイジングデータ用のGraphQL API |
-| Commerce Foundation **を使用したクラウドまたはオンプレミスの**[!DNL Adobe Commerce] | Edge Delivery Services、Luma、PWA、またはカスタムヘッドレスストアフロント | Commerce Foundation APIと、設定済みのStorefront サービス |
+| Commerce Foundation **を使用したクラウドまたはオンプレミスの**&#x200B;[!DNL Adobe Commerce] | Edge Delivery Services、Luma、PWA、またはカスタムヘッドレスストアフロント | Commerce Foundation APIと、設定済みのStorefront サービス |
 
 ## Adobe Commerce as a Cloud Service
 
 ![管理対象のCommerce FoundationおよびStorefront ServicesがCommerce StorefrontにフィードするAdobe Commerce as a Cloud Serviceのアーキテクチャ図](../assets/architecture/commerce-cloud-service-storefront-services-arch.drawio.png){width="600" zoomable="yes"}
 
-**主な境界** - AdobeがCommerce Foundation プラットフォームを管理します。 アーキテクチャは、ストアフロント エクスペリエンスに[!DNL Catalog Service]、[!DNL Live Search]、[!DNL Product Recommendations]などのストアフロントサービスを使用します。 AEM Assetsによる[!DNL Product Visuals]は、オプションのSaaS統合です。 Commerce](../aem-assets/aem-assets-integration.md)の[AEM Assetsとの連携を参照してください。
+**主な境界** - AdobeがCommerce Foundation プラットフォームを管理します。 アーキテクチャは、ストアフロント エクスペリエンスに[!DNL Catalog Service]、[!DNL Live Search]、[!DNL Product Recommendations]などのストアフロントサービスを使用します。 AEM Assetsによる[!DNL Product Visuals]は、オプションのSaaS統合です。 Commerce[&#128279;](../aem-assets/aem-assets-integration.md)のAEM Assetsとの連携を参照してください。
 
 **参照：**
 
@@ -106,7 +106,7 @@ Adobe Commerceの導入アーキテクチャは、コマースバックエンド
 
 ![Adobe Commerce オンクラウドまたはオンプレミスと、Storefront ServicesおよびCommerce Foundation APIによるCommerce Storefrontのフィードのアーキテクチャ図](../assets/architecture/commerce-paas-storefront-services-arch.drawio.png){width="600" zoomable="yes"}
 
-**主な境界**:Commerce FoundationがCommerce プラットフォームとトランザクションフローを所有します。 [!DNL Catalog Service]、[!DNL Live Search]および[!DNL Product Recommendations]は、設定時に、カタログ、検索、およびレコメンデーションに最適化されたストアフロント アクセスを提供します。 AEM Assetsとの連携はオプションです。 Commerce](../aem-assets/aem-assets-integration.md)の[AEM Assetsとの連携を参照してください。
+**主な境界**:Commerce FoundationがCommerce プラットフォームとトランザクションフローを所有します。 [!DNL Catalog Service]、[!DNL Live Search]および[!DNL Product Recommendations]は、設定時に、カタログ、検索、およびレコメンデーションに最適化されたストアフロント アクセスを提供します。 AEM Assetsとの連携はオプションです。 Commerce[&#128279;](../aem-assets/aem-assets-integration.md)のAEM Assetsとの連携を参照してください。
 
 **参照：**
 
