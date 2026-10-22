@@ -29,14 +29,14 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: e689017374503218dd1100ab1226e7d76fbb7dae
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2693'
 ht-degree: 0%
 ---
 # Adobe Experience Platformタグを使用したCommerceデータの収集
 
-[!DNL Data Connection]拡張機能を使用してストアフロントイベントを公開および購読することはできますが、一部のマーチャントは、既に[Adobe Experience Platform タグ &#x200B;](https://experienceleague.adobe.com/ja/docs/platform-learn/data-collection/tags/create-a-property)などのデータ収集ソリューションを使用している場合があります。 これらの販売者に対して、Adobe Commerceでは、Adobe Commerce Event SDKを使用する[!DNL Data Connection]拡張機能でのみ公開オプションを提供しています。
+[!DNL Data Connection]拡張機能を使用してストアフロントイベントを公開および購読することはできますが、一部のマーチャントは、既に[Adobe Experience Platform タグ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-platform/tags/home)などのデータ収集ソリューションを使用している場合があります。 これらの販売者に対して、Adobe Commerceでは、Adobe Commerce Event SDKを使用する[!DNL Data Connection]拡張機能でのみ公開オプションを提供しています。
 
 ![[!DNL Data Connection]拡張機能データフロー](assets/tags-data-flow.png)
 タグ _を含む_[!DNL Data Connection]&#x200B;拡張データフロー

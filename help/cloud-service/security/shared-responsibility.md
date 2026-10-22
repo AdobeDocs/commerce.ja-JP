@@ -40,18 +40,28 @@ topic_v2:
     internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 8b3db59ed02539646dd53a2e9c7a0925b7c3a804
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '472'
 ht-degree: 0%
 ---
 # 責任セキュリティと運用モデルの共有
 
 [!DNL Adobe Commerce as a Cloud Service]は、共有責任セキュリティと運用モデルに依存するオンデマンドサービスです。 Adobeとお客様は、これらの責任を負い、Adobe Commerce アプリケーションのセキュリティと運用について、各当事者が明確な責任を負います。
 
+[!DNL Adobe Commerce as a Cloud Service with Managed Operations]は、標準の共有責任モデルに加えて、名前付きカスタマーサクセスエンジニア （CSE）と24時間年中無休のマネージドオペレーション P1 サポートチームを追加するプレミアムオファーです。 Adobeは、引き続きプラットフォーム、インフラストラクチャ、セキュリティ、コアアプリケーションを所有し、カスタマイズと統合は引き続き所有しますが、Managed Operationsでは、次の点についてAdobe Managed Servicesのコンサルティングを受けます。
+
+- 連携
+- App Builder アプリ
+- Edge Delivery ストアフロント
+- イベント管理
+- プラットフォーム更新
+
+Adobe Managed Servicesでは、災害復旧のテスト、デバッグ、問題分離についても責任を負います。 Adobe Adobeなら、オンボーディングから本番稼働以降に至るまで、CSEを通じて適切なサポートを提供できます。これにより、マーケターは自主的に業務を行うのではなく、あらゆる段階でAdobe Experience Managerのエキスパートと連携できるようになります。
+
 >[!BEGINSHADEBOX]
 
-次のサマリーテーブルでは、RACI モデルを使用して、Adobeとお客様の間で共有されているセキュリティ責任を示しています。
+次のサマリーテーブルでは、RACI モデルを使用して、Adobe、Adobe Managed Operations、およびお客様の間で共有されているセキュリティ責任を示しています。
 
 **R** – 責任
 **A** – 説明責任
@@ -60,39 +70,39 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-| タスク | Adobe | お客様 |
-| --- | --- | --- |
-| バックエンドのオリジンWAF ルールの定義 | RA | |
-| バックエンド CDN WAF ルールの定義 | RA | |
-| [!DNL Adobe Developer App Builder] アプリケーションのデプロイと保守 | | RA |
-| バックエンドプラットフォームのWAF ルールのデプロイ | RA | |
-| バックエンド CDN WAF ルールのデプロイ | RA | |
-| [!DNL Adobe Commerce as a Cloud Service]のコア バグを修正しています | RA | I |
-| [!DNL Adobe Commerce as a Cloud Service]個のインフラストラクチャのパッチをリリースしています | RA | |
-| 拡張（インフラ） | RA | |
-| 拡大（コアアプリケーション） | RA | |
-| 外部アプリケーションの統合 | | RA |
-| App Builder アプリのインストール | | RA |
-| すべてのApp Builder アプリケーションのパフォーマンスをテストする | | RA |
-| App Builderカスタムアプリのテーマとデザイン | | RA |
-| バックエンド DNSの設定 | RA | I |
-| バックエンド CDNのオンボーディング | RA | I |
-| バックエンド CDNのサポート | RA | I |
-| バックエンド DNS プロバイダーの取得 | RA | |
-| 本番環境とサンドボックス環境のプロビジョニング | A | R |
-| Adobe Commerce オンクラウド インフラストラクチャのDynamicsへのアクセス | R | C |
-| バックエンドの顧客セキュリティ問題の解決 | RA | I |
-| バックエンド CDNのセキュリティ問題の解決 | RA | |
-| セキュリティ調査（スキャン/監査）によるAdobeのサポート | RA | |
-| PCI ASV スキャンの実行 | RA | I |
-| Adobe Commerce インフラストラクチャのPCI スキャンの修正 | R | |
-| OSとプラットフォームのシークレットの管理 | RA | |
-| バックエンドのセキュリティログの監視 | RA | |
-| カスタマーサポートとアクセスの制御 | A | R |
-| Adobe DRの計画とバックアップおよび復元に関する年間テストとドキュメント | RA | |
-| 災害復旧計画の年間テストと文書化 | RA | |
-| デバッグと問題の分離 | R | R |
-| デバッグと問題分離プロセスのタイムリーなサポート | R | R |
-| アップデートとパッチのAdobe Commerce コアへの公開 | RA | I |
-| Adobe Commerce コアへのアップデートとパッチのインストール | RA | I |
-| Core Adobe Commerceのアプリケーション品質 | RA | |
+| タスク | Adobe | Adobe Managed Operations | お客様 |
+| --- | --- | --- | --- |
+| バックエンドのオリジンWAF ルールの定義 | RA | | |
+| バックエンド CDN WAF ルールの定義 | RA | | |
+| [!DNL Adobe Developer App Builder] アプリケーションのデプロイと保守 | | | RA |
+| バックエンドプラットフォームのWAF ルールのデプロイ | RA | | |
+| バックエンド CDN WAF ルールのデプロイ | RA | | |
+| [!DNL Adobe Commerce as a Cloud Service]のコア バグを修正しています | RA | | I |
+| [!DNL Adobe Commerce as a Cloud Service]個のインフラストラクチャのパッチをリリースしています | RA | | |
+| 拡張（インフラ） | RA | | |
+| 拡大（コアアプリケーション） | RA | | |
+| 外部アプリケーションの統合 | | C | RA |
+| App Builder アプリのインストール | | C | RA |
+| すべてのApp Builder アプリケーションのパフォーマンスをテストする | | C | RA |
+| App Builderカスタムアプリのテーマとデザイン | | C | RA |
+| バックエンド DNSの設定 | RA | | I |
+| バックエンド CDNのオンボーディング | RA | | I |
+| バックエンド CDNのサポート | RA | | I |
+| バックエンド DNS プロバイダーの取得 | RA | | |
+| 本番環境とサンドボックス環境のプロビジョニング | A | | R |
+| Adobe Commerce オンクラウド インフラストラクチャのDynamicsへのアクセス | R | | C |
+| バックエンドの顧客セキュリティ問題の解決 | RA | | I |
+| バックエンド CDNのセキュリティ問題の解決 | RA | | |
+| セキュリティ調査（スキャン/監査）によるAdobeのサポート | RA | | |
+| PCI ASV スキャンの実行 | RA | | I |
+| Adobe Commerce インフラストラクチャのPCI スキャンの修正 | R | | |
+| OSとプラットフォームのシークレットの管理 | RA | | |
+| バックエンドのセキュリティログの監視 | RA | | |
+| カスタマーサポートとアクセスの制御 | A | C | R |
+| Adobe DRの計画とバックアップおよび復元に関する年間テストとドキュメント | RA | C | |
+| 災害復旧計画の年間テストと文書化 | RA | RA | |
+| デバッグと問題の分離 | R | R | R |
+| デバッグと問題分離プロセスのタイムリーなサポート | R | R | R |
+| アップデートとパッチのAdobe Commerce コアへの公開 | RA | C | I |
+| Adobe Commerce コアへのアップデートとパッチのインストール | RA | C | I |
+| Core Adobe Commerceのアプリケーション品質 | RA | C | |

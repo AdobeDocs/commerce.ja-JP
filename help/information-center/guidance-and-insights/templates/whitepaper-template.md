@@ -13,17 +13,18 @@ role_v2:
     internal-label: Developer
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
     internal-label: Leader
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a91925091da28cd0745923894a3faab0374f0a0c
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '106'
 ht-degree: 1%
 ---
 
 <!--
-Copy this file into help/insights/<section>/<slug>.md,
-fill in the sections below, then add it to help/insights/TOC.md.
+Copy this file into help/information-center/guidance-and-insights/<topic>/<slug>.md,
+fill in the sections below, then add it to help/information-center/TOC.md
+under "Insights and guidance".
 Delete this comment block and the bracketed placeholders before publishing.
-See help/insights/README.md for what belongs in Commerce Insights.
+See help/information-center/guidance-and-insights/readme.md for what belongs in Insights and guidance.
 
 
 For feature metadata, feature: "[Pick from the shared feature taxonomy—see feature.yml / metadata.md]"
@@ -37,11 +38,11 @@ noun-phrase style per ExL heading rules.
 
 # [文頭の大文字と小文字の見出し、`title`]のトピックに一致
 
-[このホワイトペーパーでは、問題とその対象を示す1つまたは2つの文章を紹介します。]
+[このホワイトペーパーで問題と誰を対象としているかを示す1つまたは2つの文章。]
 
 ## 概要
 
-[推奨事項または調査結果の概要を短く示します。これにより、読者は全文を読まずに要点を把握できます。]
+[ レコメンデーションまたは発見の概要を短く示します。これにより、読者は論文全文を読まずに要点を理解できます。]
 
 ## 背景
 
@@ -53,4 +54,4 @@ noun-phrase style per ExL heading rules.
 
 ## 関連するガイダンス
 
-- [関連するアーキテクチャセンターまたは実装ガイドのページへのリンク ]
+- [関連するアーキテクチャ オプションまたは実装ガイド ページへのリンク ]

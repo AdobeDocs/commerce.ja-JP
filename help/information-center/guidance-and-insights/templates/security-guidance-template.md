@@ -13,17 +13,18 @@ role_v2:
     internal-label: Developer
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
     internal-label: Leader
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a91925091da28cd0745923894a3faab0374f0a0c
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '111'
 ht-degree: 0%
 ---
 
 <!--
-Save this file at help/insights/security/<slug>.md,
-fill in the sections below, then add it to help/insights/TOC.md.
+Save this file at help/information-center/guidance-and-insights/security/<slug>.md,
+fill in the sections below, then add it to help/information-center/TOC.md
+under "Insights and guidance".
 Delete this comment block and the bracketed placeholders before publishing.
-See help/insights/README.md for what belongs in Commerce Insights.
+See help/information-center/guidance-and-insights/readme.md for what belongs in Insights and guidance.
 Security-specific content should be reviewed by the security team before publishing.
 
 For feature metadata, feature: "[Pick from the shared feature taxonomy—see feature.yml / metadata.md]"
@@ -53,4 +54,4 @@ noun-phrase style per ExL heading rules.
 
 ## 関連するガイダンス
 
-- [関連製品のセキュリティに関するドキュメント、アーキテクチャセンター、実装ガイドのページへのリンク ]
+- [関連製品のセキュリティに関するドキュメント、アーキテクチャ オプション、実装ガイドのページへのリンク ]

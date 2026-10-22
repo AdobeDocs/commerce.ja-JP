@@ -1,6 +1,6 @@
 ---
 title: B2B共有カタログ投影
-description: B2B コネクターがAdobe Commerce B2B共有カタログを保護されたCommerce Optimizer カタログビューにプロジェクトする方法と、ストアフロントが購入者のアクセスを解決して承認する方法について説明します。
+description: B2B コネクターがAdobe Commerceの共有カタログを保護されたCommerce Optimizer カタログビューに同期する方法と、ストアフロントが購入者のアクセスを許可する方法について説明します。
 feature: Integration, Configuration
 role: Admin, Developer
 level: Intermediate
@@ -45,9 +45,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: fe5fc895d1f1cab3bcf081ec699f59192cb215a3
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '594'
 ht-degree: 0%
 ---
 # B2B共有カタログ予測
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 B2B プロジェクトでは、カタログの同期内容と価格設定を、カタログの品揃えと企業割り当てのコンテキストの共有と組み合わせています。
 
-![図マッピング [!DNL Adobe Commerce]のストアビュー、価格設定、共有カタログ、および会社の割り当てを[!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping.svg){width="800"}の予測プライベートカタログビューに割り当てます
+![図マッピング [!DNL Adobe Commerce]のストアビュー、価格設定、共有カタログ、および会社の割り当てを[!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping-alternate.svg){width="100%" zoomable="yes"}の予測プライベートカタログビューに割り当てます
 
 | [!DNL Adobe Commerce] データ | 結果[!DNL Adobe Commerce Optimizer] | 目的 |
 | --- | --- | --- |
