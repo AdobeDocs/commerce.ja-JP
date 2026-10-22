@@ -1,7 +1,7 @@
 ---
 title: レコメンデーションフィルター
 description: フィルターを使用して、[!DNL Adobe Commerce Optimizer]件のレコメンデーションに表示される製品を制御する方法を説明します。
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
+source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2407'
 ht-degree: 0%
 ---
 # 商品を絞り込む
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 価格規則&#x200B;**フィルター**&#x200B;は、推奨候補セットをフィルタリングします。商品のランク付けは&#x200B;**not**&#x200B;です。 エンジンはランク付けリストを生成し、価格含めるルールと除外ルールはそのリストから製品を削除し、残りの製品の相対的な順序は同じままになります。 対象となる製品がユニットリクエストよりも少ない場合は、有効な品目のみが表示されます。 条件が満たされない場合、ユニットはレンダリングされません（空のプレースホルダーはありません）。
 
-レコメンデーションユニット内の商品に表示される価格は、そのストアフロントの価格表と同じ&#x200B;**最終価格**&#x200B;であるため、買い物客が表示する価格は、フィルタリングに使用される値と一致します。 管理者プレビューでは、バリエーションの価格が異なる場合、設定可能な製品の価格帯が表示される場合があります。詳しくは、[&#x200B; プレビューの設定可能な製品](#configurable-products-in-preview)を参照してください。
+レコメンデーションユニット内の商品に表示される価格は、そのストアフロントの価格表と同じ&#x200B;**最終価格**&#x200B;であるため、買い物客が表示する価格は、フィルタリングに使用される値と一致します。 管理者プレビューでは、バリエーションの価格が異なる場合、設定可能な製品の価格帯が表示される場合があります。詳しくは、[ プレビューの設定可能な製品](#configurable-products-in-preview)を参照してください。
 
 #### 固定価格帯
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 商品の詳細ページ （PDP）で&#x200B;**現在表示されている商品**&#x200B;に対してレコメンデーションを制限する必要がある場合は、**動的**&#x200B;価格フィルターを使用します。 フィルターは、その製品の最終価格を&#x200B;**アンカー**&#x200B;として使用し、定義した境界と推奨される製品を比較します。
 
-動的演算子は、製品コンテキストで実行される[SKU関連のレコメンデーションタイプ &#x200B;](types.md)に対してのみ使用できます。
+動的演算子は、製品コンテキストで実行される[SKU関連のレコメンデーションタイプ ](types.md)に対してのみ使用できます。
 
 - 閲覧したページ
 - 閲覧、購入
@@ -225,6 +225,14 @@ ht-degree: 0%
 #### 属性フィルターの設定
 
 次の手順を使用して、レコメンデーションユニットに属性の包含ルールまたは除外ルールを追加します。
+
+>[!TIP]
+>
+>フィルター可能にする属性については、[ メタデータ API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)を使用して`filterable` パラメーターを設定します。
+>
+>{&quot;filterable&quot;: true}
+>
+>属性は、次回カタログが[!DNL Adobe Commerce Optimizer]と同期されるときに、**属性** メニューで使用できるようになります。
 
 1. レコメンデーションユニットの[作成または編集中](create.md)に、**[!UICONTROL Filter products]**&#x200B;に移動します。
 1. 「**[!UICONTROL Inclusions]**」または「**[!UICONTROL Exclusions]**」タブを選択します。 各タブのバッジには、そのタイプのフィルターが有効になっている数が表示されます。
