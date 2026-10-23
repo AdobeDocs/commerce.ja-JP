@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # クレジットカードのヴォールティング
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 1. 左側のナビゲーションの&#x200B;**[!UICONTROL Stored Payment Methods]**&#x200B;に移動して、保存されているすべての支払い方法を表示します。
 
-   詳しくは、[&#x200B; ストアド支払い方法](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/payments/stored-payment-methods)を参照してください。
+   詳しくは、[ ストアド支払い方法](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods)を参照してください。
 
 1. お客様は&#x200B;**[!UICONTROL Add New Card]**&#x200B;をクリックして新しいカードを保存します。
 
@@ -90,13 +90,15 @@ Adminでヴォールトカードを使用できるのは、お客様が既存の
 
 管理画面で、保管されているクレジットカードを使用して顧客の注文を作成するには：
 
-1. [注文を作成して商品を追加](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
-1. _[!UICONTROL Payment & Shipping Information]_&#x200B;で、支払い方法として&#x200B;**[!UICONTROL Stored Cards]**&#x200B;を選択します。
+1. [注文を作成して商品を追加](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
+1. _[!UICONTROL Payment & Shipping Information]_で、支払い方法として&#x200B;**[!UICONTROL Stored Cards]**を選択します。
 1. 希望するアーチ付きクレジットカードの支払い方法を選択します。
-1. 注文に必要なその他の手順を完了した後、[それを送信](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
+1. 注文に必要なその他の手順を完了した後、[それを送信](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
 
    ![管理者で顧客に対して保管されているクレジットカードを使用](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## セキュリティ
 
 最小限のクレジットカード情報は買い物客と共有され、最後の4桁、有効期限、ヴォールトしたクレジットカードのブランドのみが表示されます。 クレジットカード情報は、決済代行会社と共に保存され、[PCI](security.md#pci-compliance)のコンプライアンス基準を満たします。
+
+[!DNL Payment Services] 2.17.0以降では、保存されたクレジットカードで支払う買い物客に、カード発行者が必要とする[3D セキュア （3DS）認証チャレンジ ](security.md#3ds)を完了するように求める場合があります。 カードを保存しても、イシュアが必要とする認証はバイパスされません。
