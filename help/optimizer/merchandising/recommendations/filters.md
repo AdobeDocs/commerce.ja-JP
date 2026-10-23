@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
+source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2407'
 ht-degree: 0%
 ---
 # 商品を絞り込む
@@ -225,6 +225,14 @@ ht-degree: 0%
 #### 属性フィルターの設定
 
 次の手順を使用して、レコメンデーションユニットに属性の包含ルールまたは除外ルールを追加します。
+
+>[!TIP]
+>
+>フィルター可能にする属性については、[&#x200B; メタデータ API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)を使用して`filterable` パラメーターを設定します。
+>
+>{&quot;filterable&quot;: true}
+>
+>属性は、次回カタログが[!DNL Adobe Commerce Optimizer]と同期されるときに、**属性** メニューで使用できるようになります。
 
 1. レコメンデーションユニットの[作成または編集中](create.md)に、**[!UICONTROL Filter products]**&#x200B;に移動します。
 1. 「**[!UICONTROL Inclusions]**」または「**[!UICONTROL Exclusions]**」タブを選択します。 各タブのバッジには、そのタイプのフィルターが有効になっている数が表示されます。
