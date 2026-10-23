@@ -17,25 +17,25 @@ PayPalは、各加盟店アカウントの超過取得制限を決定します�
 
 >[!NOTE]
 >
->このトピックでは、[!DNL Payment Services]拡張機能のオーバーキャプチャについて説明します。 [!DNL Adobe Commerce as a Cloud Service]については、個別の可用性とイネーブルメントの要件については、[ カスタムキャプチャ量](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)を参照してください。
+>このトピックでは、[!DNL Payment Services]拡張機能のオーバーキャプチャについて説明します。 [!DNL Adobe Commerce as a Cloud Service]については、個別の可用性とイネーブルメントの要件については、[&#x200B; カスタムキャプチャ量](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)を参照してください。
 
 ## 前提条件
 
 オーバーキャプチャを有効にする前に：
 
 * オーバーキャプチャは、[!DNL Payment Services] 2.17.0以降でのみ使用できます。
-* Overcaptureは、米国を拠点とする企業のみが利用できます。 PayPalの[ オーバーキャプチャ要件（PSD2） ](https://www.paypal.com/us/cshelp/article/overcapture-requirements-psd2-help954)は、欧州経済地域（EEA）のPayPal バイヤーに販売する米国を拠点とするマーチャントにも適用されます。
+* Overcaptureは、米国を拠点とする企業のみが利用できます。 PayPalの[&#x200B; オーバーキャプチャ要件（PSD2） &#x200B;](https://www.paypal.com/us/cshelp/article/overcapture-requirements-psd2-help954)は、欧州経済地域（EEA）のPayPal バイヤーに販売する米国を拠点とするマーチャントにも適用されます。
 * Overcaptureは、代替支払い方法（APM）では利用できません。
 * PayPalでオーバーキャプチャ契約を取得し、PayPal アカウントマネージャーで加盟店アカウントに承認された制限を確認します。
 * 支払い方法の&#x200B;**[!UICONTROL Payment Action]**&#x200B;を`Authorize`に設定します。 オーバーキャプチャは、請求時に後でキャプチャされた承認済み注文に適用されます。自動的に`Authorize and Capture`でキャプチャされた注文には適用されません。 [Set [!DNL Payment Services] を支払い方法](production.md#set-payment-services-as-payment-method)として参照してください。
 
 ## オーバーキャプチャを有効にする
 
-1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**に移動します。
+1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
 1. ストアスコープセレクターを使用して設定するweb サイトを選択します。
-1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_セクションを展開します。
-1. _[!UICONTROL Payment Services]_セクションで、_[!UICONTROL General Configuration]_ セクションを展開します。
+1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
+1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL General Configuration]_ セクションを展開します。
 1. **[!UICONTROL Over Capture Enabled]**&#x200B;を`Yes`に設定します。
 1. **[!UICONTROL Save Config]**&#x200B;をクリックして変更を保存します。
 1. **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;に移動し、**[!UICONTROL Flush Cache]**&#x200B;をクリックして、無効なすべてのキャッシュを更新します。
