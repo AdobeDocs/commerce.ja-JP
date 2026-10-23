@@ -17,7 +17,7 @@ PayPalは、各加盟店アカウントの超過取得制限を決定します�
 
 >[!NOTE]
 >
->このトピックでは、[!DNL Payment Services]拡張機能のオーバーキャプチャについて説明します。 [!DNL Adobe Commerce as a Cloud Service]については、個別の可用性とイネーブルメントの要件については、[&#x200B; カスタムキャプチャ量](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)を参照してください。
+>このトピックでは、[!DNL Payment Services]拡張機能のオーバーキャプチャについて説明します。 [!DNL Adobe Commerce as a Cloud Service]については、個別の可用性とイネーブルメントの要件については、[&#x200B; カスタムキャプチャ量](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)を参照してください。
 
 ## 前提条件
 
@@ -42,7 +42,7 @@ PayPalは、各加盟店アカウントの超過取得制限を決定します�
 
 ## 承認済みの支払いのキャプチャ
 
-オーバーキャプチャは、Adminでの請求中に行われます。 要求されたキャプチャ金額は、加盟店アカウントに対してPayPalが承認した制限内である必要があります。 標準の請求ワークフローについては、[請求書の作成](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)を参照してください。
+オーバーキャプチャは、Adminでの請求中に行われます。 要求されたキャプチャ金額は、加盟店アカウントに対してPayPalが承認した制限内である必要があります。 標準の請求ワークフローについては、[請求書の作成](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)を参照してください。
 
 1. _管理者_ サイドバーで、**[!UICONTROL Sales]** > **[!UICONTROL Orders]**&#x200B;に移動します。
 1. まだキャプチャされていない承認された支払いで注文を開きます。
