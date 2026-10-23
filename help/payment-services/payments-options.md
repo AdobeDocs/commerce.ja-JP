@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2458'
 ht-degree: 0%
 ---
 # 支払い方法
@@ -167,6 +167,17 @@ PayPalの[支払い方法に関するドキュメント &#x200B;](https://develo
 
 [!DNL PayPal] ボタンは、製品ページ、ミニカート、ショッピングカート、チェックアウトビューから表示されます。
 
+#### PayPal Expressのレビューページ
+
+[!DNL Payment Services] 2.17.0以降では、加盟店はPayPal Express チェックアウト用にオプションの加盟店レビューページを設定できます。 このページはPayPalの支払い方法とは別のもので、買い物客は注文する前に、最終的な注文総額と適用される条件を確認できます。
+
+[PayPal支払いボタン設定](configure-admin.md#paypal-payment-buttons)の&#x200B;**[!UICONTROL Skip Review]**&#x200B;を使用して、この手順を制御します。
+
+* `No` – 買い物客は、PayPal支払いモーダルを完了した後、加盟店のレビューページに戻り、注文を確認してから配置します。
+* `Yes` - マーチャントのレビューページがスキップされます。
+
+レビューページの設定は、該当する規制要件を満たすことに対する販売者の責任を置き換えるものではありません。 既存の[Google支払いレビューページ設定](configure-admin.md#google-pay)は個別に設定されています。
+
 #### [!DNL Venmo] ボタン
 
 お客様は、[Venmo](https://venmo.com/) ボタンを使用してチェックアウトできます。
@@ -201,7 +212,7 @@ PayPal デビットカードまたはクレジットカードのボタンは、�
 
 PayPal、Pay Later、Venmoの支払い方法では、[&#x200B; サーバーサイドの配送コールバック &#x200B;](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/)を使用して、PayPalがCommerce インスタンスと直接通信して配送オプションを取得し、リアルタイムで合計を計算できるようにします。
 
-このサーバーサイドのアプローチにより、[!DNL Payment Services]は注文確認ポップアップをスキップして、より迅速で合理的な購入体験を提供できます。 送料や税金はコールバックを通じて動的に計算されるため、バイヤーはPayPalまたはVenmoのレビューページで直接正確な合計を確認できます。
+送料と税金はコールバックを通じて動的に計算されるため、買い物客はPayPalまたはVenmoの支払いモーダルで直接更新された送料オプションと合計を見ることができます。 PayPal Express チェックアウトの場合、オプションの[加盟店レビューページ &#x200B;](#paypal-express-review-page)は、**[!UICONTROL Skip Review]**&#x200B;が管理するPayPal支払いモーダルの後の別のステップです。
 
 >[!NOTE]
 >
@@ -283,7 +294,7 @@ Adobe CommerceとMagento Open Source [!DNL Payment Services]を使用すると�
 
 ### 注文の再計算
 
-顧客がミニカート、ショッピングカート、または製品ページからチェックアウトフローに入ると、注文レビューページに誘導され、PayPal ポップアップウィンドウで選択した配送先住所を確認できます。 顧客が配送方法を選択すると、注文金額が適切に再計算され、顧客は送料と税金を確認できます。
+顧客がミニカート、ショッピングカート、または製品ページからPayPal チェックアウトフローに入ると、PayPal支払いモーダルで選択した配送先住所を確認できます。 顧客が配送方法を選択すると、注文金額が再計算され、顧客は送料と税金を確認できます。 PayPal Express チェックアウトの場合、オプションの[加盟店レビューページ &#x200B;](#paypal-express-review-page)により、お客様は注文を行う前に、最終的な合計金額と適用可能な利用条件を確認できます。
 
 顧客がチェックアウトページからチェックアウトフローに入ると、システムはすでに配送先住所と最終的に計算された金額を認識しており、合計が適切に表示されます。
 

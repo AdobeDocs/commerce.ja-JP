@@ -21,9 +21,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '729'
 ht-degree: 0%
 ---
 # セキュリティとコンプライアンス
@@ -57,6 +57,8 @@ PCI 3-D Secure （3DS）は、オンラインでクレジットカードを購�
 3DSの準拠が必要なEUまたは英国内の加盟店である場合は、[構成管理](configure-admin.md#credit-card-fields)で3DSを手動で有効にする必要があります（デフォルトでは`Off`です）。
 
 3DSは、**[クレジットカードのフィールド](configure-admin.md#credit-card-fields)**&#x200B;と&#x200B;**[[!DNL Google Pay]](configure-admin.md#google-pay)**&#x200B;の両方でサポートされています。 各支払い方法には、管理画面で独自の3D セキュア認証設定があります。この設定は、`Always`、`When required`、または`Off`に設定できます。
+
+[!DNL Payment Services] 2.17.0以降では、[保存されたクレジットカード &#x200B;](vaulting.md)で支払う買い物客は、発行者が必要とする3DS認証の課題を完了することもできます。 保存されたカードは、カード発行者が必要とする認証から支払いを免除しません。
 
 >[!IMPORTANT]
 >

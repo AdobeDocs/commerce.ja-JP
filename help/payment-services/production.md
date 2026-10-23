@@ -26,9 +26,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1110'
 ht-degree: 0%
 ---
 # 実稼動用に[!DNL Payment Services]を有効にする
@@ -61,6 +61,8 @@ ht-degree: 0%
    >[!IMPORTANT]
    >
    >[!DNL Payment Services]は部分的なキャプチャをサポートしています。 加盟店は、注文の一部を部分的に受け取ることができます。 例えば、各アイテムを個別にキャプチャすることも、現在のアイテムと後のアイテムを個別にキャプチャすることもできます。
+
+   PayPal オーバーキャプチャ契約を持つ対象となるマーチャントは、[!DNL Payment Services] 2.17.0以降で[&#x200B; オーバーキャプチャ &#x200B;](over-capture.md)を有効にすることもできます。 オーバーキャプチャでは、**[!UICONTROL Payment Action]**&#x200B;を`Authorize`に設定する必要があります。キャプチャは後で請求時に実行されます。
 
 1. **[!UICONTROL Save]**&#x200B;をクリックします。
 1. **[!UICONTROL Go to Payment Services]**&#x200B;をクリックして、[!DNL Payment Services] ホームに戻ります。

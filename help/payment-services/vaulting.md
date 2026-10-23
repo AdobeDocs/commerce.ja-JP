@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # クレジットカードのヴォールティング
@@ -100,3 +100,5 @@ Adminでヴォールトカードを使用できるのは、お客様が既存の
 ## セキュリティ
 
 最小限のクレジットカード情報は買い物客と共有され、最後の4桁、有効期限、ヴォールトしたクレジットカードのブランドのみが表示されます。 クレジットカード情報は、決済代行会社と共に保存され、[PCI](security.md#pci-compliance)のコンプライアンス基準を満たします。
+
+[!DNL Payment Services] 2.17.0以降では、保存されたクレジットカードで支払う買い物客に、カード発行者が必要とする[3D セキュア （3DS）認証チャレンジ &#x200B;](security.md#3ds)を完了するように求める場合があります。 カードを保存しても、イシュアが必要とする認証はバイパスされません。

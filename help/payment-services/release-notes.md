@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '5479'
+source-wordcount: '5663'
 ht-degree: 0%
 ---
 
@@ -132,9 +132,29 @@ _2021年6月28日_
 > リリースは、必要に応じて新しい機能や修正を提供するために頻繁に発生します。 リリーススケジュールは固定されていません。
 
 
+## v2.17.0
+
+_2026年10月22日_
+
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.6以降
+
+![新規](../assets/new.svg)<!-- PAY-6722 -->現在、加盟店はPayPal Express チェックアウト用にオプションのレビューページを設定できるため、買い物客は注文する前に最終的な合計金額と該当する利用条件を確認できます。 詳しくは、[PayPal Express レビューページ &#x200B;](payments-options.md#paypal-express-review-page)を参照してください。
+
+![新規](../assets/new.svg)<!-- PAY-6668 -->PayPalのオーバーキャプチャ契約を持つ対象となるマーチャントは、PayPalの承認済み制限内で、注文の請求時に、最初に承認された金額を超える金額をキャプチャできるようになりました。 要件と設定については、[Overcapture](over-capture.md)を参照してください。
+
+![修正済みの問題](../assets/fix.svg)<!-- PAY-7062 --> チェックアウトページにGoogle支払いボタンを表示する際に、[!DNL Google Pay] **[!UICONTROL Button Type]**&#x200B;設定でボタンラベルが変更されない問題を修正しました。
+
+![修正済みの問題](../assets/fix.svg)<!-- PAY-7063 -->支払いウィンドウを閉じて再度開いた後、買い物客がPayPal、Pay Later、またはVenmo Express チェックアウトを完了できない問題を修正しました。
+
+![修正済みの問題](../assets/fix.svg)<!-- PAY-6952 -->買い物客が有料配送オプションを選択した場合にPayPal Express チェックアウトが完了しない可能性がある送料税額の不一致を修正しました。
+
+![修正済みの問題](../assets/fix.svg)<!-- PAY-6939 -->買い物客が保存したクレジットカードで支払う場合の[3D セキュア認証の課題](security.md#3ds)のサポートを追加しました。
+
 ## v2.16.1
 
 _2026年8月10日_
+
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.6以降
 
 ![修正済みの問題](../assets/fix.svg)<!-- PAY-6769 --> PayPal スマートボタンを使用し、一部の支払い方法がチェックアウトページで利用できなくなるEDS ストアフロントの断続的な問題を修正しました。
 
@@ -142,13 +162,15 @@ _2026年8月10日_
 
 _2026年7月27日_
 
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.6以降
+
 ![新しい問題](../assets/new.svg)<!-- Issue PAY-6510 -->販売者は、[!DNL Commerce Admin]から直接web サイトの範囲で、別のPayPal アカウントのオンボーディングをセルフサービスで利用できるようになりました。[!DNL Payment Services] ホームには、支払い方法の管理者設定ページにリダイレクトする&#x200B;**[!UICONTROL Connect a different PayPal account for a website]** ボタンが含まれるようになりました。 詳しくは、[Web サイトの別のPayPal アカウントを接続する](connect-website-account.md)を参照してください。
 
 ## v2.15.0
 
 _2026年6月15日_
 
-[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.6以降
 
 ![新規](../assets/new.svg)<!-- PAY-6564 -->現在、[!DNL Google Pay]のExpress Checkoutでは、クライアント側の送料の折り返しを使用してGoogleの支払い用紙に配送方法を表示できるので、買い物客は支払いを確定する前に送料を選択できます。 販売者は、[Google支払い設定](configure-admin.md#google-pay)の&#x200B;**[!UICONTROL Skip Review]**&#x200B;を使用して、別のGoogle支払いレビュー手順を表示または非表示にすることができます。 レビュー手順をスキップすると、ウォレットの住所または配送方法が変更されたときに、配送オプションがシートに残ります。
 
@@ -744,4 +766,3 @@ _2021年11月29日_
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services]件のレポート [はすぐに同期できません](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26837)。
 
 ![既知の問題](../assets/bug.svg)<!-- Issue PAY-2475 --> [!DNL Payment Services]の[PayPal サンドボックスアカウント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-cloud-kcs/kbarticles/ka-26836)は、オンボーディング中にそのアカウントを作成した場合、確認できません。
-

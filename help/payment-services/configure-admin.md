@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '3767'
+source-wordcount: '3911'
 ht-degree: 0%
 ---
 # [!DNL Payment Services]設定
@@ -59,6 +59,7 @@ ht-degree: 0%
 
 1. **[!UICONTROL PayPal Merchant ID]**&#x200B;と&#x200B;**[!UICONTROL PayPal Merchant Status]**&#x200B;の値は、初めて[!DNL Payment Services] ダッシュボードにアクセスすると、PayPalによって自動的に提供されます。
 1. **ソフト記述子** （ストア/ブランド/カタログ間で区切る顧客トランザクション銀行取引明細書に表示されるカスタム値）の場合、`Soft descriptor`または既存の値を置き換えて、テキストフィールドにカスタムテキスト（最大22文字）を追加します。
+1. [!DNL Payment Services] 2.17.0以降を使用している対象となるマーチャントの場合、**[!UICONTROL Over Capture Enabled]**&#x200B;を`Yes`に設定して[overcapture](over-capture.md)を有効にします。 PayPalのオーバーキャプチャ契約が必要です。支払い方法の&#x200B;**[!UICONTROL Payment Action]**&#x200B;を`Authorize`に設定する必要があります。
 1. **[!UICONTROL Save Config]**&#x200B;をクリックして変更を保存します。
 1. **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;に移動し、**[!UICONTROL Flush Cache]**&#x200B;をクリックして、無効なすべてのキャッシュを更新します。
 
@@ -67,6 +68,7 @@ ht-degree: 0%
 | フィールド | 範囲 | 説明 |
 |---|---|---|
 | [!UICONTROL Enable] | web サイト | Web サイトの[!DNL Payment Services]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Over Capture Enabled] | web サイト | PayPalのオーバーキャプチャ契約を持つ対象となるマーチャントの[&#x200B; オーバーキャプチャ &#x200B;](over-capture.md)を有効または無効にします。 [!DNL Payment Services] 2.17.0以降と`Authorize`の支払いアクションが必要です。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]`。 既定：`[!UICONTROL No]`。 |
 | [!UICONTROL Method] | ストアビュー | ストアのメソッドまたは環境を設定します。 オプション：[!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | ストアビュー | サンドボックスのオンボーディング中に自動生成されるサンドボックスマーチャント ID。 |
 | [!UICONTROL Payment Services Production ID] | ストアビュー | 本番環境でのオンボーディング中に自動生成される、本番環境のマーチャント ID。 |
@@ -304,12 +306,15 @@ ht-degree: 0%
 
 管理画面でPayPal支払いボタン支払いオプションを有効にして設定できます。
 
+[!DNL Payment Services] 2.17.0以降では、**[!UICONTROL Skip Review]**&#x200B;は、買い物客がPayPal支払いモーダルを離脱した後にPayPal Express チェックアウトに加盟店レビューページを含めるかどうかを制御します。 このレビューページは、PayPalの支払い方法とは別のものです。 詳しくは、[PayPal Express レビューページ &#x200B;](payments-options.md#paypal-express-review-page)を参照してください。
+
 1. _管理者_ サイドバーで、**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**&#x200B;に移動します。
 1. 左側のパネルで、**[!UICONTROL Sales]**&#x200B;を展開し、**[!UICONTROL Payment Methods]**&#x200B;を選択します。
 1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;セクションを展開します。
 1. _[!UICONTROL Payment Services]_&#x200B;セクションで、_[!UICONTROL PayPal payment buttons]_ セクションを展開します。
 1. チェックアウト時に表示される支払い方法の名前を変更するには、_[!UICONTROL Title]_&#x200B;フィールドを編集します。
 1. 支払いアクション [&#128279;](production.md#set-payment-services-as-payment-method)を設定するには、**[!UICONTROL Authorize]**&#x200B;または&#x200B;**[!UICONTROL Authorize and Capture]**&#x200B;を選択します。
+1. PayPal Express チェックアウトの場合、**[!UICONTROL Skip Review]**&#x200B;を`No`に設定して、買い物客が注文する前に加盟店のレビューページを表示するか、`Yes`にスキップします。
 1. チェックアウトページで支払い方法を優先するには、**[!UICONTROL Sort order]** フィールドに`Numeric Only`値を入力します。
 1. [後払いメッセージ &#x200B;](payments-options.md#pay-later-button)を有効または無効にするには、**[!UICONTROL Display Pay Later Message]**&#x200B;の`Yes`/`No`を選択します。
 
@@ -334,6 +339,7 @@ ht-degree: 0%
 |---|---|---|
 | [!UICONTROL Title] | ストアビュー | チェックアウト時に支払い方法ビューでこの支払いオプションのタイトルとして表示するテキストを追加します。 オプション：テキストフィールド |
 | [!UICONTROL Payment Action] | web サイト | 指定された支払い方法の[支払いアクション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}。 オプション：[!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Skip Review] | ストアビュー | [!DNL Payment Services] 2.17.0以降では、PayPal Express チェックアウトのマーチャントのレビューページを制御します。 PayPal支払いモーダルの後にページを表示するには`[!UICONTROL No]`に、スキップするには`[!UICONTROL Yes]`に設定します。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]`。 既定：`[!UICONTROL Yes]`。 |
 | [!UICONTROL Display Pay Later Message] | web サイト | ショッピングカート、商品ページ、ミニカート、チェックアウトフロー中に、PayPal Pay Later メッセージを有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Configure Messaging] | ストアビュー | PayPal Pay Later Messagingのスタイルを変更する。 オプション：`[!UICONTROL Product page]` / `[!UICONTROL Cart]` |
 | [!UICONTROL Show buttons on checkout page] | ストアビュー | チェックアウトページで[!DNL PayPal payment buttons]を有効または無効にします。 オプション：`[!UICONTROL Yes]` / `[!UICONTROL No]` |
