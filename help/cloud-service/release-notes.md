@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ca71a86bb37c1ddd90118b0babd0a9c530b71be9
+source-git-commit: f7a84928b817f21a05ecc9e822ace49e103a8dfd
 workflow-type: tm+mt
-source-wordcount: '8909'
+source-wordcount: '9292'
 ht-degree: 0%
 ---
 # リリースノート
@@ -74,7 +74,66 @@ ht-degree: 0%
 >
 >Adobe Commerce オンプレミスまたはAdobe Commerce オンクラウドインフラストラクチャを使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview)を参照してください。
 
-## 2026年10月 – リリース #2 {#latest}
+## 2026年10月 – リリース #3 {#latest}
+
+[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下の項目は、2026年10月29日に実稼動環境で利用できるようになります。
+
+>[!BEGINSHADEBOX]
+
+### 注釈メールを注文するためのカスタム変数の追加
+
+`observer.email_order_comment_set_template_vars_before` [Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)が利用できるようになりました。 このツールを使用すると、電子メールがレンダリングされる前に、注文コメントメールでテンプレート変数を追加または変更できます。<!-- ACCS-2087 -->
+
+### 製品評価の書き出し
+
+製品レビューが有効になっている場合、各製品の承認済みレビュー数と平均評価は、`ac_review_count`と`ac_rating_summary`のシステム製品属性として[!DNL Catalog Service]に書き出されます。 ストアフロントでは、これらの属性を使用して商品のレーティングを表示できます。 レビューの概要が変更されると、製品フィードが更新されます。 製品レビューはデフォルトでは無効になっています。<!-- ACCS-2196 -->
+
+### 店舗クレジットの返金
+
+`POST /V1/creditmemo/refund` REST エンドポイントは、お客様の店舗のクレジットにクレジットメモの全部または一部を返金するオプションの`extension_attributes.refund_to_store_credit_amount` フィールドを受け入れるようになりました。<!-- ACCS-2068 -->
+
+2つの新しい管理者役割の権限により、ストアクレジットへのアクセスが制御されます：<!-- ACCS-1961 -->
+
+* [!UICONTROL Customers] > [!UICONTROL All Customers] > [!UICONTROL Manage Store Credit Balances]
+* [!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Orders] > [!UICONTROL Actions] > [!UICONTROL Create] > [!UICONTROL Can Spend Store Credit]
+
+### 取引メールの送信
+
+[!DNL Adobe I/O Events]で次のイベントを購読し、[!DNL App Builder]を使用してサードパーティの電子メールプラットフォームからトランザクションメールを送信できるようになりました：<!-- ACCS-1929 -->
+
+* `observer.company_customer_assign_email_send_after` – お客様に会社割り当てメールが送信されます。 ペイロードには、会社と顧客の詳細が含まれます。
+* `plugin.inventory_in_store_pickup_sales_api.api.notify_orders_are_ready_for_pickup.execute` – 注文は実店舗での受け取り準備完了としてマークされます。
+* `plugin.purchase_order.api.purchase_order_management.reject_purchase_order` – 発注が拒否されました。
+
+<!-- Not including AGENTCOM-2023 (epic incomplete)  -->
+
+### 機能強化とバグ修正
+
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
+
+* 新しい注文、請求書、および発送が[!DNL Commerce Admin]のセールスグリッドに表示されるまでに時間がかかる場合がある問題を修正しました。<!-- ACCS-2122 -->
+
+* 製品を保存すると、関連製品の販売可能数量が0に設定される問題を修正しました。<!-- ACCS-2139 -->
+
+* カテゴリの割り当てがない商品が、適切なカテゴリ権限を持たずにGraphQLを通じてカートに追加される問題を修正しました。<!-- CCSAAS-5560 -->
+
+* カテゴリを移動すると、重複したカテゴリが作成される可能性がある問題を修正しました。<!-- MDEE-1473 -->
+
+* `/V1/products/external-media` REST エンドポイントが失敗した問題を修正しました。<!-- ACCS-1776 -->
+
+* `credit_comment` フィールドが空でない場合、`PUT /V1/companyCredits/:id` REST エンドポイントが400 エラーを返す問題を修正しました。 コメントが保存されました。<!-- ACCS-2141 -->
+
+* PHPの非推奨化、注意、および警告により、リクエストが失敗することはなくなりました。 これらのメッセージはログに記録され、リクエストは完了します。<!-- CCSAAS-5602 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年10月 – リリース #2
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
