@@ -360,7 +360,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>Adobe Commerce Product Management and Engineeringの戦略的実装とセキュリティガイダンスの新しいホームである<a href="https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a> ガイドを追加しました。</p>
+      <td><p>Adobe Commerce Product Management and Engineeringの戦略的実装とセキュリティガイダンスの新しいホームである<a href="https://experienceleague.adobe.com/ja/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a> ガイドを追加しました。</p>
 </td>
       <td>
         新しいトピック
