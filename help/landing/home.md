@@ -47,8 +47,8 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-last-update: 2026-10-09
-source-git-commit: 4c3c267873a68560a885c6376cd1137a7503710a
+last-update: 2026-10-21
+source-git-commit: 74fd3753c29482d4d2ed0ed6bd96c9a4c4aa2adb
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Adobe Commerceサービスは、ストアフロント体験を拡張し、Adobe�
 
 ## Commerceはどのようにサービスに接続するのですか？
 
-それを必要とするサービスの場合、[Commerce Services Connector](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/integration-services/saas)は、API キーとSaaS データスペースを使用して、Commerce インスタンスをサポートされているサービスに接続します。 接続とデータ同期の手順は、デプロイメントモデルとサービスによって異なります。
+それを必要とするサービスの場合、[Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)は、API キーとSaaS データスペースを使用して、Commerce インスタンスをサポートされているサービスに接続します。 接続とデータ同期の手順は、デプロイメントモデルとサービスによって異なります。
 
 Commerce サービスコネクタが設定されている場合、次の機能にアクセスできます。
 
@@ -73,11 +73,11 @@ Commerce サービスコネクタが設定されている場合、次の機能�
 
 これらのサービスは、Adobeのエコシステム全体でコンバージョンを向上させ、パーソナライズされた体験を提供し、コマースデータをより有効に活用するのに役立ちます。
 
-![&#x200B; サービスレイヤー](./assets/services-layer.png)
+![ サービスレイヤー](./assets/services-layer.png)
 
 >[!NOTE]
 >
->Adobeでは、サポートされているすべてのCommerce サービスの最新バージョンにアップグレードすることをお勧めします。 [&#x200B; リリースノート &#x200B;](release-notes-all.md)を参照してください。
+>Adobeでは、サポートされているすべてのCommerce サービスの最新バージョンにアップグレードすることをお勧めします。 [ リリースノート ](release-notes-all.md)を参照してください。
 
 ## 利用可能なサービス
 
@@ -151,7 +151,7 @@ Commerce サービスコネクタが設定されている場合、次の機能�
 >
 >Adobe Commerce Optimizerは、ライブサーチ、カタログサービス、商品レコメンデーションサービスを個別に使用するのではなく、カタログとマーチャンダイジング機能をネイティブに提供します。 [Adobe Commerce Optimizerとは何ですか？](../optimizer/overview.md)を参照してください
 >
->Optimizerと統合されたAdobe Commerceのデプロイメントの場合、Adobe Commerce Optimizer コネクタは、その同期にCommerce サービスコネクタを必要とせずに、カタログと価格の同期を処理します。 [Payment Services](../payment-services/compatibility.md)や[Data Connection](../data-connection/connect-data.md#configure-the-commerce-services-connector)などのその他の統合では、引き続きCommerce Services Connectorが必要です。 [Adobe Commerce用コネクタの設定](https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/get-started/get-started)を参照してください。
+>Optimizerと統合されたAdobe Commerceのデプロイメントの場合、Adobe Commerce Optimizer コネクタは、その同期にCommerce サービスコネクタを必要とせずに、カタログと価格の同期を処理します。 [Payment Services](../payment-services/compatibility.md)や[Data Connection](../data-connection/connect-data.md#configure-the-commerce-services-connector)などのその他の統合では、引き続きCommerce Services Connectorが必要です。 [Adobe Commerce用コネクタの設定](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started)を参照してください。
 
 >[!TAB 統合サービス ]
 
@@ -234,11 +234,11 @@ Commerce サービスコネクタが設定されている場合、次の機能�
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="データ同期の監視" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong> データ管理ダッシュボード </strong>
          </a>
       </div>
@@ -250,7 +250,7 @@ Commerce サービスコネクタが設定されている場合、次の機能�
 
 >[!NOTE]
 >
->Data Management Dashboardは、Product Recommendations v6.0.0、Live Search v4.1.0、またはアクティブなライセンスを持つCatalog Service v1.17を使用して、Commerceのマーチャントに追加費用なしで利用できます。 以前のバージョンのサービスを利用しているマーチャントは、[&#x200B; カタログ同期](../landing/catalog-sync.md)を使用して、データ同期を管理および追跡できます。
+>Data Management Dashboardは、Product Recommendations v6.0.0、Live Search v4.1.0、またはアクティブなライセンスを持つCatalog Service v1.17を使用して、Commerceのマーチャントに追加費用なしで利用できます。 以前のバージョンのサービスを利用しているマーチャントは、[ カタログ同期](../landing/catalog-sync.md)を使用して、データ同期を管理および追跡できます。
 
 >[!ENDTABS]
 
@@ -260,13 +260,13 @@ Adobe Commerceサービスは、ビジネスの拡大、顧客体験の向上、
 
 | 問題 | 課題 | Solution |
 |---------|-----------|----------|
-| 製品の発見とコンバージョンの向上 | 顧客は求めているものを見つけられず、直帰率が高まり、売上の損失を招きます。 | [&#x200B; ライブサーチ &#x200B;](../live-search/overview.md)と[商品レコメンデーション &#x200B;](../product-recommendations/overview.md)を使用すると、タイプミスに対する許容値を持つAIを活用した検索、瞬時に「入力中に検索」結果、動的なファセット、リアルタイムの買い物客の行動に基づくパーソナライズされた商品レコメンデーションを提供できます。 |
+| 製品の発見とコンバージョンの向上 | 顧客は求めているものを見つけられず、直帰率が高まり、売上の損失を招きます。 | [ ライブサーチ ](../live-search/overview.md)と[商品レコメンデーション ](../product-recommendations/overview.md)を使用すると、タイプミスに対する許容値を持つAIを活用した検索、瞬時に「入力中に検索」結果、動的なファセット、リアルタイムの買い物客の行動に基づくパーソナライズされた商品レコメンデーションを提供できます。 |
 | オムニチャネルでパーソナライズされた体験を構築 | コマースデータが分断されているため、チャネルをまたいでパーソナライズされたエクスペリエンスを提供できません。 | [Data Connection](../data-connection/overview.md)を使用して、行動データ、トランザクションデータ、プロファイルデータをAdobe Experience Platformに送信します。 高度な顧客セグメントの構築、放棄されたカートに対する施策の実施、類似オーディエンスのターゲティング、カスタマージャーニー全体の季節的なトレンドの分析を実現できます。 |
 | デジタルアセット管理を合理化 | 複数のシステムをまたいで製品画像およびリッチメディアを管理すると、時間がかかり、ミスが発生しやすくなります。 | [AEM Assets統合](../aem-assets-integration/overview.md)は、Adobe CommerceをAdobe Experience Manager Assets プロジェクトに接続し、ワークフローを簡素化し、すべての顧客接点で一貫性のあるブランドエクスペリエンスを確保することで、一元化されたアセット管理を提供します。 |
-| 決済処理を最適化 | 支払い方法が限定され、支払い体験が不十分なことで、顧客満足度とコンバージョンが損なわれています。 | [決済サービス &#x200B;](../payment-services/guide-overview.md)では、支払い、注文、請求書を管理するための統合ダッシュボードを使用して、無利息の分割払いを含む複数の支払い方法を提供しています。 |
-| データ同期の大規模な管理 | リソースを多用するインデックス作成によってサイトの動作が遅くなり、データ同期の問題を簡単に追跡できません。 | [SaaS Data Export](../data-export/overview.md)、[SaaS Price Indexer](../price-index/price-indexing.md)、および[Data Management Dashboard](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)は、カタログ、注文、在庫データを自動的に同期し、価格計算をAdobe クラウドインフラストラクチャにオフロードし、同期ステータスをリアルタイムで可視化します。 |
+| 決済処理を最適化 | 支払い方法が限定され、支払い体験が不十分なことで、顧客満足度とコンバージョンが損なわれています。 | [決済サービス ](../payment-services/guide-overview.md)では、支払い、注文、請求書を管理するための統合ダッシュボードを使用して、無利息の分割払いを含む複数の支払い方法を提供しています。 |
+| データ同期の大規模な管理 | リソースを多用するインデックス作成によってサイトの動作が遅くなり、データ同期の問題を簡単に追跡できません。 | [SaaS Data Export](../data-export/overview.md)、[SaaS Price Indexer](../price-index/price-indexing.md)、および[Data Management Dashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)は、カタログ、注文、在庫データを自動的に同期し、価格計算をAdobe クラウドインフラストラクチャにオフロードし、同期ステータスをリアルタイムで可視化します。 |
 | 失った顧客を取り戻し、返品を減らしたい | 高い顧客離れと返品率は、収益性に影響を与えています。 | [Data Connection](../data-connection/overview.md)をAdobe Journey OptimizerおよびReal-Time CDPと組み合わせて、返品パターンを特定し、ウィンバック施策を構築し、行動ごとに顧客をセグメンテーションし、電子メールやSMSをまたいでパーソナライズされたリエンゲージメントキャンペーンを送信します。 |
-| データドリブン型マーチャンダイジング | どの商品をどのタイミングでプロモーションすべきか、把握できていません。 | [&#x200B; ライブサーチ &#x200B;](../live-search/overview.md)は、検索パフォーマンスに関するインサイトとマーチャンダイジングツールを提供します。主な指標にアクセスしたり、検索キーワードを分析したり、インテリジェントなマーチャンダイジングルールを使用して、実際の顧客行動やビジネス目標に基づいて商品を強化または埋め込んだりすることができます。 |
+| データドリブン型マーチャンダイジング | どの商品をどのタイミングでプロモーションすべきか、把握できていません。 | [ ライブサーチ ](../live-search/overview.md)は、検索パフォーマンスに関するインサイトとマーチャンダイジングツールを提供します。主な指標にアクセスしたり、検索キーワードを分析したり、インテリジェントなマーチャンダイジングルールを使用して、実際の顧客行動やビジネス目標に基づいて商品を強化または埋め込んだりすることができます。 |
 | 機密データのコンプライアンスを維持 | HIPAAを遵守しながら、機密性の高い顧客データを扱う必要があります。 | [Data Connection](../data-connection/overview.md)はHIPAA対応のため、コンプライアンスを維持し、プライバシーリクエストを体系的に処理しながら、Experience Platformとバックオフィスデータを共有できます。 |
 
 ## Commerceのサービス連携
@@ -284,7 +284,7 @@ Adobe Commerceサービスは、統合基盤の上に構築されており、ス
 
 >[!NOTE]
 >
->Adobe Experience Platformで行動データの共有を有効にするには、Data Connectionでイベントデータの収集を設定します。 設定手順については、[&#x200B; データ接続データ収集](../data-connection/connect-data.md#data-collection)を参照してください。
+>Adobe Experience Platformで行動データの共有を有効にするには、Data Connectionでイベントデータの収集を設定します。 設定手順については、[ データ接続データ収集](../data-connection/connect-data.md#data-collection)を参照してください。
 
 各サービスは個別に利用することができますが、それらを組み合わせることで、よりインテリジェントでパーソナライズされたショッピング体験を実現できます。
 
