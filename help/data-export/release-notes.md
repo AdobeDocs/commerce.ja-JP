@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
+source-git-commit: 4f804d488a8c8690ed965c022d673f52c91b3d15
 workflow-type: tm+mt
-source-wordcount: '3719'
+source-wordcount: '3763'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension] リリースノート
@@ -53,13 +53,19 @@ ht-degree: 0%
 
 ![新機能](../assets/new.svg)
 ![修正](../assets/fix.svg)修正と機能強化
-![&#x200B; バグ &#x200B;](../assets/bug.svg)既知の問題
+![ バグ ](../assets/bug.svg)既知の問題
 
 >[!NOTE]
 >
 >[!DNL SaaS data export]拡張機能は、[!DNL Live Search]、[!DNL Product Recommendations]、[!DNL Catalog Service]と共に自動的にインストールされるモジュールのコレクションです。 システムにインストールされているバージョンは、[!DNL Composer]を使用して確認できます。 場合によっては、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップするために、システムのデータエクスポート拡張機能をアップグレードすることをお勧めします。
 
 ## 2026 リリース {#release-notes-2026}
+
+### 103.6.0 リリース
+
+_2026年10月21日_
+
+![新規](../assets/new.svg) **製品レビューの概要の属性**&#x200B;承認済みレビュー数（`ac_review_count`）と平均評価（`ac_rating_summary`）に対するシステム管理の製品属性が追加されました。 レビューサマリーの同期が有効になっている場合、これらの値はカタログサービスに書き出され、ストアフロントでレビュー数と星評価を表示できるようになります。<!--MDEE-1414-->
 
 ### 103.5.2 リリース
 
@@ -83,7 +89,7 @@ _2026年10月13日_
 
 ![修正](../assets/fix.svg) **書き出されたメタデータの属性の表示を正確に行う** – 属性の表示フィールドがストアフロントの表示設定ではなく、管理者表示設定を書き出す問題を修正しました。 接続されたCommerce サービスは、各属性に対して正しい表示を受け取るようになりました。<!--MDEE-932-->
 
-![新規](../assets/new.svg) **数値製品属性の範囲フィルター**&#x200B;**数値**&#x200B;入力タイプをサポートするように製品属性を更新しました。 この入力タイプは、通貨記号を表示せずに、負の数値を含む10進数値を格納する属性に適用されます。 [!DNL Live Search]が範囲ファセットを生成できるメタデータを使用して書き出されます。買い物客は、動作温度などの測定値でフィルタリングできます。<!--MDEE-1416-->
+![新規](../assets/new.svg) **数値製品属性の範囲フィルター****数値**&#x200B;入力タイプをサポートするように製品属性を更新しました。 この入力タイプは、通貨記号を表示せずに、負の数値を含む10進数値を格納する属性に適用されます。 [!DNL Live Search]が範囲ファセットを生成できるメタデータを使用して書き出されます。買い物客は、動作温度などの測定値でフィルタリングできます。<!--MDEE-1416-->
 
 ![修正](../assets/fix.svg) **一貫したカスタム価格属性値** – カスタム価格属性値が、ストアのデフォルト通貨で小数点以下2桁で書き出されるようになりました。そのため、ストアフロントの価格書式は価格データ形式と一致します。<!--MDEE-1459-->
 
@@ -165,7 +171,7 @@ _2026年5月19日_
 
 _2026年5月5日_
 
-![修正](../assets/fix.svg) **書き出しログのトラブルシューティングが簡単** – 多くの書き出し関連のエラーと警告に、一貫したログコードが含まれるようになりました。 これらのコードは、サポートやドキュメントを利用する際の問題を迅速に追跡するのに役立ちます。 詳しくは、[&#x200B; ログコード参照](troubleshooting/log-codes-reference.md)を参照してください。
+![修正](../assets/fix.svg) **書き出しログのトラブルシューティングが簡単** – 多くの書き出し関連のエラーと警告に、一貫したログコードが含まれるようになりました。 これらのコードは、サポートやドキュメントを利用する際の問題を迅速に追跡するのに役立ちます。 詳しくは、[ ログコード参照](troubleshooting/log-codes-reference.md)を参照してください。
 <!--MDEE-1276-->
 
 ![修正](../assets/fix.svg) **属性オプションラベルが変更された場合の自動再同期** – ストアビューの製品属性オプションラベルを変更すると（複数選択属性を含む）、影響を受ける製品が再び書き出しにキューに入れられるようになり、ライブサーチ、商品レコメンデーション、カタログサービスおよびその他の接続されたCommerce サービスで、更新されたファセットとフィルターラベルが買い物客ビューに表示されるようになりました。 以前は、ラベルのみの編集では、より広範な製品変更で同期がトリガーされるまで、SaaS カタログに古い文言が表示される可能性がありました。
@@ -200,7 +206,7 @@ _2026年4月13日_
 - 削除中に書き出しサービスが利用できない場合に、接続されているCommerce サービスから削除された製品が正しく削除されない問題を修正しました。 再試行および再同期操作により、削除された製品がSaaSに正しく反映されるようになりました。<!--MDEE-1319-->
 - 管理者ストアビューに属性値がない場合でも、カタログエンティティ（製品およびカテゴリ）を接続されたCommerce サービスに書き出せるようになりました。 これにより、サードパーティの拡張機能との互換性が向上し、デフォルト値が欠落しているために発生する書き出しエラーが軽減されます。<!--MDEE-1333-->
 
-![修正](../assets/fix.svg) フィード レコードに予期しないデータまたは不足しているデータが含まれている場合に発生する可能性があるデータ フィード同期ステータス ページのエラーを解決しました。 現在、システムはこのようなケースを適切に処理し、安定性を向上させ、クラッシュを防ぎます。 Adobe Commerce Optimizer Connectorを使用してAdobe CommerceからAdobe Commerce Optimizerにデータを同期する場合は、修正プログラムとして[Adobe Commerce Optimizer Connector バージョン 1.0.11](https://experienceleague.adobe.com/ja/docs/commerce/aco-optimizer-connector/release-notes)以降に更新してください。<!--MDEE-1327-->
+![修正](../assets/fix.svg) フィード レコードに予期しないデータまたは不足しているデータが含まれている場合に発生する可能性があるデータ フィード同期ステータス ページのエラーを解決しました。 現在、システムはこのようなケースを適切に処理し、安定性を向上させ、クラッシュを防ぎます。 Adobe Commerce Optimizer Connectorを使用してAdobe CommerceからAdobe Commerce Optimizerにデータを同期する場合は、修正プログラムとして[Adobe Commerce Optimizer Connector バージョン 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes)以降に更新してください。<!--MDEE-1327-->
 
 ### 103.4.21 リリース
 
@@ -226,7 +232,7 @@ _2026年2月6日_
 
 _2026年2月2日_
 
-![修正](../assets/fix.svg)更新中にアイテムバッチが許可された上限を超える可能性がある問題を修正しました。これにより、[Commerce サービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)または[Adobe Commerce Optimizer](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/data-sync)にデータを同期する際に`items_limit_exceeded`個のエラーが発生します。<!--MDEE-1264-->
+![修正](../assets/fix.svg)更新中にアイテムバッチが許可された上限を超える可能性がある問題を修正しました。これにより、[Commerce サービス ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)または[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)にデータを同期する際に`items_limit_exceeded`個のエラーが発生します。<!--MDEE-1264-->
 
 ![修正](../assets/fix.svg) バンドル製品オプションの収集時に、失敗した項目を登録するロジックを追加することで、製品データの書き出しの信頼性を向上しました。<!--CCSAAS-4458-->
 
@@ -254,7 +260,7 @@ _2025年11月24日_
 
 _2025年10月22日_
 
-![新規](../assets/new.svg)接続サービス （[!DNL Catalog Service]、[!DNL Live Search]、および[!DNL Product Recommendations]）へのデータ転送を監視およびトラブルシューティングするためのデータフィード同期ステータス拡張機能のサポートを追加しました。 [!DNL Adobe Commerce]この拡張機能のインストールと使用について詳しくは、*Commerce管理ガイド*&#x200B;の[Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)を参照してください。<!--MDEE-954-->
+![新規](../assets/new.svg)接続サービス （[!DNL Catalog Service]、[!DNL Live Search]、および[!DNL Product Recommendations]）へのデータ転送を監視およびトラブルシューティングするためのデータフィード同期ステータス拡張機能のサポートを追加しました。 [!DNL Adobe Commerce]この拡張機能のインストールと使用について詳しくは、*Commerce管理ガイド*&#x200B;の[Data Feed Sync Status Monitoring](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)を参照してください。<!--MDEE-954-->
 
 ### 103.4.14 リリース
 
@@ -280,7 +286,7 @@ _2025年9月18日_
 
 _2025年8月29日_
 
-![新規](../assets/new.svg) [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
+![新規](../assets/new.svg) [!BADGE PaaSのみ]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce on Cloud プロジェクト（Adobeで管理されるPaaS インフラストラクチャ）とオンプレミス プロジェクトにのみ適用されます。"}
 商品フィードにCommerceの商品設定から税区分、属性セット、インベントリのデータを含める追加の商品属性のサポートを追加しました。 これらの属性を商品の書き出しフィードに含めるには、Adobe Commerce プロジェクトに追加の商品属性モジュールを追加する必要があります。 [税区分、属性セットおよび在庫属性の追加](add-tax-attribute-set-inventory-attributes.md)を参照してください。<!--MDEE-1135-->
 
 ![修正](../assets/fix.svg)完全な製品インデックスの実行中にエラーが発生した場合に、削除された製品の更新を誤って同期する問題を解決しました。 インデックス作成プロセス中にエラーが発生した場合でも、すべての製品の削除が正しく同期されるようになりました。<!--MDEE-1144-->
