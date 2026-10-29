@@ -92,7 +92,7 @@ ht-degree: 0%
 - 製品に最も関連性の高い属性を決定し、[動的ファセット &#x200B;](facets-type.md)として設定します。 
 - カタログ全体で一貫性があり、製品に非常に関連性の高い製品属性を設定して並べ替え、買い物客の関連性とフィルタリング機能を向上させます。
 - ファセットラベルはわかりやすく、サイト全体で一貫性のある名前が付けられていることを確認します。 例えば、「コスト」の代わりに「価格帯」を使用します。
-- ファセットの数を最も重要なファセットに制限することで、買い物客に負担をかけないようにしましょう。 選択肢が多すぎると、意思決定の疲労を招く可能性があります。 デフォルトでは、[!DNL Live Search]は、ファセットとして設定された最大100個の属性と、各ファセット内で返される30個のバケットに制限されています。 対象となるマーチャントは、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}を通じて、最大500個のファセットへの増額をリクエストできます。承認には、適格性とパフォーマンス評価が適用されます。 [&#x200B; ファセットの制限](boundaries-limits.md#facets)の詳細をご覧ください。
+- ファセットの数を最も重要なファセットに制限することで、買い物客に負担をかけないようにしましょう。 選択肢が多すぎると、意思決定の疲労を招く可能性があります。 デフォルトでは、[!DNL Live Search]は、ファセットとして設定された最大100個の属性と、各ファセット内で返される30個のバケットに制限されています。 対象となるマーチャントは、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}を通じて、最大500個のファセットへの増額をリクエストできます。承認には、適格性とパフォーマンス評価が適用されます。 [&#x200B; ファセットの制限](boundaries-limits.md#facets)の詳細をご覧ください。
 - 買い物客が複数のフィルター条件を同時に選択し、結果を絞り込めるようにします。 例えば、「赤」と「青」の両方の色を選択できるようにします。
 - 各ファセットオプションの横に利用可能な商品数を表示して、買い物客が期待できる検索結果を把握できるようにします。
 - 特にモバイルデバイスでは、インターフェイスをクリーンで管理しやすくするために、折りたたみ可能なファセットセクションを実装します。
@@ -230,7 +230,7 @@ ht-degree: 0%
 検索用の商品属性について詳しく見る：
 
 - [属性を検索可能に設定する](workspace.md#set-attributes-as-searchable)
-- [属性に重みを割り当てる](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [属性に重みを割り当てる](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 検索結果の監視
 
