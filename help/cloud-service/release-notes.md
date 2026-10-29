@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f7a84928b817f21a05ecc9e822ace49e103a8dfd
+source-git-commit: d84e54994e01c702c9d3634fbe42409bc4b0ce51
 workflow-type: tm+mt
-source-wordcount: '9292'
+source-wordcount: '9439'
 ht-degree: 0%
 ---
 # リリースノート
@@ -74,13 +74,21 @@ ht-degree: 0%
 >
 >Adobe Commerce オンプレミスまたはAdobe Commerce オンクラウドインフラストラクチャを使用している場合は、[Adobe Commerce リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/notes/overview)を参照してください。
 
+## 管理者UIの変更
+
+[!DNL Adobe Commerce as a Cloud Service]管理者は、既に使用している他のAdobe製品と同じように、同じトップ ナビゲーション、製品スイッチャー、組織スイッチャーで機能するようになりました。 一度ログインすれば、Commerce Cloud Managerと各インスタンスに個別にログインすることなく、製品とCommerce インスタンス間をシームレスに移動できます。 インスタンススイッチャーと検索可能なCommerceナビゲーションにより、必要な場所に迅速にアクセスできます。
+
+各管理者エクスペリエンスには独自のURLがあります。 Commerce Cloud Managerのインスタンスリンクは、**[!UICONTROL Admin URL (Unified Shell UI)]**&#x200B;を使用して、デフォルトで新しいCommerce管理エクスペリエンスを開きます。 クラシック UIは引き続きサポートされるので、新しいエクスペリエンスに適応している間も使い慣れたワークフローを使用できます。 クラシック UIを使用するには、インスタンスの詳細パネルを開き、**[!UICONTROL Admin URL (Classic UI)]**&#x200B;を選択します。 既存の管理者URLとブックマークは、引き続きクラシック UIを開きます。
+
+詳しくは、[Adobe Unified ExperienceのCommerce管理者](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/admin-unified-experience)を参照してください。
+
 ## 2026年10月 – リリース #3 {#latest}
 
-[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 
-以下の項目は、2026年10月29日に実稼動環境で利用できるようになります。
+2026年10月28日（PT）に実稼動環境に公開されたアイテムは次のとおりです。
 
 >[!BEGINSHADEBOX]
 
@@ -94,9 +102,9 @@ ht-degree: 0%
 
 ### 店舗クレジットの返金
 
-`POST /V1/creditmemo/refund` REST エンドポイントは、お客様の店舗のクレジットにクレジットメモの全部または一部を返金するオプションの`extension_attributes.refund_to_store_credit_amount` フィールドを受け入れるようになりました。<!-- ACCS-2068 -->
+[`POST /V1/creditmemo/refund` REST エンドポイント &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit)は、お客様の店舗クレジットにクレジットメモの全部または一部を返金するオプションの`extension_attributes.refund_to_store_credit_amount` フィールドを受け入れるようになりました。<!-- ACCS-2068 -->
 
-2つの新しい管理者役割の権限により、ストアクレジットへのアクセスが制御されます：<!-- ACCS-1961 -->
+2つの[新しい管理者役割の権限](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customer-accounts/store-credit/store-credit-using#store-credit-role-resources)により、ストアクレジットへのアクセスが制御されます：<!-- ACCS-1961 -->
 
 * [!UICONTROL Customers] > [!UICONTROL All Customers] > [!UICONTROL Manage Store Credit Balances]
 * [!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Orders] > [!UICONTROL Actions] > [!UICONTROL Create] > [!UICONTROL Can Spend Store Credit]

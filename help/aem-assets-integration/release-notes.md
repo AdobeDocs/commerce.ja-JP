@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b02fb8e31f4a25cff9e52f64a64812f30d6858b8
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '2009'
 ht-degree: 0%
 ---
 # AEM Assets統合のリリースノート
@@ -48,6 +48,20 @@ _2025年2月11日_
 ![新しい問題](../assets/new.svg)これで、マーチャントは商品とカテゴリの画像を同期できます。
 
 +++
+
+## v1.4.12
+
+_2026年10月28日_
+
+[!BADGE Adobe Commerce バージョン 2.4.6以降のリリースを]{type=Informative tooltip="サポート対象"} サポートしています。
+
+![修正済みの問題](../assets/fix.svg)<!-- Issue ACAP-1335 --> Adobe CommerceとAEM Assets間でビジュアライゼーションの所有権を切り替える際のカテゴリ画像の処理を修正しました。 AEM アセットの選択内容は、専用の`asset_role_image`属性に保存され、所有権が変更されたときに保持されるようになりました。 カテゴリ画像の読み取りと書き出しは、書き出し時にストアビュー固有の値を含め、AEM Assetsがビジュアライゼーションを所有する場合にAEM アセットロールの値を使用します。 カテゴリ `image`属性の既存のHTTP/HTTPS AEM アセット配信URLは、既存のアセットロール値を上書きすることなく、新しい属性に移行されます。
+
+![修正済みの問題](../assets/fix.svg)<!-- Issue ACAP-2180 --> Adobe Commerceがビジュアライゼーションを所有する場合は`null`を、AEM Assetsがビジュアライゼーションを所有する場合はカテゴリーアセットロールの値を返すように、カテゴリ GraphQL `asset_role_image` フィールドを修正しました。
+
+![修正済みの問題](../assets/fix.svg)<!-- Issue ACAP-2180 --> AEM アセットの役割が製品フィードで正しく書き出されなかった問題を修正しました。 これで、AEM アセットロールが正しく書き出されるようになりました。
+
+![修正済みの問題](../assets/fix.svg)<!-- Issue ACAP-1338 -->Adobe IMS、Commerce イベント、およびサービス ID パッケージの明示的な要件を復元し、明示的な`magento/framework`要件を削除するなど、パッケージの依存関係を更新しました。
 
 ## v1.4.9
 

@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
+source-git-commit: 4f804d488a8c8690ed965c022d673f52c91b3d15
 workflow-type: tm+mt
-source-wordcount: '3719'
+source-wordcount: '3763'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension] リリースノート
@@ -60,6 +60,12 @@ ht-degree: 0%
 >[!DNL SaaS data export]拡張機能は、[!DNL Live Search]、[!DNL Product Recommendations]、[!DNL Catalog Service]と共に自動的にインストールされるモジュールのコレクションです。 システムにインストールされているバージョンは、[!DNL Composer]を使用して確認できます。 場合によっては、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップするために、システムのデータエクスポート拡張機能をアップグレードすることをお勧めします。
 
 ## 2026 リリース {#release-notes-2026}
+
+### 103.6.0 リリース
+
+_2026年10月21日_
+
+![新規](../assets/new.svg) **製品レビューの概要の属性**&#x200B;承認済みレビュー数（`ac_review_count`）と平均評価（`ac_rating_summary`）に対するシステム管理の製品属性が追加されました。 レビューサマリーの同期が有効になっている場合、これらの値はカタログサービスに書き出され、ストアフロントでレビュー数と星評価を表示できるようになります。<!--MDEE-1414-->
 
 ### 103.5.2 リリース
 
