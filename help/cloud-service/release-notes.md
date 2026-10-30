@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: d84e54994e01c702c9d3634fbe42409bc4b0ce51
+source-git-commit: 43c00a414f95900a30103e56820d06077d530e0f
 workflow-type: tm+mt
-source-wordcount: '9439'
+source-wordcount: '9823'
 ht-degree: 0%
 ---
 # リリースノート
@@ -82,7 +82,59 @@ ht-degree: 0%
 
 詳しくは、[Adobe Unified ExperienceのCommerce管理者](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/admin-unified-experience)を参照してください。
 
-## 2026年10月 – リリース #3 {#latest}
+## 2026年11月 – リリース #1 {#latest}
+
+[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+2026年11月10日（PT）に実稼動環境に対して以下のアイテムがリリースされます。
+
+>[!BEGINSHADEBOX]
+
+<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+
+### 返品品目の属性の変更
+
+新しい`observer.rma_save_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)では、リターンを読み取り、リターンが保存される前にそのアイテムを読み取り、属性値を変更できます。<!-- ACCS-2062 -->
+
+* ペイロードには、saveがアイテムを作成または編集する際のリターン項目が含まれます。例えば、[!DNL Commerce Admin]でリターンが作成された場合、RESTで作成された場合、または`requestReturn` GraphQLの突然変異でリターンが作成された場合です。
+* Webhookは、リターンの保存の一環として実行されます。 必要なWebhookが失敗した場合、リターンは保存されません。
+
+### 配送先住所を含める
+
+`POST /V1/orders`および`PUT /V1/orders/create`のREST エンドポイントを通じて作成された新しい仮想以外の注文には、配送先住所が必要になりました。 配送先住所を持たないリクエストでは、HTTP 400 エラーが返されます。 この変更により、出荷情報のない注文が注文メールの失敗を引き起こさないようにします。<!-- CCSAAS-5351 -->
+
+配送先住所なしで注文を作成するには：
+
+* 注文にデジタル製品のみが含まれている場合は、`is_virtual`を`1`に設定します。
+* `PUT /V1/carts/:cartId/order` エンドポイントを使用してカートから注文します。
+
+### [!DNL AEM Assets] カテゴリ画像の取得
+
+`CategoryInterface`および`CategoryTree`個のGraphQL型に、[!DNL AEM Assets]から割り当てられたカテゴリ画像を返す`asset_role_image` フィールドが含まれるようになりました。<!-- ACCS-2180 -->
+
+### 機能強化とバグ修正
+
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
+
+* GraphQL製品クエリで画像ロールなしで[!DNL AEM Assets]個の製品画像が返される問題を修正しました。 この修正の前にエクスポートされた製品の画像の役割を復元するには、[製品データフィードを再同期します](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#manage-failed-exports)。<!-- ACCS-2180 -->
+
+* 注文項目にカスタムオプションが含まれている場合に、GraphQLの注文応答で`selected_options`に色やサイズなどの設定可能な商品オプションが見つからない問題を修正しました。<!-- CCSAAS-5722 -->
+
+* 会社が無効になっているweb サイトで、会社のアドレス帳ルールが会社のユーザーに適用される問題を修正しました。<!-- ACCS-2138 -->
+
+* 変更された配送先住所を使用して注文を編集すると、`POST /V1/orders/:orderId/edit/start` REST エンドポイントで404 エラーが返される問題を修正しました。<!-- ACCS-2220 -->
+
+* オプションの返品項目カスタム属性が空の値で送信されたときに`requestReturn` GraphQLの変更が失敗する問題を修正しました。<!-- CCSAAS-5628 -->
+
+* [!UICONTROL Update attributes]個の一括処理の後に製品が削除された場合に、在庫処理が停止する可能性がある問題を修正しました。<!-- CCSAAS-5713 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年10月 – リリース #3
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 

@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Live Search]のベストプラクティス'
-description: ストアに [!DNL Live Search] を実装するためのベストプラクティスについて説明します。
+description: ストアに[!DNL Live Search]を実装するためのベストプラクティスについて説明します。
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
 TQID: https://experienceleague.adobe.com/X9zgHooEzDJe-zzmLLXHdVVVFUHVX4be47dOUaJyUXU
@@ -23,13 +23,11 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 82da0a6749a2c3e6496992a6450c9ea0e7070b17
 workflow-type: tm+mt
-source-wordcount: 2965
+source-wordcount: '3008'
 ht-degree: 0%
-
 ---
-
 # ベストプラクティス
 
 この記事は、マーチャンダイジング担当者がサイト検索機能を強化し、コンバージョン率を最大化するシームレスで効率的なショッピング体験を実現するのに役立ちます。 概要に記載されている戦略に従って、高度な検索機能を実装し、Adobe Commerce [!DNL Live Search]を使用して最適なパフォーマンスを実現するために検索ツールを継続的に改良する方法を学習します。
@@ -94,7 +92,7 @@ ht-degree: 0%
 - 製品に最も関連性の高い属性を決定し、[動的ファセット &#x200B;](facets-type.md)として設定します。 
 - カタログ全体で一貫性があり、製品に非常に関連性の高い製品属性を設定して並べ替え、買い物客の関連性とフィルタリング機能を向上させます。
 - ファセットラベルはわかりやすく、サイト全体で一貫性のある名前が付けられていることを確認します。 例えば、「コスト」の代わりに「価格帯」を使用します。
-- ファセットの数を最も重要なファセットに制限することで、買い物客に負担をかけないようにしましょう。 選択肢が多すぎると、意思決定の疲労を招く可能性があります。 デフォルトでは、[!DNL Live Search]は、ファセットとして設定された最大100個の属性と、各ファセット内で返される30個のバケットに制限されています。 [&#x200B; ファセットの制限](boundaries-limits.md#facets)の詳細をご覧ください。 
+- ファセットの数を最も重要なファセットに制限することで、買い物客に負担をかけないようにしましょう。 選択肢が多すぎると、意思決定の疲労を招く可能性があります。 デフォルトでは、[!DNL Live Search]は、ファセットとして設定された最大100個の属性と、各ファセット内で返される30個のバケットに制限されています。 対象となるマーチャントは、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}を通じて、最大500個のファセットへの増額をリクエストできます。承認には、適格性とパフォーマンス評価が適用されます。 [&#x200B; ファセットの制限](boundaries-limits.md#facets)の詳細をご覧ください。
 - 買い物客が複数のフィルター条件を同時に選択し、結果を絞り込めるようにします。 例えば、「赤」と「青」の両方の色を選択できるようにします。
 - 各ファセットオプションの横に利用可能な商品数を表示して、買い物客が期待できる検索結果を把握できるようにします。
 - 特にモバイルデバイスでは、インターフェイスをクリーンで管理しやすくするために、折りたたみ可能なファセットセクションを実装します。

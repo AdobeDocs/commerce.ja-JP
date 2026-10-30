@@ -1,6 +1,6 @@
 ---
 title: ファセットを追加
-description: フィルター可能な製品属性を [!DNL Live Search]  ファセットとして追加する方法を説明します。
+description: フィルター可能な製品属性を[!DNL Live Search] ファセットとして追加する方法を説明します。
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
 TQID: https://experienceleague.adobe.com/6mX3QWuZRFuDb1eDnUlPj1yvXZ2qGIdQ4oScxfHjNWY
 product_v2:
@@ -15,13 +15,11 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: a652b6d5659dd6d5aede27d771736222b72b9c5e
 workflow-type: tm+mt
-source-wordcount: 600
-ht-degree: 0%
-
+source-wordcount: '622'
+ht-degree: 3%
 ---
-
 # ファセットを追加
 
 フィルター可能な製品属性は、在庫状況（`quantity_and_stock_status`）を除くファセットとして使用できます。 *[!UICONTROL Add facets]* パネルには、現在のファセットが一覧表示され、追加の製品属性をファセットとして簡単に割り当てることができます。 この3段階のプロセスでは、ファセットとして属性を選択し、必要に応じてプロパティを編集して、ストアフロントに公開した変更を管理します。
@@ -42,7 +40,7 @@ ht-degree: 0%
    * 特定の製品属性を検索するには、*検索* ボックスに属性名の最初の数文字を入力します。 次に、**追加**&#x200B;をクリックします。
 
      価格ファセットの間隔とグループ化を設定するには、[設定](settings.md)を参照してください。 詳しくは、[&#x200B; ファセットタイプ &#x200B;](facets-type.md)にアクセスしてください。
-ファセットが*動的ファセット* リストの下部に追加され、*変更を公開* ボタンが使用可能になります。
+     ファセットが*動的ファセット* リストに昇順で追加され、*変更を公開* ボタンが使用可能になります。
 
 1. 追加するファセットが見つからない場合は、**ストア**/属性/**製品**&#x200B;に移動し、属性に[必要なプロパティ &#x200B;](facets.md)がファセットとして使用されていることを確認します。 必要に応じて、属性の次のストアフロントプロパティを更新します。
 

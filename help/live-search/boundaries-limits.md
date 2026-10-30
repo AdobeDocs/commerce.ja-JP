@@ -1,6 +1,6 @@
 ---
 title: 限界と限界
-description: ビジネスのニーズを満たすために [!DNL Live Search] の境界と制限について説明します。
+description: ビジネスのニーズを満たすために、[!DNL Live Search]の境界と制限について説明します。
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
 TQID: https://experienceleague.adobe.com/QIKvaTUGLWd6yw6cEAyDkP9tCgEcJHLdiwpZDtx1-p4
@@ -28,13 +28,11 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 82da0a6749a2c3e6496992a6450c9ea0e7070b17
 workflow-type: tm+mt
-source-wordcount: 1409
+source-wordcount: '1448'
 ht-degree: 0%
-
 ---
-
 # 限界と限界
 
 Adobe Commerceのサイト検索機能なら、複数のオプションが用意されています。 [!DNL Live Search]と[!DNL Catalog Service]がビジネスのニーズを満たしていることを確認するには、次の制限を確認してください。 コンテンツ検索、BYOA （bring-your-own-algorithm）、属性ベースのマーチャンダイジングなどの高度な検索機能が必要な場合は、サードパーティの検索ソリューションを検討してください。
@@ -68,7 +66,7 @@ Adobe Commerceのサイト検索機能なら、複数のオプションが用意
 
 ## ファセット
 
-- 定義されたフィルター可能な属性のセットから、最大100個の属性をファセットとして設定できます。
+- デフォルトでは、最大100個のフィルター可能な属性をファセットとして設定できます。 対象となるマーチャントは、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}を通じて、最大500個のファセットへの増額をリクエストできます。承認には、適格性とパフォーマンス評価が適用されます。
 - ファセット内では、最大100個のバケットを返すことができます。 100個を超えるバケットを返す必要がある場合は、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)を作成して、Adobeがパフォーマンスへの影響を分析し、お客様の環境でこの制限を増やすことができるかどうかを判断できるようにします。
 - 動的なファセットは、大きなインデックスや高序数のインデックスでパフォーマンスの問題を引き起こす可能性があります。 ダイナミックファセットを作成し、パフォーマンスの低下やタイムアウトエラーを伴うページの読み込みがないことに気づいた場合は、ファセットをピン留めに変更して、パフォーマンスの問題が解決するかどうかを判断してください。
 - ストックステータス（`quantity_and_stock_status`）はファセットとしてサポートされていません。 管理者では、[!UICONTROL Display Out of Stock Products] = [!UICONTROL No]を設定して、在庫切れの商品をフィルタリングできます。 この機能は、`[PLP Widget](plp-styling.md)` モジュールでネイティブにサポートされています。 詳しくは、[在庫切れ商品の管理](manage-out-of-stock-products.md)を参照してください。
