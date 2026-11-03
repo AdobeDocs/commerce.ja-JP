@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
+source-git-commit: 8e3471bb89e2dd77c390ee1b8199c835a4f1e6bc
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2452'
 ht-degree: 0%
 ---
 # 商品を絞り込む
@@ -247,6 +247,8 @@ ht-degree: 0%
 >[!NOTE]
 >
 >メタデータが`number` ～ `true`に設定されている属性（**サイズ**&#x200B;など）を選択すると、**値** フィールドには、単一のテキスト値ではなく範囲入力が表示されます。
+
+属性リストは、選択した&#x200B;**カタログ ビュー**&#x200B;によって異なります。 **すべてのビュー**&#x200B;を選択した場合、リストは最初のカタログ ビューに関連付けられたカタログ ソースに基づきます。 特定のカタログビューを選択した場合、リストはそのビューのカタログソースに基づきます。
 
 #### 包含条件と除外条件の使用
 

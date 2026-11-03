@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 43c00a414f95900a30103e56820d06077d530e0f
+source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
 workflow-type: tm+mt
-source-wordcount: '9823'
+source-wordcount: '9775'
 ht-degree: 0%
 ---
 # リリースノート
@@ -147,10 +147,6 @@ ht-degree: 0%
 ### 注釈メールを注文するためのカスタム変数の追加
 
 `observer.email_order_comment_set_template_vars_before` [Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)が利用できるようになりました。 このツールを使用すると、電子メールがレンダリングされる前に、注文コメントメールでテンプレート変数を追加または変更できます。<!-- ACCS-2087 -->
-
-### 製品評価の書き出し
-
-製品レビューが有効になっている場合、各製品の承認済みレビュー数と平均評価は、`ac_review_count`と`ac_rating_summary`のシステム製品属性として[!DNL Catalog Service]に書き出されます。 ストアフロントでは、これらの属性を使用して商品のレーティングを表示できます。 レビューの概要が変更されると、製品フィードが更新されます。 製品レビューはデフォルトでは無効になっています。<!-- ACCS-2196 -->
 
 ### 店舗クレジットの返金
 
