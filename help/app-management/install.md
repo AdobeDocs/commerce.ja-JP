@@ -76,19 +76,19 @@ ht-degree: 0%
 
 1. **[!UICONTROL Apps]** > **[!UICONTROL App Management]**&#x200B;に移動します。
 
-[!DNL App Management] ビューが表示されます。 ここでは、App Builder アプリケーションの関連付け、インストール、設定、アップグレード、管理を行うことができます。 その画面の検索、フィルター、および&#x200B;**[!UICONTROL Acquire App]** アクションについては、[ アプリの管理](manage-app.md)の「[管理者](manage-app.md#find-an-application-in-the-admin) アプリケーションを検索する」を参照してください。
+[!DNL App Management] ビューが表示されます。 ここでは、App Builder アプリケーションの関連付け、インストール、設定、アップグレード、管理を行うことができます。 その画面の検索、フィルター、および&#x200B;**[!UICONTROL Acquire App]** アクションについては、[&#x200B; アプリの管理](manage-app.md)の「[管理者](manage-app.md#find-an-application-in-the-admin) アプリケーションを検索する」を参照してください。
 
 ## App Builder アプリのインストール
 
-Adobe ExchangeからApp Builder アプリをインストールする必要がある場合（事前定義済みの統合アプリやマーケットプレイスアプリなど）、ステップバイステップの手順については、[Adobe ExchangeからApp Builder アプリをインストール ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"}を参照してください。
+Adobe ExchangeからApp Builder アプリをインストールする必要がある場合（事前定義済みの統合アプリやマーケットプレイスアプリなど）、ステップバイステップの手順については、[Adobe ExchangeからApp Builder アプリをインストール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"}を参照してください。
 
-App Builder アプリケーションを入手してデプロイすると、組織で利用できるようになります。 Commerce インスタンスで使用するには、[ アプリを関連付ける](manage-app.md#associate-an-app)、[該当する場合はそのコンポーネント ](manage-app.md#install-an-app)をインストールし、[!DNL App Management]で[設定](manage-app.md#configure-settings)を設定します。
+App Builder アプリケーションを入手してデプロイすると、組織で利用できるようになります。 Commerce インスタンスで使用するには、[&#x200B; アプリを関連付ける](manage-app.md#associate-an-app)、[該当する場合はそのコンポーネント &#x200B;](manage-app.md#install-an-app)をインストールし、[!DNL App Management]で[設定](manage-app.md#configure-settings)を設定します。
 
 ## CommerceのWebhookとアプリ
 
 一部のApp Builder アプリケーションでは、[Adobe Commerce Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)を使用して、特定のイベントが発生した場合（商品が保存された後など）にCommerceからHTTP経由でアプリを呼び出すことができます。 Webhook エンドポイントとサブスクリプション ロジックは、アプリケーションのビルドおよびデプロイ時に&#x200B;**アプリ開発者**&#x200B;によって定義されます。ストア管理者は、アプリ管理でWebhookを個別に設定しません。
 
-アプリを[Commerce インスタンスに関連付け、[ コンポーネントをインストール ](manage-app.md#install-an-app)し、アプリのセットアップ手順を完了すると、Webhookの動作はアプリの実装に従います。 ](manage-app.md#associate-an-app)アプリのインストールとアップグレードは、開発者が宣言したWebhook サブスクリプションを適用します。これらのサブスクリプションを個別に作成する必要はありません。
+アプリを[&#128279;](manage-app.md#associate-an-app)Commerce インスタンスに関連付け、[&#x200B; コンポーネントをインストール &#x200B;](manage-app.md#install-an-app)し、アプリのセットアップ手順を完了すると、Webhookの動作はアプリの実装に従います。 &#x200B;アプリのインストールとアップグレードは、開発者が宣言したWebhook サブスクリプションを適用します。これらのサブスクリプションを個別に作成する必要はありません。
 
 [!DNL App Management]がアプリの検証エンドポイントをトリガーできない場合（例えば、URLに到達できない、または回答が要件を満たさない）、[!DNL App Management] ダッシュボードに次のようなエラーが表示される可能性があります。
 

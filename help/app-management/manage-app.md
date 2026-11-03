@@ -28,7 +28,7 @@ ht-degree: 0%
 
 [!DNL App Management]を使用して、App Builder アプリケーションをCommerce インスタンスに関連付け、インストール、設定、アップグレード、関連付けを解除します。 設定フォームは各アプリのスキーマから生成されるため、カスタム管理UI開発なしで設定を管理できます。
 
-![ アプリ管理](assets/app-management-view.png){width="500" zoomable="yes"}
+![&#x200B; アプリ管理](assets/app-management-view.png){width="500" zoomable="yes"}
 
 ## 管理画面でアプリケーションを検索
 
@@ -49,13 +49,13 @@ ht-degree: 0%
 * **[!UICONTROL Details]**&#x200B;には、イベントやカスタム インストール手順など、アプリケーションのビジネスの使用例が一覧表示されます。 ラベルと説明を確認して、アプリケーションがCommerceに追加する内容を理解します。
 * **[!UICONTROL App config]**&#x200B;は、検査のためにアプリケーションの設定をJSONとして表示します。
 
-![ アプリケーションのビジネスユースケースを表示する「詳細」タブ ](assets/application-details.png){width="600" zoomable="yes"}
+![&#x200B; アプリケーションのビジネスユースケースを表示する「詳細」タブ &#x200B;](assets/application-details.png){width="600" zoomable="yes"}
 
-アプリケーションのJSON設定を表示する![ アプリ設定タブ ](assets/app-config.png){width="600" zoomable="yes"}
+アプリケーションのJSON設定を表示する![&#x200B; アプリ設定タブ &#x200B;](assets/app-config.png){width="600" zoomable="yes"}
 
 ## アプリを入手
 
-**[!UICONTROL Acquire App]**&#x200B;さんが新しいブラウザータブ （または別のブラウザビュー）を[Adobe Exchange](https://exchange.adobe.com/apps/browse/ec){target="_blank"}に開き、Commerce関連のマーケットプレイスのリストを見つけて、Adobe IMS組織にアプリケーションを追加できます。 アプリを取得、承認、デプロイすると、[association](#associate-an-app)および[ インストール ](#install-an-app)の[!DNL App Management]にアプリが表示されます。
+**[!UICONTROL Acquire App]**&#x200B;さんが新しいブラウザータブ （または別のブラウザビュー）を[Adobe Exchange](https://exchange.adobe.com/apps/browse/ec){target="_blank"}に開き、Commerce関連のマーケットプレイスのリストを見つけて、Adobe IMS組織にアプリケーションを追加できます。 アプリを取得、承認、デプロイすると、[association](#associate-an-app)および[&#x200B; インストール &#x200B;](#install-an-app)の[!DNL App Management]にアプリが表示されます。
 
 ## 前提条件
 
@@ -83,7 +83,7 @@ App Builder アプリケーションをCommerce インスタンスにリンク�
 
 1. **[!UICONTROL Associate App]**&#x200B;をクリックします。
 
-   ![ アプリの関連付け](assets/associate-app.png){width="500" zoomable="yes"}
+   ![&#x200B; アプリの関連付け](assets/associate-app.png){width="500" zoomable="yes"}
 
 1. リストから&#x200B;**[!UICONTROL Project]**&#x200B;を選択します。
 
@@ -91,7 +91,7 @@ App Builder アプリケーションをCommerce インスタンスにリンク�
 
 1. **[!UICONTROL Associate]**&#x200B;をクリックします。
 
-   ![ アプリの詳細](assets/app-details.png){width="500" zoomable="yes"}
+   ![&#x200B; アプリの詳細](assets/app-details.png){width="500" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -107,7 +107,7 @@ App Builder アプリケーションをCommerce インスタンスにリンク�
 
 1. **[!UICONTROL Pre Installation Instructions]**&#x200B;が表示されている場合は、続行する前に、これらの前提条件を完了してください。
 
-   ![ インストール前の手順とビジネスの使用例を含むインストールのレビュー](assets/installation-review.png){width="600" zoomable="yes"}
+   ![&#x200B; インストール前の手順とビジネスの使用例を含むインストールのレビュー](assets/installation-review.png){width="600" zoomable="yes"}
 
 1. **[!UICONTROL Install]**&#x200B;をクリックします。
 
@@ -155,7 +155,7 @@ App Builder アプリケーションをCommerce インスタンスにリンク�
 
 アプリの詳細画面から&#x200B;**[!UICONTROL Manage Scopes]**&#x200B;にアクセスして、アプリのスコープ階層を管理します。
 
-![ スコープの管理](assets/manage-scopes.png){width="500" zoomable="yes"}
+![&#x200B; スコープの管理](assets/manage-scopes.png){width="500" zoomable="yes"}
 
 | アクション | 説明 |
 | --- | --- |
@@ -167,7 +167,7 @@ App Builder アプリケーションをCommerce インスタンスにリンク�
 
 アプリ開発者がインストール済みアプリの新しいバージョンをデプロイすると、アップグレードが利用可能であることが[!DNL App Management]に通知されます。 App BuilderのデプロイメントとApp Managementのアップグレードは個別の操作です。アップグレードは、イベント、webhook、Admin UI拡張機能など、インストールされているコンポーネントに予定された変更を適用します。
 
-アプリの開発者に、アプリがアップグレードをサポートしていることを確認してもらいます。 SDKの前提条件と移行要件については、開発者向けドキュメントの[ アプリのアップグレード ](https://developer.adobe.com/commerce/extensibility/app-management/upgrade-app/){target="_blank"}を参照してください。
+アプリの開発者に、アプリがアップグレードをサポートしていることを確認してもらいます。 SDKの前提条件と移行要件については、開発者向けドキュメントの[&#x200B; アプリのアップグレード &#x200B;](https://developer.adobe.com/commerce/extensibility/app-management/upgrade-app/){target="_blank"}を参照してください。
 
 ### アップグレードの確認と開始
 
@@ -181,7 +181,7 @@ App Builder アプリケーションをCommerce インスタンスにリンク�
 
 1. アップグレードを開始し、リストされた操作の進行状況を監視します。
 
-1. アップグレード結果を確認し、失敗した操作を確認します。 アップグレードに失敗した場合は、**[!UICONTROL Retry Upgrade]**&#x200B;を使用する前に[ アップグレードに失敗](troubleshooting.md#upgrade-fails)します。
+1. アップグレード結果を確認し、失敗した操作を確認します。 アップグレードに失敗した場合は、**[!UICONTROL Retry Upgrade]**&#x200B;を使用する前に[&#x200B; アップグレードに失敗](troubleshooting.md#upgrade-fails)します。
 
 手動モードでは、インストール済みのCommerce コンポーネントに対して計画された変更は、アップグレードを開始するまで適用されません。 ただし、デプロイメントでは、アップグレードが実行される前に、インストール済みアプリが既に使用しているランタイムアクションコードを更新できます。
 
@@ -205,7 +205,7 @@ Commerce インスタンスに接続する必要がなくなったアプリの�
 >
 >関連付けを解除すると、このインスタンスのすべての設定値が削除されます。 この操作は元に戻せません。 アンインストールでは、カスタムアンインストールスクリプトを使用して、アプリコンポーネントとリソースを削除することもできます。
 
-続行する前に、インストール済みのバージョンと設定を記録し、アプリケーションデータをバックアップし、アプリのアンインストールスクリプトが削除するリソースと手動クリーンアップが必要なリソースをアプリ開発者に尋ねます。 サービスの中断に備えて、アプリ、設定、データを復元する方法を計画します。 日常的な更新の場合は、アプリの関連付けを解除せずに[ アプリをアップグレードします](#upgrade-an-app)。
+続行する前に、インストール済みのバージョンと設定を記録し、アプリケーションデータをバックアップし、アプリのアンインストールスクリプトが削除するリソースと手動クリーンアップが必要なリソースをアプリ開発者に尋ねます。 サービスの中断に備えて、アプリ、設定、データを復元する方法を計画します。 日常的な更新の場合は、アプリの関連付けを解除せずに[&#x200B; アプリをアップグレードします](#upgrade-an-app)。
 
 Commerce インスタンスからアプリを削除するには：
 
@@ -221,5 +221,5 @@ Commerce インスタンスからアプリを削除するには：
 
 ## 関連ドキュメント
 
-* [ トラブルシューティング  [!DNL App Management]](troubleshooting.md) – 関連付け、インストール、設定、アップグレードに関する一般的な問題を解決します。
-* [ アプリのアップグレード ](https://developer.adobe.com/commerce/extensibility/app-management/upgrade-app/){target="_blank"} - アップグレードモード、移行スクリプト、および診断の開発者要件。
+* [&#x200B; トラブルシューティング  [!DNL App Management]](troubleshooting.md) – 関連付け、インストール、設定、アップグレードに関する一般的な問題を解決します。
+* [&#x200B; アプリのアップグレード &#x200B;](https://developer.adobe.com/commerce/extensibility/app-management/upgrade-app/){target="_blank"} - アップグレードモード、移行スクリプト、および診断の開発者要件。
