@@ -119,7 +119,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->CSEは、ガイダンスとアドバイザリーサービスを提供します。 お客様（または実装パートナー）は、カスタマイズの開発と保守に引き続き責任を負います。 [共有責任セキュリティと運用モデル ](/help/cloud-service/security/shared-responsibility.md)を参照してください。
+>CSEは、ガイダンスとアドバイザリーサービスを提供します。 お客様（または実装パートナー）は、カスタマイズの開発と保守に引き続き責任を負います。 [共有責任セキュリティと運用モデル &#x200B;](/help/cloud-service/security/shared-responsibility.md)を参照してください。
 
 ## Managed Operationsがライフサイクルをサポートする仕組み
 
