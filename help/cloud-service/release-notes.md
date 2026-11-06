@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
+source-git-commit: ab9c4d33ab0254c0c4ba990cd91ed01226d3abb9
 workflow-type: tm+mt
-source-wordcount: '9775'
+source-wordcount: '9964'
 ht-degree: 0%
 ---
 # リリースノート
@@ -88,11 +88,13 @@ ht-degree: 0%
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-2026年11月10日（PT）に実稼動環境に対して以下のアイテムがリリースされます。
+以下の項目は、2026年11月10日に実稼動環境にリリースされます。
 
 >[!BEGINSHADEBOX]
 
-<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+### 商品をカートに追加する際にカスタム属性を適用する
+
+`CartItemInput.custom_attributes` フィールドでキーと値のペアの配列を指定することで、[`addProductsToCart`の突然変異](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/add-products)を持つカート項目にカスタム属性を適用できるようになりました。<!-- ACCS-1980 -->
 
 ### 返品品目の属性の変更
 
@@ -100,6 +102,10 @@ ht-degree: 0%
 
 * ペイロードには、saveがアイテムを作成または編集する際のリターン項目が含まれます。例えば、[!DNL Commerce Admin]でリターンが作成された場合、RESTで作成された場合、または`requestReturn` GraphQLの突然変異でリターンが作成された場合です。
 * Webhookは、リターンの保存の一環として実行されます。 必要なWebhookが失敗した場合、リターンは保存されません。
+
+### 出荷から品目を除外
+
+新しい`plugin.magento.out_of_process_shipping_methods.api.shipment_item_filter.filter` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)では、サードパーティが処理するアイテムなど、新しい出荷から注文項目を除外できます。<!-- ACCS-2088 -->
 
 ### 配送先住所を含める
 
@@ -113,6 +119,14 @@ ht-degree: 0%
 ### [!DNL AEM Assets] カテゴリ画像の取得
 
 `CategoryInterface`および`CategoryTree`個のGraphQL型に、[!DNL AEM Assets]から割り当てられたカテゴリ画像を返す`asset_role_image` フィールドが含まれるようになりました。<!-- ACCS-2180 -->
+
+### 顧客ストアのクレジット残高の取得
+
+新しい`GET /V1/customers/:customerId/balance` REST エンドポイントは、顧客の店舗クレジット残高を返します。 このエンドポイントには[!UICONTROL Manage Store Credit Balances]権限が必要です。<!-- CCSAAS-5274 -->
+
+### 請求項目行の合計の取得
+
+`InvoiceItemInterface` GraphQL タイプに、請求書項目の保存済み行の小計を返す`row_total` フィールドが含まれるようになりました。<!-- USF-4460 -->
 
 ### 機能強化とバグ修正
 
@@ -129,6 +143,16 @@ ht-degree: 0%
 * オプションの返品項目カスタム属性が空の値で送信されたときに`requestReturn` GraphQLの変更が失敗する問題を修正しました。<!-- CCSAAS-5628 -->
 
 * [!UICONTROL Update attributes]個の一括処理の後に製品が削除された場合に、在庫処理が停止する可能性がある問題を修正しました。<!-- CCSAAS-5713 -->
+
+* カート放棄リマインダーメールで追加のリマインダーメールが送信される問題を修正しました。<!-- CCSAAS-5707 -->
+
+* 価格と入荷アラートメールが送信されない問題を修正しました。<!-- ACCS-2268 -->
+
+* `plugin.magento.out_of_process_tax_management.api.oop_tax_collection.collect_taxes` Webhookで`custom_attributes`を省略できる問題を修正しました。<!-- CEXT-6870, CEXT-6959 -->
+
+* プロセス外の合計コレクターを使用すると、`addProductsToCart` GraphQLの突然変異でエラーが返される問題を修正しました。<!-- ACCS-2263, CEXT-6986 -->
+
+* 設定可能な商品が買い物かごから削除された後、GraphQLの買い物かごのクエリと変更でエラーが返される問題を修正しました。<!-- CCSAAS-5721 -->
 
 {{accs-release}}
 

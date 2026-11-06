@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
+source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1486'
 ht-degree: 0%
 ---
 # 制限と境界
@@ -81,7 +81,7 @@ ht-degree: 0%
 | --- | --- | --- | --- |
 | 製品ビジュアルがユーザーを動かす | AI ツール、[!DNL Adobe Express]/[!DNL Firefly]との統合、Content Hubの共有など、包括的なデジタルアセット管理機能を備えたライセンスユーザーが、主要なDAM タスクと高度なクラウドネイティブ機能を処理して、効率を最適化しています。 | 2 | はい<p>[!DNL AEM Assets] ライセンスへのアップグレード</p> |
 | Product Visuals Collaborator ユーザー | AEM Commerceとの連携によるアセットへのアクセスと操作、[!DNL Adobe Express]と[!DNL Firefly]を使用したコンテンツの制作と編集、および有効な場合はContent Hub ポータルを介した承認済みアセットの活用。 | 2 | はい<p>[!DNL AEM Assets] ライセンスへのアップグレード</p> |
-| 製品ビジュアルのストレージ | アセットに割り当てられたストレージ容量 | 1 TB ストレージ | いいえ |
+| 製品ビジュアルのストレージ | アセットに割り当てられたストレージ容量 | 1 TB ストレージ | はい<p>[!DNL AEM Assets] ライセンスへのアップグレード</p> |
 | Dynamic Mediaの使用状況 | 以下を含むダイナミックメディア処理操作の許可<ul><li>画像配信</li><li>スマートイメージング</li><li>動画配信</li></ul><p>詳しくは、以下の「*Dynamic Mediaの使用状況の計算*」を参照してください。 | GMV （グロス・マーチャンダイジング・バリュー）ベース<p>最小配分：5M オペレーション/月</p> | はい<ul><li>追加操作の購入ライセンス</li><li>[!DNL AEM Assets] ライセンスへのアップグレード</li></ul> |
 | 動画配信 | ビデオ配信またはダウンロードの許可 | 300本、1分/ビデオ | はい<p>[!DNL AEM Assets] ライセンスへのアップグレード</p> |
 | アセット生成 | 画像を作成するための[!DNL Adobe Express]および[!DNL Adobe Firefly]生成AIへのアクセス | なし | 生成AI クレジットは別途購入する |
