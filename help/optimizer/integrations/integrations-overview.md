@@ -5,7 +5,7 @@ solution: Commerce
 feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -25,9 +25,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 972d2a1118daca17dc17a29e20ada593656960e1
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '564'
 ht-degree: 0%
 ---
 
@@ -42,7 +42,6 @@ ht-degree: 0%
 Product Visualsでは、Adobe Experience Manager（AEM）Assetsを使用して商品画像を管理できます。 商品ビジュアルを有効にするには、Commerce Optimizer用AEM Assetsを設定します。 設定が完了したら、AEM Assetsを製品画像の一元的なデジタルアセット管理ソリューションとして使用し、画像をCommerce Optimizer カタログと同期させる自動アセットレビューおよび管理ワークフローを使用します。 統合は、SKUごとにアセットと製品を一致させます。 Adobeの統合サービスでアップデートを実行し、手動で再アップロードすることなくストアフロントに最新のメディアを反映。
 
 - [AEM Assetsを使用した製品ビジュアル](../setup/product-visuals.md)
-- [Commerce Optimizer用AEM Assetsの設定](../../aem-assets-integration/get-started/configure-aco.md){target="_blank"}
 
 ## Adobe Experience Manager Sites Optimizer {#aem-sites-optimizer}
 
@@ -56,7 +55,7 @@ Adobe Experience Manager Sites Optimizerは、発見、エンゲージメント�
 
 ## Adobe Commerce Optimizer Connector {#aco-connector}
 
-Adobe Commerce Optimizer コネクタは、Adobe Commerce（クラウドまたはオンプレミス）と[!DNL Adobe Commerce Optimizer]の間でカタログと価格データを同期するブリッジです。 コネクタを有効にすると、Commerceは商品データの記録システムのままになり、[!DNL Adobe Commerce Optimizer]は商品の検索、レコメンデーション、マーチャンダイジングルール、分析、ヘッドレスストアフロント体験を強化します。 同期されたカタログビューのクエリを実行できるユーザーを制限するには、[&#x200B; プライベートカタログビュー](../setup/private-catalog-view.md)を参照してください。
+Adobe Commerce Optimizer コネクタは、Adobe Commerce（クラウドまたはオンプレミス）と[!DNL Adobe Commerce Optimizer]の間でカタログと価格データを同期するブリッジです。 コネクタを有効にすると、Commerceは商品データの記録システムのままになり、[!DNL Adobe Commerce Optimizer]は商品の検索、レコメンデーション、マーチャンダイジングルール、分析、ヘッドレスストアフロント体験を強化します。 同期されたカタログビューのクエリを実行できるユーザーを制限するには、[ プライベートカタログビュー](../setup/private-catalog-view.md)を参照してください。
 
 - [Adobe Commerce Optimizer コネクタの概要](../../aco-connector/overview.md){target="_blank"}
 - [コネクタの基本を学ぶ](../../aco-connector/get-started.md){target="_blank"}
@@ -65,7 +64,7 @@ Adobe Commerce Optimizer コネクタは、Adobe Commerce（クラウドまた�
 
 Adobe Commerce Optimizerは、取引に個別のコマースプラットフォームを使用するストアフロントの商品ディスカバリーとマーチャンダイジングを強化できます。 ストアフロントでは、商品データ、検索、レコメンデーション、マーチャンダイジングにCommerce Optimizer Merchandising Services APIを使用しています。 ホストコマースプラットフォームは、買い物客アカウント、カート、チェックアウト、注文処理について引き続き責任を負います。 ホストプラットフォームとの統合は、API Mesh、App Builder、ダイレクト API、またはこれらのツールの組み合わせを使用したカスタム実装です。
 
-Salesforce Commerce Cloud （SFCC）の場合、[Adobe Commerce Optimizer SFCC Checkout Starter Kit](https://github.com/adobe-commerce/aco-sfcc-checkout-starter-kit)には、Adobe Commerce Optimizer ストアフロントをSFCCの買い物客、買い物かご、チェックアウト機能に接続するためのEdge Delivery Services ブロックとスクリプトの例が用意されています。 これを参照実装として使用し、ストアフロントに適応させます。これは、一般的な、すぐに使えるコネクタではありません。 Next.js[&#128279;](https://github.com/adobe-commerce/aco-sfcc-storefront-next){target="_blank"}の ヘッドレスストアフロントの例も利用できます。
+Salesforce Commerce Cloud （SFCC）の場合、[Adobe Commerce Optimizer SFCC Checkout Starter Kit](https://github.com/adobe-commerce/aco-sfcc-checkout-starter-kit)には、Adobe Commerce Optimizer ストアフロントをSFCCの買い物客、買い物かご、チェックアウト機能に接続するためのEdge Delivery Services ブロックとスクリプトの例が用意されています。 これを参照実装として使用し、ストアフロントに適応させます。これは、一般的な、すぐに使えるコネクタではありません。 Next.js](https://github.com/adobe-commerce/aco-sfcc-storefront-next){target="_blank"}の[ ヘッドレスストアフロントの例も利用できます。
 
 
 ## Commerce Salesforce Connector {#commerce-salesforce-connector}
@@ -76,5 +75,5 @@ Commerce Salesforce Connector （Adobe App Builder上に構築）は、Salesforc
 
 >[!MORELIKETHIS]
 >
->- [Adobe Commerce Optimizer テクニカルドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+>- [Adobe Commerce Optimizer テクニカルドキュメント ](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 >- [Adobe Commerce Optimizerの基本を学ぶ](../get-started.md)
