@@ -1,9 +1,9 @@
 ---
 title: Commerceインフォメーションセンターガバナンス
 description: Commerce インフォメーションセンターの内部ガバナンスモデルについて説明します。 Experience Leagueには公開されません。
-source-git-commit: a91925091da28cd0745923894a3faab0374f0a0c
+source-git-commit: bd6b2a10f02498b94c8837a27490e943b630c5fc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 ## 所有権
 
-Adobe Commerceのドキュメントチームがインフォメーションセンターを所有しています。 これは`Adobe-Enterprise-Docs/commerce.en`で作成され、リポジトリは`metadata.md`で`git-repo`としてリストされます。
+Adobe Commerce ドキュメントチームは、`Adobe-Enterprise-Docs/commerce.en` GitHub リポジトリから取得したInformation Center コンテンツの取り込みプロセス、編集レビュー、公開を管理します。
 
-クロスプロダクトであるため、単一のプロダクトチームが所有することはありません。 製品固有の修正は、ここで修正する代わりに、所有している製品チームのドキュメントの連絡先にエスカレーションします。
+クロスプロダクトであるため、単一のプロダクトチームが所有することはありません。 製品およびエンジニアリングの所有者は、ExL PRを提出する前にコンテンツを承認する必要があります。 製品固有の修正は、ここで修正する代わりに、所有している製品チームのドキュメントの連絡先にエスカレーションします。
 
 ## 情報センターの内容
 
@@ -28,6 +28,8 @@ Adobe Commerceのドキュメントチームがインフォメーションセン
 - 情報センターは、製品ドキュメントを統合または移行することはなく、個々の製品の機能を文書化することもありません。 新しいことを書く前に、既存の信頼できるコンテンツにリンクする。
 
 ## 新しいコンテンツの追加
+
+記事の提案を送信するには、[COMDOX-1864](https://jira.corp.adobe.com/browse/COMDOX-1864)のエピックで概説されているプロセスに従って、COMDOX プロジェクトでJIRA チケットを作成します。 AIでチケット説明を使用してチケットを生成し、エピックにリンクします。
 
 ### 既存セクション内の記事
 
