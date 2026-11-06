@@ -74,7 +74,7 @@ Product Visualsを使用すると、[!DNL Adobe Commerce Optimizer]人の販売�
 
 1. Commerce メタデータをアセットに追加します。
 
-   [既定の自動一致](../../aem-assets-integration/synchronize/default-match.md)および[ カスタム自動一致](../../aem-assets-integration/synchronize/custom-match.md)を参照してください。
+   [既定の自動一致](../../aem-assets-integration/synchronize/default-match.md)および[&#x200B; カスタム自動一致](../../aem-assets-integration/synchronize/custom-match.md)を参照してください。
 
 1. アセットの配信を承認します。 トリガーを同期するには、アセットが&#x200B;**approved** ステータスである必要があります。
 
@@ -82,7 +82,7 @@ Product Visualsを使用すると、[!DNL Adobe Commerce Optimizer]人の販売�
 
 ### AEMとAssetsのレイヤーの適用
 
-ストアフロントにAEM Assets画像を表示するには、[ カタログビューに`AEM-Assets` レイヤーを割り当てます](catalog-layer.md#assign-the-aem-assets-layer-to-a-catalog-view)。
+ストアフロントにAEM Assets画像を表示するには、[&#x200B; カタログビューに`AEM-Assets` レイヤーを割り当てます](catalog-layer.md#assign-the-aem-assets-layer-to-a-catalog-view)。
 
 ## その他
 

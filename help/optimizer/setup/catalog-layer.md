@@ -36,7 +36,7 @@ ht-degree: 0%
 
 カタログレイヤーを使用すると、元のソースデータを変更せずに製品データを変更できます。 レイヤーは、ベースカタログの上にレイヤーを作成することで、名前、説明、画像、リンク、メタデータなどの製品属性を変更します。 元の製品データは維持され、製品を安全にカスタマイズし、いつでも変更を元に戻すことができます。
 
-![ カタログレイヤー](../assets/catalog-layers.png)
+![&#x200B; カタログレイヤー](../assets/catalog-layers.png)
 
 ## カタログレイヤーの仕組み
 
@@ -137,7 +137,7 @@ APIの仕様とペイロードの例について詳しくは、開発者ドキ�
 
 >[!TIP]
 >
->一括画層操作の場合は、上記](#add-a-catalog-layer-via-data-ingestion)で説明したデータ取り込みAPI メソッド [を使用します。
+>一括画層操作の場合は、上記[&#128279;](#add-a-catalog-layer-via-data-ingestion)で説明したデータ取り込みAPI メソッド を使用します。
 
 **手動レイヤーを作成するには：**
 
@@ -199,7 +199,7 @@ APIの仕様とペイロードの例について詳しくは、開発者ドキ�
 
 **レイヤーを削除するには：**
 
-データ取り込みAPIを使用して、カタログレイヤー](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers){target=_blank}を[削除します。
+データ取り込みAPIを使用して、カタログレイヤー[&#128279;](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers){target=_blank}を削除します。
 
 ## レイヤーの優先順位の管理
 
@@ -248,7 +248,7 @@ APIの仕様とペイロードの例について詳しくは、開発者ドキ�
 
 ## その他
 
-* [ カタログビュー](catalog-view.md) – 異なるストアフロントのカタログビューを設定する
-* [商品ビジュアル ](product-visuals.md) – 商品画像にAEM Assetsを使用
+* [&#x200B; カタログビュー](catalog-view.md) – 異なるストアフロントのカタログビューを設定する
+* [商品ビジュアル &#x200B;](product-visuals.md) – 商品画像にAEM Assetsを使用
 * [商談](../manage-results/opportunities.md) - カタログレイヤーを使用したAIによる最適化について説明します
 * [制限付きアクセスキー](restricted-access-keys.md) – 署名済みトークン認証でカタログビューを保護する

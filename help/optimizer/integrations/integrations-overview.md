@@ -55,7 +55,7 @@ Adobe Experience Manager Sites Optimizerは、発見、エンゲージメント�
 
 ## Adobe Commerce Optimizer Connector {#aco-connector}
 
-Adobe Commerce Optimizer コネクタは、Adobe Commerce（クラウドまたはオンプレミス）と[!DNL Adobe Commerce Optimizer]の間でカタログと価格データを同期するブリッジです。 コネクタを有効にすると、Commerceは商品データの記録システムのままになり、[!DNL Adobe Commerce Optimizer]は商品の検索、レコメンデーション、マーチャンダイジングルール、分析、ヘッドレスストアフロント体験を強化します。 同期されたカタログビューのクエリを実行できるユーザーを制限するには、[ プライベートカタログビュー](../setup/private-catalog-view.md)を参照してください。
+Adobe Commerce Optimizer コネクタは、Adobe Commerce（クラウドまたはオンプレミス）と[!DNL Adobe Commerce Optimizer]の間でカタログと価格データを同期するブリッジです。 コネクタを有効にすると、Commerceは商品データの記録システムのままになり、[!DNL Adobe Commerce Optimizer]は商品の検索、レコメンデーション、マーチャンダイジングルール、分析、ヘッドレスストアフロント体験を強化します。 同期されたカタログビューのクエリを実行できるユーザーを制限するには、[&#x200B; プライベートカタログビュー](../setup/private-catalog-view.md)を参照してください。
 
 - [Adobe Commerce Optimizer コネクタの概要](../../aco-connector/overview.md){target="_blank"}
 - [コネクタの基本を学ぶ](../../aco-connector/get-started.md){target="_blank"}
@@ -64,7 +64,7 @@ Adobe Commerce Optimizer コネクタは、Adobe Commerce（クラウドまた�
 
 Adobe Commerce Optimizerは、取引に個別のコマースプラットフォームを使用するストアフロントの商品ディスカバリーとマーチャンダイジングを強化できます。 ストアフロントでは、商品データ、検索、レコメンデーション、マーチャンダイジングにCommerce Optimizer Merchandising Services APIを使用しています。 ホストコマースプラットフォームは、買い物客アカウント、カート、チェックアウト、注文処理について引き続き責任を負います。 ホストプラットフォームとの統合は、API Mesh、App Builder、ダイレクト API、またはこれらのツールの組み合わせを使用したカスタム実装です。
 
-Salesforce Commerce Cloud （SFCC）の場合、[Adobe Commerce Optimizer SFCC Checkout Starter Kit](https://github.com/adobe-commerce/aco-sfcc-checkout-starter-kit)には、Adobe Commerce Optimizer ストアフロントをSFCCの買い物客、買い物かご、チェックアウト機能に接続するためのEdge Delivery Services ブロックとスクリプトの例が用意されています。 これを参照実装として使用し、ストアフロントに適応させます。これは、一般的な、すぐに使えるコネクタではありません。 Next.js](https://github.com/adobe-commerce/aco-sfcc-storefront-next){target="_blank"}の[ ヘッドレスストアフロントの例も利用できます。
+Salesforce Commerce Cloud （SFCC）の場合、[Adobe Commerce Optimizer SFCC Checkout Starter Kit](https://github.com/adobe-commerce/aco-sfcc-checkout-starter-kit)には、Adobe Commerce Optimizer ストアフロントをSFCCの買い物客、買い物かご、チェックアウト機能に接続するためのEdge Delivery Services ブロックとスクリプトの例が用意されています。 これを参照実装として使用し、ストアフロントに適応させます。これは、一般的な、すぐに使えるコネクタではありません。 Next.js[&#128279;](https://github.com/adobe-commerce/aco-sfcc-storefront-next){target="_blank"}の ヘッドレスストアフロントの例も利用できます。
 
 
 ## Commerce Salesforce Connector {#commerce-salesforce-connector}
@@ -75,5 +75,5 @@ Commerce Salesforce Connector （Adobe App Builder上に構築）は、Salesforc
 
 >[!MORELIKETHIS]
 >
->- [Adobe Commerce Optimizer テクニカルドキュメント ](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+>- [Adobe Commerce Optimizer テクニカルドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 >- [Adobe Commerce Optimizerの基本を学ぶ](../get-started.md)
