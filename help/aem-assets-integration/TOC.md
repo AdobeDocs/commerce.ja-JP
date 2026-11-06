@@ -4,9 +4,9 @@ breadcrumb-title: '[!DNL AEM Assets]統合'
 user-guide-description: Adobe CommerceとMagento Open Sourceの管理者およびe コマースマーケター向けのAEM Assets統合に関する包括的な情報を提供します。
 feature: CMS, Page Content
 nudge: true
-source-git-commit: 7db47b2b78642d47b0f38c3933bd87a0a2b6e127
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '103'
 ht-degree: 3%
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 3%
   - [拡張機能の更新を確認する](get-started/check-for-updates.md)
   - [統合の設定](get-started/setup-synchronization.md)
   - [IMS ユーザー権限の設定](get-started/permissions.md)
-  - [Commerce Optimizerの設定](get-started/configure-aco.md)
   - [ストアフロントの設定](get-started/configure-storefront.md)
   - [ログの表示と管理](get-started/logs.md)
   - [AEM Assetsの同期ステータスの表示](get-started/sync-status.md)

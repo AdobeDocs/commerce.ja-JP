@@ -25,9 +25,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 972d2a1118daca17dc17a29e20ada593656960e1
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '564'
 ht-degree: 0%
 ---
 
@@ -42,7 +42,6 @@ ht-degree: 0%
 Product Visualsでは、Adobe Experience Manager（AEM）Assetsを使用して商品画像を管理できます。 商品ビジュアルを有効にするには、Commerce Optimizer用AEM Assetsを設定します。 設定が完了したら、AEM Assetsを製品画像の一元的なデジタルアセット管理ソリューションとして使用し、画像をCommerce Optimizer カタログと同期させる自動アセットレビューおよび管理ワークフローを使用します。 統合は、SKUごとにアセットと製品を一致させます。 Adobeの統合サービスでアップデートを実行し、手動で再アップロードすることなくストアフロントに最新のメディアを反映。
 
 - [AEM Assetsを使用した製品ビジュアル](../setup/product-visuals.md)
-- [Commerce Optimizer用AEM Assetsの設定](../../aem-assets-integration/get-started/configure-aco.md){target="_blank"}
 
 ## Adobe Experience Manager Sites Optimizer {#aem-sites-optimizer}
 

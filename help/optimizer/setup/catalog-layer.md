@@ -3,7 +3,7 @@ title: カタログレイヤー
 description: カタログレイヤーを使用すると、元のソースデータを変更せずに製品データを変更できるので、いつでも安全にカスタマイズして変更を元に戻すことができます。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -27,13 +27,11 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: 1533
+source-wordcount: '1493'
 ht-degree: 0%
-
 ---
-
 # カタログレイヤー
 
 カタログレイヤーを使用すると、元のソースデータを変更せずに製品データを変更できます。 レイヤーは、ベースカタログの上にレイヤーを作成することで、名前、説明、画像、リンク、メタデータなどの製品属性を変更します。 元の製品データは維持され、製品を安全にカスタマイズし、いつでも変更を元に戻すことができます。
@@ -67,8 +65,6 @@ ht-degree: 0%
 * **商品ビジュアル** - AEM Assetsの商品画像を、ベースカタログの上にレイヤーとして適用します。
 
 ## AEM-Assetsレイヤー
-
-[製品ビジュアル &#x200B;](product-visuals.md)を有効にすると、AEM Assets統合は、AEM Assets コンテンツ専用のカタログレイヤーを自動的に作成および管理します。 デフォルトのレイヤー名は`AEM-Assets`ですが、AEM Assets統合[&#128279;](../../aem-assets-integration/get-started/configure-aco.md)での オンボーディング中にカスタム名を指定できます。
 
 このレイヤーには、AEM Assetsから同期された商品画像が含まれています。 他のカタログレイヤーと同様に、[製品レイヤーAPI](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}を介して設定されます。 Assets Integration Serviceは、AEMアセットのメタデータと配信URLをAPI フォーマットに変換し、AEM Assetsでアセットが承認されるとデータを自動的に送信します。
 

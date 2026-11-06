@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '521'
 ht-degree: 0%
 ---
 
@@ -54,42 +54,13 @@ Product Visualsを使用すると、[!DNL Adobe Commerce Optimizer]人の販売�
 
 更新された画像は、ストアフロント API （カタログサービス、ライブサーチ、商品レコメンデーション）を通じて利用できます。
 
-### Sourceとレイヤー設定
-
-AEM Assetsの画像は、次のソース設定を持つカタログレイヤーとして取り込まれます。
-
-> ソース設定の例
-
-```json
-{
-  "source": {
-    "locale": "en-US",
-    "layer": "AEM-Assets"
-  }
-}
-```
-
-この設定により、AEM Assetsの画像がベースとなる商品カタログにオーバーレイとして適用されます。
-
-## 前提条件
-
-製品ビジュアルを有効にする前に、Commerce Optimizer[&#128279;](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)の前提条件を満たしていることを確認してください。
-
-## 設定
-
-統合を有効にするには、[&#x200B; サポートチケット &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)を[!DNL Commerce Optimizer]とAEM Assetsの詳細とともに作成します。 Adobe サポートは、統合を設定し、Assets Integration Serviceにテナントを登録します。
-
-オンボーディングについて詳しくは、[Commerce Optimizer用AEM Assetsの設定](../../aem-assets-integration/get-started/configure-aco.md)を参照してください。
-
 ### AEM Assets メタデータの設定
 
 商品の自動マッチングを有効にするには、Commerce メタデータを使用してAEM Assetsのアセットを設定します。
 
-必要なメタデータフィールドと手順については、[AEM Assets](../../aem-assets-integration/get-started/configure-aco.md#configure-aem-assets-first)の設定を参照してください。
+必要なメタデータフィールドと手順については、[AEM Assets](../../aem-assets-integration/get-started/configure-aem.md)の設定を参照してください。
 
 ## 制限
-
-商品ビジュアルを使用する前に、[統合の制限](../../aem-assets-integration/get-started/configure-aco.md#limitations)を確認してください。これは、AEM Assets データとベースカタログの結合方法に影響するレイヤー関連の制約です。
 
 容量と使用状況の割り当て（アセットのストレージ、Dynamic Mediaの操作、ユーザーライセンス）については、_境界と制限ガイド_&#x200B;の[製品ビジュアルの制限](../boundaries-limits.md#product-visuals-limits)を参照してください。
 
