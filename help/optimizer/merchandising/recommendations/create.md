@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f316b57d365b8952223d4d250ac14f113cf48601
+source-git-commit: 0be21c4e838dabb8871eecbfc6c36c34af2d3ff0
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1612'
 ht-degree: 0%
 ---
 # レコメンデーションの作成と管理
@@ -48,6 +48,8 @@ _レコメンデーションユニット_
 
 1. 「_推奨事項に名前を付ける_」セクションに、`Home page most popular`など、内部参照用にわかりやすい名前を入力します。
 
+1. 「**ストアフロントの参照**」セクションに、ストアフロント設定でこのレコメンデーションユニットを識別するための参照キーを入力します。 レコメンデーションを作成した後、**レコメンデーションユニットの詳細**&#x200B;からその値[&#128279;](#get-the-storefront-reference-key)を コピーし、レコメンデーションブロックの`referenceKey`として使用できます。 参照キーはストアフロントの設定用です。ストアフロントの表示ラベルは、買い物客に表示されるテキストです。
+
 1. 「_レコメンデーションタイプを選択_」セクションで、戦略に基づいて必要なレコメンデーションの[&#x200B; タイプ &#x200B;](types.md)を指定します。
 
 1. _ストアフロントの表示ラベル_ セクションに、「トップセラー」など、買い物客に表示される[&#x200B; ラベル &#x200B;](best-practice.md#recommendation-labels)を入力します。
@@ -66,7 +68,7 @@ _レコメンデーションユニット_
 
    - **有効化**&#x200B;して、ストアフロントでレコメンデーションユニットを有効にします。
 
-   レコメンデーションがRecommendations ワークスペースに表示されます。 ストアフロントでレコメンデーションを使用するには、[&#x200B; レコメンデーション ID](#get-recommendation-id)を見つける必要があります。
+   レコメンデーションがRecommendations ワークスペースに表示されます。 ストアフロントでレコメンデーションを使用するには、レコメンデーション IDまたは参照キー[が必要です。](#get-the-recommendation-id-or-reference-key)
 
 >[!NOTE]
 >
@@ -98,21 +100,17 @@ _おすすめ商品プレビュー_ パネルは、ストアフロントにデ�
 
 マルチストアフロント、多言語、またはマルチブランドの設定の場合、各レコメンデーションをすべてのカタログビュー（グローバル）に適用するか、単一の[&#x200B; カタログビュー](../../setup/catalog-view.md)に適用するかを設定できます。 レコメンデーションを操作する際に[&#x200B; カタログビュー](../../manage-results/recommendation-performance.md#select-catalog-view)を設定する方法について詳しくは、こちらを参照してください。
 
-## レコメンデーション IDを取得
+## ストアフロント参照キーの取得
 
-レコメンデーションを作成したら、ストアフロントにレコメンデーションユニットを実装するために、そのIDを取得する必要があります。
+レコメンデーションを作成したら、その参照キーを使用して、ストアフロントでレコメンデーションユニットを設定します。
 
-1. **Recommendations** ページで、推奨事項を選択します。
+1. **Recommendations** ページで、レコメンデーション名の横にある情報アイコン （![情報アイコン &#x200B;](../../assets/info-icon.png)）をクリックして、**レコメンデーションユニットの詳細** ページを開きます。
 
-1. レコメンデーション名の横にある情報アイコン（![情報アイコン &#x200B;](../../assets/info-icon.png)）をクリックします。
+   ![&#x200B; レコメンデーション IDを取得](../../assets/get-ref-id.png)
 
-   **Recommendation Unitの詳細** ページが表示されます。
+1. **Storefront参照キー** セクションから値をコピーします。
 
-   ![&#x200B; レコメンデーション IDを取得](../../assets/get-rec-id.png)
-
-1. **Recommendation ID** セクションで、IDをコピーします。
-
-1. このIDを使用して、Edge Delivery Services ストアフロントで[&#x200B; レコメンデーションドロップイン &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/)を設定します。
+1. ストアフロント `product-recommendations` ブロックで、この参照キーを使用して、Edge Delivery Services ストアフロントで[&#x200B; レコメンデーションドロップイン &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/)を設定します。
 
 ## 既存のレコメンデーションの管理
 
@@ -127,6 +125,7 @@ _おすすめ商品プレビュー_ パネルは、ストアフロントにデ�
 1. メニューでは、レコメンデーションを&#x200B;**非アクティブ化**、**削除**、または&#x200B;**編集**&#x200B;できます。 **編集**&#x200B;を選択すると、必要に応じて次の設定を調整できます。
 
    - 推奨事項の名前
+   - 参照キー
    - ストアフロントラベル
    - 製品数
    - 商品を絞り込む

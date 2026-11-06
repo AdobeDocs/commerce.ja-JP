@@ -15,18 +15,17 @@ role_v2:
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
     internal-label: Behavioral data
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 97fda73b4f68154aa6fe66eee61ef2d68be979ca
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # レコメンデーションを編集
 
 レコメンデーションを編集ページでは、レコメンデーションを構成する個々の設定を調整できます。 ページタイプとレコメンデーションタイプを除くすべての設定を編集できます。 次の設定を編集できます。
 
 - [推奨事項の名前](#name)
+- [参照キー](#reference-key)
 - [ストアフロントラベル](#label)
 - [製品数](#number)
 - [配置と位置](#placement)
@@ -51,6 +50,10 @@ ht-degree: 0%
 レコメンデーションの目的を示すわかりやすい名前を選択します。 名前は内部参照用で、ストアフロントには表示されません。
 
 ![名前を編集](assets/edit-name.png)
+
+### 参照キー {#reference-key}
+
+ストアフロント設定でレコメンデーションユニットを識別するために使用されるキー。
 
 ### ストアフロントラベル {#label}
 

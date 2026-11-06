@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+source-git-commit: 1effb98aaefee32d6479ffdc0737367edc8d1a3a
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1665'
 ht-degree: 0%
 ---
 # 新しいレコメンデーションを作成
@@ -48,6 +48,8 @@ _レコメンデーションユニット_
 1. 「**レコメンデーションを作成**」をクリックします。
 
 1. 「_推奨事項に名前を付ける_」セクションに、`Home page most popular`など、内部参照用にわかりやすい名前を入力します。
+
+1. [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service プロジェクト（Adobeで管理されるSaaS インフラストラクチャ）にのみ適用されます。"} 「**ストアフロントのリファレンス**」セクションに、ストアフロント設定でこのレコメンデーションユニットを識別するための参照キーを入力します。 レコメンデーションを作成した後、**レコメンデーションユニットの詳細**&#x200B;からその値[&#128279;](#get-the-storefront-reference-key)を コピーし、レコメンデーションブロックの`referenceKey`として使用できます。 参照キーはストアフロントの設定用です。ストアフロントの表示ラベルは、買い物客に表示されるテキストです。
 
 1. 「_ページの種類を選択_」セクションで、次のオプションからレコメンデーションを表示するページを選択します。
 
@@ -101,6 +103,20 @@ _レコメンデーションユニット_
 >[!IMPORTANT]
 >
 >一部のブラウザーでは、製品レコメンデーションが期待どおりに動作しない重要なスクリプトがブロックされる場合があります。
+
+## ストアフロント参照キーの取得
+
+[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service プロジェクト（Adobeで管理されるSaaS インフラストラクチャ）にのみ適用されます。"} レコメンデーションを作成した後、その参照キーを使用してストアフロントのレコメンデーションユニットを設定します。
+
+1. 商品レコメンデーションの詳細を開きます。
+
+   ![&#x200B; レコメンデーション IDを取得](./assets/get-ref-id.png)
+
+1. 値を&#x200B;**参照キー** セクションからコピーします。
+
+   古い推奨事項では、**[!UICONTROL Reference Key]**&#x200B;ではなく&#x200B;**[!UICONTROL Unit ID]**&#x200B;が表示される場合があります。 ストアフロントで&#x200B;**[!UICONTROL Unit ID]**&#x200B;を引き続き使用できますが、[!DNL Adobe Commerce]では、既存の推奨事項を更新して&#x200B;**[!UICONTROL Reference Key]**&#x200B;を使用することをお勧めします。
+
+1. ストアフロント `product-recommendations` ブロックで、この参照キーを使用して、Edge Delivery Services ストアフロントで[&#x200B; レコメンデーションドロップイン &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/)を設定します。
 
 ## 準備状況インジケーター
 
