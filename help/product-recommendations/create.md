@@ -39,30 +39,30 @@ _レコメンデーションユニット_
 
 1. _管理者_ サイドバーで、**マーケティング** > _プロモーション_ > **製品レコメンデーション**&#x200B;に移動して、_製品レコメンデーション_ ワークスペースを表示します。
 
-1. レコメンデーションを表示する[&#x200B; ストアビュー](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)を指定します。
+1. レコメンデーションを表示する[&#x200B; ストアビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/setup/websites-stores-views)を指定します。
 
    >[!NOTE]
    >
-   > ページビルダーのレコメンデーションユニットは、デフォルトのストアビューで作成する必要がありますが、任意の場所で使用できます。 ページビルダーを使用した商品レコメンデーションの作成について詳しくは、[&#x200B; コンテンツの追加 – 商品レコメンデーション &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)を参照してください。
+   > ページビルダーのレコメンデーションユニットは、デフォルトのストアビューで作成する必要がありますが、任意の場所で使用できます。 ページビルダーを使用した商品レコメンデーションの作成について詳しくは、[&#x200B; コンテンツの追加 – 商品レコメンデーション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/add-content/recommendations)を参照してください。
 
 1. 「**レコメンデーションを作成**」をクリックします。
 
 1. 「_推奨事項に名前を付ける_」セクションに、`Home page most popular`など、内部参照用にわかりやすい名前を入力します。
 
-1. [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service プロジェクト（Adobeで管理されるSaaS インフラストラクチャ）にのみ適用されます。"} 「**ストアフロントのリファレンス**」セクションに、ストアフロント設定でこのレコメンデーションユニットを識別するための参照キーを入力します。 レコメンデーションを作成した後、**レコメンデーションユニットの詳細**&#x200B;からその値[&#128279;](#get-the-storefront-reference-key)を コピーし、レコメンデーションブロックの`referenceKey`として使用できます。 参照キーはストアフロントの設定用です。ストアフロントの表示ラベルは、買い物客に表示されるテキストです。
+1. [!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service プロジェクト（Adobeで管理されるSaaS インフラストラクチャ）にのみ適用されます。"} 「**ストアフロントのリファレンス**」セクションに、ストアフロント設定でこのレコメンデーションユニットを識別するための参照キーを入力します。 レコメンデーションを作成した後、**レコメンデーションユニットの詳細**&#x200B;からその値[&#128279;](#get-the-storefront-reference-key)を コピーし、レコメンデーションブロックの`referenceKey`として使用できます。 参照キーはストアフロントの設定用です。ストアフロントの表示ラベルは、買い物客に表示されるテキストです。
 
 1. 「_ページの種類を選択_」セクションで、次のオプションからレコメンデーションを表示するページを選択します。
 
    >[!NOTE]
    >
-   > ストアが[製品をカートに追加した直後にショッピングカートページを表示するように設定されている場合、製品レコメンデーションはカートページでサポートされません](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
+   > ストアが[製品をカートに追加した直後にショッピングカートページを表示するように設定されている場合、製品レコメンデーションはカートページでサポートされません](https://experienceleague.adobe.com/ja/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
 
    * ホームページ
    * カテゴリ
    * 商品詳細
    * 買い物かご
    * 確認
-   * [ページビルダー](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [ページビルダー](https://experienceleague.adobe.com/ja/docs/commerce-admin/page-builder/add-content/recommendations)
 
    ページの種類ごとに最大50個のアクティブなレコメンデーションユニットを作成できます。 制限に達すると、ページタイプがグレー表示されます。
 
@@ -106,7 +106,7 @@ _レコメンデーションユニット_
 
 ## ストアフロント参照キーの取得
 
-[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service プロジェクト（Adobeで管理されるSaaS インフラストラクチャ）にのみ適用されます。"} レコメンデーションを作成した後、その参照キーを使用してストアフロントのレコメンデーションユニットを設定します。
+[!BADGE SaaSのみ]{type=Positive url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Service プロジェクト（Adobeで管理されるSaaS インフラストラクチャ）にのみ適用されます。"} レコメンデーションを作成した後、その参照キーを使用してストアフロントのレコメンデーションユニットを設定します。
 
 1. 商品レコメンデーションの詳細を開きます。
 
