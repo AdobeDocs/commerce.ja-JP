@@ -3,7 +3,7 @@ title: AEM Assetsを使用した製品ビジュアル
 description: '[!DNL Adobe Commerce Optimizer]の商品画像にAEM Assetsを使用する方法について説明します。'
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -33,7 +33,7 @@ Product Visualsを使用すると、[!DNL Adobe Commerce Optimizer]人の販売�
 
 >[!NOTE]
 >
->**製品ビジュアル**&#x200B;は、[!DNL Adobe Commerce as a Cloud Service]および[!DNL Adobe Commerce Optimizer]で提供されるバンドルの名前です。 [Dynamic MediaとOpenAPI機能](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)および[AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)を組み合わせています。
+>**製品ビジュアル**&#x200B;は、[!DNL Adobe Commerce as a Cloud Service]および[!DNL Adobe Commerce Optimizer]で提供されるバンドルの名前です。 [Dynamic MediaとOpenAPI機能](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)および[AEM Assets Prime](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-prime)を組み合わせています。
 >
 >別のAEM Assets ライセンス（例：**AEM Assets Ultimate**）を持つお客様は、同じ統合を使用できます。AEM リリースのみが、ライセンスの種類ではなく、オンボーディング手順に影響します。
 
@@ -89,4 +89,4 @@ Product Visualsを使用すると、[!DNL Adobe Commerce Optimizer]人の販売�
 * [カタログレイヤー](catalog-layer.md)
 * [カタログビュー](catalog-view.md)
 * [AEM Assets統合ガイド](../../aem-assets-integration/overview.md)
-* [製品ビジュアルの制限と境界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
+* [製品ビジュアルの制限と境界](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
