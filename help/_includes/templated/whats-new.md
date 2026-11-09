@@ -1,7 +1,7 @@
 ---
-source-git-commit: b1efdefbf40a258d3a426284ebff18bdc6b7ee5f
+source-git-commit: 1ae5d65ee5d00924657c36059250d38642777c34
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1447'
 ht-degree: 0%
 ---
 # 新しいテンプレート
@@ -12,6 +12,14 @@ ht-degree: 0%
 
 | 説明 | タイプ | 日付/ソース |
 | --- | --- | --- |
+| 商品レコメンデーションの新しい参照キーフィールドを文書化しました。このフィールドは、レコメンデーション IDの代わりに使用して、ストアフロント `product-recommendations` ブロックを設定できます。<br/> – 参照キーの作成、取得、および管理手順を使用して[&#x200B; レコメンデーションの作成と管理](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/recommendations/create)を更新しました。<br/> – 参照キーの作成と取得手順を使用して[新しいレコメンデーション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/product-recommendations/admin/create)をしました。<br/> – 編集可能設定です。[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce/product-recommendations/admin/edit) | メジャーアップデート | [2026年11月6日](https://github.com/AdobeDocs/commerce.en/commit/a69eec87f2386d06741f6cd865de0f37567b0b3b) |
+| Adobe Commerce as a Cloud Serviceのサンドボックス [&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | リリースノート | [2026年11月5日](https://github.com/AdobeDocs/commerce.en/commit/8da72aa99416dc0925c1a033859bc70cb30a2aa4) |
+| [Managed Operations](https://experienceleague.adobe.com/ja/docs/commerce/information-center/explore-platforms-and-services/managed-operations)が追加されました。これは、Adobe Commerce as a Cloud Serviceの新しいプレミアム製品で、指定カスタマーサクセスエンジニアと24時間年中無休のモニタリングが追加されます。 | 新しいトピック | [2026年11月5日](https://github.com/AdobeDocs/commerce.en/commit/489e7d71d58d1ad8d2a804bddddabdfebb746935) |
+| Adobe Commerce as a Cloud Serviceのサンドボックス [&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | リリースノート | [2026年10月29日](https://github.com/AdobeDocs/commerce.en/commit/88e85aa9c9456a52c9efb18505389fb99ef113c5) |
+| Adobe サポートを通じて、サポートされている[!DNL Live Search] ファセット制限のうち[増加](https://experienceleague.adobe.com/ja/docs/commerce/live-search/boundaries-limits)を100から500 ファセットまでリクエストする方法に関する情報を追加しました。 | フィードバック、テクニカル | [2026年10月29日](https://github.com/AdobeDocs/commerce.en/commit/bcb4f6eefcd1a2d11e01a3bef92b1a0fb878f091) |
+| [SaaS Data Export Extension 103.6.0](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/release-notes)のリリースノートを追加しました。これにより、レビュー数（ac_review_count）と平均評価（ac_rating_summary）の書き出しサポートが追加され、Commerce フロントエンドにレビュー数と星評価が表示されます。 | リリースノート | [2026年10月28日](https://github.com/AdobeDocs/commerce.en/commit/ce6eb687b61b03ae15856575a83a83a866eb090c) |
+| 統合シェルの新しいCommerce管理UIについて説明するために、[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes) セクションを追加しました。 | メジャーアップデート | [2026年10月28日](https://github.com/AdobeDocs/commerce.en/commit/deeb39e389025bc472e7a8e1502ad846b8844fa0) |
+| Adobe Commerce as a Cloud Serviceの実稼動[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | リリースノート | [2026年10月28日](https://github.com/AdobeDocs/commerce.en/commit/602e3adbbe2e238c46b249ec9dd057a46e2b6456) |
 | 最新の[&#x200B; ソースログコード.md](https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md)から[&#x200B; データ書き出しログコード参照](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference)を更新しました。 | テクニカル | [2026年10月26日](https://github.com/AdobeDocs/commerce.en/commit/fd4ea4603999043844c786da3ab1e84fb8d4d4aa) |
 | <br/>Payment Services 2.17.0 ドキュメントは、オプションの[PayPal Express レビューページ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/payment-services/payments-checkout/payments-options#paypal-express-review-page)および[overcapture](https://experienceleague.adobe.com/ja/docs/commerce/payment-services/payments-checkout/manage/over-capture)のガイダンスを追加します。これには、設定、適格性、請求書ワークフローなどが含まれます。 | メジャーアップデート | [2026年10月23日](https://github.com/AdobeDocs/commerce.en/commit/d2bcc58f34af50f26d4a4f082e5b3fc30089ab58) |
 | お客様とパートナーがCommerce製品を検討し、実装アーキテクチャを比較し、移行と統合を計画するための新しい出発点である[Adobe Commerce インフォメーションセンター](https://experienceleague.adobe.com/ja/docs/commerce/information-center/overview)を追加しました。 ストアフロント、支払い、Commerceサービス、AEM Assets、Adobe Commerce Optimizer、サンドボックス環境、Adobe Experience Platform向けのロールベースのナビゲーションと実装ガイドと、詳細な製品ドキュメントへのリンクを提供しています。 | メジャーアップデート、新しいトピック | [2026年10月21日](https://github.com/AdobeDocs/commerce.en/commit/fcb3c575a9af82ee75408fba4b4fe7cee5dbffa4) |
@@ -31,4 +39,3 @@ ht-degree: 0%
 | Commerce Developer Agentが移行プロセスをどのように支援できるかを説明するため、[移行の概要](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/overview)を更新しました。 | メジャーアップデート | [2026年9月24日](https://github.com/AdobeDocs/commerce.en/commit/739eabe6f43412610862ab00516687ad5aeeac53) |
 | Adobe Commerce as a Cloud Serviceの実稼動[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | メジャーアップデート | [2026年9月23日](https://github.com/AdobeDocs/commerce.en/commit/d879d372a199c24d266abdfb79d1ff0af164d75b) |
 | Adobe Commerce as a Cloud Serviceのサンドボックス [&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | メジャーアップデート | [2026年9月17日](https://github.com/AdobeDocs/commerce.en/commit/7f70bbf40218de2cec3482e1bc4d135d1a9022ae) |
-| Adobe Commerce as a Cloud Serviceの実稼動[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | メジャーアップデート | [2026年9月8日](https://github.com/AdobeDocs/commerce.en/commit/bd99dda50f68395eb23c62a1e8061a7198678a65) |

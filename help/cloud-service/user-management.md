@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 8ed4d2fa87f7a91c3c9c21817391003488c55046
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1961'
 ht-degree: 0%
 ---
 # ユーザーとIdentity Management
@@ -54,6 +54,8 @@ ht-degree: 0%
 ## 役割について
 
 [!DNL Adobe Commerce as a Cloud Service]に対して次の役割を使用できます。 これらのロールを表示または編集するには、Commerce管理者で&#x200B;[!UICONTROL **System**] > [!UICONTROL **権限**] > [!UICONTROL **User Roles**]&#x200B;に移動します。
+
+Commerce Adminでカスタムロールを作成して、標準のAdobe Admin Console ロールよりも詳細な権限をユーザーに付与できます。 カスタム Commerceの役割と割り当ては、後にユーザーがAdobe IMSを使用してログインした場合も保持されます。 ユーザーは、Adobe Admin Consoleを介してAdobe Commerce as a Cloud Service インスタンスに引き続きアクセスできる必要があります。 カスタムロールを作成するには、[Commerce管理者](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role)でロールを定義します。
 
 * **ユーザー** - ユーザーはCommerce管理者に対する管理者アクセス権を持っていますが、Admin Consoleでは製品レベルのアクセス権を管理できません。 ユーザーは、[!DNL Commerce Cloud Manager]で[&#x200B; インスタンスを作成](./getting-started.md#create-an-instance)するためのクレジットを使用することもできます。
 
@@ -134,6 +136,8 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 ## ユーザーを追加
 
 次の手順では、[!DNL Commerce Cloud Manager]とCommerce管理者にユーザーを追加する方法について説明します。 [!DNL Commerce Cloud Manager] インターフェイスでは、Commerce インスタンスを作成および管理できます。 このプロセスは、開発者と管理者を含むすべてのユーザーに必要です。
+
+カスタムの役割を作成するには、Adobe Admin Consoleで定義されている幅広い役割を使用する代わりに、Commerce Admin[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role)で役割を定義できます。
 
 >[!NOTE]
 >

@@ -22,7 +22,7 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b3ce7cadce74310cef2b7253b965eccb4a17107d
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 1. テストが完了したら、元のベース URL設定を復元します。
 
-エンドポイントの応答時間が5秒未満の場合、PayPalはポップアップにエラーメッセージを表示します。
+エンドポイントの応答時間が5秒以上の場合、PayPalはポップアップにエラーメッセージを表示します。
 
 #### Apple有料ローカル開発
 

@@ -48,9 +48,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 19c1c7d4cfaa6192169e8005e6bb323a0940d875
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1348'
 ht-degree: 0%
 ---
 # Adobe Experience Managerの導入方法
@@ -125,7 +125,7 @@ Adobe Commerce as a Cloud Serviceの![&#x200B; システム管理者とマーチ
 | プラットフォームについて | Adobe Commerce as a Cloud Serviceのアーキテクチャと利点 | [概要](overview.md) |
 | 機能を比較 | Cloud Serviceと他のAdobe Commerce製品の違いを理解する | [機能の比較](feature-comparison.md) |
 | インスタンスの作成 | サンドボックス環境と実稼動環境のプロビジョニング | [&#x200B; インスタンスを作成](#create-an-instance) |
-| ユーザー管理の設定 | ユーザーの追加、役割の割り当て、権限の管理 | [&#x200B; ユーザー管理](user-management.md) |
+| ユーザー管理の設定 | Adobe Admin Consoleを通じてユーザーを追加し、アクセスを管理し、Commerce管理者で役割と権限を設定します。 | [&#x200B; ユーザー管理](user-management.md) |
 | [!DNL AEM Assets]と[!DNL Product Visuals]を設定します（オプション） | ユーザーの追加、役割の割り当て、権限の管理 | [&#x200B; ユーザー管理](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB  マーチャント ]
