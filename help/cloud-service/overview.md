@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 7b6ed19c7ca30a72bda94c8af60ba27324bcb2ea
+source-git-commit: 213fcf83118eb60b0e80db224192963592945d8d
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1410'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce as a Cloud Service] の概要
@@ -114,11 +114,11 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service] アーキテクチャの概要については、次のビデオを参照してください。 アーキテクチャを示す図は、ビデオの下に示されています。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443268?captions=jpn&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 この図は、[!DNL Adobe Commerce as a Cloud Service]とすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
-[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![&#x200B; データフロー図](./assets/data-flow.png){zoomable="yes"}
+[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![ データフロー図](./assets/data-flow.png){zoomable="yes"}
 
 ## Commerce ストアフロント
 
@@ -128,16 +128,16 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 [!DNL Adobe Commerce on Cloud]またはオンプレミスから移行する場合は、移行ガイダンスについて[既存のストアフロント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts)を参照してください。
+>[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 [!DNL Adobe Commerce on Cloud]またはオンプレミスから移行する場合は、移行ガイダンスについて[既存のストアフロント ](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts)を参照してください。
 
 ## マーチャンダイジングと決済サービス
 
 マーチャンダイジングサービスは、[!DNL Adobe Commerce as a Cloud Service]で2つのカタログデータモデルをサポートしています。
 
 - **カタログサービスモデル** - [!DNL Catalog Service]を[!DNL Live Search]および[!DNL Product Recommendations]と共に使用して、カタログデータ、検索、およびストアフロントへのレコメンデーションを提供します。
-- [**コンポーザブルカタログデータモデル （CCDM）** （merchandising-services.md） ] - カタログビュー、ポリシー、カタログソース、価格表を使用して、ストアフロントで利用可能な製品と価格を定義します。 CCDMは[!DNL Adobe Commerce Optimizer]のカタログ基盤でもあります。
+- [**コンポーザブルカタログデータモデル（CCDM）**](merchandising-services.md)：カタログビュー、ポリシー、カタログソース、価格表を使用して、ストアフロントで利用可能な商品と価格を定義します。 CCDMは[!DNL Adobe Commerce Optimizer]のカタログ基盤でもあります。
 
-[決済サービス &#x200B;](../payment-services/guide-overview.md)は決済方法をサポートし、決済処理、注文、請求書の表示を提供します。 設定手順については、[支払いサービスホーム &#x200B;](../payment-services/payments-home.md)を参照してください。
+[決済サービス ](../payment-services/guide-overview.md)は決済方法をサポートし、決済処理、注文、請求書の表示を提供します。 設定手順については、[支払いサービスホーム ](../payment-services/payments-home.md)を参照してください。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -254,7 +254,7 @@ Adobe Commerce on Cloudの一般的なアップグレードプロセスでは、
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->
