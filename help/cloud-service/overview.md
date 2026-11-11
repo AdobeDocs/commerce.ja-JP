@@ -118,7 +118,7 @@ ht-degree: 0%
 
 この図は、[!DNL Adobe Commerce as a Cloud Service]とすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
-[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![ データフロー図](./assets/data-flow.png){zoomable="yes"}
+[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![&#x200B; データフロー図](./assets/data-flow.png){zoomable="yes"}
 
 ## Commerce ストアフロント
 
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 [!DNL Adobe Commerce on Cloud]またはオンプレミスから移行する場合は、移行ガイダンスについて[既存のストアフロント ](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts)を参照してください。
+>[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 [!DNL Adobe Commerce on Cloud]またはオンプレミスから移行する場合は、移行ガイダンスについて[既存のストアフロント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts)を参照してください。
 
 ## マーチャンダイジングと決済サービス
 
@@ -137,7 +137,7 @@ ht-degree: 0%
 - **カタログサービスモデル** - [!DNL Catalog Service]を[!DNL Live Search]および[!DNL Product Recommendations]と共に使用して、カタログデータ、検索、およびストアフロントへのレコメンデーションを提供します。
 - [**コンポーザブルカタログデータモデル （CCDM）** （merchandising-services.md） ] - カタログビュー、ポリシー、カタログソース、価格表を使用して、ストアフロントで利用可能な製品と価格を定義します。 CCDMは[!DNL Adobe Commerce Optimizer]のカタログ基盤でもあります。
 
-[決済サービス ](../payment-services/guide-overview.md)は決済方法をサポートし、決済処理、注文、請求書の表示を提供します。 設定手順については、[支払いサービスホーム ](../payment-services/payments-home.md)を参照してください。
+[決済サービス &#x200B;](../payment-services/guide-overview.md)は決済方法をサポートし、決済処理、注文、請求書の表示を提供します。 設定手順については、[支払いサービスホーム &#x200B;](../payment-services/payments-home.md)を参照してください。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
