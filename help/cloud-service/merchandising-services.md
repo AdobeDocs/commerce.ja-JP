@@ -75,7 +75,7 @@ Adobe Commerce as a Cloud Serviceは、マーチャンダイジングサービ�
 
 ## CCDMはどのような変化をもたらしますか？
 
-元のカタログモデルでは、カタログサービスを使用してストアフロントに商品データを配信し、ライブサーチと商品レコメンデーションでは検索、マーチャンダイジング、レコメンデーション機能を提供します。 このモデルでは、Commerceは[SaaS データ書き出し](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview)を使用して同期します。
+元のカタログモデルでは、カタログサービスを使用してストアフロントに商品データを配信し、ライブサーチと商品レコメンデーションでは検索、マーチャンダイジング、レコメンデーション機能を提供します。 このモデルでは、Commerceは[SaaS データ書き出し](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/overview)を使用して同期します。
 
 CCDMでは、これらの機能は、Adobe Commerce Optimizerと同じカタログ基盤で動作します。 [&#x200B; カタログビュー](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view)と[&#x200B; ポリシー](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies)は、ストアフロントで使用可能なカタログコンテキストを定義します。 ポリシーによって商品の品揃えが決まります。マーチャンダイジングルールは、あらゆるカタログビューに適用することも、特定のビューに合わせてカスタマイズすることもできます。
 
@@ -126,7 +126,7 @@ Commerce財団は、商品と価格の正規の情報源であり続けていま
 
 ### 管理者エクスペリエンス
 
-CCDMを使用するAdobe Commerce as a Cloud Serviceでは、[[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) （統合シェル）が使用されます。 Adobeは、CCDMとは別にUnified Shellをリリースしました。 元のカタログサービスモデル上の既存のインスタンスは、クラシックシェルと統合シェルの両方にアクセスできます。
+CCDMを使用するAdobe Commerce as a Cloud Serviceでは、[[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/admin-unified-experience) （統合シェル）が使用されます。 Adobeは、CCDMとは別にUnified Shellをリリースしました。 元のカタログサービスモデル上の既存のインスタンスは、クラシックシェルと統合シェルの両方にアクセスできます。
 
 ### 制限
 
