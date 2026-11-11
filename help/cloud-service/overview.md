@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud ServiceおよびAdobe Commerce Optimizer プロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 7b6ed19c7ca30a72bda94c8af60ba27324bcb2ea
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1418'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce as a Cloud Service] の概要
@@ -89,7 +89,7 @@ ht-degree: 0%
       <img src="../assets/icon-checkmark-circle-outline.svg" alt="チェックマーク" align="center"> <strong> マーチャンダイジングサービス </strong>
     </td>
     <td align="left">
-      商品のカタログ、価格設定、在庫を管理するバックエンドサービス
+      製品カタログと価格設定を管理するバックエンドサービス。 デフォルトでは、新しい組織ではコンポーザブルカタログデータモデル（CCDM）が使用されます。
     </td>
   </tr>
   <tr>
@@ -114,35 +114,30 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service] アーキテクチャの概要については、次のビデオを参照してください。 アーキテクチャを示す図は、ビデオの下に示されています。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443268?captions=jpn&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 この図は、[!DNL Adobe Commerce as a Cloud Service]とすべてのAdobe Experience Cloud ソリューション間のデータフローを示しています。
 
-[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![&#x200B; データフロー図](./assets/data-flow.png){zoomable="yes"}
+[!DNL Adobe Commerce as a Cloud Service]と[!DNL Adobe Experience Cloud] ソリューションとの統合を示す![ データフロー図](./assets/data-flow.png){zoomable="yes"}
 
 ## Commerce ストアフロント
 
 [!DNL Storefront Builder]を使用したシンプルなドキュメントベースのオーサリングまたはビジュアル編集を使用して、リッチなエクスペリエンスを数分で作成するには、[!DNL Edge Delivery Services]を利用したAdobeの[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/en/tools/commerce-storefront/)を使用します。
 
-[!DNL Commerce Storefront]は、GraphQL API レイヤーを介してすべてのAdobe Merchandising サービスとデータを提供する分離型アーキテクチャを備えた完全ヘッドレスです。 このアーキテクチャにより、Commerce Foundationから独立してフロントエンドを開発することができ、新しいテクノロジーを使用して新しいタッチポイントを迅速に構築し、テストすることができます。
+[!DNL Commerce Storefront]は、GraphQL API レイヤーを通じてマーチャンダイジングサービスとデータを提供する分離型アーキテクチャを備えた完全ヘッドレスです。 このアーキテクチャにより、Commerce Foundationから独立してフロントエンドを開発することができ、新しいテクノロジーを使用して新しいタッチポイントを迅速に構築し、テストすることができます。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 [!DNL Adobe Commerce on Cloud]またはオンプレミスから移行する場合は、移行ガイダンスについて[既存のストアフロント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts)を参照してください。
+>[!DNL Adobe Commerce as a Cloud Service]はLuma ストアフロントをサポートしていません。 [!DNL Adobe Commerce on Cloud]またはオンプレミスから移行する場合は、移行ガイダンスについて[既存のストアフロント ](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts)を参照してください。
 
-## Adobe Merchandisingのサービスおよび決済サービス
+## マーチャンダイジングと決済サービス
 
-Adobeでは、主要なビジネス目標をサポートする、インテリジェントで構成可能なマーチャンダイジングサービスを豊富に提供しています。 これらのサービスは、大規模なパフォーマンスの最適化に不可欠なAPIも提供します。
+マーチャンダイジングサービスは、[!DNL Adobe Commerce as a Cloud Service]で2つのカタログデータモデルをサポートしています。
 
-- [[!DNL Live Search]](../live-search/overview.md) – このAIを活用した検索ツールを使用して、よりスマートで迅速な、適切な検索結果を買い物客に提供します。 設定手順については、[設定 [!DNL Live Search]](../live-search/workspace.md)を参照してください。
-- [[!DNL Product Recommendations]](../product-recommendations/overview.md) – 買い物客の行動、人気のレンド、商品の類似性などに基づいて、AIを活用したレコメンデーションを追加します。 設定手順については、[[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md)を参照してください。
-- [&#x200B; カタログサービス &#x200B;](../catalog-service/guide-overview.md) - パフォーマンスの向上、拡張性の向上、コンバージョンの増加を実現しながら、顧客に最適化された製品体験を提供します。
+- **カタログサービスモデル** - [!DNL Catalog Service]を[!DNL Live Search]および[!DNL Product Recommendations]と共に使用して、カタログデータ、検索、およびストアフロントへのレコメンデーションを提供します。
+- [**コンポーザブルカタログデータモデル （CCDM）** （merchandising-services.md） ] - カタログビュー、ポリシー、カタログソース、価格表を使用して、ストアフロントで利用可能な製品と価格を定義します。 CCDMは[!DNL Adobe Commerce Optimizer]のカタログ基盤でもあります。
 
-  >[!NOTE]
-  >
-  >カタログサービスは、[!DNL Live Search]および[!DNL Product Recommendations]に自動的に含まれます。
-
-- [決済サービス &#x200B;](../payment-services/guide-overview.md) – 無利息の分割、処理、注文、請求書に関する単一のビューなど、さまざまな支払い方法を提供することで、顧客満足度を向上させます。 設定手順については、[支払いサービスホーム &#x200B;](../payment-services/payments-home.md)を参照してください。
+[決済サービス ](../payment-services/guide-overview.md)は決済方法をサポートし、決済処理、注文、請求書の表示を提供します。 設定手順については、[支払いサービスホーム ](../payment-services/payments-home.md)を参照してください。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -238,7 +233,7 @@ Adobeには、統合とカスタマイズを構築するための次の開発者
 
 ### 申し込み手続きの簡素化
 
-[!UICONTROL Commerce Cloud Manager] セルフサービスプロビジョニングポータルを使用して、サンドボックスおよび実稼動インスタンスを数分で起動できます。 マーチャンダイジングサービス、ヘッドレス Commerce インスタンス、[!DNL App Builder]など、必要なすべてのものが自動的に設定され、インスタンスと統合されます。
+[!UICONTROL Commerce Cloud Manager] セルフサービスプロビジョニングポータルを使用して、サンドボックスおよび実稼動インスタンスを数分で起動できます。 マーチャンダイジングサービス、ヘッドレス Commerce インスタンス、[!DNL App Builder]など、必要なインフラストラクチャは、インスタンスに自動的に設定され、統合されます。
 
 Commerce インスタンスを作成および管理する方法については、[はじめに](getting-started.md)を参照してください。
 
@@ -259,7 +254,7 @@ Adobe Commerce on Cloudの一般的なアップグレードプロセスでは、
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->
