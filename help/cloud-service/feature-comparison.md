@@ -51,9 +51,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92240ffdb1444d600679ad8392902f543b0d84e3
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1111'
 ht-degree: 0%
 ---
 # 機能比較
@@ -98,7 +98,10 @@ Adobe Commerceには、次の3つのデプロイメントモデルがありま�
         <tr>
             <td>カタログマーチャンダイジング</td>
             <td><a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/content-design/staging/content-staging"> コンテンツのステージング </a>、<a href="https://experienceleague.adobe.com/ja/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser"> ビジュアルマーチャンダイザー</a></td>
-            <td><a href="../catalog-service/overview.md">カタログサービス</a></td>
+            <td>
+                <p><strong> コンポーザブルカタログデータモデル（CCDM）:</strong> <a href="../optimizer/setup/catalog-view.md"> マーチャンダイジングサービス </a>では、カタログビュー、ポリシー、カタログソース、価格表を使用して、ストアフロントのカタログコンテキストを定義します。</p>
+                <p><strong>元のカタログサービスモデル：</strong> <a href="../catalog-service/guide-overview.md"> カタログサービス </a>は、ライブサーチと商品レコメンデーションと一緒にカタログデータを提供します。</p>
+            </td>
         </tr>
         <tr>
             <td>支払い</td>
@@ -214,8 +217,8 @@ Adobe Commerceには、次の3つのデプロイメントモデルがありま�
         </tr>
         <tr>
             <td>アプリマーケットプレイス</td>
-            <td>[!DNL App Builder]個のアプリ用の[Magento Marketplace] （https://marketplace.magento.com/） （PHP拡張機能）および[Exchange Marketplace] （https://commercemarketplace.adobe.com） （推奨）</td>
-            <td>[!DNL App Builder] [[!DNL Exchange Marketplace]] （https://commercemarketplace.adobe.com）からのアプリ</td>
+            <td>[!DNL App Builder]個のアプリ用の<a href="https://marketplace.magento.com/">Magento Marketplace</a> （PHP拡張機能）と<a href="https://commercemarketplace.adobe.com">Exchange Marketplace</a> （推奨）</td>
+            <td>[!DNL App Builder] からのアプリ <a href="https://commercemarketplace.adobe.com">[!DNL Exchange Marketplace]</a></td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>データとストレージ</strong></td>
@@ -256,4 +259,3 @@ Adobe Commerceには、次の3つのデプロイメントモデルがありま�
 >- API機能を拡張する場合は[!DNL API Mesh]を検討してください。
 >- 継続的なプラットフォームの進化と新機能リリースをモニタリングするAdobe。
 >- 利用可能な拡張性オプションに対して、業界固有のデータモデル要件を評価します。
-

@@ -1,7 +1,7 @@
 ---
 user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
-user-guide-description: このガイドでは、 [!DNL Adobe Commerce as a Cloud Service]の使用方法について詳しく説明します。
+user-guide-description: このガイドでは、[!DNL Adobe Commerce as a Cloud Service]の使用方法について詳しく説明します。
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
 product_v2:
@@ -9,17 +9,16 @@ product_v2:
     internal-label: Commerce
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
     internal-label: Commerce as a Cloud Service
-source-git-commit: f37892b9a2de995dbc4b631ae1008e09cda68207
+source-git-commit: 896b53de478dbb3acc4a4ab8b26c8ae9e10ec8d2
 workflow-type: tm+mt
-source-wordcount: 226
+source-wordcount: '228'
 ht-degree: 3%
-
 ---
-
 
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [Adobe Commerce as a Cloud Service](overview.md)
+- [Merchandising Services](merchandising-services.md)
 - [機能比較](feature-comparison.md)
 - [Adobe Experience Managerの導入方法](getting-started.md)
 - [ユーザーとIDの管理](user-management.md)

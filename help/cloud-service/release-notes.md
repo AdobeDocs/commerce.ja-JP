@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ab9c4d33ab0254c0c4ba990cd91ed01226d3abb9
+source-git-commit: 2123503aaa8088baab9b9a5e3ce9c3036518061e
 workflow-type: tm+mt
-source-wordcount: '9964'
+source-wordcount: '10011'
 ht-degree: 0%
 ---
 # リリースノート
@@ -84,11 +84,11 @@ ht-degree: 0%
 
 ## 2026年11月 – リリース #1 {#latest}
 
-[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 本番]{type=Neutral tooltip="リストされている項目は、現在、実稼動環境で使用できます。"}
 
-以下の項目は、2026年11月10日に実稼動環境にリリースされます。
+2026年11月10日（PT）に実稼動環境に公開されたアイテムは次のとおりです。
 
 >[!BEGINSHADEBOX]
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 ### 配送先住所を含める
 
-`POST /V1/orders`および`PUT /V1/orders/create`のREST エンドポイントを通じて作成された新しい仮想以外の注文には、配送先住所が必要になりました。 配送先住所を持たないリクエストでは、HTTP 400 エラーが返されます。 この変更により、出荷情報のない注文が注文メールの失敗を引き起こさないようにします。<!-- CCSAAS-5351 -->
+`POST /V1/orders`および`PUT /V1/orders/create`のREST エンドポイントを通じて作成された新しい仮想以外の注文には、[配送先住所](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management#shipping-address-requirement-for-new-orders)が必要になりました。 配送先住所を持たないリクエストでは、HTTP 400 エラーが返されます。 この変更により、出荷情報のない注文が注文メールの失敗を引き起こさないようにします。<!-- CCSAAS-5351 -->
 
 配送先住所なしで注文を作成するには：
 
@@ -118,15 +118,15 @@ ht-degree: 0%
 
 ### [!DNL AEM Assets] カテゴリ画像の取得
 
-`CategoryInterface`および`CategoryTree`個のGraphQL型に、[!DNL AEM Assets]から割り当てられたカテゴリ画像を返す`asset_role_image` フィールドが含まれるようになりました。<!-- ACCS-2180 -->
+`CategoryInterface`および`CategoryTree`個のGraphQL型に、[!DNL AEM Assets]から割り当てられたカテゴリ画像を返す[`asset_role_image`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/interfaces/category#aem-assets-category-images) フィールドが含まれるようになりました。<!-- ACCS-2180 -->
 
 ### 顧客ストアのクレジット残高の取得
 
-新しい`GET /V1/customers/:customerId/balance` REST エンドポイントは、顧客の店舗クレジット残高を返します。 このエンドポイントには[!UICONTROL Manage Store Credit Balances]権限が必要です。<!-- CCSAAS-5274 -->
+新しい[`GET /V1/customers/:customerId/balance`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit#retrieve-a-customers-store-credit-balance) REST エンドポイントは、顧客の店舗クレジット残高を返します。 このエンドポイントには[!UICONTROL Manage Store Credit Balances]権限が必要です。<!-- CCSAAS-5274 -->
 
 ### 請求項目行の合計の取得
 
-`InvoiceItemInterface` GraphQL タイプに、請求書項目の保存済み行の小計を返す`row_total` フィールドが含まれるようになりました。<!-- USF-4460 -->
+[`InvoiceItemInterface`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/interfaces/invoice-item#invoice-item-row-totals) GraphQL タイプに、請求書項目の保存済み行の小計を返す`row_total` フィールドが含まれるようになりました。<!-- USF-4460 -->
 
 ### 機能強化とバグ修正
 
@@ -153,6 +153,8 @@ ht-degree: 0%
 * プロセス外の合計コレクターを使用すると、`addProductsToCart` GraphQLの突然変異でエラーが返される問題を修正しました。<!-- ACCS-2263, CEXT-6986 -->
 
 * 設定可能な商品が買い物かごから削除された後、GraphQLの買い物かごのクエリと変更でエラーが返される問題を修正しました。<!-- CCSAAS-5721 -->
+
+* 多数の保存されたアドレスを持つ顧客の保存または取得がタイムアウトする問題を修正しました。<!-- CCSAAS-5599 -->
 
 {{accs-release}}
 

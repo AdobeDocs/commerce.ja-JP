@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 8ed4d2fa87f7a91c3c9c21817391003488c55046
+source-git-commit: 560ae770ae76d28e3358fb4f195aa1f2a03362c8
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1959'
 ht-degree: 0%
 ---
 # ユーザーとIdentity Management
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ## 役割について
 
-[!DNL Adobe Commerce as a Cloud Service]に対して次の役割を使用できます。 これらのロールを表示または編集するには、Commerce管理者で&#x200B;[!UICONTROL **System**] > [!UICONTROL **権限**] > [!UICONTROL **User Roles**]&#x200B;に移動します。
+[!DNL Adobe Commerce as a Cloud Service]に対して次の役割を使用できます。 これらのロールを表示または編集するには、Commerce管理者で&#x200B;[!UICONTROL **System**] > [!UICONTROL **User Roles**]&#x200B;に移動します。
 
 Commerce Adminでカスタムロールを作成して、標準のAdobe Admin Console ロールよりも詳細な権限をユーザーに付与できます。 カスタム Commerceの役割と割り当ては、後にユーザーがAdobe IMSを使用してログインした場合も保持されます。 ユーザーは、Adobe Admin Consoleを介してAdobe Commerce as a Cloud Service インスタンスに引き続きアクセスできる必要があります。 カスタムロールを作成するには、[Commerce管理者](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role)でロールを定義します。
 
@@ -203,7 +203,7 @@ Admin Consoleの「![開発者と管理者」タブのオプション &#x200B;](
 
 ## 役割のリソース
 
-次のリストは、デフォルトの役割が[!DNL Adobe Commerce]管理者内でアクセスする権限を持つリソースについて説明します。 各ロールのデフォルトの権限を編集するには、Commerce Adminで&#x200B;[!UICONTROL **System**] > [!UICONTROL **Permissions**] > [!UICONTROL **User Roles**]&#x200B;に移動します。
+次のリストは、デフォルトの役割が[!DNL Adobe Commerce]管理者内でアクセスする権限を持つリソースについて説明します。 各ロールのデフォルトの権限を編集するには、Commerce管理者で&#x200B;[!UICONTROL **System**] > [!UICONTROL **User Roles**]&#x200B;に移動します。
 
 **ユーザー**
 
