@@ -1,6 +1,6 @@
 ---
 title: '[!DNL SaaS Data Export Guide]'
-description: Adobe Commerceと接続されたCommerce サービス間でデータを同期するAdobe Commerce SaaS サービスに [!DNL data export] 拡張機能を使用する方法について説明します。
+description: Adobe Commerce と接続された Commerce サービス間でデータを同期する Adobe Commerce SaaS サービス向けの [!DNL data export] 拡張機能の使用について説明します。
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
@@ -29,20 +29,18 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
 workflow-type: tm+mt
-source-wordcount: 402
-ht-degree: 0%
-
+source-wordcount: '403'
+ht-degree: 5%
 ---
-
 # [!DNL SaaS Data Export] ガイド
 
 [!DNL SaaS data export]は、Adobe Commerce インスタンスと接続されたCommerce サービスとの間でデータを同期します。 ライブサーチ、商品レコメンデーション、カタログサービス、または[!DNL Adobe Commerce Optimizer Connector]をAdobe Commerce インストールに追加すると、[!DNL Data Export]拡張機能が自動的にインストールされます。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Optimizer Connector]をインストールすると、同じ[!DNL Data Export]拡張機能が[!DNL Adobe Commerce]からカタログと価格フィードを収集します。 コネクタは、コンポーザブルカタログデータモデル（CCDM）を使用して、これらのフィードを[!DNL Adobe Commerce Optimizer]にマッピングして送信します。 セットアップとアーキテクチャについては[[!DNL Adobe Commerce Optimizer Connector] 概要](../aco-connector/overview.md)を、エクスポート後の同期動作については[&#x200B; コネクタ同期パイプライン &#x200B;](../aco-connector/connector-sync-pipeline.md)を参照してください。
+>[!DNL Adobe Commerce Optimizer Connector]をインストールすると、同じ[!DNL Data Export]拡張機能が[!DNL Adobe Commerce]からカタログと価格フィードを収集します。 コネクタは、コンポーザブルカタログデータモデル（CCDM）を使用して、それらのフィードを[!DNL Adobe Commerce Optimizer]にマッピングして送信します。 セットアップとアーキテクチャについては[[!DNL Adobe Commerce Optimizer Connector] 概要](../aco-connector/overview.md)を、エクスポート後の同期動作については[&#x200B; コネクタ同期パイプライン &#x200B;](../aco-connector/connector-sync-pipeline.md)を参照してください。
 
 SaaS データ書き出しは、_フィード_&#x200B;と呼ばれる様々なタイプのデータを収集および書き出し、特定のタイプの情報を集約します。 インストールされているCommerce サービスに応じて、SaaS データエクスポートフィードには次のものが含まれます。
 

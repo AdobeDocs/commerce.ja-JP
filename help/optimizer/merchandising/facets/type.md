@@ -1,7 +1,7 @@
 ---
 title: ファセットタイプ
-description: ' [!DNL Adobe Commerce Optimizer]の様々な種類のファセットについて説明します。'
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+description: '[!DNL Adobe Commerce Optimizer]の様々な種類のファセットについて説明します。'
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: f4ab1f27-b393-45e0-94bf-c77d46e3f994
 TQID: https://experienceleague.adobe.com/xuyEZ-CuFXUfhUi24ERf32uVNgENFTTdR5l-K22W4-M
 product_v2:
@@ -22,30 +22,11 @@ topic_v2:
     internal-label: Metadata
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 8041acb445e99eae524cc46933d6b322861be81d
 workflow-type: tm+mt
-source-wordcount: 227
+source-wordcount: '39'
 ht-degree: 0%
-
 ---
-
 # ファセットの種類
 
-[!DNL Adobe Commerce Optimizer]では、様々なファセット タイプを使用しており、関連する場合にのみ&#x200B;*フィルター* リストに表示されます。 使用可能なファセットのリストは、返された製品に応じて変更されます。 以下の特徴がプレゼンテーションと行動に影響します。
-
-- ピン留めファセット – 最も一般的に使用されるファセットは、リストの上部にピン留めできます。 残りのファセットは、ピン留めされたファセットの後に&#x200B;*ソートタイプ*&#x200B;の順序で一覧表示されます。
-- 動的ファセット - [Adobe AI](https://business.adobe.com/jp/ai.html)が商品セットとクエリに最も関連性があると見つける商品属性。 計算では、カタログ全体の属性メタデータを考慮し、クエリ時にクエリに最も関連するファセットを決定します。
-- 価格ファセット – 価格帯ごとの返品。 [*設定*](../../settings.md) ワークスペースで、選択範囲の数と価格範囲の間隔を指定できます。
-
-## ファセットラベル
-
-ファセットラベルは、[&#x200B; ファセットワークスペース &#x200B;](workspace.md)から編集できます。
-
-## 並べ替えタイプ
-
-ストアフロント用にレンダリングされたすべてのファセットは、アルファベット順またはカウント順に並べ替えられます。
-
-| 並べ替えタイプ | 説明 |
-|--- |--- |
-| アルファベット | ストアフロント *フィルター* リストでは、ファセットはアルファベット順に並べ替えられます。 |
-| カウント | ファセットは、現在の返品商品セットのファセットごとに見つかった値の数で並べ替えることもできます。 |
+{{$include /help/_includes/ccdm-shared/merchandising/facets/type.md}}

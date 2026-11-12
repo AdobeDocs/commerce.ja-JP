@@ -2,7 +2,7 @@
 title: ファセットのベストプラクティス
 description: ストアにファセットを実装するためのベストプラクティスについて説明します。
 role: Admin, Developer
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: b9da6853-c846-4267-8dee-17abc034ead0
 TQID: https://experienceleague.adobe.com/B2Um9FH-XvhgzfMrCltjw83rY9xm5DDOQVrbCVig99U
 product_v2:
@@ -16,25 +16,11 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 8041acb445e99eae524cc46933d6b322861be81d
 workflow-type: tm+mt
-source-wordcount: 367
+source-wordcount: '42'
 ht-degree: 0%
-
 ---
-
 # ファセットのベストプラクティス
 
-フィルター機能とファセット機能は、[!DNL Adobe Commerce Optimizer] サイトの重要なコンポーネントであり、買い物客が検索結果を絞り込み、より効率的に商品を見つけられるようにすることで、買い物客の体験を向上させるように設計されています。 この機能により、特定の基準を適用することで、膨大な商品カタログを整理し、ショッピングプロセスをより早く、より簡単に、より満足度の高いものにすることができます。 効果的で買い物客にフレンドリーなフィルターとファセットを実装することで、顧客が必要なものをすばやく効率的に見つけられるようになり、満足度とコンバージョン率が向上します。
-
-## ファセットを最適化するためのヒント
-
-- タイトル、カテゴリ、ブランド、価格帯、色、サイズなど、製品に最も関連性が高く有用な属性を決定し、[動的ファセット &#x200B;](type.md)として設定します。 
-- カタログ全体で一貫性があり、製品に非常に関連性の高い製品属性を設定して並べ替え、買い物客の関連性とフィルタリング機能を向上させます。
-- ファセットラベルはわかりやすく、サイト全体で一貫性のある名前が付けられていることを確認します。 例えば、「コスト」の代わりに「価格帯」を使用します。
-- ファセットの数を最も重要なファセットに制限することで、買い物客に負担をかけないようにしましょう。 選択肢が多すぎると、意思決定の疲労を招く可能性があります。 デフォルトでは、[!DNL Adobe Commerce Optimizer]は、ファセットとして設定された最大100個の属性と、各ファセット内で返される30個のバケットに制限されています。 [&#x200B; ファセットの制限](../../boundaries-limits.md#catalog-views-and-policies)の詳細をご覧ください。 
-- 買い物客が複数のフィルター条件を同時に選択し、結果を絞り込めるようにします。 例えば、「赤」と「青」の両方の色を選択できるようにします。
-- 各ファセットオプションの横に利用可能な商品数を表示して、買い物客が期待できる検索結果を把握できるようにします。
-- 折りたたみ可能なファセットセクションを実装して、特にモバイルデバイスで、インターフェイスをクリーンで管理しやすくします。
-- 買い物客が個々のファセットや選択したすべてのフィルターを簡単にリセットして、新しい検索を開始できるようにします。
-- 対応する属性が多数ある場合は、属性を単一の「メタ属性」に組み合わせることを検討してください。 例えば、靴は一般的に数値サイズですが、シャツは一般的に「S/M/L/XL」サイズです。 これら2種類のサイズを組み合わせて、1つの検索可能な属性にすることができます。
+{{$include /help/_includes/ccdm-shared/merchandising/facets/best-practice.md}}
