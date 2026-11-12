@@ -56,13 +56,13 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |--- |--- |
-| [種類](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/type) | 類義語がキーワードと同じ意味を持つか、キーワードのサブセットであるかを指定します。 オプション：<br />双方向（デフォルト） – キーワードと同じ意味を持ち、同じ検索結果を返す用語<br />一方向 – キーワードのサブセットである用語。 一方向の類義語は、特定の製品のより狭いリストを返します。 |
+| [種類](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/synonyms/type) | 類義語がキーワードと同じ意味を持つか、キーワードのサブセットであるかを指定します。 オプション：<br />双方向（デフォルト） – キーワードと同じ意味を持ち、同じ検索結果を返す用語<br />一方向 – キーワードのサブセットである用語。 一方向の類義語は、特定の製品のより狭いリストを返します。 |
 | キーワード | カタログ内の商品の選択に一般的に関連付けられている単語。 |
 | 拡張 | キーワードと同じまたは類似する意味を持つ追加用語。 |
 
 ## 類義語の管理
 
-次の手順に従って、既存の[類義語](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/overview)を管理します。
+次の手順に従って、既存の[類義語](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/synonyms/overview)を管理します。
 
 ## 同義語を見つける
 

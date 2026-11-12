@@ -31,7 +31,7 @@ ht-degree: 0%
 
 製品属性とそのプロパティについて詳しく見る：
 
-- Adobe Commerce バックエンドに接続されたデプロイメントについては、[製品属性の概要](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)を参照してください
+- Adobe Commerce バックエンドに接続されたデプロイメントについては、[製品属性の概要](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes)を参照してください
 - サードパーティのCommerce バックエンドを使用したデプロイメントについては、[Data Ingestion Metadata API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)を参照してください。
 
 ## 階層検索と検索タイプの拡張

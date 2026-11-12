@@ -49,4 +49,4 @@ ht-degree: 0%
 
 ## データ同期が機能していることを確認します
 
-Adobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合は、データエクスポートプロセスを監視し、データフィード同期ステータス ページから再同期操作を開始できます。 詳しくは、[&#x200B; データフィード同期ステータスの監視](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)を参照してください。
+Adobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合は、データエクスポートプロセスを監視し、データフィード同期ステータス ページから再同期操作を開始できます。 詳しくは、[&#x200B; データフィード同期ステータスの監視](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)を参照してください。

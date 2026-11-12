@@ -197,6 +197,6 @@ Sites Optimizer レイヤーがカタログビューに存在しない場合、S
 ## その他
 
 * [&#x200B; カタログビュー](catalog-view.md) – 異なるストアフロントのカタログビューを設定する
-* [商品ビジュアル &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals) – 商品画像にAEM Assetsを使用
+* [商品ビジュアル &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/product-visuals) – 商品画像にAEM Assetsを使用
 * [商談](../manage-results/opportunities.md) - カタログレイヤーを使用したAIによる最適化について説明します
 * [制限付きアクセスキー](restricted-access-keys.md) – 署名済みトークン認証でカタログビューを保護する
