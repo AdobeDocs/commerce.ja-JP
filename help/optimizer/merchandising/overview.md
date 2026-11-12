@@ -1,8 +1,8 @@
 ---
 title: マーチャンダイジングの概要
-description: ' [!DNL Adobe Commerce Optimizer]のマーチャンダイジング機能について説明します。'
+description: '[!DNL Adobe Commerce Optimizer]のマーチャンダイジング機能について説明します。'
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
 TQID: https://experienceleague.adobe.com/GJ7017EEKg4wd4Wjom5-FrEcfrPbmvwEAJw0AFgGc64
 product_v2:
@@ -27,28 +27,11 @@ topic_v2:
     internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 1fb7db58ba92437c6fc894178261754d0394b6cd
 workflow-type: tm+mt
-source-wordcount: 237
+source-wordcount: '35'
 ht-degree: 0%
-
 ---
+# Adobe Merchandising
 
-# マーチャンダイジング
-
-このセクションでは、商品の発見とレコメンデーションを通じて、買い物客にパーソナライズされた体験を提供する方法を説明します。
-
-## 製品の発見
-
-商品ディスカバリーは、マーチャンダイジング担当者にショッピング体験をキュレーションおよび最適化する強力なツールを提供し、顧客が適切な商品を迅速に適切なタイミングで見つけられるようにします。 検索行動を微調整することで、商品の認知度、関連性、コンバージョンに直接影響を与えることができます。
-
-商品ディスカバリーを活用すると、次のことが可能になります。
-
-* **[&#x200B; セマンティック検索](../setup/semantic-search.md)** – 自然言語およびインテントベースのクエリの関連性を向上させるために、[設定](../settings.md#advanced-search)でデフォルトで有効になっています。 属性の設定やストアフロントの変更は必要ありません。
-* **最も関連性の高い商品に顧客を誘導するために、[&#x200B; ファセット &#x200B;](./facets/overview.md)、[&#x200B; マーチャンダイジング検索とカテゴリのルール &#x200B;](./rules/overview.md)および[類義語](./synonyms/overview.md)**&#x200B;を構成します。これにより、顧客の摩擦を最小限に抑えることができます。
-
-## 推奨事項
-
-レコメンデーション AI （人工知能）とマシンラーニング（機械学習）を利用して、ストアフロントをまたいで訪問者の行動と製品とのやり取りを集約し、分析できます。 この行動データと製品カタログを組み合わせることで、[!DNL Adobe Commerce Optimizer]は、買い物客のエンゲージメントを高め、コンバージョンを増加させる、詳細にパーソナライズされた関連性の高い製品提案を提供します。
-
-ストアフロントには、レコメンデーションが「この商品を閲覧したお客様も閲覧した」などのラベル付きユニットとして表示されます。 これらのユニットは、ショッピングジャーニー全体を通じて戦略的に配置できます。 販売者は、プロモーション目標、クロスセル戦略、パーソナライズされたエクスペリエンスをサポートするために、これらのレコメンデーションユニットを[!DNL Adobe Commerce Optimizer]内で直接容易に作成、管理、展開できます。
+{{$include /help/_includes/ccdm-shared/merchandising/overview.md}}

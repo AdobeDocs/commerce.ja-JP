@@ -2,7 +2,7 @@
 title: 推奨事項の概要
 description: レコメンデーションは、コンバージョンと売上を向上し、買い物客のエンゲージメントを促進するための優れたマーケティングツールです。
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: cb10c802-afaf-40fa-b463-73f5ae507d66
 TQID: https://experienceleague.adobe.com/dTvy4IlHTOcCHpytRxFkGXCZqUvQwYz4-5q1BXjywII
 product_v2:
@@ -27,21 +27,11 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 01037ab53a431cbec3b90c4a9e3f08daebcae3e1
 workflow-type: tm+mt
-source-wordcount: 202
+source-wordcount: '51'
 ht-degree: 0%
-
 ---
-
 # 推奨事項の概要
 
-レコメンデーションは、コンバージョンと売上を向上し、買い物客のエンゲージメントを促進するための優れたマーケティングツールです。 レコメンデーションは、[Adobe AI](https://business.adobe.com/jp/ai.html)によって提供されます。このアルゴリズムは、人工知能とマシンラーニング アルゴリズムを使用して、集約された訪問者データを詳細に分析します。 このデータをAdobe Commerceカタログと組み合わせることで、非常に魅力的で関連性の高い、パーソナライズされた体験を生み出すことができます。
-
-「この商品を閲覧したお客様も閲覧した」などのラベル付きのユニットとして、ストアフロントにレコメンデーションが表示されます。 [!DNL Adobe Commerce Optimizer]から直接、ストアビュー全体でレコメンデーションを作成、管理、デプロイできます。
-
-## プライバシー
-
-Recommendationsの目的でのデータ収集には、個人を特定できる情報（PII）は含まれません。 また、Cookie IDやIP アドレスなどのユーザーIDはすべて厳密に匿名化されています。 詳しくは、[Adobe プライバシーポリシー](https://www.adobe.com/jp/privacy/policy.html)を参照してください。
-
-データの同期に関する詳細なデータについては、[&#x200B; データ同期](../../setup/data-sync.md) ページを参照してください。
+{{$include /help/_includes/ccdm-shared/merchandising/recommendations/overview.md}}

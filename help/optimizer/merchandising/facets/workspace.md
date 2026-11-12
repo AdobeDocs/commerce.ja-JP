@@ -1,7 +1,7 @@
 ---
 title: ファセットWorkspace
-description: ' [!DNL Adobe Commerce Optimizer]でファセットワークスペースを使用する方法を説明します。'
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+description: '[!DNL Adobe Commerce Optimizer]でファセットワークスペースを使用する方法を説明します。'
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: bd977769-6565-48ca-b5aa-963a217df3ea
 TQID: https://experienceleague.adobe.com/gpKL-sHYbuIW9obwCgozt4WJgVc7gq9IA4c17Eu-TJo
 product_v2:
@@ -20,31 +20,11 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 8041acb445e99eae524cc46933d6b322861be81d
 workflow-type: tm+mt
-source-wordcount: 212
-ht-degree: 1%
-
+source-wordcount: '38'
+ht-degree: 0%
 ---
-
 # ファセットWorkspace
 
-*ファセット* ワークスペースには、現在使用可能なすべてのファセットが一覧表示され、ファセットの設定と管理に必要なツールにアクセスできます。 ピン留めされたファセットは、既存のファセットのリストの最初に表示され、次に動的ファセットが表示されます。 ファセットのリストを検索できます。
-
-![&#x200B; ファセット Workspace](../../assets/facet-workspace.png)
-
-## フィールドの説明
-
-| フィールド | 説明 |
-|--- |--- |
-| ファセットの作成 | [&#x200B; ファセットエディター](add.md)を開きます。 |
-| ラベル | ストアフロントに表示される[&#x200B; ファセットラベル &#x200B;](type.md#facet-labels)は、ブランドとの一貫性を保つために編集できます。 |
-| 並べ替えタイプ | ファセットを[並べ替え](type.md#sort-type)するために使用されるメソッド。 [!DNL Adobe Commerce Optimizer]個のストアフロントはすべて、ファセットをアルファベット順および`Count`で並べ替えます。 オプション：<br /> アルファベット順 – ファセットをアルファベット順に並べ替えます。<br />Count – 見つかった一致の数に基づいてファセットを並べ替えます。 |
-| 最大値 | 各ファセットのストアフロントに表示できる値の最大数。 値の範囲を表すファセットは均等に分布します。 有効なエントリ：0 ～ 100、デフォルト：8。 |
-
-## コントロール
-
-| 制御 | 説明 |
-|--- |--- |
-| ![&#x200B; セレクターをピン留めする](../../assets/btn-pin-blue.png) | ファセットを&#x200B;*フィルター* リストの先頭にピン留めまたはピン留めを解除します。 |
-| ![その他のセレクター](../../assets/btn-more.png) | 選択したファセットに適用できるその他のアクションのメニューを表示します。 オプション：編集、削除 |
+{{$include /help/_includes/ccdm-shared/merchandising/facets/workspace.md}}

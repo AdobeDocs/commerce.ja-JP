@@ -1,7 +1,7 @@
 ---
 title: 同義語の概要
-description: ' [!DNL Adobe Commerce Optimizer] の類義語とその検索結果の改善方法について説明します。'
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび [!DNL Adobe Commerce Optimizer]  プロジェクトにのみ適用されます（Adobeで管理されるSaaS インフラストラクチャ）。"
+description: '[!DNL Adobe Commerce Optimizer]の類義語とその検索結果の改善方法について説明します。'
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: 9efa7b7b-4559-4e23-8858-d2f5da90455b
 TQID: https://experienceleague.adobe.com/Y92PBdhfA6TxH1qFWtllycIqB5XuXCtCgT-ezYvOKhk
 product_v2:
@@ -17,15 +17,11 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 38a78729200299094cf48e30d7bbeba16d83dccf
 workflow-type: tm+mt
-source-wordcount: 158
+source-wordcount: '39'
 ht-degree: 0%
-
 ---
-
 # 同義語
 
-類義語は、検索クエリを展開し、買い物客がカタログ内の単語とは異なる使用する可能性のある単語を含めます。 誰かが「ソファ」を探している一方で、あなたの商品は「ソファ」としてリストされているので、販売を失いたくはありません。 顧客が自社商品を探す際に使用する可能性のあるあらゆる単語を入力することで、幅広い検索語を取得できます。
-
-[&#x200B; セマンティック検索](../../setup/semantic-search.md)はデフォルトで有効になっており、正確なテキストではなく意味を理解することで、類似の用語や自然言語と一致させることもできます。 セマンティック検索により、一般的な類義語（「ソファ」や「ソファ」など）の必要性が減る可能性があります。ブランド固有の用語や高度に技術的な用語の類義語が引き続き必要になる場合があります。 類義語とセマンティック検索を一緒に使用できます。
+{{$include /help/_includes/ccdm-shared/merchandising/synonyms/overview.md}}
