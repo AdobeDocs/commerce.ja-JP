@@ -12,4 +12,4 @@ ht-degree: 0%
 
 Recommendationsの目的でのデータ収集には、個人を特定できる情報（PII）は含まれません。 また、Cookie IDやIP アドレスなどのユーザーIDはすべて厳密に匿名化されています。 詳しくは、[Adobe プライバシーポリシー](https://www.adobe.com/privacy/policy.html)を参照してください。
 
-データの同期に関する詳細なデータについては、[ データ同期](../../setup/data-sync.md) ページを参照してください。
+データの同期に関する詳細なデータについては、[&#x200B; データ同期](../../setup/data-sync.md) ページを参照してください。

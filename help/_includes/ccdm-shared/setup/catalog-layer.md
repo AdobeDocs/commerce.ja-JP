@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 カタログレイヤーを使用すると、元のソースデータを変更せずに製品データを変更できます。 レイヤーは、ベースカタログの上にレイヤーを作成することで、名前、説明、画像、リンク、メタデータなどの製品属性を変更します。 元の製品データは維持され、製品を安全にカスタマイズし、いつでも変更を元に戻すことができます。
 
-![ カタログレイヤー](/help/assets/ccdm-shared/setup/catalog-layers.png)
+![&#x200B; カタログレイヤー](/help/assets/ccdm-shared/setup/catalog-layers.png)
 
 ## カタログビューワークスペースへのアクセス
 
@@ -94,7 +94,7 @@ APIの仕様とペイロードの例について詳しくは、開発者ドキ�
 
 ## UIでカタログレイヤーを手動で追加する
 
-カタログビューUIでは、レイヤーを手動で作成および管理できます。これは、AIを利用したレコメンデーションを生成するSites Optimizerなどの統合に特に便利です。 一括画層操作の場合は、上記](#add-a-catalog-layer-via-data-ingestion)で説明したデータ取り込みAPI メソッド [を使用します。
+カタログビューUIでは、レイヤーを手動で作成および管理できます。これは、AIを利用したレコメンデーションを生成するSites Optimizerなどの統合に特に便利です。 一括画層操作の場合は、上記[&#128279;](#add-a-catalog-layer-via-data-ingestion)で説明したデータ取り込みAPI メソッド を使用します。
 
 Sites Optimizer レイヤーがカタログビューに存在しない場合、Sites Optimizerの自動修正機能は自動的に1つを作成し、最優先度（最上位）を割り当てます。 このレイヤーを削除すると、Sites Optimizerの自動修正機能が次回に実行され、既存のレイヤーが下位の番号に移動したときに再作成されます。 Sites Optimizer レイヤーが別の注文番号に既に存在する場合、自動修正機能は優先度を変更しません。
 
@@ -149,7 +149,7 @@ Sites Optimizer レイヤーがカタログビューに存在しない場合、S
 
 **レイヤーを削除するには：**
 
-データ取り込みAPIを使用して、カタログレイヤー](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers){target=_blank}を[削除します。
+データ取り込みAPIを使用して、カタログレイヤー[&#128279;](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers){target=_blank}を削除します。
 
 ## レイヤーの優先順位の管理
 
@@ -196,7 +196,7 @@ Sites Optimizer レイヤーがカタログビューに存在しない場合、S
 
 ## その他
 
-* [ カタログビュー](catalog-view.md) – 異なるストアフロントのカタログビューを設定する
-* [商品ビジュアル ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals) – 商品画像にAEM Assetsを使用
+* [&#x200B; カタログビュー](catalog-view.md) – 異なるストアフロントのカタログビューを設定する
+* [商品ビジュアル &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals) – 商品画像にAEM Assetsを使用
 * [商談](../manage-results/opportunities.md) - カタログレイヤーを使用したAIによる最適化について説明します
 * [制限付きアクセスキー](restricted-access-keys.md) – 署名済みトークン認証でカタログビューを保護する

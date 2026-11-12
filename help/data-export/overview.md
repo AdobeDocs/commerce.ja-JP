@@ -40,7 +40,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Optimizer Connector]をインストールすると、同じ[!DNL Data Export]拡張機能が[!DNL Adobe Commerce]からカタログと価格フィードを収集します。 コネクタは、コンポーザブルカタログデータモデル（CCDM）を使用して、それらのフィードを[!DNL Adobe Commerce Optimizer]にマッピングして送信します。 セットアップとアーキテクチャについては[[!DNL Adobe Commerce Optimizer Connector] 概要](../aco-connector/overview.md)を、エクスポート後の同期動作については[ コネクタ同期パイプライン ](../aco-connector/connector-sync-pipeline.md)を参照してください。
+>[!DNL Adobe Commerce Optimizer Connector]をインストールすると、同じ[!DNL Data Export]拡張機能が[!DNL Adobe Commerce]からカタログと価格フィードを収集します。 コネクタは、コンポーザブルカタログデータモデル（CCDM）を使用して、それらのフィードを[!DNL Adobe Commerce Optimizer]にマッピングして送信します。 セットアップとアーキテクチャについては[[!DNL Adobe Commerce Optimizer Connector] 概要](../aco-connector/overview.md)を、エクスポート後の同期動作については[&#x200B; コネクタ同期パイプライン &#x200B;](../aco-connector/connector-sync-pipeline.md)を参照してください。
 
 SaaS データ書き出しは、_フィード_&#x200B;と呼ばれる様々なタイプのデータを収集および書き出し、特定のタイプの情報を集約します。 インストールされているCommerce サービスに応じて、SaaS データエクスポートフィードには次のものが含まれます。
 
@@ -61,12 +61,12 @@ SaaS データエクスポートは、自動化された同期と手動による
 
 SaaS データ書き出しは、同期プロセスを計画およびトラブルシューティングするツールも提供します。
 
-- **スケジュールとパフォーマンス** – 処理をスケジュールし、サイトの中断を回避するための同期時間を見積もり、パフォーマンスを向上させるために書き出し処理をカスタマイズします。 [ データ量と送信時間の見積もり](estimate-data-volume-sync-time.md)および[ データ書き出しのパフォーマンスの向上](customize-export-processing.md)を参照してください。
+- **スケジュールとパフォーマンス** – 処理をスケジュールし、サイトの中断を回避するための同期時間を見積もり、パフォーマンスを向上させるために書き出し処理をカスタマイズします。 [&#x200B; データ量と送信時間の見積もり](estimate-data-volume-sync-time.md)および[&#x200B; データ書き出しのパフォーマンスの向上](customize-export-processing.md)を参照してください。
 
-- **追跡とトラブルシューティング** - データ書き出しとsaas書き出しのログを使用して、同期ステータスとフィード ペイロードを確認します。 [ ログの確認とトラブルシューティング ](troubleshooting/logging.md)を参照してください。
+- **追跡とトラブルシューティング** - データ書き出しとsaas書き出しのログを使用して、同期ステータスとフィード ペイロードを確認します。 [&#x200B; ログの確認とトラブルシューティング &#x200B;](troubleshooting/logging.md)を参照してください。
 
 >[!MORELIKETHIS]
 >
-> - [SaaS データエクスポート フィードの拡張とカスタマイズ ](extensibility-and-customizations.md) — フィード データの追加または変更。
-> - [ トラブルシューティング シナリオ ](troubleshooting/troubleshooting-scenarios.md) – 設定ミスと予期しない同期結果を診断します。
-> - [ リリースノート ](release-notes.md) – 拡張機能の更新と既知の問題。
+> - [SaaS データエクスポート フィードの拡張とカスタマイズ &#x200B;](extensibility-and-customizations.md) — フィード データの追加または変更。
+> - [&#x200B; トラブルシューティング シナリオ &#x200B;](troubleshooting/troubleshooting-scenarios.md) – 設定ミスと予期しない同期結果を診断します。
+> - [&#x200B; リリースノート &#x200B;](release-notes.md) – 拡張機能の更新と既知の問題。

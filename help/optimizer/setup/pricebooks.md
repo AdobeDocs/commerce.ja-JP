@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## 価格表を追加
 
-価格表APIを使用して[!DNL Adobe Commerce Optimizer]に価格表を追加します。 [!DNL Adobe Commerce Optimizer]の価格表を作成、更新、削除する方法については、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/reference/rest/)を参照してください。
+価格表APIを使用して[!DNL Adobe Commerce Optimizer]に価格表を追加します。 [!DNL Adobe Commerce Optimizer]の価格表を作成、更新、削除する方法については、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/)を参照してください。
 
 ## 価格表の表示
 

@@ -15,8 +15,8 @@ ht-degree: 0%
 - **ビジネス構造（ブランド、地域、ディーラー）に基づいて表示される製品**
 - **リンクされた価格表を通じて表示される価格**
 - ポリシー（ブランド、モデル、カテゴリなどの属性）を使用して製品をフィルタリングする&#x200B;**方法**
-- **ロケールなどの属性に基づいて使用される[ カタログ ソース ](/help/optimizer/setup/catalog-sources.md)の種類**
-- **ビューのデータにアクセスできるユーザー** ～ [ カタログ保護](private-catalog-view.md)および[ アクセス制限キー](restricted-access-keys.md)
+- **ロケールなどの属性に基づいて使用される[&#x200B; カタログ ソース &#x200B;](/help/optimizer/setup/catalog-sources.md)の種類**
+- **ビューのデータにアクセスできるユーザー** ～ [&#x200B; カタログ保護](private-catalog-view.md)および[&#x200B; アクセス制限キー](restricted-access-keys.md)
 
 例えば、次のような個別のカタログビューを作成できます。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 カタログビューは、Adobe Merchandisingのサービスフレームワークの一部であり、Adobe Commerceの基盤で使用されるweb サイト、ストア、ストアビューフレームワークをより柔軟なモデルに置き換えます。
 
-![[!DNL Merchandising Services] アーキテクチャ ](/help/assets/ccdm-shared/setup/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] アーキテクチャ &#x200B;](/help/assets/ccdm-shared/setup/merchandising-svcs-architecture.png)
 
 ### 仕組み
 
@@ -38,7 +38,7 @@ Adobe Commerceバックエンドやサードパーティバックエンド（PIM
 
 - **Adobe Commerce バックエンド** - Commerce カタログフィードを書き出し、データ取り込みREST APIで想定されるフォーマットにマッピングし、フィード データをAdobe Merchandising Services データレイヤーに同期します。 このモデルでは、Adobe Commerceが初期同期とその後の更新を管理します。 フィードには、商品、カテゴリー、商品属性、価格、価格表などがあります。
 
-- **サードパーティのバックエンドまたはソースシステム** - コネクタまたは統合サービスは、API、イベント、またはエクスポートフィードを介して、ソースからカタログデータを取得し、コンポーザブルカタログデータモデル（CCDM）スキーマにマッピングおよび検証し、Data Ingestion REST APIを使用してAdobe Merchandising Services レイヤーにデータを同期します。 統合は、最初の読み込みと後の変更の送信を担当します。 Adobeの[Salesforce Commerce コネクタ ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/developer/salesforce-connector)などのプラットフォーム固有のコネクタを使用すると、出発点を提供できます。
+- **サードパーティのバックエンドまたはソースシステム** - コネクタまたは統合サービスは、API、イベント、またはエクスポートフィードを介して、ソースからカタログデータを取得し、コンポーザブルカタログデータモデル（CCDM）スキーマにマッピングおよび検証し、Data Ingestion REST APIを使用してAdobe Merchandising Services レイヤーにデータを同期します。 統合は、最初の読み込みと後の変更の送信を担当します。 Adobeの[Salesforce Commerce コネクタ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/developer/salesforce-connector)などのプラットフォーム固有のコネクタを使用すると、出発点を提供できます。
 
 **2. 統合基本カタログ**
 取り込まれたデータは、カタログサービスデータパイプラインに統合されたベースカタログを作成します。 この単一のソースは、事業部門をまたいでデータの重複を排除します。
@@ -47,7 +47,7 @@ Adobe Commerceバックエンドやサードパーティバックエンド（PIM
 複数のカタログビューは、異なる事業部を表します（例えば、「テキサス州小売業」、「テキサス州小売季節業」）。 ロケール、ポリシー、価格表をカタログビュー間で共有し、柔軟性を高めることができます。
 
 **4. マルチチャネル配信**
-フィルタリングされたカタログデータは、Edge Delivery Services、マーケットプレイス、広告プラットフォーム、カスタムのマイクロストアフロントなどの配信先に配信されます。 カタログデータ配信について詳しくは、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/optimizer/)を参照してください。
+フィルタリングされたカタログデータは、Edge Delivery Services、マーケットプレイス、広告プラットフォーム、カスタムのマイクロストアフロントなどの配信先に配信されます。 カタログデータ配信について詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)を参照してください。
 
 カタログビューで&#x200B;**[!UICONTROL Catalog Protection]**&#x200B;が有効になっている場合、その宛先への配信には、割り当てられた[制限アクセスキー](restricted-access-keys.md)からの有効な署名済みトークンが必要です。カタログデータを受信する代わりに、権限のない要求が拒否されます。
 
@@ -97,4 +97,4 @@ Adobe Commerceバックエンドやサードパーティバックエンド（PIM
 
 >[!NOTE]
 >
->カタログデータの取り込みと配信について詳しくは、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/optimizer/)を参照してください。
+>カタログデータの取り込みと配信について詳しくは、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)を参照してください。
