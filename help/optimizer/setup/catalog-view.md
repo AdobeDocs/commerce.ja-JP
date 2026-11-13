@@ -4,7 +4,7 @@ description: カタログビューの概要と、ビジネス構造、ポリシ�
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
 product_v2:
@@ -30,7 +30,8 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 nudge: true
-source-git-commit: d081e975b03805a0f46d5194f8c3cd46e3c86839
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -43,24 +44,24 @@ ht-degree: 0%
 
 カタログビューを管理するには、次の手順を使用します。
 
-- [&#x200B; カタログ ビューを作成](#create-a-catalog-view)：名前、カタログ ソース、ポリシー、価格表を設定します。 次に、[&#x200B; レコメンデーションと製品発見ルール &#x200B;](#specify-catalog-views-for-recommendations-and-product-discovery-rules)のカタログビューを指定し、製品属性を上書きする[&#x200B; カタログレイヤー](#catalog-layers)を確認するか、[&#x200B; カタログビューを非公開](#make-a-catalog-view-private)にします。
-- [&#x200B; カタログビューを編集](#edit-a-catalog-view)：そのソース、ポリシー、価格表、保護設定を更新します。
-- [&#x200B; カタログビューを削除](#delete-a-catalog-view) – 不要になったカタログビューを削除します。
-- [&#x200B; カタログビューの詳細を表示](#view-catalog-view-details) - カタログビューテーブルからカタログビューの設定を確認します。
+- [ カタログ ビューを作成](#create-a-catalog-view)：名前、カタログ ソース、ポリシー、価格表を設定します。 次に、[ レコメンデーションと製品発見ルール ](#specify-catalog-views-for-recommendations-and-product-discovery-rules)のカタログビューを指定し、製品属性を上書きする[ カタログレイヤー](#catalog-layers)を確認するか、[ カタログビューを非公開](#make-a-catalog-view-private)にします。
+- [ カタログビューを編集](#edit-a-catalog-view)：そのソース、ポリシー、価格表、保護設定を更新します。
+- [ カタログビューを削除](#delete-a-catalog-view) – 不要になったカタログビューを削除します。
+- [ カタログビューの詳細を表示](#view-catalog-view-details) - カタログビューテーブルからカタログビューの設定を確認します。
 
 ### カタログビューの作成
 
 カタログビューを作成する前に、必要に応じて次の項目を準備します。
 
-- [&#x200B; カタログソース &#x200B;](catalog-sources.md)
-- 製品フィルターを定義する[&#x200B; ポリシー](policies.md)
-- 製品属性を上書きする必要がある場合は、[&#x200B; カタログレイヤー](catalog-layer.md)
+- [ カタログソース ](catalog-sources.md)
+- 製品フィルターを定義する[ ポリシー](policies.md)
+- 製品属性を上書きする必要がある場合は、[ カタログレイヤー](catalog-layer.md)
 - ビューに表示される価格に関する[価格表](pricebooks.md)
-- プライベート カタログ ビューを作成する場合は、[&#x200B; アクセス キー](restricted-access-keys.md)が制限されています
+- プライベート カタログ ビューを作成する場合は、[ アクセス キー](restricted-access-keys.md)が制限されています
 
 #### 設定
 
-このセクションでは、カタログ ビューを作成し、[&#x200B; ポリシー](policies.md)と[価格表](pricebooks.md)を選択します。
+このセクションでは、カタログ ビューを作成し、[ ポリシー](policies.md)と[価格表](pricebooks.md)を選択します。
 
 1. 左側のメニューから、**[!UICONTROL Store setup]**&#x200B;に移動し、**[!UICONTROL Catalog views]**&#x200B;をクリックします。
 
@@ -69,9 +70,9 @@ ht-degree: 0%
 1. カタログビューの詳細を設定します。
 
    - **名前** - カタログ ビューの名前（例：`Celport`）を入力します。 &#x200B;
-   - **カタログソース** - [&#x200B; カタログソース &#x200B;](catalog-sources.md)を選択（例：`en-US`）。
+   - **カタログソース** - [ カタログソース ](catalog-sources.md)を選択（例：`en-US`）。
    - **カタログレイヤー** – 取り込んだレイヤーと優先度を確認します。
-   - **ポリシー** - ドロップダウンを使用して、関連するポリシーを選択します。 例えば、「ブランド」、「モデル」などです。 &#x200B;既に[&#x200B; ポリシーを作成していることを確認してください](policies.md)。
+   - **ポリシー** - ドロップダウンを使用して、関連するポリシーを選択します。 例えば、「ブランド」、「モデル」などです。 &#x200B;既に[ ポリシーを作成していることを確認してください](policies.md)。
 
 1. カタログ ビューにリンクする価格表を選択します。
 
@@ -82,9 +83,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >価格表IDは、どの価格設定を要求するかを制御します。 カタログビューへのアクセスは制限されません。 アクセスを制限するには、カタログ保護を有効にして[&#x200B; プライベートカタログビュー](private-catalog-view.md)を作成します。
+   >価格表IDは、どの価格設定を要求するかを制御します。 カタログビューへのアクセスは制限されません。 アクセスを制限するには、カタログ保護を有効にして[ プライベートカタログビュー](private-catalog-view.md)を作成します。
 
-1. （オプション） **[!UICONTROL Catalog Protection]**&#x200B;を&#x200B;**[!UICONTROL Enabled]**&#x200B;に切り替えて、このカタログビューのデータを有効な署名済みトークンを持つクライアントに制限します。 設定手順については、[&#x200B; カタログビューの保護](private-catalog-view.md#protect-a-catalog-view)を参照してください。
+1. （オプション） **[!UICONTROL Catalog Protection]**&#x200B;を&#x200B;**[!UICONTROL Enabled]**&#x200B;に切り替えて、このカタログビューのデータを有効な署名済みトークンを持つクライアントに制限します。 設定手順については、[ カタログビューの保護](private-catalog-view.md#protect-a-catalog-view)を参照してください。
 
 1. リンクされた価格表とポリシーを含むカタログ ビューを作成するには、**[!UICONTROL Add]**&#x200B;をクリックします。
 
@@ -94,19 +95,19 @@ ht-degree: 0%
 
 #### レコメンデーションと製品発見ルールのカタログビューの指定
 
-[&#x200B; レコメンデーションユニット &#x200B;](../merchandising/recommendations/create.md)または[&#x200B; マーチャンダイジングルール &#x200B;](../merchandising/rules/add.md)を作成するときに、カタログビューを指定できます。
+[ レコメンデーションユニット ](../merchandising/recommendations/create.md)または[ マーチャンダイジングルール ](../merchandising/rules/add.md)を作成するときに、カタログビューを指定できます。
 
 #### カタログレイヤー
 
 カタログレイヤーを使用すると、ソースカタログデータを変更せずに、選択した製品属性を上書きできます。 レイヤーを使用して、カタログビューの名前、説明、画像、リンク、メタデータをカスタマイズします。
 
-[&#x200B; カタログレイヤー](catalog-layer.md)を参照してください。
+[ カタログレイヤー](catalog-layer.md)を参照してください。
 
 #### カタログビューを非公開にする
 
 デフォルトでは、カタログビューは、GraphQL Merchandising APIにアクセスできるクライアントアプリケーションに対して公開されます。 アクセスを制限するには、**[!UICONTROL Catalog Protection]**&#x200B;を有効にしてプライベートカタログビューを設定します。
 
-カタログビューを保護し、アクセスが強制されていることを確認する方法については、[&#x200B; プライベートカタログビュー](private-catalog-view.md)を参照してください。
+カタログビューを保護し、アクセスが強制されていることを確認する方法については、[ プライベートカタログビュー](private-catalog-view.md)を参照してください。
 
 ### カタログビューの編集
 
@@ -129,9 +130,9 @@ ht-degree: 0%
 
 このオプションを使用すると、**[!UICONTROL Catalog views]** テーブルを維持しながら、すべてのカタログ表示パラメーターを簡単に表示できます。
 
-**[!UICONTROL Catalog views]** ワークスペースで、カタログビューの![情報アイコン &#x200B;](/help/assets/ccdm-shared/recommendations/info-icon.png)を選択して、その設定の詳細を表示します。
+**[!UICONTROL Catalog views]** ワークスペースで、カタログビューの![情報アイコン ](/help/assets/ccdm-shared/recommendations/info-icon.png)を選択して、その設定の詳細を表示します。
 
-![&#x200B; カタログ表示の詳細](../assets/catalog-view-details.png)
+![ カタログ表示の詳細](../assets/catalog-view-details.png)
 
 ここから、次のようなカタログビュー設定の詳細を確認できます。
 
