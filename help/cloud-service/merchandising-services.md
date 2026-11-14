@@ -77,7 +77,7 @@ Adobe Commerce as a Cloud Serviceは、マーチャンダイジングサービ�
 
 元のカタログモデルでは、カタログサービスを使用してストアフロントに商品データを配信し、ライブサーチと商品レコメンデーションでは検索、マーチャンダイジング、レコメンデーション機能を提供します。 このモデルでは、Commerceは[SaaS データ書き出し](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/overview)を使用して同期します。
 
-CCDMでは、これらの機能は、Adobe Commerce Optimizerと同じカタログ基盤で動作します。 [&#x200B; カタログビュー](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view)と[&#x200B; ポリシー](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies)は、ストアフロントで使用可能なカタログコンテキストを定義します。 ポリシーによって商品の品揃えが決まります。マーチャンダイジングルールは、あらゆるカタログビューに適用することも、特定のビューに合わせてカスタマイズすることもできます。
+CCDMでは、これらの機能は、Adobe Commerce Optimizerと同じカタログ基盤で動作します。 [&#x200B; カタログビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view)と[&#x200B; ポリシー](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/setup/policies)は、ストアフロントで使用可能なカタログコンテキストを定義します。 ポリシーによって商品の品揃えが決まります。マーチャンダイジングルールは、あらゆるカタログビューに適用することも、特定のビューに合わせてカスタマイズすることもできます。
 
 これにより、カタログの設定、アクセス、マーチャンダイジング方法が変更されます。 CCDMは、オリジナルのCommerceカタログの検索、レコメンデーション、マーチャンダイジング機能を基盤としており、カタログビューレベルでの制御を可能にします。 その他の管理機能とレポート機能については、以下で説明します。
 
@@ -99,9 +99,9 @@ Commerce財団は、商品と価格の正規の情報源であり続けていま
 
 ## マーチャントにとっての新機能は何ですか？
 
-新しいモデルでは、既存のマーチャンダイジングルールをすべてのカタログビューまたは特定のビューにスコープできます。 これにより、各ストアフロントのオーディエンスにマーチャンダイジングを適用することができます。 カタログ ビュー[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add)にマーチャンダイジング ルールを スコープ設定する方法について説明します。
+新しいモデルでは、既存のマーチャンダイジングルールをすべてのカタログビューまたは特定のビューにスコープできます。 これにより、各ストアフロントのオーディエンスにマーチャンダイジングを適用することができます。 カタログ ビュー[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add)にマーチャンダイジング ルールを スコープ設定する方法について説明します。
 
-管理画面で、[!UICONTROL Catalog Views]と[!UICONTROL Policies]を使用してカタログコンテキストを設定できます。 [!UICONTROL Success Metrics]を使用して、収益、コンバージョン、エンゲージメント、獲得、直帰率を確認することもできます。 詳しくは、[成功指標](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics)を参照してください。
+管理画面で、[!UICONTROL Catalog Views]と[!UICONTROL Policies]を使用してカタログコンテキストを設定できます。 [!UICONTROL Success Metrics]を使用して、収益、コンバージョン、エンゲージメント、獲得、直帰率を確認することもできます。 詳しくは、[成功指標](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics)を参照してください。
 
 ## 導入する前の検討事項
 
