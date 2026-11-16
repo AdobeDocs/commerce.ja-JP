@@ -98,7 +98,7 @@ B2B共有カタログを使用していない場合（例えば、パートナ�
 
 >[!NOTE]
 >
->CCDMを使用したマーチャンダイジングサービスを使用したAdobe Commerce B2B デプロイメントの場合、Commerce管理者&#x200B;**制限アクセスキー** ページ（**システム** > **データ転送**）からアクセスキーを管理します。 詳しくは、*[!DNL Adobe Commerce Optimizer Connector]統合ガイド*&#x200B;の「[制限付きアクセスキー管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)」を参照してください。
+>CCDMを使用したマーチャンダイジングサービスを使用したAdobe Commerce B2B デプロイメントの場合、Commerce管理者&#x200B;**制限アクセスキー** ページ（**システム** > **データ転送**）からアクセスキーを管理します。 詳しくは、*[!DNL Adobe Commerce Optimizer Connector]統合ガイド*&#x200B;の「[制限付きアクセスキー管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)」を参照してください。
 
 ## その他
 

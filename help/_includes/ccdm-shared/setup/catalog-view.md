@@ -40,7 +40,7 @@ Adobe Commerceバックエンドやサードパーティバックエンド（PIM
 
 - **Adobe Commerce バックエンド** - Commerce カタログフィードを書き出し、データ取り込みREST APIで想定されるフォーマットにマッピングし、フィード データをAdobe Merchandising Services データレイヤーに同期します。 このモデルでは、Adobe Commerceが初期同期とその後の更新を管理します。 フィードには、商品、カテゴリー、商品属性、価格、価格表などがあります。
 
-- **サードパーティのバックエンドまたはソースシステム** - コネクタまたは統合サービスは、API、イベント、またはエクスポートフィードを介して、ソースからカタログデータを取得し、コンポーザブルカタログデータモデル（CCDM）スキーマにマッピングおよび検証し、Data Ingestion REST APIを使用してAdobe Merchandising Services レイヤーにデータを同期します。 統合は、最初の読み込みと後の変更の送信を担当します。 Adobeの[Salesforce Commerce コネクタ &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/developer/salesforce-connector)などのプラットフォーム固有のコネクタを使用すると、出発点を提供できます。
+- **サードパーティのバックエンドまたはソースシステム** - コネクタまたは統合サービスは、API、イベント、またはエクスポートフィードを介して、ソースからカタログデータを取得し、コンポーザブルカタログデータモデル（CCDM）スキーマにマッピングおよび検証し、Data Ingestion REST APIを使用してAdobe Merchandising Services レイヤーにデータを同期します。 統合は、最初の読み込みと後の変更の送信を担当します。 Adobeの[Salesforce Commerce コネクタ &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/developer/salesforce-connector)などのプラットフォーム固有のコネクタを使用すると、出発点を提供できます。
 
 **2. 統合基本カタログ**
 取り込まれたデータは、カタログサービスデータパイプラインに統合されたベースカタログを作成します。 この単一のソースは、事業部門をまたいでデータの重複を排除します。

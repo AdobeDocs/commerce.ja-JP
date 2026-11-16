@@ -10,7 +10,7 @@ ht-degree: 0%
 
 制限付きアクセスキーは、次の2つの方法のいずれかでプロビジョニングされます。
 
-- **自動的に、B2B共有カタログ**&#x200B;の場合：システムは、B2B共有カタログに関連付けられているカタログビューの初期キーをプロビジョニングして割り当てます。 次に、Commerce管理者からキーとキーの割り当てを管理します。 *Commerce管理者ガイド*&#x200B;の「[&#x200B; カタログビュー認証](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)」を参照してください。 自動プロビジョニングは、次のデプロイメントで使用できます。
+- **自動的に、B2B共有カタログ**&#x200B;の場合：システムは、B2B共有カタログに関連付けられているカタログビューの初期キーをプロビジョニングして割り当てます。 次に、Commerce管理者からキーとキーの割り当てを管理します。 *Commerce管理者ガイド*&#x200B;の「[&#x200B; カタログビュー認証](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)」を参照してください。 自動プロビジョニングは、次のデプロイメントで使用できます。
 
   - **Adobe Commerce B2B向けAdobe Commerce as a Cloud ServiceとCCDM**。
   - **Adobe Commerce オンクラウドまたはオンプレミス**&#x200B;は、[!DNL Adobe Commerce Optimizer Connector for B2B]を通じてAdobe Commerce Optimizerと統合されています。 コネクタのB2B拡張機能が必要です。
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この節と後に続くふたつの節では、制限付きアクセスキーを管理するための手動プロセスについて説明します。 自動キープロビジョニング機能を備えたB2B共有カタログの場合は、Commerce管理者からキーを管理します。 [制限付きアクセスキー](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)を参照してください。
+>この節と後に続くふたつの節では、制限付きアクセスキーを管理するための手動プロセスについて説明します。 自動キープロビジョニング機能を備えたB2B共有カタログの場合は、Commerce管理者からキーを管理します。 [制限付きアクセスキー](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)を参照してください。
 
 ### 制限付きアクセスキーの追加
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 >[!TAB Adobe Commerce管理者]
 
-Adobe Commerce as a Cloud ServiceとCCDM、またはコネクタを介してAdobe Commerceに接続されたAdobe Commerce Optimizerを使用しているお客様は、Commerce管理者からRSA キーペアを生成できます。 [制限付きアクセスキーの管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)を参照してください。
+Adobe Commerce as a Cloud ServiceとCCDM、またはコネクタを介してAdobe Commerceに接続されたAdobe Commerce Optimizerを使用しているお客様は、Commerce管理者からRSA キーペアを生成できます。 [制限付きアクセスキーの管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)を参照してください。
 
 >[!TAB Adobe Commerce Optimizer Studio]
 
@@ -113,7 +113,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 制限付きアクセスキーは、カタログ保護の使用方法に応じて、次の2つの方法のいずれかで管理されます。
 
-- **自動的に、B2B共有カタログ**—CCDM付きのマーチャンダイジングサービスを使用するAdobe Commerce B2B デプロイメントの場合、および[!DNL Adobe Commerce Optimizer Connector for B2B]を通じて統合されたAdobe Commerce Optimizer デプロイメントの場合（B2B拡張機能が必要）、カタログビューの作成時に、サービスが自動的に最初の制限付きアクセスキーを生成して割り当てます。 各カタログビューには、独自のキーが割り当てられます。 その後、共有カタログまたは会社アカウントページから各キーを管理できます。 また、Commerce管理者&#x200B;**制限付きアクセスキー** ページ（**システム** > **データ転送**）からキーを表示および管理することもできます。 [&#x200B; カタログビュー設定の管理](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)を参照してください。
+- **自動的に、B2B共有カタログ**—CCDM付きのマーチャンダイジングサービスを使用するAdobe Commerce B2B デプロイメントの場合、および[!DNL Adobe Commerce Optimizer Connector for B2B]を通じて統合されたAdobe Commerce Optimizer デプロイメントの場合（B2B拡張機能が必要）、カタログビューの作成時に、サービスが自動的に最初の制限付きアクセスキーを生成して割り当てます。 各カタログビューには、独自のキーが割り当てられます。 その後、共有カタログまたは会社アカウントページから各キーを管理できます。 また、Commerce管理者&#x200B;**制限付きアクセスキー** ページ（**システム** > **データ転送**）からキーを表示および管理することもできます。 [&#x200B; カタログビュー設定の管理](https://experienceleague.adobe.com/ja/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)を参照してください。
 
   共有カタログとストアビューの組み合わせは、それぞれ別のカタログビューとして表示されます。 プロジェクトとは、カタログ表示、ポリシー、価格表参照、およびアクセス制限キー設定データです。このデータは、その組み合わせのマーチャンダイジングサービスデータレイヤーに書き出されます。 複数のストアビューに割り当てられた共有カタログは、それぞれ独自のキーを持つ複数のカタログビューを生成します。 他のカタログに影響を与えることなく、1つのカタログ ビューのキーを編集または回転します。
 
@@ -134,7 +134,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 >[!TAB Adobe Commerce管理者]
 
-[&#x200B; キーの選択とローテーション &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation)を参照してください。 これは、CCDMを使用するAdobe Commerce as a Cloud Serviceと、Adobe Commerce Optimizer コネクタを介してAdobe Commerce Optimizerと統合されたAdobe Commerce プロジェクトに適用されます。
+[&#x200B; キーの選択とローテーション &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation)を参照してください。 これは、CCDMを使用するAdobe Commerce as a Cloud Serviceと、Adobe Commerce Optimizer コネクタを介してAdobe Commerce Optimizerと統合されたAdobe Commerce プロジェクトに適用されます。
 
 >[!TAB Adobe Commerce Optimizer Studio]
 
@@ -149,7 +149,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 ## 制限
 
-[&#x200B; カタログビューとポリシー制限](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)を参照してください。
+[&#x200B; カタログビューとポリシー制限](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits)を参照してください。
 
 ## その他
 

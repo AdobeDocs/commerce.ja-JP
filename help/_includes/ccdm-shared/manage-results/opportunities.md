@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## オポチュニティとは？
 
-[商談](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview){target="_blank"}は、マーチャンダイザーがコマースサイトのパフォーマンスに影響を与える問題を特定して対処するのに役立つ、AIを活用したレコメンデーションです。 これらのレコメンデーションは、web サイトのパフォーマンスを分析および改善するクラウドベースのサービスである[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home){target="_blank"}によって提供されます。
+[商談](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview){target="_blank"}は、マーチャンダイザーがコマースサイトのパフォーマンスに影響を与える問題を特定して対処するのに役立つ、AIを活用したレコメンデーションです。 これらのレコメンデーションは、web サイトのパフォーマンスを分析および改善するクラウドベースのサービスである[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/home){target="_blank"}によって提供されます。
 
 ## 主な能力
 
@@ -176,12 +176,12 @@ Adobe Sites Optimizer レイヤーがカタログビューに存在しない場�
 
 ## Sites Optimizerについて詳しく見る
 
-Sites Optimizerの機能と機能について詳しくは、[Adobe Experience Manager Sites Optimizer ドキュメント &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)を参照してください。
+Sites Optimizerの機能と機能について詳しくは、[Adobe Experience Manager Sites Optimizer ドキュメント &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/home)を参照してください。
 
 関連トピックス：
 
-- [商談タイプ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) – 使用可能な最適化商談について説明します。
-- [Sites Optimizerの機能](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/basics) - Sites Optimizerで実現できること。
+- [商談タイプ &#x200B;](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) – 使用可能な最適化商談について説明します。
+- [Sites Optimizerの機能](https://experienceleague.adobe.com/ja/docs/experience-manager-sites-optimizer/content/documentation/basics) - Sites Optimizerで実現できること。
 
 ## その他
 

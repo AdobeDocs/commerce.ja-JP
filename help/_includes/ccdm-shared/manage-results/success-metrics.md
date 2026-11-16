@@ -68,7 +68,7 @@ C2PA メタデータは、[C2PA オープンスタンダード &#x200B;](https:/
 
 ![&#x200B; サンプルの調査](/help/assets/ccdm-shared/manage-results/inspect-sample.png)
 
-[生成AI コンテンツの透明性](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)について詳しく見る。
+[生成AI コンテンツの透明性](https://experienceleague.adobe.com/ja/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)について詳しく見る。
 
 ## 成功指標とSites Optimizerの連携
 
