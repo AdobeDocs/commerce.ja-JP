@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '350'
 ht-degree: 0%
 ---
+# 類義語の種類
+
 一方向および双方向の類義語は、キーワードの定義を拡大します。 キーワードと互換性のあるものもあれば、キーワードのサブセットを表すものもあります。
 
 ## 双方向
@@ -28,4 +30,4 @@ ht-degree: 0%
 
 同義語を作成すると、検索動作が変更され、厳密なフレーズ **キッチンテーブル**&#x200B;が検索されます。 正確なフレーズが付いた商品のみが表示されるため、結果の数が減少する可能性があります。
 
-以前と同様に条件を個別に検索する場合は、[&#x200B; サポートチケットを作成できます](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+以前と同様に条件を個別に検索する場合は、[ サポートチケットを作成できます](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。

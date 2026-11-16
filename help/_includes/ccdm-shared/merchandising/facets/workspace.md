@@ -1,19 +1,21 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '177'
 ht-degree: 1%
 ---
+# ファセットWorkspace
+
 *ファセット* ワークスペースには、現在使用可能なすべてのファセットが一覧表示され、ファセットの設定と管理に必要なツールにアクセスできます。 ピン留めされたファセットは、既存のファセットのリストの最初に表示され、次に動的ファセットが表示されます。 ファセットのリストを検索できます。
 
-![&#x200B; ファセット Workspace](/help/assets/ccdm-shared/facets/facet-workspace.png)
+![ ファセット Workspace](/help/assets/ccdm-shared/facets/facet-workspace.png)
 
 ## フィールドの説明
 
 | フィールド | 説明 |
 |--- |--- |
-| ファセットの作成 | [&#x200B; ファセットエディター](add.md)を開きます。 |
-| ラベル | ストアフロントに表示される[&#x200B; ファセットラベル &#x200B;](type.md#facet-labels)は、ブランドとの一貫性を保つために編集できます。 |
+| ファセットの作成 | [ ファセットエディター](add.md)を開きます。 |
+| ラベル | ストアフロントに表示される[ ファセットラベル ](type.md#facet-labels)は、ブランドとの一貫性を保つために編集できます。 |
 | 並べ替えタイプ | ファセットを[並べ替え](type.md#sort-type)するために使用されるメソッド。 すべてのストアフロントは、ファセットをアルファベット順に並べ替え、`Count`で並べ替えます。 オプション：<br /> アルファベット順 – ファセットをアルファベット順に並べ替えます。<br />Count – 見つかった一致の数に基づいてファセットを並べ替えます。 |
 | 最大値 | 各ファセットのストアフロントに表示できる値の最大数。 値の範囲を表すファセットは均等に分布します。 有効なエントリ：0 ～ 100、デフォルト：8。 |
 
@@ -21,5 +23,5 @@ ht-degree: 1%
 
 | 制御 | 説明 |
 |--- |--- |
-| ![&#x200B; セレクターをピン留めする](/help/assets/ccdm-shared/facets/btn-pin-blue.png) | ファセットを&#x200B;*フィルター* リストの先頭にピン留めまたはピン留めを解除します。 |
+| ![ セレクターをピン留めする](/help/assets/ccdm-shared/facets/btn-pin-blue.png) | ファセットを&#x200B;*フィルター* リストの先頭にピン留めまたはピン留めを解除します。 |
 | ![その他のセレクター](/help/assets/ccdm-shared/recommendations/btn-more.png) | 選択したファセットに適用できるその他のアクションのメニューを表示します。 オプション：編集、削除 |

@@ -1,12 +1,14 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '385'
 ht-degree: 0%
 ---
+# 同義語のベストプラクティス
+
 次に、類義語を作成する際のベストプラクティスのリストを示します。
 
-- スペルミスはデフォルトで管理されます。 買い物客が使用する可能性のある単語を含めるには、類義語を設定します。 これらの単語は、カタログで指定されている単語とは異なります。 製品が「ソファ」として表示されている間、誰かが「ソファ」を探しているので、販売を失いたくはありません。 顧客が自社商品を探す際に使用する可能性のあるあらゆる単語を入力して、幅広い検索語を取得します。 結果を改善するには、[類義語を一方向または双方向](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type)に設定します。
+- スペルミスはデフォルトで管理されます。 買い物客が使用する可能性のある単語を含めるには、類義語を設定します。 これらの単語は、カタログで指定されている単語とは異なります。 製品が「ソファ」として表示されている間、誰かが「ソファ」を探しているので、販売を失いたくはありません。 顧客が自社商品を探す際に使用する可能性のあるあらゆる単語を入力して、幅広い検索語を取得します。 結果を改善するには、[類義語を一方向または双方向](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type)に設定します。
 
 - ブランド名と略語をフルネームにマッピングします（例：「HP」、「Hewlett-Packard」、「iPhone」、「Apple iPhone」など）。
 

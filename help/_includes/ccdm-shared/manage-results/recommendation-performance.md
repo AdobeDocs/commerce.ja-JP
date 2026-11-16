@@ -1,22 +1,24 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '917'
 ht-degree: 0%
 ---
+# Recommendations パフォーマンス
+
 「Recommendations Performance」ページには、設定された推奨事項のリストと、その有効性を評価するのに役立つ主要な指標が表示されます。 過去の日、週、または月の指標を表示するようにビューを設定できます。 こうしたインサイトにより、各レコメンデーションユニットが閲覧またはクリックされる頻度が示され、パフォーマンスを評価し、最適化の機会を特定するのに役立ちます。
 
 >[!INFO]
 >
 >レコメンデーションユニットは、推奨製品&#x200B;_個のアイテム_&#x200B;を含むウィジェットです。
 
-![おすすめのパフォーマンス &#x200B;](/help/assets/ccdm-shared/manage-results/rec-performance.png){zoomable="yes"}
+![おすすめのパフォーマンス ](/help/assets/ccdm-shared/manage-results/rec-performance.png){zoomable="yes"}
 
 ## レポートを読む
 
 1. レコメンデーションが適用される&#x200B;*すべてのビュー*&#x200B;など、**カタログビュー**&#x200B;を選択します。
 
-   レコメンデーションの[&#x200B; カタログビュー](#select-catalog-view)の詳細をご覧ください。
+   レコメンデーションの[ カタログビュー](#select-catalog-view)の詳細をご覧ください。
 
 1. **[!UICONTROL Date Range]**&#x200B;をクリックし、次のいずれかの範囲を選択します。
 
@@ -54,7 +56,7 @@ ht-degree: 0%
 | ![日付範囲](/help/assets/ccdm-shared/manage-results/rec-perf-date-range.png) | 指標の計算に使用する時間の範囲を指定します。 |
 | ![列セレクター](/help/assets/ccdm-shared/manage-results/icon-show-hide-columns.png) | Recommendations テーブルに表示される列を指定します。 |
 | レコメンデーションを作成 | [新しいレコメンデーションの作成](../merchandising/recommendations/create.md) ページを開きます。 |
-| [&#x200B; カタログ ビュー](#select-catalog-view) | カタログ ビューを選択してテーブルをフィルタリングし、選択したカタログ ビューに適用されるレコメンデーションのみを表示します。 この選択範囲は、新しいレコメンデーションを[作成](../merchandising/recommendations/create.md)するときに、カタログビューとしても使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[&#x200B; カタログビュー](../setup/catalog-view.md)です。 |
+| [ カタログ ビュー](#select-catalog-view) | カタログ ビューを選択してテーブルをフィルタリングし、選択したカタログ ビューに適用されるレコメンデーションのみを表示します。 この選択範囲は、新しいレコメンデーションを[作成](../merchandising/recommendations/create.md)するときに、カタログビューとしても使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[ カタログビュー](../setup/catalog-view.md)です。 |
 
 ## 列の説明
 
@@ -81,7 +83,7 @@ ht-degree: 0%
 **Recommendations** ページの&#x200B;**[!UICONTROL Catalog view]** セレクターには、次の2つの機能があります。
 
 1. **テーブルをフィルター** – 選択したカタログ ビューに適用されるレコメンデーション （およびその指標）のみを表示します。
-1. **新しいレコメンデーションの範囲を設定** - レコメンデーションを[作成](../merchandising/recommendations/create.md)すると、選択したカタログ ビューがユニットの範囲として使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[&#x200B; カタログビュー](../setup/catalog-view.md)です。
+1. **新しいレコメンデーションの範囲を設定** - レコメンデーションを[作成](../merchandising/recommendations/create.md)すると、選択したカタログ ビューがユニットの範囲として使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[ カタログビュー](../setup/catalog-view.md)です。
 
    - **すべてのビュー** – 推奨事項はすべてのカタログビューに適用されます（製品の可用性は引き続きビューごとにフィルタリングされます）。
    - **カタログ ビュー** – 推奨事項は、選択したカタログ ビュー（1つのストアフロント、言語、ブランドなど）にのみ適用されます。

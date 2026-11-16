@@ -1,16 +1,18 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 10%
 ---
+# イベント
+
 イベントは、リアルタイムのデータインサイトを活用して、ショッピング体験を向上させ、コンバージョンを促進するための重要なツールです。
 
 コンポーザブルカタログデータモデル（CCDM）を使用したマーチャンダイジングサービスでは、ストアフロントイベントがサイトに自動的にデプロイされます。 これらのイベントは、サイトでの買い物客のインタラクションからデータを取得します。 この匿名化されたデータは、[おすすめ](../../manage-results/recommendation-performance.md)、[製品の検出](../../manage-results/search-performance.md)、[成功指標](../../manage-results/success-metrics.md)に活用されます。
 
 >[!NOTE]
 >
->データ収集には、個人情報（PII）は含まれません。 Cookie IDやIP アドレスなど、あらゆるユーザーIDは厳密に匿名化されます。 [学習を増やす](https://www.adobe.com/jp/privacy/experience-cloud.html)。
+>データ収集には、個人情報（PII）は含まれません。 Cookie IDやIP アドレスなど、あらゆるユーザーIDは厳密に匿名化されます。 [学習を増やす](https://www.adobe.com/privacy/experience-cloud.html)。
 
 **イベント** ページでは、収集されるストアフロントイベントデータを確認できます。 イベントデータ収集を把握することで、マーチャントはストアフロントイベントを正しく実装し、イベントのキャプチャが成功していることを確認できます。 このページでは、潜在的な問題を特定し、イベントの問題を解決するための手順を実行できます。
 
@@ -25,7 +27,7 @@ ht-degree: 10%
 
 「**イベント数**」タブでは、検索、クリック、購入などの買い物客のインタラクションを追跡して、トレンドを分析し、ショッピング体験を向上させることができます。
 
-![&#x200B; イベント数](/help/assets/ccdm-shared/setup/event-counts.png){zoomable="yes"}
+![ イベント数](/help/assets/ccdm-shared/setup/event-counts.png){zoomable="yes"}
 
 | フィールド | 説明 |
 |---|---|
@@ -37,7 +39,7 @@ ht-degree: 10%
 
 「**健全性チェック**」タブでは、各行動イベントの健全性に関するインサイトが提供され、正確なデータ収集と機能が保証されます。 &#x200B;
 
-![健全性チェック &#x200B;](/help/assets/ccdm-shared/setup/sanity-check.png){zoomable="yes"}
+![健全性チェック ](/help/assets/ccdm-shared/setup/sanity-check.png){zoomable="yes"}
 
 | フィールド | 説明 |
 |---|---|
@@ -51,7 +53,7 @@ ht-degree: 10%
 
 製品ディスカバリーでは、「Most Viewed （最も閲覧された製品）」や「Viewed This, Viewed That （最も閲覧された製品）」などの検索アルゴリズムを強化するためにイベントを使用します。
 
-この表は、製品検出[&#x200B; ランキング戦略](../../merchandising/rules/add.md#intelligent-ranking)で使用されるイベントを示しています。
+この表は、製品検出[ ランキング戦略](../../merchandising/rules/add.md#intelligent-ranking)で使用されるイベントを示しています。
 
 | ランキング戦略 | イベント | ページ |
 | --- | --- | --- |
@@ -62,7 +64,7 @@ ht-degree: 10%
 
 #### 必須ダッシュボードイベント
 
-一部のイベントは、[検索パフォーマンス ダッシュボード &#x200B;](../../manage-results/search-performance.md)に入力するために必要です
+一部のイベントは、[検索パフォーマンス ダッシュボード ](../../manage-results/search-performance.md)に入力するために必要です
 
 | ダッシュボード領域 | イベント | 連結フィールド |
 | ------------------- | ------------- | ---------- |
@@ -101,7 +103,7 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 - レコメンデーションタイプによっては、他のタイプよりも学習が速いものもあります
 - そのシステムでは、行動データが4時間ごとに再計算されます。 レコメンデーションは、サイトで長く使用するにつれて精度が向上します。
 
-各レコメンデーションタイプのトレーニングの進捗状況を視覚化するために、[&#x200B; レコメンデーションの作成](../../merchandising/recommendations/create.md#readiness-indicators) ページには準備状況インジケーターが表示されます。
+各レコメンデーションタイプのトレーニングの進捗状況を視覚化するために、[ レコメンデーションの作成](../../merchandising/recommendations/create.md#readiness-indicators) ページには準備状況インジケーターが表示されます。
 
 ライブサイトでデータを収集し、マシンラーニングモデルをトレーニングしている間に、レコメンデーションの設定に必要なその他のテストや設定タスクを完了できます。 こうした作業が完了する頃には、モデルには有用なレコメンデーションを作成するのに十分なデータが揃っており、ストアフロントに展開することができます。
 
@@ -134,7 +136,7 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 
 #### 必須ダッシュボードイベント
 
-次のイベントは、[Recommendations Performance ダッシュボード &#x200B;](../../manage-results/recommendation-performance.md)に入力するために必要です
+次のイベントは、[Recommendations Performance ダッシュボード ](../../manage-results/recommendation-performance.md)に入力するために必要です
 
 | ダッシュボード列 | イベント | 連結フィールド |
 | ---------------- | --------- | ----------- |
@@ -172,4 +174,4 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 
 ## サポート
 
-データの不一致に気づく場合、または推奨事項と検索結果が期待どおりに機能しない場合は、[&#x200B; サポートチケットを送信します](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+データの不一致に気づく場合、または推奨事項と検索結果が期待どおりに機能しない場合は、[ サポートチケットを送信します](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '872'
 ht-degree: 0%
 ---
+# マーチャンダイジング設定
+
 *設定* ワークスペースを使用して、ストアフロントの検索と製品の検出を設定します。 次のタブを使用できます。
 
 - **ファセット** – 検索フィルターとして使用する価格帯グループと間隔を設定します。
@@ -98,7 +100,7 @@ ht-degree: 0%
 
 ## 高度な検索 {#advanced-search}
 
-検索を1か所で管理するには、**[!UICONTROL Advanced search]** タブを使用します。 このシステムは、ストアフロントで統一された検索体験を提供します。買い物客に対してキーワード検索とセマンティック検索を別々に設定することはありません。 **[!UICONTROL Enable semantic search]**&#x200B;は、適格な英語カタログに対して、デフォルトで&#x200B;**有効になっています**。 セマンティック検索は、既存の設定と並行して機能します。[&#x200B; マーチャンダイジングルール &#x200B;](./merchandising/rules/overview.md)、[類義語](./merchandising/synonyms/overview.md)、[&#x200B; ファセット &#x200B;](./merchandising/facets/overview.md)、ブースト、フィルターは引き続き適用されます。 システムは、定義済みのカタログ属性を自動的に使用します。設定で属性を選択したり優先順位付けしたりすることはありません。 ストアフロントや開発者の変更は必要ありません。
+検索を1か所で管理するには、**[!UICONTROL Advanced search]** タブを使用します。 このシステムは、ストアフロントで統一された検索体験を提供します。買い物客に対してキーワード検索とセマンティック検索を別々に設定することはありません。 **[!UICONTROL Enable semantic search]**&#x200B;は、適格な英語カタログに対して、デフォルトで&#x200B;**有効になっています**。 セマンティック検索は、既存の設定と並行して機能します。[ マーチャンダイジングルール ](./merchandising/rules/overview.md)、[類義語](./merchandising/synonyms/overview.md)、[ ファセット ](./merchandising/facets/overview.md)、ブースト、フィルターは引き続き適用されます。 システムは、定義済みのカタログ属性を自動的に使用します。設定で属性を選択したり優先順位付けしたりすることはありません。 ストアフロントや開発者の変更は必要ありません。
 
 ![高度な検索設定](/help/assets/ccdm-shared/advanced-search.png)
 
@@ -123,7 +125,7 @@ ht-degree: 0%
 >
 > セマンティック検索は、**英語** カタログでのみサポートされています。 「**[!UICONTROL Language]**」タブで別の言語を選択すると、**[!UICONTROL Enable semantic search]**&#x200B;が無効になります。
 
-利点、検証ガイダンス、ベストプラクティス、トラブルシューティング、制限事項については、[&#x200B; セマンティック検索](/help/optimizer/setup/semantic-search.md)を参照してください。
+利点、検証ガイダンス、ベストプラクティス、トラブルシューティング、制限事項については、[ セマンティック検索](/help/optimizer/setup/semantic-search.md)を参照してください。
 
 ### 高度な検索フィールドの説明
 

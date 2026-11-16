@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '310'
 ht-degree: 0%
 ---
+# 推奨事項のベストプラクティス
+
 Adobeでは、推奨事項を使用する際に次のガイドラインを推奨しています。
 
 - レコメンデーションタイプの多様化。 顧客は同じ商品を何度も提案するような場合、レコメンデーションを無視し始めます。
