@@ -38,7 +38,7 @@ ht-degree: 0%
 
 # 2027年のAgentic commerce：コマースリーダーのための5つの優先事項
 
-![ データの準備状況、見つけやすさ、インフラ、測定、実験という、垂直タイムラインにおけるコマースリーダーにとっての5つの優先事項](../../assets/guidance-and-insights/agentic-commerce-five-priorities-2027-hero.svg "2027年におけるコマースリーダーにとっての5つの優先事項"){width="800"}
+![&#x200B; データの準備状況、見つけやすさ、インフラ、測定、実験という、垂直タイムラインにおけるコマースリーダーにとっての5つの優先事項](../../assets/guidance-and-insights/agentic-commerce-five-priorities-2027-hero.svg "2027年におけるコマースリーダーにとっての5つの優先事項"){width="800"}
 
 <table style="table-layout:auto">
 <tr style="border: 0;">
