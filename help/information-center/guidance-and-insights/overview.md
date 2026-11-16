@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '265'
 ht-degree: 0%
 ---
 
@@ -58,6 +58,7 @@ Adobe Commerceを利用している開発者、アーキテクト、テクニカ
 ## さらに詳しく
 
 - [買い物客とAI エージェント向けのコマースプラットフォームを設計](agentic-commerce/architectural-foundations-agentic-commerce.md)：信頼できる唯一の情報源から、人物とAI エージェントにサービスを提供する方法を説明します。 この記事では、機械推論のために構築されたカタログ、モデルコンテキストプロトコル（MCP）、オープンエージェンティックコマースプロトコル、エージェントがブランドをどのように表しているかを示すテレメトリーについて説明します。
+- [2027年のAgentic commerce：コマースリーダーにとっての5つの優先事項](agentic-commerce/five-priorities-commerce-leaders-2027.md)：商品データ、見つけやすさ、インフラ、測定、実験を優先し、AIを活用したショッピングに備える。
 - [Adobe Commerce ライブサーチで商品の見つけやすさを向上](catalog-management/improve-product-discovery-live-search.md) – 検索パフォーマンスインサイトとセマンティック検索を使用して、買い物客が関連する商品を見つけやすくする方法を説明します。
 
 記事が公開されると、このセクションに記事が追加されます。 エキスパートの視点、導入戦略、推奨事項をすぐに活用できるか確認しましょう。

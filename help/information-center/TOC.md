@@ -18,9 +18,9 @@ feature_v2:
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
     internal-label: Commerce ecosystem
 nudge: true
-source-git-commit: 21b4214971866f0e801d8992ac736950324ce524
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '127'
 ht-degree: 3%
 ---
 
@@ -38,6 +38,7 @@ ht-degree: 3%
 - インサイトとガイダンス {#insights-and-guidance}
   - [概要](guidance-and-insights/overview.md)
   - [買い物客とAI エージェント向けのコマースプラットフォームを設計](guidance-and-insights/agentic-commerce/architectural-foundations-agentic-commerce.md)
+  - [2027年のAgentic commerce：コマースリーダーのための5つの優先事項](guidance-and-insights/agentic-commerce/five-priorities-commerce-leaders-2027.md)
   - [Adobe Commerceライブサーチで商品の見つけやすさを向上](guidance-and-insights/catalog-management/improve-product-discovery-live-search.md)
 - デザイン {#architecture}
   - [概要](architecture-options/overview.md)

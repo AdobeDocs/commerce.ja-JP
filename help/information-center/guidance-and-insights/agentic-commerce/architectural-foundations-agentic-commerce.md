@@ -49,23 +49,21 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f54c816fd23786ec519d5c890bc2664c3dcf8c6f
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1323'
 ht-degree: 0%
 ---
 
 # 買い物客とAI エージェント向けのコマースプラットフォームを設計
+
+![人間とAI エージェントが信頼できる唯一の情報源と対話するエージェンティック コマース プラットフォームのヒーローイラストレーション ](../../assets/guidance-and-insights/agentic-commerce-hero.png " エージェンティック コマース プラットフォームのアーキテクチャ基盤"){width="800"}
 
 <table style="table-layout:auto">
 <tr style="border: 0;">
    <td valign="middle" style="vertical-align: middle;"><img alt="スリヤ・ラメクの肖像" src="../../assets/guidance-and-insights/agentic-commerce-author-avatar-slamech.png" width="96"><br><strong>Surya Lamech</strong><br><em> プリンシパルプロダクトマーケティングマネージャー</em></td>
 </tr>
 </table>
-
-![人間とAI エージェントが信頼できる唯一の情報源と対話するエージェンティック コマース プラットフォームのヒーローイラストレーション &#x200B;](../../assets/guidance-and-insights/agentic-commerce-hero.png " エージェンティック コマース プラットフォームのアーキテクチャ基盤")
-
-*人間とAI エージェントが信頼できる唯一の情報源と対話するコマース プラットフォームを設計する。*
 
 Commerceでは、現在、構造的な変化が起こっています。 顧客は、選択肢を検討するために検索エンジンやブラウジングのストアフロントにだけ依存する必要はなくなりました。 LLMを活用したインターフェイス、チャットベースのアシスタント、エージェンティックショッピングツールを活用し、質問したり、小売企業の製品を比較したり、早期の意思決定を加速させたりしています。
 
@@ -91,7 +89,7 @@ Commerceでは、現在、構造的な変化が起こっています。 顧客�
 
 ## 機械推論で設計されたカタログ
 
-![&#x200B; カタログレイヤーとポリシーによって形作られた構造化された製品エンティティ（SKU、属性、バリエーション、バンドル、価格、および可用性）を示す図。その後、カタログビューを通じてブランドストアフロント、マーケットプレイス、パートナーフィード、モバイルアプリ、およびAIまたはエージェントサーフェスに配信されます](../../assets/guidance-and-insights/agentic-commerce-agent-interaction.png){width="800" zoomable="yes"}
+![ カタログレイヤーとポリシーによって形作られた構造化された製品エンティティ（SKU、属性、バリエーション、バンドル、価格、および可用性）を示す図。その後、カタログビューを通じてブランドストアフロント、マーケットプレイス、パートナーフィード、モバイルアプリ、およびAIまたはエージェントサーフェスに配信されます](../../assets/guidance-and-insights/agentic-commerce-agent-interaction.png){width="800" zoomable="yes"}
 
 *製品データをフォークすることなく、チャネルごとに1つの信頼できる情報源を構築します。*
 
@@ -101,7 +99,7 @@ Commerceでは、現在、構造的な変化が起こっています。 顧客�
 
 ## エージェントの共通言語としてのMCP
 
-![&#x200B; ショッピングアシスタント、サポート担当者、および開発者ツールが、Commerce MCPおよびDeveloper MCPを含むモデルコンテキストプロトコルを通じて、カート作成、チェックアウト、支払い、在庫、プロモーションおよび返品などのAdobe Commerce機能にリクエストを送信する様子を示す図](../../assets/guidance-and-insights/agentic-commerce-reference-stack.png){width="800" zoomable="yes"}
+![ ショッピングアシスタント、サポート担当者、および開発者ツールが、Commerce MCPおよびDeveloper MCPを含むモデルコンテキストプロトコルを通じて、カート作成、チェックアウト、支払い、在庫、プロモーションおよび返品などのAdobe Commerce機能にリクエストを送信する様子を示す図](../../assets/guidance-and-insights/agentic-commerce-reference-stack.png){width="800" zoomable="yes"}
 
 *MCPは、エージェントが自然な意図でアクションを要求する方法を標準化し、Adobe Commerceはそれを管理された決定論的アクションとして実行します。*
 
@@ -136,4 +134,4 @@ Adobeなら、LLMにおいて商品がどのように表示されるかを可視
 * [ポリシー](/help/optimizer/setup/policies.md)
 * [ADOBE COMMERCE App BuilderのAI コーディング開発者向けツール](/help/cloud-service/migration/coding-tools.md)
 * [COMMERCE API](../../apis/commerce-apis.md)
-* [Commerce Developer Agent Playlist](https://experienceleague.adobe.com/ja/playlists/commerce-developer-agent) - Commerce Developer Agentの設定と使用に関する技術ビデオを視聴します。
+* [Commerce Developer Agent Playlist](https://experienceleague.adobe.com/en/playlists/commerce-developer-agent) - Commerce Developer Agentの設定と使用に関する技術ビデオを視聴します。
