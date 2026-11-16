@@ -168,7 +168,7 @@ AdobeのAgentic commerce戦略には、AI対応の商品検索、Shopper MCPに�
 
 **AIを活用したコマースに向けてビジネスを準備する準備ができましたか？**
 
-[Adobe Commerce as a Cloud Service](https://business.adobe.com/products/commerce.html)の詳細と、Adobeがより連続性のあるインテリジェントなショッピング体験の構築にどのように役立つかをご覧ください。
+[Adobe Commerce as a Cloud Service](https://business.adobe.com/jp/products/commerce.html)の詳細と、Adobeがより連続性のあるインテリジェントなショッピング体験の構築にどのように役立つかをご覧ください。
 
 >[!ENDSHADEBOX]
 
