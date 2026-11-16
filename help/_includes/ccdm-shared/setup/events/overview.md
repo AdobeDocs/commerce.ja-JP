@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 10%
 ---
+# イベント
+
 イベントは、リアルタイムのデータインサイトを活用して、ショッピング体験を向上させ、コンバージョンを促進するための重要なツールです。
 
 コンポーザブルカタログデータモデル（CCDM）を使用したマーチャンダイジングサービスでは、ストアフロントイベントがサイトに自動的にデプロイされます。 これらのイベントは、サイトでの買い物客のインタラクションからデータを取得します。 この匿名化されたデータは、[おすすめ](../../manage-results/recommendation-performance.md)、[製品の検出](../../manage-results/search-performance.md)、[成功指標](../../manage-results/success-metrics.md)に活用されます。

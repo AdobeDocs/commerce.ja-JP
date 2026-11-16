@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '455'
 ht-degree: 0%
 ---
+# マーチャンダイジングルールのベストプラクティス
+
 コンバージョンと収益を最適化するには、効果的な&#x200B;**検索ルール**、強力な&#x200B;**デフォルトリスト** ルール、および&#x200B;**[カテゴリルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add#rule-types)**&#x200B;を実装します。 販売データ、在庫、プロモーション、[&#x200B; インテリジェントランキング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking)を使用してランキングを調整します。
 
 よく考えられた&#x200B;**デフォルトのルール**&#x200B;を確立することが重要です。 [既定のルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/overview#default-rule)は、より具体的な検索ルールが適用されないときに検索結果を最初に並べ替える方法を決定します。これにより、見つけやすさと購入の可能性が向上します。 定期的に見直して、買い物客のニーズや施策に対応できるようにしましょう。

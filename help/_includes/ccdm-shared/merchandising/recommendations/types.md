@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1599'
 ht-degree: 0%
 ---
+# レコメンデーションタイプ
+
 [!DNL Product Recommendations]には、サイト上のさまざまなページに展開できるレコメンデーションの大規模なセットが用意されています。 あらゆるレコメンデーションタイプは、データドリブン型です。 行動データ、製品属性データ、指標にもとづいて構築されています。 簡単に参照できるように、レコメンデーションタイプは次のようにグループ化されています。
 
 - [Personalized](#personalized)

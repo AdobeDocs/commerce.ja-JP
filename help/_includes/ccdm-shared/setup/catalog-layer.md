@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1470'
 ht-degree: 0%
 ---
+# カタログレイヤー
+
 カタログレイヤーを使用すると、元のソースデータを変更せずに製品データを変更できます。 レイヤーは、ベースカタログの上にレイヤーを作成することで、名前、説明、画像、リンク、メタデータなどの製品属性を変更します。 元の製品データは維持され、製品を安全にカスタマイズし、いつでも変更を元に戻すことができます。
 
 ![&#x200B; カタログレイヤー](/help/assets/ccdm-shared/setup/catalog-layers.png)

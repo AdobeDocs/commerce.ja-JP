@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '463'
 ht-degree: 0%
 ---
+# ファセットの作成と管理
+
 フィルター可能な製品属性は、ファセットとして使用できます。 ファセットは、顧客がストア内の商品を容易に絞り込み、見つけるのに役立ちます。 この記事では、ストアフロントでファセットを追加、管理、設定する方法について説明します。
 
 ![&#x200B; ファセットの作成](/help/assets/ccdm-shared/facets/create-facet.png)

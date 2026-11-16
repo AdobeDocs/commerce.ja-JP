@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '583'
 ht-degree: 0%
 ---
+# 同義語の作成
+
 収集した独自の類義語リストを追加することで、顧客エンゲージメントを向上できます。 カタログソースごとに最大200個の類義語を追加できます。
 
 ![Workspaceの同義語](/help/assets/ccdm-shared/synonyms/synonym-workspace.png)

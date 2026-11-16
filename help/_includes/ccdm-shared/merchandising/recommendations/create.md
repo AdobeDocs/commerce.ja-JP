@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1559'
 ht-degree: 0%
 ---
+# レコメンデーションの作成と管理
+
 レコメンデーションを作成する場合、推奨製品&#x200B;_品目_&#x200B;を含む&#x200B;_レコメンデーションユニット_、またはウィジェットを作成します。
 
 ![&#x200B; レコメンデーションユニット](/help/assets/ccdm-shared/recommendations/unit.png)

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '2821'
+source-wordcount: '2823'
 ht-degree: 0%
 ---
+# 成功指標
+
 このページでは、ストアの主なパフォーマンス指標の概要を説明します。 目標は、コンポーザブルカタログデータモデル（CCDM）を使用してマーチャンダイジングサービスを導入した結果を把握し、成長機会と最適化すべき領域を特定することです。
 
 ![成功指標レポート &#x200B;](/help/assets/ccdm-shared/manage-results/success-metrics.png)

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1452'
+source-wordcount: '1453'
 ht-degree: 0%
 ---
+# オポチュニティ
+
 **商談** ページは、Adobe Sites Optimizerとの統合を通じて、サイトトラフィック、ユーザーエンゲージメント、コンバージョン率を向上させる最適化を特定し、実装するのに役立ちます。
 
 ![商談](/help/assets/ccdm-shared/opportunities/opportunities.png)

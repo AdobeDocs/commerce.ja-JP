@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '962'
 ht-degree: 1%
 ---
+# Workspaceのマーチャンダイジングルール
+
 *マーチャンダイジングルール* ワークスペースには、現在のルールの選択とそのステータスが一覧表示され、ルールの作成と管理に必要なツールへのアクセス権が提供されます。 ルールは、すべての[&#x200B; カタログビュー](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-view) （グローバル）または単一のカタログビューにスコープできます。 カタログビュー別にフィルタリングし、カタログビューごとにルールを作成する方法については、[&#x200B; カタログビューを選択](#select-catalog-view)を参照してください。 ワークスペースから次の操作を実行できます。
 
 - ルールの検索

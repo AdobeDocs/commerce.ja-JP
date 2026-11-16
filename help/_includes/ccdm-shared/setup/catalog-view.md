@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '740'
 ht-degree: 0%
 ---
+# Adobe Merchandising サービスのカタログビューの概要
+
 <!--This shared include file contains the conceptual and architecture overview of catalog views for Adobe Merchandising Services-->
 
 カタログビューでは、顧客が取得できる商品と価格を定義します。 カタログソース、カタログレイヤー、ポリシー、価格表を組み合わせて、様々なブランド、地域、事業部門、チャネルに対応することができます。

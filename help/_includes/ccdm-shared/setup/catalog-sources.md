@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '510'
 ht-degree: 0%
 ---
+# カタログソース
+
 カタログソース：製品、属性、カテゴリーの権限範囲を表します。 通常、言語、オーディエンス、原産地系の境界にマッピングし、検索、フィルター、並べ替えの動作を決定します。
 
 ## カタログソースと関連する概念

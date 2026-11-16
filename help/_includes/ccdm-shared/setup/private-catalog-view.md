@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 0%
 ---
+# プライベートカタログビュー
+
 デフォルトでは、[&#x200B; カタログビュー](catalog-view.md)はパブリックです。 カタログビューへのアクセスを制限して、有効な署名済みトークンを持つリクエストのみがデータを取得できるようにします。
 
 カタログビューは、次の2つの方法のいずれかで非公開になります。

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '302'
 ht-degree: 0%
 ---
+# Adobe Merchandising
+
 商品の発見とレコメンデーションを通じて、買い物客にパーソナライズされた体験を提供する方法をご確認ください。
 
 これらのAdobe Merchandising サービスは、*product data*&#x200B;を&#x200B;*product context*&#x200B;から分離するコンポーザブルカタログデータモデル（CCDM）上に構築されています。 商品データには、SKU、属性、メタデータ、アセット、価格が含まれます。 製品コンテキストは、[&#x200B; カタログビュー](/help/optimizer/setup/catalog-view.md)、[&#x200B; データアクセスポリシー](/help/optimizer/setup/policies.md)、[&#x200B; カタログソース &#x200B;](/help/optimizer/setup/catalog-sources.md) （ロケール）など、データの配信方法を定義します。 カタログビューとポリシーによりストアフロントデータを制御できるため、B2B、B2C、D2C モデル用のカスタムカタログを作成し、基本データを複製することなくショッピング体験をカスタマイズすることができます。

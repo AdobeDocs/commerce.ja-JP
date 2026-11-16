@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '917'
 ht-degree: 0%
 ---
+# Recommendations パフォーマンス
+
 「Recommendations Performance」ページには、設定された推奨事項のリストと、その有効性を評価するのに役立つ主要な指標が表示されます。 過去の日、週、または月の指標を表示するようにビューを設定できます。 こうしたインサイトにより、各レコメンデーションユニットが閲覧またはクリックされる頻度が示され、パフォーマンスを評価し、最適化の機会を特定するのに役立ちます。
 
 >[!INFO]

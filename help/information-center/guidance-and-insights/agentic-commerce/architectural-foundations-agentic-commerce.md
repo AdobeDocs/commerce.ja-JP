@@ -49,23 +49,21 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f54c816fd23786ec519d5c890bc2664c3dcf8c6f
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1323'
 ht-degree: 0%
 ---
 
 # 買い物客とAI エージェント向けのコマースプラットフォームを設計
+
+![人間とAI エージェントが信頼できる唯一の情報源と対話するエージェンティック コマース プラットフォームのヒーローイラストレーション &#x200B;](../../assets/guidance-and-insights/agentic-commerce-hero.png " エージェンティック コマース プラットフォームのアーキテクチャ基盤"){width="800"}
 
 <table style="table-layout:auto">
 <tr style="border: 0;">
    <td valign="middle" style="vertical-align: middle;"><img alt="スリヤ・ラメクの肖像" src="../../assets/guidance-and-insights/agentic-commerce-author-avatar-slamech.png" width="96"><br><strong>Surya Lamech</strong><br><em> プリンシパルプロダクトマーケティングマネージャー</em></td>
 </tr>
 </table>
-
-![人間とAI エージェントが信頼できる唯一の情報源と対話するエージェンティック コマース プラットフォームのヒーローイラストレーション &#x200B;](../../assets/guidance-and-insights/agentic-commerce-hero.png " エージェンティック コマース プラットフォームのアーキテクチャ基盤")
-
-*人間とAI エージェントが信頼できる唯一の情報源と対話するコマース プラットフォームを設計する。*
 
 Commerceでは、現在、構造的な変化が起こっています。 顧客は、選択肢を検討するために検索エンジンやブラウジングのストアフロントにだけ依存する必要はなくなりました。 LLMを活用したインターフェイス、チャットベースのアシスタント、エージェンティックショッピングツールを活用し、質問したり、小売企業の製品を比較したり、早期の意思決定を加速させたりしています。
 

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '921'
 ht-degree: 0%
 ---
+# ファセット
+
 ファセットは、属性値の複数の次元を検索条件として使用する高性能フィルタリングの方法です。
 
 ![&#x200B; フィルターされた検索結果](/help/assets/ccdm-shared/facets/storefront-search-results-run.png)

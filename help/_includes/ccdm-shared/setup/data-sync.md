@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '487'
 ht-degree: 0%
 ---
+# カタログの同期
+
 **Data Sync** ページには、データソース（既存のCommerce カタログ、Product Information Management （PIM） システム、Enterprise Resource Planning （ERP） システムなど）からMerchandising Services データレイヤーに転送された製品データの同期ステータスの概要が表示されます。
 
 **データ同期** ページは、ストアフロントの商品データの可用性に関する貴重なインサイトを提供し、買い物客に迅速に表示できるようにします。

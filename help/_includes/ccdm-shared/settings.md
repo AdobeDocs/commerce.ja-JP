@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '872'
 ht-degree: 0%
 ---
+# マーチャンダイジング設定
+
 *設定* ワークスペースを使用して、ストアフロントの検索と製品の検出を設定します。 次のタブを使用できます。
 
 - **ファセット** – 検索フィルターとして使用する価格帯グループと間隔を設定します。

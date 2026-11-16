@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
+source-git-commit: d112f591ea46e4f3bdc081566a9a036df4ccfe5a
 workflow-type: tm+mt
-source-wordcount: '5663'
+source-wordcount: '5695'
 ht-degree: 0%
 ---
 
@@ -131,6 +131,13 @@ _2021年6月28日_
 >
 > リリースは、必要に応じて新しい機能や修正を提供するために頻繁に発生します。 リリーススケジュールは固定されていません。
 
+## v2.17.1
+
+_2026年11月16日_
+
+[!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.6以降
+
+![修正済みの問題](../assets/fix.svg)<!-- PAY-7254 --> PayPal支払い承認後に利用条件チェックボックスがクリアされ、買い物客がチェックアウトを完了できない問題を修正しました。
 
 ## v2.17.0
 
@@ -543,7 +550,7 @@ _2023年9月27日_
 
 [!BADGE &#x200B; サポートされている]{type=Informative tooltip="サポート対象"} Adobe Commerce バージョン 2.4.4以降
 
-![修正済みの問題](../assets/fix.svg)<!-- Issue PAY-4870 -->最新リリースで拡張機能バージョンを送信する際に、Storefrontで新しいヘッダー属性が正しく入力されない問題を修正しました。 以前は、Commerce Services コネクタの`1.3.0` リリースで、[!DNL Payment Services]拡張機能から`User-Agent header`を拡張できませんでした。
+<!-- Issue PAY-4870 --> 拡張機能バージョンを最新リリースで送信する際に、Storefrontで新しいヘッダー属性が正しく入力されない問題を修正しました。 以前は、Commerce Services コネクタの`1.3.0` リリースで、[!DNL Payment Services]拡張機能から`User-Agent header`を拡張できませんでした。
 
 ## v2.2.0
 
