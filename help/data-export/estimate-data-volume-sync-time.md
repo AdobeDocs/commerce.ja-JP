@@ -38,7 +38,7 @@ Adobeでは、データフィードの同期を開始する前にデータ量と
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce Optimizer Connector]回のデプロイメントの場合、[ コネクタモジュールとフィードエンドポイント ](../aco-connector/reference/connector-reference.md#supported-feeds)でコネクタ固有のサポートされているフィードとバッチ制限を確認します。
+>[!DNL Adobe Commerce Optimizer Connector]回のデプロイメントの場合、[&#x200B; コネクタモジュールとフィードエンドポイント &#x200B;](../aco-connector/reference/connector-reference.md#supported-feeds)でコネクタ固有のサポートされているフィードとバッチ制限を確認します。
 
 デフォルトでは、データ書き出しツールは、デフォルトのバッチサイズでシングルスレッドモードでデータを処理します。 デフォルト設定では、フィード送信プロセスの並列化はありません。 さらに、このコンポーネントはリクエスト/秒（RPS）を受け入れますが、これは次のようになります。
 
@@ -74,6 +74,6 @@ Adobeでは、データフィードの同期を開始する前にデータ量と
 
 >[!MORELIKETHIS]
 >
-> - [ データ書き出しのパフォーマンスを向上](customize-export-processing.md)
+> - [&#x200B; データ書き出しのパフォーマンスを向上](customize-export-processing.md)
 > - [同期の管理](data-sync-manage.md)
 > - [同期の仕組み](sync-overview.md)
