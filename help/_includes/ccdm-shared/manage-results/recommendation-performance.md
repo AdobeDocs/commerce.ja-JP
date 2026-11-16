@@ -12,13 +12,13 @@ ht-degree: 0%
 >
 >レコメンデーションユニットは、推奨製品&#x200B;_個のアイテム_&#x200B;を含むウィジェットです。
 
-![おすすめのパフォーマンス ](/help/assets/ccdm-shared/manage-results/rec-performance.png){zoomable="yes"}
+![おすすめのパフォーマンス &#x200B;](/help/assets/ccdm-shared/manage-results/rec-performance.png){zoomable="yes"}
 
 ## レポートを読む
 
 1. レコメンデーションが適用される&#x200B;*すべてのビュー*&#x200B;など、**カタログビュー**&#x200B;を選択します。
 
-   レコメンデーションの[ カタログビュー](#select-catalog-view)の詳細をご覧ください。
+   レコメンデーションの[&#x200B; カタログビュー](#select-catalog-view)の詳細をご覧ください。
 
 1. **[!UICONTROL Date Range]**&#x200B;をクリックし、次のいずれかの範囲を選択します。
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 | ![日付範囲](/help/assets/ccdm-shared/manage-results/rec-perf-date-range.png) | 指標の計算に使用する時間の範囲を指定します。 |
 | ![列セレクター](/help/assets/ccdm-shared/manage-results/icon-show-hide-columns.png) | Recommendations テーブルに表示される列を指定します。 |
 | レコメンデーションを作成 | [新しいレコメンデーションの作成](../merchandising/recommendations/create.md) ページを開きます。 |
-| [ カタログ ビュー](#select-catalog-view) | カタログ ビューを選択してテーブルをフィルタリングし、選択したカタログ ビューに適用されるレコメンデーションのみを表示します。 この選択範囲は、新しいレコメンデーションを[作成](../merchandising/recommendations/create.md)するときに、カタログビューとしても使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[ カタログビュー](../setup/catalog-view.md)です。 |
+| [&#x200B; カタログ ビュー](#select-catalog-view) | カタログ ビューを選択してテーブルをフィルタリングし、選択したカタログ ビューに適用されるレコメンデーションのみを表示します。 この選択範囲は、新しいレコメンデーションを[作成](../merchandising/recommendations/create.md)するときに、カタログビューとしても使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[&#x200B; カタログビュー](../setup/catalog-view.md)です。 |
 
 ## 列の説明
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 **Recommendations** ページの&#x200B;**[!UICONTROL Catalog view]** セレクターには、次の2つの機能があります。
 
 1. **テーブルをフィルター** – 選択したカタログ ビューに適用されるレコメンデーション （およびその指標）のみを表示します。
-1. **新しいレコメンデーションの範囲を設定** - レコメンデーションを[作成](../merchandising/recommendations/create.md)すると、選択したカタログ ビューがユニットの範囲として使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[ カタログビュー](../setup/catalog-view.md)です。
+1. **新しいレコメンデーションの範囲を設定** - レコメンデーションを[作成](../merchandising/recommendations/create.md)すると、選択したカタログ ビューがユニットの範囲として使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[&#x200B; カタログビュー](../setup/catalog-view.md)です。
 
    - **すべてのビュー** – 推奨事項はすべてのカタログビューに適用されます（製品の可用性は引き続きビューごとにフィルタリングされます）。
    - **カタログ ビュー** – 推奨事項は、選択したカタログ ビュー（1つのストアフロント、言語、ブランドなど）にのみ適用されます。

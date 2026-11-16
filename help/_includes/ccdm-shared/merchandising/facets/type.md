@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## ファセットラベル
 
-ファセットラベルは、[ ファセットワークスペース ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/facets/workspace)から編集できます。
+ファセットラベルは、[&#x200B; ファセットワークスペース &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/facets/workspace)から編集できます。
 
 ## 並べ替えタイプ
 

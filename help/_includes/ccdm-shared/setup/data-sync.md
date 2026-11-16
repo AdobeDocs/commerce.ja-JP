@@ -17,7 +17,7 @@ ht-degree: 0%
 - **Adobe Commerce管理者** （Adobe Commerce as a Cloud Service） - *ストア* > **カタログ同期**&#x200B;を選択します。
 - **Adobe Commerce Optimizer Studio**— *Store setup* > **Data Sync**&#x200B;を選択します。
 
-![ データ同期](/help/assets/ccdm-shared/setup/data-sync.png)
+![&#x200B; データ同期](/help/assets/ccdm-shared/setup/data-sync.png)
 
 **データ同期** ページには、次のフィールドが含まれています。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 同期済み製品のリスト
 
-同期済み製品の詳細をJSON形式で表示するには、同期済み製品テーブルの製品の行にあるコードアイコン ![ コードリンク ](/help/assets/ccdm-shared/setup/data-sync-details.png)をクリックします。
+同期済み製品の詳細をJSON形式で表示するには、同期済み製品テーブルの製品の行にあるコードアイコン ![&#x200B; コードリンク &#x200B;](/help/assets/ccdm-shared/setup/data-sync-details.png)をクリックします。
 
 ![製品の詳細を同期](/help/assets/ccdm-shared/setup/synced-products.png)
 
@@ -51,4 +51,4 @@ ht-degree: 0%
 
 ## データ同期が機能していることを確認します
 
-Adobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合は、データエクスポートプロセスを監視し、データフィード同期ステータス ページから再同期操作を開始できます。 詳しくは、[ データフィード同期ステータスの監視](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)を参照してください。
+Adobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合は、データエクスポートプロセスを監視し、データフィード同期ステータス ページから再同期操作を開始できます。 詳しくは、[&#x200B; データフィード同期ステータスの監視](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)を参照してください。
