@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.ja-JP/blob/main/help/_includes/ccdm-shared/manage-results/recommendation-performance.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Recommendations パフォーマンス
 
 「Recommendations Performance」ページには、設定された推奨事項のリストと、その有効性を評価するのに役立つ主要な指標が表示されます。 過去の日、週、または月の指標を表示するようにビューを設定できます。 こうしたインサイトにより、各レコメンデーションユニットが閲覧またはクリックされる頻度が示され、パフォーマンスを評価し、最適化の機会を特定するのに役立ちます。

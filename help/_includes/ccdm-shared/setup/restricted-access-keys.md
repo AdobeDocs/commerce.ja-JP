@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.ja-JP/blob/main/help/_includes/ccdm-shared/setup/restricted-access-keys.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # 制限付きアクセスキー
 
 制限付きアクセスキーを使用すると、許可されたクライアントアプリケーションは[&#x200B; プライベートカタログビュー](private-catalog-view.md)にアクセスできます。割り当てられたキーから有効な署名済みトークンを含むリクエストのみが、カタログデータを取得できます。 このカタログビューへの明示的なアクセス権がない買い物客や、Adobe Commerce Merchandising Services APIを調査するスクリプトなど、その他のすべてのリクエストは拒否されます。

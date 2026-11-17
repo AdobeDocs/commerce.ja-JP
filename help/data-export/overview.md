@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '391'
 ht-degree: 5%
 ---
 # [!DNL SaaS Data Export] ガイド
@@ -47,7 +47,6 @@ SaaS データ書き出しは、_フィード_&#x200B;と呼ばれる様々な�
 - **カタログエンティフィード**&#x200B;の製品データの集約。 データには、製品、製品属性、製品価格、製品バリエーション、カテゴリー、カテゴリー権限、製品権限が含まれます。
 - **スコープフィード**&#x200B;は、顧客グループ、web サイト、ストア、ストアビューのデータを集計します。
 - **販売注文フィード**&#x200B;は、請求書、出荷、クレジットメモなどの関連エンティティを含む注文データを集計します。
-- **マルチSource在庫フィード**&#x200B;は、在庫の在庫状況アイテムに関するデータを集計します。
 
 SaaS データエクスポートは、自動化された同期と手動による同期の両方をサポートするPHP拡張機能として提供されます。
 

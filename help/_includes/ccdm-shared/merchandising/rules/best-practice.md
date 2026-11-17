@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.ja-JP/blob/main/help/_includes/ccdm-shared/merchandising/rules/best-practice.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # マーチャンダイジングルールのベストプラクティス
 
 コンバージョンと収益を最適化するには、効果的な&#x200B;**検索ルール**、強力な&#x200B;**デフォルトリスト** ルール、および&#x200B;**[カテゴリルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add#rule-types)**&#x200B;を実装します。 販売データ、在庫、プロモーション、[&#x200B; インテリジェントランキング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking)を使用してランキングを調整します。

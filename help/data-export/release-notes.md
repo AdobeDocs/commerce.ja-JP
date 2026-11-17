@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 4f804d488a8c8690ed965c022d673f52c91b3d15
+source-git-commit: b26c1c90a5d88f2a321d5ada807e8f44a0f64342
 workflow-type: tm+mt
-source-wordcount: '3763'
+source-wordcount: '3788'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension] リリースノート
@@ -60,6 +60,13 @@ ht-degree: 0%
 >[!DNL SaaS data export]拡張機能は、[!DNL Live Search]、[!DNL Product Recommendations]、[!DNL Catalog Service]と共に自動的にインストールされるモジュールのコレクションです。 システムにインストールされているバージョンは、[!DNL Composer]を使用して確認できます。 場合によっては、Commerce Serviceのバージョンを更新せずに修正や新機能をピックアップするために、システムのデータエクスポート拡張機能をアップグレードすることをお勧めします。
 
 ## 2026 リリース {#release-notes-2026}
+
+### 103.6.1 リリース
+
+_2026年11月16日_
+
+![修正](../assets/fix.svg) `InventoryDataExporter`および`SaaSInventory` モジュールを削除しました。 その結果、一部の在庫関連データは書き出されなくなります。 <!--MDEE-1482-->
+![修正](../assets/fix.svg)古いメタパッケージを削除します。<!--MDEE-1197-->
 
 ### 103.6.0 リリース
 

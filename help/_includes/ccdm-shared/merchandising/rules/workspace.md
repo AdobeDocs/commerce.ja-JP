@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 1%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.ja-JP/blob/main/help/_includes/ccdm-shared/merchandising/rules/workspace.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Workspaceのマーチャンダイジングルール
 
 *マーチャンダイジングルール* ワークスペースには、現在のルールの選択とそのステータスが一覧表示され、ルールの作成と管理に必要なツールへのアクセス権が提供されます。 ルールは、すべての[&#x200B; カタログビュー](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-view) （グローバル）または単一のカタログビューにスコープできます。 カタログビュー別にフィルタリングし、カタログビューごとにルールを作成する方法については、[&#x200B; カタログビューを選択](#select-catalog-view)を参照してください。 ワークスペースから次の操作を実行できます。

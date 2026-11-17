@@ -26,14 +26,14 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '754'
 ht-degree: 0%
 ---
 # Commerce CLIを使用したフィードの同期
 
-`magento/saas-export` パッケージの`saas:resync` コマンドを使用すると、[!DNL Adobe Commerce] SaaS サービスのデータ同期を管理できます。
+`saas:resync` CLI コマンドを使用すると、[!DNL Adobe Commerce] SaaS サービスのデータ同期を管理できます。
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ bin/magento saas:resync --feed products
 
 ## `--by-ids`
 
-IDによって特定のエンティティの一部を再同期します。 `products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`および`categoryPermissions` フィードをサポートしています。
+IDによって特定のエンティティの一部を再同期します。 `products`、`productAttributes`、`productOverrides`、`prices`、`variants`および`categoryPermissions` フィードをサポートしています。
 
 デフォルトでは、`--by-ids` オプションを使用する場合、製品SKU値を使用して値を指定します。 代わりに製品IDを使用するには、`--id-type=productId` オプションを追加します。
 
@@ -134,7 +134,7 @@ bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-SaaSにデータを再入力して送信する前に、フィード インデクサーテーブルをクリーンアップします。 `products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`および`categoryPermissions`でのみサポートされています。
+SaaSにデータを再入力して送信する前に、フィード インデクサーテーブルをクリーンアップします。 `products`、`productAttributes`、`productOverrides`、`prices`、`variants`および`categoryPermissions`でのみサポートされています。
 
 `--dry-run` オプションと共に使用すると、操作はすべての項目に対してドライ実行再同期操作を実行します。
 

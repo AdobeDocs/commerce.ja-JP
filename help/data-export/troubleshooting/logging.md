@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 0%
 ---
 # ログの確認とトラブルシューティング
@@ -181,7 +181,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 
 ### フィード インデックス テーブルのペイロードを保持
 
-Commerce SaaS Data Export Extension （`magento/module-data-exporter`） 103.3.0以降では、即時の書き出しフィードは、インデックステーブルに必要な最小限のデータのみを保持します。 フィードには、すべてのカタログおよび在庫の在庫ステータスフィードが含まれます。
+Commerce SaaS Data Export Extension （`magento/module-data-exporter`） 103.3.0以降では、即時の書き出しフィードは、インデックステーブルに必要な最小限のデータのみを保持します。 フィードには、すべてのカタログフィードが含まれます。
 
 インデックステーブルにペイロードデータを保持することは、実稼動環境では推奨されませんが、開発者環境では便利です。 フィードの再同期時に`PERSIST_EXPORTED_FEED=1`環境変数を追加して、フィード ペイロードをインデックスに含めます。
 

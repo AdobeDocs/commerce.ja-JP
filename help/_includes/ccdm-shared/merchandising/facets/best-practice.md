@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.ja-JP/blob/main/help/_includes/ccdm-shared/merchandising/facets/best-practice.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # ファセットのベストプラクティス
 
 フィルター機能とファセット機能は、Commerceのエクスペリエンスの重要なコンポーネントであり、買い物客が検索結果を絞り込み、より効率的に商品を見つけられるようにすることで、買い物客の体験を向上させるように設計されています。 この機能により、特定の基準を適用することで、膨大な商品カタログを整理し、ショッピングプロセスをより早く、より簡単に、より満足度の高いものにすることができます。 効果的で買い物客にフレンドリーなフィルターとファセットを実装することで、顧客が必要なものをすばやく効率的に見つけられるようになり、満足度とコンバージョン率が向上します。
