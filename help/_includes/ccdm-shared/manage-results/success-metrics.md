@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/manage-results/success-metrics.md
+https://github.com/Adobe-Enterprise-Docs/commerce.ja-JP/blob/main/help/_includes/ccdm-shared/manage-results/success-metrics.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -78,7 +78,7 @@ C2PA メタデータは、[C2PA オープンスタンダード &#x200B;](https:/
 
 ![&#x200B; サンプルの調査](/help/assets/ccdm-shared/manage-results/inspect-sample.png)
 
-[生成AI コンテンツの透明性](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)について詳しく見る。
+[生成AI コンテンツの透明性](https://experienceleague.adobe.com/ja/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)について詳しく見る。
 
 ## 成功指標とSites Optimizerの連携
 

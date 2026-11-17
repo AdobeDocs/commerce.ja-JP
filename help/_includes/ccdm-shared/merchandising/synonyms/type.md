@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/type.md
+https://github.com/Adobe-Enterprise-Docs/commerce.ja-JP/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/type.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -40,4 +40,4 @@ This includes related images in help/assets/ccdm-shared/.
 
 同義語を作成すると、検索動作が変更され、厳密なフレーズ **キッチンテーブル**&#x200B;が検索されます。 正確なフレーズが付いた商品のみが表示されるため、結果の数が減少する可能性があります。
 
-以前と同様に条件を個別に検索する場合は、[&#x200B; サポートチケットを作成できます](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+以前と同様に条件を個別に検索する場合は、[&#x200B; サポートチケットを作成できます](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。

@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/rules/add.md
+https://github.com/Adobe-Enterprise-Docs/commerce.ja-JP/blob/main/help/_includes/ccdm-shared/merchandising/rules/add.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -220,7 +220,7 @@ This includes related images in help/assets/ccdm-shared/.
 
 検索ウェイトの設定について詳しくは、次を参照してください。
 
-- すべてのAdobe Commerceのデプロイメントについては、_カタログ管理ガイド_&#x200B;の[検索結果](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)を参照してください。
+- すべてのAdobe Commerceのデプロイメントについては、_カタログ管理ガイド_&#x200B;の[検索結果](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/catalog/search/search-results)を参照してください。
 - スタンドアロンのAdobe Commerce Optimizer デプロイメントについては、_マーチャンダイジングサービス開発者ガイド_&#x200B;の[Metadata REST API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)を参照してください。
 
 ### 手動ランキング {#manual-ranking}
@@ -256,7 +256,7 @@ This includes related images in help/assets/ccdm-shared/.
 
 >[!AVAILABILITY]
 >
->この機能は[&#x200B; ベータ版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta)です。
+>この機能は[&#x200B; ベータ版](https://experienceleague.adobe.com/ja/docs/commerce-operations/release/beta#attribute-ranking-public-beta)です。
 
 **属性ランキング**&#x200B;は、個々のSKUを選択することなく、1つ以上の属性条件に一致するすべての製品に&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**、または&#x200B;**[!UICONTROL Hide]** アクションを自動的に適用します。 属性ランキングは、[&#x200B; インテリジェントランキング &#x200B;](#intelligent-ranking)および[手動ランキング &#x200B;](#manual-ranking)と共にルールエディターに表示され、**すべての製品ルール**、**検索ルール**、および&#x200B;**カテゴリルール**&#x200B;で使用できます。 たとえば、大規模なカタログ全体でマーチャンダイジングを拡大したり、特定のブランドからすべての商品を宣伝したり、すべての商品を廃盤の色に埋め込んだりするのに使用します。
 
@@ -307,7 +307,7 @@ This includes related images in help/assets/ccdm-shared/.
 
 ## ルールの編集、表示および削除 {#edit-view-and-delete-rules}
 
-既存のルールのプロパティを更新するには、次の手順に従います。 ルールのカタログ ビュー（スコープ）は、作成後に変更できません。ルールの作成時にスコープが設定されます。 [&#x200B; カタログ ビューの選択](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view)を参照してください。
+既存のルールのプロパティを更新するには、次の手順に従います。 ルールのカタログ ビュー（スコープ）は、作成後に変更できません。ルールの作成時にスコープが設定されます。 [&#x200B; カタログ ビューの選択](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view)を参照してください。
 
 ### ルールを編集
 

@@ -6,7 +6,7 @@ ht-degree: 10%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/events/overview.md
+https://github.com/Adobe-Enterprise-Docs/commerce.ja-JP/blob/main/help/_includes/ccdm-shared/setup/events/overview.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -22,7 +22,7 @@ This includes related images in help/assets/ccdm-shared/.
 
 >[!NOTE]
 >
->データ収集には、個人情報（PII）は含まれません。 Cookie IDやIP アドレスなど、あらゆるユーザーIDは厳密に匿名化されます。 [学習を増やす](https://www.adobe.com/privacy/experience-cloud.html)。
+>データ収集には、個人情報（PII）は含まれません。 Cookie IDやIP アドレスなど、あらゆるユーザーIDは厳密に匿名化されます。 [学習を増やす](https://www.adobe.com/jp/privacy/experience-cloud.html)。
 
 **イベント** ページでは、収集されるストアフロントイベントデータを確認できます。 イベントデータ収集を把握することで、マーチャントはストアフロントイベントを正しく実装し、イベントのキャプチャが成功していることを確認できます。 このページでは、潜在的な問題を特定し、イベントの問題を解決するための手順を実行できます。
 
@@ -184,4 +184,4 @@ _Cold Start_&#x200B;の問題は、モデルのトレーニングと効果の実
 
 ## サポート
 
-データの不一致に気づく場合、または推奨事項と検索結果が期待どおりに機能しない場合は、[&#x200B; サポートチケットを送信します](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+データの不一致に気づく場合、または推奨事項と検索結果が期待どおりに機能しない場合は、[&#x200B; サポートチケットを送信します](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。

@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/data-sync.md
+https://github.com/Adobe-Enterprise-Docs/commerce.ja-JP/blob/main/help/_includes/ccdm-shared/setup/data-sync.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -61,4 +61,4 @@ This includes related images in help/assets/ccdm-shared/.
 
 ## データ同期が機能していることを確認します
 
-Adobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合は、データエクスポートプロセスを監視し、データフィード同期ステータス ページから再同期操作を開始できます。 詳しくは、[&#x200B; データフィード同期ステータスの監視](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)を参照してください。
+Adobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合は、データエクスポートプロセスを監視し、データフィード同期ステータス ページから再同期操作を開始できます。 詳しくは、[&#x200B; データフィード同期ステータスの監視](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)を参照してください。
