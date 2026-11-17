@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/data-sync.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # カタログの同期
 
 **Data Sync** ページには、データソース（既存のCommerce カタログ、Product Information Management （PIM） システム、Enterprise Resource Planning （ERP） システムなど）からMerchandising Services データレイヤーに転送された製品データの同期ステータスの概要が表示されます。
@@ -17,7 +27,7 @@ ht-degree: 0%
 - **Adobe Commerce管理者** （Adobe Commerce as a Cloud Service） - *ストア* > **カタログ同期**&#x200B;を選択します。
 - **Adobe Commerce Optimizer Studio**— *Store setup* > **Data Sync**&#x200B;を選択します。
 
-![&#x200B; データ同期](/help/assets/ccdm-shared/setup/data-sync.png)
+![ データ同期](/help/assets/ccdm-shared/setup/data-sync.png)
 
 **データ同期** ページには、次のフィールドが含まれています。
 
@@ -33,7 +43,7 @@ ht-degree: 0%
 
 ## 同期済み製品のリスト
 
-同期済み製品の詳細をJSON形式で表示するには、同期済み製品テーブルの製品の行にあるコードアイコン ![&#x200B; コードリンク &#x200B;](/help/assets/ccdm-shared/setup/data-sync-details.png)をクリックします。
+同期済み製品の詳細をJSON形式で表示するには、同期済み製品テーブルの製品の行にあるコードアイコン ![ コードリンク ](/help/assets/ccdm-shared/setup/data-sync-details.png)をクリックします。
 
 ![製品の詳細を同期](/help/assets/ccdm-shared/setup/synced-products.png)
 
@@ -51,4 +61,4 @@ ht-degree: 0%
 
 ## データ同期が機能していることを確認します
 
-Adobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合は、データエクスポートプロセスを監視し、データフィード同期ステータス ページから再同期操作を開始できます。 詳しくは、[&#x200B; データフィード同期ステータスの監視](https://experienceleague.adobe.com/ja/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)を参照してください。
+Adobe Commerceをアップストリームのデータソースとして使用するプロジェクトの場合は、データエクスポートプロセスを監視し、データフィード同期ステータス ページから再同期操作を開始できます。 詳しくは、[ データフィード同期ステータスの監視](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)を参照してください。

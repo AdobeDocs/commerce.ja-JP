@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/type.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # 類義語の種類
 
 一方向および双方向の類義語は、キーワードの定義を拡大します。 キーワードと互換性のあるものもあれば、キーワードのサブセットを表すものもあります。
@@ -30,4 +40,4 @@ ht-degree: 0%
 
 同義語を作成すると、検索動作が変更され、厳密なフレーズ **キッチンテーブル**&#x200B;が検索されます。 正確なフレーズが付いた商品のみが表示されるため、結果の数が減少する可能性があります。
 
-以前と同様に条件を個別に検索する場合は、[&#x200B; サポートチケットを作成できます](https://experienceleague.adobe.com/ja/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+以前と同様に条件を個別に検索する場合は、[ サポートチケットを作成できます](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。

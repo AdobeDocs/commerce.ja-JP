@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/add.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # 同義語の作成
 
 収集した独自の類義語リストを追加することで、顧客エンゲージメントを向上できます。 カタログソースごとに最大200個の類義語を追加できます。
@@ -22,7 +32,7 @@ ht-degree: 0%
 ### 双方向の同義語
 
 1. 一致させる&#x200B;**キーワード**&#x200B;の語句またはフレーズを入力します。
-1. キーワードの類義語として追加する&#x200B;**拡張**&#x200B;語句を入力します。 複数の用語はコンマで区切ります。
+1. キーワードの類義語として追加する&#x200B;**拡張**語句を入力します。 複数の用語はコンマで区切ります。
 この例では、一致するキーワードは「パンツ」で、拡張用語のセットは「ズボン、スラックス」です。
 
    ![双方向同義語](/help/assets/ccdm-shared/synonyms/synonym-add-two-way.png)
@@ -58,13 +68,13 @@ ht-degree: 0%
 
 | フィールド | 説明 |
 |--- |--- |
-| [種類](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/synonyms/type) | 類義語がキーワードと同じ意味を持つか、キーワードのサブセットであるかを指定します。 オプション：<br />双方向（デフォルト） – キーワードと同じ意味を持ち、同じ検索結果を返す用語<br />一方向 – キーワードのサブセットである用語。 一方向の類義語は、特定の製品のより狭いリストを返します。 |
+| [種類](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/type) | 類義語がキーワードと同じ意味を持つか、キーワードのサブセットであるかを指定します。 オプション：<br />双方向（デフォルト） – キーワードと同じ意味を持ち、同じ検索結果を返す用語<br />一方向 – キーワードのサブセットである用語。 一方向の類義語は、特定の製品のより狭いリストを返します。 |
 | キーワード | カタログ内の商品の選択に一般的に関連付けられている単語。 |
 | 拡張 | キーワードと同じまたは類似する意味を持つ追加用語。 |
 
 ## 類義語の管理
 
-次の手順に従って、既存の[類義語](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/synonyms/overview)を管理します。
+次の手順に従って、既存の[類義語](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/overview)を管理します。
 
 ## 同義語を見つける
 
@@ -82,7 +92,7 @@ ht-degree: 0%
 
 1. 編集する同義語を見つけて、**詳細** （。..）をクリックします。 オプション：
 
-1. **編集**&#x200B;をクリックします。
+1. **編集**をクリックします。
 キーワードはリストの最初の用語で、各用語はコンマで区切られます。 キーワードと拡張の用語は更新できますが、類義語のタイプを変更することはできません。
 1. 編集する項目をクリックします。 次に、必要に応じてテキストを更新します。
 

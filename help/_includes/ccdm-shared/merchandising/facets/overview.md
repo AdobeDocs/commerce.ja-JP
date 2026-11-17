@@ -1,14 +1,24 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/facets/overview.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # ファセット
 
 ファセットは、属性値の複数の次元を検索条件として使用する高性能フィルタリングの方法です。
 
-![&#x200B; フィルターされた検索結果](/help/assets/ccdm-shared/facets/storefront-search-results-run.png)
+![ フィルターされた検索結果](/help/assets/ccdm-shared/facets/storefront-search-results-run.png)
 
 買い物客は、ファセット内で「スタイル」の下の「基本」や「スナップ」など、複数のオプションを選択でき、検索結果はそれらのスタイルのみを表示するように更新されます。 同様に、買い物客が「スタイル」の「基本」を選択し、「気候」の「屋内」を選択した場合、検索結果にはそれらの選択内容が表示されます。
 
@@ -33,7 +43,7 @@ ht-degree: 0%
 
 製品属性とそのプロパティについて詳しく見る：
 
-- Adobe Commerce バックエンドに接続されたデプロイメントについては、[製品属性の概要](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/product-attributes/product-attributes)を参照してください
+- Adobe Commerce バックエンドに接続されたデプロイメントについては、[製品属性の概要](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)を参照してください
 - サードパーティのCommerce バックエンドを使用したデプロイメントについては、[Data Ingestion Metadata API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)を参照してください。
 
 ## 階層検索と検索タイプの拡張
@@ -45,7 +55,7 @@ ht-degree: 0%
 - 買い物客が検索結果から検索できるようにします。
 - レイヤー検索の2番目のレイヤーで`startsWith`と`contains`の検索インデックスを使用して、結果をさらに絞り込みます。
 
-高度な検索機能は、特定の演算子を使用して、[`productSearch` クエリ &#x200B;](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch)の`filter` パラメーターを通じて実装されます。
+高度な検索機能は、特定の演算子を使用して、[`productSearch` クエリ ](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch)の`filter` パラメーターを通じて実装されます。
 
 - **階層検索** – 別の検索コンテキスト内の検索 – この機能を使用すると、検索クエリに対して最大2つの検索レイヤーを実行できます。 例：
 
@@ -74,7 +84,7 @@ ht-degree: 0%
 
 1. その属性の検索機能を指定します（**Contains** （デフォルト）または&#x200B;**Starts with**&#x200B;など）。 **Contains**&#x200B;および&#x200B;**Starts with**&#x200B;を有効にするには、それぞれ最大6つの属性を指定します。 さらに、**Contains**&#x200B;の索引の場合、文字列の長さは50文字以下に制限されます。
 
-1. 新しい`contains`および`startsWith`検索機能を使用してAdobe Merchandising Services GraphQL API呼び出しを更新する方法の例については、[開発者ドキュメント &#x200B;](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch)を参照してください。
+1. 新しい`contains`および`startsWith`検索機能を使用してAdobe Merchandising Services GraphQL API呼び出しを更新する方法の例については、[開発者ドキュメント ](https://developer.adobe.com/commerce/services/reference/graphql/#productsearch)を参照してください。
 
    これらの新しい条件を検索結果ページに実装できます。 例えば、ページに新しいセクションを追加し、検索結果をさらに絞り込むことができます。 買い物客が「製造元」、「部品番号」、「説明」など、特定の製品属性を選択できるようにします。 そこから、`contains`または`startsWith`条件を使用して、これらの属性内を検索します。
 

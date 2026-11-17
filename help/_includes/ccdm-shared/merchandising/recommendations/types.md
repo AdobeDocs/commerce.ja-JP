@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/recommendations/types.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # レコメンデーションタイプ
 
 [!DNL Product Recommendations]には、サイト上のさまざまなページに展開できるレコメンデーションの大規模なセットが用意されています。 あらゆるレコメンデーションタイプは、データドリブン型です。 行動データ、製品属性データ、指標にもとづいて構築されています。 簡単に参照できるように、レコメンデーションタイプは次のようにグループ化されています。
@@ -25,7 +35,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->この記事で説明されているイベントについて詳しくは、開発者ドキュメントの[&#x200B; ストアフロントイベント &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations){target="_blank"}を参照してください。
+>この記事で説明されているイベントについて詳しくは、開発者ドキュメントの[ ストアフロントイベント ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations){target="_blank"}を参照してください。
 
 ## データ要件と行動
 
@@ -40,7 +50,7 @@ ht-degree: 0%
 レコメンデーションを生成するのに十分なイベントデータがない場合、システムは次のことが可能になります。
 
 - レコメンデーション単位の空の結果を返します。
-- パーソナライズされたレコメンデーションがまだ利用できない場合に`Most viewed`商品を表示するなど、[&#x200B; バックアップのレコメンデーション &#x200B;](/help/optimizer/setup/events/overview.md#backup-recommendations)をトリガーします。
+- パーソナライズされたレコメンデーションがまだ利用できない場合に`Most viewed`商品を表示するなど、[ バックアップのレコメンデーション ](/help/optimizer/setup/events/overview.md#backup-recommendations)をトリガーします。
 - レコメンデーション単位に[設定](create.md)より少ない製品を表示します。
 
 ## Personalized {#personalized}
@@ -49,7 +59,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->パーソナライズされたレコメンデーションを提供するには、買い物客の行動履歴を把握する必要があります。 十分なインタラクション履歴を持たない新規訪問者や買い物客には、サイトで十分な行動シグナルが生成されるまで、「最も閲覧された商品」などの[&#x200B; バックアップのレコメンデーション &#x200B;](/help/optimizer/setup/events/overview.md#backup-recommendations)が表示されます。
+>パーソナライズされたレコメンデーションを提供するには、買い物客の行動履歴を把握する必要があります。 十分なインタラクション履歴を持たない新規訪問者や買い物客には、サイトで十分な行動シグナルが生成されるまで、「最も閲覧された商品」などの[ バックアップのレコメンデーション ](/help/optimizer/setup/events/overview.md#backup-recommendations)が表示されます。
 
 | タイプ | 説明 |
 |---|---|
@@ -80,7 +90,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->人気にもとづくレコメンデーションには、ストアフロントからの十分なイベントデータが必要です。 ストアが新しい場合やトラフィックが少ない場合は、適切な行動データが収集されるまで、これらのレコメンデーションタイプから返される結果が限定的であったり、結果が少なかったりする可能性があります。 最適なパフォーマンスを確保するには、[&#x200B; データ準備状況インジケーター](/help/optimizer/manage-results/recommendation-performance.md)を監視してください。
+>人気にもとづくレコメンデーションには、ストアフロントからの十分なイベントデータが必要です。 ストアが新しい場合やトラフィックが少ない場合は、適切な行動データが収集されるまで、これらのレコメンデーションタイプから返される結果が限定的であったり、結果が少なかったりする可能性があります。 最適なパフォーマンスを確保するには、[ データ準備状況インジケーター](/help/optimizer/manage-results/recommendation-performance.md)を監視してください。
 
 | タイプ | 説明 |
 |---|---|
