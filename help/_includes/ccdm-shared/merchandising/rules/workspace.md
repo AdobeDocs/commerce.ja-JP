@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/rules/workspace.md
+https://github.com/Adobe-Enterprise-Docs/commerce.ja-JP/blob/main/help/_includes/ccdm-shared/merchandising/rules/workspace.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -16,7 +16,7 @@ This includes related images in help/assets/ccdm-shared/.
 
 # Workspaceのマーチャンダイジングルール
 
-*マーチャンダイジングルール* ワークスペースには、現在のルールの選択とそのステータスが一覧表示され、ルールの作成と管理に必要なツールへのアクセス権が提供されます。 ルールは、すべての[&#x200B; カタログビュー](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) （グローバル）または単一のカタログビューにスコープできます。 カタログビュー別にフィルタリングし、カタログビューごとにルールを作成する方法については、[&#x200B; カタログビューを選択](#select-catalog-view)を参照してください。 ワークスペースから次の操作を実行できます。
+*マーチャンダイジングルール* ワークスペースには、現在のルールの選択とそのステータスが一覧表示され、ルールの作成と管理に必要なツールへのアクセス権が提供されます。 ルールは、すべての[&#x200B; カタログビュー](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-view) （グローバル）または単一のカタログビューにスコープできます。 カタログビュー別にフィルタリングし、カタログビューごとにルールを作成する方法については、[&#x200B; カタログビューを選択](#select-catalog-view)を参照してください。 ワークスペースから次の操作を実行できます。
 
 - ルールの検索
 - ルールの詳細の表示
@@ -24,7 +24,7 @@ This includes related images in help/assets/ccdm-shared/.
 - ルールの削除
 - ルールエディターへのアクセス
 
-ワークスペースには、**[検索抑制ルール &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)**&#x200B;も含まれています。 同じルール管理コントロールを使用して、これらのルールを編集、スケジュール、有効または無効にします。 クエリ条件を設定して変更を公開するには、[検索抑制ルールの作成と管理](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules)を参照してください。 検索抑制ルールのプレビューは表示されません。
+ワークスペースには、**[検索抑制ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)**&#x200B;も含まれています。 同じルール管理コントロールを使用して、これらのルールを編集、スケジュール、有効または無効にします。 クエリ条件を設定して変更を公開するには、[検索抑制ルールの作成と管理](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules)を参照してください。 検索抑制ルールのプレビューは表示されません。
 
 ![&#x200B; マーチャンダイジングルール Workspace](/help/assets/ccdm-shared/rules/rules-workspace.png)
 
@@ -86,7 +86,7 @@ This includes related images in help/assets/ccdm-shared/.
 | 制御 | 説明 |
 |--- |--- |
 | ルールを追加 | [&#x200B; ルールエディター](add.md)を開きます。 |
-| カタログビュー | 選択したカタログ ビューに適用されるルールにテーブルをフィルタリングします。 また、[&#x200B; ルールを作成](add.md)する際にもスコープを設定します。 オプション：*すべてのビュー*&#x200B;または特定の[&#x200B; カタログビュー](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view)。 [&#x200B; カタログ ビューの選択](#select-catalog-view)を参照してください。 |
+| カタログビュー | 選択したカタログ ビューに適用されるルールにテーブルをフィルタリングします。 また、[&#x200B; ルールを作成](add.md)する際にもスコープを設定します。 オプション：*すべてのビュー*&#x200B;または特定の[&#x200B; カタログビュー](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-view)。 [&#x200B; カタログ ビューの選択](#select-catalog-view)を参照してください。 |
 | ステータス | ルールのリストをステータス別にフィルタリングします。 オプション：すべて、アクティブ、非アクティブ、スケジュール |
 | ![列セレクター](/help/assets/ccdm-shared/rules/btn-show-hide-columns.png) | グリッドに表示される列を指定します。 オプション：最終更新日、開始日、終了日、ステータス |
 | 検索 | フルネームまたは部分一致でルールを検索します。 |
@@ -109,7 +109,7 @@ This includes related images in help/assets/ccdm-shared/.
 マーチャンダイジングルールページの&#x200B;**[!UICONTROL Catalog view]** セレクターには、次の2つの機能があります。
 
 1. **テーブルをフィルター** – 選択したカタログ ビューに適用されるルール （およびその詳細）のみを表示します。
-1. **新しいルールの範囲を設定** - ルールを[作成](add.md)すると、選択したカタログ ビューがルールの範囲として使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[&#x200B; カタログビュー](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view)です。
+1. **新しいルールの範囲を設定** - ルールを[作成](add.md)すると、選択したカタログ ビューがルールの範囲として使用されます。 オプションは&#x200B;*すべてのビュー*&#x200B;または特定の[&#x200B; カタログビュー](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/setup/catalog-view)です。
 
    - **すべてのビュー** - ルールはすべてのカタログ ビューに適用されます。 カタログを使用するすべてのストアフロントで、検索とランキングの動作は同じです。
    - **カタログ ビュー** – このルールは、選択したカタログ ビュー（1つのストアフロント、地域、ディーラー、ブランドなど）にのみ適用されます。 これは、異なるカタログビューで異なるマーチャンダイジングロジックが必要な場合に使用します。
@@ -124,7 +124,7 @@ This includes related images in help/assets/ccdm-shared/.
 - **複数地域** - EU、米国、または地域固有のマーチャンダイジングルールを持つ他の地域向けに、個別のカタログビューを提供します。
 - **マルチブランド** – 各ブランドには独自のカタログビューがあり、ブランド固有のルール（ブランドごとに異なるデフォルトのランキングやプロモーション済み製品など）が必要です。
 
-[&#x200B; インテリジェントランキング &#x200B;](add.md#intelligent-ranking)を強化する行動データ（最も閲覧されたデータ、最も購入されたデータ、トレンドなど）は、デフォルトではカタログビューごとに計算されます。 そのため、インテリジェントなランキングを使用するルールは、そのカタログビューの買い物客の行動を反映しています。 アカウントに多数のカタログビューがある場合、システムはパフォーマンスを維持するためにグローバルに行動データを集計する場合があります。その場合、トラフィックの多いカタログビューがランキングに影響を与える可能性があり、トラフィックの少ないビューの関連性が低下する可能性があります。 現在の制限については、[制限と境界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)を参照してください。
+[&#x200B; インテリジェントランキング &#x200B;](add.md#intelligent-ranking)を強化する行動データ（最も閲覧されたデータ、最も購入されたデータ、トレンドなど）は、デフォルトではカタログビューごとに計算されます。 そのため、インテリジェントなランキングを使用するルールは、そのカタログビューの買い物客の行動を反映しています。 アカウントに多数のカタログビューがある場合、システムはパフォーマンスを維持するためにグローバルに行動データを集計する場合があります。その場合、トラフィックの多いカタログビューがランキングに影響を与える可能性があり、トラフィックの少ないビューの関連性が低下する可能性があります。 現在の制限については、[制限と境界](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits)を参照してください。
 
 ### カタログビューごとにルールを設定する方法
 
