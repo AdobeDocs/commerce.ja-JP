@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: e3be9274ca8db80d3559b24a5c8be36f5d61b2ba
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 1%
+source-wordcount: '1154'
+ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
@@ -23,6 +23,8 @@ This includes related images in help/assets/ccdm-shared/.
 - ルールのアクティベート/アクティベート解除
 - ルールの削除
 - ルールエディターへのアクセス
+
+ワークスペースには、**[検索抑制ルール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)**&#x200B;も含まれています。 同じルール管理コントロールを使用して、これらのルールを編集、スケジュール、有効または無効にします。 クエリ条件を設定して変更を公開するには、[検索抑制ルールの作成と管理](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules)を参照してください。 検索抑制ルールのプレビューは表示されません。
 
 ![&#x200B; マーチャンダイジングルール Workspace](/help/assets/ccdm-shared/rules/rules-workspace.png)
 
@@ -60,6 +62,14 @@ This includes related images in help/assets/ccdm-shared/.
    - ルールを編集
    - ルールを削除
    - ルールの有効化/無効化
+
+## ルールを有効または無効にする {#enable-disable-rule}
+
+1. *マーチャンダイジングルール* ワークスペースでルールを検索します。
+1. **詳細**&#x200B;を開きます（。..） メニューから「**ルールを有効にする**」または「**ルールを無効にする**」を選択します。 詳細パネルの&#x200B;**Enabled** コントロールを使用することもできます。
+1. 更新されたステータスを確認します。 将来の開始日を持つ有効なルールは、その日付までスケジュールされたままになります。
+
+**検索抑制ルール**&#x200B;の場合、ルールを無効にすると、条件を削除することなく、そのルールが一致するクエリをブロックしなくなります。 他のアクティブな抑制ルールでも、これらのクエリをブロックできます。 ルールの条件または日付を変更するには、**編集**&#x200B;を選択して変更を確認し、**保存して公開**&#x200B;をクリックします。
 
 ## 列の説明
 
@@ -124,6 +134,6 @@ This includes related images in help/assets/ccdm-shared/.
    作成するルールは、選択したカタログ ビューに対してスコープが設定されます。
 1. [&#x200B; ルールエディター](add.md)でルールを作成します。
 
-   エディターで、条件、イベント、詳細を定義します。 このルールは、そのカタログビューの検索結果にのみ適用されます。
+   エディターで、ルールタイプに適用される条件、イベント、詳細を定義します。 検索抑制ルールでは、クエリ条件を使用して、選択したカタログビュー内の結果のみをブロックします。 カテゴリーナビゲーション、マーチャンダイジングページ、レコメンデーション、製品のURLを通じて、製品の可視性を変更することはありません。
 
 ルールを作成した後で、ルールのカタログ ビュー（スコープ）を変更することはできません。 類似したロジックを別のカタログビューに適用するには、新しいルールを作成し、作成する前にそのカタログビューを選択します。

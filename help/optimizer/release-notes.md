@@ -25,9 +25,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
+source-git-commit: 3968a572a628342334fe760526e81ab089b86904
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1960'
 ht-degree: 0%
 ---
 # リリースノート
@@ -39,6 +39,64 @@ ht-degree: 0%
 
   {{aco-api-updates-and-dropins}}
 
+## 2026年11月
+
+>[!BEGINSHADEBOX]
+
+_2026年11月2日_
+
+![修正](../assets/fix.svg) **推奨フィルターロケール** - **[!UICONTROL All Views]**&#x200B;を選択すると、最初のカタログビューに関連付けられているカタログソースが属性リストで使用されることが明確になりました。 [おすすめフィルター](./merchandising/recommendations/filters.md)を参照してください。
+
+_2026年11月6日_
+
+![新規](../assets/new.svg) **サードパーティのカートとチェックアウトの統合** - サードパーティのカートとチェックアウトサービスを[!DNL Adobe Commerce Optimizer]と統合する方法を追加しました。 [統合](./integrations/integrations-overview.md#third-party-cart-and-checkout-integration)を参照してください。
+
+![修正](../assets/fix.svg) **製品ビジュアルストレージ** - [!DNL AEM Assets] ライセンスをアップグレードすることで、[!DNL Product Visuals]のストレージ容量を拡張できることを明確にしました。 [制限と境界](./boundaries-limits.md#product-visuals-limits)を参照してください。
+
+![修正](../assets/fix.svg) **AEM Assets セットアップ ガイダンス** - [!DNL AEM Assets]のスタンドアロン [!DNL Adobe Commerce Optimizer]のセットアップ フローを削除し、一般的な[!DNL AEM Assets]設定ドキュメントにセットアップ ガイダンスを指示しました。 [統合](./integrations/integrations-overview.md#product-visuals)、[&#x200B; カタログレイヤー](./setup/catalog-layer.md)、[製品ビジュアル &#x200B;](./setup/product-visuals.md)を参照してください。
+
+![新規](../assets/new.svg) **レコメンデーション参照キー** - ストアフロントのレコメンデーションブロックを設定する際のレコメンデーション IDの代替として&#x200B;**[!UICONTROL Reference Key]**&#x200B;を文書化しました。 [&#x200B; レコメンデーションの作成と管理](./merchandising/recommendations/create.md#get-the-storefront-reference-key)を参照してください。
+
+_2026年11月16日_
+
+![新規](../assets/new.svg) **ファセット容量** - カスタマーサポートのリクエストを通じてファセット制限を増やすことができることを文書化しました。 [制限と境界](./boundaries-limits.md#catalog-views-and-policies)を参照してください。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年10月
+
+>[!BEGINSHADEBOX]
+
+_2026年10月1日_
+
+![新規](../assets/new.svg) **B2B共有カタログビュー**:B2B共有カタログをプライベートカタログビューとして自動的にプロビジョニングする方法と、その他のユースケースの手動設定オプションを文書化しました。 また、制限付きアクセスキーのローテーションは自動化されていないことも明確にしました。 [&#x200B; プライベートカタログビュー](./setup/private-catalog-view.md)、[制限付きアクセスキー](./setup/restricted-access-keys.md)、[&#x200B; データ同期](./setup/data-sync.md)、および[起動チェックリスト &#x200B;](./launch/launch-checklist.md)を参照してください。
+
+_2026年10月12日_
+
+![新規](../assets/new.svg) **在庫切れのレコメンデーションフィルター** – 在庫切れの除外フィルターを追加しました。これにより、在庫切れの商品がレコメンデーションユニットに表示されないようにすることができます。 [おすすめフィルター](./merchandising/recommendations/filters.md#out-of-stock)を参照してください。
+
+_2026年10月14日_
+
+![修正](../assets/fix.svg) **インテリジェントランキングのブースト値** – 文書化されたデフォルト値を`50`に、最大値を`1000`に修正しました。 [&#x200B; マーチャンダイジングルールの作成と管理](./merchandising/rules/add.md#intelligent-ranking-boost)を参照してください。
+
+_2026年10月16日_
+
+![修正](../assets/fix.svg) **既定の検索ルール名** – 管理者インターフェイスと一致するように、マーチャンダイジングルール名を[!UICONTROL All product listings]から[!UICONTROL Default search rule]に更新しました。 [&#x200B; マーチャンダイジングルールの概要](./merchandising/rules/overview.md)および[&#x200B; マーチャンダイジングルールの作成と管理](./merchandising/rules/add.md)を参照してください。
+
+_2026年10月21日_
+
+![修正](../assets/fix.svg) **制限付きアクセスキー制限** – 環境単位の制限付きアクセスキー数を、文書化された制限から削除しました。 [制限と境界](./boundaries-limits.md#catalog-views-and-policies)を参照してください。
+
+_2026年10月22日_
+
+![新規](../assets/new.svg) **推奨属性フィルター** - メタデータ APIを使用して属性フィルターを有効にするためのガイダンスを追加しました。 [おすすめフィルター](./merchandising/recommendations/filters.md#attributes)を参照してください。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## 2026年9月
 
 >[!BEGINSHADEBOX]
@@ -49,6 +107,11 @@ _2026年9月3日_
 
 [!DNL Adobe Commerce Optimizer] マーチャンダイジングルールで、**デフォルト検索ルール**、**カテゴリルール**、**検索ルール**&#x200B;の&#x200B;[**属性ランキング**](./merchandising/rules/add.md#attribute-ranking)&#x200B;がサポートされるようになりました。 ブランドやカテゴリなど、1つ以上の属性条件に一致する製品ごとに、個々のSKUを選択することなく、**[!UICONTROL Boost]**、**[!UICONTROL Bury]**、**[!UICONTROL Hide]** アクションを自動的に適用します。 属性ランキングはベータ版です。 [学習を増やす](./merchandising/rules/add.md#attribute-ranking)。
 
+_2026年9月9日_
+
+![新規](../assets/new.svg) **多値HTTP ヘッダートリガーポリシー** - `HTTP_HEADER` トランスポートタイプを使用するトリガーポリシーは、1つのヘッダーで複数のコンマ区切り値を受け取ることができるようになりました（例：`AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`）。 `IN`を使用するポリシーフィルターは、`OR`のセマンティクスで値を評価します。 `EQUALS`、`GREATER_THAN_EQUAL`または`LESS_THAN_EQUAL`を使用するフィルターは、ヘッダーに複数の値が含まれている場合、検証エラーでリクエストを拒否します。 この動作は、`HTTP_HEADER` トランスポートを使用するトリガーポリシーにのみ適用されます。 [学習を増やす](./setup/policies.md#multi-value-http-header-triggers)。
+<!--COMOPT-2439-->
+
 {{aco-release}}
 
 >[!ENDSHADEBOX]
@@ -56,11 +119,6 @@ _2026年9月3日_
 ## 2026年8月
 
 >[!BEGINSHADEBOX]
-
-_2026年9月9日_
-
-![新規](../assets/new.svg) **多値HTTP ヘッダートリガーポリシー** - `HTTP_HEADER` トランスポートタイプを使用するトリガーポリシーは、1つのヘッダーで複数のコンマ区切り値を受け取ることができるようになりました（例：`AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`）。 `IN`を使用するポリシーフィルターは、`OR`のセマンティクスで値を評価します。 `EQUALS`、`GREATER_THAN_EQUAL`または`LESS_THAN_EQUAL`を使用するフィルターは、ヘッダーに複数の値が含まれている場合、検証エラーでリクエストを拒否します。 この動作は、`HTTP_HEADER` トランスポートを使用するトリガーポリシーにのみ適用されます。 [学習を増やす](./setup/policies.md#multi-value-http-header-triggers)。
-<!--COMOPT-2439-->
 
 _2026年8月7日_
 
@@ -371,4 +429,3 @@ EU実稼動地域（**eu1**）は、IMS組織で使用できます。 Cloud Mana
 {{aco-release}}
 
 >[!ENDSHADEBOX]
-
