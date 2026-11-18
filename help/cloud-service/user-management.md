@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 560ae770ae76d28e3358fb4f195aa1f2a03362c8
+source-git-commit: 80794cd843b054e043bae4129e1092e31b6e5730
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '2045'
 ht-degree: 0%
 ---
 # ユーザーとIdentity Management
@@ -200,6 +200,14 @@ Adobe Commerce内の各ロールに付与される権限について詳しくは
 >開発者として追加する前に、開発者にユーザーの役割を割り当てます。 Commerceの基本権限には、ユーザーロールが必要です。
 
 Admin Consoleの「![開発者と管理者」タブのオプション &#x200B;](./assets/tab-select.png){width="600" zoomable="yes"}
+
+### 役割のトラブルシューティング
+
+Adobe Commerce管理者にログインし、[!UICONTROL **カタログ**] セクションのみを表示すると、**ユーザー**&#x200B;の役割が割り当てられている可能性があります。 管理画面の他の領域にアクセスする必要がある場合は、[自分を&#x200B;**開発者**](#add-developers-and-product-profile-admins)&#x200B;としてAdmin Consoleに追加する必要があります。
+
+Admin Consoleへのアクセス権がない場合は、組織の製品プロファイル管理者またはシステム管理者に連絡して、適切な権限を提供するように依頼してください。
+
+各役割に付与された権限について詳しくは、[役割リソース &#x200B;](#role-resources)を確認してください。
 
 ## 役割のリソース
 
