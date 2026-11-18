@@ -1,7 +1,7 @@
 ---
 title: マーチャンダイジングルール
-description: '[!DNL Adobe Commerce Optimizer]件のマーチャンダイジングルールは、ロジックとアクションを組み合わせて、検索結果、デフォルトの商品リスト、カテゴリーページを形成します。'
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+description: '[!DNL Adobe Commerce Optimizer]件のマーチャンダイジングルールが検索結果を形成し、検索クエリを抑制し、既定の商品リストとカテゴリーページを制御します。'
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
 product_v2:
@@ -21,7 +21,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 last-update: 2026-11-16
-source-git-commit: e0c7b4c2eba10c12f0ce728decad6f9be8bae14f
+source-git-commit: 0633a6bf0c347ca0448a76fb45391643ac582d5d
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
