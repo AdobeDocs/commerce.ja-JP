@@ -39,7 +39,7 @@ CommerceのAEM Assets統合では、**AEM Assets** メタデータ設定に基�
 
    ![製品SKU ルールとメタデータプロパティ名で一致](../assets/ootb-matching-rule.png){width="700" zoomable="yes"}
 
-1. **[!UICONTROL Match by product SKU attribute name]**&#x200B;に、実際のSKU値ではなく、商品SKUをAEM Assetsに保存する[ メタデータプロパティ名](../metadata.md)を入力します。
+1. **[!UICONTROL Match by product SKU attribute name]**&#x200B;に、実際のSKU値ではなく、商品SKUをAEM Assetsに保存する[&#x200B; メタデータプロパティ名](../metadata.md)を入力します。
 
    >[!NOTE]
    >
@@ -55,20 +55,20 @@ Commerce Adminで&#x200B;**[!UICONTROL Match by product SKU]**&#x200B;一致ル�
 
 1. AEM Assetsで、`Eligible for Commerce` フィールドを`Yes`に設定して、画像メタデータを更新し、Adobe Commerceの関連付けを追加します。
 
-   ![例のメタデータ ](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
+   ![例のメタデータ &#x200B;](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
 
 1. アセットを関連付けられた製品SKUにリンクするメタデータ （[!UICONTROL SKU]、[!UICONTROL position]、および[!UICONTROL role]）を設定します。
 
-   4つの標準ロールは`image`、`small_image`、`thumbnail`、`swatch_image`です。 AEM Assets Integration拡張機能バージョン 1.4.6以降では、`hero`や`custom_role_1`などのカスタム画像ロールを入力することもできます。 詳しくは、[ カスタム自動一致](custom-match.md)を参照してください。
+   4つの標準ロールは`image`、`small_image`、`thumbnail`、`swatch_image`です。 AEM Assets Integration拡張機能バージョン 1.4.6以降では、`hero`や`custom_role_1`などのカスタム画像ロールを入力することもできます。 詳しくは、[&#x200B; カスタム自動一致](custom-match.md)を参照してください。
 
    >[!NOTE]
    >
    > 1つのアセットが複数の製品に使用されている場合は、関連付けられた各SKUのメタデータを設定します。
 
-1. 「`Basic`」タブで、_[!UICONTROL Review Status]_フィールドのデフォルト値を`approved`に設定します。
+1. 「`Basic`」タブで、_[!UICONTROL Review Status]_&#x200B;フィールドのデフォルト値を`approved`に設定します。
 
-   ![例のメタデータ ](../assets/metadata-review-status.png){width="600" zoomable="yes"}
+   ![例のメタデータ &#x200B;](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
-アセットを承認したら、[製品の関連付け、同期結果、およびストアフロント表示を確認します](../get-started/setup-synchronization.md#verify-the-integration)。 アセットが表示されない場合は、[同期ステータス ](../get-started/sync-status.md)を確認してください。 Adobe Commerce Optimizerの場合は、代わりに[Optimizer検証ワークフロー](../get-started/configure-aco.md#match-by-sku-workflow-example)を使用してください。同期ステータスは使用できません。
+アセットを承認したら、[製品の関連付け、同期結果、およびストアフロント表示を確認します](../get-started/setup-synchronization.md#verify-the-integration)。 アセットが表示されない場合は、[同期ステータス &#x200B;](../get-started/sync-status.md)を確認してください。 Adobe Commerce Optimizerの場合は、代わりに[Optimizer検証ワークフロー](../get-started/configure-aco.md#match-by-sku-workflow-example)を使用してください。同期ステータスは使用できません。
 
-[!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}その他の同期のトラブルシューティングについては、[統合ログ ](../get-started/logs.md)を確認してください。
+[!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}その他の同期のトラブルシューティングについては、[統合ログ &#x200B;](../get-started/logs.md)を確認してください。

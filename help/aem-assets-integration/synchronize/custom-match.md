@@ -133,9 +133,9 @@ ht-degree: 0%
 
 1. **[!UICONTROL Save Config]**&#x200B;をクリックします。
 
-設定が適用された後、承認済みのアセットとカスタムマッチャーが関連付ける製品との統合](../get-started/setup-synchronization.md#verify-the-integration)を[検証します。
+設定が適用された後、承認済みのアセットとカスタムマッチャーが関連付ける製品との統合[&#128279;](../get-started/setup-synchronization.md#verify-the-integration)を検証します。
 
-[!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}同期が失敗した場合は、[統合ログ ](../get-started/logs.md)を確認してください。
+[!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}同期が失敗した場合は、[統合ログ &#x200B;](../get-started/logs.md)を確認してください。
 
 ## 非同期設定の保存
 
@@ -257,7 +257,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 | --- | --- | --- |
 | `asset_id` | 文字列 | 一致するアセット ID。 |
 | `product_matches` | 配列 | アセットに関連付けられている製品のリスト。 |
-| `skip` | ブーリアン | （オプション） `true`の場合、ルールエンジンはこのアセットの同期をスキップします（製品マッピングの更新はありません）。 `false`または省略すると、通常の処理が実行されます。 [同期処理をスキップ ](#skip-sync-processing)を参照してください。 |
+| `skip` | ブーリアン | （オプション） `true`の場合、ルールエンジンはこのアセットの同期をスキップします（製品マッピングの更新はありません）。 `false`または省略すると、通常の処理が実行されます。 [同期処理をスキップ &#x200B;](#skip-sync-processing)を参照してください。 |
 
 ### App Builderの商品からアセットへのURL エンドポイント
 
@@ -337,7 +337,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | --- | --- | --- |
 | `product_sku` | 文字列 | 製品SKUが一致しています。 |
 | `asset_matches` | 配列 | 製品に関連付けられているアセットのリスト。 |
-| `skip` | ブーリアン | （オプション） `true`の場合、ルールエンジンはこの製品の同期をスキップします（アセットマッピングの更新はありません）。 `false`または省略すると、通常の処理が実行されます。 [同期処理をスキップ ](#skip-sync-processing)を参照してください。 |
+| `skip` | ブーリアン | （オプション） `true`の場合、ルールエンジンはこの製品の同期をスキップします（アセットマッピングの更新はありません）。 `false`または省略すると、通常の処理が実行されます。 [同期処理をスキップ &#x200B;](#skip-sync-processing)を参照してください。 |
 
 `asset_matches` パラメーターには、次の属性が含まれています。
 
