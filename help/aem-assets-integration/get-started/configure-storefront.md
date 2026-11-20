@@ -26,9 +26,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '664'
 ht-degree: 0%
 ---
 # ストアフロントの設定
@@ -53,6 +53,8 @@ Commerce ドロップインは、`commerce-assets-enabled`設定を自動的に�
 
 Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用する方法について詳しくは、*AEM Assets Storefront* ドキュメントの[Adobe Commerce統合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) トピックを参照してください。
 
+ストアフロント設定を保存した後、[製品に関連付けられた承認済みアセットを使用して統合](setup-synchronization.md#verify-the-integration)を確認します。 予想される画像がストアフロントに表示されることを確認します。 そうでない場合は、ストアフロントの画像配信のトラブルシューティングを行う前に、製品の関連付け、ビジュアライゼーション所有者、同期結果を確認してください。 Adobe Commerce Optimizerの場合は、[Optimizer検証ワークフロー](configure-aco.md#match-by-sku-workflow-example)に従います。
+
 >[!TIP]
 >
 >作成者がAEM Assetsを参照して静的コンテンツページに挿入できるようにするには、[静的コンテンツオーサリング用にAEM AssetsをDa.liveに接続](#connect-aem-assets-authoring)するを参照してください。
@@ -67,7 +69,7 @@ Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用�
 
 >[!NOTE]
 >
->設定の手順について詳しくは、Da.live ドキュメントの[AEM Assetsの設定](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}を参照し、[AEM Assets ドキュメントのEdge Delivery Servicesのコンテンツのオーサリング中にAEM Assetsを統合する](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}を参照してください。
+>設定の手順について詳しくは、Da.live ドキュメントの[AEM Assetsの設定](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}を参照し、[AEM Assets ドキュメントのEdge Delivery Servicesのコンテンツのオーサリング中にAEM Assetsを統合する](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}を参照してください。
 
 ### 手順1:Da.liveでサイト設定を開く
 
@@ -116,6 +118,6 @@ Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用�
 
 * *AEM Assets Storefront* ドキュメントの[Adobe Commerce統合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} - ストアフロントの設定とイメージ処理の動作。
 
-* [AEM Assetsを統合して、Edge Delivery Services](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}のコンテンツをオーサリングします（*AEM Assets* ドキュメント）。
+* [AEM Assetsを統合して、Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}のコンテンツをオーサリングします（*AEM Assets* ドキュメント）。
 
-* Da.live ドキュメントの[AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}と[&#x200B; メディアの操作](https://docs.da.live/authors/guides/adding-media){target=_blank}を設定します。
+* Da.live ドキュメントの[AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}と[ メディアの操作](https://docs.da.live/authors/guides/adding-media){target=_blank}を設定します。

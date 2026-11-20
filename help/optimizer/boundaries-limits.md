@@ -2,7 +2,7 @@
 title: Adobe Commerce Optimizerの限界と限界
 description: Adobe Commerce Optimizerのライセンス制限とシステムの制限について説明します。 キャパシティを計画し、使用状況を追跡し、制限を超えた場合の待ち時間とスロットリングを回避します。
 role: Admin, Developer
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
 product_v2:
@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 57a905703b11ef8fc4ca4527a5fc136dc81615cc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1708'
 ht-degree: 0%
 ---
 # 制限と境界
@@ -29,9 +29,9 @@ ht-degree: 0%
 
 ## 追加能力を求める
 
-ライセンス制限は、[&#x200B; ライセンス制限とシステム境界](#license-limits-and-system-boundaries) セクションに記載されているライセンスパッケージを購入するか、独自のユースケースに対するカスタムライセンスを交渉することで増やすことができます。 お客様の要件については、Adobeの担当者にお問い合わせください。
+ライセンス制限は、[ ライセンス制限とシステム境界](#license-limits-and-system-boundaries) セクションに記載されているライセンスパッケージを購入するか、独自のユースケースに対するカスタムライセンスを交渉することで増やすことができます。 お客様の要件については、Adobeの担当者にお問い合わせください。
 
-システムの境界について質問がある場合は、[Adobe サポート &#x200B;](https://experienceleague.adobe.com/home?lang=ja#support)にお問い合わせください。
+システムの境界について質問がある場合は、[Adobe サポート ](https://experienceleague.adobe.com/home?lang=en#support)にお問い合わせください。
 
 ## パフォーマンスの問題を防止
 
@@ -70,16 +70,18 @@ ht-degree: 0%
 
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** |
 | --- | --- | --- | --- |
-| プライスブック | インスタンスごとに許可される価格台帳の数 | [&#x200B; カタログのバリエーション数](#catalog)に基づく | はい<br> カタログのバリエーションを増やす |
+| プライスブック | インスタンスごとに許可される価格台帳の数 | [ カタログのバリエーション数](#catalog)に基づく | はい<br> カタログのバリエーションを増やす |
 | 価格記録ごとの割引 | 1つの価格表に適用できる割引数 | 10 | いいえ |
 
 {style="table-layout:auto"}
 
 ### [!DNL Product Visuals]個の制限
 
+Product Visualsは、商品アセットの管理、Commerceのメタデータ、アセット配信など、Commerceに特化したアセット管理ユースケースをサポートします。 サポートされているバルクアップロードおよびバルクメタデータ操作では、AEM Assets Ultimateは必要ありません。 AEM Assets APIを必要とするプログラムによるアセットおよびメタデータの管理には、個別の使用権限が必要です。
+
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** |
 | --- | --- | --- | --- |
-| 製品ビジュアルがユーザーを動かす | AI ツール、[!DNL Adobe Express]/[!DNL Firefly]との統合、Content Hubの共有など、包括的なデジタルアセット管理機能を備えたライセンスユーザーが、主要なDAM タスクと高度なクラウドネイティブ機能を処理して、効率を最適化しています。 | 2 | はい<p>[!DNL AEM Assets] ライセンスへのアップグレード</p> |
+| 製品ビジュアルがユーザーを動かす | AI ツール、[!DNL Adobe Express]/[!DNL Firefly]統合、Content Hub共有など、Product Visualsに含まれるアセット管理機能を使用するライセンスユーザー。 | 2 | はい<p>[!DNL AEM Assets] ライセンスへのアップグレード</p> |
 | Product Visuals Collaborator ユーザー | AEM Commerceとの連携によるアセットへのアクセスと操作、[!DNL Adobe Express]と[!DNL Firefly]を使用したコンテンツの制作と編集、および有効な場合はContent Hub ポータルを介した承認済みアセットの活用。 | 2 | はい<p>[!DNL AEM Assets] ライセンスへのアップグレード</p> |
 | 製品ビジュアルのストレージ | アセットに割り当てられたストレージ容量 | 1 TB ストレージ | はい<p>[!DNL AEM Assets] ライセンスへのアップグレード</p> |
 | Dynamic Mediaの使用状況 | 以下を含むダイナミックメディア処理操作の許可<ul><li>画像配信</li><li>スマートイメージング</li><li>動画配信</li></ul><p>詳しくは、以下の「*Dynamic Mediaの使用状況の計算*」を参照してください。 | GMV （グロス・マーチャンダイジング・バリュー）ベース<p>最小配分：5M オペレーション/月</p> | はい<ul><li>追加操作の購入ライセンス</li><li>[!DNL AEM Assets] ライセンスへのアップグレード</li></ul> |
@@ -108,13 +110,31 @@ Dynamic Mediaの使用状況は、[!DNL Adobe Commerce Optimizer]内の製品ビ
 
 >[!NOTE]
 >
->上記の制限は、容量と使用割り当てをカバーします。 製品ビジュアル機能の概要と機能的な制約については、[製品ビジュアルとAEM Assets](setup/product-visuals.md)を参照してください。
+>このセクションでは、キャパシティ、使用状況の割り当て、使用権限の境界について説明します。 商品ビジュアル機能の概要については、[AEM Assetsを使用した商品ビジュアル ](setup/product-visuals.md)を参照してください。
+
+#### AEM Assets Ultimateはいつ必要ですか？
+
+>[!IMPORTANT]
+>
+>製品ビジュアルには、AEM Assets オーサーAPIへのアクセスは含まれません。 統合またはカスタムアプリケーションでアセットまたはメタデータをプログラムで管理するためにオーサーAPI アクセスが必要な場合は、AEM Assets Ultimate アドオン SKUを購入します。 Ultimateは、商品ビジュアルには含まれません。 ライセンスとプロビジョニングについては、Adobe アカウント担当者にお問い合わせください。
+
+AEM Assets Ultimateは、次の目的で必要です。
+
+- AEM Assets オーサーAPIへのアクセス：
+- メタデータイングレスやエグレスを含む、API ベースのメタデータ統合。
+- アセットやメタデータをプログラムで管理するためにAEM Assets APIを必要とするカスタム統合および自動化。
+- AEM Assets APIに依存するAdobe Developer App Builderとの連携。
+- AEM Assetsのステージング環境と開発環境。
+
+これらの要件は、アセット配信用の製品ビジュアルに含まれるOpenAPI機能を備えたDynamic Mediaを除外するものではありません。 App Builderの使用のみでは、AEM Assets Ultimateは必要ありません。この要件は、アプリケーションが使用するAEM Assets APIによって異なります。
+
+商品ビジュアル以外の広範なエンタープライズ DAM、API、拡張性、コンテンツサプライチェーンの要件については、[AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview)を参照してください。
 
 ### カタログビューとポリシー
 
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** |
 | --- | --- | --- | --- |
-| カタログビュー | マスターカタログの設定可能なサブセットの数 | [&#x200B; カタログのバリエーション数](#catalog)に基づく | はい<br> カタログのバリエーションを増やす |
+| カタログビュー | マスターカタログの設定可能なサブセットの数 | [ カタログのバリエーション数](#catalog)に基づく | はい<br> カタログのバリエーションを増やす |
 | カタログビューごとのポリシー | 許可されるデータフィルターの数 | 10 | いいえ |
 | ポリシーの属性値 | フィルタリング用に設定できる製品特性の数 | 100 | いいえ |
 | [制限付きアクセスキー割り当て](setup/private-catalog-view.md) | 単一のカタログ ビューに割り当てることができる制限付きアクセス キーの数 | 3 | いいえ |
@@ -171,7 +191,7 @@ Dynamic Mediaの使用状況は、[!DNL Adobe Commerce Optimizer]内の製品ビ
 
 | **機能** | **説明** | **基本配分** | **拡張可能ですか？** | **メモ** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | クラウドネイティブな拡張機能や統合機能の構築能力 | GMV層に基づく<p>最小配分：1 パック/年</p> | はい<p>追加パックを追加</p> | パックごとに定義される制限については、次を参照してください。<ul><li>パックごとに定義された制限の[App Builder製品説明](https://helpx.adobe.com/jp/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder Runtime Guides*&#x200B;の[&#x200B; システム設定と制限](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder ストレージの要件](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | クラウドネイティブな拡張機能や統合機能の構築能力 | GMV層に基づく<p>最小配分：1 パック/年</p> | はい<p>追加パックを追加</p> | パックごとに定義される制限については、次を参照してください。<ul><li>パックごとに定義された制限の[App Builder製品説明](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)。</li><li>*App Builder Runtime Guides*&#x200B;の[ システム設定と制限](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder ストレージの要件](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
