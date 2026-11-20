@@ -3,7 +3,7 @@ title: AEM Assetsを使用した製品ビジュアル
 description: '[!DNL Adobe Commerce Optimizer]の商品画像にAEM Assetsを使用する方法について説明します。'
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
+badgeSaas: label="SaaSのみ" type="Positive" url="https://experienceleague.adobe.com/ja/docs/commerce/user-guides/product-solutions" tooltip="Adobe Commerce as a Cloud Serviceおよび[!DNL Adobe Commerce Optimizer]件のプロジェクト（Adobeが管理するSaaS インフラストラクチャ）にのみ適用されます。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -33,9 +33,9 @@ Product Visualsを使用すると、[!DNL Adobe Commerce Optimizer]人の販売�
 
 >[!NOTE]
 >
->**製品ビジュアル**&#x200B;は、[!DNL Adobe Commerce as a Cloud Service]および[!DNL Adobe Commerce Optimizer]で提供されるバンドルの名前です。 [Dynamic MediaとOpenAPI機能](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)および[AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)を組み合わせています。
+>**製品ビジュアル**&#x200B;は、[!DNL Adobe Commerce as a Cloud Service]および[!DNL Adobe Commerce Optimizer]で提供されるバンドルの名前です。 [Dynamic MediaとOpenAPI機能](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)および[AEM Assets Prime](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-prime)を組み合わせています。
 >
->[AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview)など、別のAEM Assets ライセンスをお持ちのお客様は、同じ統合を使用できます。 Ultimateは商品ビジュアルには含まれておらず、AEM Assets Ultimate アドオン SKUが必要です。 ライセンスとプロビジョニングについては、Adobe アカウント担当者にお問い合わせください。 AEM リリースは、オンボーディング方法を決定します。使用可能な機能と環境は、使用権限によって異なります。 [製品ビジュアルの制限](../boundaries-limits.md#product-visuals-limits)を参照してください。
+>[AEM Assets Ultimate](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview)など、別のAEM Assets ライセンスをお持ちのお客様は、同じ統合を使用できます。 Ultimateは商品ビジュアルには含まれておらず、AEM Assets Ultimate アドオン SKUが必要です。 ライセンスとプロビジョニングについては、Adobe アカウント担当者にお問い合わせください。 AEM リリースは、オンボーディング方法を決定します。使用可能な機能と環境は、使用権限によって異なります。 [製品ビジュアルの制限](../boundaries-limits.md#product-visuals-limits)を参照してください。
 
 ## 主な特長
 
@@ -89,4 +89,4 @@ Product Visualsを使用すると、[!DNL Adobe Commerce Optimizer]人の販売�
 * [カタログレイヤー](catalog-layer.md)
 * [カタログビュー](catalog-view.md)
 * [AEM Assets統合ガイド](../../aem-assets-integration/overview.md)
-* [製品ビジュアルの制限と境界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
+* [製品ビジュアルの制限と境界](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)

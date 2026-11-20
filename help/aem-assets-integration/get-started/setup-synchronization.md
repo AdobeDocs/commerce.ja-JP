@@ -38,7 +38,7 @@ CommerceをAEM Assets インスタンスに接続し、アセットの同期に�
 
 AEM Assets プロジェクトを特定したら、Adobe CommerceとAEM Assets間でアセットを同期するための一致するルールを選択します。
 
-* **[!UICONTROL Match by product SKU]** - アセットが正しい商品に関連付けられていることを確認するために、アセットメタデータのSKUと[Commerce商品SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku)を一致させるデフォルトのルール。
+* **[!UICONTROL Match by product SKU]** - アセットが正しい商品に関連付けられていることを確認するために、アセットメタデータのSKUと[Commerce商品SKU](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/glossary#sku)を一致させるデフォルトのルール。
 
 * **[!UICONTROL Custom match]** – より複雑なシナリオまたはカスタム一致ロジックを必要とする特定のビジネス要件の一致ルール。 カスタムマッチングを実装するには、Adobe Developer App Builderでカスタムコードを開発して、アセットと商品のマッチング方法を定義する必要があります。 [自動マッチングのカスタム &#x200B;](../synchronize/custom-match.md)を参照してください。
 
@@ -87,7 +87,7 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 1. **[!UICONTROL Asset matching rule]** ドロップダウンから、アセット同期用のアセット一致ルールのいずれかを選択します。
 
    * [既定の自動一致](../synchronize/default-match.md)に対して&#x200B;**[!UICONTROL Match by product SKU]**&#x200B;を選択します。
-   * [&#x200B; カスタム自動一致](../synchronize/custom-match.md)の&#x200B;**[!UICONTROL Custom match]**&#x200B;を選択します。 このオプションには[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)が必要です。
+   * [&#x200B; カスタム自動一致](../synchronize/custom-match.md)の&#x200B;**[!UICONTROL Custom match]**&#x200B;を選択します。 このオプションには[Adobe Developer App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)が必要です。
 
 1. **[!UICONTROL Match by product SKU]**&#x200B;の場合、**[!UICONTROL Match by product SKU attribute name]** フィールドに[AEM Assets メタデータプロパティ名](../metadata.md)を入力します。 デフォルトは`commerce:skus`です。
 
@@ -135,7 +135,7 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 
 管理者はその所有者の利用可能な画像を表示し、残りの画像はグレー表示され、**非表示** ラベルが付いて表示されます。
 
-画像の表示動作について詳しくは、[画像の詳細を設定](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} トピックを参照してください。
+画像の表示動作について詳しくは、[画像の詳細を設定](https://experienceleague.adobe.com/ja/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} トピックを参照してください。
 
 >[!TIP]
 >
@@ -159,7 +159,7 @@ AEM管理者から、設定されたasset-delivery カスタムドメイン URL�
 
 >[!NOTE]
 >
->カスタムドメイン URLを設定しても、以前に同期されたアセットのURLは更新されません。 これらのアセットは、AEM Assets[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}で再処理されるまで、以前のURLを保持します。 カスタムドメイン設定を保存したら、これらのアセットを再処理してURLを更新し、カスタムドメインを使用します。
+>カスタムドメイン URLを設定しても、以前に同期されたアセットのURLは更新されません。 これらのアセットは、AEM Assets[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}で再処理されるまで、以前のURLを保持します。 カスタムドメイン設定を保存したら、これらのアセットを再処理してURLを更新し、カスタムドメインを使用します。
 
 1. **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
 
