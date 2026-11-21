@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1188'
 ht-degree: 1%
 ---
 # Commerce向けAEM Assets統合
@@ -65,6 +65,8 @@ AEM Assetsとの連携により、アセット管理ワークフローを自動�
 * **拡張機能の更新通知** - AEM Assets Integration拡張機能バージョン 1.4.6以降では、Commerceは新しい拡張機能のバージョンを確認し、管理者に通知します。 [拡張機能の更新を確認する](get-started/check-for-updates.md)を参照してください。
 
 代替テキストのローカライズでは、製品画像の割り当てやギャラリーのマッピングは変更されません。 ストアビューのアセットの可用性は個別の機能であり、代替テキストワークフローではカバーされません。
+
+AEM Assetsを活用した製品ビジュアルは、Adobe Commerce as a Cloud ServiceとAdobe Commerce Optimizerにおいて、Commerceに焦点を当てたアセット管理ユースケースをサポートします。 サポートされている機能、容量制限、およびAEM Assets Ultimateを必要とする機能については、[製品ビジュアルの制限](../optimizer/boundaries-limits.md#product-visuals-limits)を参照してください。
 
 ## 統合の使用要件
 
@@ -142,7 +144,7 @@ AEM Assets統合をインストールして設定するプロセスは、Adobe C
 
 1. Commerce メタデータをサポートするには、[AEM Assets プロジェクトを設定](get-started/configure-aem.md)します。 AEM リリース `2026.5.26309`以降では、[&#x200B; セルフサービスオンボーディング &#x200B;](get-started/configure-aem.md#enable-aem-commerce-self-service)を使用します。以前のリリースでは、`assets-commerce` パッケージを手動でインストールします。
 
-1. [IMS ユーザー権限](get-started/permissions.md)を設定して、アセットセレクターと、自動入力された&#x200B;**[!UICONTROL Program ID]**&#x200B;および&#x200B;**[!UICONTROL Environment ID]** フィールドを使用できるようにします。
+1. [Asset SelectorおよびAEM環境とドメインの選択範囲に対するIMS ユーザー権限](get-started/permissions.md)を設定します。
 
 1. [Commerce Admin](get-started/setup-synchronization.md)で統合を設定します。
 
@@ -156,13 +158,17 @@ AEM Assets統合をインストールして設定するプロセスは、Adobe C
 
 1. [Adobe Commerce パッケージ &#x200B;](get-started/configure-commerce.md)をインストールして、拡張機能を追加し、必要な資格情報と接続を生成します。
 
-1. [IMS ユーザー権限](get-started/permissions.md)を設定して、アセットセレクターと、自動入力された&#x200B;**[!UICONTROL Program ID]**&#x200B;および&#x200B;**[!UICONTROL Environment ID]** フィールドを使用できるようにします。
+1. [Asset SelectorおよびAEM環境とドメインの選択範囲に対するIMS ユーザー権限](get-started/permissions.md)を設定します。
 
 1. [Commerce Admin](get-started/setup-synchronization.md)で統合を設定します。
 
 1. オプション。 [商品画像の表示](get-started/configure-storefront.md#enable-product-images)を有効にして、Edge Delivery Servicesを搭載したストアフロントでAEMが管理する商品画像をレンダリングします。
 
 >[!ENDTABS]
+
+設定が完了したら、製品の関連付けとストアフロント表示への同期を通じて、対象となる承認済みアセットから[統合](get-started/setup-synchronization.md#verify-the-integration)を確認します。 Adobe Commerce Optimizerの場合は、[Optimizer検証ワークフロー](get-started/configure-aco.md#match-by-sku-workflow-example)に従います。同期ステータスは利用できません。
+
+カテゴリ画像の割り当てと検証については、[&#x200B; カテゴリ画像の管理](manage-assets.md#category-images)を参照してください。
 
 ## サポート
 

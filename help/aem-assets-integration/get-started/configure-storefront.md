@@ -26,9 +26,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '664'
 ht-degree: 0%
 ---
 # ストアフロントの設定
@@ -52,6 +52,8 @@ Edge Delivery Servicesを利用したCommerce ストアフロントでの統合�
 Commerce ドロップインは、`commerce-assets-enabled`設定を自動的に検出し、それに応じて画像の処理を調整します。
 
 Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用する方法について詳しくは、*AEM Assets Storefront* ドキュメントの[Adobe Commerce統合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) トピックを参照してください。
+
+ストアフロント設定を保存した後、[製品に関連付けられた承認済みアセットを使用して統合](setup-synchronization.md#verify-the-integration)を確認します。 予想される画像がストアフロントに表示されることを確認します。 そうでない場合は、ストアフロントの画像配信のトラブルシューティングを行う前に、製品の関連付け、ビジュアライゼーション所有者、同期結果を確認してください。 Adobe Commerce Optimizerの場合は、[Optimizer検証ワークフロー](configure-aco.md#match-by-sku-workflow-example)に従います。
 
 >[!TIP]
 >

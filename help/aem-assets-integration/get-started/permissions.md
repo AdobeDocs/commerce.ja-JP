@@ -15,9 +15,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '966'
 ht-degree: 0%
 ---
 # ユーザー権限とIMS
@@ -27,14 +27,18 @@ ht-degree: 0%
 * Adobe Commerce as a Cloud Serviceの場合、管理者はデフォルトでIMS認証を有効にします。
 * Adobe Commerce オンクラウドまたはオンプレミスの場合、IMSはオプションです。
 
-  [Commerce](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank}でIMSを有効にすると、強化された設定UI （アセットセレクター、自動入力ドロップダウン）が提供されますが、**プログラム ID**&#x200B;および&#x200B;**環境ID**&#x200B;を手動で入力することで、IMSを使用せずに統合を設定できます。
+  [CommerceのIMSを有効にする](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank}には、アセットセレクターと環境およびドメインのドロップダウンを使用した強化された設定UIが用意されています。 設定に&#x200B;**プログラム ID**&#x200B;と&#x200B;**環境ID**&#x200B;のフィールドが別々に表示されている場合は、IMSを使用せずに、これらの識別子を手動で入力できます。
 
 IMSを使用する場合、AEM Assets統合には特定の&#x200B;**Adobe Admin Console製品プロファイル**&#x200B;も必要です。 Commerce Adminで統合を設定するユーザーには、**AEM Assets DM OpenAPI Users - delivery**&#x200B;製品プロファイル、または&#x200B;**author**&#x200B;製品プロファイルがフォールバックとして必要です。 このアクセスは、ユーザーのIMS組織内のAdmin Console製品プロファイルを通じて制御され、次のことが可能になります。
 
 * **アセットセレクター**&#x200B;を使用すると、カテゴリ画像またはページビルダーコンテンツを管理する際に、AEM Assetsから画像を選択できます。
-* **ユーザーのIMS セッションから値を取得する** プログラム ID **、**&#x200B;環境ID **、** ドメインマッピング **ドロップダウンなど、設定フィールド**&#x200B;を自動入力しました。
+* **ユーザーのIMS セッションから値を取得する** AEM Environment **および** AEM Domain Mapping **ドロップダウンを含む設定フィールド**&#x200B;を自動入力しました。 環境の選択と手動ID入力については、[統合の設定](setup-synchronization.md)を参照してください。
 
 適切な権限がないと、アセットセレクターは使用できず、これらのフィールドは空のように見えるか、手動で入力する必要があります。
+
+>[!IMPORTANT]
+>
+> Adobe Admin Console製品プロファイルは、統合機能へのユーザーアクセスを制御します。ライセンスの使用権限は変更されません。 オーサー製品プロファイルを割り当てても、AEM Assets オーサーAPIにProduct Visualsのお客様へのアクセス権は付与されません。 使用権限の要件については、[製品ビジュアルの制限](../../optimizer/boundaries-limits.md#product-visuals-limits)を参照してください。
 
 >[!BEGINSHADEBOX]
 
@@ -52,12 +56,12 @@ Adobe IMSはユーザーIDと組織のコンテキストを提供しますが、
 
 * **製品プロファイルの作成**。 AEM Assets UIにアクセスするために必要です。 また、ユーザーがAdmin ConsoleにAEM配信製品プロファイルを持っていない場合は、アセットセレクターと設定UIのフォールバックとしても機能します。
 
-ドメイン（プログラム ID、環境ID、ドメインマッピングなど）は、AEM配信製品プロファイルに割り当てられます。 統合は、使用可能な場合は&#x200B;**AEM配信製品プロファイル**&#x200B;からドメインを読み込むか、ユーザーのAdmin ConsoleにAEM配信製品プロファイルが含まれていない場合は&#x200B;**オーサー製品プロファイル**&#x200B;にフォールバックします。 ユーザーは、次のいずれかのプロファイルを使用する必要があります。
+統合は、利用可能な場合は&#x200B;**AEM配信製品プロファイル**&#x200B;から環境とドメインマッピングを読み込むか、ユーザーのAdmin ConsoleにAEM配信製品プロファイルがない場合は&#x200B;**オーサー製品プロファイル**&#x200B;にフォールバックします。 ユーザーは、次のいずれかのプロファイルを使用する必要があります。
 
-* Commerce管理者設定の&#x200B;**プログラム ID**、**Environment ID**&#x200B;および&#x200B;**Domain mapping** ドロップダウンを入力します。
+* Commerce管理者設定で&#x200B;**AEM Environment**&#x200B;と&#x200B;**AEM Domain Mapping** ドロップダウンを設定します。
 * AEM Assetsからアセットを参照して選択するには、アセットセレクターを使用します。
 
-どちらのプロファイルも設定されていない場合、ユーザーは&#x200B;**プログラム ID**&#x200B;と&#x200B;**環境ID**&#x200B;を手動で入力できますが、アセットセレクターは使用できません。
+どちらのプロファイルも設定されていない場合、アセットセレクターは使用できません。 設定に&#x200B;**プログラム ID**&#x200B;と&#x200B;**環境ID** フィールドが別々に表示されている場合は、識別子を手動で入力できます。
 
 ## デプロイメントタイプ別の権限の付与
 
@@ -83,7 +87,7 @@ Adobe IMSはユーザーIDと組織のコンテキストを提供しますが、
 
 PaaSでアセットセレクターを有効にするには、**IMS クライアント ID**&#x200B;が必要です。 OpenAPIでDynamic Mediaを有効にする際にIMS クライアント IDを取得する方法など、前提条件については、[AEM Assets プロジェクト &#x200B;](configure-aem.md#prerequisites)の設定を参照してください。
 
-アセットセレクターと自動入力された設定フィールド（プログラム ID、環境ID、ドメインマッピング）を使用するには：
+アセットセレクターと&#x200B;**AEM Environment**&#x200B;および&#x200B;**AEM Domain Mapping** ドロップダウンを使用するには：
 
 1. [CommerceのAdobe IMSを有効にして、Commerce管理者がIMS認証を使用し、ユーザーのAdmin Console製品プロファイルを読み取れるようにします](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank}。
 
@@ -91,7 +95,7 @@ PaaSでアセットセレクターを有効にするには、**IMS クライア�
 
 1. [Adobe Admin Console](https://adminconsole.adobe.com/)から、ユーザーを&#x200B;**AEM Assets DM OpenAPI Users - delivery**&#x200B;製品プロファイルに追加するか、フォールバックとして&#x200B;**author**&#x200B;製品プロファイルに追加します。
 
-IMSを使用しない場合でも、Commerce管理者にプログラム IDと環境IDを手動で入力することで、統合を設定できます。
+プログラム ID フィールドと環境ID フィールドを個別に表示する設定の場合、IMSを使用せずに手動入力を使用できます。 [統合の設定](setup-synchronization.md)を参照してください。
 
 >[!ENDTABS]
 

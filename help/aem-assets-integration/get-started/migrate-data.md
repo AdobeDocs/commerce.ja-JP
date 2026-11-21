@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1055'
 ht-degree: 0%
 ---
 # AEM Assets DAMへのメディアファイルの移行
@@ -42,6 +42,10 @@ Adobe CommerceとAdobe Experience Manager（AEM）の両方には、Commerceか�
 | **クラウドストレージアカウント** | <ul><li>AWS S3またはAzure Blob Storage アカウント</li><li>プライベートコンテナ/バケット設定</li><li>認証情報</li></ul> |
 | **Source コンテンツ** | <ul><li>移行用に整理されたメディアファイル</li><li>AEM Assets</a>でサポートされている<a href="https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">形式の画像およびビデオファイル。</li><li>重複したアセットの整理</li></li> |
 | **メタデータの準備** | <ul><li><a href="configure-aem.md">Commerce assets用に設定されたAEM Assets メタデータプロファイル </a></li><li>各アセットのマッピングされたメタデータ値</li><li>CSV ファイルエディター（例：Microsoft Excel）</li></ul> |
+
+>[!IMPORTANT]
+>
+>サポートされているバルクアップロードおよびバルクメタデータ操作では、AEM Assets Ultimateは必要ありません。 API ベースのメタデータイングレスやエグレスなど、AEM Assets APIを必要とするプログラムによる移行やメタデータワークフローには、AEM Assets Ultimateが必要です。 移行方法を選択する前に、[製品ビジュアルの制限](../../optimizer/boundaries-limits.md#product-visuals-limits)を確認してください。
 
 ## 移行のベストプラクティス
 
@@ -159,4 +163,4 @@ assetPath,commerce:positions{{Number: multi}},commerce:isCommerce{{String}},comm
 >
 > [一括読み込みツールのビデオ デモ](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
 > [ヒント、ベストプラクティス、制限事項](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> [API](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)を使用したアセットのアップロードまたは取り込み
+> [APIを使用してアセットをアップロードまたは取り込む](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload) - API駆動型の移行を実装する前に、[製品ビジュアルの制限](../../optimizer/boundaries-limits.md#product-visuals-limits)を確認してください。

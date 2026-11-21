@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1900'
 ht-degree: 1%
 ---
 # AEM Assets プロジェクトの設定
@@ -65,6 +65,10 @@ AEM Assets プロジェクトを設定するには、次の2つのオプショ�
 
   Commerce インスタンスとAEM Assets オーサリング環境の両方が同じIMS組織にある必要があります。
 
+>[!NOTE]
+>
+>AEM Assetsのステージング環境および開発環境には、AEM Assets Ultimateが必要です。 これらの環境を計画する前に、[製品ビジュアルの制限](../../optimizer/boundaries-limits.md#product-visuals-limits)を確認してください。 この要件は、Commerce サンドボックス環境ではなく、AEM Assets環境に適用されます。
+
 ### 手順1：プログラムと環境の作成
 
 Cloud Managerでのプログラムの作成は、マルチステップのプロセスです。プログラムとその環境は、複数のステップで設定され、一緒に保存されます。
@@ -77,7 +81,7 @@ Cloud Managerでのプログラムの作成は、マルチステップのプロ�
 
    ![Dynamic Mediaを選択したCloud Manager ソリューションとアドオンの手順](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
 
-1. **[!UICONTROL Add Environment]** ステップで、**実稼動**&#x200B;および&#x200B;**ステージング**&#x200B;環境の名前を入力し、地域を選択します。
+1. **[!UICONTROL Add Environment]** ステップで、**実稼動**&#x200B;環境名を入力し、地域を選択します。 使用権限にステージ環境が含まれている場合は、**ステージング**&#x200B;環境名も入力します。
 
    >[!IMPORTANT]
    >

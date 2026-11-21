@@ -22,9 +22,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '372'
 ht-degree: 0%
 ---
 # デフォルトの自動一致
@@ -33,13 +33,13 @@ CommerceのAEM Assets統合では、**AEM Assets** メタデータ設定に基�
 
 ## 自動マッチングメカニズムの設定
 
-1. Commerce管理者から、**[!UICONTROL Store]** / 設定/ **[!UICONTROL ADOBE SERVICES]** / **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
+1. Commerce管理者から、**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
 
-1. 一致するルールとして&#x200B;**[!UICONTROL Match by SKU]**&#x200B;を指定します。
+1. 一致するルールとして&#x200B;**[!UICONTROL Match by product SKU]**&#x200B;を指定します。
 
-   ![既定の自動一致ルール &#x200B;](../assets/ootb-matching-rule.png){width="600" zoomable="yes"}
+   ![製品SKU ルールとメタデータプロパティ名で一致](../assets/ootb-matching-rule.png){width="700" zoomable="yes"}
 
-1. AEM Assetsでアセット識別に使用するメタデータフィールド名を入力します。
+1. **[!UICONTROL Match by product SKU attribute name]**&#x200B;に、実際のSKU値ではなく、商品SKUをAEM Assetsに保存する[&#x200B; メタデータプロパティ名](../metadata.md)を入力します。
 
    >[!NOTE]
    >
@@ -69,4 +69,6 @@ Commerce Adminで&#x200B;**[!UICONTROL Match by product SKU]**&#x200B;一致ル�
 
    ![例のメタデータ &#x200B;](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
-このアプローチにより、デジタルアセットがAdobe Commerceで適切にリンクされ、表示されるようになります。 また、マーチャンダイジング担当者やマーケターは、Adobe AEM Assets内で直接、役割やアセットのポジショニングを管理できるようになり、あらゆるエンゲージメントチャネルにおける画像の選択と順序付けの一貫性のある一元化されたメカニズムを提供します。
+アセットを承認したら、[製品の関連付け、同期結果、およびストアフロント表示を確認します](../get-started/setup-synchronization.md#verify-the-integration)。 アセットが表示されない場合は、[同期ステータス &#x200B;](../get-started/sync-status.md)を確認してください。 Adobe Commerce Optimizerの場合は、代わりに[Optimizer検証ワークフロー](../get-started/configure-aco.md#match-by-sku-workflow-example)を使用してください。同期ステータスは使用できません。
+
+[!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}その他の同期のトラブルシューティングについては、[統合ログ &#x200B;](../get-started/logs.md)を確認してください。

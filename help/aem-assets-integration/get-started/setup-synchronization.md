@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1355'
 ht-degree: 1%
 ---
 # 統合の設定
@@ -40,9 +40,9 @@ AEM Assets プロジェクトを特定したら、Adobe CommerceとAEM Assets間
 
 * **[!UICONTROL Match by product SKU]** - アセットが正しい商品に関連付けられていることを確認するために、アセットメタデータのSKUと[Commerce商品SKU](https://experienceleague.adobe.com/ja/docs/commerce-operations/implementation-playbook/glossary#sku)を一致させるデフォルトのルール。
 
-* **[!UICONTROL Custom match]** – より複雑なシナリオまたはカスタム一致ロジックを必要とする特定のビジネス要件の一致ルール。 カスタムマッチングを実装するには、Adobe Developer App Builderでカスタムコードを開発して、アセットと商品のマッチング方法を定義する必要があります。 詳細については、近日公開予定です…
+* **[!UICONTROL Custom match]** – より複雑なシナリオまたはカスタム一致ロジックを必要とする特定のビジネス要件の一致ルール。 カスタムマッチングを実装するには、Adobe Developer App Builderでカスタムコードを開発して、アセットと商品のマッチング方法を定義する必要があります。 [自動マッチングのカスタム &#x200B;](../synchronize/custom-match.md)を参照してください。
 
-初期設定では、デフォルトの&#x200B;*製品SKU*&#x200B;による一致ルールを使用します。
+初期設定では、デフォルトの&#x200B;**[!UICONTROL Match by product SKU]** ルールを使用します。
 
 ## 要件定義
 
@@ -52,15 +52,13 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 
 * [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} [Adobe Commerce パッケージ &#x200B;](configure-commerce.md)をインストールして拡張機能を追加し、拡張機能を使用するために必要な資格情報と接続を生成します。
 
-* [&#x200B; ユーザー権限とIMS](permissions.md) - アセットセレクターと自動入力された設定フィールド（プログラム ID、環境ID、ドメインマッピング）に必要な権限を設定します。
+* [&#x200B; ユーザー権限とIMS](permissions.md) - アセットセレクター、AEM環境の選択、ドメインマッピングに必要な権限を設定します。
 
 ## 接続の設定
 
-1. Commerce管理者から、AEM Assets統合設定を開きます。
+![環境とドメイン値の例を含むAEM Assets統合設定](../assets/aem-assets-view.png){width="900" zoomable="yes"}
 
-   1. **[!UICONTROL Store]** / 設定/ **[!UICONTROL ADOBE SERVICES]** / **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
-
-      ![AEM Assets統合で統合を有効にする](../assets/aem-assets-view.png){width="600" zoomable="yes"}
+1. Commerce管理者から、**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
 
 >[!INFO]
 >
@@ -68,17 +66,17 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 
 1. [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} 「**[!UICONTROL Asset Selector IMS Client ID]**」を入力します。
 
-   このIDは、プログラム IDおよび環境ID フィールドのアセットセレクターおよび自動入力機能を有効にするために必要です。 このIDを取得するには、[&#x200B; ユーザー権限とIMS](permissions.md)を参照してください。 アセットセレクターについて詳しくは、[&#x200B; アセットの手動選択](../synchronize/asset-selector-integration.md)を参照してください。
+   アセットセレクターを有効にするには、このIDが必要です。 このIDを取得するには、[&#x200B; ユーザー権限とIMS](permissions.md)を参照してください。 アセットセレクターについて詳しくは、[&#x200B; アセットの手動選択](../synchronize/asset-selector-integration.md)を参照してください。
 
-1. ドロップダウンメニューからAEM Assets環境&#x200B;**[!UICONTROL Program ID]**&#x200B;と&#x200B;**[!UICONTROL Environment ID]**&#x200B;を選択します。
+1. **[!UICONTROL AEM Environment]**&#x200B;から、[AEM Assets プロジェクトの設定](configure-aem.md)で設定された環境を選択します。
 
-   セレクターは、Commerce管理者ユーザーがエクスペリエンスに必要な[&#x200B; ユーザー権限](permissions.md#user-permissions-and-ims)を持っている場合に表示されます。**Adobe Commerce as a Cloud Service**、**Adobe Commerce Optimizer**、および&#x200B;**Adobe Commerce on Cloud Infrastructure**&#x200B;統合では、ペーストされたIDに依存するのではなく、IMSにリンクされたセッションからこれらのフィールドを自動的に入力できます。
+   このリストには、ユーザーがオーサーまたは配信製品プロファイルを持つAEM環境が含まれます。 想定される環境が見つからない場合は、[&#x200B; ユーザー権限とIMS](permissions.md)を確認してください。
 
-   セレクターが使用できない場合は、AEM Cloud Managerから&#x200B;**[!UICONTROL Program ID]**&#x200B;と&#x200B;**[!UICONTROL Environment ID]**&#x200B;をコピーするか、オーサーURL `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/`から派生させます（プレースホルダーを識別子に置き換えます）。
+   代わりに、設定に&#x200B;**[!UICONTROL Program ID]**&#x200B;と&#x200B;**[!UICONTROL Environment ID]**&#x200B;のフィールドが別々に表示される場合は、その環境の識別子を指定します。 手動入力の場合は、AEM Cloud Managerからコピーするか、作成者URL `https://author-p<ProgramID>-e<EnvironmentID>.adobeaemcloud.com/`から派生させます。 `p`と`e`のプレフィックスを含まない数値識別子のみを入力します。
 
-   両方のフィールドの&#x200B;**[!UICONTROL Use system value]**&#x200B;をクリアしてから、新しい値を手動でペーストまたは選択する必要があります。
+   **[!UICONTROL Use system value]** チェックボックスを含むフィールドの場合は、デフォルト値を上書きする前にチェックボックスをオフにします。
 
-   ![&#x200B; プログラム IDおよびEnvironment ID セレクターを含むAEM Assets統合フォーム &#x200B;](../assets/aem-assets-view.png){width="600" zoomable="yes"}
+1. **[!UICONTROL AEM Domain Mapping]**&#x200B;を確認してください。 選択したAEM環境に基づいて、使用可能なドメインが自動的に読み込まれます。 プロジェクトでカスタムアセット配信ドメインを使用している場合は、[&#x200B; カスタムドメイン URLの設定](#optional-configure-the-custom-domain-url)に従います。
 
 1. [!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"} Commerceとアセットマッチングサービス間のリクエストを認証する[[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment)を選択します。
 
@@ -88,10 +86,14 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 
 1. **[!UICONTROL Asset matching rule]** ドロップダウンから、アセット同期用のアセット一致ルールのいずれかを選択します。
 
-   * [&#x200B; デフォルトの自動一致](../synchronize/default-match.md)の&#x200B;**[!UICONTROL Match by SKU]**&#x200B;を選択します。
-   * [&#x200B; カスタム自動一致](../synchronize/custom-match.md)の&#x200B;**[!UICONTROL Custom match]**&#x200B;を選択します（[Adobe Developer App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)が必要です）。
+   * [既定の自動一致](../synchronize/default-match.md)に対して&#x200B;**[!UICONTROL Match by product SKU]**&#x200B;を選択します。
+   * [&#x200B; カスタム自動一致](../synchronize/custom-match.md)の&#x200B;**[!UICONTROL Custom match]**&#x200B;を選択します。 このオプションには[Adobe Developer App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)が必要です。
 
-1. **[!UICONTROL Match by product SKU attribute name]** フィールド `commerce:skus`に、Commerce製品SKU用に定義された[AEM Assets メタデータフィールド名](configure-aem.md#define-the-metadata-profile)をデフォルトで追加します。
+1. **[!UICONTROL Match by product SKU]**&#x200B;の場合、**[!UICONTROL Match by product SKU attribute name]** フィールドに[AEM Assets メタデータプロパティ名](../metadata.md)を入力します。 デフォルトは`commerce:skus`です。
+
+   製品のSKU値ではなく、プロパティ名を入力します。 [&#x200B; デフォルトの自動一致](../synchronize/default-match.md)の説明に従って、AEM Assetsの各アセットの&#x200B;**[!UICONTROL Product Data]** メタデータに実際の商品SKUを追加します。
+
+1. [&#x200B; ビジュアライゼーション所有者](#configure-the-visualization-owner)の設定を確認します。 移行中は、アセットの同期が完了するまで&#x200B;**Adobe Commerce**&#x200B;の所有権を保持します。
 
 1. **[!UICONTROL Save Config]**&#x200B;を選択して更新を適用し、アセットの同期を開始します。
 
@@ -123,7 +125,7 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 
 フィールド名、検証ルールおよびCommerceの結果については、[AEM AssetsのCommerce メタデータ &#x200B;](../metadata.md)を参照してください。
 
-### ビジュアライゼーション所有者の設定
+## ビジュアライゼーション所有者の設定
 
 **ビジュアライゼーション所有者**&#x200B;の設定により、統合で製品イメージを提供するシステムが決まります。
 
@@ -139,29 +141,57 @@ AEM Assets統合を設定する前に、次の手順を完了していること�
 >
 > CommerceからAEM Assetsへの移行中に、**Visualization Owner**&#x200B;をCommerceに設定して、画像リンクの破損を防ぎます。 すべての製品がAEM Assetsと正常に同期されたら、AEM Assets オーナーに切り替えて移行を完了します。 これにより、プロセス全体で画像の可用性を継続的に確保できます。
 
-1. **[!UICONTROL Store]** / 設定/ **[!UICONTROL ADOBE SERVICES]** / **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
+1. **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
 
-   ![AEM Assets統合ビジュアライゼーションオーナー機能](../assets/visualization-owner-detail.png){width="400" zoomable="yes"}
+   ![&#x200B; ビジュアライゼーション所有者がAEM Assets](../assets/visualization-owner-detail.png){width="700" zoomable="yes"}に設定されました
 
 1. 画像を表示するには、**ビジュアライゼーション所有者** ソースを選択します。
 
-1. **[!UICONTROL Save Config]**&#x200B;をクリックして更新を適用し、アセットの同期を開始します。
+1. **[!UICONTROL Save Config]**&#x200B;をクリックして更新を適用します。
 
-### オプション。 カスタムドメイン URLの設定
+   **AEM Assets**&#x200B;に切り替える前に、[&#x200B; アセットが予想される製品](#verify-the-integration)に関連付けられていることを確認してください。 次に、[AEM Assetsの商品画像を表示するようにストアフロント &#x200B;](configure-storefront.md)を設定します。
+
+## オプション。 カスタムドメイン URLの設定
 
 AEM Assets as a Cloud Service プロジェクトに[&#x200B; カスタムドメイン名](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank}が設定されている場合は、Commerce用のAEM Assets統合で使用できるように、Commerce ストア設定にドメイン名を追加する必要があります。
 
-1. **[!UICONTROL Store]** / 設定/ **[!UICONTROL ADOBE SERVICES]** / **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
+AEM管理者から、設定されたasset-delivery カスタムドメイン URLを取得します。 この設定は、AEM配信URLに代わるもので、プログラム IDと環境IDの識別に使用されるAEM オーサーURLではありません。 プロジェクトでカスタムドメインを使用しない場合は、ドメインマッピングは変更しないでください。
 
-   ![AEM Assets統合で統合を有効にする](../assets/aem-assets-view.png){width="700" zoomable="yes"}
+>[!NOTE]
+>
+>カスタムドメイン URLを設定しても、以前に同期されたアセットのURLは更新されません。 これらのアセットは、AEM Assets[&#128279;](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}で再処理されるまで、以前のURLを保持します。 カスタムドメイン設定を保存したら、これらのアセットを再処理してURLを更新し、カスタムドメインを使用します。
 
-1. **カスタムドメイン URL**&#x200B;を&#x200B;**[!UICONTROL Asset Custom Domain]** フィールドに追加します。
+1. **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
 
-1. **[!UICONTROL Save Config]**&#x200B;をクリックして更新を適用し、アセットの同期を開始します。
+1. 選択した&#x200B;**[!UICONTROL AEM Environment]**&#x200B;を確認してから、**[!UICONTROL AEM Domain Mapping]**&#x200B;から設定済みのカスタムドメインを選択します。 選択した環境で使用可能なドメインが自動的に読み込まれます。
+
+![AEM環境およびドメインセレクターと値の例](../assets/aem-assets-environment-domain.png){width="700" zoomable="yes"}
+
+    代わりに&#x200B;**[!UICONTROL Asset Custom Domain]** テキストフィールドを表示する設定の場合は、カスタムドメイン URLをそのフィールドに入力します。
+
+1. **[!UICONTROL Save Config]**&#x200B;をクリックして更新を適用します。
+
+## 統合の検証
+
+>[!NOTE]
+>
+>Sync StatusはAdobe Commerce Optimizerでは使用できません。 以下のCommerce管理者チェックの代わりに、[Commerce Optimizerの検証ワークフロー](configure-aco.md#match-by-sku-workflow-example)に従います。
+
+1. 既存のCommerce製品を選択し、そのSKUを書き留めます。
+
+1. AEM Assetsで、テストアセットを&#x200B;**[!UICONTROL Eligible for Commerce]**&#x200B;としてマークし、その商品SKUに関連付け、その役割とポジションを設定します。 アセットを承認します。 [既定の自動一致](../synchronize/default-match.md)を参照するか、設定済みの[&#x200B; カスタム一致ルール &#x200B;](../synchronize/custom-match.md)を使用してください。
+
+1. 同期が完了したら、Commerce Adminで製品を開き、関連するアセット、ロール、およびポジションについて&#x200B;**[!UICONTROL Images And Videos]** セクションを確認します。 [&#x200B; アセットの管理](../manage-assets.md)を参照してください。
+
+1. アセットの同期結果については、[同期ステータス &#x200B;](sync-status.md)を確認してください。 同期が失敗した場合は、**[!UICONTROL Error]**&#x200B;列を確認してください。
+
+1. ビジュアライゼーションオーナーとして&#x200B;**AEM Assets**&#x200B;を選択し、[&#x200B; ストアフロント設定](configure-storefront.md)を完了した後、ストアフロントで商品を開き、予想される画像が表示されることを確認します。
+
+[!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}その他の同期のトラブルシューティングについては、[統合ログ &#x200B;](logs.md)を確認してください。
 
 ## 次のステップ
 
-* **Commerce Storefrontの設定**- Edge Delivery Servicesを搭載したCommerce StorefrontでAEM Assetsを使用するには、*Adobe Commerce Storefront ドキュメント*&#x200B;の[AEM Assets統合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) トピックで説明されているストアフロントの設定を完了します。
+* [Edge Delivery Servicesを使用してAEM Assetsの商品画像を表示するように、Commerce ストアフロント &#x200B;](configure-storefront.md)を設定します。
 
 * Adobe CommerceとAEM Assets統合の間で[一致するルール &#x200B;](../synchronize/default-match.md)を設定します。
 

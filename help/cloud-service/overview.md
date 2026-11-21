@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 213fcf83118eb60b0e80db224192963592945d8d
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1641'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce as a Cloud Service] の概要
@@ -141,31 +141,36 @@ ht-degree: 0%
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
-Product Visualsは、Adobe Experience Managerと統合され、リッチメディアコンテンツを管理するデジタルアセット管理（DAM）システムを使用して、アセット管理を簡素化するのに役立ちます。
+Adobe Product Visualsは、Adobe Experience Manager Assetsを活用した、商品アセットの管理、Commerceメタデータ、アセット配信など、Commerceに特化したデジタルアセット管理（DAM）をサポートします。
 
 この統合により、商品画像やマーケティングコンテンツなどのデジタルアセットが、SKUやその他の主要属性にもとづいて、Adobe Commerceの商品やカテゴリーなどの適切なマーチャンダイジングエンティティに動的にリンクできるようになります。
 
-[!DNL Product Visuals]は[!DNL Adobe Commerce as a Cloud Service]とネイティブに利用でき、[!DNL AEM Assets]の機能の一部が提供されます。
+[!DNL Product Visuals]は[!DNL Adobe Commerce as a Cloud Service]に含まれています。 軽量DAMである[AEM Assets Prime](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-prime)と、アセット配信用のOpenAPI機能を備えたDynamic Mediaをバンドルしています。
 
 または、[!DNL Adobe Commerce as a Cloud Service]内のネイティブ機能は、デジタルアセットを保存および管理するための基本的なアセット管理ツールを提供します。
 
 [!DNL Product Visuals powered by AEM Assets]と[!DNL Adobe Commerce as a Cloud Service]の統合方法について詳しくは、[AEM Assets統合](../aem-assets-integration/overview.md) ガイドを参照してください。
 
-### [!DNL Product Visuals]または[!DNL AEM Assets]
+### [!DNL Product Visuals]または[!DNL AEM Assets Ultimate]
 
-次の比較は、supply chainが必要とするコンテンツに最適なオプションを選択するのに役立ちます。
+次の比較は、supply chainが必要とするコンテンツに最適なオプションを選択するのに役立ちます。 Adobe Product Visualsは、Commerceを中心としたアセット管理をサポートします。 [AEM Assets Ultimate](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview)は、UIの拡張性、API ドリブン型の自動化、カスタムコードのデプロイメントなど、広範なエンタープライズ DAMと複雑なコンテンツサプライチェーンをサポートしています。
+
+>[!IMPORTANT]
+>
+>AEM Assets Ultimateは、商品ビジュアルには含まれていません。 Ultimateを使用するには、AEM Assets Ultimate アドオン SKUを購入します。 ライセンスとプロビジョニングについて詳しくは、Adobeの担当者にお問い合わせください。
 
 <table>
   <tr>
     <td align="left">
       <strong>[!DNL Product Visuals powered by AEM Assets]</strong>
       <ul>
+        <li>Adobe Commerce as a Cloud Serviceに含まれる</li>
         <li>製品画像と動画を自動的に統合するデジタルアセット管理（DAM）</li>
         <li>画像のサイズ変更、切り抜き、変換</li>
         <li>画像や動画の高速配信</li>
         <li>クライアントブラウザーの機能にもとづいて、画像のフォーマット、サイズ、画質を最適化</li>
         <li>Adobe ExpressおよびAdobe Fireflyへのアクセス</li>
-        <li>画像/ビデオの配信容量とユーザーアクセスの使用制限</li>
+        <li>アセットのストレージ、画像/動画の配信容量、ユーザーアクセスに関する使用制限</li>
         <li>統合アセットセレクター</li>
       </ul>
     </td>
@@ -174,13 +179,18 @@ Product Visualsは、Adobe Experience Managerと統合され、リッチメデ�
       <img src="../assets/icon-double-chevron-right.svg" alt="シェブロン" width="100">
     </td>
     <td align="left">
-      <strong>AEM Assets</strong>
+      <strong>[!DNL AEM Assets Ultimate]</strong>
       <ul>
+        <li>AEM Assets Ultimate アドオン SKUが必要</li>
         <li>製品ビジュアルのすべての機能</li>
         <li>フルマーケティングデジタルアセット管理（DAM）</li>
-        <li>無制限のユーザー（ユーザーごとに支払い）</li>
-        <li>画像や動画を無制限に配信</li>
-        <li>高度なアセット管理機能：</li>
+        <li>購入したライセンスにもとづくユーザーアクセス</li>
+        <li>ライセンス済みのDynamic Media容量にもとづく画像やビデオの配信</li>
+        <li>AEM Assets オーサーAPI AEM Assets APIを使用してアセットやメタデータをプログラムで管理するアクセスと統合</li>
+        <li>メタデータイングレスやエグレスを含む、API ベースのメタデータ統合</li>
+        <li>UIの拡張性、API ドリブン型の自動化、カスタムコードのデプロイ</li>
+        <li>AEM Assetsのステージ環境と開発環境</li>
+        <li>該当するアドオンライセンスの対象となるDynamic Media機能を含む、高度なアセット管理機能：</li>
         <ul>
           <li>360°スピンセットとインタラクティブビューア</li>
           <li>3D モデルのサポートと没入型コンテンツ</li>
@@ -199,6 +209,10 @@ Product Visualsは、Adobe Experience Managerと統合され、リッチメデ�
     </td>
   </tr>
 </table>
+
+>[!NOTE]
+>
+>サポートされているバルクアップロードおよびバルクメタデータ操作では、AEM Assets Ultimateは必要ありません。 App Builderの使用のみではUltimateは必要ありません。この要件は、アプリケーションが使用するAEM Assets APIによって異なります。 製品ビジュアルには、アセット配信のためのOpenAPI機能を備えたDynamic Mediaが含まれています。 機能の使用権限、容量、使用状況の割り当てについては、[製品ビジュアルの制限](../optimizer/boundaries-limits.md#product-visuals-limits)を参照してください。
 
 ## 開発者プラットフォーム
 

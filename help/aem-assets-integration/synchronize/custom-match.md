@@ -22,18 +22,22 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # カスタム自動一致
 
 デフォルトの自動一致の戦略（**OOTB自動一致**）が特定のビジネス要件に一致しない場合は、「カスタム一致」オプションを選択します。 このオプションでは、[Adobe Developer App Builder](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)を使用して、複雑なマッチングロジックを処理するカスタムマッチャーアプリケーションや、メタデータをAEM Assetsに入力できないサードパーティシステムからのアセットを開発できます。
 
+>[!NOTE]
+>
+>カスタムマッチャーまたはAdobe Developer App Builder統合でアセットまたはメタデータをプログラムで管理するためにAEM Assets APIが必要な場合は、AEM Assets Ultimateの使用権限が必要です。 この要件は、App Builderの使用のみではなく、アプリケーションが使用するAPIに依存します。 [製品ビジュアルの制限](../../optimizer/boundaries-limits.md#product-visuals-limits)を参照してください。
+
 ## カスタム自動マッチングの設定
 
-1. Commerce管理者から、**[!UICONTROL Store]** / 設定/ **[!UICONTROL ADOBE SERVICES]** / **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
+1. Commerce管理者から、**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**&#x200B;に移動します。
 
 1. 一致するルールとして&#x200B;**[!UICONTROL Custom Matcher]**&#x200B;を選択します。
 
@@ -128,6 +132,10 @@ ht-degree: 0%
 1. 各フローのドロップダウンメニューから適切なランタイムアクションを選択します。
 
 1. **[!UICONTROL Save Config]**&#x200B;をクリックします。
+
+設定が適用された後、承認済みのアセットとカスタムマッチャーが関連付ける製品との統合[&#128279;](../get-started/setup-synchronization.md#verify-the-integration)を検証します。
+
+[!BADGE PaaSのみ]{type=Informative tooltip="Cloud プロジェクト上のAdobe Commerce（Adobeで管理されるPaaS インフラストラクチャ）にのみ適用されます。"}同期が失敗した場合は、[統合ログ &#x200B;](../get-started/logs.md)を確認してください。
 
 ## 非同期設定の保存
 

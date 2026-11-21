@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '567'
 ht-degree: 0%
 ---
 
@@ -35,11 +35,11 @@ Product Visualsを使用すると、[!DNL Adobe Commerce Optimizer]人の販売�
 >
 >**製品ビジュアル**&#x200B;は、[!DNL Adobe Commerce as a Cloud Service]および[!DNL Adobe Commerce Optimizer]で提供されるバンドルの名前です。 [Dynamic MediaとOpenAPI機能](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)および[AEM Assets Prime](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-prime)を組み合わせています。
 >
->別のAEM Assets ライセンス（例：**AEM Assets Ultimate**）を持つお客様は、同じ統合を使用できます。AEM リリースのみが、ライセンスの種類ではなく、オンボーディング手順に影響します。
+>[AEM Assets Ultimate](https://experienceleague.adobe.com/ja/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview)など、別のAEM Assets ライセンスをお持ちのお客様は、同じ統合を使用できます。 Ultimateは商品ビジュアルには含まれておらず、AEM Assets Ultimate アドオン SKUが必要です。 ライセンスとプロビジョニングについては、Adobe アカウント担当者にお問い合わせください。 AEM リリースは、オンボーディング方法を決定します。使用可能な機能と環境は、使用権限によって異なります。 [製品ビジュアルの制限](../boundaries-limits.md#product-visuals-limits)を参照してください。
 
 ## 主な特長
 
-* **一元管理されたアセット管理**：エンタープライズ向けのデジタルアセット管理ソリューションであるAEM Assetsですべての商品画像を管理します。
+* **一元化されたアセット管理**: Commerceに重点を置いたアセット管理のユースケース向けに、AEM Assetsで商品画像を管理します。
 * **自動同期**: AEM Assetsでアセットが承認または更新されると、製品画像が自動的に同期されます。
 * **Dynamic Media配信**:OpenAPI機能を使用したDynamic Mediaを活用して、画像配信を最適化します。
 * **カタログレイヤー**：商品画像はカタログレイヤーとして適用され、ベースカタログにAEM Assets画像をオーバーレイできます。
@@ -62,7 +62,7 @@ Product Visualsを使用すると、[!DNL Adobe Commerce Optimizer]人の販売�
 
 ## 制限
 
-容量と使用状況の割り当て（アセットのストレージ、Dynamic Mediaの操作、ユーザーライセンス）については、_境界と制限ガイド_&#x200B;の[製品ビジュアルの制限](../boundaries-limits.md#product-visuals-limits)を参照してください。
+機能の使用権限、容量、使用状況の割り当て（アセットのストレージ、Dynamic Mediaの操作、ユーザーライセンス）については、_境界と制限ガイド_&#x200B;の[製品ビジュアルの制限](../boundaries-limits.md#product-visuals-limits)を参照してください。
 
 ## 製品ビジュアルの活用
 
