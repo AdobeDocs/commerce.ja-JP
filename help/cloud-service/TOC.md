@@ -9,16 +9,16 @@ product_v2:
     internal-label: Commerce
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
     internal-label: Commerce as a Cloud Service
-source-git-commit: af9c81b93d4ad1ff75a0380ec3fd4e3e5f374e3a
+source-git-commit: 5f2f7adbf9b7f87f719fe8010168521ee3981dd5
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '233'
 ht-degree: 3%
 ---
 
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [Adobe Commerce as a Cloud Service](overview.md)
-- [Merchandising Services](merchandising-services.md)
+- [CCDMによるマーチャンダイジングサービス](merchandising-services.md)
 - [機能比較](feature-comparison.md)
 - [Adobe Experience Managerの導入方法](getting-started.md)
 - [制限と境界](boundaries-limits.md)
@@ -41,24 +41,24 @@ ht-degree: 3%
       - [導入準備のチェックリスト](migration/bulk-data/readiness-checklist.md)
       - [移行サービスへのアクセスの確認](migration/bulk-data/cdms-access.md)
       - [一括データ移行の実行](migration/bulk-data/migration-guide.md)
-      - [動画デモ](https://experienceleague.adobe.com/ja/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
+      - [動画デモ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
     - [移行評価ツール](migration/assessment.md)
     - [コーディングツール](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"}
-  - {hide-from-toc}[&#x200B; ドキュメント RAG サービス &#x200B;](migration/doc-rag.md)
-- [顧客としてログイン](https://experienceleague.adobe.com/ja/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+  - {hide-from-toc}[ ドキュメント RAG サービス ](migration/doc-rag.md)
+- [顧客としてログイン](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [ギフトカードアカウントのREST エンドポイント](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [RESTによる電子メールのトリガー](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - チュートリアル {#tutorials}
   - [チュートリアルの前提条件](tutorials/tutorial-prerequisites.md)
   - [評価拡張機能のチュートリアル](tutorials/ratings-extension.md)
   - [出荷方法の拡張機能チュートリアル](tutorials/shipping-method-extension.md)
-  - {hide-from-toc}[配信の見積もり拡張機能のチュートリアル &#x200B;](tutorials/delivery-estimates-extension.md)
-  - {hide-from-toc}[在庫通知拡張機能のチュートリアル &#x200B;](tutorials/in-stock-notification-extension.md)
-  - {hide-from-toc}[製品レビュー拡張機能チュートリアル &#x200B;](tutorials/product-reviews-extension.md)
+  - {hide-from-toc}[配信の見積もり拡張機能のチュートリアル ](tutorials/delivery-estimates-extension.md)
+  - {hide-from-toc}[在庫通知拡張機能のチュートリアル ](tutorials/in-stock-notification-extension.md)
+  - {hide-from-toc}[製品レビュー拡張機能チュートリアル ](tutorials/product-reviews-extension.md)
 - スキーマ {#schemas}
   - [GraphQL スキーマ](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
   - [REST API スキーマ](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [ビデオチュートリアル](https://experienceleague.adobe.com/ja/playlists/accs-getting-started-product-overview){target="_blank"}
+- [ビデオチュートリアル](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [リリースノート](release-notes.md)
-- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/ja/docs/commerce/user-guides/home)
+- [Commerce Services ホームに戻る](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
