@@ -1,6 +1,6 @@
 ---
-title: コンポーザブルカタログデータモデルとマーチャンダイジングサービス
-description: コンポーザブルカタログデータモデルが[!DNL Adobe Commerce as a Cloud Service]でのカタログ配信をどのように変更するか、およびマーチャントとストアフロントチームが知っておく必要があることについて説明します。
+title: コンポーザブルカタログデータモデルによるマーチャンダイジングサービス
+description: コンポーザブルカタログデータモデルを使用したマーチャンダイジングサービスが[!DNL Adobe Commerce as a Cloud Service]でのカタログ配信をどのように変更するか、およびマーチャントとストアフロントチームが知っておく必要があることについて説明します。
 feature: Catalog Management, Personalization, Saas
 role: Leader
 level: Beginner
@@ -61,13 +61,13 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 0bda134570bb3bf2f43da545917dedc95394df5e
+source-git-commit: 71700f3fc10957ec2b1cccb7df12acd9840c35a1
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '998'
 ht-degree: 0%
 ---
 
-# Merchandising Services
+# コンポーザブルカタログデータモデルを活用したマーチャンダイジングサービス
 
 Adobe Commerce as a Cloud Serviceは、マーチャンダイジングサービスを通じて、コンポーザブルカタログデータモデル（CCDM）をサポートするようになりました。 Adobe Commerce Optimizerはこのデータモデルを導入し、CCDMは両方の製品に、ストアフロントカタログの閲覧とマーチャンダイジングの機能を提供するための共通の基盤を提供します。一方、Commerce財団は、製品、価格、取引を継続的に管理しています。
 
@@ -75,7 +75,7 @@ Adobe Commerce as a Cloud Serviceは、マーチャンダイジングサービ�
 
 ## CCDMはどのような変化をもたらしますか？
 
-元のカタログモデルでは、カタログサービスを使用してストアフロントに商品データを配信し、ライブサーチと商品レコメンデーションでは検索、マーチャンダイジング、レコメンデーション機能を提供します。 このモデルでは、Commerceは[SaaS データ書き出し](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/overview)を使用して同期します。
+元のカタログモデルでは、[&#x200B; カタログサービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/catalog-service/overview)を使用してストアフロントに商品データを配信し、ライブサーチと商品レコメンデーションで検索、マーチャンダイジング、レコメンデーション機能を提供します。 このモデルでは、Commerceは[SaaS データエクスポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/overview)を使用してサービスレイヤーにデータを同期します。
 
 CCDMでは、これらの機能は、Adobe Commerce Optimizerと同じカタログ基盤で動作します。 [&#x200B; カタログビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view)と[&#x200B; ポリシー](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/setup/policies)は、ストアフロントで使用可能なカタログコンテキストを定義します。 ポリシーによって商品の品揃えが決まります。マーチャンダイジングルールは、あらゆるカタログビューに適用することも、特定のビューに合わせてカスタマイズすることもできます。
 
@@ -85,7 +85,7 @@ Commerce財団は、商品と価格の正規の情報源であり続けていま
 
 ## ライセンスとプロビジョニング
 
-マーチャンダイジングサービスは、既存のAdobe Commerce as a Cloud Service SKUに含まれています。 これは2つ目の製品やサブスクリプションではなく、Adobe Commerce Optimizerの別途購入、使用権限、テナントは必要ありません。
+CCDM付きマーチャンダイジングサービスは、既存のAdobe Commerce as a Cloud Service SKUに含まれています。 これは2つ目の製品やサブスクリプションではなく、Adobe Commerce Optimizerの別途購入、使用権限、テナントは必要ありません。
 
 ## アーキテクチャの概要
 
@@ -93,7 +93,7 @@ Commerce財団は、商品と価格の正規の情報源であり続けていま
 
 ストアフロントは、CCDMが支援するマーチャンダイジングサービスを使用して、ブラウジング、検索、レコメンデーション、マーチャンダイジングのためのカタログデータとコンテキストを取得します。 リクエストでは、カタログコンテキストを使用して、目的のオーディエンスの商品と価格を取得します。 Web サイト、ストア、ストアビューの設定を[!DNL Commerce]で引き続き管理します。
 
-次の図は、より広範なAdobe Commerce as a Cloud Service アーキテクチャにおけるマーチャンダイジングサービスの位置を示しています。
+次の図は、より広範なAdobe Commerce as a Cloud Service アーキテクチャにおける、CCDMを使用したマーチャンダイジングサービスの位置付けを示しています。
 
 ![&#x200B; マーチャンダイジングサービスへのカタログデータフローを示すCommerce アーキテクチャ &#x200B;](./assets/data-flow-ccdm.png){zoomable="yes"}
 
@@ -105,7 +105,7 @@ Commerce財団は、商品と価格の正規の情報源であり続けていま
 
 ## 導入する前の検討事項
 
-マーチャンダイジングサービスを導入する前に、CCDM モデルがライセンス、カタログ統合、ストアフロント、管理者ワークフローにどのような影響を与えるかを確認しましょう。
+CCDMでマーチャンダイジングサービスを導入する前に、CCDM モデルがライセンス、カタログ統合、ストアフロント、管理者ワークフローにどのような影響を与えるかを確認しましょう。
 
 ### カタログ管理と統合
 
@@ -134,8 +134,12 @@ CCDM モデルでは、Adobe Commerce as a Cloud Serviceの制限は変更され
 
 ## 可用性と移行
 
-このリリースの後にAdobe Commerce as a Cloud Serviceで開始する組織には、デフォルトでマーチャンダイジングサービスが提供されます。 自社で使用しているカタログデータモデルが必要な場合は、Adobeのアカウントチームに連絡し、例外の有無について問い合わせます。
+2026年11月18日（PT）のリリース以降にAdobe Commerce as a Cloud Serviceで開始される組織には、デフォルトでCCDMを使用したマーチャンダイジングサービスが含まれます。 自社で使用しているカタログデータモデルが必要な場合は、Adobeのアカウントチームに連絡し、例外の有無について問い合わせます。
 
 このリリース以前にAdobe Commerce as a Cloud Serviceを使用していた組織は、[新しいインスタンスのプロビジョニング &#x200B;](./getting-started.md#create-an-instance)時に、どちらかのカタログモデルを選択できます。 デフォルトでは、[!UICONTROL Enable CCDM] スイッチャーは無効になっています。 CCDMを有効にすると、それを無効にすることはできません。
 
 既存のインスタンスは自動的に変更されません。 一般提供（GA）では、既存の元のカタログサービスインスタンスをマーチャンダイジングサービスに移行することはできません。
+
+>[!MORELIKETHIS]
+>
+>* [CCDM Commerce管理ガイドを使用したマーチャンダイジングサービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/overview)

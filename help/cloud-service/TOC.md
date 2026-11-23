@@ -9,16 +9,16 @@ product_v2:
     internal-label: Commerce
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
     internal-label: Commerce as a Cloud Service
-source-git-commit: af9c81b93d4ad1ff75a0380ec3fd4e3e5f374e3a
+source-git-commit: 5f2f7adbf9b7f87f719fe8010168521ee3981dd5
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '233'
 ht-degree: 3%
 ---
 
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [Adobe Commerce as a Cloud Service](overview.md)
-- [Merchandising Services](merchandising-services.md)
+- [CCDMによるマーチャンダイジングサービス](merchandising-services.md)
 - [機能比較](feature-comparison.md)
 - [Adobe Experience Managerの導入方法](getting-started.md)
 - [制限と境界](boundaries-limits.md)
