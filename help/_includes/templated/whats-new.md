@@ -1,7 +1,7 @@
 ---
-source-git-commit: 02a5f5be4f64c4f8c2f45eabcb69315e94665b49
+source-git-commit: 6df83f027ef780ad13c7310fe4c47638ed072b8d
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '2047'
 ht-degree: 0%
 ---
 # 新しいテンプレート
@@ -12,6 +12,13 @@ ht-degree: 0%
 
 | 説明 | タイプ | 日付/ソース |
 | --- | --- | --- |
+| 2026年11月18日以降にオンボーディングするプロジェクトが、構成可能なカタログデータモデルでマーチャンダイジングサービスを使用するようにプロビジョニングされたことをお客様に通知するために、_Adobe Commerce as a Cloud Service ガイド_&#x200B;を更新しました。 | テクニカル | [2026年11月23日](https://github.com/AdobeDocs/commerce.en/commit/a3c7e121397281fae0b8e9fd05697d71243eeb9d) |
+| Adobe Commerce as a Cloud Serviceの実稼動[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | リリースノート | [2026年11月20日](https://github.com/AdobeDocs/commerce.en/commit/740feb6b01d0acc7c99fcbef5d91029d1a3cb15a) |
+| より明確な設定手順、SKU一致ガイダンス、エンドツーエンドの検証手順を使用して、[AEM Assets統合設定ガイダンス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/setup-synchronization)を更新しました。 オーサーAPI アクセス、API ドリブン型メタデータ統合、サポートされている一括操作とAPI ベースの自動化の違いなど、[製品ビジュアルの使用権限の境界](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)を明確にしました。 | メジャーアップデート | [2026年11月20日](https://github.com/AdobeDocs/commerce.en/commit/5e9c42e5c93ac81604aa38bf3e55c5df729650a0) |
+| 製品レベルのランキングアクションを設定せずに、指定された条件に一致する検索クエリ [&#128279;](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/rules/add)のストアフロント結果を抑制できるようになりました。 クエリが一致すると、ストアフロントには商品がゼロの検索結果ページが表示されます。 | メジャーアップデート、テクニカル | [2026年11月18日](https://github.com/AdobeDocs/commerce.en/commit/c3d0ecebd6c2bcad189435bcddb7765c487e39ab) |
+| Adobe Commerce as a Cloud Serviceのライセンス制限とシステム境界を一覧表示する[制限と境界](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/boundaries-limits) トピックを追加しました。 | 新しいトピック | [2026年11月18日](https://github.com/AdobeDocs/commerce.en/commit/e0897ddc675f0281bec971e505585683b7ac7ed8) |
+| Adobe Commerce as a Cloud Serviceの管理者へのアクセスに関する問題を解決するために、[役割のトラブルシューティング &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/user-management#troubleshooting-roles)情報を追加しました。 | フィードバック | [2026年11月17日](https://github.com/AdobeDocs/commerce.en/commit/b019c35fcb86c4c2b346c368234657981ae37a1e) |
+| [SaaS Data Export Extension バージョン 103.6.1](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/release-notes)のリリースノートを追加しました。 | リリースノート | [2026年11月16日](https://github.com/AdobeDocs/commerce.en/commit/3e18a278391e4352c7482557fa76f8bb9b3451c7) |
 | [&#x200B; ファセットの制限と境界](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/boundaries-limits)を更新して、サポートリクエストを通じて最大構成ファセットを増やすことができることを反映しました。 | テクニカル | [2026年11月16日](https://github.com/AdobeDocs/commerce.en/commit/d21c7401d0111c3e6b8dd1d65b26d4b480008011) |
 | 2027年に[Agentic commerceを追加しました。コマースリーダーがAI支援のショッピングに備えるために、商品データの準備状況、見つけやすさ、エージェント対応コマースインフラストラクチャ、測定、および実験に重点を置いて、コマースリーダーがAI支援のショッピングに備えるのに役立つ5つの優先事項](https://experienceleague.adobe.com/ja/docs/commerce/information-center/insights-and-guidance/five-priorities-commerce-leaders-2027)記事です。 | 新しいトピック | [2026年11月16日](https://github.com/AdobeDocs/commerce.en/commit/b16b6868cabf8bfe6682c4e512c192713a408cfa) |
 | Adobe Commerce as a Cloud Serviceのサンドボックス [&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | リリースノート | [2026年11月13日](https://github.com/AdobeDocs/commerce.en/commit/c109643e7791468bfae958025144c968e8595f95) |
@@ -42,5 +49,3 @@ ht-degree: 0%
 | Adobe Commerce as a Cloud Serviceのサンドボックス [&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | メジャーアップデート | [2026年9月29日](https://github.com/AdobeDocs/commerce.en/commit/b1524825387c1d5fe061bdadf76f27b2f614879d) |
 | 同期中に[&#x200B; カスタム AEM イメージロール &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/synchronize/custom-match)を保持する機能を追加しました。 また、Adobe Commerceの機能が[AEM Assets Integration拡張機能の更新を非同期で確認できるようになりました](https://experienceleague.adobe.com/ja/docs/commerce/aem-assets-integration/get-started/check-for-updates)。 | メジャーアップデート | [2026年9月28日](https://github.com/AdobeDocs/commerce.en/commit/44272d96ca697d54cbbfbb9ed5a045da94652d75) |
 | [PaaS](https://experienceleague.adobe.com/ja/docs/commerce/product-recommendations/boundaries-limits)と[Commerce Optimizer](https://experienceleague.adobe.com/ja/docs/commerce/optimizer/merchandising/recommendations/create)の両方について、バンドルされた商品とグループ化された商品がサポートされていないと誤って記載されていた商品レコメンデーションのドキュメントを修正しました。 | フィードバック | [2026年9月25日](https://github.com/AdobeDocs/commerce.en/commit/55b17947196acfa459934e4ee373469b84e16ea1) |
-| Commerce Developer Agentが移行プロセスをどのように支援できるかを説明するため、[移行の概要](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/migration/overview)を更新しました。 | メジャーアップデート | [2026年9月24日](https://github.com/AdobeDocs/commerce.en/commit/739eabe6f43412610862ab00516687ad5aeeac53) |
-| Adobe Commerce as a Cloud Serviceの実稼動[&#x200B; リリースノート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/cloud-service/release-notes)を追加しました。 | メジャーアップデート | [2026年9月23日](https://github.com/AdobeDocs/commerce.en/commit/d879d372a199c24d266abdfb79d1ff0af164d75b) |

@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: eebf534ca77d223db63f2062dd889d8f3ceb1866
+source-git-commit: c1bd52e33427ed9222ef72aadf791d424fff20bb
 workflow-type: tm+mt
-source-wordcount: '10433'
+source-wordcount: '10913'
 ht-degree: 0%
 ---
 # リリースノート
@@ -82,7 +82,90 @@ ht-degree: 0%
 
 詳しくは、[Adobe Unified ExperienceのCommerce管理者](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/admin-unified-experience)を参照してください。
 
-## 2026年11月 – リリース #2 {#latest}
+## 2026年12月 – リリース #1 {#latest}
+
+[!BADGE &#x200B; サンドボックス &#x200B;]{type=Caution tooltip="リストされている項目は、現在サンドボックス環境でのみ使用できます。 Adobeでは、サンドボックス環境で新しいリリースを最初に使用できるようになりました。これにより、本番環境でリリースを利用できるようになる前に、今後の変更をテストする時間を確保できます。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下の項目は、2026年12月2日に実稼動環境にリリースされます。
+
+>[!BEGINSHADEBOX]
+
+### カスタムメールのコピーを送信する
+
+[`POST /V1/custom-email/send`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) REST エンドポイントは、オプションの`ccEmails`および`bccEmails`配列を受け入れて、メールのコピーを追加の受信者に送信できるようになりました。<!-- ACCS-2225 -->
+
+### RESTを通じて在庫ソースを指名する
+
+次の新しい管理者REST エンドポイントは、ソースの指名と可用性機能を提供します：<!-- ACCS-1884 -->
+
+* `GET /V1/carts/:cartId/nominated-sources`と`PUT /V1/carts/:cartId/nominated-sources`は、カートの各項目に対して指定された在庫ソースを読み取って設定します。
+* `GET /V1/inventory/source-availability`は、ストアのソースごとの可用性を返します。
+* `GET /V1/inventory/stock-availability`は、店舗の在庫レベルの販売可能な数量を返します。
+
+### カスタムカートの商品価格をリセット
+
+アイテムを削除して再追加することなく、カートのアイテムから[&#x200B; カスタム価格](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price)を削除できるようになりました。 `PUT /V1/carts/:cartId/items/:itemId` リクエストで`reset_custom_price`拡張機能の属性を`true`に設定します。<!-- ACCS-2189 -->
+
+```json
+{
+  "cartItem": {
+    "item_id": 8,
+    "quote_id": "17",
+    "sku": "hat",
+    "qty": 1,
+    "extension_attributes": { "reset_custom_price": true }
+  }
+}
+```
+
+### 割引から買い物かごアイテムを除外
+
+`apply_discounts`拡張機能の属性を`POST /V1/carts/:quoteId/items`および`PUT /V1/carts/:cartId/items/:itemId`要求で`false`に設定することで、カート価格ルールの割引から個々のカート項目を除外できるようになりました。<!-- ACCS-2190 -->
+
+### 顧客ウィッシュリストの取得
+
+次の新しいREST エンドポイントを使用して、お客様の要望リストを取得できます：<!-- ACCS-2330 -->
+
+* `GET /V1/customers/:customerId/wishlists`は、お客様のウィッシュリストを返します。
+* `GET /V1/customers/:customerId/wishlists/:wishlistId/items`は、保存された製品オプションを含むウィッシュリスト内のアイテムを返します。
+
+### 税金のカスタム手数料
+
+`plugin.magento.out_of_process_totals_collector.api.get_total_modifications.custom_fees` Webhookから返されたカスタム料金は、課税目的で、コード `oope_custom_fee_<fee code>`のアイテムとして`plugin.magento.out_of_process_tax_management.api.oop_tax_collection.collect_taxes` Webhookに送信されるようになりました。<!-- ACCS-2274 -->
+
+### 管理画面でイベントとwebhookを検索する
+
+[!DNL Commerce Admin]の&#x200B;**[!UICONTROL Events List]** （[!UICONTROL System] > [!UICONTROL Events] > [!UICONTROL Events List]）および&#x200B;**[!UICONTROL Webhooks List]** （[!UICONTROL System] > [!UICONTROL Webhooks] > [!UICONTROL Webhooks List]）ページには、再設計された検索可能なレイアウトがあります。 モジュール、イベント、またはWebhook名で検索し、項目を選択して、リストの横にあるペイロードスキーマ（フィールド名とタイプ）を表示し、スキーマをJSONとしてコピーできます。<!-- CEXT-6999 -->
+
+### ストアフロント登録時に会社設定を適用する
+
+`createCompany` GraphQLの突然変異は、会社の作成時に会社のアドレス帳の設定（`address_book_enabled`と`custom_shipping_address_enabled`）を適用するオプションの`config`入力を受け入れるようになりました。<!-- USF-4527 -->
+
+このオプションはデフォルトでは無効です。 これを有効にするには、[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Company Configuration] > [!UICONTROL General]に移動し、**[!UICONTROL Allow Company Configuration on Storefront Registration]**&#x200B;を&#x200B;**はい**&#x200B;に設定します。 このフィールドは、**[!UICONTROL Allow Company Registration from the Storefront]**&#x200B;が&#x200B;**はい**&#x200B;に設定されている場合にのみ表示されます。
+
+### 機能強化とバグ修正
+
+このリリースには、次の選択した機能強化、最適化、およびバグ修正が含まれています。
+
+* `collect_taxes` Webhookへの繰り返し呼び出しを減らすには、オプション設定を使用できます。 Adobe Commerce カスタマーサクセスマネージャーに連絡して有効にしましょう。
+
+* `collect_taxes` Webhook ペイロードには、各項目に`is_virtual`が、動的価格バンドルの子項目に`parent_code`が含まれるようになりました。<!-- CEXT-7035, CEXT-7049 -->
+
+* `addProductsToCart` GraphQLの突然変異が、Webhookによって返された商品価格ではなく、新しい商品の元の価格を返す可能性がある問題を修正しました。<!-- CEXT-7019 -->
+
+* `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` Webhookが処理外の配送業者から提供された料金を削除しなかった問題を修正しました。<!-- ACCS-2251 -->
+
+* カスタム属性を使用する際に行われた`observer.rma_save_before` Webhookの変更がRESTを通じて保存されない問題を修正しました。<!-- CCSAAS-5728 -->
+
+* 管理者が交渉可能な見積もりを作成した後に404 エラーを返す問題を修正しました。<!-- CCSAAS-5864 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年11月 – リリース #2
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
