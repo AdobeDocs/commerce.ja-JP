@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 71700f3fc10957ec2b1cccb7df12acd9840c35a1
+source-git-commit: ca2330c059ede860c464134878a83babd12eb148
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1115'
 ht-degree: 0%
 ---
 
@@ -118,11 +118,18 @@ CCDMでマーチャンダイジングサービスを導入する前に、CCDM �
 - **[!DNL Adobe Commerce Storefront]** ドロップイン – ドロップインが移行を処理します。 コードの変更は必要ありません。 [&#x200B; ストアフロント設定ドキュメント &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/)を参照してください。
 - **カスタムまたはその他のストアフロント** - [&#x200B; ヘッダー設定リファレンス &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers)の説明に従って、カタログリクエストヘッダーを更新します。
 
-カタログクエリを確認し、CCDM ベースモデルのリクエストヘッダーを確認します。 既存のクエリやヘッダーが変更されないと仮定しないでください。 マーチャンダイジング GraphQLのクエリは、元のカタログサービスモデルで使用されるクエリとは異なります。 その他のクエリはCCDMをサポートしています。 [&#x200B; マーチャンダイジング GraphQL API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/reference/graphql/)を使用し、[&#x200B; ストアフロントヘッダーリファレンス &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers)に対して必要なカタログコンテキストを検証します。
-
 ### サードパーティ製アプリと拡張機能
 
 カタログデータの読み取りやカタログイベントのプロバイダーとの利用を可能にする、サードパーティ製のアプリや拡張機能を確認します。 互換性は、各アプリまたは拡張機能でのインターフェイスの使用方法によって異なります。
+
+### マーチャンダイジング API
+
+マーチャンダイジングサービスは、バックエンドカタログデータ管理とストアフロントカタログ取得用のAPIを提供します。 REST APIを使用してカタログデータを管理し、GraphQL APIを使用してストアフロントエクスペリエンスのデータを取得します。
+
+- **REST API:** [&#x200B; データ収集API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api)の使用を開始して、バックエンドアプリケーションから製品およびカタログデータを作成および管理します。
+- **GraphQL API:** [&#x200B; マーチャンダイジング API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api)の使用を開始して、ストアフロント エクスペリエンスのカタログデータを取得します。 [&#x200B; ストアフロントヘッダーリファレンス &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers)の説明に従って、ストアフロントに必要なヘッダーでリクエストを設定します。
+
+カタログクエリを確認し、CCDM ベースモデルのリクエストヘッダーを確認します。 既存のクエリやヘッダーが変更されないと仮定しないでください。 マーチャンダイジング GraphQLのクエリは、元のカタログサービスモデルで使用されるクエリとは異なります。 その他のクエリはCCDMをサポートしています。 [&#x200B; マーチャンダイジング GraphQL API リファレンス &#x200B;](https://developer.adobe.com/commerce/services/reference/graphql/)を使用し、[統合ヘッダーリファレンス &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api#headers)に対して必要なカタログコンテキストを検証します。
 
 ### 管理者エクスペリエンス
 
