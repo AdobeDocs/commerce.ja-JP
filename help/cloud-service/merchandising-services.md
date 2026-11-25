@@ -75,9 +75,9 @@ Adobe Commerce as a Cloud Serviceは、マーチャンダイジングサービ�
 
 ## CCDMはどのような変化をもたらしますか？
 
-元のカタログモデルでは、[&#x200B; カタログサービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/overview)を使用してストアフロントに商品データを配信し、ライブサーチと商品レコメンデーションで検索、マーチャンダイジング、レコメンデーション機能を提供します。 このモデルでは、Commerceは[SaaS データエクスポート &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview)を使用してサービスレイヤーにデータを同期します。
+元のカタログモデルでは、[&#x200B; カタログサービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/catalog-service/overview)を使用してストアフロントに商品データを配信し、ライブサーチと商品レコメンデーションで検索、マーチャンダイジング、レコメンデーション機能を提供します。 このモデルでは、Commerceは[SaaS データエクスポート &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce/saas-data-export/overview)を使用してサービスレイヤーにデータを同期します。
 
-CCDMでは、これらの機能は、Adobe Commerce Optimizerと同じカタログ基盤で動作します。 [&#x200B; カタログビュー](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view)と[&#x200B; ポリシー](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies)は、ストアフロントで使用可能なカタログコンテキストを定義します。 ポリシーによって商品の品揃えが決まります。マーチャンダイジングルールは、あらゆるカタログビューに適用することも、特定のビューに合わせてカスタマイズすることもできます。
+CCDMでは、これらの機能は、Adobe Commerce Optimizerと同じカタログ基盤で動作します。 [&#x200B; カタログビュー](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view)と[&#x200B; ポリシー](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/setup/policies)は、ストアフロントで使用可能なカタログコンテキストを定義します。 ポリシーによって商品の品揃えが決まります。マーチャンダイジングルールは、あらゆるカタログビューに適用することも、特定のビューに合わせてカスタマイズすることもできます。
 
 これにより、カタログの設定、アクセス、マーチャンダイジング方法が変更されます。 CCDMは、オリジナルのCommerceカタログの検索、レコメンデーション、マーチャンダイジング機能を基盤としており、カタログビューレベルでの制御を可能にします。 その他の管理機能とレポート機能については、以下で説明します。
 
@@ -99,9 +99,9 @@ CCDM付きマーチャンダイジングサービスは、既存のAdobe Commerc
 
 ## マーチャントにとっての新機能は何ですか？
 
-新しいモデルでは、既存のマーチャンダイジングルールをすべてのカタログビューまたは特定のビューにスコープできます。 これにより、各ストアフロントのオーディエンスにマーチャンダイジングを適用することができます。 カタログ ビュー[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add)にマーチャンダイジング ルールを スコープ設定する方法について説明します。
+新しいモデルでは、既存のマーチャンダイジングルールをすべてのカタログビューまたは特定のビューにスコープできます。 これにより、各ストアフロントのオーディエンスにマーチャンダイジングを適用することができます。 カタログ ビュー[&#128279;](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add)にマーチャンダイジング ルールを スコープ設定する方法について説明します。
 
-管理画面で、[!UICONTROL Catalog Views]と[!UICONTROL Policies]を使用してカタログコンテキストを設定できます。 [!UICONTROL Success Metrics]を使用して、収益、コンバージョン、エンゲージメント、獲得、直帰率を確認することもできます。 詳しくは、[成功指標](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics)を参照してください。
+管理画面で、[!UICONTROL Catalog Views]と[!UICONTROL Policies]を使用してカタログコンテキストを設定できます。 [!UICONTROL Success Metrics]を使用して、収益、コンバージョン、エンゲージメント、獲得、直帰率を確認することもできます。 詳しくは、[成功指標](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics)を参照してください。
 
 ## 導入する前の検討事項
 
@@ -133,7 +133,7 @@ CCDMでマーチャンダイジングサービスを導入する前に、CCDM �
 
 ### 管理者エクスペリエンス
 
-CCDMを使用するAdobe Commerce as a Cloud Serviceでは、[[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) （統合シェル）が使用されます。 Adobeは、CCDMとは別にUnified Shellをリリースしました。 元のカタログサービスモデル上の既存のインスタンスは、クラシックシェルと統合シェルの両方にアクセスできます。
+CCDMを使用するAdobe Commerce as a Cloud Serviceでは、[[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/ja/docs/commerce-admin/start/admin/admin-unified-experience) （統合シェル）が使用されます。 Adobeは、CCDMとは別にUnified Shellをリリースしました。 元のカタログサービスモデル上の既存のインスタンスは、クラシックシェルと統合シェルの両方にアクセスできます。
 
 ### 制限
 
@@ -149,4 +149,4 @@ CCDM モデルでは、Adobe Commerce as a Cloud Serviceの制限は変更され
 
 >[!MORELIKETHIS]
 >
->* [CCDM Commerce管理ガイドを使用したマーチャンダイジングサービス &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/overview)
+>* [CCDM Commerce管理ガイドを使用したマーチャンダイジングサービス &#x200B;](https://experienceleague.adobe.com/ja/docs/commerce-admin/merchandising-with-ccdm/overview)
